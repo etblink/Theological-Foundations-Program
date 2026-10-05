@@ -1,6 +1,6 @@
 # Theological Foundations Program — Governance
 
-**Version:** 0.1.0  
+**Version:** 0.1.1  
 **Status:** active governance  
 **Date:** 2026-10-05  
 **Governing charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`
@@ -51,10 +51,13 @@ It answers:
 - what canonical conclusions currently exist;
 - what reopen conditions are live.
 
-### Provisional method
-`TFP_METHOD_SEED_0_1_0.md`
+### Qualified adjudication protocol
+The protocol identified by STATE.yaml is the operational procedure for authorized studies once independently qualified.
 
-Contains the current method candidate.
+The protocol is subordinate to Charter, Governance, and canonical STATE. A candidate or repair protocol does not become operative merely by existing in the repository.
+
+### Provisional method
+TFP_METHOD_SEED_0_1_0.md contains the current methodological source and rationale.
 
 It is not immutable and is not itself authority to change canonical conclusions.
 
@@ -76,7 +79,65 @@ Git preserves provenance and history.
 
 Historical commits do not override current canonical state merely because they are older or more detailed.
 
-## 3. Core governance separations
+## 3. Roles and independence
+
+### Human owner
+The **human owner** is the person with final program authority.
+
+Only the human owner may:
+- authorize a new bounded truth-adjudication study at G0;
+- accept a canonical theological adjudication at G5;
+- qualify a new adjudication protocol after the required independent audit;
+- change governance where authority boundaries are affected.
+
+### Program lead
+The **program lead** is the designated research-orchestration role named in STATE.yaml or the study charter.
+
+The program lead may:
+- prepare preregistrations;
+- coordinate evidence lanes;
+- record procedural gate completion;
+- propose repairs;
+- update state within already-authorized scope.
+
+The program lead may not:
+- authorize their own new truth-adjudication study;
+- substitute for the human owner's G5 acceptance;
+- override a failed required independent audit.
+
+### Independent reviewer
+An **independent reviewer** for a specific decision:
+- did not author or co-author the artifact/change being reviewed;
+- did not make the outcome-determinative decision under review;
+- has not been assigned a conflicting role in the same gate;
+- receives the frozen material necessary for review.
+
+Procedural independence between AI sessions or models does not guarantee independence of training priors. Model/session provenance must therefore be recorded when AI reviewers are used.
+
+### Strict independent auditor
+A **strict independent auditor** may not have authored or co-authored:
+- the G0 preregistration;
+- any candidate steelman packet;
+- any outcome-determinative lane;
+- the comparative synthesis;
+- the repair under audit.
+
+The auditor may inspect frozen source material but may not edit the study while auditing.
+
+### Human-owner dual-role exception
+The human owner may contribute evidence or discussion. If the human owner also materially authors the comparative synthesis, that dual role must be preregistered or recorded as an exception before G4, and canonical acceptance requires at least two strict independent audits or another independence safeguard explicitly accepted in the study charter.
+
+### Role freeze
+Every G0 charter must name:
+- human owner;
+- program lead;
+- candidate constructors;
+- lane authors;
+- independent reviewers;
+- intended strict independent auditor(s), if known;
+- any approved dual-role exception.
+
+## 4. Core governance separations
 
 TFP adopts the following non-equivalences:
 
@@ -97,7 +158,7 @@ FAILURE ≠ DELETION
 
 No transition across these boundaries is implicit.
 
-## 4. Research lifecycle
+## 5. Research lifecycle
 
 A bounded TFP investigation should normally pass through:
 
@@ -168,7 +229,7 @@ Every completed lane must state:
 
 Held or closed work should have explicit `reopen_if` conditions where practical.
 
-## 5. Claim typing
+## 6. Claim typing
 
 Before adjudication, claims should be typed where possible as:
 
@@ -187,7 +248,7 @@ A claim may span types.
 
 The evidence burden must match the type of claim.
 
-## 6. Equal-standard principle
+## 7. Equal-standard principle
 
 Comparable rival claims must face comparable burdens.
 
@@ -206,7 +267,7 @@ TFP must not privilege a position because it is:
 
 A method that defeats one candidate must be checked for symmetrical consequences against rivals where applicable.
 
-## 7. Candidate-universe rule
+## 8. Candidate-universe rule
 
 TFP must not declare a winner from an artificially narrow field.
 
@@ -219,7 +280,7 @@ Before comparative closure, ask:
 
 Candidate completeness is a gate, not an afterthought.
 
-## 8. Independent construction and contamination control
+## 9. Independent construction and contamination control
 
 Where a candidate can be distorted by knowledge of its rivals:
 
@@ -230,7 +291,7 @@ Where a candidate can be distorted by knowledge of its rivals:
 
 TFP should not manufacture convergence and later treat that convergence as discovery.
 
-## 9. Preregistration
+## 10. Preregistration
 
 Complex studies should preregister enough structure to reveal later drift.
 
@@ -245,7 +306,7 @@ A preregistration should preserve:
 
 Derived hypotheses may be created later but may not silently replace the original.
 
-## 10. Evidence provenance
+## 11. Evidence provenance
 
 For consequential claims, record enough provenance to reconstruct the evidential path.
 
@@ -262,7 +323,7 @@ Depending on domain this may include:
 
 Evidence with weak provenance may remain informative but must be marked accordingly.
 
-## 11. Observation-first rule
+## 12. Observation-first rule
 
 When reviewing a source, first record what the source actually contains before reconciling it with current TFP conclusions.
 
@@ -270,7 +331,7 @@ Disagreement with canonical state is a finding.
 
 It must not be silently harmonized away.
 
-## 12. Negative knowledge
+## 13. Negative knowledge
 
 Negative results are first-class project assets.
 
@@ -295,7 +356,7 @@ reopen_if
 
 A later successor should not need to rediscover why an attractive path was rejected.
 
-## 13. Reopening rule
+## 14. Reopening rule
 
 Closed or held work may reopen only for a stated reason such as:
 
@@ -307,13 +368,13 @@ Closed or held work may reopen only for a stated reason such as:
 
 Mere renewed interest is not automatically sufficient.
 
-## 14. One authoritative next action
+## 15. One authoritative next action
 
 TFP may maintain a large research queue, but `STATE.yaml` should identify one authoritative next action unless a deliberately parallel bounded stage is authorized.
 
 This prevents locally interesting work from becoming the program's accidental center of gravity.
 
-## 15. Stop rule
+## 16. Stop rule
 
 Research is not required to continue indefinitely.
 
@@ -327,7 +388,7 @@ A lane should stop or hold when:
 
 `UNDERDETERMINED` and `INSUFFICIENT_SIGNAL` are legitimate results.
 
-## 16. No opaque global score
+## 17. No opaque global score
 
 TFP should not compress heterogeneous evidence into a single unexplained truth score.
 
@@ -340,9 +401,9 @@ A candidate may:
 
 Typed dispositions are preferred to false numerical precision.
 
-## 17. Continuity control
+## 18. Continuity control
 
-Historical or doctrinal continuity should use the candidate Continuity Ladder:
+Historical or doctrinal continuity should use the candidate **Continuity Framework (C0–C7)**:
 
 - C0 recurrence;
 - C1 material continuity;
@@ -353,9 +414,11 @@ Historical or doctrinal continuity should use the candidate Continuity Ladder:
 - C6 genealogical continuity;
 - C7 doctrinal continuity.
 
-Do not jump from resemblance to genealogy.
+These are relation types, not a mandatory universal linear sequence. Branching, convergence, loss, recovery, refunctionalization and independent construction are permitted.
 
-## 18. Origins / development / truth separation
+However, no study may jump from mere resemblance/recurrence to genealogy or doctrinal continuity without separately establishing the relations actually required by that claim.
+
+## 19. Origins / development / truth separation
 
 Always distinguish:
 
@@ -368,7 +431,7 @@ A natural historical origin does not by itself falsify a theological claim.
 
 A theological claim being true does not make every historical account of its development correct.
 
-## 19. Blindness and independent audit
+## 20. Blindness and independent audit
 
 Where practical, TFP should use controlled independence.
 
@@ -383,7 +446,7 @@ Blindness is a tool, not a ritual requirement.
 
 It should be used where it reduces a real bias.
 
-## 20. Human and program authority
+## 21. Human and program authority
 
 Research agents may execute work autonomously within explicitly authorized scope.
 
@@ -402,11 +465,14 @@ They may not silently:
 
 The human owner retains final authority over:
 - program purpose;
+- authorization of bounded truth-adjudication studies;
 - major scope changes;
+- acceptance of canonical theological adjudications;
 - acceptance of consequential program-level truth commitments;
+- qualification of adjudication protocols after required independent audit;
 - changes to governance itself when those changes alter authority boundaries.
 
-## 21. Conflict resolution
+## 22. Conflict resolution
 
 If artifacts disagree:
 
@@ -414,12 +480,14 @@ If artifacts disagree:
 2. Governance governs operating rules.
 3. `STATE.yaml` governs current operational status.
 4. Accepted adjudication records govern their bounded conclusions.
-5. Frozen research artifacts preserve historical evidence/reasoning.
-6. README and prose summaries are orientation only.
+5. The independently qualified adjudication protocol named by STATE governs study procedure.
+6. The Method Seed supplies methodological rationale where not superseded by higher authority.
+7. Frozen research artifacts preserve historical evidence/reasoning.
+8. README and prose summaries are orientation only.
 
 A conflict should be repaired explicitly, not silently harmonized.
 
-## 22. Succession requirement
+## 23. Succession requirement
 
 A competent unfamiliar successor should be able to recover:
 
@@ -433,16 +501,17 @@ A competent unfamiliar successor should be able to recover:
 
 If this requires reconstructing state from dozens of prose files, governance has failed.
 
-## 23. Current governance state
+## 24. Current governance state
 
 ```text
-GOVERNANCE_VERSION = 0.1.0
+GOVERNANCE_VERSION = 0.1.1
 CANONICAL_MUTABLE_STATE = STATE.yaml
 PROGRAM_CHARTER = TFP_PROGRAM_CHARTER_0_1_1.md
 CURRENT_METHOD = TFP_METHOD_SEED_0_1_0.md
+QUALIFIED_PROTOCOL = STATE_CONTROLLED
 GLOBAL_TRUTH_ADJUDICATION = NOT_YET_REACHED
 ```
 
-## 24. Governing maxim
+## 25. Governing maxim
 
 > Preserve the difference between what was observed, what was inferred, what was accepted, and what the program is authorized to conclude.
