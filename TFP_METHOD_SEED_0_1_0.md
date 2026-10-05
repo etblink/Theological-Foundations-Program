@@ -3,7 +3,7 @@
 **Project:** Theological Foundations Program  
 **Date:** 2026-10-05  
 **Status:** provisional method extracted from the first bounded stress test (EMT)  
-**Authority:** methodological seed; subordinate to TFP_PROGRAM_CHARTER_0_1_0.md
+**Authority:** methodological seed; subordinate to TFP_PROGRAM_CHARTER_0_1_1.md and GOVERNANCE.md
 
 ## 1. Purpose
 
