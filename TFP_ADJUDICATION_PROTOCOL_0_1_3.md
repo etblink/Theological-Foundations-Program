@@ -229,11 +229,19 @@ Priority meanings:
 - **MATERIAL:** changes relative warrant in a truth-relevant way but is not by itself candidate-fatal. MATERIAL discriminators may break a CRITICAL tie only when their direction is non-conflicting or contrary MATERIAL evidence is explicitly resolved.
 - **CONTEXTUAL:** helps interpret plausibility/context but cannot establish dominance, truth-warrant, or defeat a candidate by itself.
 
+For every CRITICAL or MATERIAL discriminator, preregister its directional result vocabulary:
+- `FAVORS_A`;
+- `FAVORS_B`;
+- `NEUTRAL_OR_NONDISCRIMINATING`;
+- `UNMAKEABLE`.
+
 A **TRUTH_CRITICAL_COMPARISON** is:
 - any CRITICAL discriminator; or
 - a MATERIAL discriminator preregistered as bearing on a necessary truth-bearing proposition or as the specified tie-breaker when CRITICAL evidence is non-discriminating.
 
-A truth-critical comparison is **MAKEABLE** only when evidence coverage is adequate enough to issue a disposition/direction under the frozen rule. An unmakeable truth-critical comparison is never silently omitted.
+A truth-critical comparison is **MAKEABLE** only when evidence coverage is adequate enough to assign one frozen directional result. An unmakeable truth-critical comparison is never silently omitted.
+
+"MATERIAL comparisons are directionally consistent in favor of A" means at least one is `FAVORS_A` and none is `FAVORS_B`. Conflicting MATERIAL directions produce `MIXED_TRADEOFF` unless one is independently defeated or shown dependent/redundant.
 
 ### A12. Minimum candidate adequacy gate
 Before comparison, every candidate must satisfy all:
@@ -758,9 +766,9 @@ Do not assume:
 Phase I is mandatory whenever a truth-critical subclaim is tagged:
 - miracle/anomalous-event;
 - revelation;
-- supernatural prophecy.
+- prophecy.
 
-A miracle claim also retains its historical/textual/philosophical types; the tag cannot be omitted to bypass Phase I.
+A miracle or prophecy claim also retains its historical/textual/philosophical types; the trigger tag cannot be omitted or relabeled to bypass Phase I. Whether prophecy requires supernatural foreknowledge is adjudicated inside I7.
 
 ### I3. Miracle/anomalous-event sequence
 Evaluate separately:
@@ -1147,13 +1155,17 @@ For "Did X occur?" or "Is P true?", define candidates minimally as `P` and mater
 
 #### `PASS`
 All mandatory audit checks pass.
-No unresolved BLOCKING/MAJOR defect.
+No unresolved BLOCKING/MAJOR/MINOR defect.
 No qualification-relevant unresolved limitation.
-Any MINOR is demonstrably non-outcome-determinative and recorded.
+NOTEs may remain.
 
 #### `PASS_WITH_LIMITATIONS`
 No unresolved BLOCKING/MAJOR defect.
-One or more irreducible/non-defect limitations constrain downstream use and are explicitly carried into G5/STATE.
+May contain:
+- irreducible/non-defect `LIMITATION` findings; and/or
+- one or more `FAIL_MINOR` findings only when each is explicitly demonstrated non-outcome-determinative, bounded, and carried forward as a downstream constraint.
+
+Every carried item is copied into G5/STATE.
 
 #### `REPAIR_REQUIRED`
 At least one BLOCKING or MAJOR defect exists, or a cluster of MINOR defects collectively threatens reproducibility/outcome integrity.
