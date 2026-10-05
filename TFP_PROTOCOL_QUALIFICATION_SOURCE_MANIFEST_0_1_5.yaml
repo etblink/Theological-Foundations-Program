@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+program: "Theological Foundations Program"
+qualification_target: "TFP Adjudication Protocol 0.1.5"
+audit_type: "strict_independent_protocol_qualification_reaudit"
+governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
+branch_for_orientation_only: "repair/tfp-adjudication-protocol-0.1.5"
+immutable: true
+
+governed_sources:
+  - order: 1
+    path: "TFP_PROGRAM_CHARTER_0_1_1.md"
+    blob_sha: "22242b487e8c0bb35064d9a2686cc3a5f12d5c95"
+  - order: 2
+    path: "GOVERNANCE.md"
+    blob_sha: "69359d0072d6201d2f39c1d3640a3001d8da9c06"
+    expected_version: "0.1.4"
+    expected_status: "candidate_governance_amendment_pending_human_owner_ratification"
+  - order: 3
+    path: "STATE.yaml"
+    blob_sha: "565486f98397ccb7f9295d4069ed7eb6088bd736"
+    expected_schema_version: "0.2.0"
+  - order: 4
+    path: "TFP_METHOD_SEED_0_1_0.md"
+    blob_sha: "bee2449aa4cc8f3cf968cc6896cf4e15754c4897"
+  - order: 5
+    path: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+    blob_sha: "9be5e18cc9a98ae1ab9e5865d5b8c1b6181879e1"
+    expected_version: "0.1.5"
+
+qualification_control:
+  source_manifest_preparer_actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  human_relaying_operator: "HUMAN_OWNER_RELAY_OPERATOR"
+  role_control_path: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  role_control_must_be_completed_before_substantive_audit: true
+  strict_auditor_identity_not_yet_assigned_in_this_manifest: true
+  strict_audits_required: 1
+
+audit_independence:
+  strict_auditor_must_be_disjoint_from:
+    - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    - "all_outcome_material_qualification_reviewers"
+  prohibited_prior_context:
+    - "prior_TFP_protocol_audit_reasoning"
+    - "prior_TFP_protocol_repair_reasoning"
+    - "shared_author_or_reviewer_context"
+  same_model_family_permitted_if_context_is_fresh: true
+
+qualification_boundary:
+  audit_pass_is_not_qualification: true
+  qualification_requires_human_owner_acceptance: true
+  governance_0_1_4_requires_human_owner_ratification_if_bundle_passes: true
+  theological_stress_test_authorized: false
