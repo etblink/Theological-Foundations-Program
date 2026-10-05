@@ -1296,9 +1296,9 @@ Apply proposition-level warrant before discriminator ranking:
 1. necessary proposition `CONTRADICTED` → candidate INADEQUATE;
 2. undefeated TRUTH_CRITICAL_DEFEATER of a necessary proposition/required condition → candidate INADEQUATE;
 3. necessary proposition `EVIDENCE_AGAINST` → MATERIAL_DEFEATER and `ADEQUATE_BUT_RANKING_BLOCKED` until resolved;
-4. necessary proposition `INSUFFICIENT_SIGNAL` → no candidate ranking/truth adjudication dependent on it;
-5. necessary proposition `NOT_ESTABLISHED` → candidate may remain ranking-eligible but cannot receive TRUTH_WARRANTED;
-6. necessary proposition `PARTIALLY_SUPPORTED` → relative comparison may continue but truth-warrant normally blocked;
+4. candidate-specific necessary proposition `INSUFFICIENT_SIGNAL` → candidate is ADEQUATE_BUT_RANKING_BLOCKED; no ranking/truth adjudication dependent on it;
+5. candidate-specific necessary proposition `NOT_ESTABLISHED` → candidate is ADEQUATE_BUT_RANKING_BLOCKED;
+6. candidate-specific necessary proposition `PARTIALLY_SUPPORTED` → relative comparison may continue only when its A6 route is COMPARATIVE_ROUTE; truth-warrant remains blocked;
 7. only after these proposition rules are applied, use A11 discriminator stages;
 8. CONTEXTUAL evidence cannot establish dominance/truth-warrant;
 9. internal coherence never substitutes for external warrant.
@@ -1481,7 +1481,7 @@ Any canonical theological adjudication or protocol qualification requires a stri
 
 For a study, use the G0 role matrix.
 
-For protocol qualification, use the frozen **qualification role matrix** in canonical/candidate STATE.
+For protocol qualification, use the frozen external **qualification role-control record** named by STATE and the qualification source manifest. The role-control record is launch control, not one of the five governed methodological blobs, and must be completed after auditor assignment but before substantive audit begins.
 
 The strict protocol auditor must be disjoint by actor lineage from:
 - protocol author(s);
@@ -1489,6 +1489,12 @@ The strict protocol auditor must be disjoint by actor lineage from:
 - program lead for the repair cycle;
 - every outcome-material qualification reviewer;
 - source-manifest preparer if that person made any substantive qualification decision.
+
+The role-control record must also identify:
+- source-manifest preparer;
+- human relaying operator, if any;
+- strict auditor model/provider/session/actor-lineage after assignment;
+- required strict-audit count.
 
 The human operator may relay the frozen launch prompt/source manifest and returned audit report without collapsing independence, provided they do not transmit substantive prior audit reasoning or make reviewer decisions.
 
@@ -1583,6 +1589,7 @@ Cold-start test: using only the governed frozen source set, determine whether an
 - candidates/exclusions and steelman packets;
 - backgrounds;
 - typing/link map;
+- necessary-proposition coverage map;
 - acquisition plan/coverage;
 - amendment history/exposure ledger;
 - lane findings and proposition consolidation;
@@ -1670,6 +1677,7 @@ Every canonical adjudication entry MUST contain:
   accepted_at:
   synthesis_artifact:
   audit_artifacts: []
+  audit_reconciliation_artifact:
   human_acceptance_artifact:
   confidence:
   evidence_coverage:
