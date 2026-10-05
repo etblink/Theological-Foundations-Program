@@ -1,6 +1,6 @@
 # Theological Foundations Program — Governance
 
-**Version:** 0.1.2  
+**Version:** 0.1.3  
 **Status:** active governance  
 **Date:** 2026-10-05  
 **Governing charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`
@@ -114,6 +114,19 @@ An **independent reviewer** for a specific decision:
 
 Every outcome-material reviewer determination must be logged with reviewer identity/session provenance and the exact decision reviewed.
 
+### Actor-lineage rule
+
+For procedural independence, two AI activities are the **same actor lineage** when any of the following applies:
+
+- one is a continuation, fork, resume, or branch of the other's conversation/context;
+- both are subagents of the same orchestrated run with shared hidden or explicit context;
+- one receives the other's substantive reviewer/audit reasoning before its own result is frozen;
+- both share a persistent memory/context source that contains the earlier outcome-material reasoning.
+
+Two clean sessions may count as procedurally distinct even when they use the same model family, provided no prior outcome-material reasoning is available to the later session. Shared training priors remain a disclosed limitation, not proof of independence.
+
+A human operator may relay a frozen prompt, immutable source identities, and the final returned report between distinct agents without becoming the reviewer/auditor. The operator collapses the roles only if they make or transmit substantive outcome-material determinations between those agents.
+
 Procedural independence between AI sessions or models does not guarantee independence of training priors. Model/session provenance must therefore be recorded when AI reviewers are used.
 
 ### Strict independent auditor
@@ -134,6 +147,10 @@ The strict auditor also may not have made any **outcome-material reviewer determ
 
 The strict auditor must be disjoint from the named independent reviewers for such determinations.
 
+The program lead for a study or protocol-repair cycle may not serve as its strict independent auditor.
+
+The human owner may not both make an outcome-material reviewer determination and then serve as the sole G5 acceptor unless the dual-role safeguard below is invoked.
+
 The auditor may inspect frozen source material but may not edit the study while auditing.
 
 A protocol-qualification audit uses this same strict-independence standard.
@@ -150,7 +167,9 @@ that dual role must be preregistered or recorded as an exception before the appl
 
 For a study, canonical acceptance then requires at least two strict independent audits or another independence safeguard explicitly accepted in the study charter.
 
-For protocol qualification, if the human owner materially authored the protocol under review, qualification requires at least two strict independent protocol audits or another separately documented independence safeguard accepted before qualification.
+The same safeguard applies if the human owner made any outcome-material reviewer determination in that study.
+
+For protocol qualification, if the human owner materially authored the protocol, candidate Governance amendment, source manifest, or made an outcome-material reviewer determination in the qualification cycle, qualification requires at least two strict independent protocol audits or another separately documented independence safeguard accepted before qualification.
 
 ### Role freeze
 Every G0 charter must name:
@@ -158,9 +177,22 @@ Every G0 charter must name:
 - program lead;
 - candidate constructors;
 - lane authors;
-- independent reviewers;
+- independent reviewers and their exact decision scopes;
 - intended strict independent auditor(s), if known;
+- actor-lineage identifiers/provenance for AI roles;
 - any approved dual-role exception.
+
+Every protocol-qualification cycle must preserve a **qualification role matrix** stating:
+- candidate protocol author(s);
+- candidate Governance amendment author(s), if any;
+- human-owner material-authorship status;
+- every outcome-material qualification reviewer and decision;
+- program lead;
+- intended strict auditor(s);
+- actor-lineage provenance;
+- required strict-audit count under the dual-role rule.
+
+The matrix must be frozen before the qualification audit launches.
 
 ## 4. Core governance separations
 
@@ -507,7 +539,10 @@ The human owner retains final authority over:
 - acceptance of canonical theological adjudications;
 - acceptance of consequential program-level truth commitments;
 - qualification of adjudication protocols after required independent audit;
+- ratification of any candidate Governance amendment that changes authority boundaries;
 - changes to governance itself when those changes alter authority boundaries.
+
+A protocol qualification that depends on a candidate Governance amendment is not complete until the human owner explicitly ratifies that Governance version in the qualification acceptance record.
 
 ## 22. Conflict resolution
 
@@ -541,7 +576,7 @@ If this requires reconstructing state from dozens of prose files, governance has
 ## 24. Current governance state
 
 ```text
-GOVERNANCE_VERSION = 0.1.2
+GOVERNANCE_VERSION = 0.1.3
 CANONICAL_MUTABLE_STATE = STATE.yaml
 PROGRAM_CHARTER = TFP_PROGRAM_CHARTER_0_1_1.md
 CURRENT_METHOD = TFP_METHOD_SEED_0_1_0.md
