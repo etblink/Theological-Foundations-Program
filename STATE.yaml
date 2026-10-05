@@ -8,10 +8,12 @@ program:
   governing_charter: "TFP_PROGRAM_CHARTER_0_1_1.md"
   governance: "GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
+  active_governance_version: "0.1.0"
+  active_governance_ref: "main:GOVERNANCE.md"
   qualified_protocol: null
-  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.4:TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  candidate_governance_version: "0.1.3"
-  candidate_protocol_status: "REPAIR_REQUIRED_AFTER_STRICT_REAUDIT"
+  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.5:TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  candidate_governance_version: "0.1.4"
+  candidate_protocol_status: "CANDIDATE__REPAIR_PENDING_REAUDIT"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -39,26 +41,28 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REPAIR-0.1.5"
-  status: "authorized"
-  purpose: "Repair candidate Protocol 0.1.4 against the accepted strict qualification re-audit, producing candidate Protocol 0.1.5 and a new immutable qualification bundle."
+  id: "TFP-METHOD-REAUDIT-0.1.5"
+  status: "bundle_freeze_pending"
+  purpose: "Freeze the repaired Protocol 0.1.5 governed-source bundle, then obtain a strict independent qualification re-audit."
   bounded: true
-  source_branch: "repair/tfp-adjudication-protocol-0.1.4"
-  source_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  source_bundle_commit: "9ef85fbd4c40d1a661db3a8219b3cd5c74934922"
-  source_reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
-  source_reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REAUDIT_DISPOSITION_0_1_0.md"
+  repair_branch: "repair/tfp-adjudication-protocol-0.1.5"
+  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  candidate_governance: "GOVERNANCE.md"
+  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REPAIR_PREREGISTRATION.md"
+  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REPAIR_COMPLIANCE_MATRIX.md"
+  qualification_source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_5_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
 
 next_action:
-  id: "TFP-METHOD-REPAIR-0.1.5"
-  action: "freeze_and_implement_protocol_0_1_5_repair"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  id: "TFP-METHOD-FREEZE-0.1.5"
+  action: "freeze_immutable_qualification_bundle_and_launch_control"
   requirements:
-    - "repair_discriminator_completeness_and_bridge"
-    - "repair_all_accepted_minor_findings"
-    - "align_candidate_governance_and_state"
-    - "freeze_new_immutable_bundle"
-    - "freeze_strict_independent_qualification_prompt"
+    - "pin_five_governed_source_blobs"
+    - "pin_bundle_commit"
+    - "create_external_role_control_record"
+    - "assign_fresh_strict_auditor_before_audit"
+    - "do_not_modify_five_governed_blobs_after_audit_launch"
     - "do_not_authorize_theological_stress_test"
 
 canonical_adjudications: []
@@ -96,36 +100,20 @@ roles:
     may_not_serve_as_strict_auditor_for_same_cycle: true
 
 protocol_qualification_candidate:
-  version: "0.1.4"
-  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  governance_version: "0.1.3"
+  version: "0.1.5"
+  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  governance_version: "0.1.4"
   governance_path: "GOVERNANCE.md"
-  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  audited_bundle_identity_rule: "must_match_external_source_manifest_exactly"
-  status: "READY_FOR_PINNED_AUDIT"
+  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  status: "SOURCE_BUNDLE_NOT_YET_PINNED"
   qualified: false
   human_owner_material_authorship:
     protocol: false
     candidate_governance_amendment: false
-  program_lead_material_authorship:
-    protocol: true
-    candidate_governance_amendment: true
   human_owner_outcome_material_qualification_reviewer: false
-  governance_owner_ratification: "PENDING_FINAL_QUALIFICATION_ACCEPTANCE"
+  governance_owner_ratification: "REQUIRED_AT_QUALIFICATION"
   strict_audits_required: 1
-  qualification_role_matrix:
-    protocol_authors:
-      - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    governance_amendment_authors:
-      - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    outcome_material_qualification_reviewers: []
-    program_lead: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    strict_auditor: "TO_BE_ASSIGNED_FRESH_DISJOINT_LINEAGE"
-    required_disjointness:
-      - "not_protocol_author"
-      - "not_governance_amendment_author"
-      - "not_program_lead_for_repair_cycle"
-      - "not_outcome_material_qualification_reviewer"
   carried_limitations:
     - "SUPPORTED_WITHIN_SCOPE_retains_disciplined_expert_judgment_only_inside_documented_sufficiency_steps"
     - "metaphysical_and_revelation_questions_may_legitimately_remain_FRAMEWORK_DEPENDENCE"
@@ -148,6 +136,7 @@ protocol_qualification_schema:
     - "audit_dispositions"
     - "human_owner_acceptance_artifact"
     - "governance_ratification_artifact"
+    - "post_qualification_state_commit"
     - "qualified_at"
     - "limitations"
     - "status"
@@ -160,6 +149,10 @@ canonical_adjudication_schema:
     - "outcome"
     - "scope"
     - "protocol_version"
+    - "lifecycle_status"
+    - "authorization_artifact"
+    - "role_matrix_artifact"
+    - "evidence_exposure_ledger"
     - "accepted_at"
     - "synthesis_artifact"
     - "audit_artifacts"
@@ -174,6 +167,7 @@ canonical_adjudication_schema:
     - "limitations"
     - "negative_knowledge"
     - "reopen_if"
+    - "superseded_by"
 
 investigations:
   EMT:
@@ -241,7 +235,9 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.4"
     status: "completed_repair_required"
   - id: "TFP-METHOD-REPAIR-0.1.5"
-    status: "authorized"
+    status: "completed_pending_bundle_freeze"
+  - id: "TFP-METHOD-REAUDIT-0.1.5"
+    status: "bundle_freeze_pending"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
