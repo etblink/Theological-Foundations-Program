@@ -10,7 +10,9 @@ program:
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   adjudication_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
   method_status: "active_candidate"
-  adjudication_protocol_status: "candidate_requires_independent_audit"
+  adjudication_protocol_status: "repair_required"
+  adjudication_protocol_audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
+  adjudication_protocol_audit_disposition: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
   canonical_mutable_state: "STATE.yaml"
   global_truth_adjudication_reached: false
 
@@ -33,17 +35,17 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-AUDIT"
-  status: "audit_ready"
-  purpose: "Run an independent adversarial audit of TFP_ADJUDICATION_PROTOCOL_0_1_0.md before using it as the default procedure."
+  id: "TFP-METHOD-REPAIR"
+  status: "authorized"
+  purpose: "Repair TFP_ADJUDICATION_PROTOCOL_0_1_0.md only against accepted audit findings R1-R17, then freeze a focused independent re-audit gate."
   bounded: true
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_PROMPT_0_1_0.md"
+  audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
+  disposition: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
 
 next_action:
-  id: "TFP-METHOD-2"
-  action: "launch_independent_adversarial_audit"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_PROMPT_0_1_0.md"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
+  id: "TFP-METHOD-REPAIR-1"
+  action: "freeze_and_implement_protocol_0_1_1_repair"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
   requirements:
     - "search_for_apologetic_asymmetry"
     - "search_for_skeptical_asymmetry"
@@ -132,7 +134,7 @@ negative_knowledge:
 
 research_queue:
   - id: "TFP-METHOD-2"
-    status: "audit_ready"
+    status: "completed_repair_required"
     action: "independent_adversarial_audit_of_adjudication_protocol"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
@@ -157,3 +159,30 @@ state_invariants:
   - "Local findings do not automatically become global theological truth commitments."
   - "Negative knowledge is preserved."
   - "Closed or held work reopens only by condition or authorization."
+
+accepted_audits:
+  - id: "TFP-ADJUDICATION-PROTOCOL-AUDIT-0.1.0"
+    target: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
+    report: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
+    disposition: "REPAIR_REQUIRED"
+    program_acceptance: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
+    blocking_repairs:
+      - "R1"
+      - "R2"
+    major_repairs:
+      - "R3"
+      - "R4"
+      - "R5"
+      - "R6"
+      - "R7"
+      - "R8"
+      - "R9"
+      - "R10"
+      - "R11"
+      - "R12"
+      - "R13"
+      - "R14"
+      - "R15"
+    minor_repairs:
+      - "R16"
+      - "R17"
