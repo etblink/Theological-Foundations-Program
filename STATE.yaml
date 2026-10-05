@@ -11,7 +11,7 @@ program:
   adjudication_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
   repair_candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
   method_status: "active_candidate"
-  adjudication_protocol_status: "repair_candidate_reaudit_required"
+  adjudication_protocol_status: "repair_required_after_0_1_2_reaudit"
   focused_reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
   focused_reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
   adjudication_protocol_audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
@@ -148,8 +148,11 @@ research_queue:
     status: "completed_pending_reaudit"
     action: "repair_adjudication_protocol_to_0_1_2"
   - id: "TFP-METHOD-REAUDIT-0.1.2"
-    status: "reaudit_ready"
+    status: "completed_repair_required"
     action: "focused_independent_reaudit_of_protocol_0_1_2"
+  - id: "TFP-METHOD-REPAIR-0.1.3"
+    status: "authorized"
+    action: "repair_adjudication_protocol_to_0_1_3"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -267,3 +270,20 @@ protocol_repair_candidate_0_1_2:
     - "SUPPORTED_WITHIN_SCOPE_includes_disciplined_expert_judgment"
     - "metaphysical_and_revelation_claims_may_often_remain_underdetermined"
     - "AI_session_independence_is_procedural_not_guaranteed_prior_independence"
+
+accepted_reaudits_0_1_2:
+  - id: "TFP-ADJUDICATION-PROTOCOL-REAUDIT-0.1.2"
+    target: "TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
+    report: "TFP_ADJUDICATION_PROTOCOL_0_1_2_FOCUSED_REAUDIT_REPORT.md"
+    disposition: "REPAIR_REQUIRED"
+    program_acceptance: "TFP_ADJUDICATION_PROTOCOL_0_1_2_REAUDIT_DISPOSITION_0_1_0.md"
+    blocking: 0
+    major:
+      - "reviewer_to_auditor_self_review"
+      - "background_register_admission"
+      - "post_freeze_amendment_gating"
+      - "discriminator_tier_dominance_mapping"
+    carried_limitations:
+      - "SUPPORTED_WITHIN_SCOPE_retains_disciplined_expert_judgment"
+      - "metaphysical_and_revelation_claims_may_often_remain_underdetermined"
+      - "AI_session_independence_is_procedural_not_guaranteed_prior_independence"
