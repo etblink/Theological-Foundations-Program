@@ -1,0 +1,85 @@
+schema_version: "0.1.0"
+program: "Theological Foundations Program"
+qualification_target: "TFP Adjudication Protocol 0.1.5"
+governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
+source_manifest:
+  path: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  blob_sha: "71d85933f30741015c7bc71818bdb75b2c721740"
+
+candidate_protocol_authors:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+candidate_governance_authors:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+program_lead:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+
+source_manifest_preparer:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  substantive_qualification_reviewer: false
+
+human_relaying_operator:
+  actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+  role: "relays frozen prompts and returned reports"
+  substantive_qualification_reviewer: false
+  outcome_material_qualification_reviewer: false
+
+human_owner:
+  material_protocol_author: false
+  material_governance_author: false
+  outcome_material_qualification_reviewer: false
+  final_qualification_authority: true
+  governance_ratification_required_if_bundle_passes: true
+
+outcome_material_qualification_reviewers: []
+
+strict_auditor:
+  assigned: true
+  provider: "Anthropic"
+  configured_model: "claude-sonnet-5-5"
+  serving_model_verified: false
+  session_id: "session_01MTxXANMMsSKryWCDdUNb47"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01MTxXANMMsSKryWCDdUNb47"
+  assignment_declaration:
+    path: "TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_DECLARATION_2.md"
+    blob_sha: "def6aca0acd3bfaad56296dec16d5c88102220f2"
+  declaration: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+  prior_substantive_tfp_material_read_before_assignment: false
+  prior_tfp_audit_reasoning_seen: false
+  outcome_material_qualification_review_determinations_before_assignment: false
+  disjoint_from_program_lead_lineage: true
+  disjoint_from_protocol_author_lineage: true
+  disjoint_from_governance_author_lineage: true
+  disjoint_from_outcome_material_reviewers: true
+
+strict_audits_required: 1
+strict_audits_assigned: 1
+
+assignment_control:
+  first_attempt:
+    session_id: "session_01MTxXANMMsSKryWCDdUNb47"
+    outcome: "CANNOT_ESTABLISH_DISJOINTNESS"
+    substantive_tfp_material_read: false
+  clarified_handshake:
+    outcome: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+    environment_attestation_conflict_visible_to_auditor: false
+  assignment_final: true
+
+audit_launch_constraints:
+  auditor_must_read_only:
+    - "this role-control record"
+    - "the frozen substantive audit prompt"
+    - "the qualification source manifest"
+    - "the five governed files at the exact pinned commit"
+  auditor_must_not_read:
+    - "README"
+    - "prior audit or re-audit reports"
+    - "audit dispositions"
+    - "repair preregistrations"
+    - "repair compliance matrices"
+    - "previous protocol versions"
+    - "issue or PR discussion revealing prior findings"
+  no_repository_mutation: true
+  no_protocol_qualification_by_auditor: true
+  no_theological_stress_test_authorization: true
+
+status: "FROZEN_BEFORE_SUBSTANTIVE_AUDIT"
