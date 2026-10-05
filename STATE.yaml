@@ -40,8 +40,8 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-REAUDIT-0.1.4"
-  status: "bundle_freeze_pending"
-  purpose: "Complete the candidate Protocol 0.1.4 governed-source bundle, pin immutable source identities, then obtain a strict independent qualification re-audit."
+  status: "reaudit_ready"
+  purpose: "Run a strict independent qualification re-audit against the immutable governed-source bundle named by the qualification source manifest."
   bounded: true
   repair_branch: "repair/tfp-adjudication-protocol-0.1.4"
   candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
@@ -52,14 +52,15 @@ current_scope:
   launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
 
 next_action:
-  id: "TFP-METHOD-FREEZE-0.1.4"
-  action: "freeze_immutable_qualification_bundle_and_launch_control"
+  id: "TFP-METHOD-REAUDIT-0.1.4"
+  action: "launch_strict_independent_qualification_reaudit"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
+  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
   requirements:
-    - "pin_governed_bundle_commit"
-    - "pin_five_governed_file_blob_shas"
-    - "freeze_qualification_role_matrix"
+    - "audit_exact_manifest_pinned_bundle"
     - "strict_auditor_disjoint_from_authors_and_outcome_material_reviewers"
-    - "do_not_read_prior_audits_or_repair_control_artifacts"
+    - "auditor_does_not_read_prior_audits_or_repair_control_artifacts"
     - "no_repair_qualification_or_stress_test_during_audit"
 
 canonical_adjudications: []
@@ -102,7 +103,8 @@ protocol_qualification_candidate:
   governance_version: "0.1.3"
   governance_path: "GOVERNANCE.md"
   source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  status: "SOURCE_BUNDLE_NOT_YET_PINNED"
+  audited_bundle_identity_rule: "must_match_external_source_manifest_exactly"
+  status: "READY_FOR_PINNED_AUDIT"
   qualified: false
   human_owner_material_authorship:
     protocol: false
@@ -237,9 +239,9 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.3"
     status: "completed_repair_required"
   - id: "TFP-METHOD-REPAIR-0.1.4"
-    status: "completed_pending_bundle_freeze"
+    status: "completed_pending_reaudit"
   - id: "TFP-METHOD-REAUDIT-0.1.4"
-    status: "bundle_freeze_pending"
+    status: "reaudit_ready"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
