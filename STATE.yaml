@@ -50,6 +50,8 @@ current_scope:
   repair_branch: "repair/tfp-adjudication-protocol-0.1.3"
   repair_candidate: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3.md"
   repair_preregistration: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3_REPAIR_PREREGISTRATION.md"
+  repair_compliance_matrix: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3_REPAIR_COMPLIANCE_MATRIX.md"
+  repair_candidate_governance: "repair/tfp-adjudication-protocol-0.1.3:GOVERNANCE.md"
   source_reaudit: "TFP_ADJUDICATION_PROTOCOL_0_1_2_FOCUSED_REAUDIT_REPORT.md"
 
 next_action:
@@ -300,6 +302,8 @@ accepted_reaudits_0_1_2:
 protocol_candidate_0_1_3:
   protocol: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3.md"
   preregistration: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3_REPAIR_PREREGISTRATION.md"
+  compliance_matrix: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3_REPAIR_COMPLIANCE_MATRIX.md"
+  reaudit_prompt: "repair/tfp-adjudication-protocol-0.1.3:TFP_ADJUDICATION_PROTOCOL_0_1_3_FOCUSED_REAUDIT_PROMPT.md"
   status: "CANDIDATE__REPAIR_PENDING_REAUDIT"
   qualified: false
   second_stress_test_authorized: false
