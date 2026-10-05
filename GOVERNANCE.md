@@ -1,6 +1,6 @@
 # Theological Foundations Program — Governance
 
-**Version:** 0.1.4  
+**Version:** 0.1.5  
 **Status:** candidate governance amendment — not operative until explicit human-owner ratification  
 **Date:** 2026-10-05  
 **Governing charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`
@@ -112,9 +112,17 @@ An **independent reviewer** for a specific decision:
 - did not author or co-author the artifact/change being reviewed;
 - did not make the outcome-determinative decision under review;
 - has not been assigned a conflicting role in the same gate;
-- receives the frozen material necessary for review.
+- receives the frozen material necessary for review;
+- is actor-lineage disjoint from the program lead and from the author(s) of the item whose outcome-material treatment is being reviewed.
 
 Every outcome-material reviewer determination must be logged with reviewer identity/session provenance and the exact decision reviewed.
+
+A single reviewer may not hold every outcome-material reviewer role in one study. At minimum:
+- source-plan review and adverse-source probing must use different actor lineages;
+- necessary-proposition classification and discriminator-tier review must use different actor lineages unless the human owner explicitly authorizes an exception before G0 and the strict auditor treats the coupling as an audit limitation;
+- amendment-direction review and ledger-integrity review must use different actor lineages.
+
+These reviewer-separation rules are procedural safeguards; they do not imply that shared training priors are absent.
 
 ### Actor-lineage rule
 
@@ -202,6 +210,8 @@ It must state:
 The governed bundle may be pinned before the auditor is assigned. The role-control record must be completed and frozen **after auditor assignment but before the audit begins**, without modifying the five governed source blobs.
 
 The strict auditor must attest that the role-control record shows required disjointness.
+
+Every strict audit launch must be registered in the qualification/study role-control record **before** the audit begins. A later audit may be added, but no launched audit may be omitted from the eventual audit-set disclosure.
 
 ## 4. Core governance separations
 
@@ -294,6 +304,19 @@ Every completed lane must state:
 - or reopened.
 
 Held or closed work should have explicit `reopen_if` conditions where practical.
+
+For a qualified protocol, any later defect report that:
+- identifies a specific protocol clause or decision rule; and
+- states a plausible BLOCKING/MAJOR failure mode or reproducible counterexample
+
+automatically creates `QUALIFICATION_CHALLENGE_PENDING`.
+
+The program lead must record that status in STATE. An independent challenge-triage reviewer, disjoint from the protocol author and program lead, then classifies the report as:
+- `CREDIBLE_CHALLENGE`;
+- `NONCREDIBLE_CHALLENGE_WITH_REASON`;
+- or `INSUFFICIENT_DETAIL`.
+
+A credible challenge moves the protocol to `QUALIFICATION_CHALLENGED` and triggers the protocol impact-audit process. The program lead may not suppress or privately dismiss a qualifying report.
 
 ## 6. Claim typing
 
@@ -585,7 +608,7 @@ If this requires reconstructing state from dozens of prose files, governance has
 ## 24. Current governance state
 
 ```text
-GOVERNANCE_VERSION = 0.1.4
+GOVERNANCE_VERSION = 0.1.5
 STATUS = CANDIDATE_PENDING_HUMAN_OWNER_RATIFICATION
 OPERATIVE_VERSION = STATE_CONTROLLED
 CANONICAL_MUTABLE_STATE = STATE.yaml
