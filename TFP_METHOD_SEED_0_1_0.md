@@ -28,10 +28,17 @@ Every claim should first be classified, where possible, as one or more of:
 - linguistic;
 - interpretive;
 - philosophical;
+- metaphysical;
 - doctrinal;
 - empirical;
-- experiential / practical;
+- experiential / testimonial;
+- psychological / sociological explanatory;
+- normative / moral;
+- revelation;
+- authority / canon;
 - faith commitment.
+
+The operational protocol may additionally require trigger tags such as miracle / anomalous-event and prophecy.
 
 A claim may straddle categories.
 
@@ -150,7 +157,9 @@ A later doctrine does not automatically reveal what an earlier ritual meant.
 
 ## 9. Independent-reinvention null
 
-Whenever an environmental, psychological, social, or philosophical condition could naturally generate a concept more than once, independent reinvention must remain a live null hypothesis.
+Whenever an environmental, psychological, social, or philosophical condition could generate a concept more than once, independent reinvention must remain a live null hypothesis.
+
+Operationally, where this null is relevant, the study should represent independent reinvention as a specified rival explanation, state what evidence would distinguish it from transmission, and preserve the result even when the null is not favored.
 
 Examples:
 
