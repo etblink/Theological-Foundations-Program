@@ -14,7 +14,7 @@ program:
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   qualified_protocol: null
   candidate_protocol: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  candidate_protocol_status: "CANDIDATE__BUNDLE_PINNED__AUDITOR_ASSIGNMENT_PENDING"
+  candidate_protocol_status: "CANDIDATE__BUNDLE_PINNED__STRICT_AUDIT_READY"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -43,8 +43,8 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-REAUDIT-0.1.6"
-  status: "auditor_assignment_pending"
-  purpose: "Protocol 0.1.6 governed bundle is pinned; obtain a fresh strict-auditor assignment declaration, freeze external role control, then run the qualification audit."
+  status: "strict_audit_ready"
+  purpose: "Protocol 0.1.6 governed bundle and qualification role-control record are frozen; launch the assigned strict independent qualification audit in the exact assigned Claude session."
   bounded: true
   repair_branch: "repair/tfp-adjudication-protocol-0.1.6"
   candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
@@ -52,35 +52,30 @@ current_scope:
   governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
   source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
   source_manifest_blob_sha: "04e24321803eaa270b2da12166f5cb91e5566528"
-  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_AUDITOR_ASSIGNMENT_PROMPT.md"
-  auditor_assignment_prompt_blob_sha: "669842392c2df5f33144393a05ceb6e5dc0eb65f"
-  qualification_role_control: "PENDING_AUDITOR_ASSIGNMENT"
-  substantive_audit_prompt: "PENDING_ROLE_CONTROL_FREEZE"
+  auditor_assignment_declaration: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
+  auditor_assignment_declaration_blob_sha: "bd0393446503e25634bf36d1da0bdb7dbcec7fd7"
+  qualification_role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
+  qualification_role_control_blob_sha: "27b4cff305b4c3885aeb4b85aa16f496ab1d4a4a"
+  assigned_strict_auditor_session: "session_01B3sShWagLWUZLVuRndLHNd"
+  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  substantive_audit_prompt_blob_sha: "4b42604fedda59409cfdd81eb53d4f2256faba98"
 
 next_action:
-  id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.6"
-  action: "obtain_fresh_strict_auditor_assignment_declaration"
-  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_AUDITOR_ASSIGNMENT_PROMPT.md"
+  id: "TFP-METHOD-REAUDIT-0.1.6"
+  action: "launch_assigned_strict_independent_qualification_reaudit"
+  assigned_session: "session_01B3sShWagLWUZLVuRndLHNd"
+  launch_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
+  role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
   governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
   requirements:
-    - "use_new_claude_session_not_prior_0_1_5_auditor_session"
-    - "auditor_reads_no_repository_material_during_assignment_handshake"
-    - "auditor_declares_provider_model_session_lineage_and_prior_exposure"
-    - "freeze_external_role_control_after_assignment_before_substantive_audit"
-    - "do_not_authorize_theological_stress_test"
-
-roles:
-  human_owner:
-    id: "HUMAN_OWNER"
-    authority:
-      - "G0_authorization"
-      - "G5_acceptance"
-      - "protocol_qualification"
-      - "candidate_governance_ratification"
-  program_lead:
-    id: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    description: "current OpenAI ChatGPT TFP project-lead lineage"
-    may_not_serve_as_strict_auditor_for_same_cycle: true
+    - "use_exact_assigned_claude_session"
+    - "verify_source_manifest_and_role_control_blob_identities"
+    - "audit_only_exact_pinned_governed_bundle"
+    - "read_operative_governance_baseline_only_as_regression_reference_after_governed_sources"
+    - "do_not_read_prior_audits_or_repair_control_artifacts"
+    - "do_not_modify_repository"
+    - "do_not_qualify_or_authorize_theological_stress_test"
 
 qualification_candidate:
   version: "0.1.6"
@@ -91,8 +86,12 @@ qualification_candidate:
   source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
   source_manifest_blob_sha: "04e24321803eaa270b2da12166f5cb91e5566528"
   governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
-  role_control: "TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
-  status: "BUNDLE_PINNED__AUDITOR_ASSIGNMENT_PENDING"
+  role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
+  role_control_blob_sha: "27b4cff305b4c3885aeb4b85aa16f496ab1d4a4a"
+  assigned_strict_auditor_session: "session_01B3sShWagLWUZLVuRndLHNd"
+  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  substantive_audit_prompt_blob_sha: "4b42604fedda59409cfdd81eb53d4f2256faba98"
+  status: "BUNDLE_PINNED__STRICT_AUDIT_READY"
   qualified: false
   predecessor_protocol: "0.1.5"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
@@ -272,7 +271,7 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.6"
     status: "completed_pending_bundle_freeze"
   - id: "TFP-METHOD-REAUDIT-0.1.6"
-    status: "auditor_assignment_pending"
+    status: "strict_audit_ready"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
