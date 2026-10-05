@@ -1,6 +1,6 @@
 # Theological Foundations Program — Governance
 
-**Version:** 0.1.1  
+**Version:** 0.1.2  
 **Status:** active governance  
 **Date:** 2026-10-05  
 **Governing charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`
@@ -112,6 +112,8 @@ An **independent reviewer** for a specific decision:
 - has not been assigned a conflicting role in the same gate;
 - receives the frozen material necessary for review.
 
+Every outcome-material reviewer determination must be logged with reviewer identity/session provenance and the exact decision reviewed.
+
 Procedural independence between AI sessions or models does not guarantee independence of training priors. Model/session provenance must therefore be recorded when AI reviewers are used.
 
 ### Strict independent auditor
@@ -122,10 +124,33 @@ A **strict independent auditor** may not have authored or co-authored:
 - the comparative synthesis;
 - the repair under audit.
 
+The strict auditor also may not have made any **outcome-material reviewer determination** in the same study or protocol-qualification cycle, including:
+- candidate inclusion/exclusion review;
+- background-register inclusion/exclusion review;
+- post-freeze amendment classification;
+- evidence-coverage completeness review;
+- lane-amendment materiality review;
+- any other reviewer decision that can change a candidate, burden, coverage state, discriminator, proposition status, or study outcome.
+
+The strict auditor must be disjoint from the named independent reviewers for such determinations.
+
 The auditor may inspect frozen source material but may not edit the study while auditing.
 
+A protocol-qualification audit uses this same strict-independence standard.
+
 ### Human-owner dual-role exception
-The human owner may contribute evidence or discussion. If the human owner also materially authors the comparative synthesis, that dual role must be preregistered or recorded as an exception before G4, and canonical acceptance requires at least two strict independent audits or another independence safeguard explicitly accepted in the study charter.
+The human owner may contribute evidence or discussion. If the human owner materially authors any of the following:
+- G0 preregistration;
+- candidate steelman packet;
+- outcome-determinative lane;
+- comparative synthesis;
+- protocol version being qualified;
+
+that dual role must be preregistered or recorded as an exception before the applicable audit.
+
+For a study, canonical acceptance then requires at least two strict independent audits or another independence safeguard explicitly accepted in the study charter.
+
+For protocol qualification, if the human owner materially authored the protocol under review, qualification requires at least two strict independent protocol audits or another separately documented independence safeguard accepted before qualification.
 
 ### Role freeze
 Every G0 charter must name:
@@ -231,7 +256,7 @@ Held or closed work should have explicit `reopen_if` conditions where practical.
 
 ## 6. Claim typing
 
-Before adjudication, claims should be typed where possible as:
+Before adjudication, claims should be typed where possible as one or more of:
 
 - textual;
 - historical;
@@ -239,10 +264,19 @@ Before adjudication, claims should be typed where possible as:
 - linguistic;
 - interpretive;
 - philosophical;
+- metaphysical;
 - doctrinal;
 - empirical;
-- experiential/practical;
+- experiential/testimonial;
+- psychological/sociological explanatory;
+- normative/moral;
+- revelation;
+- authority/canon;
 - faith commitment.
+
+The operational protocol may also require trigger tags such as:
+- miracle/anomalous-event;
+- prophecy.
 
 A claim may span types.
 
@@ -456,7 +490,8 @@ They may:
 - collect evidence;
 - create frozen research artifacts;
 - propose dispositions;
-- update `STATE.yaml` to reflect already-authorized work and completed gates.
+- update `STATE.yaml` to reflect already-authorized work and completed gates;
+- after a valid G5 human-owner acceptance record exists, perform the mechanical STATE update that records that accepted adjudication.
 
 They may not silently:
 - redefine TFP's governing aim;
@@ -506,7 +541,7 @@ If this requires reconstructing state from dozens of prose files, governance has
 ## 24. Current governance state
 
 ```text
-GOVERNANCE_VERSION = 0.1.1
+GOVERNANCE_VERSION = 0.1.2
 CANONICAL_MUTABLE_STATE = STATE.yaml
 PROGRAM_CHARTER = TFP_PROGRAM_CHARTER_0_1_1.md
 CURRENT_METHOD = TFP_METHOD_SEED_0_1_0.md
