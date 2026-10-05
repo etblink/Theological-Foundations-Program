@@ -211,30 +211,44 @@ For each candidate, distinguish:
 - supporting but non-necessary propositions;
 - merely contextual propositions.
 
-An independent reviewer must confirm that:
+An independent reviewer confirms:
 - the classification follows the candidate's strongest frozen formulation;
-- difficult or vulnerable claims are not demoted merely to reduce burden;
+- difficult/vulnerable claims are not demoted to reduce burden;
 - comparable rivals face comparable necessity criteria.
 
-Then create a `NECESSARY_PROPOSITION_COVERAGE_MAP`.
+Create a `NECESSARY_PROPOSITION_COVERAGE_MAP`.
 
-For **every necessary proposition of every admitted candidate**, record at least one of:
+For **every necessary proposition of every admitted candidate**, record exactly one coverage mode:
 
-1. one or more preregistered CRITICAL/MATERIAL comparisons that bear on that proposition; or
-2. a `NONCOMPARATIVE_ROUTE` explaining why a pairwise discriminator is not meaningful and specifying the direct evidential/argument route by which the proposition will be adjudicated.
+1. `COMPARATIVE_ROUTE`
+   - one or more preregistered CRITICAL/MATERIAL comparisons bear on that proposition; or
+2. `NONCOMPARATIVE_CANDIDATE_SPECIFIC`
+   - pairwise comparison would distort the proposition; the direct evidence/argument route is specified; or
+3. `NONCOMPARATIVE_SHARED_FLOOR`
+   - the proposition is substantively the same necessary premise across all relevant candidates and therefore does not discriminate among them.
 
-The map must also identify:
-- relevant rival propositions/candidates where comparison is meaningful;
+For every map entry record:
+- candidate(s);
+- proposition ID;
+- route type;
+- comparator/discriminator IDs where applicable;
+- direct evidence/argument route where applicable;
 - expected evidence;
 - weakening/defeating evidence;
-- the lane(s) responsible;
-- coverage/certification requirement.
+- lane(s);
+- required coverage certification.
 
-An independent reviewer certifies `NECESSARY_PROPOSITION_COVERAGE_COMPLETE` before G0 closes.
+Independent certification of `NECESSARY_PROPOSITION_COVERAGE_COMPLETE` is required before G0 closes.
 
-No candidate may enter comparative adjudication without this certification.
+Ranking consequences:
 
-The necessary-proposition and coverage-map reviews are outcome-material; their reviewer(s) cannot serve as strict auditor.
+- a candidate-specific noncomparative necessary proposition must be `SUPPORTED_WITHIN_SCOPE` for that candidate to receive `BEST_SUPPORTED` or `CLOSEST_TO_TRUTH`;
+- a shared-floor necessary proposition may remain unresolved without changing relative ranking, but it blocks `TRUTH_WARRANTED` for every candidate that depends on it;
+- comparative-route propositions enter the A11/N2 dominance procedure.
+
+No candidate may enter comparative adjudication without a complete certified map.
+
+These reviews are outcome-material; reviewer(s) cannot serve as strict auditor.
 
 ### A7. Candidate universe
 Freeze admitted candidates and exclusions under Phase B.
@@ -404,14 +418,23 @@ A candidate is **INADEQUATE_WITHIN_SCOPE** if:
 - any necessary proposition is `CONTRADICTED_WITHIN_SCOPE`; or
 - an undefeated `TRUTH_CRITICAL_DEFEATER` defeats a necessary proposition or required candidate condition.
 
-An `EVIDENCE_AGAINST_WITHIN_SCOPE` necessary proposition creates a `MATERIAL_DEFEATER`.
-While an outcome-material MATERIAL_DEFEATER against a necessary proposition remains undefeated, the candidate is `ADEQUATE_BUT_RANKING_BLOCKED`: it may remain in the candidate universe but cannot dominate or receive `BEST_SUPPORTED`, `CLOSEST_TO_TRUTH`, or `TRUTH_WARRANTED`.
+A candidate is **ADEQUATE_BUT_RANKING_BLOCKED** if any candidate-specific necessary proposition is:
+- `EVIDENCE_AGAINST_WITHIN_SCOPE`;
+- `NOT_ESTABLISHED_WITHIN_SCOPE`;
+- `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`;
+or carries an undefeated MATERIAL_DEFEATER.
+
+A candidate-specific necessary proposition that is only `PARTIALLY_SUPPORTED_WITHIN_SCOPE` may remain RANKING_ELIGIBLE, but the partial-support limitation must be included in the comparison and blocks TRUTH_WARRANTED.
+
+A `NONCOMPARATIVE_CANDIDATE_SPECIFIC` necessary proposition must be `SUPPORTED_WITHIN_SCOPE` before the candidate is RANKING_ELIGIBLE, because no pairwise discriminator exists to compensate for weakness in that candidate-specific obligation.
+
+A `NONCOMPARATIVE_SHARED_FLOOR` unresolved premise does not choose among candidates but blocks TRUTH_WARRANTED for every dependent candidate.
 
 Only candidates that are adequate and not ranking-blocked are **RANKING_ELIGIBLE**.
 
 If no candidate is adequate under adequate coverage, use `NONE_ADEQUATE_WITHIN_SCOPE`.
-If exactly one candidate is adequate, Phase N3 uses `ONLY_ADEQUATE_CANDIDATE_WITHIN_SCOPE` rather than pretending pairwise dominance occurred.
-If coverage is inadequate, use `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`.
+If exactly one candidate is adequate, use `ONLY_ADEQUATE_CANDIDATE_WITHIN_SCOPE`.
+If two or more candidates remain adequate but none is ranking-eligible, use `UNDERDETERMINED_WITHIN_SCOPE` or `INSUFFICIENT_SIGNAL_WITHIN_SCOPE` according to coverage.
 
 ### A13. Expected / weakening evidence
 For each candidate state:
