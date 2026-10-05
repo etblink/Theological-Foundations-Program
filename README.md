@@ -1,6 +1,6 @@
 # Theological Foundations Program
 
-**Status:** active methodological development / preservation-first
+**Status:** active methodological development / governed truth-adjudication program
 
 The Theological Foundations Program (TFP) is a working research space for systematic comparison of theological claims, frameworks, and interpretations across scriptural, historical, philosophical, doctrinal, archaeological, and other relevant evidence.
 
@@ -63,6 +63,27 @@ It should be possible for an investigation to:
 - reject an argument;
 - or conclude that available evidence does not decide the question.
 
+## Governance and canonical state
+
+TFP now uses an explicit governance architecture:
+
+- [GOVERNANCE.md](GOVERNANCE.md) — durable operating rules;
+- [STATE.yaml](STATE.yaml) — **sole canonical mutable project state**;
+- [TFP_PROGRAM_CHARTER_0_1_1.md](TFP_PROGRAM_CHARTER_0_1_1.md) — governing truth-seeking purpose;
+- [TFP_METHOD_SEED_0_1_0.md](TFP_METHOD_SEED_0_1_0.md) — current provisional method.
+
+The README is orientation only. If prose here conflicts with `STATE.yaml` about what is currently active, held, authorized, or next, `STATE.yaml` governs operational state.
+
+Core governance separations:
+
+```text
+EVIDENCE ≠ SYNTHESIS
+SYNTHESIS ≠ ADJUDICATION
+ADJUDICATION ≠ AUTHORIZATION
+CANDIDATE ≠ CANONICAL
+LOCAL RESULT ≠ GLOBAL THEOLOGICAL VERDICT
+```
+
 ## Relationship to other projects
 
 TFP exists in the same global reality as the rest of the portfolio but is not created to validate NFC, PGH, FCP, ISR, or any other project.
@@ -78,9 +99,9 @@ See:
 - [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md)
 
 
-## Active bounded investigation
+## First bounded investigation — EMT Stage 1 complete
 
-The first authorized bounded research campaign is the **Environmental–Monumental–Theological Development Hypothesis (EMT)**.
+The first authorized bounded research campaign was the **Environmental–Monumental–Theological Development Hypothesis (EMT)**. Stage 1 is now complete and held; reopening is conditional under `STATE.yaml`.
 
 The original hypothesis is frozen before evidence adjudication. Current work has separated:
 - Geoffrey Drumm's explicit material/technological model;
@@ -107,7 +128,7 @@ LIGHTNING_SPECIFIC_MONUMENT_BRIDGE = NOT_ESTABLISHED
 ISR = PARKED
 ```
 
-The investigation remains bounded and does not define the whole TFP.
+The investigation remains bounded and does not define the whole TFP. Its primary program-level output was the provisional TFP method now being formalized.
 
 - [EMT_HANCOCK_CARLSON_SOURCE_REVIEW_0_1_0.md](EMT_HANCOCK_CARLSON_SOURCE_REVIEW_0_1_0.md)
 
@@ -125,9 +146,11 @@ The investigation remains bounded and does not define the whole TFP.
 ```text
 TFP_PROGRAM = ACTIVE
 TFP_CHARTER = GOVERNING
+TFP_GOVERNANCE = ACTIVE
+CANONICAL_STATE = STATE.yaml
 TFP_METHOD_SEED = ACTIVE_CANDIDATE
 EMT_STAGE_1 = COMPLETE
 EMT_REACTIVATION = CONDITIONAL
 ISR = PARKED
-NEXT = THEOLOGY_NATIVE_METHOD_FORMALIZATION
+NEXT = TFP_ADJUDICATION_PROTOCOL_0_1_0
 ```
