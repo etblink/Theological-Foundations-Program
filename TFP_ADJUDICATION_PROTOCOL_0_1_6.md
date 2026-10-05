@@ -334,7 +334,7 @@ A **SERIOUS_LIVE_BACKGROUND** is a background framework that:
 2. is materially relevant to at least one truth-critical proposition, discriminator, admissibility judgment, or causal inference;
 3. has material representation in serious scholarship/tradition OR an independently formulated argument sufficient to make it a live rational alternative;
 4. has not been canonically rejected within an applicable scope;
-5. is not contradicted by an independently established logical/evidential constraint that does **not** depend on which candidate happens to be admitted.
+5. is not contradicted by an independently established logical/evidential constraint that does not depend on which candidate happens to be admitted.
 
 Background admission is symmetric across confessional, skeptical, naturalistic, supernaturalist, metaphysical, historiographic, linguistic, and methodological backgrounds.
 
@@ -343,7 +343,7 @@ Background admission is symmetric across confessional, skeptical, naturalistic, 
 Before evidence acquisition:
 
 - the program lead constructs an initial register;
-- an independent reviewer performs a background-elicitation pass from the truth question and generic scope **without the initial register where feasible**;
+- an independent reviewer performs a background-elicitation pass from the truth question and generic scope without the initial register where feasible;
 - if blind elicitation is infeasible, the reason MUST be documented;
 - every proposed inclusion and exclusion is independently reviewed against A8(1)–(5);
 - a frozen `BACKGROUND_REGISTER_REVIEW` lists admitted and excluded backgrounds with reasons.
@@ -352,7 +352,7 @@ The reviewer who made inclusion/exclusion decisions cannot be the strict auditor
 
 ### A8.2 Granularity
 
-Split a background into separate variants only when the variants differ on an assumption that can change a truth-critical inference or outcome.
+Split a background into variants only when the variants differ on an assumption that can change a truth-critical inference or outcome.
 
 Merge variants when their differences are irrelevant to every frozen truth-critical inference.
 
@@ -360,7 +360,7 @@ The register must state:
 - dimensions;
 - variants within each dimension;
 - compatibility/incompatibility constraints;
-- the inferential point affected by each difference.
+- inferential point affected by each difference.
 
 ### A8.3 Joint combinations
 
@@ -369,8 +369,8 @@ Create a `BACKGROUND_INTERACTION_MATRIX`.
 For each pair or higher-order set of dimensions, mark whether assumptions jointly affect the same truth-critical inference.
 
 - If they do not interact materially, one-at-a-time sensitivity is sufficient with rationale.
-- If they do interact materially, every compatible joint combination that can change a required outcome condition must be tested.
-- If the compatible combination set becomes too large to test responsibly, narrow the scope transparently or return `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`; do not silently sample favorable combinations.
+- If they interact materially, every compatible joint combination that can change a required outcome condition must be tested.
+- If the compatible combination set becomes too large to test responsibly, narrow scope transparently or return INSUFFICIENT_SIGNAL_WITHIN_SCOPE; never silently sample favorable combinations.
 
 For each admitted background/combination, state:
 - propositions;
@@ -378,11 +378,15 @@ For each admitted background/combination, state:
 - exact inference(s) affected;
 - evidence/argument that would defeat or retire it.
 
-Definitions:
+Background sensitivity vocabulary:
 
-- **BACKGROUND_FLIP:** moving between two admitted single backgrounds or tested joint combinations changes the proposed study-level outcome label, candidate dominance, or eligibility for `TRUTH_WARRANTED`.
-- **MATERIAL_BACKGROUND_SENSITIVITY:** a necessary proposition or truth-critical comparison changes enough to weaken a required condition of the proposed outcome even when the headline label does not flip.
-- **ROBUST_ACROSS_LIVE_BACKGROUNDS:** no tested live background or required joint combination creates a BACKGROUND_FLIP or unresolved MATERIAL_BACKGROUND_SENSITIVITY that defeats a required condition.
+- **RANKING_FLIP:** candidate dominance or the identity/order of the relative ranking changes across admitted live backgrounds/combinations.
+- **TRUTH_WARRANT_FLIP:** relative ranking remains unchanged, but eligibility for TRUTH_WARRANTED changes.
+- **MATERIAL_BACKGROUND_SENSITIVITY:** a necessary proposition or truth-critical comparison changes enough to weaken a required condition without producing either flip above.
+- **RANKING_ROBUST:** no RANKING_FLIP across required live backgrounds/combinations.
+- **TRUTH_WARRANT_ROBUST:** no TRUTH_WARRANT_FLIP and no unresolved material sensitivity defeats a truth-warrant condition.
+
+I4 is the single governing rule for how these background states map to study-level outcomes.
 
 No naturalism, supernaturalism, confessional authority, or skepticism may be silently installed.
 
@@ -553,13 +557,19 @@ Preregister:
 Freeze standard G4 criteria plus question-specific risks.
 
 ### A16. Shared proposition map
-For any proposed `CLOSEST_TO_TRUTH` comparison, freeze before evidence acquisition:
-- shared truth-bearing propositions;
-- mapping rules across candidates;
-- distortion risks;
-- minimum dimensionality required by Phase N3.
 
-If no defensible shared map exists, `CLOSEST_TO_TRUTH` is unavailable.
+For any proposed CLOSEST_TO_TRUTH refinement, freeze before evidence acquisition:
+
+- at least two independent shared truth-bearing dimensions;
+- proposition mapping rules across candidates;
+- distortion risks;
+- dimension type: CRITICAL or MATERIAL;
+- the dimension-wise comparison rule used by N3;
+- what counts as A_BETTER_WARRANTED, B_BETTER_WARRANTED, TIED_OR_NONDISCRIMINATING, and UNMAKEABLE for each dimension.
+
+The shared map must be capable of applying the N3 dimension-dominance rule without a global score.
+
+If no defensible shared map exists, CLOSEST_TO_TRUTH is unavailable.
 
 ### A17. Protocol version and evidence-exposure ledger
 
@@ -883,7 +893,9 @@ Subtype:
 - `MIXED_TRADEOFF`;
 - `DEPENDENCY_CYCLE`.
 
-Use `FRAMEWORK_DEPENDENCE` when a BACKGROUND_FLIP occurs or when unresolved MATERIAL_BACKGROUND_SENSITIVITY defeats a required condition of the proposed study-level outcome.
+Use `FRAMEWORK_DEPENDENCE` only when a **RANKING_FLIP** occurs across serious live backgrounds/combinations.
+
+If ranking remains robust but truth-warrant eligibility flips, do **not** use this subtype for the ranking; preserve the relative result and record `TRUTH_WARRANT_FRAMEWORK_DEPENDENT`.
 
 ### `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`
 Evidence quality/coverage is inadequate.
@@ -1976,9 +1988,10 @@ Confidence and scope are separate.
 
 Even after qualification:
 
-- `SUPPORTED_WITHIN_SCOPE` retains disciplined expert judgment **only inside the documented sufficiency/disposition steps**; this limitation does not excuse undefined dominance, source-selection, or background-selection rules.
-- metaphysical/revelation questions may legitimately remain `UNDERDETERMINED_WITHIN_SCOPE: FRAMEWORK_DEPENDENCE` when serious live backgrounds or their required combinations genuinely change a truth-warrant condition;
-- AI-session/model independence is procedural and cannot guarantee independent training priors. This does not excuse shared-context/actor-lineage collapse, which is governed separately.
+- `SUPPORTED_WITHIN_SCOPE` retains disciplined expert judgment only inside documented sufficiency/disposition steps; this does not excuse undefined dominance, source-selection, background-selection, or eligibility rules.
+- metaphysical/revelation questions may legitimately remain `UNDERDETERMINED_WITHIN_SCOPE: FRAMEWORK_DEPENDENCE` when live backgrounds change **relative ranking**;
+- when relative ranking is robust but truth-warrant eligibility changes across live backgrounds, preserve the relative outcome and carry `TRUTH_WARRANT_FRAMEWORK_DEPENDENT` as the limitation;
+- AI-session/model independence is procedural and cannot guarantee independent training priors. This does not excuse shared-context/actor-lineage collapse.
 
 ---
 
