@@ -8,9 +8,11 @@ program:
   governing_charter: "TFP_PROGRAM_CHARTER_0_1_1.md"
   governance: "GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
+  active_governance_version: "0.1.0"
+  active_governance_ref: "main:GOVERNANCE.md"
   qualified_protocol: null
-  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.4:TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  candidate_governance_version: "0.1.3"
+  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.5:TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  candidate_governance_version: "0.1.4"
   candidate_protocol_status: "CANDIDATE__REPAIR_PENDING_REAUDIT"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
@@ -39,31 +41,32 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REAUDIT-0.1.4"
-  status: "reaudit_ready"
-  purpose: "Run a strict independent qualification re-audit against the immutable governed-source bundle named by the qualification source manifest."
+  id: "TFP-METHOD-REAUDIT-0.1.5"
+  status: "auditor_assignment_pending"
+  purpose: "Protocol 0.1.5 governed bundle is pinned; assign a fresh strict auditor, freeze external role control, then launch the qualification audit."
   bounded: true
-  repair_branch: "repair/tfp-adjudication-protocol-0.1.4"
-  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
+  repair_branch: "repair/tfp-adjudication-protocol-0.1.5"
+  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
   candidate_governance: "GOVERNANCE.md"
-  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REPAIR_PREREGISTRATION.md"
-  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REPAIR_COMPLIANCE_MATRIX.md"
-  qualification_source_manifest: "repair/tfp-adjudication-protocol-0.1.4:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  audited_bundle_commit: "9ef85fbd4c40d1a661db3a8219b3cd5c74934922"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REPAIR_PREREGISTRATION.md"
+  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REPAIR_COMPLIANCE_MATRIX.md"
+  qualification_source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
+  qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT.md"
+  launch_prompt: "PENDING_ROLE_CONTROL_FREEZE"
 
 next_action:
-  id: "TFP-METHOD-REAUDIT-0.1.4"
-  action: "launch_strict_independent_qualification_reaudit"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
-  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  governed_bundle_commit: "9ef85fbd4c40d1a661db3a8219b3cd5c74934922"
+  id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.5"
+  action: "obtain_fresh_auditor_assignment_declaration"
+  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT.md"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
   requirements:
-    - "audit_exact_manifest_pinned_bundle"
-    - "strict_auditor_disjoint_from_authors_and_outcome_material_reviewers"
-    - "auditor_does_not_read_prior_audits_or_repair_control_artifacts"
-    - "no_repair_qualification_or_stress_test_during_audit"
+    - "auditor_reads_no_repository_material_during_assignment_handshake"
+    - "auditor_declares_model_session_lineage_and_prior_exposure"
+    - "freeze_role_control_after_assignment_before_substantive_audit"
+    - "do_not_authorize_theological_stress_test"
 
 canonical_adjudications: []
 
@@ -100,36 +103,21 @@ roles:
     may_not_serve_as_strict_auditor_for_same_cycle: true
 
 protocol_qualification_candidate:
-  version: "0.1.4"
-  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  governance_version: "0.1.3"
+  version: "0.1.5"
+  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
+  governance_version: "0.1.4"
   governance_path: "GOVERNANCE.md"
-  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  audited_bundle_identity_rule: "must_match_external_source_manifest_exactly"
-  status: "PINNED_AUDIT_READY"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
+  qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  status: "BUNDLE_PINNED__AUDITOR_ASSIGNMENT_PENDING"
   qualified: false
   human_owner_material_authorship:
     protocol: false
     candidate_governance_amendment: false
-  program_lead_material_authorship:
-    protocol: true
-    candidate_governance_amendment: true
   human_owner_outcome_material_qualification_reviewer: false
-  governance_owner_ratification: "PENDING_FINAL_QUALIFICATION_ACCEPTANCE"
+  governance_owner_ratification: "REQUIRED_AT_QUALIFICATION"
   strict_audits_required: 1
-  qualification_role_matrix:
-    protocol_authors:
-      - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    governance_amendment_authors:
-      - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    outcome_material_qualification_reviewers: []
-    program_lead: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    strict_auditor: "TO_BE_ASSIGNED_FRESH_DISJOINT_LINEAGE"
-    required_disjointness:
-      - "not_protocol_author"
-      - "not_governance_amendment_author"
-      - "not_program_lead_for_repair_cycle"
-      - "not_outcome_material_qualification_reviewer"
   carried_limitations:
     - "SUPPORTED_WITHIN_SCOPE_retains_disciplined_expert_judgment_only_inside_documented_sufficiency_steps"
     - "metaphysical_and_revelation_questions_may_legitimately_remain_FRAMEWORK_DEPENDENCE"
@@ -152,6 +140,7 @@ protocol_qualification_schema:
     - "audit_dispositions"
     - "human_owner_acceptance_artifact"
     - "governance_ratification_artifact"
+    - "post_qualification_state_commit"
     - "qualified_at"
     - "limitations"
     - "status"
@@ -164,9 +153,14 @@ canonical_adjudication_schema:
     - "outcome"
     - "scope"
     - "protocol_version"
+    - "lifecycle_status"
+    - "authorization_artifact"
+    - "role_matrix_artifact"
+    - "evidence_exposure_ledger"
     - "accepted_at"
     - "synthesis_artifact"
     - "audit_artifacts"
+    - "audit_reconciliation_artifact"
     - "human_acceptance_artifact"
     - "confidence"
     - "evidence_coverage"
@@ -178,6 +172,7 @@ canonical_adjudication_schema:
     - "limitations"
     - "negative_knowledge"
     - "reopen_if"
+    - "superseded_by"
 
 investigations:
   EMT:
@@ -243,7 +238,11 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.4"
     status: "completed_pending_reaudit"
   - id: "TFP-METHOD-REAUDIT-0.1.4"
-    status: "reaudit_ready"
+    status: "completed_repair_required"
+  - id: "TFP-METHOD-REPAIR-0.1.5"
+    status: "completed_pending_bundle_freeze"
+  - id: "TFP-METHOD-REAUDIT-0.1.5"
+    status: "auditor_assignment_pending"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -267,3 +266,21 @@ state_invariants:
   - "Negative knowledge is preserved."
   - "Closed or held work reopens only by condition or authorization."
   - "Historical audit detail lives in frozen artifacts and git history, not duplicated current-state blocks."
+
+qualification_role_control_policy:
+  artifact: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  location: "external_launch_control_not_one_of_five_governed_blobs"
+  complete_after_auditor_assignment_before_substantive_audit: true
+  required_fields:
+    - "candidate_protocol_authors"
+    - "candidate_governance_authors"
+    - "program_lead"
+    - "source_manifest_preparer"
+    - "human_relaying_operator"
+    - "outcome_material_qualification_reviewers"
+    - "strict_auditor_model_provider"
+    - "strict_auditor_session_id"
+    - "strict_auditor_actor_lineage"
+    - "required_strict_audit_count"
+    - "governed_bundle_commit"
+    - "source_manifest_blob_sha"
