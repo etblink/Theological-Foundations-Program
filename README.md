@@ -1,6 +1,6 @@
 # Theological Foundations Program
 
-**Status:** pre-inception / preservation-first
+**Status:** active methodological development / preservation-first
 
 The Theological Foundations Program (TFP) is a working research space for systematic comparison of theological claims, frameworks, and interpretations across scriptural, historical, philosophical, doctrinal, archaeological, and other relevant evidence.
 
@@ -67,4 +67,8 @@ TFP exists in the same global reality as the rest of the portfolio but is not cr
 
 Any structural bridge must be independently established.
 
-See [RESEARCH_SEED_0_1_0.md](RESEARCH_SEED_0_1_0.md) and [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md).
+See:
+
+- [RESEARCH_SEED_0_1_0.md](RESEARCH_SEED_0_1_0.md)
+- [FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md](FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md)
+- [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md)
