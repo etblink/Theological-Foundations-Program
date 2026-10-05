@@ -50,13 +50,14 @@ A protocol version becomes operative only when all occur:
    - Method Seed blob SHA;
 2. every required strict protocol audit returns `PASS` or `PASS_WITH_LIMITATIONS`;
 3. no unresolved BLOCKING or MAJOR defect remains;
-4. every audit of that same frozen bundle is disclosed under O4;
-5. the human owner creates a versioned qualification acceptance record that:
+4. the external qualification role-control record is completed/frozen before substantive audit and cited by the audit;
+5. every audit of that same frozen bundle is disclosed under O4;
+6. the human owner creates a versioned qualification acceptance record that:
    - cites the immutable source manifest;
    - cites every required audit and disposition;
    - ratifies the exact candidate Governance blob/version;
    - states carried limitations;
-6. canonical mutable `STATE.yaml` performs the **mechanical post-audit qualification transition** and records:
+7. canonical mutable `STATE.yaml` performs the **mechanical post-audit qualification transition** and records:
    - the audited STATE blob SHA;
    - the immutable governed bundle commit;
    - the post-qualification STATE commit.
@@ -140,10 +141,13 @@ Name:
 - candidate constructors;
 - lane authors;
 - initial claim-typing reviewer;
+- necessary-proposition/coverage-map reviewer;
 - source-plan reviewer;
-- coverage-state reviewer;
+- adverse-source-probe / coverage-state reviewer;
+- MAKEABLE certifier;
 - background-register inclusion/exclusion reviewer(s);
 - amendment-direction reviewer;
+- ledger-integrity reviewer;
 - fragility/LOW-confidence reviewer;
 - all other independent reviewers and their exact decision scopes;
 - intended strict independent auditor(s), if known;
