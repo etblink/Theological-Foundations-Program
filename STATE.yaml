@@ -156,6 +156,7 @@ canonical_adjudication_schema:
     - "accepted_at"
     - "synthesis_artifact"
     - "audit_artifacts"
+    - "audit_reconciliation_artifact"
     - "human_acceptance_artifact"
     - "confidence"
     - "evidence_coverage"
@@ -261,3 +262,21 @@ state_invariants:
   - "Negative knowledge is preserved."
   - "Closed or held work reopens only by condition or authorization."
   - "Historical audit detail lives in frozen artifacts and git history, not duplicated current-state blocks."
+
+qualification_role_control_policy:
+  artifact: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  location: "external_launch_control_not_one_of_five_governed_blobs"
+  complete_after_auditor_assignment_before_substantive_audit: true
+  required_fields:
+    - "candidate_protocol_authors"
+    - "candidate_governance_authors"
+    - "program_lead"
+    - "source_manifest_preparer"
+    - "human_relaying_operator"
+    - "outcome_material_qualification_reviewers"
+    - "strict_auditor_model_provider"
+    - "strict_auditor_session_id"
+    - "strict_auditor_actor_lineage"
+    - "required_strict_audit_count"
+    - "governed_bundle_commit"
+    - "source_manifest_blob_sha"
