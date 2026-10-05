@@ -42,8 +42,8 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-REAUDIT-0.1.5"
-  status: "bundle_freeze_pending"
-  purpose: "Freeze the repaired Protocol 0.1.5 governed-source bundle, then obtain a strict independent qualification re-audit."
+  status: "qualification_gate_prepared"
+  purpose: "Candidate Protocol 0.1.5 is repaired; qualification launch control will pin this governed snapshot externally and require a completed strict-auditor role-control record before audit."
   bounded: true
   repair_branch: "repair/tfp-adjudication-protocol-0.1.5"
   candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
@@ -55,14 +55,13 @@ current_scope:
   launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_5_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
 
 next_action:
-  id: "TFP-METHOD-FREEZE-0.1.5"
-  action: "freeze_immutable_qualification_bundle_and_launch_control"
+  id: "TFP-METHOD-REAUDIT-0.1.5"
+  action: "complete_external_launch_control_and_run_strict_independent_qualification_reaudit"
   requirements:
-    - "pin_five_governed_source_blobs"
-    - "pin_bundle_commit"
-    - "create_external_role_control_record"
-    - "assign_fresh_strict_auditor_before_audit"
-    - "do_not_modify_five_governed_blobs_after_audit_launch"
+    - "external_source_manifest_pins_this_exact_governed_snapshot"
+    - "external_role_control_completed_after_auditor_assignment_before_substantive_audit"
+    - "strict_auditor_disjoint_from_authors_program_lead_and_reviewers"
+    - "do_not_modify_five_governed_blobs_after_bundle_pin"
     - "do_not_authorize_theological_stress_test"
 
 canonical_adjudications: []
@@ -106,7 +105,7 @@ protocol_qualification_candidate:
   governance_path: "GOVERNANCE.md"
   source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
   qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
-  status: "SOURCE_BUNDLE_NOT_YET_PINNED"
+  status: "QUALIFICATION_GATE_PREPARED__EXTERNAL_PIN_PENDING"
   qualified: false
   human_owner_material_authorship:
     protocol: false
@@ -238,7 +237,7 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.5"
     status: "completed_pending_bundle_freeze"
   - id: "TFP-METHOD-REAUDIT-0.1.5"
-    status: "bundle_freeze_pending"
+    status: "qualification_gate_prepared"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
