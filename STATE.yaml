@@ -34,13 +34,15 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-AUDIT"
-  status: "authorized"
-  purpose: "Independently adversarially audit TFP_ADJUDICATION_PROTOCOL_0_1_0.md before using it as the default procedure."
+  status: "audit_ready"
+  purpose: "Run an independent adversarial audit of TFP_ADJUDICATION_PROTOCOL_0_1_0.md before using it as the default procedure."
   bounded: true
+  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_PROMPT_0_1_0.md"
 
 next_action:
   id: "TFP-METHOD-2"
-  action: "independent_adversarial_audit_of_adjudication_protocol"
+  action: "launch_independent_adversarial_audit"
+  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_PROMPT_0_1_0.md"
   target_artifact: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
   requirements:
     - "search_for_apologetic_asymmetry"
@@ -130,7 +132,7 @@ negative_knowledge:
 
 research_queue:
   - id: "TFP-METHOD-2"
-    status: "active"
+    status: "audit_ready"
     action: "independent_adversarial_audit_of_adjudication_protocol"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
