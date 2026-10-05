@@ -69,6 +69,7 @@ Any structural bridge must be independently established.
 
 See:
 
+- [TFP_PROGRAM_CHARTER_0_1_0.md](TFP_PROGRAM_CHARTER_0_1_0.md) — governing program anchor
 - [RESEARCH_SEED_0_1_0.md](RESEARCH_SEED_0_1_0.md)
 - [FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md](FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md)
 - [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md)
@@ -106,3 +107,5 @@ ISR = PARKED
 The investigation remains bounded and does not define the whole TFP.
 
 - [EMT_HANCOCK_CARLSON_SOURCE_REVIEW_0_1_0.md](EMT_HANCOCK_CARLSON_SOURCE_REVIEW_0_1_0.md)
+
+- [EMT_MOTIF_CONTINUITY_AUDIT_0_1_0.md](EMT_MOTIF_CONTINUITY_AUDIT_0_1_0.md)
