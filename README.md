@@ -72,3 +72,32 @@ See:
 - [RESEARCH_SEED_0_1_0.md](RESEARCH_SEED_0_1_0.md)
 - [FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md](FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md)
 - [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md)
+
+
+## Active bounded investigation
+
+The first authorized bounded research campaign is the **Environmental–Monumental–Theological Development Hypothesis (EMT)**.
+
+The original hypothesis is frozen before evidence adjudication. Current work has separated:
+- Geoffrey Drumm's explicit material/technological model;
+- independent Saharan–Nile archaeological continuity;
+- and the narrower lightning-specific bridge.
+
+Current artifacts:
+- [EMT_HYPOTHESIS_PREREGISTRATION_0_1_0.md](EMT_HYPOTHESIS_PREREGISTRATION_0_1_0.md)
+- [EMT_PRELIMINARY_EVIDENCE_AUDIT_0_1_0.md](EMT_PRELIMINARY_EVIDENCE_AUDIT_0_1_0.md)
+- [EMT_GEOFFREY_DRUMM_SOURCE_REVIEW_0_1_0.md](EMT_GEOFFREY_DRUMM_SOURCE_REVIEW_0_1_0.md)
+- [EMT_LANE_A_DRUMM_MATERIAL_CLAIMS_AUDIT_0_1_0.md](EMT_LANE_A_DRUMM_MATERIAL_CLAIMS_AUDIT_0_1_0.md)
+- [EMT_LANE_B_SAHARAN_NILE_CONTINUITY_AUDIT_0_1_0.md](EMT_LANE_B_SAHARAN_NILE_CONTINUITY_AUDIT_0_1_0.md)
+- [EMT_TWO_LANE_SYNTHESIS_0_1_0.md](EMT_TWO_LANE_SYNTHESIS_0_1_0.md)
+
+Current high-level result:
+
+```text
+CONTINUOUS_GENEALOGY = NOT_ESTABLISHED
+BROAD_SAHARA_NILE_BRIDGE = SUPPORTED
+LIGHTNING_SPECIFIC_MONUMENT_BRIDGE = NOT_ESTABLISHED
+ISR = PARKED
+```
+
+The investigation remains bounded and does not define the whole TFP.
