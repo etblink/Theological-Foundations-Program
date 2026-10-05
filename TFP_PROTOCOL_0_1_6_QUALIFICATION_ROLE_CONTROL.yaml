@@ -1,0 +1,22 @@
+schema_version: "0.1.0"
+qualification_target: "TFP Adjudication Protocol 0.1.6"
+governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
+source_manifest_path: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
+source_manifest_blob_sha: "04e24321803eaa270b2da12166f5cb91e5566528"
+program_lead_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+human_relay_operator: "HUMAN_OWNER_RELAY_OPERATOR"
+outcome_material_qualification_reviewers: []
+registered_strict_audits:
+  - audit_id: "TFP-0.1.6-STRICT-AUDIT-1"
+    provider: "Anthropic"
+    configured_model: "claude-sonnet-5-5"
+    session_id: "session_01B3sShWagLWUZLVuRndLHNd"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01B3sShWagLWUZLVuRndLHNd"
+    assignment_declaration: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+    prior_substantive_tfp_material_read: false
+    prior_tfp_audit_reasoning_seen: false
+    prior_outcome_material_review: false
+    disjoint_from_program_lead_lineage: true
+    disjoint_from_previous_0_1_5_auditor: true
+required_strict_audit_count: 1
+status: "FROZEN_BEFORE_SUBSTANTIVE_AUDIT"
