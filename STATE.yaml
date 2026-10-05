@@ -53,13 +53,13 @@ current_scope:
   qualification_source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
   governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
   qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
-  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT.md"
+  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT_0_1_1.md"
   launch_prompt: "PENDING_ROLE_CONTROL_FREEZE"
 
 next_action:
   id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.5"
-  action: "obtain_fresh_auditor_assignment_declaration"
-  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT.md"
+  action: "obtain_fresh_auditor_assignment_declaration_with_environment_attestation"
+  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT_0_1_1.md"
   source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
   governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
   requirements:
@@ -284,3 +284,13 @@ qualification_role_control_policy:
     - "required_strict_audit_count"
     - "governed_bundle_commit"
     - "source_manifest_blob_sha"
+
+assignment_attempts:
+  - id: "TFP-0.1.5-AUDITOR-ASSIGNMENT-1"
+    session: "session_01MTxXANMMsSKryWCDdUNb47"
+    provider_model: "Anthropic / configured claude-sonnet-5-5"
+    outcome: "CANNOT_ESTABLISH_DISJOINTNESS"
+    assigned: false
+    artifact: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
+    substantive_tfp_material_read: false
+    disposition: "assignment_control_only_not_an_audit_finding"
