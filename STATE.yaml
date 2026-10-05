@@ -9,11 +9,15 @@ program:
   governance: "GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   adjudication_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
+  repair_candidate_protocol: "repair/tfp-adjudication-protocol-0.1.2:TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
   method_status: "active_candidate"
-  adjudication_protocol_status: "repair_required"
+  adjudication_protocol_status: "repair_candidate_reaudit_required"
+  focused_reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
+  focused_reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
   adjudication_protocol_audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
   adjudication_protocol_audit_disposition: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
   canonical_mutable_state: "STATE.yaml"
+  canonical_branch: "main"
   global_truth_adjudication_reached: false
 
 authority:
@@ -35,26 +39,25 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REPAIR"
-  status: "authorized"
-  purpose: "Repair TFP_ADJUDICATION_PROTOCOL_0_1_0.md only against accepted audit findings R1-R17, then freeze a focused independent re-audit gate."
+  id: "TFP-METHOD-REAUDIT-0.1.2"
+  status: "reaudit_ready"
+  purpose: "Obtain an independent focused qualification re-audit of candidate Protocol 0.1.2."
   bounded: true
-  audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
-  disposition: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
+  repair_branch: "repair/tfp-adjudication-protocol-0.1.2"
+  repair_candidate: "repair/tfp-adjudication-protocol-0.1.2:TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
+  repair_preregistration: "repair/tfp-adjudication-protocol-0.1.2:TFP_ADJUDICATION_PROTOCOL_0_1_2_REPAIR_PREREGISTRATION.md"
+  repair_compliance_matrix: "repair/tfp-adjudication-protocol-0.1.2:TFP_ADJUDICATION_PROTOCOL_0_1_2_REPAIR_COMPLIANCE_MATRIX.md"
 
 next_action:
-  id: "TFP-METHOD-REPAIR-1"
-  action: "freeze_and_implement_protocol_0_1_1_repair"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
+  id: "TFP-METHOD-REAUDIT-0.1.2"
+  action: "launch_focused_independent_reaudit"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_2_FOCUSED_REAUDIT_REPORT.md"
+  launch_prompt: "repair/tfp-adjudication-protocol-0.1.2:TFP_ADJUDICATION_PROTOCOL_0_1_2_FOCUSED_REAUDIT_PROMPT.md"
   requirements:
-    - "search_for_apologetic_asymmetry"
-    - "search_for_skeptical_asymmetry"
-    - "test_hidden_authority_assumptions"
-    - "test_candidate_universe_rule"
-    - "test_evidence_burdens_by_claim_type"
-    - "test_governance_compatibility"
-    - "test_reproducibility_and_cold_start"
-    - "identify_repairs_before_second_stress_test"
+    - "strict_independent_auditor"
+    - "auditor_does_not_read_prior_audits_or_repair_control_artifacts"
+    - "audit_governed_source_set_only"
+    - "no_repair_or_stress_test_during_audit"
 
 canonical_adjudications: []
 
@@ -67,7 +70,7 @@ methodology:
   candidate_completeness_gate: true
   independent_reinvention_null_required_when_applicable: true
   no_opaque_global_score: true
-  continuity_ladder:
+  continuity_framework:
     C0: "recurrence_only"
     C1: "material_continuity"
     C2: "carrier_continuity"
@@ -136,6 +139,18 @@ research_queue:
   - id: "TFP-METHOD-2"
     status: "completed_repair_required"
     action: "independent_adversarial_audit_of_adjudication_protocol"
+  - id: "TFP-METHOD-REPAIR-1"
+    status: "completed_pending_reaudit"
+    action: "repair_adjudication_protocol_to_0_1_1"
+  - id: "TFP-METHOD-REAUDIT-1"
+    status: "completed_repair_required"
+    action: "focused_independent_reaudit_of_protocol_0_1_1"
+  - id: "TFP-METHOD-REPAIR-0.1.2"
+    status: "completed_pending_reaudit"
+    action: "repair_adjudication_protocol_to_0_1_2"
+  - id: "TFP-METHOD-REAUDIT-0.1.2"
+    status: "reaudit_ready"
+    action: "focused_independent_reaudit_of_protocol_0_1_2"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -186,3 +201,70 @@ accepted_audits:
     minor_repairs:
       - "R16"
       - "R17"
+
+accepted_reaudits:
+  - id: "TFP-ADJUDICATION-PROTOCOL-REAUDIT-0.1.1"
+    target: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
+    report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
+    disposition: "REPAIR_REQUIRED"
+    program_acceptance: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
+    blocking: 0
+    major:
+      - "roles_and_independence"
+      - "background_framework_handling"
+      - "lane_combination"
+      - "post_freeze_amendment_gating"
+      - "audit_outcomes_and_severity"
+    carried_limitations:
+      - "SUPPORTED_WITHIN_SCOPE_retains_expert_judgment"
+      - "metaphysical_and_revelation_claims_may_often_remain_underdetermined"
+      - "AI_session_independence_is_imperfect"
+
+roles:
+  human_owner:
+    id: "HUMAN_OWNER"
+    description: "human project/repository owner"
+    authority:
+      - "authorize_bounded_truth_adjudication_at_G0"
+      - "accept_canonical_theological_adjudication_at_G5"
+      - "qualify_protocol_after_required_independent_audit"
+  program_lead:
+    id: "PROGRAM_LEAD"
+    description: "current authorized research-orchestration role"
+    authority_boundary: "may coordinate authorized work but may not self-authorize truth studies, override failed required audits, or substitute for human acceptance"
+
+canonical_adjudication_schema:
+  required_fields:
+    - "id"
+    - "question"
+    - "outcome"
+    - "scope"
+    - "accepted_at"
+    - "synthesis_artifact"
+    - "audit_artifact"
+    - "human_acceptance_artifact"
+    - "confidence"
+    - "evidence_coverage"
+    - "background_assumptions"
+    - "residual_alternatives"
+    - "limitations"
+    - "negative_knowledge"
+    - "reopen_if"
+
+legacy_state:
+  EMT_stage_1:
+    classification: "legacy_research_disposition"
+    canonical_theological_adjudication: false
+    reason: "predates qualified TFP adjudication protocol"
+
+protocol_repair_candidate_0_1_2:
+  protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
+  preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_2_REPAIR_PREREGISTRATION.md"
+  compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_2_REPAIR_COMPLIANCE_MATRIX.md"
+  status: "CANDIDATE__REPAIR_PENDING_REAUDIT"
+  qualified: false
+  second_stress_test_authorized: false
+  carried_limitations:
+    - "SUPPORTED_WITHIN_SCOPE_includes_disciplined_expert_judgment"
+    - "metaphysical_and_revelation_claims_may_often_remain_underdetermined"
+    - "AI_session_independence_is_procedural_not_guaranteed_prior_independence"
