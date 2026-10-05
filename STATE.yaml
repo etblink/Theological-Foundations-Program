@@ -42,8 +42,8 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-REAUDIT-0.1.5"
-  status: "auditor_assignment_pending"
-  purpose: "Protocol 0.1.5 governed bundle is pinned; assign a fresh strict auditor, freeze external role control, then launch the qualification audit."
+  status: "strict_audit_ready"
+  purpose: "Protocol 0.1.5 governed bundle and external role-control record are frozen; launch the assigned strict independent qualification audit in the exact assigned Claude session."
   bounded: true
   repair_branch: "repair/tfp-adjudication-protocol-0.1.5"
   candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
@@ -54,19 +54,27 @@ current_scope:
   governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
   qualification_role_control: "TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
   auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT_0_1_1.md"
-  launch_prompt: "PENDING_ROLE_CONTROL_FREEZE"
+  auditor_assignment_declaration: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_DECLARATION_2.md"
+  qualification_role_control: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+  qualification_role_control_blob_sha: "5fc09ee2526c9037c3607d1ff6e9d0dfd9104733"
+  assigned_strict_auditor_session: "session_01MTxXANMMsSKryWCDdUNb47"
+  launch_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_ADJUDICATION_PROTOCOL_0_1_5_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
 
 next_action:
-  id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.5"
-  action: "obtain_fresh_auditor_assignment_declaration_with_environment_attestation"
-  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_PROMPT_0_1_1.md"
+  id: "TFP-METHOD-REAUDIT-0.1.5"
+  action: "launch_assigned_strict_independent_qualification_reaudit"
+  assigned_session: "session_01MTxXANMMsSKryWCDdUNb47"
+  launch_prompt: "repair/tfp-adjudication-protocol-0.1.5:TFP_ADJUDICATION_PROTOCOL_0_1_5_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
   source_manifest: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_5.yaml"
+  role_control: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
   governed_bundle_commit: "ad4ef0e80f4e20f4270cab56cb046d3de176357c"
   requirements:
-    - "auditor_reads_no_repository_material_during_assignment_handshake"
-    - "auditor_declares_model_session_lineage_and_prior_exposure"
-    - "freeze_role_control_after_assignment_before_substantive_audit"
-    - "do_not_authorize_theological_stress_test"
+    - "use_exact_assigned_claude_session"
+    - "verify_role_control_and_manifest_blob_identities"
+    - "audit_only_exact_pinned_governed_bundle"
+    - "do_not_read_prior_audits_or_repair_control_artifacts"
+    - "do_not_modify_repository"
+    - "do_not_qualify_or_authorize_theological_stress_test"
 
 canonical_adjudications: []
 
@@ -242,7 +250,7 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.5"
     status: "completed_pending_bundle_freeze"
   - id: "TFP-METHOD-REAUDIT-0.1.5"
-    status: "auditor_assignment_pending"
+    status: "strict_audit_ready"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -294,3 +302,11 @@ assignment_attempts:
     artifact: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
     substantive_tfp_material_read: false
     disposition: "assignment_control_only_not_an_audit_finding"
+  - id: "TFP-0.1.5-AUDITOR-ASSIGNMENT-2"
+    session: "session_01MTxXANMMsSKryWCDdUNb47"
+    provider_model: "Anthropic / configured claude-sonnet-5-5"
+    outcome: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+    assigned: true
+    artifact: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_AUDITOR_ASSIGNMENT_DECLARATION_2.md"
+    role_control: "repair/tfp-adjudication-protocol-0.1.5:TFP_PROTOCOL_0_1_5_QUALIFICATION_ROLE_CONTROL.yaml"
+    substantive_tfp_material_read_before_assignment: false
