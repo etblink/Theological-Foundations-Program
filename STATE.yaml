@@ -11,7 +11,9 @@ program:
   adjudication_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
   repair_candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
   method_status: "active_candidate"
-  adjudication_protocol_status: "repair_candidate_reaudit_required"
+  adjudication_protocol_status: "repair_required_after_focused_reaudit"
+  focused_reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
+  focused_reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
   adjudication_protocol_audit: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
   adjudication_protocol_audit_disposition: "TFP_ADJUDICATION_PROTOCOL_AUDIT_DISPOSITION_0_1_0.md"
   canonical_mutable_state: "STATE.yaml"
@@ -36,25 +38,29 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REAUDIT"
-  status: "reaudit_ready"
-  purpose: "Obtain a focused independent re-audit of TFP_ADJUDICATION_PROTOCOL_0_1_1.md before qualification or any second stress test."
+  id: "TFP-METHOD-REPAIR-0.1.2"
+  status: "authorized"
+  purpose: "Repair TFP_ADJUDICATION_PROTOCOL_0_1_1.md against the accepted focused re-audit, producing candidate Protocol 0.1.2 and a new frozen re-audit gate."
   bounded: true
-  repair_branch: "repair/tfp-adjudication-protocol-0.1.1"
-  repair_candidate: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
-  reaudit_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_PROMPT.md"
+  source_branch: "repair/tfp-adjudication-protocol-0.1.1"
+  source_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
+  reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
+  reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
 
 next_action:
-  id: "TFP-METHOD-REAUDIT-1"
-  action: "launch_focused_independent_reaudit"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_PROMPT.md"
+  id: "TFP-METHOD-REPAIR-0.1.2"
+  action: "freeze_and_implement_protocol_0_1_2_repair"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_2.md"
   requirements:
-    - "auditor_did_not_author_repair"
-    - "auditor_does_not_read_first_audit_or_repair_matrix"
-    - "audit_R1_to_R15_equivalent_criteria"
-    - "regression_check_R16_R17"
-    - "no_repair_or_stress_test_during_audit"
+    - "repair_roles_and_independence"
+    - "repair_background_framework_robustness"
+    - "repair_lane_combination_rule"
+    - "repair_post_freeze_amendment_gating"
+    - "define_audit_outcomes_and_severity"
+    - "fold_required_minor_operational_fixes"
+    - "preserve_carried_limitations"
+    - "freeze_new_focused_reaudit_prompt"
+    - "do_not_authorize_second_stress_test"
 
 canonical_adjudications: []
 
@@ -140,8 +146,11 @@ research_queue:
     status: "completed_pending_reaudit"
     action: "repair_adjudication_protocol_to_0_1_1"
   - id: "TFP-METHOD-REAUDIT-1"
-    status: "reaudit_ready"
+    status: "completed_repair_required"
     action: "focused_independent_reaudit_of_protocol_0_1_1"
+  - id: "TFP-METHOD-REPAIR-0.1.2"
+    status: "authorized"
+    action: "repair_adjudication_protocol_to_0_1_2"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -192,3 +201,21 @@ accepted_audits:
     minor_repairs:
       - "R16"
       - "R17"
+
+accepted_reaudits:
+  - id: "TFP-ADJUDICATION-PROTOCOL-REAUDIT-0.1.1"
+    target: "TFP_ADJUDICATION_PROTOCOL_0_1_1.md"
+    report: "TFP_ADJUDICATION_PROTOCOL_0_1_1_FOCUSED_REAUDIT_REPORT.md"
+    disposition: "REPAIR_REQUIRED"
+    program_acceptance: "TFP_ADJUDICATION_PROTOCOL_0_1_1_REAUDIT_DISPOSITION_0_1_0.md"
+    blocking: 0
+    major:
+      - "roles_and_independence"
+      - "background_framework_handling"
+      - "lane_combination"
+      - "post_freeze_amendment_gating"
+      - "audit_outcomes_and_severity"
+    carried_limitations:
+      - "SUPPORTED_WITHIN_SCOPE_retains_expert_judgment"
+      - "metaphysical_and_revelation_claims_may_often_remain_underdetermined"
+      - "AI_session_independence_is_imperfect"
