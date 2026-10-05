@@ -32,6 +32,7 @@ Every claim should first be classified, where possible, as one or more of:
 - doctrinal;
 - empirical;
 - experiential / testimonial;
+- existential / practical;
 - psychological / sociological explanatory;
 - normative / moral;
 - revelation;
