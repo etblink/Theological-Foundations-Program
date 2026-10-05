@@ -1,0 +1,157 @@
+schema_version: "0.1.0"
+updated_at: "2026-10-05"
+
+program:
+  name: "Theological Foundations Program"
+  status: "active"
+  ultimate_aim: "truth_adjudication"
+  governing_charter: "TFP_PROGRAM_CHARTER_0_1_1.md"
+  governance: "GOVERNANCE.md"
+  current_method: "TFP_METHOD_SEED_0_1_0.md"
+  method_status: "active_candidate"
+  canonical_mutable_state: "STATE.yaml"
+  global_truth_adjudication_reached: false
+
+authority:
+  human_owner_final_authority:
+    - "program_purpose"
+    - "major_scope_changes"
+    - "consequential_program_level_truth_commitments"
+    - "governance_changes_that_alter_authority_boundaries"
+  research_agents_may:
+    - "execute_authorized_research"
+    - "create_frozen_research_artifacts"
+    - "propose_dispositions"
+    - "update_state_within_already_authorized_scope"
+  research_agents_may_not_silently:
+    - "redefine_governing_aim"
+    - "authorize_new_major_theological_program"
+    - "promote_local_result_to_global_truth_commitment"
+    - "erase_negative_knowledge"
+    - "reopen_held_work_without_condition_or_authorization"
+
+current_scope:
+  id: "TFP-METHOD-FORMALIZATION"
+  status: "authorized"
+  purpose: "Formalize a theology-native adjudication protocol inside the new governance architecture."
+  bounded: true
+
+next_action:
+  id: "TFP-METHOD-1"
+  action: "formalize_adjudication_protocol"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
+  requirements:
+    - "claim_type_matrix"
+    - "candidate_universe_rule"
+    - "source_hierarchy_rules"
+    - "evidence_strength_rules"
+    - "independent_evidence_lanes"
+    - "equal_standard_procedure"
+    - "uncertainty_representation"
+    - "adversarial_audit_gate"
+    - "canonical_acceptance_gate"
+    - "stop_and_reopen_rules"
+
+canonical_adjudications: []
+
+methodology:
+  claim_typing_required: true
+  link_decomposition_required: true
+  preregistration_for_complex_studies: true
+  equal_standard_required: true
+  negative_results_first_class: true
+  candidate_completeness_gate: true
+  independent_reinvention_null_required_when_applicable: true
+  no_opaque_global_score: true
+  continuity_ladder:
+    C0: "recurrence_only"
+    C1: "material_continuity"
+    C2: "carrier_continuity"
+    C3: "ritual_or_practice_continuity"
+    C4: "semantic_continuity"
+    C5: "named_textual_continuity"
+    C6: "genealogical_continuity"
+    C7: "doctrinal_continuity"
+
+investigations:
+  EMT:
+    name: "Environmental–Monumental–Theological Development Hypothesis"
+    status: "stage_1_complete"
+    stage_1_synthesis: "EMT_STAGE_1_SYNTHESIS_AND_ROUTING_0_1_0.md"
+    original_hypothesis: "EMT_HYPOTHESIS_PREREGISTRATION_0_1_0.md"
+    dispositions:
+      original_continuous_genealogy: "not_established"
+      broad_environment_to_theology_transformation: "partially_supported_to_strong"
+      hydrological_substitution_D_EMT_2: "partially_supported"
+      lightning_specific_monument_bridge: "not_established"
+      broad_sahara_nile_bridge: "supported"
+      direct_nabta_to_pyramid_genealogy: "not_established"
+    status_rule: "held_after_stage_1"
+    reopen_if:
+      - "new_reproducible_Drumm_or_ISIDA_material_data_with_traceable_provenance"
+      - "secure_early_Northeast_African_lightning_associated_archaeological_context"
+      - "material_new_evidence_for_symbolic_transmission_across_Western_Desert_Badarian_Naqada"
+      - "credible_independent_audit_challenges_a_stage_1_disposition"
+      - "later_TFP_study_requires_a_bounded_EMT_result"
+
+held:
+  - id: "EMT-STAGE-2"
+    reason: "Stage 1 reached a useful bounded closure; further expansion is conditional."
+  - id: "MAJOR-DOCTRINAL-COMPARISON"
+    reason: "Adjudication protocol not yet formalized or stress-tested."
+
+external_boundaries:
+  ISR:
+    status: "parked"
+    comparison_with_TFP: "suspended_during_TFP_independence_interval"
+
+negative_knowledge:
+  - id: "NK-EMT-001"
+    claim: "lightning-associated stone placement is established as an ancestor of Egyptian monumental architecture"
+    status: "not_established"
+    scope: "EMT Stage 1"
+    reopen_if:
+      - "secure archaeologically contextualized evidence"
+      - "independent replication of relevant material claims"
+  - id: "NK-EMT-002"
+    claim: "a direct Nabta Playa to pyramid engineering genealogy is established"
+    status: "not_established"
+    scope: "EMT Stage 1"
+    reopen_if:
+      - "new intermediate continuity evidence"
+  - id: "NK-EMT-003"
+    claim: "Geoffrey Drumm's pyramid chemical/lightning functional model is empirically validated"
+    status: "not_established"
+    scope: "publicly accessible evidence reviewed in EMT Stage 1"
+    reopen_if:
+      - "raw analytical data"
+      - "traceable sample provenance"
+      - "independent replication"
+
+research_queue:
+  - id: "TFP-METHOD-2"
+    status: "queued"
+    action: "independent_adversarial_audit_of_adjudication_protocol"
+  - id: "TFP-STRESS-2"
+    status: "queued_not_authorized"
+    candidate: "resurrection_claim"
+    purpose: "stress-test TFP method on a non-archaeological theological question"
+  - id: "TFP-METHOD-REVISION"
+    status: "queued"
+    action: "revise_method_after_second_stress_test"
+
+stop_rules:
+  underdetermined_is_valid: true
+  insufficient_signal_is_valid: true
+  hold_when_expected_information_gain_is_low: true
+  do_not_continue_lane_without_material_decision_value: true
+
+state_invariants:
+  - "STATE.yaml is the sole canonical mutable project-state file."
+  - "README is orientation, not authority."
+  - "Evidence does not automatically become synthesis."
+  - "Synthesis does not automatically become adjudication."
+  - "Adjudication does not automatically become authorization."
+  - "Local findings do not automatically become global theological truth commitments."
+  - "Negative knowledge is preserved."
+  - "Closed or held work reopens only by condition or authorization."
