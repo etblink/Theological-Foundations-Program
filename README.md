@@ -71,6 +71,7 @@ TFP now uses an explicit governance architecture:
 - [STATE.yaml](STATE.yaml) — **sole canonical mutable project state**;
 - [TFP_PROGRAM_CHARTER_0_1_1.md](TFP_PROGRAM_CHARTER_0_1_1.md) — governing truth-seeking purpose;
 - [TFP_METHOD_SEED_0_1_0.md](TFP_METHOD_SEED_0_1_0.md) — current provisional method.
+- [TFP_ADJUDICATION_PROTOCOL_0_1_0.md](TFP_ADJUDICATION_PROTOCOL_0_1_0.md) — candidate adjudication protocol; independent audit required.
 
 The README is orientation only. If prose here conflicts with `STATE.yaml` about what is currently active, held, authorized, or next, `STATE.yaml` governs operational state.
 
@@ -152,5 +153,5 @@ TFP_METHOD_SEED = ACTIVE_CANDIDATE
 EMT_STAGE_1 = COMPLETE
 EMT_REACTIVATION = CONDITIONAL
 ISR = PARKED
-NEXT = TFP_ADJUDICATION_PROTOCOL_0_1_0
+NEXT = INDEPENDENT_AUDIT_OF_TFP_ADJUDICATION_PROTOCOL_0_1_0
 ```
