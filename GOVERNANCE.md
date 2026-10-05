@@ -381,10 +381,12 @@ Research is not required to continue indefinitely.
 A lane should stop or hold when:
 
 - its authorized question is answered within scope;
-- further accessible evidence is unlikely to change the disposition;
+- the frozen coverage plan is complete or materially complete and further accessible evidence is unlikely to change a truth-critical disposition;
 - the next useful step depends on unavailable evidence;
-- expected information gain becomes low;
+- expected information gain becomes low **after** an auditable coverage record exists, or further truth-critical evidence is unavailable;
 - another program gate has higher value.
+
+Low expected information gain alone is not a substitute for documenting source/evidence coverage.
 
 `UNDERDETERMINED` and `INSUFFICIENT_SIGNAL` are legitimate results.
 
