@@ -1,4 +1,4 @@
-# Theological Foundations Program — Program Charter 0.1.0
+# Theological Foundations Program — Program Charter 0.1.1
 
 **Status:** governing program anchor — truth-adjudicative revision  
 **Date:** 2026-10-05
