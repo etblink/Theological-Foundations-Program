@@ -1,7 +1,7 @@
 # Theological Foundations Program — Governance
 
-**Version:** 0.1.3  
-**Status:** active governance  
+**Version:** 0.1.4  
+**Status:** candidate governance amendment — not operative until explicit human-owner ratification  
 **Date:** 2026-10-05  
 **Governing charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`
 
@@ -30,6 +30,8 @@ Defines:
 
 ### Durable operating rules
 `GOVERNANCE.md`
+
+The repository may contain a candidate Governance amendment under audit. Until explicit human-owner ratification, the currently operative Governance is the version named by canonical STATE on main. A candidate Governance file governs only the qualification package being evaluated; it does not silently become operative.
 
 Defines:
 - how research is authorized;
@@ -182,17 +184,24 @@ Every G0 charter must name:
 - actor-lineage identifiers/provenance for AI roles;
 - any approved dual-role exception.
 
-Every protocol-qualification cycle must preserve a **qualification role matrix** stating:
+Every protocol-qualification cycle must preserve a **qualification role-control record** outside the five immutable methodological source blobs.
+
+It must state:
 - candidate protocol author(s);
 - candidate Governance amendment author(s), if any;
 - human-owner material-authorship status;
 - every outcome-material qualification reviewer and decision;
 - program lead;
-- intended strict auditor(s);
-- actor-lineage provenance;
-- required strict-audit count under the dual-role rule.
+- source-manifest preparer;
+- human relaying operator, if any;
+- strict auditor identity/session/model/actor lineage once assigned;
+- actor-lineage provenance for every listed AI role;
+- required strict-audit count under the dual-role rule;
+- immutable governed bundle commit and source-manifest identity.
 
-The matrix must be frozen before the qualification audit launches.
+The governed bundle may be pinned before the auditor is assigned. The role-control record must be completed and frozen **after auditor assignment but before the audit begins**, without modifying the five governed source blobs.
+
+The strict auditor must attest that the role-control record shows required disjointness.
 
 ## 4. Core governance separations
 
@@ -539,10 +548,10 @@ The human owner retains final authority over:
 - acceptance of canonical theological adjudications;
 - acceptance of consequential program-level truth commitments;
 - qualification of adjudication protocols after required independent audit;
-- ratification of any candidate Governance amendment that changes authority boundaries;
+- ratification of every candidate Governance version included in a protocol-qualification bundle;
 - changes to governance itself when those changes alter authority boundaries.
 
-A protocol qualification that depends on a candidate Governance amendment is not complete until the human owner explicitly ratifies that Governance version in the qualification acceptance record.
+Whenever a qualification bundle contains a Governance version different from the currently operative version, protocol qualification is incomplete until the human owner explicitly ratifies that exact Governance blob/version in the qualification acceptance record. No separate judgment about whether its changes are "substantive enough" is required.
 
 ## 22. Conflict resolution
 
@@ -576,7 +585,9 @@ If this requires reconstructing state from dozens of prose files, governance has
 ## 24. Current governance state
 
 ```text
-GOVERNANCE_VERSION = 0.1.3
+GOVERNANCE_VERSION = 0.1.4
+STATUS = CANDIDATE_PENDING_HUMAN_OWNER_RATIFICATION
+OPERATIVE_VERSION = STATE_CONTROLLED
 CANONICAL_MUTABLE_STATE = STATE.yaml
 PROGRAM_CHARTER = TFP_PROGRAM_CHARTER_0_1_1.md
 CURRENT_METHOD = TFP_METHOD_SEED_0_1_0.md
