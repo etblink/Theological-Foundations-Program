@@ -8,7 +8,9 @@ program:
   governing_charter: "TFP_PROGRAM_CHARTER_0_1_1.md"
   governance: "GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
+  adjudication_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
   method_status: "active_candidate"
+  adjudication_protocol_status: "candidate_requires_independent_audit"
   canonical_mutable_state: "STATE.yaml"
   global_truth_adjudication_reached: false
 
@@ -31,26 +33,24 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-FORMALIZATION"
+  id: "TFP-METHOD-AUDIT"
   status: "authorized"
-  purpose: "Formalize a theology-native adjudication protocol inside the new governance architecture."
+  purpose: "Independently adversarially audit TFP_ADJUDICATION_PROTOCOL_0_1_0.md before using it as the default procedure."
   bounded: true
 
 next_action:
-  id: "TFP-METHOD-1"
-  action: "formalize_adjudication_protocol"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_0.md"
+  id: "TFP-METHOD-2"
+  action: "independent_adversarial_audit_of_adjudication_protocol"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_INDEPENDENT_AUDIT_0_1_0.md"
   requirements:
-    - "claim_type_matrix"
-    - "candidate_universe_rule"
-    - "source_hierarchy_rules"
-    - "evidence_strength_rules"
-    - "independent_evidence_lanes"
-    - "equal_standard_procedure"
-    - "uncertainty_representation"
-    - "adversarial_audit_gate"
-    - "canonical_acceptance_gate"
-    - "stop_and_reopen_rules"
+    - "search_for_apologetic_asymmetry"
+    - "search_for_skeptical_asymmetry"
+    - "test_hidden_authority_assumptions"
+    - "test_candidate_universe_rule"
+    - "test_evidence_burdens_by_claim_type"
+    - "test_governance_compatibility"
+    - "test_reproducibility_and_cold_start"
+    - "identify_repairs_before_second_stress_test"
 
 canonical_adjudications: []
 
@@ -130,7 +130,7 @@ negative_knowledge:
 
 research_queue:
   - id: "TFP-METHOD-2"
-    status: "queued"
+    status: "active"
     action: "independent_adversarial_audit_of_adjudication_protocol"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
