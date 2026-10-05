@@ -11,7 +11,7 @@ program:
   qualified_protocol: null
   candidate_protocol: "repair/tfp-adjudication-protocol-0.1.4:TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
   candidate_governance_version: "0.1.3"
-  candidate_protocol_status: "CANDIDATE__REPAIR_PENDING_REAUDIT"
+  candidate_protocol_status: "REPAIR_REQUIRED_AFTER_STRICT_REAUDIT"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -39,29 +39,27 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REAUDIT-0.1.4"
-  status: "reaudit_ready"
-  purpose: "Run a strict independent qualification re-audit against the immutable governed-source bundle named by the qualification source manifest."
+  id: "TFP-METHOD-REPAIR-0.1.5"
+  status: "authorized"
+  purpose: "Repair candidate Protocol 0.1.4 against the accepted strict qualification re-audit, producing candidate Protocol 0.1.5 and a new immutable qualification bundle."
   bounded: true
-  repair_branch: "repair/tfp-adjudication-protocol-0.1.4"
-  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
-  candidate_governance: "GOVERNANCE.md"
-  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REPAIR_PREREGISTRATION.md"
-  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REPAIR_COMPLIANCE_MATRIX.md"
-  qualification_source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  source_branch: "repair/tfp-adjudication-protocol-0.1.4"
+  source_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_4.md"
+  source_bundle_commit: "9ef85fbd4c40d1a661db3a8219b3cd5c74934922"
+  source_reaudit_report: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
+  source_reaudit_disposition: "TFP_ADJUDICATION_PROTOCOL_0_1_4_REAUDIT_DISPOSITION_0_1_0.md"
 
 next_action:
-  id: "TFP-METHOD-REAUDIT-0.1.4"
-  action: "launch_strict_independent_qualification_reaudit"
-  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
-  launch_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_4_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
-  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_4.yaml"
+  id: "TFP-METHOD-REPAIR-0.1.5"
+  action: "freeze_and_implement_protocol_0_1_5_repair"
+  target_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_5.md"
   requirements:
-    - "audit_exact_manifest_pinned_bundle"
-    - "strict_auditor_disjoint_from_authors_and_outcome_material_reviewers"
-    - "auditor_does_not_read_prior_audits_or_repair_control_artifacts"
-    - "no_repair_qualification_or_stress_test_during_audit"
+    - "repair_discriminator_completeness_and_bridge"
+    - "repair_all_accepted_minor_findings"
+    - "align_candidate_governance_and_state"
+    - "freeze_new_immutable_bundle"
+    - "freeze_strict_independent_qualification_prompt"
+    - "do_not_authorize_theological_stress_test"
 
 canonical_adjudications: []
 
@@ -241,7 +239,9 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.4"
     status: "completed_pending_reaudit"
   - id: "TFP-METHOD-REAUDIT-0.1.4"
-    status: "reaudit_ready"
+    status: "completed_repair_required"
+  - id: "TFP-METHOD-REPAIR-0.1.5"
+    status: "authorized"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
