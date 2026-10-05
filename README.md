@@ -12,6 +12,8 @@ The project is inspired by the rigor sought in comparative framework research, b
 
 The project begins without presuming that all traditions converge, that one existing system is correct, or that theological questions are reducible to scientific ones.
 
+**Ultimate research aim:** determine which theological claims or frameworks, **if any**, are true—or closest to the truth the evidence and arguments permit us to identify. Comparative support is a means to adjudication, not an end in itself.
+
 ## Initial evidence domains
 
 Potential evidence domains include:
@@ -69,7 +71,8 @@ Any structural bridge must be independently established.
 
 See:
 
-- [TFP_PROGRAM_CHARTER_0_1_0.md](TFP_PROGRAM_CHARTER_0_1_0.md) — governing program anchor
+- [TFP_PROGRAM_CHARTER_0_1_1.md](TFP_PROGRAM_CHARTER_0_1_1.md) — current governing program anchor (truth-adjudicative)
+- [TFP_PROGRAM_CHARTER_0_1_0.md](TFP_PROGRAM_CHARTER_0_1_0.md) — prior preserved charter
 - [RESEARCH_SEED_0_1_0.md](RESEARCH_SEED_0_1_0.md)
 - [FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md](FOUNDATIONAL_METHOD_DISCUSSION_0_1_0.md)
 - [OPEN_QUESTIONS_0_1_0.md](OPEN_QUESTIONS_0_1_0.md)
