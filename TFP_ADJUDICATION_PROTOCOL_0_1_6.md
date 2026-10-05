@@ -48,25 +48,56 @@ A protocol version becomes operative only when all occur:
    - Charter blob SHA;
    - audited STATE snapshot blob SHA;
    - Method Seed blob SHA;
+   - operative-Governance baseline blob SHA for regression reference;
 2. every required strict protocol audit returns `PASS` or `PASS_WITH_LIMITATIONS`;
 3. no unresolved BLOCKING or MAJOR defect remains;
 4. the external qualification role-control record is completed/frozen before substantive audit and cited by the audit;
-5. every audit of that same frozen bundle is disclosed under O4;
+5. every launched audit of that same frozen bundle is disclosed under the **Audit-set disclosure** rule;
 6. the human owner creates a versioned qualification acceptance record that:
-   - cites the immutable source manifest;
-   - cites every required audit and disposition;
+   - cites the immutable source manifest and its blob SHA;
+   - cites the qualification role-control artifact and its blob SHA;
+   - cites every required audit/disposition and any reconciliation artifact;
    - ratifies the exact candidate Governance blob/version;
    - states carried limitations;
-7. canonical mutable `STATE.yaml` performs the **mechanical post-audit qualification transition** and records:
-   - the audited STATE blob SHA;
-   - the immutable governed bundle commit;
-   - the post-qualification STATE commit.
+7. canonical mutable `STATE.yaml` performs the two-step mechanical qualification transition below.
 
-The five audited blobs remain immutable historical evidence. The mechanical post-audit STATE transition does **not** alter or retroactively replace the audited STATE snapshot and therefore does not invalidate the audit.
+### Two-step mechanical qualification transition
 
-Any substantive change to Charter, Governance, Method Seed, Protocol, or to the audited STATE content **before human qualification acceptance** invalidates the audit for qualification and requires a new immutable bundle/audit.
+The audited STATE blob remains immutable evidence.
 
-Static candidate-status text inside the frozen Protocol/Governance files is historical metadata for the audited bundle. Operative status after qualification is read only from canonical STATE.
+**Q1 — qualification transition commit**
+Only these fields may change:
+- `updated_at`;
+- `program.active_governance_version`;
+- `program.active_governance_ref`;
+- `program.qualified_protocol`;
+- candidate-protocol/current-scope/next-action/research-queue status fields needed to mark qualification complete.
+
+Q1 must cite:
+- the audited STATE blob;
+- governed bundle commit;
+- accepted human qualification artifact;
+- ratified Governance blob/version.
+
+**Q2 — transition-finalization commit**
+After Q1's commit SHA is known, Q2 may change only:
+- `updated_at`;
+- `qualified_protocol.qualification_transition_commit`, setting it to Q1's exact commit SHA.
+
+The current canonical Git commit then identifies Q2 without self-reference.
+
+Neither Q1 nor Q2 may alter:
+- any canonical adjudication content;
+- research evidence/results;
+- negative knowledge;
+- reopen conditions;
+- substantive protocol/governance text.
+
+The mechanical transition does **not** alter or retroactively replace the audited STATE snapshot.
+
+Any substantive change to Charter, Governance, Method Seed, Protocol, or audited STATE content before human qualification acceptance invalidates the audit for qualification and requires a new immutable bundle/audit.
+
+Static candidate-status text inside frozen Protocol/Governance files is historical metadata. Operative status after qualification is read only from canonical STATE.
 
 Protocol qualification does **not** authorize a theological stress test.
 
@@ -135,6 +166,7 @@ State:
 For the independent candidate-elicitation pass, provide this generic scope without disclosing the initial candidate list unless candidate identity is logically necessary to the question.
 
 ### A3. Role matrix
+
 Name:
 - human owner;
 - program lead;
@@ -142,21 +174,40 @@ Name:
 - lane authors;
 - initial claim-typing reviewer;
 - necessary-proposition/coverage-map reviewer;
+- discriminator-tier reviewer;
 - source-plan reviewer;
-- adverse-source-probe / coverage-state reviewer;
+- adverse-source reviewer;
+- coverage-state reviewer;
 - MAKEABLE certifier;
 - background-register inclusion/exclusion reviewer(s);
 - amendment-direction reviewer;
 - ledger-integrity reviewer;
-- fragility/LOW-confidence reviewer;
+- confidence reviewer;
+- fragility reviewer;
 - all other independent reviewers and their exact decision scopes;
 - intended strict independent auditor(s), if known;
 - actor-lineage identifiers/provenance for AI roles;
 - any human-owner dual-role exception.
 
-The program lead and every outcome-material reviewer MUST be disjoint from the strict auditor.
+Every outcome-material independent reviewer must be actor-lineage disjoint from:
+- the program lead;
+- the author(s) of the artifact/decision surface reviewed;
+- the strict auditor.
+
+Minimum reviewer separation:
+- source-plan reviewer ≠ adverse-source reviewer;
+- necessary-proposition reviewer ≠ discriminator-tier reviewer unless the human owner explicitly preregisters an exception and the strict auditor treats the coupling as a limitation;
+- amendment-direction reviewer ≠ ledger-integrity reviewer.
+
+A single actor lineage may not hold every outcome-material reviewer role.
 
 The human owner must explicitly authorize the study at G0.
+
+### Baseline-exposure disclosure
+
+Every actor in an outcome-material author/reviewer role records whether they had substantive pre-G0 familiarity with the study question/evidence beyond the frozen packet.
+
+Prior knowledge is not automatically disqualifying; the disclosure exists so the strict auditor can evaluate contamination risk.
 
 If the human owner materially authors the preregistration, candidate packet, outcome-determinative lane, synthesis, or makes an outcome-material reviewer determination, apply the Governance dual-role rule.
 
@@ -1599,29 +1650,56 @@ Any canonical theological adjudication or protocol qualification requires a stri
 
 For a study, use the G0 role matrix.
 
-For protocol qualification, use the frozen external **qualification role-control record** named by STATE and the qualification source manifest. The role-control record is launch control, not one of the five governed methodological blobs, and must be completed after auditor assignment but before substantive audit begins.
+For protocol qualification, use the frozen external qualification role-control record named by STATE and the qualification source manifest.
 
-The strict protocol auditor must be disjoint by actor lineage from:
+### Auditor-assignment handshake
+
+Before the auditor reads substantive project material:
+
+1. the prospective auditor receives an assignment-only prompt containing no prior audit/repair reasoning;
+2. the auditor declares:
+   - provider/model;
+   - session/conversation identifier;
+   - fresh-context status;
+   - continuation/fork/subagent/shared-context status;
+   - prior TFP audit/repair exposure;
+   - visible persistent-memory exposure;
+   - prior outcome-material qualification-review role;
+   - relationship to author/program-lead lineages;
+3. the auditor returns exactly one:
+   - `PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT`;
+   - `NOT_PROCEDURALLY_DISJOINT`;
+   - `CANNOT_ESTABLISH_DISJOINTNESS`;
+4. only a procedurally disjoint auditor may be assigned;
+5. after assignment, the external role-control record is frozen before substantive audit;
+6. the audit itself must occur in the exact assigned session/actor lineage.
+
+A repository checkout/branch name alone is not actor-lineage descent; inherited/shared conversational reasoning is.
+
+Every strict audit launch is registered in the role-control record before it begins.
+
+The strict protocol auditor must be actor-lineage disjoint from:
 - protocol author(s);
 - candidate Governance amendment author(s);
 - program lead for the repair cycle;
 - every outcome-material qualification reviewer;
-- source-manifest preparer if that person made any substantive qualification decision.
+- any source-manifest preparer who made a substantive qualification decision.
 
-The role-control record must also identify:
+The role-control record identifies:
 - source-manifest preparer;
 - human relaying operator, if any;
-- strict auditor model/provider/session/actor-lineage after assignment;
+- every registered strict audit;
+- strict auditor model/provider/session/actor-lineage;
 - required strict-audit count.
 
-The human operator may relay the frozen launch prompt/source manifest and returned audit report without collapsing independence, provided they do not transmit substantive prior audit reasoning or make reviewer decisions.
+The human relay may transmit frozen prompts/source identities/reports without becoming a reviewer, provided no substantive prior audit reasoning is added.
 
-Before audit launch, the auditor must attest:
-- actor/session/model provenance;
-- no prohibited prior outcome-material reasoning is available;
-- disjointness from the recorded author/reviewer lineages.
+Before audit launch, the auditor attests:
+- provenance;
+- prohibited prior reasoning is unavailable;
+- required disjointness.
 
-If the human owner materially authored or reviewed the candidate package, apply the Governance dual-role rule and required audit count.
+If the human owner materially authored/reviewed the candidate package, apply the Governance dual-role rule and required audit count.
 
 ### O2. Per-topic audit tests
 Each mandatory topic receives exactly one:
@@ -1839,7 +1917,11 @@ qualified_protocol:
   protocol_path:
   protocol_blob_sha:
   governed_bundle_commit:
-  source_manifest:
+  source_manifest_path:
+  source_manifest_blob_sha:
+  qualification_role_control_path:
+  qualification_role_control_blob_sha:
+  operative_governance_baseline_blob_sha:
   governance_version:
   governance_blob_sha:
   charter_blob_sha:
@@ -1850,17 +1932,19 @@ qualified_protocol:
   audit_reconciliation_artifact:
   human_owner_acceptance_artifact:
   governance_ratification_artifact:
-  post_qualification_state_commit:
+  qualification_transition_commit:
   qualified_at:
   limitations: []
-  status: "QUALIFIED"  # QUALIFIED | QUALIFICATION_CHALLENGED | DEQUALIFIED | SUPERSEDED
+  status: "QUALIFIED"  # QUALIFIED | QUALIFICATION_CHALLENGE_PENDING | QUALIFICATION_CHALLENGED | DEQUALIFIED | SUPERSEDED
   reopen_if: []
   superseded_by:
 ```
 
 If multiple strict audits are required, every audit/disposition appears in the arrays.
 
-The post-qualification STATE commit is permitted by §0 because it is a mechanical state transition that cites—rather than mutates—the immutable audited bundle.
+`qualification_transition_commit` is populated by Q2 with the exact Q1 commit SHA; it is not self-referential.
+
+The role-control and source-manifest blob SHAs make the qualification identity chain re-verifiable from STATE.
 
 ---
 
@@ -2169,6 +2253,35 @@ A **SERIOUS_RIVAL** is a candidate/explanation/reading that:
 - is not already defeated by an applicable canonical adjudication.
 
 The same rule applies regardless of confessional/skeptical orientation.
+
+### QUALIFICATION_ROLE_CONTROL
+
+```yaml
+qualification_target:
+governed_bundle_commit:
+source_manifest_path:
+source_manifest_blob_sha:
+operative_governance_baseline_blob_sha:
+candidate_protocol_authors: []
+candidate_governance_authors: []
+program_lead:
+source_manifest_preparer:
+source_manifest_preparer_substantive_reviewer: false
+human_relaying_operator:
+human_owner_material_authorship:
+human_owner_outcome_material_reviewer:
+outcome_material_qualification_reviewers: []
+registered_strict_audits:
+  - audit_id:
+    auditor_provider:
+    auditor_model:
+    auditor_session_id:
+    auditor_actor_lineage:
+    assignment_declaration:
+    status: ASSIGNED | COMPLETED | ABORTED
+required_strict_audit_count:
+freeze_identity:
+```
 
 ### MAKEABLE certifier
 
