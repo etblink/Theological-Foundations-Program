@@ -71,9 +71,9 @@ For every historical-development claim, separate:
 
 Likewise, lack of direct evidence is not automatically evidence that nothing happened.
 
-## 5. Continuity Ladder
+## 5. Continuity Framework (C0–C7)
 
-TFP should use the following ladder when evaluating historical or doctrinal continuity.
+TFP should use the following continuity relations when evaluating historical or doctrinal continuity. They are not a mandatory universal linear sequence.
 
 ### C0 — recurrence only
 A similar motif, idea, form, or practice appears in more than one period.
@@ -99,7 +99,7 @@ There is enough evidence to argue that the later idea historically derives from 
 ### C7 — doctrinal continuity
 Where theology is concerned, the later doctrine can be shown to preserve or intentionally develop a specific earlier proposition strongly enough that the relation is not merely thematic.
 
-No study may jump from C0/C1 directly to C6/C7.
+No study may jump from C0/C1 directly to C6/C7 without separately establishing the carrier, practice, semantic, textual, or other relations actually required by the claimed genealogy. Branching, convergence, loss, recovery, refunctionalization, and independent construction remain live possibilities.
 
 ## 6. Continuity of form is not continuity of meaning
 
@@ -315,7 +315,7 @@ If the method only works for archaeological genealogy, it is insufficient.
 TFP_METHOD = PROVISIONAL_0_1_0
 CLAIM_TYPING = REQUIRED
 LINK_DECOMPOSITION = REQUIRED
-CONTINUITY_LADDER = ACTIVE_CANDIDATE
+CONTINUITY_FRAMEWORK = ACTIVE_CANDIDATE
 ORIGIN_DEVELOPMENT_TRUTH_SEPARATION = REQUIRED
 NEGATIVE_RESULTS = FIRST_CLASS
 EQUAL_STANDARD = REQUIRED
