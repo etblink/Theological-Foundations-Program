@@ -332,6 +332,7 @@ Before adjudication, claims should be typed where possible as one or more of:
 - doctrinal;
 - empirical;
 - experiential/testimonial;
+- existential/practical;
 - psychological/sociological explanatory;
 - normative/moral;
 - revelation;
