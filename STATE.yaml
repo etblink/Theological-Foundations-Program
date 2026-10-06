@@ -10,11 +10,11 @@ program:
   active_governance_ref: "main:GOVERNANCE.md"
   active_governance_blob_sha: "45f3361781c32c04bb6055968dbaf24a120fb27c"
   candidate_governance_version: "0.1.5"
-  candidate_governance_ref: "repair/tfp-adjudication-protocol-0.1.6:GOVERNANCE.md"
+  candidate_governance_ref: "repair/tfp-adjudication-protocol-0.1.7:GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   qualified_protocol: null
-  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  candidate_protocol_status: "CANDIDATE__REPAIR_PENDING_BUNDLE_FREEZE"
+  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+  candidate_protocol_status: "CANDIDATE__BOUNDED_EXIT_GATE_REPAIR_COMPLETE__BUNDLE_FREEZE_PENDING"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -42,64 +42,55 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-FREEZE-0.1.6"
+  id: "TFP-METHOD-FREEZE-0.1.7"
   status: "bundle_freeze_pending"
-  purpose: "Freeze candidate Protocol 0.1.6 and aligned Governance/Method/STATE into an immutable qualification bundle, then assign a fresh strict independent auditor."
+  purpose: "Freeze the bounded Protocol 0.1.7 exit-gate repair into one immutable qualification bundle, then assign one fresh strict auditor."
   bounded: true
-  repair_branch: "repair/tfp-adjudication-protocol-0.1.6"
-  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
+  reanchor_checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
+  reanchor_acceptance: "TFP_PROGRAM_REANCHORING_ACCEPTANCE_0_1_0.md"
+  repair_branch: "repair/tfp-adjudication-protocol-0.1.7"
+  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
   candidate_governance: "GOVERNANCE.md"
-  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_6_REPAIR_PREREGISTRATION.md"
-  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_6_REPAIR_COMPLIANCE_MATRIX.md"
-  qualification_source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
-  qualification_role_control: "TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
-  auditor_assignment_prompt: "TFP_PROTOCOL_0_1_6_AUDITOR_ASSIGNMENT_PROMPT.md"
-  substantive_audit_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  repair_preregistration: "TFP_ADJUDICATION_PROTOCOL_0_1_7_REPAIR_PREREGISTRATION.md"
+  repair_compliance_matrix: "TFP_ADJUDICATION_PROTOCOL_0_1_7_REPAIR_COMPLIANCE_MATRIX.md"
+  qualification_source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+  qualification_role_control: "TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
+  auditor_assignment_prompt: "TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_PROMPT.md"
+  substantive_audit_prompt: "TFP_ADJUDICATION_PROTOCOL_0_1_7_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
+  new_meta_machinery_default: "PROHIBITED"
 
 next_action:
-  id: "TFP-METHOD-FREEZE-0.1.6"
-  action: "freeze_immutable_qualification_bundle"
+  id: "TFP-METHOD-FREEZE-0.1.7"
+  action: "freeze_one_immutable_exit_gate_bundle"
   requirements:
-    - "pin_candidate_governance_protocol_state_method_charter_blobs"
-    - "pin_operative_governance_baseline_blob"
+    - "pin_charter_candidate_governance_state_method_protocol"
+    - "pin_operative_governance_baseline"
     - "freeze_source_manifest"
-    - "assign_fresh_strict_auditor_via_assignment_handshake"
-    - "freeze_external_role_control_after_assignment"
-    - "launch_audit_only_after_role_control_freeze"
+    - "assign_one_fresh_strict_auditor"
+    - "freeze_complete_role_control_before_substantive_audit"
+    - "treat_next_audit_as_qualification_exit_gate"
     - "do_not_authorize_theological_stress_test"
 
-roles:
-  human_owner:
-    id: "HUMAN_OWNER"
-    authority:
-      - "G0_authorization"
-      - "G5_acceptance"
-      - "protocol_qualification"
-      - "candidate_governance_ratification"
-  program_lead:
-    id: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
-    description: "current OpenAI ChatGPT TFP project-lead lineage"
-    may_not_serve_as_strict_auditor_for_same_cycle: true
-
 qualification_candidate:
-  version: "0.1.6"
-  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
+  version: "0.1.7"
+  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
   governance_version: "0.1.5"
   governance_path: "GOVERNANCE.md"
   operative_governance_baseline_blob_sha: "45f3361781c32c04bb6055968dbaf24a120fb27c"
-  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
-  role_control: "TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
+  source_manifest: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+  role_control: "TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
   status: "SOURCE_BUNDLE_NOT_YET_PINNED"
   qualified: false
-  predecessor_protocol: "0.1.5"
+  predecessor_protocol: "0.1.6"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
-  predecessor_disposition_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REAUDIT_DISPOSITION_0_1_0.md"
+  predecessor_disposition_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_6_REAUDIT_DISPOSITION_0_1_0.md"
   human_owner_material_authorship:
     protocol: false
     candidate_governance_amendment: false
   human_owner_outcome_material_qualification_reviewer: false
   governance_owner_ratification: "REQUIRED_AT_QUALIFICATION"
   strict_audits_required: 1
+  qualification_exit_gate: true
   carried_limitations:
     - "SUPPORTED_WITHIN_SCOPE_retains_disciplined_expert_judgment_only_inside_documented_sufficiency_steps"
     - "framework_dependent_underdetermination_is_legitimate_when_relative_ranking_flips_across_live_backgrounds"
@@ -107,7 +98,7 @@ qualification_candidate:
     - "AI_session_model_independence_is_procedural_not_guaranteed_training_prior_independence"
 
 qualification_role_control_policy:
-  artifact: "TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
+  artifact: "TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
   location: "external_launch_control_not_one_of_methodological_blobs"
   complete_after_auditor_assignment_before_substantive_audit: true
   every_launched_audit_must_be_registered: true
@@ -269,6 +260,12 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.6"
     status: "completed_pending_bundle_freeze"
   - id: "TFP-METHOD-REAUDIT-0.1.6"
+    status: "completed_repair_required"
+  - id: "TFP-PROGRAM-REANCHOR-0.1.0"
+    status: "accepted"
+  - id: "TFP-METHOD-REPAIR-0.1.7"
+    status: "completed_pending_bundle_freeze"
+  - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "bundle_freeze_pending"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
@@ -294,3 +291,14 @@ state_invariants:
   - "Negative knowledge is preserved."
   - "Closed or held work reopens only by condition or authorization."
   - "Historical audit detail lives in frozen artifacts and git history, not duplicated current-state blocks."
+
+program_reanchor:
+  checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
+  status: "ACCEPTED"
+  reason: "Prevent methodology and protocol qualification from becoming the program."
+  governing_maxim: "The protocol exists to help TFP discover what is true. TFP does not exist to perfect the protocol."
+  proposed_next_protocol_cycle:
+    version: "0.1.7"
+    authorized: true
+    scope: "five accepted MAJOR defects plus directly interacting MINOR defects only"
+  post_qualification_direction: "bounded substantive theological truth study under separate preregistration"
