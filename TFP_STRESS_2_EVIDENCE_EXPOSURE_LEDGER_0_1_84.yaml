@@ -1,0 +1,2130 @@
+schema_version: "0.1.84"
+study_id: "TFP-STRESS-2"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "G4_F2_CLOSED__A17_LEDGER_INTEGRITY_CONFIRMED__G5_READINESS_REFRESH_PENDING"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_83.yaml"
+
+ledger_policy:
+  append_only: true
+  rewrite_prior_entries: false
+  outcome_material_exposure_definition: "Receipt, reading, viewing, or substantive summary of outcome-relevant evidence, reviewer reasoning, or a result/artifact capable of changing candidate, source-plan, route, discriminator, background, or study outcome."
+  pre_g0_activation_reason: "Reviewer B M-8: candidate steelman/source-plan/route construction can expose outcome-relevant material before G0; therefore the ledger must be active now rather than only after human authorization."
+  pre_g0_exposure_is_not_G1_authorization: true
+
+custodian:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+
+integrity_reviewer:
+  role_slot: "REVIEWER_D"
+  status: "COMPLETED__LEDGER_INTEGRITY_DELTA_CONFIRMED"
+  active_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE"
+  latest_report: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md"
+  latest_report_blob_sha: "3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
+  disjoint_from:
+    - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    - "REVIEWER_C amendment-direction reviewer"
+    - "REVIEWER_E strict auditor"
+
+baseline_exposure_disclosures:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "General pretrained/prior familiarity with common resurrection-debate claims, source names, and standard rival explanations; author of the pre-G0 study design. This baseline predates the study ledger and is disclosed rather than reconstructed as timed G1 evidence."
+  - actor_lineage: "HUMAN_OWNER"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "Strategic interest in the resurrection claim and general prior familiarity; no outcome-material reviewer role."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    category: "PRIOR_PROTOCOL_QUALIFICATION_CONTEXT"
+    detail: "Reviewer A previously audited Protocol 0.1.7 and knew a resurrection-claim study was queued before blind elicitation. It did not see the program-lead TFP-STRESS-2 design before its blind report."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    category: "GENERAL_PRETRAINED_FAMILIARITY"
+    detail: "Reviewer B disclosed general pretrained familiarity with the resurrection debate but no prior TFP-STRESS-2 reviewer/program-lead reasoning before its G0 control review."
+
+entries:
+  - sequence: 1
+    repository_commit: "45f87c78858c120a1d7349479a21b6ef0fe5c5f3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate universe"
+      - "background register"
+      - "claim typing"
+      - "Q1 scope"
+      - "necessary-proposition design"
+    note: "Program lead received and integrated Reviewer A's frozen blind report before any G1 acquisition."
+
+  - sequence: 2
+    repository_commit: "2c3a852"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_1.md + TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_1.yaml + qualified Protocol 0.1.7 + Governance 0.1.5"
+    exposure_class: "PRE_G0_CONTROL_REVIEW_INPUT"
+    amendment_surfaces:
+      - "coverage map"
+      - "source plan"
+      - "Q1 threshold"
+      - "C-HET control"
+      - "role architecture"
+    note: "Reviewer B read only prompt-permitted design/governing artifacts and no external resurrection evidence."
+
+  - sequence: 3
+    repository_commit: "2c3a852cb5a00416a6f214318a356fc0019f2edf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate necessary propositions"
+      - "coverage routes"
+      - "Q1 operationalization"
+      - "source-plan strata"
+      - "insufficient-signal threshold"
+      - "background retirement"
+      - "role separation"
+    note: "Program lead received Reviewer B's frozen report and began PRE_EVIDENCE_AMENDMENT repairs."
+
+  - sequence: 4
+    repository_commit: "4993f859d8ea37250e17d423fc26d2530ee5655e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate partition"
+      - "R submodel structure"
+      - "S family"
+      - "fabrication boundary"
+      - "candidate exclusions"
+      - "shared-floor classification"
+      - "background admission/refile"
+      - "Q1 embodiment wording"
+    note: "Program lead received Reviewer A's final B4/A8 report and implemented RR-1 through RR-8 as pre-G0 design repairs. No external resurrection evidence search occurred in this repair cycle."
+
+  - sequence: 5
+    repository_commit: "2802db858597793792a25c821cc3791f47d5410d"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_NARROW_RR_REREVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "pure seed-spread candidate completeness"
+      - "S2/S3 partition"
+      - "P-DEATH temporal anchoring"
+      - "module-ID reconciliation"
+      - "preregistration artifact identity"
+      - "background field restoration and BGD-11 scope"
+      - "Q1 row-2 symmetry"
+    note: "Program lead received Reviewer A's narrow RR re-review and implemented only the requested RR-prime repairs plus listed minor control repairs. No external resurrection evidence search occurred."
+
+  - sequence: 6
+    repository_commit: "85d5ad76bc38dbdd24d9623f08e25959f4b88fa1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_SHORT_RR_PRIME_CONFIRMATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate/background admission freeze"
+      - "mechanical module-ID hygiene"
+      - "C-HET internal pointer hygiene"
+      - "BGD-11 affected-proposition completeness"
+      - "packet-stage S2 native-formulation check"
+    note: "Reviewer A returned B4_A8_PASS_WITH_LIMITATIONS; no outcome-material defect remained. Program lead applied only the required mechanical fixes and harmless carried notes before recording admission freeze identities."
+
+  - sequence: 7
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_5/paragraph_2_on_the_third_day_he_rose_from_the_dead.index.html"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["R-TRANS steelman","R-PHYS refinement steelman"]
+    note: "Tradition-native doctrinal formulation reviewed only to define candidate strength; no historical proposition disposition assigned."
+
+  - sequence: 8
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.reasonablefaith.org/writings/scholarly-writings/historical-jesus/the-bodily-resurrection-of-jesus/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["R-TRANS steelman","R-PHYS refinement steelman","V boundary"]
+    note: "Proponent scholarly formulation and description of competing nonphysical formulations; evidential argument content was not adjudicated."
+
+  - sequence: 9
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://marcusjborg.org/posts-by-marcus/the-resurrection-of-jesus/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["V steelman"]
+    note: "Used to formulate a serious nonphysical/spiritual-real resurrection view; no event evidence disposition assigned."
+
+  - sequence: 10
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.alislam.org/book/hidden-truth/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S1 steelman"]
+    note: "Ahmadiyya tradition-native survival formulation; used only for packet fidelity."
+
+  - sequence: 11
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.alislam.org/articles/jesus-in-kashmir/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S1 steelman"]
+    note: "Ahmadiyya formulation including post-crucifixion recovery/meeting disciples; no truth disposition assigned."
+
+  - sequence: 12
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://quran.com/4/157?translations=20"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman","S3 steelman"]
+    note: "Tradition-native scriptural formulation used to bound noncrucifixion candidate content; not used as historical evidence."
+
+  - sequence: 13
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://islamqa.info/en/answers/10277"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman"]
+    note: "Traditional Sunni substitution/resemblance formulation used for native/proponent fidelity only."
+
+  - sequence: 14
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://islamqa.info/en/answers/224199"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman","S3 steelman"]
+    note: "Traditional explanatory survey used to distinguish substitution and non-substitution/confusion formulations; no event evidence disposition assigned."
+
+  - sequence: 15
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.taylorfrancis.com/chapters/oa-mono/10.4324/9781003037255-5/extramental-entity-jesus-died-cross-andrew-loke"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S3 steelman","S2 boundary"]
+    note: "Scholarly critical description used only to recognize/bound escape and mistaken-identity rival classes; criticism was not used as an evidential disposition."
+
+  - sequence: 16
+    repository_commit: "a21f8c15f8f095bf208be45b276e7f1f2b91e7a4"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_INVALID_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_INVALID_REVIEW_ATTEMPT"
+    amendment_surfaces:
+      - "S2 packet fidelity"
+    note: "Reviewer A verified repository identities but could not access any of the three authorized external formulation sources; disposition INVALID_REVIEW. No candidate-status decision was made."
+
+  - sequence: 17
+    repository_commit: "6772f6935671184c3fb3e6a096d274fbf88897bf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Exact three S2 formulation URLs authorized by the Reviewer A prompt, re-accessed solely for source-relay recovery"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__ACCESS_RECOVERY"
+    amendment_surfaces:
+      - "S2 source-relay scoping"
+    note: "Program Lead re-opened the exact three already-ledgered formulation sources to identify the minimum verbatim passages needed for human relay. No proposition disposition or candidate-status change was made. A nuance in IslamQA 224199 concerning Gospel reports of later meetings was recorded and deliberately left unresolved for Reviewer A."
+
+  - sequence: 18
+    repository_commit: "HUMAN_OPERATOR_RELAY__NO_REPOSITORY_COMMIT"
+    actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+    source_or_artifact: "Operator-relayed screenshots/text from Quran 4:157-158, IslamQA 10277 relevant sections, and IslamQA 224199 sections III-IV"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__HUMAN_RELAY"
+    amendment_surfaces:
+      - "S2 native/proponent fidelity"
+    note: "Relayed to the same Reviewer A session after its initial INVALID_REVIEW. Reviewer A disclosed screenshot-authenticity and third-source coverage limits."
+
+  - sequence: 19
+    repository_commit: "3ae8ba2b5ed77cbf37ebf983d464c87be1e3fb50"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "S2 candidate status"
+      - "substitution/misidentification node-rival status"
+      - "P-CRUC coverage"
+      - "candidate-universe count"
+      - "S3 packet-fidelity follow-up"
+    note: "Reviewer A disposition S2_RECLASSIFY_NODE_RIVAL_ONLY. Program Lead uses this as the independent review basis for a versioned PRE_EVIDENCE_AMENDMENT."
+
+  - sequence: 20
+    repository_commit: "bc05bd680c1459ae1e07425e14d3e9232b5651ee"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "FORM-S3-001 / Andrew Loke escape-hypothesis formulation, already ledgered at sequence 15"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__DEEPER_READ"
+    amendment_surfaces:
+      - "S3 native/proponent fidelity"
+      - "possible revised no-crucifixion full candidate"
+    note: "Deeper read of an already-ledgered formulation source shows a substitute-victim + later-appearance + convinced-resurrection chain. This is not silently mapped to S2/S3/F; Reviewer A must classify it before Wave 1 packet freeze."
+
+  - sequence: 21
+    repository_commit: "889abb32b7516e6eb72963fe448c452c32ae6711"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_SOURCE_RELAY_REQUIRED_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_SOURCE_ACCESS_FAILURE"
+    amendment_surfaces:
+      - "S3 packet fidelity"
+      - "escape-model classification"
+    note: "Reviewer A verified all pinned repository identities but could not access the exact Loke PDF. Disposition SOURCE_RELAY_REQUIRED. No S3 or escape-model decision was made."
+
+  - sequence: 22
+    repository_commit: "952859f7e98fe8e4e8808b4adf27510785d6f121"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Exact Library of Congress Andrew Loke PDF and official Taylor & Francis Chapter 5 landing page"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__ACCESS_RECOVERY_AND_IDENTITY_CHECK"
+    amendment_surfaces:
+      - "FORM-S3-001 identity"
+      - "S3 source-relay scoping"
+      - "escape-model classification"
+    note: "Program Lead verified the exact LOC PDF, located §5.4 on printed page 119/PDF page ~127, confirmed footnote 5 on the same page, and confirmed the ledgered Taylor & Francis URL is official Chapter 5 of the same eBook. No candidate-status decision was made."
+
+  - sequence: 23
+    repository_commit: "HUMAN_OPERATOR_RELAY__NO_REPOSITORY_COMMIT"
+    actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+    source_or_artifact: "Operator-relayed complete Andrew Loke §5.4 printed page 119 with §5.5 boundary and footnote 5"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__HUMAN_RELAY"
+    amendment_surfaces:
+      - "S3 native/proponent fidelity"
+      - "escape-model classification"
+    note: "Relayed to the same Reviewer A session after SOURCE_RELAY_REQUIRED. Reviewer A retained the disclosed screenshot-authenticity limitation."
+
+  - sequence: 24
+    repository_commit: "8d36f2c863e0d652cd1b09d76d3c6d2addfc5963"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "S3 candidate status"
+      - "escape-model status"
+      - "noncrucifixion node-rival family"
+      - "candidate-universe count"
+      - "P-CRUC shared-floor eligibility"
+    note: "Reviewer A disposition S3_AND_ESCAPE_MODEL_REPAIR_REQUIRED; S3_RECLASSIFY_NODE_RIVAL_ONLY; ESCAPE_MODEL_NODE_RIVAL_ONLY. Used as independent review basis for the S3 PRE_EVIDENCE_AMENDMENT."
+
+  - sequence: 25
+    repository_commit: "6eac67e1b6d1502476e2c730e0c286aa9e9b2fba"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://islamqa.info/en/answers/224199 exact URL recheck"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__VARIANT_VERIFICATION"
+    amendment_surfaces:
+      - "noncrucifixion/substitution node-rival variant taxonomy"
+    note: "Program Lead verified substitution/look-alike, mistaken-identification/witness-confusion, reported deliberate-misreport, and confused-crucifier variants. A distinct no-substitute confusion model was not separately confirmed. No historical proposition disposition was assigned."
+
+  - sequence: 26
+    repository_commit: "774acec8403438afe67eb6e93b30c873639adee9"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "P-CRUC A6 classification"
+      - "Q1 shared-floor failure handling"
+      - "coverage mode"
+      - "noncrucifixion node-rival steelman"
+      - "revised-candidate fallback"
+      - "admission freeze"
+    note: "Reviewer A disposition P_CRUC_SHARED_FLOOR_APPROVED_WITH_LIMITATIONS. The six conditions precedent are implemented before freeze 0.1.3; no historical P-CRUC disposition was assigned."
+
+  - sequence: 27
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Kamp et al. 2020, Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement, PMC7707065"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__PSYCHOLOGICAL_MECHANISM"
+    amendment_surfaces: ["H-IND packet","H-SOC packet","H-SEED-SPREAD packet","C-HET packets"]
+    note: "Used only to formulate psychologically serious subjective-experience mechanisms and phenomenological expectations. No claim was made that early Christian reports instantiate these mechanisms or are nonveridical."
+
+  - sequence: 28
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Roediger, Meade & Bergman 2001, Social contagion of memory"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__SOCIAL_MEMORY_MECHANISM"
+    amendment_surfaces: ["H-SOC packet","H-SEED-SPREAD packet","C-HET-SOC packet","C-HET-SEED-SPREAD packet"]
+    note: "Used to define social-memory convergence as a candidate mechanism; not treated as group hallucination evidence and not projected onto the founding movement."
+
+  - sequence: 29
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Edelson et al. 2011, Following the crowd: Brain substrates of long-term memory conformity"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__SOCIAL_MEMORY_MECHANISM"
+    amendment_surfaces: ["H-SOC packet","H-SEED-SPREAD packet","C-HET-SOC packet","C-HET-SEED-SPREAD packet"]
+    note: "Used to distinguish durable private memory change from public conformity and to prevent social-process packets from collapsing into mere report imitation."
+
+  - sequence: 30
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Sutton & Le Donne 2023, Remembering Jesus in Earliest Christianity"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__SOCIAL_MEMORY_AND_INTERPRETATION"
+    amendment_surfaces: ["L packet","C-HET packets"]
+    note: "Used to steelman socially framed memory and interpretive-development mechanisms. It does not itself assert the frozen L causal profile."
+
+  - sequence: 31
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Galbraith 2017, Whence the Giant Jesus and his Talking Cross?"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__SCRIPTURAL_NARRATIVE_DEVELOPMENT"
+    amendment_surfaces: ["L packet","C-HET packets"]
+    note: "Used as a concrete mechanism example of resurrection narrative shaping through scriptural interpretation. Its later Gospel-of-Peter setting is not projected backward as founding evidence."
+
+  - sequence: 32
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Albert Schweitzer, The Quest of the Historical Jesus, chapter 8 on Strauss"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__HISTORICAL_THEORY"
+    amendment_surfaces: ["L packet","C-HET packets"]
+    note: "Used only to trace a serious historical legendary/mythic-development formulation. Strauss's or Schweitzer's conclusions are not adopted as evidence."
+
+  - sequence: 33
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Hermann Samuel Reimarus, Fragments, resurrection-fraud section, accessed through public web mirror"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__HISTORICAL_PROPONENT"
+    amendment_surfaces: ["F packet"]
+    note: "Used to formulate the strongest historical founding-deception model. Mirror provenance is explicitly limited; no accusation of actual deception is accepted."
+
+  - sequence: 34
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Albert Schweitzer, The Quest of the Historical Jesus, chapter 2 on Reimarus"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__SECONDARY_PROVENANCE"
+    amendment_surfaces: ["F packet"]
+    note: "Used as public-domain scholarly-history provenance for Reimarus's deception formulation, not as evidence that founding deception occurred."
+
+  - sequence: 35
+    repository_commit: "4fea63d6b089b3ca9f4ff1ada0d68b1145f78325"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Richard Carrier, Jesus Studies by Dr. Carrier"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__NONHISTORICITY_PROPONENT"
+    amendment_surfaces: ["X-NONHISTORICITY-NODE-RIVAL packet"]
+    note: "Used to steelman a serious proponent model of Christian origins without a historical Jesus. No historicity disposition is assigned."
+
+  - sequence: 36
+    repository_commit: "e59679f1306fd94c7004630c057cd51ff5ce0d6e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_4.yaml packet-stage P-CHET-BODY operationalization"
+    exposure_class: "PRE_G0_INTERNAL_DESIGN_REPAIR__NO_NEW_EVIDENCE"
+    amendment_surfaces:
+      - "C-HET body module"
+      - "C-HET packet success/weakening conditions"
+      - "necessary-proposition coverage"
+    note: "Steelman construction revealed that the already-required P-CHET-BODY proposition was too generic to certify. It was operationalized without adding/removing any candidate or module and without acquiring new event evidence."
+
+  - sequence: 37
+    repository_commit: "f470f980998ff1bc93559cd7de841778cf3976dc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_3.yaml"
+    exposure_class: "PRE_G0_INTERNAL_PACKET_SCHEMA_REPAIR__NO_NEW_EVIDENCE"
+    amendment_surfaces:
+      - "noncrucifixion node-rival packet"
+      - "section 23A schema completeness"
+    note: "Pre-Reviewer-B freeze validation found that packet 0.1.2 contained the substantive rival controls but lacked several explicit common STEELMAN_PACKET schema fields. Version 0.1.3 makes those fields explicit using already-ledgered formulation material; no new source was opened and no historical proposition disposition changed."
+
+  - sequence: 38
+    repository_commit: "USER_RELAY__REVIEWER_B_REREVIEW"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "14 permitted control artifacts + 15 operative packets from TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_PROMPT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_B_CONTROL_REREVIEW_INPUT"
+    amendment_surfaces:
+      - "steelman equal strength"
+      - "P-CHET-BODY"
+      - "source plan"
+      - "necessary-proposition coverage"
+      - "Q1 control"
+    note: "Reviewer B disclosed exposure to the 14 control artifacts and 15 packets only; no external resurrection evidence and no Reviewer A report was opened."
+
+  - sequence: 39
+    repository_commit: "b84c4f4e9102f8d762042cec229b226ff73ddfc6"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "NB-1 route symmetry"
+      - "NB-2 C-HET body burden"
+      - "NB-3 body-evidence binding"
+      - "NB-4 formulation-source equality"
+      - "NB-5 source-plan completeness and probative absence"
+      - "NB-6 Q1 answer-table precedence"
+    note: "Reviewer B returned G0_REVIEW_REPAIR_REQUIRED with 0 blockers, 6 majors and 3 minors. Report preserved unchanged before repair."
+
+  - sequence: 40
+    repository_commit: "0015bc3deede0041bdd354bd01079476bca5293f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Stephen H. Smith, 'He appeared to Peter': reconsidering the hallucination hypothesis, Neotestamentica 53(1) (2019)"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__DIRECT_H_PROPONENT_SEARCH"
+    amendment_surfaces: ["H-SOC packet","H-SEED-SPREAD packet","H-family equal-strength review"]
+    note: "Used only as a direct scholarly proponent formulation for a hallucination/collective-delusion family; no historical proposition disposition assigned."
+
+  - sequence: 41
+    repository_commit: "0015bc3deede0041bdd354bd01079476bca5293f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Gerd Lüdemann, Resurrection of Christ: A Historical Inquiry, Google Books publisher/book metadata"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__DIRECT_H_PROPONENT_SEARCH"
+    amendment_surfaces: ["H-IND packet","H-SEED-SPREAD family boundary","H-family equal-strength review"]
+    note: "Used only to formulate a direct vision/self-deception origin family. No event evidence adjudicated."
+
+  - sequence: 42
+    repository_commit: "0015bc3deede0041bdd354bd01079476bca5293f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "David Friedrich Strauss, The Life of Jesus, Critically Examined — Cambridge primary edition metadata/chapter and Project Gutenberg open text"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__DIRECT_L_PROPONENT_SEARCH"
+    amendment_surfaces: ["L packet","C-HET later-development boundary"]
+    note: "Used to replace secondary-only access to Strauss with a direct primary proponent source for the mythic/legendary-development family."
+
+  - sequence: 43
+    repository_commit: "0015bc3deede0041bdd354bd01079476bca5293f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Markus Zehetbauer 2023 abstract on scriptural interpretation/remembrance in Easter faith"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__BOUNDED_L_SEARCH__NOT_SELECTED"
+    amendment_surfaces: ["L equal-strength search"]
+    note: "Reviewed only to test for a modern exact L formulation. Not selected because the accessible formulation allows visions to trigger/accompany the process and therefore does not cleanly match the frozen experience-nonnecessary L vector."
+
+  - sequence: 44
+    repository_commit: "0015bc3deede0041bdd354bd01079476bca5293f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Modern historiographical summary of Kirsopp Lake legendary-development/wrong-tomb model"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__BOUNDED_L_SEARCH__NOT_SELECTED"
+    amendment_surfaces: ["L equal-strength search"]
+    note: "Reviewed only as a candidate proponent family source; not selected as exact L because the model retains a historical wrong-tomb root and does not cleanly match the frozen interpretation-primary vector."
+
+
+  - sequence: 45
+    repository_commit: "1e95608263b5221713a1518ecd30679d7562cd1f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_INTEGRITY_CORRECTION__AUTHENTIC_REVIEWER_REPORT_RESTORATION"
+    amendment_surfaces:
+      - "RECORD-1"
+      - "Reviewer B rereview provenance"
+      - "ledger sequence 39 correction"
+    note: "Append-only correction to sequence 39: the historical committed blob 3fff99e93cf94bb6d4d82537522c5ed655173634 was a 155-byte tool-error placeholder, so sequence 39's statement that the report was preserved unchanged was false. The path is now restored to the exact authentic Reviewer B report supplied by the same session, git blob 1ac620cdc1ca8abbdda8dc375080643442f2c6c2. Historical bad blob remains in git history."
+
+  - sequence: 46
+    repository_commit: "USER_RELAY__REVIEWER_B_NARROW_CONFIRMATION"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "18 pinned control artifacts + 15 operative packets from TFP_STRESS_2_REVIEWER_B_NARROW_NB1_NB6_CONFIRMATION_PROMPT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_B_NARROW_CONFIRMATION_INPUT"
+    amendment_surfaces:
+      - "NB-1 route symmetry"
+      - "NB-2 P-CHET-BODY"
+      - "NB-3 body-evidence binding"
+      - "NB-4 formulation equal strength"
+      - "NB-5 source-plan / absence controls"
+      - "NB-6 Q1 precedence"
+    note: "Reviewer B disclosed same session/model lineage, no Reviewer A report exposure, no web access, and no external resurrection/formulation source exposure."
+
+  - sequence: 47
+    repository_commit: "0581579ff86f67903c58b5e02680cb01a2afbb87"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_NARROW_NB1_NB6_CONFIRMATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "NB1-R1 V occurrence"
+      - "NB5-R1 absence symmetry and ceiling"
+      - "NB3-R1 uniform body evidence rule"
+      - "NB3-R2 F implementation registration"
+      - "NB1-S1 background identity sync"
+      - "NB6-M1 common-background quantifier"
+      - "NM-1 / NM-3 clericals"
+      - "RECORD-1"
+    note: "Exact preserved report blob c914aadfce6ea0d26dc2fa536ebb802bd6bcf3d6. Disposition G0_REVIEW_REPAIR_REQUIRED. NB-2, NB-4, NB-6 closed; four bounded residuals plus clerical/integrity fixes remained. No event evidence adjudicated."
+
+  - sequence: 48
+    repository_commit: "ea5d1bf14f199dde05d70d30d3a89be3b5c921bf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_PRE_EVIDENCE_REPAIR_RECORD_0_1_0.md"
+    exposure_class: "PRE_G0_INTERNAL_DESIGN_REPAIR__NO_NEW_EXTERNAL_EVIDENCE"
+    amendment_surfaces:
+      - "V occurrence direct burden"
+      - "absence-rule symmetry and NOT_ESTABLISHED ceiling"
+      - "uniform Q1-ontology body neutrality"
+      - "F closed two-implementation partition"
+      - "background and Q1 quantifier sync"
+      - "stale reference and F/L relation clericals"
+    note: "Program Lead implemented only the bounded residual repairs identified by Reviewer B. No new external sources were opened; NB-4 fidelity limitations are carried unchanged."
+
+
+
+  - sequence: 49
+    repository_commit: "USER_RELAY__REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "Final residual-confirmation input bundle pinned by TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION_PROMPT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_B_FINAL_CONTROL_CONFIRMATION_INPUT"
+    amendment_surfaces:
+      - "NB1-R1"
+      - "NB5-R1/NB1-R2"
+      - "NB3-R1"
+      - "NB3-R2"
+      - "NB1-S1"
+      - "NB6-M1"
+      - "NM-1"
+      - "NM-3"
+      - "RECORD-1"
+      - "50-proposition equality"
+    note: "Reviewer B attested same session lineage, no Reviewer A reasoning exposure, no web access, and no external resurrection/formulation source exposure."
+
+  - sequence: 50
+    repository_commit: "6dab8d4ea2e6817267d22fe8396ef99c6c80da27"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "Reviewer B gate disposition"
+      - "MR-1 coverage-map pointer"
+      - "MR-2 duplicate downstream step"
+      - "Reviewer C release"
+    note: "Exact preserved report blob 07b33e170203232d1210bebca8734881af84dceb. Disposition G0_REVIEW_PASS_WITH_MINOR_REPAIRS. SOURCE_PLAN_PASS, NECESSARY_PROPOSITION_COVERAGE_COMPLETE, Q1_CONTROL_PASS, P_CHET_BODY_CONTROL_PASS, and STEELMAN_EQUAL_STRENGTH_PASS_WITH_LIMITATIONS issued. No event evidence adjudicated."
+
+  - sequence: 51
+    repository_commit: "119776784a1e31de8ce9d7935e0cde728e2583d1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_FINAL_GATE_ACCEPTANCE_0_1_0.md plus MR-1/MR-2 versioned clerical repairs"
+    exposure_class: "PRE_G0_INTERNAL_CLERICAL_REPAIR__NO_NEW_EVIDENCE"
+    amendment_surfaces:
+      - "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_11.yaml"
+      - "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
+    note: "Applied only Reviewer B's two expressly non-blocking minor repairs: C-HET module-map pointer 0.1.4→0.1.6 and removal of duplicate Reviewer C pending-step text. No proposition, candidate, route type, discriminator, direction result, source stratum, or candidate burden changed."
+
+
+  - sequence: 52
+    repository_commit: "6dab8d4ea2e6817267d22fe8396ef99c6c80da27"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION_REPORT_0_1_0.md preservation correction"
+    exposure_class: "PRE_G0_INTERNAL_PROVENANCE_CORRECTION__NO_NEW_EVIDENCE"
+    amendment_surfaces:
+      - "Reviewer B final report preservation provenance"
+    note: "During repository preservation, an initial program-lead write at commit 75e6d6e5af3385dd975e78ff41cbdbea6870f58a created an empty placeholder at the final-report path. It was immediately corrected from the retained user-supplied report, and commit 6dab8d4ea2e6817267d22fe8396ef99c6c80da27 restored the exact original bytes at blob 07b33e170203232d1210bebca8734881af84dceb. No downstream reviewer consumed the transient empty version, and no substantive design judgment depended on it. The transient commit remains in git history; this entry records it rather than rewriting history."
+
+
+  - sequence: 53
+    repository_commit: "USER_RELAY__REVIEWER_C_G0_ARCHITECTURE_REVIEW"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G0_INPUT_FREEZE_0_1_1.yaml plus its 14 permitted control artifacts and 15 packet blobs"
+    exposure_class: "PRE_G0_REVIEWER_C_ARCHITECTURE_REVIEW_INPUT"
+    amendment_surfaces:
+      - "discriminator pair/relation scope"
+      - "DIRECTION_RULE"
+      - "CRITICAL feasibility"
+      - "background granularity"
+      - "background interactions"
+      - "coverage linkage"
+    note: "Reviewer C attested fresh xAI Grok 4.7 lineage, no Reviewer A/B reasoning exposure, no web/external source exposure, no event adjudication, no proposition dispositions, no ranking, and no repository changes."
+
+  - sequence: 54
+    repository_commit: "2a5894725c9443234ec696c21ccd533e6a6ee6b8"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G0_ARCHITECTURE_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_OUTCOME_MATERIAL_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "eight final discriminator IDs"
+      - "direction rules"
+      - "CRITICAL feasibility"
+      - "BGD-3 combinability"
+      - "BGD-1/BGD-11 compatibility"
+      - "background interaction matrix"
+      - "coverage linkage"
+    note: "Exact preserved Reviewer C report blob 262af0c0090649e831711ca99c42344fe81bbb7b. Overall disposition REVIEWER_C_G0_REPAIR_REQUIRED. Reviewer C explicitly stated that after the seven versioned repairs are bound without changing their logic, the architecture is sufficiently complete and symmetric to proceed to human-owner G0 authorization."
+
+  - sequence: 55
+    repository_commit: "1e23dc3aa20f258483aaeee50b44d1051b41f8c5"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_PRE_G0_REPAIR_BINDING_0_1_0.md and versioned Reviewer C repair artifacts"
+    exposure_class: "PRE_G0_INTERNAL_ARCHITECTURE_REPAIR__NO_NEW_EXTERNAL_EVIDENCE"
+    amendment_surfaces:
+      - "TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+      - "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+      - "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
+      - "TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+      - "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    note: "Program Lead bound only Reviewer C's seven required repairs in the logical form supplied by Reviewer C. No new external source was opened, no event evidence was adjudicated, and no candidate/proposition result was assigned."
+
+
+  - sequence: 56
+    repository_commit: "USER_MESSAGE__HUMAN_G0_AUTHORIZATION"
+    actor_lineage: "HUMAN_OWNER"
+    source_or_artifact: "Exact human authorization of TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
+    exposure_class: "G0_HUMAN_AUTHORIZATION"
+    amendment_surfaces:
+      - "G0 authorization state"
+      - "G1 evidence-acquisition transition"
+    note: "Human owner explicitly authorized exact bundle blob 4a211d03deaa4d7c7cb0c34ff814e434a1b61696 at commit f1be680dc79d6c258dc8ba056ea1dc04ab671fc8 and authorized transition into G1 under qualified Protocol 0.1.7. Authorization explicitly does not establish resurrection, rank candidates, attribute an event to God, establish Christianity, or constitute G5 acceptance."
+
+  - sequence: 57
+    repository_commit: "ecb616b1d3d96fe5bf7cc9c7a48a3e48e171c85c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    exposure_class: "G0_AUTHORIZATION_RECORD"
+    amendment_surfaces:
+      - "human authorization preservation"
+      - "G1 branch provenance"
+    note: "Authorization recorded on successor branch research/tfp-stress-2-resurrection-g1 created exactly from the frozen G0 bundle commit."
+
+  - sequence: 58
+    repository_commit: "559dd0a8b76715d3732c34ab7801a155981576b4"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+    exposure_class: "G1_PRE_EVIDENCE_ACQUISITION_CONTROL"
+    amendment_surfaces:
+      - "Wave 1 acquisition order"
+      - "evidence-only recording schema"
+      - "SRC-01/SRC-02/SRC-04/SRC-06/SRC-19 initial acquisition scope"
+    note: "Wave 1 frozen before any new post-authorization external evidence search. The ordering is a provenance-first acquisition sequence, not evidential priority or candidate preference. Reviewer C retains SRC-18 adverse-source probing."
+
+
+  - sequence: 59
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_001"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "External public source acquisition for G1 Wave 1"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
+    accessed_sources:
+      - "SBLGNT 1 Corinthians 15 via Bible Gateway"
+      - "Galatians 1:18-19 translations via Bible Gateway"
+      - "SBLGNT Galatians 2:1-10 via Bible Gateway"
+      - "SBLGNT 1 Thessalonians 4:13-18 via Bible Gateway"
+      - "SBLGNT Philippians 2:6-11 reproduction via BibleStudyTools"
+      - "SBLGNT Mark 16 via Bible Gateway"
+      - "Mark 16 longer-ending scholarship via JSTOR/BYU Studies/Metzger reproduction and related textual-criticism results"
+      - "1 Corinthians 15 tradition/redaction scholarship via Oxford Academic and Cambridge Core"
+      - "Tacitus Annals 15.44 Latin via Dickinson College Commentaries"
+      - "Josephus Antiquities 18.63-64 via Lexundria plus modern transmission/authenticity discussions"
+      - "Josephus Antiquities 20.200 via Lexundria plus Oxford Academic textual discussion"
+      - "Josephus Vita 420-421 reproduced from Loeb in open-access medical-historical article"
+      - "Daniel 12:2 Hebrew via Sefaria and Septuagint via BiblIndex"
+      - "2 Maccabees 7 via USCCB"
+    failed_access_attempts:
+      - "Direct Bible Gateway SBLGNT opens for Galatians 1:18-19, Romans 1:3-4, and Philippians 2:6-11 returned tool access errors in one direct-open round; alternate search-accessible records were used where available."
+      - "Direct primary critical Josephus Vita 420-421 repository not yet acquired; secondary reproduction with exact Loeb citation recorded."
+    boundary_note: "No proposition disposition, discriminator direction result, candidate ranking, or theological conclusion was assigned. Search order followed G1 Wave 1 launch control frozen before these exposures."
+
+  - sequence: 60
+    repository_commit: "857e97afdc5614ffd99b5d1175abf63f5623255a"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_0.yaml"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "14 initial source/provenance records"
+      - "Wave 1 follow-up list"
+    note: "Observation-first inventory only. Five frozen strata touched: SRC-01, SRC-02, SRC-04, SRC-06, SRC-19. Wave 1 remains incomplete."
+
+
+  - sequence: 61
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_002_003"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Second/third G1 Wave 1 public-source acquisition rounds"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-01"]
+    accessed_sources:
+      - "Mark 15:33-16:8 SBLGNT"
+      - "1 Corinthians 9:1 SBLGNT"
+      - "Galatians 1:15-17 translation"
+      - "Romans 1:3-4 SBLGNT reproduction"
+      - "Matthew 27:45-28:20 translation"
+      - "Luke 23:44-24:49 translation"
+      - "John 19:28-21:25 translation"
+      - "Acts 2:22-36 SBLGNT"
+      - "Acts 3:13-15 translation"
+      - "Acts 10:39-41 SBLGNT"
+      - "Acts 13:29-37 SBLGNT"
+    boundary_note: "Acquisition only. No source-dependence, historicity, proposition disposition, direction result, ranking, or theological conclusion assigned. Translation-only records are explicitly marked for later critical-text upgrade."
+
+  - sequence: 62
+    repository_commit: "c5d5a5785f0dd0c3229726d461aa10e3301f148b"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_2.yaml"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "G1W1-015 through G1W1-025"
+      - "expanded Pauline/Gospel/Acts outcome-material inventory"
+    note: "Inventory 0.1.2 contains 25 observation-first records. It incorporates inventory 0.1.1 (commit 8c84d2e584c498cc2e04753b37b8ae171a76a14a, blob 5c781a15247bd4c015f3249793cd0e085597b0aa) plus Acts proclamation records. Wave 1 remains incomplete."
+
+
+  - sequence: 63
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_004"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Critical-text upgrade, Roman crucifixion, and Jewish resurrection-context acquisition round"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-01","SRC-04","SRC-06"]
+    accessed_sources:
+      - "Galatians 1 SBLGNT via Bible Gateway"
+      - "Matthew 28 SBLGNT via Bible Gateway"
+      - "Luke 23 and Luke 24 SBLGNT via Bible Gateway"
+      - "John 19, John 20, and John 21 SBLGNT via Bible Gateway"
+      - "Josephus Life direct digital primary-work translation via University of Chicago"
+      - "Zias & Sekeles 1985 Giv'at ha-Mivtar reappraisal: JSTOR/ASOR metadata plus original-article mirror"
+      - "4Q521 Hebrew transcription reproduction following Garcia Martinez & Tigchelaar plus Kvalbein 1998 scholarly discussion"
+      - "2 Baruch 49-51 legacy translation reproduction plus Posen Library / scholarly contextual sources"
+    boundary_note: "Records preserve source content/provenance only. G1 does not decide textual authenticity, transfer to Jesus, literal-vs-metaphorical 4Q521 interpretation, candidate fit, proposition dispositions, or direction results."
+
+  - sequence: 64
+    repository_commit: "00ba286808e78272f245f7446cde7af7a1959d9b"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_3.yaml"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "Greek critical-text upgrades for earlier records"
+      - "G1W1-026 through G1W1-029"
+    note: "Inventory now contains 29 observation-first records. Wave 1 remains incomplete."
+
+
+  - sequence: 65
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_005"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Source-dependence control scholarship acquisition round"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-02"]
+    accessed_sources:
+      - "Kloppenborg 2023, Oxford Handbook of the Synoptic Gospels: history/prospects of the Synoptic Problem"
+      - "Abakuks 2012, statistical study of Matthew/Luke use of Mark"
+      - "Scobie, New Testament Studies: source material in Acts speeches"
+      - "Baugh, New Testament Studies: phraseology/reliability of Acts speeches"
+      - "Downing, New Testament Studies: competing provenance models for Acts speeches"
+      - "Attridge 2018, Oxford Handbook of Johannine Studies: John and other Gospels"
+      - "Painter, New Testament Studies: John 6 and Synoptic-like tradition"
+      - "Mendez 2025, Oxford Academic: Johannine authorship/composition/source-dependence thesis"
+      - "Oxford Bibliographies: Pauline Chronology"
+    boundary_note: "These sources were acquired as competing provenance/dependence controls. No source-dependence model, letter date, speech historicity, or Gospel chronology was adjudicated."
+
+  - sequence: 66
+    repository_commit: "b393ef310ceb6b324a8e9b367cdea19b1e2b3cf6"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_4.yaml"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "G1W1-030 through G1W1-033"
+      - "SRC-02 Synoptic/Acts/Johannine/Pauline source-dependence controls"
+    note: "Inventory now contains 33 observation-first records. Wave 1 remains incomplete and no G2 synthesis has begun."
+
+
+  - sequence: 67
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_006"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Wave-1 bounded provenance/access-gap closure acquisition round"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
+    accessed_sources:
+      - "SBLGNT 1 Corinthians 15:35-54 via Bible Gateway, including resurrection-body terminology"
+      - "SBLGNT Matthew 27 via Bible Gateway, closing the prior translation-only Matthew 27 range"
+      - "SBLGNT Acts 3 via Bible Gateway, closing the prior translation-only Acts 3:13-15 record"
+      - "2 Maccabees 7 Septuagint-form Greek digital text via BiblIndex"
+      - "Perseus Catalog record for Josephus Life, Niese Greek edition urn:cts:greekLit:tlg0526.tlg002.perseus-grc1"
+      - "Josephus Jewish War Book V via University of Chicago LacusCurtius/Penelope, including the mass-crucifixion passage in chapter 11 / 5.449-451"
+      - "Seneca, Consolation to Marcia section XX / 20.3 via Wikisource, plus Perseus classical-reference crosscheck for crux terminology"
+      - "Posen Library institutional artifact entry for the first-century Giv'at ha-Mivtar pierced heel bone"
+      - "2 Esdras / 4 Ezra 7:30-34 via Bible Gateway NRSVUE"
+      - "Sibylline Oracles Book IV 231-248 via Wikisource legacy-edition reproductions"
+      - "John Granger Cook, New Testament Studies 63.1, Cambridge Core article and ancient-Judaism section"
+      - "Daniel Mikkelsen, Dansk Teologisk Tidsskrift, 1 Corinthians 15 resurrection-body article metadata/abstract/reference map"
+      - "Adela Yarbro Collins, Yale Scholarship Online/Oxford Academic resurrection-body chapter abstract"
+      - "Pliny the Younger, Letters 10.96 Latin via Perseus and Dickinson College Commentaries"
+      - "Andris Abakuks, Oxford Academic statistical Synoptic Problem article metadata/summary plus ResearchGate no-full-text status"
+      - "Steven M. Baugh, Cambridge Core Acts-speech phraseology/reliability extract"
+      - "Oxford Bibliographies Pauline Chronology reference entry, reviewed current through 2023"
+      - "Open-access medical-historical crucifixion review used only as a transfer-limited archaeological/practice crosscheck"
+    discovery_only_or_not_elevated:
+      - "Jewish Virtual Library crucifixion summary was exposed as a secondary discovery route but not elevated over the primary Josephus passages."
+      - "Perseus classical dictionaries on crux were used as citation/navigation controls, not as case-specific evidence."
+      - "Several low-authority web reproductions surfaced during search and were not used as inventory authorities where stronger primary/institutional sources were available."
+    failed_or_limited_access:
+      - "Exact Josephus Life 420-421 Greek passage text was not separately extracted from the identified Niese/Perseus edition; edition identity and URN were preserved."
+      - "Abakuks full text remained access-gated/request-only in the routes checked."
+      - "The Collins full chapter remained access-gated; abstract and bibliographic metadata were available."
+      - "The Mikkelsen article page and reference map were read; its linked PDF was not separately analyzed in this round."
+      - "Existing 4Q521 Brill critical-edition limitation remains unresolved and is carried forward explicitly."
+    boundary_note: "Acquisition/provenance only. No proposition disposition, discriminator direction, candidate ranking, source-dependence verdict, resurrection verdict, or theological conclusion was assigned. Conflicting semantic/source-critical positions were preserved rather than resolved."
+
+  - sequence: 68
+    repository_commit: "ef2e8102975fa094a19bb6becb934223b2eed450"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_5.yaml"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "G1W1-014, G1W1-019, G1W1-023, G1W1-026, and G1W1-027 provenance/access upgrades"
+      - "G1W1-034 through G1W1-041"
+      - "bounded unresolved-access register and Reviewer-C handoff condition"
+    note: "Inventory now contains 41 observation-first records. The Program Lead records the bounded provenance/access-gap round as complete but explicitly does not certify COMPLETE or MATERIALLY_COMPLETE evidence coverage. Wave 1 remains open pending the frozen Reviewer C / SRC-18 adverse-source probe and coverage-state review."
+
+  - sequence: 69
+    repository_commit: "REVIEWER_C_G1_SRC_18_ASSIGNMENT_FREEZE__INPUT_62d3563a252f9a73b243f035114a1d639956376d__PROMPT_4a4005eb2d923d121ce203c6aa85372e1ca73d26"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G1 SRC-18 adverse-probe execution packet"
+    exposure_class: "G1_REVIEW_CONTROL_FREEZE__NO_EVIDENCE_DISPOSITION"
+    amendment_surfaces:
+      - "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_INPUT_FREEZE_0_1_0.yaml blob c21c4bb96bd0eb70a8ecdcbc21eb5db041a911ca"
+      - "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_PROMPT_0_1_0.md blob d042d03784048b0431f8de776fabc178f8608b5b"
+      - "Evidence checkpoint commit 79118c65000a39d08aa5ef7bae37f26b06af71c9 tree 2d49b6e50c2b3590e9fb6f72f96e44965d3f0710"
+    note: "Fresh external Reviewer C execution is required. The probe may identify omitted adverse sources/classes but may not certify COMPLETE or MATERIALLY_COMPLETE coverage; coverage-state review remains a separate later Reviewer C action."
+
+
+  - sequence: 70
+    repository_commit: "f2d6319408c90c88bb27354918927e52d8c0b6ea"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_REPORT_0_1_0.md blob b9721b4529e186b5e26a8e4dfe94f558ffee2451"
+    exposure_class: "G1_POST_G0_SRC_18_ADVERSE_PROBE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "Wave-1 omitted-source-class detection"
+      - "SRC-18 adverse-source probe disposition"
+      - "post-probe acquisition work order"
+    note: "Fresh xAI Grok 4.7 Reviewer C attested a new clean session, verified the frozen prompt/input/evidence checkpoint, used Europe PMC as an external route distinct from source-plan construction, preserved failed/null results, and returned SRC_18_PROBE_FINDINGS_REQUIRE_ACQUISITION. The report does not certify COMPLETE or MATERIALLY_COMPLETE coverage, assign proposition dispositions, produce discriminator direction results, rank candidates, or settle resurrection/theology."
+
+  - sequence: 71
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_W1_007_REVIEWER_C_SRC_18_FOLLOWUP"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Program Lead observation-first acquisition of the eleven Reviewer C SRC-18 follow-up items"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-01","SRC-04","SRC-06","SRC-18","SRC-19"]
+    accessed_sources:
+      - "Maslen & Mitchell 2006, Medical theories on the cause of death in crucifixion, JRSM 99:185-188, PMC1420788, full text"
+      - "Habermas, Kopel & Shaw 2021, Medical views on the death by crucifixion of Jesus Christ, Proceedings (Baylor), PMC8545147, full text"
+      - "Wisdom of Solomon 2:23-3:9, NRSVUE"
+      - "Josephus, Jewish War 2.119-166, Lexundria/Whiston translation"
+      - "Josephus, Antiquities 18.11-22, Lexundria/Whiston translation"
+      - "Yli-Karjanmaa 2017, The New Life of the Good Souls in Josephus, JSJ 48, DOI 10.1163/15700631-12340154, bibliographic control plus accessible article copy"
+      - "Klawans 2012, Josephus and the Theologies of Ancient Judaism chapter 3, Oxford Academic abstract"
+      - "Suetonius, Divus Claudius 25.4, Lexundria/Rolfe translation"
+      - "Boman 2011, Inpulsore Cherestro?, DOI 10.1484/J.LA.5.100355, abstract-level access"
+      - "Slingerland 1989, Suetonius Claudius 25.4, JSTOR open-access control"
+      - "Luedemann 1994, The Resurrection of Jesus, bibliographic and substantive book-description access"
+      - "Crossan 1994, Jesus: A Revolutionary Biography, bibliographic access plus scholarly page-location crosschecks"
+      - "Goulder 1996, The Baseless Fabric of a Vision, bibliographic identification and scholarly citation controls"
+      - "2 Corinthians 5:1-10, SBLGNT"
+      - "Lucian, Passing of Peregrinus 11-13, Greek/English classical-edition reproductions; explicitly date-bounded after approximately 150 CE"
+      - "Mara bar Serapion, Letter to his son, Cureton 1855 Syriac/English legacy edition plus syri.ac bibliographic control and modern scholarship identification"
+    failed_or_limited_access:
+      - "Klawans chapter 3 full text unavailable through the checked Oxford Academic route; publisher abstract preserved."
+      - "Boman 2011 full article unavailable through the checked authoritative route; abstract preserved."
+      - "Crossan 1994 exact target pages were not directly exposed in the acquired book route. Scholarly crosschecks place burial/Joseph skepticism in the chapter-six range while pp.169-170 are cited for an appearance-authority interpretation; the Reviewer C page-169 empty-tomb pointer is therefore preserved as a citation mismatch."
+      - "Goulder 1996 exact chapter full text was not acquired from a publisher or institutional route; bibliographic identity and scholarly descriptions preserved."
+      - "A modern critical translation of Mara bar Serapion was not independently confirmed in full text; the Cureton Syriac/English edition was acquired and dating/identity remain unresolved."
+    discovery_only_or_not_elevated:
+      - "Third-party Goulder PDF reproductions surfaced but were not elevated over bibliographic/scholarly controls."
+      - "Third-party Klawans book reproductions surfaced but were not used to bypass the publisher access limitation."
+      - "Low-authority polemical/confessional Crossan reproductions surfaced but were not used as source authorities."
+    boundary_note: "Acquisition/provenance only. No proposition disposition, discriminator direction result, source-semantic adjudication, candidate ranking, resurrection verdict, or theological conclusion was assigned. Conflicting positions and access failures remain first-class records."
+
+  - sequence: 72
+    repository_commit: "d3d4539bf377abe2fafccbd82cf7a02bfac56200"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_6.yaml blob 8f2c03b72d023e3fd0ea356c56eaa385b64dede9"
+    exposure_class: "G1_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "G1W1-042 through G1W1-052"
+      - "Reviewer C SRC-18 follow-up source classes and access limitations"
+      - "Crossan page-pointer negative/provenance knowledge"
+    note: "Inventory now contains 52 observation-first records. All eleven Reviewer C follow-up acquisition items are represented either by acquired evidence or an explicit bounded access limitation. Program Lead still does not certify COMPLETE or MATERIALLY_COMPLETE coverage; a separate fresh Reviewer C coverage-state review is required before any G1 coverage closure."
+
+
+  - sequence: 73
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_REMAINING_STRATA_001"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Bounded G1 acquisition across previously untouched frozen source strata SRC-03, SRC-05, and SRC-07 through SRC-16"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-03","SRC-05","SRC-07","SRC-08","SRC-09","SRC-10","SRC-11","SRC-12","SRC-13","SRC-14","SRC-15","SRC-16"]
+    accessed_sources:
+      - "Ignatius of Antioch, Smyrnaeans 1-3, Lightfoot/CCEL plus Greek-English text control"
+      - "1 Clement 24-26, Polycarp Philippians 1-2, and Didache 16 early-Christian reception passages"
+      - "Josephus Jewish War 4.317, burial-before-sunset/crucified-persons passage"
+      - "Hachlili & Killebrew 1983 Jericho necropolis study and Hachlili 2005 Jewish funerary customs monograph metadata/accessible material"
+      - "Jodi Magness, What Did Jesus' Tomb Look Like?, archaeological/bibliographic access"
+      - "Livy 1.16, Plutarch Romulus 27-28, and Herodotus 4.14-15 disappearance/apotheosis/apparition comparanda"
+      - "John Granger Cook 2018, Empty Tomb, Resurrection, Apotheosis, publisher/book metadata"
+      - "W. Dewi Rees 1971, The Hallucinations of Widowhood, PubMed/PMC"
+      - "Karina Stengaard Kamp et al. 2020 bereavement sensory/quasi-sensory experience review, re-opened under G1 evidence acquisition"
+      - "Roediger, Meade & Bergman 2001 social contagion of memory"
+      - "Gabbert, Memon & Allan 2003 memory conformity"
+      - "Hirst, Yamashiro & Coman 2018 collective-memory review"
+      - "Festinger, Riecken & Schachter 1956, When Prophecy Fails"
+      - "Lorne Dawson 1999 failed-prophecy theoretical overview"
+      - "Dale Allison, Richard Bauckham, Samuel Byrskog, and Sutton/Le Donne memory/oral-history controls"
+      - "DePaulo et al. 2003 Cues to Deception meta-analysis and Levine 2014 Active Deception Detection"
+      - "Lloyd Davies & Lloyd Davies 1991 Resurrection or Resuscitation?, paired to the previously acquired crucifixion medical controls"
+      - "Beischel et al. 2015 blinded-mediumship study; Cardena 2018 pro-psi review; Reber & Alcock 2020 opposing critique"
+      - "van Inwagen, Zimmerman, Hershenov, and Stanford Encyclopedia personal-identity/animalism material"
+      - "Coady, Lackey, Earman, and Stanford Encyclopedia testimony/miracle epistemology material"
+    failed_or_limited_access:
+      - "Magness BAS full-article access was limited in the checked route; bibliographic identity and available archaeological description were preserved."
+      - "Several monographs and book chapters were available only through previews, publisher abstracts, or bibliographic records; no unavailable full text is represented as reviewed."
+      - "SRC-13 claimant/critique literature remains methodologically disputed; acquisition does not resolve replication or interpretation."
+    bounded_nulls_and_controls:
+      - "SRC-11 bounded acquisition did not surface independent first-century positive evidence establishing deliberate fabrication by founding witnesses. This null is recorded without favorable inference for any rival."
+      - "SRC-07 motif similarity is not treated as literary dependence, common cause, or occurrence evidence."
+      - "SRC-08 and SRC-09 modern psychological/social mechanisms are not transferred to ancient reports without case-specific matching."
+      - "SRC-05 general burial/custom evidence is not treated as direct proof of Jesus's burial."
+      - "SRC-14 metaphysical coherence is separated from historical occurrence."
+      - "SRC-15 testimony/miracle frameworks do not set priors or establish source independence during G1."
+      - "Repeated Festinger/Dawson use across SRC-09 and SRC-16 is one acquired stream serving two roles, not independent evidential duplication."
+    boundary_note: "Acquisition and provenance only. No proposition disposition, discriminator direction result, candidate ranking, source-semantic verdict, event verdict, or theological conclusion was assigned."
+
+  - sequence: 74
+    repository_commit: "REPOSITORY_REOPEN_G1_SRC_17_FORMULATION_CONTROLS"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Frozen pre-G0 candidate-native/proponent formulation corpus reopened for SRC-17 coverage without reformulation"
+    exposure_class: "G1_INTERNAL_FORMULATION_CONTROL_REVIEW__NO_NEW_EVENT_EVIDENCE"
+    source_strata: ["SRC-17"]
+    accessed_repository_artifacts:
+      - "TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_5.yaml blob 402f96fffb1be8f936af411b236d8a2083e2c1bc"
+      - "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_1.yaml blob 7859ace17025ec2a8ef7ff9734629024340227a5"
+      - "TFP_STRESS_2_NB4_FORMULATION_EQUAL_STRENGTH_SEARCH_0_1_0.yaml blob 2277e128fd42e52628e85c8ce0c9a7ec13532675"
+      - "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml blob 3d293840525991ee9ea110212c1e2261922ff82c"
+    note: "The already-frozen formulation corpus covers all admitted candidate families and required node rivals with native/proponent/synthetic limitations explicitly labeled. It was reused instead of post-hoc reformulating candidates. Formulation-only sources remain non-evidential unless separately acquired under an eligible G1 stratum. Candidate universe and frozen mechanisms were not changed."
+
+  - sequence: 75
+    repository_commit: "e4bb9751f816b4fde6019a6459acbf697c4e89f1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_0.yaml blob 372d81738596bd3b6711a1122d9a176562f60f18"
+    exposure_class: "G1_CONSOLIDATED_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "69 observation-first source records"
+      - "all frozen source strata SRC-01 through SRC-19 represented"
+      - "Reviewer C SRC-18 follow-up integrated"
+      - "remaining frozen source strata bounded acquisition integrated"
+      - "preserved access failures, nulls, dependence controls, and anti-double-counting notes"
+    note: "The consolidated inventory contains 69 records and touches all 19 frozen source strata. This is a Program Lead acquisition milestone, not a COMPLETE or MATERIALLY_COMPLETE coverage certification. G1 remains open pending a separate fresh Reviewer C coverage-state review."
+
+
+  - sequence: 76
+    repository_commit: "REVIEWER_C_G1_COVERAGE_STATE_FREEZE__INPUT_acea5052116160e7b4a4c52aecb7220224bb173d__PROMPT_f74dcf51e02013dade8bcab54c87c9b12eb31cdc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G1 post-acquisition STUDY-scope coverage-state execution packet"
+    exposure_class: "G1_REVIEW_CONTROL_FREEZE__NO_EVIDENCE_DISPOSITION"
+    amendment_surfaces:
+      - "TFP_STRESS_2_REVIEWER_C_G1_POST_ACQUISITION_COVERAGE_STATE_INPUT_FREEZE_0_1_0.yaml blob f9f862ffd6ed6f87335ba87bc0edafa618bf0561"
+      - "TFP_STRESS_2_REVIEWER_C_G1_POST_ACQUISITION_COVERAGE_STATE_PROMPT_0_1_0.md blob f362db16b5537e6052eebc4e2f6689382a9f28e3"
+      - "Substantive evidence checkpoint commit f5679cc67b8461845c51858c9b40c493cad48d13 tree 48a08bb3ca93503f035730962ef2ed1298230129"
+      - "Consolidated inventory blob 372d81738596bd3b6711a1122d9a176562f60f18 with 69 source records across SRC-01 through SRC-19"
+      - "Ledger 0.1.26 blob 1e9702c695de9223a30690d716a4a70b44e3f0c1 through sequence 75"
+    note: "A new clean external Reviewer C session must independently assign exactly one Protocol-E3 STUDY-scope coverage state: COVERAGE_COMPLETE_FOR_FROZEN_SCOPE, COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS, or COVERAGE_INCOMPLETE. The packet prohibits proposition dispositions, discriminator directions, synthesis, candidate ranking, event/theological verdicts, comparison-level MAKEABLE certification, G2 entry, and repository modification."
+
+
+  - sequence: 77
+    repository_commit: "ea2354796cf63c1db8b66249c18eef823c859b1f"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G1_POST_ACQUISITION_COVERAGE_STATE_REPORT_0_1_0.md blob 249add07f33380c4205772802fc2bc61b2215a27"
+    exposure_class: "G1_STUDY_SCOPE_COVERAGE_STATE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "Protocol E3 STUDY-scope coverage state"
+      - "SRC-03 Gospel of Peter omission"
+      - "SRC-18 Crossan/Luedemann/Goulder follow-up sufficiency"
+    note: "Fresh xAI Grok 4.7 Reviewer C verified the frozen pins and returned exactly COVERAGE_INCOMPLETE. The report identified three exact G1 return triggers: acquire the Gospel of Peter/Akhmim fragment; acquire Crossan 1994 pp.123-158 at the corrected burial range including pp.127 and 154; and acquire Luedemann/Goulder full text or record fresh full-text-route failures. No proposition disposition, discriminator direction, ranking, or theological conclusion was assigned."
+
+  - sequence: 78
+    repository_commit: "WEB_ACQUISITION_ROUND_G1_COVERAGE_RETURN_001"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C COVERAGE_INCOMPLETE exact return-trigger acquisition round"
+    exposure_class: "G1_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__OBSERVATION_ONLY"
+    source_strata: ["SRC-03","SRC-18"]
+    accessed_sources:
+      - "So-called Gospel of Peter / Akhmim fragment, J. Armitage Robinson named translation via CCEL"
+      - "J. K. Elliott, The Apocryphal New Testament, Gospel of Peter chapter metadata/extract, Oxford Academic"
+      - "Paul Foster, Are there any Early Fragments of the So-Called Gospel of Peter?, New Testament Studies 52 (2006), dating/identity caution"
+      - "Alan Kirk, Examining Priorities: Another Look at the Gospel of Peter's Relationship to the New Testament Gospels, New Testament Studies 40 (1994), dependence-history control"
+      - "John Dominic Crossan, Jesus: A Revolutionary Biography, 1994 corrected chapter identity pp.123-158 via Google Books contents"
+      - "Crossan pp.126-127 reproduced excerpt on crucifixion dishonor/scavenger exposure"
+      - "Crossan pp.153-154 page-specific scholarly/dissertation quotations and argument mapping"
+      - "Luedemann 1994 WorldCat-to-Internet-Archive full-text route"
+      - "Luedemann 1994 Google Books no-preview route"
+      - "Goulder 1996 The Baseless Fabric of a Vision exact chapter/page identity via Google Books, WorldCat, and Mark Goodacre bibliography"
+    failed_or_limited_access:
+      - "Crossan 1994 continuous pp.123-158 full-range reading was not available through the legitimate preview routes checked; the key Reviewer-C-identified pp.127 and 154 claims are now represented by actual excerpted/page-specific text rather than metadata only."
+      - "Luedemann Internet Archive scan is access-restricted/print-disabled in the current environment; Google Books exposes metadata/contents but no full text."
+      - "Goulder 1996 full chapter was not available through the checked legitimate publisher/library/book-preview routes; Google Books confirms chapter pp.48-61 but does not expose the complete chapter."
+      - "A rights-unclear/unauthorized Goulder reproduction surfaced and was deliberately not used as acquisition authority."
+    boundary_note: "Acquisition/provenance only. Crossan, Luedemann, and Goulder arguments are not adopted; the Gospel of Peter is not projected backward as founding-event evidence. No proposition disposition, direction result, ranking, resurrection verdict, or theological conclusion was assigned."
+
+  - sequence: 79
+    repository_commit: "6a6cd0927bd5a5a865320057b21b9ab4cc9d5753"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml blob 10a13d0d750aab29ce499d3865293772f3fabaac"
+    exposure_class: "G1_CONSOLIDATED_EVIDENCE_INVENTORY_RECORD"
+    amendment_surfaces:
+      - "G1RS-070 through G1RS-073"
+      - "SRC-03 Gospel of Peter acquisition"
+      - "SRC-18 corrected Crossan argument recovery"
+      - "fresh Luedemann and Goulder legitimate full-text-route failure records"
+    note: "Inventory now contains 73 observation-first records. Reviewer C's exact COVERAGE_INCOMPLETE return triggers are represented by new acquisition/evaluation records. Program Lead does not self-certify coverage; a second fresh Reviewer C STUDY-scope coverage-state review is required."
+
+
+  - sequence: 80
+    repository_commit: "REVIEWER_C_G1_SECOND_COVERAGE_FREEZE__INPUT_4b3081c90b09ffa238c1670b10fb50a9450d2c50__PROMPT_9a4a6c120f0d07aeecf7940370290f7b7cc98519"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Second Reviewer C G1 STUDY-scope coverage-state execution packet"
+    exposure_class: "G1_REVIEW_CONTROL_FREEZE__NO_EVIDENCE_DISPOSITION"
+    amendment_surfaces:
+      - "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_INPUT_FREEZE_0_1_0.yaml blob f2012355e9e731d306ee3bcb6547f91c1b4f5a19"
+      - "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_PROMPT_0_1_0.md blob b1e1cd8832804d84647f461df812b05386fc07d3"
+      - "Substantive evidence checkpoint commit 528084c2b43c70a943c3760493bf4512ff126e0c tree 34db51a69853fe348123ec02fbc0f329d83c9eb2"
+      - "Inventory 0.1.1 blob 10a13d0d750aab29ce499d3865293772f3fabaac with 73 records"
+      - "Ledger 0.1.28 blob 40cebfe40f824626ac274718ab0f92d3d72b052f through sequence 79"
+    note: "Fresh external Reviewer C must independently determine whether the exact COVERAGE_INCOMPLETE return triggers are now closed sufficiently for one Protocol-E3 STUDY-scope coverage disposition. Same xAI/Grok model lineage is permitted; same conversation is not. No proposition dispositions, direction results, synthesis, ranking, theological verdict, G2 entry, or repository modification."
+
+
+  - sequence: 81
+    repository_commit: "2f8393791dbf65552a3c555853121a0461d59212"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_REPORT_0_1_0.md blob 7a20b8f1762c1b57edcc2d925a91399ce9356950"
+    exposure_class: "G1_STUDY_SCOPE_COVERAGE_STATE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "Protocol E3 STUDY-scope coverage state"
+      - "closure of the prior Gospel-of-Peter, Crossan, Luedemann, and Goulder return triggers"
+      - "G1-to-G2 transition eligibility"
+    note: "Fresh xAI Grok 4.7 Reviewer C verified the second frozen checkpoint and returned exactly COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS. It found no further acquisition defect requiring return to G1, preserved the residual Crossan/Luedemann/Goulder/SRC-02/Klawans/Boman/Mara/Josephus-Life/Wisdom/access limitations, did not certify COVERAGE_COMPLETE_FOR_FROZEN_SCOPE, comparison-level MAKEABLE, proposition dispositions, discriminator directions, candidate ranks, or theology."
+
+
+  - sequence: 82
+    repository_commit: "57f10c4b248bb4c7e396b412ec9f787335cc855e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_COMPLETION_AND_G2_TRANSITION_0_1_0.yaml blob 97dfa9da9a020f7621119d23c0d77a77db666b29"
+    exposure_class: "PROCEDURAL_GATE_COMPLETION_RECORD__NO_NEW_EVIDENCE_DISPOSITION"
+    amendment_surfaces:
+      - "G1 closure"
+      - "G2 procedural transition eligibility"
+      - "carried G1 limitations"
+      - "post-G1 Reviewer C/D role boundaries"
+    note: "Program Lead records G1 closed at independently certified STUDY-scope COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS and invokes the already-authorized G0 provision permitting later G2 transition after G1 coverage requirements are satisfied. This is not a proposition disposition, candidate ranking, comparison direction, theological conclusion, or G5 acceptance."
+
+
+  - sequence: 83
+    repository_commit: "a2ccbab22ad4ce9a37eb808de6313fa453e68ce2"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml blob ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+    exposure_class: "G2_PROCEDURAL_LAUNCH__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "G2 lane synthesis lifecycle"
+      - "L1-first execution order"
+      - "proposition-scoped coverage prerequisite"
+      - "Reviewer C/D post-evidence role boundaries"
+    note: "G2 launched from exact sealed G1 commit 3c416f503d6b9d615307d217c4321af312516004. L1 textual/source-critical work begins first. STUDY-scope material coverage is not treated as proposition- or comparison-scope certification. No proposition disposition, discriminator result, candidate ranking, G3 result, or theology is assigned by this launch."
+
+
+  - sequence: 84
+    repository_commit: "41bc39541f815d09689c45678a93dc4caf86c807"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_EVIDENCE_MATRIX_0_1_0.yaml blob 2341585f37b2de26f62d7b8ec971701381d51a99"
+    exposure_class: "G2_L1_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "27 unique L1-linked necessary proposition surfaces"
+      - "source-cluster binding for textual/source-critical synthesis"
+      - "proposition-scope coverage prerequisites"
+    note: "Program Lead mapped the frozen 73-record G1 corpus into L1 source clusters and bound all 27 unique L1-linked necessary proposition IDs to their frozen expected/weakening evidence and required PROPOSITION:<id> coverage scopes. All dispositions remain pending independent scoped coverage review. No candidate ranking or discriminator result was produced."
+
+
+  - sequence: 85
+    repository_commit: "REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_FREEZE__INPUT_66f28c7fdfbac15e7ecdf12c08625bbf82fabb83__PROMPT_45e7f0a61088b4784fd705c6c8e34b8ede936a20"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L1 27-proposition coverage batch execution packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "TFP_STRESS_2_REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE_0_1_0.yaml blob 6d7cfe12c2a6f64f0a46bdf3bbf480e91b36cccd"
+      - "TFP_STRESS_2_REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_PROMPT_0_1_0.md blob c3d4a4cf0378b6b62e31e7bec072aa25968a1db8"
+      - "Substantive checkpoint commit 9b4a9143dd111f646c2b90fd0941cc1707544a7b tree 17f73145c905d5c4a251aaa9a1d1fa99de8a8f8f"
+      - "L1 matrix blob 2341585f37b2de26f62d7b8ec971701381d51a99"
+    note: "Fresh Reviewer C must assign Protocol-E3 coverage states to exactly 27 unique L1-linked PROPOSITION scopes. The packet prohibits proposition truth dispositions, comparison MAKEABLE certification, discriminator results, ranking, G3 outcomes, theology, and repository modification."
+
+
+  - sequence: 86
+    repository_commit: "af89763494d77030114a841aac2ade51a03ec3ec"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob f5529ea1a96f92018728462560f30d3d1903a42e"
+    exposure_class: "G2_PROPOSITION_SCOPE_COVERAGE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "27 L1-linked PROPOSITION scope coverage states"
+      - "carried proposition-specific G1 access limitations"
+      - "L1 disposition eligibility"
+    note: "Fresh Reviewer C verified the frozen checkpoint and assigned COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS to all 27 L1-linked proposition scopes, with 0 COMPLETE and 0 INCOMPLETE scopes. No return-to-evidence trigger was found. The report assigned no proposition truth disposition, discriminator direction, comparison MAKEABLE state, ranking, G3 outcome, or theology."
+
+
+  - sequence: 87
+    repository_commit: "8cae2200d9b9fb389fc3c95828a7221e31065ea3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_0.yaml blob c4847def489a49dfbf5933b67acae8735888b622"
+    exposure_class: "G2_L1_LANE_SYNTHESIS_AND_PROPOSITION_FACET_DISPOSITIONS"
+    amendment_surfaces:
+      - "27 L1-linked proposition facet dispositions"
+      - "L1 source-quality/dependence findings"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "L1 K4 freeze issued 12 PARTIALLY_SUPPORTED_WITHIN_SCOPE and 15 NOT_ESTABLISHED_WITHIN_SCOPE lane-level proposition facet dispositions, with 0 SUPPORTED, 0 EVIDENCE_AGAINST, 0 CONTRADICTED, 0 UNDERDETERMINED, and 0 INSUFFICIENT_SIGNAL. These are L1 lane outputs, not final cross-lane proposition dispositions or candidate statuses. No discriminator direction, comparison MAKEABLE state, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 88
+    repository_commit: "b81c84d62d5a772578c388166843a84e682cd1f9"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml blob 8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_CLERICAL_REPAIR__PENDING_INDEPENDENT_CONFIRMATION"
+    amendment_surfaces:
+      - "L1 lane freeze aggregate disposition_summary only"
+    candidate_effects:
+      all_candidates: "NEUTRAL"
+    note: "Version 0.1.1 corrects only the aggregate summary from 12 PARTIAL / 15 NOT_ESTABLISHED to the mechanically verified 13 PARTIAL / 14 NOT_ESTABLISHED. All 27 proposition rows, evidence bindings, rationales, and lane conclusions are byte-substantively unchanged apart from the summary and amendment-control appendix. C4 independent confirmation remains pending and will be bundled with the next Reviewer C post-evidence assignment; the corrected summary is not used as an outcome input before confirmation."
+
+
+  - sequence: 89
+    repository_commit: "1012b51d323f08c22911607986060ef5e83ea766"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_EVIDENCE_MATRIX_0_1_0.yaml blob 7162780df05a08d79e54411e9b9dc54bcd4cb35a"
+    exposure_class: "G2_L2_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "15 unique L2-linked necessary proposition surfaces"
+      - "death/nondeath symmetry"
+      - "burial/body-disposition route controls"
+      - "historical timing/chronology bindings"
+    note: "Program Lead bound the frozen G1 corpus and L1 source-quality findings to the 15 unique L2-linked proposition scopes. The matrix assigns no L2 proposition disposition, no discriminator direction, no candidate status, and no ranking."
+
+
+  - sequence: 90
+    repository_commit: "REVIEWER_C_G2_L2_COVERAGE_BATCH_FREEZE__INPUT_fbe08fa99e9b5d35ed07d356dcd5e8bfbb0638de__PROMPT_ae80cd3f33357abe0d5c63dd842fa37a5bd21b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L2 15-proposition coverage batch plus L1 clerical C4 confirmation packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "15 L2-linked PROPOSITION scope coverage states"
+      - "L1 lane freeze 0.1.1 POST_EVIDENCE_NONMATERIAL classification"
+      - "Substantive checkpoint f584006e9b1a259b811dc3f1ddfe2c0eba2b1629 / tree a23dc95b65132aff173cef05491004c154ab8bfe"
+    note: "Fresh Reviewer C must separately confirm/reject the L1 aggregate-count clerical amendment and assign coverage states to exactly 15 L2-linked proposition scopes. The packet prohibits proposition truth dispositions, discriminator directions, comparison MAKEABLE certification, ranking, G3 outcomes, theology, and repository modification."
+
+
+  - sequence: 91
+    repository_commit: "f497423bd4eac8bb49068e2ae98275a04e01eb74"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L2_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob de226788a0e94d043475ad8bd54c631c1e112eae"
+    exposure_class: "G2_L2_PROPOSITION_SCOPE_COVERAGE_REVIEW__PLUS_C4_NONMATERIAL_CONFIRMATION"
+    amendment_surfaces:
+      - "15 L2-linked PROPOSITION scope coverage states"
+      - "L1 lane-freeze 0.1.1 clerical amendment classification"
+      - "L2 disposition eligibility"
+    note: "Fresh Reviewer C confirmed L1 0.1.1 exactly as POST_EVIDENCE_NONMATERIAL_NEUTRAL and assigned COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS to all 15 L2-linked proposition scopes, with 0 COMPLETE and 0 INCOMPLETE. No return-to-evidence trigger was found. No proposition truth disposition, discriminator direction, comparison MAKEABLE state, candidate rank, G3 outcome, resurrection verdict, or theology was assigned."
+
+
+  - sequence: 92
+    repository_commit: "12fc784e0482d9455c1b1c139d67698352b97466"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml blob b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+    exposure_class: "G2_L2_LANE_SYNTHESIS_AND_PROPOSITION_FACET_DISPOSITIONS"
+    amendment_surfaces:
+      - "15 L2-linked proposition facet dispositions"
+      - "P-DEATH historical sufficiency record"
+      - "L2 source-quality/death-survival findings"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "L2 K4 freeze issued 1 SUPPORTED_WITHIN_SCOPE (P-DEATH), 4 PARTIALLY_SUPPORTED_WITHIN_SCOPE, 9 NOT_ESTABLISHED_WITHIN_SCOPE, and 1 EVIDENCE_AGAINST_WITHIN_SCOPE (P-S1-NONDEATH). No discriminator direction, comparison MAKEABLE state, candidate ranking, G3 outcome, or theology was produced."
+
+  - sequence: 93
+    repository_commit: "744d3cc368aa93ae6ab845c31fb9f2269df5d26e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml blob 181ab979d41f2b5ae45fceb9750564a49e5748ec"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_CLERICAL_REPAIR__PENDING_INDEPENDENT_CONFIRMATION"
+    amendment_surfaces:
+      - "L2 lane freeze Q1_EVENT_CONTROL blob pointer only"
+    candidate_effects:
+      all_candidates: "NEUTRAL"
+    note: "Version 0.1.1 corrects only the Q1_EVENT_CONTROL_0_1_8 blob pointer from an erroneous SHA to the verified blob c05b099b07ab9bfd3b73f84910ba9b33d08d0521. All 15 proposition rows, dispositions, evidence bindings, rationales, P-DEATH sufficiency record, and lane conclusions are unchanged. C4 independent confirmation remains pending and will be bundled with the next Reviewer C assignment."
+
+
+  - sequence: 94
+    repository_commit: "173084fc436bfb62da935184f66fcb41d78d5bfc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml blob 0f79a3303340db613285490fb7644221c125766b"
+    exposure_class: "G2_POST_G1_FOUNDING_STRATUM_AND_STREAM_IDENTIFICATION_FREEZE__NO_TRUTH_DISPOSITION"
+    amendment_surfaces:
+      - "founding proclamation stratum identification"
+      - "same-stream encounter inventory for R/V"
+      - "later-report nonqualification controls"
+    note: "Program Lead froze the post-G1, pre-direction founding-proclamation and encounter-stream record required by Q1 control. The received 1 Cor 15 appearance material is conservatively treated as one pre-Pauline candidate stream cluster absent separate independence warrant; Paul's first-person claim and later Gospel/Acts/reception clusters are not automatically qualifying pre-Pauline streams. No ontology, identity, sincerity, causal-role, proposition truth, direction, ranking, G3, or theology result was assigned."
+
+
+  - sequence: 95
+    repository_commit: "6f714aa6851ad07ec17162df6500b48e604e62ca"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_0.yaml blob ec6c6808a5a7c32fdcce84982155770287f6718a"
+    exposure_class: "G2_L3_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "32 unique L3-linked necessary proposition surfaces"
+      - "same-stream encounter binding"
+      - "testimony/experience/reference-class controls"
+    note: "Program Lead bound the frozen founding-stream inventory and G1/L1/L2 evidence to the 32 unique L3-linked proposition scopes. The matrix assigns no L3 proposition disposition, no discriminator direction, no comparison MAKEABLE state, no candidate status, and no ranking."
+
+
+  - sequence: 96
+    repository_commit: "REVIEWER_C_G2_L3_COVERAGE_BATCH_FREEZE__INPUT_030eac58cf5803d709285525d5acb2344978d1c2__PROMPT_c9cbb82ce68f0b238f7b754f06efcac1b0f352c5"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L3 32-proposition coverage batch plus L2 pointer-repair C4 confirmation packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "32 L3-linked PROPOSITION scope coverage states"
+      - "L2 lane freeze 0.1.1 POST_EVIDENCE_NONMATERIAL pointer correction"
+      - "Substantive checkpoint 1ab75662218dcfe761bd9ab3eb903004fc210155 / tree 483c8436b43d06d34cb21ece8e6c58e3ef044795"
+    note: "Fresh Reviewer C must separately confirm/reject the L2 pointer-only clerical amendment and assign coverage states to exactly 32 L3-linked proposition scopes. The packet prohibits proposition truth dispositions, discriminator directions, comparison MAKEABLE certification, ranking, G3 outcomes, encounter-veridicality verdicts, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 97
+    repository_commit: "89de257f46660cc4a9a0deedaec82f6f2ef222a3"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L3_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob 46da2f8d540f9fe3214b1e69c2aaa1d0a76c35a8"
+    exposure_class: "G2_L3_PROPOSITION_SCOPE_COVERAGE_REVIEW__PLUS_L2_C4_CONFIRMATION"
+    amendment_surfaces:
+      - "32 L3-linked PROPOSITION scope coverage states"
+      - "L2 pointer-repair C4 classification"
+      - "L3 return-to-evidence trigger"
+    note: "Fresh Reviewer C confirmed L2 0.1.1 as POST_EVIDENCE_NONMATERIAL_NEUTRAL. For L3 it assigned 16 COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS and 16 COVERAGE_INCOMPLETE. The shared exact return trigger is argument-level Luedemann/Goulder text or one argument-preserving substitute stating mechanism, timing, named recipients, and group-transfer claims. No truth disposition, discriminator result, ranking, resurrection verdict, G3 outcome, or theology was assigned."
+
+  - sequence: 98
+    repository_commit: "WEB_ACQUISITION_ROUND_G2_L3_RETURN_001"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Bounded L3 target-case psychological-mechanism return search"
+    exposure_class: "G2_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__RETURN_TRIGGER_ONLY"
+    source_strata: ["SRC-08","SRC-09","SRC-16"]
+    accessed_sources:
+      - "Stephen H. Smith, Exploring the Role of Bereavement Hallucinations in Early Christian Resurrection Beliefs, Qeios v2, 2024, DOI 10.32388/4OXSRK.2, full CC-BY PDF"
+      - "Stephen H. Smith, Appearances of the Risen Jesus and the Modern Study of Bereavement Hallucinations, Qeios v1, 2024"
+      - "Andrew Loke and Nick Meader, Assessing Psychological Explanations for Jesus' Post-Resurrection Appearances: A Response to Stephen H. Smith, Journal for the Study of the Historical Jesus 23.1 (2025), repository metadata and abstract"
+      - "Gerd Luedemann, The Resurrection of Jesus: History, Experience, Theology, 1994, Google Books metadata/summary"
+      - "Stephen H. Smith, Muddle and Method: The Post-Resurrection Appearances of Jesus in Focus, Qeios 2023, metadata/abstract"
+    failed_or_limited_access:
+      - "Loke/Meader accepted-author-manuscript link was present at the institutional repository but direct fetch was blocked in the current environment."
+      - "Luedemann 1994 full text remains unavailable through the checked route."
+      - "Goulder 1996 full chapter remains unavailable and was not replaced with an unauthorized reproduction."
+    observation_only:
+      - "Smith 2024 gives an argument-level target-case model: individual bereavement vision, paradigmatically Peter or another disciple, followed by communication/social propagation framed as collective delusion rather than literal shared hallucination."
+      - "Smith explicitly discusses collective appearances to the Twelve and 500-plus and presents the paper as extending Luedemann/Goulder psychological models."
+      - "Loke/Meader's peer-reviewed abstract supplies an adverse transfer critique, arguing that Smith misuses some analogies and overlooks case differences."
+    boundary_note: "Acquisition only. Smith's mechanism is not adopted as true, and Loke/Meader's critique is not adopted as decisive. FS-01 remains one founding stream cluster. No proposition disposition or discriminator direction is assigned."
+
+  - sequence: 99
+    repository_commit: "a94a2631e7f5b46c8af389b69fd7cf00af09b7fc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_0.yaml blob 2215bbaab64e6620db7125272a0e129c86fcf97d"
+    exposure_class: "G2_TARGETED_RETURN_ACQUISITION_RECORD__NO_TRUTH_DISPOSITION"
+    amendment_surfaces:
+      - "Reviewer C L3 shared return trigger"
+      - "G2L3R-001 Smith 2024 argument-level substitute"
+      - "G2L3R-002 Loke/Meader adverse transfer control"
+    note: "The sealed 73-record G1 baseline is unchanged. This additive G2 return record self-certifies no coverage closure; it only records that the exact Reviewer-C-authorized substitute route has been acquired for fresh re-review."
+
+  - sequence: 100
+    repository_commit: "c330a3bd85f5ceded184a7b09d7c9fbd56e42463"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_1.yaml blob ea563ab2b659753c8af56b6c7d305af0af89f23e"
+    exposure_class: "G2_L3_POST_RETURN_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "32 L3-linked proposition source bindings"
+      - "T5 individual-experience controls"
+      - "T6 social-experience controls"
+    note: "Matrix 0.1.1 integrates G2L3R-001/G2L3R-002 after Reviewer C's coverage-incomplete return. Frozen candidate architecture, same-stream rules, and all proposition definitions remain unchanged. No L3 truth disposition is assigned; all 32 scopes return to fresh coverage review."
+
+
+  - sequence: 101
+    repository_commit: "WEB_ACQUISITION_ROUND_G2_L3_RETURN_002"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Bounded follow-up acquisition of full Loke/Meader adverse response"
+    exposure_class: "G2_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__RETURN_TRIGGER_ADVERSE_CONTROL"
+    source_strata: ["SRC-08","SRC-09","SRC-16"]
+    accessed_sources:
+      - "Andrew Loke and Nick Meader, Assessing Psychological Explanations for Jesus' Post-Resurrection Appearances: A Response to Stephen H. Smith, Journal for the Study of the Historical Jesus 23.1 (2025), full peer-reviewed accepted manuscript from Hong Kong Baptist University institutional repository"
+    observation_only:
+      - "The full paper reconstructs Smith's strategy as an initial Peter bereavement hallucination followed by wider disciple mass-hysteria/collective-delusion claims."
+      - "It reviews bereavement-hallucination prevalence and modality data rather than relying only on a generic plausibility objection."
+      - "It argues that mass psychogenic illness symptom patterns do not map well to the reported perceptual experiences and that shared-perception claims remain difficult under the proposed mechanism."
+      - "It separately criticizes Smith's cognitive-dissonance transfer by comparing the early-Christian case with proposed analogues."
+    boundary_note: "This is an adverse argument-level control, not an authority verdict. Its historical premises and inferential claims remain subject to the same lane and source-quality controls as Smith's positive model."
+
+  - sequence: 102
+    repository_commit: "81ef7b7be1f3110d195d249c828f9147917e04af"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_1.yaml blob 1f8c55661a6027b67bc5115c91090f2337d21eba"
+    exposure_class: "G2_TARGETED_RETURN_ACQUISITION_RECORD__FULL_POSITIVE_AND_ADVERSE_ARGUMENT_PAIR"
+    amendment_surfaces:
+      - "G2L3R-001 Smith 2024 positive mechanism"
+      - "G2L3R-002 Loke/Meader 2025 full adverse response"
+    note: "Version 0.1.1 upgrades the adverse control from abstract-level to full accepted-manuscript access. No frozen architecture or proposition truth disposition is changed."
+
+  - sequence: 103
+    repository_commit: "6296a6c6097403828331a4281dd7f489daeb4ee7"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_2.yaml blob e25d9041a447df41a7b013f836e8e3cc74546334"
+    exposure_class: "G2_L3_POST_RETURN_EVIDENCE_BINDING_MATRIX__FULL_ADVERSE_CONTROL_INTEGRATED__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "32 L3-linked proposition source bindings"
+      - "individual-experience target-case model"
+      - "social/group transfer target-case model"
+      - "full peer-reviewed adverse transfer critique"
+    note: "Matrix 0.1.2 integrates the full Smith positive-model / Loke-Meader adverse-model pair before any L3 truth disposition. All 32 scopes require fresh coverage-state recheck."
+
+
+  - sequence: 104
+    repository_commit: "REVIEWER_C_G2_L3_POST_RETURN_COVERAGE_RECHECK_FREEZE__INPUT_db684f910b9d35c01bcaa7b6ea67e178bb9c7a06__PROMPT_cf024292a0deb77763561ef68030cab260b7d9a3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L3 post-return 32-scope coverage recheck packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__POST_RETURN__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "32 L3-linked PROPOSITION scope coverage states"
+      - "16 formerly incomplete L3 return triggers"
+      - "G2L3R-001 Smith 2024 target-case mechanism substitute"
+      - "G2L3R-002 Loke/Meader 2025 full peer-reviewed adverse control"
+      - "Substantive checkpoint d584c5498b5325cc0999ad7b2f6c8ce98f103cd5 / tree 968da63fa87a54e58a33210dda1b4cad823b88c6"
+    note: "Fresh Reviewer C must re-evaluate all 32 L3 proposition scopes after the bounded return. For each formerly incomplete scope it must decide whether the exact argument-level return trigger is cured. The packet prohibits truth dispositions, discriminator directions, comparison MAKEABLE certification, ranking, G3 outcomes, encounter-veridicality verdicts, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 105
+    repository_commit: "6bd9a7d171ce22fd493308e4ec1598db9da0041c"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L3_POST_RETURN_COVERAGE_RECHECK_REPORT_0_1_0.md blob 6910f2ed330b740e7a059d8b579a608e0a699170"
+    exposure_class: "G2_L3_POST_RETURN_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+    amendment_surfaces:
+      - "32 L3-linked PROPOSITION scope coverage states"
+      - "16 formerly incomplete return triggers"
+      - "Smith 2024 argument-preserving substitute"
+      - "Loke/Meader 2025 adverse control"
+    note: "Fresh Reviewer C found all 32 L3 scopes COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS, with all 16 formerly incomplete scopes explicitly CURED_BY_ARGUMENT_PRESERVING_SUBSTITUTE and no remaining return trigger. No truth disposition, discriminator direction, comparison MAKEABLE state, ranking, G3 outcome, resurrection verdict, or theology was assigned."
+
+  - sequence: 106
+    repository_commit: "ee8cfddaeb3a3d5d875ba09da1890a102552a4da"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml blob b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+    exposure_class: "G2_L3_LANE_SYNTHESIS_AND_PROPOSITION_FACET_DISPOSITIONS"
+    amendment_surfaces:
+      - "32 L3-linked proposition facet dispositions"
+      - "same-stream testimony findings"
+      - "target-case psychological-model testimony effects"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "L3 K4 freeze issued 11 PARTIALLY_SUPPORTED_WITHIN_SCOPE, 4 PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE, and 17 NOT_ESTABLISHED_WITHIN_SCOPE, with 0 SUPPORTED, 0 EVIDENCE_AGAINST, 0 CONTRADICTED, 0 UNDERDETERMINED, and 0 INSUFFICIENT_SIGNAL. These are L3 lane outputs only. No discriminator direction, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 107
+    repository_commit: "87ca2181b80f962a16baaa3ea4b4115c2de77aee"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_EVIDENCE_MATRIX_0_1_0.yaml blob 1678db66e40d65554010ccc93c0014fbecb410a3"
+    exposure_class: "G2_L4_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "29 unique L4-linked necessary proposition surfaces"
+      - "individual bereavement mechanism controls"
+      - "social/group process controls"
+      - "memory/narrative development controls"
+      - "deception/fabrication mechanism controls"
+    note: "Program Lead bound the frozen evidence record, L3 target-case positive/adverse mechanism pair, and prior lane outputs to 29 unique L4-linked proposition scopes. No L4 truth disposition, discriminator direction, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 108
+    repository_commit: "REVIEWER_C_G2_L4_COVERAGE_BATCH_FREEZE__INPUT_c6b1585a6755084199a86cbddaa0ad145ac834fb__PROMPT_2b8297d854c600976b7c423b25c5543c2110db01"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L4 29-proposition coverage batch execution packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "29 L4-linked PROPOSITION scope coverage states"
+      - "psychological mechanism capacity versus target-case occurrence"
+      - "social/group genuine-experience boundary"
+      - "memory/narrative development boundary"
+      - "fabrication actor/opportunity implementation boundary"
+      - "Substantive checkpoint 63fa554af8cde7bd7d968473280a73539474b120 / tree f77a804b02147d6174f7e464baad23c47572f404"
+    note: "Fresh Reviewer C must assign coverage states to exactly 29 L4-linked proposition scopes. The packet prohibits proposition truth dispositions, discriminator directions, comparison MAKEABLE certification, ranking, G3 outcomes, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 109
+    repository_commit: "a74718927464585d2d70f50d3ca439ce72c42c15"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L4_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob 758265350c7a285b64c866ae2d965970b93ee18a"
+    exposure_class: "G2_L4_PROPOSITION_SCOPE_COVERAGE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "29 L4-linked PROPOSITION scope coverage states"
+      - "psychology/memory/social-process disposition eligibility"
+    note: "Fresh Reviewer C assigned COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS to all 29 L4-linked proposition scopes, with 0 COMPLETE and 0 INCOMPLETE. No return-to-evidence trigger was found. No proposition truth disposition, discriminator direction, comparison MAKEABLE state, candidate ranking, G3 outcome, resurrection verdict, or theology was assigned."
+
+
+  - sequence: 110
+    repository_commit: "44f8e57f64a25c29677b46562b6473f041ee017b"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml blob 45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+    exposure_class: "G2_L4_LANE_SYNTHESIS_AND_PROPOSITION_FACET_DISPOSITIONS"
+    amendment_surfaces:
+      - "29 L4-linked proposition facet dispositions"
+      - "psychological/social mechanism-capacity findings"
+      - "memory/narrative-development findings"
+      - "fabrication-mechanism findings"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "L4 K4 freeze issued 9 PARTIALLY_SUPPORTED_WITHIN_SCOPE, 4 PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE, and 16 NOT_ESTABLISHED_WITHIN_SCOPE, with 0 SUPPORTED, 0 EVIDENCE_AGAINST, 0 CONTRADICTED, 0 UNDERDETERMINED, and 0 INSUFFICIENT_SIGNAL. These are L4 lane outputs only. No discriminator direction, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 111
+    repository_commit: "2679aca2a47e1b8d0118381c981270014b3c36db"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_0.yaml blob 3c2e300bc5c92392c490024fcafeadeae2d51b90"
+    exposure_class: "G2_L5_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "8 unique L5-linked necessary proposition surfaces"
+      - "embodiment/nonembodiment interpretation"
+      - "same-referent personal identity"
+      - "extramentality versus subjective-only routes"
+      - "BGD-1/BGD-2/BGD-9/BGD-11 sensitivity"
+    note: "Program Lead bound the frozen textual/testimonial/psychological record and metaphysical/anomaly/testimony source set to 8 L5 proposition scopes. The matrix explicitly separates metaphysical possibility, historical actuality, extramentality, embodiment, and personal identity. No L5 truth disposition, D3/D4 direction, comparison MAKEABLE state, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 112
+    repository_commit: "REVIEWER_C_G2_L5_COVERAGE_BATCH_FREEZE__INPUT_f41b10eae84a7db9fe6fb9f49c0b9fcb110a9122__PROMPT_3c4995aaa4d1ce836f9d19466b3fc1890a4c5afc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L5 8-proposition coverage batch execution packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "8 L5-linked PROPOSITION scope coverage states"
+      - "BGD-1 ontology/postmortem possibility sensitivity"
+      - "BGD-2 anomaly-prior sensitivity"
+      - "BGD-9 testimony epistemology sensitivity"
+      - "BGD-11 embodiment/personal-identity sensitivity"
+      - "same-referent identity route"
+      - "Substantive checkpoint 8049f2071a011a08995649680f5341199105f79a / tree 79b9098e62ceef00c514e53d19c477870067cb39"
+    note: "Fresh Reviewer C must assign coverage states to exactly 8 L5-linked proposition scopes and audit whether the frozen philosophical/background sensitivity surfaces are adequately represented. The packet prohibits truth dispositions, preferred-background selection, D3/D4 direction results, comparison MAKEABLE certification, ranking, G3 outcomes, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 113
+    repository_commit: "31abb01cf528eff6c37bcc3193d8d469614cf0cb"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob 275940b8cc8a2798f38d7f203b49a7f8ea6fa99f"
+    exposure_class: "G2_L5_PROPOSITION_SCOPE_COVERAGE_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "8 L5-linked PROPOSITION scope coverage states"
+      - "BGD-1/BGD-2/BGD-9/BGD-11 argument-level coverage"
+      - "P-R-BODY interpretive argument coverage"
+    note: "Fresh Reviewer C assigned COVERAGE_INCOMPLETE to all 8 L5 scopes and specified the smallest bounded return: argument-level formulations for the frozen background variants/pairs plus Mikkelsen analysis and a second non-abstract 1 Corinthians 15 body argument. No truth disposition, preferred ontology, D3/D4 result, comparison MAKEABLE state, ranking, G3 outcome, resurrection verdict, or theology was assigned."
+
+  - sequence: 114
+    repository_commit: "WEB_ACQUISITION_ROUND_G2_L5_RETURN_001"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Bounded L5 philosophical/metaphysical argument-level return search"
+    exposure_class: "G2_EXTERNAL_EVIDENCE_SOURCE_EXPOSURE__RETURN_TRIGGER_ONLY"
+    source_strata: ["SRC-02","SRC-13","SRC-14","SRC-15","SRC-19"]
+    accessed_sources:
+      - "Stanford Encyclopedia of Philosophy: Physicalism"
+      - "Stanford Encyclopedia of Philosophy: Miracles"
+      - "Simon Kittle 2022, God is (Probably) a Cause among Causes"
+      - "Stanford Encyclopedia of Philosophy: Afterlife"
+      - "Stephen E. Braude 2005, Personal Identity and Postmortem Survival, full article"
+      - "William Jaworski 2013, Hylomorphism and Resurrection, full argument-level text"
+      - "Dean Zimmerman 1999, The Compatibility of Materialism and Survival"
+      - "Open-access Locke personal-identity review"
+      - "Stanford Encyclopedia of Philosophy: Epistemological Problems of Testimony"
+      - "Goldberg and Henderson, Monitoring and Anti-Reductionism in the Epistemology of Testimony"
+      - "John Earman 1993, Bayes, Hume, and Miracles"
+      - "Richard Swinburne 2004, The Existence of God chapter records"
+      - "Daniel Mikkelsen 2019, full article on 1 Corinthians 15 resurrection body"
+      - "James P. Ware, full public argument on 1 Corinthians 15; peer-reviewed JBL article identity crosschecked"
+    failed_or_limited_access:
+      - "Some classic primary philosophical works remain paywalled or are represented through full reference entries/repository versions rather than publisher full text."
+      - "Ware's peer-reviewed JBL article was not relied on through a rights-unclear reproduction; the full public author essay carries the argument-level role."
+    observation_only:
+      - "The acquired set makes causal-closure, interventionist/noninterventionist theism, non-theistic survival, anomaly-prior, reductionist/anti-reductionist testimony, and all eight permitted BGD-11 pair satisfaction routes explicit."
+      - "Mikkelsen's full article was analyzed and Ware supplies a second non-abstract body-continuity argument."
+    boundary_note: "Acquisition only. No ontology/background is preferred, no metaphysical possibility is treated as actuality, and no D3/D4 direction or proposition disposition is assigned."
+
+  - sequence: 115
+    repository_commit: "01c3001a629d0b145ee8365d432b9e413004e749"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml blob e7ce6e5f16e922c44f2a2f2c4b8d056e934fe62d"
+    exposure_class: "G2_L5_TARGETED_ARGUMENT_LEVEL_RETURN_ACQUISITION__NO_TRUTH_DISPOSITION"
+    amendment_surfaces:
+      - "BGD-1A/1C/1D/1E"
+      - "BGD-2A/2B/2C"
+      - "BGD-9A/9B"
+      - "eight permitted BGD-11 embodiment×identity pairs"
+      - "P-R-BODY / P-V-NONEMBODIED interpretive route"
+    note: "Additive G2 return record only; the sealed 73-record G1 baseline is unchanged. Program Lead does not self-certify coverage closure."
+
+  - sequence: 116
+    repository_commit: "9435e312cf971e956be6a684f961f12c2fc30650"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_1.yaml blob 9ee7786338227d30ee347980301809c4a0b531b2"
+    exposure_class: "G2_L5_POST_RETURN_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "8 L5-linked proposition source bindings"
+      - "argument-level background sensitivity"
+      - "pair-specific EMB-1/EMB-3 satisfaction criteria"
+    note: "Matrix 0.1.1 integrates only the Reviewer-C-specified bounded return. Frozen backgrounds, permitted pair set, candidate architecture, and proposition definitions remain unchanged. All 8 scopes require fresh coverage recheck before disposition."
+
+
+  - sequence: 117
+    repository_commit: "REVIEWER_C_G2_L5_POST_RETURN_COVERAGE_RECHECK_FREEZE__INPUT_782d01af48524662c37a8058c4b069bf631e33b3__PROMPT_36a472abad9621a847c8b89023fcece32dfcacea"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L5 post-return 8-scope coverage recheck packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__POST_RETURN__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "8 L5-linked PROPOSITION scope coverage states"
+      - "BGD-1/BGD-2/BGD-9/BGD-11 return-trigger cure status"
+      - "P-R-BODY interpretive return-trigger cure status"
+      - "Substantive checkpoint 96c498cbeb3d097d3247bb921824af98afffe4cd / tree 3637238a2c4014a14293711672dafd6637cba9a5"
+    note: "Fresh Reviewer C must re-evaluate all 8 L5 scopes after the bounded argument-level return and explicitly determine whether each prior defect is cured. The packet prohibits truth dispositions, preferred-background selection, D3/D4 directions, comparison MAKEABLE certification, ranking, G3 outcomes, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 118
+    repository_commit: "8cba25c198e06c6fd7eda1ccb9477edf3141d361"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L5_POST_RETURN_COVERAGE_RECHECK_REPORT_0_1_0.md blob 0e60d0214e121018f559059ab43eafae11687f24"
+    exposure_class: "G2_L5_POST_RETURN_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+    amendment_surfaces:
+      - "8 L5-linked PROPOSITION scope coverage states"
+      - "BGD-1/BGD-2/BGD-9/BGD-11 return-trigger cure status"
+      - "P-R-BODY interpretive return-trigger cure status"
+    note: "Fresh Reviewer C found all 8 L5 scopes COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS and all five return triggers CURED_BY_ARGUMENT_LEVEL_RETURN. No preferred background, truth disposition, D3/D4 result, comparison MAKEABLE state, ranking, G3 outcome, resurrection verdict, or theology was assigned."
+
+  - sequence: 119
+    repository_commit: "319e49da914dc8fd8aed3fe2542692a4dbe27194"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_LANE_FREEZE_0_1_0.yaml blob 1a5ab10c51842e843ea15361533f342d929079e0"
+    exposure_class: "G2_L5_LANE_SYNTHESIS_AND_PROPOSITION_FACET_DISPOSITIONS"
+    amendment_surfaces:
+      - "8 L5-linked proposition facet dispositions"
+      - "BGD-1/BGD-2/BGD-9/BGD-11 sensitivity findings"
+      - "embodiment/extramentality/identity findings"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "L5 K4 freeze issued 3 PARTIALLY_SUPPORTED_WITHIN_SCOPE, 3 PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE, and 2 NOT_ESTABLISHED_WITHIN_SCOPE, with 0 SUPPORTED, 0 EVIDENCE_AGAINST, 0 CONTRADICTED, 0 UNDERDETERMINED, and 0 INSUFFICIENT_SIGNAL. No D3/D4 direction, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 120
+    repository_commit: "1421d5b2dd0140adcf8cd08c824d93e80ac46eed"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_EVIDENCE_MATRIX_0_1_0.yaml blob 6eb9b21cb3ecf159e293e96680319822aa90669b"
+    exposure_class: "G2_L6_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "15 L6-linked proposition scope bindings"
+      - "founding causal-role ladder"
+      - "profile-match and joint-pattern causal controls"
+    note: "Program Lead bound L1-L5 lane outputs and the frozen causal-profile partition to 15 unique L6 proposition scopes. No L6 truth disposition, D2/D5/D9/D-S1 direction result, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 121
+    repository_commit: "REVIEWER_C_G2_L6_COVERAGE_BATCH_FREEZE__INPUT_fcc5e7ef7234ef0904c7500c9bb6d511fb47d466__PROMPT_575c42604bb0575de4323760150d970ba3ae68ec"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 L6 15-proposition coverage batch execution packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "15 L6-linked PROPOSITION scope coverage states"
+      - "causal-role ladder and profile-match reviewability"
+      - "unmatched-vector safeguard"
+      - "Substantive checkpoint 1b66e4df4b7d93a79d347b5eac14f82d5495fefa / tree 21cb3dbdd74ef4ad795ff13b6c4c69f625c109de"
+    note: "Fresh Reviewer C must assign coverage states to exactly 15 L6-linked proposition scopes. The packet prohibits proposition truth dispositions, causal-role assignments, D2/D5/D9/D-S1 directions, comparison MAKEABLE certification, ranking, G3 outcomes, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 122
+    repository_commit: "f24b013fbd73194e2cb663c164fb8bbb67234bdd"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_L6_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob eb3bf37e62cd64881b1f1442964b80c55ba0cc6f"
+    exposure_class: "G2_L6_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+    amendment_surfaces:
+      - "15 L6-linked PROPOSITION scope coverage states"
+      - "causal-role/profile reviewability"
+      - "unmatched-vector safeguard"
+    note: "Fresh Reviewer C found all 15 L6 scopes COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS, 0 incomplete, and no serious unmatched causal vector requiring return. No causal-role value, proposition truth disposition, discriminator direction, comparison state, ranking, G3 outcome, resurrection verdict, or theology was assigned."
+
+  - sequence: 123
+    repository_commit: "360c0fbea8ca5634f9db3ca42ed111aa7923a90f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_FREEZE_0_1_0.yaml blob 0859f241ffb4de8f9d5884f44fd6a2f6d2233ac4"
+    exposure_class: "G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_DISPOSITIONS"
+    amendment_surfaces:
+      - "15 causal proposition facet dispositions"
+      - "Phase-L proposition consolidation inputs"
+      - "candidate causal-profile chain inputs"
+    note: "L6 causal-attribution subphase issued 2 PARTIALLY_SUPPORTED_WITHIN_SCOPE, 1 PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE, and 12 NOT_ESTABLISHED_WITHIN_SCOPE. Entire L6 comparative-integration lane remains open. No causal-role vector was selected; no discriminator direction, comparison MAKEABLE state, candidate status, ranking, G3 outcome, or theology was produced."
+
+
+  - sequence: 124
+    repository_commit: "3a5905d01705ac0a727c7530ac3ad5f9baf8bebf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_EVIDENCE_MATRIX_0_1_0.yaml blob 18ef0c436e1a1b9d138b8e3503b93b142d09f006"
+    exposure_class: "G2_SHARED_FLOOR_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "PROPOSITION:P-HIST-JESUS"
+      - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+      - "PROPOSITION:P-CRUC"
+      - "Phase-L preconsolidation dependency"
+    note: "Integration review identified that the three frozen shared-floor propositions still require their own independent PROPOSITION:<id> coverage-state certifications before final Phase-L dispositions. This is an execution dependency, not a G0 architecture/source-plan/candidate-burden change. The matrix binds existing evidence and node rivals without assigning truth dispositions."
+
+
+  - sequence: 125
+    repository_commit: "REVIEWER_C_G2_SHARED_FLOOR_COVERAGE_BATCH_FREEZE__INPUT_ed63c53c59b4f8ce81d6fc38f59362747d81359b__PROMPT_32232700c2e1156226b75fd0d7486d00d5cf36ff"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer C G2 three-proposition shared-floor coverage batch execution packet"
+    exposure_class: "G2_REVIEW_CONTROL_FREEZE__NO_PROPOSITION_DISPOSITION"
+    amendment_surfaces:
+      - "PROPOSITION:P-HIST-JESUS coverage state"
+      - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE coverage state"
+      - "PROPOSITION:P-CRUC coverage state"
+      - "Phase-L shared-floor consolidation gate"
+      - "Substantive checkpoint b4c8fdcc751346c09b73dc484e2a9fb044eb0d35 / tree 8220c7f539df75db4093855a841b1e24ae09c5e7"
+    note: "Fresh Reviewer C must assign coverage states only to the three frozen NONCOMPARATIVE_SHARED_FLOOR proposition scopes. The packet forbids truth dispositions, relative candidate credit, D0 candidate-selection use, comparison MAKEABLE certification, ranking, G3 outcomes, resurrection verdicts, theology, and repository modification."
+
+
+  - sequence: 126
+    repository_commit: "db9f6a8504b51e4e42d7ce78b33f6a3077c349e9"
+    actor_lineage: "XAI_GROK_4_7_FRESH_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md blob c1647cc86b05185ebd9c23cfba01caf900a6edbb"
+    exposure_class: "G2_SHARED_FLOOR_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+    amendment_surfaces:
+      - "PROPOSITION:P-HIST-JESUS coverage state"
+      - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE coverage state"
+      - "PROPOSITION:P-CRUC coverage state"
+      - "Phase-L shared-floor consolidation gate"
+      - "bounded Reviewer-C provenance/coverage spot checks"
+    note: "Fresh Reviewer C found all 3 shared-floor proposition scopes COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS, 0 complete, and 0 incomplete; no scope must return to evidence acquisition before Phase-L truth disposition. The report preserved Pauline single-stream/dependence limits, Tacitus-source uncertainty, Josephus transmission/authenticity limits, Synoptic dependence, nonhistoricity and noncrucifixion node rivals, and frozen probative-absence ceilings. It assigned no truth disposition, relative candidate credit, comparison MAKEABLE state, ranking, G3 outcome, resurrection verdict, or theology. Reviewer C also noted that the substantive checkpoint predates the currently qualified Protocol/Governance objects; this is a procedural integration note for Program Lead resolution, not an evidence-stratum defect."
+
+
+  - sequence: 127
+    repository_commit: "aa9f0c49235cbef66e5cc9c57890379634f12937"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_DISPOSITION_FREEZE_0_1_0.yaml blob ba00ad992a08db3dde1b34302644b84abd23dd82"
+    exposure_class: "G2_PHASE_L_SHARED_FLOOR_PROPOSITION_DISPOSITIONS"
+    amendment_surfaces:
+      - "PROPOSITION:P-HIST-JESUS disposition"
+      - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE disposition"
+      - "PROPOSITION:P-CRUC disposition"
+      - "shared-floor sufficiency records"
+      - "Phase-L cross-lane consolidation inputs"
+    note: "Program Lead issued SUPPORTED_WITHIN_SCOPE for all three shared-floor propositions after Reviewer C cleared all three proposition scopes as COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS. Each disposition has its own historical/textual sufficiency record and preserves dependence, provenance, node-rival, transmission, and probative-absence limits. Proposed confidence is MODERATE for P-HIST-JESUS, HIGH for P-EARLY-PROCLAMATION-EXISTENCE, and MODERATE for P-CRUC, pending independent confidence review where outcome-material. Shared-floor results create no relative candidate credit and do not certify comparison MAKEABLE state, candidate ranking, G3 outcome, resurrection verdict, or theology."
+
+
+  - sequence: 128
+    repository_commit: "78baaf84127ffd54481bc82b5db5844b940c7e4f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_0.yaml blob 9d0d90aa43f7e4d4118e56149880af23454b520a"
+    exposure_class: "G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION"
+    amendment_surfaces:
+      - "all 50 necessary proposition consolidated dispositions"
+      - "cross-lane facet/dependence/convergence/defeater reconciliation"
+      - "Phase-L proposed confidence classes"
+      - "Reviewer-D confidence-control gate"
+    note: "Program Lead consolidated all 50 unique necessary propositions under Protocol Phase L without candidate ranking or G3 adjudication. Result: 4 SUPPORTED, 17 PARTIALLY_SUPPORTED, 4 PLAUSIBLE_BUT_UNATTESTED, 24 NOT_ESTABLISHED, 1 EVIDENCE_AGAINST, 0 CONTRADICTED, 0 UNDERDETERMINED, 0 INSUFFICIENT_SIGNAL. Two lane-disposition divergences were reasoned rather than vote-counted: P-HIND-FOUNDING-CAUSAL -> NOT_ESTABLISHED by weakest necessary causal facet; P-V-REAL-REFERENT -> PARTIALLY_SUPPORTED because L5 philosophical live-ness neither defeats nor independently promotes L3 testimonial support. Final confidence and any cumulative fragility determination remain pending independent post-evidence control."
+
+
+  - sequence: 129
+    repository_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml blob 150e8e711ac97be6bd31c668b0638246b57e57ab"
+    exposure_class: "G2_PHASE_L_LIFECYCLE_GATE_CORRECTION__NO_DISPOSITION_CHANGE"
+    amendment_surfaces:
+      - "post-Phase-L lifecycle routing"
+      - "Reviewer-D trigger interpretation"
+      - "G2 exit / G3 authorization gate"
+    note: "Version 0.1.1 supersedes the 0.1.0 lifecycle-routing tail only. All 50 proposition matrices and consolidated dispositions are unchanged. Protocol L4 confidence/fragility review is not automatically triggered because all 11 candidates already have at least one candidate-specific necessary proposition below SUPPORTED, so confidence class cannot presently change TRUTH_WARRANTED eligibility. A12 candidate status remains unassigned because it belongs to G3 Phase N. Reviewer D remains eligible but unlaunched. The next gate is G2 completion and explicit G3 transition authorization."
+
+
+  - sequence: 130
+    repository_commit: "c56c2a41e274a4e2a4ff4652915dde17d9d28713"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G2_COMPLETION_AND_G3_TRANSITION_REQUEST_0_1_0.yaml blob 216b61f6241faf650366e9d4c7e445800bac3ec4"
+    exposure_class: "G2_COMPLETION__G3_HUMAN_AUTHORIZATION_GATE"
+    amendment_surfaces:
+      - "G2 completion status"
+      - "G3 transition authorization boundary"
+      - "post-Phase-L reviewer trigger evaluation"
+    note: "Program Lead froze G2 substantive completion and an explicit G3 transition request. No A12 candidate status, comparison direction result, candidate ranking, proposed G3 study outcome, resurrection verdict, or theological conclusion was assigned. Reviewer D remains eligible but unlaunched because no direction-result review exists and the current L4 confidence trigger is dormant. Human-owner authorization is required before entering Phase N."
+
+
+  - sequence: 131
+    repository_commit: "48f1730679dfac2bab9bb31dccb413b92311a1d7"
+    actor_lineage: "HUMAN_OWNER"
+    source_or_artifact: "TFP_STRESS_2_G3_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md blob 6e2c935d7a8759a4862606d7c811720a406b4308"
+    exposure_class: "HUMAN_OWNER_G3_TRANSITION_AUTHORIZATION"
+    amendment_surfaces:
+      - "G3 comparative adjudication authorization"
+      - "Phase N entry authorization"
+      - "post-G2 lifecycle state"
+    note: "Human owner explicitly authorized transition from completed G2 lane synthesis into G3 comparative adjudication under Protocol 0.1.7 using substantive checkpoint 744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95 / tree fe8064227fe5ad0f9b544506ffab242d30ff992a and Phase-L consolidation blob 150e8e711ac97be6bd31c668b0638246b57e57ab. This authorization does not predetermine candidate ranking, G3 outcome, resurrection verdict, divine-agent attribution, Christianity-wide conclusion, G4 audit result, or G5 acceptance."
+
+
+  - sequence: 132
+    repository_commit: "6cfdb8430e4fc659a788d8939a2023951e63bf8c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G3_COMPARATIVE_ADJUDICATION_LAUNCH_0_1_0.yaml blob 488374e1d7ee6d069da71b1c42eb1c508a54b66a"
+    exposure_class: "G3_PHASE_N_LAUNCH"
+    amendment_surfaces:
+      - "A12 candidate structural/evidential status"
+      - "outcome-relevant comparison-set determination"
+    note: "G3 launched only after explicit human-owner authorization. Phase N candidate status is first; no pairwise direction, ranking, G3 base outcome, resurrection verdict, or theology is assigned by the launch."
+
+  - sequence: 133
+    repository_commit: "daf44d455007fc14ddd93b695220867c7e3575b1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml blob 7ff930c5e31b57b593a56250ef9462763036c6b3"
+    exposure_class: "G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT"
+    amendment_surfaces:
+      - "all 11 candidate A12 statuses"
+      - "ranking-eligible candidate set"
+      - "outcome-relevant comparison set"
+      - "N3 base-outcome input"
+    note: "All 11 admitted full candidates are STRUCTURALLY_ADEQUATE and ADEQUATE_BUT_RANKING_BLOCKED; 0 are INADEQUATE_BY_EVIDENCE and 0 are RANKING_ELIGIBLE. The zero-ranking-eligible state is background-robust because each candidate has at least one ranking blocker outside favorable L5 background selection. No pairwise dominance comparison is outcome-relevant at this state. No study-level outcome is assigned in this artifact."
+
+
+  - sequence: 134
+    repository_commit: "481f3788ededab5a424c1b65c546efe7b2ae38fd"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml blob dcd196dab83012e96540cced1464293d7fbdb2a2"
+    exposure_class: "G3_PROVISIONAL_STUDY_OUTCOME_AND_Q1_APPLICATION"
+    amendment_surfaces:
+      - "N3 provisional base outcome"
+      - "Q1 resurrection-question answer"
+      - "G4 strict-audit target"
+    note: "Program Lead applied N3 first-satisfied-row precedence after Phase N: 11 ADEQUATE candidates and 0 RANKING_ELIGIBLE yields PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED. The frozen Q1 precedence table yields R_EVENT_NOT_WARRANTED_WITHIN_SCOPE because R-TRANS is ranking-blocked and multiple affirmative R conjuncts remain below SUPPORTED. This is not evidence that resurrection is false. No candidate ranking, BEST_SUPPORTED result, divine-agent attribution, Christianity-wide inference, or G5 acceptance is assigned."
+
+
+  - sequence: 135
+    repository_commit: "fb69d0eb78b1534d368a6d4b098db5a82de5fff7"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
+    exposure_class: "G4_STRICT_AUDITOR_ASSIGNMENT_CONTROL__NO_SUBSTANTIVE_AUDIT_EXPOSURE"
+    amendment_surfaces:
+      - "Reviewer E assignment provenance"
+      - "G4 strict-independence gate"
+    note: "Assignment-only handshake prompt frozen before any prospective Reviewer E receives substantive TFP-STRESS-2 material. The prompt contains no G3 outcome, candidate result, prior audit reasoning, or repair reasoning. A substantive audit packet may be released only after the exact assigned session returns PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT and the role-control record is frozen."
+
+
+  - sequence: 136
+    repository_commit: "f6d833aad5d50e8f77f22f58585780a610b33dde"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_ASSIGNMENT_HANDSHAKE_RESPONSE_0_1_0.md blob 2c4ad780f7c53503b7afc69f27b6ebb38bd0b230"
+    exposure_class: "G4_REVIEWER_E_HANDSHAKE"
+    amendment_surfaces: ["G4 auditor assignment"]
+    note: "Reviewer E returned PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT with disclosed account-memory limitation and no reported substantive TFP-STRESS-2 exposure."
+
+  - sequence: 137
+    repository_commit: "c25c3afdf3196b2c5077bd0b6f84706c4c93f26f"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_2.yaml blob 17bf0a32f135cede8a09835cfbed35a532ffcc62"
+    exposure_class: "G4_REVIEWER_E_ROLE_CONTROL"
+    amendment_surfaces: ["G4 audit E1 registration","Reviewer E role continuity"]
+    note: "Audit E1 is registered and launch-ready for the exact assigned Reviewer E conversation."
+
+  - sequence: 138
+    repository_commit: "1ab1eadc7a8f75d46cef44b803f28d6596123c0c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE_0_1_0.yaml blob 71b50ddd0011f68d06e769fe2c9336a0b3ab928c"
+    exposure_class: "G4_AUDIT_INPUT_FREEZE"
+    amendment_surfaces: ["G4 audit target","G4 mandatory checks"]
+    note: "Read-only G4 audit input frozen against the exact G3 substantive target."
+
+  - sequence: 139
+    repository_commit: "db71aa141682b8502c3c68cd7868830068a8743b"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_LAUNCH_SPEC_0_1_0.yaml blob 5df08209cfaefb6521c0c60d3bdbde1c671c3868"
+    exposure_class: "G4_AUDIT_LAUNCH_SPEC"
+    amendment_surfaces: ["G4 external execution"]
+    note: "Structured launch specification frozen for audit E1."
+
+
+  - sequence: 140
+    repository_commit: "182c8d933c73af7c3b0bcfb52131e28b9d5c214d"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md blob bd10df2283516e4e6bfd04e367373c750d4e0d27"
+    exposure_class: "G4_STRICT_AUDIT_REPORT"
+    amendment_surfaces: ["G4 disposition","G5 eligibility","post-audit repairs"]
+    note: "Audit E1 returned PASS_WITH_LIMITATIONS with 0 BLOCKING, 0 MAJOR, and 8 MINOR findings; core A12/N3/Q1 result reproduced."
+
+  - sequence: 141
+    repository_commit: "f4053c46307e394cb36234389a6300617219fcb3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_AUDIT_E1_INTEGRATION_AND_REPAIR_PLAN_0_1_0.yaml blob fb855a092bd9bb32d0a41bc7d9a3cc1db0caec6d"
+    exposure_class: "G4_POST_AUDIT_REPAIR_PLAN"
+    amendment_surfaces: ["F1-F8 closure plan","G5 readiness"]
+    note: "Program Lead selected closure of repairable MINOR findings before requesting G5; G3 merits remain frozen."
+
+  - sequence: 142
+    repository_commit: "127a98d2a0dc5cff6bc671e982cce4763bde9c9e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_3.yaml blob 253b33872ca3f28b4a13eb2c30119b0b41235f40"
+    exposure_class: "G4_AUDIT_E1_COMPLETION_REGISTRATION"
+    amendment_surfaces: ["audit-set status","G5 eligibility"]
+    note: "Registered E1 as completed PASS_WITH_LIMITATIONS."
+
+  - sequence: 143
+    repository_commit: "59a4b5e5ac13f143b6e126092e385aa4c5e9b925"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G1_COMPLETION_AND_G2_TRANSITION_0_1_1.yaml blob 749d1d8ef2b024135ee6001001ef622ee09bf535"
+    exposure_class: "POST_EVIDENCE_CLERICAL_REPAIR"
+    amendment_surfaces: ["F7 cold-start artifact completeness"]
+    note: "Parseable clerical supersession of G1 transition record; no merit change."
+
+  - sequence: 144
+    repository_commit: "c48ed3ff8df182de0594ff28c1d80639d787212a"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F4_BACKGROUND_INVARIANCE_RECORD_0_1_0.yaml blob 60929138f4ec43b8878cb5576ecd07cfe3597426"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F4 background robustness","A12/N3/Q1 robustness"]
+    note: "Adds explicit candidate-by-candidate background-invariant blocker table; no merit change claimed before C4 confirmation."
+
+  - sequence: 145
+    repository_commit: "ad083a87bb37c1232192eac992e0a5720e32bbff"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F5_N3_REPORTING_ERRATA_0_1_0.yaml blob 949d87ddb1277379a3b15d20ce064c02e396f075"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F5 N3 reporting scope"]
+    note: "Adds required P-CRUC conditional qualifier to displayed relative outcome; base outcome unchanged."
+
+  - sequence: 146
+    repository_commit: "aa46b6581a378c9e10268b5a24d9944362cca36c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F6_EQUAL_STANDARD_RECONCILIATION_0_1_0.yaml blob d79543aa7798856988a06a1ef7c94c1dad8dc9b4"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F6 equal-standard reconciliation"]
+    note: "Records proposition-decomposition rationale for H-SEED versus C-HET social labels; no disposition change."
+
+  - sequence: 147
+    repository_commit: "ca542497de051cd75097f40260020d294740f2c0"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F7_COLD_START_ERRATA_0_1_0.yaml blob 0430abeffe480bc49fd5b1e6169b624e997e1290"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F7 cold-start completeness"]
+    note: "Binds parseable G1 transition supersession and stale-header interpretation; historical artifacts remain unchanged."
+
+  - sequence: 148
+    repository_commit: "47db63c9f18f0bde2ab34b96dcdd9dd9359d4ac6"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F8_G0_BUNDLE_ERRATA_0_1_0.yaml blob 19d6a9649f570bbcf2ad36bfd389dc67d50d1e1e"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F8 immutable identity regression"]
+    note: "Supplies correct packet-index blob while preserving immutable G0 authorization bundle."
+
+  - sequence: 149
+    repository_commit: "3d43d644fed5340e7b1f2069857b3f744110f3fd"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_E1_F3_LEDGER_ERRATA_0_1_0.yaml blob d05af3bd5507f4b2c0cc3fee3407b00e9a443fa3"
+    exposure_class: "POST_EVIDENCE_NONMATERIAL_REPAIR_PENDING_C4"
+    amendment_surfaces: ["F3 ledger integrity","immutable identity regression"]
+    note: "Discloses historical sequence-3 short-to-full commit normalization and stale G0 activation header; no historical ledger blob rewritten."
+
+
+  - sequence: 150
+    repository_commit: "787a47ddd4fa6f8036304e2e362eb03d111e7f09"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_INPUT_FREEZE_0_1_0.yaml blob 231ae4685f4e6acd7047f1ea771d326334a7fc3b"
+    exposure_class: "G4_POST_AUDIT_C4_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["F1 Phase-L control tail","F3-F8 additive repair direction classification"]
+    note: "Fresh Reviewer-C C4 batch input frozen; no amendment may be used for G5 until independent classification returns."
+
+  - sequence: 151
+    repository_commit: "52a343787c2af20e7ef074c25c2c382d593fd187"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_PROMPT_0_1_0.md blob c19ee87871e86b48657a9fed035340924d9aa756"
+    exposure_class: "G4_POST_AUDIT_C4_REVIEW_PROMPT"
+    amendment_surfaces: ["Reviewer-C amendment-direction review"]
+    note: "Prompt requires a brand-new clean external Reviewer-C session, read-only repository use, and item-by-item C4 classification for A-H."
+
+
+  - sequence: 152
+    repository_commit: "019a11bd7a06879da1c1a96fb2c5a25957c4ab07"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md blob cf59f05ede4c71345155c067a3098d0790b2b099"
+    exposure_class: "G4_POST_AUDIT_C4_CLASSIFICATION_REPORT"
+    amendment_surfaces: ["F1 Phase-L control-tail classification","F3-F8 repair classification","G5 current-study use"]
+    note: "Fresh Reviewer C classified A-H as NEUTRAL / POST_EVIDENCE_NONMATERIAL; no directional contamination or fresh confirmatory cycle. F6 remains usable only as a no-change reconciliation note because its cited module-map blob did not resolve."
+
+  - sequence: 153
+    repository_commit: "d2eaf3d9e38e0a550049cb6b9d7ddd6f9852f7a1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_REVIEWER_C_C4_INTEGRATION_CLOSURE_0_1_0.yaml blob ebe2ae4292cc0b371aca78f41664ff36feec85fb"
+    exposure_class: "G4_C4_INTEGRATION_CLOSURE"
+    amendment_surfaces: ["A17 binding for Phase-L amendment","F6 pin caveat","Reviewer-D ledger-integrity input"]
+    note: "Integrates C4 confirmation without changing G3 merits. Explicitly binds Phase-L 0.1.1 to ledger sequences 128/129 and preserves F6's failed source pin as a use limitation rather than silently substituting it."
+
+
+  - sequence: 154
+    repository_commit: "a8d7e1dce5a036dfe2d964e84f4b5fd8a342c864"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_INPUT_FREEZE_0_1_0.yaml blob 2185666ef77d39eec36a4f91e3f77211dc752ac9"
+    exposure_class: "G4_REVIEWER_D_LEDGER_INTEGRITY_INPUT_FREEZE"
+    amendment_surfaces: ["A17 ledger integrity","F2 closure","G5 readiness"]
+    note: "Reviewer-D input frozen over L1/L2/Phase-L amendments, post-audit C4-confirmed repairs, sequence-3 rewrite disclosure, and current ledger 0.1.75."
+
+  - sequence: 155
+    repository_commit: "307ce30c62e80aba7e59cc311c93f3209c6f342e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_PROMPT_0_1_0.md blob f1b8338a1b00c66a74c04513c08cd91e1d602285"
+    exposure_class: "G4_REVIEWER_D_LEDGER_INTEGRITY_PROMPT"
+    amendment_surfaces: ["Reviewer-D ledger integrity review"]
+    note: "Prompt restricts Reviewer D to A17 ledger-integrity review in a fresh disjoint read-only session."
+
+  - sequence: 156
+    repository_commit: "74fe0cb5810ed4be406834785ef32d3cf68f5aaf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_ROLE_CONTROL_0_1_0.yaml blob 618e9c3353395b95caf882c2ec7bc2ef2e9202ac"
+    exposure_class: "G4_REVIEWER_D_ROLE_CONTROL"
+    amendment_surfaces: ["Reviewer-D role assignment","F2 closure"]
+    note: "Reviewer-D active role is ledger-integrity reviewer only; external identity remains pending and must be disjoint from Program Lead, A/B/C, and Reviewer E."
+
+
+  - sequence: 157
+    repository_commit: "72eee1f135323d3b9560b50b0e4f0605b3a01386"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_OFFLINE_PACKET_PROVENANCE_0_1_0.yaml blob 8f9241f030c452b6f4687fb936f37a5d6ac2c815"
+    exposure_class: "G4_REVIEWER_D_OFFLINE_PACKET_PROVENANCE"
+    amendment_surfaces: ["A17 ledger-integrity review provenance","F2 closure"]
+    note: "Preserves the offline packet identity and transport limits used by the fresh Gemini Reviewer-D session, including frozen GitHub REST history evidence rather than live GitHub access."
+
+  - sequence: 158
+    repository_commit: "7be4f810f5bc1d922188ba8a9f2045336ea09445"
+    actor_lineage: "GOOGLE_GEMINI_3_1_PRO_EXTENDED_REVIEWER_D_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md blob 84ea800532fef7fe814cc0c68f25102034330e9a"
+    exposure_class: "G4_REVIEWER_D_LEDGER_INTEGRITY_REPORT"
+    amendment_surfaces: ["A17 ledger integrity","F2 closure","G5 readiness"]
+    note: "Fresh disjoint Reviewer D returned LEDGER_INTEGRITY_CONFIRMED. Sequence continuity, historical sequence-3 disclosure, amendment chronology/C4 pairing, Phase-L additive A17 binding, and F6 pin treatment were accepted."
+
+  - sequence: 159
+    repository_commit: "ce87ee8f5811b6902cda1b88a6a2c48ccc7c5ee5"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_0.yaml blob d9a3a54ef7d96547368c8e0efbff14ed31461b42"
+    exposure_class: "G4_POST_AUDIT_CLOSURE__G5_READINESS"
+    amendment_surfaces: ["F1-F8 closure status","G5 human-acceptance readiness"]
+    note: "G4 remains PASS_WITH_LIMITATIONS. F1 and F2 are closed; F3-F8 are closed with stated additive-use constraints. No G3 merit, A12 count, N3 base outcome, or Q1 answer changed. Human acceptance remains required before canonical promotion."
+
+
+  - sequence: 160
+    repository_commit: "3b18ead020e45e31214a3886412e8c9540841996"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml blob 4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
+    exposure_class: "G5_HUMAN_ACCEPTANCE_REQUEST"
+    amendment_surfaces: ["canonical adjudication acceptance","STATE promotion","G6 transition"]
+    note: "Freezes the exact bounded adjudication, audit result, carried limitations, uncertainty, negative knowledge, downstream constraints, and reopen conditions for explicit human-owner acceptance. No acceptance or PROPOSED-prefix removal occurs here."
+
+
+  - sequence: 161
+    repository_commit: "f8784bfa234763f63004dd65c64fbaf1e4f6c0ed"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_CLAUDE_REVERIFICATION_HANDSHAKE_RESPONSE_0_1_0.md blob b13417bb933118f03a15cbd32400b2cd272a5b8c"
+    exposure_class: "G4_REVIEWER_D_REVERIFICATION_HANDSHAKE"
+    amendment_surfaces: ["F2 reverification","Reviewer-D lineage independence"]
+    note: "Fresh Claude Opus 5.5 session returned PROCEDURALLY_DISJOINT_FOR_REVIEWER_D with no visible TFP-STRESS-2 substantive exposure."
+
+  - sequence: 162
+    repository_commit: "b96ac086ba4e0415c08ef22c1896e02f18a34b2e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_F2_REOPEN_FOR_REVIEWER_D_REVERIFICATION_0_1_0.yaml blob 7d9266932a3e9e58f167dd6fb9cc93f68035d709"
+    exposure_class: "G4_F2_REOPEN__G5_READINESS_SUSPENSION"
+    amendment_surfaces: ["F2 closure status","G5 readiness"]
+    note: "Program Lead reopened F2 because the Gemini result had been accepted before sufficiently deep independent Project-Lead replay. Gemini report remains historical supporting evidence."
+
+  - sequence: 163
+    repository_commit: "c56b01694b65c71261e4db4d10c3805f1464b358"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_INPUT_FREEZE_0_1_0.yaml blob 63b67f57e6d9812cb6b7ab47c94328778692db90"
+    exposure_class: "G4_REVIEWER_D_LIVE_REVERIFY_INPUT_FREEZE"
+    amendment_surfaces: ["A17 full ledger-version chain","F2 reverification"]
+    note: "Fresh Reviewer-D target frozen at pre-Gemini commit 43ee1477fc500a28372710f3a57127b4edcaef6a / tree 378b7904abe6afb27395ef32c5cc636adcef102a. Requires inspection of every ledger transition 0.1.0 through 0.1.76."
+
+  - sequence: 164
+    repository_commit: "7acc4bf2595c89521f4726bd34be34fa9f19df03"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_PROMPT_0_1_0.md blob a4c5ef6223c90cdb0f05e34d25d47e5980cb4260"
+    exposure_class: "G4_REVIEWER_D_LIVE_REVERIFY_PROMPT"
+    amendment_surfaces: ["A17 independent reverification"]
+    note: "Prompt requires direct repository review at the pre-Gemini target and forbids reading prior Reviewer-D or later G5 result material before fixing the independent conclusion."
+
+
+  - sequence: 165
+    repository_commit: "bf90d01331300ae1159755f7731b1f6da2365673"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md blob c030bcef140db40410a92ce9b8499b998b4c0cf6"
+    exposure_class: "G4_REVIEWER_D_LIVE_REVERIFY_REPORT"
+    amendment_surfaces: ["A17 ledger integrity","F2 closure","G5 readiness"]
+    note: "Fresh live-repository Reviewer D returned LEDGER_INTEGRITY_NOT_CONFIRMED. D-1: Phase-L 0.1.1 was used before C4; lesser L1/L2 pre-C4 citations also existed. D-2: ledger 0.1.63-0.1.76 self-identity/status headers were stale. D-3: pre-activation 0.1.0->0.1.1 non-entry revision observed."
+
+  - sequence: 166
+    repository_commit: "ec2df3e7e8cefc188d04ed399e3e105ecdc08303"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml blob e741f98508e21bfec618bd9162ce2e86302c76c4"
+    exposure_class: "G4_PROJECT_LEAD_INDEPENDENT_A17_REPLAY"
+    amendment_surfaces: ["D-1 chronology","D-2 ledger headers","D-3 pre-activation metadata","F2 repair scope"]
+    note: "Program Lead independently fetched and compared all ledger transitions 0.1.0-0.1.76, reproducing the single sequence-3 prior-entry mutation and the stale 0.1.63-0.1.76 headers, and independently verified the Phase-L/L1/L2 pre-C4 chronology."
+
+  - sequence: 167
+    repository_commit: "e1948813cd528d7e5b5e02b9f86d0aa3997b85c6"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_DISCLOSURE_0_1_0.yaml blob 53386141c6c1bdbbaa3b285981ea70ea2aee54ad"
+    exposure_class: "G4_F2_ADDITIVE_LEDGER_INTEGRITY_DISCLOSURE"
+    amendment_surfaces: ["A17 chronology disclosure","ledger self-identity repair","G5 readiness"]
+    note: "Additively discloses the Phase-L/L1/L2 before-C4 use/citation chronology, stale ledger-version headers, and the pre-activation non-entry revision. Historical artifacts remain unchanged."
+
+
+  - sequence: 168
+    repository_commit: "51f51b63a9f46cd0418faf15e7522040f45f475e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_REQUEST_0_1_0.yaml blob 0b0f50001cb7b5f8ba7764d58e4da071277a4562"
+    exposure_class: "G3_POST_C4_HUMAN_RATIFICATION_REQUEST"
+    amendment_surfaces: ["G3 authority chronology","F2 repair","prospective A12/N3/Q1 revalidation","G5 readiness"]
+    note: "Requests narrow human-owner ratification of the same G3 transition after disclosure of the before-C4 chronology defect and after independent Reviewer-C confirmation that Phase-L 0.1.1 is NEUTRAL / POST_EVIDENCE_NONMATERIAL. Does not request G5 acceptance or any stronger outcome."
+
+
+  - sequence: 169
+    repository_commit: "352c6b2b470a05a41c3a0103f90f72c8dbe7b952"
+    actor_lineage: "HUMAN_OWNER"
+    source_or_artifact: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md blob 21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+    exposure_class: "G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE"
+    amendment_surfaces: ["G3 authority chronology","prospective A12/N3/Q1 current-study use","F2 repair"]
+    note: "Human owner ratified the same G3 transition after disclosure of the chronology defect and after Reviewer-C classified Phase-L 0.1.1 NEUTRAL / POST_EVIDENCE_NONMATERIAL. Ratification does not authorize G5 acceptance or any stronger theological conclusion."
+
+  - sequence: 170
+    repository_commit: "79c2a1251269134c9cd7c31f5fe66f0437feb949"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml blob 59a832f494e8207cfb7fb33d6eb714a1c5942465"
+    exposure_class: "G3_POST_C4_PROSPECTIVE_MECHANICAL_REVALIDATION"
+    amendment_surfaces: ["A12 candidate status","N3 base outcome","Q1 answer","F2 repair"]
+    note: "Using unchanged frozen evidence and Phase-L 0.1.1 after C4 and human ratification, A12 revalidates to 11 ADEQUATE_BUT_RANKING_BLOCKED / 0 RANKING_ELIGIBLE; N3 remains PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED; Q1 remains R_EVENT_NOT_WARRANTED_WITHIN_SCOPE. No new evidence, architecture, ranking, or direction result."
+
+
+  - sequence: 171
+    repository_commit: "63a9c26429882561c852034aa01684d0beb22f99"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_INPUT_FREEZE_0_1_0.yaml blob 7a46c65dedcdfe54130f134f8d4aada7b2f94ba0"
+    exposure_class: "G4_F2_REVIEWER_D_DELTA_INPUT_FREEZE"
+    amendment_surfaces: ["F2 repair verification","G5 readiness"]
+    note: "Freezes a narrow delta review for the same Claude Reviewer-D session over ledger 0.1.79-0.1.82, D-1/D-2/D-3 disclosures, human ratification, and prospective A12/N3/Q1 revalidation."
+
+  - sequence: 172
+    repository_commit: "6c33ffe7aea7f816241c06fc076bf7ec48b56cbc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_PROMPT_0_1_0.md blob 6c3278ae242b1d86a99b29c4c75eb7dc5a89dba0"
+    exposure_class: "G4_F2_REVIEWER_D_DELTA_PROMPT"
+    amendment_surfaces: ["F2 repair verification"]
+    note: "Prompt limits Reviewer D to repair-delta verification and forbids redoing C4, strict audit, ranking, or Q1 merits."
+
+
+  - sequence: 173
+    repository_commit: "c441920666aa0b09aa5fb7149cfd2d8e50e67a0a"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md blob 3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
+    exposure_class: "G4_F2_REVIEWER_D_DELTA_CONFIRMATION"
+    amendment_surfaces: ["A17 ledger integrity","F2 closure","G5 readiness"]
+    note: "Same fresh Claude Reviewer-D lineage returned LEDGER_INTEGRITY_DELTA_CONFIRMED. D-1 and D-2 are closed for A17/F2; D-3 is disclosed. O-1 through O-4 are non-blocking observations."
+
+  - sequence: 174
+    repository_commit: "1458a00827ceb820fae39afe0725667ace607b5c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_PROJECT_LEAD_F2_DELTA_INDEPENDENT_CHECK_0_1_0.yaml blob 302fb4a9937a7da8795444d4e8f52098ef9db5ca"
+    exposure_class: "G4_F2_PROJECT_LEAD_INDEPENDENT_DELTA_REPLAY"
+    amendment_surfaces: ["F2 closure","G5 readiness"]
+    note: "Program Lead independently reproduced the repair-delta result: no pre-existing sequence changed from ledger 0.1.76 through 0.1.82; repaired headers, disclosure, ratification chronology, and unchanged A12/N3/Q1 revalidation all verified."
+
+  - sequence: 175
+    repository_commit: "6f1da59bcfe000681443d4c9c11335c180d538a9"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_CLOSURE_0_1_0.yaml blob f2585ebf6ac62eb86ed32d45dcff19e285e31ae4"
+    exposure_class: "G4_F2_LEDGER_INTEGRITY_CLOSURE"
+    amendment_surfaces: ["F2 closure","G5 readiness refresh"]
+    note: "F2 closed on fresh Reviewer-D delta confirmation plus independent Program-Lead replay. Revalidated A12/N3/Q1 remain unchanged; no stronger outcome is created."
+
+pre_g0_controls:
+  substantive_outcome_evidence_acquisition_for_G1: "PROHIBITED"
+  steelman_packet_formulation_source_review:
+    status: "PERMITTED_AS_G0_DESIGN_ACTIVITY"
+    requirement: "Every outcome-relevant source/artifact exposure must be appended to this ledger."
+  source_plan_construction_search:
+    status: "PERMITTED_ONLY_TO_DEFINE_G0_SEARCH_ROUTES_AND_FORMULATION_STRATA"
+    requirement: "If source content is opened/read, record the exposure; no proposition disposition or candidate ranking may be assigned."
+  candidate_and_background_review: "PERMITTED_AND_LEDGERED"
+  methodological_design_review: "PERMITTED_AND_LEDGERED"
+  discriminator_rule_design: "PERMITTED_AND_LEDGERED"
+  direction_result_application: "PROHIBITED_BEFORE_G1_EVIDENCE_FREEZE"
+  proposition_dispositions: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+
+g0_activation_record:
+  final_g0_bundle_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
+  human_owner_authorization_artifact: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md@ecb616b1d3d96fe5bf7cc9c7a48a3e48e171c85c"
+  g1_activated_at: "54299f37a4d6da04a948e50bcd9ec616d855d91f"
+
+integrity_state:
+  next_sequence: 176
+  last_checked_by: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE__DELTA_CONFIRMED_2026-10-06"
+  custodian_independent_replay_by: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE__POST_DELTA_2026-10-06"
+  F2_closed: true
+  F2_closure_basis: "Reviewer-D delta confirmation + Program-Lead independent replay"
+  batch_commit_order_inversion_disclosed: "Sequence 157 cites commit 72eee1f, which is later in Git order than sequence-158 commit 7be4f81 and sequence-159 commit ce87ee8. This preserved batch-order inversion has no amendment or outcome effect and was independently judged non-blocking by Reviewer D."
+  rewrite_detected: true
+  header_identity_repaired_at_version: "0.1.80"
+  historical_header_staleness_disclosed: "Ledger files 0.1.63 through 0.1.79 inherited schema_version 0.1.62, supersedes 0.1.61, and ACTIVE_PRE_G0 status; filename/Git order remained authoritative. Historical files are not rewritten."
+  amendment_before_C4_use_disclosed: "Phase-L 0.1.1 was used in G2/G3/A12/N3/G4-control records before C4 at sequence 152; L1/L2 had narrower pre-C4 citations. See sequence 167 disclosure."
+  pre_activation_nonentry_revision_disclosed: "Ledger 0.1.0 -> 0.1.1 changed non-entry policy/baseline metadata before activation and with no sequence entries; recorded for completeness."
+  historical_rewrite_note: "Ledger 0.1.1 sequence 3 used short commit 2c3a852; ledger 0.1.2 normalized it in place to full commit 2c3a852cb5a00416a6f214318a356fc0019f2edf. E1 F3 classifies this as content-neutral but historically a rewrite."
+  record_correction_applied: true
+  corrected_sequence: 39
+  historical_corrupted_report_blob: "3fff99e93cf94bb6d4d82537522c5ed655173634"
+  authentic_report_blob: "1ac620cdc1ca8abbdda8dc375080643442f2c6c2"
