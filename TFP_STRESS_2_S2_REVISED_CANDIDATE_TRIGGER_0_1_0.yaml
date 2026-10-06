@@ -1,0 +1,64 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVISED_CANDIDATE_REQUIRED_TRIGGER"
+candidate_id: "S2"
+status: "TRIGGERED_AT_STEELMAN_PACKET_STAGE"
+date: "2026-10-05"
+
+trigger_basis:
+  admission_freeze: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+  candidate_register: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+  steelman_packet: "TFP_STRESS_2_STEELMAN_S2_0_1_0.yaml"
+  formulation_source_record: "TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+  reviewer_A_prior_condition: "At packet stage, S2's native/proponent review must confirm the mandatory access chain is recognizable. If not, document an unrepresented formulation and route to REVISED_CANDIDATE_REQUIRED rather than stretching S2."
+
+frozen_S2_core:
+  crucifixion_identity: "Jesus was not the person crucified; another person/event was substituted or materially misidentified as Jesus's crucifixion."
+  continued_life: "Jesus continued alive."
+  founding_mechanism: "An outcome-material actor had post-event access to the living Jesus, that access was transmitted into the founding movement under sincere mistaken death attribution, and the access-and-transmission chain was PRIMARY or NECESSARY_CONTRIBUTING."
+
+formulation_review:
+  sources:
+    - "Quran 4:157"
+    - "IslamQA, Jesus in Islam"
+    - "IslamQA, The crucifixion of the Messiah between Islam and Christianity"
+  findings:
+    - "The substitution/misidentification or noncrucifixion component is strongly recognizable."
+    - "The reviewed mainstream substitution formulation describes Jesus as saved/raised rather than remaining available for the frozen post-event access chain."
+    - "No reviewed source supplied the mandatory access-and-transmission mechanism that the frozen S2 full candidate requires to explain the founding proclamation."
+  disposition: "CURRENT_S2_PACKET_NOT_NATIVE_OR_PROPONENT_FAITHFUL"
+
+why_outcome_material:
+  - "S2 is status-bearing. A falsely attributed origin mechanism could create artificial adequacy or failure."
+  - "Removing the access burden without review would make S2 materially weaker after admission freeze."
+  - "Keeping the access burden while calling it tradition-native would misrepresent the serious rival."
+  - "The protocol's candidate completeness and equal-strength rules therefore require candidate-lineage review."
+
+bounded_reviewer_A_options:
+  - id: "A"
+    label: "RECLASSIFY_SUBSTITUTION_AS_NODE_RIVAL"
+    effect: "Remove S2 from status-bearing candidates; preserve substitution/misidentification as a serious rival on P-CRUC/P-S2-NOT-CRUCIFIED and related identity propositions. Do not pretend it independently explains the founding proclamation."
+  - id: "B"
+    label: "REPAIR_S2_FULL_CANDIDATE"
+    effect: "Keep a status-bearing S2 only if a closed, serious, independently defensible founding mechanism can be specified without falsely attributing it to the reviewed native tradition and without becoming an open-ended composite."
+  - id: "C"
+    label: "SPLIT_S2"
+    effect: "Retain a node-level traditional substitution rival and separately admit a fully specified status-bearing synthetic candidate only if the synthetic founding mechanism independently satisfies B1/SERIOUS_RIVAL."
+  - id: "D"
+    label: "EXCLUDE_S2_FULL_CANDIDATE"
+    effect: "Exclude the current full candidate if neither B nor C can satisfy the candidate rules; preserve relevant node-level propositions."
+
+program_lead_recommendation:
+  preferred: "A_UNLESS_REVIEWER_A_CAN_NAME_A_CLOSED_SERIOUS_FULL_MECHANISM"
+  rationale:
+    - "The reviewed native material strongly supports a crucifixion-identity rival."
+    - "It does not independently provide a complete founding-proclamation causal model."
+    - "Node-level retention preserves the challenge to P-CRUC without inventing a tradition-native causal chain."
+    - "This is narrower than creating a speculative new composite merely to keep a 13th candidate."
+
+boundaries:
+  no_G0_authorization: true
+  no_G1_evidence_acquisition: true
+  no_proposition_disposition: true
+  no_candidate_ranking: true
+  no_resurrection_outcome: true
