@@ -79,24 +79,33 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-POST-QUALIFICATION-HOLD"
-  status: "awaiting_next_G0_authorization"
-  purpose: "Protocol 0.1.7 is qualified; no substantive theological study is authorized."
+  id: "TFP-STRESS-2-PRE-G0-DESIGN"
+  status: "reviewer_A_blind_elicitation_pending"
+  purpose: "Prepare and independently review the TFP-STRESS-2 resurrection-claim G0 bundle without beginning substantive evidence acquisition."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  qualification_acceptance: "TFP_ADJUDICATION_PROTOCOL_0_1_7_QUALIFICATION_ACCEPTANCE_0_1_0.md"
-  strict_audit_disposition: "PASS_WITH_LIMITATIONS"
+  design_branch: "research/tfp-stress-2-resurrection-g0"
+  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_0.md"
+  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_0.yaml"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
+  reviewer_A_prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_PROMPT_0_1_0.md"
   methodology_mode: "maintenance"
+  g0_authorized: false
+  g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-NEXT-G0-AUTHORIZATION"
-  action: "await_human_owner_direction_for_next_bounded_truth_study_preregistration"
-  queued_candidate: "TFP-STRESS-2:resurrection_claim"
+  id: "TFP-STRESS-2-REVIEWER-A-BLIND-ELICITATION"
+  action: "run_reviewer_A_blind_candidate_background_and_claim_typing_elicitation"
+  reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  reviewer_A_actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_PROMPT_0_1_0.md"
   requirements:
-    - "do_not_treat_protocol_qualification_as_study_authorization"
-    - "freeze_separate_study_preregistration_before_G0_authorization"
-    - "human_owner_G0_authorization_required_before_substantive_study_launch"
+    - "do_not_show_program_lead_candidate_or_background_lists_before_blind_elicitation_freezes"
+    - "do_not_open_TFP_STRESS_2_repository_artifacts_during_blind_phase"
+    - "do_not_search_or_adjudicate_outcome_evidence"
+    - "preserve_returned_reviewer_report_unchanged_before_comparison"
+    - "do_not_authorize_G1_or_substantive_theological_study"
 qualification_candidate:
   version: "0.1.7"
   protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
@@ -296,7 +305,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "queued_not_authorized"
+    status: "pre_g0_design__reviewer_A_pending__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
