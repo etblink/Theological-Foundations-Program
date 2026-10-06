@@ -1,0 +1,186 @@
+schema_version: "0.1.4"
+study_id: "TFP-STRESS-2"
+artifact: "Q1_EVENT_CONTROL"
+status: "S3_PRE_EVIDENCE_AMENDMENT_APPLIED__11_CANDIDATES__P_CRUC_SHARED_FLOOR_REVIEW_PENDING__REVIEWER_B_PENDING"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_3.yaml"
+
+active_question:
+  id: "Q1"
+  proposition_id: "R_EVENT"
+  text: "Does the best publicly adjudicable historical evidence warrant that Jesus genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+
+P_DEATH_operational_definition:
+  proposition_id: "P-DEATH"
+  definition: "In connection with the outcome-material crucifixion event attributed to Jesus, and before any claimed founding post-event encounter stream used by this study, Jesus entered a biological state in which integrated organismic life had ceased to the degree properly classified as death rather than uninterrupted survival, apparent death, coma, shock, or transient loss of consciousness under the best applicable historical/medical model. A later restoration of life, if it occurred, does not retroactively reclassify a prior genuine death state as mere survival."
+  applies_symmetrically_to:
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "L"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+    - "C-HET-SEED-SPREAD"
+    - "H-SEED-SPREAD"
+  denied_by:
+    - "S1"
+  safeguards:
+    - "No candidate may define death more weakly or strongly for itself."
+    - "Historical evidence limitations affect disposition/confidence; they do not change the proposition's truth conditions."
+    - "Modern clinical terminology may inform but may not be projected without historical applicability."
+
+P_CRUC_classification_control:
+  current_candidate_universe_count: 11
+  all_status_bearing_candidates_require_P_CRUC_identically: true
+  current_classification: "PENDING_EXPLICIT_SHARED_FLOOR_REVIEW"
+  prohibition: "Do not silently treat P-CRUC as SHARED_FLOOR merely because all remaining full candidates require it."
+  required_node_rival_family: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  fallback_preserved: "PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE"
+  review_prompt: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_PROMPT_0_1_0.md"
+
+positive_embodiment_definition:
+  rule: "A postmortem referent counts as EMBODIED only if EMB-1 through EMB-3 are all satisfied. This is an ontological study definition, not a claim that any source or event satisfies it."
+  criteria:
+    - id: "EMB-1"
+      name: "BODILY_SUBJECTHOOD"
+      criterion: "The postmortem subject has a body as a constitutive mode of existence, rather than merely being represented by an image, vision-content, apparition-content, symbol, memory, or non-bodily presence."
+      evidence_classes:
+        - "source claims about bodily form or bodily existence"
+        - "interpretive/linguistic evidence about body terminology"
+        - "philosophical/metaphysical analysis of what the claimed state entails"
+    - id: "EMB-2"
+      name: "SPATIOTEMPORAL_CAUSAL_EMBODIMENT"
+      criterion: "The postmortem body has determinate spatiotemporal location and capacity for causal interaction with observers or the ordinary physical environment in ways attributable to that body."
+      evidence_classes:
+        - "claimed-encounter reports bearing on location, intersubjective access, or physical causal interaction"
+        - "body/tomb/disposition evidence where relevant"
+        - "textual and interpretive evidence bearing on whether reported interactions are literal, visionary, symbolic, or literary"
+    - id: "EMB-3"
+      name: "PERSONAL_IDENTITY"
+      criterion: "The embodied postmortem subject is the same personal subject as the pre-mortem Jesus, rather than another agent, substitute, impersonator, image, or merely representational content."
+      evidence_classes:
+        - "identity claims within relevant sources"
+        - "continuity/recognition evidence where outcome-material"
+        - "philosophical/personal-identity analysis where a candidate's formulation requires it"
+  proposition_definition:
+    P-R-BODY: "P-R-BODY is satisfied only if EMB-1, EMB-2, and EMB-3 are all satisfied for the same postmortem subject under the frozen same-stream rule."
+  candidate_boundary:
+    R_TRANS_GENERIC: "R-TRANS is the sole status-bearing R candidate and must satisfy EMB-1, EMB-2, and EMB-3. It does not require material continuity as a separate truth-warrant condition."
+    R_PHYS_REFINEMENT: "R-PHYS is a nested non-status-bearing refinement requiring P-RPHYS-CONTINUITY. It cannot create N3 sibling competition or block R_EVENT truth warrant."
+    V: "V may satisfy extramental reality and personal identity but must fail EMB-1 or EMB-2. If all three are satisfied, the event is not V."
+    NONIDENTITY_RIVAL: "A real referent that fails EMB-3 is X-REAL-REFERENT-NONIDENTITY and directly defeats P-V-IDENTITY-JESUS and the R identity condition without becoming a full candidate."
+  background_rule: "Textual/body-language interpretation may affect what a source claims. It cannot by itself establish that EMB-1 through EMB-3 occurred historically."
+
+causal_role_ladder:
+  rule: "Every candidate's founding-causal proposition uses the same mutually exclusive causal-role vocabulary."
+  values:
+    - id: "PRIMARY"
+      definition: "Under the frozen candidate model and adequately covered evidence, the mechanism is the principal causal driver of the founding proclamation; removing it would require a materially different candidate."
+    - id: "NECESSARY_CONTRIBUTING"
+      definition: "The mechanism is not the principal driver but is indispensable within the frozen candidate model; without it, that model does not generate the founding proclamation."
+    - id: "CONTRIBUTING_NONNECESSARY"
+      definition: "The mechanism materially contributes but the frozen candidate model can still generate the founding proclamation without it."
+    - id: "NONE"
+      definition: "No warranted causal contribution to the founding proclamation is established."
+  candidate_success_threshold: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+  insufficient_for_candidate_foundational_causation: ["CONTRIBUTING_NONNECESSARY","NONE"]
+  causal_profile_partition_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+
+pre_pauline_rule:
+  definition: "PRE-PAULINE means a claimed-encounter or proclamation tradition whose asserted origin is chronologically earlier than Paul's own entry into the Jesus-following movement, established by a frozen source-critical/transmission argument. It does not mean merely 'contained in a Pauline letter'."
+  paul_evidence_uses:
+    - id: "PAUL-A"
+      type: "Paul's first-person claimed experience"
+      founding_stream_use: "Cannot by itself establish the ontological character or causal role of any pre-Pauline founding stream for any candidate."
+    - id: "PAUL-B"
+      type: "Paul's transmission of traditions about others"
+      founding_stream_use: "May bear on a pre-Pauline founding stream only if the transmission/dating argument independently supports pre-Pauline origin."
+    - id: "PAUL-C"
+      type: "Paul's interpretive/theological vocabulary"
+      founding_stream_use: "May bear on what Paul claims; may not be projected backward as the founding stream's ontology or content without an independent transmission argument."
+  symmetry_rule: "The restriction applies equally to every candidate."
+
+founding_proclamation_identification:
+  generic_criteria:
+    - "A source/tradition layer is attributable to the earliest recoverable Jesus-following movement by a documented source-critical/transmission argument."
+    - "Dating is expressed as a bounded range or relative sequence when exact dating is not warranted."
+    - "Dependence is assessed; dependent attestations do not create independent strata."
+    - "Geographic locus is not assumed unless independently supported."
+    - "The existence of a founding proclamation is separated from its exact content."
+  propositions:
+    existence: "P-EARLY-PROCLAMATION-EXISTENCE"
+    content: "P-EARLY-PROCLAMATION-CONTENT"
+  identification_freeze: "The founding-proclamation stratum is identified after G1 source inventory and before any post-evidence direction result is proposed. The identification/dependency record is ledgered. Re-identification is a C4 amendment."
+  content_rule: "Whether the founding proclamation is best characterized as resurrection, exaltation, vindication, or another formulation is an evidence proposition, not a definition."
+
+founding_stream_control:
+  stream_definition: "A FOUNDING_ENCOUNTER_STREAM is a distinguishable tradition/experience-report lineage asserted to be causally upstream of or contemporaneous with the founding proclamation. Reports materially dependent on the same upstream tradition are collapsed into one stream."
+  inventory_rule: "After G1 source inventory but before direction results, all candidate-relevant founding encounter streams are inventoried using the same generic dependence rule. The inventory is ledgered and frozen; later additions/removals use C4."
+  same_stream_rule: "Every candidate is evaluated against the same frozen stream inventory."
+  R_EVENT_existential_rule: "P-R-FOUNDING-ENCOUNTER may be supported only by a founding stream for which referent evidence itself satisfies R embodiment and identity criteria. P-R-BODY from a different/later evidence class cannot be conjoined with an unrelated founding report."
+  split_result_rule:
+    - "Preserve materially different stream classifications."
+    - "If an admitted candidate covers the full materially causal pattern under its frozen propositions, evaluate it normally."
+    - "If no admitted candidate covers the pattern without adding/reassigning modules, use REVISED_CANDIDATE_REQUIRED for the comparative model question."
+    - "R_EVENT remains governed by the Q1 answer table."
+
+q1_chain_prerequisites:
+  shared_floor:
+    - "P-HIST-JESUS"
+    - "P-EARLY-PROCLAMATION-EXISTENCE"
+  affirmative_R_conjuncts:
+    - "P-CRUC"
+    - "P-DEATH"
+    - "P-R-BODY"
+    - "P-R-FOUNDING-ENCOUNTER"
+    - "P-R-CAUSAL"
+  positive_proposition_threshold: "Every affirmative R conjunct and both shared-floor prerequisites must be SUPPORTED_WITHIN_SCOPE for an affirmative truth-warrant answer."
+
+R_sibling_non_rivalry_rule:
+  status_bearing_R_candidate: "R-TRANS"
+  non_status_refinement: "R-PHYS"
+  N3_rule: "R-PHYS never counts as a separate candidate for N3 dominance, ranking flips, candidate counts, or robust dominance."
+  truth_warrant_rule: "Failure to establish P-RPHYS-CONTINUITY does not block TRUTH_WARRANTED for R-TRANS unless continuity was separately made necessary by a future authorized amendment."
+  refinement_reporting: "If P-RPHYS-CONTINUITY is supported, report the refinement as an additional local conclusion after the R_EVENT outcome."
+
+q1_answer_table:
+  precedence:
+    - order: 1
+      condition: "A prospectively designated truth-critical access/provenance/coverage failure prevents valid evaluation of P-HIST-JESUS, P-EARLY-PROCLAMATION-EXISTENCE, or any affirmative R conjunct and the protocol routes the study to INSUFFICIENT_SIGNAL_WITHIN_SCOPE."
+      q1_answer: "INSUFFICIENT_SIGNAL"
+    - order: 2
+      condition: "P-HIST-JESUS, P-EARLY-PROCLAMATION-EXISTENCE, or any affirmative R conjunct is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE under adequate coverage."
+      q1_answer: "R_EVENT_EVIDENCE_AGAINST"
+    - order: 3
+      condition: "P-HIST-JESUS or P-EARLY-PROCLAMATION-EXISTENCE is below SUPPORTED_WITHIN_SCOPE without qualifying for row 1 or 2."
+      q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    - order: 4
+      condition: "R-TRANS satisfies all affirmative R conjuncts at SUPPORTED_WITHIN_SCOPE and the protocol's TRUTH_WARRANTED refinement attaches to R-TRANS."
+      q1_answer: "R_EVENT_TRUTH_WARRANTED"
+    - order: 5
+      condition: "R-TRANS is the applicable ONLY_ADEQUATE, ONLY_RANKING_ELIGIBLE, or BEST_SUPPORTED relative outcome and all shared-floor/affirmative R propositions are SUPPORTED_WITHIN_SCOPE, but TRUTH_WARRANTED does not attach."
+      q1_answer: "R_EVENT_RELATIVELY_SUPPORTED_NOT_TRUTH_WARRANTED"
+    - order: 6
+      condition: "No earlier row applies and N3 yields UNDERDETERMINED_WITHIN_SCOPE, including FRAMEWORK_DEPENDENCE, MIXED_TRADEOFF, or POST_EVIDENCE_DIRECTIONAL_CONTAMINATION."
+      q1_answer: "UNDERDETERMINED"
+    - order: 7
+      condition: "R-TRANS remains non-prevailing, ranking-blocked, inadequate, or one or more affirmative R propositions are below SUPPORTED_WITHIN_SCOPE without triggering an earlier row."
+      q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  rationale: "Evidence directly against the R_EVENT conjunction takes precedence over underdetermination among negative/rival candidates. Rival-sibling inseparability cannot convert a defeated R_EVENT into 'undetermined'."
+  binary_reporting_rule: "The plain-language answer 'yes, warranted as true' is permitted only for R_EVENT_TRUTH_WARRANTED."
+  no_global_christianity_inference: true
+
+insufficient_signal_hardening:
+  accessible_weak_or_neutral: "Never ISS merely because it fails to favor a candidate."
+  completed_search_without_signal: "Counts as UNMAKEABLE only when the shortfall is caused by inaccessible/unavailable material, true provenance failure, or non-extant material in a prospectively designated truth-critical stratum with no predesignated adequate substitute."
+  bounded_uncertainty: "Dating/authorship/dependence uncertainty that can be represented as bounded alternatives is propagated through evidence disposition/confidence; it is not provenance failure."
+  unperformed_search: "COVERAGE_INCOMPLETE; cannot close as ISS."
+  posthoc_infeasibility: "A CRITICAL discriminator not frozen INFEASIBLE_WITHIN_SCOPE before G0 cannot later generate ISS through convenience alone; use comparison-effort and truth-critical-stratum rules."
+
+review_status:
+  reviewer_A_short_confirmation: "COMPLETE__S2_AND_S3_PRE_EVIDENCE_AMENDMENTS_APPLIED__P_CRUC_REVIEW_PENDING"
+  reviewer_B_repair_review: "PENDING"
+  reviewer_C_direction_background_review: "PENDING_AFTER_B4_AND_B_CLEARANCE"
+  g0_authorized: false
