@@ -1,0 +1,28 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_D_G4_LEDGER_INTEGRITY_ROLE_CONTROL"
+status: "ASSIGNMENT_SPEC_FROZEN__EXTERNAL_IDENTITY_PENDING"
+date: "2026-10-06"
+
+role_architecture: ["TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml","cade6816cdd357b53fee227ac76d47ab16e83451"]
+
+reviewer_D:
+  active_role: "ledger_integrity_reviewer"
+  inactive_roles:
+    - "post_evidence_direction_result_reviewer"
+    - "confidence_reviewer"
+  required_lineage: "fresh session disjoint from Program Lead, Reviewers A/B/C, and Reviewer E strict auditor"
+  repository_mode: "READ_ONLY"
+  identity_binding: "PENDING_EXTERNAL_REPORT_DECLARATION"
+
+input_freeze: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_INPUT_FREEZE_0_1_0.yaml","2185666ef77d39eec36a4f91e3f77211dc752ac9"]
+prompt: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_PROMPT_0_1_0.md","f1b8338a1b00c66a74c04513c08cd91e1d602285"]
+
+prohibitions:
+  - "No amendment-direction classification."
+  - "No strict audit."
+  - "No candidate ranking."
+  - "No Q1 re-adjudication."
+  - "No repository modification."
+
+success_condition: "External report returns LEDGER_INTEGRITY_CONFIRMED from a procedurally disjoint fresh session."
