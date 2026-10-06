@@ -1,0 +1,146 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L5_POST_RETURN_COVERAGE_RECHECK_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__POST_RETURN_RECHECK_OF_ALL_8_L5_PROPOSITION_SCOPES"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L5_POST_RETURN_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purpose: "Determine whether the bounded argument-level return cures the eight L5 coverage defects without selecting a preferred ontology/background."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "96c498cbeb3d097d3247bb921824af98afffe4cd"
+  tree: "3637238a2c4014a14293711672dafd6637cba9a5"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register_blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register_blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
+  background_interaction_matrix_blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+    blob_sha: "275940b8cc8a2798f38d7f203b49a7f8ea6fa99f"
+    role: "prior coverage-incomplete trigger"
+  - path: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml"
+    blob_sha: "e7ce6e5f16e922c44f2a2f2c4b8d056e934fe62d"
+    role: "bounded argument-level return"
+  - path: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_1.yaml"
+    blob_sha: "9ee7786338227d30ee347980301809c4a0b531b2"
+    role: "post-return L5 evidence binding"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_55.yaml"
+    blob_sha: "570f658b7096c134d53eaabd9c273959a7c42dce"
+  - path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  - path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "1cfbaeb537610afe73bc3c09bafafca41906a1dc"
+  - path: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  - path: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+
+prior_result:
+  ready_scopes: 0
+  incomplete_scopes: 8
+  exact_scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-REAL-REFERENT"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+
+return_trigger_audit:
+  BGD_11:
+    required: "Argument-level formulations for the eight permitted pairs only, including EMB-1 and EMB-3 satisfaction conditions."
+    return_artifact_claim: "All eight pairs are explicitly formulated and source-bound; no excluded pair was added."
+  BGD_1:
+    required: "Argument-level BGD-1A, BGD-1D, BGD-1E plus generic BGD-1C."
+    return_artifact_claim: "All four are explicitly formulated from identified philosophical sources without Jesus-specific evidence."
+  BGD_2:
+    required: "Argument-level BGD-2A, BGD-2B, BGD-2C, with BGD-2C generic."
+    return_artifact_claim: "All three are formulated via Bayesian miracle/anomaly literature; no numerical prior is imposed."
+  BGD_9:
+    required: "One argument-level reductionist testimony formulation paired with anti-reductionist side."
+    return_artifact_claim: "Reductionism and anti-reductionism are now explicitly represented in argument form."
+  P_R_BODY:
+    required: "Analyze Mikkelsen plus one second non-abstract interpretive source."
+    return_artifact_claim: "Mikkelsen full article is analyzed; Ware supplies a second full public argument-level interpretation."
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-REAL-REFERENT"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+
+recheck_standard:
+  - "Re-evaluate all eight scopes from the post-return record; do not inherit prior INCOMPLETE automatically."
+  - "For each prior return trigger, state explicitly CURED_BY_ARGUMENT_LEVEL_RETURN or NOT_CURED."
+  - "Coverage requires reviewability, not agreement with any philosophical position."
+  - "Do not demand full original classic texts if the acquired reference/full-text sources state the relevant argument sufficiently for the frozen sensitivity test."
+  - "Do not treat a secondary reference entry as inadequate merely because it is secondary if it exposes the argument form and serious rivals needed by the frozen sensitivity surface."
+  - "Conversely, mark a scope incomplete if an outcome-material background/pair cannot actually be applied from the acquired formulation."
+  - "Do not add excluded BGD-11 pairs, new ontology variants, or new candidates."
+  - "Keep metaphysical possibility, extramentality, embodiment, identity, and historical actuality separate."
+  - "Psi/anomalous-information literature remains only a disputed reference class, never direct Jesus-case evidence."
+  - "If any scope remains incomplete, identify the smallest exact remaining acquisition defect; do not open a general literature harvest."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not choose a preferred ontology/background."
+  - "Do not apply D3, D4, or any discriminator direction."
+  - "Do not certify COMPARISON:<id> MAKEABLE."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "POST-RETURN ARGUMENT-LEVEL EVIDENCE AUDIT"
+    - "BACKGROUND / PAIR RETURN-TRIGGER AUDIT"
+    - "8-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  exact_scope_row_count: 8
+  table_columns:
+    - "scope"
+    - "prior state"
+    - "return-trigger status"
+    - "background/pair sensitivity status"
+    - "material remaining limits"
+    - "coverage disposition"
+    - "reason"
+  next_gate_question: "After the bounded L5 argument-level return, which of the 8 L5 proposition scopes are coverage-ready for philosophical/metaphysical disposition, and which exact scopes, if any, still require evidence acquisition?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
