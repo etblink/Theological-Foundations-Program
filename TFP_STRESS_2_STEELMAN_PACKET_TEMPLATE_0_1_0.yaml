@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET_TEMPLATE"
+protocol_schema: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md §23A STEELMAN_PACKET"
+status: "TEMPLATE__PRE_G0"
+
+candidate_id: null
+candidate_name: null
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+
+native_formulation: null
+proponent_sources: []
+necessary_propositions: []
+authority_commitments: []
+internal_success_conditions: []
+expected_evidence: []
+recognized_objections: []
+caricatures_rejected: []
+native_or_proponent_review:
+  status: "PENDING"
+  reviewer_or_basis: null
+  findings: []
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: null
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "no authority/canon claim counted as public evidence merely by being held"
+    - "expected and weakening evidence both recorded"
+    - "formulation sources distinguished from event evidence"
+  findings: []
+packet_stage_notes: []
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: []
+  rule: "Any outcome-relevant source opened/read to formulate this packet must be appended to the active pre-G0 exposure ledger."
+prohibited_at_packet_stage:
+  - "assign proposition dispositions"
+  - "rank candidates"
+  - "treat formulation source as event evidence merely because it formulates the candidate"
+  - "change the frozen admission set without C4/review path"
+  - "begin G1 evidence acquisition"
+freeze_identity: null
