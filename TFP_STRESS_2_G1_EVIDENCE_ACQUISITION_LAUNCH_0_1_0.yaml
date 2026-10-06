@@ -1,0 +1,106 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G1_EVIDENCE_ACQUISITION_LAUNCH"
+status: "G1_AUTHORIZED__WAVE_1_FROZEN_BEFORE_EXTERNAL_EVIDENCE_SEARCH"
+date: "2026-10-06"
+
+authorization:
+  human_G0_acceptance: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+  authorization_blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+  exact_G0_bundle: "TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
+  exact_G0_bundle_blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
+  exact_G0_bundle_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
+  qualified_protocol_version: "0.1.7"
+
+branch:
+  name: "research/tfp-stress-2-resurrection-g1"
+  created_from_exact_G0_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
+
+G1_rules:
+  lifecycle: "EVIDENCE_ACQUISITION_ONLY"
+  observation_first: true
+  preserve_source_provenance: true
+  distinguish_primary_secondary: true
+  record_inaccessible_missing: true
+  provisional_synthesis_may_not_redefine_question: true
+  proposition_dispositions_prohibited: true
+  candidate_ranking_prohibited: true
+  discriminator_direction_results_prohibited: true
+  theological_conclusions_prohibited: true
+  architecture_changes: "C4_ONLY"
+
+acquisition_order_rationale:
+  rule: "Begin with source/provenance foundations and broad context before explanatory mechanism literature. This is an acquisition order only, not an evidential priority or candidate preference."
+  no_candidate_priority: true
+
+wave_1:
+  id: "G1-W1-FOUNDATIONAL-SOURCE-PROVENANCE"
+  status: "AUTHORIZED_TO_START"
+  strata:
+    - id: "SRC-01"
+      type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+      objective: "Inventory outcome-material first-century Christian claims and embedded traditions with date/authorship/dependence uncertainty recorded."
+    - id: "SRC-02"
+      type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+      objective: "Acquire sources bearing on variants, dependencies, embedded traditions, dating ranges, and translation-sensitive wording."
+    - id: "SRC-04"
+      type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+      objective: "Acquire general execution/crucifixion/death evidence while separating general practice from case-specific inference."
+    - id: "SRC-06"
+      type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+      objective: "Acquire contextual primary/critical material on resurrection, exaltation, vindication, assumption, afterlife, and scriptural interpretation."
+    - id: "SRC-19"
+      type: "CROSS_TRADITION_METHOD_NEUTRAL"
+      objective: "Acquire method/provenance/context cross-checking sources not primarily organized around defending one target conclusion."
+  initial_source_classes:
+    - "undisputed Pauline letters and embedded formula/tradition claims"
+    - "Synoptic and Johannine outcome-material passages as first-century source witnesses, with dependence/date uncertainty preserved"
+    - "relevant non-Christian first/early-second-century attestations where within scope"
+    - "Roman-period crucifixion/execution evidence"
+    - "Second Temple Jewish resurrection/exaltation/afterlife texts"
+    - "method-neutral source dating/dependence scholarship"
+  exclusions:
+    - "candidate ranking"
+    - "arguments from consensus as evidence"
+    - "later doctrinal harmonization"
+    - "candidate-native formulation sources unless independently eligible under another stratum"
+    - "adverse-source probe reserved to Reviewer C under SRC-18"
+    - "mechanism literature from SRC-08 through SRC-16 except when needed solely to identify source metadata, not to analyze mechanisms"
+
+wave_1_recording_schema:
+  required_fields:
+    - "source_id"
+    - "stratum_id"
+    - "source_type"
+    - "author_or_corpus"
+    - "title_or_work"
+    - "passage_or_scope"
+    - "date_or_date_range"
+    - "language"
+    - "edition_translation_or_repository"
+    - "stable_url_or_identifier"
+    - "access_status"
+    - "primary_or_secondary"
+    - "provenance_notes"
+    - "dependence_or_independence_notes"
+    - "what_source_contains_observation_only"
+    - "frozen_propositions_or_routes_potentially_served"
+    - "limitations"
+    - "retrieved_at"
+  prohibited_fields:
+    - "candidate_winner"
+    - "net_direction"
+    - "proposition_disposition"
+    - "truth_verdict"
+
+next_after_wave_1_inventory:
+  - "expand remaining frozen source strata under the same evidence-only boundary"
+  - "assign Reviewer C adverse-source probe before declaring COMPLETE/MATERIALLY_COMPLETE coverage"
+  - "do not enter G2 lane synthesis until G1 coverage record supports transition"
+
+authorization_boundary:
+  g0_authorized: true
+  g1_authorized: true
+  evidence_acquisition_started: false
+  g2_authorized: false
+  g3_authorized: false
