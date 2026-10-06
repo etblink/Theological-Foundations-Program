@@ -79,9 +79,9 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G4-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
-  status: "G3_synthesis_frozen__G4_strict_independent_auditor_assignment_pending"
-  purpose: "Preserve the frozen G3 provisional adjudication and complete the mandatory strict-auditor disjointness handshake before any substantive G4 audit material is released."
+  id: "TFP-STRESS-2-G4-AUDIT-E1-EXTERNAL"
+  status: "G3_synthesis_frozen__G4_audit_E1_launch_ready__awaiting_external_report"
+  purpose: "Execute the registered read-only G4 strict audit against the frozen G3 synthesis and obtain the external audit report."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g2_substantive_checkpoint_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
@@ -89,8 +89,8 @@ current_scope:
   phase_L_consolidation_blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
   g3_human_authorization_blob_sha: "6e2c935d7a8759a4862606d7c811720a406b4308"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "39428ed82b95c3eafc682430ae4476089f0cf3ad"
-  g3_branch_tree: "abaf7ca83382b8cdf0ebec7b8fec49fd59a09c8d"
+  g3_branch_head: "08e79688fa83e9d238c4e50d3c7e4a9ff1e0f596"
+  g3_branch_tree: "2791fa731a5091f7b367e770588ae27bba2a3bb0"
   phase_N_candidate_status:
     path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
     blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
@@ -104,11 +104,15 @@ current_scope:
   pairwise_dominance_required: false
   outcome_relevant_comparisons: []
   reviewer_D_status: "UNASSIGNED__NO_CURRENT_DIRECTION_RESULT_CONFIDENCE_OR_AMENDMENT_LEDGER_TRIGGER"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_71.yaml"
-  exposure_ledger_blob_sha: "704a15df612a6f71810501eccca3d3c896846f08"
-  reviewer_E_status: "UNASSIGNED__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_SUBSTANTIVE_AUDIT"
-  reviewer_E_assignment_prompt: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
-  reviewer_E_assignment_prompt_blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_72.yaml"
+  exposure_ledger_blob_sha: "6ba66446dce235e69bc881597289d6bfb6f7ee98"
+  reviewer_E_status: "ASSIGNED__PROCEDURALLY_DISJOINT__AUDIT_E1_LAUNCH_READY"
+  reviewer_E_role_control: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_2.yaml"
+  reviewer_E_role_control_blob_sha: "17bf0a32f135cede8a09835cfbed35a532ffcc62"
+  reviewer_E_audit_input: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE_0_1_0.yaml"
+  reviewer_E_audit_input_blob_sha: "71b50ddd0011f68d06e769fe2c9336a0b3ab928c"
+  reviewer_E_audit_launch_spec: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_LAUNCH_SPEC_0_1_0.yaml"
+  reviewer_E_audit_launch_spec_blob_sha: "5df08209cfaefb6521c0c60d3bdbde1c671c3868"
   g0_authorized: true
   g1_closed: true
   g2_substantive_complete: true
@@ -124,18 +128,12 @@ current_scope:
   g5_human_acceptance_complete: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G4-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
-  action: "relay_only_the_frozen_assignment_handshake_prompt_to_a_fresh_prospective_strict_auditor_and_return_its_exact_handshake_response_before_any_substantive_G4_packet_is_released"
+  id: "TFP-STRESS-2-G4-AUDIT-E1-EXTERNAL-EXECUTION"
+  action: "obtain_the_complete_external_Reviewer_E_G4_audit_report_for_registered_audit_E1_and_return_it_verbatim_for_preservation_and_integration"
   branch: "research/tfp-stress-2-resurrection-g3"
-  assignment_prompt: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
-  assignment_prompt_blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
-  requirements:
-    - "prospective auditor must not inspect the repository or substantive TFP-STRESS-2 material before returning the handshake"
-    - "auditor must declare provider/model/session/fresh-context/continuation/shared-context/prior-exposure/persistent-memory/role-lineage fields"
-    - "only PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT permits assignment"
-    - "after a passing handshake, freeze the exact Reviewer-E role-control record before releasing any substantive audit packet"
-    - "do not expose the G3 outcome, candidate statuses, prior audit reasoning, or repair reasoning during the assignment handshake"
-    - "do not proceed to G5 before a valid G4 strict audit"
+  reviewer_E_role_control_blob_sha: "17bf0a32f135cede8a09835cfbed35a532ffcc62"
+  audit_input_freeze_blob_sha: "71b50ddd0011f68d06e769fe2c9336a0b3ab928c"
+  audit_launch_spec_blob_sha: "5df08209cfaefb6521c0c60d3bdbde1c671c3868"
 
 qualification_candidate:
   version: "0.1.7"
@@ -333,7 +331,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "G3_synthesis_frozen__G4_strict_auditor_assignment_pending"
+    status: "G4_audit_E1_launch_ready__awaiting_external_report"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
