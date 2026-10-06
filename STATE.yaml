@@ -14,7 +14,7 @@ program:
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   qualified_protocol: null
   candidate_protocol: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  candidate_protocol_status: "CANDIDATE__BUNDLE_PINNED__STRICT_AUDIT_READY"
+  candidate_protocol_status: "REPAIR_REQUIRED__PROGRAM_REANCHOR_PENDING"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -42,40 +42,28 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REAUDIT-0.1.6"
-  status: "strict_audit_ready"
-  purpose: "Protocol 0.1.6 governed bundle and qualification role-control record are frozen; launch the assigned strict independent qualification audit in the exact assigned Claude session."
+  id: "TFP-PROGRAM-REANCHOR-0.1.0"
+  status: "owner_confirmation_pending"
+  purpose: "Re-anchor TFP on its chartered truth-seeking purpose before authorizing another protocol-repair cycle."
   bounded: true
-  repair_branch: "repair/tfp-adjudication-protocol-0.1.6"
-  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  candidate_governance: "GOVERNANCE.md"
-  governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
-  source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
-  source_manifest_blob_sha: "04e24321803eaa270b2da12166f5cb91e5566528"
-  auditor_assignment_declaration: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
-  auditor_assignment_declaration_blob_sha: "bd0393446503e25634bf36d1da0bdb7dbcec7fd7"
-  qualification_role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
-  qualification_role_control_blob_sha: "27b4cff305b4c3885aeb4b85aa16f496ab1d4a4a"
-  assigned_strict_auditor_session: "session_01B3sShWagLWUZLVuRndLHNd"
-  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
-  substantive_audit_prompt_blob_sha: "4b42604fedda59409cfdd81eb53d4f2256faba98"
+  checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
+  source_audit_report: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
+  source_audit_disposition: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_REAUDIT_DISPOSITION_0_1_0.md"
+  protocol_0_1_6_disposition: "REPAIR_REQUIRED"
+  protocol_0_1_7_repair_authorized: false
+  theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-METHOD-REAUDIT-0.1.6"
-  action: "launch_assigned_strict_independent_qualification_reaudit"
-  assigned_session: "session_01B3sShWagLWUZLVuRndLHNd"
-  launch_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
-  source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
-  role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
-  governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
-  requirements:
-    - "use_exact_assigned_claude_session"
-    - "verify_source_manifest_and_role_control_blob_identities"
-    - "audit_only_exact_pinned_governed_bundle"
-    - "read_operative_governance_baseline_only_as_regression_reference_after_governed_sources"
-    - "do_not_read_prior_audits_or_repair_control_artifacts"
-    - "do_not_modify_repository"
-    - "do_not_qualify_or_authorize_theological_stress_test"
+  id: "TFP-PROGRAM-REANCHOR-OWNER-DECISION"
+  action: "human_owner_review_and_confirm_or_modify_program_reanchoring_checkpoint"
+  checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
+  proposed_if_confirmed:
+    - "authorize_one_bounded_protocol_0_1_7_repair"
+    - "limit_repair_to_five_major_defects_and_directly_interacting_minors"
+    - "do_not_add_new_meta_machinery_without_direct_justification"
+    - "treat_PASS_or_PASS_WITH_LIMITATIONS_as_qualification_exit_when_protocol_semantics_allow"
+    - "move_methodology_to_maintenance_mode_after_qualification"
+    - "then_freeze_and_authorize_a_separate_bounded_TFP_STRESS_2_preregistration"
 
 qualification_candidate:
   version: "0.1.6"
@@ -91,7 +79,7 @@ qualification_candidate:
   assigned_strict_auditor_session: "session_01B3sShWagLWUZLVuRndLHNd"
   substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
   substantive_audit_prompt_blob_sha: "4b42604fedda59409cfdd81eb53d4f2256faba98"
-  status: "BUNDLE_PINNED__STRICT_AUDIT_READY"
+  status: "REPAIR_REQUIRED__PROGRAM_REANCHOR_PENDING"
   qualified: false
   predecessor_protocol: "0.1.5"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
@@ -271,7 +259,9 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.6"
     status: "completed_pending_bundle_freeze"
   - id: "TFP-METHOD-REAUDIT-0.1.6"
-    status: "strict_audit_ready"
+    status: "completed_repair_required"
+  - id: "TFP-PROGRAM-REANCHOR-0.1.0"
+    status: "owner_confirmation_pending"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
@@ -296,3 +286,14 @@ state_invariants:
   - "Negative knowledge is preserved."
   - "Closed or held work reopens only by condition or authorization."
   - "Historical audit detail lives in frozen artifacts and git history, not duplicated current-state blocks."
+
+program_reanchor:
+  checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
+  status: "PENDING_OWNER_CONFIRMATION"
+  reason: "Prevent methodology and protocol qualification from becoming the program."
+  governing_maxim: "The protocol exists to help TFP discover what is true. TFP does not exist to perfect the protocol."
+  proposed_next_protocol_cycle:
+    version: "0.1.7"
+    authorized: false
+    scope: "five accepted MAJOR defects plus directly interacting MINOR defects only"
+  post_qualification_direction: "bounded substantive theological truth study under separate preregistration"
