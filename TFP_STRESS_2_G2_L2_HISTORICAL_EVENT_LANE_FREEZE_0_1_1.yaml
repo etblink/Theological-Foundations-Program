@@ -1,0 +1,273 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L2_HISTORICAL_EVENT_LANE_FREEZE"
+status: "K4_FROZEN__Q1_CONTROL_BLOB_POINTER_REPAIR_PENDING_INDEPENDENT_C4_CONFIRMATION__ROW_DISPOSITIONS_UNCHANGED"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  q1_event_control: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  l2_matrix: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_EVIDENCE_MATRIX_0_1_0.yaml"
+  l2_matrix_blob_sha: "7162780df05a08d79e54411e9b9dc54bcd4cb35a"
+  l2_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L2_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  l2_coverage_report_blob_sha: "de226788a0e94d043475ad8bd54c631c1e112eae"
+  l2_coverage_state: "ALL_15_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  l1_operational_freeze: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+  l1_operational_freeze_blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  l1_c4_confirmation: "CONFIRM_POST_EVIDENCE_NONMATERIAL_NEUTRAL"
+
+lane:
+  id: "L2"
+  title: "Historical event"
+  competence: ["crucifixion","death/nondeath","burial/body disposition","chronology/context"]
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  unresolved_conflicts_listed: true
+  exact_version_fixed: true
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 1
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 4
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 0
+  NOT_ESTABLISHED_WITHIN_SCOPE: 9
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 1
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-DEATH"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "SUPPORTED_WITHIN_SCOPE"
+    claim_type: "historical"
+    l2_facet: "Conditional on the frozen shared-floor P-CRUC, the best acquired historical evidence supports that Jesus entered the defined biological death state rather than merely remaining continuously alive."
+    positive_evidence:
+      - "Multiple early Christian streams explicitly narrate or proclaim Jesus's death after crucifixion: G1W1-001, G1W1-015, G1W1-019, G1W1-020, G1W1-021, G1W1-022 through G1W1-025."
+      - "Tacitus independently records execution under Pontius Pilate at a cross-tradition level."
+      - "Roman crucifixion evidence and medical literature establish a strongly lethal execution context while allowing mechanism heterogeneity."
+      - "The explicit survival hypothesis was acquired and tested rather than excluded."
+    serious_alternatives_tested:
+      - "S1 uninterrupted survival/nondeath."
+      - "Lloyd Davies & Lloyd Davies shock/unconsciousness-and-recovery hypothesis."
+      - "Josephus Life survival case showing crucifixion survival is possible under some conditions."
+      - "Medical uncertainty over a universal physiological mechanism."
+    defeaters:
+      truth_critical: []
+      material:
+        - "No direct contemporary medical observation exists."
+        - "Josephus Life shows survival is possible in a different case after intervention and treatment."
+        - "Exact physiological cause of death cannot be fixed from the surviving evidence."
+    defeater_resolution: "These limits reduce precision/confidence but do not outweigh the convergent case-specific death reports plus execution context; none supplies positive case-specific evidence of uninterrupted survival."
+    proposed_confidence: "HIGH__PENDING_INDEPENDENT_CONFIDENCE_REVIEWER_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-S1-NONDEATH"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "EVIDENCE_AGAINST_WITHIN_SCOPE"
+    claim_type: "historical"
+    l2_facet: "General crucifixion survival is historically possible, but the target-case evidence is materially less expected if Jesus never entered P-DEATH, and no positive case-specific survival evidence was acquired."
+    positive_evidence:
+      - "Josephus Life documents one survivor among three acquaintances after removal and treatment."
+      - "Lloyd Davies & Lloyd Davies present an explicit resuscitation hypothesis."
+    adverse_evidence:
+      - "Multiple target-case sources describe death rather than uninterrupted survival."
+      - "Roman crucifixion context is strongly lethal."
+      - "The survival hypothesis depends on contested reconstructions and lacks direct target-case positive evidence."
+    safeguards:
+      - "This is not the D1 discriminator result."
+      - "Mechanism uncertainty is not treated as nondeath."
+      - "Rare survival possibility is not treated as target-case survival."
+    proposed_confidence: "MODERATE_TO_HIGH__PENDING_INDEPENDENT_CONFIDENCE_REVIEWER"
+
+  - proposition_id: "P-S1-POSTCRUC-ACCESS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "Post-crucifixion encounter traditions exist, but L2 does not establish access to a continuously living Jesus rather than another explanatory class."
+    evidence_considered: ["G1W1-001","G1W1-019","G1W1-020","G1W1-021","G1RS-064"]
+    unresolved_requirements: ["continued biological life","historically warranted post-crucifixion access to that living subject","chronological link to founding proclamation"]
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "No L2 evidence establishes survival/access as PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+    unresolved_requirements: ["P-S1-NONDEATH","P-S1-POSTCRUC-ACCESS","causal priority"]
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-F-ORIGIN-MATERIAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "No acquired historical chronology establishes actor-specific knowing falsehood as upstream founding material."
+    evidence_considered: ["G1W1-019","G1RS-063","G1RS-071"]
+    safeguard: "Later development/invention claims are not projected backward into founding knowing deception."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "Neither frozen fabrication implementation reaches its positive historical burden in L2."
+    implementation_results:
+      F_NONBODY_ASSERTION:
+        state: "NOT_ESTABLISHED_WITHIN_SCOPE"
+        reason: "No actor-specific historical evidence of knowing false assertion plus opportunity/access and a traceable founding transmission path."
+        body_evidence_use: "NEUTRAL"
+      F_BODY_REMOVAL:
+        state: "NOT_ESTABLISHED_WITHIN_SCOPE"
+        reason: "No actor-linked historical evidence connects founding actors to deliberate corpse removal/concealment."
+        body_evidence_use: "SYMMETRIC_ELIGIBLE_BUT_NONPROBATIVE_AT_REQUIRED_STRENGTH"
+    safeguard: "No third post-hoc implementation is added."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-IND-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l2_facet: "An individual claimed-experience stream is historically early enough to be part of the founding evidence universe, but L2 does not establish its subjective/nonveridical mechanism or causal necessity."
+    positive_evidence: ["G1W1-001","G1W1-016","G1W1-002","G1W1-003"]
+    unresolved_requirements: ["subjective mechanism occurrence","nonveridicality","causal role"]
+    proposed_confidence: "MODERATE__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-INT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l2_facet: "Interpretive/scriptural framing is historically early and embedded in founding-proclamation material, but historical timing does not establish the module as causally necessary."
+    positive_evidence: ["G1W1-001","G1W1-005","G1W1-013","G1W1-014"]
+    unresolved_requirements: ["specific interpretive genealogy","causal necessity","module interaction"]
+    proposed_confidence: "MODERATE__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-NARR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l2_facet: "The source sequence supports later narrative-development at some level relative to the earlier Pauline proclamation layer, while exact genealogy/dependence remains unresolved."
+    positive_evidence: ["G1W1-001","G1W1-006","G1W1-019","G1W1-020","G1W1-021","G1RS-070"]
+    unresolved_requirements: ["exact dependence","which details are inherited versus developed","memory/social mechanism"]
+    proposed_confidence: "MODERATE__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "Historical timing/context does not establish the frozen individual-experience + interpretation + later-narrative joint causal pattern."
+    unresolved_requirements: ["module occurrence","module necessity","nonveridicality","joint causal vector"]
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-SOC-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "Collective/group claims are historically present, but L2 does not establish a genuine social/group subjective-experience process in the founding stratum."
+    evidence_considered: ["G1W1-001","G1RS-060","G1RS-061"]
+    safeguard: "Multiplicity of reports is not treated as social-mechanism occurrence."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "Historical context does not establish the required social-experience + interpretation + later-development joint causal vector."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-SEED-IND"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l2_facet: "An early individual claimed-experience stream is historically compatible with an individual seed component, but necessity/nonveridicality remain unestablished."
+    positive_evidence: ["G1W1-001","G1W1-016"]
+    unresolved_requirements: ["subjective mechanism","seed causal necessity","nonveridicality"]
+    proposed_confidence: "MODERATE__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-SEED-SOC"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "L2 does not establish a distinct necessary social-amplification experience process in the founding stratum."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l2_facet: "The historical record does not by itself establish the frozen three-module founding joint pattern plus later narrative-development relation."
+    proposed_confidence: "HIGH_FOR_L2_NONESTABLISHMENT__PENDING_REVIEW"
+
+sufficiency_records:
+  - record_id: "SUFF-P-DEATH-L2-0.1.0"
+    proposition_id: "P-DEATH"
+    disposition: "SUPPORTED_WITHIN_SCOPE"
+    type: "historical"
+    mandatory_elements:
+      provenance_dating_genre_interests:
+        state: "MET"
+        rationale: "Case-specific early Christian texts, Tacitus, Roman-period practice evidence, archaeology, and modern medical-historical controls are provenance-identified and genre-differentiated."
+      dependence_independence:
+        state: "MET"
+        rationale: "Synoptic, Acts, Pauline, Johannine, and external-source dependence limits are explicitly recorded; repeated dependent streams are not vote-counted."
+      contextual_plausibility:
+        state: "MET"
+        rationale: "Roman crucifixion is independently attested as a lethal execution practice; Jerusalem crucifixion archaeology and Roman literary evidence establish the relevant execution context."
+      expected_and_materially_absent_evidence:
+        state: "MET"
+        rationale: "The survival/nondeath route was prospectively searched. A genuine survival case and an explicit resuscitation hypothesis were acquired, but no case-specific evidence establishes uninterrupted survival in Jesus's case."
+      serious_alternatives:
+        state: "MET"
+        rationale: "S1 survival, medical-mechanism uncertainty, Josephus's survival case, and the Lloyd-Davies resuscitation hypothesis were included and assessed rather than excluded."
+      reliability_question_specific:
+        state: "MET"
+        rationale: "The question is limited to whether death rather than uninterrupted survival occurred conditional on crucifixion. Source interests and medical-transfer limits are carried without requiring agreement on resurrection, burial, or cause of death."
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    undefeated_truth_critical_defeaters: []
+    undefeated_material_defeaters: []
+    listed_limits:
+      - "No direct contemporary medical examination."
+      - "Exact physiological mechanism of death remains uncertain."
+      - "Josephus Life exact Niese Greek 420-421 extraction remains unavailable."
+      - "Ancient narratives are not fully independent."
+    conclusion: "Applicable historical sufficiency elements are met for the bounded proposition that the crucified subject entered death rather than uninterrupted survival."
+
+unresolved_l2_conflicts:
+  - "Crucifixion can be survived in some cases; the issue is target-case classification, not logical impossibility of survival."
+  - "Medical literature does not identify one universal physiological mechanism of crucifixion death."
+  - "Burial evidence is mixed at the practice-to-case transfer level and cannot be borrowed by generic candidates whose G0 route declared it neutral."
+  - "Historical timing can support early presence of a claim/module surface without establishing psychological mechanism or causal priority."
+  - "The thin positive fabrication record remains a failure of F's burden, not positive evidence for R/V/H/L/C-HET."
+
+arrow_boundary:
+  standalone_l2_arrow_ids_frozen_at_g0: false
+  treatment: "Do not invent post-exposure outcome-material arrow IDs. A5 endpoint dependencies remain preserved and receive consolidated arrow dispositions in Phase L."
+  c4_change: false
+
+lane_freeze_effect:
+  l2_frozen: true
+  l2_amendments_now_use_C4: true
+  l1_operational_freeze_confirmed: "0.1.1"
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required_later: true
+  discriminator_directions_produced: false
+  D1_direction_result_produced: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  lane: "L3"
+  title: "Testimony/claimed encounter"
+  purpose: "Evaluate experience-report existence, sincerity, independence, stream identity, and referent claims using L1 provenance/dependence and L2 chronology/event results without presupposing veridicality or nonveridicality."
+
+
+amendment_control:
+  supersedes: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+  amendment_class: "POST_EVIDENCE_NONMATERIAL"
+  amendment_scope: "Q1_EVENT_CONTROL blob pointer only"
+  corrected_pointer:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    old_incorrect_blob_sha: "edc025f014e9bce4c0341365815402326877089f"
+    corrected_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  row_level_dispositions_changed: false
+  sufficiency_record_changed: false
+  evidence_binding_changed: false
+  candidate_effect:
+    all_candidates: "NEUTRAL"
+  outcome_effect: "NEUTRAL"
+  independent_direction_confirmation: "PENDING__TO_BE_BUNDLED_WITH_NEXT_REVIEWER_C_POST_EVIDENCE_ASSIGNMENT"
+  use_before_confirmation:
+    permitted: "The 15 unchanged row-level dispositions and P-DEATH sufficiency record from 0.1.0 may continue to be used; only the corrected control pointer awaits independent confirmation."
