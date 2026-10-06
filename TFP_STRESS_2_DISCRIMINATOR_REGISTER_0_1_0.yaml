@@ -1,0 +1,197 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "DISCRIMINATOR_REGISTER"
+status: "REVIEWER_C_REPAIRS_BOUND__PRE_G0"
+date: "2026-10-06"
+source_review:
+  reviewer: "REVIEWER_C"
+  provider_model: "xAI / Grok 4.7"
+  report: "TFP_STRESS_2_REVIEWER_C_G0_ARCHITECTURE_REVIEW_REPORT_0_1_0.md"
+  report_blob_sha: "262af0c0090649e831711ca99c42344fe81bbb7b"
+  disposition: "REVIEWER_C_G0_REPAIR_REQUIRED"
+  next_gate_condition: "After the exact versioned repairs below are bound without changing their logic, architecture is sufficient to proceed to human-owner G0 authorization."
+
+shared_rules:
+  evidence_dispositions: ["SUPPORTED_WITHIN_SCOPE","PARTIALLY_SUPPORTED_WITHIN_SCOPE","PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE","NOT_ESTABLISHED_WITHIN_SCOPE","EVIDENCE_AGAINST_WITHIN_SCOPE","CONTRADICTED_WITHIN_SCOPE","UNDERDETERMINED_WITHIN_SCOPE","INSUFFICIENT_SIGNAL_WITHIN_SCOPE"]
+  causal_role_ladder: ["PRIMARY","NECESSARY_CONTRIBUTING","CONTRIBUTING_NONNECESSARY","NONE"]
+  absence_rule: "Absence alone cannot yield EVIDENCE_AGAINST_WITHIN_SCOPE, CONTRADICTED_WITHIN_SCOPE, or rival support."
+  rival_failure_rule: "Rival non-establishment is never a favoring input."
+  body_rule: "Tomb/body-disposition evidence may be used only on frozen R-PHYS, S1, F-BODY-REMOVAL, or revised-candidate trigger routes; it cannot favor or weaken generic R-TRANS, V, H, L, or C-HET."
+  makeability_rule: "UNMAKEABLE is a later post-search result only after a COMPARISON_EFFORT_RECORD; unperformed search is COVERAGE_INCOMPLETE."
+
+discriminators:
+  - id: "D1-DEATH-STATE-VS-S1"
+    candidate_A: "DEATH_REQUIRING_CLASS"
+    A_members: ["R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    candidate_B: "S1"
+    A_propositions: ["P-DEATH"]
+    B_propositions: ["P-S1-NONDEATH"]
+    question: "Given P-CRUC, did Jesus enter the frozen death state before the founding stream?"
+    A_prediction: "Genuine death."
+    B_prediction: "Survival, apparent death, coma, shock, or transient unconsciousness."
+    backgrounds: ["BGD-3"]
+    priority: "CRITICAL"
+    symmetric_rationale: "Both poles use the same frozen death-state definition; neither gains from the other's mere non-establishment. The result can establish or defeat P-DEATH or P-S1-NONDEATH."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-04","SRC-12"]
+      substitutes: ["SRC-19","SRC-05"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-DEATH is SUPPORTED_WITHIN_SCOPE AND P-S1-NONDEATH is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "P-S1-NONDEATH is SUPPORTED_WITHIN_SCOPE AND P-DEATH is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "Neither pole forms a favoring pair, including when neither is supported, both are merely NOT_ESTABLISHED_WITHIN_SCOPE, PARTIALLY_SUPPORTED_WITHIN_SCOPE, or UNDERDETERMINED_WITHIN_SCOPE."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-04, or SRC-12 inaccessible/unavailable or provenance-failed and substitutes SRC-19 and SRC-05 inadequate."
+      safeguard: "Tomb/body evidence may weaken S1 or feed F-BODY-REMOVAL and R-PHYS; it cannot favor R-TRANS, V, H, L, or C-HET."
+
+  - id: "D2-R-FOUNDING-CAUSE-VS-RIVALS"
+    candidate_A: "R-TRANS"
+    candidate_B: "EACH_NON_R_STATUS_BEARING_RIVAL"
+    A_propositions: ["P-R-CAUSAL"]
+    B_propositions: ["PAIRED_RIVAL_FOUNDING_CAUSAL_PROPOSITION"]
+    question: "Was an R-specified postmortem transformative cause PRIMARY or NECESSARY_CONTRIBUTING for the founding stream?"
+    backgrounds: ["BGD-1","BGD-2","BGD-9"]
+    priority: "CRITICAL"
+    symmetric_rationale: "R must earn its own causal disposition; rival failure is not R success. Pairing is on causal-role truth conditions only."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-02","SRC-10"]
+      substitutes: ["SRC-03","SRC-19"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-R-CAUSAL is SUPPORTED_WITHIN_SCOPE AND the paired rival founding-causal proposition is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "The paired rival founding-causal proposition is SUPPORTED_WITHIN_SCOPE AND P-R-CAUSAL is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other disposition combinations."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-02, or SRC-10 unavailable/provenance-failed and substitutes SRC-03 and SRC-19 inadequate."
+      safeguards: ["Ordinary-explanation failure is not FAVORS_A.","BGD-1C supplies no event credit."]
+
+  - id: "D2-V-FOUNDING-CAUSE-VS-RIVALS"
+    candidate_A: "V"
+    candidate_B: "EACH_NON_V_STATUS_BEARING_RIVAL"
+    A_propositions: ["P-V-FOUNDING-CAUSAL"]
+    B_propositions: ["PAIRED_RIVAL_FOUNDING_CAUSAL_PROPOSITION"]
+    question: "Was a real nonembodied extramental referent PRIMARY or NECESSARY_CONTRIBUTING for the founding stream?"
+    backgrounds: ["BGD-1","BGD-2","BGD-9"]
+    priority: "CRITICAL"
+    symmetric_rationale: "V must earn its own causal role; extramentality and nonembodiment are separate propositions and rival failure is not V success."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-02","SRC-10"]
+      substitutes: ["SRC-03","SRC-19"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-V-FOUNDING-CAUSAL is SUPPORTED_WITHIN_SCOPE AND the paired rival founding-causal proposition is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "The paired rival founding-causal proposition is SUPPORTED_WITHIN_SCOPE AND P-V-FOUNDING-CAUSAL is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other disposition combinations."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-02, or SRC-10 unavailable/provenance-failed and substitutes SRC-03 and SRC-19 inadequate."
+      safeguards: ["Extramentality from D4 is not causal-role support.","Nonembodiment from D3 is not causal-role support."]
+
+  - id: "D3-R-VS-V-EMBODIMENT"
+    candidate_A: "R-TRANS"
+    candidate_B: "V"
+    A_propositions: ["P-R-BODY"]
+    B_propositions: ["P-V-NONEMBODIED"]
+    question: "For the same founding stream, is the postmortem referent embodied or nonembodied?"
+    A_prediction: "EMB-1 and EMB-2 satisfied."
+    B_prediction: "Nonembodied referent."
+    backgrounds: ["BGD-1","BGD-11"]
+    priority: "CRITICAL"
+    symmetric_rationale: "Embodiment and nonembodiment are opposite satisfaction conditions; neither is default. Identity remains separately noncomparative."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-14","SRC-13"]
+      substitutes: ["SRC-03","SRC-15"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-R-BODY is SUPPORTED_WITHIN_SCOPE on EMB-1 plus EMB-2 AND P-V-NONEMBODIED is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "P-V-NONEMBODIED is SUPPORTED_WITHIN_SCOPE AND P-R-BODY is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other disposition combinations."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01 and SRC-14 and V stratum SRC-13 unavailable/provenance-failed and substitutes SRC-03 and SRC-15 inadequate."
+      safeguards: ["P-R-IDENTITY-JESUS and P-V-IDENTITY-JESUS are inadmissible inputs.","Tomb/body-disposition evidence is inadmissible for generic R-TRANS."]
+
+  - id: "D4-V-VS-H-EXTRAMENTAL"
+    candidate_A: "V"
+    candidate_B: "H_FAMILY"
+    B_members: ["H-IND","H-SOC","H-SEED-SPREAD"]
+    A_propositions: ["P-V-REAL-REFERENT"]
+    B_propositions: ["P-HIND-NONVERIDICAL","P-HSOC-NONVERIDICAL","P-HSEED-NONVERIDICAL"]
+    question: "Was the founding referent extramental?"
+    backgrounds: ["BGD-1","BGD-2","BGD-9","BGD-10"]
+    priority: "CRITICAL"
+    symmetric_rationale: "The three H candidates share the nonveridical truth condition while mechanism differences remain in D5. Sincerity is not truth."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-13","SRC-14"]
+      substitutes: ["SRC-15","SRC-03"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-V-REAL-REFERENT is SUPPORTED_WITHIN_SCOPE AND every paired H nonveridical proposition is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "The paired H nonveridical proposition is SUPPORTED_WITHIN_SCOPE AND P-V-REAL-REFERENT is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other disposition combinations."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-13, or SRC-14 unavailable/provenance-failed and substitutes SRC-15 and SRC-03 inadequate."
+      safeguards: ["Sincerity is not veridicality.","Report count is not veridicality.","Mechanism capacity is not veridicality."]
+
+  - id: "D5-PROFILE-MATCH"
+    candidate_A: "PAIR_SCOPED_PROFILE_A"
+    candidate_B: "PAIR_SCOPED_PROFILE_B"
+    relation_members: ["H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    served_propositions: ["P-HIND-FOUNDING-CAUSAL","P-HSOC-FOUNDING-CAUSAL","P-HSEED-FOUNDING-CAUSAL","P-L-INTERPRETIVE-ORIGIN","P-L-EXPERIENCE-NONPRIMARY","P-L-FOUNDING-CAUSAL","P-F-FOUNDING-CAUSAL","P-CHET-FOUNDING-CAUSAL"]
+    question: "Which single frozen causal-role vector, if any, uniquely matches the founding mechanism?"
+    backgrounds: ["BGD-3","BGD-9","BGD-10"]
+    priority: "CRITICAL"
+    symmetric_rationale: "A unique role-vector match can establish or defeat a necessary profile proposition; unmatched serious vectors route to REVISED_CANDIDATE_REQUIRED rather than a nearest-candidate win."
+    comparison_coverage:
+      required_strata: "Use the profile-specific required strata and predesignated substitutes in source plan 0.1.9 and truth-critical register 0.1.1."
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "The role vector uniquely matches A's frozen profile, including L's interpretive-primary and experience-nonprimary constraints when L is A, and does not match B."
+      FAVORS_B: "The role vector uniquely matches B's frozen profile and does not match A."
+      NEUTRAL_OR_NONDISCRIMINATING: "The vector is underdetermined, matches neither, or is an unmatched serious vector. An unmatched serious vector routes to REVISED_CANDIDATE_REQUIRED."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows the profile's required strata unavailable/provenance-failed and predesignated substitutes inadequate."
+      safeguards: ["Later narrative is not founding fabrication.","M-BODY is not a profile input."]
+
+  - id: "D9-CHET-JOINT-VS-PURE"
+    candidate_A: "RELEVANT_C_HET_CANDIDATE"
+    candidate_B: "PURE_COLLAPSE_TARGET"
+    pairings:
+      "C-HET-IND": ["H-IND","L"]
+      "C-HET-SOC": ["H-SOC","L"]
+      "C-HET-SEED-SPREAD": ["H-SEED-SPREAD","L"]
+    A_propositions: ["P-CHET-IND-JOINT-PATTERN","P-CHET-SOC-JOINT-PATTERN","P-CHET-SEED-SPREAD-JOINT-PATTERN"]
+    question: "Is the heterogeneous joint pattern independently warranted rather than a post-hoc residue of pure-profile failure?"
+    backgrounds: ["BGD-3","BGD-9","BGD-10"]
+    priority: "CRITICAL"
+    symmetric_rationale: "The joint-pattern proposition is necessary for each C-HET subtype; D5, not D9, carries P-CHET-FOUNDING-CAUSAL."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10","SRC-16"]
+      substitutes: ["SRC-03","SRC-19"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "The relevant C-HET joint-pattern proposition is SUPPORTED_WITHIN_SCOPE from independent module routes AND the pure target's profile is not uniquely matched."
+      FAVORS_B: "The pure target is uniquely matched AND the joint-pattern proposition is EVIDENCE_AGAINST_WITHIN_SCOPE, CONTRADICTED_WITHIN_SCOPE, or NOT_ESTABLISHED_WITHIN_SCOPE after complete comparison-scoped coverage."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other cases; residual fit after rival failure is not FAVORS_A."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-02, SRC-08, SRC-09, SRC-10, or SRC-16 unavailable/provenance-failed and substitutes SRC-03 and SRC-19 inadequate."
+
+  - id: "D-S1-ORIGIN-VS-POSTDEATH"
+    candidate_A: "S1"
+    candidate_B: "EACH_POSTDEATH_RIVAL"
+    A_propositions: ["P-S1-FOUNDING-CAUSAL"]
+    B_propositions: ["PAIRED_POSTDEATH_RIVAL_FOUNDING_CAUSAL_PROPOSITION"]
+    question: "Was continued-living access PRIMARY or NECESSARY_CONTRIBUTING to the founding stream?"
+    backgrounds: ["BGD-3","BGD-9","BGD-10"]
+    priority: "CRITICAL"
+    symmetric_rationale: "D1 tests death state, not origin causation. S1 and its paired rival must each earn their own founding-causal disposition."
+    comparison_coverage:
+      required_strata: ["SRC-01","SRC-02","SRC-12"]
+      substitutes: ["SRC-03","SRC-19"]
+    feasibility: "FEASIBLE_WITHIN_SCOPE"
+    direction_rule:
+      FAVORS_A: "P-S1-FOUNDING-CAUSAL is SUPPORTED_WITHIN_SCOPE AND the paired rival founding-causal proposition is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      FAVORS_B: "The paired rival founding-causal proposition is SUPPORTED_WITHIN_SCOPE AND P-S1-FOUNDING-CAUSAL is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+      NEUTRAL_OR_NONDISCRIMINATING: "All other disposition combinations."
+      UNMAKEABLE: "Only after a COMPARISON_EFFORT_RECORD shows SRC-01, SRC-02, or SRC-12 unavailable/provenance-failed and substitutes SRC-03 and SRC-19 inadequate."
+      safeguard: "A D1 result is not an input."
+
+final_inventory_count: 8
+critical_count: 8
+material_count: 0
+contextual_count: 0
+coverage_linkage_target: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_12.yaml"
+authorization:
+  g0: false
+  g1: false
