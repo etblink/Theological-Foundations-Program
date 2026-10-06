@@ -1,0 +1,57 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_F2_LEDGER_INTEGRITY_CLOSURE"
+status: "F2_CLOSED__A17_LEDGER_INTEGRITY_DELTA_CONFIRMED__G5_READINESS_RECONSIDERATION_AUTHORIZED"
+date: "2026-10-06"
+
+reviewer_D_delta:
+  report: ["TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md","3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"]
+  result: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+  D1: "CLOSED"
+  D2: "CLOSED"
+  D3: "DISCLOSED"
+  blocking_observations_remaining: 0
+
+project_lead_independent_replay:
+  artifact: ["TFP_STRESS_2_PROJECT_LEAD_F2_DELTA_INDEPENDENT_CHECK_0_1_0.yaml","302fb4a9937a7da8795444d4e8f52098ef9db5ca"]
+  result: "REVIEWER_D_DELTA_RESULT_INDEPENDENTLY_REPRODUCED__F2_CLOSURE_SUPPORTED"
+
+repair_chain:
+  ledger_0_1_79_blob: "e2a85e90051f56598ade1243429d8ad996b94e97"
+  ledger_0_1_80_blob: "7331c4cbfb72654993f8843d11907c055b55d7c6"
+  ledger_0_1_81_blob: "1321fff4506b650bc31b22e1a5e43e4b44f23312"
+  ledger_0_1_82_blob: "21849a7bd99d2b3099fffe38880b789605aa47b0"
+  all_preexisting_sequences_preserved: true
+  historical_files_rewritten: false
+
+authority_chronology:
+  Phase_L_C4_confirmed_before_prospective_revalidation: true
+  human_post_C4_G3_ratification:
+    path: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+  prospective_revalidation:
+    path: "TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml"
+    blob_sha: "59a832f494e8207cfb7fb33d6eb714a1c5942465"
+  ordering_valid: true
+
+revalidated_merits:
+  A12: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  N3: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  Q1: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  changed_from_historical_G3_result: false
+  stronger_outcome_created: false
+
+nonblocking_observations_carried:
+  O1: "Ledger descriptive integrity_reviewer block stale; correct in next ledger version."
+  O2: "last_checked_by currently names Program Lead replay; clarify independent Reviewer-D confirmation separately."
+  O3: "Sequence-157 repository-commit order inversion within preserved batch; disclose additively, no amendment/outcome effect."
+  O4: "Git cannot independently prove human authorship; Program Lead directly received ratification in current human-owner conversation."
+
+F2:
+  closed: true
+  basis: "Fresh Reviewer-D delta confirmation plus independent Program-Lead replay"
+  further_A17_repair_required_before_G5: false
+
+next_action:
+  id: "TFP-STRESS-2-G5-READINESS-REFRESH"
+  action: "Create a refreshed G5 human-acceptance request that supersedes the pre-F2-repair request and includes the chronology repair, ratification, revalidation, Reviewer-D delta confirmation, and carried limitations."
