@@ -80,7 +80,7 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-G1-EVIDENCE-ACQUISITION"
-  status: "G0_authorized__G1_wave_1_active__33_source_records__observation_only"
+  status: "G0_authorized__G1_wave_1_41_source_records__bounded_provenance_gap_round_complete__reviewer_C_SRC_18_assignment_frozen__observation_only"
   purpose: "Acquire and provenance-record source material under frozen TFP-STRESS-2 G0 architecture without synthesis, proposition dispositions, discriminator results, or candidate ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
@@ -90,22 +90,29 @@ current_scope:
   g0_human_authorization_record: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
   g0_human_authorization_record_blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
   g1_branch: "research/tfp-stress-2-resurrection-g1"
-  g1_branch_head: "e3b41322d88dface7a8c53fd222be101fe6ddd40"
-  g1_branch_tree: "84c00b1b59704bc0879d2c704289cb7b1246bbd6"
+  g1_branch_head: "53a5b30c2171afe3eec68f665520996a84d77d0a"
+  g1_branch_tree: "ce2f3bb0692fcda07d3c1cd3fb0a000a9e958c36"
   g1_launch: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
   g1_launch_blob_sha: "69cae205ab97bbeb7e6504bb190bc64e35c73b92"
   role_architecture: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
   role_architecture_blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_22.yaml"
-  exposure_ledger_blob_sha: "fc6c2e8bc623f7c1c40a5209c43db690de3de3b5"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_24.yaml"
+  exposure_ledger_blob_sha: "137a107d0484a58769618ac1d7e55772454eecde"
   source_plan: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
-  g1_wave_1_inventory: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_4.yaml"
-  g1_wave_1_inventory_blob_sha: "0a526590d91ffcfaa4a206a4e6a3486be3a33850"
-  g1_wave_1_source_record_count: 33
+  g1_wave_1_inventory: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_5.yaml"
+  g1_wave_1_inventory_blob_sha: "4d6f3615e56c67a15861eaa7bd3b512f74db8c4e"
+  g1_wave_1_source_record_count: 41
   wave_1_strata: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
-  reviewer_C_adverse_probe_status: "PENDING_BEFORE_COMPLETE_OR_MATERIALLY_COMPLETE_COVERAGE"
+  wave_1_program_lead_gap_round: "BOUNDED_COMPLETE__COVERAGE_NOT_SELF_CERTIFIED"
+  reviewer_C_adverse_probe_status: "ASSIGNMENT_FROZEN__PENDING_FRESH_EXTERNAL_EXECUTION__NO_COMPLETE_OR_MATERIALLY_COMPLETE_CLAIM"
+  reviewer_C_adverse_probe_evidence_checkpoint_commit: "79118c65000a39d08aa5ef7bae37f26b06af71c9"
+  reviewer_C_adverse_probe_evidence_checkpoint_tree: "2d49b6e50c2b3590e9fb6f72f96e44965d3f0710"
+  reviewer_C_adverse_probe_input_freeze: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_INPUT_FREEZE_0_1_0.yaml"
+  reviewer_C_adverse_probe_input_freeze_blob_sha: "c21c4bb96bd0eb70a8ecdcbc21eb5db041a911ca"
+  reviewer_C_adverse_probe_prompt: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_PROMPT_0_1_0.md"
+  reviewer_C_adverse_probe_prompt_blob_sha: "d042d03784048b0431f8de776fabc178f8608b5b"
   reviewer_D_status: "UNASSIGNED__RESERVED_FOR_POST_EVIDENCE_CONTROLS"
-  methodology_mode: "truth_seeking_evidence_acquisition"
+  methodology_mode: "truth_seeking_evidence_acquisition__observation_first__provenance_first"
   g0_authorized: true
   g1_evidence_acquisition_authorized: true
   g1_evidence_acquisition_started: true
@@ -113,23 +120,31 @@ current_scope:
   g3_comparative_adjudication_authorized: false
   candidate_ranking_permitted: false
   theological_outcome: "NONE"
-
 next_action:
-  id: "TFP-STRESS-2-G1-W1-SOURCE-INVENTORY"
-  action: "continue_wave_1_acquisition_to_close_remaining_SRC_01_SRC_02_SRC_04_SRC_06_SRC_19_provenance_gaps_then_prepare_reviewer_C_SRC_18_adverse_probe"
+  id: "TFP-STRESS-2-G1-REVIEWER-C-SRC-18-ADVERSE-PROBE"
+  action: "execute_frozen_fresh_external_reviewer_C_SRC_18_adverse_probe_against_41_record_wave_1_checkpoint_then_acquire_and_ledger_any_credible_omitted_sources_before_separate_coverage_state_review"
   branch: "research/tfp-stress-2-resurrection-g1"
   launch_control: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+  reviewer_C_input_freeze: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_INPUT_FREEZE_0_1_0.yaml"
+  reviewer_C_input_freeze_blob_sha: "c21c4bb96bd0eb70a8ecdcbc21eb5db041a911ca"
+  reviewer_C_prompt: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_PROMPT_0_1_0.md"
+  reviewer_C_prompt_blob_sha: "d042d03784048b0431f8de776fabc178f8608b5b"
+  evidence_checkpoint_commit: "79118c65000a39d08aa5ef7bae37f26b06af71c9"
+  evidence_checkpoint_tree: "2d49b6e50c2b3590e9fb6f72f96e44965d3f0710"
   requirements:
-    - "record source identity provenance date language edition repository and access status"
-    - "record what the source contains before interpretation"
-    - "distinguish primary and secondary sources"
-    - "record dependence and dating uncertainty without resolving it by synthesis"
+    - "use a new clean external Reviewer C session disjoint from the Program Lead and Reviewer B source-plan lineage and clean of prior substantive Reviewer A/B/C reasoning"
+    - "verify every pinned repository identity in the Reviewer C input freeze before substantive review"
+    - "use at least one credible external index citation trail or critical stream not used to construct the original source plan"
+    - "search for omitted adverse evidence and omitted source classes symmetrically rather than equating adverse with anti-resurrection or anti-Christian"
+    - "preserve inaccessible missing contradictory adverse negative and null results"
+    - "if credible omitted sources or source classes are found return them for Program Lead observation-first acquisition and append every resulting exposure to the G1 ledger"
+    - "if the bounded adverse probe is null freeze a separate Reviewer C coverage-state review next"
+    - "do not certify COMPLETE or MATERIALLY_COMPLETE coverage inside the adverse probe"
     - "do not assign proposition dispositions"
     - "do not produce discriminator direction results"
     - "do not rank candidates"
     - "do not change frozen G0 architecture outside C4"
-    - "append every external evidence exposure to the G1 ledger"
-    - "preserve inaccessible or missing evidence records"
+    - "do not begin G2 lane synthesis"
 
 qualification_candidate:
   version: "0.1.7"
@@ -284,9 +299,6 @@ held:
     reason: "Stage 1 reached bounded closure; further expansion is conditional."
   - id: "MAJOR-DOCTRINAL-COMPARISON"
     reason: "No major doctrinal comparison is presently G0-authorized; protocol qualification alone does not authorize one."
-  - id: "TFP-STRESS-2-G1"
-    candidate: "resurrection_claim"
-    reason: "Substantive G1 evidence acquisition remains held until the exact G0 bundle is frozen and explicitly authorized by the human owner."
 
 external_boundaries:
   ISR:
@@ -330,7 +342,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "G0_authorized__G1_wave_1_evidence_acquisition_active"
+    status: "G0_authorized__G1_wave_1_41_records__reviewer_C_SRC_18_adverse_probe_assignment_frozen"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
