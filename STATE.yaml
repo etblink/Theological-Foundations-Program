@@ -79,56 +79,70 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE"
-  status: "G4_complete_PASS_WITH_LIMITATIONS__F1_F2_closed__G5_human_acceptance_ready"
-  purpose: "Present the exact bounded TFP-STRESS-2 adjudication to the human owner for canonical acceptance under Protocol Phase P. No PROPOSED-prefix removal or canonical adjudication entry may occur before explicit human acceptance."
+  id: "TFP-STRESS-2-G4-F2-CLAUDE-REVERIFICATION"
+  status: "G4_E1_PASS_WITH_LIMITATIONS__F1_closed__F2_reopened_for_fresh_Claude_A17_reverification__G5_readiness_suspended"
+  purpose: "Obtain a fresh disjoint Reviewer-D live-repository A17 determination at the pre-Gemini checkpoint, then independently check that determination before deciding whether F2 may be closed and G5 readiness restored."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "4732db3d766ec8e1a07780110413133ff09b53e9"
-  g3_branch_tree: "27698931dcb8884b9fa3fa8c9aa651d26999a0d4"
+  g3_branch_head: "cef9876b13d4d968fd2addf21d86aa01158acdfe"
   phase_N_candidate_status:
     path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
     blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
     summary: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
-  proposed_adjudication:
+  g3_provisional_outcome:
+    path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
+    blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
     base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
-    q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
-    q1_interpretation: "The current evidence does not warrant affirming R_EVENT as true; this is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
-    reporting_qualifier: "conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE"
+    provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
   g4:
-    strict_audit_report: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md"
-    strict_audit_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
+    strict_audit_report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
     outcome: "PASS_WITH_LIMITATIONS"
     reviewer_C_C4_report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
-    reviewer_D_ledger_integrity_report_blob_sha: "84ea800532fef7fe814cc0c68f25102034330e9a"
-    reviewer_D_result: "LEDGER_INTEGRITY_CONFIRMED"
-    closure_artifact: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_0.yaml"
-    closure_blob_sha: "d9a3a54ef7d96547368c8e0efbff14ed31461b42"
     F1_closed: true
-    F2_closed: true
-    post_audit_closure_complete: true
+    F2_closed: false
+    F2_status: "REOPENED_FOR_FRESH_REVERIFICATION"
+  prior_reviewer_D:
+    provider: "Google Gemini 3.1 Pro"
+    result: "LEDGER_INTEGRITY_CONFIRMED"
+    report_blob_sha: "84ea800532fef7fe814cc0c68f25102034330e9a"
+    status: "PRESERVED_HISTORICAL_SUPPORT__NOT_SOLE_BASIS_FOR_F2_CLOSURE"
+  fresh_reviewer_D:
+    provider: "Anthropic"
+    model: "Claude Opus 5.5"
+    handshake_blob_sha: "b13417bb933118f03a15cbd32400b2cd272a5b8c"
+    assignment_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+    input_freeze: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_INPUT_FREEZE_0_1_0.yaml"
+    input_freeze_blob_sha: "63b67f57e6d9812cb6b7ab47c94328778692db90"
+    prompt: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_PROMPT_0_1_0.md"
+    prompt_blob_sha: "a4c5ef6223c90cdb0f05e34d25d47e5980cb4260"
+    substantive_target_commit: "43ee1477fc500a28372710f3a57127b4edcaef6a"
+    substantive_target_tree: "378b7904abe6afb27395ef32c5cc636adcef102a"
+    review_status: "PENDING_EXTERNAL_EXECUTION"
   G5_acceptance_request:
     path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml"
     blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
-    human_owner_decision: "PENDING"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_78.yaml"
-  exposure_ledger_blob_sha: "f378a06c4c0a64590d01746034a4b609e78778b5"
+    status: "FROZEN_BUT_SUSPENDED__DO_NOT_ACCEPT_WHILE_F2_OPEN"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_79.yaml"
+  exposure_ledger_blob_sha: "e2a85e90051f56598ade1243429d8ad996b94e97"
   g4_strict_audit_complete: true
-  g5_human_acceptance_ready: true
+  g5_human_acceptance_ready: false
   g5_human_acceptance_complete: false
   canonical_adjudication_written: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G5-HUMAN-OWNER-DECISION"
-  action: "obtain_explicit_human_owner_acceptance_or_hold_or_decline_for_the_exact_frozen_G5_acceptance_request"
+  id: "TFP-STRESS-2-G4-F2-CLAUDE-REVIEWER-D-LIVE-REVERIFY"
+  action: "execute_the_frozen_Claude_Reviewer_D_live_repository_A17_reverification_at_the_exact_pre_Gemini_target_and_return_the_complete_report_verbatim"
   branch: "research/tfp-stress-2-resurrection-g3"
-  acceptance_request_blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
+  input_freeze_blob_sha: "63b67f57e6d9812cb6b7ab47c94328778692db90"
+  prompt_blob_sha: "a4c5ef6223c90cdb0f05e34d25d47e5980cb4260"
   requirements:
-    - "human owner alone may accept the canonical adjudication"
-    - "do not remove the PROPOSED_ prefix before explicit acceptance"
-    - "if accepted, create a versioned acceptance record and then mechanically update canonical STATE"
-    - "carry all PASS_WITH_LIMITATIONS limitations and reopen conditions into the canonical adjudication"
+    - "same exact Claude conversation that returned the passing handshake"
+    - "direct repository access is preferred; no offline packet is needed"
+    - "substantive review target is commit 43ee1477fc500a28372710f3a57127b4edcaef6a / tree 378b7904abe6afb27395ef32c5cc636adcef102a"
+    - "inspect every ledger version transition 0.1.0 through 0.1.76"
+    - "do not read prior Reviewer-D result or later G5 readiness material before fixing the independent conclusion"
+    - "Program Lead must independently check the returned report before F2 can be closed"
 
 qualification_candidate:
   version: "0.1.7"
