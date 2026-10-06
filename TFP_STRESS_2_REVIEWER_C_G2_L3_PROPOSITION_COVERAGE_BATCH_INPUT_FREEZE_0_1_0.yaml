@@ -1,0 +1,171 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L3_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__32_L3_PROPOSITION_SCOPE_COVERAGE_REVIEW__PLUS_L2_CLERICAL_C4_CONFIRMATION"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER__AND_C4_AMENDMENT_DIRECTION_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L3_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purposes:
+    - "Independently certify coverage state for each of the 32 unique necessary propositions that touch L3 before L3 dispositions."
+    - "Independently confirm or reject the Program Lead's classification of the L2 0.1.1 Q1-control blob-pointer correction as POST_EVIDENCE_NONMATERIAL and NEUTRAL."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "1ab75662218dcfe761bd9ab3eb903004fc210155"
+  tree: "483c8436b43d06d34cb21ece8e6c58e3ef044795"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  - path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+    blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  - path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+    purpose: "Original L2 row-level dispositions and P-DEATH sufficiency record."
+  - path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml"
+    blob_sha: "181ab979d41f2b5ae45fceb9750564a49e5748ec"
+    purpose: "Proposed clerical Q1_EVENT_CONTROL blob-pointer correction only."
+  - path: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "ec6c6808a5a7c32fdcce84982155770287f6718a"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_43.yaml"
+    blob_sha: "59ce3bb17f670f34e6ca88abb0708a76e8467539"
+
+c4_clerical_review:
+  target: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml"
+  proposed_class: "POST_EVIDENCE_NONMATERIAL"
+  proposed_effect:
+    all_candidates: "NEUTRAL"
+    all_outcomes: "NEUTRAL"
+  claimed_change: "Only the q1_event_control_blob_sha pointer is corrected from edc025f014e9bce4c0341365815402326877089f to the verified c05b099b07ab9bfd3b73f84910ba9b33d08d0521."
+  claimed_nonchanges:
+    - "All 15 row-level proposition dispositions unchanged."
+    - "P-DEATH sufficiency record unchanged."
+    - "All evidence bindings and rationales unchanged."
+    - "No candidate status, direction result, comparison result, or ranking changes."
+  required_c4_disposition:
+    - "CONFIRM_POST_EVIDENCE_NONMATERIAL_NEUTRAL"
+    - "REJECT_OR_RECLASSIFY_WITH_REASON"
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-R-CAUSAL"
+    - "PROPOSITION:P-V-REAL-REFERENT"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-V-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-V-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HIND-EXPERIENCE-OCCURRED"
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    - "PROPOSITION:P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSEED-INDIVIDUAL-EXPERIENCE"
+    - "PROPOSITION:P-HSEED-SOCIAL-AMPLIFICATION"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    - "PROPOSITION:P-S1-POSTCRUC-ACCESS"
+    - "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-IND-EXP"
+    - "PROPOSITION:P-CHET-INT"
+    - "PROPOSITION:P-CHET-NARR"
+    - "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-SOC-EXP"
+    - "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SEED-IND"
+    - "PROPOSITION:P-CHET-SEED-SOC"
+    - "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+
+coverage_review_standard:
+  - "Audit each proposition against its exact required strata, acceptable substitutes, access rules, and actual frozen inventory."
+  - "Use the L3 matrix and founding-stream freeze as binding/index artifacts, not as proof of sufficiency."
+  - "FS-01 is one received pre-Pauline appearance-tradition cluster for independence/convergence unless separate substream independence is actually warranted."
+  - "FS-02, Paul's first-person claimed experience, is not itself a pre-Pauline founding stream."
+  - "Later Gospel, Acts, and reception clusters do not become independent pre-Pauline streams merely by repetition."
+  - "Keep report existence, sincerity, occurrence, independence, referent reality, personal identity, embodiment, and causal role separate."
+  - "Sincerity alone cannot satisfy extramentality or event truth."
+  - "Modern bereavement, social-memory, failed-expectation, parapsychology, and testimony literature are reference/mechanism controls; transfer to the first-century target requires explicit warrant."
+  - "For R/V occurrence propositions, enforce the same frozen FS-01 stream inventory and the Q1 same-stream rules."
+  - "For H/C-HET social and individual experience propositions, do not infer genuine subjective experiences merely from report multiplicity."
+  - "For S1 access, do not relabel resurrection/appearance reports as living-Jesus access without positive warrant."
+  - "If incomplete, identify the smallest exact acquisition/search defect."
+
+targeted_external_checks:
+  allowed: true
+  rule: "Use only bounded checks needed to verify a specific coverage/provenance claim; do not conduct an open-ended literature harvest."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not apply D2, D3, D4, D5, D9, D-S1, or any discriminator direction rule."
+  - "Do not certify COMPARISON:<id> MAKEABLE."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not decide whether any encounter was veridical or nonveridical."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "L2 CLERICAL C4 CONFIRMATION"
+    - "L3 COVERAGE STANDARD"
+    - "L3 PROPOSITION-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS BY PROPOSITION"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  l3_table_exact_row_count: 32
+  l3_table_columns:
+    - "scope"
+    - "required strata"
+    - "substitute status"
+    - "material access limits"
+    - "coverage disposition"
+    - "reason"
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "Which of the 32 L3-linked proposition scopes are independently coverage-ready for testimony/claimed-encounter disposition, and which exact scopes, if any, must return to evidence acquisition first?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
