@@ -1,0 +1,87 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+ledger_policy:
+  append_only_sequence_entries: true
+  prior_sequence_entries_may_not_be_rewritten: true
+  custodian: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  independent_ledger_integrity_reviewer_slot: "REVIEWER_G__UNASSIGNED_FRESH_SESSION_REQUIRED"
+  evidence_exposure_definition: "An outcome-material actor first receives, reads, is shown, or receives a substantive summary of outcome-relevant evidence or a result derived from it."
+  G0_architecture_artifacts_are_recorded_for_provenance_even_when_not_outcome_evidence: true
+
+baseline_exposure_disclosures:
+  PROGRAM_LEAD:
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    pre_G0_familiarity:
+      - "General model-training/background familiarity with philosophical contingency/cosmological arguments, objections, modality, grounding, and philosophy of religion."
+      - "Participated with the human owner in program-level selection discussion that identified contingency/necessary foundation as Study 3 and hiddenness as a later study."
+      - "Knows the canonical TFP-STRESS-2 result and protocol-repair history; those results are not evidential inputs to Study 3."
+    study_specific_outcome_evidence_search_after_authorization_before_ledger: false
+    substantive_source_acquisition_after_authorization_before_ledger: false
+    note: "General prior knowledge is disclosed, not treated as evidence. The frozen source plan and independent reviews will control G1 acquisition."
+  HUMAN_OWNER:
+    role: "authorization_and_final_acceptance_authority"
+    pre_G0_familiarity:
+      - "Participated in strategic discussion selecting contingency/necessary foundation as the next study."
+    outcome_material_G0_author: false
+    outcome_material_reviewer: false
+    evidence_search_performed_for_this_G0_by_role: false
+  REVIEWER_A: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_B: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_C: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_D: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_E: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_F: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_G: "UNASSIGNED__NO_EXPOSURE"
+  REVIEWER_H: "UNASSIGNED__NO_EXPOSURE"
+
+entries:
+  - sequence: 1
+    repository_commit: "28dc7ae6b5d230bb3c64d0702e1393d55351608c"
+    timestamp_utc: "2026-10-06T23:39:06Z"
+    actor_lineage: "HUMAN_OWNER -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md blob e358ee8451790fd4c7669ea3ebda31531411039f"
+    exposure_class: "G0_AUTHORIZATION_PROVENANCE"
+    amendment_surfaces: ["study scope","G0 authority","G1 authorization boundary"]
+    outcome_relevant_evidence: false
+
+  - sequence: 2
+    repository_commit: "6b46b1ed32792e3e0b65ac1150aeb9e994dc3894"
+    timestamp_utc: "2026-10-06T23:39:59Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml blob ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+    exposure_class: "G0_BLIND_ELICITATION_SCOPE_FREEZE"
+    amendment_surfaces: ["A1 working question","A2 generic scope","operational definitions","candidate elicitation"]
+    outcome_relevant_evidence: false
+
+  - sequence: 3
+    repository_commit: "229e945c362346068e1c19ef133f51080f30a273"
+    timestamp_utc: "2026-10-06T23:40:32Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml blob 2977c8697fcdc31da69c229dc55f51df6b8ecace"
+    exposure_class: "G0_ROLE_ARCHITECTURE_FREEZE"
+    amendment_surfaces: ["A3 role matrix","reviewer independence","future G4 strict-auditor eligibility"]
+    outcome_relevant_evidence: false
+
+integrity_state:
+  next_sequence: 4
+  rewrite_detected: false
+  last_independent_integrity_check: null
+  outcome_evidence_exposure_started: false
+
+G0_state:
+  human_authorization_received: true
+  blind_candidate_elicitation_ready: false
+  candidate_universe_frozen: false
+  claim_typing_frozen: false
+  necessary_proposition_coverage_complete: false
+  background_register_frozen: false
+  source_plan_passed: false
+  discriminators_frozen: false
+  G0_complete: false
+  G1_authorized: false
