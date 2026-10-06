@@ -1,0 +1,85 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "V"
+candidate_name: "Veridical non-embodied postmortem encounter"
+status: "CONSTRUCTION_COMPLETE__PRE_FREEZE"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+
+native_formulation: "Jesus genuinely died. After death, a real extramental postmortem referent identical with Jesus existed and was encountered in a non-embodied mode. At least one such founding encounter stream was PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation. The candidate affirms real postmortem survival/presence while denying that the referent satisfies the study's EMB-1/EMB-2 embodied criteria."
+
+proponent_sources:
+  - id: "FORM-V-001"
+    title: "Marcus Borg, The Resurrection of Jesus: Physical/Bodily or Spiritual/Mystical?"
+    use: "FORMULATION_ONLY"
+    contribution: "Serious Christian formulation affirming that Jesus lives/is known as a real spiritual/divine reality while rejecting ordinary physical/bodily resurrection."
+  - id: "FORM-R-002"
+    title: "William Lane Craig, The Bodily Resurrection of Jesus"
+    use: "FORMULATION_ONLY_SECONDARY_DESCRIPTION"
+    contribution: "Documents a serious scholarly lineage of nonphysical/spiritual-body and heavenly-vision formulations, while criticizing them."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-V-REAL-REFERENT"
+  - "P-V-IDENTITY-JESUS"
+  - "P-V-NONEMBODIED"
+  - "P-V-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "No theological claim of exaltation, presence, or lordship counts as public historical support merely because a tradition confesses it."
+  - "Q2 causal-agent attribution remains outside this candidate."
+
+internal_success_conditions:
+  - "The referent is extramental rather than wholly subjective."
+  - "The referent is the same personal subject as Jesus."
+  - "The referent fails EMB-1 or EMB-2 and therefore is nonembodied under the frozen definition."
+  - "A corresponding founding stream is PRIMARY or NECESSARY_CONTRIBUTING."
+
+expected_evidence:
+  - "Encounter/testimony material whose best warranted interpretation points to a real referent but not embodied spatiotemporal causal presence."
+  - "Identity evidence linking the referent with Jesus."
+  - "Founding-stream causation evidence."
+  - "Metaphysical argument showing coherent postmortem personal identity without embodiment."
+
+recognized_objections:
+  - "The reviewed proponent literature may be spiritually realist without committing to an extramental personal referent in exactly the study's technical sense."
+  - "A referent satisfying EMB-1 and EMB-2 would collapse into R-TRANS."
+  - "A purely subjective experience would collapse into H-family candidates."
+  - "Personal-identity criteria are background-sensitive."
+
+caricatures_rejected:
+  - "V is not merely 'hallucination'."
+  - "V is not a euphemism for R-TRANS with weaker body language."
+  - "V does not require denial of every later bodily narrative; it requires that the founding-causal referent itself be nonembodied."
+  - "V does not decide whether the cause of survival/presence is divine."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_FORMULATION"
+  reviewer_or_basis: "Program-lead review of FORM-V-001 plus secondary scholarly description in FORM-R-002"
+  findings:
+    - "A serious nonphysical/spiritual-real resurrection family is represented."
+    - "No single reviewed proponent source exactly states all frozen TFP conjuncts, especially the technical extramental-identity-and-founding-causal conjunction."
+    - "The packet therefore discloses V as a synthetic comparison candidate rather than falsely attributing the exact formulation to one school."
+
+equal_strength_review:
+  status: "PASS_WITH_LIMITATION_PRELIMINARY"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "The packet gives V a genuinely realist rather than dismissive 'mere vision' formulation."
+    - "Synthetic status must be carried into Reviewer B/C review."
+
+packet_stage_notes:
+  - "Reviewer C should treat BGD-11 embodiment/identity variants as outcome-material to the R/V boundary."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [8,9]
+freeze_identity: "PENDING_WAVE_1_FREEZE_MANIFEST"
