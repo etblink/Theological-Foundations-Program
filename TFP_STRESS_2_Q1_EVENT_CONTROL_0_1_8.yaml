@@ -37,7 +37,7 @@ P_CRUC_classification_control:
   current_classification: "NONCOMPARATIVE_SHARED_FLOOR"
   reviewer_A_disposition: "P_CRUC_SHARED_FLOOR_APPROVED_WITH_LIMITATIONS"
   reviewer_A_report: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_REPORT_0_1_0.md"
-  classification_scope: "Frozen against the exact 11-candidate universe listed in TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml."
+  classification_scope: "Frozen against the exact 11-candidate universe listed in TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml."
   candidate_set_reopen_rule: "This classification is frozen against the exact 11-candidate universe. Admission of any additional full candidate before G0 (including via a reopen_if) is a C4 amendment that reopens it."
   required_node_rival_family: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
   node_rival_route: "D0-CRUCIFIXION-ATTRIBUTION remains a node-rival evidential discriminator and sufficiency control on P-CRUC, not a candidate-selecting comparative route and not an N2 dominance input."
