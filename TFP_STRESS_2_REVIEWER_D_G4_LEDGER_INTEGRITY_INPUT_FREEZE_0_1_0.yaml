@@ -1,0 +1,83 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_D_G4_LEDGER_INTEGRITY_INPUT_FREEZE"
+status: "FROZEN__FRESH_DISJOINT_EXTERNAL_REVIEW_REQUIRED"
+date: "2026-10-06"
+
+authority:
+  protocol: ["TFP_ADJUDICATION_PROTOCOL_0_1_7.md","0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"]
+  role_architecture: ["TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml","cade6816cdd357b53fee227ac76d47ab16e83451"]
+  audit_E1_report: ["TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md","bd10df2283516e4e6bfd04e367373c750d4e0d27"]
+
+reviewer_D:
+  role: "ledger_integrity_reviewer only"
+  required_lineage: "fresh session disjoint from Program Lead, Reviewers A/B/C, and Reviewer E strict auditor"
+  repository_mode: "read-only"
+  amendment_direction_review: "PROHIBITED"
+  strict_audit_role: "PROHIBITED"
+  candidate_ranking_or_Q1_readjudication: "PROHIBITED"
+
+current_ledger:
+  path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_75.yaml"
+  blob_sha: "2be51b9866e40418da3076f3f1cd0830fac66c2d"
+  expected_next_sequence: 154
+  expected_rewrite_detected: true
+
+A17_required_checks:
+  - "sequence continuity and monotonicity"
+  - "git/history check for unrecorded ledger rewrites"
+  - "relevant exposure precedes/follows each amendment as claimed"
+  - "classified amendments are paired with independent amendment-direction review"
+  - "known historical sequence-3 rewrite is disclosed rather than silently erased"
+
+historical_sequence_3_check:
+  ledger_0_1_1_blob: "b5c75233d034d47c8c83a65a3686b5476e705a81"
+  ledger_0_1_2_blob: "6db3720c1f4a8ba81b2036e182c9174ef9ef2a30"
+  before_commit_field: "2c3a852"
+  after_commit_field: "2c3a852cb5a00416a6f214318a356fc0019f2edf"
+  errata: ["TFP_STRESS_2_G4_E1_F3_LEDGER_ERRATA_0_1_0.yaml","d05af3bd5507f4b2c0cc3fee3407b00e9a443fa3"]
+
+classified_amendments:
+  L1_0_1_1:
+    amendment: ["TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml","8406e121696cb471516135f2bfeeb8f2e0ce11a9"]
+    ledger_sequence: 88
+    C4_report: ["TFP_STRESS_2_REVIEWER_C_G2_L2_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md","de226788a0e94d043475ad8bd54c631c1e112eae"]
+    C4_ledger_sequence: 91
+  L2_0_1_1:
+    amendment: ["TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml","181ab979d41f2b5ae45fceb9750564a49e5748ec"]
+    ledger_sequence: 93
+    C4_report: ["TFP_STRESS_2_REVIEWER_C_G2_L3_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md","46da2f8d540f9fe3214b1e69c2aaa1d0a76c35a8"]
+    C4_ledger_sequence: 97
+  Phase_L_0_1_1:
+    amendment: ["TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml","150e8e711ac97be6bd31c668b0638246b57e57ab"]
+    ledger_sequence: 129
+    C4_report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+    C4_ledger_sequence: 152
+    A17_binding: ["TFP_STRESS_2_G4_REVIEWER_C_C4_INTEGRATION_CLOSURE_0_1_0.yaml","ebe2ae4292cc0b371aca78f41664ff36feec85fb"]
+    A17_binding_ledger_sequence: 153
+  post_audit_repairs_B_to_H:
+    amendment_sequences: [143,144,145,146,147,148,149]
+    C4_report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+    C4_ledger_sequence: 152
+    class: "POST_EVIDENCE_NONMATERIAL"
+    effects: "NEUTRAL"
+
+known_caveats:
+  F6_bad_source_pin:
+    bad_blob: "8f31eb6152716c75f5d850af6ce6335410102a1b"
+    on_tree_blob: "ac10a99acbbb47477e5995566f918611c23017b1"
+    treatment: "F6 remains limited to no-disposition-change reconciliation note; do not treat as new sufficiency finding."
+  item_A_original_missing_direct_A17_citation:
+    treatment: "Additive A17 binding record at ledger sequence 153; verify whether this is sufficient for current-study integrity without rewriting Phase-L 0.1.1."
+
+required_output:
+  - "session/lineage identity and disjointness declaration"
+  - "immutable pin verification"
+  - "sequence continuity result"
+  - "ledger history/rewrite result"
+  - "amendment chronology table for L1, L2, Phase-L, and post-audit B-H"
+  - "assessment of sequence-3 disclosure"
+  - "assessment of Phase-L A17 additive binding"
+  - "assessment of F6 pin caveat as a ledger-integrity matter only"
+  - "overall LEDGER_INTEGRITY_CONFIRMED or LEDGER_INTEGRITY_NOT_CONFIRMED"
+  - "smallest exact repair if not confirmed"
