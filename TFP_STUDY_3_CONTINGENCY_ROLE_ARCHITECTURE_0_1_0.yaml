@@ -1,0 +1,146 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "ROLE_ARCHITECTURE"
+status: "G0_DRAFT_FROZEN__REVIEWER_IDENTITIES_UNASSIGNED_EXCEPT_PROGRAM_LEAD_AND_HUMAN_OWNER"
+date: "2026-10-06"
+
+human_owner:
+  role: "HUMAN_OWNER"
+  authority:
+    - "G0 authorization"
+    - "major scope changes"
+    - "G5 canonical acceptance"
+    - "consequential program-level truth commitments"
+  outcome_material_author: false
+  outcome_material_reviewer: false
+
+program_lead:
+  role: "PROGRAM_LEAD"
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  allowed:
+    - "construct initial G0 artifacts"
+    - "coordinate frozen reviewer packets"
+    - "execute already-authorized work"
+    - "maintain append-only ledger as custodian"
+  prohibited:
+    - "self-authorize G1"
+    - "serve as independent reviewer of own artifacts"
+    - "serve as strict auditor"
+    - "override failed independent review"
+
+reviewer_slots:
+  REVIEWER_A:
+    primary_roles:
+      - "blind_candidate_elicitation_reviewer"
+      - "candidate_universe_completeness_and_exclusion_reviewer"
+      - "candidate_steelman_equal_strength_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead and strict auditor"
+    restrictions:
+      - "may_not_author_Program_Lead_initial_candidate_seed"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_B:
+    primary_roles:
+      - "initial_claim_typing_reviewer"
+      - "necessary_proposition_and_coverage_map_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead, candidate-packet authors, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_discriminator_tier_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_C:
+    primary_roles:
+      - "background_register_inclusion_exclusion_reviewer"
+      - "background_granularity_interaction_reviewer"
+      - "discriminator_tier_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead, background/discriminator authors, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_post_evidence_direction_result_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_D:
+    primary_roles:
+      - "source_plan_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead, source-plan author, adverse-source reviewer, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_adverse_source_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_E:
+    primary_roles:
+      - "adverse_source_reviewer"
+      - "coverage_state_reviewer"
+      - "MAKEABLE_certifier"
+    lineage_requirement: "fresh session disjoint from Program Lead, source-plan reviewer, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_source_plan_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_F:
+    primary_roles:
+      - "amendment_direction_reviewer"
+      - "fragility_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead, ledger-integrity reviewer, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_ledger_integrity_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_G:
+    primary_roles:
+      - "ledger_integrity_reviewer"
+      - "post_evidence_direction_result_reviewer"
+      - "confidence_reviewer"
+    lineage_requirement: "fresh session disjoint from Program Lead, Reviewer F, discriminator author/tier reviewer, and strict auditor"
+    restrictions:
+      - "may_not_serve_as_amendment_direction_reviewer"
+      - "may_not_serve_as_discriminator_author_or_tier_reviewer"
+      - "may_not_serve_as_strict_auditor"
+
+  REVIEWER_H:
+    primary_roles:
+      - "strict_independent_auditor"
+    assignment_time: "after G3 synthesis freeze"
+    lineage_requirement: "fresh session disjoint from Program Lead, all candidate/lane authors, and every outcome-material reviewer in this study"
+    restrictions:
+      - "read_only"
+      - "no_prior_outcome_material_role_in_this_study"
+
+minimum_separation_checks:
+  source_plan_reviewer_vs_adverse_source_reviewer:
+    left: "REVIEWER_D"
+    right: "REVIEWER_E"
+    status: "SATISFIED_BY_DESIGN"
+  necessary_proposition_reviewer_vs_discriminator_tier_reviewer:
+    left: "REVIEWER_B"
+    right: "REVIEWER_C"
+    status: "SATISFIED_BY_DESIGN"
+  amendment_direction_vs_ledger_integrity:
+    left: "REVIEWER_F"
+    right: "REVIEWER_G"
+    status: "SATISFIED_BY_DESIGN"
+  discriminator_tier_vs_post_evidence_direction_result:
+    left: "REVIEWER_C"
+    right: "REVIEWER_G"
+    status: "SATISFIED_BY_DESIGN"
+
+baseline_exposure_policy:
+  all_outcome_material_roles_must_disclose_pre_G0_familiarity: true
+  prior_general_knowledge_not_automatically_disqualifying: true
+  strict_auditor_must_review_contamination_risk: true
+
+current_assignments:
+  HUMAN_OWNER: "assigned"
+  PROGRAM_LEAD: "assigned"
+  REVIEWER_A: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_B: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_C: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_D: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_E: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_F: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_G: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+  REVIEWER_H: "UNASSIGNED__ASSIGN_AFTER_G3_FREEZE"
+
+notes:
+  - "A single actor lineage may hold multiple roles within one reviewer slot above only because no Protocol 0.1.7 separation rule forbids the listed combinations."
+  - "If a later artifact exposes an outcome-material coupling risk, split the slot prospectively before substantive use."
+  - "Provider diversity is not a substitute for lineage disjointness; fresh-session lineage is the controlling procedural requirement."
