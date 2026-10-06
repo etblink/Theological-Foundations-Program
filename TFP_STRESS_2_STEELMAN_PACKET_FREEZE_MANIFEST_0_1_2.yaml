@@ -1,0 +1,135 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET_FREEZE_MANIFEST"
+status: "FROZEN_FOR_NARROW_REVIEWER_B_CONFIRMATION__NB1_NB6_REPAIRED__PRE_G0"
+date: "2026-10-06"
+supersedes: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_1.yaml"
+supersession_reason: "Reviewer B re-review required bounded NB-1 through NB-6 repairs. All material packet changes are versioned; this manifest binds the repaired packet/control set for a narrow same-session confirmation."
+
+governing_surfaces:
+  admission_freeze:
+    path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_5.yaml"
+    blob_sha: "db5564bfe394b11507c3d6eb57a2a6ea3e2a86ea"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml"
+    blob_sha: "8658d5a43322b2f8d4d3531d3f52fbb15de1e3fb"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_7.yaml"
+    blob_sha: "cc25ef14847da84e03d5654f71c32b3a36e144c0"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
+    blob_sha: "07229861cc01eeee61c377c34a0af5ba46b61ec0"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+    blob_sha: "213df3b9f45f874c98c0ebf8f49aa76b532ecab4"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_9.yaml"
+    blob_sha: "2e9ca6bed467970edcc1d7c594f531de41ae8892"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_8.yaml"
+    blob_sha: "132ee6f1162b82c39b3f4fa0dcc8ac39ba6a314a"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_0.yaml"
+    blob_sha: "28bfad60974632f9ee9b44eb25301fea733738b7"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml"
+    blob_sha: "ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_4.yaml"
+    blob_sha: "ae0f219ee6a88e655d794b8267ce89b53b828fcf"
+  formulation_search:
+    path: "TFP_STRESS_2_NB4_FORMULATION_EQUAL_STRENGTH_SEARCH_0_1_0.yaml"
+    blob_sha: "2277e128fd42e52628e85c8ce0c9a7ec13532675"
+  formulation_source_record:
+    path: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_1.yaml"
+    blob_sha: "7859ace17025ec2a8ef7ff9734629024340227a5"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
+    blob_sha: "fab6c75d359e54ce1298f255bfbc188c375caeaf"
+  reviewer_B_repair_record:
+    path: "TFP_STRESS_2_REVIEWER_B_SECOND_PRE_EVIDENCE_REPAIR_RECORD_0_1_0.md"
+    blob_sha: "c373eda578b296f0d125ca435c3234304802c28f"
+
+packet_policy:
+  exact_status_bearing_candidate_count: 11
+  candidate_universe_changed: false
+  all_status_bearing_candidate_packets_frozen: true
+  R_PHYS_refinement_is_non_status_bearing: true
+  required_node_rivals_frozen: true
+  P_CHET_BODY_is_not_necessary: true
+  R_identity_is_separate_necessary_proposition: true
+  reviewer_B_narrow_confirmation_required: true
+  packet_freeze_is_not_G0_authorization: true
+  G1_evidence_acquisition_remains_prohibited: true
+
+status_bearing_packets:
+  - candidate_id: "R-TRANS"
+    path: "TFP_STRESS_2_STEELMAN_R_TRANS_0_1_2.yaml"
+    blob_sha: "65d5d2d8c2769c2ef9357bb133466aa63fa1f436"
+  - candidate_id: "V"
+    path: "TFP_STRESS_2_STEELMAN_V_0_1_2.yaml"
+    blob_sha: "21e284065c7e8900aca4ad93b77676285ffaddfa"
+  - candidate_id: "H-IND"
+    path: "TFP_STRESS_2_STEELMAN_H_IND_0_1_1.yaml"
+    blob_sha: "5d0f763deca97e341f10418a641dc21c4f8982c5"
+  - candidate_id: "H-SOC"
+    path: "TFP_STRESS_2_STEELMAN_H_SOC_0_1_1.yaml"
+    blob_sha: "26bceddb4341165e6398016058f06e0e042363c2"
+  - candidate_id: "H-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_H_SEED_SPREAD_0_1_1.yaml"
+    blob_sha: "ffd779d6abaac11c57ffa2b07df76c57efb77901"
+  - candidate_id: "L"
+    path: "TFP_STRESS_2_STEELMAN_L_0_1_1.yaml"
+    blob_sha: "321cfc381b976d2d6d6d2a95327b7c15f359ba96"
+  - candidate_id: "S1"
+    path: "TFP_STRESS_2_STEELMAN_S1_0_1_2.yaml"
+    blob_sha: "71bbd90f6aa225d23cc24e993abe3c361fd6140b"
+  - candidate_id: "F"
+    path: "TFP_STRESS_2_STEELMAN_F_0_1_1.yaml"
+    blob_sha: "d3c874f7484dd0ab8f611c78b721aafe67c3756a"
+  - candidate_id: "C-HET-IND"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_IND_0_1_1.yaml"
+    blob_sha: "562955f270159185e4f610cae3eb27a2fb7c7e8a"
+  - candidate_id: "C-HET-SOC"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_1.yaml"
+    blob_sha: "122833fc0d015173e604fa5353b431e186a2cff9"
+  - candidate_id: "C-HET-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_1.yaml"
+    blob_sha: "cb1de9bbcd6bac8df1c6180cf999cf48336e2e51"
+
+non_status_refinement_packets:
+  - candidate_id: "R-PHYS-REFINEMENT"
+    path: "TFP_STRESS_2_STEELMAN_R_PHYS_REFINEMENT_0_1_2.yaml"
+    blob_sha: "c18d583ae810cd3a4686a93200da43228c9b9a0d"
+
+required_node_rival_packets:
+  - candidate_id: "X-NONHISTORICITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "eab364506a87fa6f8862e50f73916cb93fae2df5"
+  - candidate_id: "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "1cfbaeb537610afe73bc3c09bafafca41906a1dc"
+  - candidate_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml"
+    blob_sha: "dbb0525d0907549e6d998d0665557abb51b7fd29"
+
+repair_binding:
+  NB_1: "R occurrence and identity direct burdens frozen"
+  NB_2: "C-HET M-BODY non-ranking expectation only"
+  NB_3: "R body neutral; F-BODY-REMOVAL frozen implementation refinement"
+  NB_4: "H/L direct proponent formulation search integrated"
+  NB_5: "49-proposition truth-critical and probative-absence register frozen"
+  NB_6: "Q1 underdetermined precedence restricted"
+
+freeze_effect:
+  packet_text_locked_for_narrow_reviewer_B_confirmation: true
+  any_material_change_requires_new_version_and_manifest: true
+  no_candidate_may_absorb_unlisted_mechanisms_after_freeze: true
+  no_candidate_may_be_added_or_removed_except_C4: true
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
