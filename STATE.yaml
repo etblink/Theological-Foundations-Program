@@ -10,11 +10,11 @@ program:
   active_governance_ref: "main:GOVERNANCE.md"
   active_governance_blob_sha: "45f3361781c32c04bb6055968dbaf24a120fb27c"
   candidate_governance_version: "0.1.5"
-  candidate_governance_ref: "repair/tfp-adjudication-protocol-0.1.6:GOVERNANCE.md"
+  candidate_governance_ref: "repair/tfp-adjudication-protocol-0.1.7:GOVERNANCE.md"
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   qualified_protocol: null
-  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  candidate_protocol_status: "REPAIR_REQUIRED__0_1_7_REPAIR_AUTHORIZED"
+  candidate_protocol: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+  candidate_protocol_status: "CANDIDATE__BOUNDED_EXIT_GATE_REPAIR_COMPLETE__AUDITOR_ASSIGNMENT_PENDING"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -42,60 +42,58 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-METHOD-REPAIR-0.1.7"
-  status: "authorized"
-  purpose: "Execute one bounded Protocol 0.1.7 repair under the approved program re-anchoring checkpoint."
+  id: "TFP-METHOD-REAUDIT-0.1.7"
+  status: "auditor_assignment_pending"
+  purpose: "Run one strict independent exit-gate qualification audit of the bounded Protocol 0.1.7 repair."
   bounded: true
   reanchor_checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
   reanchor_acceptance: "TFP_PROGRAM_REANCHORING_ACCEPTANCE_0_1_0.md"
-  source_audit_report: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_REPORT.md"
-  source_audit_disposition: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_REAUDIT_DISPOSITION_0_1_0.md"
-  source_protocol: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
-  target_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
-  repair_scope:
-    - "R1_outcome_partition"
-    - "R2_disposition_to_direction_mapping"
-    - "R3_post_evidence_confirmatory_ceiling"
-    - "R4_Q1_state_transition_whitelist"
-    - "R5_role_control_completeness"
-    - "directly_interacting_minors_only"
-  new_meta_machinery_default: "PROHIBITED"
+  repair_branch: "repair/tfp-adjudication-protocol-0.1.7"
+  candidate_protocol: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+  candidate_governance: "GOVERNANCE.md"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+  source_manifest_blob_sha: "de9223db5f57a287c90be7dc1df46c8c75d4dfde"
+  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_PROMPT.md"
+  auditor_assignment_prompt_blob_sha: "154bf6355806e01ca8512c04d40d0a28c3342cad"
+  qualification_role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
+  next_audit_role: "qualification_exit_gate"
+  theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-METHOD-REPAIR-0.1.7"
-  action: "freeze_preregistered_bounded_repair_and_implement"
+  id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.7"
+  action: "obtain_one_fresh_auditor_assignment_declaration"
+  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_PROMPT.md"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
   requirements:
-    - "do_not_expand_beyond_five_major_and_direct_interactions"
-    - "prefer_simplification_over_new_layers"
-    - "freeze_new_immutable_bundle_after_repair"
-    - "next_audit_is_qualification_exit_gate"
+    - "auditor_reads_no_repository_material_during_assignment_handshake"
+    - "auditor_declares_fresh_session_lineage_and_prior_exposure"
+    - "freeze_complete_role_control_after_assignment_before_substantive_audit"
+    - "next_audit_is_exit_gate_not_open_ended_method_redesign"
     - "do_not_authorize_theological_stress_test"
 
 qualification_candidate:
-  version: "0.1.6"
-  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_6.md"
+  version: "0.1.7"
+  protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
   governance_version: "0.1.5"
   governance_path: "GOVERNANCE.md"
   operative_governance_baseline_blob_sha: "45f3361781c32c04bb6055968dbaf24a120fb27c"
-  source_manifest: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_6.yaml"
-  source_manifest_blob_sha: "04e24321803eaa270b2da12166f5cb91e5566528"
-  governed_bundle_commit: "1b9ffb21713c0b70466e88a0876ea3e8d65e68d2"
-  role_control: "repair/tfp-adjudication-protocol-0.1.6:TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
-  role_control_blob_sha: "27b4cff305b4c3885aeb4b85aa16f496ab1d4a4a"
-  assigned_strict_auditor_session: "session_01B3sShWagLWUZLVuRndLHNd"
-  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.6:TFP_ADJUDICATION_PROTOCOL_0_1_6_STRICT_QUALIFICATION_REAUDIT_PROMPT.md"
-  substantive_audit_prompt_blob_sha: "4b42604fedda59409cfdd81eb53d4f2256faba98"
-  status: "REPAIR_REQUIRED__PROGRAM_REANCHOR_PENDING"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+  source_manifest_blob_sha: "de9223db5f57a287c90be7dc1df46c8c75d4dfde"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
+  status: "BUNDLE_PINNED__AUDITOR_ASSIGNMENT_PENDING"
   qualified: false
-  predecessor_protocol: "0.1.5"
+  predecessor_protocol: "0.1.6"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
-  predecessor_disposition_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_5_REAUDIT_DISPOSITION_0_1_0.md"
+  predecessor_disposition_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_6_REAUDIT_DISPOSITION_0_1_0.md"
   human_owner_material_authorship:
     protocol: false
     candidate_governance_amendment: false
   human_owner_outcome_material_qualification_reviewer: false
   governance_owner_ratification: "REQUIRED_AT_QUALIFICATION"
   strict_audits_required: 1
+  qualification_exit_gate: true
   carried_limitations:
     - "SUPPORTED_WITHIN_SCOPE_retains_disciplined_expert_judgment_only_inside_documented_sufficiency_steps"
     - "framework_dependent_underdetermination_is_legitimate_when_relative_ranking_flips_across_live_backgrounds"
@@ -103,7 +101,7 @@ qualification_candidate:
     - "AI_session_model_independence_is_procedural_not_guaranteed_training_prior_independence"
 
 qualification_role_control_policy:
-  artifact: "TFP_PROTOCOL_0_1_6_QUALIFICATION_ROLE_CONTROL.yaml"
+  artifact: "TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
   location: "external_launch_control_not_one_of_methodological_blobs"
   complete_after_auditor_assignment_before_substantive_audit: true
   every_launched_audit_must_be_registered: true
@@ -269,7 +267,9 @@ research_queue:
   - id: "TFP-PROGRAM-REANCHOR-0.1.0"
     status: "accepted"
   - id: "TFP-METHOD-REPAIR-0.1.7"
-    status: "authorized"
+    status: "completed_pending_exit_gate_audit"
+  - id: "TFP-METHOD-REAUDIT-0.1.7"
+    status: "auditor_assignment_pending"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
