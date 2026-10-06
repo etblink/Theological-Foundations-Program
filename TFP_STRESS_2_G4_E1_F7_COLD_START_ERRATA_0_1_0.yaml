@@ -1,0 +1,29 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_E1_F7_COLD_START_ERRATA"
+status: "FROZEN__PENDING_INDEPENDENT_C4_CONFIRMATION"
+date: "2026-10-06"
+
+finding: "E1 F7"
+
+G1_transition_yaml:
+  original: ["TFP_STRESS_2_G1_COMPLETION_AND_G2_TRANSITION_0_1_0.yaml","97dfa9da9a020f7621119d23c0d77a77db666b29"]
+  issue: "carried_gaps mixed sequence entries with a mapping key at one YAML node"
+  corrected: ["TFP_STRESS_2_G1_COMPLETION_AND_G2_TRANSITION_0_1_1.yaml","749d1d8ef2b024135ee6001001ef622ee09bf535"]
+  correction: "Moved the carried-gap rule into a top-level carried_gap_rule field and added clerical supersession metadata."
+  semantic_change: false
+
+stale_status_headers:
+  Q1_control:
+    artifact: ["TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml","c05b099b07ab9bfd3b73f84910ba9b33d08d0521"]
+    interpretation: "Its header records the historical pre-final-confirmation state. Later frozen Reviewer-B acceptance and subsequent gate records govern lifecycle status."
+  G0_preregistration:
+    artifact: ["TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md","de744932b17ee8f445231ce566f41b33d50f05e8"]
+    interpretation: "Its NOT_G0_AUTHORIZED header is historical. TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md and later STATE transitions establish subsequent authorization."
+
+historical_artifacts_modified: false
+outcome_effect: "NONE"
+
+amendment_control:
+  provisional_class: "POST_EVIDENCE_NONMATERIAL"
+  G5_use: "PENDING_INDEPENDENT_C4_CONFIRMATION"
