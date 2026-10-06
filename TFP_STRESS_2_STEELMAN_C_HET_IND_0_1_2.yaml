@@ -12,7 +12,7 @@ causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
 formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
 exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_14.yaml"
 
-native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective experience and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. Social/group experience was not necessary. Later narrative development remains necessary to the candidate's later-development pattern. M-BODY is only a non-ranking contradiction/compatibility expectation and has no founding experiential causal role. No veridical postmortem referent and no founding deliberate fabrication occurred."
+native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective experience and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. Social/group experience was not necessary. Later narrative development remains necessary to the candidate's later-development pattern. M-BODY is only a non-ranking Q1-ontology-neutral search/trigger control and has no founding experiential causal role. No veridical postmortem referent and no founding deliberate fabrication occurred."
 
 proponent_sources:
   - id: "FORM-H-001"
@@ -102,14 +102,14 @@ equal_strength_review:
   reviewer_or_basis: "REVIEWER_B"
   checks:
     - "each module independently warranted"
-    - "M-BODY expectation is non-ranking, contradiction-only, and cannot gain support from R weakness"
+    - "M-BODY is non-ranking, Q1-ontology-neutral, and cannot gain or lose support from R/R-PHYS outcomes"
     - "later narrative module not founding-causal"
     - "H-IND non-subsumption boundary preserved"
     - "no posthoc module switching"
   findings: []
 
 packet_stage_notes:
-  - "Reviewer B should confirm that M-BODY is no longer a necessary/ranking-blocking burden and remains only a symmetric contradiction control."
+  - "Reviewer B should confirm that M-BODY is no longer necessary/ranking-blocking and is uniformly Q1-ontology-neutral."
 formulation_exposures:
   ledger_required: true
   ledger_entries: [27,30,31,32]
