@@ -79,68 +79,52 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "exact_g0_authorization_bundle_frozen__human_owner_decision_pending"
-  purpose: "Present the exact frozen TFP-STRESS-2 G0 authorization bundle to the human owner for approval or rejection. No G1 evidence acquisition may begin before explicit approval."
+  id: "TFP-STRESS-2-G1-EVIDENCE-ACQUISITION"
+  status: "G0_authorized__G1_wave_1_active"
+  purpose: "Acquire and provenance-record source material under frozen TFP-STRESS-2 G0 architecture without synthesis, proposition dispositions, discriminator results, or candidate ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  design_branch: "research/tfp-stress-2-resurrection-g0"
-  design_branch_head: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
-  design_branch_tree: "d248e861e6c4a3b9997b64c2e35198f68d8848f4"
-  g0_authorization_bundle: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
-  g0_authorization_bundle_blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
-  g0_authorization_bundle_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
-  preregistration: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
-  preregistration_blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
-  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml"
-  role_architecture_blob_sha: "cade6816cdd357b53fee227ac76d47ab16e83451"
-  candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
-  candidate_register_blob_sha: "99eeab89decd8420e61b97b17c4706e30157d0fd"
-  coverage_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
-  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
-  source_plan: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
-  source_plan_blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
-  discriminator_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml"
-  discriminator_register_blob_sha: "09308e3cc0744198a6633966a5f0fc41b850cb57"
-  background_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
-  background_register_blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
-  background_interaction_matrix: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
-  background_interaction_matrix_blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
-  q1_control: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
-  truth_critical_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
-  empirical_model_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml"
-  packet_manifest: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml"
-  packet_index: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_9.yaml"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_17.yaml"
-  reviewer_B_final_disposition: "G0_REVIEW_PASS_WITH_MINOR_REPAIRS__MINOR_REPAIRS_APPLIED"
-  reviewer_C_disposition: "REVIEWER_C_G0_REPAIR_REQUIRED__SEVEN_REPAIRS_BOUND_WITHOUT_LOGIC_CHANGE__NEXT_GATE_YES"
-  reviewer_C_report_blob_sha: "262af0c0090649e831711ca99c42344fe81bbb7b"
-  reviewer_C_repair_binding_blob_sha: "158c895fd09badd8d1a862c9656a0f8e8d932dea"
-  status_bearing_candidate_count: 11
-  necessary_proposition_count: 50
-  final_critical_discriminator_count: 8
-  methodology_mode: "maintenance"
-  g0_authorized: false
-  g1_evidence_acquisition_authorized: false
-  theological_stress_test_authorized: false
+  g0_authorized_bundle: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
+  g0_authorized_bundle_blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
+  g0_authorized_bundle_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
+  g0_human_authorization_record: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+  g0_human_authorization_record_blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+  g1_branch: "research/tfp-stress-2-resurrection-g1"
+  g1_launch: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+  g1_launch_blob_sha: "69cae205ab97bbeb7e6504bb190bc64e35c73b92"
+  role_architecture: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
+  role_architecture_blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_18.yaml"
+  exposure_ledger_blob_sha: "8490310f525ed01d344a90760668fbcfbf35223e"
+  source_plan: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+  wave_1_strata: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
+  reviewer_C_adverse_probe_status: "PENDING_BEFORE_COMPLETE_OR_MATERIALLY_COMPLETE_COVERAGE"
+  reviewer_D_status: "UNASSIGNED__RESERVED_FOR_POST_EVIDENCE_CONTROLS"
+  methodology_mode: "truth_seeking_evidence_acquisition"
+  g0_authorized: true
+  g1_evidence_acquisition_authorized: true
+  g1_evidence_acquisition_started: true
+  g2_lane_synthesis_authorized: false
+  g3_comparative_adjudication_authorized: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
 
 next_action:
-  id: "TFP-STRESS-2-HUMAN-G0-AUTHORIZATION"
-  action: "human_owner_approve_or_reject_exact_frozen_g0_bundle"
-  exact_bundle: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
-  exact_bundle_blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
-  exact_bundle_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
-  approval_effect_if_granted: "G0 authorized for this exact bundle; G1 evidence acquisition may then begin under Protocol 0.1.7, the frozen source plan, exposure ledger, discriminator rules, and background interaction matrix."
-  approval_does_not_mean:
-    - "the resurrection occurred"
-    - "any candidate is ranked or supported"
-    - "God raised Jesus"
-    - "Christianity is true"
-    - "G5 canonical theological acceptance"
+  id: "TFP-STRESS-2-G1-W1-SOURCE-INVENTORY"
+  action: "acquire_and_record_wave_1_source_material_for_SRC_01_SRC_02_SRC_04_SRC_06_SRC_19_under_observation_first_boundary"
+  branch: "research/tfp-stress-2-resurrection-g1"
+  launch_control: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
   requirements:
-    - "human owner must explicitly authorize or reject this exact bundle"
-    - "no G1 evidence acquisition before approval"
-    - "any post-freeze architecture change requires C4 amendment control"
+    - "record source identity provenance date language edition repository and access status"
+    - "record what the source contains before interpretation"
+    - "distinguish primary and secondary sources"
+    - "record dependence and dating uncertainty without resolving it by synthesis"
+    - "do not assign proposition dispositions"
+    - "do not produce discriminator direction results"
+    - "do not rank candidates"
+    - "do not change frozen G0 architecture outside C4"
+    - "append every external evidence exposure to the G1 ledger"
+    - "preserve inaccessible or missing evidence records"
 
 qualification_candidate:
   version: "0.1.7"
@@ -341,7 +325,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "exact_g0_bundle_frozen__human_owner_authorization_pending"
+    status: "G0_authorized__G1_wave_1_evidence_acquisition_active"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
