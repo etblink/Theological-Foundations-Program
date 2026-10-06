@@ -1,0 +1,197 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "C_HET_MODULE_MAP"
+status: "PROGRAM_LEAD_REPAIR_PROPOSAL__PENDING_INDEPENDENT_REVIEW"
+qualified_protocol_version: "0.1.7"
+
+global_rules:
+  no_freeform_modules: true
+  no_module_add_delete_reassignment_after_exposure_except_C4: true
+  secondary_assignments_must_be_closed_and_enumerated: true
+  no_hidden_fabrication_module: true
+  q1_entailment:
+    denies:
+      - "P-R-BODY"
+      - "P-V-REAL-REFERENT"
+  non_subsumption:
+    H: "C-HET requires an independently warranted interpretive module and later narrative-development module in addition to an experience module; H alone treats the experiential process as sufficient for the founding causal pattern."
+    L: "C-HET requires a founding experiential module with a NECESSARY_CONTRIBUTING or PRIMARY role; L treats experience as non-primary."
+    H_plus_L: "C-HET is not an unrestricted union. It freezes one specific status-bearing module combination, timing assignment, interaction list, and predicted heterogeneous pattern before evidence. Any different H+L mixture is outside this candidate and cannot be imported after exposure."
+
+frozen_evidence_class_taxonomy:
+  - "EC-FOUNDING-INDIVIDUAL-EXPERIENCE"
+  - "EC-FOUNDING-SOCIAL-EXPERIENCE-REPORT"
+  - "EC-FOUNDING-INTERPRETIVE-SCRIPTURAL"
+  - "EC-FOUNDING-PROCLAMATION-CONTENT"
+  - "EC-TRANSMISSION-DEPENDENCE"
+  - "EC-LATER-NARRATIVE-DEVELOPMENT"
+  - "EC-BODY-DISPOSITION"
+  - "EC-PSYCHOLOGICAL-MECHANISM"
+  - "EC-SOCIAL-MECHANISM"
+  - "EC-SOURCE-DATING-PROVENANCE"
+
+modules:
+  - module_id: "M-EXP-IND"
+    proposition_ids:
+      - "P-CHET-IND-EXP"
+    necessity: "NECESSARY_FOR_C-HET-IND"
+    stratum_of_operation: "FOUNDING"
+    causal_role: "NECESSARY_CONTRIBUTING_OR_PRIMARY"
+    primary_evidence_classes:
+      - "EC-FOUNDING-INDIVIDUAL-EXPERIENCE"
+      - "EC-PSYCHOLOGICAL-MECHANISM"
+    secondary_assignments:
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    permitted_interactions:
+      - with: "M-INT"
+        joint_prediction: "A founding subjective experience stream and interpretive framework jointly shape the founding proclamation; neither module alone satisfies C-HET-IND."
+    independent_warrant_route: "Psychological/experiential mechanism literature and historical/testimonial evidence must independently warrant the occurrence and capacity of the mechanism; the mechanism cannot be inferred solely because R/V are weak."
+    weakening_and_contradiction_conditions:
+      - "No founding individual subjective-experience stream is supported."
+      - "The proposed psychological mechanism is below the candidate-specific sufficiency threshold."
+      - "The evidence instead supports a veridical referent at the relevant stream."
+
+  - module_id: "M-EXP-SOC"
+    proposition_ids:
+      - "P-CHET-SOC-EXP"
+    necessity: "NECESSARY_FOR_C-HET-SOC"
+    stratum_of_operation: "FOUNDING"
+    causal_role: "NECESSARY_CONTRIBUTING_OR_PRIMARY"
+    primary_evidence_classes:
+      - "EC-FOUNDING-SOCIAL-EXPERIENCE-REPORT"
+      - "EC-SOCIAL-MECHANISM"
+    secondary_assignments:
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    permitted_interactions:
+      - with: "M-INT"
+        joint_prediction: "A founding social/collective experience-report process and interpretive framework jointly shape the founding proclamation; neither module alone satisfies C-HET-SOC."
+    independent_warrant_route: "Social/psychological mechanism literature and historical/testimonial evidence must independently warrant the process; it cannot be inferred merely from multiplicity or from a rival's failure."
+    weakening_and_contradiction_conditions:
+      - "No founding social/group experience-report process is supported."
+      - "The proposed social mechanism is below candidate-specific sufficiency."
+      - "The evidence instead supports a veridical referent at the relevant stream."
+
+  - module_id: "M-INT"
+    proposition_ids:
+      - "P-CHET-INT"
+    necessity: "NECESSARY_FOR_BOTH_C-HET_SUBMODELS"
+    stratum_of_operation: "FOUNDING"
+    causal_role: "NECESSARY_CONTRIBUTING"
+    primary_evidence_classes:
+      - "EC-FOUNDING-INTERPRETIVE-SCRIPTURAL"
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    secondary_assignments:
+      - "EC-TRANSMISSION-DEPENDENCE"
+    permitted_interactions:
+      - with: "M-EXP-IND"
+        joint_prediction: "Interpretive processing gives founding meaning/content to an individual subjective experience stream."
+      - with: "M-EXP-SOC"
+        joint_prediction: "Interpretive processing gives founding meaning/content to a social experience-report stream."
+    independent_warrant_route: "Historical/textual/interpretive evidence must independently support a founding interpretive contribution; it cannot be inferred merely because later texts contain interpretation."
+    weakening_and_contradiction_conditions:
+      - "No founding interpretive/scriptural contribution is supported."
+      - "Interpretive material is only later and cannot be linked to the founding stratum."
+
+  - module_id: "M-NARR"
+    proposition_ids:
+      - "P-CHET-NARR"
+    necessity: "NECESSARY_FOR_BOTH_C-HET_SUBMODELS"
+    stratum_of_operation: "LATER_NARRATIVE"
+    causal_role: "NONE_FOR_FOUNDING_PROCLAMATION__NECESSARY_FOR_LATER_EVIDENCE_PATTERN"
+    primary_evidence_classes:
+      - "EC-LATER-NARRATIVE-DEVELOPMENT"
+      - "EC-TRANSMISSION-DEPENDENCE"
+    secondary_assignments: []
+    permitted_interactions:
+      - with: "M-INT"
+        joint_prediction: "Later narrative elaboration develops earlier interpreted proclamation material without changing the frozen founding causal assignment."
+    independent_warrant_route: "Textual/source-critical/memory-development evidence must independently support later elaboration or dependence."
+    weakening_and_contradiction_conditions:
+      - "Robust later narrative features are independently supported as already present in the founding stratum."
+      - "No development/dependence sequence is supported."
+
+  - module_id: "M-BODY"
+    proposition_ids:
+      - "P-CHET-BODY"
+    necessity: "NECESSARY_FOR_BOTH_C-HET_SUBMODELS"
+    stratum_of_operation: "TRANSMISSION"
+    causal_role: "NONE_FOR_FOUNDING_PROCLAMATION__NECESSARY_FOR_BODY_DISPOSITION_COMPONENT"
+    primary_evidence_classes:
+      - "EC-BODY-DISPOSITION"
+    secondary_assignments: []
+    permitted_interactions:
+      - with: "M-NARR"
+        joint_prediction: "Body-disposition uncertainty remains compatible with later narrative elaboration without itself generating founding encounter claims."
+    independent_warrant_route: "Historical/archaeological/burial-practice evidence must independently warrant the body-disposition uncertainty or ordinary disposition mechanism."
+    weakening_and_contradiction_conditions:
+      - "The candidate-specific body-disposition proposition is contradicted."
+      - "The module is used to explain founding subjective experiences, which is outside its frozen causal role."
+
+status_bearing_candidates:
+  - id: "C-HET-IND"
+    required_modules:
+      - "M-EXP-IND"
+      - "M-INT"
+      - "M-NARR"
+      - "M-BODY"
+    forbidden_modules:
+      - "M-EXP-SOC"
+      - "FABRICATION"
+    proposition_ids:
+      - "P-CHET-IND-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-IND-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    predicted_pattern:
+      - "A founding individual subjective-experience stream is supported."
+      - "An independently supported interpretive/scriptural module is also necessary at the founding stage."
+      - "Later robust narrative features show a supported development/dependence pattern rather than being fully present at the founding stratum."
+      - "Body-disposition evidence is compatible with an ordinary/uncertain disposition and is not itself the source of founding experience claims."
+      - "No veridical postmortem referent is supported."
+    contradiction_pattern:
+      - "A single-process H-IND model is sufficient with no independent founding interpretive contribution."
+      - "A single-process L model is sufficient with no founding subjective-experience contribution."
+      - "A veridical postmortem referent is supported."
+      - "The later-development module is contradicted by evidence that the relevant robust features are already in the founding stratum."
+
+  - id: "C-HET-SOC"
+    required_modules:
+      - "M-EXP-SOC"
+      - "M-INT"
+      - "M-NARR"
+      - "M-BODY"
+    forbidden_modules:
+      - "M-EXP-IND"
+      - "FABRICATION"
+    proposition_ids:
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-SOC-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    predicted_pattern:
+      - "A founding social/group experience-report formation process is supported."
+      - "An independently supported interpretive/scriptural module is also necessary at the founding stage."
+      - "Later robust narrative features show a supported development/dependence pattern rather than being fully present at the founding stratum."
+      - "Body-disposition evidence is compatible with an ordinary/uncertain disposition and is not itself the source of founding experience claims."
+      - "No veridical postmortem referent is supported."
+    contradiction_pattern:
+      - "A single-process H-SOC model is sufficient with no independent founding interpretive contribution."
+      - "A single-process L model is sufficient with no founding social-experience contribution."
+      - "A veridical postmortem referent is supported."
+      - "The later-development module is contradicted by evidence that the relevant robust features are already in the founding stratum."
+
+anti_tailoring:
+  evidence_class_partition_frozen_before_G1: true
+  no_new_secondary_assignment_after_exposure_without_C4: true
+  no_optional_modules: true
+  no_unlisted_module_interactions: true
+  module_inactivity_cannot_raise_candidate_status: true
+  mixed_deception_sincerity_requires_revised_candidate: true
+
+review_status:
+  reviewer_B: "PENDING_REPAIR_REVIEW"
+  reviewer_C: "PENDING_DISCRIMINATOR_REVIEW"
