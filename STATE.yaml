@@ -79,17 +79,13 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G4-POST_AUDIT_C4-CLOSURE"
-  status: "G4_E1_complete_PASS_WITH_LIMITATIONS__additive_repairs_frozen__fresh_Reviewer_C_C4_batch_pending"
-  purpose: "Close the repairable E1 MINOR findings before G5 without altering the frozen G3 merits: independently classify the Phase-L control-tail amendment and additive repair records under C4, then run Reviewer-D ledger-integrity verification."
+  id: "TFP-STRESS-2-G4-REVIEWER-D-LEDGER-INTEGRITY"
+  status: "G4_E1_complete_PASS_WITH_LIMITATIONS__F1_closed_by_Reviewer_C_C4__F2_Reviewer_D_ledger_integrity_pending"
+  purpose: "Close the final protocol-required post-evidence control before G5 by running a fresh disjoint Reviewer-D A17 ledger-integrity review over all classified amendments and the known historical ledger rewrite."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  g2_substantive_checkpoint_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
-  g2_substantive_checkpoint_tree: "fe8064227fe5ad0f9b544506ffab242d30ff992a"
-  phase_L_consolidation_blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
-  g3_human_authorization_blob_sha: "6e2c935d7a8759a4862606d7c811720a406b4308"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "c9624b0ab07dd5a0af4a95f06e886372e19d8c3d"
+  g3_branch_head: "43ee1477fc500a28372710f3a57127b4edcaef6a"
   phase_N_candidate_status:
     path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
     blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
@@ -100,53 +96,48 @@ current_scope:
     base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
     provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
   g4_audit_E1:
-    report: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md"
     report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
     outcome: "PASS_WITH_LIMITATIONS"
-    blocking: 0
-    major: 0
-    minor: 8
-    G5_eligible_from_audit: true
-  g4_repair_plan:
-    path: "TFP_STRESS_2_G4_AUDIT_E1_INTEGRATION_AND_REPAIR_PLAN_0_1_0.yaml"
-    blob_sha: "fb855a092bd9bb32d0a41bc7d9a3cc1db0caec6d"
-    selected_path: "CLOSE_REPAIRABLE_MINORS_BEFORE_G5"
-  additive_repairs:
-    F3_ledger_errata_blob: "d05af3bd5507f4b2c0cc3fee3407b00e9a443fa3"
-    F4_background_invariance_blob: "60929138f4ec43b8878cb5576ecd07cfe3597426"
-    F5_N3_reporting_errata_blob: "949d87ddb1277379a3b15d20ce064c02e396f075"
-    F6_equal_standard_reconciliation_blob: "d79543aa7798856988a06a1ef7c94c1dad8dc9b4"
-    F7_cold_start_errata_blob: "0430abeffe480bc49fd5b1e6169b624e997e1290"
-    F8_G0_bundle_errata_blob: "19d6a9649f570bbcf2ad36bfd389dc67d50d1e1e"
-    G1_parseable_transition_blob: "749d1d8ef2b024135ee6001001ef622ee09bf535"
-    use_status: "PENDING_INDEPENDENT_C4_CONFIRMATION"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_74.yaml"
-  exposure_ledger_blob_sha: "e356980502e1b676f54f7280f940c20267cd78d0"
+    minor_findings: 8
   reviewer_C_post_audit_C4:
-    status: "ASSIGNMENT_FROZEN__PENDING_FRESH_EXTERNAL_EXECUTION"
-    input_freeze: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_INPUT_FREEZE_0_1_0.yaml"
-    input_freeze_blob_sha: "231ae4685f4e6acd7047f1ea771d326334a7fc3b"
-    prompt: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_PROMPT_0_1_0.md"
-    prompt_blob_sha: "c19ee87871e86b48657a9fed035340924d9aa756"
-  reviewer_D_status: "UNASSIGNED__WAITING_FOR_REVIEWER_C_C4_CLASSIFICATIONS_BEFORE_LEDGER_INTEGRITY_PASS"
+    report: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
+    report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    result: "A_TO_H_ALL_NEUTRAL__ALL_POST_EVIDENCE_NONMATERIAL__NO_DIRECTIONAL_CONTAMINATION"
+    F1_status: "CLOSED"
+    F3_to_F8_C4_status: "CONFIRMED_FOR_NONMATERIAL_CURRENT_STUDY_USE"
+    integration_closure_blob_sha: "ebe2ae4292cc0b371aca78f41664ff36feec85fb"
+    caveat_F6: "wrong cited module-map blob preserved; F6 use limited to no-disposition-change reconciliation note"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_76.yaml"
+  exposure_ledger_blob_sha: "853668f6e07d42e07691095c110af18ad42f6e78"
+  reviewer_D:
+    status: "ASSIGNMENT_SPEC_FROZEN__PENDING_FRESH_DISJOINT_EXTERNAL_EXECUTION"
+    role: "ledger_integrity_reviewer_only"
+    input_freeze: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_INPUT_FREEZE_0_1_0.yaml"
+    input_freeze_blob_sha: "2185666ef77d39eec36a4f91e3f77211dc752ac9"
+    prompt: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_PROMPT_0_1_0.md"
+    prompt_blob_sha: "f1b8338a1b00c66a74c04513c08cd91e1d602285"
+    role_control: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_ROLE_CONTROL_0_1_0.yaml"
+    role_control_blob_sha: "618e9c3353395b95caf882c2ec7bc2ef2e9202ac"
   supplementary_E2_status: "DEFERRED_OPTIONAL__NOT_REQUIRED_BY_E1_FOR_G5"
   g4_strict_audit_complete: true
+  F1_closed: true
+  F2_closed: false
   post_audit_closure_complete: false
   g5_human_acceptance_ready: false
   g5_human_acceptance_complete: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G4-REVIEWER-C-C4-EXTERNAL"
-  action: "execute_the_frozen_fresh_Reviewer_C_C4_batch_in_a_new_clean_external_session_and_return_the_complete_report_verbatim"
+  id: "TFP-STRESS-2-G4-REVIEWER-D-LEDGER-INTEGRITY-EXTERNAL"
+  action: "execute_the_frozen_Reviewer_D_A17_ledger_integrity_review_in_a_fresh_disjoint_external_session_and_return_the_complete_report_verbatim"
   branch: "research/tfp-stress-2-resurrection-g3"
-  input_freeze_blob_sha: "231ae4685f4e6acd7047f1ea771d326334a7fc3b"
-  prompt_blob_sha: "c19ee87871e86b48657a9fed035340924d9aa756"
+  input_freeze_blob_sha: "2185666ef77d39eec36a4f91e3f77211dc752ac9"
+  prompt_blob_sha: "f1b8338a1b00c66a74c04513c08cd91e1d602285"
+  role_control_blob_sha: "618e9c3353395b95caf882c2ec7bc2ef2e9202ac"
   requirements:
-    - "use a brand-new clean Reviewer-C conversation rather than any prior Reviewer-C session"
-    - "repository remains read-only"
-    - "classify items A-H under Protocol C4 independently"
-    - "do not launch Reviewer D until the C4 classifications are preserved"
-    - "do not proceed to G5 while F1/F2 remain open"
+    - "fresh session disjoint from Program Lead, Reviewers A/B/C, and Reviewer E"
+    - "repository read-only"
+    - "ledger-integrity role only"
+    - "do not proceed to G5 until F2 is closed"
 
 qualification_candidate:
   version: "0.1.7"
