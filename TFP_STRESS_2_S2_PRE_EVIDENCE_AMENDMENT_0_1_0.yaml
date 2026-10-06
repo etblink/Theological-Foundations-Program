@@ -1,0 +1,97 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "PRE_EVIDENCE_AMENDMENT_RECORD"
+amendment_id: "TFP-STRESS-2-C4-S2-NODE-RIVAL-0.1.0"
+status: "APPROVED_FOR_USE__PRE_EVIDENCE"
+date: "2026-10-05"
+
+protocol:
+  version: "0.1.7"
+  amendment_rule: "C4"
+  class: "PRE_EVIDENCE_AMENDMENT"
+  rationale: "Steelman-packet native/proponent fidelity review found that the admitted S2 full candidate attributes a founding access-and-transmission mechanism not supplied by the permitted tradition-native/proponent formulation sources. Preserving S2 as a full candidate would violate B1/B3 equal-strength and traceable-formulation requirements."
+
+evidence_exposure_ledger:
+  current_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_6.yaml"
+  relevant_sequences: [12,13,14,16,17]
+  outcome_evidence_exposure_before_amendment: false
+  formulation_only_exposure_before_amendment: true
+  g1_evidence_acquisition_started: false
+
+independent_review:
+  reviewer_role: "REVIEWER_A"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  report: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
+  report_commit: "3ae8ba2b5ed77cbf37ebf983d464c87be1e3fb50"
+  disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+  review_scope: "candidate fidelity / B1-B4 / pre-evidence amendment consequences"
+  report_effects:
+    - "S2 full-candidate status removed."
+    - "Substitution/misidentification retained as a serious node-level rival on P-CRUC and crucifixion identity."
+    - "Status-bearing candidate count changes 13 -> 12."
+    - "P-HIST-JESUS shared-floor status unchanged."
+    - "P-EARLY-PROCLAMATION-EXISTENCE shared-floor status unchanged."
+    - "P-CRUC remains non-shared because S3 still denies it."
+    - "S1, S3 and Q1 are unchanged by this amendment."
+    - "S3 requires its own packet-stage fidelity review before packet freeze."
+
+affected_surfaces:
+  - "candidate register"
+  - "B4/A8 admission freeze"
+  - "Q1 P-DEATH denied_by list"
+  - "exclusion/node-rival register"
+  - "necessary-proposition coverage map"
+  - "source plan candidate-service map"
+  - "steelman packet index"
+  - "root preregistration"
+  - "role/control state"
+  - "exposure ledger"
+
+direction_classification:
+  S2_full_candidate:
+    effect: "ADVERSE"
+    reason: "Removed from status-bearing candidate universe."
+  X_SUBSTITUTION_node_rival:
+    effect: "NEUTRAL"
+    reason: "Preserves the serious crucifixion-identity challenge without granting a complete founding-proclamation model."
+  remaining_candidate_comparative_conditions:
+    effect: "MIXED_OR_UNCLEAR"
+    reason: "Removing one full rival can alter the future comparative candidate universe, but no outcome evidence has been acquired and no candidate may receive a result at this stage."
+  Q1_truth_conditions:
+    effect: "NEUTRAL"
+    reason: "Exact Q1 proposition is unchanged."
+  shared_floor_P_HIST_JESUS:
+    effect: "NEUTRAL"
+  shared_floor_P_EARLY_PROCLAMATION_EXISTENCE:
+    effect: "NEUTRAL"
+  P_CRUC_classification:
+    effect: "NEUTRAL"
+    reason: "Remains candidate-specific/non-shared because S3 continues to deny it."
+  S1:
+    effect: "NEUTRAL"
+  S3:
+    effect: "NEUTRAL"
+    note: "Separate packet-fidelity review required; no S3 disposition is made here."
+
+approved_change:
+  remove_status_bearing_candidate: "S2"
+  add_node_rival: "X-SUBSTITUTION-AS-FULL-CANDIDATE"
+  node_rival_propositions:
+    - "P-CRUC"
+    - "P-S2-NOT-CRUCIFIED"
+    - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+  obligations:
+    - "steelman-quality formulation"
+    - "direct evidence route and sufficiency record on P-CRUC"
+    - "preserve native argument form: no disciple-eyewitness, misidentification, doubt"
+    - "formulation sources remain FORMULATION_ONLY"
+    - "C4 control"
+  truth_warrant_condition_11: "Satisfied for this rival only by preserving and directly testing the node-level substitution/misidentification challenge under equal standards."
+  revised_candidate_fallback: "Any outcome-material pattern of no-crucifixion plus a founding mechanism not already represented by an admitted candidate routes to PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE rather than retrofitting this node rival into a full candidate."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
