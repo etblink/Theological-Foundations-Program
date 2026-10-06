@@ -1,0 +1,349 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "CANDIDATE_REGISTER"
+status: "RR1_RR2_RR3_RR4_RR5_RR6_REPAIRED__PENDING_REVIEWER_A_NARROW_REREVIEW"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_1.yaml"
+evidence_acquisition_status: "NOT_STARTED"
+
+shared_definitions:
+  P_HIST_JESUS:
+    proposition_id: "P-HIST-JESUS"
+    text: "A historical first-century Jewish subject identifiable as Jesus of Nazareth existed and is the subject to whom the study's crucifixion/resurrection claims refer."
+    classification: "NONCOMPARATIVE_SHARED_FLOOR_AFTER_B4_FREEZE"
+    b4_basis: "Reviewer A approved nonhistoricity as node/rival-only and approved SHARED_FLOOR after conditions (a)-(f)."
+  P_EARLY_PROCLAMATION_EXISTENCE:
+    proposition_id: "P-EARLY-PROCLAMATION-EXISTENCE"
+    text: "A historically recoverable founding proclamation concerning postmortem vindication, exaltation, resurrection, or equivalent continued significance of Jesus existed early enough to be investigated."
+    classification: "PROVISIONAL_NONCOMPARATIVE_SHARED_FLOOR"
+    all_candidate_requirement: true
+  P_CRUC:
+    proposition_id: "P-CRUC"
+    text: "Jesus himself underwent the outcome-material Roman crucifixion event attributed to him."
+    classification: "NOT_SHARED_FLOOR"
+  P_DEATH:
+    proposition_id: "P-DEATH"
+    text: "Jesus entered a genuine biological death state as operationally defined in TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_1.yaml."
+    classification: "NOT_SHARED_FLOOR"
+
+family_rules:
+  organizational_umbrellas_are_not_status_bearing: true
+  only_units_listed_under_status_bearing_candidates_receive_A12_status: true
+  no_candidate_switching_after_exposure: true
+  evidence_binding_rule: "A status-bearing candidate may cite an evidence class as positive support only if its frozen steelman packet registers that class as expected or directly relevant; materially contrary results then weaken that same candidate."
+  candidate_failure_does_not_strengthen_rival_by_default: true
+  causal_partition_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_0.yaml"
+
+status_bearing_candidates:
+  - id: "R-TRANS"
+    canonical_name: "R-EMBODIED-GENERIC"
+    family: "R"
+    name: "Generic embodied post-death event"
+    status_bearing: true
+    relation_to_R_PHYS: "R-PHYS is a nested non-status-bearing refinement. It never competes with R-TRANS under N3."
+    core: "Jesus was crucified, genuinely died, and subsequently existed as the same personal subject in an embodied postmortem state satisfying EMB-1 through EMB-3; at least one pre-Pauline founding encounter stream involving that embodied Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-R-BODY"
+      - "P-R-FOUNDING-ENCOUNTER"
+      - "P-R-CAUSAL"
+    body_disposition_expectation: "No specific tomb/body-disposition proposition is necessary to R-TRANS unless frozen in its steelman packet. Body-disposition evidence may support or weaken R only through a registered expectation tied to EMB-1/2/3 or another necessary proposition."
+    q1_relation: "This is the sole status-bearing affirmative R_EVENT candidate."
+    truth_warrant_rule: "TRUTH_WARRANTED may attach directly to R-TRANS if its necessary propositions and all protocol conditions are met; no R-PHYS/R-TRANS sibling dominance is required."
+
+  - id: "V"
+    family: "V"
+    name: "Veridical non-embodied postmortem encounter"
+    status_bearing: true
+    core: "Jesus was crucified and died; at least one real extramental postmortem referent identical with Jesus existed in a non-embodied mode and a corresponding founding encounter stream was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-V-REAL-REFERENT"
+      - "P-V-IDENTITY-JESUS"
+      - "P-V-NONEMBODIED"
+      - "P-V-FOUNDING-CAUSAL"
+    body_disposition_expectation: "No empty-tomb/body-disposition claim is necessary to V. Body evidence is neutral unless its packet registers a candidate-specific expectation."
+    causal_agent_scope: "Q2 is deferred; V does not gain or lose admission based on whether the non-embodied referent is explained theistically or non-theistically."
+    q1_relation: "Denies P-R-BODY because it fails EMB-1 or EMB-2."
+
+  - id: "H-IND"
+    family: "H"
+    name: "Subjective individual-experience origin"
+    status_bearing: true
+    core: "Jesus was crucified and died; genuine non-veridical individual subjective experiences occurred in the founding stratum and M-IND-EXP was PRIMARY; social and interpretive processes were at most CONTRIBUTING_NONNECESSARY."
+    causal_profile_ref: "H-IND"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-HIND-EXPERIENCE-OCCURRED"
+      - "P-HIND-NONVERIDICAL"
+      - "P-HIND-MECHANISM-SUFFICIENT"
+      - "P-HIND-FOUNDING-CAUSAL"
+    closed_mechanism_list:
+      required: ["M-IND-EXP"]
+      permitted_nonnecessary: ["M-SOC-EXP","M-INTERP","M-LATER-NARR","M-BODY"]
+      prohibited_foundational: ["M-FOUNDING-FAB"]
+    body_disposition_expectation: "No body/tomb proposition is necessary. Any claimed body evidence is evaluated independently and cannot strengthen H-IND unless a packet expectation is frozen."
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "H-SOC"
+    family: "H"
+    name: "Subjective social/group-experience origin"
+    status_bearing: true
+    core: "Jesus was crucified and died; genuine non-veridical subjective experiences occurred in a social/group process and M-SOC-EXP was PRIMARY; an individual seed and interpretation were at most CONTRIBUTING_NONNECESSARY."
+    causal_profile_ref: "H-SOC"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+      - "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+      - "P-HSOC-NONVERIDICAL"
+      - "P-HSOC-MECHANISM-SUFFICIENT"
+      - "P-HSOC-FOUNDING-CAUSAL"
+    closed_mechanism_list:
+      required: ["M-SOC-EXP"]
+      permitted_nonnecessary: ["M-IND-EXP","M-INTERP","M-LATER-NARR","M-BODY"]
+      prohibited_foundational: ["M-FOUNDING-FAB"]
+    seed_then_spread_boundary: "If M-IND-EXP is NECESSARY_CONTRIBUTING or PRIMARY together with M-SOC-EXP, H-SOC fails and C-HET-SEED-SPREAD is the admitted candidate."
+    body_disposition_expectation: "No body/tomb proposition is necessary; packet expectations govern any body-evidence use."
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "L"
+    family: "L"
+    name: "Interpretive/scriptural/narrative-development origin"
+    status_bearing: true
+    core: "Jesus was crucified and died; M-INTERP was PRIMARY in generating the founding proclamation; individual/social subjective experiences were only CONTRIBUTING_NONNECESSARY or NONE; founding deliberate fabrication was NONE."
+    causal_profile_ref: "L"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-L-INTERPRETIVE-ORIGIN"
+      - "P-L-EXPERIENCE-NONPRIMARY"
+      - "P-L-ENCOUNTER-CLAIM-ORIGIN"
+      - "P-L-DEVELOPMENT-SEQUENCE"
+      - "P-L-FOUNDING-CAUSAL"
+    experience_nonprimary_definition: "P-L-EXPERIENCE-NONPRIMARY requires both M-IND-EXP and M-SOC-EXP to be CONTRIBUTING_NONNECESSARY or NONE. NECESSARY_CONTRIBUTING is not permitted under L."
+    fabrication_boundary: "M-FOUNDING-FAB must be NONE. Later literary/theological development may be deliberate without becoming F unless it is origin-material knowing falsehood as defined in the causal-profile artifact."
+    body_disposition_expectation: "No single tomb/body-disposition fact is necessary unless frozen in the L packet; any body-disposition mechanism must be registered before exposure."
+    q1_relation: "Does not require a veridical postmortem referent."
+
+  - id: "S1"
+    family: "S"
+    name: "Crucified but survived"
+    status_bearing: true
+    core: "Jesus himself underwent the crucifixion event but did not enter the study's P-DEATH state; subsequent access to the living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-S1-NONDEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-S1-POSTCRUC-ACCESS"
+      - "P-S1-FOUNDING-CAUSAL"
+    origin_mechanism_closed: "Continued biological life plus subsequent access/encounter with the living Jesus; cause of survival is not part of Q1."
+    body_disposition_expectation: "A body disposition incompatible with continued living access weakens S1; no empty-tomb claim is automatically favorable."
+    q1_relation: "Affirms P-CRUC and denies P-DEATH."
+
+  - id: "S2"
+    family: "S"
+    name: "Substitution / crucifixion misidentification with sincere mistaken attribution"
+    status_bearing: true
+    core: "Jesus was not the person crucified; another person/event was substituted or materially misidentified as Jesus's crucifixion; Jesus continued to exist alive, and sincere mistaken attribution plus subsequent access/transmission was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-S2-NOT-CRUCIFIED"
+      - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+      - "P-S2-JESUS-CONTINUED-LIFE"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-S2-SINCERE-MISTAKEN-ATTRIBUTION"
+      - "P-S2-POSTEVENT-ACCESS-OR-TRANSMISSION"
+      - "P-S2-FOUNDING-CAUSAL"
+    origin_mechanism_closed: "The only admitted S2 origin mechanism is sincere mistaken crucifixion attribution plus continued-life access/transmission. Founding deliberate fabrication and subjective postmortem-experience modules are not optional substitutes."
+    native_formulation_capacity: "A tradition-specific non-crucifixion/substitution/rescue formulation may be steelmanned through formulation sources; the cause of Jesus's continued life/rescue is not itself adjudicated in Q1."
+    body_disposition_expectation: "A substitute/misidentified victim may generate body-disposition evidence not attributable to Jesus. The packet must pre-register any such prediction before evidence use."
+    q1_relation: "Denies P-CRUC and P-DEATH as applied to Jesus."
+
+  - id: "S3"
+    family: "S"
+    name: "Non-crucifixion escape/removal/rescue without substitution"
+    status_bearing: true
+    core: "Jesus did not undergo the crucifixion event and did not enter P-DEATH; no substitute victim is required; Jesus continued alive after an escape, removal, or rescue process, and subsequent access/knowledge of the living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-S3-NOT-CRUCIFIED"
+      - "P-S3-CONTINUED-LIFE"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-S3-POSTEVENT-ACCESS"
+      - "P-S3-FOUNDING-CAUSAL"
+    origin_mechanism_closed: "Non-crucifixion continued life plus subsequent access/knowledge. The causal explanation for escape/removal/rescue is left unspecified because specific causal-agent attribution is out of Q1."
+    falsifiability: "SUPPORTED_WITHIN_SCOPE P-CRUC or P-DEATH contradicts S3. S3 accepts ordinary death/crucifixion evidence as evidence against itself; it receives no authority exemption."
+    body_disposition_expectation: "No Jesus corpse is expected from an event Jesus did not undergo; specific third-party body claims require a packet expectation."
+    q1_relation: "Denies P-CRUC and P-DEATH."
+
+  - id: "F"
+    family: "F"
+    name: "Founding-stratum deliberate deception"
+    status_bearing: true
+    core: "Jesus was crucified and died; one or more origin-material founding claims were knowingly asserted or constructed as materially false by actors necessary to the founding proclamation; M-FOUNDING-FAB was PRIMARY."
+    causal_profile_ref: "F"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-F-DELIBERATE"
+      - "P-F-ORIGIN-MATERIAL"
+      - "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+      - "P-F-TRANSMISSION-SUFFICIENT"
+      - "P-F-FOUNDING-CAUSAL"
+    fabrication_definition: "Founding fabrication is knowing origin-material false assertion/construction intended or accepted as true by the movement. Mere memory error, interpretation, symbolic literature, or later non-origin literary elaboration is not F."
+    body_disposition_expectation: "No body/tomb proposition is automatically favorable; any body-disposition action used by F must be explicitly registered in its packet."
+    founding_causal_rule: "P-F-FOUNDING-CAUSAL requires M-FOUNDING-FAB to be PRIMARY under the common causal-role ladder; later-only invention cannot satisfy it."
+    q1_relation: "Does not require a veridical postmortem referent."
+
+  - id: "C-HET-IND"
+    family: "C-HET"
+    name: "Heterogeneous individual-experience + interpretation + later-development model"
+    status_bearing: true
+    core: "Jesus was crucified and died; M-IND-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-NARR and the frozen M-BODY component are necessary to this candidate's overall evidence pattern; no veridical referent or founding fabrication occurred."
+    causal_profile_ref: "C-HET-IND"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_1.yaml"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-CHET-IND-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-IND-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    body_disposition_expectation: "The frozen M-BODY module is necessary for this candidate and is separately burdened."
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "C-HET-SOC"
+    family: "C-HET"
+    name: "Heterogeneous social-experience + interpretation + later-development model"
+    status_bearing: true
+    core: "Jesus was crucified and died; M-SOC-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-NARR and M-BODY are necessary; no veridical referent or founding fabrication occurred."
+    causal_profile_ref: "C-HET-SOC"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_1.yaml"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-SOC-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    body_disposition_expectation: "The frozen M-BODY module is necessary for this candidate and is separately burdened."
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "C-HET-SEED-SPREAD"
+    family: "C-HET"
+    name: "Individual-seed + social-amplification + interpretation + later-development model"
+    status_bearing: true
+    core: "Jesus was crucified and died; M-IND-EXP, M-SOC-EXP, and M-INTERP were all PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-NARR and M-BODY are necessary; no veridical referent or founding fabrication occurred."
+    causal_profile_ref: "C-HET-SEED-SPREAD"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_1.yaml"
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-CHET-SEED-IND"
+      - "P-CHET-SEED-SOC"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    body_disposition_expectation: "The frozen M-BODY module is necessary and separately burdened."
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+non_status_bearing_refinements:
+  - id: "R-PHYS"
+    parent: "R-TRANS"
+    name: "Material-continuity embodied refinement"
+    proposition_id: "P-RPHYS-CONTINUITY"
+    purpose: "Record whether the generic embodied event also warrants material continuity with the pre-mortem body."
+    N3_competitor: false
+    truth_warrant_gate_for_R_EVENT: false
+    rule: "Failure to establish P-RPHYS-CONTINUITY does not by itself defeat R-TRANS. Support for continuity may refine R-TRANS but cannot be counted twice as a sibling candidate."
+
+exclusions:
+  - id: "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+    category: "OUT_OF_SCOPE_FULL_CANDIDATE__RETAIN_NODE_RIVAL"
+    reviewer_A_B4: "RETAIN_AS_NODE_OR_RIVAL_ONLY"
+    reason: "A full nonhistoricity model answers a different historical-subject question and lacks post-crucifixion event propositions. P-HIST-JESUS remains directly tested; the rival receives a steelman-quality formulation and sufficiency record."
+    c4_controlled: true
+
+  - id: "X-Q2-DIVINE-AGENT"
+    category: "OUT_OF_SCOPE"
+    reviewer_A_B4: "EXCLUDE_OUT_OF_SCOPE"
+    reason: "Specific causal-agent attribution requires a distinct study architecture."
+
+  - id: "X-FREEFORM-COMPOSITE"
+    category: "SUBSTANTIVE_EXCLUSION"
+    reviewer_A_B4: "EXCLUDE_SUBSTANTIVE"
+    reason: "Open-ended post-hoc composites violate candidate freeze. Only closed preregistered C-HET profiles are admitted."
+
+  - id: "X-BODY-DISPOSITION-ONLY"
+    category: "NODE_RIVAL_ONLY"
+    reviewer_A_B4: "RETAIN_AS_NODE_OR_RIVAL_ONLY"
+    reason: "Body disposition alone is not a founding-proclamation causal model; it remains live on body/tomb propositions."
+
+  - id: "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+    category: "SUBSTANTIVE_EXCLUSION"
+    reviewer_A_B4: "EXCLUDE_SUBSTANTIVE_WITH_CONDITIONS"
+    serious_rival_determination: "Reviewer A found no determinate independently formulated serious model requiring both founding-stratum deliberate fabrication and necessary sincere experience. Pure founding deception is F; sincere experience plus later legendary/literary development is covered by H/C-HET/L."
+    fallback: "REVISED_CANDIDATE_REQUIRED remains available if later evidence makes such a structure necessary."
+
+  - id: "X-ARBITRARY-SPECULATIVE-MODELS"
+    category: "SUBSTANTIVE_EXCLUSION"
+    reviewer_A_B4: "EXCLUDE_SUBSTANTIVE"
+    reason: "Models lacking serious scholarly/traditional representation or an independently defensible argument fail SERIOUS_RIVAL."
+
+  - id: "X-REAL-REFERENT-NONIDENTITY"
+    category: "NODE_RIVAL_ONLY"
+    reviewer_A_B4: "RETAIN_AS_NODE_OR_RIVAL_ONLY"
+    reason: "A real extramental referent that fails EMB-3 is neither R nor V; preserve it as a rival on P-V-IDENTITY-JESUS and EMB-3 rather than inflate it into a full founding-origin candidate."
+
+shared_floor_conditions:
+  P-HIST-JESUS:
+    all_status_bearing_candidates_list_identical_text: true
+    nonhistoricity_B4_exclusion_recorded: true
+    direct_route_required: true
+    nonhistoricity_steelman_required: true
+    P_CRUC_is_not_shared_floor: true
+    frozen_against_candidate_set: true
+    q1_answer_table_handles_failure: true
+  P-EARLY-PROCLAMATION-EXISTENCE:
+    all_status_bearing_candidates_list_it: true
+    identical_truth_conditions_required: true
+    q1_answer_table_handles_failure: true
+
+final_B4_review:
+  reviewer_role: "REVIEWER_A"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  status: "NARROW_REREVIEW_PENDING_AFTER_RR1_RR6_REPAIRS"
+  report_0_1_0: "TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_REPORT_0_1_0.md"
+
+g0_gate:
+  candidate_register_frozen: false
+  reason: "Awaiting Reviewer A narrow re-review of RR-1 through RR-6 changes."
