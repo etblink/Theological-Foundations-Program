@@ -155,9 +155,6 @@ reviewer_C:
     candidate_ranking_prohibited: true
     proposition_dispositions_prohibited: true
     g0_authorization_prohibited: true
-  intended_provider: "xAI_or_other_external_provider_distinct_from_Anthropic_and_program_lead"
-  intended_model: "strongest_available_reasoning_model_at_assignment"
-  required_lineage: "fresh session disjoint from program lead, Reviewer A, Reviewer B, Reviewer D, and strict auditor"
   g0_roles:
     - "discriminator_tier_and_pre_evidence_direction_rule_reviewer"
     - "background_granularity_interaction_reviewer"
