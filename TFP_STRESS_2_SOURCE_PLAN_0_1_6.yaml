@@ -1,0 +1,387 @@
+study_id: "TFP-STRESS-2"
+schema_version: "0.1.6"
+artifact: "SOURCE_PLAN"
+supersedes: "TFP_STRESS_2_SOURCE_PLAN_0_1_5.yaml"
+background_register_ref: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+empirical_model_register_ref: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+status: "11_CANDIDATES__P_CRUC_NONCOMPARATIVE_SHARED_FLOOR__REVIEWER_B_SOURCE_PLAN_PASS_PENDING"
+P_CRUC_shared_floor_control:
+  classification: "NONCOMPARATIVE_SHARED_FLOOR"
+  candidate_count: 11
+  q1_control_ref: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
+  coverage_map_ref: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_6.yaml"
+  node_rival_family: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  node_rival_packet_ref: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+  source_plan_effect: "Keep the full P-CRUC source search and adverse-node-rival routes. Shared-floor status changes candidate-ranking consequences, not the evidential burden or search scope."
+  D0_role: "Node-rival evidential discriminator/sufficiency control only; not an N2 candidate-selecting comparator."
+
+scope:
+  event_window: "Early first century CE crucifixion period through the emergence of the founding proclamation and founding claimed-encounter streams."
+  evidence_window: "First-century evidence plus material through approximately 150 CE where relevant to transmission, dependence, reception, or development. Later material may be used for formulation, textual transmission, reception, or methodological comparison but is not silently projected backward."
+  geography: "Roman Judea/Galilee, Jerusalem, and relevant eastern Mediterranean networks; other regions only where provenance/transmission requires."
+  languages:
+    - "Koine Greek"
+    - "Aramaic/Hebrew substrate claims where outcome-material"
+    - "Latin where Roman evidence is outcome-material"
+  exclusions:
+    - "global truth of Christianity"
+    - "Trinity/atonement/inerrancy/denominational authority"
+    - "specific divine-agent attribution as an active Q1 comparison"
+    - "unrelated later miracle claims"
+
+repositories_or_corpora_policy:
+  primary_text_and_manuscript_routes:
+    - "critical editions and manuscript apparatus appropriate to the relevant ancient text"
+    - "INTF/NT.VMR or equivalent manuscript resources where accessible for New Testament textual questions"
+    - "Perseus, Loeb, TLG, or equivalent classical/Jewish/Greco-Roman corpora where accessible"
+    - "published corpora/critical editions for early Jewish and early Christian sources"
+  scholarly_search_routes:
+    - "ATLA Religion Database or equivalent religion/biblical-studies index where accessible"
+    - "JSTOR"
+    - "Project MUSE"
+    - "Google Scholar used as discovery rather than authority"
+    - "Crossref/citation chaining"
+    - "WorldCat/library catalogues for monographs and editions"
+  psychology_social_science_routes:
+    - "PsycINFO or equivalent psychology index where accessible"
+    - "Crossref/Google Scholar citation chaining for bereavement, hallucination/apparitional experience, memory, social influence, and group-report formation"
+  philosophy_routes:
+    - "PhilPapers or equivalent philosophy index where accessible"
+    - "JSTOR/Project MUSE/Crossref"
+  archaeology_history_routes:
+    - "discipline-specific bibliographies, archaeological reports, classical/Jewish history indexes, and citation trails"
+  access_note: "Naming a repository is a planned search route, not a claim of current access. Inaccessibility is recorded under the frozen rule below."
+
+global_search_rules:
+  - "Search by proposition/candidate mechanism, not by desired conclusion."
+  - "For each candidate-native search, run a paired adverse/critical search."
+  - "Search source dependence and provenance separately from theological interpretation."
+  - "Use backward and forward citation chaining on outcome-material works."
+  - "Do not treat canonical/noncanonical, confessional/skeptical, early/late, or prestigious/marginal labels as quality scores."
+  - "Repeated dependent sources count as one evidential stream for convergence."
+  - "Later formulation sources may define a candidate without becoming early evidence."
+  - "Record failed searches, inaccessible sources, and expected-but-absent evidence symmetrically."
+
+source_strata:
+  - id: "SRC-01"
+    type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","S1","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","BGD-3","EMP-SOURCE-DATING-DEPENDENCE","EMP-SECOND-TEMPLE-CONCEPTS","EMP-PAULINE-BODY-INTERPRETATION"]
+    repositories_or_corpora: ["critical editions/manuscript resources","published early-Christian text corpora"]
+    search_rules: ["inventory all within-scope outcome-material first-century claims and embedded traditions; record date/authorship/dependence uncertainty"]
+    inclusion_rules: ["within scope and materially bears on founding proclamation, claimed encounters, crucifixion/death, body/burial, or transmission"]
+    exclusion_rules: ["later material with no transmission/reception relevance to the scope"]
+    languages_dates: "Greek and relevant substrate claims; first century primarily."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-02"
+    type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    candidate_or_background_served: ["ALL_CANDIDATES","BGD-3","EMP-SOURCE-DATING-DEPENDENCE","EMP-PAULINE-BODY-INTERPRETATION"]
+    repositories_or_corpora: ["critical apparatus/manuscript resources","source-critical scholarship indexes"]
+    search_rules: ["identify outcome-material variants, dependencies, embedded-tradition claims, dating ranges, translation-sensitive wording"]
+    inclusion_rules: ["can change provenance, independence, dating, or meaning of a necessary proposition"]
+    exclusion_rules: ["purely stylistic variants with no truth-critical effect"]
+    languages_dates: "Original languages as relevant; all dates needed for transmission analysis."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-03"
+    type: "EARLY_SECOND_CENTURY_RECEPTION_NONCANONICAL"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","BGD-3","EMP-SOURCE-DATING-DEPENDENCE"]
+    repositories_or_corpora: ["critical editions of early second-century Christian/noncanonical texts"]
+    search_rules: ["use for reception, dependence, development, or preservation arguments; never project backward without transmission evidence"]
+    inclusion_rules: ["approximately through 150 CE and materially bears on development/transmission"]
+    exclusion_rules: ["later material with no bounded transmission relevance"]
+    languages_dates: "Relevant ancient languages; approximately through 150 CE."
+    source_use: "EVIDENCE_WITH_E5_LIMIT"
+
+  - id: "SRC-04"
+    type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","S1","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","EMP-CRUCIFIXION-BURIAL-PRACTICE"]
+    repositories_or_corpora: ["Roman historical/legal/archaeological corpora","classical studies indexes","medical literature only where historical transfer is justified"]
+    search_rules: ["separate general execution practice from case-specific inference; search survival/death evidence symmetrically"]
+    inclusion_rules: ["material to P-CRUC, P-DEATH, P-S1-NONDEATH, the broadened X-NONCRUCIFIXION-SUBSTITUTION-FAMILY crucifixion-identity rival"]
+    exclusion_rules: ["modern medical analogy without demonstrated historical applicability"]
+    languages_dates: "Roman-period evidence plus modern technical analysis."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-05"
+    type: "JEWISH_BURIAL_BODY_DISPOSITION_ARCHAEOLOGY"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","EMP-CRUCIFIXION-BURIAL-PRACTICE"]
+    repositories_or_corpora: ["archaeological reports","Jewish funerary/burial studies","historical corpora"]
+    search_rules: ["separate general burial practice from case-specific burial/tomb propositions"]
+    inclusion_rules: ["material to body-disposition, burial, tomb, or continuity predictions"]
+    exclusion_rules: ["general custom treated as direct case proof"]
+    languages_dates: "Second Temple/Roman Judea context plus modern archaeology."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-06"
+    type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","EMP-SECOND-TEMPLE-CONCEPTS","EMP-PAULINE-BODY-INTERPRETATION"]
+    repositories_or_corpora: ["Second Temple Jewish texts in critical editions","Jewish studies/biblical studies indexes"]
+    search_rules: ["inventory serious models of resurrection, exaltation, vindication, assumption, afterlife, and scriptural interpretation without presuming one semantic framework"]
+    inclusion_rules: ["material to founding proclamation content or candidate-native interpretive mechanisms"]
+    exclusion_rules: ["later doctrinal usage with no transmission relevance"]
+    languages_dates: "Relevant Second Temple languages and translations."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-07"
+    type: "GRECO_ROMAN_COMPARANDA"
+    candidate_or_background_served: ["V","H-IND","H-SOC","H-SEED-SPREAD","L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","EMP-SECOND-TEMPLE-CONCEPTS","BGD-10"]
+    repositories_or_corpora: ["classical text corpora","Greco-Roman religion/history scholarship"]
+    search_rules: ["search apotheosis, translation, apparition, vanishing-body, postmortem-appearance, and founder-death comparanda; record dependence and disanalogy"]
+    inclusion_rules: ["material to reference classes or interpretation"]
+    exclusion_rules: ["mere resemblance used as transmission or occurrence proof"]
+    languages_dates: "Ancient Mediterranean comparanda and modern scholarship."
+    source_use: "EVIDENCE_CONTEXT_REFERENCE_CLASS"
+
+  - id: "SRC-08"
+    type: "INDIVIDUAL_EXPERIENCE_BEREAVEMENT_VISION_PSYCHOLOGY"
+    candidate_or_background_served: ["H-IND","C-HET-IND","C-HET-SEED-SPREAD","V","R-PHYS-REFINEMENT","R-TRANS","EMP-EXPERIENTIAL-MECHANISM-CAPACITY","BGD-9","BGD-10"]
+    repositories_or_corpora: ["psychology indexes","bereavement/experience research literature"]
+    search_rules: ["include supportive and critical research; separate sincerity, phenomenology, pathology, veridicality, and mechanism capacity"]
+    inclusion_rules: ["material to individual experience mechanism or testimony"]
+    exclusion_rules: ["diagnostic/pathological labels applied without evidence"]
+    languages_dates: "Modern empirical/clinical/social-science literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-09"
+    type: "SOCIAL_GROUP_EXPERIENCE_REPORT_MOVEMENT_DYNAMICS"
+    candidate_or_background_served: ["H-SOC","C-HET-SOC","C-HET-SEED-SPREAD","L","F","EMP-EXPERIENTIAL-MECHANISM-CAPACITY","BGD-10"]
+    repositories_or_corpora: ["social psychology/sociology indexes","religious-movement studies","collective memory/social influence literature"]
+    search_rules: ["search group-report formation, social contagion, conformity, collective memory, failed-expectation responses, movement persistence"]
+    inclusion_rules: ["mechanism evidence materially applicable to candidate claims"]
+    exclusion_rules: ["analogy without defensible transfer conditions"]
+    languages_dates: "Modern social-science/reference-class literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-10"
+    type: "MEMORY_ORAL_TRADITION_NARRATIVE_DEVELOPMENT"
+    candidate_or_background_served: ["L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","R-PHYS-REFINEMENT","R-TRANS","BGD-3","EMP-SOURCE-DATING-DEPENDENCE"]
+    repositories_or_corpora: ["memory/oral tradition scholarship","ancient historiography/source-critical indexes"]
+    search_rules: ["search mechanisms, expected signatures, and limits of transmission/development; include anti-development evidence"]
+    inclusion_rules: ["material to P-L-DEVELOPMENT-SEQUENCE or M-NARR"]
+    exclusion_rules: ["development asserted merely because a source is later"]
+    languages_dates: "Ancient-source and modern-method literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-11"
+    type: "DECEPTION_FABRICATION_SOCIAL_TRANSMISSION"
+    candidate_or_background_served: ["F","L","H-IND","H-SOC","H-SEED-SPREAD","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    repositories_or_corpora: ["historical/source-critical scholarship","psychology/sociology of deception/testimony"]
+    search_rules: ["require positive warrant for intentional fabrication, actor opportunity, and transmission; include contrary sincerity/nonfraud evidence"]
+    inclusion_rules: ["material to F necessary propositions"]
+    exclusion_rules: ["mere inconsistency or theological interpretation treated as fraud"]
+    languages_dates: "Ancient historical evidence and modern mechanism literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-12"
+    type: "SURVIVAL_NONDEATH_MEDICAL_HISTORICAL"
+    candidate_or_background_served: ["S1","R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","EMP-CRUCIFIXION-BURIAL-PRACTICE"]
+    repositories_or_corpora: ["Roman execution evidence","historical medicine","modern medical analysis with transfer controls"]
+    search_rules: ["search survival and lethality symmetrically; record transfer limitations"]
+    inclusion_rules: ["material to P-DEATH/P-S1-NONDEATH"]
+    exclusion_rules: ["modern survivability claim with no historical applicability"]
+    languages_dates: "Roman-period and modern technical literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-13"
+    type: "POSTMORTEM_SURVIVAL_APPARITION_RESEARCH_AND_CRITIQUE"
+    candidate_or_background_served: ["V","R-TRANS","H-IND","H-SOC","H-SEED-SPREAD","BGD-1","BGD-2","EMP-EXPERIENTIAL-MECHANISM-CAPACITY","BGD-10"]
+    repositories_or_corpora: ["peer-reviewed survival/apparition research where available","critical methodological literature","philosophy/science indexes"]
+    search_rules: ["pair claimant literature with methodological critiques; provenance and replication required"]
+    inclusion_rules: ["material to whether a veridical non-embodied referent is a live public-evidence claim"]
+    exclusion_rules: ["anecdote with untraceable provenance used as decisive support"]
+    languages_dates: "Modern research/critical literature."
+    source_use: "EVIDENCE"
+
+  - id: "SRC-14"
+    type: "METAPHYSICS_EMBODIMENT_PERSONAL_IDENTITY_SURVIVAL"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","BGD-1","BGD-11","EMP-PAULINE-BODY-INTERPRETATION"]
+    repositories_or_corpora: ["philosophy indexes","philosophy of mind/personal identity/religion literature"]
+    search_rules: ["separate conceptual coherence from historical occurrence; test embodiment and identity criteria symmetrically"]
+    inclusion_rules: ["material to EMB-1/2/3, transformed embodiment, non-embodied survival, or identity"]
+    exclusion_rules: ["metaphysical possibility treated as occurrence evidence"]
+    languages_dates: "Modern philosophy plus historically relevant conceptual scholarship."
+    source_use: "ARGUMENT_EVIDENCE"
+
+  - id: "SRC-15"
+    type: "PHILOSOPHY_TESTIMONY_HISTORY_MIRACLE_ANOMALY"
+    candidate_or_background_served: ["ALL_CANDIDATES","BGD-1","BGD-2","BGD-9","BGD-10"]
+    repositories_or_corpora: ["philosophy indexes","historical-method scholarship"]
+    search_rules: ["include competing testimony/historical inference frameworks; state priors/reference classes explicitly"]
+    inclusion_rules: ["material to warrant rules or background sensitivity"]
+    exclusion_rules: ["framework asserted without argument"]
+    languages_dates: "Modern philosophy/methodology."
+    source_use: "ARGUMENT_EVIDENCE"
+
+  - id: "SRC-16"
+    type: "COMPARATIVE_MOVEMENTS_REFERENCE_CLASSES"
+    candidate_or_background_served: ["H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","BGD-10"]
+    repositories_or_corpora: ["historical sociology","religious-movement studies","comparative historical literature"]
+    search_rules: ["founder-death, failed-expectation, visionary, movement-persistence, narrative-development reference classes; record comparability limits"]
+    inclusion_rules: ["provides defensible reference class for a frozen inference"]
+    exclusion_rules: ["cherry-picked analogy with no transfer rationale"]
+    languages_dates: "Modern comparative scholarship."
+    source_use: "REFERENCE_CLASS_EVIDENCE"
+
+  - id: "SRC-17"
+    type: "CANDIDATE_NATIVE_FORMULATION"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","S1","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    repositories_or_corpora: ["candidate-native/tradition-native/proponent scholarship and primary formulations, including later material when necessary to define a serious candidate"]
+    search_rules: ["find strongest serious formulation before steelman freeze; later formulation sources do not become early event evidence merely by defining the candidate"]
+    inclusion_rules: ["serious traceable formulation or independently defensible argument"]
+    exclusion_rules: ["opponent-only caricature"]
+    languages_dates: "No date limit for FORMULATION_ONLY use; evidence use remains bounded by A2/E5."
+    source_use: "FORMULATION_ONLY_UNLESS_INDEPENDENTLY_ELIGIBLE_AS_EVIDENCE"
+
+  - id: "SRC-18"
+    type: "ADVERSE_CRITICAL"
+    candidate_or_background_served: ["R-PHYS-REFINEMENT","R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","S1","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD","ALL_BACKGROUNDS"]
+    repositories_or_corpora: ["critical scholarship/citation trails distinct from candidate-native routes"]
+    search_rules: ["for each candidate/background, search strongest serious contrary evidence/argument and omitted source classes"]
+    inclusion_rules: ["material defeater or serious rival evidence"]
+    exclusion_rules: ["low-quality critique merely because it is adverse"]
+    languages_dates: "As required by the candidate/proposition."
+    source_use: "EVIDENCE_AND_DEFEATER_SEARCH"
+
+  - id: "SRC-19"
+    type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    candidate_or_background_served: ["ALL_CANDIDATES","ALL_BACKGROUNDS"]
+    repositories_or_corpora: ["historical, textual, philosophical, archaeological, psychology, and social-science scholarship not organized primarily around defending one target conclusion"]
+    search_rules: ["use for method calibration, provenance, context, and cross-checking"]
+    inclusion_rules: ["material to a frozen proposition or method surface"]
+    exclusion_rules: ["generic background with no decision value"]
+    languages_dates: "As relevant."
+    source_use: "EVIDENCE_CONTEXT"
+
+candidate_service_map:
+  R-TRANS:
+    native: ["SRC-01","SRC-06","SRC-14","SRC-17"]
+    adverse: ["SRC-08","SRC-10","SRC-12","SRC-13","SRC-18"]
+  V:
+    native: ["SRC-06","SRC-13","SRC-14","SRC-17"]
+    adverse: ["SRC-08","SRC-14","SRC-18"]
+  H-IND:
+    native: ["SRC-08","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+  H-SOC:
+    native: ["SRC-09","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+  H-SEED-SPREAD:
+    native: ["SRC-08","SRC-09","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+  L:
+    native: ["SRC-06","SRC-07","SRC-10","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-02","SRC-18"]
+  S1:
+    native: ["SRC-04","SRC-12","SRC-17"]
+    adverse: ["SRC-04","SRC-12","SRC-18"]
+  F:
+    native: ["SRC-11","SRC-17"]
+    adverse: ["SRC-01","SRC-18"]
+  C-HET-IND:
+    native: ["SRC-05","SRC-08","SRC-10","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+  C-HET-SOC:
+    native: ["SRC-05","SRC-09","SRC-10","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+  C-HET-SEED-SPREAD:
+    native: ["SRC-05","SRC-08","SRC-09","SRC-10","SRC-16","SRC-17"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+
+node_rival_service_map:
+  X-NONCRUCIFIXION-SUBSTITUTION-FAMILY:
+    propositions: ["P-CRUC","P-S2-NOT-CRUCIFIED","P-S2-SUBSTITUTION-OR-MISIDENTIFICATION","P-S3-NOT-CRUCIFIED","P-S3-NO-SUBSTITUTE"]
+    formulation: ["SRC-17"]
+    direct_evidence: ["SRC-01","SRC-02","SRC-04","SRC-19"]
+    adverse: ["SRC-18"]
+    note: "Broadened node-level family only. It preserves substitution, misidentification, witness-confusion, arranged-escape, and no-substitute noncrucifixion variants at P-CRUC/crucifixion identity. It receives no founding-proclamation candidate route unless a revised full candidate is separately admitted under C4."
+  X-NONHISTORICITY-AS-FULL-CANDIDATE:
+    propositions: ["P-HIST-JESUS","P-CRUC"]
+    formulation: ["SRC-17"]
+    direct_evidence: ["SRC-01","SRC-02","SRC-19"]
+    adverse: ["SRC-18"]
+
+refinement_service_map:
+  R-PHYS:
+    parent_candidate: "R-TRANS"
+    native: ["SRC-01","SRC-05","SRC-14","SRC-17"]
+    adverse: ["SRC-10","SRC-12","SRC-18"]
+    note: "R-PHYS is not an N3 candidate; this route serves only the nested material-continuity refinement."
+
+truth_critical_strata_and_substitutes:
+  P-HIST-JESUS:
+    required: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-19"]
+    expected_extant: true
+  P-CRUC:
+    required: ["SRC-01","SRC-04"]
+    acceptable_substitutes: ["SRC-19"]
+    expected_extant: true
+  P-DEATH:
+    required: ["SRC-01","SRC-04","SRC-12"]
+    acceptable_substitutes: ["SRC-19"]
+    expected_extant: true
+  P-EARLY-PROCLAMATION-EXISTENCE:
+    required: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03"]
+    expected_extant: true
+  P-R-BODY:
+    required: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-05"]
+    expected_extant: false
+  P-R-FOUNDING-ENCOUNTER:
+    required: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03"]
+    expected_extant: false
+  P-V-REAL-REFERENT:
+    required: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15"]
+    expected_extant: false
+  H_MECHANISMS:
+    required: ["SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-16"]
+    expected_extant: true
+    serves: ["P-HIND-MECHANISM-SUFFICIENT","P-HSOC-MECHANISM-SUFFICIENT","P-HSEED-MECHANISM-SUFFICIENT"]
+  L_DEVELOPMENT:
+    required: ["SRC-01","SRC-02","SRC-06","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    expected_extant: true
+  S1_NONDEATH:
+    required: ["SRC-04","SRC-12"]
+    acceptable_substitutes: ["SRC-19"]
+    expected_extant: true
+  F_DELIBERATE:
+    required: ["SRC-01","SRC-11"]
+    acceptable_substitutes: ["SRC-18"]
+    expected_extant: false
+  CHET_MODULES:
+    required: ["SRC-05","SRC-08","SRC-09","SRC-10","SRC-16"]
+    acceptable_substitutes: ["SRC-19"]
+    expected_extant: true
+
+absence_rule:
+  symmetric: true
+  text: "Absence is evaluated under Protocol E2 for every candidate. Neither presence nor absence of attestation is automatically probative. Expected-but-absent evidence is probative only under a frozen expectation that applies symmetrically."
+  non_extant_rule: "Under otherwise complete coverage, non-survival of a class not predesignated expected-extant yields the applicable proposition disposition (including NOT_ESTABLISHED, PLAUSIBLE_BUT_UNATTESTED, or UNDERDETERMINED), not INSUFFICIENT_SIGNAL. MISSING_CRITICAL_EVIDENCE is reserved for a predesignated truth-critical/expected-extant class whose absence or inaccessibility prevents a required rule from being applied."
+
+inaccessible_source_rule:
+  - "At freeze, each truth-critical proposition names required strata and acceptable substitutes."
+  - "If a required stratum is inaccessible but a predesignated adequate substitute is available, use the substitute and disclose the gap."
+  - "If a predesignated truth-critical stratum is genuinely inaccessible/unidentifiable and no substitute exists, the dependent rule may route to INSUFFICIENT_SIGNAL after a documented effort record."
+  - "Accessible, provenance-adequate but weak/neutral evidence never becomes INSUFFICIENT_SIGNAL merely because it fails to favor a candidate."
+  - "Unperformed search is COVERAGE_INCOMPLETE and cannot close as INSUFFICIENT_SIGNAL."
+  - "Bounded dating/authorship/dependence uncertainty that can be propagated through sensitivity/confidence is not provenance failure."
+  - "Provenance failure means the item cannot be identified well enough to apply the relevant type-specific mandatory element at all."
+
+adverse_source_probe_plan:
+  reviewer_role: "REVIEWER_C"
+  requirement: "Before COMPLETE or MATERIALLY_COMPLETE coverage, use at least one credible external index/citation trail or critical stream not used to construct the original source plan, specifically searching for omitted adverse evidence/source classes."
+  no_result_rule: "A null probe is recorded; it does not prove candidate truth."
+
+source_plan_reviewer:
+  role: "REVIEWER_B"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+  current_status: "REPAIR_REVIEW_PENDING"
+  required_decision: "SOURCE_PLAN_PASS or versioned repair"
+
+freeze_identity: null
