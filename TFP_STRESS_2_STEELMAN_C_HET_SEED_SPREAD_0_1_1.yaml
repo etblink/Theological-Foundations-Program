@@ -1,0 +1,118 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "C-HET-SEED-SPREAD"
+candidate_name: "Individual-seed + social-amplification + interpretation + later-development model"
+supersedes: "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_0.yaml"
+status: "NB2_REPAIRED__M_BODY_EXPECTATION_ONLY__FROZEN_FOR_NARROW_REVIEWER_B_CONFIRMATION__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_5.yaml"
+module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
+
+native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective-experience seed, a distinct social/group amplification process, and a founding interpretive/scriptural process were all causally necessary to the founding proclamation, each PRIMARY or NECESSARY_CONTRIBUTING and at least one PRIMARY. Later narrative development and the frozen body-disposition module are also necessary to the overall evidence pattern but have no founding experiential causal role. No veridical referent and no founding deliberate fabrication occurred."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020"
+    use: "FORMULATION_ONLY__M-IND-EXP"
+  - id: "FORM-HSOC-001"
+    title: "Roediger, Meade & Bergman 2001"
+    use: "FORMULATION_ONLY__M-SOC-EXP"
+  - id: "FORM-HSOC-002"
+    title: "Edelson et al. 2011"
+    use: "FORMULATION_ONLY__M-SOC-EXP"
+  - id: "FORM-L-001"
+    title: "Sutton & Le Donne 2023"
+    use: "FORMULATION_ONLY__M-INTERP_AND_MEMORY"
+  - id: "FORM-L-002"
+    title: "Galbraith 2017"
+    use: "FORMULATION_ONLY__M-LATER-NARR"
+  - id: "TFP-SYNTHETIC-CHET"
+    title: "Frozen C-HET-SEED-SPREAD module map"
+    use: "INTERNAL_SYNTHETIC_FORMULATION"
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-CHET-SEED-IND"
+  - "P-CHET-SEED-SOC"
+  - "P-CHET-INT"
+  - "P-CHET-NARR"
+  - "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+  - "P-CHET-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Every founding module is independently burdened; no module may be inferred from another module's weakness."
+  - "The social stage requires genuine subjective experiences or durable experiential/memory change, not mere rumor."
+  - "Later narrative development remains founding-causally NONE."
+  - "No veridical referent or founding deliberate fabrication is permitted."
+
+internal_success_conditions:
+  - "M-IND-EXP, M-SOC-EXP and M-INTERP are each PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY."
+  - "An individual seed temporally/dependentially precedes or materially feeds the social-amplification process."
+  - "Interpretive processing is independently necessary rather than an optional gloss."
+  - "M-LATER-NARR is independently supported later and remains founding-causally NONE."
+  - "P-CHET-BODY satisfies the exact packet definition."
+  - "No founding fabrication or veridical referent is supported."
+
+body_disposition_control:
+  module_id: "M-BODY"
+  proposition_id: "P-CHET-BODY"
+  role: "CANDIDATE_EXPECTATION_ONLY__NON_RANKING_BLOCKING"
+  necessary_proposition: false
+  sparse_or_unknown_case: "NEUTRAL__DOES_NOT_BLOCK_RANKING"
+  positive_support_rule: "Body-disposition compatibility cannot raise C-HET status and failure of R/R-PHYS cannot support C-HET."
+  contradiction_rule: "Evidence that positively requires or strongly supports embodied postmortem continuity weakens/defeats this candidate on the body expectation; a founding deceptive removal mechanism routes toward F or REVISED_CANDIDATE_REQUIRED."
+  founding_causal_role: "NONE"
+  reviewer_B_repair_basis: "NB-2 option A"
+
+expected_evidence:
+  - "A founding individual subjective-experience seed."
+  - "A distinct necessary social/group amplification process with genuine subjective-experience or durable private-memory effects."
+  - "Independent necessary founding scriptural/interpretive processing."
+  - "A later narrative-development sequence with the frozen timing role."
+  - "Body-disposition evidence satisfying P-CHET-BODY."
+  - "Joint evidence that all three founding modules are needed; no single-process profile suffices."
+
+recognized_objections:
+  - "If interpretation is nonnecessary, H-SEED-SPREAD is the frozen profile."
+  - "If individual seed or social amplification is nonnecessary, another H/C-HET profile or REVISED_CANDIDATE_REQUIRED applies."
+  - "The model is complexity-heavy and may lose to simpler candidates if independent module warrant is absent."
+  - "A veridical referent defeats the model."
+  - "Modern social-memory mechanisms may not transfer to the first-century setting."
+
+caricatures_rejected:
+  - "C-HET-SEED-SPREAD is not a catch-all residual explanation."
+  - "No module is optional."
+  - "Later narrative development cannot be promoted to a founding cause."
+  - "The body module cannot be invented post hoc."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MODULE_CONJUNCTION"
+  reviewer_or_basis: "Program-lead review of FORM-H-001, FORM-HSOC-001/002 and FORM-L-001/002"
+  findings:
+    - "Each constituent mechanism is independently serious."
+    - "The exact three-way founding conjunction is intentionally demanding and not attributed to a single scholarly school."
+
+equal_strength_review:
+  status: "NB2_NARROW_CONFIRMATION_PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "all three founding modules independently burdened"
+    - "temporal/dependence seed-spread relation testable"
+    - "body and later-narrative modules not residual"
+    - "H-SEED-SPREAD non-subsumption preserved"
+    - "complexity not rewarded by flexible fit"
+  findings: []
+
+packet_stage_notes:
+  - "This is the highest-complexity admitted naturalistic profile; failure of any required module defeats the candidate rather than inviting module deletion."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27,28,29,30,31]
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_2.yaml"
