@@ -1,0 +1,499 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "G1_WAVE_1_SOURCE_INVENTORY"
+status: "IN_PROGRESS__PRIMARY_CORPUS_EXPANDED__OBSERVATION_ONLY__NO_SYNTHESIS"
+date: "2026-10-06"
+launch_control: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+frozen_source_plan: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+supersedes: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_0.yaml"
+
+recording_boundary:
+  proposition_dispositions: "PROHIBITED"
+  discriminator_direction_results: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+  synthesis: "PROHIBITED_DURING_G1"
+  rule: "Record source identity/provenance and what the source contains before interpretation."
+
+sources:
+  - source_id: "G1W1-001"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Corinthians"
+    title_or_work: "1 Corinthians"
+    passage_or_scope: "15:1-11, especially 15:3-8"
+    date_or_date_range: "TBD under SRC-02; not adjudicated in this acquisition record"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT page identifies the SBL Greek New Testament edition."
+    dependence_or_independence_notes: "Paul's use of received/delivered material in vv.3-8 is textually observable; source/redaction history is reserved to SRC-02."
+    what_source_contains_observation_only:
+      - "Paul says he delivered what he also received."
+      - "The transmitted content names Christ's death, burial, being raised on the third day, and appearances to Cephas, the Twelve, more than five hundred, James, all the apostles, and finally Paul."
+    frozen_propositions_or_routes_potentially_served: ["P-EARLY-PROCLAMATION-CONTENT","founding-stream inventory","claimed-encounter inventory","P-DEATH"]
+    limitations:
+      - "Whether vv.3-7 form one or more pre-Pauline units is not decided here."
+      - "The historical truth of the claims is not inferred from the text's presence."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-002"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "1:18-19"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; accessible page used English translations"
+    edition_translation_or_repository: "Bible Gateway KJV/ESV comparison"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Galatians+1%3A18%E2%80%931%3A19&version=KJV%3BESV"
+    access_status: "ACCESSED__GREEK_EDITION_UPGRADE_PENDING"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Passage record is sufficient to inventory the claim but exact Greek critical-edition capture remains pending."
+    dependence_or_independence_notes: "No independence inference made."
+    what_source_contains_observation_only:
+      - "Paul states that after three years he went to Jerusalem and stayed with Cephas for fifteen days."
+      - "Paul names James as the Lord's brother."
+    frozen_propositions_or_routes_potentially_served: ["founding-person network","P-HIST-JESUS","founding-stream provenance"]
+    limitations:
+      - "Translation wording varies; Greek critical-edition record still required."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-003"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "2:1-10"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text."
+    dependence_or_independence_notes: "No chronological harmonization with Acts or other sources is made here."
+    what_source_contains_observation_only:
+      - "Paul describes a later Jerusalem visit and presenting his gospel to recognized leaders."
+      - "James, Cephas, and John are named as pillars and extend fellowship to Paul and Barnabas."
+    frozen_propositions_or_routes_potentially_served: ["founding-person network","proclamation transmission","source-proximity controls"]
+    limitations: ["Sequence/date interpretation remains for SRC-02 and later synthesis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-004"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Thessalonians"
+    title_or_work: "1 Thessalonians"
+    passage_or_scope: "4:13-18"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A13-18&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text."
+    dependence_or_independence_notes: "No relation to later Gospel narratives is inferred."
+    what_source_contains_observation_only:
+      - "The passage states belief that Jesus died and rose."
+      - "It describes a future rising of the dead in Christ and reunion with the Lord."
+    frozen_propositions_or_routes_potentially_served: ["early resurrection-proclamation content","Second Temple/comparative conceptual context"]
+    limitations: ["Does not by itself establish how the belief originated."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-005"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Philippians"
+    title_or_work: "Philippians"
+    passage_or_scope: "2:6-11"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBLGNT transcription via BibleStudyTools"
+    stable_url_or_identifier: "https://www.biblestudytools.com/sblg/philippians/passage/?q=philippians+2%3A6-11"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_REPRODUCTION"
+    provenance_notes: "Page labels text SBLGNT."
+    dependence_or_independence_notes: "Whether the passage incorporates earlier hymnic/traditional material is not decided here."
+    what_source_contains_observation_only:
+      - "The passage describes death on a cross followed by divine exaltation and bestowal of a name above every name."
+    frozen_propositions_or_routes_potentially_served: ["early exaltation-proclamation content","P-DEATH","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["Pre-Pauline/traditional status not adjudicated."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-006"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Mark"
+    title_or_work: "Mark"
+    passage_or_scope: "16:1-8"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Mark+16&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "Main SBLGNT passage through v.8 acquired."
+    dependence_or_independence_notes: "Longer-ending textual issue recorded separately under SRC-02; Synoptic dependence not adjudicated here."
+    what_source_contains_observation_only:
+      - "Women visit the tomb after the Sabbath."
+      - "They encounter a young man who says Jesus the Nazarene who was crucified has been raised and is not there, and directs them toward a future Galilee encounter."
+      - "Verse 8 describes the women fleeing in fear and saying nothing to anyone."
+    frozen_propositions_or_routes_potentially_served: ["burial/tomb report inventory","claimed-encounter transmission inventory","P-CRUC","P-DEATH"]
+    limitations: ["Historical truth and source dependence are not inferred."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-007"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "Mark 16 textual tradition / secondary scholarship"
+    title_or_work: "Longer ending of Mark — acquisition pair"
+    passage_or_scope: "Mark 16:9-20"
+    date_or_date_range: "Modern scholarship"
+    language: "English discussion of Greek/manuscript evidence"
+    edition_translation_or_repository: "JSTOR Nicholas P. Lunn 2014; BYU Studies Mark appendix; Metzger commentary reproduction"
+    stable_url_or_identifier:
+      - "https://www.jstor.org/stable/j.ctt1cgf5pt"
+      - "https://byustudies.byu.edu/online-book/the-gospel-according-to-mark/1969"
+      - "https://www.bibliaplus.org/en/commentaries/428/a-textual-commentary-on-the-greek-new-testament-by-bruce-m-metzger/mark/16/9-20"
+    access_status: "ACCESSED_AT_METADATA_OR_EXCERPT_LEVEL"
+    primary_or_secondary: "SECONDARY_TEXTUAL_CRITICISM"
+    provenance_notes: "Acquired competing treatments rather than a single consensus summary."
+    dependence_or_independence_notes: "Lunn argues for authenticity; the other acquired discussions present the dominant later-addition judgment and manuscript arguments."
+    what_source_contains_observation_only:
+      - "The manuscript history of Mark 16:9-20 is materially contested in published scholarship."
+      - "The acquired sources identify absence from major early witnesses and competing arguments about patristic/linguistic evidence."
+    frozen_propositions_or_routes_potentially_served: ["SRC-01 provenance","outcome-material Gospel-text inventory"]
+    limitations: ["No textual-critical adjudication has been made."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-008"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "1 Corinthians 15 tradition/redaction scholarship"
+    title_or_work: "Pre-Pauline formula/tradition analyses"
+    passage_or_scope: "1 Corinthians 15:3-7"
+    date_or_date_range: "2009 and 2014 publications"
+    language: "English secondary scholarship"
+    edition_translation_or_repository: "Oxford Academic; Cambridge Core"
+    stable_url_or_identifier:
+      - "https://academic.oup.com/book/8618/chapter-abstract/154585131"
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/resurrection-of-jesus-in-the-prepauline-formula-of-1-cor-1535/B98A7CB0EDE64897CAFEE83263BE6289"
+    access_status: "ABSTRACTS_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL"
+    provenance_notes: "Murphy-O'Connor 2009 and Ware 2014 metadata/abstracts acquired."
+    dependence_or_independence_notes: "Both treat at least part of 1 Cor 15:3-5/7 as tradition/formula material; exact boundaries and implications remain disputed and are not adjudicated here."
+    what_source_contains_observation_only:
+      - "Published source-critical literature specifically analyzes tradition/redaction and the pre-Pauline-formula question in 1 Corinthians 15."
+    frozen_propositions_or_routes_potentially_served: ["founding-stratum provenance","P-EARLY-PROCLAMATION-CONTENT","source-dependence controls"]
+    limitations: ["Full-text review remains pending where paywalled."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-009"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Tacitus"
+    title_or_work: "Annals"
+    passage_or_scope: "15.44"
+    date_or_date_range: "Early second century; exact source-use implications not adjudicated"
+    language: "Latin"
+    edition_translation_or_repository: "Dickinson College Commentaries Latin text"
+    stable_url_or_identifier: "https://dcc.dickinson.edu/tacitus-annals/15-44"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_TEXT_IN_EDUCATIONAL_EDITION"
+    provenance_notes: "Latin text available on Dickinson College Commentaries."
+    dependence_or_independence_notes: "Tacitus's information source and relation to Christian reporting are not determined here."
+    what_source_contains_observation_only:
+      - "Tacitus says the name Christians came from Christus."
+      - "He states Christus was subjected to punishment under Tiberius by Pontius Pilate."
+      - "He states the movement/superstition broke out again, first in Judea and then Rome."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","P-CRUC","cross-tradition provenance"]
+    limitations: ["Does not itself describe resurrection appearances."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-010"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish Antiquities"
+    passage_or_scope: "20.200"
+    date_or_date_range: "Antiquities composed in the 90s CE; exact date/provenance to be checked under SRC-02/SRC-19"
+    language: "Greek"
+    edition_translation_or_repository: "Lexundria Whiston translation; Oxford Academic Greek/textual discussion acquired separately"
+    stable_url_or_identifier:
+      - "https://lexundria.com/j_aj/20.200/wst"
+      - "https://academic.oup.com/book/60034/chapter/513641505"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_TEXT_PLUS_SECONDARY_TEXTUAL_DISCUSSION"
+    provenance_notes: "Primary passage translation and a modern Oxford treatment of authenticity acquired."
+    dependence_or_independence_notes: "Authenticity is an SRC-02/SRC-19 question; no final judgment assigned in G1 inventory."
+    what_source_contains_observation_only:
+      - "The extant passage refers to James as the brother of Jesus who was called Christ and reports James being brought before a council and stoned."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","founding-person network","cross-tradition provenance"]
+    limitations: ["Authenticity/phrase transmission remains subject to source-critical analysis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-011"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish Antiquities"
+    passage_or_scope: "18.63-64 / Testimonium Flavianum"
+    date_or_date_range: "Antiquities composed in the 90s CE; passage transmission disputed"
+    language: "Greek"
+    edition_translation_or_repository: "Lexundria extant-text translation; Oxford Academic Schmidt 2025 discussion; Bible.org dispute summary"
+    stable_url_or_identifier:
+      - "https://lexundria.com/j_aj/18.63-18.64/wst"
+      - "https://doi.org/10.1093/9780191957697.003.0001"
+      - "https://blogs.bible.org/the-debated-josephus-text-antiquities-18-63-64-sept-15/"
+    access_status: "ACCESSED__TRANSMISSION_DISPUTE_FLAGGED"
+    primary_or_secondary: "EXTANT_PRIMARY_TEXT_PLUS_SECONDARY_TEXTUAL_DISCUSSION"
+    provenance_notes: "Extant text acquired, alongside sources explicitly discussing disputed clauses/authenticity."
+    dependence_or_independence_notes: "No clause in this passage is used as unqualified evidence until SRC-02/SRC-19 transmission analysis is performed."
+    what_source_contains_observation_only:
+      - "The extant Greek textual tradition contains a notice about Jesus, Pilate and crucifixion, plus strongly Christian-sounding clauses about Christ and appearance alive."
+      - "Modern scholarship explicitly disputes the authenticity/original wording of parts or all of the passage."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","P-CRUC","cross-tradition provenance"]
+    limitations: ["High source-critical sensitivity; no authenticity disposition here."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-012"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Flavius Josephus / Life"
+    title_or_work: "Life (Vita)"
+    passage_or_scope: "420-421 (traditional numbering also Life 75)"
+    date_or_date_range: "Roman-period primary account; modern reproduction accessed"
+    language: "Greek primary; English Loeb quotation accessed through modern article"
+    edition_translation_or_repository: "H. St. J. Thackeray Loeb translation quoted in open-access medical-historical article"
+    stable_url_or_identifier: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/"
+    access_status: "SECONDARY_REPRODUCTION_ACCESSED__DIRECT_PRIMARY_EDITION_PENDING"
+    primary_or_secondary: "PRIMARY_PASSAGE_REPRODUCED_IN_SECONDARY_SOURCE"
+    provenance_notes: "The PMC article explicitly cites Josephus Vita 420-421 and Thackeray LCL 1926."
+    dependence_or_independence_notes: "Case is general Roman crucifixion/survival evidence, not case-specific Jesus evidence."
+    what_source_contains_observation_only:
+      - "Josephus reports seeing three acquaintances crucified, obtaining their removal and medical treatment, after which two died and one survived."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-S1-NONDEATH","D1-DEATH-STATE-VS-S1"]
+    limitations:
+      - "Direct critical/Loeb primary text still needs acquisition."
+      - "Transfer from this case to Jesus is not inferred during G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-013"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "Daniel"
+    title_or_work: "Daniel"
+    passage_or_scope: "12:2"
+    date_or_date_range: "Second Temple text; compositional dating not adjudicated here"
+    language: "Hebrew/Aramaic corpus; Hebrew verse and Greek Septuagint witnesses acquired"
+    edition_translation_or_repository: "Sefaria Hebrew/JPS; BiblIndex Septuagint"
+    stable_url_or_identifier:
+      - "https://www.sefaria.org/Daniel.12.2?lang2=en&with=Translations"
+      - "https://www.biblindex.org/en/bible/septuaginta/dn-12%3A2"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_MODERN_DIGITAL_EDITION"
+    provenance_notes: "Hebrew and Septuagint-form witnesses available through separate repositories."
+    dependence_or_independence_notes: "No inference about direct dependence on Daniel by a specific Christian passage is made here."
+    what_source_contains_observation_only:
+      - "The verse depicts many who sleep in the dust awakening, with divergent eschatological outcomes."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection semantic/context inventory"]
+    limitations: ["Semantic relation to early Christian claims remains for later lane synthesis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-014"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "2 Maccabees"
+    title_or_work: "2 Maccabees"
+    passage_or_scope: "7:9-36, especially 7:9, 11, 14, 23, 29, 36"
+    date_or_date_range: "Second Temple text; compositional dating not adjudicated here"
+    language: "Greek"
+    edition_translation_or_repository: "USCCB NABRE digital text"
+    stable_url_or_identifier: "https://bible.usccb.org/bible/2maccabees/7"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_MODERN_TRANSLATION"
+    provenance_notes: "Chapter and translation notes available."
+    dependence_or_independence_notes: "No direct dependence by early Christian texts inferred."
+    what_source_contains_observation_only:
+      - "The martyr narrative expresses expectation that the King of the universe will raise the faithful to life again."
+      - "The chapter connects restored life with bodily members and future resurrection language."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection semantic/context inventory"]
+    limitations: ["Translation-level acquisition; Greek critical text still to be added."]
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-015"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Mark"
+    title_or_work: "Mark"
+    passage_or_scope: "15:33-16:8"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Mark+15%3A33-16%3A8&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "Expands G1W1-006 backward to the death and burial sequence."
+    dependence_or_independence_notes: "No harmonization with the other Gospels."
+    what_source_contains_observation_only:
+      - "The narrative states that Jesus cried out and expired."
+      - "It describes women observing, Joseph of Arimathea receiving the body, burial in a rock-cut tomb, and women observing where he was laid."
+      - "It then contains the Mark 16:1-8 tomb visit and raised/not-here message already recorded in G1W1-006."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","burial/body-disposition inventory","P-R-BODY context","founding-proclamation report inventory"]
+    limitations: ["Narrative historicity is not inferred from inclusion."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-016"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Corinthians"
+    title_or_work: "1 Corinthians"
+    passage_or_scope: "9:1"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Corinthians+9%3A1&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text with variant note."
+    dependence_or_independence_notes: "Relation to 1 Cor 15:8 is not synthesized here."
+    what_source_contains_observation_only:
+      - "Paul asks rhetorically whether he has seen Jesus the Lord."
+    frozen_propositions_or_routes_potentially_served: ["Paul claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT"]
+    limitations: ["Nature of the claimed seeing is not classified here."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-017"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "1:15-17"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway / ESV"
+    stable_url_or_identifier: "https://www.esv.org/verses/Galatians%2B1%3A15%E2%80%9317/"
+    access_status: "ACCESSED_IN_TRANSLATION__GREEK_CRITICAL_CAPTURE_PENDING"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Translation-level acquisition only."
+    dependence_or_independence_notes: "No identification with Acts narratives or 1 Cor 15 terminology is made here."
+    what_source_contains_observation_only:
+      - "Paul says God was pleased to reveal his Son to/in him and says he did not immediately consult others or go to the earlier apostles before going to Arabia and Damascus."
+    frozen_propositions_or_routes_potentially_served: ["Paul claimed-encounter inventory","founding-stream chronology"]
+    limitations: ["Greek wording and semantic force require later lane analysis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-018"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Romans"
+    title_or_work: "Romans"
+    passage_or_scope: "1:3-4"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBLGNT digital reproduction"
+    stable_url_or_identifier: "https://exitz.org/bible/romans/1?bibles=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_REPRODUCTION"
+    provenance_notes: "Page displays SBLGNT text."
+    dependence_or_independence_notes: "Traditional/formula status is not decided here."
+    what_source_contains_observation_only:
+      - "The passage refers to Jesus Christ as descended from David according to flesh and designated Son of God in power according to a spirit/Spirit of holiness by resurrection from the dead."
+    frozen_propositions_or_routes_potentially_served: ["early proclamation content","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["Formula/tradition history and translation are reserved for SRC-02/G2."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-019"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Matthew"
+    title_or_work: "Matthew"
+    passage_or_scope: "27:45-28:20"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Matthew+27%3A45-28%3A20&version=NIV"
+    access_status: "ACCESSED_IN_TRANSLATION__GREEK_CRITICAL_CAPTURE_PENDING"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Outcome-material narrative range acquired."
+    dependence_or_independence_notes: "Relationship to Mark is not adjudicated here."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus died, was buried by Joseph of Arimathea, and the tomb was secured."
+      - "It narrates women finding the tomb after the Sabbath, an angelic message that Jesus was raised, and appearances/instructions to the women and the eleven in Galilee."
+      - "It includes a counterclaim that disciples stole the body."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","burial/body-disposition inventory","claimed-encounter inventory","deception/counterclaim inventory"]
+    limitations: ["Narrative dependence, dating, and historicity are not inferred."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-020"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Luke"
+    title_or_work: "Luke"
+    passage_or_scope: "23:44-24:49"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Luke+23%3A44-24%3A53&version=NIV"
+      - "https://www.biblegateway.com/passage/?search=Luke+24%3A1-49&version=NIV"
+    access_status: "ACCESSED_IN_TRANSLATION__GREEK_CRITICAL_CAPTURE_PENDING"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Death through appearance narrative range acquired."
+    dependence_or_independence_notes: "Relationship to Mark and other traditions not adjudicated."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus breathed his last and was buried."
+      - "It narrates women finding the tomb without the body and reporting a raised message."
+      - "It reports an appearance tradition associated with Simon, a road encounter, and an appearance to gathered disciples."
+      - "The gathered-disciple scene explicitly distinguishes the figure from a spirit/ghost by reference to hands, feet, flesh/bones, touch, and eating fish."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-R-BODY textual-report inventory","claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT"]
+    limitations: ["Embodiment truth status is not inferred from narrative content."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-021"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to John"
+    title_or_work: "John"
+    passage_or_scope: "19:28-21:25, especially 19:30-37 and 20:1-29"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=John+19%3A28-21%3A25&version=NIV"
+      - "https://www.biblegateway.com/passage/?search=John+20%3A1-29&version=NIV"
+    access_status: "ACCESSED_IN_TRANSLATION__GREEK_CRITICAL_CAPTURE_PENDING"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Outcome-material death/body/tomb/appearance narrative range acquired."
+    dependence_or_independence_notes: "Relationship to Synoptic traditions and redaction history not adjudicated."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus gave up his spirit, soldiers judged him already dead, and a soldier pierced his side."
+      - "It narrates burial, an open/empty tomb, appearances to Mary Magdalene and disciples, and a Thomas scene involving wounds/touch."
+      - "John 21 narrates a further appearance by the Sea of Tiberias and a meal scene."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-R-BODY textual-report inventory","burial/body-disposition inventory","claimed-encounter inventory"]
+    limitations: ["Narrative historicity, source independence, and chronology are not inferred."]
+    retrieved_at: "2026-10-06"
+
+inventory_state:
+  source_records: 21
+  strata_touched: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
+  wave_1_complete: false
+  primary_corpus_expansion_rounds: 2
+  known_followups:
+    - "Acquire direct Greek critical text for Galatians 1:18-19."
+    - "Acquire direct primary/critical text for Josephus Vita 420-421."
+    - "Continue first-century Christian inventory with remaining outcome-material Pauline/Gospel/Acts passages and obtain Greek critical captures for translation-only records."
+    - "Acquire fuller source-critical dating/dependence coverage for Pauline traditions and Gospel relationships."
+    - "Acquire additional Roman crucifixion evidence beyond Josephus and Tacitus."
+    - "Acquire additional Second Temple resurrection/exaltation/assumption witnesses."
+    - "Do not perform Reviewer C SRC-18 adverse-source probe until a frozen external-probe assignment is prepared."
+authorization_boundary:
+  g0_authorized: true
+  g1_authorized: true
+  g2_synthesis_started: false
+  proposition_dispositions: "NONE"
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
