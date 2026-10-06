@@ -1,0 +1,114 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE"
+status: "FROZEN_AFTER_G1__BEFORE_DIRECTION_RESULTS__NO_ONTOLOGY_OR_CAUSAL_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  q1_event_control: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  l1_operational_freeze: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+  l1_operational_freeze_blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  l2_operational_rows: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+  l2_operational_rows_blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+  l2_pointer_repair: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml"
+  l2_pointer_repair_blob_sha: "181ab979d41f2b5ae45fceb9750564a49e5748ec"
+
+rules:
+  pre_pauline: "A tradition must be independently source-critically/transmission-dated before Paul's entry into the movement; mere location inside a Pauline letter is insufficient."
+  stream_definition: "A distinguishable tradition/experience-report lineage asserted to be causally upstream of or contemporaneous with the founding proclamation; materially dependent reports collapse to one stream."
+  same_stream_rule: "Every candidate uses the same stream inventory."
+  no_double_counting: "Occurrence, ontology, identity, and causal role are separate burdens."
+  later_source_rule: "Gospel, Acts, and early-second-century reception material may preserve, develop, or reinterpret earlier claims but do not become pre-Pauline founding streams merely by repetition."
+
+founding_proclamation_identification:
+  stratum_id: "FP-01"
+  label: "EARLIEST_RECOVERABLE_RECEIVED_PAULINE_PROCLAMATION_STRATUM"
+  anchor_sources: ["G1W1-001","G1W1-002","G1W1-003","G1W1-008"]
+  identification:
+    - "1 Corinthians 15:3-8 explicitly distinguishes material Paul says he received and delivered."
+    - "Galatians 1-2 independently places Paul in contact with Cephas and James and later recognized Jerusalem leaders; this is network/provenance evidence, not proof of the content of their experiences."
+    - "The acquired source-critical literature treats at least part of 1 Corinthians 15:3-5/7 as pre-Pauline/traditional, while exact formula boundaries remain disputed."
+  frozen_core_for_foundation_analysis:
+    content: "The bounded received-tradition core includes death, burial, being raised, and an appearance claim to Cephas; extension through the Twelve and the later named list remains source-critically less secure as one unit."
+    boundary_status: "CORE_PRE_PAULINE_OR_EARLIER_THAN_PAULINE_COMPOSITION_MATERIALLY_SUPPORTED__EXACT_FORMULA_BOUNDARY_UNRESOLVED"
+  existence_vs_content:
+    existence: "An early received proclamation/tradition stratum is materially supported."
+    exact_content: "Only the bounded received core above is used without further boundary assumptions."
+  geographic_locus: "NOT_FROZEN__NO_UNSUPPORTED_LOCATION_INFERENCE"
+  dependence: "One received tradition cluster unless separate lineages are independently established."
+  c4_rule: "Re-identification or expansion of the frozen founding stratum after this freeze requires C4."
+
+encounter_stream_inventory:
+  - stream_id: "FS-01"
+    label: "RECEIVED_PRE_PAULINE_APPEARANCE_TRADITION_CLUSTER"
+    anchor_sources: ["G1W1-001","G1W1-008","G1W1-002","G1W1-003"]
+    asserted_contents:
+      secure_bounded_core:
+        - "appearance claim to Cephas"
+      additional_received_list_items_preserved_without_independence_assumption:
+        - "the Twelve"
+        - "more than five hundred"
+        - "James"
+        - "all the apostles"
+    pre_pauline_status: "QUALIFYING_FOR_L3_OCCURRENCE_ANALYSIS__EXACT_INTERNAL_BOUNDARIES_AND_SUBSTREAM_INDEPENDENCE_UNRESOLVED"
+    independence_counting: "ONE_STREAM_CLUSTER_FOR_CONVERGENCE_UNLESS_LATER_ANALYSIS_INDEPENDENTLY_WARRANTS_SUBSTREAM_SEPARATION"
+    occurrence_status: "PENDING_L3_PROPOSITION_DISPOSITION"
+    ontology_status: "UNASSIGNED"
+    identity_status: "UNASSIGNED"
+    causal_role_status: "UNASSIGNED"
+    safeguards:
+      - "Named items in the list are not counted as five independent evidential votes."
+      - "Paul's received list establishes a transmitted claim structure before it establishes event truth."
+      - "R and V use this same stream cluster."
+
+  - stream_id: "FS-02"
+    label: "PAUL_FIRST_PERSON_CLAIMED_EXPERIENCE"
+    anchor_sources: ["G1W1-016","G1W1-001"]
+    pre_pauline_status: "NONQUALIFYING_FOR_PRE_PAULINE_FOUNDING_STREAM_BY_ITSELF"
+    role: "FIRST_PERSON_EXPERIENCE_REPORT_AND_COMPARATIVE_CONTROL"
+    occurrence_status: "TEXTUAL_CLAIM_PRESENT__TARGET_EXPERIENCE_CLASS_PENDING_L3_L4_L5"
+    ontology_status: "UNASSIGNED"
+    identity_status: "UNASSIGNED"
+    causal_role_status: "CANNOT_BY_ITSELF_ESTABLISH_PRE_PAULINE_FOUNDING_CAUSATION"
+    safeguard: "Paul-A rule enforced."
+
+nonqualifying_later_report_clusters:
+  - cluster_id: "LR-01"
+    label: "SYNOPTIC_APPEARANCE_AND_TOMB_NARRATIVE_CLUSTER"
+    sources: ["G1W1-006","G1W1-019","G1W1-020"]
+    founding_stream_status: "NOT_INDEPENDENTLY_QUALIFIED_AS_PRE_PAULINE"
+    reason: "Later literary narratives with dependence/source-history unresolved; may preserve earlier material but require transmission argument."
+  - cluster_id: "LR-02"
+    label: "JOHANNINE_APPEARANCE_NARRATIVE_CLUSTER"
+    sources: ["G1W1-021","G1W1-032"]
+    founding_stream_status: "NOT_INDEPENDENTLY_QUALIFIED_AS_PRE_PAULINE"
+    reason: "Later literary source; relationship to earlier traditions remains disputed."
+  - cluster_id: "LR-03"
+    label: "ACTS_WITNESS_PROCLAMATION_CLUSTER"
+    sources: ["G1W1-022","G1W1-023","G1W1-024","G1W1-025","G1W1-031"]
+    founding_stream_status: "NOT_INDEPENDENTLY_QUALIFIED_AS_PRE_PAULINE"
+    reason: "Later Lukan literary stream with disputed earlier-source content."
+  - cluster_id: "LR-04"
+    label: "EARLY_SECOND_CENTURY_RECEPTION_CLUSTER"
+    sources: ["G1RS-053","G1RS-054","G1RS-070"]
+    founding_stream_status: "NONQUALIFYING_AS_FIRST_GENERATION_EVENT_STREAM"
+    reason: "Reception/development evidence under E5."
+
+l3_binding_effects:
+  - "P-R-FOUNDING-ENCOUNTER and P-V-FOUNDING-ENCOUNTER use FS-01 as the same frozen candidate-relevant founding stream cluster."
+  - "FS-02 can bear on individual-experience/testimony questions but cannot by itself satisfy the pre-Pauline occurrence burden."
+  - "LR-01 through LR-04 can inform transmission, identity-language, embodiment-language, sincerity, and development only under their dependence/proximity limits."
+  - "No stream in this artifact receives a veridical/nonveridical, embodied/nonembodied, personal-identity, sincerity, or causal-role finding."
+
+freeze_effect:
+  founding_proclamation_stratum_frozen: true
+  founding_encounter_stream_inventory_frozen: true
+  additions_or_removals_require_C4: true
+  direction_results_produced: false
+  proposition_dispositions_produced: false
+  candidate_statuses_produced: false
+  candidate_ranking_produced: false
+  theological_outcome: "NONE"
