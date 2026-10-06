@@ -1,0 +1,186 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L3_POST_RETURN_COVERAGE_RECHECK_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__POST_RETURN_RECHECK_OF_ALL_32_L3_PROPOSITION_SCOPES"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L3_POST_RETURN_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purpose: "Determine whether the bounded target-case psychological-mechanism return cured the 16 previously incomplete L3 proposition scopes and whether the new positive/adverse argument pair changes the coverage state of any of the 16 previously ready scopes."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "d584c5498b5325cc0999ad7b2f6c8ce98f103cd5"
+  tree: "968da63fa87a54e58a33210dda1b4cad823b88c6"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+    role: "sealed 73-record G1 baseline"
+  - path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  - path: "TFP_STRESS_2_REVIEWER_C_G2_L3_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+    blob_sha: "46da2f8d540f9fe3214b1e69c2aaa1d0a76c35a8"
+    prior_batch_summary: "16 materially complete; 16 incomplete"
+  - path: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_1.yaml"
+    blob_sha: "1f8c55661a6027b67bc5115c91090f2337d21eba"
+  - path: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_2.yaml"
+    blob_sha: "e25d9041a447df41a7b013f836e8e3cc74546334"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_46.yaml"
+    blob_sha: "4b394c76e37375ccdf4aefe1127db3c780da6bd8"
+
+prior_return_trigger:
+  exact_shared_trigger: "Acquire argument-level text of Luedemann 1994 or Goulder 1996 pp.48-61, or one argument-preserving substitute that states the actual mechanism, timing, named recipients, and group-transfer claims."
+  reviewer_named_optional_substitute: "Stephen Smith 2024 bereavement/collective-delusion transfer paper"
+  previously_incomplete_scopes:
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    - "PROPOSITION:P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSEED-SOCIAL-AMPLIFICATION"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    - "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-SOC-EXP"
+    - "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SEED-SOC"
+    - "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+
+new_targeted_evidence:
+  positive_argument:
+    id: "G2L3R-001"
+    source: "Stephen H. Smith 2024 Qeios v2"
+    access: "FULL_ARGUMENT_LEVEL_TEXT"
+    functions:
+      - "States an individual bereavement vision/hallucination mechanism."
+      - "Places Peter or another disciple as possible initiating individual after Jesus's death."
+      - "Discusses the Twelve and 500-plus as collective-appearance targets."
+      - "States group transfer through communication/social propagation and collective delusion rather than literal shared hallucination."
+      - "Places the proposed process in the transition from bereavement to early proclamation/belief."
+  adverse_argument:
+    id: "G2L3R-002"
+    source: "Andrew Loke and Nick Meader 2025, Journal for the Study of the Historical Jesus 23.1"
+    access: "FULL_PEER_REVIEWED_ACCEPTED_MANUSCRIPT"
+    functions:
+      - "Reconstructs Smith's Peter-to-group mechanism at argument level."
+      - "Reviews bereavement hallucination prevalence/modality evidence."
+      - "Challenges mass-psychogenic-illness / collective-delusion transfer to reported Jesus appearances."
+      - "Challenges cognitive-dissonance analogies and target-case comparability."
+  rule: "Neither source's conclusion is accepted by authority; the pair is used to make the target-case mechanism and its serious adverse critique reviewable."
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-R-CAUSAL"
+    - "PROPOSITION:P-V-REAL-REFERENT"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-V-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-V-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HIND-EXPERIENCE-OCCURRED"
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    - "PROPOSITION:P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-HSEED-INDIVIDUAL-EXPERIENCE"
+    - "PROPOSITION:P-HSEED-SOCIAL-AMPLIFICATION"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    - "PROPOSITION:P-S1-POSTCRUC-ACCESS"
+    - "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-IND-EXP"
+    - "PROPOSITION:P-CHET-INT"
+    - "PROPOSITION:P-CHET-NARR"
+    - "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-SOC-EXP"
+    - "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SEED-IND"
+    - "PROPOSITION:P-CHET-SEED-SOC"
+    - "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+
+recheck_standard:
+  - "Re-evaluate all 32 scopes, not only the 16 previous incompletes, because new outcome-material evidence was added before dispositions."
+  - "For the 16 formerly incomplete scopes, decide explicitly whether G2L3R-001 satisfies the exact argument-level substitute requirement."
+  - "Treat G2L3R-002 as a serious adverse argument, not as a source-access failure merely because it disputes G2L3R-001."
+  - "Do not require the original Luedemann or Goulder full texts if the acquired substitute preserves the actual mechanism, timing, recipients/targets, and group-transfer claims sufficiently for the frozen proposition route."
+  - "Conversely, do not call a scope ready if an outcome-material element of the target-case mechanism still remains absent despite the substitute."
+  - "Do not expand the source universe merely because the positive and adverse arguments disagree; disagreement belongs to later disposition analysis if the arguments are adequately represented."
+  - "FS-01 remains one received pre-Pauline appearance-tradition cluster; the new sources cannot manufacture substream independence."
+  - "Modern analogies and mechanism studies remain transfer arguments, not direct observations of the target case."
+  - "Keep occurrence, sincerity, independence, extramentality, identity, embodiment, nonveridicality, and causal role separate."
+  - "If any scope remains incomplete, state the smallest exact remaining acquisition defect."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not decide whether Smith or Loke/Meader is correct."
+  - "Do not apply discriminator directions."
+  - "Do not certify COMPARISON:<id> MAKEABLE."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "POST-RETURN EVIDENCE AUDIT"
+    - "COVERAGE STANDARD"
+    - "32-SCOPE COVERAGE TABLE"
+    - "FORMERLY INCOMPLETE SCOPE AUDIT"
+    - "CARRIED GAPS"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  exact_scope_row_count: 32
+  table_columns:
+    - "scope"
+    - "prior state"
+    - "return-trigger status"
+    - "material access/transfer limits"
+    - "coverage disposition"
+    - "reason"
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "After the bounded G2 L3 return acquisition, which of the 32 L3 proposition scopes are coverage-ready for testimony/claimed-encounter disposition, and which exact scopes, if any, still require evidence acquisition?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
