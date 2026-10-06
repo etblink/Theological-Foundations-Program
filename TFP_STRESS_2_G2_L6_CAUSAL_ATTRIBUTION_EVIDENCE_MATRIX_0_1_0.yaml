@@ -1,0 +1,270 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L6_CAUSAL_ATTRIBUTION_EVIDENCE_MATRIX"
+status: "FROZEN_EVIDENCE_BINDING_MATRIX__NO_L6_PROPOSITION_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  q1_event_control: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  causal_profile_partition: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  founding_stream_freeze_blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  l1_lane_freeze_blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  l2_lane_rows_blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+  l3_lane_freeze_blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  l4_lane_freeze_blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+  l5_lane_freeze_blob_sha: "1a5ab10c51842e843ea15361533f342d929079e0"
+
+lane:
+  id: "L6"
+  title: "Causal attribution"
+  competencies: ["founding causal priority","necessary contribution","profile matching","joint-pattern causation","later-vs-founding distinction"]
+  author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  proposition_disposition_authorized_in_this_artifact: false
+
+causal_role_ladder:
+  PRIMARY: "Principal causal driver; removing it requires a materially different candidate."
+  NECESSARY_CONTRIBUTING: "Indispensable within the frozen candidate model though not principal."
+  CONTRIBUTING_NONNECESSARY: "Material contributor but not indispensable."
+  NONE: "No warranted causal contribution established."
+  candidate_success_roles: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+  insufficient_roles: ["CONTRIBUTING_NONNECESSARY","NONE"]
+
+source_clusters:
+  C1_FOUNDING_STREAM_AND_CHRONOLOGY:
+    artifacts:
+      - "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+      - "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "FP-01 is an early received proclamation/tradition stratum; FS-01 is one received pre-Pauline appearance-tradition cluster."
+      - "Paul's own later first-person claim cannot by itself establish a pre-Pauline founding stream."
+      - "Later Gospel/Acts/reception clusters cannot be promoted into founding causal evidence by repetition."
+    limits:
+      - "Early temporal placement is not causal necessity or causal priority."
+  C2_EVENT_REFERENT_PREREQUISITES:
+    artifacts:
+      - "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "P-DEATH is supported within L2."
+      - "Early encounter/report traditions and some body/identity surfaces receive partial support in L3/L5."
+      - "Extramentality/nonembodiment are not established by L5."
+    limits:
+      - "Causal attribution cannot upgrade an ontology/identity proposition that remains below support."
+  C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS:
+    artifacts:
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "Individual-experience mechanisms have real capacity and target-case models."
+      - "Social propagation mechanisms are real capacities but genuine group subjective experiences remain unestablished."
+      - "Smith/Loke-Meader preserve a live target-case causal dispute."
+    limits:
+      - "Capacity, plausibility, and occurrence are not causal priority."
+  C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS:
+    artifacts:
+      - "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "Interpretive/scriptural framing is early and materially present."
+      - "Later narrative development is materially supported at some level."
+    limits:
+      - "Presence of interpretation does not establish PRIMARY status."
+      - "Later narrative development cannot retroactively become the founding cause."
+  C5_SURVIVAL_AND_FABRICATION_CAUSAL_INPUTS:
+    artifacts:
+      - "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "P-S1-NONDEATH has evidence against within L2 and living-Jesus access is not established."
+      - "No positive actor-specific founding fabrication evidence is established."
+      - "Ordinary transmission/propagation capacity exists but does not establish knowing false origin."
+    limits:
+      - "Failure of S1 or F does not create positive causal support for any rival."
+  C6_CAUSAL_ROLE_PARTITION:
+    artifact: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+    observations:
+      - "Every admitted causal profile has prospectively frozen PRIMARY/NECESSARY_CONTRIBUTING versus nonnecessary role boundaries."
+      - "Any serious unmatched role vector routes to REVISED_CANDIDATE_REQUIRED rather than being absorbed by the nearest candidate."
+      - "M-LATER-NARR may be necessary for a later pattern without being a founding-proclamation cause."
+      - "M-BODY is not a generic founding mechanism for R/V/H/L/C-HET."
+    limits:
+      - "Profile fit must be evidenced; it cannot be selected by residual explanatory attractiveness."
+
+l6_proposition_surfaces:
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    candidates: ["R-TRANS"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence sufficient to establish at least one pre-Pauline founding encounter stream under the frozen dependence/inventory rule; ontology and identity are separately burdened."
+    frozen_weakening_evidence: "No qualifying founding encounter stream under adequate coverage, or only later/dependent reports that fail the founding-stream rule."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C2_EVENT_REFERENT_PREREQUISITES","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-R-CAUSAL"
+    candidates: ["R-TRANS"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D2-R-FOUNDING-CAUSE-VS-RIVALS"]
+    frozen_expected_evidence: "Evidence that an embodied founding stream was PRIMARY or NECESSARY_CONTRIBUTING to the proclamation."
+    frozen_weakening_evidence: "Only CONTRIBUTING_NONNECESSARY or NONE."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C2_EVENT_REFERENT_PREREQUISITES","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-R-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-V-FOUNDING-CAUSAL"
+    candidates: ["V"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D2-V-FOUNDING-CAUSE-VS-RIVALS"]
+    frozen_expected_evidence: "Evidence that V's founding stream was PRIMARY or NECESSARY_CONTRIBUTING."
+    frozen_weakening_evidence: "Only nonnecessary/later contribution."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C2_EVENT_REFERENT_PREREQUISITES","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-V-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    candidates: ["H-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-IND-EXP is PRIMARY while other founding mechanisms satisfy the H-IND profile."
+    frozen_weakening_evidence: "Interpretive/social mechanism necessary, no founding role, or rival causal profile supported."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    candidates: ["H-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-SOC-EXP is PRIMARY while M-IND/M-INTERP are nonnecessary."
+    frozen_weakening_evidence: "Individual seed or interpretation necessary, or social mechanism nonprimary."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    candidates: ["H-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "M-IND-EXP and M-SOC-EXP each PRIMARY or NECESSARY_CONTRIBUTING, at least one PRIMARY, while M-INTERP is CONTRIBUTING_NONNECESSARY or NONE."
+    frozen_weakening_evidence: "Either experience mechanism is nonnecessary, interpretation is necessary, or no founding causal role is supported."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-INTERPRETIVE-ORIGIN"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Founding-stratum evidence supporting interpretive/scriptural mechanism as PRIMARY."
+    frozen_weakening_evidence: "Interpretive material only later or noncausal."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-L-INTERPRETIVE-ORIGIN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that individual/social experience mechanisms are only CONTRIBUTING_NONNECESSARY or NONE."
+    frozen_weakening_evidence: "Any experience mechanism is PRIMARY or NECESSARY_CONTRIBUTING."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-FOUNDING-CAUSAL"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-INTERP is PRIMARY under the common causal ladder."
+    frozen_weakening_evidence: "Interpretation only nonnecessary/later or another mechanism is necessary."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-L-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    candidates: ["S1"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D-S1-ORIGIN-VS-POSTDEATH"]
+    frozen_expected_evidence: "Evidence that survival/access was PRIMARY or NECESSARY_CONTRIBUTING."
+    frozen_weakening_evidence: "Only later/nonnecessary access."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C5_SURVIVAL_AND_FABRICATION_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    candidates: ["F"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-FOUNDING-FAB was PRIMARY under the common causal ladder."
+    frozen_weakening_evidence: "Fabrication only later/nonnecessary."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C5_SURVIVAL_AND_FABRICATION_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-F-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    candidates: ["C-HET-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-IND-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    frozen_weakening_evidence: "Any required founding module is only nonnecessary or was added/reassigned after exposure."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    candidates: ["C-HET-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SOC-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SEED-SPREAD-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_FOUNDING_STREAM_AND_CHRONOLOGY","C3_PSYCHOLOGICAL_SOCIAL_CAUSAL_INPUTS","C4_INTERPRETIVE_NARRATIVE_CAUSAL_INPUTS","C6_CAUSAL_ROLE_PARTITION"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+matrix_constraints:
+  - "No proposition receives causal success merely because its mechanism is plausible, coherent, or attested somewhere."
+  - "PRIMARY/NECESSARY_CONTRIBUTING require positive evidence of causal priority/indispensability under the frozen role ladder."
+  - "Temporal precedence or early attestation is not sufficient for causal necessity."
+  - "P-R-FOUNDING-ENCOUNTER is an occurrence proposition: FS-01 report/tradition existence must not be conflated with embodied encounter occurrence."
+  - "R and V causal propositions cannot borrow identity/ontology support across different streams."
+  - "H/C-HET psychological mechanism capacity cannot be converted into target-case causal role without target-case warrant."
+  - "L cannot treat later narrative development as founding interpretive causation."
+  - "F cannot treat general transmission capacity as evidence that founding fabrication was PRIMARY."
+  - "S1 cannot relabel appearance reports as living-Jesus causal access."
+  - "No unmatched role vector is forced into an admitted candidate; use REVISED_CANDIDATE_REQUIRED only if a serious unmatched vector is actually evidenced."
+  - "No D2/D5/D9/D-S1 direction result is issued in matrix construction."
+
+next_gate:
+  action: "Fresh Reviewer C proposition-scope coverage batch for all 15 unique L6-linked scopes."
+  proposition_dispositions_before_gate: "PROHIBITED"
