@@ -1,0 +1,80 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G0_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_REVIEWER_C__PRE_G0"
+date: "2026-10-06"
+
+purpose: "Bind the exact pre-evidence artifacts for Reviewer C's discriminator, CRITICAL-feasibility, and background-interaction review."
+
+reviewer_C_identity:
+  provider_requirement: "External provider distinct from OpenAI program lead and Anthropic Reviewers A/B"
+  model_requirement: "Strongest available reasoning model"
+  session_requirement: "Fresh lineage-disjoint session"
+  invalid_if_prior_A_or_B_reasoning_seen: true
+
+governing:
+  protocol_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  protocol_blob: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob: "02338ce337de0a115d6942962ce360427080db8d"
+
+permitted_artifacts:
+  preregistration: ["TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_16.md","01eabe113437364fd860c2ce78b2cb2e30cc591f"]
+  role_architecture: ["TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_12.yaml","49e366b435296b61d86330edf4e037a833249b12"]
+  candidate_register: ["TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml","99eeab89decd8420e61b97b17c4706e30157d0fd"]
+  q1_control: ["TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml","c05b099b07ab9bfd3b73f84910ba9b33d08d0521"]
+  causal_partition: ["TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml","1513d4476ef32222f819c51ef0623a0b16bf5bd4"]
+  c_het_map: ["TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml","ac10a99acbbb47477e5995566f918611c23017b1"]
+  coverage_map: ["TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_11.yaml","6a6b379dc68a585b6d33619d9cc0bb753535fefe"]
+  source_plan: ["TFP_STRESS_2_SOURCE_PLAN_0_1_9.yaml","824b71f7ba1ee923262933bce27b8abbe6182380"]
+  truth_critical_register: ["TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml","d5757739ac0b97f0f8c887d4c79dca599fafdc76"]
+  background_register: ["TFP_STRESS_2_BACKGROUND_REGISTER_0_1_5.yaml","a84ae2cf5fa15f49eb1127f11311c00673ee2b5f"]
+  empirical_register: ["TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml","ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"]
+  packet_manifest: ["TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml","3d293840525991ee9ea110212c1e2261922ff82c"]
+  packet_index: ["TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_8.yaml","c949c35b9db456e27dfd5065824b20c3b5387e0a"]
+  exposure_ledger: ["TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_15.yaml","c57263f0a647111b88c62298f644c487cb5c9905"]
+
+prior_gate:
+  reviewer_B_disposition: "G0_REVIEW_PASS_WITH_MINOR_REPAIRS"
+  minor_repairs_applied: ["MR-1","MR-2"]
+  reviewer_C_rule: "Do not read Reviewer A or Reviewer B reports/reasoning; use only the current frozen object-level artifacts."
+
+packet_access:
+  manifest: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml"
+  packet_count: 15
+  permitted: true
+
+assigned_discriminators:
+  - "D1-DEATH-VS-NONDEATH"
+  - "D2-FOUNDING-STREAM-CAUSATION"
+  - "D3-EMBODIED-VS-NONEMBODIED"
+  - "D4-VERIDICAL-VS-SUBJECTIVE"
+  - "D5-CAUSAL-PROFILE-PARTITION"
+  - "D9-CHET-MODULE-FIT"
+  - "D-S1-ORIGIN"
+
+assigned_backgrounds:
+  dimensions: ["BGD-1","BGD-2","BGD-3","BGD-9","BGD-10","BGD-11"]
+  initial_interactions:
+    - ["BGD-1","BGD-2","BGD-9"]
+    - ["BGD-1","BGD-11"]
+    - ["BGD-2","BGD-9","BGD-10"]
+    - ["BGD-3","BGD-9"]
+
+review_boundary:
+  external_web_or_literature: "NO"
+  resurrection_evidence_adjudication: "NO"
+  proposition_dispositions: "NO"
+  candidate_ranking: "NO"
+  G0_or_G1_authorization: "NO"
+  repository_changes: "NO"
+
+required_output:
+  discriminator_tier_direction_review: true
+  critical_feasibility_review: true
+  background_granularity_interaction_review: true
+  exact_repairs_if_needed: true
+  disposition_one_of: ["REVIEWER_C_G0_PASS","REVIEWER_C_G0_PASS_WITH_MINOR_REPAIRS","REVIEWER_C_G0_REPAIR_REQUIRED","INVALID_REVIEW"]
+
+authorization:
+  g0: false
+  g1: false
