@@ -1,0 +1,84 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "PROJECT_LEAD_INDEPENDENT_REVIEWER_D_REVERIFICATION_CHECK"
+status: "CLAUDE_D_RESULT_INDEPENDENTLY_REPRODUCED__REPAIR_REQUIRED"
+date: "2026-10-06"
+
+reviewer_D_report:
+  path: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md"
+  blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
+  reported_result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
+
+project_lead_independent_checks:
+  substantive_target:
+    commit: "43ee1477fc500a28372710f3a57127b4edcaef6a"
+    tree: "378b7904abe6afb27395ef32c5cc636adcef102a"
+  full_ledger_chain:
+    versions_checked: "0.1.0 through 0.1.76"
+    adjacent_transitions_checked: 76
+    method: "Direct repository fetch of every version; compare every pre-existing sequence entry across each adjacent transition."
+    prior_entry_mutations_found: 1
+    mutation:
+      transition: "0.1.1 -> 0.1.2"
+      sequence: 3
+      before_repository_commit: "2c3a852"
+      after_repository_commit: "2c3a852cb5a00416a6f214318a356fc0019f2edf"
+    other_prior_entry_mutation_deletion_reorder_or_midlist_insertion: false
+  stale_header_check:
+    affected_versions: "0.1.63 through 0.1.76"
+    observed_schema_version: "0.1.62"
+    observed_supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_61.yaml"
+    status_staleness: "ACTIVE_PRE_G0 persisted into post-G1/G4 ledger versions"
+    result: "D-2_REPRODUCED"
+  pre_activation_nonentry_revision:
+    transition: "0.1.0 -> 0.1.1"
+    changes_confirmed:
+      - "ledger policy activation semantics"
+      - "integrity reviewer role slot"
+      - "baseline exposure-disclosure wording/membership"
+      - "activation_record -> g0_activation_record"
+    sequence_entry_rewrite: false
+    classification: "PRE_ACTIVATION_NONENTRY_REVISION__DISCLOSURE_RECOMMENDED__NOT_APPEND_ONLY_VIOLATION"
+  amendment_before_C4_use:
+    L1:
+      amendment_sequence: 88
+      pre_C4_use_sequences: [89]
+      C4_sequence: 91
+      amendment_self_control: "unchanged row dispositions permitted before confirmation; corrected aggregate summary not outcome input"
+    L2:
+      amendment_sequence: 93
+      pre_C4_use_sequences: [94,95]
+      C4_sequence: 97
+      amendment_self_control: "unchanged row dispositions/P-DEATH record permitted before confirmation; corrected pointer awaited confirmation"
+    Phase_L:
+      amendment_sequence: 129
+      pre_C4_use_sequences: [130,131,132,133,134,138,139,140]
+      C4_sequence: 152
+      A17_binding_sequence: 153
+      uses_confirmed:
+        - "G2 completion / G3 transition request used Phase-L 0.1.1"
+        - "human G3 authorization explicitly pinned Phase-L 0.1.1"
+        - "A12 candidate status used Phase-L 0.1.1"
+        - "N3/Q1 provisional synthesis used Phase-L 0.1.1"
+        - "E1 strict audit target included the resulting G3 chain"
+      protocol_rule: "Independent amendment-direction review required before use."
+      result: "D-1_REPRODUCED"
+  C4_subsequent_result:
+    report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    Phase_L_class: "POST_EVIDENCE_NONMATERIAL"
+    effects: "NEUTRAL"
+    directional_contamination: false
+    fresh_confirmatory_cycle_required_by_direction_class: false
+
+project_lead_disposition:
+  reviewer_D_result_accepted_after_independent_replay: "LEDGER_INTEGRITY_NOT_CONFIRMED"
+  F2_closed: false
+  G5_ready: false
+  A12_N3_Q1_merits_changed_by_found_defects: false
+  required_repair:
+    - "Create a new current ledger version with correct self-identity/status headers and additive disclosure of D-1, D-2, and D-3 while preserving all prior sequence entries byte-for-byte."
+    - "Do not rewrite any historical artifact."
+    - "Re-establish current-study reliance on Phase-L 0.1.1 only after its already-completed independent C4 confirmation."
+    - "Because original G3 entry was a human-authorized gate executed before C4, obtain narrow human-owner ratification after disclosure before mechanically revalidating A12/N3/Q1."
+    - "After ratification/revalidation, obtain a narrow Reviewer-D delta check before F2 closure."
+  rationale: "Later neutral C4 establishes that the amendment is nonmaterial, but cannot make the historical before-use ordering fact disappear. Current reliance should therefore be re-established prospectively rather than treated as retroactively compliant."
