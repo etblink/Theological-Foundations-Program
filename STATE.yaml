@@ -79,53 +79,63 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G3-PHASE-N"
-  status: "G3_authorized_and_started__Phase_N_candidate_status_assignment_active"
-  purpose: "Execute comparative adjudication under Protocol Phase N from the frozen 50-proposition Phase-L consolidation, beginning with A12 candidate structural/evidential status assignment before any pairwise direction or study-level outcome."
+  id: "TFP-STRESS-2-G4-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
+  status: "G3_synthesis_frozen__G4_strict_independent_auditor_assignment_pending"
+  purpose: "Preserve the frozen G3 provisional adjudication and complete the mandatory strict-auditor disjointness handshake before any substantive G4 audit material is released."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g2_substantive_checkpoint_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
   g2_substantive_checkpoint_tree: "fe8064227fe5ad0f9b544506ffab242d30ff992a"
-  phase_L_consolidation: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
   phase_L_consolidation_blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
-  g3_human_authorization: "TFP_STRESS_2_G3_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
   g3_human_authorization_blob_sha: "6e2c935d7a8759a4862606d7c811720a406b4308"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_launch_artifact: "TFP_STRESS_2_G3_COMPARATIVE_ADJUDICATION_LAUNCH_0_1_0.yaml"
-  g3_launch_commit: "6cfdb8430e4fc659a788d8939a2023951e63bf8c"
-  inherited_exposure_ledger: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_68.yaml"
-  shared_floor_dispositions:
-    P-HIST-JESUS: "SUPPORTED_WITHIN_SCOPE"
-    P-EARLY-PROCLAMATION-EXISTENCE: "SUPPORTED_WITHIN_SCOPE"
-    P-CRUC: "SUPPORTED_WITHIN_SCOPE"
-  phase_L_consolidated_disposition_breakdown: "4_SUPPORTED__17_PARTIALLY_SUPPORTED__4_PLAUSIBLE_BUT_UNATTESTED__24_NOT_ESTABLISHED__1_EVIDENCE_AGAINST"
-  phase_L_unique_necessary_propositions: 50
-  phase_L_cross_lane_material_conflicts_remaining: 0
-  reviewer_D_status: "UNASSIGNED__POST_EVIDENCE_CONTROLS_ELIGIBLE__NOT_YET_LAUNCHED"
-  methodology_mode: "truth_seeking_comparative_adjudication__A12_status_before_pairwise_dominance"
+  g3_branch_head: "39428ed82b95c3eafc682430ae4476089f0cf3ad"
+  g3_branch_tree: "abaf7ca83382b8cdf0ebec7b8fec49fd59a09c8d"
+  phase_N_candidate_status:
+    path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
+    blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
+    summary: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  g3_provisional_outcome:
+    path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
+    blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
+    base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+    provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  q1_interpretation: "Current evidence does not warrant affirming R_EVENT as true under the frozen protocol; this is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+  pairwise_dominance_required: false
+  outcome_relevant_comparisons: []
+  reviewer_D_status: "UNASSIGNED__NO_CURRENT_DIRECTION_RESULT_CONFIDENCE_OR_AMENDMENT_LEDGER_TRIGGER"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_71.yaml"
+  exposure_ledger_blob_sha: "704a15df612a6f71810501eccca3d3c896846f08"
+  reviewer_E_status: "UNASSIGNED__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_SUBSTANTIVE_AUDIT"
+  reviewer_E_assignment_prompt: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+  reviewer_E_assignment_prompt_blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
   g0_authorized: true
   g1_closed: true
   g2_substantive_complete: true
   g3_comparative_adjudication_authorized: true
   g3_comparative_adjudication_started: true
-  candidate_status_assigned: false
+  g3_synthesis_frozen: true
+  candidate_status_assigned: true
   comparison_makeable_certified: false
   comparison_direction_results_valid: false
   candidate_ranking_permitted: false
-  proposed_study_outcome_assigned: false
+  proposed_study_outcome_assigned: true
+  g4_strict_audit_complete: false
+  g5_human_acceptance_complete: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G3-PHASE-N-A12-CANDIDATE-STATUS"
-  action: "assign_all_11_admitted_candidates_exactly_one_A12_structural_evidential_status_from_the_frozen_50_proposition_Phase_L_consolidation_then_determine_whether_any_pairwise_comparison_is_outcome_relevant"
+  id: "TFP-STRESS-2-G4-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
+  action: "relay_only_the_frozen_assignment_handshake_prompt_to_a_fresh_prospective_strict_auditor_and_return_its_exact_handshake_response_before_any_substantive_G4_packet_is_released"
   branch: "research/tfp-stress-2-resurrection-g3"
+  assignment_prompt: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+  assignment_prompt_blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
   requirements:
-    - "apply the A12 total disposition-to-eligibility map exactly"
-    - "shared floors create no relative candidate credit"
-    - "do not treat repeated lane support as independent convergence"
-    - "do not generate comparison direction results unless Phase N status leaves at least two RANKING_ELIGIBLE candidates for whom the comparison is outcome-relevant"
-    - "do not assign a G3 base outcome inside the candidate-status artifact"
-    - "do not decide whether the resurrection occurred"
-    - "do not draw divine-agent, Christianity-wide, or global theological conclusions"
+    - "prospective auditor must not inspect the repository or substantive TFP-STRESS-2 material before returning the handshake"
+    - "auditor must declare provider/model/session/fresh-context/continuation/shared-context/prior-exposure/persistent-memory/role-lineage fields"
+    - "only PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT permits assignment"
+    - "after a passing handshake, freeze the exact Reviewer-E role-control record before releasing any substantive audit packet"
+    - "do not expose the G3 outcome, candidate statuses, prior audit reasoning, or repair reasoning during the assignment handshake"
+    - "do not proceed to G5 before a valid G4 strict audit"
 
 qualification_candidate:
   version: "0.1.7"
@@ -323,7 +333,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "G3_authorized_and_started__Phase_N_active"
+    status: "G3_synthesis_frozen__G4_strict_auditor_assignment_pending"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
