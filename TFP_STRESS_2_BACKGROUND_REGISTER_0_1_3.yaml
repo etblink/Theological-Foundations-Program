@@ -1,0 +1,208 @@
+study_id: "TFP-STRESS-2"
+schema_version: "0.1.3"
+artifact: "BACKGROUND_REGISTER"
+status: "B4_A8_PASS_WITH_LIMITATIONS__ADMISSION_FREEZE_READY__GRANULARITY_PENDING_REVIEWER_C"
+supersedes: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_2.yaml"
+elicitation_method: "Reviewer A blind elicitation plus final B4/A8 review and narrow re-review; this artifact preserves only genuine framework/method backgrounds."
+empirical_refile_artifact: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+
+live_backgrounds:
+  - id: "BGD-1"
+    dimension: "ONTOLOGY_CAUSAL_CLOSURE_AND_POSTMORTEM_POSSIBILITY"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-R-BODY","P-V-REAL-REFERENT","P-V-NONEMBODIED"]
+    what_changes: "Admissibility and generic prior/likelihood treatment of nonordinary embodied or nonembodied postmortem states."
+    variants:
+      - id: "BGD-1A"
+        name: "CAUSAL_CLOSURE"
+        rule: "Nonphysical/nonordinary postmortem causal states are not admitted as real causal states."
+        retire_if: ["fails coherence/formulation review","Reviewer C finds no distinct truth-critical inference"]
+      - id: "BGD-1B"
+        name: "METAPHYSICALLY_OPEN_NONCOMMITTAL"
+        rule: "No general ontological closure assumption decides whether an unusual postmortem state is possible."
+        retire_if: ["fails coherence/formulation review","Reviewer C finds no distinct truth-critical inference"]
+      - id: "BGD-1C"
+        name: "INTERVENTIONIST_THEISM"
+        rule: "Divine action is metaphysically possible; no Jesus-specific event receives evidential credit from this premise alone."
+        retire_if: ["cannot be formulated without importing Jesus-specific evidence","Reviewer C finds it redundant with another admitted framework"]
+      - id: "BGD-1D"
+        name: "NONINTERVENTIONIST_THEISM"
+        rule: "Theism is true/possible while event-level intervention is not assumed."
+        retire_if: ["fails coherence/formulation review","Reviewer C finds no distinct truth-critical inference"]
+      - id: "BGD-1E"
+        name: "NON_THEISTIC_DUALISM_OR_SURVIVAL"
+        formulation_criteria: ["specify what persists after bodily death","specify a personal-identity criterion","state what causal interaction with the living is possible","supply serious philosophical/traditional representation or an independently defensible argument"]
+        rule: "No case-specific resurrection evidence is built into the background."
+        retire_if: ["fails one or more formulation criteria","Reviewer C finds it redundant with BGD-11 identity theory rather than an ontology background"]
+    compatibility_constraints: ["mutually contradictory ontology variants are not jointly treated as one background","no variant counts as public evidence merely by being held"]
+    source_relationship: "Philosophical sources may formulate/defend the background; empirical resurrection evidence does not define it."
+    truth_critical_relevance: "R/V admissibility and warrant sensitivity."
+    reviewer_C_tasks: ["final split/merge","interaction with BGD-2, BGD-9, BGD-10, BGD-11"]
+
+  - id: "BGD-2"
+    dimension: "ANOMALOUS_TESTIMONY_PRIOR_LIKELIHOOD"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-R-BODY","P-R-FOUNDING-ENCOUNTER","P-V-REAL-REFERENT"]
+    what_changes: "How prior plausibility and likelihood of rare anomalous/postmortem testimony enter warrant before case-specific evidence is applied."
+    variants:
+      - id: "BGD-2A"
+        name: "STRONGLY_RESTRICTIVE_ANOMALY_PRIOR"
+        rule: "Assign substantially lower prior plausibility to rare anomalous/postmortem event classes than to ordinary event classes, with the rationale disclosed before case-specific application."
+        retire_if: ["no independently defensible generic prior rationale","implementation reverse-engineers the prior from the desired Jesus-case conclusion","Reviewer C finds redundancy with BGD-10"]
+      - id: "BGD-2B"
+        name: "AGNOSTIC_OPEN_ANOMALY_PRIOR"
+        rule: "Do not impose a strong generic anomaly penalty beyond evidence-supported reference-class information; uncertainty is represented explicitly."
+        retire_if: ["cannot be operationalized without covert case-specific priors","Reviewer C finds no distinct outcome-material inference"]
+      - id: "BGD-2C"
+        name: "GENERIC_THEISTIC_ANOMALY_LIKELIHOOD"
+        rule: "Generic theism may alter the prior/likelihood of anomalous postmortem events in general."
+        restriction: "May not use Jesus-specific claims, Christian truth claims, prophecy, resurrection expectations about Jesus, or later doctrinal commitments."
+        retire_if: ["requires Jesus-specific information","lacks an independently defensible generic theistic likelihood argument","Reviewer C finds it redundant with BGD-1"]
+    compatibility_constraints: ["priors must be stated before case-specific direction results","no numerical precision beyond what the supporting argument warrants"]
+    source_relationship: "Philosophy/probability literature may formulate the prior rule; case evidence remains separate."
+    truth_critical_relevance: "Rare-event testimonial inference."
+
+  - id: "BGD-3"
+    dimension: "HISTORIOGRAPHICAL_WEIGHTING_METHOD"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-HIST-JESUS","P-CRUC","P-EARLY-PROCLAMATION-EXISTENCE","P-EARLY-PROCLAMATION-CONTENT","P-L-DEVELOPMENT-SEQUENCE"]
+    what_changes: "Methodological weighting of provenance, memory, oral transmission, and independently established testimonial proximity."
+    variants:
+      - id: "BGD-3A"
+        name: "FORMAL_SOURCE_CRITICAL_WEIGHTING"
+        weighting_rule: "Give primary methodological weight to provenance, independence, source proximity, dependence, genre, and explicit source-critical criteria."
+      - id: "BGD-3B"
+        name: "MEMORY_PROCESS_WEIGHTING"
+        weighting_rule: "Give primary methodological weight to empirically warranted memory formation/transformation constraints when evaluating recollection and development."
+      - id: "BGD-3C"
+        name: "ORAL_TRADITION_WEIGHTING"
+        weighting_rule: "Give primary methodological weight to empirically warranted oral-transmission stability/variation constraints and transmission structure."
+      - id: "BGD-3D"
+        name: "TESTIMONIAL_PROXIMITY_WEIGHTING"
+        weighting_rule: "Give greater weight to direct or near-direct testimony only when proximity and identity are independently established by evidence."
+    empirical_premise_rule: "Authorship, dating, eyewitness status, memory capacity, and transmission facts are evidence propositions, not background assumptions."
+    compatibility_constraints: ["variants are not assumed mutually exclusive; Reviewer C determines whether they are dimensions, composites, or mergeable policies"]
+    retirement_conditions: ["a variant has no distinct truth-critical consequence","its weighting rule cannot be stated without assuming the empirical premise it is supposed to evaluate"]
+    source_relationship: "Methodological scholarship formulates weighting rules; source-specific premises are adjudicated in the evidence lanes."
+
+  - id: "BGD-9"
+    dimension: "EPISTEMOLOGY_OF_TESTIMONY"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-R-FOUNDING-ENCOUNTER","P-V-REAL-REFERENT","P-HIND-NONVERIDICAL","P-HSOC-NONVERIDICAL","P-HSEED-NONVERIDICAL"]
+    what_changes: "Default defeasible warrant assigned to testimony before specific reliability/defeater evidence is applied."
+    variants:
+      - id: "BGD-9A"
+        name: "REDUCTIONIST_TESTIMONY"
+        rule: "Testimonial warrant depends on independently established evidence for speaker reliability/context."
+        retire_if: ["lacks a defensible philosophical formulation","Reviewer C finds it outcome-equivalent to another admitted variant"]
+      - id: "BGD-9B"
+        name: "ANTI_REDUCTIONIST_TESTIMONY"
+        rule: "Testimony may carry defeasible prima facie warrant absent specific defeaters."
+        retire_if: ["lacks a defensible philosophical formulation","Reviewer C finds it outcome-equivalent to another admitted variant"]
+    compatibility_constraints: ["sincerity remains distinct from truth under both variants"]
+    source_relationship: "Philosophy-of-testimony sources formulate the background; historical evidence supplies reliability/defeater facts."
+    truth_critical_relevance: "Claimed-encounter/testimony warrant."
+    reviewer_C_tasks: ["test interaction/redundancy with BGD-2 and BGD-10"]
+
+  - id: "BGD-10"
+    dimension: "REFERENCE_CLASS_SELECTION_POLICY"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-HIND-MECHANISM-SUFFICIENT","P-HSOC-MECHANISM-SUFFICIENT","P-HSEED-MECHANISM-SUFFICIENT","P-R-BODY","P-V-REAL-REFERENT"]
+    what_changes: "Which comparison class is methodologically privileged when estimating mechanism plausibility or base-rate relevance."
+    note: "Observed frequencies within a class are evidence propositions, not background commitments."
+    variants:
+      - id: "BGD-10A"
+        name: "MECHANISM_MATCHED_REFERENCE_CLASS"
+        rule: "Prefer cases matched on the proposed psychological/social mechanism and relevant population/context."
+      - id: "BGD-10B"
+        name: "MOVEMENT_LEVEL_REFERENCE_CLASS"
+        rule: "Prefer cases matched on founder death, movement structure, failed expectation, or post-founder persistence."
+      - id: "BGD-10C"
+        name: "EVENT_TYPE_ANOMALY_REFERENCE_CLASS"
+        rule: "Prefer claims/events matched on the asserted postmortem/anomalous event type, while disclosing ontology sensitivity."
+    transfer_rule: "Every selected class requires a predeclared transfer rationale and material-disanalogy record; cherry-picked favorable classes are prohibited."
+    empirical_frequency_rule: "Observed frequencies are ordinary evidence and receive provenance/uncertainty treatment."
+    retirement_conditions: ["class lacks a defensible transfer rationale","class is too heterogeneous to support the frozen inference","Reviewer C finds the policy redundant with BGD-2"]
+    source_relationship: "Method literature formulates selection policy; empirical frequencies are adjudicated separately."
+    reviewer_C_tasks: ["test ontology contamination of BGD-10C","split/merge with BGD-2 if they affect one inference"]
+
+  - id: "BGD-11"
+    dimension: "METAPHYSICS_OF_EMBODIMENT_AND_PERSONAL_IDENTITY"
+    status: "ADMIT_FOR_C_REVIEW"
+    propositions_affected: ["P-R-BODY","P-V-IDENTITY-JESUS","P-V-NONEMBODIED","P-RPHYS-CONTINUITY"]
+    what_changes: "What counts as bodily subjecthood for EMB-1 and persistence of the same personal subject for EMB-3; it does not establish historical occurrence."
+    subdimensions:
+      embodiment:
+        variants:
+          - id: "BGD-11E1"
+            name: "ORGANISMIC_PHYSICAL_EMBODIMENT"
+            rule: "Embodiment requires existence as or through a living organism/body capable of ordinary spatiotemporal causal interaction."
+          - id: "BGD-11E2"
+            name: "HYLEMORPHIC_OR_CONSTITUTIONAL_EMBODIMENT"
+            rule: "Embodiment may be constituted by an organized body-form relation rather than strict material-part continuity."
+          - id: "BGD-11E3"
+            name: "DUALIST_REEMBODIMENT"
+            rule: "A persisting nonbodily subject may become genuinely embodied again through relation to a body satisfying EMB-1 and EMB-2."
+          - id: "BGD-11E4"
+            name: "REPLICA_OR_RECONSTITUTED_EMBODIMENT"
+            rule: "A numerically new or reconstituted body may count as embodiment if the adopted identity theory licenses continuity of the subject."
+      personal_identity:
+        variants:
+          - id: "BGD-11I1"
+            name: "ORGANISMIC_OR_ANIMALIST_IDENTITY"
+            rule: "Personal identity is tied primarily to continuity of the living organism."
+          - id: "BGD-11I2"
+            name: "PSYCHOLOGICAL_CAUSAL_CONTINUITY"
+            rule: "Personal identity is tied primarily to appropriate psychological/causal continuity."
+          - id: "BGD-11I3"
+            name: "SUBSTANCE_DUALIST_IDENTITY"
+            rule: "Personal identity can persist through continuity of a nonbodily subject/substance."
+          - id: "BGD-11I4"
+            name: "CONSTITUTION_OR_REPLICA_IDENTITY"
+            rule: "Identity may depend on a specified constitution/replica relation rather than strict material continuity."
+    compatibility_constraints: ["Reviewer C must define permissible embodiment×identity combinations","BGD-11I3 overlaps BGD-1E and must be split/merged or explicitly related before G0"]
+    retirement_conditions: ["variant lacks a serious philosophical formulation","variant has no distinct effect on EMB-1/EMB-3 interpretation","Reviewer C merges it into BGD-1 without loss"]
+    source_relationship: "Metaphysical sources formulate constitution/identity criteria; source reports and historical evidence determine whether those criteria are met."
+    safeguards: ["a metaphysical theory may determine what would count as embodiment/identity; it does not prove that the event occurred","no variant may import Jesus-specific evidence"]
+    reviewer_C_tasks: ["final split/merge with BGD-1","freeze compatibility matrix across embodiment and identity subdimensions"]
+
+moved_to_evidence_propositions:
+  - former_id: "BGD-4"
+    disposition: "MOVE_TO_EVIDENCE_PROPOSITION"
+    new_ref: "EMP-SOURCE-DATING-DEPENDENCE"
+    reviewer_A_decision: "CLOSED"
+  - former_id: "BGD-5"
+    disposition: "MOVE_TO_EVIDENCE_PROPOSITION"
+    new_ref: "EMP-EXPERIENTIAL-MECHANISM-CAPACITY"
+    reviewer_A_decision: "CLOSED"
+  - former_id: "BGD-6"
+    disposition: "MOVE_TO_EVIDENCE_PROPOSITION"
+    new_ref: "EMP-CRUCIFIXION-BURIAL-PRACTICE"
+    reviewer_A_decision: "CLOSED"
+  - former_id: "BGD-7"
+    disposition: "MOVE_TO_EVIDENCE_PROPOSITION"
+    new_ref: "EMP-SECOND-TEMPLE-CONCEPTS"
+    reviewer_A_decision: "CLOSED"
+  - former_id: "BGD-8"
+    disposition: "MOVE_TO_EVIDENCE_PROPOSITION"
+    new_ref: "EMP-PAULINE-BODY-INTERPRETATION"
+    reviewer_A_decision: "CLOSED"
+
+general_rules:
+  - "A live background must be a framework/methodological assumption, not a disguised answer to a study proposition."
+  - "Empirical premises required by a background are separately adjudicated and may retire a background variant."
+  - "A background whose defining empirical premise is CONTRADICTED_WITHIN_SCOPE cannot be retained to create FRAMEWORK_DEPENDENCE."
+  - "No naturalism, supernaturalism, Christianity, skepticism, or testimony framework is silently installed as default."
+
+initial_interaction_sets_for_reviewer_C:
+  - ["BGD-1","BGD-2","BGD-9"]
+  - ["BGD-1","BGD-11"]
+  - ["BGD-2","BGD-9","BGD-10"]
+  - ["BGD-3","BGD-9"]
+
+review:
+  reviewer_A_short_confirmation: "B4_A8_PASS_WITH_LIMITATIONS__ADMISSION_FREEZE_READY"
+  reviewer_C:
+    role: "granularity_interaction_reviewer"
+    status: "PENDING_AFTER_B4_FREEZE"
+freeze_identity: null
