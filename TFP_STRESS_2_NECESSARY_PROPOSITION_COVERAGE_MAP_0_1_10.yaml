@@ -559,9 +559,9 @@
           "necessary_test_rationale": "F must specify an actual mechanism.",
           "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
           "discriminator_ids": [],
-          "direct_route": "Historical/social route for actor opportunity/transmission, without inferring motive from outcome.",
-          "expected_evidence": "Traceable actor/opportunity route.",
-          "weakening_evidence": "No plausible origin route or unregistered actors.",
+          "direct_route": "Direct positive implementation sufficiency route over a frozen closed set of two implementations: F-NONBODY-ASSERTION or F-BODY-REMOVAL. At least one must independently reach SUPPORTED_WITHIN_SCOPE. F-NONBODY-ASSERTION requires actor-specific knowing falsehood plus opportunity/access and a viable non-body assertion/transmission implementation; SRC-05 is neutral. F-BODY-REMOVAL requires actor-linked deliberate removal/concealment evidence and binds favorable/contrary SRC-05 symmetrically.",
+          "expected_evidence": "Positive warrant for at least one of the two preregistered implementations. No third implementation may be added after exposure except C4.",
+          "weakening_evidence": "Neither frozen implementation reaches SUPPORTED; or the body-removal implementation is closed by contrary body evidence and the non-body implementation independently fails its actor/opportunity/transmission burden.",
           "lanes": "L2,L4",
           "coverage_certification": "PROPOSITION:P-F-MOTIVE-OPPORTUNITY-ROUTE"
         },
@@ -970,5 +970,6 @@
     "expected_unique_necessary_propositions": 50,
     "actual_unique_necessary_propositions": 50,
     "duplicate_route_count": 0
-  }
+  },
+  "F_implementation_partition_ref": "TFP_STRESS_2_STEELMAN_F_0_1_2.yaml"
 }
