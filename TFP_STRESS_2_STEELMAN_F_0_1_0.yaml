@@ -1,0 +1,92 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "F"
+candidate_name: "Founding-stratum deliberate deception"
+status: "CONSTRUCTION_COMPLETE__HISTORICAL_PROPONENT_PLUS_SYNTHETIC_BOUNDARY__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus was crucified and died. One or more actors necessary to the founding proclamation knowingly asserted or constructed an origin-material resurrection/encounter claim they understood to be materially false, with the intention or accepted effect that the movement receive it as true. M-FOUNDING-FAB was PRIMARY. The strongest historical form includes deliberate body removal or concealment plus knowingly false resurrection proclamation, but F does not require a tomb/body-removal mechanism unless that subroute is explicitly supported."
+
+proponent_sources:
+  - id: "FORM-F-001"
+    title: "Hermann Samuel Reimarus — Fragments, resurrection-fraud discussion"
+    use: "FORMULATION_ONLY__HISTORICAL_PROPONENT"
+    contribution: "Historical explicit deception model in which disciples could remove Jesus's body and knowingly proclaim resurrection."
+  - id: "FORM-F-002"
+    title: "Albert Schweitzer — Quest of the Historical Jesus, ch. 2 on Reimarus"
+    use: "FORMULATION_ONLY__SECONDARY_PROVENANCE"
+    contribution: "Confirms the structure and historical seriousness of Reimarus's theory while also making clear that it is a specific historical theory rather than a default skeptical assumption."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-F-DELIBERATE"
+  - "P-F-ORIGIN-MATERIAL"
+  - "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+  - "P-F-TRANSMISSION-SUFFICIENT"
+  - "P-F-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Suspicion, motive, inconsistency, or later literary embellishment does not establish knowing deception."
+  - "F requires positive warrant for origin-material knowing falsehood and a viable motive/opportunity/transmission route."
+  - "Historical polemic against Christianity is formulation context only, not evidence by authority."
+  - "Mere memory error, symbolic literature, sincere interpretation, or later non-origin elaboration is not F."
+
+internal_success_conditions:
+  - "At least one founding actor necessary to the proclamation knowingly asserts or constructs a materially false origin claim."
+  - "The deception is origin-material rather than later-only."
+  - "A motive/opportunity/implementation route is independently supported at adequate strength."
+  - "Transmission from the deception into the founding proclamation is sufficient."
+  - "M-FOUNDING-FAB is PRIMARY under the common causal-role ladder."
+  - "The model does not rely merely on failure of R/V/H/L."
+
+expected_evidence:
+  - "Direct or circumstantial evidence of knowing falsehood by founding actors, not merely incorrect belief."
+  - "A feasible opportunity and implementation route for the specific deception claimed."
+  - "Transmission patterns consistent with the fabricated claim becoming founding material."
+  - "If body removal is invoked, independent body-disposition evidence connecting founding actors to that act."
+
+recognized_objections:
+  - "Sincere conviction, costly behavior, or lack of motive may weaken a deception model but do not automatically disprove it."
+  - "Later invention cannot satisfy founding-stratum deception."
+  - "A stolen-body subroute does not by itself explain encounter claims unless the deception/transmission mechanism covers them."
+  - "The historical Reimarus model may be too specific; the frozen F candidate therefore keeps deliberate founding deception broader than body theft while preserving a positive implementation burden."
+  - "No modern mechanism literature reviewed here establishes that the relevant founders deceived."
+
+caricatures_rejected:
+  - "F is not 'the disciples lied because skeptics say so'."
+  - "F does not treat every theological development as fraud."
+  - "F does not assume a body theft."
+  - "F does not equate error or sincere legend with deception."
+
+native_or_proponent_review:
+  status: "PASS_WITH_HISTORICAL_LIMITATION"
+  reviewer_or_basis: "Program-lead review of FORM-F-001 and FORM-F-002"
+  findings:
+    - "A clear historical proponent formulation of founding resurrection fraud exists."
+    - "The packet broadens beyond Reimarus's specific body-theft implementation only enough to match the frozen F proposition set; every broader implementation still bears explicit motive/opportunity/transmission burdens."
+    - "Contemporary scholarly endorsement is not claimed."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "positive knowing-falsehood burden preserved"
+    - "motive/opportunity route not inferred from speculation"
+    - "later development not misclassified as founding fraud"
+    - "body theft not assumed unless independently registered"
+    - "historical proponent source not treated as event evidence"
+  findings: []
+
+packet_stage_notes:
+  - "The mixed deception+sincere-experience class remains excluded by the frozen B4 decision; an unmatched serious mixed vector routes to REVISED_CANDIDATE_REQUIRED."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [33,34]
+freeze_identity: null
