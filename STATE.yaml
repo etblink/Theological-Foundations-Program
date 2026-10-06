@@ -80,7 +80,7 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-G1-EVIDENCE-ACQUISITION"
-  status: "G0_authorized__G1_wave_1_active"
+  status: "G0_authorized__G1_wave_1_active__33_source_records__observation_only"
   purpose: "Acquire and provenance-record source material under frozen TFP-STRESS-2 G0 architecture without synthesis, proposition dispositions, discriminator results, or candidate ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
@@ -90,13 +90,18 @@ current_scope:
   g0_human_authorization_record: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
   g0_human_authorization_record_blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
   g1_branch: "research/tfp-stress-2-resurrection-g1"
+  g1_branch_head: "e3b41322d88dface7a8c53fd222be101fe6ddd40"
+  g1_branch_tree: "84c00b1b59704bc0879d2c704289cb7b1246bbd6"
   g1_launch: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
   g1_launch_blob_sha: "69cae205ab97bbeb7e6504bb190bc64e35c73b92"
   role_architecture: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
   role_architecture_blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_18.yaml"
-  exposure_ledger_blob_sha: "8490310f525ed01d344a90760668fbcfbf35223e"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_22.yaml"
+  exposure_ledger_blob_sha: "fc6c2e8bc623f7c1c40a5209c43db690de3de3b5"
   source_plan: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+  g1_wave_1_inventory: "research/tfp-stress-2-resurrection-g1:TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_4.yaml"
+  g1_wave_1_inventory_blob_sha: "0a526590d91ffcfaa4a206a4e6a3486be3a33850"
+  g1_wave_1_source_record_count: 33
   wave_1_strata: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
   reviewer_C_adverse_probe_status: "PENDING_BEFORE_COMPLETE_OR_MATERIALLY_COMPLETE_COVERAGE"
   reviewer_D_status: "UNASSIGNED__RESERVED_FOR_POST_EVIDENCE_CONTROLS"
@@ -111,7 +116,7 @@ current_scope:
 
 next_action:
   id: "TFP-STRESS-2-G1-W1-SOURCE-INVENTORY"
-  action: "acquire_and_record_wave_1_source_material_for_SRC_01_SRC_02_SRC_04_SRC_06_SRC_19_under_observation_first_boundary"
+  action: "continue_wave_1_acquisition_to_close_remaining_SRC_01_SRC_02_SRC_04_SRC_06_SRC_19_provenance_gaps_then_prepare_reviewer_C_SRC_18_adverse_probe"
   branch: "research/tfp-stress-2-resurrection-g1"
   launch_control: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
   requirements:
