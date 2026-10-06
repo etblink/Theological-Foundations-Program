@@ -29,7 +29,7 @@ shared_definitions:
     shared_floor_reporting_rule: "Any relative candidate label must be qualified as conditional on a shared-floor P-CRUC of [disposition]."
   P_DEATH:
     proposition_id: "P-DEATH"
-    text: "Jesus entered the outcome-material biological death state as operationally defined in TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_7.yaml."
+    text: "Jesus entered the outcome-material biological death state as operationally defined in TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml."
     classification: "NOT_SHARED_FLOOR"
 
 family_rules:
