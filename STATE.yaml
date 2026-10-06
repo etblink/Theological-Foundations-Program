@@ -80,32 +80,35 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "reviewer_A_blind_elicitation_pending"
+  status: "reviewer_B_assignment_pending"
   purpose: "Prepare and independently review the TFP-STRESS-2 resurrection-claim G0 bundle without beginning substantive evidence acquisition."
   bounded: true
   qualified_protocol_version: "0.1.7"
   design_branch: "research/tfp-stress-2-resurrection-g0"
-  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_0.md"
-  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_0.yaml"
+  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_1.md"
+  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_1.yaml"
   exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
-  reviewer_A_prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_PROMPT_0_1_0.md"
+  reviewer_A_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+  reviewer_A_disposition: "BLIND_ELICITATION_COMPLETE__READY_FOR_COMPARISON"
+  reviewer_B_prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_PROMPT_0_1_0.md"
   methodology_mode: "maintenance"
   g0_authorized: false
   g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-STRESS-2-REVIEWER-A-BLIND-ELICITATION"
-  action: "run_reviewer_A_blind_candidate_background_and_claim_typing_elicitation"
-  reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
-  reviewer_A_actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
-  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_PROMPT_0_1_0.md"
+  id: "TFP-STRESS-2-REVIEWER-B-G0-CONTROL"
+  action: "run_fresh_reviewer_B_G0_control_review"
+  intended_provider: "Anthropic"
+  intended_model: "claude-opus-5-5"
+  session_requirement: "fresh_clean_session_disjoint_from_reviewer_A_and_program_lead"
+  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_PROMPT_0_1_0.md"
   requirements:
-    - "do_not_show_program_lead_candidate_or_background_lists_before_blind_elicitation_freezes"
-    - "do_not_open_TFP_STRESS_2_repository_artifacts_during_blind_phase"
-    - "do_not_search_or_adjudicate_outcome_evidence"
-    - "preserve_returned_reviewer_report_unchanged_before_comparison"
-    - "do_not_authorize_G1_or_substantive_theological_study"
+    - "do_not_expose_reviewer_A_report_or_comparison_reasoning_before_reviewer_B_report_freezes"
+    - "read_only_exact_0_1_1_preregistration_role_architecture_protocol_and_governance_sources_named_in_prompt"
+    - "do_not_search_or_adjudicate_resurrection_evidence"
+    - "preserve_returned_reviewer_B_report_unchanged_before_program_lead_repairs"
+    - "do_not_authorize_G0_G1_or_substantive_theological_study"
 qualification_candidate:
   version: "0.1.7"
   protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
@@ -305,7 +308,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "pre_g0_design__reviewer_A_pending__not_authorized"
+    status: "pre_g0_design__reviewer_A_complete__reviewer_B_pending__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
