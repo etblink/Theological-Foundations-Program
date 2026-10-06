@@ -1,0 +1,103 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "G4_POST_AUDIT_CLOSURE_AND_G5_READINESS"
+supersedes: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_0.yaml"
+status: "G4_COMPLETE__PASS_WITH_LIMITATIONS__F1_CLOSED__F2_CLOSED_AFTER_POST_C4_REPAIR__G5_HUMAN_ACCEPTANCE_READY"
+date: "2026-10-06"
+
+strict_audit:
+  report: ["TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md","bd10df2283516e4e6bfd04e367373c750d4e0d27"]
+  outcome: "PASS_WITH_LIMITATIONS"
+  blocking_findings: 0
+  major_findings: 0
+  minor_findings: 8
+
+F1:
+  status: "CLOSED"
+  reviewer_C_report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+  result: "PHASE_L_0_1_1_NEUTRAL__POST_EVIDENCE_NONMATERIAL"
+  directional_contamination: false
+  fresh_confirmatory_cycle_required: false
+
+F2:
+  original_reviewer_D_Gemini_result:
+    report: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md","84ea800532fef7fe814cc0c68f25102034330e9a"]
+    result: "LEDGER_INTEGRITY_CONFIRMED"
+    later_status: "HISTORICAL_SUPPORT_ONLY__INSUFFICIENT_AS_SOLE_BASIS"
+  reopen_reason:
+    artifact: ["TFP_STRESS_2_G4_F2_REOPEN_FOR_REVIEWER_D_REVERIFICATION_0_1_0.yaml","7d9266932a3e9e58f167dd6fb9cc93f68035d709"]
+    reason: "Program Lead had closed F2 without sufficiently deep independent replay."
+  fresh_reviewer_D_full_reverification:
+    report: ["TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md","c030bcef140db40410a92ce9b8499b998b4c0cf6"]
+    result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
+    D1: "Phase-L 0.1.1 used before required C4 confirmation; narrower L1/L2 pre-C4 citations."
+    D2: "Ledger 0.1.63-0.1.79 self-identity/status headers stale."
+    D3: "Pre-activation 0.1.0->0.1.1 non-entry revision observed."
+  project_lead_full_replay:
+    artifact: ["TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml","e741f98508e21bfec618bd9162ce2e86302c76c4"]
+    result: "D1_AND_D2_INDEPENDENTLY_REPRODUCED__D3_CONFIRMED"
+  repair_disclosure:
+    artifact: ["TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_DISCLOSURE_0_1_0.yaml","53386141c6c1bdbbaa3b285981ea70ea2aee54ad"]
+  post_C4_human_ratification:
+    request: ["TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_REQUEST_0_1_0.yaml","0b0f50001cb7b5f8ba7764d58e4da071277a4562"]
+    acceptance: ["TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md","21f2dbd11172123465a6e4b5b43a43cd19a30b0b"]
+  prospective_revalidation:
+    artifact: ["TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml","59a832f494e8207cfb7fb33d6eb714a1c5942465"]
+    result: "UNCHANGED_A12_N3_Q1"
+  reviewer_D_delta:
+    report: ["TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md","3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"]
+    result: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+  project_lead_delta_replay:
+    artifact: ["TFP_STRESS_2_PROJECT_LEAD_F2_DELTA_INDEPENDENT_CHECK_0_1_0.yaml","302fb4a9937a7da8795444d4e8f52098ef9db5ca"]
+    result: "DELTA_RESULT_INDEPENDENTLY_REPRODUCED"
+  closure:
+    artifact: ["TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_CLOSURE_0_1_0.yaml","f2585ebf6ac62eb86ed32d45dcff19e285e31ae4"]
+    status: "F2_CLOSED"
+  current_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_84.yaml"
+    blob_sha: "494f3eb7be1c8fdba0c8c5e82ffa4cc122eb1381"
+    entries: 175
+    next_sequence: 176
+    prior_entries_preserved: true
+
+core_result:
+  Phase_L_blob: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  A12: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  N3: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  Q1: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  A12_N3_Q1_changed_by_F2_repair: false
+  stronger_outcome_created: false
+  candidate_ranking_assigned: false
+  truth_warranted_candidate: null
+
+nonblocking_integrity_observations:
+  O1: "Closed descriptively in ledger 0.1.84 by binding the actual Claude Reviewer-D lineage/report."
+  O2: "Clarified in ledger 0.1.84: independent Reviewer-D delta confirmation is distinguished from Program-Lead custodian replay."
+  O3: "Sequence-157 commit-order inversion disclosed additively in ledger 0.1.84; no amendment/outcome effect."
+  O4: "Git cannot prove human authorship independently; Program Lead directly received the ratification in the human-owner conversation."
+
+PASS_WITH_LIMITATIONS_carried_forward:
+  - "Strict-audit depth was structural/provenance-only for some steelman packet content, line-level source-plan adherence, premise re-weighing, C-HET module trace, and stream trace."
+  - "Reviewer E did not diff role control 0.1.1 against 0.1.2 or compare its preserved handshake-response blob against the actual response."
+  - "Carried G1 formulation/access gaps remain, including asymmetry from unavailable or partial Lüdemann, Goulder, and Crossan material."
+  - "AI reviewer independence is procedural; independent training priors are not guaranteed."
+  - "G4 did not conduct a new evidence-acquisition cycle."
+  - "The initial Gemini Reviewer-D review used a frozen GitHub REST history snapshot rather than live GitHub access; that result was later superseded as the sole F2 basis by live-repository Claude reverification and delta confirmation."
+  - "F6 retains a defective source pin; current-study use remains restricted to a no-disposition-change reconciliation note."
+  - "Historical ledger versions 0.1.63-0.1.79 retain stale headers as preserved history; corrected self-identity begins at 0.1.80."
+  - "The pre-C4 Phase-L use chronology defect remains preserved as negative procedural knowledge even though current G3 reliance was prospectively reauthorized and revalidated."
+
+G5_readiness:
+  strict_G4_requirement_satisfied: true
+  F1_closed: true
+  F2_closed: true
+  unresolved_blocking_or_major_findings: false
+  unresolved_minor_cluster_forcing_repair: false
+  canonical_acceptance_ready: true
+  human_owner_acceptance_required: true
+  proposed_prefix_may_be_removed_before_human_acceptance: false
+  canonical_STATE_adjudication_may_be_written_before_human_acceptance: false
+
+next_action:
+  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE-REFRESHED"
+  action: "Present a refreshed exact bounded adjudication to the human owner for explicit G5 acceptance."
