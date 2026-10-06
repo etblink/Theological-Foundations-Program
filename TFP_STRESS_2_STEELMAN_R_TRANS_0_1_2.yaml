@@ -1,0 +1,99 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "R-TRANS"
+candidate_name: "Generic embodied post-death event"
+supersedes: "TFP_STRESS_2_STEELMAN_R_TRANS_0_1_1.yaml"
+status: "NB1_NB3_REPAIRED__FROZEN_FOR_NARROW_REVIEWER_B_CONFIRMATION__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_5.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
+
+native_formulation: "Jesus genuinely died and subsequently existed again in a real embodied postmortem state satisfying EMB-1 and EMB-2, and the same postmortem referent is independently identified as Jesus under EMB-3/P-R-IDENTITY-JESUS. The risen state is transformed/glorified rather than a mere return to ordinary mortal life. At least one pre-Pauline founding encounter stream involving that embodied and identified Jesus was PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation. Material-part continuity, an empty tomb, and a specific divine causal agent are not generic R-TRANS requirements."
+
+proponent_sources:
+  - id: "FORM-R-001"
+    title: "Catechism of the Catholic Church, 645-647"
+    use: "FORMULATION_ONLY"
+    contribution: "Strong tradition-native formulation of a real, transformed/glorified risen Jesus who remains bodily and personally continuous while not merely returning to ordinary earthly life."
+  - id: "FORM-R-002"
+    title: "William Lane Craig, The Bodily Resurrection of Jesus"
+    use: "FORMULATION_ONLY"
+    contribution: "Strong proponent formulation of bodily resurrection and a transformed Spirit-directed resurrection body."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-R-BODY"
+  - "P-R-IDENTITY-JESUS"
+  - "P-R-FOUNDING-ENCOUNTER"
+  - "P-R-CAUSAL"
+
+authority_commitments:
+  - "No canon, church, creed, or confessional authority is counted as public evidence merely because a proponent accepts it."
+  - "A formulation source may define what proponents mean by resurrection without establishing that resurrection occurred."
+  - "Specific divine-agent attribution is outside Q1."
+
+internal_success_conditions:
+  - "EMB-1 and EMB-2 are satisfied for the same postmortem referent under P-R-BODY."
+  - "EMB-3 is independently satisfied for that same referent under P-R-IDENTITY-JESUS."
+  - "P-DEATH is satisfied before the founding post-event encounter stream."
+  - "The embodied encounter belongs to the same frozen founding stream rather than a later unrelated report."
+  - "That stream is PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+  - "No material-continuity proposition beyond the generic embodied criteria is required for candidate adequacy."
+
+expected_evidence:
+  - "Source/tradition material that, if historically warranted, attributes genuine postmortem embodied existence to Jesus rather than merely visionary content."
+  - "Independent identity evidence linking the same postmortem referent to the pre-mortem Jesus; extramentality or embodiment alone cannot satisfy identity."
+  - "Founding-stream evidence linking the embodied referent to the earliest recoverable proclamation."
+  - "Evidence capable of satisfying spatiotemporal/causal embodiment rather than only symbolic or literary embodiment; tomb/body-disposition evidence is not used for generic R-TRANS support."
+
+body_evidence_binding:
+  rule: "BODY_TOMB_NEUTRAL_FOR_GENERIC_R_TRANS"
+  positive_use: "PROHIBITED for generic R-TRANS"
+  negative_use: "PROHIBITED for generic R-TRANS"
+  route: "All tomb/body-disposition evidence routes only to P-RPHYS-CONTINUITY in the non-status R-PHYS refinement unless a future pre-evidence C4 amendment explicitly changes this rule."
+  anti_switching: "The analyst may not decide after exposure whether a body/tomb result bears on R-TRANS or only R-PHYS."
+
+recognized_objections:
+  - "Apparent embodied narratives may be later literary development rather than founding-stream evidence."
+  - "A real postmortem referent might be nonembodied, favoring V instead of R-TRANS."
+  - "Subjective or social experience mechanisms could account for encounter reports without an embodied referent."
+  - "Material-continuity questions may remain unresolved even if generic embodiment is supported."
+  - "Background metaphysics of embodiment/personal identity may change whether EMB-1/EMB-3 are satisfied."
+
+caricatures_rejected:
+  - "R-TRANS does not mean ordinary resuscitation into unchanged mortal life."
+  - "R-TRANS does not require that every later resurrection narrative detail be historical."
+  - "R-TRANS does not require material-part continuity or an empty tomb as a truth-warrant condition."
+  - "R-TRANS does not by itself entail that God raised Jesus, that Christianity is true, or that any later doctrine is true."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_COMMON_DENOMINATOR_ACCEPTABLE"
+  reviewer_or_basis: "Program-lead pre-G0 formulation review of FORM-R-001 and FORM-R-002"
+  findings:
+    - "Reviewed proponent sources support a stronger bodily/continuity formulation than the packet's generic embodied minimum."
+    - "The packet therefore preserves the strongest shared embodied-event core without importing R-PHYS continuity as a hidden necessity."
+    - "No source reviewed requires weakening the frozen R-TRANS candidate."
+
+equal_strength_review:
+  status: "REVIEWER_B_NB1_NB3_NARROW_CONFIRMATION_PENDING"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "no authority/canon claim counted as public evidence merely by being held"
+    - "expected and weakening evidence both recorded"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "Packet preserves real embodiment, identity, founding-stream causation, and transformed-life content while not loading optional continuity burdens."
+
+packet_stage_notes:
+  - "R-PHYS is handled separately as a non-status-bearing refinement."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [7,8]
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_2.yaml"
