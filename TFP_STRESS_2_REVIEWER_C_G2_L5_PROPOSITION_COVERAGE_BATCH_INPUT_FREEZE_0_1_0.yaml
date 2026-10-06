@@ -1,0 +1,131 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__8_L5_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L5_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purpose: "Independently certify proposition-scope coverage for all 8 unique L5-linked necessary propositions before philosophical/metaphysical dispositions."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "8049f2071a011a08995649680f5341199105f79a"
+  tree: "79b9098e62ceef00c514e53d19c477870067cb39"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
+    blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
+  background_interaction_matrix:
+    path: "TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+    blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  - path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "1cfbaeb537610afe73bc3c09bafafca41906a1dc"
+  - path: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  - path: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+  - path: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "3c2e300bc5c92392c490024fcafeadeae2d51b90"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_53.yaml"
+    blob_sha: "6c2a1ad803c86e2d664cf83d3caa0d6033ed678b"
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-REAL-REFERENT"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-HIND-NONVERIDICAL"
+    - "PROPOSITION:P-HSOC-NONVERIDICAL"
+    - "PROPOSITION:P-HSEED-NONVERIDICAL"
+
+coverage_review_standard:
+  - "Audit each proposition against its exact truth-critical strata and acceptable substitutes."
+  - "Use the L5 matrix as an index/binding artifact, not evidence that coverage is sufficient."
+  - "Distinguish metaphysical coherence/possibility from historical actuality."
+  - "For P-R-BODY, verify that EMB-1/EMB-2 can be evaluated under the pre-frozen BGD-11 embodiment variants without letting tomb/body disposition satisfy generic R-TRANS."
+  - "For P-R-IDENTITY-JESUS and P-V-IDENTITY-JESUS, enforce the same-referent EMB-3 route and X-REAL-REFERENT-NONIDENTITY node rival; extramentality and embodiment cannot automatically establish identity."
+  - "For P-V-REAL-REFERENT, require coverage of subjective-only rivals and the disputed anomalous/extramental reference class without treating psi literature as survival evidence."
+  - "For P-V-NONEMBODIED, require that nonembodiment can be assessed separately from real-referent existence and identity."
+  - "For H-family nonveridicality propositions, preserve the L3/L4 mechanism evidence but do not let failure of V establish H."
+  - "Explicitly audit whether BGD-1, BGD-2, BGD-9, and BGD-11 source/formulation coverage is sufficient to carry later sensitivity analysis."
+  - "Use only the eight permitted BGD-11 embodiment×identity pairs and the prospectively narrowed background interaction matrix."
+  - "No background is evidence merely because it is live."
+  - "If a required philosophical argument/source class remains inaccessible or too thin without an adequate substitute, mark the exact scope COVERAGE_INCOMPLETE and state the smallest return trigger."
+
+targeted_external_checks:
+  allowed: true
+  rule: "Use bounded checks only to verify a specific philosophical/metaphysical coverage or provenance issue; do not conduct an open-ended literature harvest."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not choose a preferred ontology/background."
+  - "Do not apply D3, D4, or any discriminator direction."
+  - "Do not certify COMPARISON:<id> MAKEABLE."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "L5 COVERAGE STANDARD"
+    - "BACKGROUND / PHILOSOPHICAL-SENSITIVITY COVERAGE AUDIT"
+    - "L5 PROPOSITION-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS BY PROPOSITION"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  l5_table_exact_row_count: 8
+  l5_table_columns:
+    - "scope"
+    - "required strata"
+    - "substitute status"
+    - "background sensitivity"
+    - "material access/argument limits"
+    - "coverage disposition"
+    - "reason"
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "Which of the 8 L5-linked proposition scopes are independently coverage-ready for philosophical/metaphysical disposition, and which exact scopes, if any, must return to evidence acquisition first?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
