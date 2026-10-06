@@ -1,0 +1,117 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "C-HET-IND"
+candidate_name: "Heterogeneous individual-experience + interpretation + later-development model"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_3.yaml"
+causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective experience and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. Social/group experience was not necessary. Later narrative development and the frozen body-disposition module are also necessary to the candidate's overall evidence pattern but have no founding experiential causal role. No veridical postmortem referent and no founding deliberate fabrication occurred."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020 — Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement"
+    use: "FORMULATION_ONLY__M-IND-EXP"
+  - id: "FORM-L-001"
+    title: "Sutton & Le Donne 2023 — Remembering Jesus in Earliest Christianity"
+    use: "FORMULATION_ONLY__M-INTERP_AND_MEMORY"
+  - id: "FORM-L-002"
+    title: "Galbraith 2017 — Gospel of Peter resurrection narrative as scriptural fulfilment"
+    use: "FORMULATION_ONLY__M-LATER-NARR"
+  - id: "FORM-L-003"
+    title: "Schweitzer on Strauss"
+    use: "FORMULATION_ONLY__DEVELOPMENT_FAMILY"
+  - id: "TFP-SYNTHETIC-CHET"
+    title: "Frozen C-HET-IND module map"
+    use: "INTERNAL_SYNTHETIC_FORMULATION"
+    contribution: "No single school is claimed; the candidate is a preregistered conjunction of independently serious mechanisms."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-CHET-IND-EXP"
+  - "P-CHET-INT"
+  - "P-CHET-NARR"
+  - "P-CHET-BODY"
+  - "P-CHET-IND-JOINT-PATTERN"
+  - "P-CHET-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Each module must receive independent warrant; residual fit or rival failure cannot supply a missing module."
+  - "Later narrative development cannot retroactively cause the founding proclamation."
+  - "No founding deliberate fabrication is permitted."
+  - "No veridical postmortem referent is permitted."
+
+internal_success_conditions:
+  - "M-IND-EXP and M-INTERP are each PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY."
+  - "M-SOC-EXP is CONTRIBUTING_NONNECESSARY or NONE."
+  - "M-LATER-NARR is independently supported at a later stratum and remains founding-causally NONE."
+  - "P-CHET-BODY satisfies the exact packet definition below."
+  - "The exact joint pattern is supported rather than reconstructed by posthoc module assignment."
+  - "M-FOUNDING-FAB is NONE and no veridical referent is supported."
+
+body_module_freeze:
+  proposition_id: "P-CHET-BODY"
+  exact_packet_definition: "After a complete, frozen body-disposition evidence inventory under the source plan, no warranted body-disposition proposition requires an embodied postmortem Jesus, and every positively supported body-disposition fact used by this candidate remains compatible with ordinary post-death corpse disposition or non-fraudulent handling. Mere ignorance of the body's fate does not by itself satisfy P-CHET-BODY."
+  founding_causal_role: "NONE"
+  prohibited_uses:
+    - "Do not infer P-CHET-BODY merely because R is weak."
+    - "Do not invent a burial/removal pathway after exposure."
+    - "Do not treat absence of evidence as positive ordinary-disposition evidence unless the frozen complete-search rule supports the negative proposition within scope."
+  weakening_conditions:
+    - "Body-disposition evidence positively requires or strongly supports embodied postmortem continuity under the study definitions."
+    - "The candidate needs a founding deceptive body-removal mechanism, which routes toward F or REVISED_CANDIDATE_REQUIRED."
+    - "The body evidence cannot be evaluated under adequate coverage."
+
+expected_evidence:
+  - "A founding individual subjective-experience stream with independent nonveridical mechanism warrant."
+  - "Independent founding scriptural/interpretive processing that is causally necessary, not merely later commentary."
+  - "No necessary social/group experience process."
+  - "A recoverable later narrative-development sequence that elaborates but does not originate the founding cause."
+  - "Body-disposition evidence satisfying the frozen P-CHET-BODY definition."
+  - "A joint pattern in which the individual and interpretive modules are both necessary."
+
+recognized_objections:
+  - "If interpretation is nonnecessary and individual experience is PRIMARY, H-IND is the better frozen profile."
+  - "If social amplification is necessary, route to C-HET-SEED-SPREAD."
+  - "If no individual founding experience is supported, this candidate fails."
+  - "A veridical referent defeats the candidate ontology."
+  - "Requiring both interpretation and individual experience may overfit unless each has independent evidence."
+
+caricatures_rejected:
+  - "C-HET-IND is not a free-form 'some of everything' explanation."
+  - "M-LATER-NARR and M-BODY cannot be moved into the founding causal role."
+  - "Interpretation cannot be inferred merely from the existence of scripture."
+  - "Subjective experience cannot be inferred merely because a source reports an appearance."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MODULE_CONJUNCTION"
+  reviewer_or_basis: "Program-lead review of FORM-H-001 and FORM-L-001 through FORM-L-003"
+  findings:
+    - "Each component mechanism has serious literature."
+    - "No source endorses the exact TFP conjunction; the packet therefore preserves strong independent burdens for every module."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "each module independently warranted"
+    - "body-module definition is sufficiently falsifiable and not residual"
+    - "later narrative module not founding-causal"
+    - "H-IND non-subsumption boundary preserved"
+    - "no posthoc module switching"
+  findings: []
+
+packet_stage_notes:
+  - "Reviewer B should treat the packet-level P-CHET-BODY definition as a specific certification target."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27,30,31,32]
+freeze_identity: null
