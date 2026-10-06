@@ -264,16 +264,20 @@ candidate_service_map:
     body_binding: "SRC-05 is Q1-ontology-neutral for V; it is not a positive or adverse V route."
   H-IND:
     native: ["SRC-08","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for H-IND."
   H-SOC:
     native: ["SRC-09","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for H-SOC."
   H-SEED-SPREAD:
     native: ["SRC-08","SRC-09","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for H-SEED-SPREAD."
   L:
     native: ["SRC-06","SRC-07","SRC-10","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-02","SRC-05","SRC-18"]
+    adverse: ["SRC-01","SRC-02","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for L."
   S1:
     native: ["SRC-04","SRC-05","SRC-12","SRC-17"]
     adverse: ["SRC-04","SRC-05","SRC-12","SRC-18"]
@@ -292,13 +296,16 @@ candidate_service_map:
     closure_rule: "If F-BODY-REMOVAL closes, generic F depends solely on the preregistered F-NONBODY-ASSERTION route."
   C-HET-IND:
     native: ["SRC-08","SRC-10","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for C-HET-IND."
   C-HET-SOC:
     native: ["SRC-09","SRC-10","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for C-HET-SOC."
   C-HET-SEED-SPREAD:
     native: ["SRC-08","SRC-09","SRC-10","SRC-16","SRC-17"]
-    adverse: ["SRC-01","SRC-05","SRC-13","SRC-18"]
+    adverse: ["SRC-01","SRC-13","SRC-18"]
+    body_binding: "SRC-05 is Q1-ontology-neutral for C-HET-SEED-SPREAD."
 
 node_rival_service_map:
   X-NONCRUCIFIXION-SUBSTITUTION-FAMILY:
