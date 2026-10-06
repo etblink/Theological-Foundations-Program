@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_REVIEWER_C_C4_INTEGRATION_CLOSURE"
+status: "C4_BATCH_COMPLETE__A_TO_H_POST_EVIDENCE_NONMATERIAL__F1_CLOSED__F3_TO_F8_CONFIRMED"
+date: "2026-10-06"
+
+review:
+  report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+  reviewer: "xAI Grok 4.7 / fresh Reviewer-C session"
+  result:
+    items_classified: 8
+    effect_labels_used: ["NEUTRAL"]
+    aggregate_class_all_items: "POST_EVIDENCE_NONMATERIAL"
+    directional_contamination: false
+    fresh_confirmatory_cycle_required: false
+
+A17_binding_for_item_A:
+  amendment: ["TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml","150e8e711ac97be6bd31c668b0638246b57e57ab"]
+  ledger: ["TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_74.yaml","e356980502e1b676f54f7280f940c20267cd78d0"]
+  relevant_sequences:
+    original_Phase_L: 128
+    control_tail_correction: 129
+    C4_input_freeze: 150
+    C4_prompt: 151
+  note: "Reviewer C observed that item A does not itself cite A17. This closure record supplies the explicit ledger binding for cold-start use without modifying the frozen Phase-L artifact."
+  effect_on_C4_class: "NONE"
+  status: "CONTROL_GAP_CLOSED_BY_ADDITIVE_BINDING__PENDING_REVIEWER_D_LEDGER_INTEGRITY_VERIFICATION"
+
+F6_pin_caveat:
+  reviewed_F6_artifact: ["TFP_STRESS_2_G4_E1_F6_EQUAL_STANDARD_RECONCILIATION_0_1_0.yaml","d79543aa7798856988a06a1ef7c94c1dad8dc9b4"]
+  bad_cited_blob: "8f31eb6152716c75f5d850af6ce6335410102a1b"
+  on_tree_module_map: ["TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml","ac10a99acbbb47477e5995566f918611c23017b1"]
+  treatment: "DO_NOT_RETROACTIVELY_SUBSTITUTE_PIN_IN_REVIEWED_F6"
+  permitted_use: "NO_DISPOSITION_CHANGE_RECONCILIATION_NOTE_ONLY"
+  prohibited_use: "NEW_SUFFICIENCY_OR_MODULE_MAP_FINDING"
+  effect_on_C4_class: "NONE"
+
+current_confirmatory_use:
+  A: "PERMITTED_NONMATERIAL_CONTROL_TAIL_READING"
+  B: "PERMITTED_CLERICAL_SUCCESSOR"
+  C: "PERMITTED_ADDITIVE_LEDGER_ERRATA"
+  D: "PERMITTED_ADDITIVE_INVARIANCE_MAP"
+  E: "PERMITTED_REPORTING_SCOPE_CORRECTION"
+  F: "PERMITTED_NO_CHANGE_RECONCILIATION_NOTE_ONLY"
+  G: "PERMITTED_CLERICAL_ERRATA"
+  H: "PERMITTED_ADDITIVE_IDENTITY_ERRATA"
+
+outcome_integrity:
+  A12_changed: false
+  N3_changed: false
+  Q1_changed: false
+  stronger_comparative_outcome_authorized: false
+  candidate_ranking_changed: false
+  G5_readiness: "WAITING_ONLY_FOR_REVIEWER_D_LEDGER_INTEGRITY_CLOSURE"
+
+next_action:
+  id: "TFP-STRESS-2-G4-REVIEWER-D-LEDGER-INTEGRITY"
+  action: "Run fresh disjoint Reviewer-D ledger-integrity verification over the complete amendment and audit sequence, including item-A ledger binding and the historical sequence-3 rewrite disclosure."
