@@ -79,22 +79,20 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G4-F2-DELTA-CHECK"
-  status: "post_C4_G3_ratified__A12_N3_Q1_revalidated_unchanged__F2_open_pending_Reviewer_D_delta__G5_suspended"
-  purpose: "Complete the narrow Reviewer-D verification that the additive A17 repair preserved all prior ledger entries, accurately disclosed D-1/D-2/D-3, placed human ratification before prospective G3 revalidation, and introduced no further rewrite or chronology defect."
+  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE"
+  status: "G4_complete_PASS_WITH_LIMITATIONS__F1_closed__F2_closed_after_A17_repair_and_delta_confirmation__G5_human_acceptance_ready"
+  purpose: "Present the refreshed exact bounded TFP-STRESS-2 adjudication to the human owner for canonical acceptance under Protocol Phase P. The request now includes the completed F2 chronology/ledger-integrity repair history and supersedes earlier unpresented drafts."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "d5ae1c1c2caa49a0cc63f0dca2ab8a80a5e0e5d3"
-  g3_branch_tree: "32c5c97b38d59bcd7a64519293f47d1b955de6a3"
+  g3_branch_head: "0acb6927d9daf08c9e56d27e62ed88abb29ae61b"
+  g3_branch_tree: "82d4cee7afb8f67228938e3940608f03129ac48f"
   phase_L:
     blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
     C4_class: "POST_EVIDENCE_NONMATERIAL"
     C4_effects: "ALL_NEUTRAL"
     current_use_status: "PROSPECTIVELY_AUTHORIZED_AFTER_C4_AND_HUMAN_RATIFICATION"
-  human_ratification:
-    request: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_REQUEST_0_1_0.yaml"
-    request_blob_sha: "0b0f50001cb7b5f8ba7764d58e4da071277a4562"
+  post_C4_human_G3_ratification:
     acceptance: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md"
     acceptance_blob_sha: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
     status: "ACCEPTED"
@@ -106,42 +104,49 @@ current_scope:
     Q1: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
     results_changed: false
     stronger_outcome_created: false
-    current_use_status: "REVALIDATED_AFTER_C4_AND_HUMAN_RATIFICATION__PENDING_A17_DELTA_CONFIRMATION"
-  F2_repair:
-    reviewer_D_full_reverify_report_blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
-    reviewer_D_full_reverify_result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
-    project_lead_independent_check_blob_sha: "e741f98508e21bfec618bd9162ce2e86302c76c4"
-    disclosure_blob_sha: "53386141c6c1bdbbaa3b285981ea70ea2aee54ad"
-    repaired_ledger: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_83.yaml"
-    repaired_ledger_blob_sha: "1d113e77e95656f37124277d823ee321359f3b14"
-    delta_input: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_INPUT_FREEZE_0_1_0.yaml"
-    delta_input_blob_sha: "7a46c65dedcdfe54130f134f8d4aada7b2f94ba0"
-    delta_prompt: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_PROMPT_0_1_0.md"
-    delta_prompt_blob_sha: "6c3278ae242b1d86a99b29c4c75eb7dc5a89dba0"
-    delta_target_commit: "c3a98445f5744f9dc73739b8235ff01648e927ed"
-    delta_target_tree: "9d59aeb035c43b26e60ce4553b56a7240364642a"
-    F2_closed: false
-  prior_G5_acceptance_request:
-    path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml"
-    blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
-    status: "SUSPENDED__DO_NOT_ACCEPT"
+  g4:
+    strict_audit_report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
+    strict_audit_outcome: "PASS_WITH_LIMITATIONS"
+    reviewer_C_C4_report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    F1_closed: true
+    fresh_reviewer_D_full_reverify_report_blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
+    fresh_reviewer_D_full_reverify_result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
+    reviewer_D_delta_report_blob_sha: "3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
+    reviewer_D_delta_result: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+    project_lead_delta_check_blob_sha: "302fb4a9937a7da8795444d4e8f52098ef9db5ca"
+    F2_closure_blob_sha: "f2585ebf6ac62eb86ed32d45dcff19e285e31ae4"
+    F2_closed: true
+    final_closure: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_1.yaml"
+    final_closure_blob_sha: "b58f53087968864d8ba5287ff8115dd7544036fd"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_85.yaml"
+  exposure_ledger_blob_sha: "872eaadc455f4c78e26ec327fbb7b877568c9f7a"
+  G5_acceptance_request:
+    path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_3.yaml"
+    blob_sha: "efd964986caac057819b436db3afa664399eb3cd"
+    status: "READY_FOR_HUMAN_OWNER_DECISION__NOT_YET_ACCEPTED"
+    superseded_drafts:
+      - "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_1.yaml"
+      - "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_2.yaml"
+  proposed_adjudication:
+    base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+    q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    q1_interpretation: "The current evidence does not warrant affirming R_EVENT as true; this is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+    reporting_qualifier: "conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE"
   g4_strict_audit_complete: true
-  g5_human_acceptance_ready: false
+  g5_human_acceptance_ready: true
   g5_human_acceptance_complete: false
   canonical_adjudication_written: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G4-F2-REVIEWER-D-DELTA-CHECK"
-  action: "run_the_frozen_narrow_Reviewer_D_delta_check_in_the_same_Claude_session_and_return_the_complete_report_verbatim"
+  id: "TFP-STRESS-2-G5-HUMAN-OWNER-DECISION"
+  action: "obtain_explicit_human_owner_acceptance_or_hold_or_decline_for_the_exact_refreshed_G5_acceptance_request"
   branch: "research/tfp-stress-2-resurrection-g3"
-  delta_input_blob_sha: "7a46c65dedcdfe54130f134f8d4aada7b2f94ba0"
-  delta_prompt_blob_sha: "6c3278ae242b1d86a99b29c4c75eb7dc5a89dba0"
+  acceptance_request_blob_sha: "efd964986caac057819b436db3afa664399eb3cd"
   requirements:
-    - "use the same Claude Opus 5.5 Reviewer-D conversation that found D-1/D-2"
-    - "review only the repair delta at commit c3a98445f5744f9dc73739b8235ff01648e927ed / tree 9d59aeb035c43b26e60ce4553b56a7240364642a"
-    - "do not broaden into a new full audit, C4 review, ranking exercise, or Q1 re-adjudication"
-    - "Program Lead must independently check the returned delta report before F2 can close"
-    - "G5 remains suspended until F2 closes"
+    - "human owner alone may accept the canonical adjudication"
+    - "do not remove the PROPOSED_ prefix before explicit acceptance"
+    - "if accepted, create a versioned acceptance record and then mechanically update canonical STATE"
+    - "carry all PASS_WITH_LIMITATIONS limitations, F2 repair history, uncertainty, negative knowledge, downstream constraints, and reopen conditions into the canonical adjudication"
 
 qualification_candidate:
   version: "0.1.7"
