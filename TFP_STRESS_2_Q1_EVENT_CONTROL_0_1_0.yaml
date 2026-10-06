@@ -1,0 +1,128 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "Q1_EVENT_CONTROL"
+status: "PROGRAM_LEAD_REPAIR_PROPOSAL__PENDING_INDEPENDENT_REVIEW"
+qualified_protocol_version: "0.1.7"
+
+active_question:
+  id: "Q1"
+  proposition_id: "R_EVENT"
+  text: "Does the best publicly adjudicable historical evidence warrant that Jesus genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+
+positive_embodiment_definition:
+  rule: "A postmortem referent counts as EMBODIED only if all EMB-1 through EMB-3 are satisfied. This is an ontological study definition, not a claim that any source or event meets it."
+  criteria:
+    - id: "EMB-1"
+      name: "BODILY_SUBJECTHOOD"
+      criterion: "The postmortem subject has a body as a constitutive mode of existence, rather than merely being represented by an image, vision-content, apparition-content, symbol, memory, or non-bodily presence."
+      evidence_classes:
+        - "source claims about bodily form or bodily existence"
+        - "interpretive/linguistic evidence about body terminology"
+        - "philosophical/metaphysical analysis of what the claimed state entails"
+    - id: "EMB-2"
+      name: "SPATIOTEMPORAL_CAUSAL_EMBODIMENT"
+      criterion: "The postmortem body is attributed determinate spatiotemporal location and capacity for causal interaction with observers or the ordinary physical environment in ways attributable to that body."
+      evidence_classes:
+        - "claimed-encounter reports bearing on location, intersubjective access, or physical causal interaction"
+        - "body/tomb/disposition evidence where relevant"
+        - "textual and interpretive evidence bearing on whether reported interactions are literal, visionary, symbolic, or literary"
+    - id: "EMB-3"
+      name: "PERSONAL_IDENTITY"
+      criterion: "The embodied postmortem subject is the same personal subject as the pre-mortem Jesus, rather than another agent, substitute, image, or merely representational content."
+      evidence_classes:
+        - "identity claims within relevant sources"
+        - "continuity/recognition evidence where outcome-material"
+        - "philosophical/personal-identity analysis where a candidate's formulation requires it"
+  candidate_boundary:
+    R_PHYS: "Must satisfy EMB-1, EMB-2, EMB-3 and P-RPHYS-CONTINUITY."
+    R_TRANS: "Must satisfy EMB-1, EMB-2, EMB-3 and P-RTRANS-TRANSFORMED-BODILY-IDENTITY; material continuity is not required."
+    V: "By definition may satisfy extramental reality and personal identity but must fail EMB-1 or EMB-2 as an embodied mode. If it satisfies all three, it is not V."
+  BGD_8_rule: "Interpretation of Pauline or other body language may bear on what a source claims. It cannot by itself establish that EMB-1 through EMB-3 occurred historically."
+
+causal_role_ladder:
+  rule: "Every candidate's founding-causal proposition uses the same mutually exclusive causal-role vocabulary."
+  values:
+    - id: "PRIMARY"
+      definition: "Under the frozen candidate model and adequately covered evidence, the mechanism is the principal causal driver of the founding proclamation; removing it would require a materially different candidate model."
+    - id: "NECESSARY_CONTRIBUTING"
+      definition: "The mechanism is not the sole or principal driver but is indispensable within the frozen candidate model; without it, that model does not generate the founding proclamation."
+    - id: "CONTRIBUTING_NONNECESSARY"
+      definition: "The mechanism materially contributes but the frozen candidate model can still generate the founding proclamation without it."
+    - id: "NONE"
+      definition: "No warranted causal contribution to the founding proclamation is established."
+  candidate_success_threshold: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+  insufficient_for_candidate_foundational_causation: ["CONTRIBUTING_NONNECESSARY","NONE"]
+  symmetry_rule: "R, V, H-IND, H-SOC, L, S1, S2, S3, F, C-HET-IND, and C-HET-SOC are evaluated with this same ladder. No candidate receives a weaker causal threshold."
+
+pre_pauline_rule:
+  definition: "PRE-PAULINE means a claimed-encounter or proclamation tradition whose asserted origin is chronologically earlier than Paul's own entry into the Jesus-following movement, established by a frozen source-critical/transmission argument. It does not mean merely 'contained in a Pauline letter'."
+  paul_evidence_uses:
+    - id: "PAUL-A"
+      type: "Paul's first-person claimed experience"
+      founding_stream_use: "Cannot by itself establish the ontological character or causal role of any pre-Pauline founding stream for any candidate."
+    - id: "PAUL-B"
+      type: "Paul's transmission of traditions about others"
+      founding_stream_use: "May bear on a pre-Pauline founding stream only if the transmission/dating argument independently supports pre-Pauline origin."
+    - id: "PAUL-C"
+      type: "Paul's interpretive/theological vocabulary"
+      founding_stream_use: "May bear on what Paul claims; may not be projected backward as the founding stream's ontology or content without an independent transmission argument."
+  symmetry_rule: "The restriction applies equally to R, V, H, L, S, F, and C-HET. Paul's experience cannot be generalized backward as embodied, non-embodied, subjective, deceptive, or otherwise decisive for the founding stream."
+
+founding_proclamation_identification:
+  generic_criteria:
+    - "A source/tradition layer is attributable to the earliest recoverable Jesus-following movement by a documented source-critical/transmission argument."
+    - "Dating is expressed as a bounded range or relative sequence when exact dating is not warranted."
+    - "Dependence is assessed; dependent attestations do not create independent strata."
+    - "Geographic locus is not assumed unless independently supported."
+    - "The existence of a founding proclamation is separated from its exact content."
+  propositions:
+    existence: "P-EARLY-PROCLAMATION-EXISTENCE"
+    content: "P-EARLY-PROCLAMATION-CONTENT"
+  identification_freeze: "The founding-proclamation stratum is identified once after G1 source inventory and before any post-evidence direction result is proposed. The identification and dependency record are ledgered. Any later re-identification is a C4 amendment."
+  content_rule: "Whether the founding proclamation is best characterized as resurrection, exaltation, vindication, or another formulation is an evidence proposition; it is not fixed by the study question."
+
+founding_stream_control:
+  stream_definition: "A FOUNDING_ENCOUNTER_STREAM is a distinguishable tradition/experience-report lineage asserted to be causally upstream of or contemporaneous with the founding proclamation. Reports that are materially dependent on the same upstream tradition are collapsed into one stream for this purpose."
+  inventory_rule: "After G1 source inventory but before any direction result is applied, all candidate-relevant founding encounter streams are inventoried using the same generic dependence rule. The inventory is ledgered and frozen; later additions/removals use C4."
+  same_stream_rule: "Every candidate is evaluated against the same frozen stream inventory. No candidate may select a favorable subset while a rival is evaluated on a different set."
+  R_EVENT_existential_rule: "P-R-FOUNDING-ENCOUNTER may be supported only by a founding stream for which the referent evidence itself satisfies the R embodiment and identity criteria; P-R-BODY supported from a different or later evidence class cannot be conjoined with an unrelated founding experience report."
+  split_result_rule:
+    - "If different frozen streams receive materially different ontological/causal classifications, preserve each stream result."
+    - "If one already-admitted status-bearing candidate covers the full materially causal pattern under its frozen propositions, evaluate that candidate normally."
+    - "If no admitted candidate covers the materially causal mixed pattern without adding/reassigning propositions or modules, use REVISED_CANDIDATE_REQUIRED for the comparative model question rather than retrofitting a candidate."
+    - "The truth value of R_EVENT is still governed by the Q1 answer table and cannot be inferred merely from a mixed pattern."
+
+q1_conjuncts:
+  - "P-DEATH"
+  - "P-R-BODY"
+  - "P-R-FOUNDING-ENCOUNTER"
+  - "P-R-CAUSAL"
+positive_proposition_threshold: "Each Q1 conjunct must be SUPPORTED_WITHIN_SCOPE for any affirmative truth-warrant answer. PARTIALLY_SUPPORTED_WITHIN_SCOPE is insufficient for an affirmative R_EVENT truth claim."
+
+q1_answer_table:
+  precedence:
+    - order: 1
+      condition: "N3 base outcome is INSUFFICIENT_SIGNAL_WITHIN_SCOPE."
+      q1_answer: "INSUFFICIENT_SIGNAL"
+    - order: 2
+      condition: "N3 base outcome is UNDERDETERMINED_WITHIN_SCOPE, including FRAMEWORK_DEPENDENCE, MIXED_TRADEOFF, or POST_EVIDENCE_DIRECTIONAL_CONTAMINATION."
+      q1_answer: "UNDERDETERMINED"
+    - order: 3
+      condition: "At least one status-bearing R submodel satisfies all four Q1 conjuncts at SUPPORTED_WITHIN_SCOPE and the protocol's TRUTH_WARRANTED refinement attaches to that same R submodel/outcome."
+      q1_answer: "R_EVENT_TRUTH_WARRANTED"
+    - order: 4
+      condition: "At least one R submodel is the applicable ONLY_ADEQUATE, ONLY_RANKING_ELIGIBLE, or BEST_SUPPORTED relative outcome and all four Q1 conjuncts are SUPPORTED_WITHIN_SCOPE, but TRUTH_WARRANTED does not attach."
+      q1_answer: "R_EVENT_RELATIVELY_SUPPORTED_NOT_TRUTH_WARRANTED"
+    - order: 5
+      condition: "Any Q1 conjunct is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE under adequate coverage."
+      q1_answer: "R_EVENT_EVIDENCE_AGAINST"
+    - order: 6
+      condition: "R remains non-prevailing, ranking-blocked, inadequate, or one or more Q1 conjuncts are below SUPPORTED_WITHIN_SCOPE without triggering an earlier row."
+      q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  binary_reporting_rule: "The plain-language answer 'yes, warranted as true' is permitted only for R_EVENT_TRUTH_WARRANTED. Relative ranking labels are never silently translated into truth."
+  no_global_christianity_inference: true
+
+review_status:
+  reviewer_B: "PENDING_REPAIR_REVIEW"
+  reviewer_C: "PENDING_DIRECTION_AND_BACKGROUND_REVIEW"
+  g0_authorized: false
