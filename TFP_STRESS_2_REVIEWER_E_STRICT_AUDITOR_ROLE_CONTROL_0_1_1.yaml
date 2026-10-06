@@ -1,0 +1,75 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL"
+supersedes: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_0.yaml"
+status: "ASSIGNED__AUDIT_E1_REGISTERED__SUBSTANTIVE_PACKET_FREEZE_PENDING"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  assignment_handshake_prompt:
+    path: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+    blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
+  assignment_handshake_response:
+    path: "TFP_STRESS_2_REVIEWER_E_ASSIGNMENT_HANDSHAKE_RESPONSE_0_1_0.md"
+    blob_sha: "2c4ad780f7c53503b7afc69f27b6ebb38bd0b230"
+
+reviewer_E:
+  provider: "Anthropic"
+  model: "Claude Opus 5.5"
+  interface: "claude.ai chat interface"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  fresh_context: true
+  continuation_or_shared_context: false
+  prior_TFP_STRESS_2_substantive_exposure_in_conversation: "NONE"
+  prior_TFP_STRESS_2_outcome_material_role_visible_to_reviewer: "NONE"
+  visible_persistent_memory_exposure: "NONE_VISIBLE"
+  relation_to_program_lead_or_reviewers_A_B_C_D: "NO_CONTINUATION_FORK_OR_SHARED_CONTEXT_DESCENT_VISIBLE"
+  assignment_status: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+
+disclosed_limitations:
+  - "The account has an account-level persistent memory store and past-chat search tools shared across conversations."
+  - "The reviewer states those past-chat search tools were not invoked."
+  - "The injected visible memory snapshot contained no TFP-STRESS-2 references."
+  - "The full contents of un-opened memory files and unsearched past chats are unverified."
+  - "If a prior TFP role was filled by Claude on the account, underlying model/provider and account memory infrastructure may be shared even though this conversation is a separate context."
+  classification: "PROCEDURAL_INDEPENDENCE_LIMITATION__NOT_A_DISQUALIFYING_SUBSTANTIVE_EXPOSURE_ON_CURRENT_RECORD"
+
+strict_independence_evaluation:
+  program_lead_lineage_disjoint: true
+  reviewer_A_lineage_disjoint: true
+  reviewer_B_lineage_disjoint: true
+  reviewer_C_lineage_disjoint: true
+  reviewer_D_lineage_disjoint: true
+  prior_outcome_material_TFP_STRESS_2_role: false
+  substantive_G3_outcome_exposure_before_assignment: false
+  assignment_gate_passed: true
+  may_receive_substantive_audit_packet: true
+  may_modify_study: false
+  may_serve_as_G5_acceptor: false
+
+audit_registration:
+  strict_audit_id: "TFP-STRESS-2-G4-AUDIT-E1"
+  target: "G3 frozen synthesis and its full supporting frozen study record"
+  target_substantive_checkpoint:
+    commit: "481f3788ededab5a424c1b65c546efe7b2ae38fd"
+    tree: "ee9430e1aebfafff3f3e78e6e546520d63b403c8"
+  audit_status: "REGISTERED__PACKET_FREEZE_PENDING"
+  same_target_audit_index: 1
+  report_status: "PENDING"
+  planned_input_freeze_path: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE_0_1_0.yaml"
+  planned_prompt_path: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_PROMPT_0_1_0.md"
+
+prohibitions:
+  - "Do not continue/fork this role into another Claude conversation after substantive packet exposure."
+  - "Do not invoke past-chat search or open unrelated persistent-memory files while auditing."
+  - "Do not modify repository contents."
+  - "Do not coordinate substantive reasoning with Program Lead or prior Reviewers A/B/C/D during the audit."
+  - "Do not treat prior reviewer conclusions as presumptively correct."
+  - "Do not infer provider/model diversity as guarantee of independent training priors."
+
+next_action:
+  id: "TFP-STRESS-2-G4-E1-FREEZE-INPUT-AND-LAUNCH"
+  action: "Freeze exact read-only substantive audit input manifest and prompt for registered audit E1, then relay them only to this exact assigned Claude conversation."
