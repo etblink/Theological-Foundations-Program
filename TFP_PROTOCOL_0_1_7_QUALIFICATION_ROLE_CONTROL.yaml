@@ -22,4 +22,6 @@ human_owner:
   outcome_material_qualification_reviewer: false
   final_qualification_authority: true
 outcome_material_qualification_reviewers: []
+registered_strict_audits: []
+required_strict_audit_count: 1
 status: "DRAFT"
