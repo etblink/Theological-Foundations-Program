@@ -1,0 +1,76 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_POST_AUDIT_CLOSURE_AND_G5_READINESS"
+status: "G4_COMPLETE__E1_PASS_WITH_LIMITATIONS__F1_CLOSED__F2_CLOSED__G5_HUMAN_ACCEPTANCE_READY"
+date: "2026-10-06"
+
+strict_audit:
+  audit_id: "TFP-STRESS-2-G4-AUDIT-E1"
+  report: ["TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md","bd10df2283516e4e6bfd04e367373c750d4e0d27"]
+  outcome: "PASS_WITH_LIMITATIONS"
+  blocking_findings: 0
+  major_findings: 0
+  minor_findings: 8
+
+post_audit_closure:
+  F1:
+    finding: "Phase-L 0.1.0 -> 0.1.1 post-evidence control-tail amendment lacked independent C4 confirmation."
+    reviewer_C_report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+    result: "NEUTRAL__POST_EVIDENCE_NONMATERIAL"
+    directional_contamination: false
+    fresh_confirmatory_cycle_required: false
+    additive_A17_binding: ["TFP_STRESS_2_G4_REVIEWER_C_C4_INTEGRATION_CLOSURE_0_1_0.yaml","ebe2ae4292cc0b371aca78f41664ff36feec85fb"]
+    status: "CLOSED"
+
+  F2:
+    finding: "A17 ledger-integrity reviewer had not been assigned/run after amendment classification."
+    reviewer_D_report: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md","84ea800532fef7fe814cc0c68f25102034330e9a"]
+    result: "LEDGER_INTEGRITY_CONFIRMED"
+    review_basis: "Frozen offline packet including exact Reviewer-D pins, historical ledgers, current-ledger sequence index/extract, C4 records, and frozen GitHub REST history snapshot."
+    live_GitHub_access_used_by_reviewer_D: false
+    status: "CLOSED"
+
+  F3: "CLOSED_BY_ADDITIVE_LEDGER_ERRATA__C4_CONFIRMED_NONMATERIAL"
+  F4: "CLOSED_BY_BACKGROUND_INVARIANCE_RECORD__C4_CONFIRMED_NONMATERIAL"
+  F5: "CLOSED_BY_N3_REPORTING_ERRATA__C4_CONFIRMED_NONMATERIAL"
+  F6: "CLOSED_FOR_NO_DISPOSITION_CHANGE_USE_ONLY__BAD_SOURCE_PIN_PRESERVED_AS_LIMITATION__C4_CONFIRMED_NONMATERIAL"
+  F7: "CLOSED_BY_PARSEABLE_SUCCESSOR_AND_COLD_START_ERRATA__C4_CONFIRMED_NONMATERIAL"
+  F8: "CLOSED_BY_ADDITIVE_G0_BUNDLE_ERRATA__C4_CONFIRMED_NONMATERIAL"
+
+core_result:
+  A12: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  base_outcome_proposed: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  q1_answer_provisional: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  reporting_qualifier: "conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE"
+  candidate_ranking_assigned: false
+  truth_warranted_candidate: null
+  resurrection_false_found: false
+  resurrection_true_found: false
+
+G5_readiness:
+  strict_G4_requirement_satisfied: true
+  unresolved_blocking_or_major_findings: false
+  unresolved_minor_cluster_forcing_repair: false
+  F1_closed: true
+  F2_closed: true
+  canonical_acceptance_ready: true
+  human_owner_acceptance_required: true
+  proposed_prefix_may_be_removed_before_human_acceptance: false
+  canonical_STATE_adjudication_may_be_written_before_human_acceptance: false
+
+PASS_WITH_LIMITATIONS_carried_forward:
+  - "Strict-audit depth was structural/provenance-only for some steelman packet content, line-level source-plan adherence, premise re-weighing, C-HET module trace, and stream trace."
+  - "Reviewer E did not diff role control 0.1.1 against 0.1.2 or compare its preserved handshake-response blob against the actual response."
+  - "Carried G1 formulation/access gaps remain, including Lüdemann/Goulder/Crossan asymmetry."
+  - "AI independence is procedural; independent training priors are not guaranteed."
+  - "G4 did not conduct a new evidence cycle."
+  - "Reviewer D performed Git-history verification against a frozen GitHub REST history snapshot rather than live GitHub access."
+  - "F6 retains a defective source pin; current-study use is restricted to a no-disposition-change reconciliation note."
+
+supplementary_E2:
+  status: "NOT_RUN__OPTIONAL_BY_E1__NOT_REQUIRED_FOR_G5"
+  rationale: "No BLOCKING/MAJOR defect or outcome-determinative uncertainty requires another strict audit; avoid converting the protocol into an open-ended methodology loop."
+
+next_action:
+  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE"
+  action: "Present the human owner with the exact bounded adjudication, carried limitations, uncertainty, negative knowledge, and reopen conditions. Only explicit human-owner acceptance can remove the PROPOSED_ prefix and authorize the canonical STATE adjudication entry."
