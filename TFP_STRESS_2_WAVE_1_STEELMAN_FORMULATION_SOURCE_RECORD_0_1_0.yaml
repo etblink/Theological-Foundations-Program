@@ -1,0 +1,84 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD"
+status: "FORMULATION_ONLY__PRE_G0"
+date: "2026-10-05"
+
+rule:
+  use: "Candidate formulation / native-or-proponent fidelity only."
+  prohibited_use:
+    - "historical proposition disposition"
+    - "candidate ranking"
+    - "direction result"
+    - "G1 evidence acquisition"
+  note: "A source may later be independently acquired/evaluated under G1, but this pre-G0 exposure does not establish its evidential weight."
+
+sources:
+  - id: "FORM-R-001"
+    title: "Catechism of the Catholic Church, paragraphs 645-647"
+    url: "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_5/paragraph_2_on_the_third_day_he_rose_from_the_dead.index.html"
+    source_type: "tradition-native doctrinal formulation"
+    candidates_served: ["R-TRANS","R-PHYS-REFINEMENT"]
+    formulation_use: "Real risen Jesus; bodily continuity; transformed/glorified body; postmortem encounters."
+  - id: "FORM-R-002"
+    title: "William Lane Craig, The Bodily Resurrection of Jesus"
+    url: "https://www.reasonablefaith.org/writings/scholarly-writings/historical-jesus/the-bodily-resurrection-of-jesus/"
+    source_type: "proponent scholarly formulation"
+    candidates_served: ["R-TRANS","R-PHYS-REFINEMENT","V"]
+    formulation_use: "Strong physical/bodily resurrection formulation and description of competing nonphysical/spiritual-body formulations."
+  - id: "FORM-V-001"
+    title: "Marcus Borg, The Resurrection of Jesus: Physical/Bodily or Spiritual/Mystical?"
+    url: "https://marcusjborg.org/posts-by-marcus/the-resurrection-of-jesus/"
+    source_type: "proponent theological formulation"
+    candidates_served: ["V"]
+    formulation_use: "Jesus continues to live/be known as a real spiritual/divine reality while rejecting ordinary physical/bodily resurrection."
+  - id: "FORM-S1-001"
+    title: "Mirza Ghulam Ahmad, A Hidden Truth"
+    url: "https://www.alislam.org/book/hidden-truth/"
+    source_type: "tradition-native Ahmadiyya formulation"
+    candidates_served: ["S1"]
+    formulation_use: "Jesus survived crucifixion and later died naturally."
+  - id: "FORM-S1-002"
+    title: "Al Islam, Jesus in Kashmir"
+    url: "https://www.alislam.org/articles/jesus-in-kashmir/"
+    source_type: "tradition-native Ahmadiyya formulation"
+    candidates_served: ["S1"]
+    formulation_use: "Jesus survived crucifixion, recovered, met disciples, and later departed Palestine."
+  - id: "FORM-S2-001"
+    title: "Quran 4:157"
+    url: "https://quran.com/4/157?translations=20"
+    source_type: "tradition-native scripture/formulation"
+    candidates_served: ["S2","S3"]
+    formulation_use: "Denial that Jesus was killed/crucified and statement that the matter was made to appear so."
+  - id: "FORM-S2-002"
+    title: "IslamQA, Jesus in Islam"
+    url: "https://islamqa.info/en/answers/10277"
+    source_type: "traditional Sunni explanatory formulation"
+    candidates_served: ["S2"]
+    formulation_use: "Substitution/resemblance account: another man is crucified while Jesus is raised alive."
+  - id: "FORM-S23-003"
+    title: "IslamQA, The crucifixion of the Messiah between Islam and Christianity"
+    url: "https://islamqa.info/en/answers/224199"
+    source_type: "traditional Sunni explanatory survey"
+    candidates_served: ["S2","S3"]
+    formulation_use: "Records both substitution and non-substitution/confusion variants while maintaining Jesus was saved from crucifixion."
+  - id: "FORM-S3-001"
+    title: "Andrew Loke, Investigating the Resurrection of Jesus Christ, naturalistic escape hypothesis description"
+    url: "https://www.taylorfrancis.com/chapters/oa-mono/10.4324/9781003037255-5/extramental-entity-jesus-died-cross-andrew-loke"
+    source_type: "scholarly critical description of rival"
+    candidates_served: ["S3","S2"]
+    formulation_use: "Recognizes naturalistic escape/mistaken-identity candidate class in contemporary comparison literature; used only to bound the rival formulation, not as proponent support."
+
+packet_stage_findings:
+  - id: "F-W1-001"
+    candidate: "S2"
+    status: "NATIVE_FORMULATION_MISMATCH_RISK"
+    finding: "The mainstream substitution formulation reviewed says Jesus was raised/saved rather than remaining available for the packet's mandatory post-event access-and-transmission chain. The packet must not stretch the tradition to supply that chain."
+  - id: "F-W1-002"
+    candidate: "V"
+    status: "SYNTHETIC_FORMULATION"
+    finding: "A serious nonphysical/spiritual-real resurrection formulation exists, but the exact TFP V conjunction (extramental referent identical with Jesus, nonembodied, founding-causal) is more specific than any one reviewed proponent source. Packet must disclose that it is a synthetic comparison candidate."
+  - id: "F-W1-003"
+    candidate: "S3"
+    status: "SYNTHETIC_FORMULATION"
+    finding: "No single reviewed tradition-native source supplies every frozen S3 conjunct. Packet is therefore a bounded synthetic escape/rescue rival unless further native formulation is found."
