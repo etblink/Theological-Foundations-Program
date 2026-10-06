@@ -1,0 +1,96 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "PRE_EVIDENCE_AMENDMENT_RECORD"
+amendment_id: "TFP-STRESS-2-C4-S3-NODE-RIVAL-0.1.0"
+status: "APPROVED_FOR_USE__PRE_EVIDENCE"
+date: "2026-10-05"
+
+protocol:
+  version: "0.1.7"
+  amendment_rule: "C4"
+  class: "PRE_EVIDENCE_AMENDMENT"
+  rationale: "Packet-stage native/proponent fidelity review found that the admitted S3 full candidate is a synthetic conjunction not supplied by any permitted native/proponent source and not independently defended as a serious full founding-proclamation model. Retaining S3 as status-bearing would violate B1/B3."
+
+evidence_exposure_ledger:
+  current_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_8.yaml"
+  formulation_only_exposure_before_amendment: true
+  outcome_evidence_exposure_before_amendment: false
+  g1_evidence_acquisition_started: false
+
+independent_review:
+  reviewer_role: "REVIEWER_A"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  report: "TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_REPORT_0_1_0.md"
+  report_commit: "8d36f2c863e0d652cd1b09d76d3c6d2addfc5963"
+  report_blob: "42a00898233729e236146acb0485bf58da0dfa55"
+  disposition: "S3_AND_ESCAPE_MODEL_REPAIR_REQUIRED"
+  S3_disposition: "S3_RECLASSIFY_NODE_RIVAL_ONLY"
+  escape_model_disposition: "ESCAPE_MODEL_NODE_RIVAL_ONLY"
+  full_escape_candidate_status: "NOT_ESTABLISHED_UNDER_B1_B3"
+
+direction_classification:
+  S3_full_candidate:
+    effect: "ADVERSE"
+    reason: "Removed from status-bearing candidate universe."
+  broadened_noncrucifixion_node_rival:
+    effect: "NEUTRAL"
+    reason: "Preserves noncrucifixion/substitution/misidentification challenges directly at P-CRUC without granting an unestablished full founding mechanism."
+  remaining_candidate_comparative_conditions:
+    effect: "MIXED_OR_UNCLEAR"
+    reason: "Candidate count and P-CRUC architecture change before outcome evidence acquisition."
+  Q1_truth_conditions:
+    effect: "NEUTRAL"
+    reason: "Q1 itself is unchanged."
+  P_CRUC:
+    effect: "STRUCTURAL_REVIEW_REQUIRED"
+    reason: "All remaining 11 full candidates now require P-CRUC with identical truth conditions; shared-floor status must be explicitly reviewed rather than silently inferred."
+  P_DEATH:
+    effect: "NEUTRAL"
+    reason: "Remains non-shared because S1 denies it."
+
+approved_change:
+  remove_status_bearing_candidate: "S3"
+  prior_status_bearing_count: 12
+  new_status_bearing_count: 11
+  broaden_node_rival:
+    prior_id: "X-SUBSTITUTION-AS-FULL-CANDIDATE"
+    new_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+    family_scope:
+      - "divinely caused resemblance/substitution"
+      - "naturalistic arranged substitution / escape model"
+      - "mistaken identification / witness confusion"
+      - "noncrucifixion without a validated full founding mechanism"
+    S3_reclassified_role: "NODE_LEVEL_NONCRUCIFIXION_VARIANT"
+    escape_model_role: "NODE_LEVEL_CRUCIFIXION_IDENTITY_VARIANT"
+    founding_mechanism_rule: "Any outcome-material no-crucifixion-plus-founding-mechanism model not represented by an admitted candidate routes to PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE."
+  variant_verification:
+    ref: "TFP_STRESS_2_224199_FORMULATION_VARIANT_VERIFICATION_0_1_0.yaml"
+    non_substitution_confusion_distinct_model: "NOT_SEPARATELY_CONFIRMED"
+
+truth_warrant_condition_11:
+  rule: "The broadened serious noncrucifixion/substitution/misidentification family remains explicitly represented and directly tested at node level under P-CRUC. Reclassification from full candidate to node rival is not treated as a substantive defeat."
+  required_controls:
+    - "steelman-quality variant formulations"
+    - "direct P-CRUC/crucifixion-identity route"
+    - "sufficiency record"
+    - "C4 control"
+    - "revised-candidate fallback preserved"
+
+reopen_conditions:
+  - "A proponent/native formulation of the arranged-substitution escape model independently satisfies B1/B3 as a full founding-proclamation candidate."
+  - "A serious no-substitute noncrucifixion full candidate is independently formulated and satisfies B1/B3."
+  - "A new formulation source materially changes the candidate-vs-node-rival classification before G0."
+
+required_followup:
+  - "Supersede admission freeze 0.1.1 with 0.1.2."
+  - "Remove S3 from candidate register, coverage map, source-plan candidate map, and P-DEATH denied_by list."
+  - "Broaden the substitution node-rival packet into X-NONCRUCIFIXION-SUBSTITUTION-FAMILY."
+  - "Run explicit P-CRUC shared-floor review before Wave 1 packet freeze."
+  - "Do not silently promote P-CRUC to shared floor."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
