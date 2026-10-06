@@ -1,0 +1,119 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__3_SHARED_FLOOR_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_SHARED_FLOOR_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purpose: "Independently certify proposition-scope coverage for the three frozen shared-floor propositions before Phase-L cross-lane consolidation."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "b4c8fdcc751346c09b73dc484e2a9fb044eb0d35"
+  tree: "8220c7f539df75db4093855a841b1e24ae09c5e7"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "18ef0c436e1a1b9d138b8e3503b93b142d09f006"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_61.yaml"
+    blob_sha: "c125a84d79d89030c800da8d46fa0d1b628709c2"
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  - path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+    blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  - path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+  - path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml"
+  - path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml"
+  - path: "TFP_STRESS_2_P_CRUC_SHARED_FLOOR_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-HIST-JESUS"
+    - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+    - "PROPOSITION:P-CRUC"
+
+review_standard:
+  - "Audit each proposition against its exact required strata, substitutes, access state, node-rival route, dependence rules, and probative-absence semantics."
+  - "The shared-floor evidence matrix is an index/binding artifact, not proof that coverage is sufficient."
+  - "No consensus shortcut is allowed."
+  - "Religious/traditional authority sources used to formulate node rivals are not historical evidence by authority."
+  - "Later sources are neither automatically excluded nor automatically independent."
+  - "For P-HIST-JESUS, preserve the strongest serious nonhistoricity node rival and distinguish historical-subject evidence from later narrative elaboration."
+  - "For P-EARLY-PROCLAMATION-EXISTENCE, test existence of a recoverable founding proclamation only; do not require exact formula boundaries, geography, ontology, or event truth if those are separate propositions."
+  - "For P-CRUC, test attribution of the crucifixion event to Jesus against the frozen noncrucifixion/substitution/misidentification family; do not give the node rival founding-causal credit."
+  - "Synoptic dependence, Tacitus-source uncertainty, Josephus transmission issues, and 1 Corinthians 15 formula-boundary uncertainty must be carried rather than erased."
+  - "Absence cannot exceed the prospectively frozen absence ceilings."
+  - "Coverage success/failure has no relative-ranking effect because these are shared-floor propositions."
+  - "If any scope is incomplete, identify the smallest exact missing source/access/analysis defect."
+
+targeted_external_checks:
+  allowed: true
+  rule: "Use only bounded checks needed to verify a specific shared-floor provenance/coverage claim. Do not conduct an open-ended literature harvest."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not create relative candidate credit from a shared-floor result."
+  - "Do not apply D0 as a candidate-selecting discriminator."
+  - "Do not certify any COMPARISON:<id> MAKEABLE state."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "SHARED-FLOOR COVERAGE STANDARD"
+    - "P-HIST-JESUS COVERAGE AUDIT"
+    - "P-EARLY-PROCLAMATION-EXISTENCE COVERAGE AUDIT"
+    - "P-CRUC COVERAGE AUDIT"
+    - "3-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  exact_scope_row_count: 3
+  table_columns:
+    - "scope"
+    - "required strata"
+    - "substitute / node-rival status"
+    - "material provenance/dependence limits"
+    - "coverage disposition"
+    - "reason"
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "Which of the three shared-floor proposition scopes are independently coverage-ready for Phase-L truth disposition, and which exact scopes, if any, must return to evidence acquisition first?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
