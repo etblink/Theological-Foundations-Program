@@ -1,0 +1,1437 @@
+{
+  "schema_version": "0.1.2",
+  "study_id": "TFP-STRESS-2",
+  "artifact": "NECESSARY_PROPOSITION_COVERAGE_MAP",
+  "status": "RR_PRIME_CANDIDATE_SET_ALIGNED__PENDING_REVIEWER_B_CERTIFICATION",
+  "supersedes": "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml",
+  "qualified_protocol_version": "0.1.7",
+  "candidate_register_ref": "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_3.yaml",
+  "q1_control_ref": "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_2.yaml",
+  "c_het_module_map_ref": "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml",
+  "causal_profile_ref": "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml",
+  "route_principle": {
+    "comparative": "COMPARATIVE_ROUTE only when at least one proposed-CRITICAL pairwise discriminator directly bears on the necessary proposition.",
+    "candidate_specific": "NONCOMPARATIVE_CANDIDATE_SPECIFIC only when pairwise treatment would distort the candidate's own occurrence/mechanism/identity burden; direct route is mandatory.",
+    "shared_floor": "NONCOMPARATIVE_SHARED_FLOOR only when every admitted full candidate requires the proposition under identical truth conditions.",
+    "symmetry": "Analogous propositions follow the same route principle; rival failure cannot substitute for a candidate's own burden."
+  },
+  "proposed_critical_discriminators": [
+    "D0-CRUCIFIXION-ATTRIBUTION",
+    "D1-DEATH-VS-NONDEATH",
+    "D2-FOUNDING-STREAM-CAUSATION",
+    "D3-EMBODIED-VS-NONEMBODIED",
+    "D4-VERIDICAL-VS-SUBJECTIVE",
+    "D5-CAUSAL-PROFILE-PARTITION",
+    "D9-CHET-MODULE-FIT",
+    "D-S1-ORIGIN",
+    "D-S2-ORIGIN",
+    "D-S3-ORIGIN"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "R-TRANS",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-R-BODY",
+          "necessary_test_rationale": "R requires embodied postmortem existence.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D3-EMBODIED-VS-NONEMBODIED"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence bearing on EMB-1, EMB-2, and EMB-3 in the frozen Q1 control.",
+          "weakening_evidence": "Only nonembodied/subjective/nonidentity evidence or failure of embodiment criteria.",
+          "lanes": "L1,L3,L5",
+          "coverage_certification": "PROPOSITION:P-R-BODY"
+        },
+        {
+          "proposition_id": "P-R-FOUNDING-ENCOUNTER",
+          "necessary_test_rationale": "R_EVENT requires the embodiment evidence to belong to the founding stream itself.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D3-EMBODIED-VS-NONEMBODIED"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence tying an embodied/identified referent to the same frozen pre-Pauline founding stream.",
+          "weakening_evidence": "Embodiment only in later/unrelated strata or founding stream classified otherwise.",
+          "lanes": "L1,L3,L6",
+          "coverage_certification": "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+        },
+        {
+          "proposition_id": "P-R-CAUSAL",
+          "necessary_test_rationale": "R must satisfy the common founding causal threshold.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that an embodied founding stream was PRIMARY or NECESSARY_CONTRIBUTING to the proclamation.",
+          "weakening_evidence": "Only CONTRIBUTING_NONNECESSARY or NONE.",
+          "lanes": "L1,L3,L6",
+          "coverage_certification": "PROPOSITION:P-R-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "V",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-V-REAL-REFERENT",
+          "necessary_test_rationale": "V requires a real extramental referent.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D4-VERIDICAL-VS-SUBJECTIVE"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence favoring an extramental postmortem referent over subjective-only mechanisms.",
+          "weakening_evidence": "Subjective-only explanation supported or referent evidence below threshold.",
+          "lanes": "L3,L5",
+          "coverage_certification": "PROPOSITION:P-V-REAL-REFERENT"
+        },
+        {
+          "proposition_id": "P-V-IDENTITY-JESUS",
+          "necessary_test_rationale": "V requires the referent to be Jesus, not merely real.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Identity/recognition/source route plus X-REAL-REFERENT-NONIDENTITY rival.",
+          "expected_evidence": "Evidence identifying the extramental referent with Jesus.",
+          "weakening_evidence": "Referent identity unspecified, misidentified, or attributed to another agent.",
+          "lanes": "L1,L3,L5",
+          "coverage_certification": "PROPOSITION:P-V-IDENTITY-JESUS"
+        },
+        {
+          "proposition_id": "P-V-NONEMBODIED",
+          "necessary_test_rationale": "V is distinct from R only if the referent is nonembodied.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D3-EMBODIED-VS-NONEMBODIED"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence supporting a veridical referent that fails EMB-1 or EMB-2.",
+          "weakening_evidence": "All embodiment criteria supported.",
+          "lanes": "L1,L3,L5",
+          "coverage_certification": "PROPOSITION:P-V-NONEMBODIED"
+        },
+        {
+          "proposition_id": "P-V-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "V must satisfy the common causal threshold.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that V's founding stream was PRIMARY or NECESSARY_CONTRIBUTING.",
+          "weakening_evidence": "Only nonnecessary/later contribution.",
+          "lanes": "L3,L6",
+          "coverage_certification": "PROPOSITION:P-V-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "H-IND",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-HIND-EXPERIENCE-OCCURRED",
+          "necessary_test_rationale": "H-IND requires positive evidence for its own experience process.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential route establishing a founding individual subjective-experience stream.",
+          "expected_evidence": "Evidence supporting genuine founding individual subjective experiences.",
+          "weakening_evidence": "No such stream supported.",
+          "lanes": "L1,L3",
+          "coverage_certification": "PROPOSITION:P-HIND-EXPERIENCE-OCCURRED"
+        },
+        {
+          "proposition_id": "P-HIND-NONVERIDICAL",
+          "necessary_test_rationale": "H-IND requires nonveridicality.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D4-VERIDICAL-VS-SUBJECTIVE"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence favoring subjective-only experience rather than an extramental referent.",
+          "weakening_evidence": "Veridical referent supported.",
+          "lanes": "L3,L4,L5",
+          "coverage_certification": "PROPOSITION:P-HIND-NONVERIDICAL"
+        },
+        {
+          "proposition_id": "P-HIND-MECHANISM-SUFFICIENT",
+          "necessary_test_rationale": "Naturalistic/psychological mechanism burden cannot be inferred from rival failure.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Psychological mechanism route independently warranting the relevant form/scale.",
+          "expected_evidence": "Independent mechanism evidence sufficient for the claimed pattern.",
+          "weakening_evidence": "Mechanism capacity below threshold.",
+          "lanes": "L4",
+          "coverage_certification": "PROPOSITION:P-HIND-MECHANISM-SUFFICIENT"
+        },
+        {
+          "proposition_id": "P-HIND-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "H-IND must satisfy its frozen causal profile.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that M-IND-EXP is PRIMARY while other founding mechanisms satisfy the H-IND profile.",
+          "weakening_evidence": "Interpretive/social mechanism necessary, no founding role, or rival causal profile supported.",
+          "lanes": "L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "H-SOC",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES",
+          "necessary_test_rationale": "H-SOC must not collapse into L/F through report-only formation.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential route establishing genuine nonveridical experiences in a social/group process rather than report formation alone.",
+          "expected_evidence": "Evidence for genuine subjective experiences across the relevant social process.",
+          "weakening_evidence": "Only report formation or no experience occurrence.",
+          "lanes": "L3,L4",
+          "coverage_certification": "PROPOSITION:P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+        },
+        {
+          "proposition_id": "P-HSOC-SOCIAL-PROCESS-OCCURRED",
+          "necessary_test_rationale": "H-SOC requires positive evidence for its own social process.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/social-science route establishing a founding social/group experience process.",
+          "expected_evidence": "Evidence for social/group mechanism in founding stream.",
+          "weakening_evidence": "No supported social process.",
+          "lanes": "L3,L4",
+          "coverage_certification": "PROPOSITION:P-HSOC-SOCIAL-PROCESS-OCCURRED"
+        },
+        {
+          "proposition_id": "P-HSOC-NONVERIDICAL",
+          "necessary_test_rationale": "H-SOC requires no veridical referent.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D4-VERIDICAL-VS-SUBJECTIVE"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence favoring nonveridical social experience over a veridical referent.",
+          "weakening_evidence": "Veridical referent supported.",
+          "lanes": "L3,L4,L5",
+          "coverage_certification": "PROPOSITION:P-HSOC-NONVERIDICAL"
+        },
+        {
+          "proposition_id": "P-HSOC-MECHANISM-SUFFICIENT",
+          "necessary_test_rationale": "H-SOC mechanism burden is direct.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Social-science/reference-class route independently warranting mechanism capacity.",
+          "expected_evidence": "Independent warrant for mechanism capacity.",
+          "weakening_evidence": "Mechanism capacity below threshold.",
+          "lanes": "L4",
+          "coverage_certification": "PROPOSITION:P-HSOC-MECHANISM-SUFFICIENT"
+        },
+        {
+          "proposition_id": "P-HSOC-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "H-SOC must satisfy its frozen causal profile.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that M-SOC-EXP is PRIMARY while M-IND/M-INTERP are nonnecessary.",
+          "weakening_evidence": "Individual seed or interpretation necessary, or social mechanism nonprimary.",
+          "lanes": "L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "H-SEED-SPREAD",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-HSEED-INDIVIDUAL-EXPERIENCE",
+          "necessary_test_rationale": "H-SEED-SPREAD requires a genuine non-veridical founding individual subjective seed.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential route establishing a founding individual subjective-experience seed.",
+          "expected_evidence": "Evidence for a genuine founding individual subjective experience.",
+          "weakening_evidence": "No individual seed supported or veridical referent supported.",
+          "lanes": "L3,L4",
+          "coverage_certification": "PROPOSITION:P-HSEED-INDIVIDUAL-EXPERIENCE"
+        },
+        {
+          "proposition_id": "P-HSEED-SOCIAL-AMPLIFICATION",
+          "necessary_test_rationale": "H-SEED-SPREAD requires a distinct social/group amplification process that is itself causally necessary.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/social-science route establishing a distinct social amplification process downstream of or interacting with the individual seed.",
+          "expected_evidence": "Evidence for a causally necessary social/group amplification process.",
+          "weakening_evidence": "Social process absent or merely contributing-nonnecessary.",
+          "lanes": "L3,L4",
+          "coverage_certification": "PROPOSITION:P-HSEED-SOCIAL-AMPLIFICATION"
+        },
+        {
+          "proposition_id": "P-HSEED-NONVERIDICAL",
+          "necessary_test_rationale": "The seed and spread model is subjective/nonveridical rather than a veridical referent model.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D4-VERIDICAL-VS-SUBJECTIVE"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence favoring nonveridical individual/social experience processes over a veridical referent.",
+          "weakening_evidence": "Veridical referent supported.",
+          "lanes": "L3,L4,L5",
+          "coverage_certification": "PROPOSITION:P-HSEED-NONVERIDICAL"
+        },
+        {
+          "proposition_id": "P-HSEED-MECHANISM-SUFFICIENT",
+          "necessary_test_rationale": "Both individual and social mechanisms must be independently capable of generating the claimed pattern.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Psychological/social-science mechanism route with transfer controls for both the individual seed and social amplification.",
+          "expected_evidence": "Independent mechanism evidence sufficient for the claimed forms and scale.",
+          "weakening_evidence": "Either required mechanism lacks independent capacity.",
+          "lanes": "L4",
+          "coverage_certification": "PROPOSITION:P-HSEED-MECHANISM-SUFFICIENT"
+        },
+        {
+          "proposition_id": "P-HSEED-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "Both experience mechanisms must satisfy the frozen H-SEED-SPREAD causal profile while interpretation remains nonnecessary.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "M-IND-EXP and M-SOC-EXP each PRIMARY or NECESSARY_CONTRIBUTING, at least one PRIMARY, while M-INTERP is CONTRIBUTING_NONNECESSARY or NONE.",
+          "weakening_evidence": "Either experience mechanism is nonnecessary, interpretation is necessary, or no founding causal role is supported.",
+          "lanes": "L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "L",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-L-INTERPRETIVE-ORIGIN",
+          "necessary_test_rationale": "L requires a primary interpretive origin.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Founding-stratum evidence supporting interpretive/scriptural mechanism as PRIMARY.",
+          "weakening_evidence": "Interpretive material only later or noncausal.",
+          "lanes": "L1,L6",
+          "coverage_certification": "PROPOSITION:P-L-INTERPRETIVE-ORIGIN"
+        },
+        {
+          "proposition_id": "P-L-EXPERIENCE-NONPRIMARY",
+          "necessary_test_rationale": "L is distinct from H/C-HET only if experience is not necessary.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that individual/social experience mechanisms are only CONTRIBUTING_NONNECESSARY or NONE.",
+          "weakening_evidence": "Any experience mechanism is PRIMARY or NECESSARY_CONTRIBUTING.",
+          "lanes": "L1,L3,L6",
+          "coverage_certification": "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+        },
+        {
+          "proposition_id": "P-L-ENCOUNTER-CLAIM-ORIGIN",
+          "necessary_test_rationale": "L may not silently borrow H or F.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Textual/transmission/memory route specifying how encounter claims arise secondarily under L.",
+          "expected_evidence": "Documented secondary-development route.",
+          "weakening_evidence": "Encounter claims require a founding experiential mechanism not contained in L.",
+          "lanes": "L1,L4",
+          "coverage_certification": "PROPOSITION:P-L-ENCOUNTER-CLAIM-ORIGIN"
+        },
+        {
+          "proposition_id": "P-L-DEVELOPMENT-SEQUENCE",
+          "necessary_test_rationale": "L requires a coherent development sequence.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Source-critical/memory-development route establishing required sequence/dependence.",
+          "expected_evidence": "Evidence of later development from earlier thinner/interpretive material.",
+          "weakening_evidence": "Relevant robust content already founding or no development sequence.",
+          "lanes": "L1,L4",
+          "coverage_certification": "PROPOSITION:P-L-DEVELOPMENT-SEQUENCE"
+        },
+        {
+          "proposition_id": "P-L-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "L must satisfy its frozen causal profile.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that M-INTERP is PRIMARY under the common causal ladder.",
+          "weakening_evidence": "Interpretation only nonnecessary/later or another mechanism is necessary.",
+          "lanes": "L1,L6",
+          "coverage_certification": "PROPOSITION:P-L-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "S1",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-S1-NONDEATH",
+          "necessary_test_rationale": "S1 requires nondeath.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence supporting uninterrupted survival rather than P-DEATH.",
+          "weakening_evidence": "P-DEATH supported.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-S1-NONDEATH"
+        },
+        {
+          "proposition_id": "P-S1-POSTCRUC-ACCESS",
+          "necessary_test_rationale": "S1 needs an origin link beyond mere survival.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential route supporting post-crucifixion access to a living Jesus.",
+          "expected_evidence": "Evidence of continued-life access after crucifixion.",
+          "weakening_evidence": "No such access supported.",
+          "lanes": "L2,L3",
+          "coverage_certification": "PROPOSITION:P-S1-POSTCRUC-ACCESS"
+        },
+        {
+          "proposition_id": "P-S1-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "S1 must satisfy common causal threshold.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D-S1-ORIGIN"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that survival/access was PRIMARY or NECESSARY_CONTRIBUTING.",
+          "weakening_evidence": "Only later/nonnecessary access.",
+          "lanes": "L2,L3,L6",
+          "coverage_certification": "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "S2",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-S2-NOT-CRUCIFIED",
+          "necessary_test_rationale": "S2 denies crucifixion attribution.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence supporting that Jesus was not the crucified subject.",
+          "weakening_evidence": "P-CRUC supported.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-S2-NOT-CRUCIFIED"
+        },
+        {
+          "proposition_id": "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION",
+          "necessary_test_rationale": "S2 must be more than generic noncrucifixion.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical identity/substitution route requiring positive evidence for a substitute or material misidentification.",
+          "expected_evidence": "Evidence of substitute/misidentified crucifixion event.",
+          "weakening_evidence": "No positive substitution/misidentification support.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+        },
+        {
+          "proposition_id": "P-S2-JESUS-CONTINUED-LIFE",
+          "necessary_test_rationale": "S2 requires the actual Jesus to remain alive.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical route supporting continued biological life of Jesus after the event attributed to him.",
+          "expected_evidence": "Evidence of continued life.",
+          "weakening_evidence": "P-DEATH/contrary event evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-S2-JESUS-CONTINUED-LIFE"
+        },
+        {
+          "proposition_id": "P-S2-SINCERE-MISTAKEN-ATTRIBUTION",
+          "necessary_test_rationale": "Closes S2 origin mechanism.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/social route supporting sincere mistaken attribution rather than open-ended origin mechanisms.",
+          "expected_evidence": "Evidence for sincere mistaken attribution/transmission.",
+          "weakening_evidence": "No such mechanism or evidence of founding fabrication.",
+          "lanes": "L1,L3,L4",
+          "coverage_certification": "PROPOSITION:P-S2-SINCERE-MISTAKEN-ATTRIBUTION"
+        },
+        {
+          "proposition_id": "P-S2-POSTEVENT-ACCESS-AND-TRANSMISSION",
+          "necessary_test_rationale": "S2 requires one closed bridge: post-event access to the living Jesus plus transmission of that access into the founding movement under sincere mistaken death attribution.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential/transmission route requiring both post-event access to living Jesus and transmission of that access into the founding movement.",
+          "expected_evidence": "Evidence for access to living Jesus and a transmission chain connecting that access to the founding proclamation.",
+          "weakening_evidence": "Either access or transmission bridge is unsupported.",
+          "lanes": "L1,L2,L3",
+          "coverage_certification": "PROPOSITION:P-S2-POSTEVENT-ACCESS-AND-TRANSMISSION"
+        },
+        {
+          "proposition_id": "P-S2-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "S2 must satisfy common causal threshold.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D-S2-ORIGIN"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that the closed S2 mechanism was PRIMARY or NECESSARY_CONTRIBUTING.",
+          "weakening_evidence": "Only nonnecessary/later contribution.",
+          "lanes": "L2,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-S2-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "S3",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-S3-NOT-CRUCIFIED",
+          "necessary_test_rationale": "S3 denies Jesus underwent crucifixion.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence supporting noncrucifixion without substitution.",
+          "weakening_evidence": "P-CRUC supported.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-S3-NOT-CRUCIFIED"
+        },
+        {
+          "proposition_id": "P-S3-NO-SUBSTITUTE",
+          "necessary_test_rationale": "S3 is distinct from S2 only if no substitute/misidentified crucifixion victim is part of the candidate.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical identity/substitution route testing whether the noncrucifixion account requires or supports a substitute victim.",
+          "expected_evidence": "Evidence adequate to keep a no-substitute noncrucifixion route live under the frozen S3 packet.",
+          "weakening_evidence": "Positive support for substitution/misidentification as the outcome-material mechanism.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-S3-NO-SUBSTITUTE"
+        },
+        {
+          "proposition_id": "P-S3-CONTINUED-LIFE",
+          "necessary_test_rationale": "S3 is a nondeath candidate.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical route supporting continued biological life after escape/removal/rescue.",
+          "expected_evidence": "Evidence of continued life.",
+          "weakening_evidence": "P-DEATH or contrary evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-S3-CONTINUED-LIFE"
+        },
+        {
+          "proposition_id": "P-S3-POSTEVENT-ACCESS",
+          "necessary_test_rationale": "S3 requires a proclamation bridge.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/experiential route supporting access/knowledge of living Jesus after the event.",
+          "expected_evidence": "Evidence for access/knowledge reaching founding movement.",
+          "weakening_evidence": "No such route.",
+          "lanes": "L2,L3",
+          "coverage_certification": "PROPOSITION:P-S3-POSTEVENT-ACCESS"
+        },
+        {
+          "proposition_id": "P-S3-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "S3 must satisfy common causal threshold.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D-S3-ORIGIN"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that S3 access/knowledge was PRIMARY or NECESSARY_CONTRIBUTING.",
+          "weakening_evidence": "Only nonnecessary/later role.",
+          "lanes": "L2,L3,L6",
+          "coverage_certification": "PROPOSITION:P-S3-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "F",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-F-DELIBERATE",
+          "necessary_test_rationale": "F cannot be inferred from rival weakness.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/psychological route requiring positive warrant for knowing origin-material falsehood.",
+          "expected_evidence": "Evidence of intentional founding deception.",
+          "weakening_evidence": "No positive fabrication evidence or only error/interpretation.",
+          "lanes": "L1,L4",
+          "coverage_certification": "PROPOSITION:P-F-DELIBERATE"
+        },
+        {
+          "proposition_id": "P-F-ORIGIN-MATERIAL",
+          "necessary_test_rationale": "F requires founding-stratum deception.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Chronology/dependence route linking deception to founding stratum.",
+          "expected_evidence": "Evidence that fabrication is upstream of founding proclamation.",
+          "weakening_evidence": "Fabrication only later.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-F-ORIGIN-MATERIAL"
+        },
+        {
+          "proposition_id": "P-F-MOTIVE-OPPORTUNITY-ROUTE",
+          "necessary_test_rationale": "F must specify an actual mechanism.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/social route for actor opportunity/transmission, without inferring motive from outcome.",
+          "expected_evidence": "Traceable actor/opportunity route.",
+          "weakening_evidence": "No plausible origin route or unregistered actors.",
+          "lanes": "L2,L4",
+          "coverage_certification": "PROPOSITION:P-F-MOTIVE-OPPORTUNITY-ROUTE"
+        },
+        {
+          "proposition_id": "P-F-TRANSMISSION-SUFFICIENT",
+          "necessary_test_rationale": "F must explain propagation.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Historical/transmission route showing deceptive claims could propagate as required.",
+          "expected_evidence": "Evidence for transmission adequacy.",
+          "weakening_evidence": "Transmission route absent/insufficient.",
+          "lanes": "L1,L4",
+          "coverage_certification": "PROPOSITION:P-F-TRANSMISSION-SUFFICIENT"
+        },
+        {
+          "proposition_id": "P-F-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "F must satisfy its frozen causal profile.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that M-FOUNDING-FAB was PRIMARY under the common causal ladder.",
+          "weakening_evidence": "Fabrication only later/nonnecessary.",
+          "lanes": "L1,L4,L6",
+          "coverage_certification": "PROPOSITION:P-F-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C-HET-IND",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-CHET-IND-EXP",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-IND-EXP; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-IND-EXP.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-IND-EXP.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-IND-EXP"
+        },
+        {
+          "proposition_id": "P-CHET-INT",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-INT; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-INT.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-INT"
+        },
+        {
+          "proposition_id": "P-CHET-NARR",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-NARR; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-NARR.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-NARR"
+        },
+        {
+          "proposition_id": "P-CHET-BODY",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-BODY; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-BODY.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-BODY.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-BODY"
+        },
+        {
+          "proposition_id": "P-CHET-IND-JOINT-PATTERN",
+          "necessary_test_rationale": "C-HET must predict a non-posthoc heterogeneous pattern.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-IND-JOINT-PATTERN.",
+          "weakening_evidence": "Single-process profile suffices, module roles/timing fail, or veridical referent supported.",
+          "lanes": "L1,L2,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+        },
+        {
+          "proposition_id": "P-CHET-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "C-HET founding causation is profile-specific and symmetric.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION",
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role.",
+          "weakening_evidence": "Any required founding module is only nonnecessary or was added/reassigned after exposure.",
+          "lanes": "L1,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C-HET-SOC",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-CHET-SOC-EXP",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-SOC-EXP; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-SOC-EXP.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SOC-EXP.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-SOC-EXP"
+        },
+        {
+          "proposition_id": "P-CHET-INT",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-INT; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-INT.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-INT"
+        },
+        {
+          "proposition_id": "P-CHET-NARR",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-NARR; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-NARR.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-NARR"
+        },
+        {
+          "proposition_id": "P-CHET-BODY",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-BODY; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-BODY.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-BODY.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-BODY"
+        },
+        {
+          "proposition_id": "P-CHET-SOC-JOINT-PATTERN",
+          "necessary_test_rationale": "C-HET must predict a non-posthoc heterogeneous pattern.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SOC-JOINT-PATTERN.",
+          "weakening_evidence": "Single-process profile suffices, module roles/timing fail, or veridical referent supported.",
+          "lanes": "L1,L2,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+        },
+        {
+          "proposition_id": "P-CHET-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "C-HET founding causation is profile-specific and symmetric.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION",
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role.",
+          "weakening_evidence": "Any required founding module is only nonnecessary or was added/reassigned after exposure.",
+          "lanes": "L1,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+        }
+      ]
+    },
+    {
+      "candidate_id": "C-HET-SEED-SPREAD",
+      "necessary_propositions": [
+        {
+          "proposition_id": "P-HIST-JESUS",
+          "necessary_test_rationale": "Every admitted full candidate requires the same historical subject under identical truth conditions after B4 exclusion of nonhistoricity as a full candidate.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Direct historical subject-identity route with node-level nonhistoricity rival and its steelman record.",
+          "expected_evidence": "Evidence sufficient to identify a first-century subject Jesus as the referent of the movement/event claims.",
+          "weakening_evidence": "Nonhistoricity or identity failure under adequate coverage; unresolved truth-critical provenance.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-HIST-JESUS"
+        },
+        {
+          "proposition_id": "P-CRUC",
+          "necessary_test_rationale": "Candidates affirming crucifixion require Jesus himself to be the crucified subject.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D0-CRUCIFIXION-ATTRIBUTION"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence sufficient to attribute the crucifixion event to Jesus himself.",
+          "weakening_evidence": "Supported substitution/non-crucifixion rival or attribution failure.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-CRUC"
+        },
+        {
+          "proposition_id": "P-DEATH",
+          "necessary_test_rationale": "Post-death candidates require genuine death.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D1-DEATH-VS-NONDEATH"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition.",
+          "weakening_evidence": "Supported survival/nondeath or unresolved truth-critical death evidence.",
+          "lanes": "L2",
+          "coverage_certification": "PROPOSITION:P-DEATH"
+        },
+        {
+          "proposition_id": "P-EARLY-PROCLAMATION-EXISTENCE",
+          "necessary_test_rationale": "Every admitted candidate explains the same founding proclamation existence.",
+          "route": "NONCOMPARATIVE_SHARED_FLOOR",
+          "discriminator_ids": [],
+          "direct_route": "Historical/textual route establishing existence, chronology, dependence, and recoverable boundaries of a founding proclamation without assuming its content is true.",
+          "expected_evidence": "Evidence sufficient to establish a founding proclamation existed.",
+          "weakening_evidence": "No recoverable proclamation or provenance failure preventing identification.",
+          "lanes": "L1,L2",
+          "coverage_certification": "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+        },
+        {
+          "proposition_id": "P-CHET-SEED-IND",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-SEED-IND; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-SEED-IND.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-IND.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-SEED-IND"
+        },
+        {
+          "proposition_id": "P-CHET-SEED-SOC",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-SEED-SOC; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-SEED-SOC.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-SOC.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-SEED-SOC"
+        },
+        {
+          "proposition_id": "P-CHET-INT",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-INT; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-INT.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-INT"
+        },
+        {
+          "proposition_id": "P-CHET-NARR",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-NARR; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-NARR.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-NARR"
+        },
+        {
+          "proposition_id": "P-CHET-BODY",
+          "necessary_test_rationale": "C-HET requires independent warrant for P-CHET-BODY; modules are not inferred from residual fit.",
+          "route": "NONCOMPARATIVE_CANDIDATE_SPECIFIC",
+          "discriminator_ids": [],
+          "direct_route": "Direct module-specific route in TFP_STRESS_2_C_HET_MODULE_MAP_0_1_2.yaml for P-CHET-BODY.",
+          "expected_evidence": "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-BODY.",
+          "weakening_evidence": "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it.",
+          "lanes": "L1,L2,L3,L4",
+          "coverage_certification": "PROPOSITION:P-CHET-BODY"
+        },
+        {
+          "proposition_id": "P-CHET-SEED-SPREAD-JOINT-PATTERN",
+          "necessary_test_rationale": "C-HET must predict a non-posthoc heterogeneous pattern.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SEED-SPREAD-JOINT-PATTERN.",
+          "weakening_evidence": "Single-process profile suffices, module roles/timing fail, or veridical referent supported.",
+          "lanes": "L1,L2,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+        },
+        {
+          "proposition_id": "P-CHET-FOUNDING-CAUSAL",
+          "necessary_test_rationale": "C-HET founding causation is profile-specific and symmetric.",
+          "route": "COMPARATIVE_ROUTE",
+          "discriminator_ids": [
+            "D2-FOUNDING-STREAM-CAUSATION",
+            "D5-CAUSAL-PROFILE-PARTITION",
+            "D9-CHET-MODULE-FIT"
+          ],
+          "direct_route": null,
+          "expected_evidence": "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role.",
+          "weakening_evidence": "Any required founding module is only nonnecessary or was added/reassigned after exposure.",
+          "lanes": "L1,L3,L4,L6",
+          "coverage_certification": "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+        }
+      ]
+    }
+  ],
+  "reviewer": {
+    "role": "REVIEWER_B",
+    "actor_lineage": "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK",
+    "certification": "INCOMPLETE_PENDING_REVIEWER_A_SHORT_CONFIRMATION_STEELMAN_PACKETS_AND_REVIEWER_B_REVIEW"
+  },
+  "freeze_identity": null
+}
