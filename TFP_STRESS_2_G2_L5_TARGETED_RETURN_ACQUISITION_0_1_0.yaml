@@ -1,0 +1,294 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L5_TARGETED_RETURN_ACQUISITION"
+status: "BOUNDED_L5_ARGUMENT_LEVEL_RETURN_ACQUIRED__NO_L5_TRUTH_DISPOSITIONS__G1_BASELINE_UNCHANGED"
+date: "2026-10-06"
+
+trigger:
+  reviewer_report: "TFP_STRESS_2_REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  reviewer_report_blob_sha: "275940b8cc8a2798f38d7f203b49a7f8ea6fa99f"
+  reviewer_result: "0_READY__8_INCOMPLETE"
+  shared_defect: "Insufficient argument-level representation of BGD-1, BGD-2, BGD-9, BGD-11 sensitivity surfaces plus P-R-BODY interpretive access."
+  return_scope: "Only the smallest bounded acquisition specified by Reviewer C."
+
+baseline_preservation:
+  sealed_g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  sealed_g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  sealed_g1_record_count: 73
+  mutate_g1_baseline: false
+  treatment: "Additive G2 return-to-evidence acquisition only."
+
+acquired_sources:
+  - source_id: "G2L5R-001"
+    title: "Physicalism"
+    author_or_corpus: "Stanford Encyclopedia of Philosophy"
+    stable_url: "https://plato.stanford.edu/entries/physicalism/"
+    access_status: "FULL_REFERENCE_ENTRY_ACCESSED"
+    serves: ["BGD-1A"]
+    argument_level_observation:
+      - "The causal-closure argument for physicalism is explicitly formulated from causal closure of the physical, mental causation, and an exclusion principle."
+      - "This supplies a serious generic causal-closure formulation without importing Jesus-specific evidence."
+    limits:
+      - "It formulates and evaluates physicalism; it does not establish that causal closure is true."
+
+  - source_id: "G2L5R-002"
+    title: "Miracles"
+    author_or_corpus: "Stanford Encyclopedia of Philosophy"
+    stable_url: "https://plato.stanford.edu/entries/miracles/"
+    access_status: "FULL_REFERENCE_ENTRY_ACCESSED"
+    serves: ["BGD-1C","BGD-2A","BGD-2B","BGD-2C"]
+    argument_level_observation:
+      - "It distinguishes intervention/supernatural-cause conceptions and supplies a Bayesian framework separating prior odds from evidential likelihood ratios."
+      - "It explicitly notes that miracle likelihood is sensitive to generic God-existence assumptions while warning that attribution of a particular event to divine agency remains an additional burden."
+      - "It preserves both Humean restrictive and anti-Humean/Bayesian critiques rather than installing either prior by default."
+    limits:
+      - "The entry discusses religious miracles and examples; only its generic probability and agency structure is used here."
+
+  - source_id: "G2L5R-003"
+    author: "Simon Kittle"
+    title: "God is (Probably) a Cause among Causes: Why the Primary/Secondary Cause Distinction Doesn’t Help in Developing Non-interventionist Accounts of Special Divine Action"
+    year: 2022
+    doi: "10.1080/14746700.2022.2057468"
+    stable_url: "https://www.tandfonline.com/doi/full/10.1080/14746700.2022.2057468"
+    access_status: "FULL_OPEN_ACCESS_ARTICLE_ACCESSED"
+    serves: ["BGD-1D","BGD-1C_CONTROL"]
+    argument_level_observation:
+      - "The paper explicitly formulates non-interventionist special-divine-action programs and critiques one prominent primary/secondary-causation route."
+      - "It makes the distinction between interventionist and non-interventionist theistic action argument-reviewable without using Jesus-specific event evidence."
+    limits:
+      - "The article is a critique of some non-interventionist accounts, not proof that interventionism or non-interventionism is true."
+
+  - source_id: "G2L5R-004"
+    title: "Afterlife"
+    author_or_corpus: "Stanford Encyclopedia of Philosophy"
+    stable_url: "https://plato.stanford.edu/entries/afterlife/"
+    access_status: "FULL_REFERENCE_ENTRY_ACCESSED"
+    serves: ["BGD-1E","BGD-11E1","BGD-11E3","BGD-11E4","BGD-11I1","BGD-11I2","BGD-11I3","BGD-11I4"]
+    argument_level_observation:
+      - "The entry gives argument-level dualist survival, materialist resurrection, constitution/first-person-perspective, re-creation/replica, van Inwagen continuity, and Zimmerman closest-continuer models plus objections."
+      - "It explicitly separates materialist, dualist, constitution, and replica approaches to survival and identity."
+      - "Its dualist discussion makes non-theistic logical survival intelligible independently of a Jesus-specific claim."
+    limits:
+      - "The entry is a secondary synthesis; individual theories remain contested."
+
+  - source_id: "G2L5R-005"
+    author: "Stephen E. Braude"
+    title: "Personal Identity and Postmortem Survival"
+    year: 2005
+    doi: "10.1017/S026505250505209X"
+    stable_url: "https://galileocommission.org/wp-content/uploads/Library(all)/Braude-2005-Personal-Identity-and-Postmortem-Survival.pdf"
+    access_status: "FULL_ARTICLE_ACCESSED"
+    serves: ["BGD-1E","BGD-11I2","BGD-11I3","BGD-11_IDENTITY_EPISTEMIC_CONTROL"]
+    argument_level_observation:
+      - "Braude separates metaphysical identity from epistemic reidentification and evaluates physical and psychological continuity in postmortem-survival cases."
+      - "The paper treats mediumship/reincarnation-type evidence as possible interaction/evidence routes while explicitly carrying super-psi and other explanatory alternatives."
+      - "This supplies a serious non-theistic survival/interaction formulation rather than a theological premise."
+    limits:
+      - "No survival claim is adopted; the empirical interpretation is disputed."
+
+  - source_id: "G2L5R-006"
+    author: "William Jaworski"
+    title: "Hylomorphism and Resurrection"
+    year: 2013
+    doi: "10.24204/ejpr.v5i1.256"
+    stable_url: "https://philarchive.org/archive/JAWHAR"
+    access_status: "FULL_ARGUMENT_LEVEL_TEXT_ACCESSED"
+    serves: ["BGD-11E2","BGD-11I2","BGD-11I4"]
+    argument_level_observation:
+      - "Jaworski explicitly formulates hylomorphism in terms of structured/organized living entities and applies the view to resurrection identity."
+      - "The argument identifies the need both for a human-organizing structure and for warrant that the resurrected structured materials compose the same person rather than another."
+    limits:
+      - "Compatibility with resurrection is not evidence that a resurrection occurred."
+
+  - source_id: "G2L5R-007"
+    author: "Dean Zimmerman"
+    title: "The Compatibility of Materialism and Survival: The Falling Elevator Model"
+    year: 1999
+    doi: "10.5840/faithphil199916220"
+    stable_url: "https://place.asburyseminary.edu/faithandphilosophy/vol16/iss2/5/"
+    access_status: "AUTHOR/REPOSITORY_FULL_TEXT_ROUTE_AVAILABLE__ARGUMENT_IDENTITY_VERIFIED"
+    serves: ["BGD-11E1","BGD-11E4","BGD-11I1","BGD-11I4"]
+    argument_level_observation:
+      - "Zimmerman addresses the materialist requirement for immanent-causal continuity and proposes a closest-continuer route to survival."
+      - "The model explicitly distinguishes identity-preserving continuation from mere duplication."
+    limits:
+      - "Hershenov and others contest whether the model yields identity rather than duplication."
+
+  - source_id: "G2L5R-008"
+    title: "John Locke on Personal Identity"
+    author_or_corpus: "Open-access philosophical/medical review of Locke"
+    stable_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3115296/"
+    access_status: "FULL_OPEN_ACCESS_ARTICLE_ACCESSED"
+    serves: ["BGD-11I2"]
+    argument_level_observation:
+      - "The article sets out psychological continuity/consciousness as a criterion of personal identity rather than bodily or substance identity."
+    limits:
+      - "Lockean continuity is one contested identity theory and is not installed as default."
+
+  - source_id: "G2L5R-009"
+    title: "Epistemological Problems of Testimony"
+    author_or_corpus: "Stanford Encyclopedia of Philosophy"
+    stable_url: "https://plato.stanford.edu/archives/spr2019/entries/testimony-episprob/"
+    access_status: "FULL_REFERENCE_ENTRY_ACCESSED"
+    serves: ["BGD-9A","BGD-9B"]
+    argument_level_observation:
+      - "The entry explicitly formulates reductionism as grounding testimonial warrant in perception, memory, induction, and reliability evidence."
+      - "It separately formulates anti-reductionism as treating testimony as a fundamental/irreducible source of warrant."
+      - "Hume supplies the global reductionist route; Fricker supplies local credibility-monitoring reductionism."
+    limits:
+      - "These are general epistemic frameworks, not case-specific ancient-source verdicts."
+
+  - source_id: "G2L5R-010"
+    authors: ["Sanford Goldberg","David Henderson"]
+    title: "Monitoring and Anti-Reductionism in the Epistemology of Testimony"
+    year: 2006
+    doi: "10.1111/j.1933-1592.2006.tb00586.x"
+    stable_url: "https://onlinelibrary.wiley.com/doi/10.1111/j.1933-1592.2006.tb00586.x"
+    access_status: "ARGUMENT_LEVEL_ABSTRACT_AND_ARTICLE_RECORD_ACCESSED"
+    serves: ["BGD-9A","BGD-9B"]
+    argument_level_observation:
+      - "The paper reconstructs Fricker's monitoring-based argument for reductionism and then argues that monitoring is compatible with anti-reductionism."
+      - "This provides a direct argument-level reductionist/anti-reductionist dispute rather than a label-only source."
+    limits:
+      - "The complete article text was not required because the SEP entry independently states both positions in argument form."
+
+  - source_id: "G2L5R-011"
+    author: "John Earman"
+    title: "Bayes, Hume, and Miracles"
+    year: 1993
+    doi: "10.5840/faithphil19931039"
+    stable_url: "https://fileserver-az.core.ac.uk/download/pdf/216988566.pdf"
+    access_status: "FULL_TEXT_ROUTE_ACCESSED"
+    serves: ["BGD-2A","BGD-2B"]
+    argument_level_observation:
+      - "Earman reconstructs Humean miracle reasoning in Bayesian terms and argues that Bayesian machinery does not justify a universal ban on testimonial confirmation of miracles."
+      - "The paper supplies an argument-level restrictive-prior route and a direct critique of making that restriction absolute."
+    limits:
+      - "No numerical prior is imported into TFP."
+
+  - source_id: "G2L5R-012"
+    author: "Richard Swinburne"
+    title: "The Existence of God, especially The Intrinsic Probability of Theism and Arguments from History and Miracles"
+    year: 2004
+    stable_url: "https://academic.oup.com/book/1828"
+    access_status: "BOOK_AND_CHAPTER_ARGUMENT_SUMMARIES_ACCESSED"
+    serves: ["BGD-2C"]
+    argument_level_observation:
+      - "Swinburne gives a generic Bayesian/theistic framework in which the prior probability of theism and the likelihood of divine action are assessed independently of a particular Jesus case."
+      - "The generic structure makes explicit why P(anomalous intervention | theism) may differ from P(anomalous intervention | not-theism)."
+    limits:
+      - "Jesus-specific applications in the book are not used to formulate BGD-2C."
+
+  - source_id: "G2L5R-013"
+    author: "Daniel Mikkelsen"
+    title: "Hvad er opstandelseslegemets karakter ud fra Første Korintherbrev 15?"
+    year: 2019
+    doi: "10.7146/dtt.v81i4.115359"
+    stable_url: "https://tidsskrift.dk/dtt/article/download/115359/163678"
+    access_status: "FULL_PEER_REVIEWED_ARTICLE_ANALYZED"
+    serves: ["P-R-BODY","P-V-NONEMBODIED","EMP-PAULINE-BODY-INTERPRETATION"]
+    argument_level_observation:
+      - "Mikkelsen explicitly compares flesh-continuity and pneumatic-material readings of 1 Corinthians 15."
+      - "He argues from syntax, lexical use, Adam/creation logic, transformation language, and 'this mortal/corruptible' that the same body is transformed in state/quality rather than exchanged for different matter."
+    limits:
+      - "This is one argued reading in a live scholarly dispute."
+
+  - source_id: "G2L5R-014"
+    author: "James P. Ware"
+    title: "Jesus's Resurrection according to Paul the Apostle / The Spiritual Body in 1 Corinthians 15"
+    year: 2016
+    stable_url: "https://hc.edu/news-and-events/2016/07/15/jesuss-resurrection-according-paul-apostle/"
+    related_peer_reviewed_work: "James Ware, Paul's Understanding of the Resurrection in 1 Corinthians 15:36-54, Journal of Biblical Literature 133.4 (2014): 809-835"
+    access_status: "FULL_ARGUMENT_LEVEL_PUBLIC_ESSAY_ACCESSED__PEER_REVIEWED_ARTICLE_IDENTITY_CROSSCHECKED"
+    serves: ["P-R-BODY","P-V-NONEMBODIED","EMP-PAULINE-BODY-INTERPRETATION"]
+    argument_level_observation:
+      - "Ware argues from the literary/syntactic structure of 1 Corinthians 15:36-54 and the semantics of egeiro/psychikos/pneumatikos that the mortal body is raised and transformed rather than replaced by an ethereal body."
+      - "This supplies the requested second non-abstract interpretive argument."
+    limits:
+      - "The public essay strongly defends one side of the dispute; contrary readings remain represented elsewhere in the frozen record."
+
+bgd_11_pair_formulation_extracts:
+  rule: "These are operational satisfaction formulations for coverage/sensitivity only. They do not choose a preferred theory and do not establish historical occurrence."
+  pairs:
+    - pair: ["BGD-11E1","BGD-11I1"]
+      EMB_1_satisfaction: "A living organism/body capable of ordinary spatiotemporal causal interaction."
+      EMB_3_satisfaction: "Numerical personal identity grounded in continuity of the same organism or an identity-preserving organismic continuation."
+      source_basis: ["G2L5R-004","G2L5R-007"]
+    - pair: ["BGD-11E1","BGD-11I2"]
+      EMB_1_satisfaction: "A living organism/body capable of ordinary spatiotemporal causal interaction."
+      EMB_3_satisfaction: "Appropriate psychological/causal continuity links the pre- and post-state person; qualitative memory resemblance alone is insufficient."
+      source_basis: ["G2L5R-004","G2L5R-008"]
+    - pair: ["BGD-11E2","BGD-11I2"]
+      EMB_1_satisfaction: "Materials instantiate a distinctively human organizing structure/form sufficient for a living embodied human."
+      EMB_3_satisfaction: "Psychological/causal continuity is retained across the structurally continuous/reconstituted human subject."
+      source_basis: ["G2L5R-006","G2L5R-008"]
+    - pair: ["BGD-11E2","BGD-11I4"]
+      EMB_1_satisfaction: "Materials instantiate the required human organization/constitution relation."
+      EMB_3_satisfaction: "A specified constitution/reconstitution relation licenses identity rather than mere qualitative duplication."
+      source_basis: ["G2L5R-004","G2L5R-006"]
+    - pair: ["BGD-11E3","BGD-11I2"]
+      EMB_1_satisfaction: "A persisting nonbodily subject becomes genuinely related to a body meeting embodied spatiotemporal/causal criteria."
+      EMB_3_satisfaction: "Appropriate psychological/causal continuity links the persisting subject across disembodied and reembodied phases."
+      source_basis: ["G2L5R-004","G2L5R-005","G2L5R-008"]
+    - pair: ["BGD-11E3","BGD-11I3"]
+      EMB_1_satisfaction: "A persisting nonbodily subject becomes genuinely embodied again."
+      EMB_3_satisfaction: "Numerical identity is grounded in persistence of the same nonbodily subject/substance."
+      source_basis: ["G2L5R-004","G2L5R-005"]
+    - pair: ["BGD-11E4","BGD-11I2"]
+      EMB_1_satisfaction: "A numerically new or reconstituted body qualifies as embodiment under the adopted reconstitution theory."
+      EMB_3_satisfaction: "Psychological/causal continuity is sufficient to connect the person across the bodily discontinuity."
+      source_basis: ["G2L5R-004","G2L5R-008"]
+    - pair: ["BGD-11E4","BGD-11I4"]
+      EMB_1_satisfaction: "A replica/reconstituted body satisfies embodiment through the adopted constitution/reconstitution relation."
+      EMB_3_satisfaction: "Identity is licensed by a specified constitution, first-person-perspective, closest-continuer, or other admitted replica/reconstitution relation rather than mere qualitative similarity."
+      source_basis: ["G2L5R-004","G2L5R-007"]
+
+background_argument_formulations:
+  BGD_1A:
+    formulation: "Physical causal closure treats every caused physical event as having a sufficient physical cause; exclusion-style arguments use that premise to resist irreducible nonphysical causal intervention."
+    source_basis: ["G2L5R-001"]
+  BGD_1C:
+    formulation: "Interventionist theism permits special divine action that is not reducible to ordinary natural causal sufficiency; event attribution still requires independent agency evidence."
+    source_basis: ["G2L5R-002","G2L5R-003"]
+  BGD_1D:
+    formulation: "Noninterventionist theism permits theism while declining to assume event-level suspension or violation of natural causal structure; special-action accounts must explain how divine and created causation relate."
+    source_basis: ["G2L5R-003"]
+  BGD_1E:
+    formulation: "Non-theistic dualist/survival views allow a nonbodily subject or distinctive personal psychology to persist after bodily death and, in some models, causally interact or communicate; identity and interaction remain separate evidential burdens."
+    source_basis: ["G2L5R-004","G2L5R-005"]
+  BGD_2A:
+    formulation: "A strongly restrictive anomaly prior assigns low prior probability to rare event classes based on background regularity/reference-class considerations; testimony must overcome that prior through sufficiently large likelihood ratios."
+    source_basis: ["G2L5R-002","G2L5R-011"]
+  BGD_2B:
+    formulation: "An agnostic-open prior refuses a blanket anomaly penalty beyond independently justified reference-class information and lets explicit uncertainty plus likelihood ratios carry the update."
+    source_basis: ["G2L5R-002","G2L5R-011"]
+  BGD_2C:
+    formulation: "If generic theism is independently live, the conditional likelihood of some divine interventions may exceed that under no-theism; the effect is generic and cannot import Jesus-specific evidence."
+    source_basis: ["G2L5R-002","G2L5R-012"]
+  BGD_9A:
+    formulation: "Reductionism grounds testimonial warrant in non-testimonial sources such as perception, memory, induction, and case/local reliability monitoring."
+    source_basis: ["G2L5R-009","G2L5R-010"]
+  BGD_9B:
+    formulation: "Anti-reductionism permits defeasible testimonial warrant not wholly reduced to independent inductive reliability evidence, while remaining open to defeaters and monitoring."
+    source_basis: ["G2L5R-009","G2L5R-010"]
+
+return_trigger_assessment_by_program_lead:
+  self_certified_coverage_closure: false
+  acquisition_condition_met_for_reviewer_recheck: true
+  basis:
+    - "All four background families named by Reviewer C now have explicit argument-level formulations."
+    - "All eight permitted BGD-11 pairs now have operational EMB-1/EMB-3 satisfaction formulations with identifiable source bases."
+    - "Mikkelsen's full article has been analyzed and Ware supplies a second non-abstract 1 Corinthians 15 embodiment argument."
+    - "No excluded BGD-11 pair, new ontology, new candidate, or extra psi-survival claim was added."
+  rule: "Only a fresh Reviewer C post-return coverage recheck may determine whether the eight L5 scopes are now disposition-ready."
+
+hard_boundaries:
+  - "No preferred ontology/background is selected."
+  - "No metaphysical possibility is treated as historical actuality."
+  - "No extramentality claim establishes Jesus-identity automatically."
+  - "No embodiment claim establishes Jesus-identity automatically."
+  - "No psi/anomalous-information literature is treated as direct Jesus-case evidence."
+  - "No D3/D4 direction, comparison MAKEABLE state, candidate ranking, resurrection verdict, G3 outcome, or theology is assigned."
+
+next_action:
+  action: "Version the L5 evidence matrix with the bounded return and freeze a fresh Reviewer C post-return coverage recheck for the same eight L5 scopes."
