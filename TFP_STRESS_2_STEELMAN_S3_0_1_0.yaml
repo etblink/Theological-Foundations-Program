@@ -1,0 +1,87 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "S3"
+candidate_name: "Non-crucifixion escape/removal/rescue without substitution"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC__PRE_FREEZE"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+
+native_formulation: "Jesus did not undergo the crucifixion event, no substitute victim is part of the candidate, and Jesus continued alive after escape, removal, or rescue. Subsequent access to or knowledge of the living Jesus was PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation. The specific causal agent of escape/rescue is outside Q1."
+
+proponent_sources:
+  - id: "FORM-S2-001"
+    title: "Quran 4:157"
+    use: "FORMULATION_ONLY_BOUNDARY"
+    contribution: "Serious tradition-native noncrucifixion boundary, without by itself fixing substitution versus other mechanisms."
+  - id: "FORM-S23-003"
+    title: "IslamQA, The crucifixion of the Messiah between Islam and Christianity"
+    use: "FORMULATION_ONLY_BOUNDARY"
+    contribution: "Records non-substitution/confusion variants alongside substitution readings, supporting a serious noncrucifixion space broader than one substitute story."
+  - id: "FORM-S3-001"
+    title: "Andrew Loke, Investigating the Resurrection of Jesus Christ, escape-hypothesis description"
+    use: "FORMULATION_ONLY_CRITICAL_DESCRIPTION"
+    contribution: "Recognizes a naturalistic escape hypothesis as a comparison class in contemporary scholarly literature."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-S3-NOT-CRUCIFIED"
+  - "P-S3-NO-SUBSTITUTE"
+  - "P-S3-CONTINUED-LIFE"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-S3-POSTEVENT-ACCESS"
+  - "P-S3-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "No tradition-native authority is treated as historical evidence by authority alone."
+  - "Specific divine-agent rescue is not part of Q1."
+
+internal_success_conditions:
+  - "Jesus is not the crucified subject."
+  - "No substitute victim is outcome-material to the explanation."
+  - "Jesus continues alive."
+  - "Post-event access/knowledge of living Jesus occurs."
+  - "That route is PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+
+expected_evidence:
+  - "Positive support for noncrucifixion without substitution."
+  - "Positive support for continued life."
+  - "A post-event access/knowledge route to the founding movement."
+  - "Evidence capable of distinguishing S3 from both S1 and S2."
+
+recognized_objections:
+  - "No single reviewed native/proponent source supplies every frozen S3 conjunct."
+  - "Some noncrucifixion traditions instead use substitution; others specify rescue/raising without a founding access mechanism."
+  - "The candidate therefore risks being a synthetic possibility rather than a native tradition."
+
+caricatures_rejected:
+  - "S3 is not 'anything other than crucifixion'."
+  - "S3 forbids a substitute and therefore does not absorb S2."
+  - "S3 does not silently invoke divine action as its distinguishing mechanism."
+  - "S3 requires a founding-causal bridge, not merely continued life somewhere."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_FORMULATION"
+  reviewer_or_basis: "Program-lead review of FORM-S2-001, FORM-S23-003, and FORM-S3-001"
+  findings:
+    - "A serious noncrucifixion/escape space is represented in tradition and scholarly comparison."
+    - "The exact no-substitute + continued-life + founding-access conjunction was not found as a single native formulation in the reviewed sources."
+    - "Packet is therefore disclosed as a synthetic bounded rival, not attributed to a single school."
+
+equal_strength_review:
+  status: "PASS_WITH_LIMITATION_PRELIMINARY"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "S3 receives a closed and falsifiable formulation, but synthetic status should be visible to downstream reviewers."
+
+packet_stage_notes:
+  - "If Reviewer B or Reviewer C concludes the synthetic conjunction lacks independent defensibility, route through the ordinary candidate-revision path rather than weakening its burdens."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [12,14,15]
+freeze_identity: "PENDING_WAVE_1_FREEZE_MANIFEST"
