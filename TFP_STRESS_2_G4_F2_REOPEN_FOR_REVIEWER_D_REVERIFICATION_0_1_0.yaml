@@ -1,0 +1,44 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_F2_REOPEN_FOR_REVIEWER_D_REVERIFICATION"
+status: "F2_REOPENED_FOR_FRESH_REVERIFICATION__G5_READINESS_SUSPENDED"
+date: "2026-10-06"
+
+reason:
+  project_lead_self_correction: "The Program Lead advanced F2 to closed and G5-ready after the Gemini Reviewer-D report without first independently replaying the substantive A17 checks in sufficient depth."
+  subsequent_project_lead_check: "A focused direct repository replay found Gemini's core claims consistent with the repository, but the Program Lead did not yet treat that focused replay as a sufficient basis to leave F2 closed."
+  governance_effect: "Suspend G5 readiness until a fresh disjoint Reviewer-D session independently re-verifies A17 against the repository or an equivalent complete frozen evidence packet."
+  gemini_report_invalidated: false
+  gemini_report_status: "PRESERVED_AS_HISTORICAL_SUPPORTING_REVIEW__NOT_SOLE_BASIS_FOR_F2_CLOSURE"
+  canonical_adjudication_promoted: false
+  human_G5_acceptance_received: false
+
+prior_reviewer_D_result:
+  report: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md","84ea800532fef7fe814cc0c68f25102034330e9a"]
+  provider: "Google Gemini 3.1 Pro / Extended Thinking"
+  result: "LEDGER_INTEGRITY_CONFIRMED"
+  limitation: "Git history checked from a frozen GitHub REST evidence snapshot rather than live GitHub access."
+
+fresh_reverification_assignment:
+  provider: "Anthropic"
+  model: "Claude Opus 5.5"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  handshake_response:
+    path: "TFP_STRESS_2_REVIEWER_D_CLAUDE_REVERIFICATION_HANDSHAKE_RESPONSE_0_1_0.md"
+  assignment_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+  visible_TFP_STRESS_2_memory_exposure: "NONE_REPORTED"
+  caveat: "Shared account-level memory infrastructure exists, but no TFP-STRESS-2 material is visible in the fresh session and no past-chat/memory search was performed."
+
+scope:
+  active_role: "ledger_integrity_reviewer"
+  required_checks: "Protocol 0.1.7 A17 only"
+  amendment_direction_review: "PROHIBITED"
+  strict_audit: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+  Q1_readjudication: "PROHIBITED"
+  repository_mode: "READ_ONLY"
+
+success_condition:
+  - "Fresh Reviewer-D report independently reproduces or corrects the A17 result."
+  - "Program Lead then independently checks the new report before closing F2."
+  - "Only after both steps may G5 readiness be restored."
