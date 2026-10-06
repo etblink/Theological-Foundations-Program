@@ -1,0 +1,151 @@
+schema_version: "0.1.3"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET_FREEZE_MANIFEST"
+status: "FROZEN_FOR_FINAL_NARROW_REVIEWER_B_CONFIRMATION__RESIDUAL_NB1_NB3_NB5_REPAIRED__PRE_G0"
+date: "2026-10-06"
+supersedes: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_2.yaml"
+supersession_reason: "Reviewer B narrow confirmation left four bounded residuals. Modified packets are versioned; unchanged packets are carried forward by exact blob. This manifest binds the final residual-repaired packet/control set for one final same-session confirmation."
+
+governing_surfaces:
+  admission_freeze:
+    path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_6.yaml"
+    blob_sha: "ae8a5974618035ac27069650f33120f820881821"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml"
+    blob_sha: "985735c633073d4887b596cd1a0fdd6a3432b372"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "32d3bd9fa1cdbc4fca66bcd1bb9d3a2e421915e9"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+    blob_sha: "1513d4476ef32222f819c51ef0623a0b16bf5bd4"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
+    blob_sha: "ac10a99acbbb47477e5995566f918611c23017b1"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_10.yaml"
+    blob_sha: "f2a68914134be7fa2341f7571ceebe50c9f1107a"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_9.yaml"
+    blob_sha: "824b71f7ba1ee923262933bce27b8abbe6182380"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_5.yaml"
+    blob_sha: "a84ae2cf5fa15f49eb1127f11311c00673ee2b5f"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml"
+    blob_sha: "ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_14.yaml"
+    blob_sha: "8960c78f77d25db93ecf0f5b0f3f703d3b93235a"
+  residual_repair_record:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_PRE_EVIDENCE_REPAIR_RECORD_0_1_0.md"
+    blob_sha: "3355ead6964049e33c6e7eb9492ec7f8c731dc07"
+  authentic_rereview_report:
+    path: "TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_REPORT_0_1_0.md"
+    blob_sha: "1ac620cdc1ca8abbdda8dc375080643442f2c6c2"
+  narrow_confirmation_report:
+    path: "TFP_STRESS_2_REVIEWER_B_NARROW_NB1_NB6_CONFIRMATION_REPORT_0_1_0.md"
+    blob_sha: "c914aadfce6ea0d26dc2fa536ebb802bd6bcf3d6"
+
+packet_policy:
+  exact_status_bearing_candidate_count: 11
+  exact_unique_necessary_proposition_count: 50
+  candidate_universe_changed: false
+  new_candidate_added: false
+  V_occurrence_proposition_added: true
+  all_status_bearing_candidate_packets_frozen: true
+  R_PHYS_refinement_is_non_status_bearing: true
+  required_node_rivals_frozen: true
+  body_neutrality_uniform_for_Q1_ontology_candidates: true
+  F_implementation_partition_closed: true
+  reviewer_B_final_narrow_confirmation_required: true
+  packet_freeze_is_not_G0_authorization: true
+  G1_evidence_acquisition_remains_prohibited: true
+
+status_bearing_packets:
+  - candidate_id: "R-TRANS"
+    path: "TFP_STRESS_2_STEELMAN_R_TRANS_0_1_2.yaml"
+    blob_sha: "65d5d2d8c2769c2ef9357bb133466aa63fa1f436"
+    carry_forward: "UNCHANGED_FROM_MANIFEST_0_1_2"
+  - candidate_id: "V"
+    path: "TFP_STRESS_2_STEELMAN_V_0_1_3.yaml"
+    blob_sha: "cdfd2ef82b65bace811a6e10b56eb4c62f0ac011"
+    changed_for: ["NB1-R1","NB3-R1"]
+  - candidate_id: "H-IND"
+    path: "TFP_STRESS_2_STEELMAN_H_IND_0_1_2.yaml"
+    blob_sha: "7d5b681d7fafa56e557750614cf66ce5ac618f38"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "H-SOC"
+    path: "TFP_STRESS_2_STEELMAN_H_SOC_0_1_2.yaml"
+    blob_sha: "f0e7266909a769cbbca19ee39a680bffe0a3fe59"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "H-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_H_SEED_SPREAD_0_1_2.yaml"
+    blob_sha: "1bb8ceb2dd6a5add4af4c325cbf14e3e0adc736c"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "L"
+    path: "TFP_STRESS_2_STEELMAN_L_0_1_2.yaml"
+    blob_sha: "dbe40245b1efe6880a391ccd1873090538a4d18f"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "S1"
+    path: "TFP_STRESS_2_STEELMAN_S1_0_1_2.yaml"
+    blob_sha: "71bbd90f6aa225d23cc24e993abe3c361fd6140b"
+    carry_forward: "UNCHANGED_FROM_MANIFEST_0_1_2"
+  - candidate_id: "F"
+    path: "TFP_STRESS_2_STEELMAN_F_0_1_2.yaml"
+    blob_sha: "9c52546efbb1cc3b3f9c126fc2909c339e19d091"
+    changed_for: ["NB3-R2"]
+  - candidate_id: "C-HET-IND"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_IND_0_1_2.yaml"
+    blob_sha: "ab8701cb7e7b09d99a860dd44cf00b1ff26f4ce6"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "C-HET-SOC"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_2.yaml"
+    blob_sha: "24270116eb56ebcfe7068251fc773ad4fc28d4c0"
+    changed_for: ["NB3-R1"]
+  - candidate_id: "C-HET-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_2.yaml"
+    blob_sha: "cac5abb9946300bd78c6d7e9c6a012f38a6d48d4"
+    changed_for: ["NB3-R1"]
+
+non_status_refinement_packets:
+  - candidate_id: "R-PHYS-REFINEMENT"
+    path: "TFP_STRESS_2_STEELMAN_R_PHYS_REFINEMENT_0_1_2.yaml"
+    blob_sha: "c18d583ae810cd3a4686a93200da43228c9b9a0d"
+    carry_forward: "UNCHANGED_FROM_MANIFEST_0_1_2"
+
+required_node_rival_packets:
+  - candidate_id: "X-NONHISTORICITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "eab364506a87fa6f8862e50f73916cb93fae2df5"
+  - candidate_id: "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "1cfbaeb537610afe73bc3c09bafafca41906a1dc"
+  - candidate_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml"
+    blob_sha: "dbb0525d0907549e6d998d0665557abb51b7fd29"
+
+repair_binding:
+  NB1_R1: "P-V-FOUNDING-ENCOUNTER direct occurrence burden frozen"
+  NB5_R1: "identity/occurrence absence symmetry and NOT_ESTABLISHED-only ceiling frozen"
+  NB3_R1: "uniform body neutrality across Q1 ontology candidates frozen"
+  NB3_R2: "F-NONBODY-ASSERTION + F-BODY-REMOVAL closed implementation partition frozen"
+  NB1_S1: "R identity background sensitivity sync frozen"
+  NB6_M1: "common-background quantifier frozen"
+  NM1_NM3_RECORD1: "clerical and integrity repairs frozen"
+
+freeze_effect:
+  packet_text_locked_for_final_narrow_reviewer_B_confirmation: true
+  any_material_change_requires_new_version_and_manifest: true
+  no_candidate_may_absorb_unlisted_mechanisms_after_freeze: true
+  no_candidate_may_be_added_or_removed_except_C4: true
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
