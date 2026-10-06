@@ -1,0 +1,368 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE"
+status: "K4_FROZEN__CLERICAL_SUMMARY_COUNT_REPAIR_PENDING_INDEPENDENT_C4_CONFIRMATION__ROW_DISPOSITIONS_UNCHANGED"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  preregistration: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+  preregistration_blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  g2_launch: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+  g2_launch_blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+  l1_matrix: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_EVIDENCE_MATRIX_0_1_0.yaml"
+  l1_matrix_blob_sha: "2341585f37b2de26f62d7b8ec971701381d51a99"
+  proposition_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  proposition_coverage_report_blob_sha: "f5529ea1a96f92018728462560f30d3d1903a42e"
+  proposition_coverage_state: "ALL_27_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+
+lane:
+  id: "L1"
+  title: "Textual/source-critical"
+  competence: ["provenance","dating/authorship","dependence","wording/translation","embedded tradition","transmission"]
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  supported_sufficiency_records_required: false
+  reason_no_supported_sufficiency_records: "No L1-linked multi-lane proposition satisfies all applicable truth requirements from L1 alone; therefore no proposition is assigned SUPPORTED_WITHIN_SCOPE in this lane."
+  unresolved_conflicts_listed: true
+  exact_version_fixed: true
+
+source_quality:
+  principles:
+    - "Earlier is not automatically better; later is not automatically worse."
+    - "Repeated Pauline passages are one author stream, not independent votes."
+    - "Synoptic overlap and possible Johannine/Acts literary dependence are carried rather than treated as independent convergence."
+    - "Acts speeches are literary/source-critical evidence with disputed access to earlier material, not verbatim founding transcripts by default."
+    - "Second-century reception can illuminate transmission/development but cannot independently establish founding events."
+    - "Modern psychological/social/mechanism literature supplies mechanism capacity/reference-class controls, not direct first-century occurrence evidence."
+    - "Adverse historiography is evaluated claim-specifically; access failures are preserved and never converted into favorable evidence for a rival."
+  primary_text_base:
+    strength: "STRONG_FOR_TEXTUAL_ATTESTATION__LIMITED_FOR_EVENT_OR_CAUSAL_TRUTH"
+    key_streams:
+      - "Pauline: 1 Cor 15:1-11; 1 Cor 9:1; Gal 1-2; Rom 1:3-4; Phil 2:6-11; 1 Thess 4:13-18; 1 Cor 15:35-54; 2 Cor 5:1-10"
+      - "Canonical narratives: Mark 15-16; Matthew 27-28; Luke 23-24; John 19-21"
+      - "Acts proclamation speeches: Acts 2, 3, 10, 13"
+      - "Early reception/noncanonical: Ignatius, 1 Clement, Polycarp, Didache, Gospel of Peter"
+  source_critical_controls:
+    strength: "MATERIAL_BUT_ACCESS_LIMITED"
+    limits:
+      - "1 Cor 15 formula-boundary controls are mostly abstract-level."
+      - "Synoptic, Acts-speech, Johannine, chronology, and Pauline body-semantic controls are substantially abstract/excerpt/reference-entry level."
+      - "Collins full chapter, Lüdemann full book, Goulder full chapter, Klawans chapter, and several other full-text controls remain unavailable."
+  dependence_clusters:
+    - id: "DEP-PAUL"
+      rule: "Pauline passages share one author/institutional stream unless a separately warranted embedded tradition is established."
+    - id: "DEP-SYNOPTIC"
+      rule: "Mark/Matthew/Luke cannot be counted as three fully independent streams without source-critical warrant."
+    - id: "DEP-JOHN"
+      rule: "John is separately inventoried but its relationship to Synoptic/other traditions remains disputed."
+    - id: "DEP-ACTS"
+      rule: "Acts speech material remains a later Lukan literary stream with disputed earlier-source content."
+    - id: "DEP-RECEPTION"
+      rule: "Ignatius/1 Clement/Polycarp/Didache/Gospel of Peter are later reception/development streams, not first-generation event witnesses."
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 0
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 13
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 0
+  NOT_ESTABLISHED_WITHIN_SCOPE: 14
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-R-BODY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Textual sources contain early resurrection-body language and later explicit flesh/bones/touch/eating/wound motifs; 1 Cor 15 semantics remain interpretation-sensitive."
+    positive_evidence: ["G1W1-034","G1W1-020","G1W1-021","G1RS-053"]
+    unresolved_requirements: ["historical occurrence","same-stream referent","metaphysical embodiment criteria","full semantic/source-critical control"]
+    material_gap: "SRC-02 body-semantics controls and SRC-14 are not fully evaluated."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-IDENTITY-JESUS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Early and later texts identify the claimed postmortem referent as Jesus and preserve recognition/continuity language, but textual identification is not itself proof of personal identity."
+    positive_evidence: ["G1W1-001","G1W1-020","G1W1-021"]
+    unresolved_requirements: ["historical referent identity","recognition reliability","personal-identity criterion"]
+    material_gap: "Dependence controls and philosophical identity analysis remain outside L1."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "1 Cor 15 preserves a received appearance list and Paul separately claims an appearance; this materially supports existence of early claimed-encounter tradition but does not by itself establish a qualifying encounter stream as historically occurring."
+    positive_evidence: ["G1W1-001","G1W1-016","G1W1-008"]
+    unresolved_requirements: ["pre-Pauline formula boundary","stream independence","historical occurrence","testimonial reliability"]
+    material_gap: "Formula/source-critical controls remain abstract-level."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Texts place resurrection/appearance claims early in proclamation, but L1 cannot establish that an embodied encounter stream was PRIMARY or NECESSARY_CONTRIBUTING."
+    positive_evidence: ["G1W1-001","G1W1-003","G1W1-022"]
+    unresolved_requirements: ["causal priority","embodied referent","historical stream occurrence","alternative causal models"]
+    material_gap: "SRC-10 development material is preview-level; causal ranking belongs to later lanes."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "The sources identify the claimed referent as Jesus, but L1 cannot establish that a real extramental nonembodied referent was personally identical with Jesus."
+    positive_evidence: ["G1W1-001","G1W1-020","G1W1-021"]
+    unresolved_requirements: ["extramentality","historical referent identity","personal-identity criterion"]
+    material_gap: "SRC-13/SRC-14 remain abstract/bibliographic and belong primarily to later lanes."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-NONEMBODIED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Pauline resurrection-body vocabulary is semantically contested, while later narratives explicitly portray bodily features; L1 does not establish a nonembodied referent."
+    positive_evidence: ["G1W1-034","G1W1-035"]
+    contrary_or_tension_evidence: ["G1W1-020","G1W1-021","G1RS-053"]
+    unresolved_requirements: ["correct semantic reading","source chronology/dependence","metaphysical nonembodiment"]
+    material_gap: "Body-semantic controls are incomplete and later physical narratives cannot simply be projected backward."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-FOUNDING-ENCOUNTER"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "The same early claimed-encounter inventory used for R is textually present, but L1 does not establish the stream's extramentality, identity, nonembodiment, or historical occurrence."
+    positive_evidence: ["G1W1-001","G1W1-016","G1W1-008"]
+    unresolved_requirements: ["historical occurrence","stream independence","referent ontology"]
+    material_gap: "Formula-boundary/source-critical controls remain abstract-level."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-EXPERIENCE-OCCURRED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Paul's first-person claim and received appearance traditions materially support an early experience-report stream, but L1 cannot establish the subjective/nonveridical psychological class required by H-IND."
+    positive_evidence: ["G1W1-001","G1W1-016"]
+    contextual_controls: ["G1RS-059","G1RS-072","G1RS-073"]
+    unresolved_requirements: ["subjective-experience classification","nonveridicality","mechanism fit","founding-stratum transfer"]
+    material_gap: "Lüdemann/Goulder are unread; modern bereavement mechanisms do not transfer automatically."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-INTERPRETIVE-ORIGIN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Founding-proclamation material explicitly includes scriptural framing ('according to the scriptures') and early Jewish interpretive resources were available; L1 does not establish interpretive processing as PRIMARY."
+    positive_evidence: ["G1W1-001","G1W1-013","G1W1-014","G1W1-028","G1W1-038","G1W1-044"]
+    unresolved_requirements: ["causal priority","specific interpretive genealogy","experience-mechanism role"]
+    material_gap: "Klawans, Wisdom apparatus, 4Q521 edition, and SRC-10 fine-grained controls remain limited."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Texts attest early appearance/experience claims but do not establish that individual and social experience mechanisms were merely CONTRIBUTING_NONNECESSARY or NONE."
+    evidence_considered: ["G1W1-001","G1W1-016","G1RS-059","G1RS-060","G1RS-061"]
+    unresolved_requirements: ["experience mechanism occurrence","causal role","psychological/social transfer"]
+    material_gap: "Unread Lüdemann/Goulder and preview-level social/mechanism literature are carried; absence cannot establish nonprimary status."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-L-ENCOUNTER-CLAIM-ORIGIN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Later narrative elaboration is textually visible, but core appearance claims are already present in early Pauline tradition; L1 does not establish that encounter claims as such arose secondarily from an interpretive origin."
+    evidence_considered: ["G1W1-001","G1W1-006","G1W1-019","G1W1-020","G1W1-021","G1RS-070"]
+    unresolved_requirements: ["genealogical transmission from interpretation to encounter claim","formula dating/boundary","memory-development mechanism"]
+    material_gap: "Crossan is only page-partially recovered; Gospel of Peter date/dependence disputed."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-DEVELOPMENT-SEQUENCE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "The corpus exhibits chronological/literary differences from early Pauline proclamation through canonical and noncanonical narrative elaboration; this supports some development but does not by itself establish a single genealogical sequence."
+    positive_evidence: ["G1W1-001","G1W1-006","G1W1-019","G1W1-020","G1W1-021","G1RS-053","G1RS-070","G1RS-062"]
+    unresolved_requirements: ["exact dependence","carrier/genealogy","memory mechanism","which robust features are founding versus later"]
+    material_gap: "SRC-02/SRC-10 controls remain largely abstract/preview-level."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Scriptural interpretation is early and textually embedded, but L1 does not establish M-INTERP as PRIMARY in generating the founding proclamation."
+    evidence_considered: ["G1W1-001","G1W1-013","G1W1-014","G1RS-062"]
+    unresolved_requirements: ["causal priority","rival mechanisms","founding interaction sequence"]
+    material_gap: "Development/interpretive controls do not provide direct causal observation."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-F-DELIBERATE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "The primary corpus contains a stolen-body counterclaim and later invention hypotheses, but no acquired first-century positive evidence establishes knowing founding falsehood."
+    evidence_considered: ["G1W1-019","G1RS-063","G1RS-071"]
+    unresolved_requirements: ["positive intentional-deception evidence","actor knowledge","origin-material falsehood"]
+    material_gap: "Crossan is partially recovered and generic deception cues are not historical proof."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-F-ORIGIN-MATERIAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "L1 does not establish that any knowing false assertion/construction was upstream of the founding proclamation rather than later."
+    evidence_considered: ["G1W1-001","G1W1-019","G1RS-063","G1RS-071"]
+    unresolved_requirements: ["founding chronology of deception","actor access/opportunity","specific fabricated content"]
+    material_gap: "Dependence controls are abstract-level and positive fabrication evidence is thin."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Rapid and durable transmission of resurrection/appearance claims is textually attested across early and later streams, showing transmission capacity in general; L1 does not establish transmission of knowingly false founding claims."
+    positive_evidence: ["G1W1-001","G1W1-002","G1W1-003","G1W1-022","G1RS-053","G1RS-054"]
+    unresolved_requirements: ["deceptive-origin premise","specific transmission pathway","mechanism adequacy under F"]
+    material_gap: "SRC-02/SRC-10 dependence controls remain limited."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "No L1 evidence establishes M-FOUNDING-FAB as PRIMARY."
+    evidence_considered: ["G1W1-019","G1RS-063","G1RS-071"]
+    unresolved_requirements: ["deliberate fabrication occurrence","founding timing","causal primacy"]
+    material_gap: "Positive fabrication evidence remains thin; absence cannot favor a rival."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-IND-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Early texts support existence of individual claimed-experience reports, including Paul's own claim, but not the required nonveridical psychological mechanism or causal role."
+    positive_evidence: ["G1W1-001","G1W1-016"]
+    contextual_controls: ["G1RS-059","G1RS-072","G1RS-073"]
+    unresolved_requirements: ["subjective/nonveridical mechanism","capacity","founding causal role"]
+    material_gap: "Modern mechanism transfer and unread adverse monographs remain unresolved."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-INT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Founding proclamation contains scriptural/interpretive framing and the conceptual environment supplies relevant resources, materially supporting a founding interpretive contribution but not its causal necessity."
+    positive_evidence: ["G1W1-001","G1W1-013","G1W1-014","G1W1-028","G1W1-038","G1W1-044"]
+    unresolved_requirements: ["causal necessity","specific interpretive mechanism","interaction with experience modules"]
+    material_gap: "Jewish-context and development controls have listed access limits."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-NARR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Later canonical and noncanonical narrative strata exhibit additional concrete and elaborated resurrection motifs relative to early Pauline proclamation, supporting a later-narrative-development facet."
+    positive_evidence: ["G1W1-001","G1W1-006","G1W1-019","G1W1-020","G1W1-021","G1RS-070"]
+    unresolved_requirements: ["exact dependence/genealogy","which features are inherited versus developed","memory-development mechanism"]
+    material_gap: "Gospel of Peter date/dependence and SRC-10/source-critical controls remain limited."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "L1 can identify textual surfaces for individual-experience reports, interpretive framing, and later narrative development, but cannot establish the frozen joint causal pattern or exclude necessary social/veridical/fabrication alternatives."
+    evidence_considered: ["G1W1-001","G1W1-016","G1RS-062","G1RS-070"]
+    unresolved_requirements: ["M-IND-EXP necessity","M-INTERP necessity","social-module nonnecessity","nonveridicality","joint causal vector"]
+    material_gap: "Psychological/social and causal-role work belongs to L3/L4/L6."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "L1 does not establish that every required C-HET founding module met its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    evidence_considered: ["G1W1-001","G1RS-059","G1RS-060","G1RS-062"]
+    unresolved_requirements: ["module occurrence","module causal roles","interaction vector","at least one PRIMARY"]
+    material_gap: "Cross-lane causal integration remains outstanding."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-SOC-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "Group appearance-report language exists, but the frozen module explicitly requires genuine nonveridical subjective experiences in a social/group process; multiplicity of reports alone is insufficient."
+    evidence_considered: ["G1W1-001","G1RS-060","G1RS-061"]
+    unresolved_requirements: ["genuine social/group experience occurrence","nonveridicality","social mechanism capacity","founding timing"]
+    material_gap: "SRC-09/16 are largely abstract/preview and require case-specific transfer."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "L1 does not establish the required social-experience plus interpretation plus later-development causal vector or the nonnecessity of an individual seed."
+    evidence_considered: ["G1W1-001","G1RS-060","G1RS-062","G1RS-070"]
+    unresolved_requirements: ["M-SOC-EXP necessity","M-INTERP necessity","individual-seed nonnecessity","nonveridicality","joint causal vector"]
+    material_gap: "Mechanism and causal-role facets remain for L3/L4/L6."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-SEED-IND"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l1_facet: "Individual claimed-experience material is early enough to support a possible seed stream, but its subjective/nonveridical status and necessity are not established."
+    positive_evidence: ["G1W1-001","G1W1-016"]
+    contextual_controls: ["G1RS-059","G1RS-072","G1RS-073"]
+    unresolved_requirements: ["subjective/nonveridical mechanism","seed timing","causal necessity"]
+    material_gap: "Mechanism transfer and adverse full-text gaps remain."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SOC"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "The textual corpus contains collective/group claims and later community transmission but does not establish a distinct necessary social-amplification experience process in the founding stratum."
+    evidence_considered: ["G1W1-001","G1RS-060","G1RS-061"]
+    unresolved_requirements: ["distinct social mechanism","genuine experiences","founding timing","causal necessity"]
+    material_gap: "Modern social-memory/reference-class evidence requires case-specific transfer."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l1_facet: "L1 exposes textual surfaces compatible with individual reports, collective transmission, interpretation, and later narrative development, but it does not establish that all three founding mechanisms were necessary with the frozen joint role vector."
+    evidence_considered: ["G1W1-001","G1RS-059","G1RS-060","G1RS-062","G1RS-070"]
+    unresolved_requirements: ["individual seed necessity","social amplification necessity","interpretive necessity","at least one PRIMARY","nonveridicality"]
+    material_gap: "Joint mechanism/causal integration remains for L3/L4/L6."
+    proposed_confidence: "HIGH_FOR_L1_NONESTABLISHMENT__PENDING_REVIEWER_D"
+
+arrow_boundary:
+  standalone_l1_arrow_ids_frozen_at_g0: false
+  treatment: "Do not invent new outcome-material arrow IDs post-exposure. The A5 dependency arrows are preserved as endpoint dependencies and receive consolidated dispositions in Phase L after their necessary lane facets are available."
+  k4_effect: "L1 has no separately frozen L1-only arrow object requiring an independent truth disposition beyond the proposition facets above."
+  c4_change: false
+
+unresolved_l1_conflicts:
+  - "Pauline 'body' language is outcome-material but semantically contested; later explicit physicality cannot simply settle the earlier semantic question."
+  - "The 1 Cor 15 received tradition materially supports an early appearance-claim stream, but exact formula boundaries and independence remain disputed."
+  - "Later Gospel/noncanonical elaboration supports development at some level without establishing a single causal genealogy from scriptural interpretation to encounter claims."
+  - "Acts preserves early-looking proclamation forms but remains a later literary stream with disputed source access."
+  - "The absence of positive founding-fraud evidence does not establish sincerity, veridicality, or any rival."
+  - "Modern bereavement/social-memory mechanisms demonstrate capacities, not target-case operation."
+
+lane_freeze_effect:
+  l1_frozen: true
+  l1_amendments_now_use_C4: true
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required_later: true
+  discriminator_directions_produced: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  lane: "L2"
+  title: "Historical event"
+  purpose: "Evaluate crucifixion, death/nondeath, burial/body disposition, and chronology/context under the frozen proposition routes, using L1 source-quality/dependence findings as inputs without converting textual attestation into event truth."
+
+
+amendment_control:
+  supersedes: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_0.yaml"
+  amendment_class: "POST_EVIDENCE_NONMATERIAL"
+  amendment_scope: "Aggregate disposition_summary count only"
+  row_level_dispositions_changed: false
+  evidence_binding_changed: false
+  candidate_effect:
+    all_candidates: "NEUTRAL"
+  outcome_effect: "NEUTRAL"
+  independent_direction_confirmation: "PENDING__TO_BE_BUNDLED_WITH_NEXT_REVIEWER_C_POST_EVIDENCE_ASSIGNMENT"
+  use_before_confirmation:
+    permitted: "The 27 unchanged row-level dispositions from 0.1.0 may continue to be used; the corrected aggregate summary is not used as an outcome input until independently confirmed."
