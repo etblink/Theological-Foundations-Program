@@ -1,0 +1,76 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_F2_LEDGER_INTEGRITY_DISCLOSURE"
+status: "ADDITIVE_DISCLOSURE_FROZEN__NO_HISTORICAL_ARTIFACT_REWRITE"
+date: "2026-10-06"
+
+source_review:
+  reviewer_D_report: ["TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md","c030bcef140db40410a92ce9b8499b998b4c0cf6"]
+  project_lead_independent_check: "TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml"
+
+D1_amendment_before_review:
+  protocol_control: "Every amendment receives independent direction-classification review before use."
+  Phase_L_0_1_1:
+    amendment: ["TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml","150e8e711ac97be6bd31c668b0638246b57e57ab"]
+    ledger_sequence: 129
+    pre_C4_uses:
+      - [130,"G2 completion / G3 transition request"]
+      - [131,"human G3 authorization"]
+      - [132,"G3 launch"]
+      - [133,"A12 candidate-status assignment"]
+      - [134,"N3/Q1 provisional synthesis"]
+      - [138,"G4 strict-audit input freeze"]
+      - [139,"G4 strict-audit launch specification"]
+      - [140,"G4 strict-audit report"]
+    independent_C4:
+      report_blob: "cf59f05ede4c71345155c067a3098d0790b2b099"
+      ledger_sequence: 152
+      class: "POST_EVIDENCE_NONMATERIAL"
+      effects: "NEUTRAL"
+      directional_contamination: false
+    additive_A17_binding_sequence: 153
+    disclosure: "The amendment was used before independent C4 confirmation. Later neutral/nonmaterial C4 does not erase that chronology fact."
+  L1_0_1_1:
+    ledger_sequence: 88
+    pre_C4_citation_sequences: [89]
+    C4_sequence: 91
+    note: "Its own amendment control permitted use of unchanged row-level dispositions before confirmation; the corrected aggregate summary was barred as an outcome input."
+  L2_0_1_1:
+    ledger_sequence: 93
+    pre_C4_citation_sequences: [94,95]
+    C4_sequence: 97
+    note: "Its own amendment control permitted use of unchanged row-level dispositions/P-DEATH record before confirmation; the corrected pointer awaited confirmation."
+
+D2_ledger_header_staleness:
+  affected_files: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_63.yaml through ..._0_1_79.yaml"
+  inherited_schema_version: "0.1.62"
+  inherited_supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_61.yaml"
+  inherited_status: "ACTIVE_PRE_G0"
+  truth: "Filename/Git order and append sequence remained authoritative; headers were stale and misleading."
+  repair: "Ledger 0.1.80 corrects its own schema_version, supersedes pointer, and current lifecycle status. Historical ledger files remain immutable."
+
+D3_pre_activation_nonentry_revision:
+  transition: "ledger 0.1.0 -> 0.1.1"
+  affected_nonentry_fields:
+    - "ledger_policy"
+    - "integrity_reviewer role slot"
+    - "baseline_exposure_disclosures"
+    - "activation_record structure"
+  entry_rewrite: false
+  append_only_violation: false
+  reason: "0.1.0 was explicitly inactive until authorization and contained no entries."
+  disclosure_status: "RECORDED_FOR_COMPLETENESS"
+
+outcome_materiality:
+  A12_changed: false
+  N3_changed: false
+  Q1_changed: false
+  candidate_ranking_changed: false
+  directional_contamination: false
+  procedural_G5_effect: "F2 remains open; G5 readiness remains suspended until current reliance is re-established after C4 and a Reviewer-D delta check confirms the repaired ledger."
+
+current_repair_path:
+  - "Create ledger 0.1.80 with entries 1-164 preserved byte-for-byte and this disclosure appended."
+  - "Obtain human-owner ratification of G3 entry using the already-C4-confirmed Phase-L 0.1.1."
+  - "Mechanically revalidate A12/N3/Q1 after ratification without changing frozen evidence."
+  - "Run a narrow Reviewer-D delta check."
