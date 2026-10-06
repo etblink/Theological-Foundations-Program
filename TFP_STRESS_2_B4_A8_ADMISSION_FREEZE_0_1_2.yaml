@@ -1,0 +1,142 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN_AFTER_S2_S3_PRE_EVIDENCE_AMENDMENTS__P_CRUC_SHARED_FLOOR_REVIEW_PENDING"
+date: "2026-10-05"
+supersedes:
+  path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_1.yaml"
+  reason: "Reviewer A reclassified S3 and the Loke escape model to node-rival-only; candidate count changed 12 -> 11 and P-CRUC now requires explicit shared-floor review."
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+amendments:
+  - id: "S2_NODE_RIVAL"
+    record: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    reviewer_A_disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+  - id: "S3_NODE_RIVAL"
+    record: "TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    record_blob: "e36a61d57585a664f608900d704efe75a088d7b4"
+    reviewer_A_report: "TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_REPORT_0_1_0.md"
+    reviewer_A_report_blob: "42a00898233729e236146acb0485bf58da0dfa55"
+    reviewer_A_disposition: "S3_AND_ESCAPE_MODEL_REPAIR_REQUIRED"
+    S3_disposition: "S3_RECLASSIFY_NODE_RIVAL_ONLY"
+    escape_model_disposition: "ESCAPE_MODEL_NODE_RIVAL_ONLY"
+
+frozen_admission_surfaces:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_6.yaml"
+    blob_sha: "1a30cfd1b04c7d5474c1b6aa4a8865326db5124b"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_4.yaml"
+    blob_sha: "0a47cb27aff7db99f115e88109900c30db7fdfe0"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+    blob_sha: "ed767ff4ffd7227419d7cdf43cc8b0c2a5bcacf5"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_3.yaml"
+    blob_sha: "074f31ea922d1efb143cd240fa76106322c56883"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+    blob_sha: "6b91d55d873ac6dee90960f1733bbbb1a0ac3b0b"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+    blob_sha: "8e01aeea4e830f993a3ea8bb7b7ca286b74472bb"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_5.yaml"
+    blob_sha: "442b45187ce3f3371630b07d5585ffcf16047cc8"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_5.yaml"
+    blob_sha: "f2ff04618c52a7b92a5b2fd120e891ed16f03f11"
+  steelman_index:
+    path: "TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_3.yaml"
+    blob_sha: "36aa0c6c07c957387ded81c9149e509dee9c2bf9"
+
+frozen_status_bearing_candidates:
+  - "R-TRANS"
+  - "V"
+  - "H-IND"
+  - "H-SOC"
+  - "H-SEED-SPREAD"
+  - "L"
+  - "S1"
+  - "F"
+  - "C-HET-IND"
+  - "C-HET-SOC"
+  - "C-HET-SEED-SPREAD"
+
+status_bearing_candidate_count: 11
+
+frozen_non_status_refinements:
+  - "R-PHYS"
+
+frozen_node_rival_family:
+  id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  packet:
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "3dfe39bc620a9ef4a8845c2d9235fa130cdb5f38"
+  includes_reclassified:
+    - "former S2 full candidate"
+    - "former S3 full candidate"
+    - "Loke escape-model critical formulation"
+  variant_verification:
+    path: "TFP_STRESS_2_224199_FORMULATION_VARIANT_VERIFICATION_0_1_0.yaml"
+    blob_sha: "731457893115607cdd30c9ba41d42c33d42706bc"
+  direct_proposition: "P-CRUC"
+  truth_warrant_condition_11_control: true
+  revised_candidate_fallback_preserved: true
+
+other_frozen_exclusions_and_node_rivals:
+  - "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+  - "X-Q2-DIVINE-AGENT"
+  - "X-FREEFORM-COMPOSITE"
+  - "X-BODY-DISPOSITION-ONLY"
+  - "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+  - "X-ARBITRARY-SPECULATIVE-MODELS"
+  - "X-REAL-REFERENT-NONIDENTITY"
+
+frozen_shared_floor:
+  - "P-HIST-JESUS"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+
+P_CRUC:
+  all_11_full_candidates_require_identical_text: true
+  classification: "PENDING_EXPLICIT_SHARED_FLOOR_REVIEW"
+  current_handling: "Do not silently promote to shared floor before independent review."
+  node_rival_family_required: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  direct_route_required: true
+  sufficiency_record_required: true
+  revised_candidate_fallback_required: true
+  next_review: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_PROMPT_0_1_0.md"
+
+P_DEATH:
+  classification: "NOT_SHARED_FLOOR"
+  reason: "S1 denies P-DEATH."
+
+frozen_background_admissions_for_reviewer_C:
+  - "BGD-1"
+  - "BGD-2"
+  - "BGD-3"
+  - "BGD-9"
+  - "BGD-10"
+  - "BGD-11"
+
+formulation_control:
+  wave_1_source_record:
+    path: "TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_4.yaml"
+    blob_sha: "dcb6defbb7eb527a027f493d537bbf215aa8050d"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_9.yaml"
+    blob_sha: "85c3dc8ee30e33a7b7f234f0e0a12afa9663053b"
+
+pending_before_wave_1_architecture_freeze:
+  - "Reviewer A explicit P-CRUC shared-floor review."
+  - "If P-CRUC is admitted shared floor, update Q1/coverage/freeze identities without suppressing the noncrucifixion node-rival family or revised-candidate fallback."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  theological_outcome: "NONE"
