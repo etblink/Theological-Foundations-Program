@@ -1,0 +1,144 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L1_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__27_PROPOSITION_SCOPE_COVERAGE_REVIEW"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L1_PROPOSITION_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purpose: "Independently certify coverage state for each of the 27 unique necessary propositions that touch L1 before any final L1-linked proposition disposition is assigned."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "9b4a9143dd111f646c2b90fd0941cc1707544a7b"
+  tree: "17f73145c905d5c4a251aaa9a1d1fa99de8a8f8f"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  preregistration:
+    path: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+    blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  necessary_proposition_coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+  g2_launch:
+    path: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+    blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+
+required_evidence_control_artifacts:
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_REPORT_0_1_0.md"
+    blob_sha: "7a20b8f1762c1b57edcc2d925a91399ce9356950"
+    study_scope_disposition: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  - path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "2341585f37b2de26f62d7b8ec971701381d51a99"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_33.yaml"
+    blob_sha: "432aefadd402d18ebdc74882f91df7fe0c1c1f11"
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-R-BODY"
+    - "PROPOSITION:P-R-IDENTITY-JESUS"
+    - "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-R-CAUSAL"
+    - "PROPOSITION:P-V-IDENTITY-JESUS"
+    - "PROPOSITION:P-V-NONEMBODIED"
+    - "PROPOSITION:P-V-FOUNDING-ENCOUNTER"
+    - "PROPOSITION:P-HIND-EXPERIENCE-OCCURRED"
+    - "PROPOSITION:P-L-INTERPRETIVE-ORIGIN"
+    - "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    - "PROPOSITION:P-L-ENCOUNTER-CLAIM-ORIGIN"
+    - "PROPOSITION:P-L-DEVELOPMENT-SEQUENCE"
+    - "PROPOSITION:P-L-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-F-DELIBERATE"
+    - "PROPOSITION:P-F-ORIGIN-MATERIAL"
+    - "PROPOSITION:P-F-TRANSMISSION-SUFFICIENT"
+    - "PROPOSITION:P-F-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-IND-EXP"
+    - "PROPOSITION:P-CHET-INT"
+    - "PROPOSITION:P-CHET-NARR"
+    - "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-CHET-SOC-EXP"
+    - "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SEED-IND"
+    - "PROPOSITION:P-CHET-SEED-SOC"
+    - "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+
+review_standard:
+  - "Audit each proposition against its exact required strata, acceptable substitutes, expected-access flag, direct/comparative route, and frozen evidence expectations."
+  - "Use the L1 matrix as a binding/index artifact, not as proof that the source set is sufficient."
+  - "A STUDY-scope materially-complete certification does not automatically make every proposition scope materially complete."
+  - "A proposition may be COMPLETE, MATERIALLY_COMPLETE_WITH_LISTED_GAPS, or INCOMPLETE independently of the others."
+  - "Unperformed proposition-specific search or a required truth-critical source missing without adequate substitute is COVERAGE_INCOMPLETE."
+  - "An access limitation already independently judged non-outcome-changing at STUDY scope may still matter at a proposition scope; decide rather than assume."
+  - "If a proposition is materially complete, list the exact residual gaps carried into its later sufficiency/disposition analysis."
+  - "If a proposition is incomplete, state the smallest exact acquisition/search defect that must be cured before disposition."
+  - "Do not assign any proposition truth disposition."
+
+special_checks:
+  - "For body/identity propositions, enforce the frozen separation among embodiment, extramentality, and personal identity."
+  - "For founding-encounter/causal propositions, enforce source dependence and founding-stream chronology rather than counting later repetitions."
+  - "For L propositions, do not treat later narrative development as evidence of founding interpretive causation without a transmission/development route."
+  - "For F propositions, absence of fraud evidence cannot be converted into rival support, but insufficient positive/source coverage must be distinguished from a negative evidential result."
+  - "For C-HET propositions, module occurrence and joint-pattern routes must be independently covered; residual fit after pure-candidate failure is not coverage."
+  - "Preserve the G1 listed gaps including Crossan/Luedemann/Goulder access, SRC-02 abstract-level dependence controls, Klawans/Boman/Mara/Josephus-Life/Wisdom limitations where proposition-relevant."
+
+prohibited_actions:
+  - "Do not assign SUPPORTED, PARTIALLY_SUPPORTED, NOT_ESTABLISHED, EVIDENCE_AGAINST, CONTRADICTED, UNDERDETERMINED, or INSUFFICIENT_SIGNAL proposition dispositions."
+  - "Do not apply discriminator direction rules."
+  - "Do not certify COMPARISON:<id> MAKEABLE status."
+  - "Do not rank candidates."
+  - "Do not produce a G3 outcome."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not change frozen G0 architecture."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "COVERAGE STANDARD"
+    - "PROPOSITION-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS BY PROPOSITION"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  proposition_table_required_columns:
+    - "scope"
+    - "required strata"
+    - "substitute status"
+    - "material access limits"
+    - "coverage disposition"
+    - "reason"
+  exact_row_count: 27
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "Which of the 27 L1-linked proposition scopes are independently coverage-ready for G2 disposition, and which exact scopes, if any, must return to evidence acquisition first?"
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
+  report_must_be_returned_verbatim_to_program_lead: true
