@@ -80,46 +80,50 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "S3_Loke_source_relay_required__escape_model_review_blocked"
-  purpose: "Resume Reviewer A S3/escape-model packet-fidelity review after relaying the exact Loke §5.4 page from the authorized Library of Congress PDF; no substantive G1 evidence acquisition."
+  status: "S2_S3_node_rival_amendments_applied__P_CRUC_shared_floor_review_pending"
+  purpose: "Complete the one remaining Wave-1 architecture decision: explicit P-CRUC shared-floor classification against the exact 11-candidate universe, while preserving the broadened noncrucifixion node-rival family and revised-candidate fallback."
   bounded: true
   qualified_protocol_version: "0.1.7"
   design_branch: "research/tfp-stress-2-resurrection-g0"
-  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_9.md"
-  admission_freeze: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_1.yaml"
-  candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_5.yaml"
-  steelman_packet_index: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_2.yaml"
-  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_3.yaml"
-  reviewer_A_S3_source_relay_required_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_SOURCE_RELAY_REQUIRED_REPORT_0_1_0.md"
-  reviewer_A_S3_relay_instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_LOKE_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_8.yaml"
-  status_bearing_candidate_count: 12
-  S3_status: "OPEN_PENDING_SOURCE_RELAY_AND_REVIEW"
-  escape_model_status: "OPEN_PENDING_SOURCE_RELAY_AND_REVIEW"
+  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_10.md"
+  admission_freeze: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_2.yaml"
+  S2_pre_evidence_amendment: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+  S3_pre_evidence_amendment: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+  candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_6.yaml"
+  q1_control: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_4.yaml"
+  coverage_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_5.yaml"
+  source_plan: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_SOURCE_PLAN_0_1_5.yaml"
+  steelman_packet_index: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_3.yaml"
+  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_4.yaml"
+  noncrucifixion_node_rival_packet: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_1.yaml"
+  reviewer_A_S3_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_REPORT_0_1_0.md"
+  reviewer_A_S3_disposition: "S3_AND_ESCAPE_MODEL_REPAIR_REQUIRED__S3_RECLASSIFY_NODE_RIVAL_ONLY__ESCAPE_MODEL_NODE_RIVAL_ONLY"
+  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_7.yaml"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_9.yaml"
+  status_bearing_candidate_count: 11
+  P_CRUC_status: "ALL_11_REQUIRE_IDENTICALLY__PENDING_EXPLICIT_SHARED_FLOOR_REVIEW"
+  P_DEATH_status: "NOT_SHARED_FLOOR__S1_DENIES"
   methodology_mode: "maintenance"
   g0_authorized: false
   g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-STRESS-2-S3-LOKE-HUMAN-SOURCE-RELAY"
-  action: "relay_exact_Loke_section_5_4_page_to_same_reviewer_A_session_then_resume_S3_escape_model_review"
+  id: "TFP-STRESS-2-REVIEWER-A-P-CRUC-SHARED-FLOOR"
+  action: "run_exact_session_reviewer_A_P_CRUC_shared_floor_review"
   reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
-  instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_LOKE_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
-  exact_source: "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/02/21/28/2020022128/2020022128.pdf"
-  exact_locator:
-    printed_page: 119
-    pdf_display_page: "approximately 127 of 246"
-    section: "5.4 Addressing the escape hypothesis"
-    next_heading: "5.5 Conclusion"
-    footnote: 5
+  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_PROMPT_0_1_0.md"
+  prompt_blob_sha: "925d0fee9a5b03788d1e302533b4b343f29cde81"
   requirements:
-    - "relay_one_legible_full_page_image_showing_complete_5_4_next_heading_5_5_and_footnote_5"
-    - "same_reviewer_A_session"
-    - "do_not_add_program_lead_interpretation"
-    - "do_not_search_or_relay_other_literature"
-    - "preserve_resumed_reviewer_A_report_unchanged"
-    - "wave_1_freeze_remains_blocked_until_valid_S3_and_escape_model_disposition"
+    - "use_exact_reviewer_A_session"
+    - "read_only_the_pinned_repository_artifacts_named_in_prompt"
+    - "do_not_read_reviewer_B_report_or_reasoning"
+    - "do_not_use_external_literature_or_web"
+    - "decide_only_A6_shared_floor_classification_and_exact_consequences"
+    - "preserve_noncrucifixion_node_rival_family_and_direct_P_CRUC_sufficiency_route"
+    - "preserve_PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE_fallback"
+    - "do_not_promote_P_DEATH_to_shared_floor"
+    - "preserve_returned_report_unchanged"
     - "do_not_authorize_G0_G1_or_substantive_theological_study"
 
 qualification_candidate:
@@ -321,7 +325,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "pre_g0_design__S3_Loke_source_relay_required__escape_model_review_blocked__not_authorized"
+    status: "pre_g0_design__S2_S3_node_rival_amended__P_CRUC_shared_floor_review_pending__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
