@@ -1,0 +1,121 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_LANE_SYNTHESIS_LAUNCH"
+status: "AUTHORIZED_AND_STARTED__L1_TEXTUAL_SOURCE_CRITICAL_FIRST"
+date: "2026-10-06"
+
+authority:
+  governance_version: "0.1.5"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  qualified_protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  human_g0_authorization:
+    path: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+    transition_clause: "later transition to G2 only after G1 coverage requirements are satisfied or explicitly held under the protocol"
+  g1_transition_record:
+    path: "TFP_STRESS_2_G1_COMPLETION_AND_G2_TRANSITION_0_1_0.yaml"
+    blob_sha: "97dfa9da9a020f7621119d23c0d77a77db666b29"
+
+g1_freeze:
+  branch: "research/tfp-stress-2-resurrection-g1"
+  commit: "3c416f503d6b9d615307d217c4321af312516004"
+  tree: "eb976125a423ce4ff893e153ae86a6b5f937fba1"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_31.yaml"
+    blob_sha: "84007a4ea15c3f9c483282ffc8b3a7b78b3af692"
+    next_sequence: 83
+  inventory:
+    path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+    source_records: 73
+  coverage:
+    report: "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_REPORT_0_1_0.md"
+    blob_sha: "7a20b8f1762c1b57edcc2d925a91399ce9356950"
+    disposition: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+
+frozen_g0_architecture:
+  preregistration:
+    path: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+    blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
+    blob_sha: "99eeab89decd8420e61b97b17c4706e30157d0fd"
+  necessary_proposition_coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  discriminator_register:
+    path: "TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+    blob_sha: "09308e3cc0744198a6633966a5f0fc41b850cb57"
+  role_architecture:
+    path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
+    blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
+
+lane_architecture:
+  L1:
+    title: "Textual/source-critical"
+    competencies: ["provenance","dating/authorship","dependence","wording/translation","embedded tradition","transmission"]
+    status: "ACTIVE_FIRST"
+  L2:
+    title: "Historical event"
+    competencies: ["crucifixion","death/nondeath","burial/body disposition","chronology/context"]
+    status: "PENDING_L1_DEPENDENCY_OUTPUTS"
+  L3:
+    title: "Testimony/claimed encounter"
+    competencies: ["experience-report existence","sincerity","independence","stream identity","referent claims"]
+    status: "PENDING_L1_DEPENDENCY_OUTPUTS"
+  L4:
+    title: "Psychology/memory/social process"
+    competencies: ["individual experience mechanisms","social/group formation","memory","narrative development","deception hypotheses"]
+    status: "PENDING"
+  L5:
+    title: "Philosophy/metaphysics"
+    competencies: ["embodiment","personal identity","postmortem survival","testimony","anomaly/miracle reasoning","background sensitivity"]
+    status: "PENDING"
+  L6:
+    title: "Comparative integration"
+    competencies: ["proposition matrix","candidate status","discriminator application","background reruns","N3 handoff"]
+    status: "BLOCKED_FROM_VALID_DIRECTION_RESULTS_PENDING_NARROW_CONTROLS"
+
+g2_execution_rules:
+  - "Evidence may now be synthesized only inside the frozen lane competencies."
+  - "Every necessary proposition uses the exact frozen proposition ID and route in coverage map 0.1.13."
+  - "A STUDY-scope coverage state does not substitute for a required PROPOSITION:<id>, LANE:<id>, or COMPARISON:<id> coverage certification."
+  - "Before a necessary proposition receives a final G2 disposition where the coverage map requires PROPOSITION:<id>, obtain independent Reviewer C coverage-state review for that proposition scope."
+  - "SUPPORTED_WITHIN_SCOPE additionally requires its applicable type-specific SUFFICIENCY_RECORD."
+  - "G1 listed gaps must be propagated into any affected proposition confidence/sufficiency record."
+  - "No post-evidence discriminator direction result is valid until the frozen rule is applied and independently reviewed by Reviewer D."
+  - "MAKEABLE comparison certification requires Reviewer C COMPARISON:<id> coverage review."
+  - "Rival failure is never positive evidence for another candidate."
+  - "No candidate ranking or G3 provisional study outcome is authorized during lane synthesis."
+  - "No G5 theological acceptance occurs in G2."
+
+role_controls:
+  lane_author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  reviewer_C:
+    roles_available: ["PROPOSITION_or_LANE_coverage_state_reviewer","COMPARISON_MAKEABLE_certifier","amendment_direction_reviewer","fragility_reviewer"]
+    restrictions: ["not_post_evidence_direction_result_reviewer","not_ledger_integrity_reviewer","not_strict_auditor"]
+  reviewer_D:
+    status: "UNASSIGNED__POST_EVIDENCE_CONTROLS_NOW_ELIGIBLE"
+    required_lineage: "fresh session disjoint from Program Lead, A, B, C, and strict auditor"
+    roles: ["ledger_integrity_reviewer","post_evidence_direction_result_reviewer","confidence_reviewer"]
+  strict_auditor:
+    status: "RESERVED_AFTER_G3_SYNTHESIS_FREEZE"
+
+initial_L1_work:
+  first_artifact: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_EVIDENCE_MATRIX_0_1_0.yaml"
+  purpose: "Map the 73-record corpus onto L1 proposition surfaces, preserve source dependence/date/textual uncertainties, identify proposition-scope coverage certifications required before disposition."
+  final_dispositions_in_first_artifact: "PROHIBITED"
+  reason: "Build a transparent evidential matrix before committing proposition dispositions; narrow coverage certifications are requested only for propositions actually reached."
+
+authorization_boundary:
+  g1_closed: true
+  g2_authorized: true
+  g2_started: true
+  g3_authorized: false
+  comparison_direction_results_valid: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
