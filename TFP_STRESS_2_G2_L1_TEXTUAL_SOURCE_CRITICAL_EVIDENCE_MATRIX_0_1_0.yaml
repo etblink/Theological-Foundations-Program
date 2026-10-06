@@ -1,0 +1,378 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L1_TEXTUAL_SOURCE_CRITICAL_EVIDENCE_MATRIX"
+status: "FROZEN_EVIDENCE_BINDING_MATRIX__NO_PROPOSITION_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  g2_launch: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+  g2_launch_blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+  preregistration: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+  preregistration_blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  g1_study_coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+
+lane:
+  id: "L1"
+  title: "Textual/source-critical"
+  competencies: ["provenance","dating/authorship","dependence","wording/translation","embedded tradition","transmission"]
+  author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  proposition_disposition_authorized_in_this_artifact: false
+
+source_clusters:
+  C1_PAULINE_FOUNDING:
+    source_ids: ["G1W1-001","G1W1-002","G1W1-003","G1W1-004","G1W1-005","G1W1-016","G1W1-017","G1W1-018","G1W1-034","G1W1-050"]
+    observations:
+      - "1 Corinthians 15:1-11 contains received/delivered death, burial, raised, and appearance claims; the precise pre-Pauline formula boundary remains disputed."
+      - "1 Corinthians 9:1 and Galatians 1-2 provide Paul's own encounter/apostolic-contact claims; exact chronology and independence implications remain source-critical questions."
+      - "1 Corinthians 15:35-54 and 2 Corinthians 5:1-10 contain outcome-material body/dwelling language without a G1 metaphysical interpretation."
+      - "Romans 1:3-4, Philippians 2:6-11, and 1 Thessalonians 4:13-18 provide early proclamation/eschatological language but do not automatically resolve occurrence or ontology."
+    limits:
+      - "Formula boundaries, chronology, and semantic interpretation require the SRC-02 controls below."
+      - "Paul is one author stream; repeated Pauline passages are not independent votes."
+  C2_CANONICAL_NARRATIVE:
+    source_ids: ["G1W1-006","G1W1-007","G1W1-015","G1W1-019","G1W1-020","G1W1-021"]
+    observations:
+      - "Mark 15:33-16:8, Matthew 27-28, Luke 23-24, and John 19-21 preserve passion/burial/empty-tomb/appearance narrative material with materially different details."
+      - "The longer ending of Mark is separately controlled as a textual-critical issue rather than silently merged with Mark 16:1-8."
+    limits:
+      - "Narrative multiplicity does not equal independent eyewitness multiplicity."
+      - "Synoptic/Johannine dependence and dating remain explicit controls."
+  C3_ACTS_TRANSMISSION:
+    source_ids: ["G1W1-022","G1W1-023","G1W1-024","G1W1-025","G1W1-031"]
+    observations:
+      - "Acts preserves multiple resurrection/death proclamation speeches and named witness claims."
+      - "Speech-source scholarship is represented as a dispute; the speeches are not treated as verbatim early transcripts without source-critical warrant."
+    limits:
+      - "Acts is a later literary source relative to the founding period and cannot automatically establish independent founding streams."
+  C4_NONCANONICAL_RECEPTION:
+    source_ids: ["G1RS-053","G1RS-054","G1RS-070"]
+    observations:
+      - "Ignatius, 1 Clement, Polycarp, and Didache document early reception of resurrection claims."
+      - "The Akhmim Gospel of Peter fragment supplies a later noncanonical passion-resurrection narrative with distinctive elaboration."
+    limits:
+      - "E5 applies: later reception may preserve, reinterpret, or develop earlier material and is not projected backward without a transmission argument."
+      - "Gospel of Peter identity/date and canonical dependence remain disputed."
+  C5_JEWISH_CONCEPTUAL_CONTEXT:
+    source_ids: ["G1W1-013","G1W1-014","G1W1-028","G1W1-029","G1W1-038","G1W1-039","G1W1-040","G1W1-044","G1W1-045","G1W1-046","G1W1-047"]
+    observations:
+      - "The acquired Jewish corpus contains multiple resurrection, re-embodiment, immortality, afterlife, and vindication patterns rather than one uniform semantic model."
+      - "Josephus afterlife terminology has an explicit modern interpretive dispute represented by Yli-Karjanmaa and Klawans."
+    limits:
+      - "Conceptual availability is not occurrence evidence."
+      - "Klawans full chapter remains inaccessible; several ancient texts remain translation-level rather than critical-apparatus acquisitions."
+  C6_EXTERNAL_NOTICES:
+    source_ids: ["G1W1-009","G1W1-010","G1W1-011","G1W1-041","G1W1-048","G1W1-051","G1W1-052"]
+    observations:
+      - "Tacitus, Josephus, Pliny, Suetonius, Lucian, and Mara provide varying external or cross-tradition historical/reception context."
+      - "Pliny is early-second-century evidence for Christian practice, not an independent resurrection-appearance report."
+      - "Suetonius and Mara remain identity/date-ambiguous controls."
+    limits:
+      - "The Testimonium Flavianum transmission dispute is explicit."
+      - "Later notices do not become first-generation event evidence by repetition."
+  C7_ADVERSE_HISTORIOGRAPHY:
+    source_ids: ["G1W1-049","G1RS-071","G1RS-072","G1RS-073"]
+    observations:
+      - "Crossan's corrected burial/nonburial argument is represented at the key page-specific claims and tied to his Gospel-of-Peter development argument."
+      - "Luedemann and Goulder are identified as serious vision/psychological adverse formulations."
+    limits:
+      - "Crossan pp.123-158 was not read continuously."
+      - "Luedemann and Goulder full arguments remain unread after legitimate full-text access failures."
+      - "Their conclusions are not adopted as L1 findings."
+  C8_SOURCE_CRITICAL_CONTROLS:
+    source_ids: ["G1W1-008","G1W1-030","G1W1-031","G1W1-032","G1W1-033","G1W1-035"]
+    observations:
+      - "The corpus explicitly represents disputes over 1 Corinthians 15 formula boundaries, Synoptic dependence, Acts speech sources, Johannine dependence/composition, Pauline chronology, and resurrection-body semantics."
+    limits:
+      - "Most of these controls are abstract/excerpt/reference-entry level rather than full-monograph or full-article evaluation."
+      - "The second Reviewer C coverage report judged that limitation non-outcome-changing for STUDY-scope coverage; proposition-level sufficiency still requires scoped review."
+
+l1_proposition_surfaces:
+  - proposition_id: "P-R-BODY"
+    candidates: ["R-TRANS"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D3-R-VS-V-EMBODIMENT"]
+    frozen_expected_evidence: "Evidence warranting EMB-1 and EMB-2 in the same founding-relevant referent. Tomb/body-disposition evidence is neutral for generic R-TRANS and cannot satisfy this proposition."
+    frozen_weakening_evidence: "Evidence against bodily subjecthood or spatiotemporal/causal embodiment for the relevant referent."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-R-BODY"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-R-IDENTITY-JESUS"
+    candidates: ["R-TRANS"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Independent same-stream identity/continuity/recognition evidence linking the postmortem referent to the pre-mortem Jesus."
+    frozen_weakening_evidence: "Identity mismatch, unresolved case-specific identity under adequate coverage, or evidence supporting a non-Jesus real referent."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-R-IDENTITY-JESUS"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    candidates: ["R-TRANS"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence sufficient to establish at least one pre-Pauline founding encounter stream under the frozen dependence/inventory rule; ontology and identity are separately burdened."
+    frozen_weakening_evidence: "No qualifying founding encounter stream under adequate coverage, or only later/dependent reports that fail the founding-stream rule."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-R-FOUNDING-ENCOUNTER"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-R-CAUSAL"
+    candidates: ["R-TRANS"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D2-R-FOUNDING-CAUSE-VS-RIVALS"]
+    frozen_expected_evidence: "Evidence that an embodied founding stream was PRIMARY or NECESSARY_CONTRIBUTING to the proclamation."
+    frozen_weakening_evidence: "Only CONTRIBUTING_NONNECESSARY or NONE."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-R-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    candidates: ["V"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence identifying the extramental referent with Jesus."
+    frozen_weakening_evidence: "Referent identity unspecified, misidentified, or attributed to another agent."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-V-IDENTITY-JESUS"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-V-NONEMBODIED"
+    candidates: ["V"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D3-R-VS-V-EMBODIMENT"]
+    frozen_expected_evidence: "Evidence supporting a veridical referent that fails EMB-1 or EMB-2."
+    frozen_weakening_evidence: "All embodiment criteria supported."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-V-NONEMBODIED"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-V-FOUNDING-ENCOUNTER"
+    candidates: ["V"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence sufficient to establish at least one qualifying pre-Pauline founding encounter stream under the frozen dependence/inventory rule."
+    frozen_weakening_evidence: "No qualifying founding encounter stream under adequate coverage, or only later/dependent reports that fail the founding-stream rule."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-V-FOUNDING-ENCOUNTER"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HIND-EXPERIENCE-OCCURRED"
+    candidates: ["H-IND"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence supporting genuine founding individual subjective experiences."
+    frozen_weakening_evidence: "No such stream supported."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-HIND-EXPERIENCE-OCCURRED"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-INTERPRETIVE-ORIGIN"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Founding-stratum evidence supporting interpretive/scriptural mechanism as PRIMARY."
+    frozen_weakening_evidence: "Interpretive material only later or noncausal."
+    source_clusters: ["C1_PAULINE_FOUNDING","C4_NONCANONICAL_RECEPTION","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-L-INTERPRETIVE-ORIGIN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that individual/social experience mechanisms are only CONTRIBUTING_NONNECESSARY or NONE."
+    frozen_weakening_evidence: "Any experience mechanism is PRIMARY or NECESSARY_CONTRIBUTING."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C7_ADVERSE_HISTORIOGRAPHY","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-L-EXPERIENCE-NONPRIMARY"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-ENCOUNTER-CLAIM-ORIGIN"
+    candidates: ["L"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Documented secondary-development route."
+    frozen_weakening_evidence: "Encounter claims require a founding experiential mechanism not contained in L."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C4_NONCANONICAL_RECEPTION","C7_ADVERSE_HISTORIOGRAPHY","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-L-ENCOUNTER-CLAIM-ORIGIN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-DEVELOPMENT-SEQUENCE"
+    candidates: ["L"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence of later development from earlier thinner/interpretive material."
+    frozen_weakening_evidence: "Relevant robust content already founding or no development sequence."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C4_NONCANONICAL_RECEPTION","C7_ADVERSE_HISTORIOGRAPHY","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-L-DEVELOPMENT-SEQUENCE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-FOUNDING-CAUSAL"
+    candidates: ["L"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-INTERP is PRIMARY under the common causal ladder."
+    frozen_weakening_evidence: "Interpretation only nonnecessary/later or another mechanism is necessary."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-L-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-DELIBERATE"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence of intentional founding deception."
+    frozen_weakening_evidence: "No positive fabrication evidence or only error/interpretation."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-F-DELIBERATE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-ORIGIN-MATERIAL"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence that fabrication is upstream of founding proclamation."
+    frozen_weakening_evidence: "Fabrication only later."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-F-ORIGIN-MATERIAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for transmission adequacy."
+    frozen_weakening_evidence: "Transmission route absent/insufficient."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-F-TRANSMISSION-SUFFICIENT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    candidates: ["F"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-FOUNDING-FAB was PRIMARY under the common causal ladder."
+    frozen_weakening_evidence: "Fabrication only later/nonnecessary."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-F-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-EXP"
+    candidates: ["C-HET-IND"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-IND-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-INT"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C1_PAULINE_FOUNDING","C4_NONCANONICAL_RECEPTION","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-INT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-NARR"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C2_CANONICAL_NARRATIVE","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-NARR"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    candidates: ["C-HET-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-IND-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    frozen_weakening_evidence: "Any required founding module is only nonnecessary or was added/reassigned after exposure."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-EXP"
+    candidates: ["C-HET-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SOC-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    candidates: ["C-HET-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SOC-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-IND"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-IND."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-IND"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SOC"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-SOC."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["C1_PAULINE_FOUNDING","C3_ACTS_TRANSMISSION","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SOC"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SEED-SPREAD-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["C1_PAULINE_FOUNDING","C2_CANONICAL_NARRATIVE","C3_ACTS_TRANSMISSION","C4_NONCANONICAL_RECEPTION","C5_JEWISH_CONCEPTUAL_CONTEXT","C8_SOURCE_CRITICAL_CONTROLS"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+matrix_constraints:
+  - "The matrix binds evidence to frozen proposition surfaces but does not evaluate final truth dispositions."
+  - "Source clusters are not votes; dependencies and shared authorship remain explicit."
+  - "No source is used outside the evidential route prospectively permitted for the proposition."
+  - "Tomb/body-disposition evidence remains neutral for generic R-TRANS and V except on the frozen eligible routes."
+  - "No later source is projected backward without an explicit preservation/dependence argument."
+  - "No rival's non-establishment counts positively for another candidate."
+  - "Every final L1-linked necessary-proposition disposition waits for its required independent PROPOSITION:<id> coverage-state certification."
+
+next_gate:
+  action: "Freeze a single fresh Reviewer C batch review covering the 27 unique PROPOSITION scopes above, checking that each proposition's required strata/substitutes and L1 evidence binding are complete or materially complete before disposition."
+  reviewer: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  same_prior_reviewer_conversation_permitted: false
+  proposition_dispositions_before_gate: "PROHIBITED"
