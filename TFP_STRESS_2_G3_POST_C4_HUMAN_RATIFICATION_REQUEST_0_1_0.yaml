@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G3_POST_C4_HUMAN_RATIFICATION_REQUEST"
+status: "PENDING_HUMAN_OWNER_RATIFICATION__G5_REMAINS_SUSPENDED"
+date: "2026-10-06"
+
+governance_basis:
+  rule: "No transition across evidence/synthesis/adjudication/authorization boundaries is implicit."
+  human_owner_final_authority: "Acceptance/authorization of consequential program-level transitions remains human-controlled."
+  reason_for_ratification: "The original explicit G3 authorization was executed using Phase-L 0.1.1 before that post-evidence amendment received the Protocol-C4 independent direction-classification review required before use."
+
+original_G3_authorization:
+  artifact: ["TFP_STRESS_2_G3_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md","6e2c935d7a8759a4862606d7c811720a406b4308"]
+  phase_L_blob: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  authorized_scope: "G3 comparative adjudication / Phase N entry; no predetermined ranking or G5 acceptance"
+
+defect_disclosure:
+  reviewer_D_report: ["TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md","c030bcef140db40410a92ce9b8499b998b4c0cf6"]
+  project_lead_independent_check: ["TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml","e741f98508e21bfec618bd9162ce2e86302c76c4"]
+  additive_disclosure: ["TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_DISCLOSURE_0_1_0.yaml","53386141c6c1bdbbaa3b285981ea70ea2aee54ad"]
+  repaired_current_ledger: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_80.yaml"
+  defect: "Phase-L 0.1.1 was used for G2->G3 transition/G3 authorization and downstream A12/N3/Q1 before independent C4 confirmation."
+
+subsequent_independent_C4:
+  report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+  item_A_class: "POST_EVIDENCE_NONMATERIAL"
+  effects: "NEUTRAL"
+  directional_contamination: false
+  fresh_confirmatory_cycle_required_by_direction_class: false
+  current_study_use_after_confirmation: "PERMITTED_NONMATERIAL_CONTROL_TAIL_READING"
+
+merits_effect:
+  evidence_changed: false
+  Phase_L_50_dispositions_changed: false
+  A12_changed: false
+  N3_changed: false
+  Q1_changed: false
+  candidate_ranking_changed: false
+  theological_outcome_changed: false
+
+ratification_effect_if_approved:
+  - "Re-establish G3 authorization prospectively after the completed independent C4 confirmation."
+  - "Authorize the Program Lead to mechanically revalidate the existing A12/N3/Q1 chain against the same frozen evidence and Phase-L 0.1.1, without introducing new evidence or changing the candidate architecture."
+  - "Require a narrow Reviewer-D delta check after that revalidation before F2 may be closed."
+  - "Do not authorize G5 human acceptance by this ratification."
+  - "Do not authorize stronger ranking, resurrection truth, divine-agent attribution, or Christianity-wide conclusions."
+
+ratification_text:
+  exact: "I ratify the TFP-STRESS-2 transition into G3 under qualified Protocol 0.1.7 using Phase-L consolidation blob 150e8e711ac97be6bd31c668b0638246b57e57ab, now with the chronology defect disclosed and the Phase-L 0.1.1 amendment independently classified NEUTRAL / POST_EVIDENCE_NONMATERIAL by Reviewer C. This ratification authorizes prospective mechanical revalidation of the existing G3 A12/N3/Q1 chain and a narrow Reviewer-D delta check. It does not authorize G5 acceptance or any stronger theological conclusion."
+
+if_not_ratified:
+  action: "Hold at G4/F2 repair with G5 suspended."
