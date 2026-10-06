@@ -1,0 +1,118 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "C-HET-SOC"
+candidate_name: "Heterogeneous social-experience + interpretation + later-development model"
+supersedes: "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_1.yaml"
+status: "NB2_CLOSED__NB3_UNIFORM_BODY_NEUTRALITY_APPLIED__FROZEN_FOR_FINAL_NARROW_REVIEWER_B_CONFIRMATION__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_6.yaml"
+module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
+causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_14.yaml"
+
+native_formulation: "Jesus was crucified and died. A genuine nonveridical social/group subjective-experience process and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. An individual seed was not necessary. Later narrative development remains necessary to the later-development pattern. M-BODY is only a non-ranking contradiction/compatibility expectation and is not a founding experience cause. No veridical referent and no founding deliberate fabrication occurred."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020"
+    use: "FORMULATION_ONLY__SUBJECTIVE_EXPERIENCE"
+  - id: "FORM-HSOC-001"
+    title: "Roediger, Meade & Bergman 2001"
+    use: "FORMULATION_ONLY__SOCIAL_MEMORY_MECHANISM"
+  - id: "FORM-HSOC-002"
+    title: "Edelson et al. 2011"
+    use: "FORMULATION_ONLY__DURABLE_PRIVATE_CONFORMITY"
+  - id: "FORM-L-001"
+    title: "Sutton & Le Donne 2023"
+    use: "FORMULATION_ONLY__M-INTERP_AND_MEMORY"
+  - id: "FORM-L-002"
+    title: "Galbraith 2017"
+    use: "FORMULATION_ONLY__M-LATER-NARR"
+  - id: "TFP-SYNTHETIC-CHET"
+    title: "Frozen C-HET-SOC module map"
+    use: "INTERNAL_SYNTHETIC_FORMULATION"
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-CHET-SOC-EXP"
+  - "P-CHET-INT"
+  - "P-CHET-NARR"
+  - "P-CHET-SOC-JOINT-PATTERN"
+  - "P-CHET-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Social-memory literature is mechanism literature only and cannot establish case applicability."
+  - "M-SOC-EXP requires genuine subjective experiences, not report conformity alone."
+  - "Each module receives independent warrant."
+  - "No founding deliberate fabrication or veridical referent is permitted."
+
+internal_success_conditions:
+  - "M-SOC-EXP and M-INTERP are each PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY."
+  - "M-IND-EXP is CONTRIBUTING_NONNECESSARY or NONE."
+  - "M-LATER-NARR is independently supported later and founding-causally NONE."
+  - "The exact joint pattern is supported without posthoc role reassignment."
+  - "M-FOUNDING-FAB is NONE and no veridical referent is supported."
+
+body_disposition_control:
+  module_id: "M-BODY"
+  proposition_id: null
+  role: "Q1_ONTOLOGY_NEUTRAL_SEARCH_AND_TRIGGER_CONTROL"
+  necessary_proposition: false
+  ranking_blocking: false
+  positive_support_rule: "Tomb/body-disposition evidence cannot raise C-HET-SOC status."
+  negative_use_rule: "Tomb/body-disposition evidence cannot weaken or defeat C-HET-SOC merely because it favors or disfavors embodied continuity."
+  trigger_only_routes: ["R-PHYS","S1","F-BODY-REMOVAL","REVISED_CANDIDATE_REQUIRED"]
+  sparse_or_unknown_case: "NEUTRAL"
+  founding_causal_role: "NONE"
+  reviewer_B_repair_basis: "NB-2 remains closed; residual NB3-R1 adopts uniform neutrality option (i)."
+
+expected_evidence:
+  - "A founding social/group process with genuine subjective experiences and independent social-mechanism warrant."
+  - "Independent founding scriptural/interpretive processing that is also causally necessary."
+  - "No necessary individual seed."
+  - "A later narrative-development sequence consistent with sincere elaboration."
+  - "Body-disposition evidence is neutral unless it triggers the frozen M-BODY contradiction condition; it cannot raise candidate status."
+  - "The social and interpretive modules jointly fit the founding pattern better than either alone under their own burdens."
+
+recognized_objections:
+  - "If interpretation is nonnecessary and social experience PRIMARY, H-SOC is the frozen profile."
+  - "If an individual seed is necessary, route to C-HET-SEED-SPREAD."
+  - "Mere report convergence without genuine experiences cannot satisfy M-SOC-EXP."
+  - "A veridical referent defeats the candidate."
+  - "The joint model may overfit unless the interpretive and social modules have independent evidence."
+
+caricatures_rejected:
+  - "C-HET-SOC is not mass psychosis plus legend."
+  - "Social influence is not assumed merely from source dependence."
+  - "Interpretation is not assumed merely from theological language."
+  - "The packet cannot absorb an individual seed after exposure."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MODULE_CONJUNCTION"
+  reviewer_or_basis: "Program-lead review of FORM-H-001, FORM-HSOC-001/002 and FORM-L-001/002"
+  findings:
+    - "The required experience, social and interpretive mechanisms are independently serious."
+    - "Exact conjunction remains synthetic and separately burdened."
+
+equal_strength_review:
+  status: "NB2_NARROW_CONFIRMATION_PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "genuine-experience requirement preserved"
+    - "social and interpretive modules independently warranted"
+    - "M-BODY expectation is non-ranking and non-residual"
+    - "H-SOC/seed-spread boundaries preserved"
+    - "no posthoc module switching"
+  findings: []
+
+packet_stage_notes:
+  - "Reviewer B should confirm that M-BODY is non-ranking and cannot create hidden asymmetry."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27,28,29,30,31]
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml"
