@@ -1,0 +1,105 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "H-SEED-SPREAD"
+candidate_name: "Subjective individual-seed plus social-amplification origin"
+supersedes: "TFP_STRESS_2_STEELMAN_H_SEED_SPREAD_0_1_0.yaml"
+status: "NB4_PROPONENT_STRENGTH_REPAIRED__FROZEN_FOR_NARROW_REVIEWER_B_CONFIRMATION__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_5.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_1.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
+
+native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective experience arose in the founding stratum and served as a necessary seed. A distinct social/group amplification process then generated additional genuine subjective experiences, durable memory/interpretive convergence, or both. M-IND-EXP and M-SOC-EXP were each PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY. M-INTERP was CONTRIBUTING_NONNECESSARY or NONE and no founding fabrication was necessary."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020 — Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Serious mechanism class for vivid individual experiences of deceased persons."
+  - id: "FORM-HSOC-001"
+    title: "Roediger, Meade & Bergman 2001 — Social contagion of memory"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Serious social-transmission mechanism capable of producing convergent memory content."
+  - id: "FORM-HSOC-002"
+    title: "Edelson et al. 2011 — Following the crowd"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Supports a distinction between durable private conformity and mere public compliance."
+
+  - id: "FORM-H-PROP-001"
+    title: "Stephen H. Smith, 'He appeared to Peter': reconsidering the hallucination hypothesis"
+    use: "FORMULATION_ONLY__DIRECT_MODERN_SCHOLARLY_PROPONENT__H_FAMILY"
+    contribution: "Direct case-level scholarly proponent of a hallucination/collective-delusion chain, relevant to an individual-seed plus social-amplification family."
+  - id: "FORM-H-PROP-002"
+    title: "Gerd Lüdemann, Resurrection of Christ: A Historical Inquiry"
+    use: "FORMULATION_ONLY__DIRECT_SCHOLARLY_PROPONENT__H_FAMILY"
+    contribution: "Direct case-level vision-origin formulation centered on early witnesses, strengthening the family formulation beyond generic mechanism studies."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-HSEED-INDIVIDUAL-EXPERIENCE"
+  - "P-HSEED-SOCIAL-AMPLIFICATION"
+  - "P-HSEED-NONVERIDICAL"
+  - "P-HSEED-MECHANISM-SUFFICIENT"
+  - "P-HSEED-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "The two mechanism literatures are combined prospectively; neither source is claimed to endorse the exact historical model."
+  - "The model requires genuine subjective experiences at both the seed and amplified social stages; rumor/report diffusion alone is insufficient."
+  - "Interpretation may contribute but cannot be necessary under this candidate."
+  - "No founding fabrication is required."
+
+internal_success_conditions:
+  - "A founding individual subjective-experience seed is independently supported."
+  - "A distinct social/group amplification process is independently supported and necessary."
+  - "Both required mechanism components are nonveridical in the relevant sense."
+  - "Each component is PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY."
+  - "M-INTERP is CONTRIBUTING_NONNECESSARY or NONE."
+  - "M-FOUNDING-FAB is NONE."
+
+expected_evidence:
+  - "A temporal/dependence sequence in which an individual experience precedes and materially shapes a social experience/amplification process."
+  - "Evidence that later founding experiences or durable memories are not independent of the seed/social chain."
+  - "Mechanism evidence adequate for both individual subjective experience and social amplification."
+  - "No need for a necessary scriptural/interpretive module."
+
+recognized_objections:
+  - "The evidence may support only independent individual experiences, routing to H-IND."
+  - "The evidence may support a social process with no necessary individual seed, routing to H-SOC."
+  - "If interpretation is causally necessary, route to C-HET-SEED-SPREAD."
+  - "A veridical referent defeats the nonveridicality requirement."
+  - "Modern memory/social-influence literature may not transfer to the ancient context."
+
+caricatures_rejected:
+  - "H-SEED-SPREAD is not merely 'one person had a hallucination and everyone copied it'."
+  - "The social stage requires genuine experience/amplification, not only verbal repetition."
+  - "The model does not require identical phenomenology across participants."
+  - "It does not treat interpretive processing as nonexistent, only nonnecessary."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MECHANISM"
+  reviewer_or_basis: "Program-lead review of mechanism literature plus direct H-family proponent search record"
+  findings:
+    - "The individual-seed and social-amplification components are each independently serious mechanisms."
+    - "Direct H-family proponents now supplement the mechanism literature; the exact seed/spread role-vector conjunction remains a TFP synthetic candidate."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "both modules independently burdened"
+    - "temporal/dependence sequence testable"
+    - "genuine-experience requirement preserved"
+    - "interpretation remains nonnecessary"
+    - "no posthoc migration to H-IND/H-SOC"
+  findings: []
+
+packet_stage_notes:
+  - "If evidence produces an unmatched seed/social/interpretive role vector, use REVISED_CANDIDATE_REQUIRED rather than stretching this packet."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27,28,29]
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_2.yaml"
