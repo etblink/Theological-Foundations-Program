@@ -1,0 +1,105 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_PRE_G0"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
+
+ledger_policy:
+  append_only: true
+  rewrite_prior_entries: false
+  outcome_material_exposure_definition: "Receipt, reading, viewing, or substantive summary of outcome-relevant evidence, reviewer reasoning, or a result/artifact capable of changing candidate, source-plan, route, discriminator, background, or study outcome."
+  pre_g0_activation_reason: "Reviewer B M-8: candidate steelman/source-plan/route construction can expose outcome-relevant material before G0; therefore the ledger must be active now rather than only after human authorization."
+  pre_g0_exposure_is_not_G1_authorization: true
+
+custodian:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+
+integrity_reviewer:
+  role_slot: "REVIEWER_D_FUTURE"
+  status: "UNASSIGNED_FRESH_SESSION_REQUIRED"
+  disjoint_from:
+    - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    - "REVIEWER_C amendment-direction reviewer"
+    - "future strict auditor"
+
+baseline_exposure_disclosures:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "General pretrained/prior familiarity with common resurrection-debate claims, source names, and standard rival explanations; author of the pre-G0 study design. This baseline predates the study ledger and is disclosed rather than reconstructed as timed G1 evidence."
+  - actor_lineage: "HUMAN_OWNER"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "Strategic interest in the resurrection claim and general prior familiarity; no outcome-material reviewer role."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    category: "PRIOR_PROTOCOL_QUALIFICATION_CONTEXT"
+    detail: "Reviewer A previously audited Protocol 0.1.7 and knew a resurrection-claim study was queued before blind elicitation. It did not see the program-lead TFP-STRESS-2 design before its blind report."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    category: "GENERAL_PRETRAINED_FAMILIARITY"
+    detail: "Reviewer B disclosed general pretrained familiarity with the resurrection debate but no prior TFP-STRESS-2 reviewer/program-lead reasoning before its G0 control review."
+
+entries:
+  - sequence: 1
+    repository_commit: "45f87c78858c120a1d7349479a21b6ef0fe5c5f3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate universe"
+      - "background register"
+      - "claim typing"
+      - "Q1 scope"
+      - "necessary-proposition design"
+    note: "Program lead received and integrated Reviewer A's frozen blind report before any G1 acquisition."
+
+  - sequence: 2
+    repository_commit: "2c3a852"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_1.md + TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_1.yaml + qualified Protocol 0.1.7 + Governance 0.1.5"
+    exposure_class: "PRE_G0_CONTROL_REVIEW_INPUT"
+    amendment_surfaces:
+      - "coverage map"
+      - "source plan"
+      - "Q1 threshold"
+      - "C-HET control"
+      - "role architecture"
+    note: "Reviewer B read only prompt-permitted design/governing artifacts and no external resurrection evidence."
+
+  - sequence: 3
+    repository_commit: "2c3a852"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate necessary propositions"
+      - "coverage routes"
+      - "Q1 operationalization"
+      - "source-plan strata"
+      - "insufficient-signal threshold"
+      - "background retirement"
+      - "role separation"
+    note: "Program lead received Reviewer B's frozen report and began PRE_EVIDENCE_AMENDMENT repairs."
+
+pre_g0_controls:
+  substantive_outcome_evidence_acquisition_for_G1: "PROHIBITED"
+  steelman_packet_formulation_source_review:
+    status: "PERMITTED_AS_G0_DESIGN_ACTIVITY"
+    requirement: "Every outcome-relevant source/artifact exposure must be appended to this ledger."
+  source_plan_construction_search:
+    status: "PERMITTED_ONLY_TO_DEFINE_G0_SEARCH_ROUTES_AND_FORMULATION_STRATA"
+    requirement: "If source content is opened/read, record the exposure; no proposition disposition or candidate ranking may be assigned."
+  candidate_and_background_review: "PERMITTED_AND_LEDGERED"
+  methodological_design_review: "PERMITTED_AND_LEDGERED"
+  discriminator_rule_design: "PERMITTED_AND_LEDGERED"
+  direction_result_application: "PROHIBITED_BEFORE_G1_EVIDENCE_FREEZE"
+  proposition_dispositions: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+
+g0_activation_record:
+  final_g0_bundle_commit: null
+  human_owner_authorization_artifact: null
+  g1_activated_at: null
+
+integrity_state:
+  next_sequence: 4
+  last_checked_by: null
+  rewrite_detected: false
