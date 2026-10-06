@@ -1,0 +1,92 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "H-IND"
+candidate_name: "Subjective individual-experience origin"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus was crucified and died. At least one genuine individual subjective postmortem-type experience occurred in the founding stratum without a veridical external Jesus referent. The individual-experience mechanism M-IND-EXP was PRIMARY in generating the founding proclamation; social amplification, interpretive processing, later narrative development and body-disposition considerations may contribute but are not causally necessary at founding. No founding deception is required."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020 — Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Establishes a serious phenomenological/mechanism class in which bereaved persons can have vivid sensory or quasi-sensory experiences of deceased persons without the experiences being reducible to pathology."
+  - id: "TFP-SYNTHETIC-BOUNDARY"
+    title: "Frozen TFP H-IND causal profile"
+    use: "INTERNAL_SYNTHETIC_FORMULATION"
+    contribution: "No single reviewed scholar is claimed to endorse the exact TFP conjunction; the packet combines a serious individual-experience mechanism with the frozen causal-role and founding-stratum constraints."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-HIND-EXPERIENCE-OCCURRED"
+  - "P-HIND-NONVERIDICAL"
+  - "P-HIND-MECHANISM-SUFFICIENT"
+  - "P-HIND-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Psychological mechanism literature establishes mechanism intelligibility/capacity only; it does not establish that any early Christian report was nonveridical."
+  - "A sincere experience is not treated as evidence of veridicality or nonveridicality merely from sincerity."
+  - "No mental-disorder diagnosis is required."
+  - "No body/tomb proposition is necessary to H-IND."
+
+internal_success_conditions:
+  - "At least one founding individual subjective-experience stream is independently supported."
+  - "The relevant experience is nonveridical under the study's referent rules."
+  - "M-IND-EXP has adequate mechanism capacity and is PRIMARY under the common causal-role ladder."
+  - "M-SOC-EXP and M-INTERP are CONTRIBUTING_NONNECESSARY or NONE."
+  - "M-FOUNDING-FAB is NONE."
+  - "The founding causal bridge does not rely on later narrative elaboration."
+
+expected_evidence:
+  - "Founding-stratum testimony consistent with one or more sincere individual postmortem-type experiences."
+  - "Phenomenology compatible with known classes of vivid bereavement/anomalous experience without requiring an external referent."
+  - "Transmission chronology consistent with an individual experience being upstream of the proclamation."
+  - "No independently warranted requirement for social amplification or interpretive processing to generate the founding proclamation."
+
+recognized_objections:
+  - "Modern bereavement-experience research may not transfer to first-century persons or to the reported circumstances."
+  - "A real external referent would defeat P-HIND-NONVERIDICAL."
+  - "Evidence of necessary social amplification routes to H-SEED-SPREAD or C-HET-SEED-SPREAD."
+  - "Evidence of necessary founding interpretation routes to a C-HET candidate."
+  - "Multiplicity or diversity of founding streams may exceed a single-process H-IND model."
+
+caricatures_rejected:
+  - "H-IND is not 'the disciples were crazy'."
+  - "H-IND does not require psychopathology, drugs, sleep paralysis, or a single named clinical diagnosis."
+  - "H-IND does not treat all later appearance narratives as direct transcripts of one founding experience."
+  - "H-IND does not gain support merely because R or V weakens."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MECHANISM"
+  reviewer_or_basis: "Program-lead pre-G0 formulation review of FORM-H-001 plus frozen H-IND profile"
+  findings:
+    - "A serious individual subjective-experience mechanism is represented without pathologizing the experiencer."
+    - "No reviewed source endorses the exact H-IND founding-causal conjunction; synthetic status is explicit."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "mechanism literature not overextended into case evidence"
+    - "nonveridicality burden independently preserved"
+    - "PRIMARY causal burden preserved"
+    - "social/interpretive mechanisms not silently borrowed"
+    - "expected and weakening evidence symmetric"
+  findings: []
+
+packet_stage_notes:
+  - "No G1 event evidence has been assessed."
+  - "Body-disposition evidence is neutral unless separately tied to a frozen H-IND expectation by C4 before exposure."
+
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27]
+freeze_identity: null
