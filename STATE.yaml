@@ -79,74 +79,46 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE"
-  status: "G4_complete_PASS_WITH_LIMITATIONS__F1_closed__F2_closed_after_A17_repair_and_delta_confirmation__G5_human_acceptance_ready"
-  purpose: "Present the refreshed exact bounded TFP-STRESS-2 adjudication to the human owner for canonical acceptance under Protocol Phase P. The request now includes the completed F2 chronology/ledger-integrity repair history and supersedes earlier unpresented drafts."
+  id: "TFP-STRESS-2-G6-CLOSED"
+  status: "G5_human_acceptance_complete__canonical_adjudication_written__G6_CLOSED"
+  purpose: "Preserve the accepted bounded TFP-STRESS-2 adjudication, its limitations/negative knowledge/reopen conditions, and prevent silent expansion into a global theological verdict or automatic new study."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "0acb6927d9daf08c9e56d27e62ed88abb29ae61b"
-  g3_branch_tree: "82d4cee7afb8f67228938e3940608f03129ac48f"
-  phase_L:
-    blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
-    C4_class: "POST_EVIDENCE_NONMATERIAL"
-    C4_effects: "ALL_NEUTRAL"
-    current_use_status: "PROSPECTIVELY_AUTHORIZED_AFTER_C4_AND_HUMAN_RATIFICATION"
-  post_C4_human_G3_ratification:
-    acceptance: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md"
-    acceptance_blob_sha: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+  research_branch: "research/tfp-stress-2-resurrection-g3"
+  research_branch_head: "7bfbb45ccbec7df7bf4937b40b4acee461c19863"
+  research_branch_tree: "1883a80f4a161a11c0a3fdae0a62c4df4b037df1"
+  human_acceptance:
+    artifact: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_0_1_0.md"
+    blob_sha: "f02e21d72de13e9539cd6df99505c484952c14ea"
     status: "ACCEPTED"
-  prospective_revalidation:
-    artifact: "TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml"
-    blob_sha: "59a832f494e8207cfb7fb33d6eb714a1c5942465"
-    A12: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
-    N3: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
-    Q1: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
-    results_changed: false
-    stronger_outcome_created: false
-  g4:
-    strict_audit_report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
-    strict_audit_outcome: "PASS_WITH_LIMITATIONS"
-    reviewer_C_C4_report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
-    F1_closed: true
-    fresh_reviewer_D_full_reverify_report_blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
-    fresh_reviewer_D_full_reverify_result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
-    reviewer_D_delta_report_blob_sha: "3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
-    reviewer_D_delta_result: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
-    project_lead_delta_check_blob_sha: "302fb4a9937a7da8795444d4e8f52098ef9db5ca"
-    F2_closure_blob_sha: "f2585ebf6ac62eb86ed32d45dcff19e285e31ae4"
-    F2_closed: true
-    final_closure: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_1.yaml"
-    final_closure_blob_sha: "b58f53087968864d8ba5287ff8115dd7544036fd"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_85.yaml"
-  exposure_ledger_blob_sha: "872eaadc455f4c78e26ec327fbb7b877568c9f7a"
-  G5_acceptance_request:
-    path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_3.yaml"
-    blob_sha: "efd964986caac057819b436db3afa664399eb3cd"
-    status: "READY_FOR_HUMAN_OWNER_DECISION__NOT_YET_ACCEPTED"
-    superseded_drafts:
-      - "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_1.yaml"
-      - "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_2.yaml"
-  proposed_adjudication:
-    base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  canonical_adjudication:
+    artifact: "TFP_STRESS_2_CANONICAL_ADJUDICATION_0_1_0.yaml"
+    blob_sha: "c99e4ee57d4c7d538e37133363ea43bc687c1b0b"
+    outcome: "UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
     q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
-    q1_interpretation: "The current evidence does not warrant affirming R_EVENT as true; this is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
-    reporting_qualifier: "conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE"
+    confidence: "MODERATE"
+    lifecycle_status: "CLOSED"
+  G6_closure:
+    artifact: "TFP_STRESS_2_G6_LIFECYCLE_CLOSURE_0_1_0.yaml"
+    blob_sha: "3e90b230a1d180a4637796d580e224bcee720973"
+    status: "CLOSED__REOPEN_IF_PRESERVED"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_86.yaml"
+  exposure_ledger_blob_sha: "e52aeb2dc5b5d9ac027d5a5b4a81b339a9e48ca1"
   g4_strict_audit_complete: true
-  g5_human_acceptance_ready: true
-  g5_human_acceptance_complete: false
-  canonical_adjudication_written: false
-  theological_outcome: "NONE"
+  g5_human_acceptance_ready: false
+  g5_human_acceptance_complete: true
+  canonical_adjudication_written: true
+  g6_lifecycle_status: "CLOSED"
+  program_level_truth_commitment_created: false
+  theological_outcome: "BOUNDED_CANONICAL_ADJUDICATION_ONLY__NO_GLOBAL_THEOLOGICAL_VERDICT"
 next_action:
-  id: "TFP-STRESS-2-G5-HUMAN-OWNER-DECISION"
-  action: "obtain_explicit_human_owner_acceptance_or_hold_or_decline_for_the_exact_refreshed_G5_acceptance_request"
-  branch: "research/tfp-stress-2-resurrection-g3"
-  acceptance_request_blob_sha: "efd964986caac057819b436db3afa664399eb3cd"
+  id: "TFP-STRESS-2-G6-CLOSED"
+  action: "maintain_the_closed_canonical_adjudication_until_a_preserved_reopen_if_condition_is_met_or_the_human_owner_separately_authorizes_new_bounded_work"
   requirements:
-    - "human owner alone may accept the canonical adjudication"
-    - "do not remove the PROPOSED_ prefix before explicit acceptance"
-    - "if accepted, create a versioned acceptance record and then mechanically update canonical STATE"
-    - "carry all PASS_WITH_LIMITATIONS limitations, F2 repair history, uncertainty, negative knowledge, downstream constraints, and reopen conditions into the canonical adjudication"
+    - "do not silently reopen TFP-STRESS-2"
+    - "do not promote this local result into a Christianity-wide, naturalism-wide, supernaturalism-wide, or global theological conclusion"
+    - "preserve limitations, negative knowledge, confidence, and reopen_if in every downstream use"
+    - "any new truth-adjudication study requires its own Governance-authorized scope"
 
 qualification_candidate:
   version: "0.1.7"
@@ -254,7 +226,101 @@ canonical_adjudication_schema:
     - "reopen_if"
     - "superseded_by"
 
-canonical_adjudications: []
+canonical_adjudications:
+  - id: "TFP-STRESS-2-Q1-R_EVENT"
+    question: "Does the best publicly adjudicable historical evidence warrant that Jesus genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+    outcome: "UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+    q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    scope:
+      event_window:
+        - "early first-century crucifixion event attributed to Jesus"
+        - "emergence of the earliest recoverable founding proclamation"
+        - "founding claimed-encounter streams argued to be causally upstream of or contemporaneous with that proclamation"
+      evidence_window:
+        primary: "first-century sources and source layers"
+        development_reception: "early second-century material through approximately 150 CE where materially relevant"
+      geography: ["Roman Judea/Galilee","Jerusalem where independently supported","relevant eastern Mediterranean networks"]
+      exclusions:
+        - "Christianity as a whole"
+        - "Trinity/incarnation/atonement as global doctrinal conclusions"
+        - "global biblical inspiration/inerrancy"
+        - "global historicity/nonhistoricity"
+        - "specific divine-agent attribution"
+    protocol_version: "0.1.7"
+    lifecycle_status: "CLOSED"
+    authorization_artifact: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md#blob=20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+    role_matrix_artifact: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml#blob=cade6816cdd357b53fee227ac76d47ab16e83451"
+    evidence_exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_86.yaml#blob=e52aeb2dc5b5d9ac027d5a5b4a81b339a9e48ca1"
+    accepted_at: "2026-10-06"
+    synthesis_artifact: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml#blob=59a832f494e8207cfb7fb33d6eb714a1c5942465"
+    audit_artifacts:
+      - "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md#blob=bd10df2283516e4e6bfd04e367373c750d4e0d27"
+      - "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md#blob=cf59f05ede4c71345155c067a3098d0790b2b099"
+      - "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md#blob=c030bcef140db40410a92ce9b8499b998b4c0cf6"
+      - "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md#blob=3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
+    audit_reconciliation_artifact: null
+    human_acceptance_artifact: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_0_1_0.md#blob=f02e21d72de13e9539cd6df99505c484952c14ea"
+    confidence: "MODERATE"
+    evidence_coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    background_assumptions:
+      - "Frozen G0/L5 live-background controls apply; no favorable metaphysical or testimony prior is silently installed."
+      - "Zero RANKING_ELIGIBLE candidates is stable across the required live backgrounds on the frozen record."
+      - "Shared-floor P-CRUC is SUPPORTED_WITHIN_SCOPE for the accepted relative result."
+    residual_alternatives:
+      - "R-TRANS"
+      - "V"
+      - "H-IND"
+      - "H-SOC"
+      - "H-SEED-SPREAD"
+      - "L"
+      - "S1"
+      - "F"
+      - "C-HET-IND"
+      - "C-HET-SOC"
+      - "C-HET-SEED-SPREAD"
+    known_weaknesses:
+      - "P-R-BODY remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+      - "P-R-IDENTITY-JESUS remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+      - "P-R-FOUNDING-ENCOUNTER remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+      - "P-R-CAUSAL remains NOT_ESTABLISHED_WITHIN_SCOPE."
+      - "Carried G1 source-access/formulation gaps remain."
+      - "Strict-audit depth was bounded on some steelman/source-plan/module/stream surfaces."
+      - "AI reviewer independence is procedural rather than guaranteed training-prior independence."
+      - "F6 retains a defective source pin with no-disposition-change use only."
+      - "Historical ledger header defects and the Phase-L before-C4 chronology defect remain preserved as negative procedural knowledge."
+    flip_or_weaken_conditions:
+      - "evidence sufficient to upgrade all ranking-blocking necessary propositions for at least one adequate candidate"
+      - "downgrade of a shared-floor proposition such as P-CRUC"
+      - "materially changed provenance/dating/authorship/dependence"
+      - "newly accessible truth-critical evidence"
+      - "credible successful challenge to a truth-critical sufficiency/direction decision"
+      - "outcome-material replication/disconfirmation of an empirical mechanism claim"
+    underdetermination_subtype: "ALL_ADEQUATE_RANKING_BLOCKED"
+    limitations:
+      - "PASS_WITH_LIMITATIONS strict-audit limitations remain attached."
+      - "Carried G1 formulation/access gaps remain, including unavailable or partial Lüdemann, Goulder, and Crossan material."
+      - "G4 did not conduct a new evidence-acquisition cycle."
+      - "The initial Gemini Reviewer-D review was insufficient as the sole F2 basis; live Claude reverification exposed real defects that were repaired and delta-confirmed."
+      - "Historical ledger 0.1.63-0.1.79 headers remain stale as preserved history; corrected identity begins at 0.1.80."
+      - "A preserved sequence-157 commit-order inversion is disclosed and non-outcome-material."
+      - "F6 retains a defective source pin; current-study use is restricted to a no-disposition-change reconciliation note."
+    negative_knowledge:
+      - "No admitted candidate is RANKING_ELIGIBLE on the frozen record."
+      - "No candidate is BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED."
+      - "R_EVENT is not warranted as true on the frozen record."
+      - "R_EVENT is not classified EVIDENCE_AGAINST and is not found false."
+      - "No specific divine-agent attribution is authorized."
+      - "No Christianity-wide or global theological conclusion follows."
+      - "Shared-floor support creates no relative candidate credit."
+      - "No post-evidence amendment produced favorable/mixed directional contamination."
+    reopen_if:
+      - "materially new primary evidence"
+      - "materially changed provenance/dating/authorship/dependence"
+      - "newly accessible truth-critical source"
+      - "credible challenge to a truth-critical sufficiency/direction decision"
+      - "disconfirmation/replication of an empirical mechanism claim"
+      - "later TFP work that independently triggers a bounded reconsideration"
+    superseded_by: null
 
 methodology:
   claim_typing_required: true
