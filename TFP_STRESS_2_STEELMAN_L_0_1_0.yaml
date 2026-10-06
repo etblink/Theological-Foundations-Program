@@ -1,0 +1,96 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "L"
+candidate_name: "Interpretive/scriptural/narrative-development origin"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus was crucified and died. The founding proclamation arose primarily through interpretive processing of Jesus's death, inherited scriptural/apocalyptic expectations, memory framing, and theological meaning-making rather than through a necessary founding subjective encounter experience or veridical postmortem referent. M-INTERP was PRIMARY. Individual and social subjective-experience mechanisms were CONTRIBUTING_NONNECESSARY or NONE, and founding deliberate fabrication was NONE. Encounter claims and later narrative detail developed from the interpreted founding proclamation through ordinary transmission/memory/literary processes."
+
+proponent_sources:
+  - id: "FORM-L-001"
+    title: "Sutton & Le Donne 2023 — Remembering Jesus in Earliest Christianity"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Provides a serious scholarly model of earliest-Christian memory as socially framed, context-sensitive, and actively reconstructed."
+  - id: "FORM-L-002"
+    title: "Galbraith 2017 — Resurrection in Gospel of Peter as Prophetic Fulfilment of LXX Psalm 18"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Concrete example of resurrection narrative content being generated or reshaped through scriptural interpretation."
+  - id: "FORM-L-003"
+    title: "Schweitzer, Quest of the Historical Jesus, ch. 8 on Strauss"
+    use: "FORMULATION_ONLY__HISTORICAL_THEORY"
+    contribution: "Preserves a serious historical legendary/mythic-development family in which resurrection narratives can emerge through communal expectation and development rather than direct event reporting."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-L-INTERPRETIVE-ORIGIN"
+  - "P-L-EXPERIENCE-NONPRIMARY"
+  - "P-L-ENCOUNTER-CLAIM-ORIGIN"
+  - "P-L-DEVELOPMENT-SEQUENCE"
+  - "P-L-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Scriptural/theological interpretation is a historical mechanism claim, not a claim that the interpreted scripture is divinely authoritative."
+  - "Later literary examples define mechanism plausibility only and are not projected backward into the founding stratum."
+  - "L does not infer falsity from development; it bears its own burden to show interpretation was founding-causal."
+  - "M-FOUNDING-FAB must be NONE."
+
+internal_success_conditions:
+  - "A founding interpretive/scriptural mechanism is independently supported."
+  - "M-INTERP is PRIMARY in generating the founding proclamation."
+  - "M-IND-EXP and M-SOC-EXP are CONTRIBUTING_NONNECESSARY or NONE; NECESSARY_CONTRIBUTING experience defeats L."
+  - "Encounter-claim content is shown to arise from or be shaped by the interpretive/development sequence rather than requiring a founding veridical referent."
+  - "A recoverable development/transmission sequence links founding interpretation to later narrative elaboration."
+  - "No founding knowing deception is necessary."
+
+expected_evidence:
+  - "Early proclamation content that is strongly structured by scriptural/apocalyptic interpretive categories."
+  - "Dependence or development patterns showing later encounter/narrative detail emerging from an earlier interpreted proclamation."
+  - "Social-memory or literary-development patterns compatible with sincere elaboration rather than deliberate founding fraud."
+  - "No independently necessary founding subjective-experience mechanism."
+
+recognized_objections:
+  - "Interpretive use of scripture may be post hoc explanation of an already experienced event rather than the founding cause."
+  - "A necessary founding individual or social experience routes away from L."
+  - "Very early encounter claims may resist a later-development account."
+  - "Later narrative creativity does not establish that the founding proclamation itself was interpretation-primary."
+  - "A veridical referent could coexist with interpretation and defeat L's nonveridical/no-referent causal account."
+
+caricatures_rejected:
+  - "L is not 'the disciples made up myths for no reason'."
+  - "L does not require conscious deception."
+  - "L does not claim all resurrection language was invented at one late date."
+  - "L does not infer that scriptural interpretation is false merely because it is interpretive."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_FORMULATION"
+  reviewer_or_basis: "Program-lead review of FORM-L-001 through FORM-L-003"
+  findings:
+    - "Serious memory, scriptural-interpretive and legendary-development mechanisms are represented."
+    - "No single reviewed source endorses the exact TFP requirement that interpretation was PRIMARY and founding subjective experience nonnecessary; synthetic status is explicit."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "PRIMARY interpretive burden preserved"
+    - "experience mechanisms genuinely nonnecessary"
+    - "founding vs later development separated"
+    - "no conscious-deception caricature"
+    - "later examples not projected backward"
+  findings: []
+
+packet_stage_notes:
+  - "Galbraith's Gospel-of-Peter analysis is deliberately mechanism-only because it is later than the founding stratum."
+  - "If interpretation and subjective experience are both necessary, route to the applicable C-HET candidate."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [30,31,32]
+freeze_identity: null
