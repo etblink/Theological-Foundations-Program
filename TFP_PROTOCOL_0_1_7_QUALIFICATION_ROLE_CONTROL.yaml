@@ -1,2 +1,16 @@
 schema_version: "0.1.0"
+qualification_target: "TFP Adjudication Protocol 0.1.7"
+governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+source_manifest_path: "TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+source_manifest_blob_sha: "de9223db5f57a287c90be7dc1df46c8c75d4dfde"
+operative_governance_baseline_blob_sha: "45f3361781c32c04bb6055968dbaf24a120fb27c"
+candidate_protocol_authors:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+candidate_governance_authors:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+program_lead:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+source_manifest_preparer:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  substantive_qualification_reviewer: false
 status: "DRAFT"
