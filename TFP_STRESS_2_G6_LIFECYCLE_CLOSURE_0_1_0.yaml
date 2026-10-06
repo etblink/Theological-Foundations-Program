@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G6_LIFECYCLE_CLOSURE"
+status: "CLOSED__REOPEN_IF_PRESERVED"
+date: "2026-10-06"
+
+canonical_adjudication:
+  path: "TFP_STRESS_2_CANONICAL_ADJUDICATION_0_1_0.yaml"
+  blob_sha: "c99e4ee57d4c7d538e37133363ea43bc687c1b0b"
+  lifecycle_status: "CLOSED"
+  accepted_outcome: "UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  confidence: "MODERATE"
+  evidence_coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+
+human_acceptance:
+  path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_0_1_0.md"
+  blob_sha: "f02e21d72de13e9539cd6df99505c484952c14ea"
+
+stop_basis:
+  certified_coverage_target_reached: true
+  truth_critical_sources_addressed_or_listed: true
+  remaining_material_predominantly_dependent_repetitive_or_not_expected_to_change_current_bounded_outcome: true
+  remaining_gaps_stated: true
+  current_open_repair_or_audit_blocker: false
+  current_unfinished_authorized_subphase: false
+
+reopen_if:
+  - "materially new primary evidence"
+  - "materially changed provenance/dating/authorship/dependence"
+  - "newly accessible truth-critical source"
+  - "credible challenge to a truth-critical sufficiency/direction decision"
+  - "disconfirmation/replication of an empirical mechanism claim"
+  - "later TFP work that independently triggers a bounded reconsideration"
+
+negative_knowledge_preserved:
+  - "No admitted candidate is RANKING_ELIGIBLE on the frozen record."
+  - "R_EVENT is not warranted as true on the frozen record."
+  - "R_EVENT is not found false and is not classified EVIDENCE_AGAINST."
+  - "No candidate is canonically BEST_SUPPORTED, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED."
+  - "No Christianity-wide or global theological conclusion follows."
+
+downstream_rule:
+  - "TFP-STRESS-2 may be cited only with its exact scope, limitations, uncertainty, and lifecycle status."
+  - "Future program-level synthesis may use this adjudication as one bounded canonical input, but requires separate authorization and audit."
+  - "Reopening requires an explicit bounded trigger under the preserved reopen_if conditions; routine methodological curiosity is not itself a reopen trigger."
+
+next_program_state: "NO_AUTOMATIC_NEW_STUDY_AUTHORIZATION"
