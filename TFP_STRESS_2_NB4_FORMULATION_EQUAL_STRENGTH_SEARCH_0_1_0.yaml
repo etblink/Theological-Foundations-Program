@@ -1,0 +1,79 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "NB4_FORMULATION_EQUAL_STRENGTH_SEARCH"
+status: "COMPLETE__FORMULATION_ONLY__PRE_G0"
+date: "2026-10-06"
+trigger: "Reviewer B NB-4 MAJOR: H-family and L lacked proponent/family-level formulation sources comparable in role to R/V/S1."
+evidence_boundary:
+  event_evidence_adjudicated: false
+  candidate_ranked: false
+  proposition_dispositions_assigned: false
+  source_use: "FORMULATION_ONLY"
+  rule: "Search results define/steelman serious model families only. They are not evidence that the model applies to the resurrection case."
+
+searches:
+  H_family:
+    purpose: "Locate serious scholarly proponents of subjective-vision / hallucination / social-amplification accounts of resurrection origins."
+    result: "POSITIVE"
+    selected_sources:
+      - id: "FORM-H-PROP-001"
+        author: "Stephen H. Smith"
+        title: ""He appeared to Peter": reconsidering the hallucination hypothesis"
+        publication: "Neotestamentica 53(1) (2019): 53-78"
+        url: "https://journals.co.za/doi/10.10520/EJC-171fb9fe14"
+        source_role: "DIRECT_MODERN_SCHOLARLY_PROPONENT__H_FAMILY"
+        contribution: "Smith explicitly argues that a hallucination hypothesis combined with collective delusion can rival the bodily-resurrection explanation in explanatory power. This supplies a direct case-level proponent family source rather than only general psychology mechanism literature."
+        packet_use:
+          - "H-SOC"
+          - "H-SEED-SPREAD"
+          - "H-IND family boundary"
+        exact_TFP_match: false
+        limit: "Does not map one-to-one onto each frozen H role vector; used as a family-level proponent source."
+      - id: "FORM-H-PROP-002"
+        author: "Gerd Lüdemann"
+        title: "Resurrection of Christ: A Historical Inquiry"
+        publication: "Prometheus Books / Globe Pequot editions, 2004/2010"
+        url: "https://books.google.com/books/about/The_Resurrection_Of_Christ.html?id=RdECNYZrAgIC"
+        source_role: "DIRECT_SCHOLARLY_PROPONENT__VISION_ORIGIN"
+        contribution: "The publisher/book record describes Lüdemann's reconstruction as locating the origin of Easter faith in visionary experiences of Peter and Paul and treating them as self-deception."
+        packet_use:
+          - "H-IND"
+          - "H-SEED-SPREAD family boundary"
+        exact_TFP_match: false
+        limit: "Packet retains its own frozen role-vector burdens; Lüdemann is not treated as endorsing every TFP H subtype."
+
+  L_family:
+    purpose: "Locate a direct proponent source for legendary/mythic/scriptural-development models rather than relying only on mechanism literature and a secondary summary."
+    result: "PRIMARY_PROPONENT_FOUND__NO_EXACT_MODERN_TFP_L_MATCH_FOUND_IN_BOUNDED_SEARCH"
+    selected_sources:
+      - id: "FORM-L-PROP-001"
+        author: "David Friedrich Strauss"
+        title: "The Life of Jesus, Critically Examined — Death and Resurrection of Jesus"
+        publication: "George Eliot translation; original German work 1835-1840; modern Cambridge edition"
+        url: "https://www.cambridge.org/core/books/abs/life-of-jesus-critically-examined/death-and-resurrection-of-jesus/1D7A96D1704DDEA61F2811B5FABDA84B"
+        open_text_url: "https://www.gutenberg.org/files/64037/64037-h/64037-h.htm"
+        source_role: "DIRECT_HISTORICAL_PROPONENT__MYTHIC_LEGENDARY_DEVELOPMENT"
+        contribution: "Replaces the prior Schweitzer-on-Strauss secondary-only dependence with Strauss's own primary work as the formulation source for a serious legendary/mythic-development family."
+        packet_use:
+          - "L"
+          - "C-HET later-development boundary"
+        exact_TFP_match: false
+        limit: "The strict TFP L conjunction (interpretation PRIMARY, subjective experience nonnecessary, founding fabrication absent) remains synthetic."
+    bounded_search_nonselections:
+      - source: "Markus Zehetbauer, 2023, scriptural interpretation and Easter faith"
+        reason_not_selected_as_exact_L: "Allows visions to trigger/accompany the process; does not clearly establish the frozen TFP requirement that experience mechanisms be nonnecessary."
+      - source: "Kirsopp Lake legendary-development formulation as described in modern historiography"
+        reason_not_selected_as_exact_L: "Retains a historical wrong-tomb root and does not cleanly match the frozen interpretation-primary causal profile."
+    negative_search_statement: "No modern scholarly source located in the bounded SRC-17 search was clearly identifiable from accessible metadata as endorsing the exact strict TFP L conjunction. Rather than misattribute such a view, L remains explicitly synthetic while gaining a direct primary proponent source for the legendary/mythic-development family."
+    independent_confirmation_required: "Reviewer B narrow confirmation must determine whether this documented search/result cures NB-4 or whether an additional independent proponent search is required."
+
+direction_classification:
+  H_family: "RIVAL_STRENGTHENING__MAY_FAVOR_H_FAMILY"
+  L_family: "RIVAL_STRENGTHENING__MAY_FAVOR_L"
+  rationale: "Adding direct proponent formulations may sharpen expectations and objections for rival candidates. The amendment is therefore outcome-directional in possible effect and is frozen before G0/G1."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  theological_outcome: "NONE"
