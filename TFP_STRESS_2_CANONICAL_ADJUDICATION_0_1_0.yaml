@@ -1,0 +1,179 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "CANONICAL_THEOLOGICAL_ADJUDICATION"
+status: "CANONICAL__HUMAN_ACCEPTED__G6_CLOSED"
+accepted_at: "2026-10-06"
+
+id: "TFP-STRESS-2-Q1-R_EVENT"
+question: "Does the best publicly adjudicable historical evidence warrant that Jesus genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+
+outcome:
+  base: "UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  meaning:
+    - "All 11 admitted candidates remain structurally/evidentially adequate."
+    - "Zero admitted candidates are RANKING_ELIGIBLE."
+    - "No BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED result is permitted."
+    - "The current evidence does not warrant affirming R_EVENT as true under Protocol 0.1.7."
+    - "This is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+  reporting_qualifier: "Relative 11-candidate result is conditional on shared-floor P-CRUC = SUPPORTED_WITHIN_SCOPE."
+
+scope:
+  event_window:
+    - "early first-century crucifixion event attributed to Jesus"
+    - "emergence of the earliest recoverable founding proclamation"
+    - "founding claimed-encounter streams argued to be causally upstream of or contemporaneous with that proclamation"
+  evidence_window:
+    primary: "first-century sources and source layers"
+    development_reception: "early second-century material through approximately 150 CE where materially relevant"
+    later_material_rule: "Later material may be used for textual transmission, methodological comparison, candidate formulation, or reception; it may not be projected backward as early evidence without a transmission/preservation argument."
+  geography: ["Roman Judea/Galilee","Jerusalem where independently supported","relevant eastern Mediterranean networks"]
+  explicit_exclusions:
+    - "Christianity as a whole"
+    - "the Trinity"
+    - "complete incarnation doctrine"
+    - "atonement"
+    - "global biblical inspiration/inerrancy"
+    - "papal/conciliar/denominational authority"
+    - "unrelated prophecy fulfillment"
+    - "all miracles attributed to Jesus"
+    - "later Christian miracle claims as a class"
+    - "total harmonization of every narrative detail"
+    - "a global historicity/nonhistoricity study"
+    - "the specific causal agent of any event found to have occurred"
+
+protocol_version: "0.1.7"
+lifecycle_status: "CLOSED"
+
+authorization_artifact:
+  path: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+  blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+
+role_matrix_artifact:
+  path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml"
+  blob_sha: "cade6816cdd357b53fee227ac76d47ab16e83451"
+
+evidence_exposure_ledger:
+  path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_85.yaml"
+  blob_sha: "872eaadc455f4c78e26ec327fbb7b877568c9f7a"
+  note: "This is the last pre-acceptance ledger. The post-acceptance ledger records the human acceptance, canonical adjudication, and G6 closure."
+
+synthesis_artifact:
+  path: "TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml"
+  blob_sha: "59a832f494e8207cfb7fb33d6eb714a1c5942465"
+  historical_phase_L_blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  historical_A12_blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
+  historical_N3_blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
+
+audit_artifacts:
+  - path: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md"
+    blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
+    disposition: "PASS_WITH_LIMITATIONS"
+  - path: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
+    blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    disposition: "A_TO_H_ALL_NEUTRAL__ALL_POST_EVIDENCE_NONMATERIAL__NO_DIRECTIONAL_CONTAMINATION"
+  - path: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md"
+    blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
+    disposition: "LEDGER_INTEGRITY_NOT_CONFIRMED__REPAIR_TRIGGERED"
+  - path: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md"
+    blob_sha: "3fa5dfcf9d7c02d348d2f24e31c45e9b2f91fb37"
+    disposition: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+
+audit_reconciliation_artifact: null
+
+human_acceptance_artifact:
+  path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_0_1_0.md"
+  blob_sha: "f02e21d72de13e9539cd6df99505c484952c14ea"
+
+confidence:
+  class: "MODERATE"
+  target: "the bounded canonical adjudication, not a claim that resurrection is false"
+  rationale:
+    - "The applicable outcome is robust across the required live backgrounds and survives G4/F2 repair without a merit change."
+    - "Known source-access/formulation gaps and unresolved proposition-level warrant remain material limitations."
+    - "No presently identified single carried gap is independently established as sufficient to change the current 11-adequate/0-ranking-eligible outcome without a formal reopen."
+
+evidence_coverage:
+  state: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  truth_critical_sources_addressed: true
+  coverage_complete_claim: false
+  listed_gap_effect: "Carried as limitations/reopen triggers; none presently prevents the accepted bounded outcome."
+
+background_assumptions:
+  - "Frozen G0/L5 live-background controls apply; no favorable metaphysical or testimony prior is silently installed."
+  - "Zero RANKING_ELIGIBLE candidates is stable across the required live backgrounds on the frozen record."
+  - "Shared-floor P-CRUC is SUPPORTED_WITHIN_SCOPE for the accepted relative result."
+
+residual_alternatives:
+  status: "ALL_11_ADMITTED_CANDIDATES_REMAIN_ADEQUATE_BUT_RANKING_BLOCKED"
+  candidate_ids:
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "H-SEED-SPREAD"
+    - "L"
+    - "S1"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+    - "C-HET-SEED-SPREAD"
+
+known_weaknesses:
+  - "P-R-BODY remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+  - "P-R-IDENTITY-JESUS remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+  - "P-R-FOUNDING-ENCOUNTER remains PARTIALLY_SUPPORTED_WITHIN_SCOPE."
+  - "P-R-CAUSAL remains NOT_ESTABLISHED_WITHIN_SCOPE."
+  - "Carried G1 formulation/access gaps include unavailable or partial Lüdemann, Goulder, and Crossan material."
+  - "Strict-audit depth was structural/provenance-only for some steelman/source-plan/module/stream surfaces."
+  - "AI reviewer independence is procedural rather than guaranteed independence of training priors."
+  - "F6 retains a defective source pin and is restricted to no-disposition-change use."
+  - "Historical ledger 0.1.63-0.1.79 headers remain stale as preserved history."
+  - "A preserved sequence-157 commit-order inversion is disclosed and non-outcome-material."
+
+flip_or_weaken_conditions:
+  - "Evidence sufficient to upgrade all ranking-blocking necessary propositions for at least one adequate candidate could change the ALL_ADEQUATE_RANKING_BLOCKED outcome."
+  - "A downgrade of a shared-floor proposition such as P-CRUC would weaken truth-warrant conditions and require reconsideration."
+  - "Materially changed provenance, dating, authorship, dependence, or access to truth-critical sources could alter proposition dispositions."
+  - "A credible successful challenge to a sufficiency/direction decision could require re-adjudication."
+  - "Outcome-material replication/disconfirmation of a mechanism claim could alter candidate adequacy or ranking eligibility."
+
+underdetermination_subtype: "ALL_ADEQUATE_RANKING_BLOCKED"
+
+limitations:
+  - "Strict-audit depth was structural/provenance-only for some steelman packet content, line-level source-plan adherence, premise re-weighing, C-HET module trace, and stream trace."
+  - "Reviewer E did not diff role control 0.1.1 against 0.1.2 or compare its preserved handshake-response blob against the actual response."
+  - "Carried G1 formulation/access gaps remain, including asymmetry from unavailable or partial Lüdemann, Goulder, and Crossan material."
+  - "AI reviewer independence is procedural; independent training priors are not guaranteed."
+  - "G4 did not conduct a new evidence-acquisition cycle."
+  - "The initial Gemini Reviewer-D review was insufficient as the sole F2 basis; the live Claude reverification exposed real chronology/header defects that were subsequently repaired, ratified, revalidated, and delta-confirmed."
+  - "Historical ledger versions 0.1.63-0.1.79 retain stale self-identity/status headers as preserved history; corrected self-identity begins at 0.1.80."
+  - "The pre-C4 Phase-L use chronology defect remains preserved as negative procedural knowledge although current G3 reliance was prospectively reauthorized and revalidated."
+  - "A preserved sequence-157 repository-commit ordering inversion remains disclosed and non-outcome-material."
+  - "F6 retains a defective source pin; current-study use is restricted to a no-disposition-change reconciliation note."
+
+negative_knowledge:
+  - "No admitted candidate is RANKING_ELIGIBLE on the frozen record."
+  - "No candidate is BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED."
+  - "R_EVENT is not warranted as true on the frozen record."
+  - "R_EVENT is not classified EVIDENCE_AGAINST and is not found false."
+  - "No specific divine-agent attribution is authorized by this study."
+  - "No conclusion that Christianity is true or false follows from this study."
+  - "No global theological adjudication follows from this study."
+  - "Shared-floor support does not create relative candidate credit."
+  - "No post-evidence amendment produced favorable/mixed directional contamination."
+
+reopen_if:
+  - "materially new primary evidence"
+  - "materially changed provenance/dating/authorship/dependence"
+  - "newly accessible truth-critical source"
+  - "credible challenge to a truth-critical sufficiency/direction decision"
+  - "disconfirmation/replication of an empirical mechanism claim"
+  - "later TFP work that independently triggers a bounded reconsideration"
+
+superseded_by: null
+
+downstream_constraints:
+  - "This is a bounded historical/philosophical adjudication, not a program-level verdict on Christianity, naturalism, supernaturalism, skepticism, or global theology."
+  - "Specific divine-agent attribution remains a separately preregistered future question if later warranted."
+  - "Any future program-level theological synthesis requires separate authorization, synthesis, strict audit, and human acceptance."
