@@ -1,0 +1,122 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "CAUSAL_PROFILE_PARTITION"
+status: "PROGRAM_LEAD_RR1_REPAIR__PENDING_REVIEWER_A_NARROW_REREVIEW"
+
+causal_role_ladder_ref: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_1.yaml"
+
+mechanisms:
+  M-IND-EXP:
+    label: "founding individual subjective-experience mechanism"
+  M-SOC-EXP:
+    label: "founding social/group subjective-experience mechanism"
+  M-INTERP:
+    label: "founding interpretive/scriptural/theological mechanism"
+  M-FOUNDING-FAB:
+    label: "founding-stratum deliberate fabrication mechanism"
+  M-LATER-NARR:
+    label: "later narrative/memory/literary development mechanism"
+  M-BODY:
+    label: "body-disposition/tomb mechanism"
+
+global_partition_rules:
+  - "PRIMARY and NECESSARY_CONTRIBUTING are outcome-material founding causal roles."
+  - "CONTRIBUTING_NONNECESSARY and NONE do not satisfy a candidate's required founding mechanism."
+  - "A candidate that requires a mechanism at PRIMARY or NECESSARY_CONTRIBUTING is distinct from a candidate that permits that mechanism only at CONTRIBUTING_NONNECESSARY or NONE."
+  - "Later narrative/body mechanisms may be necessary for explaining later evidence without being founding-proclamation causes."
+  - "Founding-stratum deliberate fabrication means a founding actor knowingly asserts or constructs an event/encounter claim the actor believes materially false, intending or accepting that it be taken as true by the movement."
+  - "Later literary/theological elaboration is not M-FOUNDING-FAB unless it is itself required as an origin-material knowingly false founding assertion."
+  - "No candidate may change a mechanism's allowed role after evidence exposure except through C4."
+
+profiles:
+  H-IND:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["CANDIDATE_EXPECTATION_ONLY"]
+    closure: "If social or interpretive processing is NECESSARY_CONTRIBUTING or PRIMARY, the world is not H-IND and must be evaluated under an admitted heterogeneous candidate."
+    genuine_experience_required: true
+
+  H-SOC:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["PRIMARY"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["CANDIDATE_EXPECTATION_ONLY"]
+    closure: "H-SOC requires genuine non-veridical subjective experiences in a social/group process; report formation without genuine experiences does not satisfy H-SOC. If an individual seed is NECESSARY_CONTRIBUTING, use C-HET-SEED-SPREAD."
+    genuine_experience_required: true
+
+  L:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["PRIMARY"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN","OPTIONAL_SUPPORTING"]
+      M-BODY: ["CANDIDATE_EXPECTATION_ONLY"]
+    closure: "Any founding experience mechanism at PRIMARY or NECESSARY_CONTRIBUTING excludes L. Founding deliberate fabrication excludes L and routes to F or a revised candidate."
+
+  F:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["PRIMARY"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["CANDIDATE_EXPECTATION_ONLY"]
+    closure: "F requires origin-material knowing deception. Later narrative invention that is not origin-material does not by itself satisfy F."
+
+  C-HET-IND:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "M-IND-EXP and M-INTERP must each be at least NECESSARY_CONTRIBUTING; at least one must be PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["NECESSARY_FOR_CANDIDATE_PATTERN"]
+    closure: "If M-INTERP is only CONTRIBUTING_NONNECESSARY/NONE, route to H-IND. If M-IND-EXP is only CONTRIBUTING_NONNECESSARY/NONE, route to L."
+
+  C-HET-SOC:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "M-SOC-EXP and M-INTERP must each be at least NECESSARY_CONTRIBUTING; at least one must be PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["NECESSARY_FOR_CANDIDATE_PATTERN"]
+    closure: "If M-INTERP is only CONTRIBUTING_NONNECESSARY/NONE, route to H-SOC. If M-SOC-EXP is only CONTRIBUTING_NONNECESSARY/NONE, route to L."
+
+  C-HET-SEED-SPREAD:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-SOC-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "All three founding mechanisms are required at PRIMARY or NECESSARY_CONTRIBUTING; at least one is PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["NECESSARY_FOR_CANDIDATE_PATTERN"]
+    closure: "This is the explicit home for individual-seed plus social-amplification plus interpretive processing. Removing any one required founding mechanism changes the candidate."
+
+mixed_deception_sincerity_boundary:
+  status: "EXCLUDED_SUBSTANTIVE_PENDING_FINAL_B4_FREEZE"
+  rule: "A model requiring M-FOUNDING-FAB together with any sincere-experience mechanism at PRIMARY or NECESSARY_CONTRIBUTING is not admitted in this cycle."
+  serious_rival_basis: "Reviewer A found no determinate independently formulated serious model requiring both founding-stratum deliberate deception and necessary sincere experience. Pure founding deception is F; sincere experience plus later legendary/literary development is covered by H/C-HET/L structures."
+  fallback: "If later evidence makes such a structure necessary, route to REVISED_CANDIDATE_REQUIRED; do not retrofit an admitted candidate."
+
+review:
+  reviewer_A_narrow_rereview: "PENDING"
+  reviewer_C_tier_review: "PENDING_AFTER_B4_FREEZE"
