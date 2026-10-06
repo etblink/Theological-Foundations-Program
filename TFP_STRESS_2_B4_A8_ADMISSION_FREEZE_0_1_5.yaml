@@ -1,0 +1,149 @@
+schema_version: "0.1.5"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN_11_CANDIDATES__REVIEWER_B_NB1_NB6_REPAIRS_APPLIED__NARROW_CONFIRMATION_PENDING"
+date: "2026-10-06"
+supersedes:
+  path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_4.yaml"
+  reason: "Reviewer B re-review identified six bounded MAJOR pre-evidence defects and three MINOR consistency defects. This freeze preserves the exact 11-candidate universe while binding the versioned NB-1 through NB-6 repairs. No candidate was added or removed."
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+reviewer_B_trigger:
+  report: "TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_REPORT_0_1_0.md"
+  report_blob_sha: "3fff99e93cf94bb6d4d82537522c5ed655173634"
+  disposition: "G0_REVIEW_REPAIR_REQUIRED"
+  defect_count:
+    BLOCKER: 0
+    MAJOR: 6
+    MINOR: 3
+  repair_record:
+    path: "TFP_STRESS_2_REVIEWER_B_SECOND_PRE_EVIDENCE_REPAIR_RECORD_0_1_0.md"
+    blob_sha: "c373eda578b296f0d125ca435c3234304802c28f"
+
+candidate_universe:
+  frozen_status_bearing_candidates:
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "H-SEED-SPREAD"
+    - "L"
+    - "S1"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+    - "C-HET-SEED-SPREAD"
+  status_bearing_candidate_count: 11
+  candidate_set_changed_by_this_freeze: false
+  R_PHYS_status: "NON_STATUS_REFINEMENT"
+  former_S2_S3_status: "NODE_RIVAL_ONLY__UNCHANGED"
+
+shared_floor:
+  P_HIST_JESUS: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_EARLY_PROCLAMATION_EXISTENCE: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_CRUC: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_DEATH: "NOT_SHARED_FLOOR__S1_DENIES"
+  P_CRUC_reviewer_A_classification: "UNCHANGED"
+  D0_role: "NODE_RIVAL_EVIDENTIAL_DISCRIMINATOR_AND_SUFFICIENCY_CONTROL_ONLY__NOT_N2"
+
+reviewer_B_repairs:
+  NB_1:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    choice: "R occurrence and identity facets receive NONCOMPARATIVE candidate-specific direct burdens"
+    new_R_identity_proposition: "P-R-IDENTITY-JESUS"
+    direction: "POTENTIALLY_ANTI_R__SYMMETRY_REPAIR"
+  NB_2:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    choice: "Reviewer B option A"
+    M_BODY_role: "CANDIDATE_EXPECTATION_ONLY__NON_RANKING_BLOCKING"
+    P_CHET_BODY_necessary: false
+    direction: "POTENTIALLY_PRO_C_HET__REMOVES_UNIQUE_UNJUSTIFIED_BURDEN"
+  NB_3:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    R_TRANS_body_binding: "BODY_TOMB_NEUTRAL__R_PHYS_ONLY"
+    F_body_binding: "F-BODY-REMOVAL_REGISTERED_NON_STATUS_IMPLEMENTATION_REFINEMENT"
+    direction: "MIXED"
+  NB_4:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    search_record: "TFP_STRESS_2_NB4_FORMULATION_EQUAL_STRENGTH_SEARCH_0_1_0.yaml"
+    H_family: "DIRECT_CASE_LEVEL_PROPONENT_SOURCES_ADDED"
+    L_family: "DIRECT_STRAUSS_PRIMARY_PROPONENT_ADDED__STRICT_TFP_L_REMAINS_SYNTHETIC"
+    direction: "POTENTIALLY_PRO_H_AND_L__EQUAL_STRENGTH_REPAIR"
+  NB_5:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    truth_critical_register: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_0.yaml"
+    necessary_proposition_count: 49
+    expected_extant_retired: true
+    separate_access_and_probative_absence_controls: true
+    direction: "MIXED_ALL_CANDIDATES__SYMMETRIC_SOURCE_CONTROL"
+  NB_6:
+    status: "APPLIED__NARROW_CONFIRMATION_PENDING"
+    Q1_row_6_restricted: true
+    direction: "POTENTIALLY_ANTI_R_EVENT_REPORTING__CORRECTS_SOFTENING"
+
+minor_repairs:
+  NM_1: "APPLIED__STALE_POINTERS_AND_SERVICE_KEY_FIXED"
+  NM_2: "APPLIED__COVERAGE_LABEL_AND_SHARED_FLOOR_FORMAT_HARMONIZED"
+  NM_3: "APPLIED__F_VERIDICAL_ENCOUNTER_BOUNDARY_EXPLICIT"
+
+frozen_control_surfaces:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_10.yaml"
+    blob_sha: "8658d5a43322b2f8d4d3531d3f52fbb15de1e3fb"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_7.yaml"
+    blob_sha: "cc25ef14847da84e03d5654f71c32b3a36e144c0"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
+    blob_sha: "07229861cc01eeee61c377c34a0af5ba46b61ec0"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+    blob_sha: "213df3b9f45f874c98c0ebf8f49aa76b532ecab4"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_9.yaml"
+    blob_sha: "2e9ca6bed467970edcc1d7c594f531de41ae8892"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_8.yaml"
+    blob_sha: "132ee6f1162b82c39b3f4fa0dcc8ac39ba6a314a"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_0.yaml"
+    blob_sha: "28bfad60974632f9ee9b44eb25301fea733738b7"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml"
+    blob_sha: "ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_4.yaml"
+    blob_sha: "ae0f219ee6a88e655d794b8267ce89b53b828fcf"
+  formulation_equal_strength_search:
+    path: "TFP_STRESS_2_NB4_FORMULATION_EQUAL_STRENGTH_SEARCH_0_1_0.yaml"
+    blob_sha: "2277e128fd42e52628e85c8ce0c9a7ec13532675"
+  formulation_source_record:
+    path: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_1.yaml"
+    blob_sha: "7859ace17025ec2a8ef7ff9734629024340227a5"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
+    blob_sha: "fab6c75d359e54ce1298f255bfbc188c375caeaf"
+
+packet_set:
+  manifest: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_2.yaml"
+  status: "TO_BE_BOUND_BY_EXACT_BLOBS__NARROW_REVIEWER_B_CONFIRMATION"
+  candidate_set_change: false
+
+next_gate:
+  reviewer: "REVIEWER_B"
+  session: "session_01TsM4WriYnAiRn71ireaVfK"
+  scope: "NARROW_CONFIRMATION_NB1_THROUGH_NB6_PLUS_MINOR_CONSISTENCY_ONLY"
+  reviewer_C_blocked_until_pass: true
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  historical_resurrection_disposition: "NONE"
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
