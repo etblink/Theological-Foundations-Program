@@ -34,7 +34,7 @@ program:
     audit_reconciliation_artifact: null
     human_owner_acceptance_artifact: "main:TFP_ADJUDICATION_PROTOCOL_0_1_7_QUALIFICATION_ACCEPTANCE_0_1_0.md#blob=e5a420e671ad5a916ce209e6bbf28da2d7d206d8"
     governance_ratification_artifact: "main:TFP_ADJUDICATION_PROTOCOL_0_1_7_QUALIFICATION_ACCEPTANCE_0_1_0.md#blob=e5a420e671ad5a916ce209e6bbf28da2d7d206d8"
-    qualification_transition_commit: null
+    qualification_transition_commit: "6606119729eed69ae783dcbb197bf1c992a7e604"
     qualified_at: "2026-10-05"
     limitations:
       - "Disciplined expert judgment remains bounded inside documented sufficiency/disposition steps."
