@@ -218,9 +218,9 @@ status_bearing_candidates:
     family: "C-HET"
     name: "Heterogeneous individual-experience + interpretation + later-development model"
     status_bearing: true
-    core: "Jesus was crucified and died; M-IND-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary for this candidate's later-development pattern; M-BODY is a non-ranking candidate expectation/contradiction control only; no veridical referent or founding fabrication occurred."
+    core: "Jesus was crucified and died; M-IND-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary for this candidate's later-development pattern; M-BODY is a non-ranking Q1-ontology-neutral search/trigger control only; no veridical referent or founding fabrication occurred."
     causal_profile_ref: "C-HET-IND"
-    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
     necessary_propositions:
       - "P-HIST-JESUS"
       - "P-CRUC"
@@ -238,9 +238,9 @@ status_bearing_candidates:
     family: "C-HET"
     name: "Heterogeneous social-experience + interpretation + later-development model"
     status_bearing: true
-    core: "Jesus was crucified and died; M-SOC-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary; M-BODY is a non-ranking candidate expectation/contradiction control only; no veridical referent or founding fabrication occurred."
+    core: "Jesus was crucified and died; M-SOC-EXP and M-INTERP were each PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary; M-BODY is a non-ranking Q1-ontology-neutral search/trigger control only; no veridical referent or founding fabrication occurred."
     causal_profile_ref: "C-HET-SOC"
-    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
     necessary_propositions:
       - "P-HIST-JESUS"
       - "P-CRUC"
@@ -258,9 +258,9 @@ status_bearing_candidates:
     family: "C-HET"
     name: "Individual-seed + social-amplification + interpretation + later-development model"
     status_bearing: true
-    core: "Jesus was crucified and died; M-IND-EXP, M-SOC-EXP, and M-INTERP were all PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary; M-BODY is a non-ranking candidate expectation/contradiction control only; no veridical referent or founding fabrication occurred."
+    core: "Jesus was crucified and died; M-IND-EXP, M-SOC-EXP, and M-INTERP were all PRIMARY or NECESSARY_CONTRIBUTING at founding, with at least one PRIMARY; later M-LATER-NARR remains necessary; M-BODY is a non-ranking Q1-ontology-neutral search/trigger control only; no veridical referent or founding fabrication occurred."
     causal_profile_ref: "C-HET-SEED-SPREAD"
-    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
     necessary_propositions:
       - "P-HIST-JESUS"
       - "P-CRUC"
