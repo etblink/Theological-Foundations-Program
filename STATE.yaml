@@ -79,70 +79,77 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G4-F2-CLAUDE-REVERIFICATION"
-  status: "G4_E1_PASS_WITH_LIMITATIONS__F1_closed__F2_reopened_for_fresh_Claude_A17_reverification__G5_readiness_suspended"
-  purpose: "Obtain a fresh disjoint Reviewer-D live-repository A17 determination at the pre-Gemini checkpoint, then independently check that determination before deciding whether F2 may be closed and G5 readiness restored."
+  id: "TFP-STRESS-2-G4-F2-POST_C4-G3-RATIFICATION"
+  status: "G4_E1_PASS_WITH_LIMITATIONS__F1_closed__F2_open__Claude_Reviewer_D_NOT_CONFIRMED__ledger_repaired__post_C4_G3_human_ratification_pending__G5_suspended"
+  purpose: "Repair the actual A17 chronology defect exposed by fresh Reviewer D and independently reproduced by the Program Lead: disclose the before-C4 use, correct live ledger self-identity, then obtain narrow human-owner ratification before prospectively revalidating the existing G3 chain."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "cef9876b13d4d968fd2addf21d86aa01158acdfe"
+  g3_branch_head: "093ddb73165c7dfb0e36ad54fa9388ae0a522e71"
   phase_N_candidate_status:
     path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
     blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
-    summary: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+    historical_status: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+    current_use_status: "HISTORICAL_RESULT__PENDING_POST_C4_PROSPECTIVE_REVALIDATION"
   g3_provisional_outcome:
     path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
     blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
-    base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
-    provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    historical_base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+    historical_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    current_use_status: "HISTORICAL_RESULT__PENDING_POST_C4_PROSPECTIVE_REVALIDATION"
   g4:
     strict_audit_report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
-    outcome: "PASS_WITH_LIMITATIONS"
+    strict_audit_outcome: "PASS_WITH_LIMITATIONS"
     reviewer_C_C4_report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    reviewer_C_item_A_class: "POST_EVIDENCE_NONMATERIAL__NEUTRAL"
     F1_closed: true
     F2_closed: false
-    F2_status: "REOPENED_FOR_FRESH_REVERIFICATION"
-  prior_reviewer_D:
-    provider: "Google Gemini 3.1 Pro"
-    result: "LEDGER_INTEGRITY_CONFIRMED"
-    report_blob_sha: "84ea800532fef7fe814cc0c68f25102034330e9a"
-    status: "PRESERVED_HISTORICAL_SUPPORT__NOT_SOLE_BASIS_FOR_F2_CLOSURE"
-  fresh_reviewer_D:
+  fresh_reviewer_D_reverification:
     provider: "Anthropic"
     model: "Claude Opus 5.5"
-    handshake_blob_sha: "b13417bb933118f03a15cbd32400b2cd272a5b8c"
-    assignment_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
-    input_freeze: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_INPUT_FREEZE_0_1_0.yaml"
-    input_freeze_blob_sha: "63b67f57e6d9812cb6b7ab47c94328778692db90"
-    prompt: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_PROMPT_0_1_0.md"
-    prompt_blob_sha: "a4c5ef6223c90cdb0f05e34d25d47e5980cb4260"
-    substantive_target_commit: "43ee1477fc500a28372710f3a57127b4edcaef6a"
-    substantive_target_tree: "378b7904abe6afb27395ef32c5cc636adcef102a"
-    review_status: "PENDING_EXTERNAL_EXECUTION"
-  G5_acceptance_request:
+    report: "TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md"
+    report_blob_sha: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
+    result: "LEDGER_INTEGRITY_NOT_CONFIRMED"
+    D1: "MAJOR__Phase-L_0.1.1_used_before_C4__lesser_L1_L2_pre_C4_citations"
+    D2: "MINOR__ledger_0.1.63_to_0.1.76_self_identity_and_status_headers_stale"
+    D3: "OBSERVATION__pre_activation_0.1.0_to_0.1.1_nonentry_revision"
+  project_lead_independent_replay:
+    path: "TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml"
+    blob_sha: "e741f98508e21bfec618bd9162ce2e86302c76c4"
+    result: "D1_AND_D2_INDEPENDENTLY_REPRODUCED__D3_CONFIRMED_AS_PRE_ACTIVATION_NONENTRY_REVISION"
+    full_ledger_chain_checked: "0.1.0_through_0.1.76__76_adjacent_transitions"
+  ledger_repair:
+    disclosure: "TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_DISCLOSURE_0_1_0.yaml"
+    disclosure_blob_sha: "53386141c6c1bdbbaa3b285981ea70ea2aee54ad"
+    repaired_ledger: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_81.yaml"
+    repaired_ledger_blob_sha: "1321fff4506b650bc31b22e1a5e43e4b44f23312"
+    preserved_prior_entries: true
+    header_identity_corrected_from_0_1_80_forward: true
+    historical_files_rewritten: false
+  human_ratification:
+    request: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_REQUEST_0_1_0.yaml"
+    request_blob_sha: "0b0f50001cb7b5f8ba7764d58e4da071277a4562"
+    status: "PENDING"
+    purpose: "Re-establish G3 authorization prospectively after completed neutral C4 review; does not authorize G5 acceptance."
+  prior_G5_acceptance_request:
     path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml"
     blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
-    status: "FROZEN_BUT_SUSPENDED__DO_NOT_ACCEPT_WHILE_F2_OPEN"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_79.yaml"
-  exposure_ledger_blob_sha: "e2a85e90051f56598ade1243429d8ad996b94e97"
+    status: "SUSPENDED__DO_NOT_ACCEPT"
   g4_strict_audit_complete: true
   g5_human_acceptance_ready: false
   g5_human_acceptance_complete: false
   canonical_adjudication_written: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G4-F2-CLAUDE-REVIEWER-D-LIVE-REVERIFY"
-  action: "execute_the_frozen_Claude_Reviewer_D_live_repository_A17_reverification_at_the_exact_pre_Gemini_target_and_return_the_complete_report_verbatim"
+  id: "TFP-STRESS-2-G3-POST-C4-HUMAN-RATIFICATION"
+  action: "obtain_narrow_human_owner_ratification_of_the_original_G3_transition_after_C4_and_chronology_disclosure"
   branch: "research/tfp-stress-2-resurrection-g3"
-  input_freeze_blob_sha: "63b67f57e6d9812cb6b7ab47c94328778692db90"
-  prompt_blob_sha: "a4c5ef6223c90cdb0f05e34d25d47e5980cb4260"
+  ratification_request_blob_sha: "0b0f50001cb7b5f8ba7764d58e4da071277a4562"
   requirements:
-    - "same exact Claude conversation that returned the passing handshake"
-    - "direct repository access is preferred; no offline packet is needed"
-    - "substantive review target is commit 43ee1477fc500a28372710f3a57127b4edcaef6a / tree 378b7904abe6afb27395ef32c5cc636adcef102a"
-    - "inspect every ledger version transition 0.1.0 through 0.1.76"
-    - "do not read prior Reviewer-D result or later G5 readiness material before fixing the independent conclusion"
-    - "Program Lead must independently check the returned report before F2 can be closed"
+    - "do not treat historical A12/N3/Q1 as current canonical inputs until prospectively revalidated"
+    - "if ratified, mechanically revalidate A12/N3/Q1 using unchanged frozen evidence and C4-confirmed Phase-L 0.1.1"
+    - "then run a narrow fresh Reviewer-D delta check on repaired ledger and revalidation chronology"
+    - "do not restore G5 readiness until Reviewer D confirms ledger integrity"
 
 qualification_candidate:
   version: "0.1.7"
