@@ -21,4 +21,5 @@ human_owner:
   material_governance_author: false
   outcome_material_qualification_reviewer: false
   final_qualification_authority: true
+outcome_material_qualification_reviewers: []
 status: "DRAFT"
