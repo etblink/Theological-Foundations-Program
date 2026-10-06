@@ -1,0 +1,253 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L2_HISTORICAL_EVENT_EVIDENCE_MATRIX"
+status: "FROZEN_EVIDENCE_BINDING_MATRIX__NO_L2_PROPOSITION_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  g2_launch: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+  g2_launch_blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+  l1_lane_freeze_rows: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_0.yaml"
+  l1_lane_freeze_rows_blob_sha: "c4847def489a49dfbf5933b67acae8735888b622"
+  l1_clerical_repair: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+  l1_clerical_repair_blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+
+lane:
+  id: "L2"
+  title: "Historical event"
+  competencies: ["crucifixion","death/nondeath","burial/body disposition","chronology/context"]
+  author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  proposition_disposition_authorized_in_this_artifact: false
+
+source_clusters:
+  H1_CASE_PRIMARY_DEATH_REPORTS:
+    source_ids: ["G1W1-001","G1W1-009","G1W1-015","G1W1-019","G1W1-020","G1W1-021","G1W1-022","G1W1-023","G1W1-024","G1W1-025"]
+    observations:
+      - "Multiple first-century Christian sources narrate or proclaim Jesus's execution/death; Tacitus independently records Christus's execution under Pontius Pilate."
+      - "The Gospel narratives contain explicit death language and burial sequences; John additionally narrates soldiers treating Jesus as already dead and a spear wound."
+    limits:
+      - "Literary multiplicity is not full independence; Synoptic/Acts/Johannine source relationships remain controlled."
+      - "Textual attestation of death is not by itself a medical finding."
+  H2_ROMAN_CRUCIFIXION_MEDICAL:
+    source_ids: ["G1W1-012","G1W1-026","G1W1-027","G1W1-036","G1W1-037","G1W1-042","G1W1-043"]
+    observations:
+      - "Josephus documents crucifixion practice and one survivor among three acquaintances removed from crosses and medically treated."
+      - "Archaeology independently attests Roman-period crucifixion in Jerusalem."
+      - "Modern medical reviews disagree on a universal physiological mechanism but treat crucifixion as a potentially fatal execution process; one survey argues the Jesus case ended in death."
+    limits:
+      - "General Roman practice and medical mechanisms require case-specific transfer."
+      - "Josephus Life 420-421 exact Niese Greek remains unextracted."
+      - "Mechanism uncertainty is not survival evidence."
+  H3_SURVIVAL_NONDEATH:
+    source_ids: ["G1RS-064","G1W1-012","G1W1-026","G1W1-042","G1W1-043"]
+    observations:
+      - "Lloyd Davies & Lloyd Davies explicitly argue a shock/unconsciousness-and-recovery hypothesis for Jesus."
+      - "Josephus supplies an ancient real survival case after removal and treatment."
+      - "Paired medical literature disputes or qualifies nondeath while acknowledging uncertainty over universal crucifixion physiology."
+    limits:
+      - "The survival hypothesis depends on contested Gospel-historical and medical assumptions."
+      - "A demonstrated survival possibility does not establish survival in the target case."
+  H4_BURIAL_BODY_DISPOSITION:
+    source_ids: ["G1W1-015","G1W1-019","G1W1-020","G1W1-021","G1W1-027","G1RS-055","G1RS-056","G1RS-071"]
+    observations:
+      - "Canonical narratives describe Joseph-associated burial and tomb placement."
+      - "Josephus and archaeology document Jewish burial concern/customs and at least one crucified Jerusalem individual receiving burial."
+      - "Crossan supplies an adverse nonburial/dishonorable-disposal reconstruction grounded in Roman practice and narrative-development arguments."
+    limits:
+      - "General Jewish burial norms do not prove Jesus's burial."
+      - "Crossan pp.123-158 was not read continuously."
+      - "Generic R-TRANS, V, H, L, and C-HET remain body-disposition neutral under the frozen G0 architecture."
+  H5_FOUNDING_CHRONOLOGY:
+    source_ids: ["G1W1-001","G1W1-002","G1W1-003","G1W1-008","G1W1-030","G1W1-031","G1W1-032","G1W1-033"]
+    observations:
+      - "Paul provides the earliest acquired author-level proclamation network and explicitly says he received and delivered tradition."
+      - "Source-critical controls cover Pauline chronology, formula boundaries, Synoptic dependence, Acts speeches, and Johannine composition."
+    limits:
+      - "Several chronology/dependence controls are abstract/reference-entry level."
+      - "Exact pre-Pauline formula boundaries remain disputed."
+  H6_FABRICATION_IMPLEMENTATION:
+    source_ids: ["G1W1-019","G1RS-063","G1RS-071","G1RS-055","G1RS-056"]
+    observations:
+      - "Matthew contains the stolen-body counterclaim tradition."
+      - "Crossan argues for invention/development of honorable burial/Joseph traditions but does not itself establish actor-specific founding knowing falsehood."
+      - "Modern deception scholarship warns against inferring lying from generic cues."
+      - "Burial/body evidence can bear only on the preregistered F-BODY-REMOVAL implementation, while F-NONBODY-ASSERTION requires an independent actor/opportunity route."
+    limits:
+      - "No acquired first-century evidence directly establishes a founding actor knowingly fabricating the resurrection/encounter proclamation."
+      - "Motive/opportunity cannot be inferred from theological interest or group benefit alone."
+  H7_MODULE_TIMING_CONTEXT:
+    source_ids: ["G1W1-001","G1W1-008","G1RS-059","G1RS-060","G1RS-061","G1RS-062","G1RS-070"]
+    observations:
+      - "The corpus supplies early proclamation content, modern mechanism capacities, social-memory controls, and later narrative-development evidence."
+      - "Historical timing is separable from psychological mechanism capacity; later narrative material is not founding-stratum mechanism evidence."
+    limits:
+      - "L2 can constrain stratum/timing but cannot establish subjective mechanism operation or causal-role vectors assigned to L3/L4/L6."
+
+l2_proposition_surfaces:
+  - proposition_id: "P-DEATH"
+    candidates: ["R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D1-DEATH-STATE-VS-S1"]
+    frozen_expected_evidence: "Historical/medical evidence sufficient to classify Jesus as genuinely dead under the frozen P-DEATH definition."
+    frozen_weakening_evidence: "Supported survival/nondeath or unresolved truth-critical death evidence."
+    source_clusters: ["H1_CASE_PRIMARY_DEATH_REPORTS","H2_ROMAN_CRUCIFIXION_MEDICAL","H3_SURVIVAL_NONDEATH"]
+    required_coverage_scope: "PROPOSITION:P-DEATH"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-S1-NONDEATH"
+    candidates: ["S1"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D1-DEATH-STATE-VS-S1"]
+    frozen_expected_evidence: "Evidence supporting uninterrupted survival rather than P-DEATH."
+    frozen_weakening_evidence: "P-DEATH supported."
+    source_clusters: ["H1_CASE_PRIMARY_DEATH_REPORTS","H2_ROMAN_CRUCIFIXION_MEDICAL","H3_SURVIVAL_NONDEATH"]
+    required_coverage_scope: "PROPOSITION:P-S1-NONDEATH"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-S1-POSTCRUC-ACCESS"
+    candidates: ["S1"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence of continued-life access after crucifixion."
+    frozen_weakening_evidence: "No such access supported."
+    source_clusters: ["H1_CASE_PRIMARY_DEATH_REPORTS","H3_SURVIVAL_NONDEATH","H5_FOUNDING_CHRONOLOGY"]
+    required_coverage_scope: "PROPOSITION:P-S1-POSTCRUC-ACCESS"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    candidates: ["S1"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D-S1-ORIGIN-VS-POSTDEATH"]
+    frozen_expected_evidence: "Evidence that survival/access was PRIMARY or NECESSARY_CONTRIBUTING."
+    frozen_weakening_evidence: "Only later/nonnecessary access."
+    source_clusters: ["H1_CASE_PRIMARY_DEATH_REPORTS","H3_SURVIVAL_NONDEATH","H5_FOUNDING_CHRONOLOGY"]
+    required_coverage_scope: "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-ORIGIN-MATERIAL"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence that fabrication is upstream of founding proclamation."
+    frozen_weakening_evidence: "Fabrication only later."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H6_FABRICATION_IMPLEMENTATION"]
+    required_coverage_scope: "PROPOSITION:P-F-ORIGIN-MATERIAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Positive warrant for at least one of the two preregistered implementations. No third implementation may be added after exposure except C4."
+    frozen_weakening_evidence: "Neither frozen implementation reaches SUPPORTED; or the body-removal implementation is closed by contrary body evidence and the non-body implementation independently fails its actor/opportunity/transmission burden."
+    source_clusters: ["H4_BURIAL_BODY_DISPOSITION","H6_FABRICATION_IMPLEMENTATION","H5_FOUNDING_CHRONOLOGY"]
+    required_coverage_scope: "PROPOSITION:P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-EXP"
+    candidates: ["C-HET-IND"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-IND-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-INT"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-INT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-NARR"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-NARR"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    candidates: ["C-HET-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-IND-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-EXP"
+    candidates: ["C-HET-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SOC-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    candidates: ["C-HET-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SOC-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-IND"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-IND."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-IND"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SOC"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-SOC."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SOC"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SEED-SPREAD-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["H5_FOUNDING_CHRONOLOGY","H7_MODULE_TIMING_CONTEXT"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+matrix_constraints:
+  - "The matrix binds historical-event and chronology evidence to frozen proposition surfaces but assigns no proposition disposition."
+  - "P-DEATH and P-S1-NONDEATH are treated symmetrically; survival possibility is not target-case survival, and mechanism uncertainty is not death denial."
+  - "Burial/body-disposition evidence is used only on frozen eligible routes; it cannot support or weaken generic R-TRANS, V, H, L, or C-HET."
+  - "General Roman execution and Jewish burial practices require explicit target-case transfer."
+  - "Historical attestation is separated from medical inference."
+  - "No fabrication proposition is supported merely because a later tradition appears developed."
+  - "C-HET module timing can be constrained here, but mechanism occurrence/causal necessity cannot be borrowed from modern analogies."
+
+next_gate:
+  action: "Fresh Reviewer C proposition-scope coverage batch for all 15 unique L2-linked scopes, bundled with independent C4 confirmation of the L1 aggregate-count clerical repair."
+  proposition_dispositions_before_gate: "PROHIBITED"
