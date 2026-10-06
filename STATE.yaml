@@ -79,16 +79,24 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-PROGRAM-NEXT-STUDY-SELECTION"
-  status: "PROGRAM_LEVEL_SELECTION_PROPOSAL_READY__NO_NEW_G0_AUTHORIZATION"
-  purpose: "Choose the next bounded substantive truth question after TFP-STRESS-2 closure, while keeping Protocol 0.1.7 in maintenance mode and preserving all closed-study boundaries."
+  id: "TFP-PROGRAM-BROAD-THEISM-SEQUENCE"
+  status: "HUMAN_STRATEGY_ACCEPTED__STUDY_3_CONTINGENCY_SELECTED__NO_G0_AUTHORIZATION_YET"
+  purpose: "Pursue broader-theism truth adjudication through methodologically distinct bounded studies: contingency/necessary foundation first, divine hiddenness second, with no preset outcome and no automatic synthesis."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  proposal:
-    artifact: "TFP_PROGRAM_NEXT_STUDY_SELECTION_0_1_0.md"
-    blob_sha: "8043e0bb603f6bcce43e32d9177e47b37f7ff59d"
-    recommended_candidate: "TFP-STUDY-3-HIDDENNESS"
-    proposed_question: "Does the existence and distribution of apparently nonresistant nonbelief materially count against the existence of a perfectly loving personal God, once serious theistic and non-theistic explanations are compared under equal standards?"
+  strategic_acceptance:
+    artifact: "TFP_PROGRAM_BROAD_THEISM_SEQUENCE_ACCEPTANCE_0_1_0.md"
+    blob_sha: "7aecde4a4b0427551a0517dbcf99a94372c3ede6"
+    status: "HUMAN_OWNER_ACCEPTED"
+  next_study_selection:
+    artifact: "TFP_PROGRAM_NEXT_STUDY_SELECTION_0_1_1.md"
+    blob_sha: "ab4e78d6d06018432aeaefdb811fc1aa30b26dac"
+    selected_candidate: "TFP-STUDY-3-CONTINGENCY"
+    provisional_question: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  planned_following_study:
+    id: "TFP-STUDY-4-HIDDENNESS"
+    status: "STRATEGICALLY_FAVORED__NOT_G0_AUTHORIZED"
+    provisional_question: "Does the existence and distribution of apparently nonresistant nonbelief materially count against the existence of a perfectly loving personal God, once serious theistic and non-theistic explanations are compared under equal standards?"
   TFP_STRESS_2:
     lifecycle_status: "CLOSED"
     canonical_adjudication_id: "TFP-STRESS-2-Q1-R_EVENT"
@@ -96,18 +104,21 @@ current_scope:
   methodology:
     status: "MAINTENANCE_MODE"
     new_revision_authorized: false
-  new_truth_adjudication_authorized: false
+  study_3_G0_authorized: false
+  study_4_G0_authorized: false
   global_theological_synthesis_authorized: false
-  theological_outcome: "NO_NEW_OUTCOME__SELECTION_ONLY"
+  theological_outcome: "NO_NEW_OUTCOME__PROGRAM_SEQUENCE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-HIDDENNESS-G0-AUTHORIZATION-DECISION"
-  action: "human_owner_decides_whether_to_authorize_G0_architecture_for_the_recommended_hiddenness_study_or_select_an_alternative_candidate"
-  proposal_blob_sha: "8043e0bb603f6bcce43e32d9177e47b37f7ff59d"
+  id: "TFP-STUDY-3-CONTINGENCY-G0-AUTHORIZATION-DECISION"
+  action: "human_owner_decides_whether_to_authorize_G0_architecture_for_TFP_STUDY_3_CONTINGENCY_under_qualified_Protocol_0_1_7"
+  selection_blob_sha: "ab4e78d6d06018432aeaefdb811fc1aa30b26dac"
   requirements:
-    - "no outcome-relevant evidence acquisition before G0 authorization"
-    - "no automatic carryover of TFP-STRESS-2 candidate architecture or conclusions"
-    - "if authorized, preregister candidate universe, operational definitions, source plan, backgrounds, discriminator rules, insufficiency threshold, and reviewer roles under Protocol 0.1.7"
-    - "do not treat study selection as a theological conclusion"
+    - "no outcome-relevant evidence acquisition before explicit G0 authorization"
+    - "do not equate necessary foundation with God by definition"
+    - "if authorized, preregister candidate universe, necessity/explanation definitions, source plan, background assumptions, discriminator rules, insufficiency threshold, and reviewer architecture"
+    - "separately warrant every attributed property of any supported foundation"
+    - "do not import TFP-STRESS-2 conclusions as a prior favoring naturalism or theism"
+    - "do not authorize TFP-STUDY-4-HIDDENNESS merely because Study 3 is authorized"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
