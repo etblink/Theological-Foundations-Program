@@ -1,0 +1,94 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD"
+supersedes: "TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+status: "FORMULATION_ONLY__PRE_G0__SOURCE_ACCESS_RECOVERY_NOTE_ADDED"
+date: "2026-10-05"
+
+rule:
+  use: "Candidate formulation / native-or-proponent fidelity only."
+  prohibited_use:
+    - "historical proposition disposition"
+    - "candidate ranking"
+    - "direction result"
+    - "G1 evidence acquisition"
+  note: "A source may later be independently acquired/evaluated under G1, but this pre-G0 exposure does not establish its evidential weight."
+
+sources:
+  - id: "FORM-R-001"
+    title: "Catechism of the Catholic Church, paragraphs 645-647"
+    url: "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_5/paragraph_2_on_the_third_day_he_rose_from_the_dead.index.html"
+    source_type: "tradition-native doctrinal formulation"
+    candidates_served: ["R-TRANS","R-PHYS-REFINEMENT"]
+    formulation_use: "Real risen Jesus; bodily continuity; transformed/glorified body; postmortem encounters."
+  - id: "FORM-R-002"
+    title: "William Lane Craig, The Bodily Resurrection of Jesus"
+    url: "https://www.reasonablefaith.org/writings/scholarly-writings/historical-jesus/the-bodily-resurrection-of-jesus/"
+    source_type: "proponent scholarly formulation"
+    candidates_served: ["R-TRANS","R-PHYS-REFINEMENT","V"]
+    formulation_use: "Strong physical/bodily resurrection formulation and description of competing nonphysical/spiritual-body formulations."
+  - id: "FORM-V-001"
+    title: "Marcus Borg, The Resurrection of Jesus: Physical/Bodily or Spiritual/Mystical?"
+    url: "https://marcusjborg.org/posts-by-marcus/the-resurrection-of-jesus/"
+    source_type: "proponent theological formulation"
+    candidates_served: ["V"]
+    formulation_use: "Jesus continues to live/be known as a real spiritual/divine reality while rejecting ordinary physical/bodily resurrection."
+  - id: "FORM-S1-001"
+    title: "Mirza Ghulam Ahmad, A Hidden Truth"
+    url: "https://www.alislam.org/book/hidden-truth/"
+    source_type: "tradition-native Ahmadiyya formulation"
+    candidates_served: ["S1"]
+    formulation_use: "Jesus survived crucifixion and later died naturally."
+  - id: "FORM-S1-002"
+    title: "Al Islam, Jesus in Kashmir"
+    url: "https://www.alislam.org/articles/jesus-in-kashmir/"
+    source_type: "tradition-native Ahmadiyya formulation"
+    candidates_served: ["S1"]
+    formulation_use: "Jesus survived crucifixion, recovered, met disciples, and later departed Palestine."
+  - id: "FORM-S2-001"
+    title: "Quran 4:157"
+    url: "https://quran.com/4/157?translations=20"
+    source_type: "tradition-native scripture/formulation"
+    candidates_served: ["S2","S3"]
+    formulation_use: "Denial that Jesus was killed/crucified and statement that the matter was made to appear so."
+  - id: "FORM-S2-002"
+    title: "IslamQA, Jesus in Islam"
+    url: "https://islamqa.info/en/answers/10277"
+    source_type: "traditional Sunni explanatory formulation"
+    candidates_served: ["S2"]
+    formulation_use: "Substitution/resemblance account: another man is crucified while Jesus is raised alive."
+  - id: "FORM-S23-003"
+    title: "IslamQA, The crucifixion of the Messiah between Islam and Christianity"
+    url: "https://islamqa.info/en/answers/224199"
+    source_type: "traditional Sunni explanatory survey"
+    candidates_served: ["S2","S3"]
+    formulation_use: "Records both substitution and non-substitution/confusion variants while maintaining Jesus was saved from crucifixion."
+  - id: "FORM-S3-001"
+    title: "Andrew Loke, Investigating the Resurrection of Jesus Christ, naturalistic escape hypothesis description"
+    url: "https://www.taylorfrancis.com/chapters/oa-mono/10.4324/9781003037255-5/extramental-entity-jesus-died-cross-andrew-loke"
+    source_type: "scholarly critical description of rival"
+    candidates_served: ["S3","S2"]
+    formulation_use: "Recognizes naturalistic escape/mistaken-identity candidate class in contemporary comparison literature; used only to bound the rival formulation, not as proponent support."
+
+packet_stage_findings:
+  - id: "F-W1-001"
+    candidate: "S2"
+    status: "NATIVE_FORMULATION_MISMATCH_RISK__REVIEWER_A_VERIFICATION_PENDING"
+    finding: "The reviewed substitution formulation clearly says Jesus was saved/raised rather than crucified. One permitted IslamQA page also reports, while discussing the Christian Gospel narratives, that women are said to have later met Jesus after the resurrection and separately argues that disciples/followers were mistaken about the crucifixion. Because this creates a potentially relevant but not obviously tradition-endorsed access motif, the Program Lead does not treat the absence/presence of the frozen access-and-transmission chain as settled. Reviewer A must decide from the exact source text whether the native formulation actually contains or clearly implies the required chain."
+  - id: "F-W1-002"
+    candidate: "V"
+    status: "SYNTHETIC_FORMULATION"
+    finding: "A serious nonphysical/spiritual-real resurrection formulation exists, but the exact TFP V conjunction (extramental referent identical with Jesus, nonembodied, founding-causal) is more specific than any one reviewed proponent source. Packet must disclose that it is a synthetic comparison candidate."
+  - id: "F-W1-003"
+    candidate: "S3"
+    status: "SYNTHETIC_FORMULATION"
+    finding: "No single reviewed tradition-native source supplies every frozen S3 conjunct. Packet is therefore a bounded synthetic escape/rescue rival unless further native formulation is found."
+
+source_access_recovery_note:
+  date: "2026-10-05"
+  reason: "Reviewer A's first S2 fidelity review returned INVALID_REVIEW because its web access was blocked."
+  exact_source_recheck:
+    quran_4_157: "Accessible to Program Lead; states non-killing/non-crucifixion and appearance-confusion, with page context showing 4:158 raising Jesus to God."
+    islamqa_10277: "Accessible to Program Lead; substitution/resemblance account, Jesus saved from cross/death, raised bodily to heaven, future descent."
+    islamqa_224199: "Accessible to Program Lead; disputes crucifixion eyewitness/transmission, reports Christian Gospel claims including women later meeting Jesus, and records scholarly Muslim variants concerning confusion/substitution. Whether that material supplies the frozen S2 access-and-transmission mechanism is deliberately left to Reviewer A."
+  disposition_effect: "No candidate-status change. S2 remains REVISED_CANDIDATE_REQUIRED pending a valid Reviewer A source-fidelity review."
