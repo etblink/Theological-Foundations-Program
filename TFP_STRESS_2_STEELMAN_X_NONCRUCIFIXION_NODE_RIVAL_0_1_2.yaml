@@ -1,0 +1,165 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+candidate_name: "Non-crucifixion / substitution / crucifixion-identity node-rival family"
+status: "NODE_RIVAL_PACKET_REPAIRED__P_CRUC_SHARED_FLOOR_APPROVED__REVIEWER_B_EQUAL_STRENGTH_PENDING"
+supersedes: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_1.yaml"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+S2_amendment_ref: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+S3_amendment_ref: "TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+variant_verification_ref: "TFP_STRESS_2_224199_FORMULATION_VARIANT_VERIFICATION_0_1_0.yaml"
+
+family_thesis: "Jesus did not undergo the outcome-material crucifixion event attributed to him, or the identity of the crucified person was materially mistaken/substituted. This family is retained only as a direct serious rival on P-CRUC/crucifixion identity. It receives no founding-proclamation causal credit unless a separately reviewed full candidate is admitted."
+
+node_level_propositions:
+  - "P-CRUC"
+  - "P-S2-NOT-CRUCIFIED"
+  - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+  - "P-S3-NOT-CRUCIFIED"
+  - "P-S3-NO-SUBSTITUTE"
+
+variants:
+  - id: "NR-DIVINE-RESEMBLANCE-SUBSTITUTION"
+    status: "CONFIRMED_FORMULATION_ONLY"
+    formulation: "Jesus is not crucified; another person is made to resemble him or is substituted, while Jesus is saved/raised."
+    formulation_sources: ["FORM-S2-001","FORM-S2-002","FORM-S23-003","FORM-S3-001-FOOTNOTE-5"]
+    full_candidate_status: "NO"
+    reason: "Serious crucifixion-identity formulation exists, but no traceable closed founding-proclamation mechanism was established."
+    expected_evidence:
+      - "Identity/provenance evidence consistent with Jesus not being the crucified subject and with another person being taken for him."
+      - "Independent evidence of resemblance/substitution or witness/transmission confusion material to crucifixion identity."
+    weakening_evidence:
+      - "Independent, convergent identification of Jesus as the crucified subject under the same source-quality and dependence rules."
+      - "Failure to establish any substitution/resemblance or identity-confusion route beyond authority assertion."
+
+  - id: "NR-GNOSTIC-RESEMBLANCE-SUBSTITUTION"
+    status: "CONFIRMED_AS_REPORTED_TRADITION"
+    formulation: "A look-alike or other person is crucified instead of Jesus."
+    formulation_sources: ["FORM-S23-003","FORM-S3-001-FOOTNOTE-5"]
+    full_candidate_status: "NO"
+    source_limit: "Current program record relies on critical/secondary reporting rather than a newly acquired native Gnostic text."
+    expected_evidence:
+      - "Traceable evidence that a serious Gnostic/look-alike formulation bears on the identity of the crucified subject."
+      - "Any independently accessible formulation detail that generates testable crucifixion-identity consequences."
+    weakening_evidence:
+      - "No independent warrant for the reported look-alike/substitution formulation beyond secondary reporting."
+      - "Evidence strongly identifying Jesus as the crucified subject under equal source-quality rules."
+
+  - id: "NR-NATURALISTIC-ARRANGED-SUBSTITUTION-ESCAPE"
+    status: "CONFIRMED_CRITICAL_DESCRIPTION_ONLY"
+    formulation: "Jesus secretly escapes before crucifixion; another person is crucified in his place; Jesus later appears to disciples and convinces them he has risen."
+    formulation_sources: ["FORM-S3-001"]
+    full_candidate_status: "NOT_ESTABLISHED"
+    B3_limit: "The permitted source is a critic, not a proponent/native formulation. The founding mechanism therefore routes to revised-candidate fallback if outcome-material."
+    reopen_if: "A proponent/native formulation independently satisfies B1/B3."
+    expected_evidence:
+      - "Evidence of a pre-crucifixion escape and an arranged substitute/misidentified victim sufficient to bear on P-CRUC."
+      - "If the founding mechanism is later considered, proponent/native evidence independently supporting the later-appearance/deception chain."
+    weakening_evidence:
+      - "Evidence identifying Jesus himself as the crucified subject."
+      - "Failure to find any proponent/native basis for the arranged-substitution founding mechanism; this limits it to node-rival status."
+
+  - id: "NR-MISTAKEN-IDENTIFICATION-OR-WITNESS-CONFUSION"
+    status: "CONFIRMED_FORMULATION_ONLY"
+    formulation: "Witnesses, crucifiers, or later transmitters are mistaken or confused about the identity of the crucified person."
+    formulation_sources: ["FORM-S23-003"]
+    full_candidate_status: "NO"
+    expected_evidence:
+      - "Witness/provenance patterns supporting material uncertainty or mistaken identity about the crucified subject."
+      - "Independent evidence that named observers, executors, or transmitters lacked reliable identity access."
+    weakening_evidence:
+      - "Independent, convergent subject identification of Jesus across materially independent evidential streams."
+      - "Evidence that alleged identity uncertainty is created only by later doctrinal assertion rather than historical provenance."
+
+  - id: "NR-NO-SUBSTITUTE-NONCRUCIFIXION"
+    status: "REVIEWER_A_RECLASSIFIED_NODE_VARIANT__NO_NATIVE_FULL_FORMULATION"
+    formulation: "Jesus is not crucified and no substitute victim is part of the claim."
+    formulation_sources: ["FORM-S2-001_BOUNDARY_ONLY","FORM-S23-003_BOUNDARY_ONLY"]
+    full_candidate_status: "NO"
+    traceability_limit: "No permitted source supplied the former S3 full conjunction of no substitute + continued life + later founding access. The variant is retained only as a P-CRUC node challenge and not as a complete causal model."
+    expected_evidence:
+      - "Independent evidence that Jesus did not undergo the attributed crucifixion without requiring a substitute-victim mechanism."
+      - "A traceable noncrucifixion mechanism or identity route that bears directly on P-CRUC while remaining distinct from substitution."
+    weakening_evidence:
+      - "Absence of any independently defensible no-substitute formulation or mechanism."
+      - "Independent, convergent identification of Jesus as the crucified subject."
+
+  - id: "NR-DISTINCT-NON_SUBSTITUTION_CONFUSION"
+    status: "NOT_SEPARATELY_CONFIRMED"
+    formulation: null
+    rule: "Do not count as a distinct variant unless a future permitted formulation source clearly distinguishes it from substitution/misidentification."
+
+native_argument_forms:
+  use: "FORMULATION_ONLY"
+  rule: "These are preserved as the rival family's own argument forms for steelman fidelity. They are not historical proposition dispositions and are not pre-applied as evidence."
+  forms:
+    - id: "ARG-RESEMBLANCE-MISIDENTIFICATION"
+      formulation: "The crucified person was another person or was materially mistaken for Jesus."
+      sources: ["FORM-S2-001","FORM-S2-002","FORM-S23-003"]
+    - id: "ARG-WITNESS-CONFUSION"
+      formulation: "Onlookers, crucifiers, or later transmitters could be confused or mistaken about the identity of the crucified person."
+      sources: ["FORM-S23-003"]
+    - id: "ARG-DOUBT-ASSUMPTION"
+      formulation: "The tradition-native formulation explicitly appeals to doubt/assumption rather than secure knowledge concerning the crucifixion attribution."
+      sources: ["FORM-S2-001","FORM-S23-003"]
+    - id: "ARG-NO-DISCIPLE-EYEWITNESS"
+      formulation: "The reviewed traditional argument challenges direct disciple eyewitness access to the crucifixion and uses that absence as part of its identity/transmission critique."
+      sources: ["FORM-S23-003"]
+
+authority_commitments:
+  - "Religious/traditional authority defines formulation only and is not public historical evidence by authority."
+  - "Critical descriptions may establish that a rival has been discussed but cannot by themselves satisfy B3 for a full candidate."
+  - "No node-rival variant is credited with explaining the founding proclamation."
+
+direct_evidence_route:
+  proposition: "P-CRUC"
+  mode: "NODE_RIVAL_DIRECT_ROUTE"
+  discriminator: "D0-CRUCIFIXION-ATTRIBUTION"
+  planned_strata: ["SRC-01","SRC-02","SRC-04","SRC-19"]
+  adverse_probe: ["SRC-18"]
+  required_sufficiency_record: "P-CRUC must include an explicit rival sufficiency record testing affirmative crucifixion attribution against the serious noncrucifixion/substitution/misidentification variants under equal provenance, dependence, identity, and source-quality rules."
+  disposition_status: "NOT_YET_ADJUDICATED__G1_NOT_AUTHORIZED"
+
+critical_counterarguments_control:
+  Loke_counterarguments_status: "EVIDENCE_LEVEL_NOT_PRE_APPLIED"
+  rule: "Loke's counter-arguments concerning recognition by onlookers/enemies/intimates, hoax implausibility, and transphysicality are not built into the rival formulation or used as prior defeaters. If independently eligible during G1, they are evaluated under the frozen source/evidence rules."
+  no_asymmetric_preloading: true
+
+equal_strength_review:
+  reviewer_role: "REVIEWER_B"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+  status: "PENDING"
+  required_before_packet_freeze: true
+  review_scope:
+    - "variant formulation specificity"
+    - "expected/weakening evidence symmetry"
+    - "native/proponent argument-form fidelity"
+    - "source-quality asymmetry"
+    - "direct P-CRUC route and sufficiency-record adequacy"
+    - "whether critical descriptions are being mistaken for proponent support"
+  pass_label: "NODE_RIVAL_EQUAL_STRENGTH_PASS"
+  repair_label: "NODE_RIVAL_EQUAL_STRENGTH_REPAIR_REQUIRED"
+
+truth_warrant_condition_11_control:
+  rule: "The family remains adequately represented only if its steelman formulations, direct P-CRUC route, and sufficiency record are completed. Node-level reclassification is not treated as a substantive defeat."
+
+revised_candidate_fallback:
+  trigger: "If P-CRUC is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE at node level, or node-rival evidence otherwise makes a no-crucifixion-plus-founding-mechanism model outcome-material."
+  result: "PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE"
+  prohibition: "Do not retrofit H/L/F or former S2/S3 mechanisms into this node family after exposure."
+  reporting_rule: "Record PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE alongside the base outcome when the trigger fires."
+
+review_history:
+  S2:
+    reviewer_A_disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+    report: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
+  S3:
+    reviewer_A_disposition: "S3_RECLASSIFY_NODE_RIVAL_ONLY"
+    escape_model_disposition: "ESCAPE_MODEL_NODE_RIVAL_ONLY"
+    report: "TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_REPORT_0_1_0.md"
+
+formulation_exposures:
+  ledger_required: true
+  relevant_prior_entries: [12,13,14,15,16,17,18,20,21,22,23,24,25,26]
+freeze_identity: null
