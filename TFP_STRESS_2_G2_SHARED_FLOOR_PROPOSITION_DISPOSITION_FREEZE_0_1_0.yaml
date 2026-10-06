@@ -1,0 +1,313 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_SHARED_FLOOR_PROPOSITION_DISPOSITION_FREEZE"
+status: "FROZEN__3_SHARED_FLOOR_PROPOSITIONS_DISPOSITIONED__READY_FOR_PHASE_L_CROSS_LANE_CONSOLIDATION"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_version: "0.1.5"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  shared_floor_matrix:
+    path: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "18ef0c436e1a1b9d138b8e3503b93b142d09f006"
+  reviewer_C_coverage_report:
+    path: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+    blob_sha: "c1647cc86b05185ebd9c23cfba01caf900a6edbb"
+    result: "0_COMPLETE__3_MATERIALLY_COMPLETE_WITH_LISTED_GAPS__0_INCOMPLETE"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_63.yaml"
+    blob_sha: "28071473277e5b834eb5feb7dd427212247380c4"
+  founding_stream_freeze:
+    path: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+    blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  l1_freeze:
+    path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+    blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+  l2_freeze:
+    path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+  nonhistoricity_node_rival:
+    path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml"
+    blob_sha: "eab364506a87fa6f8862e50f73916cb93fae2df5"
+  noncrucifixion_node_rival:
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml"
+    blob_sha: "dbb0525d0907549e6d998d0665557abb51b7fd29"
+  p_cruc_pre_evidence_amendment:
+    path: "TFP_STRESS_2_P_CRUC_SHARED_FLOOR_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    blob_sha: "76ad6157d789a90dc808a15d6e1e72ef58276956"
+  reviewer_B_final_residual_confirmation:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION_REPORT_0_1_0.md"
+    blob_sha: "07b33e170203232d1210bebca8734881af84dceb"
+    result: "G0_REVIEW_PASS_WITH_MINOR_REPAIRS"
+  reviewer_B_final_gate_acceptance:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_GATE_ACCEPTANCE_0_1_0.md"
+    blob_sha: "d3d81ea6874358618e1eb962aac505d9462bcf8f"
+
+reviewer_C_checkpoint_authority_integration_note:
+  observed_issue: "The Reviewer-C substantive checkpoint predates the currently qualified Protocol 0.1.7 / Governance 0.1.5 governed-bundle objects, so those current authority blobs are not objects in that older substantive checkpoint tree."
+  resolution: "Program Lead independently reverified canonical main and the immutable governed bundle before integration: Protocol blob 0d9406d9ea62ec35ce6424b60ef03ced5dbd332a and Governance blob 02338ce337de0a115d6942962ce360427080db8d match canonical STATE authority."
+  classification: "TEMPORAL_CHECKPOINT_SOURCE_LOCATION_NOTE__NOT_EVIDENCE_COVERAGE_DEFECT__NO_REVIEW_RERUN_REQUIRED"
+  effect_on_reviewer_C_report: "NONE"
+  reviewer_reasoning_modified: false
+
+shared_floor_discipline:
+  propositions_are_common_prerequisites_for_all_11: true
+  relative_candidate_credit: "NONE"
+  candidate_specific_dispositions_inherit_shared_floor_strength_or_weakness: false
+  D0_candidate_selecting_use: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  G3_outcome_assigned: false
+  theological_outcome_assigned: false
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 3
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 0
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 0
+  NOT_ESTABLISHED_WITHIN_SCOPE: 0
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-HIST-JESUS"
+    proposition_scope: "A recent first-century Jewish historical subject identifiable as Jesus is the referent required by the study."
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "SUPPORTED_WITHIN_SCOPE"
+    claim_types: ["historical","textual_where_source_mediated"]
+    proposed_confidence: "MODERATE__PENDING_INDEPENDENT_CONFIDENCE_REVIEW_WHERE_OUTCOME_MATERIAL"
+    positive_evidence:
+      - "G1W1-002: Galatians 1:18-19 reports Paul's contact with Cephas and James, called the Lord's brother."
+      - "G1W1-003: Galatians 2:1-10 reports Paul's contact with recognized Jerusalem leaders including James and Cephas."
+      - "G1W1-018: Romans 1:3-4 presents Jesus Christ as descended from David according to flesh; traditional status is not assumed."
+      - "G1W1-010: Josephus Antiquities 20.200 in the extant text identifies James as brother of Jesus called Christ, carried with authenticity/wording sensitivity."
+      - "G1W1-009: Tacitus Annals 15.44 supplies a cross-tradition Christus/Pilate/movement reference, carried with source-provenance uncertainty."
+    dependence_and_source_limits:
+      - "Pauline passages are one author/institutional stream unless a separately warranted embedded tradition is established."
+      - "Tacitus's information source and independence from Christian reporting remain undetermined."
+      - "Josephus Antiquities 20.200 is used only with authenticity/wording qualification."
+      - "Josephus Antiquities 18.63-64 remains transmission-sensitive and is not used as unqualified support."
+      - "Later Gospel narrative existence is not treated as independent proof of the historical subject."
+      - "The full argument text behind the strongest serious nonhistoricity formulation was not acquired; its node claim is preserved and non-acquisition is not evidence for either side."
+    serious_alternative:
+      id: "X-NONHISTORICITY-NODE-RIVAL"
+      treatment: "TESTED_AS_NODE_RIVAL_ONLY__NO_FULL_CANDIDATE_CREDIT"
+      finding: "The frozen nonhistoricity formulation remains coherent and materially represented, but the acquired record contains positive early subject/network evidence and qualified cross-tradition anchoring; no acquired evidence materially favors nonhistoricity over the historical-subject proposition."
+    defeaters:
+      truth_critical: []
+      material: []
+      carried_limitations:
+        - "Tacitus provenance/source uncertainty."
+        - "Josephus 20.200 authenticity/wording sensitivity and unread full authenticity chapter."
+        - "Testimonium transmission dispute."
+        - "Mythicist monograph-level argument not acquired."
+    sufficiency_record:
+      historical:
+        provenance_dating_genre_interests:
+          state: "MET"
+          rationale: "Pauline, Josephus, and Tacitus evidence is provenance-identified and genre/source-role differentiated; uncertainties are explicitly carried rather than erased."
+        dependence_independence:
+          state: "MET"
+          rationale: "Pauline material is not multiplied; Tacitus independence is not assumed; Josephus and later narrative limitations are explicit."
+        contextual_plausibility:
+          state: "MET"
+          rationale: "The proposition is a bounded recent historical-subject attribution, and the acquired early movement/network record supplies a coherent first-century referent context without relying on later narrative existence alone."
+        expected_and_materially_absent_evidence:
+          state: "MET"
+          rationale: "The prospectively frozen absence ceiling is observed. No absence is upgraded into anti-historicity evidence, and the search recovered qualifying early/cross-tradition subject evidence."
+        serious_alternatives:
+          state: "MET"
+          rationale: "X-NONHISTORICITY-NODE-RIVAL is preserved at steelman quality under the final Reviewer-B source-plan/equal-strength gate and tested without consensus shortcuts."
+        reliability_question_specific:
+          state: "MET"
+          rationale: "Each source is used only for the narrow historical-subject question; source theology, later elaboration, and disputed transmission are not promoted into stronger claims."
+      textual:
+        adequate_textual_base:
+          state: "MET"
+          rationale: "Relevant Pauline texts and external-text passages are acquired at the level needed for the bounded subject-attribution proposition."
+        material_variants_assessed:
+          state: "MET"
+          rationale: "Outcome-material Josephus transmission/authenticity sensitivity is explicitly bounded; the Testimonium is not used unqualified."
+        grammar_syntax_genre_context:
+          state: "MET"
+          rationale: "Kinship/network and descent claims are interpreted within their immediate source roles; no single wording is made to carry the full disposition."
+        serious_rival_readings:
+          state: "MET"
+          rationale: "Nonhistoricity and later-historicization readings are preserved as a direct node rival and dependence control."
+        no_silent_projection_of_later_doctrine:
+          state: "MET"
+          rationale: "Later narrative existence and doctrinal development are not projected backward as historical-subject proof."
+
+  - proposition_id: "P-EARLY-PROCLAMATION-EXISTENCE"
+    proposition_scope: "A historically recoverable founding proclamation existed early enough to be investigated."
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "SUPPORTED_WITHIN_SCOPE"
+    claim_types: ["historical","textual"]
+    linguistic_scope: "NOT_APPLICABLE_TO_EXISTENCE_DISPOSITION__EXACT_FORMULA_BOUNDARIES_AND_WORDING_ARE_SEPARATE"
+    proposed_confidence: "HIGH__PENDING_INDEPENDENT_CONFIDENCE_REVIEW_WHERE_OUTCOME_MATERIAL"
+    positive_evidence:
+      - "G1W1-001: 1 Corinthians 15:3-8 explicitly marks material Paul says he received and delivered."
+      - "G1W1-008: acquired source-critical abstracts treat at least part of 1 Corinthians 15:3-5/7 as pre-Pauline/traditional, while exact boundaries remain disputed."
+      - "G1W1-002 and G1W1-003: Galatians places Paul in contact with Cephas, James, and recognized Jerusalem leaders, supplying network/provenance evidence without proving their experiences."
+      - "FP-01 independently freezes the earliest recoverable received Pauline proclamation stratum and records the existence of an early received proclamation/tradition stratum as materially supported."
+    dependence_and_source_limits:
+      - "FP-01 counts as one received proclamation/tradition cluster unless separate lineages are independently established."
+      - "Exact 1 Corinthians 15 formula boundaries remain unresolved."
+      - "Location inside a Pauline letter does not by itself make every clause pre-Pauline."
+      - "Network contact does not establish exact proclamation content, geography, ontology, event truth, or causal mechanism."
+      - "Later Gospel/Acts/reception material cannot create a founding stratum by repetition."
+    defeaters:
+      truth_critical: []
+      material: []
+      carried_limitations:
+        - "SRC-02 formula controls remain largely abstract-level."
+        - "Exact formula boundary is unresolved but is outside this existence-only proposition."
+    sufficiency_record:
+      historical:
+        provenance_dating_genre_interests:
+          state: "MET"
+          rationale: "The received/delivered Pauline text, network evidence, and source-critical tradition analysis are provenance-identified and bounded to the existence question."
+        dependence_independence:
+          state: "MET"
+          rationale: "The received material is counted as one cluster; later repetition and Pauline multiplication do not create false convergence."
+        contextual_plausibility:
+          state: "MET"
+          rationale: "A received proclamation/tradition prior to or earlier than the extant Pauline composition is directly recoverable enough to investigate historically."
+        expected_and_materially_absent_evidence:
+          state: "MET"
+          rationale: "The frozen definition-linked absence rule is obeyed; a qualifying trace is in fact recovered."
+        serious_alternatives:
+          state: "MET"
+          rationale: "Formula-boundary, Pauline-composition, transmission, and later-source alternatives are carried without requiring this proposition to settle exact content."
+        reliability_question_specific:
+          state: "MET"
+          rationale: "The finding is limited to existence of a historically recoverable early proclamation, not its truth, exact wording, geography, ontology, or causal role."
+      textual:
+        adequate_textual_base:
+          state: "MET"
+          rationale: "1 Corinthians 15:3-8 directly contains the received/delivered marker required by the frozen route."
+        material_variants_assessed:
+          state: "NOT_APPLICABLE"
+          rationale: "No identified textual variant in the frozen record is outcome-material to the bare existence of received/delivered proclamation material; exact formula boundary is a separate source-critical limit."
+        grammar_syntax_genre_context:
+          state: "MET"
+          rationale: "The received/delivered language is used only for its bounded transmission/existence function in the Pauline context."
+        serious_rival_readings:
+          state: "MET"
+          rationale: "The record preserves the possibility that not every clause is pre-Pauline and that exact boundaries differ; these do not erase the recoverable received-stratum existence claim."
+        no_silent_projection_of_later_doctrine:
+          state: "MET"
+          rationale: "No later Gospel, Acts, reception, resurrection truth, or doctrinal content is projected backward to establish the stratum."
+
+  - proposition_id: "P-CRUC"
+    proposition_scope: "Jesus himself underwent the outcome-material Roman crucifixion event attributed to him."
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "SUPPORTED_WITHIN_SCOPE"
+    claim_types: ["historical","textual_where_source_mediated"]
+    empirical_medical_scope: "NOT_APPLICABLE_TO_ATTRIBUTION_DISPOSITION__ROMAN_EXECUTION_PRACTICE_IS_USED_AS_HISTORICAL_CONTEXT_NOT_AS_A_PHYSIOLOGICAL_PROOF"
+    proposed_confidence: "MODERATE__PENDING_INDEPENDENT_CONFIDENCE_REVIEW_WHERE_OUTCOME_MATERIAL"
+    positive_evidence:
+      - "G1W1-005: Philippians 2:6-11 contains death on a cross in an early Christian textual context; pre-Pauline hymnic status is not assumed."
+      - "G1W1-015: Mark 15:33-16:8 narrates Jesus's crucifixion/death/burial sequence."
+      - "G1W1-019 and G1W1-020: Matthew and Luke preserve crucifixion/death narratives but are not counted as independent votes where Synoptic dependence is material."
+      - "G1W1-009: Tacitus links Christus to punishment under Tiberius by Pontius Pilate, carried with source uncertainty and without claiming that Tacitus supplies the execution-method word."
+      - "G1W1-011: Josephus Antiquities 18.63-64 contains crucifixion language in the extant text but is transmission-sensitive and is not used unqualified."
+      - "SRC-04 Roman literary/archaeological evidence establishes crucifixion as a real Roman punishment context; it is contextual and does not itself identify Jesus."
+    dependence_and_source_limits:
+      - "Synoptic narratives are not counted as independent votes where literary dependence is material."
+      - "Tacitus's information source remains undetermined and his passage does not itself name the execution method."
+      - "Josephus Antiquities 18.63-64 cannot bear unqualified attribution weight."
+      - "Roman crucifixion context is not case-specific identity evidence."
+      - "Tradition-native noncrucifixion sources formulate serious rivals but are not historical proof by authority."
+    serious_alternative:
+      id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+      treatment: "TESTED_AS_NODE_RIVAL_FAMILY_ONLY__NO_FOUNDING_CAUSAL_CREDIT"
+      finding: "Divine resemblance/substitution, witness-confusion/misidentification, arranged-substitution critical description, and bounded no-substitute formulations remain represented, but the acquired record contains no positive case-specific historical evidence sufficient to establish that another person was crucified or that Jesus escaped the attributed event."
+    defeaters:
+      truth_critical: []
+      material: []
+      carried_limitations:
+        - "Synoptic-dependence control is abstract-level."
+        - "Tacitus-source uncertainty."
+        - "Testimonium transmission sensitivity."
+        - "Tradition-native node-rival sources are later and formulation-only."
+        - "The bounded no-substitute variant has no native full mechanism in the record."
+    sufficiency_record:
+      historical:
+        provenance_dating_genre_interests:
+          state: "MET"
+          rationale: "Early Christian, external literary, and Roman-context evidence is provenance-identified and source-role differentiated."
+        dependence_independence:
+          state: "MET"
+          rationale: "Synoptic dependence is explicitly carried; Pauline material is not multiplied; Tacitus and Josephus are qualified rather than presumed independent/pristine."
+        contextual_plausibility:
+          state: "MET"
+          rationale: "Roman-period literary and archaeological evidence independently establishes crucifixion as a historically real Roman punishment context, while case attribution rests on case-specific sources."
+        expected_and_materially_absent_evidence:
+          state: "MET"
+          rationale: "The prospectively frozen absence ceiling is obeyed; absence is not used to prove crucifixion or noncrucifixion, and qualifying early attribution evidence is present."
+        serious_alternatives:
+          state: "MET"
+          rationale: "The frozen noncrucifixion/substitution/misidentification family is preserved and tested at node level under equal provenance/source-quality rules."
+        reliability_question_specific:
+          state: "MET"
+          rationale: "The finding is only that Jesus is historically attributable as the crucified subject; it does not infer resurrection, exact physiological cause of death, or founding-proclamation causation."
+      textual:
+        adequate_textual_base:
+          state: "MET"
+          rationale: "Pauline and Gospel crucifixion/death texts are acquired, with qualified external textual controls."
+        material_variants_assessed:
+          state: "MET"
+          rationale: "Josephus transmission sensitivity is explicit and prevents unqualified use; no disputed external passage is required as the sole basis of the disposition."
+        grammar_syntax_genre_context:
+          state: "MET"
+          rationale: "Pauline proclamation, narrative Gospel, Roman historiographic, and later tradition-native sources are not collapsed into one genre or evidential role."
+        serious_rival_readings:
+          state: "MET"
+          rationale: "Substitution, misidentification/witness-confusion, arranged escape, and bounded no-substitute alternatives are explicitly preserved and tested."
+        no_silent_projection_of_later_doctrine:
+          state: "MET"
+          rationale: "Later noncrucifixion authority is formulation-only; later Christian narration is dependence-qualified and not treated as independent first-generation convergence."
+
+phase_L_effect:
+  shared_floor_proposition_coverage_dependency: "CLOSED"
+  all_three_shared_floor_propositions_supported: true
+  all_three_common_truth_warrant_floor_conditions_satisfied_at_disposition_level: true
+  confidence_classes_final: false
+  independent_confidence_review_required_where_outcome_material: true
+  cumulative_fragility_review_status: "PENDING_PHASE_L_CHAIN_CONSOLIDATION_IF_TRIGGERED"
+  final_cross_lane_proposition_consolidation: "NEXT"
+  L6_entire_lane_frozen: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_permitted: false
+  G3_authorized: false
+  theological_outcome: "NONE"
+
+next_action:
+  id: "TFP-STRESS-2-G2-PHASE-L-CROSS-LANE-PROPOSITION-CONSOLIDATION"
+  action: "Consolidate all truth-critical necessary propositions across frozen L1-L6 facets under Protocol Phase L before candidate structural/evidential status or any G3 work."
+  controls:
+    - "weakest necessary facet"
+    - "independence/dependence"
+    - "direct versus indirect evidence"
+    - "defeaters"
+    - "cross-lane conflict"
+    - "evidence convergence"
+    - "chain attenuation"
+    - "background sensitivity"
+    - "shared-floor noninheritance"
