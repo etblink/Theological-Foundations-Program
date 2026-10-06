@@ -31,4 +31,7 @@ registered_strict_audits:
     assignment_declaration: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
     status: "ASSIGNED"
 required_strict_audit_count: 1
-status: "DRAFT"
+assignment_declaration_path: "TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
+assignment_declaration_blob_sha: "925968fdf698fc15a99d4227cd9d4a0d6595b575"
+freeze_identity: "immutable_blob_sha_of_this_file"
+status: "FROZEN_BEFORE_SUBSTANTIVE_AUDIT"
