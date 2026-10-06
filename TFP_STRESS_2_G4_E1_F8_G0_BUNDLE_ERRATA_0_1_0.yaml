@@ -1,0 +1,22 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_E1_F8_G0_BUNDLE_ERRATA"
+status: "FROZEN__PENDING_INDEPENDENT_C4_CONFIRMATION"
+date: "2026-10-06"
+
+finding: "E1 F8"
+authorized_bundle:
+  path: "TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
+  blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
+malformed_entry:
+  key: "packet_index"
+  recorded_blob: "0adbbfcca452397e7e13fabfc08406a0824efee0a"
+correct_identity:
+  path: "TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_9.yaml"
+  blob_sha: "0adbbfcca452397e7e13fabfc08406a0824efee0"
+repair_rule: "The authorized G0 bundle remains immutable; this additive errata supplies the correct packet-index blob for cold-start verification."
+outcome_effect: "NONE"
+
+amendment_control:
+  provisional_class: "POST_EVIDENCE_NONMATERIAL"
+  G5_use: "PENDING_INDEPENDENT_C4_CONFIRMATION"
