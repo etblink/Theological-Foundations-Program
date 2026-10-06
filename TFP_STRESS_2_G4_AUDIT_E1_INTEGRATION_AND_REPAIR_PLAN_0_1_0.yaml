@@ -1,0 +1,93 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G4_AUDIT_E1_INTEGRATION_AND_REPAIR_PLAN"
+status: "E1_COMPLETE__PASS_WITH_LIMITATIONS__REPAIRABLE_MINORS_TO_BE_CLOSED_BEFORE_G5"
+date: "2026-10-06"
+
+audit:
+  audit_id: "TFP-STRESS-2-G4-AUDIT-E1"
+  report:
+    path: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md"
+    blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
+  target_commit: "481f3788ededab5a424c1b65c546efe7b2ae38fd"
+  target_tree: "ee9430e1aebfafff3f3e78e6e546520d63b403c8"
+  reviewer: "Anthropic Claude Opus 5.5 / Reviewer E"
+  overall_outcome: "PASS_WITH_LIMITATIONS"
+  blocking_findings: 0
+  major_findings: 0
+  minor_findings: 8
+  G5_eligible_from_audit: true
+  G5_condition: "subject to human-owner decision on F1/F2 and explicit handling of limitations"
+
+core_result_preserved:
+  A12: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  N3: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  Q1: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  audit_statement: "No finding can change the 11/0 A12 count, the N3 base outcome, or the Q1 answer."
+
+program_lead_integration_choice:
+  selected_path: "CLOSE_ALL_REPAIRABLE_MINORS_BEFORE_REQUESTING_G5"
+  rationale:
+    - "F1 and F2 are protocol-control omissions with bounded independent closure procedures."
+    - "F3-F8 can be repaired additively without changing frozen G3 merits."
+    - "Closing rather than merely carrying repairable defects gives the cleaner G5 record."
+  does_not_change_G3_merits: true
+  does_not_convert_PASS_WITH_LIMITATIONS_to_PASS_without_reaudit: true
+  supplementary_E2_status: "DEFERRED__OPTIONAL__NOT_REQUIRED_FOR_G5_BY_E1"
+
+findings:
+  F1:
+    severity: "MINOR"
+    surface: "7 amendment/change control"
+    action: "fresh independent C4 confirmation of Phase-L 0.1.0 -> 0.1.1 control-tail amendment"
+    external_independence_required: true
+    status: "PENDING"
+  F2:
+    severity: "MINOR"
+    surface: "2 role independence/reviewer control"
+    action: "fresh Reviewer D ledger-integrity verification of L1 0.1.1, L2 0.1.1, Phase-L 0.1.1, and historical sequence-3 edit"
+    external_independence_required: true
+    status: "PENDING"
+  F3:
+    severity: "MINOR"
+    surface: "15 immutable identity/regression"
+    action: "append ledger correction and update current-version ledger header truthfully"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+  F4:
+    severity: "MINOR"
+    surface: "9 discriminator/dominance/outcome selection"
+    action: "append background-invariance table"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+  F5:
+    severity: "MINOR"
+    surface: "9"
+    action: "add required P-CRUC qualifier to relative N3 reporting through additive errata/superseding presentation record"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+  F6:
+    severity: "MINOR"
+    surface: "5 claim typing/sufficiency"
+    action: "append reasoned reconciliation note for P-HSEED-SOCIAL-AMPLIFICATION versus P-CHET-SEED-SOC"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+  F7:
+    severity: "MINOR"
+    surface: "14 cold-start/artifact completeness"
+    action: "versioned clerical correction for G1 transition YAML plus stale-status errata"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+  F8:
+    severity: "MINOR"
+    surface: "15"
+    action: "append G0 authorization-bundle packet_index blob errata; do not modify immutable authorized bundle"
+    status: "AUTHORIZED_FOR_ADDITIVE_REPAIR"
+
+limitations_carried_from_E1:
+  - "Audit-depth limitation on steelman packet content, line-level source-plan adherence, premise re-weighing, C-HET module trace, and stream trace."
+  - "Reviewer E did not diff role control 0.1.1 vs 0.1.2 or compare preserved handshake blob against actual response."
+  - "Carried G1 rival-formulation gaps remain."
+  - "AI independence is procedural, not independent-training-prior proof."
+  - "G4 did not conduct a new evidence cycle."
+
+next_action:
+  - "apply additive repairs F3-F8"
+  - "freeze fresh independent C4 confirmation packet for F1"
+  - "freeze fresh Reviewer D ledger-integrity packet for F2"
+  - "preserve and integrate both external reports before any G5 acceptance request"
