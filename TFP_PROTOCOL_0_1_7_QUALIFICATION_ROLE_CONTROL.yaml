@@ -16,5 +16,9 @@ source_manifest_preparer:
 human_relaying_operator:
   actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
   substantive_qualification_reviewer: false
-human_owner: {}
+human_owner:
+  material_protocol_author: false
+  material_governance_author: false
+  outcome_material_qualification_reviewer: false
+  final_qualification_authority: true
 status: "DRAFT"
