@@ -9,13 +9,13 @@ supersession_reason: "Reviewer B narrow confirmation left four bounded residuals
 governing_surfaces:
   admission_freeze:
     path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_6.yaml"
-    blob_sha: "ae8a5974618035ac27069650f33120f820881821"
+    blob_sha: "247d868ca33550297359280e2bd6c6fa7f6dd9fd"
   candidate_register:
     path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml"
     blob_sha: "985735c633073d4887b596cd1a0fdd6a3432b372"
   q1_event_control:
     path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
-    blob_sha: "32d3bd9fa1cdbc4fca66bcd1bb9d3a2e421915e9"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
   causal_profile_partition:
     path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
     blob_sha: "1513d4476ef32222f819c51ef0623a0b16bf5bd4"
