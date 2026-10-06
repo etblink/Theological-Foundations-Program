@@ -1,0 +1,149 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "PRE_EVIDENCE_AMENDMENT_RECORD"
+amendment_id: "TFP-STRESS-2-C4-P-CRUC-SHARED-FLOOR-0.1.0"
+status: "APPROVED_FOR_USE__PRE_EVIDENCE__CONDITIONS_PRECEDENT_APPLIED"
+date: "2026-10-05"
+
+protocol:
+  version: "0.1.7"
+  amendment_rule: "C4"
+  class: "PRE_EVIDENCE_AMENDMENT"
+  A6_classification: "NONCOMPARATIVE_SHARED_FLOOR"
+  rationale: "After the S2 and S3 pre-evidence reclassifications, every one of the exact 11 status-bearing full candidates requires the identical P-CRUC proposition. Reviewer A independently verified A6 necessity and materially identical truth conditions and approved shared-floor classification subject to six explicit conditions precedent."
+
+independent_review:
+  reviewer_role: "REVIEWER_A"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  report:
+    path: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "8c256e590106c529a7dbe2aa9a114447db74f51b"
+    commit: "774acec8403438afe67eb6e93b30c873639adee9"
+  disposition: "P_CRUC_SHARED_FLOOR_APPROVED_WITH_LIMITATIONS"
+  necessity_check: "SATISFIED"
+  identical_truth_conditions_check: "SATISFIED"
+  coverage_mode: "NONCOMPARATIVE_SHARED_FLOOR"
+
+exact_candidate_set:
+  count: 11
+  candidates:
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "H-SEED-SPREAD"
+    - "L"
+    - "S1"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+    - "C-HET-SEED-SPREAD"
+  freeze_rule: "This classification is frozen against the exact 11-candidate universe. Admission of any additional full candidate before G0 (including via a reopen_if) is a C4 amendment that reopens it."
+
+P_CRUC:
+  proposition_id: "P-CRUC"
+  text: "Jesus himself underwent the outcome-material Roman crucifixion event attributed to him."
+  classification: "NONCOMPARATIVE_SHARED_FLOOR"
+  truth_conditions_identical_for_all_11: true
+  direct_node_rival_control: "D0-CRUCIFIXION-ATTRIBUTION"
+  node_rival_family: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  candidate_selecting_route: false
+  N2_input: false
+  dominance_blocking: false
+  sufficiency_record_required: true
+
+conditions_precedent:
+  - id: "CP-1-NO-INHERITANCE"
+    status: "CLOSED"
+    text: "Shared-floor propositions (`P-HIST-JESUS`, `P-EARLY-PROCLAMATION-EXISTENCE`, `P-CRUC`) are evaluated on their own sufficiency records. Every candidate-specific proposition, including `P-DEATH`, `P-S1-NONDEATH` and all `P-R-*` propositions, is evaluated conditional on the shared-floor propositions being true. A shared-floor shortfall is carried only by the shared-floor proposition and may not be inherited by, double-counted in, or used to lower any candidate-specific disposition, ranking-eligibility status or direction result. `P-DEATH` answers: given that Jesus underwent the crucifixion event, did he enter the death state as defined? At chain level the Q1 answer table alone applies the weakest-link rule."
+    implemented_in:
+      path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
+      blob_sha: "fdaa47d81d51ce33507d5f3b6e8464cbf9a2ae56"
+    mirrored_in:
+      path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_6.yaml"
+      blob_sha: "32791c3130cfe0a40da1590426f426bd9e4330ea"
+
+  - id: "CP-2-Q1-TABLE"
+    status: "CLOSED"
+    implementation: "P-CRUC is included in q1_chain_prerequisites.shared_floor while remaining an affirmative R conjunct; Q1 row 3 explicitly names P-CRUC."
+    artifact:
+      path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
+      blob_sha: "fdaa47d81d51ce33507d5f3b6e8464cbf9a2ae56"
+
+  - id: "CP-3-COVERAGE-MAP"
+    status: "CLOSED"
+    implementation:
+      - "The 11 duplicated P-CRUC COMPARATIVE_ROUTE entries are replaced by one shared-floor entry covering all 11."
+      - "Coverage mode is NONCOMPARATIVE_SHARED_FLOOR."
+      - "Direct route is D0 plus an explicit P-CRUC sufficiency record."
+      - "D0 is excluded from N2 and candidate-dominance blocking."
+    artifact:
+      path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_6.yaml"
+      blob_sha: "32791c3130cfe0a40da1590426f426bd9e4330ea"
+
+  - id: "CP-4-NODE-RIVAL-STEELMAN"
+    status: "CLOSED_FOR_REPAIR__REVIEWER_B_EQUAL_STRENGTH_REVIEW_PENDING"
+    implementation:
+      - "Per-variant expected and weakening evidence registered pre-exposure."
+      - "Native argument forms preserved as FORMULATION_ONLY: resemblance/misidentification, witness confusion, doubt/assumption, no-disciple-eyewitness."
+      - "Reviewer B equal-strength review slot frozen."
+      - "Loke counter-arguments explicitly remain evidence-level and are not pre-applied."
+    artifact:
+      path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+      blob_sha: "f13e23b994d0cbe1a6ebcd948bc093c54d71b15e"
+
+  - id: "CP-5-FALLBACK-AND-REPORTING"
+    status: "CLOSED"
+    fallback_trigger: "If P-CRUC is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE at node level, or node-rival evidence otherwise makes a no-crucifixion-plus-founding-mechanism model outcome-material, record PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE alongside the base outcome."
+    relative_reporting_rule: "Report any relative label among the 11 with the qualifier: conditional on a shared-floor P-CRUC of [disposition]."
+    candidate_set_rule: "Admission of any additional full candidate before G0 is a C4 amendment that reopens P-CRUC shared-floor classification."
+    artifacts:
+      - "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
+      - "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+      - "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+
+  - id: "CP-6-MECHANICAL"
+    status: "CLOSED_PENDING_THIS_FREEZE_SUPERSESSION"
+    implementation:
+      - "Candidate register shared_floor_conditions updated."
+      - "S2 amendment versioned with historical pointers to the S3 amendment and later freeze."
+      - "Admission freeze 0.1.2 will be superseded by 0.1.3 after all conditions are recorded."
+    artifacts:
+      candidate_register:
+        path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+        blob_sha: "0904322abbe7a2c353f87c9916c4e7c126cfbf36"
+      S2_amendment_pointer_update:
+        path: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_1.yaml"
+        blob_sha: "d0c86bd9503903fb9f6d442a03ca9199001177ae"
+      S3_amendment:
+        path: "TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+        blob_sha: "e36a61d57585a664f608900d704efe75a088d7b4"
+
+A12_shared_floor_map:
+  SUPPORTED_WITHIN_SCOPE: "No relative-ranking effect; may satisfy the shared truth-warrant condition."
+  PARTIALLY_SUPPORTED_or_other_below_supported_not_against: "Relative ranking unaffected; TRUTH_WARRANTED blocked for all dependent candidates."
+  EVIDENCE_AGAINST_WITHIN_SCOPE: "Relative ranking unaffected; shared MATERIAL_DEFEATER; TRUTH_WARRANTED blocked; revised-candidate fallback trigger fires."
+  CONTRADICTED_WITHIN_SCOPE: "Every dependent full candidate becomes INADEQUATE_BY_EVIDENCE; revised-candidate fallback trigger fires; no winner may be manufactured from the frozen set."
+
+P_DEATH:
+  classification: "NOT_SHARED_FLOOR"
+  reason: "S1 denies P-DEATH."
+  noninheritance_rule: "P-DEATH is evaluated conditional on P-CRUC being true; a shared-floor P-CRUC shortfall cannot lower P-DEATH's candidate-specific disposition."
+
+source_plan:
+  path: "TFP_STRESS_2_SOURCE_PLAN_0_1_6.yaml"
+  blob_sha: "fe149b956d33f56167076e5e18746cec2c1436df"
+  effect: "Shared-floor status does not reduce the P-CRUC search burden or adverse node-rival route."
+
+exposure_ledger:
+  path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_10.yaml"
+  blob_sha: "d1c222f375f3716a263339ffe0b53299cfcf728e"
+  reviewer_A_report_sequence: 26
+  substantive_outcome_evidence_acquired: false
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  historical_P_CRUC_disposition: "NONE"
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
