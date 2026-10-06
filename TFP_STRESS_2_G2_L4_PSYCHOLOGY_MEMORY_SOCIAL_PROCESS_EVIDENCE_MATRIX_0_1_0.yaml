@@ -1,0 +1,387 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_EVIDENCE_MATRIX"
+status: "FROZEN_EVIDENCE_BINDING_MATRIX__NO_L4_PROPOSITION_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  g2_launch: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+  g2_launch_blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  l3_lane_freeze: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+  l3_lane_freeze_blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  founding_stream_freeze: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+  founding_stream_freeze_blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  targeted_return_acquisition: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_1.yaml"
+  targeted_return_acquisition_blob_sha: "1f8c55661a6027b67bc5115c91090f2337d21eba"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+
+lane:
+  id: "L4"
+  title: "Psychology/memory/social process"
+  competencies: ["individual experience mechanisms","social/group formation","memory","narrative development","deception hypotheses"]
+  author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  proposition_disposition_authorized_in_this_artifact: false
+
+source_clusters:
+  P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS:
+    source_ids: ["G1RS-059","G1RS-072","G1RS-073","G2L3R-001","G2L3R-002"]
+    observations:
+      - "Bereavement sensory experiences and sensed-presence phenomena are empirically documented as genuine experiences in modern populations."
+      - "Smith 2024 supplies a target-case proposal of an individual bereavement vision as a possible initiating stimulus."
+      - "Loke/Meader 2025 provides full peer-reviewed adverse testing of the transfer from modern bereavement phenomena to the Jesus case."
+    limits:
+      - "Capacity and prevalence do not establish target-case occurrence."
+      - "Luedemann/Goulder originals remain full-text inaccessible."
+  P2_SOCIAL_MEMORY_AND_GROUP_PROCESS:
+    source_ids: ["G1RS-060","G1RS-061","G1RS-068","G2L3R-001","G2L3R-002"]
+    observations:
+      - "Memory conformity, social contagion, collective-memory processes, and failed-expectation group responses are independently documented."
+      - "Smith proposes individual-stimulus-to-group-belief propagation through suggestion, discourse, and collective delusion rather than literal shared hallucination."
+      - "Loke/Meader argues that MPI/collective-delusion analogies and shared-perception transfer do not map cleanly to the target case."
+    limits:
+      - "Generic group mechanisms are not direct evidence of an early-Christian founding social process."
+      - "Collective delusion/report propagation does not by itself satisfy modules requiring genuine subjective experiences across the social process."
+  P3_MEMORY_AND_NARRATIVE_DEVELOPMENT:
+    source_ids: ["G1RS-062","G1RS-070","G1W1-001","G1W1-006","G1W1-019","G1W1-020","G1W1-021"]
+    observations:
+      - "The acquired record supports memory/narrative processes as general capacities and documents increasingly elaborated resurrection narratives across later literary strata."
+      - "Gospel of Peter supplies an especially explicit later noncanonical elaboration."
+    limits:
+      - "Observed literary difference does not by itself establish the psychological mechanism or exact genealogy producing it."
+      - "Later elaboration cannot retroactively create a founding causal mechanism."
+  P4_DECEPTION_AND_FABRICATION_CONTROLS:
+    source_ids: ["G1RS-063","G1W1-019","G1RS-071"]
+    observations:
+      - "Modern deception research warns against inference of knowing falsehood from generic behavioral cues."
+      - "Matthew preserves a stolen-body counterclaim tradition and Crossan argues for later invention/development on burial-related material."
+    limits:
+      - "No acquired evidence directly demonstrates actor-specific founding knowing deception."
+      - "Later invention or literary development is not automatically founding fabrication."
+  P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR:
+    source_ids: ["G2L3R-001","G2L3R-002"]
+    observations:
+      - "The positive paper supplies explicit mechanism, timing, recipients/targets, and group-transfer claims."
+      - "The adverse paper contests case transfer, MPI mapping, shared-perception fit, and cognitive-dissonance analogies."
+    limits:
+      - "Disagreement makes the mechanism testable, not decided."
+      - "Neither paper can change the frozen FS-01 dependence structure."
+  P6_TIMING_AND_STREAM_CONTROL:
+    artifacts:
+      - "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+      - "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+    observations:
+      - "FS-01 remains one pre-Pauline received appearance-tradition cluster."
+      - "Mechanism capacity is evaluated against the frozen founding stratum rather than against later narrative multiplicity."
+      - "L2 supports death within scope, so bereavement-based mechanisms have their ordinary precondition available without thereby being established as operative."
+
+l4_proposition_surfaces:
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    candidates: ["H-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    frozen_expected_evidence: "Evidence favoring subjective-only experience rather than an extramental referent."
+    frozen_weakening_evidence: "Veridical referent supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HIND-NONVERIDICAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HIND-MECHANISM-SUFFICIENT"
+    candidates: ["H-IND"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Independent mechanism evidence sufficient for the claimed pattern."
+    frozen_weakening_evidence: "Mechanism capacity below threshold."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HIND-MECHANISM-SUFFICIENT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    candidates: ["H-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-IND-EXP is PRIMARY while other founding mechanisms satisfy the H-IND profile."
+    frozen_weakening_evidence: "Interpretive/social mechanism necessary, no founding role, or rival causal profile supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HIND-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    candidates: ["H-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for genuine subjective experiences across the relevant social process."
+    frozen_weakening_evidence: "Only report formation or no experience occurrence."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    candidates: ["H-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for social/group mechanism in founding stream."
+    frozen_weakening_evidence: "No supported social process."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    candidates: ["H-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    frozen_expected_evidence: "Evidence favoring nonveridical social experience over a veridical referent."
+    frozen_weakening_evidence: "Veridical referent supported."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-NONVERIDICAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-MECHANISM-SUFFICIENT"
+    candidates: ["H-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Independent warrant for mechanism capacity."
+    frozen_weakening_evidence: "Mechanism capacity below threshold."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-MECHANISM-SUFFICIENT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    candidates: ["H-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-SOC-EXP is PRIMARY while M-IND/M-INTERP are nonnecessary."
+    frozen_weakening_evidence: "Individual seed or interpretation necessary, or social mechanism nonprimary."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSOC-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-INDIVIDUAL-EXPERIENCE"
+    candidates: ["H-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for a genuine founding individual subjective experience."
+    frozen_weakening_evidence: "No individual seed supported or veridical referent supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-INDIVIDUAL-EXPERIENCE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-SOCIAL-AMPLIFICATION"
+    candidates: ["H-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for a causally necessary social/group amplification process."
+    frozen_weakening_evidence: "Social process absent or merely contributing-nonnecessary."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-SOCIAL-AMPLIFICATION"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    candidates: ["H-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    frozen_expected_evidence: "Evidence favoring nonveridical individual/social experience processes over a veridical referent."
+    frozen_weakening_evidence: "Veridical referent supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-NONVERIDICAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-MECHANISM-SUFFICIENT"
+    candidates: ["H-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Independent mechanism evidence sufficient for the claimed forms and scale."
+    frozen_weakening_evidence: "Either required mechanism lacks independent capacity."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-MECHANISM-SUFFICIENT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    candidates: ["H-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "M-IND-EXP and M-SOC-EXP each PRIMARY or NECESSARY_CONTRIBUTING, at least one PRIMARY, while M-INTERP is CONTRIBUTING_NONNECESSARY or NONE."
+    frozen_weakening_evidence: "Either experience mechanism is nonnecessary, interpretation is necessary, or no founding causal role is supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-HSEED-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-ENCOUNTER-CLAIM-ORIGIN"
+    candidates: ["L"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Documented secondary-development route."
+    frozen_weakening_evidence: "Encounter claims require a founding experiential mechanism not contained in L."
+    source_clusters: ["P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-L-ENCOUNTER-CLAIM-ORIGIN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-L-DEVELOPMENT-SEQUENCE"
+    candidates: ["L"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence of later development from earlier thinner/interpretive material."
+    frozen_weakening_evidence: "Relevant robust content already founding or no development sequence."
+    source_clusters: ["P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-L-DEVELOPMENT-SEQUENCE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-DELIBERATE"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence of intentional founding deception."
+    frozen_weakening_evidence: "No positive fabrication evidence or only error/interpretation."
+    source_clusters: ["P4_DECEPTION_AND_FABRICATION_CONTROLS","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-F-DELIBERATE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Positive warrant for at least one of the two preregistered implementations. No third implementation may be added after exposure except C4."
+    frozen_weakening_evidence: "Neither frozen implementation reaches SUPPORTED; or the body-removal implementation is closed by contrary body evidence and the non-body implementation independently fails its actor/opportunity/transmission burden."
+    source_clusters: ["P4_DECEPTION_AND_FABRICATION_CONTROLS","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
+    candidates: ["F"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence for transmission adequacy."
+    frozen_weakening_evidence: "Transmission route absent/insufficient."
+    source_clusters: ["P4_DECEPTION_AND_FABRICATION_CONTROLS","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-F-TRANSMISSION-SUFFICIENT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    candidates: ["F"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that M-FOUNDING-FAB was PRIMARY under the common causal ladder."
+    frozen_weakening_evidence: "Fabrication only later/nonnecessary."
+    source_clusters: ["P4_DECEPTION_AND_FABRICATION_CONTROLS","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-F-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-EXP"
+    candidates: ["C-HET-IND"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-IND-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-INT"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-INT."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-INT"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-NARR"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-NARR."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-NARR"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    candidates: ["C-HET-IND"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-IND-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    candidates: ["C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D5-PROFILE-MATCH"]
+    frozen_expected_evidence: "Evidence that every required founding module satisfies its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    frozen_weakening_evidence: "Any required founding module is only nonnecessary or was added/reassigned after exposure."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-FOUNDING-CAUSAL"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-EXP"
+    candidates: ["C-HET-SOC"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SOC-EXP."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-EXP"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    candidates: ["C-HET-SOC"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SOC-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-IND"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-IND."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-IND"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SOC"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    frozen_expected_evidence: "Evidence satisfying the frozen module occurrence/capacity/timing requirements for P-CHET-SEED-SOC."
+    frozen_weakening_evidence: "Module unsupported, wrong stratum, or rival ontology/mechanism defeats it."
+    source_clusters: ["P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P5_TARGET_CASE_POSITIVE_ADVERSE_PAIR","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SOC"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    candidates: ["C-HET-SEED-SPREAD"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D9-CHET-JOINT-VS-PURE"]
+    frozen_expected_evidence: "Evidence matching the exact frozen heterogeneous joint pattern for P-CHET-SEED-SPREAD-JOINT-PATTERN."
+    frozen_weakening_evidence: "Single-process profile suffices, module roles/timing fail, or veridical referent supported."
+    source_clusters: ["P1_INDIVIDUAL_BEREAVEMENT_MECHANISMS","P2_SOCIAL_MEMORY_AND_GROUP_PROCESS","P3_MEMORY_AND_NARRATIVE_DEVELOPMENT","P6_TIMING_AND_STREAM_CONTROL"]
+    required_coverage_scope: "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+matrix_constraints:
+  - "Mechanism capacity is not target-case occurrence."
+  - "A modern analogy or experimental effect may support plausibility/capacity but cannot by itself establish first-century instantiation."
+  - "H-SOC, H-SEED-SPREAD social limb, and M-SOC-EXP require genuine nonveridical subjective experiences, not report formation alone."
+  - "Smith's collective-delusion route cannot silently satisfy a genuine-experience requirement it does not claim."
+  - "Loke/Meader's rebuttal is evidence about transfer quality, not a theological authority result."
+  - "Memory/narrative development is separated from founding encounter-claim origin."
+  - "Knowing fabrication requires positive actor-specific warrant; generic motive, inconsistency, or later development is insufficient."
+  - "No rival failure becomes positive evidence for H, L, F, or C-HET."
+  - "No profile-match or discriminator direction is applied in matrix construction."
+
+next_gate:
+  action: "Fresh Reviewer C proposition-scope coverage batch for all 29 unique L4-linked scopes."
+  proposition_dispositions_before_gate: "PROHIBITED"
