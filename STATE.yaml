@@ -79,46 +79,85 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-PROGRAM-BROAD-THEISM-SEQUENCE"
-  status: "HUMAN_STRATEGY_ACCEPTED__STUDY_3_CONTINGENCY_SELECTED__NO_G0_AUTHORIZATION_YET"
-  purpose: "Pursue broader-theism truth adjudication through methodologically distinct bounded studies: contingency/necessary foundation first, divine hiddenness second, with no preset outcome and no automatic synthesis."
+  id: "TFP-STUDY-3-CONTINGENCY-G0"
+  status: "G0_ARCHITECTURE_AUTHORIZED__BLIND_CANDIDATE_ELICITATION_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
-  strategic_acceptance:
-    artifact: "TFP_PROGRAM_BROAD_THEISM_SEQUENCE_ACCEPTANCE_0_1_0.md"
-    blob_sha: "7aecde4a4b0427551a0517dbcf99a94372c3ede6"
-    status: "HUMAN_OWNER_ACCEPTED"
-  next_study_selection:
-    artifact: "TFP_PROGRAM_NEXT_STUDY_SELECTION_0_1_1.md"
-    blob_sha: "ab4e78d6d06018432aeaefdb811fc1aa30b26dac"
-    selected_candidate: "TFP-STUDY-3-CONTINGENCY"
-    provisional_question: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  research_branch: "research/tfp-study-3-contingency-g0"
+  research_branch_head: "77b6f0aaed1297bdae90ebfbb64085d119fbd3e3"
+  human_G0_architecture_authorization:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
+    status: "AUTHORIZED"
+  working_question:
+    text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+    status: "WORKING_G0_QUESTION__NOT_YET_FINAL_PREREGISTRATION"
+  scope_packet:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
+    blob_sha: "ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+  role_architecture:
+    artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+    blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+  program_lead_candidate_seed:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CANDIDATE_SEED_0_1_0.yaml"
+    blob_sha: "efe84e2aacf2c9399befe9fc28bc6c3f9ce08e70"
+    status: "FROZEN_PRIVATE_FROM_REVIEWER_A_UNTIL_BLIND_ELICITATION_FREEZE"
+  Reviewer_A:
+    status: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+    assignment_handshake_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+      blob_sha: "2afaa799a1e83fc187aa7923724e0b43ae3f653c"
+    blind_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "4a5402d75eeb21cc9f9379165c539868f379970e"
+    blind_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_PROMPT_0_1_0.md"
+      blob_sha: "8c389b28a82bde953e63bf85a3651812d9f522ea"
+  exposure_ledger:
+    artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_1.yaml"
+    blob_sha: "a05bfafcde2fa57101a7c051dac8dd505e1cd2eb"
+    next_sequence: 9
+    outcome_evidence_exposure_started: false
+  G0_progress:
+    human_authorization_received: true
+    blind_candidate_elicitation_ready: true
+    blind_candidate_elicitation_complete: false
+    candidate_universe_frozen: false
+    steelman_packets_frozen: false
+    claim_typing_frozen: false
+    necessary_proposition_coverage_complete: false
+    background_register_frozen: false
+    source_plan_passed: false
+    discriminators_frozen: false
+    insufficiency_threshold_frozen: false
+    G0_complete: false
+  G1_authorized: false
+  outcome_relevant_evidence_acquisition_started: false
+  methodology:
+    status: "MAINTENANCE_MODE"
+    revision_authorized: false
+  TFP_STRESS_2:
+    lifecycle_status: "CLOSED"
+    reopen_status: "NO_REOPEN_TRIGGER_CURRENTLY_MET"
   planned_following_study:
     id: "TFP-STUDY-4-HIDDENNESS"
     status: "STRATEGICALLY_FAVORED__NOT_G0_AUTHORIZED"
-    provisional_question: "Does the existence and distribution of apparently nonresistant nonbelief materially count against the existence of a perfectly loving personal God, once serious theistic and non-theistic explanations are compared under equal standards?"
-  TFP_STRESS_2:
-    lifecycle_status: "CLOSED"
-    canonical_adjudication_id: "TFP-STRESS-2-Q1-R_EVENT"
-    reopen_status: "NO_REOPEN_TRIGGER_CURRENTLY_MET"
-  methodology:
-    status: "MAINTENANCE_MODE"
-    new_revision_authorized: false
-  study_3_G0_authorized: false
-  study_4_G0_authorized: false
   global_theological_synthesis_authorized: false
-  theological_outcome: "NO_NEW_OUTCOME__PROGRAM_SEQUENCE_ONLY"
+  theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-CONTINGENCY-G0-AUTHORIZATION-DECISION"
-  action: "human_owner_decides_whether_to_authorize_G0_architecture_for_TFP_STUDY_3_CONTINGENCY_under_qualified_Protocol_0_1_7"
-  selection_blob_sha: "ab4e78d6d06018432aeaefdb811fc1aa30b26dac"
+  id: "TFP-STUDY-3-REVIEWER-A-BLIND-CANDIDATE-ELICITATION"
+  action: "assign_a_fresh_procedurally_disjoint_Reviewer_A_session_then_run_the_frozen_blind_candidate_elicitation_without_exposing_the_Program_Lead_candidate_seed"
+  branch: "research/tfp-study-3-contingency-g0"
+  handshake_prompt_blob_sha: "2afaa799a1e83fc187aa7923724e0b43ae3f653c"
+  blind_input_blob_sha: "4a5402d75eeb21cc9f9379165c539868f379970e"
+  blind_prompt_blob_sha: "8c389b28a82bde953e63bf85a3651812d9f522ea"
   requirements:
-    - "no outcome-relevant evidence acquisition before explicit G0 authorization"
-    - "do not equate necessary foundation with God by definition"
-    - "if authorized, preregister candidate universe, necessity/explanation definitions, source plan, background assumptions, discriminator rules, insufficiency threshold, and reviewer architecture"
-    - "separately warrant every attributed property of any supported foundation"
-    - "do not import TFP-STRESS-2 conclusions as a prior favoring naturalism or theism"
-    - "do not authorize TFP-STUDY-4-HIDDENNESS merely because Study 3 is authorized"
+    - "fresh session lineage disjoint from the Program Lead and future strict auditor"
+    - "assignment-only handshake before any Study-3 repository exposure"
+    - "Reviewer A must not read the Program Lead initial candidate seed before freezing its own elicitation report"
+    - "no outcome-relevant evidence search or candidate ranking"
+    - "after blind elicitation freezes, a separate comparison/reconciliation pass may expose Reviewer A to the Program Lead seed"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -415,6 +454,9 @@ research_queue:
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
+  - id: "TFP-STUDY-3-CONTINGENCY"
+    status: "G0_architecture_authorized__Reviewer_A_blind_candidate_elicitation_ready"
+    candidate: "contingency_necessary_foundation"
 
 stop_rules:
   underdetermined_is_valid: true
