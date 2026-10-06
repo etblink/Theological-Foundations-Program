@@ -1,0 +1,39 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_D_OFFLINE_PACKET_PROVENANCE"
+status: "PRESERVED_POST_EXECUTION_PROVENANCE"
+date: "2026-10-06"
+
+packet:
+  filename: "TFP_STRESS_2_REVIEWER_D_OFFLINE_PACKET_0_1_0.zip"
+  sha256: "5c55bb95e214476866cbacd3f29b1bc067d28013f01976fb276e1cc93387416c"
+  file_count: 29
+  source_branch: "research/tfp-stress-2-resurrection-g3"
+  source_branch_head_at_build: "43ee1477fc500a28372710f3a57127b4edcaef6a"
+
+purpose: "Permit the already-disjoint Gemini Reviewer-D session to execute the bounded A17 ledger-integrity review without live GitHub retrieval capability."
+
+contained_verification_material:
+  - "exact frozen Reviewer-D role control, input freeze, and prompt"
+  - "historical ledger 0.1.1 and 0.1.2"
+  - "current ledger 0.1.75 sequence-completeness index covering sequences 1-153 with no gaps or duplicates"
+  - "A17-relevant exact-entry extract from current ledger 0.1.75"
+  - "frozen GitHub REST commit-history evidence snapshot for relevant ledger/amendment paths"
+  - "Protocol 0.1.7 A17/C4 excerpt"
+  - "Reviewer-D role-architecture excerpt"
+  - "L1/L2 amendment controls and independent C4-confirmation excerpts"
+  - "Phase-L 0.1.0/0.1.1 control-tail comparison material"
+  - "post-audit repair/errata records F3-F8"
+  - "Reviewer-C C4 integration closure"
+  - "human-relayed copies of Reviewer-E and Reviewer-C reports"
+
+transport_limitations:
+  live_GitHub_access_by_reviewer_D: false
+  git_history_basis: "frozen GitHub REST evidence snapshot assembled while Program Lead had connected GitHub access"
+  external_report_transport_normalization_possible: true
+  exact_repo_blob_verification_for_external_report_local_copies: "NOT_CLAIMED"
+  reviewer_instruction_on_insufficiency: "Return LEDGER_INTEGRITY_NOT_CONFIRMED rather than infer or bluff."
+
+review_result:
+  report: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md","84ea800532fef7fe814cc0c68f25102034330e9a"]
+  result: "LEDGER_INTEGRITY_CONFIRMED"
