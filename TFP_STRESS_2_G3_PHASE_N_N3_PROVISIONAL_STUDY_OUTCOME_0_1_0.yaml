@@ -1,0 +1,138 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME"
+status: "FROZEN_G3_SYNTHESIS__PROVISIONAL_OUTCOME_ASSIGNED__AWAITING_G4_STRICT_INDEPENDENT_AUDIT"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  human_G3_authorization:
+    path: "TFP_STRESS_2_G3_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "6e2c935d7a8759a4862606d7c811720a406b4308"
+  phase_L_consolidation:
+    path: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+    blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  phase_N_candidate_status:
+    path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+
+phase_N_gate_checks:
+  candidate_statuses_assigned_for_all_11: true
+  necessary_proposition_coverage_complete_for_all_11: true
+  necessary_proposition_dispositions_frozen_to_required_route_level: true
+  prerequisite_4_evidence_or_coverage_failure_prevents_status_analysis: false
+  insufficient_signal_triggered: false
+  post_evidence_directional_contamination_triggered: false
+  background_robustness:
+    zero_ranking_eligible_stable_across_required_live_backgrounds: true
+    basis: "Every candidate has at least one ranking-blocking necessary proposition whose blocker is historical/testimonial/psychological/causal and does not depend on selecting a favorable L5 metaphysical or testimony background cell."
+  outcome_relevant_discriminators:
+    count: 0
+    reason: "Protocol N2 admits only RANKING_ELIGIBLE candidates to pairwise dominance; the frozen A12 set contains zero RANKING_ELIGIBLE candidates."
+  comparison_makeable_certification_required: false
+  post_evidence_direction_result_review_required: false
+  reviewer_D_direction_result_role_triggered: false
+
+candidate_counts:
+  STRUCTURALLY_INADEQUATE: 0
+  INADEQUATE_BY_EVIDENCE: 0
+  ADEQUATE_BUT_RANKING_BLOCKED: 11
+  RANKING_ELIGIBLE: 0
+  ADEQUATE_total: 11
+
+N3_decision_table_application:
+  row_1_insufficient_signal:
+    satisfied: false
+    reason: "Required coverage/access is adequate to assign every candidate status and determine the applicable N3 row; listed gaps do not create a prerequisite-4 failure."
+  row_2_post_evidence_directional_contamination:
+    satisfied: false
+    reason: "No favorable/mixed post-evidence amendment is used to change relative ranking or dominance."
+  row_3_zero_adequate:
+    satisfied: false
+    adequate_count: 11
+  row_4_exactly_one_adequate:
+    satisfied: false
+    adequate_count: 11
+  row_5_two_or_more_adequate_zero_ranking_eligible:
+    satisfied: true
+    adequate_count: 11
+    ranking_eligible_count: 0
+  later_rows:
+    evaluated: false
+    reason: "N3 uses first-satisfied-row precedence."
+
+provisional_base_outcome:
+  label: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  meaning: "Multiple admitted candidates remain adequate, but none meets the frozen ranking-eligibility threshold. The protocol therefore does not permit pairwise dominance, BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED."
+  candidate_ranking_assigned: false
+  best_supported_candidate: null
+  closest_to_truth_enabled: false
+  truth_warranted_candidate: null
+  revised_candidate_required: false
+  none_adequate: false
+  insufficient_signal: false
+
+q1_resurrection_question:
+  exact_question: "Does the best publicly adjudicable historical evidence warrant the proposition that Jesus of Nazareth genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+  shared_floor:
+    P-HIST-JESUS: "SUPPORTED_WITHIN_SCOPE"
+    P-EARLY-PROCLAMATION-EXISTENCE: "SUPPORTED_WITHIN_SCOPE"
+    P-CRUC: "SUPPORTED_WITHIN_SCOPE"
+  affirmative_R_conjuncts:
+    P-CRUC: "SUPPORTED_WITHIN_SCOPE"
+    P-DEATH: "SUPPORTED_WITHIN_SCOPE"
+    P-R-BODY: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P-R-IDENTITY-JESUS: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P-R-FOUNDING-ENCOUNTER: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P-R-CAUSAL: "NOT_ESTABLISHED_WITHIN_SCOPE"
+  q1_precedence_check:
+    row_1_INSUFFICIENT_SIGNAL: false
+    row_2_R_EVENT_EVIDENCE_AGAINST: false
+    row_3_shared_floor_below_supported: false
+    row_4_R_EVENT_TRUTH_WARRANTED: false
+    row_5_R_EVENT_RELATIVELY_SUPPORTED_NOT_TRUTH_WARRANTED: false
+    row_6_UNDERDETERMINED:
+      satisfied: false
+      reason: "R-TRANS is ranking-blocked and there is no single required live background under which all affirmative R conjuncts are simultaneously SUPPORTED_WITHIN_SCOPE."
+    row_7_R_EVENT_NOT_WARRANTED_WITHIN_SCOPE:
+      satisfied: true
+      reason: "R-TRANS is ranking-blocked and multiple affirmative R conjuncts remain below SUPPORTED_WITHIN_SCOPE without an earlier row applying."
+  provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  binary_plain_language_yes_permitted: false
+  interpretation:
+    - "The current evidence record does not warrant affirming R_EVENT as true under the frozen protocol."
+    - "This is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+    - "The broader candidate comparison remains underdetermined because all 11 candidates are adequate but ranking-blocked."
+
+truth_warrant_controls:
+  all_shared_floor_supported: true
+  any_candidate_all_necessary_propositions_supported: false
+  confidence_review_trigger_currently_outcome_material: false
+  cumulative_fragility_review_trigger_currently_outcome_material: false
+  TRUTH_WARRANTED_available: false
+
+reviewer_controls:
+  reviewer_C_comparison_makeable_role_triggered: false
+  reviewer_D_post_evidence_direction_result_role_triggered: false
+  reviewer_D_confidence_role_triggered: false
+  reviewer_D_ledger_integrity_role_triggered_by_amendment: false
+  strict_independent_auditor:
+    role: "REVIEWER_E_AUDITOR"
+    status: "REQUIRED_NEXT_AFTER_THIS_G3_SYNTHESIS_FREEZE"
+    required_lineage: "fresh and disjoint from Program Lead, candidate/lane authors, Reviewers A/B/C/D, and every outcome-material reviewer"
+    may_modify_study: false
+
+scope_boundaries:
+  resurrection_truth_as_metaphysical_fact: "NOT_DECIDED_FALSE"
+  divine_agent_attribution: "NOT_AUTHORIZED"
+  Christianity_truth: "NOT_INFERRED"
+  global_theological_adjudication: "NOT_REACHED"
+  G4_audit_result: "PENDING"
+  G5_human_acceptance: "PENDING"
+
+next_action:
+  id: "TFP-STRESS-2-G4-STRICT-INDEPENDENT-AUDIT"
+  action: "Freeze a read-only strict-auditor input packet and prompt against this exact G3 synthesis, then obtain a fresh lineage-disjoint Reviewer-E audit before any G5 acceptance request."
