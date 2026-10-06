@@ -1,0 +1,167 @@
+schema_version: "0.1.4"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN_11_CANDIDATES__P_CRUC_SHARED_FLOOR__SECTION_23A_PACKET_SET_COMPLETE__REVIEWER_B_PENDING"
+date: "2026-10-05"
+supersedes:
+  path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+  reason: "Supersedes freeze 0.1.3 only to bind the completed section-23A packet set, packet-stage C-HET body-module operationalization, and schema-complete noncrucifixion node-rival packet. The exact 11-candidate universe and P-CRUC shared-floor classification are unchanged."
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+amendments:
+  S2:
+    path: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_1.yaml"
+    blob_sha: "d0c86bd9503903fb9f6d442a03ca9199001177ae"
+    disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+    note: "0.1.1 adds historical supersession pointers only; substantive S2 amendment remains unchanged."
+  S3:
+    path: "TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    blob_sha: "e36a61d57585a664f608900d704efe75a088d7b4"
+    disposition: "S3_RECLASSIFY_NODE_RIVAL_ONLY__ESCAPE_MODEL_NODE_RIVAL_ONLY"
+  P_CRUC_shared_floor:
+    path: "TFP_STRESS_2_P_CRUC_SHARED_FLOOR_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    blob_sha: "76ad6157d789a90dc808a15d6e1e72ef58276956"
+    disposition: "P_CRUC_SHARED_FLOOR_APPROVED_WITH_LIMITATIONS__CONDITIONS_PRECEDENT_APPLIED"
+
+independent_P_CRUC_review:
+  path: "TFP_STRESS_2_REVIEWER_A_P_CRUC_SHARED_FLOOR_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "8c256e590106c529a7dbe2aa9a114447db74f51b"
+  commit: "774acec8403438afe67eb6e93b30c873639adee9"
+  reviewer: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  disposition: "P_CRUC_SHARED_FLOOR_APPROVED_WITH_LIMITATIONS"
+  freeze_decision: "YES_CONDITIONAL_ON_SECTION_9_REPAIRS"
+  section_9_repairs_status: "ALL_RECORDED"
+
+frozen_admission_surfaces:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_9.yaml"
+    blob_sha: "2076d10ff6a4f4a8c514aab570b26bdf633ab042"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_6.yaml"
+    blob_sha: "22cd120d24f918da308e8d93c9b5eef00ca6dbb4"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_8.yaml"
+    blob_sha: "8af0ad123ff32586f0b2bd7af2dd839f153a0c4f"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_7.yaml"
+    blob_sha: "acda3e80f188b2505b1466670c00de1966abf929"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+    blob_sha: "ed767ff4ffd7227419d7cdf43cc8b0c2a5bcacf5"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_4.yaml"
+    blob_sha: "dcdb77170cc7587767f1f7a151397a2ba3669a26"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+    blob_sha: "6b91d55d873ac6dee90960f1733bbbb1a0ac3b0b"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+    blob_sha: "8e01aeea4e830f993a3ea8bb7b7ca286b74472bb"
+
+frozen_status_bearing_candidates:
+  - "R-TRANS"
+  - "V"
+  - "H-IND"
+  - "H-SOC"
+  - "H-SEED-SPREAD"
+  - "L"
+  - "S1"
+  - "F"
+  - "C-HET-IND"
+  - "C-HET-SOC"
+  - "C-HET-SEED-SPREAD"
+status_bearing_candidate_count: 11
+
+frozen_non_status_refinements:
+  - "R-PHYS"
+
+frozen_node_rival_family:
+  id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+  packet:
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_3.yaml"
+    blob_sha: "02d543418536e6e38adf0b6abb5b2f3b0bc461fa"
+  direct_proposition: "P-CRUC"
+  D0_role: "NODE_RIVAL_EVIDENTIAL_DISCRIMINATOR_AND_SUFFICIENCY_CONTROL"
+  candidate_selecting_comparative_route: false
+  feeds_N2: false
+  dominance_blocking: false
+  sufficiency_record_required: true
+  truth_warrant_condition_11_control: true
+  reviewer_B_equal_strength_review: "PENDING_ON_FROZEN_PACKET_SET"
+  revised_candidate_fallback_preserved: true
+
+other_frozen_exclusions_and_node_rivals:
+  - "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+  - "X-Q2-DIVINE-AGENT"
+  - "X-FREEFORM-COMPOSITE"
+  - "X-BODY-DISPOSITION-ONLY"
+  - "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+  - "X-ARBITRARY-SPECULATIVE-MODELS"
+  - "X-REAL-REFERENT-NONIDENTITY"
+
+frozen_shared_floor:
+  - "P-HIST-JESUS"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-CRUC"
+
+P_CRUC:
+  proposition_text: "Jesus himself underwent the outcome-material Roman crucifixion event attributed to him."
+  classification: "NONCOMPARATIVE_SHARED_FLOOR"
+  all_11_full_candidates_require_identical_text: true
+  reviewer_A_necessity_check: "SATISFIED"
+  reviewer_A_identical_truth_conditions_check: "SATISFIED"
+  direct_node_rival_route_required: true
+  sufficiency_record_required: true
+  shared_floor_shortfall_inheritance_prohibited: true
+  relative_outcome_reporting_rule: "Any relative label among the 11 must be qualified: conditional on a shared-floor P-CRUC of [disposition]."
+  revised_candidate_trigger: "If P-CRUC is EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE at node level, or node-rival evidence otherwise makes a no-crucifixion-plus-founding-mechanism model outcome-material, record PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE alongside the base outcome."
+  candidate_set_reopen_rule: "This classification is frozen against the exact 11-candidate universe. Admission of any additional full candidate before G0 (including via a reopen_if) is a C4 amendment that reopens it."
+
+P_DEATH:
+  classification: "NOT_SHARED_FLOOR"
+  reason: "S1 denies P-DEATH."
+  conditional_evaluation_rule: "Evaluate P-DEATH conditional on the shared-floor P-CRUC proposition being true; do not inherit a P-CRUC shortfall into P-DEATH."
+
+shared_floor_noninheritance_rule:
+  text: "Shared-floor propositions (`P-HIST-JESUS`, `P-EARLY-PROCLAMATION-EXISTENCE`, `P-CRUC`) are evaluated on their own sufficiency records. Every candidate-specific proposition, including `P-DEATH`, `P-S1-NONDEATH` and all `P-R-*` propositions, is evaluated conditional on the shared-floor propositions being true. A shared-floor shortfall is carried only by the shared-floor proposition and may not be inherited by, double-counted in, or used to lower any candidate-specific disposition, ranking-eligibility status or direction result. `P-DEATH` answers: given that Jesus underwent the crucifixion event, did he enter the death state as defined? At chain level the Q1 answer table alone applies the weakest-link rule."
+
+conditions_precedent_status:
+  CP_1_no_inheritance: "CLOSED"
+  CP_2_Q1_table: "CLOSED"
+  CP_3_coverage_map: "CLOSED"
+  CP_4_node_rival_steelman_repair: "CLOSED_FOR_REPAIR__REVIEWER_B_EQUAL_STRENGTH_PENDING"
+  CP_5_fallback_and_reporting: "CLOSED"
+  CP_6_mechanical: "CLOSED_BY_THIS_FREEZE"
+
+formulation_control:
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_12.yaml"
+    blob_sha: "0bcd38ab984b263bde78c921385e434aaff6b76e"
+
+wave_1_architecture:
+  status: "CLOSED"
+  note: "The affirmative/survival/noncrucifixion architecture is now settled pre-evidence. Remaining work is packet completion/equal-strength review, not further candidate redesign absent a C4 trigger."
+
+steelman_packet_set:
+  status: "COMPLETE_AND_FROZEN_FOR_REVIEWER_B"
+  manifest: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_1.yaml"
+  section_23A_schema_check: "PASS_PROGRAM_LEAD_PRE_REVIEW"
+  C_HET_body_module: "OPERATIONALIZED__REVIEWER_B_CERTIFICATION_PENDING"
+  noncrucifixion_packet_schema: "COMPLETE_IN_0_1_3"
+
+pending_before_G0_bundle_freeze:
+  - "Reviewer B equal-strength review of the frozen packet set, including all required node rivals."
+  - "Reviewer B SOURCE_PLAN_PASS or bounded repair."
+  - "Reviewer B NECESSARY_PROPOSITION_COVERAGE_COMPLETE certification or bounded repair."
+  - "Reviewer C discriminator/background interaction review after Reviewer B clearance."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  historical_P_CRUC_disposition: "NONE"
+  theological_outcome: "NONE"
