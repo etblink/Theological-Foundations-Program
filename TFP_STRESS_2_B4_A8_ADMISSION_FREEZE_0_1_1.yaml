@@ -1,0 +1,131 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN_AFTER_PRE_EVIDENCE_S2_AMENDMENT__S3_PACKET_FIDELITY_REVIEW_PENDING"
+date: "2026-10-05"
+supersedes:
+  path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+  blob_sha: "2d2c342b06af1b230020c787147eab3a351be00f"
+  commit: "7e560296a9aa34a26a89baadeb97333478394187"
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+amendment:
+  class: "PRE_EVIDENCE_AMENDMENT"
+  record:
+    path: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+    blob_sha: "d615d78114d3a390d8173eecd9ead36539d4ddad"
+  independent_review:
+    path: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "43341dfd74eb72df6a5318e285d668530cf2cc41"
+    reviewer: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+
+frozen_admission_surfaces:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_5.yaml"
+    blob_sha: "ad8c8741ab6f0cb7e0e36bb1b5248bd93c93b5f3"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_3.yaml"
+    blob_sha: "45360f56f9c96b5fdffe86721f8423466da84eac"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+    blob_sha: "ed767ff4ffd7227419d7cdf43cc8b0c2a5bcacf5"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_3.yaml"
+    blob_sha: "074f31ea922d1efb143cd240fa76106322c56883"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+    blob_sha: "6b91d55d873ac6dee90960f1733bbbb1a0ac3b0b"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+    blob_sha: "8e01aeea4e830f993a3ea8bb7b7ca286b74472bb"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_4.yaml"
+    blob_sha: "d5159f9bef9acdb8e4a12977b01de7e828fe4df9"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_4.yaml"
+    blob_sha: "9c157e2449752acd57b499a9ffd539edf1c4813b"
+
+frozen_status_bearing_candidates:
+  - "R-TRANS"
+  - "V"
+  - "H-IND"
+  - "H-SOC"
+  - "H-SEED-SPREAD"
+  - "L"
+  - "S1"
+  - "S3"
+  - "F"
+  - "C-HET-IND"
+  - "C-HET-SOC"
+  - "C-HET-SEED-SPREAD"
+
+status_bearing_candidate_count: 12
+
+frozen_non_status_refinements:
+  - "R-PHYS"
+
+frozen_exclusions_and_node_rivals:
+  - "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+  - "X-Q2-DIVINE-AGENT"
+  - "X-FREEFORM-COMPOSITE"
+  - "X-BODY-DISPOSITION-ONLY"
+  - "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+  - "X-ARBITRARY-SPECULATIVE-MODELS"
+  - "X-REAL-REFERENT-NONIDENTITY"
+  - "X-SUBSTITUTION-AS-FULL-CANDIDATE"
+
+S2_reclassification:
+  former_status: "STATUS_BEARING_FULL_CANDIDATE"
+  current_status: "NODE_RIVAL_ONLY"
+  node_rival_packet:
+    path: "TFP_STRESS_2_STEELMAN_X_SUBSTITUTION_NODE_RIVAL_0_1_0.yaml"
+    blob_sha: "c76c5d242dcbc6f3519ca5629cb1b3b43358177f"
+  retained_propositions:
+    - "P-CRUC"
+    - "P-S2-NOT-CRUCIFIED"
+    - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+  full_candidate_reason_for_removal: "Permitted tradition-native/proponent formulation supports crucifixion-identity substitution/misidentification but does not supply a traceable closed founding-proclamation causal mechanism. Inventing one would violate B1/B3."
+  truth_warrant_condition_11_control: "The rival remains live and must be directly tested at node level under P-CRUC; reclassification is not treated as a substantive defeat."
+  reopen_if:
+    - "A permitted/native source materially establishes a closed founding-proclamation mechanism."
+    - "The unseen portion of IslamQA 224199 materially changes the native formulation regarding post-event access/transmission."
+    - "A serious no-crucifixion-plus-founding-mechanism model independently satisfies B1/SERIOUS_RIVAL and is routed through C4."
+
+frozen_shared_floor:
+  - "P-HIST-JESUS"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+
+P_CRUC:
+  classification: "NOT_SHARED_FLOOR"
+  reason: "S3 remains a status-bearing candidate that denies P-CRUC. S2's removal alone cannot reclassify P-CRUC."
+  substitution_node_rival_required: true
+
+frozen_background_admissions_for_reviewer_C:
+  - "BGD-1"
+  - "BGD-2"
+  - "BGD-3"
+  - "BGD-9"
+  - "BGD-10"
+  - "BGD-11"
+
+frozen_empirical_refiles:
+  - "BGD-4 -> EMP-SOURCE-DATING-DEPENDENCE"
+  - "BGD-5 -> EMP-EXPERIENTIAL-MECHANISM-CAPACITY"
+  - "BGD-6 -> EMP-CRUCIFIXION-BURIAL-PRACTICE"
+  - "BGD-7 -> EMP-SECOND-TEMPLE-CONCEPTS"
+  - "BGD-8 -> EMP-PAULINE-BODY-INTERPRETATION"
+
+pending_before_wave_1_packet_freeze:
+  - "Reviewer A native/proponent fidelity review of S3 packet."
+  - "If S3 is reclassified/removed, reassess P-CRUC shared-floor eligibility through a separate explicit amendment; do not reclassify automatically."
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  theological_outcome: "NONE"
