@@ -14,7 +14,7 @@ program:
   current_method: "TFP_METHOD_SEED_0_1_0.md"
   qualified_protocol: null
   candidate_protocol: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
-  candidate_protocol_status: "CANDIDATE__BOUNDED_EXIT_GATE_REPAIR_COMPLETE__AUDITOR_ASSIGNMENT_PENDING"
+  candidate_protocol_status: "CANDIDATE__BOUNDED_EXIT_GATE_REPAIR_COMPLETE__STRICT_AUDIT_READY"
   canonical_mutable_state: "STATE.yaml"
   canonical_branch: "main"
   global_truth_adjudication_reached: false
@@ -43,7 +43,7 @@ authority:
 
 current_scope:
   id: "TFP-METHOD-REAUDIT-0.1.7"
-  status: "auditor_assignment_pending"
+  status: "strict_audit_ready"
   purpose: "Run one strict independent exit-gate qualification audit of the bounded Protocol 0.1.7 repair."
   bounded: true
   reanchor_checkpoint: "TFP_PROGRAM_REANCHORING_CHECKPOINT_0_1_0.md"
@@ -54,23 +54,37 @@ current_scope:
   governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
   source_manifest: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
   source_manifest_blob_sha: "de9223db5f57a287c90be7dc1df46c8c75d4dfde"
-  auditor_assignment_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_PROMPT.md"
-  auditor_assignment_prompt_blob_sha: "154bf6355806e01ca8512c04d40d0a28c3342cad"
+  auditor_assignment_declaration: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_DECLARATION_1.md"
+  auditor_assignment_declaration_blob_sha: "925968fdf698fc15a99d4227cd9d4a0d6595b575"
   qualification_role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
+  qualification_role_control_blob_sha: "4e3fe845ca5f6ff75674355bcdfeca33256ba032"
+  assigned_strict_auditor_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7_STRICT_QUALIFICATION_EXIT_GATE_PROMPT.md"
+  substantive_audit_prompt_blob_sha: "26b835325e75a3866dde0d13cbc88d7821664f1b"
   next_audit_role: "qualification_exit_gate"
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-METHOD-AUDITOR-ASSIGN-0.1.7"
-  action: "obtain_one_fresh_auditor_assignment_declaration"
-  assignment_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_AUDITOR_ASSIGNMENT_PROMPT.md"
+  id: "TFP-METHOD-REAUDIT-0.1.7"
+  action: "launch_assigned_strict_independent_exit_gate_audit"
+  assigned_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  launch_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7_STRICT_QUALIFICATION_EXIT_GATE_PROMPT.md"
+  source_manifest: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_QUALIFICATION_SOURCE_MANIFEST_0_1_7.yaml"
+  role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
+  role_control_blob_sha: "4e3fe845ca5f6ff75674355bcdfeca33256ba032"
+  assigned_strict_auditor_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  substantive_audit_prompt: "repair/tfp-adjudication-protocol-0.1.7:TFP_ADJUDICATION_PROTOCOL_0_1_7_STRICT_QUALIFICATION_EXIT_GATE_PROMPT.md"
+  substantive_audit_prompt_blob_sha: "26b835325e75a3866dde0d13cbc88d7821664f1b"
   governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
   requirements:
-    - "auditor_reads_no_repository_material_during_assignment_handshake"
-    - "auditor_declares_fresh_session_lineage_and_prior_exposure"
-    - "freeze_complete_role_control_after_assignment_before_substantive_audit"
-    - "next_audit_is_exit_gate_not_open_ended_method_redesign"
-    - "do_not_authorize_theological_stress_test"
+    - "use_exact_assigned_claude_session"
+    - "verify_source_manifest_and_role_control_blob_identities"
+    - "audit_only_exact_pinned_governed_bundle"
+    - "read_operative_governance_baseline_only_as_regression_reference_after_governed_sources"
+    - "do_not_read_prior_audits_or_repair_control_artifacts"
+    - "treat_this_as_exit_gate_not_open_ended_method_redesign"
+    - "do_not_modify_repository"
+    - "do_not_qualify_or_authorize_theological_stress_test"
 
 qualification_candidate:
   version: "0.1.7"
@@ -82,7 +96,7 @@ qualification_candidate:
   source_manifest_blob_sha: "de9223db5f57a287c90be7dc1df46c8c75d4dfde"
   governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
   role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
-  status: "BUNDLE_PINNED__AUDITOR_ASSIGNMENT_PENDING"
+  status: "BUNDLE_PINNED__STRICT_AUDIT_READY"
   qualified: false
   predecessor_protocol: "0.1.6"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
@@ -269,7 +283,7 @@ research_queue:
   - id: "TFP-METHOD-REPAIR-0.1.7"
     status: "completed_pending_exit_gate_audit"
   - id: "TFP-METHOD-REAUDIT-0.1.7"
-    status: "auditor_assignment_pending"
+    status: "strict_audit_ready"
   - id: "TFP-STRESS-2"
     status: "queued_not_authorized"
     candidate: "resurrection_claim"
