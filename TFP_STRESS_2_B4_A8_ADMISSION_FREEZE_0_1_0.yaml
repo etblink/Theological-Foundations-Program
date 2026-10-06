@@ -1,0 +1,140 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN__STEELMAN_PACKET_CONSTRUCTION_MAY_PROCEED"
+date: "2026-10-05"
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+review_basis:
+  reviewer: "REVIEWER_A"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  report: "TFP_STRESS_2_REVIEWER_A_SHORT_RR_PRIME_CONFIRMATION_REPORT_0_1_0.md"
+  report_blob_sha: "8cb7badce6e7750523f3502903b3bd0f09b017f3"
+  disposition: "B4_A8_PASS_WITH_LIMITATIONS"
+  outcome_material_open_defects: 0
+  condition: "Apply two mechanical identifier/pointer fixes before recording freeze identities."
+  condition_satisfied: true
+
+mechanical_closure:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+    blob_sha: "632d282db1cb00369910b0d1abf28079f0f61919"
+    fixes:
+      - "Replaced operative M-NARR aliases in C-HET core text with canonical M-LATER-NARR."
+      - "Added genuine-experience requirement to H-SEED-SPREAD social component."
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_3.yaml"
+    blob_sha: "074f31ea922d1efb143cd240fa76106322c56883"
+    fixes:
+      - "Corrected garbled M-INTERPERP to M-INTERP."
+      - "Updated founding_fabrication_definition_ref to causal partition 0.1.1."
+      - "Qualified H-IND/H-SOC fallback closure text so no-PRIMARY vectors route through unmatched-vector control."
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+    blob_sha: "6b91d55d873ac6dee90960f1733bbbb1a0ac3b0b"
+    fixes:
+      - "Added P-V-NONEMBODIED to BGD-11 affected propositions."
+
+frozen_admission_surfaces:
+  preregistration:
+    path: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_6.md"
+    blob_sha: "3a1dccfd21ecd125fc3c14d0d0120a5bb5a68eb4"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+    blob_sha: "632d282db1cb00369910b0d1abf28079f0f61919"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_1.yaml"
+    blob_sha: "ed767ff4ffd7227419d7cdf43cc8b0c2a5bcacf5"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_2.yaml"
+    blob_sha: "7926e7568c7b00baf2b7ed0bb27e085139f580a8"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_3.yaml"
+    blob_sha: "074f31ea922d1efb143cd240fa76106322c56883"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_3.yaml"
+    blob_sha: "6b91d55d873ac6dee90960f1733bbbb1a0ac3b0b"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+    blob_sha: "8e01aeea4e830f993a3ea8bb7b7ca286b74472bb"
+
+frozen_status_bearing_candidates:
+  - "R-TRANS"
+  - "V"
+  - "H-IND"
+  - "H-SOC"
+  - "H-SEED-SPREAD"
+  - "L"
+  - "S1"
+  - "S2"
+  - "S3"
+  - "F"
+  - "C-HET-IND"
+  - "C-HET-SOC"
+  - "C-HET-SEED-SPREAD"
+
+frozen_non_status_refinements:
+  - "R-PHYS"
+
+frozen_exclusions_and_node_rivals:
+  - "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+  - "X-Q2-DIVINE-AGENT"
+  - "X-FREEFORM-COMPOSITE"
+  - "X-BODY-DISPOSITION-ONLY"
+  - "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+  - "X-ARBITRARY-SPECULATIVE-MODELS"
+  - "X-REAL-REFERENT-NONIDENTITY"
+
+frozen_shared_floor:
+  - "P-HIST-JESUS"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+
+frozen_background_admissions_for_reviewer_C:
+  - "BGD-1"
+  - "BGD-2"
+  - "BGD-3"
+  - "BGD-9"
+  - "BGD-10"
+  - "BGD-11"
+
+frozen_empirical_refiles:
+  - "BGD-4 -> EMP-SOURCE-DATING-DEPENDENCE"
+  - "BGD-5 -> EMP-EXPERIENTIAL-MECHANISM-CAPACITY"
+  - "BGD-6 -> EMP-CRUCIFIXION-BURIAL-PRACTICE"
+  - "BGD-7 -> EMP-SECOND-TEMPLE-CONCEPTS"
+  - "BGD-8 -> EMP-PAULINE-BODY-INTERPRETATION"
+
+aligned_downstream_artifacts_not_yet_certified:
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_3.yaml"
+    blob_sha: "fd111ae6b196e32d1167b9d6f5d2d4323f03a6cb"
+    status: "PENDING_STEELMAN_AND_REVIEWER_B_CERTIFICATION"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_3.yaml"
+    blob_sha: "3db9fa8d59e17fdc8248123b04c75789ab0ab0ea"
+    status: "PENDING_STEELMAN_AND_REVIEWER_B_SOURCE_PLAN_PASS"
+
+control_artifacts:
+  role_architecture:
+    path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_5.yaml"
+    blob_sha: "6531f8bfd06527108ec7d08c020fc4aa0ae390d9"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_4.yaml"
+    blob_sha: "40dd3d915b417064b9e58a26c340b6800301dea2"
+
+next_permitted_step:
+  action: "Construct candidate steelman packets under active pre-G0 exposure ledger."
+  evidence_research_for_G1_authorized: false
+  packet_formulation_source_review_permitted: true
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  theological_outcome: "NONE"
