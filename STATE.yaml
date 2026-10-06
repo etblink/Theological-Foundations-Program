@@ -80,47 +80,46 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "S2_node_rival_amendment_applied__S3_escape_model_review_pending"
-  purpose: "Continue pre-G0 steelman construction after S2 was reclassified to a crucifixion-identity node rival; independently review S3 fidelity and the already-ledgered escape-hypothesis formulation before Wave 1 packet freeze."
+  status: "S3_Loke_source_relay_required__escape_model_review_blocked"
+  purpose: "Resume Reviewer A S3/escape-model packet-fidelity review after relaying the exact Loke §5.4 page from the authorized Library of Congress PDF; no substantive G1 evidence acquisition."
   bounded: true
   qualified_protocol_version: "0.1.7"
   design_branch: "research/tfp-stress-2-resurrection-g0"
-  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_8.md"
+  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_9.md"
   admission_freeze: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_1.yaml"
-  s2_pre_evidence_amendment: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
   candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_5.yaml"
-  q1_control: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_3.yaml"
-  coverage_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_4.yaml"
-  source_plan: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_SOURCE_PLAN_0_1_4.yaml"
   steelman_packet_index: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_2.yaml"
-  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_2.yaml"
-  substitution_node_rival_packet: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_X_SUBSTITUTION_NODE_RIVAL_0_1_0.yaml"
-  reviewer_A_S2_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
-  reviewer_A_S2_disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
-  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_6.yaml"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_7.yaml"
+  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_3.yaml"
+  reviewer_A_S3_source_relay_required_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_SOURCE_RELAY_REQUIRED_REPORT_0_1_0.md"
+  reviewer_A_S3_relay_instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_LOKE_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_8.yaml"
   status_bearing_candidate_count: 12
+  S3_status: "OPEN_PENDING_SOURCE_RELAY_AND_REVIEW"
+  escape_model_status: "OPEN_PENDING_SOURCE_RELAY_AND_REVIEW"
   methodology_mode: "maintenance"
   g0_authorized: false
   g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-STRESS-2-REVIEWER-A-S3-ESCAPE-MODEL"
-  action: "run_exact_session_reviewer_A_S3_fidelity_and_escape_model_classification_review"
+  id: "TFP-STRESS-2-S3-LOKE-HUMAN-SOURCE-RELAY"
+  action: "relay_exact_Loke_section_5_4_page_to_same_reviewer_A_session_then_resume_S3_escape_model_review"
   reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
-  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_ESCAPE_MODEL_REVIEW_PROMPT_0_1_0.md"
+  instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S3_LOKE_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
+  exact_source: "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/02/21/28/2020022128/2020022128.pdf"
+  exact_locator:
+    printed_page: 119
+    pdf_display_page: "approximately 127 of 246"
+    section: "5.4 Addressing the escape hypothesis"
+    next_heading: "5.5 Conclusion"
+    footnote: 5
   requirements:
-    - "use_exact_reviewer_A_session"
-    - "review_only_pinned_repository_artifacts_and_permitted_formulation_material_named_in_prompt"
-    - "reuse_existing_human_relayed_Quran_and_IslamQA_material_only_with_disclosed_limits"
-    - "read_only_the_exact_Loke_escape_hypothesis_section_if_accessible"
-    - "if_Loke_source_access_is_blocked_return_SOURCE_RELAY_REQUIRED_without_substitution"
-    - "do_not_read_reviewer_B_report_or_reasoning"
-    - "do_not_search_wider_literature"
-    - "decide_S3_fidelity_and_whether_escape_model_requires_a_revised_full_candidate"
-    - "do_not_reclassify_P_CRUC_shared_floor_automatically"
-    - "preserve_returned_report_unchanged"
+    - "relay_one_legible_full_page_image_showing_complete_5_4_next_heading_5_5_and_footnote_5"
+    - "same_reviewer_A_session"
+    - "do_not_add_program_lead_interpretation"
+    - "do_not_search_or_relay_other_literature"
+    - "preserve_resumed_reviewer_A_report_unchanged"
+    - "wave_1_freeze_remains_blocked_until_valid_S3_and_escape_model_disposition"
     - "do_not_authorize_G0_G1_or_substantive_theological_study"
 
 qualification_candidate:
@@ -322,7 +321,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "pre_g0_design__S2_node_rival_amended__S3_escape_model_review_pending__not_authorized"
+    status: "pre_g0_design__S3_Loke_source_relay_required__escape_model_review_blocked__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
