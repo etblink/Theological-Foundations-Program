@@ -1,0 +1,195 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+study_title: "Resurrection Claim — Founding Evidence and Embodied-Resurrection Warrant"
+status: "PRE_G0_ROLE_ARCHITECTURE__REVIEWER_A_COMPLETE__REVIEWER_B_ASSIGNMENT_PENDING"
+qualified_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+authorization:
+  g0_human_owner_authorized: false
+  g1_evidence_acquisition_authorized: false
+  substantive_study_authorized: false
+  divine_agent_followup_authorized: false
+
+human_owner:
+  actor_lineage: "HUMAN_OWNER"
+  authority:
+    - "G0_study_authorization"
+    - "G5_canonical_acceptance"
+  material_preregistration_author: false
+  outcome_material_reviewer: false
+  baseline_exposure:
+    status: "GENERAL_PREEXISTING_FAMILIARITY"
+    note: "Strategic direction and general prior familiarity only; no outcome-material reviewer determination."
+
+program_lead:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  roles:
+    - "preregistration_author"
+    - "candidate_packet_coordinator"
+    - "lane_author_or_coordinator"
+    - "comparative_synthesis_author"
+    - "state_transition_recorder_within_authorized_scope"
+  may_not_serve_as_strict_auditor: true
+  baseline_exposure:
+    status: "GENERAL_PREEXISTING_FAMILIARITY"
+    note: "General pre-existing model knowledge; authored pre-G0 0.1.0 and 0.1.1. No TFP-STRESS-2 G1 evidence campaign has begun."
+
+reviewer_A:
+  status: "COMPLETE"
+  provider: "Anthropic"
+  model: "claude-sonnet-5-5"
+  session_id: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  report: "TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+  report_blob_sha: "c6e95a28eb58402518badeac2f9c754d3db75d4d"
+  disposition: "BLIND_ELICITATION_COMPLETE__READY_FOR_COMPARISON"
+  roles_completed:
+    - "independent_candidate_elicitation"
+    - "candidate_and_exclusion_design_review"
+    - "background_register_elicitation"
+    - "initial_claim_typing_review"
+    - "candidate_symmetry_and_scope_attack"
+  exposure_boundary:
+    - "did_not_read_TFP_STRESS_2_repository_artifacts"
+    - "did_not_see_program_lead_candidate_list_before_freeze"
+    - "did_not_search_external_literature"
+    - "did_not_adjudicate_Q1_evidence"
+  restrictions:
+    - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+    - "may_not_serve_in_any_role_required_to_be_lineage_disjoint_from_REVIEWER_A"
+  shared_training_prior_limitation: true
+
+reviewer_B:
+  status: "ASSIGNMENT_PENDING"
+  intended_provider: "Anthropic"
+  intended_model: "claude-opus-5-5"
+  session_requirement: "fresh clean conversation with no TFP-STRESS-2 reviewer reasoning or program-lead conversation context"
+  session_id: null
+  actor_lineage: null
+  prompt: "TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_PROMPT_0_1_0.md"
+  roles_if_assignment_valid:
+    - "necessary_proposition_and_coverage_map_reviewer"
+    - "source_plan_reviewer"
+    - "insufficient_signal_threshold_reviewer"
+    - "Q1_event_threshold_reviewer"
+    - "C_HET_module_control_reviewer"
+    - "ledger_integrity_reviewer_after_G0"
+    - "post_evidence_direction_result_reviewer_after_G0"
+    - "confidence_reviewer_after_G0"
+  restrictions:
+    - "must_be_actor_lineage_disjoint_from_program_lead"
+    - "must_be_actor_lineage_disjoint_from_REVIEWER_A"
+    - "must_be_actor_lineage_disjoint_from_REVIEWER_C"
+    - "must_be_actor_lineage_disjoint_from_future_strict_auditor"
+    - "must_not_read_REVIEWER_A_report_or_comparison_reasoning_before_own_G0_control_report_freezes"
+    - "must_not_search_or_adjudicate_resurrection_evidence_during_G0_control_review"
+    - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+
+reviewer_C:
+  status: "UNASSIGNED_FRESH_EXTERNAL_SESSION_REQUIRED"
+  intended_provider: "xAI_or_other_external_provider"
+  intended_model: "strongest_available_reasoning_model_at_assignment"
+  session_id: null
+  actor_lineage: null
+  roles_if_assignment_valid:
+    - "discriminator_tier_and_pre_evidence_direction_rule_reviewer"
+    - "background_granularity_interaction_reviewer"
+    - "adverse_source_reviewer_after_G1"
+    - "coverage_state_reviewer_after_G1"
+    - "MAKEABLE_certifier_after_G1"
+    - "amendment_direction_reviewer"
+    - "fragility_reviewer"
+  restrictions:
+    - "must_be_actor_lineage_disjoint_from_program_lead"
+    - "must_be_actor_lineage_disjoint_from_REVIEWER_A"
+    - "must_be_actor_lineage_disjoint_from_REVIEWER_B"
+    - "must_be_actor_lineage_disjoint_from_future_strict_auditor"
+    - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+
+strict_independent_auditor:
+  status: "UNASSIGNED__MUST_BE_FRESH_AFTER_G3_SYNTHESIS_FREEZE"
+  required_lineage: "disjoint from program lead, candidate authors, lane authors, REVIEWER_A, REVIEWER_B, REVIEWER_C, and every outcome-material reviewer"
+  may_read_only_after_G3_freeze: true
+
+minimum_separation_check:
+  source_plan_vs_adverse_source:
+    source_plan: "REVIEWER_B"
+    adverse_source: "REVIEWER_C"
+  necessary_proposition_vs_discriminator_tier:
+    necessary_proposition: "REVIEWER_B"
+    discriminator_tier: "REVIEWER_C"
+  amendment_direction_vs_ledger_integrity:
+    amendment_direction: "REVIEWER_C"
+    ledger_integrity: "REVIEWER_B"
+  discriminator_tier_vs_post_evidence_direction:
+    discriminator_tier: "REVIEWER_C"
+    post_evidence_direction: "REVIEWER_B"
+  all_required_pairs_disjoint_when_assignments_complete: true
+
+lane_authors:
+  L1_textual_source_critical:
+    status: "PROGRAM_LEAD_COORDINATED__SPECIALIST_SOURCE_SUPPORT_REQUIRED"
+  L2_historical_event:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L3_testimony_experience:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L4_psychology_memory_social:
+    status: "PROGRAM_LEAD_COORDINATED__DOMAIN_SOURCE_SUPPORT_REQUIRED"
+  L5_philosophy_metaphysics:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L6_comparative_integration:
+    status: "PROGRAM_LEAD"
+
+human_relaying_operator:
+  actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+  permitted:
+    - "relay_frozen_prompts"
+    - "relay_immutable_source_identities"
+    - "relay_final_reviewer_reports"
+  prohibited_for_independence:
+    - "inject_substantive_outcome_material_determinations_between_reviewers_before_freeze"
+    - "rewrite_reviewer_conclusions_while_relaying"
+
+assignment_sequence:
+  - step: 1
+    role: "REVIEWER_A"
+    status: "COMPLETE"
+  - step: 2
+    role: "PROGRAM_LEAD"
+    status: "COMPLETE"
+    action: "integrate Reviewer A as pre-evidence amendment into preregistration 0.1.1"
+  - step: 3
+    role: "REVIEWER_B"
+    status: "NEXT"
+    action: "fresh independent G0 control review"
+  - step: 4
+    role: "PROGRAM_LEAD"
+    status: "PENDING"
+    action: "integrate any valid Reviewer B pre-evidence repairs"
+  - step: 5
+    role: "REVIEWER_C"
+    status: "PENDING"
+    action: "fresh independent discriminator/background control review"
+  - step: 6
+    role: "PROGRAM_LEAD"
+    status: "PENDING"
+    action: "freeze final G0 bundle"
+  - step: 7
+    role: "HUMAN_OWNER"
+    status: "PENDING"
+    action: "authorize or reject exact G0 bundle"
+  - step: 8
+    role: "ALL"
+    status: "BLOCKED"
+    action: "G1 may begin only after explicit G0 authorization"
+
+g0_role_gate:
+  ready_for_human_authorization: false
+  blockers:
+    - "REVIEWER_B assignment and control review not yet frozen"
+    - "REVIEWER_C assignment and control review not yet frozen"
+    - "final G0 bundle not yet frozen"
+  evidence_acquisition_before_clearance: "PROHIBITED"
