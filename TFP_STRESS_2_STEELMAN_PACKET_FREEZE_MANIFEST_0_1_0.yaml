@@ -1,0 +1,118 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET_FREEZE_MANIFEST"
+status: "FROZEN_FOR_REVIEWER_B__PRE_G0__NOT_AUTHORIZED"
+date: "2026-10-05"
+
+governing_surfaces:
+  admission_freeze:
+    path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+    blob_sha: "e76a00b5ee63c4328a2afd9eb40e0623d9ea2481"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_8.yaml"
+    blob_sha: "PENDING_VERIFY"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
+    blob_sha: "fdaa47d81d51ce33507d5f3b6e8464cbf9a2ae56"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_4.yaml"
+    blob_sha: "PENDING_VERIFY"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_7.yaml"
+    blob_sha: "PENDING_VERIFY"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_6.yaml"
+    blob_sha: "fe149b956d33f56167076e5e18746cec2c1436df"
+  formulation_source_record:
+    path: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+    blob_sha: "PENDING_VERIFY"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+    blob_sha: "PENDING_VERIFY"
+
+packet_policy:
+  exact_status_bearing_candidate_count: 11
+  all_status_bearing_candidates_have_packet: true
+  R_PHYS_refinement_is_non_status_bearing: true
+  required_node_rivals_have_packets: true
+  reviewer_B_equal_strength_review_required: true
+  reviewer_B_source_plan_pass_required: true
+  reviewer_B_coverage_certification_required: true
+  packet_freeze_is_not_G0_authorization: true
+  G1_evidence_acquisition_remains_prohibited: true
+
+status_bearing_packets:
+  - candidate_id: "R-TRANS"
+    path: "TFP_STRESS_2_STEELMAN_R_TRANS_0_1_1.yaml"
+    blob_sha: "7eb9bc94d21e1fcab2ceb8c70dd095dbe5a090ec"
+  - candidate_id: "V"
+    path: "TFP_STRESS_2_STEELMAN_V_0_1_1.yaml"
+    blob_sha: "8b0df61f7cca115b55eb2542671282ab8385816e"
+  - candidate_id: "H-IND"
+    path: "TFP_STRESS_2_STEELMAN_H_IND_0_1_0.yaml"
+    blob_sha: "837db6cfe410bca29e322ccad8680bda108232a0"
+  - candidate_id: "H-SOC"
+    path: "TFP_STRESS_2_STEELMAN_H_SOC_0_1_0.yaml"
+    blob_sha: "53150f24eccfa54c3d77007cba06aebb2a7682f5"
+  - candidate_id: "H-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_H_SEED_SPREAD_0_1_0.yaml"
+    blob_sha: "ad5b222b34d145d4d2ed3d3c24ce042ff60f0242"
+  - candidate_id: "L"
+    path: "TFP_STRESS_2_STEELMAN_L_0_1_0.yaml"
+    blob_sha: "b8910c38a9ac3bd89c6a27cc20fa5aad3474e8b3"
+  - candidate_id: "S1"
+    path: "TFP_STRESS_2_STEELMAN_S1_0_1_1.yaml"
+    blob_sha: "1eb6cb3972f07480525005361f661470917d4030"
+  - candidate_id: "F"
+    path: "TFP_STRESS_2_STEELMAN_F_0_1_0.yaml"
+    blob_sha: "030d548d0c1dfacddaeb73f5708f64447db6d130"
+  - candidate_id: "C-HET-IND"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_IND_0_1_0.yaml"
+    blob_sha: "8a4cd0751a44df467f0285bea6e0d650771de651"
+  - candidate_id: "C-HET-SOC"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_0.yaml"
+    blob_sha: "70fe48dab47580c12399d7e562ad28bd0b04ec62"
+  - candidate_id: "C-HET-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_0.yaml"
+    blob_sha: "568118649c62a99798953454e033deb03aaf34fb"
+
+non_status_refinement_packets:
+  - candidate_id: "R-PHYS-REFINEMENT"
+    path: "TFP_STRESS_2_STEELMAN_R_PHYS_REFINEMENT_0_1_1.yaml"
+    blob_sha: "f279067796b2ee1d6d937d42b092513a938cd9d9"
+
+required_node_rival_packets:
+  - candidate_id: "X-NONHISTORICITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_0.yaml"
+    blob_sha: "694528335c35b12468c8cfdcc7bafc6a318ad0ff"
+  - candidate_id: "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_0.yaml"
+    blob_sha: "348bb24b4803512faf74ad42bed14a240dfa7eba"
+  - candidate_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+    blob_sha: "9b361c81113fc9bb8a6558669741bb783ca1930d"
+
+historical_superseded_packets:
+  - "TFP_STRESS_2_STEELMAN_S2_0_1_0.yaml"
+  - "TFP_STRESS_2_STEELMAN_S3_0_1_0.yaml"
+  note: "Retained as historical evidence of packet-fidelity defects; not part of the operative packet set."
+
+packet_stage_design_note:
+  C_HET_body_module:
+    status: "EXISTING_REQUIRED_MODULE_OPERATIONALIZED"
+    candidate_universe_change: false
+    module_map: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_4.yaml"
+    reviewer_B_target: "Verify that the exact P-CHET-BODY definition is sufficiently falsifiable, symmetric, and non-residual."
+
+freeze_effect:
+  packet_text_locked_for_reviewer_B: true
+  any_material_packet_change_requires_versioned_repair_and_new_manifest: true
+  no_packet_may_absorb_unlisted_mechanisms_after_this_freeze: true
+  no_candidate_may_be_added_or_removed_except_C4: true
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  proposition_dispositions_permitted: false
+  candidate_ranking_permitted: false
+  theological_outcome: "NONE"
