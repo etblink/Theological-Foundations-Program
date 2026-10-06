@@ -12,7 +12,7 @@ causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
 formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
 exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
 
-native_formulation: "Jesus was crucified and died. A genuine nonveridical social/group subjective-experience process and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. An individual seed was not necessary. Later narrative development and the frozen body-disposition module are necessary to the overall evidence pattern but are not founding experience causes. No veridical referent and no founding deliberate fabrication occurred."
+native_formulation: "Jesus was crucified and died. A genuine nonveridical social/group subjective-experience process and a distinct founding interpretive/scriptural process were each causally necessary to the founding proclamation, with at least one PRIMARY. An individual seed was not necessary. Later narrative development remains necessary to the later-development pattern. M-BODY is only a non-ranking contradiction/compatibility expectation and is not a founding experience cause. No veridical referent and no founding deliberate fabrication occurred."
 
 proponent_sources:
   - id: "FORM-H-001"
@@ -55,7 +55,6 @@ internal_success_conditions:
   - "M-SOC-EXP and M-INTERP are each PRIMARY or NECESSARY_CONTRIBUTING, with at least one PRIMARY."
   - "M-IND-EXP is CONTRIBUTING_NONNECESSARY or NONE."
   - "M-LATER-NARR is independently supported later and founding-causally NONE."
-  - "P-CHET-BODY satisfies the exact packet definition."
   - "The exact joint pattern is supported without posthoc role reassignment."
   - "M-FOUNDING-FAB is NONE and no veridical referent is supported."
 
@@ -75,7 +74,7 @@ expected_evidence:
   - "Independent founding scriptural/interpretive processing that is also causally necessary."
   - "No necessary individual seed."
   - "A later narrative-development sequence consistent with sincere elaboration."
-  - "Body-disposition evidence satisfying P-CHET-BODY."
+  - "Body-disposition evidence is neutral unless it triggers the frozen M-BODY contradiction condition; it cannot raise candidate status."
   - "The social and interpretive modules jointly fit the founding pattern better than either alone under their own burdens."
 
 recognized_objections:
@@ -104,13 +103,13 @@ equal_strength_review:
   checks:
     - "genuine-experience requirement preserved"
     - "social and interpretive modules independently warranted"
-    - "body module not residual"
+    - "M-BODY expectation is non-ranking and non-residual"
     - "H-SOC/seed-spread boundaries preserved"
     - "no posthoc module switching"
   findings: []
 
 packet_stage_notes:
-  - "Reviewer B should explicitly test whether the M-BODY definition creates hidden asymmetry or weakens falsifiability."
+  - "Reviewer B should confirm that M-BODY is non-ranking and cannot create hidden asymmetry."
 formulation_exposures:
   ledger_required: true
   ledger_entries: [27,28,29,30,31]
