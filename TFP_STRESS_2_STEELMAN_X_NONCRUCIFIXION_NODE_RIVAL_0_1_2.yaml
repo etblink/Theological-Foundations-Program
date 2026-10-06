@@ -3,9 +3,9 @@ study_id: "TFP-STRESS-2"
 artifact: "STEELMAN_PACKET"
 candidate_id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
 candidate_name: "Non-crucifixion / substitution / crucifixion-identity node-rival family"
-status: "NODE_RIVAL_PACKET_REPAIRED__P_CRUC_SHARED_FLOOR_APPROVED__REVIEWER_B_EQUAL_STRENGTH_PENDING"
+status: "FROZEN_FOR_REVIEWER_B__PRE_G0"
 supersedes: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_1.yaml"
-candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_8.yaml"
 S2_amendment_ref: "TFP_STRESS_2_S2_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
 S3_amendment_ref: "TFP_STRESS_2_S3_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
 variant_verification_ref: "TFP_STRESS_2_224199_FORMULATION_VARIANT_VERIFICATION_0_1_0.yaml"
@@ -162,4 +162,4 @@ review_history:
 formulation_exposures:
   ledger_required: true
   relevant_prior_entries: [12,13,14,15,16,17,18,20,21,22,23,24,25,26]
-freeze_identity: null
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_0.yaml"
