@@ -1,0 +1,43 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "INITIALIZED_PRE_G0__INACTIVE_UNTIL_AUTHORIZATION"
+qualified_protocol_version: "0.1.7"
+ledger_policy:
+  append_only_after_activation: true
+  rewrite_prior_entries: false
+  outcome_material_exposure_definition: "Receipt, reading, viewing, or substantive summary of outcome-relevant evidence or a derived result by an outcome-material actor."
+  activation_condition: "Explicit human-owner G0 authorization of the final frozen study bundle."
+custodian:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+integrity_reviewer:
+  role_slot: "REVIEWER_B"
+  status: "UNASSIGNED_FRESH_SESSION_REQUIRED"
+
+baseline_exposure_disclosures:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "General model/prior familiarity with common resurrection debate claims, common source names, and standard rival explanations; author of the pre-G0 study design. No new G1 study evidence-acquisition campaign has begun."
+    treatment: "Disclosed baseline familiarity; not represented as a timestamped G1 evidence exposure."
+  - actor_lineage: "HUMAN_OWNER"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "Strategic interest in the resurrection claim and general prior familiarity; no outcome-material reviewer role."
+    treatment: "Disclosed baseline familiarity; not represented as a timestamped G1 evidence exposure."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    category: "PRIOR_PROTOCOL_QUALIFICATION_CONTEXT_ONLY"
+    detail: "Previously audited Protocol 0.1.7 and saw metadata that TFP-STRESS-2 was queued as a resurrection-claim study. Has not been shown the program-lead TFP-STRESS-2 candidate list or source-plan design as of this ledger initialization."
+    treatment: "Must disclose this baseline before serving as REVIEWER_A."
+
+entries: []
+
+pre_g0_controls:
+  new_outcome_evidence_acquisition: "PROHIBITED"
+  source_literature_search_for_adjudication: "PROHIBITED"
+  candidate_blind_elicitation: "PERMITTED_AS_G0_DESIGN_ACTIVITY"
+  methodological_design_review: "PERMITTED"
+  role_assignment_handshake: "PERMITTED"
+
+activation_record:
+  g0_authorization_artifact: null
+  final_g0_bundle_commit: null
+  activated_at: null
