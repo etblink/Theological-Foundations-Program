@@ -13,4 +13,5 @@ program_lead:
 source_manifest_preparer:
   actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
   substantive_qualification_reviewer: false
+human_relaying_operator: {}
 status: "DRAFT"
