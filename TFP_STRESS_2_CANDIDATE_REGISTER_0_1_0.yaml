@@ -1,0 +1,278 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "CANDIDATE_REGISTER"
+status: "PROGRAM_LEAD_PROPOSAL__PENDING_FINAL_B4_REVIEW"
+qualified_protocol_version: "0.1.7"
+evidence_acquisition_status: "NOT_STARTED"
+
+shared_definitions:
+  P_HIST_JESUS:
+    proposition_id: "P-HIST-JESUS"
+    text: "A historical first-century Jewish subject identifiable as Jesus of Nazareth existed and is the subject to whom the study's crucifixion/resurrection claims refer."
+    classification: "PROVISIONAL_SHARED_FLOOR_PENDING_B4_NONHISTORICITY_EXCLUSION_REVIEW"
+  P_EARLY_PROCLAMATION_EXISTENCE:
+    proposition_id: "P-EARLY-PROCLAMATION-EXISTENCE"
+    text: "A historically recoverable founding proclamation concerning postmortem vindication, exaltation, resurrection, or equivalent continued significance of Jesus existed early enough to be investigated."
+    classification: "PROVISIONAL_SHARED_FLOOR"
+  causal_role_ladder_ref: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_0.yaml"
+  embodiment_definition_ref: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_0.yaml"
+
+family_rules:
+  umbrellas_are_not_status_bearing: true
+  status_bearing_units:
+    - "R-PHYS"
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "L"
+    - "S1"
+    - "S2"
+    - "S3"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+  no_submodel_switching_after_exposure: true
+  no_positive_evidence_borrowing_without_frozen_expectation: true
+  evidence_binding_rule: "A status-bearing candidate may use an evidence class as positive support only if its frozen packet names that class as expected or directly relevant. Registering that expectation also makes a materially contrary result weakening evidence for that same candidate."
+  candidate_failure_does_not_strengthen_rival_by_default: true
+
+candidates:
+  - id: "R-PHYS"
+    family: "R"
+    name: "Embodied post-death event — material continuity submodel"
+    status_bearing: true
+    core: "Jesus died and subsequently existed as the same person in an embodied postmortem state materially continuous with the pre-mortem body; at least one pre-Pauline founding encounter stream with that embodied Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-R-BODY"
+      - "P-R-FOUNDING-ENCOUNTER"
+      - "P-R-CAUSAL"
+      - "P-RPHYS-CONTINUITY"
+    internal_success_conditions:
+      - "All embodiment criteria in Q1 event control are met."
+      - "Material continuity between pre-mortem and postmortem embodiment is supported."
+      - "Body-disposition evidence, where adequate, is compatible with the continuity claim."
+    weakening_conditions:
+      - "P-DEATH below required threshold."
+      - "No founding stream supports an embodied referent."
+      - "Material-continuity expectation is contradicted."
+      - "Candidate attempts to retreat into R-TRANS after exposure."
+
+  - id: "R-TRANS"
+    family: "R"
+    name: "Embodied post-death event — transformed embodiment submodel"
+    status_bearing: true
+    core: "Jesus died and subsequently existed as the same person in a transformed embodied postmortem state satisfying the study's positive embodiment criteria without requiring material continuity with the pre-mortem body; at least one pre-Pauline founding encounter stream with that embodied Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-R-BODY"
+      - "P-R-FOUNDING-ENCOUNTER"
+      - "P-R-CAUSAL"
+      - "P-RTRANS-TRANSFORMED-BODILY-IDENTITY"
+    internal_success_conditions:
+      - "All embodiment criteria in Q1 event control are met."
+      - "The transformed state is still embodied, not merely a veridical non-embodied presence."
+      - "Personal identity with Jesus is supported."
+    weakening_conditions:
+      - "Embodiment criteria are not met."
+      - "Evidence supports only non-embodied postmortem presence."
+      - "Candidate borrows R-PHYS material-continuity evidence without a frozen expectation."
+
+  - id: "V"
+    family: "V"
+    name: "Veridical non-embodied postmortem encounter"
+    status_bearing: true
+    core: "Jesus died; at least one real extramental postmortem encounter referent identical with Jesus existed in a non-embodied mode; such encounter experience was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-V-REAL-REFERENT"
+      - "P-V-IDENTITY-JESUS"
+      - "P-V-NONEMBODIED"
+      - "P-V-FOUNDING-CAUSAL"
+    causal_agent_scope: "The cause/mechanism of non-embodied postmortem persistence is intentionally unresolved in this Q1 candidate and cannot be swapped in to gain support."
+    q1_relation: "Denies P-R-BODY."
+
+  - id: "H-IND"
+    family: "H"
+    name: "Subjective individual-experience origin"
+    status_bearing: true
+    core: "Jesus died; one or more founding individual subjective experiences without a veridical postmortem referent occurred; the independently warranted individual-experience mechanism was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-HIND-EXPERIENCE-OCCURRED"
+      - "P-HIND-NONVERIDICAL"
+      - "P-HIND-MECHANISM-SUFFICIENT"
+      - "P-HIND-FOUNDING-CAUSAL"
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "H-SOC"
+    family: "H"
+    name: "Subjective/social experience-report origin"
+    status_bearing: true
+    core: "Jesus died; a social or collective experience-report formation process without a veridical postmortem referent occurred; the independently warranted social mechanism was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+      - "P-HSOC-NONVERIDICAL"
+      - "P-HSOC-MECHANISM-SUFFICIENT"
+      - "P-HSOC-FOUNDING-CAUSAL"
+    q1_relation: "Denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "L"
+    family: "L"
+    name: "Interpretive/scriptural/narrative-development origin"
+    status_bearing: true
+    core: "Jesus died; the founding proclamation was generated primarily through interpretive, scriptural, vindication/exaltation, communal-narrative, or related development processes; claimed encounter traditions were secondary or non-primary to the origin."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-L-INTERPRETIVE-ORIGIN"
+      - "P-L-EXPERIENCE-NONPRIMARY"
+      - "P-L-ENCOUNTER-CLAIM-ORIGIN"
+      - "P-L-DEVELOPMENT-SEQUENCE"
+      - "P-L-FOUNDING-CAUSAL"
+    q1_relation: "Does not require a veridical postmortem referent."
+
+  - id: "S1"
+    family: "S"
+    name: "Natural survival/non-death"
+    status_bearing: true
+    core: "Jesus underwent Roman crucifixion or the execution process attributed to him but did not die; later encounters with the surviving Jesus were a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-S1-NONDEATH"
+      - "P-S1-POSTCRUC-ENCOUNTER"
+      - "P-S1-FOUNDING-CAUSAL"
+    q1_relation: "Denies P-DEATH."
+
+  - id: "S2"
+    family: "S"
+    name: "Substitution or crucifixion misidentification"
+    status_bearing: true
+    core: "The person executed in the outcome-material crucifixion event was not Jesus, or the event was materially misidentified; a separately specified later belief/encounter process generated the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-S2-NOT-CRUCIFIED"
+      - "P-S2-POSTEVENT-MECHANISM"
+      - "P-S2-FOUNDING-CAUSAL"
+    q1_relation: "Denies P-CRUC and P-DEATH as applied to Jesus."
+
+  - id: "S3"
+    family: "S"
+    name: "Nonordinary rescue/non-death"
+    status_bearing: true
+    core: "Jesus did not die because a nonordinary rescue or preservation process prevented death in connection with the crucifixion event; a post-rescue encounter or knowledge process was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-S3-RESCUE-NONDEATH"
+      - "P-S3-POSTRESCUE-ACCESS"
+      - "P-S3-FOUNDING-CAUSAL"
+    phase_I_trigger: true
+    q1_relation: "Denies P-DEATH."
+
+  - id: "F"
+    family: "F"
+    name: "Deliberate deception/strategic invention"
+    status_bearing: true
+    core: "Jesus died; one or more outcome-material founding resurrection/encounter claims were deliberately invented or knowingly falsified by actors necessary to the origin; the resulting transmission was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-F-DELIBERATE"
+      - "P-F-ORIGIN-MATERIAL"
+      - "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+      - "P-F-TRANSMISSION-SUFFICIENT"
+    q1_relation: "Does not require a veridical postmortem referent."
+
+  - id: "C-HET-IND"
+    family: "C-HET"
+    name: "Frozen heterogeneous multicausal origin — individual-experience variant"
+    status_bearing: true
+    core: "Jesus died; a fixed combination of individual subjective experience, interpretive processing, later narrative development, and body-disposition uncertainty jointly generated the evidence pattern; no veridical postmortem referent occurred."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-CHET-IND-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-IND-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_0.yaml"
+    q1_relation: "Explicitly denies P-R-BODY and P-V-REAL-REFERENT."
+
+  - id: "C-HET-SOC"
+    family: "C-HET"
+    name: "Frozen heterogeneous multicausal origin — social-experience variant"
+    status_bearing: true
+    core: "Jesus died; a fixed combination of social/group experience-report formation, interpretive processing, later narrative development, and body-disposition uncertainty jointly generated the evidence pattern; no veridical postmortem referent occurred."
+    necessary_propositions:
+      - "P-HIST-JESUS"
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-EARLY-PROCLAMATION-EXISTENCE"
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-BODY"
+      - "P-CHET-SOC-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    module_map_ref: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_0.yaml"
+    q1_relation: "Explicitly denies P-R-BODY and P-V-REAL-REFERENT."
+
+exclusions_pending_B4_review:
+  - id: "X-NONHISTORICITY-AS-FULL-CANDIDATE"
+    disposition: "EXCLUDE_AS_FULL_CANDIDATE__RETAIN_NODE_LEVEL_RIVAL"
+    reason: "It changes the target question from explaining a post-crucifixion event to whether the historical subject exists. P-HIST-JESUS remains directly testable and the exclusion must be independently reviewed before shared-floor certification."
+  - id: "X-Q2-DIVINE-AGENT"
+    disposition: "DEFER_TO_SEPARATE_STUDY"
+    reason: "Specific causal-agent attribution requires a distinct candidate/background/discriminator architecture."
+  - id: "X-FREEFORM-COMPOSITE"
+    disposition: "EXCLUDE"
+    reason: "Post-hoc 'whatever fits' models violate candidate freeze and anti-tailoring control."
+  - id: "X-BODY-DISPOSITION-ONLY"
+    disposition: "NOT_A_FULL_CAUSAL_CANDIDATE"
+    reason: "Body disposition alone does not explain the founding proclamation; it may be a module/prediction inside a fully specified candidate."
+  - id: "X-MIXED-DECEPTION-SINCERITY-COMPOSITE"
+    disposition: "NOT_ADMITTED_IN_THIS_CYCLE"
+    reason: "A hybrid containing deliberate fabrication plus sincere experiential modules would materially expand the module space and risk post-hoc flexibility. If later evidence makes such a structure necessary, route to REVISED_CANDIDATE_REQUIRED rather than retrofit it confirmatorily."
+  - id: "X-ARBITRARY-SPECULATIVE-MODELS"
+    disposition: "EXCLUDE_UNLESS_SERIOUSLY_FORMULATED"
+    reason: "Models without serious scholarly/traditional representation or an independently defensible argument fail the SERIOUS_RIVAL admission rule."
+
+final_B4_review:
+  reviewer_role: "REVIEWER_A"
+  status: "PENDING"
+  required_checks:
+    - "admission and exclusion symmetry"
+    - "nonhistoricity node-level treatment"
+    - "status-bearing submodel completeness"
+    - "no omitted major candidate class"
+    - "no candidate defined only by rival critique"
+
+g0_gate:
+  candidate_register_frozen: false
+  reason: "Awaiting independent B4 review."
