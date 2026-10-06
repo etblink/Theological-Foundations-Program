@@ -1,0 +1,80 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "S1"
+candidate_name: "Crucified but survived"
+supersedes: "TFP_STRESS_2_STEELMAN_S1_0_1_0.yaml"
+status: "FROZEN_FOR_REVIEWER_B__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_8.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus underwent crucifixion but did not enter the frozen P-DEATH state. He later recovered or continued living, and post-crucifixion access to the living Jesus was PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation. The cause of survival is not part of Q1."
+
+proponent_sources:
+  - id: "FORM-S1-001"
+    title: "Mirza Ghulam Ahmad, A Hidden Truth"
+    use: "FORMULATION_ONLY"
+    contribution: "Tradition-native Ahmadiyya formulation that Jesus survived crucifixion and later died naturally."
+  - id: "FORM-S1-002"
+    title: "Al Islam, Jesus in Kashmir"
+    use: "FORMULATION_ONLY"
+    contribution: "Ahmadiyya formulation adding recovery and post-crucifixion meetings with disciples."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-S1-NONDEATH"
+  - "P-S1-POSTCRUC-ACCESS"
+  - "P-S1-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Ahmadiyya religious authority and claimed revelation are formulation context only, not public historical evidence."
+  - "Specific divine protection or later travel claims are not necessary to S1 unless independently relevant."
+
+internal_success_conditions:
+  - "Jesus is the crucified subject."
+  - "He does not enter P-DEATH in connection with that event."
+  - "Post-crucifixion access to the living Jesus occurs."
+  - "That access is PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+
+expected_evidence:
+  - "Historical/medical evidence compatible with survival rather than P-DEATH."
+  - "Evidence of post-crucifixion access to Jesus while alive."
+  - "A founding causal bridge from such access to the proclamation."
+
+recognized_objections:
+  - "Crucifixion lethality and case-specific death evidence may defeat P-S1-NONDEATH."
+  - "Post-event encounters might be better explained by other candidates."
+  - "Later migration/Kashmir claims are not required by the frozen candidate and may be weak or irrelevant to Q1."
+
+caricatures_rejected:
+  - "S1 does not require feigned death or conspiracy."
+  - "S1 does not require Jesus to be healthy immediately after crucifixion."
+  - "S1 does not require the Kashmir migration thesis for adequacy."
+  - "S1 does not attribute survival to a divine agent within Q1."
+
+native_or_proponent_review:
+  status: "PASS"
+  reviewer_or_basis: "Program-lead pre-G0 review of two official Ahmadiyya formulation sources"
+  findings:
+    - "The frozen S1 core is recognizable within the reviewed Ahmadiyya tradition."
+    - "The packet intentionally omits tradition-specific later migration claims from necessary propositions."
+
+equal_strength_review:
+  status: "PROGRAM_LEAD_PASS_PRELIMINARY__REVIEWER_B_PENDING"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "S1 receives a live proponent tradition rather than only an opponent's caricature."
+
+packet_stage_notes: []
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [10,11]
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_0.yaml"
