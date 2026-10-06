@@ -1,0 +1,198 @@
+schema_version: "0.1.6"
+study_id: "TFP-STRESS-2"
+study_title: "Resurrection Claim — Founding Evidence and Embodied-Resurrection Warrant"
+status: "PRE_G0_ROLE_ARCHITECTURE__S2_AMENDMENT_COMPLETE__S3_AND_ESCAPE_MODEL_REVIEW_PENDING"
+qualified_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+authorization:
+  g0_human_owner_authorized: false
+  g1_evidence_acquisition_authorized: false
+  substantive_study_authorized: false
+  divine_agent_followup_authorized: false
+
+human_owner:
+  actor_lineage: "HUMAN_OWNER"
+  authority:
+    - "G0_study_authorization"
+    - "G5_canonical_acceptance"
+  material_preregistration_author: false
+  outcome_material_reviewer: false
+  baseline_exposure: "GENERAL_PREEXISTING_FAMILIARITY"
+
+program_lead:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  roles:
+    - "preregistration_author"
+    - "repair_author"
+    - "candidate_packet_coordinator"
+    - "source_plan_draft_author"
+    - "coverage_map_draft_author"
+    - "lane_author_or_coordinator"
+    - "comparative_synthesis_author"
+    - "state_transition_recorder_within_authorized_scope"
+  may_not_serve_as_strict_auditor: true
+  baseline_exposure: "GENERAL_PREEXISTING_FAMILIARITY"
+
+reviewer_A:
+  provider: "Anthropic"
+  model: "claude-sonnet-5-5"
+  session_id: "session_012EWsCBUVctdyhhk3v5ZxuF"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+  status: "B4_A8_PASS_WITH_LIMITATIONS__S2_FIDELITY_REVIEW_COMPLETE__S3_ESCAPE_REVIEW_PENDING"
+  completed:
+    - "blind candidate elicitation"
+    - "blind background elicitation"
+    - "initial claim-typing review"
+    - "scope/symmetry attack"
+    - "final B4/A8 review"
+    - "narrow RR-1 through RR-8 re-review"
+    - "short RR-prime confirmation — B4_A8_PASS_WITH_LIMITATIONS"
+    - "S2 steelman-fidelity review — S2_RECLASSIFY_NODE_RIVAL_ONLY"
+  pending:
+    - "S3 native/proponent fidelity review before S3 packet freeze"
+    - "classification of FORM-S3-001 escape-hypothesis model as admitted revised candidate, subsumed model, or non-admitted literature-recognized model"
+  reports:
+    - "TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_REPORT_0_1_0.md"
+    - "TFP_STRESS_2_REVIEWER_A_NARROW_RR_REREVIEW_REPORT_0_1_0.md"
+    - "TFP_STRESS_2_REVIEWER_A_SHORT_RR_PRIME_CONFIRMATION_REPORT_0_1_0.md"
+    - "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_REPORT_0_1_0.md"
+  restrictions:
+    - "may_not_serve_as_strict_auditor"
+    - "may_not_fill_any_role_required_to_be_lineage_disjoint_from_candidate/background inclusion reviewer"
+
+reviewer_B:
+  provider: "Anthropic"
+  model: "claude-opus-5-5"
+  session_id: "session_01TsM4WriYnAiRn71ireaVfK"
+  actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+  status: "G0_REVIEW_REPAIR_REQUIRED__DOWNSTREAM_REREVIEW_AFTER_B4_AND_STEELMAN"
+  report: "TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_REPORT_0_1_0.md"
+  report_blob_sha: "bfa73b9e5f88570ea02ab9a6e7d8735d773cadca"
+  completed:
+    - "necessary-proposition architecture review"
+    - "coverage-route architecture review"
+    - "C-HET anti-tailoring review"
+    - "Q1 event-threshold review"
+    - "insufficient-signal review"
+    - "source-plan architecture review"
+    - "role separation check"
+  repair_re_review_scope:
+    - "B-1 coverage-map certifiability"
+    - "B-2 positive embodiment definition"
+    - "M-1 symmetric route principle"
+    - "M-2 submodel status/evidence binding"
+    - "M-3 Q1 threshold"
+    - "M-4 founding-stratum rule"
+    - "M-5 insufficient-signal hardening"
+    - "M-6 C-HET module controls"
+    - "M-7 concrete source plan"
+    - "M-8 pre-G0 ledger activation"
+    - "M-9 empirical-background retirement criteria, limited to Reviewer B's control surface"
+  post_g0_recusal:
+    ledger_integrity_reviewer: true
+    direction_result_reviewer: true
+    confidence_reviewer: true
+    reason: "Reviewer B materially shaped pre-G0 control requirements; recusal removes authorship/self-certification coupling noted in its report."
+  may_not_serve_as_strict_auditor: true
+
+reviewer_C:
+  status: "UNASSIGNED__BLOCKED_UNTIL_B4_FREEZE_STEELMAN_AND_REVIEWER_B_CERTIFICATIONS"
+  intended_provider: "xAI_or_other_external_provider_distinct_from_Anthropic_and_program_lead"
+  intended_model: "strongest_available_reasoning_model_at_assignment"
+  required_lineage: "fresh session disjoint from program lead, Reviewer A, Reviewer B, Reviewer D, and strict auditor"
+  g0_roles:
+    - "discriminator_tier_and_pre_evidence_direction_rule_reviewer"
+    - "background_granularity_interaction_reviewer"
+    - "CRITICAL_feasibility_reviewer"
+  post_g0_roles:
+    - "adverse_source_reviewer"
+    - "coverage_state_reviewer"
+    - "MAKEABLE_certifier"
+    - "amendment_direction_reviewer"
+    - "fragility_reviewer"
+  restrictions:
+    - "may_not_serve_as_post_evidence_direction_result_reviewer"
+    - "may_not_serve_as_ledger_integrity_reviewer"
+    - "may_not_serve_as_strict_auditor"
+
+reviewer_D:
+  status: "UNASSIGNED__POST_G0_FRESH_SESSION"
+  purpose: "post-evidence controls requiring disjointness from Reviewer C and pre-G0 rule authors"
+  required_lineage: "fresh session disjoint from program lead, A, B, C, and strict auditor"
+  roles:
+    - "ledger_integrity_reviewer"
+    - "post_evidence_direction_result_reviewer"
+    - "confidence_reviewer"
+  restrictions:
+    - "may_not_serve_as_discriminator_author_or_tier_reviewer"
+    - "may_not_serve_as_amendment_direction_reviewer"
+    - "may_not_serve_as_strict_auditor"
+
+strict_independent_auditor:
+  status: "UNASSIGNED__MUST_BE_FRESH_AFTER_G3_SYNTHESIS_FREEZE"
+  label: "REVIEWER_E_AUDITOR"
+  required_lineage: "disjoint from program lead, candidate authors, lane authors, Reviewers A/B/C/D, and every outcome-material reviewer"
+  may_read_only_after_G3_freeze: true
+
+minimum_separation_check:
+  source_plan_vs_adverse_source:
+    source_plan: "REVIEWER_B"
+    adverse_source: "REVIEWER_C"
+    status: "SATISFIED_BY_DESIGN"
+  necessary_proposition_vs_discriminator_tier:
+    necessary_proposition: "REVIEWER_B"
+    discriminator_tier: "REVIEWER_C"
+    status: "SATISFIED_BY_DESIGN"
+  amendment_direction_vs_ledger_integrity:
+    amendment_direction: "REVIEWER_C"
+    ledger_integrity: "REVIEWER_D"
+    status: "SATISFIED_BY_DESIGN"
+  discriminator_tier_vs_post_evidence_direction:
+    discriminator_tier: "REVIEWER_C"
+    post_evidence_direction: "REVIEWER_D"
+    status: "SATISFIED_BY_DESIGN"
+  strict_auditor_disjoint_from_all_outcome_material_roles:
+    strict_auditor: "REVIEWER_E_AUDITOR"
+    status: "REQUIRED"
+
+human_relaying_operator:
+  actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+  permitted:
+    - "relay frozen prompts"
+    - "relay immutable source identities"
+    - "relay final reviewer reports"
+  prohibited_for_independence:
+    - "inject substantive reviewer reasoning between disjoint reviewers before their own freeze"
+    - "rewrite reviewer conclusions while relaying"
+
+g0_finalization_sequence:
+  - order: 1
+    action: "Candidate admission/exclusion and background admission/refile freeze complete under Reviewer A B4_A8_PASS_WITH_LIMITATIONS."
+  - order: 2
+    action: "Construct and freeze candidate steelman packets under active pre-G0 exposure ledger."
+  - order: 3
+    action: "Freeze background register admission/exclusion; empirical premises remain evidence-sensitive."
+  - order: 4
+    action: "Freeze concrete source plan and obtain Reviewer B SOURCE_PLAN_PASS or repair."
+  - order: 5
+    action: "Freeze necessary-proposition coverage map and obtain Reviewer B NECESSARY_PROPOSITION_COVERAGE_COMPLETE certification."
+  - order: 6
+    action: "Run Reviewer C discriminator-tier/direction-rule, CRITICAL feasibility, and background interaction review."
+  - order: 7
+    action: "Integrate any Reviewer C pre-evidence repairs and freeze exact G0 bundle."
+  - order: 8
+    action: "Human owner authorizes or rejects the exact G0 bundle."
+  - order: 9
+    action: "Only after authorization may G1 evidence acquisition begin."
+
+current_gate:
+  reviewer_A_admission_freeze: "AMENDED_PRE_EVIDENCE__S2_NODE_RIVAL"
+  reviewer_A_S3_and_escape_model_review: "PENDING"
+  steelman_packet_construction: "ACTIVE_PRE_G0__WAVE_1_BLOCKED_ON_S3_AND_ESCAPE_MODEL"
+  reviewer_B_repair_re_review: "BLOCKED_UNTIL_STEELMAN_PACKETS_FREEZE"
+  reviewer_C: "BLOCKED_UNTIL_REVIEWER_B_SOURCE_PLAN_AND_COVERAGE_CERTIFICATIONS"
+  g0_ready: false
+  g1_authorized: false
