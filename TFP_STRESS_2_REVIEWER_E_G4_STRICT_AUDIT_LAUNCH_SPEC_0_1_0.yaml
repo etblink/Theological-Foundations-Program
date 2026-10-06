@@ -1,0 +1,83 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_E_G4_STRICT_AUDIT_LAUNCH_SPEC"
+status: "FROZEN__AUDIT_E1_READY_FOR_EXTERNAL_EXECUTION"
+date: "2026-10-06"
+
+audit_id: "TFP-STRESS-2-G4-AUDIT-E1"
+reviewer_role_control:
+  path: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_1.yaml"
+  blob_sha: "87755432800ddaa2fe94aad59474d7055d02c4aa"
+input_freeze:
+  path: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE_0_1_0.yaml"
+  blob_sha: "71b50ddd0011f68d06e769fe2c9336a0b3ab928c"
+
+execution:
+  conversation: "same exact assigned Claude Opus 5.5 conversation"
+  repository: "https://github.com/etblink/Theological-Foundations-Program"
+  substantive_target_commit: "481f3788ededab5a424c1b65c546efe7b2ae38fd"
+  substantive_target_tree: "ee9430e1aebfafff3f3e78e6e546520d63b403c8"
+  repository_mode: "READ_ONLY"
+  new_evidence_cycle: false
+  prior_chat_search: false
+  subagent_or_fork: false
+  repair_during_audit: false
+
+launch_verification:
+  - "input freeze blob matches"
+  - "role-control blob matches"
+  - "substantive target commit/tree matches"
+  - "qualified Protocol 0.1.7 and Governance 0.1.5 identities match"
+  on_failure: "stop merits review and classify under Protocol O"
+
+normative_scope:
+  source: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE_0_1_0.yaml"
+  mandatory_topics: 17
+  A15_attack_matrix: "ALL_FROZEN_A15_ATTACKS"
+  cold_start_test: "MANDATORY"
+  A12_recomputation: "MANDATORY"
+  N3_recomputation: "MANDATORY"
+  Q1_recomputation: "MANDATORY_AND_SEPARATE_FROM_N3"
+  shared_floor_audit: "MANDATORY"
+  background_robustness: "MANDATORY"
+  reviewer_C_D_trigger_check: "MANDATORY"
+  exposure_amendment_ledger_check: "MANDATORY"
+
+report_sections:
+  - "AUDITOR IDENTITY AND ASSIGNMENT CONTINUITY"
+  - "IMMUTABLE TARGET VERIFICATION"
+  - "EXECUTIVE AUDIT DISPOSITION"
+  - "17-TOPIC PROTOCOL-O AUDIT TABLE"
+  - "A15 ADVERSARIAL ATTACK MATRIX"
+  - "A12 CANDIDATE-STATUS RECOMPUTATION"
+  - "BACKGROUND-ROBUSTNESS CHECK"
+  - "COMPARISON / DIRECTION / REVIEWER-C-D TRIGGER CHECK"
+  - "PHASE-L SHARED-FLOOR AND PROPOSITION-CONSOLIDATION AUDIT"
+  - "N3 BASE-OUTCOME RECOMPUTATION"
+  - "Q1 RESURRECTION-QUESTION RECOMPUTATION"
+  - "EXPOSURE / AMENDMENT / LEDGER-INTEGRITY AUDIT"
+  - "FORMAL COLD-START REPRODUCIBILITY TEST"
+  - "FINDINGS BY SEVERITY AND DECISION SURFACE"
+  - "LIMITATIONS"
+  - "OVERALL G4 AUDIT OUTCOME"
+  - "REQUIRED NEXT ACTION"
+
+defect_fields:
+  - "decision_surface"
+  - "severity"
+  - "artifact_path"
+  - "exact_issue"
+  - "candidate_status_effect"
+  - "N3_effect"
+  - "Q1_effect"
+  - "G5_eligibility_effect"
+  - "smallest_valid_repair_if_repairable"
+
+allowed_overall_outcomes:
+  - "PASS"
+  - "PASS_WITH_LIMITATIONS"
+  - "REPAIR_REQUIRED"
+  - "INVALID_COMPARISON"
+  - "AUDIT_INSUFFICIENT_SIGNAL"
+
+return_rule: "Return the complete report verbatim to the human relay operator and stop."
