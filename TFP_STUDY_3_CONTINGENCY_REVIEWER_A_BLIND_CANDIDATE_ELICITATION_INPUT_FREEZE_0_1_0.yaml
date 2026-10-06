@@ -1,0 +1,67 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_A_BLIND_CANDIDATE_ELICITATION_INPUT_FREEZE"
+status: "FROZEN__BLIND_CANDIDATE_ELICITATION_ONLY"
+date: "2026-10-06"
+
+role:
+  reviewer_slot: "REVIEWER_A"
+  function: "blind_candidate_elicitation_reviewer"
+  repository_mode: "READ_ONLY"
+  outcome_evidence_adjudication: "PROHIBITED"
+
+authorized_inputs:
+  protocol:
+    version: "0.1.7"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    relevant_sections: ["A1-A2 generic scope controls","B1-B7 candidate universe and steelman procedure"]
+  scope_packet:
+    path: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
+    blob_sha: "ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+
+blindness_exclusions:
+  forbidden_before_reviewer_A_elicitation_is_frozen:
+    - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CANDIDATE_SEED_0_1_0.yaml"
+      blob_sha: "efe84e2aacf2c9399befe9fc28bc6c3f9ce08e70"
+    - "any Program-Lead candidate list or candidate preference"
+    - "any future candidate register"
+    - "outcome-relevant source/evidence analysis"
+    - "any substantive result from TFP-STRESS-2 beyond generic knowledge that a prior bounded study exists"
+  if_accidentally_exposed: "Disclose the exact exposure and stop; do not pretend the elicitation remained blind."
+
+task:
+  - "Independently elicit all major candidate families that can answer the working question under Protocol B1."
+  - "Do not assume the candidate space is binary (necessary foundation vs brute fact)."
+  - "For each proposed family, state a concise strongest formulation and the family-level truth commitments that appear necessary for it to remain that family."
+  - "Identify likely overlap, subsumption, and granularity problems."
+  - "Identify major-candidate-class omission risks."
+  - "Flag any candidate whose coherence depends on an unresolved definition in the scope packet."
+  - "Do not adjudicate whether any candidate is true, plausible, probable, or better supported."
+  - "Do not search for evidence for or against candidates."
+  - "Do not rank candidates."
+
+candidate_admission_test:
+  relevant: true
+  materially_distinct: true
+  specified_enough_to_generate_consequences: true
+  not_subsumed_by_another_candidate: true
+  traceably_formulable: true
+
+required_output:
+  sections:
+    - "SESSION / LINEAGE CONTINUITY"
+    - "INPUT / BLINDNESS VERIFICATION"
+    - "ELICITED CANDIDATE FAMILIES"
+    - "FAMILY-LEVEL NECESSARY COMMITMENTS"
+    - "OVERLAP / SUBSUMPTION / GRANULARITY RISKS"
+    - "MISSING-FAMILY RISKS"
+    - "DEFINITIONAL RISKS"
+    - "ELICITATION STATUS"
+  elicitation_status_namespace:
+    - "BLIND_CANDIDATE_ELICITATION_COMPLETE"
+    - "BLIND_CANDIDATE_ELICITATION_INCOMPLETE"
+  stop_after_report: true
+
+post_freeze_rule:
+  may_compare_to_Program_Lead_seed_after_own_report_is_frozen: true
+  comparison_requires_separate_prompt: true
