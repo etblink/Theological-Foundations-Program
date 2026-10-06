@@ -80,41 +80,46 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "reviewer_A_final_B4_A8_review_pending_after_reviewer_B_repairs"
-  purpose: "Repair Reviewer B G0 control findings, freeze final candidate/background admission, and continue TFP-STRESS-2 G0 design without substantive evidence acquisition."
+  status: "reviewer_A_narrow_RR_rereview_pending"
+  purpose: "Close Reviewer A RR-1 through RR-8 candidate/background admission defects before steelman-packet construction; no substantive evidence acquisition."
   bounded: true
   qualified_protocol_version: "0.1.7"
   design_branch: "research/tfp-stress-2-resurrection-g0"
-  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_2.md"
-  candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_0.yaml"
-  coverage_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
-  source_plan: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_SOURCE_PLAN_0_1_0.yaml"
-  background_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_BACKGROUND_REGISTER_0_1_0.yaml"
-  q1_control: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_0.yaml"
-  c_het_module_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_C_HET_MODULE_MAP_0_1_0.yaml"
-  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_2.yaml"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_1.yaml"
+  preregistration_draft: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_3.md"
+  candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_2.yaml"
+  causal_profile_partition: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_0.yaml"
+  coverage_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+  source_plan: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_SOURCE_PLAN_0_1_1.yaml"
+  background_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_BACKGROUND_REGISTER_0_1_1.yaml"
+  empirical_model_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_0.yaml"
+  q1_control: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_1.yaml"
+  c_het_module_map: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_C_HET_MODULE_MAP_0_1_1.yaml"
+  role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_3.yaml"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_2.yaml"
+  reviewer_A_final_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_REPORT_0_1_0.md"
+  reviewer_A_final_disposition: "B4_A8_REPAIR_REQUIRED"
+  reviewer_A_repair_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_B4_A8_REPAIR_RECORD_0_1_0.md"
   reviewer_B_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_REPORT_0_1_0.md"
   reviewer_B_disposition: "G0_REVIEW_REPAIR_REQUIRED"
-  reviewer_B_blockers: 2
-  reviewer_B_majors: 9
   methodology_mode: "maintenance"
   g0_authorized: false
   g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-STRESS-2-REVIEWER-A-FINAL-B4-A8"
-  action: "run_reviewer_A_final_candidate_and_background_admission_review"
+  id: "TFP-STRESS-2-REVIEWER-A-NARROW-RR-REREVIEW"
+  action: "run_exact_session_reviewer_A_narrow_RR1_through_RR8_rereview"
   reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
-  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_PROMPT_0_1_0.md"
+  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_NARROW_RR_REREVIEW_PROMPT_0_1_0.md"
   requirements:
     - "use_exact_reviewer_A_session"
-    - "review_only_pinned_repaired_candidate_background_Q1_and_governing_sources_named_in_prompt"
+    - "review_only_pinned_repaired_artifacts_named_in_prompt"
     - "do_not_read_reviewer_B_report_or_reasoning"
     - "do_not_search_or_adjudicate_resurrection_evidence"
     - "preserve_returned_report_unchanged"
+    - "if_pass_then_freeze_candidate_background_admission_before_steelman_packet_construction"
     - "do_not_authorize_G0_G1_or_substantive_theological_study"
+
 qualification_candidate:
   version: "0.1.7"
   protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
@@ -267,10 +272,10 @@ held:
   - id: "EMT-STAGE-2"
     reason: "Stage 1 reached bounded closure; further expansion is conditional."
   - id: "MAJOR-DOCTRINAL-COMPARISON"
-    reason: "No adjudication protocol is yet qualified."
-  - id: "TFP-STRESS-2"
+    reason: "No major doctrinal comparison is presently G0-authorized; protocol qualification alone does not authorize one."
+  - id: "TFP-STRESS-2-G1"
     candidate: "resurrection_claim"
-    reason: "Protocol qualification is a prerequisite and does not itself authorize the study."
+    reason: "Substantive G1 evidence acquisition remains held until the exact G0 bundle is frozen and explicitly authorized by the human owner."
 
 external_boundaries:
   ISR:
@@ -314,7 +319,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "pre_g0_design__reviewer_B_repair_cycle__reviewer_A_final_B4_pending__not_authorized"
+    status: "pre_g0_design__reviewer_A_RR_repair_cycle__narrow_rereview_pending__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
