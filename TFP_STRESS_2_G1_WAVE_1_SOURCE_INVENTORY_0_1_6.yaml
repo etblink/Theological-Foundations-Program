@@ -1,0 +1,1309 @@
+schema_version: "0.1.6"
+study_id: "TFP-STRESS-2"
+artifact: "G1_WAVE_1_SOURCE_INVENTORY"
+status: "IN_PROGRESS__REVIEWER_C_SRC_18_FINDINGS_ACQUIRED__POST_ACQUISITION_COVERAGE_REVIEW_PENDING__OBSERVATION_ONLY__NO_SYNTHESIS"
+date: "2026-10-06"
+launch_control: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+frozen_source_plan: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+supersedes: "TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_5.yaml"
+
+recording_boundary:
+  proposition_dispositions: "PROHIBITED"
+  discriminator_direction_results: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+  synthesis: "PROHIBITED_DURING_G1"
+  rule: "Record source identity/provenance and what the source contains before interpretation."
+
+sources:
+  - source_id: "G1W1-001"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Corinthians"
+    title_or_work: "1 Corinthians"
+    passage_or_scope: "15:1-11, especially 15:3-8"
+    date_or_date_range: "TBD under SRC-02; not adjudicated in this acquisition record"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT page identifies the SBL Greek New Testament edition."
+    dependence_or_independence_notes: "Paul's use of received/delivered material in vv.3-8 is textually observable; source/redaction history is reserved to SRC-02."
+    what_source_contains_observation_only:
+      - "Paul says he delivered what he also received."
+      - "The transmitted content names Christ's death, burial, being raised on the third day, and appearances to Cephas, the Twelve, more than five hundred, James, all the apostles, and finally Paul."
+    frozen_propositions_or_routes_potentially_served: ["P-EARLY-PROCLAMATION-CONTENT","founding-stream inventory","claimed-encounter inventory","P-DEATH"]
+    limitations:
+      - "Whether vv.3-7 form one or more pre-Pauline units is not decided here."
+      - "The historical truth of the claims is not inferred from the text's presence."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-002"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "1:18-19"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; accessible page used English translations"
+    edition_translation_or_repository: "SBL Greek New Testament plus Bible Gateway KJV/ESV comparison"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Galatians+1&version=SBLGNT"
+      - "https://www.biblegateway.com/passage/?search=Galatians+1%3A18%E2%80%931%3A19&version=KJV%3BESV"
+    access_status: "ACCESSED__SBLGNT_GREEK_UPGRADE_COMPLETE"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Passage record is sufficient to inventory the claim but exact Greek critical-edition capture remains pending."
+    dependence_or_independence_notes: "No independence inference made."
+    what_source_contains_observation_only:
+      - "Paul states that after three years he went to Jerusalem and stayed with Cephas for fifteen days."
+      - "Paul names James as the Lord's brother."
+    frozen_propositions_or_routes_potentially_served: ["founding-person network","P-HIST-JESUS","founding-stream provenance"]
+    limitations:
+      - "Historical/source-network implications remain unadjudicated."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-003"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "2:1-10"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Galatians+2%3A1-10&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text."
+    dependence_or_independence_notes: "No chronological harmonization with Acts or other sources is made here."
+    what_source_contains_observation_only:
+      - "Paul describes a later Jerusalem visit and presenting his gospel to recognized leaders."
+      - "James, Cephas, and John are named as pillars and extend fellowship to Paul and Barnabas."
+    frozen_propositions_or_routes_potentially_served: ["founding-person network","proclamation transmission","source-proximity controls"]
+    limitations: ["Sequence/date interpretation remains for SRC-02 and later synthesis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-004"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Thessalonians"
+    title_or_work: "1 Thessalonians"
+    passage_or_scope: "4:13-18"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Thessalonians+4%3A13-18&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text."
+    dependence_or_independence_notes: "No relation to later Gospel narratives is inferred."
+    what_source_contains_observation_only:
+      - "The passage states belief that Jesus died and rose."
+      - "It describes a future rising of the dead in Christ and reunion with the Lord."
+    frozen_propositions_or_routes_potentially_served: ["early resurrection-proclamation content","Second Temple/comparative conceptual context"]
+    limitations: ["Does not by itself establish how the belief originated."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-005"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Philippians"
+    title_or_work: "Philippians"
+    passage_or_scope: "2:6-11"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBLGNT transcription via BibleStudyTools"
+    stable_url_or_identifier: "https://www.biblestudytools.com/sblg/philippians/passage/?q=philippians+2%3A6-11"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_REPRODUCTION"
+    provenance_notes: "Page labels text SBLGNT."
+    dependence_or_independence_notes: "Whether the passage incorporates earlier hymnic/traditional material is not decided here."
+    what_source_contains_observation_only:
+      - "The passage describes death on a cross followed by divine exaltation and bestowal of a name above every name."
+    frozen_propositions_or_routes_potentially_served: ["early exaltation-proclamation content","P-DEATH","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["Pre-Pauline/traditional status not adjudicated."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-006"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Mark"
+    title_or_work: "Mark"
+    passage_or_scope: "16:1-8"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Mark+16&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "Main SBLGNT passage through v.8 acquired."
+    dependence_or_independence_notes: "Longer-ending textual issue recorded separately under SRC-02; Synoptic dependence not adjudicated here."
+    what_source_contains_observation_only:
+      - "Women visit the tomb after the Sabbath."
+      - "They encounter a young man who says Jesus the Nazarene who was crucified has been raised and is not there, and directs them toward a future Galilee encounter."
+      - "Verse 8 describes the women fleeing in fear and saying nothing to anyone."
+    frozen_propositions_or_routes_potentially_served: ["burial/tomb report inventory","claimed-encounter transmission inventory","P-CRUC","P-DEATH"]
+    limitations: ["Historical truth and source dependence are not inferred."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-007"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "Mark 16 textual tradition / secondary scholarship"
+    title_or_work: "Longer ending of Mark — acquisition pair"
+    passage_or_scope: "Mark 16:9-20"
+    date_or_date_range: "Modern scholarship"
+    language: "English discussion of Greek/manuscript evidence"
+    edition_translation_or_repository: "JSTOR Nicholas P. Lunn 2014; BYU Studies Mark appendix; Metzger commentary reproduction"
+    stable_url_or_identifier:
+      - "https://www.jstor.org/stable/j.ctt1cgf5pt"
+      - "https://byustudies.byu.edu/online-book/the-gospel-according-to-mark/1969"
+      - "https://www.bibliaplus.org/en/commentaries/428/a-textual-commentary-on-the-greek-new-testament-by-bruce-m-metzger/mark/16/9-20"
+    access_status: "ACCESSED_AT_METADATA_OR_EXCERPT_LEVEL"
+    primary_or_secondary: "SECONDARY_TEXTUAL_CRITICISM"
+    provenance_notes: "Acquired competing treatments rather than a single consensus summary."
+    dependence_or_independence_notes: "Lunn argues for authenticity; the other acquired discussions present the dominant later-addition judgment and manuscript arguments."
+    what_source_contains_observation_only:
+      - "The manuscript history of Mark 16:9-20 is materially contested in published scholarship."
+      - "The acquired sources identify absence from major early witnesses and competing arguments about patristic/linguistic evidence."
+    frozen_propositions_or_routes_potentially_served: ["SRC-01 provenance","outcome-material Gospel-text inventory"]
+    limitations: ["No textual-critical adjudication has been made."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-008"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "1 Corinthians 15 tradition/redaction scholarship"
+    title_or_work: "Pre-Pauline formula/tradition analyses"
+    passage_or_scope: "1 Corinthians 15:3-7"
+    date_or_date_range: "2009 and 2014 publications"
+    language: "English secondary scholarship"
+    edition_translation_or_repository: "Oxford Academic; Cambridge Core"
+    stable_url_or_identifier:
+      - "https://academic.oup.com/book/8618/chapter-abstract/154585131"
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/resurrection-of-jesus-in-the-prepauline-formula-of-1-cor-1535/B98A7CB0EDE64897CAFEE83263BE6289"
+    access_status: "ABSTRACTS_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL"
+    provenance_notes: "Murphy-O'Connor 2009 and Ware 2014 metadata/abstracts acquired."
+    dependence_or_independence_notes: "Both treat at least part of 1 Cor 15:3-5/7 as tradition/formula material; exact boundaries and implications remain disputed and are not adjudicated here."
+    what_source_contains_observation_only:
+      - "Published source-critical literature specifically analyzes tradition/redaction and the pre-Pauline-formula question in 1 Corinthians 15."
+    frozen_propositions_or_routes_potentially_served: ["founding-stratum provenance","P-EARLY-PROCLAMATION-CONTENT","source-dependence controls"]
+    limitations: ["Full-text review remains pending where paywalled."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-009"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Tacitus"
+    title_or_work: "Annals"
+    passage_or_scope: "15.44"
+    date_or_date_range: "Early second century; exact source-use implications not adjudicated"
+    language: "Latin"
+    edition_translation_or_repository: "Dickinson College Commentaries Latin text"
+    stable_url_or_identifier: "https://dcc.dickinson.edu/tacitus-annals/15-44"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_TEXT_IN_EDUCATIONAL_EDITION"
+    provenance_notes: "Latin text available on Dickinson College Commentaries."
+    dependence_or_independence_notes: "Tacitus's information source and relation to Christian reporting are not determined here."
+    what_source_contains_observation_only:
+      - "Tacitus says the name Christians came from Christus."
+      - "He states Christus was subjected to punishment under Tiberius by Pontius Pilate."
+      - "He states the movement/superstition broke out again, first in Judea and then Rome."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","P-CRUC","cross-tradition provenance"]
+    limitations: ["Does not itself describe resurrection appearances."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-010"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish Antiquities"
+    passage_or_scope: "20.200"
+    date_or_date_range: "Antiquities composed in the 90s CE; exact date/provenance to be checked under SRC-02/SRC-19"
+    language: "Greek"
+    edition_translation_or_repository: "Lexundria Whiston translation; Oxford Academic Greek/textual discussion acquired separately"
+    stable_url_or_identifier:
+      - "https://lexundria.com/j_aj/20.200/wst"
+      - "https://academic.oup.com/book/60034/chapter/513641505"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_TEXT_PLUS_SECONDARY_TEXTUAL_DISCUSSION"
+    provenance_notes: "Primary passage translation and a modern Oxford treatment of authenticity acquired."
+    dependence_or_independence_notes: "Authenticity is an SRC-02/SRC-19 question; no final judgment assigned in G1 inventory."
+    what_source_contains_observation_only:
+      - "The extant passage refers to James as the brother of Jesus who was called Christ and reports James being brought before a council and stoned."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","founding-person network","cross-tradition provenance"]
+    limitations: ["Authenticity/phrase transmission remains subject to source-critical analysis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-011"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish Antiquities"
+    passage_or_scope: "18.63-64 / Testimonium Flavianum"
+    date_or_date_range: "Antiquities composed in the 90s CE; passage transmission disputed"
+    language: "Greek"
+    edition_translation_or_repository: "Lexundria extant-text translation; Oxford Academic Schmidt 2025 discussion; Bible.org dispute summary"
+    stable_url_or_identifier:
+      - "https://lexundria.com/j_aj/18.63-18.64/wst"
+      - "https://doi.org/10.1093/9780191957697.003.0001"
+      - "https://blogs.bible.org/the-debated-josephus-text-antiquities-18-63-64-sept-15/"
+    access_status: "ACCESSED__TRANSMISSION_DISPUTE_FLAGGED"
+    primary_or_secondary: "EXTANT_PRIMARY_TEXT_PLUS_SECONDARY_TEXTUAL_DISCUSSION"
+    provenance_notes: "Extant text acquired, alongside sources explicitly discussing disputed clauses/authenticity."
+    dependence_or_independence_notes: "No clause in this passage is used as unqualified evidence until SRC-02/SRC-19 transmission analysis is performed."
+    what_source_contains_observation_only:
+      - "The extant Greek textual tradition contains a notice about Jesus, Pilate and crucifixion, plus strongly Christian-sounding clauses about Christ and appearance alive."
+      - "Modern scholarship explicitly disputes the authenticity/original wording of parts or all of the passage."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","P-CRUC","cross-tradition provenance"]
+    limitations: ["High source-critical sensitivity; no authenticity disposition here."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-012"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Flavius Josephus / Life"
+    title_or_work: "Life (Vita)"
+    passage_or_scope: "420-421 (traditional numbering also Life 75)"
+    date_or_date_range: "Roman-period primary account; modern reproduction accessed"
+    language: "Greek primary; English Loeb quotation accessed through modern article"
+    edition_translation_or_repository: "H. St. J. Thackeray Loeb translation quoted in open-access medical-historical article"
+    stable_url_or_identifier: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009142/"
+    access_status: "SECONDARY_REPRODUCTION_ACCESSED__DIRECT_PRIMARY_EDITION_PENDING"
+    primary_or_secondary: "PRIMARY_PASSAGE_REPRODUCED_IN_SECONDARY_SOURCE"
+    provenance_notes: "The PMC article explicitly cites Josephus Vita 420-421 and Thackeray LCL 1926."
+    dependence_or_independence_notes: "Case is general Roman crucifixion/survival evidence, not case-specific Jesus evidence."
+    what_source_contains_observation_only:
+      - "Josephus reports seeing three acquaintances crucified, obtaining their removal and medical treatment, after which two died and one survived."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-S1-NONDEATH","D1-DEATH-STATE-VS-S1"]
+    limitations:
+      - "Direct critical/Loeb primary text still needs acquisition."
+      - "Transfer from this case to Jesus is not inferred during G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-013"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "Daniel"
+    title_or_work: "Daniel"
+    passage_or_scope: "12:2"
+    date_or_date_range: "Second Temple text; compositional dating not adjudicated here"
+    language: "Hebrew/Aramaic corpus; Hebrew verse and Greek Septuagint witnesses acquired"
+    edition_translation_or_repository: "Sefaria Hebrew/JPS; BiblIndex Septuagint"
+    stable_url_or_identifier:
+      - "https://www.sefaria.org/Daniel.12.2?lang2=en&with=Translations"
+      - "https://www.biblindex.org/en/bible/septuaginta/dn-12%3A2"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_MODERN_DIGITAL_EDITION"
+    provenance_notes: "Hebrew and Septuagint-form witnesses available through separate repositories."
+    dependence_or_independence_notes: "No inference about direct dependence on Daniel by a specific Christian passage is made here."
+    what_source_contains_observation_only:
+      - "The verse depicts many who sleep in the dust awakening, with divergent eschatological outcomes."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection semantic/context inventory"]
+    limitations: ["Semantic relation to early Christian claims remains for later lane synthesis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-014"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "2 Maccabees"
+    title_or_work: "2 Maccabees"
+    passage_or_scope: "7:9-36, especially 7:9, 11, 14, 23, 29, 36"
+    date_or_date_range: "Second Temple text; compositional dating not adjudicated here"
+    language: "Greek"
+    edition_translation_or_repository: "USCCB NABRE digital translation; BiblIndex Septuagint Greek digital text"
+    stable_url_or_identifier:
+      - "https://bible.usccb.org/bible/2maccabees/7"
+      - "https://www.biblindex.org/en/bible/septuaginta/2-m-7"
+    access_status: "ACCESSED__GREEK_SEPTUAGINT_DIGITAL_TEXT_ADDED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_MODERN_TRANSLATION_AND_DIGITAL_GREEK_TEXT"
+    provenance_notes: "The prior translation-level record is now paired with a Greek Septuagint-form digital text. No manuscript apparatus was used."
+    dependence_or_independence_notes: "No direct dependence by early Christian texts inferred."
+    what_source_contains_observation_only:
+      - "The martyr narrative expresses expectation that the King of the universe will raise the faithful to life again."
+      - "The chapter connects restored life with bodily members and future resurrection language."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection semantic/context inventory"]
+    limitations:
+      - "No independent manuscript-apparatus or modern critical-edition comparison was completed in this round."
+    retrieved_at: "2026-10-06"
+  - source_id: "G1W1-015"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Mark"
+    title_or_work: "Mark"
+    passage_or_scope: "15:33-16:8"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Mark+15%3A33-16%3A8&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "Expands G1W1-006 backward to the death and burial sequence."
+    dependence_or_independence_notes: "No harmonization with the other Gospels."
+    what_source_contains_observation_only:
+      - "The narrative states that Jesus cried out and expired."
+      - "It describes women observing, Joseph of Arimathea receiving the body, burial in a rock-cut tomb, and women observing where he was laid."
+      - "It then contains the Mark 16:1-8 tomb visit and raised/not-here message already recorded in G1W1-006."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","burial/body-disposition inventory","P-R-BODY context","founding-proclamation report inventory"]
+    limitations: ["Narrative historicity is not inferred from inclusion."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-016"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Corinthians"
+    title_or_work: "1 Corinthians"
+    passage_or_scope: "9:1"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Corinthians+9%3A1&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text with variant note."
+    dependence_or_independence_notes: "Relation to 1 Cor 15:8 is not synthesized here."
+    what_source_contains_observation_only:
+      - "Paul asks rhetorically whether he has seen Jesus the Lord."
+    frozen_propositions_or_routes_potentially_served: ["Paul claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT"]
+    limitations: ["Nature of the claimed seeing is not classified here."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-017"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Galatians"
+    title_or_work: "Galatians"
+    passage_or_scope: "1:15-17"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway plus ESV"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Galatians+1&version=SBLGNT"
+      - "https://www.esv.org/verses/Galatians%2B1%3A15%E2%80%9317/"
+    access_status: "ACCESSED__SBLGNT_GREEK_UPGRADE_COMPLETE"
+    primary_or_secondary: "PRIMARY_TEXT_IN_TRANSLATION"
+    provenance_notes: "Translation-level acquisition only."
+    dependence_or_independence_notes: "No identification with Acts narratives or 1 Cor 15 terminology is made here."
+    what_source_contains_observation_only:
+      - "Paul says God was pleased to reveal his Son to/in him and says he did not immediately consult others or go to the earlier apostles before going to Arabia and Damascus."
+    frozen_propositions_or_routes_potentially_served: ["Paul claimed-encounter inventory","founding-stream chronology"]
+    limitations: ["Semantic force remains for later lane analysis."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-018"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / Romans"
+    title_or_work: "Romans"
+    passage_or_scope: "1:3-4"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBLGNT digital reproduction"
+    stable_url_or_identifier: "https://exitz.org/bible/romans/1?bibles=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_REPRODUCTION"
+    provenance_notes: "Page displays SBLGNT text."
+    dependence_or_independence_notes: "Traditional/formula status is not decided here."
+    what_source_contains_observation_only:
+      - "The passage refers to Jesus Christ as descended from David according to flesh and designated Son of God in power according to a spirit/Spirit of holiness by resurrection from the dead."
+    frozen_propositions_or_routes_potentially_served: ["early proclamation content","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["Formula/tradition history and translation are reserved for SRC-02/G2."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-019"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Matthew"
+    title_or_work: "Matthew"
+    passage_or_scope: "27:45-28:20"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway plus modern translations"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Matthew+27&version=SBLGNT"
+      - "https://www.biblegateway.com/passage/?search=Matthew+28&version=SBLGNT%3BNIV%3BESV"
+    access_status: "ACCESSED__SBLGNT_GREEK_OUTCOME_RANGE_COMPLETE"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_AND_TRANSLATION"
+    provenance_notes: "The prior Matthew 28 Greek capture is now paired with SBLGNT Matthew 27, closing the translation-only gap across the recorded outcome range."
+    dependence_or_independence_notes: "Relationship to Mark is not adjudicated here."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus died, was buried by Joseph of Arimathea, and the tomb was secured."
+      - "It narrates women finding the tomb after the Sabbath, an angelic message that Jesus was raised, and appearances/instructions to the women and the eleven in Galilee."
+      - "It includes a counterclaim that disciples stole the body."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","burial/body-disposition inventory","claimed-encounter inventory","deception/counterclaim inventory"]
+    limitations: ["Narrative dependence, dating, and historicity are not inferred."]
+    retrieved_at: "2026-10-06"
+  - source_id: "G1W1-020"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to Luke"
+    title_or_work: "Luke"
+    passage_or_scope: "23:44-24:49"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Luke+23&version=SBLGNT%3BNKJV%3BESV%3BKJV"
+      - "https://www.biblegateway.com/passage/?search=Luke+24&version=RSV%3BSBLGNT"
+    access_status: "ACCESSED__SBLGNT_GREEK_OUTCOME_RANGE_ADDED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_AND_TRANSLATION"
+    provenance_notes: "Death through appearance narrative range acquired."
+    dependence_or_independence_notes: "Relationship to Mark and other traditions not adjudicated."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus breathed his last and was buried."
+      - "It narrates women finding the tomb without the body and reporting a raised message."
+      - "It reports an appearance tradition associated with Simon, a road encounter, and an appearance to gathered disciples."
+      - "The gathered-disciple scene explicitly distinguishes the figure from a spirit/ghost by reference to hands, feet, flesh/bones, touch, and eating fish."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-R-BODY textual-report inventory","claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT"]
+    limitations: ["Embodiment truth status is not inferred from narrative content."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-021"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Gospel according to John"
+    title_or_work: "John"
+    passage_or_scope: "19:28-21:25, especially 19:30-37 and 20:1-29"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Greek source; English translations acquired"
+    edition_translation_or_repository: "Bible Gateway"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=John+19&version=SBLGNT"
+      - "https://www.biblegateway.com/passage/?search=John+20&version=NRSVUE%3BSBLGNT"
+      - "https://www.biblegateway.com/passage/?search=John+21&version=KJV%3BNET%3BSBLGNT"
+    access_status: "ACCESSED__SBLGNT_GREEK_OUTCOME_RANGE_ADDED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_AND_TRANSLATION"
+    provenance_notes: "Outcome-material death/body/tomb/appearance narrative range acquired."
+    dependence_or_independence_notes: "Relationship to Synoptic traditions and redaction history not adjudicated."
+    what_source_contains_observation_only:
+      - "The narrative states Jesus gave up his spirit, soldiers judged him already dead, and a soldier pierced his side."
+      - "It narrates burial, an open/empty tomb, appearances to Mary Magdalene and disciples, and a Thomas scene involving wounds/touch."
+      - "John 21 narrates a further appearance by the Sea of Tiberias and a meal scene."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-R-BODY textual-report inventory","burial/body-disposition inventory","claimed-encounter inventory"]
+    limitations: ["Narrative historicity, source independence, and chronology are not inferred."]
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-022"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Acts"
+    title_or_work: "Acts of the Apostles"
+    passage_or_scope: "2:22-36"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Acts+2%3A22-36&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text acquired for proclamation-content inventory."
+    dependence_or_independence_notes: "Speech composition, source layers, and relation to earlier proclamation are not adjudicated here."
+    what_source_contains_observation_only:
+      - "The speech narrative says Jesus was killed by crucifixion/lawless hands and that God raised him."
+      - "It presents the speaker and associates as witnesses and connects the claim with exaltation/Lord-Messiah language."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-EARLY-PROCLAMATION-CONTENT","claimed-witness/proclamation inventory","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["Acts' date, speech-source history, and historical proximity remain for SRC-02/G2."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-023"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Acts"
+    title_or_work: "Acts of the Apostles"
+    passage_or_scope: "3:13-15"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway plus ESV translation"
+    stable_url_or_identifier:
+      - "https://www.biblegateway.com/passage/?search=Acts+3&version=SBLGNT"
+      - "https://www.esv.org/verses/Acts%2B3%3A13%E2%80%9315/"
+    access_status: "ACCESSED__SBLGNT_GREEK_UPGRADE_COMPLETE"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION_AND_TRANSLATION"
+    provenance_notes: "The prior translation-only record is now paired with SBLGNT Greek."
+    dependence_or_independence_notes: "Speech-source history not adjudicated."
+    what_source_contains_observation_only:
+      - "The speech says the audience killed the Author of life and that God raised him from the dead."
+      - "It presents the speakers as witnesses."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-EARLY-PROCLAMATION-CONTENT","claimed-witness/proclamation inventory"]
+    limitations: ["Speech-source provenance and historical use remain for SRC-02/G2."]
+    retrieved_at: "2026-10-06"
+  - source_id: "G1W1-024"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Acts"
+    title_or_work: "Acts of the Apostles"
+    passage_or_scope: "10:39-41"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Acts+10%3A39-41&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text acquired."
+    dependence_or_independence_notes: "Speech-source history and relation to Gospel traditions not adjudicated."
+    what_source_contains_observation_only:
+      - "The speech says Jesus was killed by hanging on a tree, that God raised him on the third day, and that he appeared to chosen witnesses."
+      - "It includes an eating/drinking-with-him claim after the raising."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-R-BODY textual-report inventory","claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT"]
+    limitations: ["Historical truth and speech-source provenance are not inferred."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-025"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Acts"
+    title_or_work: "Acts of the Apostles"
+    passage_or_scope: "13:29-37"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Acts+13%3A29-37&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT text acquired."
+    dependence_or_independence_notes: "Speech-source history and dependence on earlier traditions not adjudicated."
+    what_source_contains_observation_only:
+      - "The speech says Jesus was taken down from the tree and laid in a tomb, then raised by God."
+      - "It says he was seen over many days by people who came with him from Galilee and connects the claim with scriptural interpretation and non-corruption."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","burial inventory","claimed-encounter inventory","P-EARLY-PROCLAMATION-CONTENT","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations: ["No historical or source-critical disposition assigned."]
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-026"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Life (Vita)"
+    passage_or_scope: "75 / conventional sections 420-421"
+    date_or_date_range: "Josephus autobiographical work; exact composition date not adjudicated here"
+    language: "Greek original; English Whiston translation accessed"
+    edition_translation_or_repository: "University of Chicago LacusCurtius/Penelope Whiston translation; Perseus Catalog Niese Greek edition identity"
+    stable_url_or_identifier:
+      - "https://penelope.uchicago.edu/josephus/autobiog.html"
+      - "https://catalog.perseus.tufts.edu/catalog/urn%3Acts%3AgreekLit%3Atlg0526.tlg002"
+      - "urn:cts:greekLit:tlg0526.tlg002.perseus-grc1"
+    access_status: "DIRECT_PRIMARY_WORK_TRANSLATION_ACCESSED__NIESE_GREEK_EDITION_IDENTIFIED__PASSAGE_EXTRACTION_UNRESOLVED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_LEGACY_TRANSLATION_PLUS_CRITICAL_GREEK_EDITION_PROVENANCE"
+    provenance_notes: "Direct digital Josephus Life translation remains available. Perseus independently identifies Benedikt Niese, Flavii Iosephi opera vol. 4 (1890), as its Greek edition and exposes the canonical URN."
+    dependence_or_independence_notes: "General Roman-period crucifixion/survival witness; no transfer to the Jesus case is inferred."
+    what_source_contains_observation_only:
+      - "Josephus says he saw many captives crucified and recognized three acquaintances."
+      - "He says Titus ordered the three taken down and treated; two died under physicians' care and one recovered."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-S1-NONDEATH","D1-DEATH-STATE-VS-S1"]
+    limitations:
+      - "The Niese Greek edition is identified, but the exact 420-421 Greek passage was not separately extracted from the Perseus interface in this round."
+      - "No case-specific transfer to Jesus is inferred."
+    retrieved_at: "2026-10-06"
+  - source_id: "G1W1-027"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Joseph Zias and Eliezer Sekeles"
+    title_or_work: "The Crucified Man from Giv'at ha-Mivtar: A Reappraisal"
+    passage_or_scope: "Israel Exploration Journal 35 (1985), pp. 22-27; parallel BA report pp.190-191"
+    date_or_date_range: "1985 archaeological/osteological reappraisal of first-century Jerusalem remains"
+    language: "English"
+    edition_translation_or_repository: "Israel Exploration Journal/JSTOR metadata; full-text mirror of original article; ASOR/University of Chicago metadata; Posen Library artifact entry"
+    stable_url_or_identifier:
+      - "https://www.jstor.org/stable/27925968"
+      - "https://www.journals.uchicago.edu/doi/10.2307/3209939"
+      - "https://barnascha.narod.ru/books/zias.pdf"
+      - "https://www.posenlibrary.com/entry/heel-bone-pierced-iron-nail"
+    access_status: "ORIGINAL_ARTICLE_TEXT_ACCESSED_VIA_MIRROR__BIBLIOGRAPHIC_IDENTITY_CROSSCHECKED__INSTITUTIONAL_ARTIFACT_ENTRY_ADDED"
+    primary_or_secondary: "PRIMARY_ARCHAEOLOGICAL_REAPPRAISAL_REPORT_PLUS_ARTIFACT_CROSSCHECK"
+    provenance_notes: "JSTOR confirms title/authors/pages; the mirror exposes original article text. Posen Library independently identifies the first-century Giv'at ha-Mivtar heel bone pierced by an iron nail."
+    dependence_or_independence_notes: "General archaeological evidence for Roman-period crucifixion practice, not case-specific Jesus evidence."
+    what_source_contains_observation_only:
+      - "The article identifies the remains as direct anthropological evidence associated with crucifixion and reexamines the original reconstruction."
+      - "The reappraisal reports a shorter nail and rejects several parts of the earlier anatomical reconstruction, including a claimed second heel and claimed forearm-nailing evidence."
+      - "The institutional artifact entry identifies the pierced heel bone as a first-century CE Giv'at ha-Mivtar object."
+    frozen_propositions_or_routes_potentially_served: ["EMP-CRUCIFIXION-BURIAL-PRACTICE","P-CRUC contextual practice","SRC-04 transfer-control inventory"]
+    limitations: ["The archaeological case does not by itself establish the method or outcome of Jesus's execution."]
+    retrieved_at: "2026-10-06"
+  - source_id: "G1W1-028"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "4Q521 / Messianic Apocalypse"
+    title_or_work: "4Q521"
+    passage_or_scope: "Fragment 2 ii + related fragments"
+    date_or_date_range: "Dead Sea Scroll / Second Temple period; precise dating not adjudicated here"
+    language: "Hebrew"
+    edition_translation_or_repository: "Digital Hebrew transcription explicitly following García Martínez & Tigchelaar, Dead Sea Scrolls Study Edition (Brill 1997); Kvalbein 1998 scholarly interpretation"
+    stable_url_or_identifier:
+      - "https://tianmu.org/good-work-library/judean/dead-sea-scrolls/apocalyptic-and-prophetic/messianic-apocalypse-source-text"
+      - "https://journals.sagepub.com/doi/10.1177/095182079800001806"
+    access_status: "HEBREW_TRANSCRIPTION_REPRODUCTION_ACCESSED__SCHOLARLY_INTERPRETIVE_DISPUTE_ACQUIRED"
+    primary_or_secondary: "ANCIENT_TEXT_TRANSCRIPTION_REPRODUCTION_PLUS_SECONDARY_SCHOLARSHIP"
+    provenance_notes: "Digital page identifies Cave 4 manuscript 4Q521 and states its transcription follows García Martínez & Tigchelaar. Kvalbein cites Puech, García Martínez, Collins and others."
+    dependence_or_independence_notes: "No dependence on Christian texts is inferred."
+    what_source_contains_observation_only:
+      - "The Hebrew transcription includes language about healing the wounded, making the dead live, and announcing good news to the poor."
+      - "Related fragments include language about the lifegiver raising the dead of his people."
+      - "Published scholarship records material disagreement over literal-resurrection versus metaphorical readings and over the messianic subject."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection/exaltation semantic context","BGD-3 contextual weighting"]
+    limitations:
+      - "Direct access to the Brill critical edition was not obtained."
+      - "The literal/metaphorical interpretation is explicitly unresolved in G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-029"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "2 Baruch / Syriac Apocalypse of Baruch"
+    title_or_work: "2 Baruch"
+    passage_or_scope: "49-51"
+    date_or_date_range: "Early second century commonly proposed in acquired secondary source; exact dating not adjudicated here"
+    language: "Survives principally in Syriac; legacy English translation reproduction accessed"
+    edition_translation_or_repository: "Pseudepigrapha.com legacy English text; Posen Library entry; University of Arizona Bible Interpretation secondary overview"
+    stable_url_or_identifier:
+      - "https://pseudepigrapha.com/pseudepigrapha/2Baruch.html"
+      - "https://www.posenlibrary.com/entry/transformation-wicked-and-righteous"
+      - "https://bibleinterp.arizona.edu/articles/2018/01/ell428016"
+    access_status: "TRANSLATION_REPRODUCTION_AND_SCHOLARLY_CONTEXT_ACCESSED"
+    primary_or_secondary: "ANCIENT_TEXT_IN_LEGACY_TRANSLATION_PLUS_SECONDARY_CONTEXT"
+    provenance_notes: "The acquired text labels chapters 49-52 as concerning the nature of the resurrection body; Posen identifies 2 Baruch 49-51 as an early-2nd-century Jewish text in Syriac."
+    dependence_or_independence_notes: "No dependence on 1 Corinthians or Christian texts is inferred."
+    what_source_contains_observation_only:
+      - "The text asks in what shape the resurrected will live."
+      - "It says the earth restores the dead first in recognizable form and then describes transformation of the righteous into luminous/angelic glory."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection-body semantic/context inventory","BGD-11 contextual formulation"]
+    limitations:
+      - "This is later than the primary pre-Christian Second Temple witnesses and is used only within the source plan's bounded reception/context window."
+      - "A modern critical Syriac/translation edition remains to be acquired if the passage becomes truth-critical."
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-030"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "John S. Kloppenborg"
+    title_or_work: "The History and Prospects of the Synoptic Problem"
+    passage_or_scope: "Oxford Handbook of the Synoptic Gospels, chapter 1"
+    date_or_date_range: "2023"
+    language: "English"
+    edition_translation_or_repository: "Oxford Academic"
+    stable_url_or_identifier: "https://academic.oup.com/edited-volume/45760/chapter-abstract/398723290"
+    access_status: "ABSTRACT_AND_SECTION_METADATA_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL"
+    provenance_notes: "Oxford Handbook chapter by University of Toronto scholar; explicitly surveys competing Synoptic hypotheses and current study."
+    dependence_or_independence_notes: "Acquired as a control source because Matthew/Mark/Luke exhibit both substantial verbal agreements and discrepancies; no Synoptic solution is frozen by G1."
+    what_source_contains_observation_only:
+      - "The chapter frames the Synoptic Problem around patterns of high and low verbal agreement and sequence."
+      - "Its structure explicitly treats Markan priority, alternatives, and current competing approaches."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SOURCE-DATING-DEPENDENCE","SRC-01 Gospel provenance","comparison-scoped independence controls"]
+    limitations: ["Abstract-level acquisition; detailed argument remains full-text dependent."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-031"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "Charles H. H. Scobie; Steven M. Baugh; F. Gerald Downing"
+    title_or_work: "Acts speech-source critical control set"
+    passage_or_scope: "Acts speeches, especially early chapters"
+    date_or_date_range: "Published scholarship reproduced by Cambridge Core"
+    language: "English"
+    edition_translation_or_repository: "New Testament Studies / Cambridge Core"
+    stable_url_or_identifier:
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/use-of-source-material-in-the-speeches-of-acts-iii-and-vii1/9B4D126C5C01FCE42ABA7BB98A7B016C"
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/phraseology-and-the-reliability-of-acts/A40F57ABECCBAEAE89CD3CA826CF15BA"
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/ethical-pagan-theism-and-the-speeches-in-acts/86D24989C4039AD060164B81F532C797"
+    access_status: "ABSTRACTS_EXTRACTS_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL"
+    provenance_notes: "Three NTS studies acquired to avoid treating Acts speeches as transparently verbatim or transparently invented."
+    dependence_or_independence_notes: "The acquired scholarship records competing views: older source-analysis; substantial Lukan composition/redaction; possible earlier source material; and ancient-historiographical speech conventions."
+    what_source_contains_observation_only:
+      - "Acts speech provenance is a live source-critical problem."
+      - "Lukan style in speeches is widely recognized in the acquired literature, while its implications for historical source material are disputed."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SOURCE-DATING-DEPENDENCE","G1W1-022 through G1W1-025 provenance controls"]
+    limitations: ["No speech is assigned a historical-source percentage or provenance disposition in G1."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-032"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "Harold W. Attridge; John Painter; Hugo Mendez"
+    title_or_work: "Johannine source/dependence control set"
+    passage_or_scope: "Gospel of John relationship to Synoptics and internal composition"
+    date_or_date_range: "2018 Oxford Handbook; Cambridge NTS legacy study; 2025 Oxford monograph"
+    language: "English"
+    edition_translation_or_repository: "Oxford Academic; Cambridge Core"
+    stable_url_or_identifier:
+      - "https://academic.oup.com/edited-volume/38583/chapter-abstract/334608479"
+      - "https://doi.org/10.1017/S0028688500016866"
+      - "https://academic.oup.com/book/60236/chapter-abstract/520039653"
+    access_status: "ABSTRACTS_EXTRACTS_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL"
+    provenance_notes: "Deliberately acquired conflicting/nuanced source-dependence models."
+    dependence_or_independence_notes: "Attridge reports a scholarly shift toward some Synoptic use; Painter argues for independence with Synoptic-like tradition in John 6; Mendez argues chapters 1-20 are a single author's work, chapter 21 later, and the author knew all three Synoptics."
+    what_source_contains_observation_only:
+      - "Johannine dependence on the Synoptics is contested rather than safely assumed either way."
+      - "Internal composition/redaction, including the status of John 21, is also disputed in current scholarship."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SOURCE-DATING-DEPENDENCE","G1W1-021 provenance/dependence controls"]
+    limitations: ["No dependence model is adopted in G1; full texts are not all openly accessible."]
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-033"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_CRITICISM_SOURCE_DEPENDENCE"
+    author_or_corpus: "Oxford Bibliographies / Pauline Chronology"
+    title_or_work: "Pauline Chronology"
+    passage_or_scope: "Chronological reconstruction of Paul's life and letters"
+    date_or_date_range: "Current Oxford Bibliographies reference entry"
+    language: "English"
+    edition_translation_or_repository: "Oxford Academic"
+    stable_url_or_identifier: "https://academic.oup.com/reference/62341/reference-article-abstract/554103486"
+    access_status: "REFERENCE_ENTRY_EXTRACT_ACCESSED"
+    primary_or_secondary: "SECONDARY_SOURCE_CRITICAL_REFERENCE"
+    provenance_notes: "Method-neutral reference entry acquired for chronology controls."
+    dependence_or_independence_notes: "The entry stresses the need to relate internal letter evidence, external chronology, and Acts while recognizing unresolved questions about Acts and Galatian location/date."
+    what_source_contains_observation_only:
+      - "Pauline absolute and relative chronology is a reconstruction problem rather than a single unqualified date list."
+      - "Relations between Acts and Paul's letters form part of that source-critical problem."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SOURCE-DATING-DEPENDENCE","Pauline source proximity controls"]
+    limitations: ["Does not itself settle specific letter dates in this inventory record."]
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-034"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 1 Corinthians"
+    title_or_work: "1 Corinthians"
+    passage_or_scope: "15:35-54"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "SBLGNT Greek acquired for the outcome-material resurrection-body vocabulary not separately inventoried in G1W1-001."
+    dependence_or_independence_notes: "The passage's semantic and metaphysical interpretation is reserved to SRC-02/SRC-14; no candidate mapping is decided here."
+    what_source_contains_observation_only:
+      - "The passage explicitly asks how the dead are raised and with what body they come."
+      - "It uses a seed/body analogy and contrasts a body described as psychikon with one described as pneumatikon."
+      - "It describes corruption/incorruption, dishonor/glory, weakness/power, mortality/immortality, the dead being raised imperishable, and the living being changed."
+    frozen_propositions_or_routes_potentially_served: ["P-R-BODY","EMP-PAULINE-BODY-INTERPRETATION","Q1 embodiment-language inventory"]
+    limitations:
+      - "The wording does not by itself settle material composition, continuity, or the correct translation/interpretation of psychikon and pneumatikon."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-035"
+    stratum_id: "SRC-02"
+    source_type: "TEXTUAL_INTERPRETIVE_TRANSLATION_SENSITIVE_CONTROL"
+    author_or_corpus: "Daniel Mikkelsen; Adela Yarbro Collins"
+    title_or_work: "1 Corinthians 15 resurrection-body interpretation control set"
+    passage_or_scope: "1 Corinthians 15:35-58, especially resurrection-body terminology"
+    date_or_date_range: "Mikkelsen 2019; Collins 2022"
+    language: "English/Danish scholarly discussion of Greek text"
+    edition_translation_or_repository: "Dansk Teologisk Tidsskrift article page; Yale Scholarship Online/Oxford Academic chapter abstract"
+    stable_url_or_identifier:
+      - "https://tidsskrift.dk/dtt/article/view/115359"
+      - "https://academic.oup.com/yale-scholarship-online/book/45086/chapter-abstract/386480628"
+    access_status: "OPEN_ARTICLE_METADATA_ABSTRACT_AND_REFERENCE_MAP_ACCESSED__SECOND_SOURCE_ABSTRACT_ACCESSED"
+    primary_or_secondary: "SECONDARY_EXEGETICAL_AND_RECEPTION_SCHOLARSHIP"
+    provenance_notes: "The Mikkelsen journal page exposes the abstract, DOI, publication metadata, and reference map. The Collins chapter abstract and metadata were accessed through Oxford/Yale."
+    dependence_or_independence_notes: "Acquired specifically to preserve interpretive disagreement around resurrection-body language rather than adopt a single reading."
+    what_source_contains_observation_only:
+      - "Mikkelsen explicitly frames two major scholarly readings of Paul's resurrection body and argues for transformed incorruptible/immortal flesh."
+      - "Collins describes Paul's articulation of a spiritual body and traces divergent later receptions of the flesh/spirit problem."
+      - "The acquired scholarship therefore confirms that the body-language route is interpretation-sensitive and cannot be collapsed to a single gloss during G1."
+    frozen_propositions_or_routes_potentially_served: ["P-R-BODY","P-V-NONEMBODIED","EMP-PAULINE-BODY-INTERPRETATION","SRC-02 translation-sensitive wording control"]
+    limitations:
+      - "No semantic disposition is assigned."
+      - "The Collins full chapter was not acquired; the Mikkelsen PDF was not separately analyzed in this round."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-036"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish War"
+    passage_or_scope: "5.449-451 / Book V chapter 11 in the accessed translation"
+    date_or_date_range: "First-century Roman-Judean war narrative; composition dating not adjudicated here"
+    language: "Greek original; English Whiston translation accessed"
+    edition_translation_or_repository: "University of Chicago LacusCurtius/Penelope"
+    stable_url_or_identifier: "https://penelope.uchicago.edu/josephus/war-5.html"
+    access_status: "DIRECT_PRIMARY_WORK_TRANSLATION_ACCESSED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_LEGACY_TRANSLATION"
+    provenance_notes: "Direct digital presentation of Josephus's Jewish War, Book V."
+    dependence_or_independence_notes: "General Roman execution/crucifixion practice evidence; no case-specific inference about Jesus."
+    what_source_contains_observation_only:
+      - "Josephus reports captured persons being whipped, tortured, and crucified before Jerusalem's walls."
+      - "He reports roughly five hundred or more captives on some days and describes soldiers nailing prisoners to crosses in varying ways."
+    frozen_propositions_or_routes_potentially_served: ["P-CRUC","P-DEATH","EMP-CRUCIFIXION-BURIAL-PRACTICE","SRC-04 practice inventory"]
+    limitations:
+      - "This siege context is later than Jesus's execution and is not transferred case-specifically."
+      - "The accessed text is a legacy English translation rather than a modern critical Greek passage edition."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-037"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_DEATH"
+    author_or_corpus: "Lucius Annaeus Seneca"
+    title_or_work: "Consolation to Marcia"
+    passage_or_scope: "20.3 / section XX in the accessed translation"
+    date_or_date_range: "First-century Roman literary source; exact composition date not adjudicated here"
+    language: "Latin original; public-domain English translation accessed"
+    edition_translation_or_repository: "Wikisource public-domain translation; Perseus classical-reference crosscheck"
+    stable_url_or_identifier:
+      - "https://en.wikisource.org/wiki/Of_Consolation%3A_To_Marcia"
+      - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0063%3Aentry%3Dcrux-cn"
+    access_status: "PRIMARY_WORK_TRANSLATION_ACCESSED__CLASSICAL_REFERENCE_CROSSCHECKED"
+    primary_or_secondary: "PRIMARY_ROMAN_LITERARY_TEXT_IN_TRANSLATION_PLUS_REFERENCE_CONTROL"
+    provenance_notes: "The translated primary work's section XX describes varied cross/torture configurations; the Perseus classical dictionary independently points to Consolation to Marcia 20.3 as a crucifixion-practice witness."
+    dependence_or_independence_notes: "General Roman torture/execution-practice witness only."
+    what_source_contains_observation_only:
+      - "Seneca describes crosses as not all alike and gives examples of different bodily positions or suspension forms."
+      - "The passage places crosses among instruments of coercion/torture and death."
+    frozen_propositions_or_routes_potentially_served: ["P-CRUC","EMP-CRUCIFIXION-BURIAL-PRACTICE","SRC-04 method-variation inventory"]
+    limitations:
+      - "The passage is rhetorical/literary rather than a procedural legal manual."
+      - "It does not establish the configuration used in Jesus's execution."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-038"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "4 Ezra / 2 Esdras"
+    title_or_work: "4 Ezra"
+    passage_or_scope: "7:30-34, especially 7:32"
+    date_or_date_range: "Late first-century Jewish apocalypse commonly situated after 70 CE; exact dating not adjudicated here"
+    language: "Ancient work surviving in multiple versions; modern English translation accessed"
+    edition_translation_or_repository: "Bible Gateway NRSVUE / 2 Esdras"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=2+Esdras+7%3A30-34&version=NRSVUE"
+    access_status: "MODERN_TRANSLATION_ACCESSED"
+    primary_or_secondary: "ANCIENT_TEXT_IN_MODERN_TRANSLATION"
+    provenance_notes: "The canonical web passage identifies 2 Esdras 7:30-34 in NRSVUE; the work is inventoried as 4 Ezra for the Jewish apocalypse portion."
+    dependence_or_independence_notes: "No direct dependence on Christian texts or Pauline language is inferred."
+    what_source_contains_observation_only:
+      - "The passage says the earth and dust give up those sleeping/resting in them and that chambers give up entrusted souls before judgment."
+      - "The immediate context combines postmortem soul language with a future giving-up of the dead."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection/afterlife semantic-context inventory","BGD-11 contextual formulation"]
+    limitations:
+      - "Translation-level acquisition only; textual history and versional differences are not adjudicated."
+      - "The passage's relation to Christian claims remains for later synthesis."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-039"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_EXALTATION_SCRIPTURAL_INTERPRETATION"
+    author_or_corpus: "Sibylline Oracles"
+    title_or_work: "Sibylline Oracles Book IV"
+    passage_or_scope: "231-248"
+    date_or_date_range: "Late first century CE in the accessed scholarly/legacy introductions; exact compositional stratification not adjudicated"
+    language: "Greek original; public-domain English translations accessed"
+    edition_translation_or_repository: "Wikisource reproductions of Milton S. Terry and R. H. Charles-era editions; Cambridge NTS contextual scholarship"
+    stable_url_or_identifier:
+      - "https://en.wikisource.org/wiki/The_Sibylline_Oracles_%28Terry%2C_2nd_edition%29/Book_4"
+      - "https://en.wikisource.org/wiki/The_Apocrypha_and_Pseudepigrapha_of_the_Old_Testament/The_Sibylline_Oracles"
+      - "https://www.cambridge.org/core/journals/new-testament-studies/article/resurrection-in-paganism-and-the-question-of-an-empty-tomb-in-1-corinthians-15/EF4DE640BE9104A454C7847ECF899313"
+    access_status: "LEGACY_TRANSLATION_REPRODUCTIONS_ACCESSED__SCHOLARLY_CONTEXT_ACCESSED"
+    primary_or_secondary: "ANCIENT_TEXT_IN_LEGACY_TRANSLATION_PLUS_SECONDARY_CONTEXT"
+    provenance_notes: "The Terry reproduction labels 231-248 as resurrection/judgment/reward; the Charles-era introduction dates Book IV after the 79 CE Vesuvius eruption. Cambridge scholarship independently inventories Sibylline Oracle 4 among explicit bodily-resurrection Jewish texts."
+    dependence_or_independence_notes: "No genealogy or direct dependence on Pauline/Christian texts is inferred."
+    what_source_contains_observation_only:
+      - "The passage describes God fashioning bones and ashes again, raising mortals, judgment, and the pious living on earth."
+      - "The acquired scholarly source places Sibylline Oracle 4 within a broader range of ancient Jewish resurrection/afterlife models."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","resurrection semantic/context inventory","BGD-3 contextual weighting"]
+    limitations:
+      - "Legacy translation and compositional-history limitations are explicit."
+      - "No claim is made that the passage is independent of all later editorial influence without further textual work."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-040"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_RESURRECTION_CONTEXT_SECONDARY_CONTROL"
+    author_or_corpus: "John Granger Cook"
+    title_or_work: "Resurrection in Paganism and the Question of an Empty Tomb in 1 Corinthians 15"
+    passage_or_scope: "Section on resurrection in ancient Judaism and methodological comparison"
+    date_or_date_range: "Published online 2016; New Testament Studies 63.1 (2017)"
+    language: "English"
+    edition_translation_or_repository: "Cambridge Core / New Testament Studies"
+    stable_url_or_identifier: "https://www.cambridge.org/core/journals/new-testament-studies/article/resurrection-in-paganism-and-the-question-of-an-empty-tomb-in-1-corinthians-15/EF4DE640BE9104A454C7847ECF899313"
+    access_status: "ARTICLE_HTML_SECTIONS_AND_METADATA_ACCESSED"
+    primary_or_secondary: "SECONDARY_SCHOLARSHIP"
+    provenance_notes: "Cambridge page exposes publication metadata, methodology, and the ancient-Judaism section."
+    dependence_or_independence_notes: "Acquired as a context-map/control, not as authority for a candidate verdict."
+    what_source_contains_observation_only:
+      - "The article distinguishes analogy from genealogy in comparative work."
+      - "Its ancient-Judaism survey records explicit bodily-resurrection examples, mixed resurrection/immortality models, and ambiguous witnesses rather than a single uniform Jewish view."
+      - "It specifically names 1 Enoch 51, 2 Maccabees, 4Q521 and Sibylline Oracle 4 among explicit examples, while also listing 4 Ezra and 2 Baruch among mixed-concept witnesses."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","SRC-06 breadth control","source-class omission check"]
+    limitations:
+      - "The author's own inferential thesis about Paul/empty-tomb semantics is not adopted in G1."
+      - "Primary witnesses remain separately inventoried where acquired."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-041"
+    stratum_id: "SRC-19"
+    source_type: "CROSS_TRADITION_METHOD_NEUTRAL"
+    author_or_corpus: "Pliny the Younger"
+    title_or_work: "Letters"
+    passage_or_scope: "10.96"
+    date_or_date_range: "Early second century, commonly c. 112 CE; exact administrative dating not adjudicated here"
+    language: "Latin"
+    edition_translation_or_repository: "Perseus Latin text; Dickinson College Commentaries"
+    stable_url_or_identifier:
+      - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0139%3Abook%3D10%3Aletter%3D96"
+      - "https://dcc.dickinson.edu/pliny-letters/10-96"
+    access_status: "LATIN_PRIMARY_TEXT_ACCESSED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_TEXT_IN_DIGITAL_CLASSICAL_EDITION"
+    provenance_notes: "Perseus exposes the Latin text and CTS citation URI; Dickinson provides an independently curated Latin/commentary presentation."
+    dependence_or_independence_notes: "External administrative witness to early-second-century Christian practice; it is not treated as an independent witness to resurrection appearances."
+    what_source_contains_observation_only:
+      - "Pliny reports interrogating persons accused of being Christians and distinguishes current from former adherents."
+      - "He reports that former adherents said Christians met on a fixed day before dawn and sang responsively to Christ as to a god, alongside ethical pledges and an ordinary meal."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS cross-tradition context","movement-reception/transmission context","SRC-19 provenance crosscheck"]
+    limitations:
+      - "The letter does not itself report resurrection appearances or establish the content/origin of the founding proclamation."
+      - "Its information about Christian practice is reported through Pliny's investigation and subjects' statements."
+    retrieved_at: "2026-10-06"
+
+
+  - source_id: "G1W1-042"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_MEDICAL_MECHANISM_CONTROL"
+    author_or_corpus: "Matthew W. Maslen and Piers D. Mitchell"
+    title_or_work: "Medical theories on the cause of death in crucifixion"
+    passage_or_scope: "Full article"
+    date_or_date_range: "2006"
+    language: "English"
+    edition_translation_or_repository: "Journal of the Royal Society of Medicine 99(4):185-188; PubMed Central"
+    stable_url_or_identifier:
+      - "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420788/"
+      - "doi:10.1258/jrsm.99.4.185"
+    access_status: "FULL_TEXT_ACCESSED"
+    primary_or_secondary: "SECONDARY_MEDICAL_HISTORICAL_REVIEW"
+    provenance_notes: "Full text acquired through PubMed Central after Reviewer C SRC-18 surfaced the medical-mechanism class."
+    dependence_or_independence_notes: "General crucifixion-mechanism literature; not case-specific proof about Jesus and not a survival finding."
+    what_source_contains_observation_only:
+      - "The article reviews multiple proposed physiological mechanisms of death in crucifixion."
+      - "It states that the available archaeological, historical, and reenactment evidence is insufficient to specify one universal mechanism and allows that different individuals may have died by different physiological causes."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-S1-NONDEATH","R-PHYS","S1","SRC-04 medical-mechanism control"]
+    limitations:
+      - "Uncertainty about exact physiological mechanism is not equivalent to evidence that a particular crucified individual survived."
+      - "No case-specific inference is assigned in G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-043"
+    stratum_id: "SRC-04"
+    source_type: "ROMAN_EXECUTION_CRUCIFIXION_MEDICAL_MECHANISM_CONTROL"
+    author_or_corpus: "Gary Habermas, Jonathan Kopel, and Benjamin C. F. Shaw"
+    title_or_work: "Medical views on the death by crucifixion of Jesus Christ"
+    passage_or_scope: "Full article"
+    date_or_date_range: "2021"
+    language: "English"
+    edition_translation_or_repository: "Proceedings (Baylor University Medical Center) 34(6):748-752; PubMed Central"
+    stable_url_or_identifier:
+      - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545147/"
+      - "doi:10.1080/08998280.2021.1951096"
+    access_status: "FULL_TEXT_ACCESSED"
+    primary_or_secondary: "SECONDARY_MEDICAL_HISTORICAL_SURVEY"
+    provenance_notes: "Full text acquired as the contrary/qualifying pair requested by Reviewer C."
+    dependence_or_independence_notes: "The article surveys prior medical literature and argues for death despite mechanism disagreement; its confessional author affiliations are recorded but not used as a quality score."
+    what_source_contains_observation_only:
+      - "The article inventories competing medical mechanisms proposed for crucifixion death."
+      - "It argues that asphyxiation or asphyxiation-dominant accounts have become the most common view in the literature it surveys and separately argues that Jesus died even if exact mechanism remains debated."
+    frozen_propositions_or_routes_potentially_served: ["P-DEATH","P-S1-NONDEATH","R-PHYS","S1","SRC-04 paired medical control"]
+    limitations:
+      - "The article includes historical and theological argument in addition to medical survey; those inferential conclusions are not adopted during G1."
+      - "The survey's claimed consensus requires later methodological appraisal if outcome-material."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-044"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_AFTERLIFE_DIVERSITY_PRIMARY_TEXT"
+    author_or_corpus: "Wisdom of Solomon"
+    title_or_work: "Wisdom of Solomon"
+    passage_or_scope: "2:23-3:9"
+    date_or_date_range: "Second Temple Jewish text; exact compositional dating not adjudicated here"
+    language: "Greek source tradition; English translation accessed"
+    edition_translation_or_repository: "New Revised Standard Version Updated Edition via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=Wisdom+of+Solomon+2%3A23-3%3A9&version=NRSVUE"
+    access_status: "STANDARD_MODERN_TRANSLATION_ACCESSED"
+    primary_or_secondary: "ANCIENT_PRIMARY_TEXT_IN_STANDARD_TRANSLATION"
+    provenance_notes: "Acquired in direct response to Reviewer C's omitted afterlife-diversity finding."
+    dependence_or_independence_notes: "No direct dependence relation to Christian texts is inferred."
+    what_source_contains_observation_only:
+      - "The passage says God created humans for incorruption."
+      - "It describes the souls of the righteous as in God's hand, at peace, and having hope full of immortality."
+      - "It describes a future visitation, shining, rule, and divine reign but does not in this acquired range explicitly narrate bodies rising from graves."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","R-TRANS","V","L","SRC-06 afterlife-diversity control"]
+    limitations:
+      - "This is a translation-level acquisition, not a critical Greek apparatus review."
+      - "The relationship between immortality language and resurrection concepts is not adjudicated in G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-045"
+    stratum_id: "SRC-06"
+    source_type: "SECOND_TEMPLE_AFTERLIFE_DIVERSITY_PRIMARY_TEXT"
+    author_or_corpus: "Flavius Josephus"
+    title_or_work: "Jewish War and Jewish Antiquities"
+    passage_or_scope: "Jewish War 2.119-166; Antiquities 18.11-22"
+    date_or_date_range: "Late first-century works; exact compositional/source-history implications not adjudicated"
+    language: "Greek original; William Whiston English translation accessed"
+    edition_translation_or_repository: "Lexundria"
+    stable_url_or_identifier:
+      - "https://lexundria.com/j_bj/2.117-2.166/wst"
+      - "https://www.lexundria.com/j_aj/18.1-18.25/wst"
+    access_status: "DIRECT_PRIMARY_WORK_TRANSLATION_RANGES_ACCESSED"
+    primary_or_secondary: "PRIMARY_ANCIENT_TEXT_IN_LEGACY_TRANSLATION"
+    provenance_notes: "Both Reviewer-C-requested Josephan sectarian ranges were acquired."
+    dependence_or_independence_notes: "Josephus's descriptive accuracy, terminology, and philosophical framing require secondary controls; no sectarian reconstruction is frozen from Whiston wording alone."
+    what_source_contains_observation_only:
+      - "War 2 contrasts Essene immortality-of-souls language, Pharisaic incorruptible-soul/re-embodiment language, and Sadducean denial of immortal soul and postmortem reward/punishment."
+      - "Antiquities 18 again distinguishes Pharisaic postmortem reward/punishment and revivification language, Sadducean soul-death language, and Essene immortality language."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","R-TRANS","V","L","SRC-06 diversity control"]
+    limitations:
+      - "Whiston's English terms may encode interpretive choices; Yli-Karjanmaa and Klawans are separately inventoried as competing modern controls."
+      - "No conclusion is drawn about which later Christian concepts depend on or resemble these sectarian descriptions."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-046"
+    stratum_id: "SRC-06"
+    source_type: "JOSEPHUS_AFTERLIFE_INTERPRETATION_CONTROL"
+    author_or_corpus: "Sami Yli-Karjanmaa"
+    title_or_work: "The New Life of the Good Souls in Josephus: Resurrection or Reincarnation?"
+    passage_or_scope: "Full article"
+    date_or_date_range: "2017"
+    language: "English"
+    edition_translation_or_repository: "Journal for the Study of Judaism 48:506-530; University of Helsinki metadata; open-access article mirror"
+    stable_url_or_identifier:
+      - "doi:10.1163/15700631-12340154"
+      - "https://researchportal.helsinki.fi/en/publications/the-new-life-of-the-good-souls-in-josephus-resurrection-or-reinca/"
+      - "https://scispace.com/pdf/the-new-life-of-the-good-souls-in-josephus-resurrection-or-4eusau9si2.pdf"
+    access_status: "FULL_TEXT_ACCESSED_VIA_OPEN_ARTICLE_COPY__METADATA_CROSSCHECKED"
+    primary_or_secondary: "SECONDARY_SCHOLARSHIP"
+    provenance_notes: "The article copy identifies the Journal for the Study of Judaism publication and DOI; University of Helsinki independently confirms bibliographic identity and abstract."
+    dependence_or_independence_notes: "Acquired as one side of an interpretive dispute over Josephus's re-embodiment language."
+    what_source_contains_observation_only:
+      - "The author argues that the Josephan passages are more readily reconciled with reincarnation than resurrection."
+      - "The article explicitly analyzes multiple Josephan passages and disputes a common resurrection reading."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","SRC-06 semantic control","SRC-18 adverse/critical control"]
+    limitations:
+      - "The author's thesis is recorded, not adopted."
+      - "The article's use of terms such as reincarnation and resurrection must later be compared against primary Greek wording and contrary scholarship."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-047"
+    stratum_id: "SRC-06"
+    source_type: "JOSEPHUS_AFTERLIFE_INTERPRETATION_CONTROL"
+    author_or_corpus: "Jonathan Klawans"
+    title_or_work: "Josephus and the Theologies of Ancient Judaism, chapter 3: Afterlives and Noble Deaths"
+    passage_or_scope: "Chapter 3, pp. 92-136"
+    date_or_date_range: "2012"
+    language: "English"
+    edition_translation_or_repository: "Oxford University Press / Oxford Academic"
+    stable_url_or_identifier:
+      - "https://academic.oup.com/book/6671/chapter-abstract/150711333"
+      - "doi:10.1093/acprof:oso/9780199928613.003.0003"
+    access_status: "PUBLISHER_ABSTRACT_ACCESSED__FULL_CHAPTER_ACCESS_FAILURE_RECORDED"
+    primary_or_secondary: "SECONDARY_SCHOLARSHIP"
+    provenance_notes: "Oxford Academic exposes the chapter abstract and explicitly reports that full chapter access is unavailable to the current session."
+    dependence_or_independence_notes: "Acquired as a competing control to Yli-Karjanmaa rather than as a tie-breaker."
+    what_source_contains_observation_only:
+      - "The abstract distinguishes Pharisaic eventual re-embodiment from Essene immortality of disembodied souls in Josephus."
+      - "It states that the chapter compares Josephus with rabbinic and Dead Sea material and treats ancient Jewish afterlife views as differentiated."
+    frozen_propositions_or_routes_potentially_served: ["EMP-SECOND-TEMPLE-CONCEPTS","SRC-06 semantic control","SRC-18 adverse/critical control"]
+    limitations:
+      - "Full chapter text was not accessible through the publisher route and is therefore not represented as reviewed."
+      - "Abstract-level characterization is insufficient for any later fine-grained adjudication without renewed access."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-048"
+    stratum_id: "SRC-19"
+    source_type: "AMBIGUOUS_NONCHRISTIAN_NOTICE_TEXTUAL_CONTROL"
+    author_or_corpus: "Suetonius with Jobjorn Boman and Dixon Slingerland controls"
+    title_or_work: "Divus Claudius 25.4 and modern textual/historical controls"
+    passage_or_scope: "Claudius 25.4"
+    date_or_date_range: "Suetonius early second century; modern controls 1989 and 2011"
+    language: "Latin source represented in English translation; English/Germanic manuscript discussion in secondary scholarship"
+    edition_translation_or_repository: "Lexundria Rolfe translation; ResearchGate abstract for Boman 2011; JSTOR open-access Slingerland 1989"
+    stable_url_or_identifier:
+      - "https://lexundria.com/suet_cl/25.4/r"
+      - "doi:10.1484/J.LA.5.100355"
+      - "https://www.researchgate.net/publication/285147716_Inpulsore_Cherestro_Suetonius%27_Divus_Claudius_254_in_Sources_and_Manuscripts"
+      - "https://www.jstor.org/stable/1453891"
+    access_status: "PRIMARY_TRANSLATION_ACCESSED__BOMAN_ABSTRACT_ONLY__SLINGERLAND_FULL_ARTICLE_SURFACED"
+    primary_or_secondary: "PRIMARY_NONCHRISTIAN_NOTICE_PLUS_SECONDARY_TEXTUAL_HISTORICAL_CONTROLS"
+    provenance_notes: "Primary wording and two modern controls were acquired after Reviewer C identified this omitted notice class."
+    dependence_or_independence_notes: "The sentence itself does not identify Chrestus as Jesus; later identification is an interpretive question."
+    what_source_contains_observation_only:
+      - "The accessed translation says Claudius expelled Jews from Rome because of repeated disturbances at the instigation of Chrestus."
+      - "Boman's abstract argues that Chresto is the most trustworthy reading and that Christo likely reflects later Christian transmission."
+      - "Slingerland argues that the Suetonian event cannot simply be equated with Cassius Dio's notice to date it to 41 CE."
+    frozen_propositions_or_routes_potentially_served: ["P-HIST-JESUS","SRC-19 ambiguous notice control","SRC-18 adverse textual control"]
+    limitations:
+      - "Boman full text was not accessible through the checked authoritative route; only its abstract was acquired."
+      - "Identification of Chrestus, date, and independence from Christian information remain unresolved."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-049"
+    stratum_id: "SRC-18"
+    source_type: "ADVERSE_RESURRECTION_HISTORIOGRAPHY_CONTROL"
+    author_or_corpus: "Gerd Luedemann; John Dominic Crossan; Michael Goulder"
+    title_or_work: "Vision, burial/empty-tomb, and appearance-development critical formulations"
+    passage_or_scope: "Luedemann 1994 book; Crossan 1994 book chapters 6-7; Goulder 1996 chapter pp. 48-61"
+    date_or_date_range: "1994-1996"
+    language: "English translations/publications"
+    edition_translation_or_repository: "Google Books bibliographic/summary pages plus scholarly citation crosschecks"
+    stable_url_or_identifier:
+      - "https://books.google.com/books/about/The_Resurrection_of_Jesus.html?id=Vxh4NAAACAAJ"
+      - "https://books.google.com/books/about/Jesus.html?id=R76BnTswxEsC"
+      - "https://books.google.com/books/about/Resurrection_Reconsidered.html?id=s7YNAQAAMAAJ"
+      - "https://repository.up.ac.za/server/api/core/bitstreams/7cd68e69-7454-420d-ab3b-5663e2965100/content"
+      - "https://ntweblog.blogspot.com/2010/02/michael-goulder-on-resurrection.html"
+    access_status: "BIBLIOGRAPHIC_AND_SUBSTANTIVE_SUMMARY_ACCESS__DIRECT_FULL_TEXT_MIXED_OR_LIMITED"
+    primary_or_secondary: "SECONDARY_HISTORIOGRAPHY"
+    provenance_notes: "Acquired because Reviewer C found the 41-record inventory lacked a serious academic vision/empty-tomb critical stream."
+    dependence_or_independence_notes: "These are adverse formulations and are not treated as neutral controls or as established explanations."
+    what_source_contains_observation_only:
+      - "Google Books describes Luedemann's thesis as locating the origin of Easter faith in visions of Peter and other disciples and as separating that origin from the empty tomb."
+      - "Crossan's 1994 book metadata confirms chapters devoted to crucifixion/burial and resurrection tradition; accessible scholarly crosschecks place his Joseph-of-Arimathea/burial skepticism in the chapter-six range rather than at page 169."
+      - "Accessible scholarly citations identify Crossan 1994 pp. 169-170 with a different claim about the political/authority function of appearance narratives, so Reviewer C's page-169 empty-tomb pointer is preserved as a citation mismatch rather than silently repeated."
+      - "Google Books identifies Goulder's chapter The Baseless Fabric of a Vision at pp. 48-61; scholarly bibliographies characterize it as a vision-based naturalistic account."
+    frozen_propositions_or_routes_potentially_served: ["H-IND","H-SOC","H-SEED-SPREAD","R-PHYS-REFINEMENT","R-TRANS","V","L","SRC-18 adverse search"]
+    limitations:
+      - "Luedemann full book text was not directly available in the acquired route; publisher/book-summary-level thesis was accessible."
+      - "Crossan's exact 1994 target pages were not directly exposed by Google Books; page claims were crosschecked through scholarly literature and the mismatch is explicitly preserved."
+      - "Goulder's exact full chapter was not acquired from a publisher or institutional full-text route; bibliographic identity and scholarly descriptions were acquired."
+      - "No psychological, historical, or theological conclusion from these works is adopted in G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-050"
+    stratum_id: "SRC-01"
+    source_type: "PRIMARY_EARLY_CHRISTIAN_TEXTUAL"
+    author_or_corpus: "Paul / 2 Corinthians"
+    title_or_work: "2 Corinthians"
+    passage_or_scope: "5:1-10"
+    date_or_date_range: "TBD under SRC-02"
+    language: "Koine Greek"
+    edition_translation_or_repository: "SBL Greek New Testament via Bible Gateway"
+    stable_url_or_identifier: "https://www.biblegateway.com/passage/?search=2+Corinthians+5%3A1-10&version=SBLGNT"
+    access_status: "ACCESSED"
+    primary_or_secondary: "PRIMARY_TEXT_IN_MODERN_CRITICAL_EDITION"
+    provenance_notes: "Acquired because Reviewer C identified the passage as omitted from the Pauline embodiment corpus."
+    dependence_or_independence_notes: "Its relation to 1 Corinthians 15 and any reconstruction of Pauline anthropology is reserved for later source/semantic analysis."
+    what_source_contains_observation_only:
+      - "Paul contrasts an earthly tent with a building/dwelling from God and speaks of longing to be further clothed rather than found naked."
+      - "The passage says mortality is to be swallowed up by life."
+      - "It also contrasts being at home in the body with being away from the Lord and speaks of appearing before Christ's judgment seat for things done through the body."
+    frozen_propositions_or_routes_potentially_served: ["early resurrection/afterlife semantic inventory","R-TRANS","V","EMP-SECOND-TEMPLE-CONCEPTS"]
+    limitations:
+      - "The passage contains multiple body/dwelling metaphors; their metaphysical interpretation is not assigned in G1."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-051"
+    stratum_id: "SRC-19"
+    source_type: "LATER_CROSS_TRADITION_RECEPTION_CONTROL"
+    author_or_corpus: "Lucian of Samosata"
+    title_or_work: "The Passing of Peregrinus"
+    passage_or_scope: "11-13"
+    date_or_date_range: "Second century; associated with Peregrinus's death in 165 CE and therefore outside the approximately-150-CE evidence window for direct event evidence"
+    language: "Greek with A. M. Harmon English translation"
+    edition_translation_or_repository: "Loeb Classical Library 1936 text/translation reproduced by Early Church Texts and Roger Pearse"
+    stable_url_or_identifier:
+      - "https://www.earlychurchtexts.com/main/lucian/passing_of_peregrinus.shtml"
+      - "https://earlychurchtexts.com/public/lucian_passing_of_peregrinus.htm"
+      - "https://www.roger-pearse.com/tertullian/rpearse/lucian/peregrinus.htm"
+    access_status: "GREEK_AND_ENGLISH_EXCERPT_ACCESSED"
+    primary_or_secondary: "PRIMARY_LATER_GRECO_ROMAN_TEXT_IN_CLASSICAL_EDITION_REPRODUCTION"
+    provenance_notes: "Acquired as explicitly date-bounded later reception, as required by Reviewer C."
+    dependence_or_independence_notes: "Not eligible to be silently projected backward as first-century event evidence."
+    what_source_contains_observation_only:
+      - "Lucian describes Peregrinus associating with Christians in Palestine."
+      - "The passage says Christians continued to worship the man crucified in Palestine who introduced their new cult and describes Christian mutual support and beliefs about immortality."
+    frozen_propositions_or_routes_potentially_served: ["SRC-19 reception context","movement reception/transmission context"]
+    limitations:
+      - "Outside the source plan's approximately-150-CE direct evidence window; retained for reception/formulation control only."
+      - "Lucian is satirical/hostile and its descriptive reliability requires contextual assessment."
+    retrieved_at: "2026-10-06"
+
+  - source_id: "G1W1-052"
+    stratum_id: "SRC-19"
+    source_type: "AMBIGUOUS_SYRIAC_NONCHRISTIAN_OR_CROSS_TRADITION_NOTICE"
+    author_or_corpus: "Mara bar Serapion"
+    title_or_work: "Letter to his son"
+    passage_or_scope: "Cureton 1855 English pp. 70-76 / Syriac pp. 43-48, especially wise-king passage"
+    date_or_date_range: "Disputed; not fixed in G1 and may fall well after the first century"
+    language: "Syriac with English translation"
+    edition_translation_or_repository: "William Cureton, Spicilegium Syriacum (1855), with syri.ac bibliographic control; modern McVey scholarship identified"
+    stable_url_or_identifier:
+      - "https://syri.ac/bibliography/1466529042"
+      - "https://www.tertullian.org/fathers/spicilegium_9_mara.htm"
+      - "https://ptsem.academia.edu/KathleenMcVey/Mara%20bar%20Sarapion"
+    access_status: "LEGACY_SYRIAC_ENGLISH_EDITION_ACCESSED__MODERN_CRITICAL_SCHOLARSHIP_IDENTIFIED__NO_MODERN_CRITICAL_TRANSLATION_FULL_TEXT_CONFIRMED"
+    primary_or_secondary: "ANCIENT_OR_LATE_ANTIQUE_TEXT_IN_LEGACY_SCHOLARLY_EDITION_PLUS_MODERN_CONTEXT"
+    provenance_notes: "Cureton's Syriac/English edition is independently catalogued by syri.ac. McVey's modern study is identified on the author's Princeton-affiliated publication page, but a modern critical translation was not independently confirmed in full text."
+    dependence_or_independence_notes: "The text itself says 'wise king' and does not name Jesus; identification, date, and Christian/non-Christian provenance remain unresolved."
+    what_source_contains_observation_only:
+      - "The letter compares the deaths of Socrates, Pythagoras, and the Jews' wise king and says the wise king lives on through the laws he promulgated."
+      - "The passage connects the death of the wise king with Jewish political loss in the author's rhetorical comparison."
+    frozen_propositions_or_routes_potentially_served: ["SRC-19 ambiguous notice control","P-HIST-JESUS only if identity and dating later satisfy provenance controls","reception context"]
+    limitations:
+      - "No identification of the wise king with Jesus is assigned in G1."
+      - "Dating remains disputed; modern scholarship includes substantially later dating proposals."
+      - "Reviewer C requested a critical translation or explicit access failure: the legacy Syriac/English edition was acquired, but a modern critical translation full text was not confirmed and that limitation is preserved."
+    retrieved_at: "2026-10-06"
+
+
+inventory_state:
+  source_records: 52
+  strata_touched: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-18","SRC-19"]
+  wave_1_complete: false
+  primary_corpus_expansion_rounds: 7
+  provenance_gap_closure_round:
+    status: "BOUNDED_ROUND_COMPLETE__COVERAGE_NOT_SELF_CERTIFIED"
+    closed_or_strengthened:
+      - "Matthew 27 and Acts 3 translation-only primary-text gaps upgraded with SBLGNT Greek."
+      - "2 Maccabees 7 includes a Greek Septuagint-form digital text alongside translation."
+      - "1 Corinthians 15:35-54 separately inventoried for outcome-material resurrection-body vocabulary."
+      - "Roman crucifixion-practice breadth includes Josephus Jewish War 5.449-451 and Seneca with case-specific transfer blocked."
+      - "Josephus Life Niese Greek critical-edition identity is pinned through Perseus."
+      - "Giv'at ha-Mivtar provenance strengthened with an institutional artifact entry."
+      - "Jewish resurrection/afterlife context includes 4 Ezra and Sibylline Oracles IV plus a scholarly breadth map."
+      - "Cross-tradition early-second-century context includes Pliny Letters 10.96."
+    unresolved_preserved:
+      - "Exact Greek text extraction for Josephus Life 420-421 from the identified Niese/Perseus edition remains unresolved."
+      - "Several SRC-02 source-dependence works remain abstract/extract-only or paywalled; their bibliographic identities and access limits are preserved."
+      - "4Q521 direct Brill critical-edition access remains unavailable in this acquisition record."
+      - "2 Baruch remains represented through legacy translation plus scholarly context unless later truth-critical use requires a modern critical Syriac/translation edition."
+      - "Legacy-translation and compositional-history limitations remain for Sibylline Oracles IV."
+  reviewer_c_src_18_probe:
+    report: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_REPORT_0_1_0.md"
+    report_blob_sha: "b9721b4529e186b5e26a8e4dfe94f558ffee2451"
+    report_commit: "f2d6319408c90c88bb27354918927e52d8c0b6ea"
+    disposition: "SRC_18_PROBE_FINDINGS_REQUIRE_ACQUISITION"
+    validity: "ACCEPTED_FOR_G1_FOLLOWUP"
+    coverage_certification: "NONE"
+  reviewer_c_followup_acquisition_round:
+    status: "BOUNDED_ACQUISITION_COMPLETE__ACCESS_LIMITATIONS_PRESERVED__SEPARATE_COVERAGE_STATE_REVIEW_PENDING"
+    added_source_records: 11
+    source_ids: ["G1W1-042","G1W1-043","G1W1-044","G1W1-045","G1W1-046","G1W1-047","G1W1-048","G1W1-049","G1W1-050","G1W1-051","G1W1-052"]
+    strengthened_or_added_classes:
+      - "SRC-04 medical crucifixion-mechanism literature with both uncertainty and death-affirming survey positions preserved."
+      - "SRC-06 afterlife diversity through Wisdom of Solomon, Josephus sectarian reports, and competing Yli-Karjanmaa/Klawans interpretations."
+      - "SRC-19 ambiguous non-Christian/cross-tradition notice controls through Suetonius and Mara, plus explicitly later Lucian reception."
+      - "SRC-18 serious adverse resurrection historiography through Luedemann, Crossan, and Goulder."
+      - "SRC-01 Pauline embodiment corpus expanded with 2 Corinthians 5:1-10."
+    access_limits_and_negative_knowledge:
+      - "Klawans chapter 3 publisher abstract acquired; full chapter unavailable in the checked Oxford route."
+      - "Boman 2011 abstract acquired; full article unavailable in the checked authoritative route."
+      - "Crossan 1994 direct page-level access remained limited. Scholarly crosschecks place burial/Joseph skepticism in the chapter-six range while pp. 169-170 concern authority/leadership interpretation of appearances; Reviewer C's page-169 empty-tomb pointer is therefore preserved as a citation mismatch."
+      - "Goulder 1996 exact chapter full text was not acquired from a publisher or institutional route; bibliographic identity and scholarly descriptions were acquired."
+      - "Mara bar Serapion legacy Syriac/English edition acquired, but a modern critical translation full text was not independently confirmed; dating and identity remain unresolved."
+      - "No access failure is converted into a favorable or unfavorable evidential disposition."
+  known_followups:
+    - "Do not declare COMPLETE or MATERIALLY_COMPLETE coverage from this Program Lead inventory."
+    - "Freeze and execute a separate fresh Reviewer C post-acquisition coverage-state review against this 52-record inventory and the complete G1 exposure ledger."
+    - "The coverage-state reviewer must treat preserved access limitations and the Crossan page-pointer mismatch as first-class negative/provenance knowledge."
+    - "Do not begin G2 lane synthesis unless the separate coverage-state gate and repository authority permit it."
+
+authorization_boundary:
+  g0_authorized: true
+  g1_authorized: true
+  g2_synthesis_started: false
+  proposition_dispositions: "NONE"
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
