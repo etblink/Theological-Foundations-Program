@@ -79,65 +79,56 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G4-REVIEWER-D-LEDGER-INTEGRITY"
-  status: "G4_E1_complete_PASS_WITH_LIMITATIONS__F1_closed_by_Reviewer_C_C4__F2_Reviewer_D_ledger_integrity_pending"
-  purpose: "Close the final protocol-required post-evidence control before G5 by running a fresh disjoint Reviewer-D A17 ledger-integrity review over all classified amendments and the known historical ledger rewrite."
+  id: "TFP-STRESS-2-G5-HUMAN-ACCEPTANCE"
+  status: "G4_complete_PASS_WITH_LIMITATIONS__F1_F2_closed__G5_human_acceptance_ready"
+  purpose: "Present the exact bounded TFP-STRESS-2 adjudication to the human owner for canonical acceptance under Protocol Phase P. No PROPOSED-prefix removal or canonical adjudication entry may occur before explicit human acceptance."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g3_branch: "research/tfp-stress-2-resurrection-g3"
-  g3_branch_head: "43ee1477fc500a28372710f3a57127b4edcaef6a"
+  g3_branch_head: "4732db3d766ec8e1a07780110413133ff09b53e9"
+  g3_branch_tree: "27698931dcb8884b9fa3fa8c9aa651d26999a0d4"
   phase_N_candidate_status:
     path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
     blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
     summary: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
-  g3_provisional_outcome:
-    path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
-    blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
+  proposed_adjudication:
     base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
-    provisional_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
-  g4_audit_E1:
-    report_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
+    q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+    q1_interpretation: "The current evidence does not warrant affirming R_EVENT as true; this is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+    reporting_qualifier: "conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE"
+  g4:
+    strict_audit_report: "TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md"
+    strict_audit_blob_sha: "bd10df2283516e4e6bfd04e367373c750d4e0d27"
     outcome: "PASS_WITH_LIMITATIONS"
-    minor_findings: 8
-  reviewer_C_post_audit_C4:
-    report: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
-    report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
-    result: "A_TO_H_ALL_NEUTRAL__ALL_POST_EVIDENCE_NONMATERIAL__NO_DIRECTIONAL_CONTAMINATION"
-    F1_status: "CLOSED"
-    F3_to_F8_C4_status: "CONFIRMED_FOR_NONMATERIAL_CURRENT_STUDY_USE"
-    integration_closure_blob_sha: "ebe2ae4292cc0b371aca78f41664ff36feec85fb"
-    caveat_F6: "wrong cited module-map blob preserved; F6 use limited to no-disposition-change reconciliation note"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_76.yaml"
-  exposure_ledger_blob_sha: "853668f6e07d42e07691095c110af18ad42f6e78"
-  reviewer_D:
-    status: "ASSIGNMENT_SPEC_FROZEN__PENDING_FRESH_DISJOINT_EXTERNAL_EXECUTION"
-    role: "ledger_integrity_reviewer_only"
-    input_freeze: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_INPUT_FREEZE_0_1_0.yaml"
-    input_freeze_blob_sha: "2185666ef77d39eec36a4f91e3f77211dc752ac9"
-    prompt: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_PROMPT_0_1_0.md"
-    prompt_blob_sha: "f1b8338a1b00c66a74c04513c08cd91e1d602285"
-    role_control: "TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_ROLE_CONTROL_0_1_0.yaml"
-    role_control_blob_sha: "618e9c3353395b95caf882c2ec7bc2ef2e9202ac"
-  supplementary_E2_status: "DEFERRED_OPTIONAL__NOT_REQUIRED_BY_E1_FOR_G5"
+    reviewer_C_C4_report_blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    reviewer_D_ledger_integrity_report_blob_sha: "84ea800532fef7fe814cc0c68f25102034330e9a"
+    reviewer_D_result: "LEDGER_INTEGRITY_CONFIRMED"
+    closure_artifact: "TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_0.yaml"
+    closure_blob_sha: "d9a3a54ef7d96547368c8e0efbff14ed31461b42"
+    F1_closed: true
+    F2_closed: true
+    post_audit_closure_complete: true
+  G5_acceptance_request:
+    path: "TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml"
+    blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
+    human_owner_decision: "PENDING"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g3:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_78.yaml"
+  exposure_ledger_blob_sha: "f378a06c4c0a64590d01746034a4b609e78778b5"
   g4_strict_audit_complete: true
-  F1_closed: true
-  F2_closed: false
-  post_audit_closure_complete: false
-  g5_human_acceptance_ready: false
+  g5_human_acceptance_ready: true
   g5_human_acceptance_complete: false
+  canonical_adjudication_written: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G4-REVIEWER-D-LEDGER-INTEGRITY-EXTERNAL"
-  action: "execute_the_frozen_Reviewer_D_A17_ledger_integrity_review_in_a_fresh_disjoint_external_session_and_return_the_complete_report_verbatim"
+  id: "TFP-STRESS-2-G5-HUMAN-OWNER-DECISION"
+  action: "obtain_explicit_human_owner_acceptance_or_hold_or_decline_for_the_exact_frozen_G5_acceptance_request"
   branch: "research/tfp-stress-2-resurrection-g3"
-  input_freeze_blob_sha: "2185666ef77d39eec36a4f91e3f77211dc752ac9"
-  prompt_blob_sha: "f1b8338a1b00c66a74c04513c08cd91e1d602285"
-  role_control_blob_sha: "618e9c3353395b95caf882c2ec7bc2ef2e9202ac"
+  acceptance_request_blob_sha: "4f1481c8f5a43e9c33e4071031d31fc887e5a2c6"
   requirements:
-    - "fresh session disjoint from Program Lead, Reviewers A/B/C, and Reviewer E"
-    - "repository read-only"
-    - "ledger-integrity role only"
-    - "do not proceed to G5 until F2 is closed"
+    - "human owner alone may accept the canonical adjudication"
+    - "do not remove the PROPOSED_ prefix before explicit acceptance"
+    - "if accepted, create a versioned acceptance record and then mechanically update canonical STATE"
+    - "carry all PASS_WITH_LIMITATIONS limitations and reopen conditions into the canonical adjudication"
 
 qualification_candidate:
   version: "0.1.7"
