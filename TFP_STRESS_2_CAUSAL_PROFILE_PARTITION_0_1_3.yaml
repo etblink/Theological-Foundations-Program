@@ -1,0 +1,160 @@
+schema_version: "0.1.3"
+study_id: "TFP-STRESS-2"
+artifact: "CAUSAL_PROFILE_PARTITION"
+status: "REVIEWER_A_SHORT_CONFIRMATION_COMPLETE__REVIEWER_B_NB2_CLOSED__NB3_F_IMPLEMENTATION_REPAIRED__FINAL_NARROW_CONFIRMATION_PENDING"
+supersedes: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
+
+causal_role_ladder_ref: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+
+mechanisms:
+  M-IND-EXP:
+    label: "founding individual subjective-experience mechanism"
+  M-SOC-EXP:
+    label: "founding social/group subjective-experience mechanism"
+  M-INTERP:
+    label: "founding interpretive/scriptural/theological mechanism"
+  M-FOUNDING-FAB:
+    label: "founding-stratum deliberate fabrication mechanism"
+  M-LATER-NARR:
+    label: "later narrative/memory/literary development mechanism"
+  M-BODY:
+    label: "body-disposition/tomb mechanism"
+
+module_id_aliases:
+  canonical: ["M-IND-EXP","M-SOC-EXP","M-INTERP","M-FOUNDING-FAB","M-LATER-NARR","M-BODY"]
+  deprecated_aliases:
+    M-EXP-IND: "M-IND-EXP"
+    M-EXP-SOC: "M-SOC-EXP"
+    M-INT: "M-INTERP"
+    M-NARR: "M-LATER-NARR"
+  rule: "All downstream artifacts must use the canonical IDs. Deprecated aliases exist only to interpret superseded 0.1.x artifacts."
+
+global_partition_rules:
+  - "PRIMARY and NECESSARY_CONTRIBUTING are outcome-material founding causal roles."
+  - "CONTRIBUTING_NONNECESSARY and NONE do not satisfy a candidate's required founding mechanism."
+  - "A candidate that requires a mechanism at PRIMARY or NECESSARY_CONTRIBUTING is distinct from a candidate that permits that mechanism only at CONTRIBUTING_NONNECESSARY or NONE."
+  - "Later narrative mechanisms may be necessary for a frozen later-development pattern without being founding-proclamation causes. M-BODY is a Q1-ontology-neutral search/trigger control only; it is not necessary for H, L, F, or C-HET ranking eligibility and does not itself strengthen or weaken R-TRANS, V, H, L, or C-HET."
+  - "Founding-stratum deliberate fabrication means a founding actor knowingly asserts or constructs an event/encounter claim the actor believes materially false, intending or accepting that it be taken as true by the movement."
+  - "Later literary/theological elaboration is not M-FOUNDING-FAB unless it is itself required as an origin-material knowingly false founding assertion."
+  - "No candidate may change a mechanism's allowed role after evidence exposure except through C4."
+  - "Every outcome-material founding role vector must either match exactly one admitted causal profile or route to REVISED_CANDIDATE_REQUIRED; unmatched serious vectors are never silently treated as excluded."
+  - "A role vector is evaluated on PRIMARY/NECESSARY_CONTRIBUTING versus CONTRIBUTING_NONNECESSARY/NONE boundaries before candidate ranking."
+
+profiles:
+  H-IND:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "If M-SOC-EXP is PRIMARY or NECESSARY_CONTRIBUTING while M-INTERP is nonnecessary, route to H-SEED-SPREAD. If M-INTERP is PRIMARY or NECESSARY_CONTRIBUTING, route to the uniquely matching C-HET profile if one exists; otherwise REVISED_CANDIDATE_REQUIRED."
+    genuine_experience_required: true
+
+  H-SOC:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["PRIMARY"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "H-SOC requires genuine non-veridical subjective experiences in a social/group process; report formation without genuine experiences does not satisfy H-SOC. If M-IND-EXP is PRIMARY or NECESSARY_CONTRIBUTING while M-INTERP is nonnecessary, route to H-SEED-SPREAD. If M-INTERP is also necessary, route to C-HET-SEED-SPREAD."
+    genuine_experience_required: true
+
+  H-SEED-SPREAD:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-SOC-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "M-IND-EXP and M-SOC-EXP are both required at PRIMARY or NECESSARY_CONTRIBUTING; at least one is PRIMARY; M-INTERP is not necessary."
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "This is the explicit home for a serious individual-seed plus social-amplification naturalistic chain when interpretation is not necessary. If interpretation becomes PRIMARY or NECESSARY_CONTRIBUTING, route to C-HET-SEED-SPREAD."
+
+  L:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["PRIMARY"]
+      M-FOUNDING-FAB: ["NONE"]
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN","OPTIONAL_SUPPORTING"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "Any founding experience mechanism at PRIMARY or NECESSARY_CONTRIBUTING excludes L. Founding deliberate fabrication excludes L and routes to F or a revised candidate."
+
+  F:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-FOUNDING-FAB: ["PRIMARY"]
+    later_pattern:
+      M-LATER-NARR: ["OPTIONAL_SUPPORTING","NONE"]
+      M-BODY: ["IMPLEMENTATION_SPECIFIC_ONLY"]
+    registered_implementation_partition:
+      allowed: ["F-NONBODY-ASSERTION","F-BODY-REMOVAL"]
+      F_NONBODY_ASSERTION: "Knowing false origin-material assertion/construction with no necessary body-removal action; must independently satisfy the motive/opportunity/implementation burden through actor access and viable assertion/transmission."
+      F_BODY_REMOVAL: "Knowing false origin-material assertion plus deliberate body removal/concealment; body evidence is bound symmetrically to this implementation only."
+      closure: "At least one registered implementation must independently satisfy P-F-MOTIVE-OPPORTUNITY-ROUTE. Closure of F-BODY-REMOVAL leaves only F-NONBODY-ASSERTION; no third implementation may be introduced after exposure except C4."
+    closure: "F requires origin-material knowing deception. Later narrative invention that is not origin-material does not by itself satisfy F. A veridical founding encounter at PRIMARY or NECESSARY_CONTRIBUTING strength routes to REVISED_CANDIDATE_REQUIRED."
+  C-HET-IND:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-SOC-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "M-IND-EXP and M-INTERP must each be at least NECESSARY_CONTRIBUTING; at least one must be PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "If M-INTERP is only CONTRIBUTING_NONNECESSARY/NONE, route to H-IND. If M-IND-EXP is only CONTRIBUTING_NONNECESSARY/NONE, route to L."
+
+  C-HET-SOC:
+    founding_roles:
+      M-IND-EXP: ["CONTRIBUTING_NONNECESSARY","NONE"]
+      M-SOC-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "M-SOC-EXP and M-INTERP must each be at least NECESSARY_CONTRIBUTING; at least one must be PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "If M-INTERP is only CONTRIBUTING_NONNECESSARY/NONE, route to H-SOC. If M-SOC-EXP is only CONTRIBUTING_NONNECESSARY/NONE, route to L."
+
+  C-HET-SEED-SPREAD:
+    founding_roles:
+      M-IND-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-SOC-EXP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-INTERP: ["PRIMARY","NECESSARY_CONTRIBUTING"]
+      M-FOUNDING-FAB: ["NONE"]
+    cross_constraint: "All three founding mechanisms are required at PRIMARY or NECESSARY_CONTRIBUTING; at least one is PRIMARY."
+    later_pattern:
+      M-LATER-NARR: ["NECESSARY_FOR_LATER_PATTERN"]
+      M-BODY: ["Q1_ONTOLOGY_NEUTRAL_TRIGGER_ONLY"]
+    closure: "This is the explicit home for individual-seed plus social-amplification plus interpretive processing. Removing any one required founding mechanism changes the candidate."
+
+unmatched_role_vector_rule:
+  default: "REVISED_CANDIDATE_REQUIRED"
+  application: "Any serious founding causal-role vector not matching exactly one frozen profile is not absorbed by the nearest candidate and is not silently excluded."
+  examples:
+    - "founding fabrication plus necessary interpretation with no necessary sincere-experience mechanism"
+    - "founding fabrication plus necessary sincere experience"
+    - "a newly evidenced mechanism not in the frozen module alphabet"
+
+mixed_deception_and_fabrication_boundary:
+  status: "B4_SUBSTANTIVE_EXCLUSION_FOR_SPECIFIED_MIXED_DECEPTION_SINCERITY_CLASS"
+  rule: "The specifically reviewed class requiring M-FOUNDING-FAB together with any sincere-experience mechanism at PRIMARY or NECESSARY_CONTRIBUTING is not admitted in this cycle."
+  serious_rival_basis: "Reviewer A found no determinate independently formulated serious model requiring both founding-stratum deliberate deception and necessary sincere experience. Pure founding deception is F; sincere experience plus later legendary/literary development is covered by H/C-HET/L structures."
+  truth_warrant_condition_11_effect: "This frozen B4 determination counts as the required showing that this specified mixed class is not an unresolved serious rival for Protocol TRUTH_WARRANTED condition 11."
+  broader_fabrication_composites: "Other unmatched fabrication combinations, including founding fabrication plus necessary interpretation without necessary sincere experience, are not assumed excluded by this determination; if serious and outcome-material they route to REVISED_CANDIDATE_REQUIRED."
+  fallback: "Do not retrofit an admitted candidate after evidence exposure."
+
+review:
+  reviewer_A_short_confirmation: "COMPLETE__B4_A8_PASS_WITH_LIMITATIONS__MECHANICAL_FIXES_APPLIED"
+  reviewer_C_tier_review: "PENDING_AFTER_B4_FREEZE"
