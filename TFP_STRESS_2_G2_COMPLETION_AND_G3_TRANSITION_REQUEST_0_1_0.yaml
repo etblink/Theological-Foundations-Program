@@ -1,0 +1,174 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_COMPLETION_AND_G3_TRANSITION_REQUEST"
+status: "G2_SUBSTANTIVE_WORK_COMPLETE__G3_TRANSITION_REQUIRES_EXPLICIT_HUMAN_OWNER_AUTHORIZATION"
+date: "2026-10-06"
+
+authority:
+  governance_version: "0.1.5"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  qualified_protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  human_g0_authorization:
+    path: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+    authorized_through: "G1 plus later procedural transition to G2 after coverage requirements"
+    G3_explicitly_authorized: false
+  canonical_state_at_gate_entry:
+    main_commit: "f02ff3888dcc4306224657ee405a051470620f9c"
+    state_blob_sha: "b1feef82d067f333184b5fc873377e4ac09dff5b"
+    g3_comparative_adjudication_authorized: false
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
+  tree: "fe8064227fe5ad0f9b544506ffab242d30ff992a"
+  rule: "This is the frozen G2 substantive checkpoint for transition review. Later ledger/request commits do not alter the 50 proposition dispositions."
+
+g2_completion:
+  g1_closed: true
+  g2_lane_synthesis_authorized: true
+  lanes:
+    L1:
+      freeze: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+      blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+      result: "13_PARTIALLY_SUPPORTED__14_NOT_ESTABLISHED"
+    L2:
+      substantive_freeze: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml"
+      blob_sha: "b97031af9bbf3641fc54aeaf9aafe61799ca8143"
+      pointer_repair: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml"
+      pointer_repair_blob_sha: "181ab979d41f2b5ae45fceb9750564a49e5748ec"
+      result: "1_SUPPORTED__4_PARTIALLY_SUPPORTED__9_NOT_ESTABLISHED__1_EVIDENCE_AGAINST"
+      supported: "P-DEATH"
+      evidence_against: "P-S1-NONDEATH"
+    L3:
+      freeze: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+      result: "11_PARTIALLY_SUPPORTED__4_PLAUSIBLE_BUT_UNATTESTED__17_NOT_ESTABLISHED"
+    L4:
+      freeze: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+      blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+      result: "9_PARTIALLY_SUPPORTED__4_PLAUSIBLE_BUT_UNATTESTED__16_NOT_ESTABLISHED"
+    L5:
+      freeze: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_LANE_FREEZE_0_1_0.yaml"
+      blob_sha: "1a5ab10c51842e843ea15361533f342d929079e0"
+      result: "3_PARTIALLY_SUPPORTED__3_PLAUSIBLE_BUT_UNATTESTED__2_NOT_ESTABLISHED"
+    L6_causal_attribution_subphase:
+      freeze: "TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_FREEZE_0_1_0.yaml"
+      blob_sha: "0859f241ffb4de8f9d5884f44fd6a2f6d2233ac4"
+      result: "2_PARTIALLY_SUPPORTED__1_PLAUSIBLE_BUT_UNATTESTED__12_NOT_ESTABLISHED"
+      coverage: "15_MATERIALLY_COMPLETE_WITH_LISTED_GAPS__0_INCOMPLETE"
+      positive_causal_role_vector_selected: false
+      serious_unmatched_causal_role_vector_found: false
+      revised_candidate_required_triggered: false
+
+  shared_floor_preconsolidation:
+    reviewer_C_report:
+      path: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+      blob_sha: "c1647cc86b05185ebd9c23cfba01caf900a6edbb"
+      coverage_result: "0_COMPLETE__3_MATERIALLY_COMPLETE_WITH_LISTED_GAPS__0_INCOMPLETE"
+    disposition_freeze:
+      path: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_DISPOSITION_FREEZE_0_1_0.yaml"
+      blob_sha: "ba00ad992a08db3dde1b34302644b84abd23dd82"
+    dispositions:
+      P_HIST_JESUS: "SUPPORTED_WITHIN_SCOPE"
+      P_EARLY_PROCLAMATION_EXISTENCE: "SUPPORTED_WITHIN_SCOPE"
+      P_CRUC: "SUPPORTED_WITHIN_SCOPE"
+    relative_candidate_credit: "NONE"
+
+  phase_L:
+    consolidation:
+      path: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+      blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+    unique_necessary_propositions: 50
+    disposition_summary:
+      SUPPORTED_WITHIN_SCOPE: 4
+      PARTIALLY_SUPPORTED_WITHIN_SCOPE: 17
+      PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 4
+      NOT_ESTABLISHED_WITHIN_SCOPE: 24
+      EVIDENCE_AGAINST_WITHIN_SCOPE: 1
+      CONTRADICTED_WITHIN_SCOPE: 0
+      UNDERDETERMINED_WITHIN_SCOPE: 0
+      INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+    cross_lane_material_conflicts_remaining: 0
+    promoted_by_cross_lane_vote_counting: false
+    two_reasoned_reconciliations:
+      - "P-HIND-FOUNDING-CAUSAL -> NOT_ESTABLISHED_WITHIN_SCOPE by weakest necessary causal facet."
+      - "P-V-REAL-REFERENT -> PARTIALLY_SUPPORTED_WITHIN_SCOPE because L5 philosophical live-ness neither defeats nor independently promotes L3 testimonial support."
+    confidence_review_trigger_currently_live: false
+    cumulative_fragility_trigger_currently_live: false
+    reason: "Every admitted full candidate has at least one candidate-specific necessary proposition below SUPPORTED_WITHIN_SCOPE, so no confidence-class change can presently satisfy the all-SUPPORTED TRUTH_WARRANTED condition."
+    candidate_status_assigned: false
+    reason_candidate_status_unassigned: "A12 status assignment is Phase N / G3."
+
+  phase_M:
+    status: "NOT_APPLICABLE_TO_CURRENT_FROZEN_NECESSARY_PROPOSITION_SET"
+    reason: "No frozen necessary proposition is a C0-C7 continuity/genealogy proposition. R-PHYS material-continuity is a non-status refinement and creates no separate status-bearing Phase-M burden."
+
+g2_post_evidence_controls:
+  reviewer_C:
+    coverage_reviews_complete_for_all_proposition_scopes_reached: true
+    fragility_role_triggered: false
+  reviewer_D:
+    status: "UNASSIGNED__POST_EVIDENCE_CONTROLS_ELIGIBLE__NOT_LAUNCHED"
+    direction_result_review_triggered: false
+    confidence_review_triggered: false
+    ledger_integrity_review_required_before_G3_entry: false
+    reason: "No valid post-evidence direction result has been generated, and the L4 confidence trigger is currently dormant."
+  comparison_makeable_certification:
+    status: "NOT_YET_REQUIRED"
+    reason: "Phase N has not assigned A12 status. Only RANKING_ELIGIBLE candidates proceed to pairwise dominance; outcome-relevant comparison set is therefore not yet determined."
+  strict_auditor:
+    status: "RESERVED_FOR_AFTER_G3_SYNTHESIS_FREEZE"
+
+carried_limitations:
+  - "All G1 access/provenance gaps remain first-class and are carried through the proposition matrices."
+  - "Tacitus source provenance remains uncertain."
+  - "Josephus 20.200 authenticity/wording sensitivity remains carried; Testimonium transmission sensitivity remains carried."
+  - "Synoptic literary dependence remains carried."
+  - "Exact 1 Corinthians 15 formula boundaries remain unresolved."
+  - "Nonhistoricity and noncrucifixion node rivals remain preserved at node level."
+  - "Prospectively frozen probative-absence ceilings remain binding."
+  - "No scholarly-consensus shortcut has been used as evidence."
+  - "No candidate receives credit from a rival's failure."
+  - "No global Christianity, divine-agent, or theological-framework conclusion is authorized from this study state."
+
+g2_exit_gate:
+  evidence_coverage_sufficient_for_phase_L: true
+  all_required_proposition_scope_coverage_for_g2_dispositions: true
+  all_50_necessary_propositions_consolidated: true
+  unresolved_G2_blocker: false
+  G2_substantive_work_complete: true
+  G3_authorized: false
+  candidate_status_assigned: false
+  comparison_direction_results_valid: false
+  candidate_ranking_permitted: false
+  proposed_study_outcome_assigned: false
+  resurrection_verdict_assigned: false
+  theological_outcome: "NONE"
+
+human_owner_G3_transition_gate:
+  required: true
+  decision: "PENDING"
+  reason:
+    - "Canonical STATE explicitly marks G3 comparative adjudication unauthorized."
+    - "The exact G0 human authorization explicitly authorized G1 and later transition to G2, but did not authorize G3."
+    - "Governance forbids treating state/authority transitions as implicit."
+  exact_authorization_requested: "I authorize TFP-STRESS-2 to transition from completed G2 lane synthesis into G3 comparative adjudication under qualified Protocol 0.1.7, using substantive checkpoint 744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95 / tree fe8064227fe5ad0f9b544506ffab242d30ff992a and the frozen 50-proposition Phase-L consolidation TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml blob 150e8e711ac97be6bd31c668b0638246b57e57ab. This authorizes Phase N candidate-status assignment and only the comparison/Reviewer-C/Reviewer-D work that Protocol 0.1.7 makes outcome-relevant after that assignment. It does not pre-authorize any candidate ranking, study outcome, resurrection verdict, divine-agent attribution, Christianity-wide claim, G4 audit result, or G5 canonical theological acceptance."
+  if_approved:
+    - "Record human authorization verbatim in a frozen G3 transition acceptance artifact."
+    - "Create the G3 successor branch from the exact accepted G2 checkpoint/control state."
+    - "Update canonical STATE to G3 authorized/active."
+    - "Begin Phase N by assigning A12 candidate statuses from the frozen 50-proposition consolidation."
+    - "Only then determine which comparisons and post-evidence controls are outcome-relevant."
+  if_not_approved:
+    - "Hold TFP-STRESS-2 at G2 complete with no G3 outcome."
+
+ledger:
+  current_path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_66.yaml"
+  current_blob_sha: "72b46a9565b252616637dfd0a386340e78cd7a7e"
+  next_sequence: 130
+
+next_action:
+  id: "TFP-STRESS-2-G3-HUMAN-AUTHORIZATION"
+  action: "Obtain explicit human-owner authorization for the frozen G2-to-G3 transition request. Do not enter Phase N before approval."
