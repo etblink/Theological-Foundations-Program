@@ -12,7 +12,7 @@ causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_2.yaml"
 formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
 exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_13.yaml"
 
-native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective-experience seed, a distinct social/group amplification process, and a founding interpretive/scriptural process were all causally necessary to the founding proclamation, each PRIMARY or NECESSARY_CONTRIBUTING and at least one PRIMARY. Later narrative development and the frozen body-disposition module are also necessary to the overall evidence pattern but have no founding experiential causal role. No veridical referent and no founding deliberate fabrication occurred."
+native_formulation: "Jesus was crucified and died. A genuine nonveridical individual subjective-experience seed, a distinct social/group amplification process, and a founding interpretive/scriptural process were all causally necessary to the founding proclamation, each PRIMARY or NECESSARY_CONTRIBUTING and at least one PRIMARY. Later narrative development remains necessary to the later-development pattern. M-BODY is only a non-ranking contradiction/compatibility expectation and has no founding experiential causal role. No veridical referent and no founding deliberate fabrication occurred."
 
 proponent_sources:
   - id: "FORM-H-001"
@@ -57,7 +57,6 @@ internal_success_conditions:
   - "An individual seed temporally/dependentially precedes or materially feeds the social-amplification process."
   - "Interpretive processing is independently necessary rather than an optional gloss."
   - "M-LATER-NARR is independently supported later and remains founding-causally NONE."
-  - "P-CHET-BODY satisfies the exact packet definition."
   - "No founding fabrication or veridical referent is supported."
 
 body_disposition_control:
@@ -76,7 +75,7 @@ expected_evidence:
   - "A distinct necessary social/group amplification process with genuine subjective-experience or durable private-memory effects."
   - "Independent necessary founding scriptural/interpretive processing."
   - "A later narrative-development sequence with the frozen timing role."
-  - "Body-disposition evidence satisfying P-CHET-BODY."
+  - "Body-disposition evidence is neutral unless it triggers the frozen M-BODY contradiction condition; it cannot raise candidate status."
   - "Joint evidence that all three founding modules are needed; no single-process profile suffices."
 
 recognized_objections:
@@ -90,7 +89,7 @@ caricatures_rejected:
   - "C-HET-SEED-SPREAD is not a catch-all residual explanation."
   - "No module is optional."
   - "Later narrative development cannot be promoted to a founding cause."
-  - "The body module cannot be invented post hoc."
+  - "The M-BODY expectation is frozen before G0 and cannot be used as posthoc support."
 
 native_or_proponent_review:
   status: "SYNTHETIC_SERIOUS_MODULE_CONJUNCTION"
