@@ -1,0 +1,157 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L5_PHILOSOPHICAL_METAPHYSICAL_LANE_FREEZE"
+status: "K4_FROZEN__L5_SCOPE_COMPLETE__8_PROPOSITION_FACET_DISPOSITIONS_ISSUED__NO_SUPPORTED_RESULTS__CROSS_LANE_CONSOLIDATION_PENDING"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  background_register_blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
+  background_interaction_matrix_blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
+  l5_matrix: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_1.yaml"
+  l5_matrix_blob_sha: "9ee7786338227d30ee347980301809c4a0b531b2"
+  l5_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L5_POST_RETURN_COVERAGE_RECHECK_REPORT_0_1_0.md"
+  l5_coverage_report_blob_sha: "0e60d0214e121018f559059ab43eafae11687f24"
+  l5_coverage_state: "ALL_8_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  targeted_return_acquisition: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml"
+  targeted_return_acquisition_blob_sha: "e7ce6e5f16e922c44f2a2f2c4b8d056e934fe62d"
+  l3_lane_freeze_blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  l4_lane_freeze_blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+
+lane:
+  id: "L5"
+  title: "Philosophical/metaphysical"
+  competence: ["extramentality","embodiment/nonembodiment","personal identity","postmortem/anomalous-state possibility","testimony/anomaly epistemology sensitivity"]
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  supported_sufficiency_records_required: false
+  reason_no_supported_sufficiency_records: "No L5 proposition reaches SUPPORTED_WITHIN_SCOPE because the acquired philosophical record makes the relevant possibilities and criteria reviewable but does not independently establish target-case actuality."
+  unresolved_conflicts_listed: true
+  exact_version_fixed: true
+
+background_sensitivity_findings:
+  BGD_1:
+    result: "SENSITIVITY_OPERATIONAL__NO_VARIANT_SELECTED"
+    finding: "Causal closure, interventionist theism, noninterventionist theism, and non-theistic survival make materially different postmortem/anomalous possibilities admissible, but none is evidence merely by being live."
+  BGD_2:
+    result: "SENSITIVITY_OPERATIONAL__NO_PRIOR_SELECTED"
+    finding: "Restrictive, agnostic-open, and generic-theistic anomaly priors change evidential thresholds but do not themselves provide event evidence."
+  BGD_9:
+    result: "SENSITIVITY_OPERATIONAL__NO_EPISTEMOLOGY_SELECTED"
+    finding: "Reductionist and anti-reductionist testimony theories change default testimonial warrant while preserving defeaters; neither settles the ancient case by itself."
+  BGD_11:
+    result: "SENSITIVITY_OPERATIONAL__EIGHT_PERMITTED_PAIRS_ONLY"
+    finding: "Embodiment and same-person identity are theory-sensitive and separable; all eight frozen pairings are operationally reviewable, with excluded pairs still excluded."
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 0
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 3
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 3
+  NOT_ESTABLISHED_WITHIN_SCOPE: 2
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-R-BODY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l5_facet: "The textual record contains early resurrection-body language and later bodily-interaction motifs, while the L5 return supplies multiple coherent embodiment/identity models under which EMB-1 and EMB-2 can be satisfied."
+    limiting_condition: "The founding-stream referent's actual embodiment is not directly observed; Pauline interpretation remains disputed; later bodily narratives cannot automatically settle founding ontology."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-IDENTITY-JESUS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l5_facet: "The encounter tradition consistently attributes the postmortem referent to Jesus, and the L5 identity frameworks make same-person continuity criteria explicit across the permitted pairs."
+    limiting_condition: "Claimed attribution/recognition is not itself metaphysical numerical identity; FS-01 is one cluster and the nonidentity node rival blocks automatic transfer from embodiment/extramentality to identity."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-REAL-REFERENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l5_facet: "A real extramental referent is metaphysically and epistemically live under several frozen backgrounds, and disputed anomalous-information literature prevents treating extramentality as incoherent in principle."
+    limiting_condition: "No acquired evidence independently establishes an extramental referent in the first-century target case; subjective-only routes remain live and psi evidence is not transferred to Jesus."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l5_facet: "The testimony consistently identifies the claimed referent as Jesus, and the permitted identity frameworks provide explicit same-referent criteria that could in principle be satisfied by a nonembodied subject."
+    limiting_condition: "Actual same-person identity remains unverified; extramentality cannot establish Jesus-identity and the node rival remains an active control."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-NONEMBODIED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l5_facet: "Nonembodied postmortem survival is metaphysically coherent under some frozen backgrounds, but the target-case source record does not establish that the relevant referent failed EMB-1 or EMB-2."
+    limiting_condition: "Pauline body-language interpretations and later bodily motifs supply contrary input; possibility of nonembodied survival is not evidence that this target referent was nonembodied."
+    proposed_confidence: "HIGH_FOR_L5_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l5_facet: "Reductionist testimony models, ordinary error possibilities, and the L3/L4 individual-experience mechanisms keep a subjective-only individual route philosophically live."
+    limiting_condition: "No target-case evidence establishes nonveridicality; weakness of V cannot be converted into H."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l5_facet: "A nonveridical group/social route is philosophically coherent in the abstract, but the frozen candidate specifically requires genuine subjective experiences in the social process and L3/L4 do not establish that occurrence."
+    limiting_condition: "Social propagation or collective belief formation is not enough to establish nonveridical group experience; failure of V cannot establish H-SOC."
+    proposed_confidence: "HIGH_FOR_L5_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l5_facet: "The individual-seed plus social-spread nonveridical model remains philosophically coherent and is supported by real mechanism capacities at the component level."
+    limiting_condition: "The joint target-case instantiation is not attested, and the social limb's genuine-experience requirement remains unresolved."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+l5_findings:
+  - "Metaphysical coherence and historical actuality are distinct. The return repaired reviewability, not actuality."
+  - "R-TRANS receives material support on embodiment and identity surfaces from the textual/recognition record plus coherent identity criteria, but neither reaches full support in L5."
+  - "V remains metaphysically coherent: a real nonembodied referent is not ruled out by the frozen background set. Yet no first-century extramental referent or nonembodiment state is independently established."
+  - "The nonidentity node rival prevents either R or V from converting referent reality/embodiment into Jesus-identity automatically."
+  - "H-IND and H-SEED nonveridicality remain philosophically plausible but target-case unattested; H-SOC remains not established because its own genuine-social-experience requirement is unmet."
+  - "Anomalous-information/psi literature remains only a disputed reference class and carries no direct Jesus-case weight."
+  - "No BGD-1, BGD-2, BGD-9, or BGD-11 variant is promoted into the study as a preferred worldview."
+
+unresolved_l5_conflicts:
+  - "Pauline resurrection-body language remains interpretively disputed despite strong continuity/transformation arguments from Mikkelsen and Ware."
+  - "Later bodily narratives provide positive embodied-content evidence but are later/dependence-limited relative to the founding stream."
+  - "Personal identity can be modeled under multiple incompatible criteria; target-case same-person identity is therefore not reducible to simple recognition language."
+  - "Extramentality and nonveridicality remain genuine rivals under different background/epistemic assumptions; L5 alone does not resolve D4."
+  - "Nonembodied survival can be coherent without being evidenced in the target case."
+  - "Background sensitivity must be carried into Phase-L/G3 rather than collapsed into a single assumed ontology."
+
+arrow_boundary:
+  standalone_l5_arrow_ids_frozen_at_g0: false
+  treatment: "Do not invent post-exposure outcome-material arrows. D3/D4 and A5 endpoint dependencies remain preserved for later comparison/consolidation."
+  c4_change: false
+
+lane_freeze_effect:
+  l5_frozen: true
+  l5_amendments_now_use_C4: true
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required_later: true
+  discriminator_directions_produced: false
+  D3_direction_result_produced: false
+  D4_direction_result_produced: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  lane: "L6"
+  title: "Causal attribution"
+  purpose: "Evaluate the frozen causal-profile roles and founding-proclamation causal necessity/priority using L1-L5 proposition facets without allowing explanatory plausibility, mechanism capacity, or later development to substitute for demonstrated causal role."
