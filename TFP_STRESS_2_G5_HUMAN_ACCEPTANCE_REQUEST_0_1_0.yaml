@@ -1,0 +1,115 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G5_HUMAN_ACCEPTANCE_REQUEST"
+status: "READY_FOR_HUMAN_OWNER_DECISION__NOT_YET_ACCEPTED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+question:
+  id: "Q1"
+  proposition_id: "R_EVENT"
+  text: "Does the best publicly adjudicable historical evidence warrant that Jesus genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+
+scope:
+  event_window:
+    - "the early first-century crucifixion event attributed to Jesus"
+    - "the emergence of the earliest recoverable founding proclamation"
+    - "founding claimed-encounter streams argued to be causally upstream of or contemporaneous with that proclamation"
+  evidence_window:
+    primary: "first-century sources and source layers"
+    development_reception: "early second-century material through approximately 150 CE where materially relevant"
+    later_material_rule: "Later material may be used for textual transmission, methodological comparison, candidate formulation, or reception; it may not be projected backward as early evidence without a transmission/preservation argument."
+  geography: ["Roman Judea/Galilee","Jerusalem where independently supported","relevant eastern Mediterranean networks"]
+  explicit_exclusions:
+    - "Christianity as a whole"
+    - "the Trinity"
+    - "complete incarnation doctrine"
+    - "atonement"
+    - "global biblical inspiration/inerrancy"
+    - "papal/conciliar/denominational authority"
+    - "unrelated prophecy fulfillment"
+    - "all miracles attributed to Jesus"
+    - "later Christian miracle claims as a class"
+    - "a total harmonization of every narrative detail"
+    - "a global historicity/nonhistoricity study"
+    - "the specific causal agent of any event found to have occurred"
+
+proposed_adjudication:
+  base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  post_acceptance_base_outcome: "UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  meaning: "All 11 admitted candidates remain structurally/evidentially adequate, but none meets the frozen ranking-eligibility threshold. No pairwise dominance, BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED result is permitted."
+  q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  q1_plain_language: "The current evidence record does not warrant affirming R_EVENT as true under the frozen protocol."
+  q1_negative_clarification: "This is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+  reporting_qualifier: "Relative 11-candidate result is conditional on a shared-floor P-CRUC of SUPPORTED_WITHIN_SCOPE."
+
+synthesis:
+  phase_L: ["TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml","150e8e711ac97be6bd31c668b0638246b57e57ab"]
+  A12: ["TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml","7ff930c5e31b57b593a56250ef9462763036c6b3"]
+  G3_outcome: ["TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml","dcd196dab83012e96540cced1464293d7fbdb2a2"]
+  A12_count: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+
+audit_and_post_audit_controls:
+  strict_G4_audit:
+    report: ["TFP_STRESS_2_REVIEWER_E_G4_STRICT_AUDIT_REPORT_0_1_0.md","bd10df2283516e4e6bfd04e367373c750d4e0d27"]
+    outcome: "PASS_WITH_LIMITATIONS"
+  C4_closure:
+    report: ["TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md","cf59f05ede4c71345155c067a3098d0790b2b099"]
+    result: "A_TO_H_ALL_NEUTRAL__ALL_POST_EVIDENCE_NONMATERIAL__NO_DIRECTIONAL_CONTAMINATION"
+  ledger_integrity:
+    report: ["TFP_STRESS_2_REVIEWER_D_G4_LEDGER_INTEGRITY_REPORT_0_1_0.md","84ea800532fef7fe814cc0c68f25102034330e9a"]
+    result: "LEDGER_INTEGRITY_CONFIRMED"
+  G4_closure: ["TFP_STRESS_2_G4_POST_AUDIT_CLOSURE_AND_G5_READINESS_0_1_0.yaml","d9a3a54ef7d96547368c8e0efbff14ed31461b42"]
+  unresolved_BLOCKING_or_MAJOR: false
+  unresolved_MINOR_cluster_forcing_repair: false
+
+limitations:
+  - "Strict-audit depth was structural/provenance-only for some steelman packet content, line-level source-plan adherence, premise re-weighing, C-HET module trace, and stream trace."
+  - "Reviewer E did not diff role control 0.1.1 against 0.1.2 or compare its preserved handshake-response blob against the actual response."
+  - "Carried G1 formulation/access gaps remain, including asymmetry from unavailable or partial Lüdemann, Goulder, and Crossan material."
+  - "AI reviewer independence is procedural; independent training priors are not guaranteed."
+  - "G4 did not conduct a new evidence-acquisition cycle."
+  - "Reviewer D verified Git history against a frozen GitHub REST history snapshot rather than live GitHub access."
+  - "F6 retains a defective source pin; its permitted current-study use is restricted to a no-disposition-change reconciliation note."
+
+uncertainty_statement:
+  - "The evidence is sufficient to apply the frozen protocol and distinguish warrant states, but insufficient to make any admitted candidate ranking-eligible."
+  - "Several affirmative R_EVENT conjuncts remain below SUPPORTED_WITHIN_SCOPE, including P-R-BODY and P-R-IDENTITY-JESUS at PARTIALLY_SUPPORTED and P-R-CAUSAL at NOT_ESTABLISHED."
+  - "The study therefore supports neither an affirmative resurrection truth warrant nor a finding that resurrection is false."
+  - "The comparative result is underdetermination caused by all adequate candidates being ranking-blocked, not by a ranking flip across live backgrounds."
+
+negative_knowledge:
+  - "No admitted candidate is RANKING_ELIGIBLE on the frozen record."
+  - "No candidate is BEST_SUPPORTED, ONLY_RANKING_ELIGIBLE, CLOSEST_TO_TRUTH, or TRUTH_WARRANTED."
+  - "R_EVENT is not warranted as true on the frozen record."
+  - "R_EVENT is not classified EVIDENCE_AGAINST and is not found false."
+  - "No specific divine-agent attribution is authorized by this study."
+  - "No conclusion that Christianity is true or false follows from this study."
+  - "No global theological adjudication follows from this study."
+  - "Shared-floor support does not create relative candidate credit."
+  - "No post-evidence amendment produced favorable/mixed directional contamination."
+
+reopen_if:
+  - "materially new primary evidence"
+  - "materially changed provenance/dating/authorship/dependence"
+  - "newly accessible truth-critical source"
+  - "credible challenge to a truth-critical sufficiency/direction decision"
+  - "disconfirmation/replication of an empirical mechanism claim"
+  - "later TFP work that independently triggers a bounded reconsideration"
+
+downstream_constraints:
+  - "This is a bounded historical/philosophical adjudication, not a program-level verdict on Christianity, naturalism, supernaturalism, or global theology."
+  - "Specific divine-agent attribution remains a separately preregistered future question if later warranted."
+  - "PASS_WITH_LIMITATIONS limitations must remain attached to the canonical adjudication if accepted."
+  - "Optional supplementary E2 is not required for G5 and is not being treated as a hidden acceptance condition."
+
+human_owner_decision:
+  status: "PENDING"
+  acceptance_required_for:
+    - "removal of PROPOSED_ prefix from the base outcome"
+    - "creation of the canonical STATE adjudication entry"
+    - "transition from G5 acceptance into G6 hold/close/reopen status"
+  acceptance_text_if_accepted: "I accept the TFP-STRESS-2 canonical adjudication exactly as bounded in TFP_STRESS_2_G5_HUMAN_ACCEPTANCE_REQUEST_0_1_0.yaml, including its scope, outcome, Q1 answer, limitations, uncertainty statement, negative knowledge, downstream constraints, and reopen conditions."
+  alternatives:
+    - "HOLD_FOR_FURTHER_REVIEW"
+    - "DECLINE_ACCEPTANCE_AND_STATE_REASON"
