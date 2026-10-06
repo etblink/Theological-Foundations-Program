@@ -1,0 +1,267 @@
+schema_version: "0.1.6"
+study_id: "TFP-STRESS-2"
+artifact: "C_HET_MODULE_MAP"
+status: "NB2_CLOSED__NB3_BODY_UNIFORM_NEUTRALITY_APPLIED__FINAL_NARROW_REVIEWER_B_CONFIRMATION_PENDING"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_5.yaml"
+causal_profile_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+
+global_rules:
+  no_freeform_modules: true
+  no_module_add_delete_reassignment_after_exposure_except_C4: true
+  secondary_assignments_must_be_closed_and_enumerated: true
+  no_hidden_founding_fabrication_module: true
+  q1_entailment:
+    denies:
+      - "P-R-BODY"
+      - "P-V-REAL-REFERENT"
+  founding_fabrication_definition_ref: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml:M-FOUNDING-FAB"
+  later_narrative_rule: "M-LATER-NARR may include deliberate literary/theological elaboration at later strata, but a knowingly false origin-material founding assertion is M-FOUNDING-FAB and is prohibited in C-HET."
+
+frozen_evidence_class_taxonomy:
+  - "EC-FOUNDING-INDIVIDUAL-EXPERIENCE"
+  - "EC-FOUNDING-SOCIAL-EXPERIENCE"
+  - "EC-FOUNDING-INTERPRETIVE-SCRIPTURAL"
+  - "EC-FOUNDING-PROCLAMATION-CONTENT"
+  - "EC-TRANSMISSION-DEPENDENCE"
+  - "EC-LATER-NARRATIVE-DEVELOPMENT"
+  - "EC-BODY-DISPOSITION"
+  - "EC-PSYCHOLOGICAL-MECHANISM"
+  - "EC-SOCIAL-MECHANISM"
+  - "EC-SOURCE-DATING-PROVENANCE"
+
+modules:
+  - module_id: "M-IND-EXP"
+    proposition_ids:
+      - "P-CHET-IND-EXP"
+      - "P-CHET-SEED-IND"
+    stratum_of_operation: "FOUNDING"
+    primary_evidence_classes:
+      - "EC-FOUNDING-INDIVIDUAL-EXPERIENCE"
+      - "EC-PSYCHOLOGICAL-MECHANISM"
+    secondary_assignments:
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    independent_warrant_route: "Psychological/experiential mechanism evidence plus historical/testimonial evidence; never inferred solely from failure of R/V."
+    weakening_conditions:
+      - "No founding individual subjective-experience stream is supported."
+      - "The required mechanism capacity is below threshold."
+      - "The relevant stream supports a veridical referent."
+
+  - module_id: "M-SOC-EXP"
+    proposition_ids:
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-SEED-SOC"
+    stratum_of_operation: "FOUNDING"
+    genuine_experience_requirement: "Requires genuine non-veridical subjective experiences in a social/group process; mere report formation without experiences does not satisfy this module."
+    primary_evidence_classes:
+      - "EC-FOUNDING-SOCIAL-EXPERIENCE"
+      - "EC-SOCIAL-MECHANISM"
+    secondary_assignments:
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    independent_warrant_route: "Social/psychological mechanism evidence plus historical/testimonial evidence; multiplicity of reports alone is insufficient."
+    weakening_conditions:
+      - "No founding social/group subjective-experience process is supported."
+      - "The mechanism capacity is below threshold."
+      - "The relevant stream supports a veridical referent."
+
+  - module_id: "M-INTERP"
+    proposition_ids:
+      - "P-CHET-INT"
+    stratum_of_operation: "FOUNDING"
+    primary_evidence_classes:
+      - "EC-FOUNDING-INTERPRETIVE-SCRIPTURAL"
+      - "EC-FOUNDING-PROCLAMATION-CONTENT"
+    secondary_assignments:
+      - "EC-TRANSMISSION-DEPENDENCE"
+    independent_warrant_route: "Historical/textual/interpretive evidence for a founding interpretive contribution."
+    weakening_conditions:
+      - "No founding interpretive/scriptural contribution is supported."
+      - "Interpretive material is only later and cannot be linked to the founding stratum."
+
+  - module_id: "M-LATER-NARR"
+    proposition_ids:
+      - "P-CHET-NARR"
+    stratum_of_operation: "LATER_NARRATIVE"
+    founding_causal_role: "NONE"
+    primary_evidence_classes:
+      - "EC-LATER-NARRATIVE-DEVELOPMENT"
+      - "EC-TRANSMISSION-DEPENDENCE"
+    secondary_assignments: []
+    independent_warrant_route: "Textual/source-critical/memory-development evidence supporting later elaboration/dependence."
+    weakening_conditions:
+      - "Relevant robust later features are already independently supported in the founding stratum."
+      - "No development/dependence sequence is supported."
+
+  - module_id: "M-BODY"
+    proposition_ids: []
+    stratum_of_operation: "TRANSMISSION_OR_BODY_DISPOSITION"
+    founding_causal_role: "NONE"
+    candidate_role: "Q1_ONTOLOGY_NEUTRAL_SEARCH_AND_TRIGGER_CONTROL"
+    ranking_blocking: false
+    success_requirement: "NONE"
+    exact_expectation: "Tomb/body-disposition evidence neither supports nor weakens C-HET. Sparse, ordinary, extraordinary, known, or unknown disposition does not by itself move C-HET status."
+    primary_evidence_classes:
+      - "EC-BODY-DISPOSITION"
+    secondary_assignments: []
+    independent_warrant_route: "No candidate-status warrant route. Search is retained only to service R-PHYS, S1, frozen F implementation routes, and REVISED_CANDIDATE_REQUIRED triggers."
+    contradiction_conditions: []
+    trigger_only_conditions:
+      - "Evidence outcome-material for material continuity routes to R-PHYS without changing C-HET directly."
+      - "Evidence of founding deceptive body removal routes to the frozen F-BODY-REMOVAL implementation."
+      - "An outcome-material body pattern that requires an unrepresented mechanism may trigger REVISED_CANDIDATE_REQUIRED."
+    non_support_rules:
+      - "Failure or success of R or R-PHYS does not support or weaken C-HET through M-BODY."
+      - "Mere ignorance of the body's fate does not support C-HET."
+      - "Ordinary or extraordinary body-disposition compatibility alone does not raise or lower C-HET status."
+    packet_refs:
+      - "TFP_STRESS_2_STEELMAN_C_HET_IND_0_1_2.yaml"
+      - "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_2.yaml"
+      - "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_2.yaml"
+    reviewer_B_repair_basis: "NB-2 remains closed. Residual NB3-R1 adopts Reviewer B's recommended uniform-neutrality option (i)."
+
+closed_interactions:
+  - ids: ["M-IND-EXP","M-INTERP"]
+    joint_prediction: "Individual subjective experience and founding interpretation are each causally necessary under C-HET-IND."
+  - ids: ["M-SOC-EXP","M-INTERP"]
+    joint_prediction: "Social/group subjective experience and founding interpretation are each causally necessary under C-HET-SOC."
+  - ids: ["M-IND-EXP","M-SOC-EXP"]
+    joint_prediction: "Under C-HET-SEED-SPREAD, an individual subjective seed and social amplification are each necessary rather than optional."
+  - ids: ["M-IND-EXP","M-SOC-EXP","M-INTERP"]
+    joint_prediction: "Under C-HET-SEED-SPREAD, all three founding mechanisms are at least NECESSARY_CONTRIBUTING, with at least one PRIMARY."
+  - ids: ["M-INTERP","M-LATER-NARR"]
+    joint_prediction: "Later narrative development builds on founding interpreted material but cannot retroactively supply the founding cause."
+  - ids: ["M-LATER-NARR","M-BODY"]
+    joint_prediction: "M-LATER-NARR may remain necessary for the later-development pattern; M-BODY is only a non-ranking contradiction/compatibility expectation and never becomes a founding cause."
+
+status_bearing_candidates:
+  - id: "C-HET-IND"
+    required_modules:
+      - "M-IND-EXP"
+      - "M-INTERP"
+      - "M-LATER-NARR"
+    forbidden_modules:
+      - "M-SOC-EXP as PRIMARY or NECESSARY_CONTRIBUTING"
+      - "M-FOUNDING-FAB"
+    founding_profile:
+      M-IND-EXP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      M-INTERP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      cross_constraint: "Both required; at least one PRIMARY."
+    proposition_ids:
+      - "P-CHET-IND-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-IND-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    predicted_pattern:
+      - "Founding individual subjective-experience stream supported."
+      - "Founding interpretive mechanism independently supported and causally necessary."
+      - "Social/group mechanism is not necessary."
+      - "Later narrative-development pattern supported."
+      - "Body-disposition evidence does not contradict the candidate under the non-ranking M-BODY expectation."
+      - "No veridical postmortem referent."
+    contradiction_pattern:
+      - "Interpretation is only nonnecessary and M-IND-EXP is PRIMARY, routing to H-IND; otherwise the unmatched-vector rule applies."
+      - "Social/group mechanism is necessary, routing to C-HET-SEED-SPREAD if individual is also necessary."
+      - "No founding subjective experience, routing away from this candidate."
+      - "Veridical referent supported."
+
+  - id: "C-HET-SOC"
+    required_modules:
+      - "M-SOC-EXP"
+      - "M-INTERP"
+      - "M-LATER-NARR"
+    forbidden_modules:
+      - "M-IND-EXP as PRIMARY or NECESSARY_CONTRIBUTING"
+      - "M-FOUNDING-FAB"
+    founding_profile:
+      M-SOC-EXP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      M-INTERP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      cross_constraint: "Both required; at least one PRIMARY."
+    proposition_ids:
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-SOC-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    predicted_pattern:
+      - "Founding genuine non-veridical social/group subjective-experience process supported."
+      - "Founding interpretive mechanism independently supported and causally necessary."
+      - "Individual seed is not necessary."
+      - "Later narrative-development pattern supported."
+      - "Body-disposition component supported."
+      - "No veridical referent."
+    contradiction_pattern:
+      - "Interpretation is only nonnecessary and M-SOC-EXP is PRIMARY, routing to H-SOC; otherwise the unmatched-vector rule applies."
+      - "Individual seed is necessary, routing to C-HET-SEED-SPREAD."
+      - "Only report formation without genuine experiences is supported."
+      - "Veridical referent supported."
+
+  - id: "C-HET-SEED-SPREAD"
+    required_modules:
+      - "M-IND-EXP"
+      - "M-SOC-EXP"
+      - "M-INTERP"
+      - "M-LATER-NARR"
+    forbidden_modules:
+      - "M-FOUNDING-FAB"
+    founding_profile:
+      M-IND-EXP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      M-SOC-EXP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      M-INTERP: "PRIMARY or NECESSARY_CONTRIBUTING"
+      cross_constraint: "All three required; at least one PRIMARY."
+    proposition_ids:
+      - "P-CHET-SEED-IND"
+      - "P-CHET-SEED-SOC"
+      - "P-CHET-INT"
+      - "P-CHET-NARR"
+      - "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+      - "P-CHET-FOUNDING-CAUSAL"
+    predicted_pattern:
+      - "A founding individual subjective seed is supported."
+      - "A distinct social/group amplification process is independently supported and necessary."
+      - "Founding interpretive processing is independently supported and necessary."
+      - "Later narrative development fits its frozen stratum and body-disposition evidence is Q1-ontology-neutral for the candidate."
+      - "No veridical postmortem referent."
+    contradiction_pattern:
+      - "Individual seed unnecessary."
+      - "Social amplification unnecessary."
+      - "Interpretive contribution unnecessary."
+      - "Founding fabrication necessary."
+      - "Veridical referent supported."
+
+module_id_policy:
+  canonical_ids:
+    - "M-IND-EXP"
+    - "M-SOC-EXP"
+    - "M-INTERP"
+    - "M-LATER-NARR"
+    - "M-BODY"
+    - "M-FOUNDING-FAB"
+  superseded_aliases:
+    M-EXP-IND: "M-IND-EXP"
+    M-EXP-SOC: "M-SOC-EXP"
+    M-INT: "M-INTERP"
+    M-NARR: "M-LATER-NARR"
+
+non_subsumption:
+  H_IND: "H-IND requires M-IND-EXP PRIMARY and M-INTERP/M-SOC only nonnecessary. C-HET-IND requires M-INTERP necessary; seed-spread also requires M-SOC necessary."
+  H_SOC: "H-SOC requires M-SOC-EXP PRIMARY with M-IND/M-INTERP only nonnecessary. C-HET-SOC requires M-INTERP necessary; seed-spread also requires M-IND necessary."
+  L: "L requires M-INTERP PRIMARY and experience mechanisms only nonnecessary. Every C-HET candidate requires at least one experience mechanism as necessary."
+  H_plus_L: "C-HET profiles are not arbitrary H+L unions; each freezes a specific mechanism set, causal role, timing, interaction list, and later/body pattern."
+  H_SEED_SPREAD: "H-SEED-SPREAD requires M-IND-EXP and M-SOC-EXP as necessary while M-INTERP is nonnecessary. C-HET-SEED-SPREAD requires all three founding mechanisms as necessary; the two units are disjoint."
+
+anti_tailoring:
+  evidence_class_partition_frozen_before_G1: true
+  no_new_secondary_assignment_after_exposure_without_C4: true
+  no_optional_required_modules: true
+  candidate_expectation_controls_may_be_nonnecessary: true
+  no_unlisted_module_interactions: true
+  module_inactivity_cannot_raise_candidate_status: true
+  M_BODY_cannot_raise_candidate_status: true
+  M_BODY_is_uniformly_neutral_for_Q1_ontology_candidates: true
+  mixed_deception_sincerity_requires_revised_candidate: true
+
+review_status:
+  reviewer_A_short_confirmation: "B4_A8_PASS_WITH_LIMITATIONS__MECHANICAL_FIXES_APPLIED"
+  reviewer_B_coverage_review: "NB2_CLOSED__NB3_BODY_NEUTRALITY_REPAIRED__FINAL_NARROW_CONFIRMATION_PENDING"
+  reviewer_C_discriminator_review: "PENDING"
