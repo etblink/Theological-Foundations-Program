@@ -1,0 +1,410 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER"
+status: "NB5_RESIDUAL_ABSENCE_SYMMETRY_AND_CAP_REPAIRED__50_PROPOSITIONS__FINAL_NARROW_REVIEWER_B_CONFIRMATION_PENDING"
+date: "2026-10-06"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml"
+source_plan_ref: "TFP_STRESS_2_SOURCE_PLAN_0_1_9.yaml"
+purpose: "Freeze required source strata, substitutes, source-access expectation, and probative-absence semantics separately for every necessary proposition before G0/G1."
+
+global_rules:
+  - "stratum_access_expected concerns whether the designated source class/search route should be accessible enough to execute the rule; it does not mean favorable evidence is expected if the proposition is true."
+  - "probative_absence_expectation is a separate prospective rule. No unlisted absence may be made probative after exposure."
+  - "NO_PROBATIVE_ABSENCE_BY_DEFAULT means absence alone cannot support a rival; ordinary weak/neutral search results receive proposition dispositions rather than ISS."
+  - "A proposition may route to MISSING_CRITICAL_EVIDENCE/ISS only through access/provenance/coverage failure in a designated required stratum with no adequate substitute, never because the searched evidence is merely unfavorable."
+  - "All 50 necessary propositions in the frozen 11-candidate register are enumerated here exactly once."
+  - "Absence alone has a global ceiling of NOT_ESTABLISHED. No absence-only result may yield EVIDENCE_AGAINST_WITHIN_SCOPE, CONTRADICTED_WITHIN_SCOPE, or positive support for a rival unless a future pre-evidence C4 amendment prospectively registers a stronger expectation."
+  - "Analogous personal-identity and founding/experience-occurrence propositions use the same COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY mode."
+
+propositions:
+  - proposition_id: "P-CRUC"
+    required_strata: ["SRC-01","SRC-04"]
+    acceptable_substitutes: ["SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "CONDITIONAL_COMPLETE_SEARCH_NONESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "Under a documented complete search with adequate access/provenance, total absence of qualifying early crucifixion attribution may yield at most NOT_ESTABLISHED. It cannot by itself yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+  - proposition_id: "P-HIST-JESUS"
+    required_strata: ["SRC-01","SRC-02","SRC-19"]
+    acceptable_substitutes: ["SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "CONDITIONAL_COMPLETE_SEARCH_NONESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "Under a documented complete search with adequate access/provenance, total absence of qualifying early/cross-tradition subject evidence may yield at most NOT_ESTABLISHED. It cannot by itself yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE."
+  - proposition_id: "P-DEATH"
+    required_strata: ["SRC-01","SRC-04","SRC-12"]
+    acceptable_substitutes: ["SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-EARLY-PROCLAMATION-EXISTENCE"
+    required_strata: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "DEFINITION_LINKED_NONESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "Because the proposition asserts a historically recoverable founding proclamation, a documented complete search that recovers no qualifying proclamation trace may yield at most NOT_ESTABLISHED. It cannot by itself yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE; access/provenance failure remains a separate ISS route."
+  - proposition_id: "P-R-BODY"
+    required_strata: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-03","SRC-15"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-R-IDENTITY-JESUS"
+    required_strata: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete same-referent identity search with adequate access/provenance, absence of qualifying identity/continuity/recognition warrant may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    required_strata: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-R-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-V-REAL-REFERENT"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete same-referent identity search with adequate access/provenance, absence of qualifying identity/continuity/recognition warrant may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-V-NONEMBODIED"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-V-FOUNDING-ENCOUNTER"
+    required_strata: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-V-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-10","SRC-13"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HIND-EXPERIENCE-OCCURRED"
+    required_strata: ["SRC-01","SRC-02","SRC-08"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HIND-MECHANISM-SUFFICIENT"
+    required_strata: ["SRC-08","SRC-16"]
+    acceptable_substitutes: ["SRC-09","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSOC-MECHANISM-SUFFICIENT"
+    required_strata: ["SRC-09","SRC-16"]
+    acceptable_substitutes: ["SRC-08","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-09","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSEED-INDIVIDUAL-EXPERIENCE"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-HSEED-SOCIAL-AMPLIFICATION"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSEED-MECHANISM-SUFFICIENT"
+    required_strata: ["SRC-08","SRC-09","SRC-16"]
+    acceptable_substitutes: ["SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-L-INTERPRETIVE-ORIGIN"
+    required_strata: ["SRC-01","SRC-02","SRC-06","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    required_strata: ["SRC-01","SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-16","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-L-ENCOUNTER-CLAIM-ORIGIN"
+    required_strata: ["SRC-01","SRC-02","SRC-03","SRC-10"]
+    acceptable_substitutes: ["SRC-06","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-L-DEVELOPMENT-SEQUENCE"
+    required_strata: ["SRC-02","SRC-03","SRC-10"]
+    acceptable_substitutes: ["SRC-01","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-L-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-06","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-S1-NONDEATH"
+    required_strata: ["SRC-04","SRC-12"]
+    acceptable_substitutes: ["SRC-05","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-S1-POSTCRUC-ACCESS"
+    required_strata: ["SRC-01","SRC-02","SRC-05"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-12"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-F-DELIBERATE"
+    required_strata: ["SRC-01","SRC-11"]
+    acceptable_substitutes: ["SRC-18","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-F-ORIGIN-MATERIAL"
+    required_strata: ["SRC-01","SRC-02","SRC-11"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    required_strata: ["SRC-11","SRC-05"]
+    acceptable_substitutes: ["SRC-01","SRC-18"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
+    required_strata: ["SRC-01","SRC-02","SRC-11"]
+    acceptable_substitutes: ["SRC-03","SRC-10"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-11"]
+    acceptable_substitutes: ["SRC-03","SRC-18"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-IND-EXP"
+    required_strata: ["SRC-01","SRC-02","SRC-08"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-CHET-INT"
+    required_strata: ["SRC-01","SRC-06","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-NARR"
+    required_strata: ["SRC-03","SRC-10"]
+    acceptable_substitutes: ["SRC-01","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10","SRC-16"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-SOC-EXP"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10","SRC-16"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+  - proposition_id: "P-CHET-SEED-IND"
+    required_strata: ["SRC-01","SRC-02","SRC-08"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-CHET-SEED-SOC"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+      maximum_absence_only_disposition: "NOT_ESTABLISHED"
+      rule: "After a documented complete search with adequate access/provenance, absence of any qualifying trace may prevent this occurrence proposition from reaching SUPPORTED and may yield at most NOT_ESTABLISHED. Absence alone can never yield EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE and never positively supports a rival."
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09","SRC-10","SRC-16"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    stratum_access_expected: true
+    probative_absence_expectation:
+      mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+
+node_rival_addenda:
+  X-NONHISTORICITY-NODE-RIVAL:
+    direct_target: "P-HIST-JESUS"
+    native_or_comparative_strata: ["SRC-01","SRC-02","SRC-03","SRC-07","SRC-19"]
+    adverse: ["SRC-18"]
+    silence_rule_ref: "P-HIST-JESUS.probative_absence_expectation"
+  X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL:
+    direct_targets: ["P-R-IDENTITY-JESUS","P-V-IDENTITY-JESUS","EMB-3"]
+    direct_strata: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-03","SRC-19"]
+    adverse: ["SRC-18"]
+    abstract_possibility_rule: "Mere logical possibility is not probative absence and cannot block a candidate."
+  X-NONCRUCIFIXION-SUBSTITUTION-FAMILY:
+    direct_target: "P-CRUC"
+    direct_strata: ["SRC-01","SRC-02","SRC-04","SRC-19"]
+    adverse: ["SRC-18"]
+
+integrity:
+  expected_necessary_proposition_count: 50
+  actual_enumerated_count: 50
+  duplicates: 0
+  g0_authorized: false
+  g1_authorized: false
