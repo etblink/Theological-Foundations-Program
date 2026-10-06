@@ -1,0 +1,95 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+candidate_name: "Real extramental referent, non-Jesus identity node rival"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC_NODE_CONTROL__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+node_rival_only: true
+direct_target_propositions:
+  - "EMB-3"
+  - "P-V-IDENTITY-JESUS"
+
+native_formulation: "A founding encounter may involve a real extramental referent while the identity attribution 'this referent is Jesus' is false or not warranted. The referent could be another agent, an impersonator, or another real phenomenon whose identity was misattributed. This node rival exists to prevent evidence for extramentality from automatically satisfying personal identity. It is not a full origin candidate because no particular non-Jesus agent/mechanism is admitted here."
+
+proponent_sources:
+  - id: "FORM-XIDENT-001"
+    title: "Frozen TFP EMB-3 / P-V-IDENTITY-JESUS architecture"
+    use: "INTERNAL_SYNTHETIC_NODE_CONTROL"
+    contribution: "The study's positive identity criterion itself requires a live alternative in which reality/extramentality and Jesus-identity come apart."
+
+necessary_node_claims:
+  - "Extramental reality and personal identity are separate propositions."
+  - "Identity evidence must independently connect the same postmortem referent to the pre-mortem Jesus."
+  - "A real referent that fails EMB-3 does not become R or V."
+  - "If a specific serious non-Jesus referent mechanism becomes outcome-material, route to REVISED_CANDIDATE_REQUIRED rather than expanding this node control."
+
+authority_commitments:
+  - "No angelic, demonic, extraterrestrial, paranormal, impersonation, simulation, or other specific ontology is privileged or admitted by this packet."
+  - "The packet does not assert that any alternative agent exists."
+  - "Recognition testimony is evidence to be evaluated, not an identity guarantee."
+  - "Failure of R/V identity does not strengthen H/L/F by default."
+
+internal_success_conditions:
+  - "The study retains an independent EMB-3/P-V-IDENTITY-JESUS sufficiency record."
+  - "Evidence for a real referent is not double-counted as evidence for Jesus-identity."
+  - "Material identity mismatch evidence can weaken or defeat R/V identity conditions."
+  - "No specific alternative-agent theory is smuggled in without C4/revised-candidate review."
+
+expected_evidence:
+  - "Evidence supporting a real extramental encounter while leaving subject identity materially uncertain or mismatched."
+  - "Recognition, continuity, behavioral, bodily, linguistic or provenance features inconsistent with secure Jesus-identity."
+  - "Evidence of misidentification/impersonation capable of explaining the identity attribution without denying the encounter's extramentality."
+
+weakening_evidence:
+  - "Independent convergent identity evidence satisfying EMB-3 for the same referent and founding stream."
+  - "Continuity/recognition evidence with no material identity conflict under adequate coverage."
+  - "Evidence showing the proposed identity uncertainty arises only from abstract possibility with no case-specific route."
+
+recognized_objections:
+  - "Without a specific alternative-agent model this node rival can become an unfalsifiable possibility unless case-specific identity evidence exists."
+  - "Mere logical possibility must not block R/V ranking or truth warrant."
+  - "Some identity criteria may be background-sensitive under BGD-11."
+  - "A concrete alternative agent may require a revised candidate and additional background controls."
+
+caricatures_rejected:
+  - "This is not an aliens/demons hypothesis."
+  - "It does not claim an impersonator existed."
+  - "It is not a license to reject identity whenever evidence is inconvenient."
+  - "It does not convert every recognition ambiguity into a real-referent alternative."
+
+direct_evidence_route:
+  propositions: ["EMB-3","P-V-IDENTITY-JESUS"]
+  mode: "NODE_RIVAL_DIRECT_IDENTITY_ROUTE"
+  route: "Separate identity/continuity/recognition sufficiency record on the same frozen founding stream after extramentality is assessed."
+  ranking_use: "May weaken R/V only through their own identity propositions; no direct strengthening of other candidates."
+  revised_candidate_trigger: "If a specific serious non-Jesus referent mechanism becomes outcome-material and causally explanatory, record PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_NODE_CONTROL__NO_EXTERNAL_SCHOOL_CLAIMED"
+  reviewer_or_basis: "Frozen EMB-3/P-V identity architecture"
+  findings:
+    - "The node rival is required to keep extramentality and identity analytically separate."
+    - "No external proponent tradition is claimed; this is a bounded epistemic alternative, not a full model."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "identity alternative remains case-specific rather than possibility inflation"
+    - "no hidden ontology introduced"
+    - "same-stream identity route adequate"
+    - "R and V burdens symmetric"
+    - "revised-candidate trigger preserved"
+  findings: []
+
+packet_stage_notes:
+  - "This packet has no new external formulation exposure."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: []
+freeze_identity: null
