@@ -10,25 +10,25 @@ governing_surfaces:
     blob_sha: "e76a00b5ee63c4328a2afd9eb40e0623d9ea2481"
   candidate_register:
     path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_8.yaml"
-    blob_sha: "PENDING_VERIFY"
+    blob_sha: "059fd8e992c7be5ded6c299c87202abb18f3e958"
   q1_event_control:
     path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_5.yaml"
     blob_sha: "fdaa47d81d51ce33507d5f3b6e8464cbf9a2ae56"
   c_het_module_map:
     path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_4.yaml"
-    blob_sha: "PENDING_VERIFY"
+    blob_sha: "dcdb77170cc7587767f1f7a151397a2ba3669a26"
   coverage_map:
     path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_7.yaml"
-    blob_sha: "PENDING_VERIFY"
+    blob_sha: "90688f83c9b95d5609b054b95175e2bb06d5a65a"
   source_plan:
     path: "TFP_STRESS_2_SOURCE_PLAN_0_1_6.yaml"
     blob_sha: "fe149b956d33f56167076e5e18746cec2c1436df"
   formulation_source_record:
     path: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
-    blob_sha: "PENDING_VERIFY"
+    blob_sha: "71e0747d63524c4d57d0c371771e00604c7d6c90"
   exposure_ledger:
     path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
-    blob_sha: "PENDING_VERIFY"
+    blob_sha: "2f81853ea6c3d6095535a0456267354bf4a97fe0"
 
 packet_policy:
   exact_status_bearing_candidate_count: 11
