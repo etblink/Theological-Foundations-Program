@@ -1,0 +1,142 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G1_SECOND_COVERAGE_STATE_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__SECOND_STUDY_SCOPE_COVERAGE_REVIEW__73_RECORD_G1_CHECKPOINT"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_SESSION_FOR_SECOND_COVERAGE_REVIEW"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_conversation_session_permitted: false
+  required_information_independence:
+    - "No substantive Reviewer A or Reviewer B reasoning available in this session."
+    - "No Reviewer C pre-G0 architecture reasoning available in this session."
+    - "No Program Lead outcome reasoning outside the permitted frozen artifacts available in this session."
+    - "The prior Reviewer C SRC-18 adverse-probe report and first coverage-state report are permitted and required because this review tests whether their exact return triggers were closed."
+  note: "Procedural independence requires a new clean conversation/session, not a new provider or model family."
+
+coverage_scope:
+  protocol_scope_label: "STUDY"
+  scope_id: "TFP-STRESS-2_G1_EVIDENCE_ACQUISITION"
+  question: "After the exact COVERAGE_INCOMPLETE return-trigger acquisition round, does the frozen G1 record now warrant COMPLETE or MATERIALLY_COMPLETE STUDY-scope coverage under Protocol E3, or does it remain COVERAGE_INCOMPLETE?"
+  not_a_truth_question: true
+  not_a_candidate_ranking_question: true
+  not_a_discriminator_direction_question: true
+
+evidence_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g1"
+  commit: "528084c2b43c70a943c3760493bf4512ff126e0c"
+  tree: "34db51a69853fe348123ec02fbc0f329d83c9eb2"
+  rule: "Use this exact checkpoint for substantive acquisition/coverage review. Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol:
+    version: "0.1.7"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  governance:
+    blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+    governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+permitted_repository_artifacts:
+  - path: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+    blob_sha: "69cae205ab97bbeb7e6504bb190bc64e35c73b92"
+  - path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+  - path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  - path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  - path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
+    blob_sha: "99eeab89decd8420e61b97b17c4706e30157d0fd"
+  - path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
+    blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
+  - path: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_REPORT_0_1_0.md"
+    blob_sha: "b9721b4529e186b5e26a8e4dfe94f558ffee2451"
+  - path: "TFP_STRESS_2_REVIEWER_C_G1_POST_ACQUISITION_COVERAGE_STATE_REPORT_0_1_0.md"
+    blob_sha: "249add07f33380c4205772802fc2bc61b2215a27"
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_28.yaml"
+    blob_sha: "40cebfe40f824626ac274718ab0f92d3d72b052f"
+
+prior_coverage_review:
+  disposition: "COVERAGE_INCOMPLETE"
+  exact_return_triggers:
+    - "Acquire the Gospel of Peter / Akhmim passion-resurrection fragment in a named edition or translation, with dating and dependence notes."
+    - "Acquire Crossan 1994 burial/empty-tomb argument at corrected range approximately pp.123-158, including the claims at pp.127 and 154."
+    - "Acquire Luedemann 1994 beyond publisher summary and Goulder 1996 pp.48-61 in full text, or record a new full-text-route access failure."
+
+program_lead_return_round_claim:
+  self_certification: "NONE"
+  new_records: ["G1RS-070","G1RS-071","G1RS-072","G1RS-073"]
+  claimed_actions:
+    - "Gospel of Peter/Akhmim fragment acquired in named translation with Oxford/Cambridge dating/dependence controls."
+    - "Crossan corrected 1994 chapter range identified; key pp.126-127 text acquired by reproduced exact excerpt and pp.153-154 argument acquired through page-specific scholarly/dissertation quotation; continuous pp.123-158 access remains limited."
+    - "Fresh legitimate Luedemann full-text routes attempted: Internet Archive access-restricted/print-disabled; Google Books no preview."
+    - "Fresh legitimate Goulder full-text routes attempted: Google Books exact chapter identity but incomplete text; library/book routes did not yield unrestricted full chapter; rights-unclear reproduction was deliberately not used."
+
+reviewer_questions:
+  - "Does G1RS-070 cure the prior SRC-03 / P-CHET-NARR Gospel of Peter acquisition defect while properly preserving E5/date/dependence limits?"
+  - "Does G1RS-071 constitute sufficient evaluation of the outcome-material Crossan burial argument for E3 coverage, despite lack of continuous page-by-page access to all pp.123-158, because the corrected chapter range and the key reviewer-identified pp.127/154 claims are now textually represented? Or is a direct continuous/full primary-range read still required?"
+  - "Do G1RS-072 and G1RS-073 satisfy the prior review's explicit alternative of a new full-text-route access failure for Luedemann and Goulder?"
+  - "After those determinations, are any remaining listed gaps potentially outcome-changing at STUDY-scope coverage?"
+
+protocol_E3_coverage_labels:
+  allowed_final_dispositions:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  complete_rule: "All preregistered strata searched; all identified outcome-material sources evaluated; genuine adverse-source probe completed and no omitted outcome-material source class remains after follow-up."
+  materially_complete_rule: "Truth-critical strata addressed; all residual gaps listed; adverse-source requirement satisfied; no listed/discovered gap is judged likely to change the scoped disposition/comparison."
+  incomplete_rule: "A truth-critical stratum/source remains unsearched, inaccessible without adequate substitute, or potentially outcome-changing."
+
+mandatory_review_checks:
+  - "Verify every pin before substantive review."
+  - "Re-audit the prior three return triggers against G1RS-070 through G1RS-073 and the underlying cited routes."
+  - "Do not infer closure merely from the Program Lead's record labels."
+  - "For Crossan, distinguish direct excerpt/page-specific quotation from metadata or opponent summary and decide whether the acquired text is sufficient for E3 evaluation."
+  - "For Luedemann/Goulder, verify that the new access attempts are genuine full-text routes and that the recorded failures meet the prior review's alternative."
+  - "Re-check the prior carried gaps only for whether any remains potentially outcome-changing; do not reopen harmless listed gaps merely because they are imperfect."
+  - "Use targeted external spot checks if needed; do not conduct an unbounded new literature harvest."
+  - "If coverage remains incomplete, identify the exact remaining acquisition defect with enough specificity for one bounded Program Lead return."
+
+prohibited_actions:
+  - "Do not assign proposition dispositions."
+  - "Do not produce discriminator direction results."
+  - "Do not synthesize evidence into candidate verdicts."
+  - "Do not rank candidates."
+  - "Do not decide whether resurrection occurred."
+  - "Do not draw theological conclusions."
+  - "Do not change G0 architecture."
+  - "Do not certify comparison-level MAKEABLE status."
+  - "Do not begin G2."
+  - "Do not modify the repository."
+
+review_output_requirement:
+  final_disposition_count: 1
+  report_sections:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "E3 STANDARD"
+    - "PRIOR RETURN-TRIGGER AUDIT"
+    - "CROSSAN SUFFICIENCY AUDIT"
+    - "LUDEMANN / GOULDER ACCESS-FAILURE AUDIT"
+    - "REMAINING GAP MATERIALITY AUDIT"
+    - "TARGETED EXTERNAL SPOT CHECKS, IF ANY"
+    - "LISTED GAPS"
+    - "DISPOSITION"
+    - "NEXT-GATE ANSWER"
+  if_incomplete: "State the exact remaining defect(s) that must return to G1."
+  if_materially_complete: "List every residual gap and explain only why it is not plausibly outcome-changing at STUDY scope."
+  if_complete: "Verify E3 complete rule element by element."
+  no_repository_modification: true
+  return_report_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_review_launch: true
+  substantive_evidence_checkpoint_is_528084c2b43c70a943c3760493bf4512ff126e0c: true
+  no_later_branch_head_substitution: true
