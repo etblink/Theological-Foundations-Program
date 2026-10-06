@@ -290,12 +290,22 @@ propositions:
       mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
       rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
   - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
-    required_strata: ["SRC-11","SRC-05"]
+    required_strata: ["SRC-11"]
     acceptable_substitutes: ["SRC-01","SRC-18"]
+    implementation_specific_strata:
+      F-NONBODY-ASSERTION:
+        required: ["SRC-01","SRC-02","SRC-11"]
+        acceptable_substitutes: ["SRC-03","SRC-18"]
+        body_stratum_use: "SRC-05_NEUTRAL"
+      F-BODY-REMOVAL:
+        required: ["SRC-05","SRC-11"]
+        acceptable_substitutes: ["SRC-01","SRC-18"]
+        body_stratum_use: "SRC-05_SYMMETRIC_POSITIVE_AND_CONTRARY"
+    implementation_success_rule: "At least one preregistered implementation must independently satisfy the route; SRC-05 is not a universal requirement for generic F."
     stratum_access_expected: true
     probative_absence_expectation:
       mode: "NO_PROBATIVE_ABSENCE_BY_DEFAULT"
-      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the proposition route."
+      rule: "Absence alone is not probative; evaluate positive/contrary evidence under the frozen implementation-specific route."
   - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
     required_strata: ["SRC-01","SRC-02","SRC-11"]
     acceptable_substitutes: ["SRC-03","SRC-10"]
