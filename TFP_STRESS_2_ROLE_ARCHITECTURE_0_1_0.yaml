@@ -1,0 +1,192 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+study_title: "Resurrection Claim — Earliest Recoverable Evidence and Embodied-Resurrection Warrant"
+status: "PRE_G0_ROLE_ARCHITECTURE__PARTIALLY_ASSIGNED__NOT_AUTHORIZED"
+qualified_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+authorization:
+  g0_human_owner_authorized: false
+  g1_evidence_acquisition_authorized: false
+  substantive_study_authorized: false
+
+human_owner:
+  actor_lineage: "HUMAN_OWNER"
+  authority:
+    - "G0_study_authorization"
+    - "G5_canonical_acceptance"
+  material_preregistration_author: false
+  outcome_material_reviewer: false
+  baseline_exposure:
+    status: "GENERAL_PREEXISTING_FAMILIARITY"
+    note: "Human owner proposed the resurrection claim as a candidate stress test and has general prior familiarity; no outcome-material reviewer determination is assigned."
+
+program_lead:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  roles:
+    - "preregistration_author"
+    - "candidate_packet_coordinator"
+    - "lane_author_or_coordinator"
+    - "comparative_synthesis_author"
+    - "state_transition_recorder_within_authorized_scope"
+  may_not_serve_as_strict_auditor: true
+  baseline_exposure:
+    status: "GENERAL_PREEXISTING_FAMILIARITY"
+    note: "Program lead has general model/prior knowledge of common resurrection debate claims and sources and authored the pre-G0 proposal. No new G1 evidence campaign has begun."
+
+candidate_constructors:
+  default:
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    role: "initial_candidate_packet_author"
+    limitation: "Program lead knows rival candidate classes; independent construction will be used where feasible and equal-strength review is mandatory."
+  candidate_native_review:
+    status: "PLANNED_WHERE_FEASIBLE"
+    rule: "Use tradition-native/proponent-informed sources or independent review without granting authority status."
+
+independent_reviewer_slots:
+  REVIEWER_A:
+    purpose: "blind candidate/background elicitation, candidate inclusion/exclusion, initial claim typing, equal-strength review"
+    proposed_actor:
+      provider: "Anthropic"
+      model: "claude-sonnet-5-5"
+      session_id: "session_012EWsCBUVctdyhhk3v5ZxuF"
+      actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+      assignment_status: "PENDING_STUDY_REVIEWER_ACCEPTANCE"
+      prior_tfp_exposure: "Protocol 0.1.7 qualification audit only; no TFP-STRESS-2 evidence review and no initial candidate-list exposure from the program lead."
+    roles:
+      - "independent_candidate_elicitation"
+      - "candidate_inclusion_exclusion_review"
+      - "background_register_inclusion_exclusion_review"
+      - "initial_claim_typing_review"
+      - "steelman_equal_strength_review"
+    restrictions:
+      - "must perform blind candidate/background elicitation before seeing program_lead candidate/background lists"
+      - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+      - "must_not_receive_outcome_evidence_before_G0_freeze"
+
+  REVIEWER_B:
+    purpose: "necessary-proposition/source-plan control and later ledger/direction/confidence review"
+    proposed_actor:
+      status: "UNASSIGNED_FRESH_SESSION_REQUIRED"
+      required_lineage: "actor-lineage disjoint from program lead, REVIEWER_A, REVIEWER_C, and future strict auditor"
+    roles:
+      - "necessary_proposition_and_coverage_map_reviewer"
+      - "source_plan_reviewer"
+      - "ledger_integrity_reviewer"
+      - "post_evidence_direction_result_reviewer"
+      - "confidence_reviewer"
+    restrictions:
+      - "source_plan_reviewer_must_be_disjoint_from_adverse_source_reviewer"
+      - "necessary_proposition_reviewer_must_be_disjoint_from_discriminator_tier_reviewer"
+      - "ledger_integrity_reviewer_must_be_disjoint_from_amendment_direction_reviewer"
+      - "post_evidence_direction_result_reviewer_must_be_disjoint_from_discriminator_author_and_tier_reviewer"
+      - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+
+  REVIEWER_C:
+    purpose: "discriminator/background/coverage/adversarial review"
+    proposed_actor:
+      status: "UNASSIGNED_FRESH_SESSION_REQUIRED"
+      required_lineage: "actor-lineage disjoint from program lead, REVIEWER_A, REVIEWER_B, and future strict auditor"
+    roles:
+      - "discriminator_tier_and_pre_evidence_direction_rule_reviewer"
+      - "background_granularity_interaction_reviewer"
+      - "adverse_source_reviewer"
+      - "coverage_state_reviewer"
+      - "MAKEABLE_certifier"
+      - "amendment_direction_reviewer"
+      - "fragility_reviewer"
+    restrictions:
+      - "adverse_source_reviewer_must_be_disjoint_from_source_plan_reviewer"
+      - "discriminator_tier_reviewer_must_be_disjoint_from_necessary_proposition_reviewer"
+      - "amendment_direction_reviewer_must_be_disjoint_from_ledger_integrity_reviewer"
+      - "discriminator_tier_reviewer_must_be_disjoint_from_post_evidence_direction_result_reviewer"
+      - "may_not_serve_as_strict_auditor_for_TFP_STRESS_2"
+
+strict_independent_auditor:
+  status: "UNASSIGNED__MUST_BE_FRESH_AFTER_SYNTHESIS_FREEZE"
+  required_lineage: "disjoint from program lead, candidate authors, lane authors, REVIEWER_A, REVIEWER_B, REVIEWER_C, and every outcome-material reviewer"
+  required_exposure_boundary:
+    - "no authorship of G0 preregistration"
+    - "no candidate steelman authorship"
+    - "no outcome-determinative lane authorship"
+    - "no comparative synthesis authorship"
+    - "no outcome-material reviewer determination"
+  may_read_only_after_G3_freeze: true
+
+minimum_separation_check:
+  source_plan_vs_adverse_source:
+    source_plan: "REVIEWER_B"
+    adverse_source: "REVIEWER_C"
+    satisfied_when_assigned: true
+  necessary_proposition_vs_discriminator_tier:
+    necessary_proposition: "REVIEWER_B"
+    discriminator_tier: "REVIEWER_C"
+    satisfied_when_assigned: true
+  amendment_direction_vs_ledger_integrity:
+    amendment_direction: "REVIEWER_C"
+    ledger_integrity: "REVIEWER_B"
+    satisfied_when_assigned: true
+  discriminator_tier_vs_post_evidence_direction:
+    discriminator_tier: "REVIEWER_C"
+    post_evidence_direction: "REVIEWER_B"
+    satisfied_when_assigned: true
+  single_lineage_does_not_hold_all_outcome_material_review:
+    satisfied_when_assigned: true
+
+lane_authors:
+  L1_textual_source_critical:
+    status: "PROGRAM_LEAD_COORDINATED__SPECIALIST_SOURCE_SUPPORT_REQUIRED"
+  L2_historical_event:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L3_testimony_experience:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L4_psychology_memory_social:
+    status: "PROGRAM_LEAD_COORDINATED__DOMAIN_SOURCE_SUPPORT_REQUIRED"
+  L5_philosophy_metaphysics:
+    status: "PROGRAM_LEAD_COORDINATED"
+  L6_comparative_integration:
+    status: "PROGRAM_LEAD"
+
+human_relaying_operator:
+  actor_lineage: "HUMAN_OWNER_RELAY_OPERATOR"
+  permitted:
+    - "relay frozen prompts"
+    - "relay immutable source identities"
+    - "relay final reviewer reports"
+  prohibited_for_independence:
+    - "inject substantive outcome-material determinations from one reviewer into another before freeze"
+    - "rewrite reviewer conclusions while relaying"
+
+assignment_sequence:
+  - step: 1
+    role: "REVIEWER_A"
+    action: "obtain assignment acceptance, then run blind candidate/background/typing elicitation without showing program-lead candidate list"
+  - step: 2
+    role: "PROGRAM_LEAD"
+    action: "version pre-evidence preregistration using REVIEWER_A frozen output"
+  - step: 3
+    role: "REVIEWER_B"
+    action: "review necessary-proposition map, source plan, insufficiency threshold, and assigned B-surface controls"
+  - step: 4
+    role: "REVIEWER_C"
+    action: "review discriminator tiers/direction rules, background interactions, and assigned C-surface controls"
+  - step: 5
+    role: "PROGRAM_LEAD"
+    action: "freeze final G0 bundle and return exact bundle to human owner"
+  - step: 6
+    role: "HUMAN_OWNER"
+    action: "authorize or reject exact G0 bundle"
+  - step: 7
+    role: "ALL"
+    action: "G1 may begin only after explicit G0 authorization"
+
+g0_role_gate:
+  ready_for_human_authorization: false
+  blockers:
+    - "REVIEWER_A assignment acceptance and blind review not yet frozen"
+    - "REVIEWER_B actual actor/session provenance not yet assigned"
+    - "REVIEWER_C actual actor/session provenance not yet assigned"
+    - "outcome-material G0 reviews not yet completed"
+  evidence_acquisition_before_clearance: "PROHIBITED"
