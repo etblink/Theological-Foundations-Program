@@ -1,0 +1,146 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G2_L2_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__15_L2_PROPOSITION_SCOPE_COVERAGE_REVIEW__PLUS_L1_CLERICAL_C4_CONFIRMATION"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER__AND_C4_AMENDMENT_DIRECTION_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_G2_L2_COVERAGE_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_reviewer_conversation_permitted: false
+  purposes:
+    - "Independently certify coverage state for each of the 15 unique necessary propositions that touch L2 before L2 dispositions."
+    - "Independently confirm or reject the Program Lead's classification of the L1 0.1.1 aggregate-count correction as POST_EVIDENCE_NONMATERIAL and NEUTRAL."
+
+substantive_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g2"
+  commit: "f584006e9b1a259b811dc3f1ddfe2c0eba2b1629"
+  tree: "a23dc95b65132aff173cef05491004c154ab8bfe"
+  rule: "Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol_version: "0.1.7"
+  qualified_protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  preregistration:
+    path: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+    blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+
+required_artifacts:
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  - path: "TFP_STRESS_2_REVIEWER_C_G1_SECOND_COVERAGE_STATE_REPORT_0_1_0.md"
+    blob_sha: "7a20b8f1762c1b57edcc2d925a91399ce9356950"
+  - path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_0.yaml"
+    blob_sha: "c4847def489a49dfbf5933b67acae8735888b622"
+    purpose: "Original L1 row-level dispositions and erroneous aggregate summary."
+  - path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+    blob_sha: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+    purpose: "Proposed clerical correction: aggregate summary only."
+  - path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_EVIDENCE_MATRIX_0_1_0.yaml"
+    blob_sha: "7162780df05a08d79e54411e9b9dc54bcd4cb35a"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_38.yaml"
+    blob_sha: "efc7bbf7df79b5a5d96188f10efa4e794694efb6"
+
+c4_clerical_review:
+  target: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+  proposed_class: "POST_EVIDENCE_NONMATERIAL"
+  proposed_effect:
+    all_candidates: "NEUTRAL"
+    all_outcomes: "NEUTRAL"
+  claimed_change: "Only disposition_summary counts: 12 PARTIALLY_SUPPORTED / 15 NOT_ESTABLISHED corrected to mechanically verified 13 PARTIALLY_SUPPORTED / 14 NOT_ESTABLISHED."
+  claimed_nonchanges:
+    - "All 27 row-level proposition IDs unchanged."
+    - "All 27 row-level dispositions unchanged."
+    - "All evidence bindings and rationales unchanged."
+    - "No candidate status, direction result, comparison result, or ranking changes."
+  required_c4_disposition:
+    - "CONFIRM_POST_EVIDENCE_NONMATERIAL_NEUTRAL"
+    - "REJECT_OR_RECLASSIFY_WITH_REASON"
+
+coverage_scopes:
+  allowed_labels:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  scopes:
+    - "PROPOSITION:P-DEATH"
+    - "PROPOSITION:P-S1-NONDEATH"
+    - "PROPOSITION:P-S1-POSTCRUC-ACCESS"
+    - "PROPOSITION:P-S1-FOUNDING-CAUSAL"
+    - "PROPOSITION:P-F-ORIGIN-MATERIAL"
+    - "PROPOSITION:P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    - "PROPOSITION:P-CHET-IND-EXP"
+    - "PROPOSITION:P-CHET-INT"
+    - "PROPOSITION:P-CHET-NARR"
+    - "PROPOSITION:P-CHET-IND-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SOC-EXP"
+    - "PROPOSITION:P-CHET-SOC-JOINT-PATTERN"
+    - "PROPOSITION:P-CHET-SEED-IND"
+    - "PROPOSITION:P-CHET-SEED-SOC"
+    - "PROPOSITION:P-CHET-SEED-SPREAD-JOINT-PATTERN"
+
+coverage_review_standard:
+  - "Audit each proposition against its exact required strata, predesignated substitutes, access rules, and the actual inventory."
+  - "The L2 matrix is an index/binding artifact, not evidence that coverage is sufficient."
+  - "P-DEATH and P-S1-NONDEATH must receive symmetric treatment."
+  - "A Roman crucifixion survival possibility does not establish target-case survival; uncertainty over exact death mechanism does not establish nondeath."
+  - "Burial/body-disposition evidence is eligible only on frozen routes, especially S1 and F-BODY-REMOVAL; do not use it to certify generic R/V/H/L/C-HET routes where G0 declares it neutral."
+  - "For P-F-MOTIVE-OPPORTUNITY-ROUTE, check both frozen implementations and the actor/opportunity/source burden; no third implementation may be invented."
+  - "For C-HET timing propositions, L2 coverage concerns historical stratum/timing/context only; mechanism occurrence remains for L3/L4."
+  - "If incomplete, identify the smallest exact acquisition/search defect."
+
+targeted_external_checks:
+  allowed: true
+  rule: "Use only bounded checks needed to verify a coverage or provenance claim; do not conduct an open-ended literature harvest."
+
+prohibited_actions:
+  - "Do not assign proposition truth dispositions."
+  - "Do not apply D1 or any other discriminator direction rule."
+  - "Do not certify COMPARISON:<id> MAKEABLE."
+  - "Do not rank candidates."
+  - "Do not produce G3 outcomes."
+  - "Do not draw theological conclusions."
+  - "Do not modify the repository."
+
+required_output:
+  section_order:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "L1 CLERICAL C4 CONFIRMATION"
+    - "L2 COVERAGE STANDARD"
+    - "L2 PROPOSITION-SCOPE COVERAGE TABLE"
+    - "CARRIED GAPS BY PROPOSITION"
+    - "INCOMPLETE RETURN TRIGGERS, IF ANY"
+    - "BATCH SUMMARY"
+    - "NEXT-GATE ANSWER"
+  l2_table_exact_row_count: 15
+  l2_table_columns:
+    - "scope"
+    - "required strata"
+    - "substitute status"
+    - "material access limits"
+    - "coverage disposition"
+    - "reason"
+  batch_summary_must_report:
+    - "count COMPLETE"
+    - "count MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "count INCOMPLETE"
+  next_gate_question: "Which of the 15 L2-linked proposition scopes are independently coverage-ready for historical-event disposition, and which exact scopes, if any, must return to evidence acquisition first?"
+  report_must_be_returned_verbatim_to_program_lead: true
+
+freeze_effect:
+  input_is_immutable_after_launch: true
+  no_later_branch_head_substitution: true
