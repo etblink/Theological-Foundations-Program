@@ -1,0 +1,87 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "S2"
+candidate_name: "Substitution / crucifixion misidentification with sincere mistaken attribution"
+status: "NATIVE_FORMULATION_MISMATCH__REVISED_CANDIDATE_REQUIRED"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+
+native_formulation: "Frozen TFP S2 says Jesus was not the crucified person; another person/event was substituted or materially misidentified as Jesus's crucifixion; Jesus continued alive; and an outcome-material actor then had post-event access to the living Jesus, with that access transmitted into the founding movement under sincere mistaken death attribution. Both access and transmission are required."
+
+proponent_sources:
+  - id: "FORM-S2-001"
+    title: "Quran 4:157"
+    use: "FORMULATION_ONLY"
+    contribution: "Tradition-native denial that Jesus was killed/crucified and statement that the matter was made to appear so."
+  - id: "FORM-S2-002"
+    title: "IslamQA, Jesus in Islam"
+    use: "FORMULATION_ONLY"
+    contribution: "Traditional Sunni substitution/resemblance account in which another man is crucified while Jesus is raised alive."
+  - id: "FORM-S23-003"
+    title: "IslamQA, The crucifixion of the Messiah between Islam and Christianity"
+    use: "FORMULATION_ONLY"
+    contribution: "Traditional survey preserving substitution and non-substitution/confusion readings while maintaining Jesus was saved."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-S2-NOT-CRUCIFIED"
+  - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+  - "P-S2-JESUS-CONTINUED-LIFE"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-S2-SINCERE-MISTAKEN-ATTRIBUTION"
+  - "P-S2-POSTEVENT-ACCESS-AND-TRANSMISSION"
+  - "P-S2-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Quranic or traditional authority defines the native formulation only; it does not count as public historical evidence merely by being authoritative within Islam."
+  - "The packet may not invent a post-event access chain simply to make the candidate explain the Christian founding proclamation."
+
+internal_success_conditions:
+  - "Jesus is not the crucified subject."
+  - "A substitute/misidentified crucifixion event occurs."
+  - "Jesus continues alive."
+  - "A sincere mistaken attribution of death/crucifixion occurs."
+  - "Post-event access to living Jesus and transmission of that access into the founding movement both occur."
+  - "The closed chain is PRIMARY or NECESSARY_CONTRIBUTING."
+
+expected_evidence:
+  - "Native/proponent material supporting substitution or material misidentification."
+  - "Positive formulation support for the required access-and-transmission origin chain."
+  - "A historically testable bridge to the founding proclamation."
+
+recognized_objections:
+  - "The reviewed mainstream substitution sources do not supply the frozen packet's mandatory post-event access-and-transmission chain."
+  - "Mainstream formulations instead describe Jesus as raised/saved from the scene, which can leave the origin of the Christian resurrection proclamation unspecified."
+  - "Stretching those sources would violate B3 steelman fidelity and the explicit Reviewer A packet-stage warning."
+
+caricatures_rejected:
+  - "S2 is not simply 'Islam says Jesus was not crucified'."
+  - "A scripture-level noncrucifixion assertion alone does not complete the candidate's founding-causal explanation."
+  - "The program will not pretend that a tradition teaches a post-event access chain if the reviewed native sources do not."
+
+native_or_proponent_review:
+  status: "FAIL_CURRENT_PACKET_FIDELITY"
+  reviewer_or_basis: "Program-lead pre-G0 review of FORM-S2-001, FORM-S2-002, and FORM-S23-003 under Reviewer A's explicit packet-stage condition"
+  findings:
+    - "The substitution/misidentification component is strongly recognizable in the reviewed traditional sources."
+    - "The mandatory post-event access-and-transmission chain is not recognizable in the reviewed mainstream formulation; Jesus is described as raised/saved rather than remaining available for the required earthly access chain."
+    - "Per Reviewer A's freeze limitation, the candidate must not be stretched. This is an unrepresented formulation problem."
+
+equal_strength_review:
+  status: "BLOCKED_BY_NATIVE_FORMULATION_MISMATCH"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "Freezing the current S2 packet as tradition-native would misrepresent the reviewed source tradition."
+
+packet_stage_notes:
+  - "Route to REVISED_CANDIDATE_REQUIRED before Wave 1 packet freeze."
+  - "Reviewer A should decide whether substitution remains a full Q1 candidate with a different closed founding mechanism, becomes a node-level rival, or requires a new bounded candidate split."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [12,13,14]
+freeze_identity: null
