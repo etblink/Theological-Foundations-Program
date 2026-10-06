@@ -1,0 +1,39 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "FORMULATION_VARIANT_VERIFICATION"
+source_id: "FORM-S23-003"
+status: "PROGRAM_LEAD_VERIFIED__FORMULATION_ONLY"
+date: "2026-10-05"
+
+source:
+  title: "IslamQA 224199 — The crucifixion of the Messiah between Islam and Christianity"
+  url: "https://islamqa.info/en/answers/224199"
+  access_mode: "PROGRAM_LEAD_EXACT_URL_RECHECK"
+  evidential_use: "FORMULATION_ONLY"
+  historical_disposition_use: "PROHIBITED_PRE_G0"
+
+verified_variant_content:
+  - id: "VAR-LOOKALIKE-SUBSTITUTION"
+    status: "CONFIRMED"
+    summary: "The page explicitly records early Christian/Gnostic and Muslim look-alike/substitution formulations in which another person is crucified instead of Jesus."
+  - id: "VAR-MISTAKEN-IDENTIFICATION"
+    status: "CONFIRMED"
+    summary: "The page explicitly argues that witnesses/onlookers could be mistaken about the identity of the crucified person and that disciples/People of the Book could sincerely believe Jesus had been crucified while being mistaken."
+  - id: "VAR-DELIBERATE-MISREPORT-BY-CRUCIFIERS"
+    status: "CONFIRMED_AS_REPORTED_SCHOLARLY_VIEW"
+    summary: "The page reports a scholarly view that those carrying out the crucifixion knew another person had been crucified and then deliberately confused later hearers."
+  - id: "VAR-CONFUSED-CRUCIFIERS"
+    status: "CONFIRMED_AS_REPORTED_MAJORITY_VIEW"
+    summary: "The page reports a majority scholarly view that those carrying out the crucifixion themselves were confused about the identity of the crucified person."
+  - id: "VAR-NON_SUBSTITUTION_CONFUSION_AS_DISTINCT_MODEL"
+    status: "NOT_SEPARATELY_CONFIRMED"
+    summary: "The exact page confirms confusion/misidentification variants, but the checked text still treats the crucified person as someone other than Jesus. It does not independently establish a distinct no-substitute noncrucifixion formulation."
+
+reported_gospel_access_note:
+  status: "CONFIRMED_AS_REPORTED_CHRISTIAN_CLAIM_NOT_NATIVE_ENDORSEMENT"
+  summary: "The page reports the Gospel claim that women later met Jesus after the resurrection as part of its critique of crucifixion witnesses. This does not convert the article's own noncrucifixion formulation into a native post-event access-and-transmission model."
+
+program_control:
+  - "Use only to define the node-rival family accurately."
+  - "Do not count the page's religious authority or reported historical assertions as public historical evidence."
+  - "Do not use the reported Gospel-access line to restore former S2 full-candidate status."
