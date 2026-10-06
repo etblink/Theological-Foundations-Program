@@ -1,0 +1,245 @@
+schema_version: "0.1.1"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX"
+status: "POST_REVIEW_TARGETED_RETURN_EVIDENCE_INTEGRATED__NO_L5_PROPOSITION_DISPOSITIONS__FRESH_COVERAGE_RECHECK_REQUIRED"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  q1_event_control: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+  truth_critical_register_blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
+  background_register_blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
+  background_interaction_matrix: "TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+  background_interaction_matrix_blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
+  real_referent_nonidentity_node_rival: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+  real_referent_nonidentity_node_rival_blob_sha: "1cfbaeb537610afe73bc3c09bafafca41906a1dc"
+  l3_lane_freeze_blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  l4_lane_freeze_blob_sha: "45550cc03cc4e26affa96a5df5539ee8671d2f7d"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+  targeted_return_acquisition: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml"
+  targeted_return_acquisition_blob_sha: "e7ce6e5f16e922c44f2a2f2c4b8d056e934fe62d"
+  initial_l5_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  initial_l5_coverage_report_blob_sha: "275940b8cc8a2798f38d7f203b49a7f8ea6fa99f"
+
+lane:
+  id: "L5"
+  title: "Philosophical/metaphysical"
+  competencies:
+    - "extramentality"
+    - "embodiment/nonembodiment"
+    - "personal identity"
+    - "postmortem/anomalous-state possibility"
+    - "testimony/anomaly epistemology sensitivity"
+  author_or_coordinator: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  proposition_disposition_authorized_in_this_artifact: false
+
+source_clusters:
+  M1_EMBODIMENT_TEXT_AND_INTERPRETIVE_INPUT:
+    source_ids: ["G1W1-034","G1W1-035","G1W1-020","G1W1-021","G1RS-053","G2L5R-013","G2L5R-014"]
+    role:
+      - "Supplies resurrection-body language and later bodily-interaction testimony without itself deciding metaphysical embodiment."
+      - "Preserves interpretive disagreement over psychikon/pneumatikon and material composition/continuity."
+    limits:
+      - "Later bodily narratives cannot automatically settle founding-stream ontology."
+      - "Textual body-language is evidence input, not a metaphysical identity theorem."
+      - "Mikkelsen and Ware provide argument-level support for continuity/transformation readings; opposing non-flesh/ethereal readings remain represented in the frozen interpretive record."
+
+  M2_PERSONAL_IDENTITY_AND_RESURRECTION_METAPHYSICS:
+    source_ids: ["G1RS-066","G2L5R-004","G2L5R-005","G2L5R-006","G2L5R-007","G2L5R-008"]
+    role:
+      - "Provides materialist, constitutional, psychological-continuity, animalist, replica/reconstitution, and substance-dualist identity/embodiment frameworks."
+      - "Establishes that resurrection/survival coherence and same-person identity criteria are theory-sensitive."
+    limits:
+      - "Bibliographic/abstract/reference-entry access predominates."
+      - "Metaphysical possibility does not establish historical occurrence."
+      - "No BGD-11 theory is installed as default."
+
+  M3_ANOMALOUS_EXTRAMENTAL_REFERENCE_CLASS:
+    source_ids: ["G1RS-065"]
+    role:
+      - "Provides a paired pro-psi / anti-psi modern anomalous-information literature."
+      - "Makes a limited extramental-anomaly reference class reviewable without equating it with survival, resurrection, or the Jesus case."
+    limits:
+      - "Modern mediumship/parapsychology claims are methodologically disputed."
+      - "Even a genuine anomalous effect would not identify the agent as Jesus or establish embodiment/nonembodiment."
+
+  M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY:
+    source_ids: ["G1RS-067","G2L5R-001","G2L5R-002","G2L5R-003","G2L5R-009","G2L5R-010","G2L5R-011","G2L5R-012"]
+    role:
+      - "Provides competing testimony and miracle-evidence frameworks, including anti-blanket-Humean criticism and testimony-reliability constraints."
+      - "Keeps rare-event testimony dependent on source reliability, independence, prior/background assumptions, and rival explanations."
+    limits:
+      - "General epistemology does not determine ancient-source reliability by itself."
+      - "No anomaly prior or theistic likelihood is fixed by this source set."
+
+  M5_SUBJECTIVE_ONLY_RIVAL_INPUT:
+    artifacts:
+      - "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml"
+    role:
+      - "Supplies the best-covered subjective/nonveridical rival routes before extramentality comparison."
+      - "L4 finds real mechanism capacities but no fully supported target-case nonveridical route."
+    limits:
+      - "Failure to establish H cannot establish V."
+      - "Mechanism plausibility cannot by itself disprove an extramental referent."
+
+  M6_SAME_STREAM_AND_IDENTITY_CONTROL:
+    artifacts:
+      - "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+      - "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_1.yaml"
+    role:
+      - "FS-01 remains one founding-relevant received appearance-tradition cluster."
+      - "Extramentality, embodiment, and Jesus-identity remain analytically separate."
+      - "A real referent that is not independently identified as Jesus does not satisfy R or V identity burdens."
+    limits:
+      - "The node rival is a control, not evidence that a non-Jesus agent existed."
+      - "Mere abstract misidentification possibility is nonprobative."
+
+post_return_argument_level_formulations:
+  source: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml"
+  status: "ACQUIRED_FOR_COVERAGE_RECHECK__NO_BACKGROUND_SELECTED"
+  includes:
+    - "BGD-1A causal closure"
+    - "BGD-1C generic interventionist theism"
+    - "BGD-1D noninterventionist theism"
+    - "BGD-1E non-theistic dualist/survival"
+    - "BGD-2A restrictive anomaly prior"
+    - "BGD-2B agnostic-open anomaly prior"
+    - "BGD-2C generic-theistic anomaly likelihood"
+    - "BGD-9A reductionist testimony"
+    - "BGD-9B anti-reductionist testimony"
+    - "all eight permitted BGD-11 embodiment×identity pair satisfaction formulations"
+    - "full Mikkelsen analysis and second non-abstract Ware argument for P-R-BODY"
+  excluded:
+    - "excluded BGD-11 pair additions"
+    - "new ontology/background variants"
+    - "new alternative-agent candidate"
+    - "psi as Jesus-case evidence"
+
+background_sensitivity:
+  BGD_1:
+    dimension: "ONTOLOGY_CAUSAL_CLOSURE_AND_POSTMORTEM_POSSIBILITY"
+    rule: "No ontology variant may be silently installed. Causal-closure, metaphysically open, interventionist-theist, noninterventionist-theist, and non-theistic-survival variants remain live where coherent."
+  BGD_2:
+    dimension: "ANOMALOUS_TESTIMONY_PRIOR_LIKELIHOOD"
+    rule: "Strongly restrictive, agnostic-open, and generic-theistic anomaly priors are not interchangeable; no numerical precision beyond warrant."
+  BGD_9:
+    dimension: "EPISTEMOLOGY_OF_TESTIMONY"
+    rule: "Default testimonial warrant remains background-sensitive and defeasible."
+  BGD_11:
+    dimension: "METAPHYSICS_OF_EMBODIMENT_AND_PERSONAL_IDENTITY"
+    rule: "Only the eight pre-frozen permitted embodiment×identity pairs may be used."
+  interaction_rule: "Use the prospectively frozen interaction/narrowing matrix. No post-evidence favorable-cell sampling."
+  l5_effect: "A proposition may be philosophically coherent under multiple backgrounds yet historically unestablished. Background sensitivity is carried into later cross-lane consolidation rather than converted into a preferred ontology here."
+
+proposition_surfaces:
+  - proposition_id: "P-R-BODY"
+    required_strata: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-03","SRC-15"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D3-R-VS-V-EMBODIMENT"]
+    source_clusters: ["M1_EMBODIMENT_TEXT_AND_INTERPRETIVE_INPUT","M2_PERSONAL_IDENTITY_AND_RESURRECTION_METAPHYSICS","M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY","M6_SAME_STREAM_AND_IDENTITY_CONTROL"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-R-IDENTITY-JESUS"
+    required_strata: ["SRC-01","SRC-02","SRC-14"]
+    acceptable_substitutes: ["SRC-03"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    source_clusters: ["M1_EMBODIMENT_TEXT_AND_INTERPRETIVE_INPUT","M2_PERSONAL_IDENTITY_AND_RESURRECTION_METAPHYSICS","M6_SAME_STREAM_AND_IDENTITY_CONTROL"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-V-REAL-REFERENT"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    source_clusters: ["M3_ANOMALOUS_EXTRAMENTAL_REFERENCE_CLASS","M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY","M5_SUBJECTIVE_ONLY_RIVAL_INPUT","M6_SAME_STREAM_AND_IDENTITY_CONTROL"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    discriminator_ids: []
+    source_clusters: ["M2_PERSONAL_IDENTITY_AND_RESURRECTION_METAPHYSICS","M3_ANOMALOUS_EXTRAMENTAL_REFERENCE_CLASS","M6_SAME_STREAM_AND_IDENTITY_CONTROL"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-V-NONEMBODIED"
+    required_strata: ["SRC-01","SRC-13","SRC-14"]
+    acceptable_substitutes: ["SRC-15","SRC-03"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D3-R-VS-V-EMBODIMENT"]
+    source_clusters: ["M1_EMBODIMENT_TEXT_AND_INTERPRETIVE_INPUT","M2_PERSONAL_IDENTITY_AND_RESURRECTION_METAPHYSICS","M3_ANOMALOUS_EXTRAMENTAL_REFERENCE_CLASS"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    source_clusters: ["M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY","M5_SUBJECTIVE_ONLY_RIVAL_INPUT"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    source_clusters: ["M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY","M5_SUBJECTIVE_ONLY_RIVAL_INPUT"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    required_strata: ["SRC-01","SRC-02","SRC-08","SRC-09"]
+    acceptable_substitutes: ["SRC-03","SRC-16"]
+    route: "COMPARATIVE_ROUTE"
+    discriminator_ids: ["D4-V-VS-H-EXTRAMENTAL"]
+    source_clusters: ["M4_TESTIMONY_AND_MIRACLE_EPISTEMOLOGY","M5_SUBJECTIVE_ONLY_RIVAL_INPUT"]
+    coverage_state: "PENDING_INDEPENDENT_REVIEWER_C_PROPOSITION_SCOPE_CERTIFICATION"
+    disposition: "PENDING__NOT_ASSIGNED_IN_MATRIX"
+
+matrix_constraints:
+  - "Conceivability or metaphysical possibility is not actuality."
+  - "A coherent resurrection identity model does not establish that resurrection occurred."
+  - "An anomalous-information effect, even if genuine, does not establish personal survival, Jesus-identity, resurrection, or embodiment."
+  - "Extramentality cannot establish Jesus-identity automatically."
+  - "Embodiment cannot establish personal identity automatically."
+  - "Later bodily narrative motifs cannot automatically establish founding-stream embodiment."
+  - "Subjective mechanisms need not be impossible for an extramental explanation to remain possible; rival incompleteness is not positive support."
+  - "No causal-closure, theistic, dualist, materialist, or testimony background is silently privileged."
+  - "No D3/D4 direction result is issued in matrix construction."
+  - "If later SUPPORTED is considered for a miracle/anomalous-event tagged proposition, Protocol Phase I and all applicable type-specific sufficiency elements still apply."
+
+evidence_return_control:
+  trigger_report: "TFP_STRESS_2_REVIEWER_C_G2_L5_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  trigger_report_blob_sha: "275940b8cc8a2798f38d7f203b49a7f8ea6fa99f"
+  prior_ready_scopes: 0
+  prior_incomplete_scopes: 8
+  acquired_return: "TFP_STRESS_2_G2_L5_TARGETED_RETURN_ACQUISITION_0_1_0.yaml"
+  acquired_return_blob_sha: "e7ce6e5f16e922c44f2a2f2c4b8d056e934fe62d"
+  architecture_changed: false
+  self_certified_coverage_closure: false
+
+next_gate:
+  action: "Fresh Reviewer C post-return proposition-scope coverage recheck for all 8 L5-linked scopes after bounded argument-level acquisition."
+  proposition_dispositions_before_gate: "PROHIBITED"
+
+version_control:
+  supersedes: "TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_EVIDENCE_MATRIX_0_1_0.yaml"
+  change_class: "TARGETED_RETURN_TO_EVIDENCE_AFTER_COVERAGE_INCOMPLETE"
+  architecture_changed: false
+  truth_dispositions_changed: false
