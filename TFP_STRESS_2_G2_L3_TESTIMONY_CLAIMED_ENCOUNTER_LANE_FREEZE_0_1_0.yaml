@@ -1,0 +1,332 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE"
+status: "K4_FROZEN__L3_SCOPE_COMPLETE__32_PROPOSITION_FACET_DISPOSITIONS_ISSUED__NO_SUPPORTED_RESULTS__CROSS_LANE_CONSOLIDATION_PENDING"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  q1_event_control: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  founding_stream_freeze: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+  founding_stream_freeze_blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  l3_matrix: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_EVIDENCE_MATRIX_0_1_2.yaml"
+  l3_matrix_blob_sha: "e25d9041a447df41a7b013f836e8e3cc74546334"
+  l3_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L3_POST_RETURN_COVERAGE_RECHECK_REPORT_0_1_0.md"
+  l3_coverage_report_blob_sha: "6910f2ed330b740e7a059d8b579a608e0a699170"
+  l3_coverage_state: "ALL_32_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  targeted_return_acquisition: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_1.yaml"
+  targeted_return_acquisition_blob_sha: "1f8c55661a6027b67bc5115c91090f2337d21eba"
+
+lane:
+  id: "L3"
+  title: "Testimony/claimed encounter"
+  competence: ["experience-report existence","sincerity","independence","stream identity","referent claims"]
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  supported_sufficiency_records_required: false
+  reason_no_supported_sufficiency_records: "No L3-linked proposition satisfies all of its frozen truth-bearing requirements from testimony/claimed-encounter evidence alone."
+  unresolved_conflicts_listed: true
+  exact_version_fixed: true
+
+stream_findings:
+  FS_01:
+    state: "EARLY_RECEIVED_PRE_PAULINE_APPEARANCE_TRADITION_CLUSTER_MATERIALLY_SUPPORTED"
+    independence: "ONE_STREAM_CLUSTER__NO_INTERNAL_SUBSTREAM_INDEPENDENCE_CREDITED"
+    occurrence_limit: "Transmission of an appearance claim is stronger evidence for an early claim/experience-report tradition than for the occurrence or ontology of the underlying encounter."
+  FS_02:
+    state: "PAUL_FIRST_PERSON_CLAIM_PRESENT"
+    founding_stream_status: "NOT_PRE_PAULINE_BY_ITSELF"
+    sincerity_limit: "A first-person claim is stronger testimonial evidence than later narration but does not guarantee accuracy, extramentality, or ontology."
+  later_clusters:
+    state: "DEPENDENCE_LIMITED_TESTIMONY_AND_DEVELOPMENT_EVIDENCE"
+    rule: "Gospel, Acts, and later reception clusters do not manufacture founding-stream independence."
+
+target_case_psychological_pair:
+  positive_argument:
+    source: "G2L3R-001 / Stephen H. Smith 2024"
+    evidential_function: "Makes an individual-bereavement-vision plus social-propagation/collective-delusion model argument-reviewable."
+    truth_status: "NOT_ADOPTED"
+  adverse_argument:
+    source: "G2L3R-002 / Loke and Meader 2025"
+    evidential_function: "Provides full argument-level adverse testing of Smith's bereavement, MPI/collective-delusion, shared-perception, and cognitive-dissonance transfers."
+    truth_status: "NOT_ADOPTED"
+  lane_effect: "Moves formerly inaccessible mechanism hypotheses from coverage failure to disposition-ready disagreement; does not itself establish any target-case mechanism."
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 0
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 11
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 4
+  NOT_ESTABLISHED_WITHIN_SCOPE: 17
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-R-BODY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "Early resurrection/encounter sources include body-language and later physical-interaction motifs, but L3 does not establish same-stream founding-referent embodiment."
+    limiting_condition: "Founding-stream embodiment remains separate from later narrative physicality and L5 embodiment criteria."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "FS-01 materially supports an early received pre-Pauline appearance/encounter-claim stream, but the occurrence of the underlying encounter is not established by transmission alone."
+    limiting_condition: "FS-01 remains one cluster; named list items are not independent streams."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish that an embodied encounter stream was PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+    limiting_condition: "Occurrence, embodiment, and causal role remain separately burdened."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-REAL-REFERENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "The sources present encounter claims as referring to Jesus rather than as consciously fictional reports, which is positive testimonial evidence for an external referent, but subjective-only alternatives remain live."
+    limiting_condition: "No independent extramentality observation; Smith/Loke-Meader represent competing transfer arguments."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-IDENTITY-JESUS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "Encounter traditions consistently identify the claimed referent as Jesus and later narratives add recognition language, but actual personal identity remains unverified."
+    limiting_condition: "Claimed identity is not equivalent to metaphysical identity."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-NONEMBODIED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 testimony does not establish that a real referent was nonembodied; Pauline semantics are disputed and later narratives often portray bodily features."
+    limiting_condition: "Ontology belongs substantially to L5."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-FOUNDING-ENCOUNTER"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "The same FS-01 early appearance/encounter-claim cluster materially supports V's occurrence route at the report/tradition level, but encounter truth and referent ontology remain unresolved."
+    limiting_condition: "Same-stream rule enforced symmetrically with R."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish a veridical nonembodied encounter as PRIMARY or NECESSARY_CONTRIBUTING."
+    limiting_condition: "Occurrence, extramentality, identity, nonembodiment, and causal role all remain separate."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-EXPERIENCE-OCCURRED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "Paul supplies a first-person claimed experience and FS-01 preserves early appearance reports; Smith supplies a target-case individual-bereavement mechanism, but genuine subjective experience in the founding stream is not directly observed."
+    limiting_condition: "Sincerity/report existence is not nonveridicality."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l3_facet: "A nonveridical individual-experience mechanism is coherent and now represented at argument level by Smith, with a serious adverse response, but target-case nonveridicality is not directly attested."
+    limiting_condition: "Mechanism possibility and explanatory fit are not occurrence."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The evidence does not establish M-IND-EXP as PRIMARY while social/interpretive mechanisms remain only nonnecessary."
+    limiting_condition: "Smith proposes such a role; Loke/Meader contest transfer; causal ranking is for later lanes."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The frozen H-SOC burden requires genuine nonveridical subjective experiences in a social/group process; group reports and Smith's collective-delusion propagation do not establish that requirement."
+    limiting_condition: "Mere report/belief formation is expressly insufficient."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l3_facet: "A founding social propagation process is now represented by a concrete target-case model and empirical analogies, but its occurrence in the target case is not directly attested."
+    limiting_condition: "Group report multiplicity and modern analogies do not establish target-case operation."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "Because the required genuine social/group subjective-experience process is not established, its nonveridicality is also not established."
+    limiting_condition: "Smith's collective-delusion mechanism is not equivalent to evidence of genuine group subjective experiences."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish M-SOC-EXP as PRIMARY with individual seed and interpretation merely nonnecessary."
+    limiting_condition: "The frozen H-SOC causal profile is not met by report propagation alone."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-INDIVIDUAL-EXPERIENCE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "An individual claimed-experience seed is compatible with Paul's first-person claim, FS-01, bereavement reference classes, and Smith's Peter-first model, but genuine nonveridical occurrence is unresolved."
+    limiting_condition: "FS-02 is not itself a pre-Pauline founding stream."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-SOCIAL-AMPLIFICATION"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l3_facet: "Smith supplies a concrete individual-stimulus-to-group-belief amplification model, but target-case social amplification is not directly attested and the candidate requires genuine experience within its social limb."
+    limiting_condition: "Loke/Meader provide a serious transfer challenge."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l3_facet: "The combined individual-seed/social-amplification nonveridical model is coherent and argument-level represented, but the target-case mechanism is not directly attested."
+    limiting_condition: "Coverage completeness does not establish mechanism occurrence."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The evidence does not establish both individual and social experience mechanisms as PRIMARY/NECESSARY_CONTRIBUTING with at least one PRIMARY."
+    limiting_condition: "Interpretive-role and mechanism-role burdens remain unresolved."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish that both individual and social experience mechanisms were only CONTRIBUTING_NONNECESSARY or NONE; a serious experience-primary model is now represented."
+    limiting_condition: "Failure to establish H does not establish L."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-S1-POSTCRUC-ACCESS"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "Post-crucifixion encounter reports cannot be relabeled as access to a continuously living Jesus, and no independent living-access report was established."
+    limiting_condition: "L2's death/nondeath findings remain separate inputs."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "No L3 evidence establishes living-Jesus access as PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+    limiting_condition: "Requires positive living-access evidence, not generic appearance claims."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "An individual subjective-experience module has a real report/reference-class basis and a target-case model, but nonveridical target-case occurrence is unresolved."
+    limiting_condition: "Independent warrant is not borrowed from failure of R/V."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-INT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "The founding proclamation contains interpretive/scriptural framing and early interpretive resources, so a founding interpretive contribution is materially supported at the testimony/content level."
+    limiting_condition: "Causal necessity is not established in L3."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-NARR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "Later canonical and noncanonical testimony shows narrative elaboration relative to earlier proclamation material, materially supporting later development at some level."
+    limiting_condition: "Exact genealogy and dependence remain unresolved."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish the frozen joint pattern requiring individual subjective experience and interpretation as necessary with the specified later-development relation."
+    limiting_condition: "Component plausibility is not joint causal warrant."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "L3 does not establish every required founding module in its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    limiting_condition: "No module role is inferred residually."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SOC-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "M-SOC-EXP requires genuine nonveridical subjective experiences in a social/group process; the available group-report and collective-delusion evidence does not establish that."
+    limiting_condition: "Smith's social propagation model is not itself genuine group subjective experience."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The required social-experience plus interpretation joint pattern is not established because the M-SOC-EXP occurrence burden remains unmet."
+    limiting_condition: "Later narrative development cannot substitute for a founding module."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-IND"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l3_facet: "An individual seed module has early report-level and psychological-model support, though nonveridical target-case occurrence and necessity remain unresolved."
+    limiting_condition: "Same evidence boundaries as P-HSEED-INDIVIDUAL-EXPERIENCE."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SOC"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The frozen social seed module requires genuine nonveridical subjective experiences in a social/group process; social propagation/report formation alone does not satisfy it."
+    limiting_condition: "Multiplicity of FS-01 names remains one stream cluster."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l3_facet: "The full seed-spread joint pattern is not established because the social-experience module and causal-role vector remain unmet."
+    limiting_condition: "No post-hoc module substitution is allowed."
+    proposed_confidence: "HIGH_FOR_L3_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+sincerity_and_testimony_boundary:
+  findings:
+    - "There is materially stronger evidence for the existence of early resurrection/appearance claims than for the truth of their ontological interpretation."
+    - "Paul's first-person claim provides direct self-report evidence that he represented himself as having an encounter, but L3 does not convert that into guaranteed sincerity or accuracy."
+    - "FS-01 is transmitted tradition rather than surviving first-person testimony from each named figure."
+    - "The acquired record does not establish a founding deception mechanism, but absence of deception evidence is not positive evidence for veridicality."
+  no_global_sincerity_disposition: true
+
+unresolved_l3_conflicts:
+  - "The early received appearance tradition materially supports an early encounter-claim stream while leaving the underlying event/experience class unresolved."
+  - "Smith supplies a coherent target-case individual-vision/social-propagation model; Loke/Meader supply a serious full-text transfer critique."
+  - "Later narrative physicality and recognition language are stronger as evidence of later testimony/content than as proof of founding-stream ontology."
+  - "H-SOC/C-HET-SOC require genuine social/group subjective experiences; collective delusion or report propagation without such experiences does not satisfy those frozen modules."
+  - "FS-01 remains one stream cluster; named appearance recipients cannot be vote-counted as independent convergence."
+  - "No testimony result here settles extramentality, embodiment, personal identity, or causal primacy without L4/L5/L6."
+
+arrow_boundary:
+  standalone_l3_arrow_ids_frozen_at_g0: false
+  treatment: "Do not invent post-exposure outcome-material arrows. A5 endpoint dependencies remain preserved for Phase-L consolidation."
+  c4_change: false
+
+lane_freeze_effect:
+  l3_frozen: true
+  l3_amendments_now_use_C4: true
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required_later: true
+  discriminator_directions_produced: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  lane: "L4"
+  title: "Psychology/memory/social process"
+  purpose: "Evaluate individual experience mechanisms, social/group processes, memory, narrative development, deception-relevant mechanism capacity, and causal-role plausibility using the L3 target-case positive/adverse pair without converting mechanism capacity into target-case occurrence."
