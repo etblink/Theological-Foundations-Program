@@ -1,0 +1,69 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "R-PHYS-REFINEMENT"
+candidate_name: "Material-continuity embodied refinement"
+status: "CONSTRUCTION_COMPLETE__PRE_FREEZE"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
+
+native_formulation: "If R-TRANS is true, the embodied postmortem subject is materially continuous in the relevant sense with the pre-mortem/crucified body rather than being an unrelated or wholly discontinuous embodiment. This is a refinement of R-TRANS, not an N3 competitor and not a truth-warrant gate for generic R_EVENT."
+
+proponent_sources:
+  - id: "FORM-R-001"
+    title: "Catechism of the Catholic Church, 645-647"
+    use: "FORMULATION_ONLY"
+    contribution: "Explicit same-body continuity alongside transformed/glorified properties."
+  - id: "FORM-R-002"
+    title: "William Lane Craig, The Bodily Resurrection of Jesus"
+    use: "FORMULATION_ONLY"
+    contribution: "Explicit defense of physical/material continuity and critique of purely nonphysical resurrection-body readings."
+
+necessary_propositions:
+  - "P-RPHYS-CONTINUITY"
+
+authority_commitments:
+  - "Doctrinal or scriptural authority defines proponent meaning only; it does not establish continuity as public evidence."
+
+internal_success_conditions:
+  - "R-TRANS is independently satisfied."
+  - "P-RPHYS-CONTINUITY is supported under its own evidence route."
+  - "The refinement does not create a second status-bearing candidate."
+
+expected_evidence:
+  - "Body/tomb/disposition or identity-continuity evidence specifically bearing on continuity of the postmortem body with the crucified body."
+  - "Source claims whose meaning, if historically warranted, requires continuity rather than replacement."
+
+recognized_objections:
+  - "A transformed embodied state may not require continuity of the same material parts."
+  - "Empty-tomb or body-disposition evidence may be historically uncertain or non-diagnostic."
+  - "Metaphysical identity theories may permit embodiment without strict material continuity."
+
+caricatures_rejected:
+  - "R-PHYS does not mean simple return to ordinary mortal life."
+  - "Failure of R-PHYS does not defeat R-TRANS."
+  - "The refinement does not license counting the same evidence twice as a sibling candidate."
+
+native_or_proponent_review:
+  status: "PASS"
+  reviewer_or_basis: "Program-lead pre-G0 formulation review of FORM-R-001 and FORM-R-002"
+  findings:
+    - "Both reviewed proponent sources contain materially continuous bodily-resurrection formulations stronger than generic R-TRANS."
+
+equal_strength_review:
+  status: "PASS_PRELIMINARY"
+  reviewer_or_basis: "Program lead"
+  checks:
+    - "strongest formulation rather than easiest-to-refute version"
+    - "candidate-specific burdens preserved"
+    - "no rival-only burden imposed asymmetrically"
+    - "formulation sources distinguished from event evidence"
+  findings:
+    - "Refinement receives its strongest continuity claim without being promoted to an independent N3 candidate."
+
+packet_stage_notes:
+  - "Non-status-bearing refinement only."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [7,8]
+freeze_identity: "PENDING_WAVE_1_FREEZE_MANIFEST"
