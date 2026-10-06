@@ -1,0 +1,81 @@
+schema_version: "0.1.2"
+study_id: "TFP-STRESS-2"
+artifact: "EMPIRICAL_MODEL_PROPOSITION_REGISTER"
+status: "REVIEWER_A_SHORT_CONFIRMATION_COMPLETE__NB2_BODY_EXPECTATION_SYNCED__PENDING_REVIEWER_C"
+supersedes: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_1.yaml"
+
+purpose: "Record evidence-sensitive model questions that were previously misclassified as live backgrounds. These receive ordinary lane dispositions and cannot manufacture FRAMEWORK_DEPENDENCE merely by being preserved as alternative 'backgrounds'."
+
+moved_from_background:
+  - former_id: "BGD-4"
+    new_surface: "EMP-SOURCE-DATING-DEPENDENCE"
+    type: "TEXTUAL_HISTORICAL_EVIDENCE_MODEL"
+    propositions:
+      - "P-SOURCE-DATING-RANGE"
+      - "P-SOURCE-DEPENDENCE"
+      - "P-EMBEDDED-TRADITION-DATING"
+      - "P-TRANSMISSION-RELATION"
+    lanes: ["L1"]
+    rule: "Competing date/authorship/dependence models are adjudicated as evidence propositions with bounded uncertainty. Surviving alternatives may enter sensitivity/confidence analysis, but are not framework backgrounds by default."
+
+  - former_id: "BGD-5"
+    new_surface: "EMP-EXPERIENTIAL-MECHANISM-CAPACITY"
+    type: "PSYCHOLOGICAL_SOCIAL_EVIDENCE_MODEL"
+    propositions:
+      - "P-HIND-MECHANISM-SUFFICIENT"
+      - "P-HSOC-MECHANISM-SUFFICIENT"
+      - "P-CHET-IND-EXP"
+      - "P-CHET-SOC-EXP"
+      - "P-CHET-SEED-IND"
+      - "P-CHET-SEED-SOC"
+      - "P-HSEED-INDIVIDUAL-EXPERIENCE"
+      - "P-HSEED-SOCIAL-AMPLIFICATION"
+      - "P-HSEED-MECHANISM-SUFFICIENT"
+    lanes: ["L4"]
+    rule: "The capacity of individual/social mechanisms is itself evidence-sensitive. Competing empirical models receive ordinary dispositions; no 'permissive' or 'restrictive' capacity model remains live after its premises fail."
+
+  - former_id: "BGD-6"
+    new_surface: "EMP-CRUCIFIXION-BURIAL-PRACTICE"
+    type: "HISTORICAL_ARCHAEOLOGICAL_MEDICAL_EVIDENCE_MODEL"
+    propositions:
+      - "P-CRUC"
+      - "P-DEATH"
+      - "P-S1-NONDEATH"
+      - "P-RPHYS-CONTINUITY"
+      - "P-CHET-BODY"
+      - "P-S2-NOT-CRUCIFIED"
+      - "P-S2-SUBSTITUTION-OR-MISIDENTIFICATION"
+      - "P-S3-NOT-CRUCIFIED"
+      - "P-S3-NO-SUBSTITUTE"
+    lanes: ["L2"]
+    rule: "Execution lethality, survivability, burial, and body-disposition models are ordinary evidence propositions. General practice requires an explicit bridge to case-specific inference. P-CHET-BODY is now a non-ranking candidate expectation/contradiction control, not a C-HET necessary proposition."
+
+  - former_id: "BGD-7"
+    new_surface: "EMP-SECOND-TEMPLE-CONCEPTS"
+    type: "TEXTUAL_HISTORICAL_INTERPRETIVE_EVIDENCE_MODEL"
+    propositions:
+      - "P-EARLY-PROCLAMATION-CONTENT"
+      - "P-L-INTERPRETIVE-ORIGIN"
+      - "P-CHET-INT"
+    lanes: ["L1"]
+    rule: "Availability/content of resurrection, exaltation, vindication, assumption, and related concepts is historically/textually adjudicated. Conceptual availability is not event occurrence."
+
+  - former_id: "BGD-8"
+    new_surface: "EMP-PAULINE-BODY-INTERPRETATION"
+    type: "TEXTUAL_LINGUISTIC_INTERPRETIVE_EVIDENCE_MODEL"
+    propositions:
+      - "P-SOURCE-CLAIM-EMBODIMENT"
+      - "P-R-BODY"
+      - "P-V-NONEMBODIED"
+    lanes: ["L1","L5"]
+    rule: "Competing serious readings of body language are handled through interpretive sufficiency and serious-rival reading control. P-SOURCE-CLAIM-EMBODIMENT records what a source means or claims; P-R-BODY and P-V-NONEMBODIED are historical/ontological occurrence propositions and require independent evidential routes. A text's meaning does not by itself establish occurrence."
+
+general_rules:
+  - "If an empirical premise is CONTRADICTED_WITHIN_SCOPE, it cannot be kept alive as a framework variant to force a ranking flip."
+  - "Bounded uncertainty may be propagated through sensitivity/confidence only when the evidence leaves multiple models live."
+  - "A surviving empirical model is an uncertainty in the evidence record, not automatically a SERIOUS_LIVE_BACKGROUND."
+  - "Reviewer C may identify a genuinely methodological/paradigm-level residue and recommend a separately named background, but may not relabel a candidate-favorable empirical proposition as a framework."
+
+review:
+  reviewer_A_refile_check: "CLOSED__SHORT_CONFIRMATION_COMPLETE"
+  reviewer_C_granularity_check: "PENDING"
