@@ -1,0 +1,101 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD"
+status: "FORMULATION_ONLY__PRE_G0__NO_PROPOSITION_DISPOSITIONS"
+date: "2026-10-05"
+
+governing_rules:
+  - "These sources are opened only to formulate/steelman admitted candidates or required node rivals."
+  - "No source listed here receives a historical proposition disposition at packet stage."
+  - "Mechanism literature establishes candidate intelligibility and frozen expectations only; it does not establish applicability to the founding Christian movement."
+  - "Historical critics/proponents define candidate content; their conclusions are not adopted as evidence."
+  - "Synthetic packets must disclose that no single source endorses the exact TFP conjunction."
+
+sources:
+  - id: "FORM-H-001"
+    citation: "Kamp, Karina Stengaard, et al. Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement: An Interdisciplinary and Integrative Review. Schizophrenia Bulletin 46.6 (2020): 1367-1381."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7707065/"
+    use: "FORMULATION_ONLY__MECHANISM"
+    packet_surfaces: ["H-IND","H-SOC","H-SEED-SPREAD","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Documents a broad, non-pathologizing class of sensory/quasi-sensory experiences of deceased persons, their phenomenological diversity, and the importance of sociocultural interpretation. Used to make subjective-experience candidates psychologically serious without presuming that any ancient report belongs to this class."
+    anti_overreach: "Does not establish that Jesus's followers had such experiences, that any such experience is nonveridical, or that the mechanism can generate the frozen founding causal profile."
+
+  - id: "FORM-HSOC-001"
+    citation: "Roediger, Henry L. III, Michelle L. Meade, and Erik T. Bergman. Social contagion of memory. Psychonomic Bulletin & Review 8.2 (2001): 365-371."
+    url: "https://pubmed.ncbi.nlm.nih.gov/11495127/"
+    use: "FORMULATION_ONLY__MECHANISM"
+    packet_surfaces: ["H-SOC","H-SEED-SPREAD","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Experimental formulation source for social influence producing false-memory convergence."
+    anti_overreach: "Memory contagion is not itself a group hallucination, does not establish the resurrection case, and cannot satisfy the genuine-experience requirement without independent experience evidence."
+
+  - id: "FORM-HSOC-002"
+    citation: "Edelson, Micah, et al. Following the crowd: Brain substrates of long-term memory conformity. Science 333.6038 (2011): 108-111."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3284232/"
+    use: "FORMULATION_ONLY__MECHANISM"
+    packet_surfaces: ["H-SOC","H-SEED-SPREAD","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Mechanism source distinguishing durable private memory change from transient public conformity under social influence."
+    anti_overreach: "Does not establish that early Christian witnesses underwent memory conformity or that socially influenced memory alone yields genuine subjective encounter experiences."
+
+  - id: "FORM-L-001"
+    citation: "Sutton, Benjamin Lee, and Anthony Le Donne. Remembering Jesus in Earliest Christianity: The What and How of Socially Framed Memory. In The Cambridge History of Ancient Christianity, 2023."
+    url: "https://www.cambridge.org/core/books/abs/cambridge-history-of-ancient-christianity/remembering-jesus-in-earliest-christianity/8C7712DC8364C2316B1F523F99934710"
+    use: "FORMULATION_ONLY__MECHANISM"
+    packet_surfaces: ["L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Scholarly formulation of earliest-Christian remembering as socially framed, context-sensitive, and requiring explicit memory theory."
+    anti_overreach: "Does not claim that interpretation alone originated the resurrection proclamation and does not by itself make L true."
+
+  - id: "FORM-L-002"
+    citation: "Galbraith, Deane. Whence the Giant Jesus and his Talking Cross? The Resurrection in Gospel of Peter 10.39-42 as Prophetic Fulfilment of LXX Psalm 18. New Testament Studies 63.3 (2017): 473-491."
+    url: "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/whence-the-giant-jesus-and-his-talking-cross-the-resurrection-in-gospel-of-peter-103942-as-prophetic-fulfilment-of-lxx-psalm-18/EE45F33140E0E0196E691FAE833C72B5"
+    use: "FORMULATION_ONLY__MECHANISM"
+    packet_surfaces: ["L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Concrete scholarly example of resurrection narrative content being generated/shaped through Christocentric scriptural interpretation."
+    anti_overreach: "The Gospel of Peter is later than the founding stratum; this source may define an interpretive-development mechanism but cannot be projected backward as founding evidence."
+
+  - id: "FORM-L-003"
+    citation: "Albert Schweitzer, The Quest of the Historical Jesus, ch. 8, summarizing David Friedrich Strauss's mythical-development account."
+    url: "https://en.wikisource.org/wiki/The_Quest_of_the_Historical_Jesus/8"
+    use: "FORMULATION_ONLY__HISTORICAL_THEORY"
+    packet_surfaces: ["L","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+    contribution: "Historical serious formulation in which resurrection narratives are treated as legendary/mythic development rather than straightforward event reports."
+    anti_overreach: "Used only to trace a serious interpretive/legend-development family; Schweitzer's or Strauss's historical conclusions are not adopted."
+
+  - id: "FORM-F-001"
+    citation: "Hermann Samuel Reimarus, Fragments, English translation by R. S. Fraser; resurrection-fraud discussion."
+    access_url: "https://www.tonylutz.net/images/ebooks/jesus-hoax/Fragments.pdf"
+    use: "FORMULATION_ONLY__HISTORICAL_PROPONENT"
+    packet_surfaces: ["F"]
+    contribution: "Direct historical formulation that disciples could have removed Jesus's body and knowingly proclaimed resurrection as a fraud."
+    source_quality_note: "The accessed file is a public web mirror of a public-domain/older translation, not a scholarly host. It is paired with FORM-F-002 for provenance/context."
+    anti_overreach: "The packet preserves the strongest deception mechanism without treating Reimarus's accusation as established fact."
+
+  - id: "FORM-F-002"
+    citation: "Albert Schweitzer, The Quest of the Historical Jesus, ch. 2, summary of Hermann Samuel Reimarus."
+    url: "https://en.wikisource.org/wiki/The_Quest_of_the_Historical_Jesus/2"
+    use: "FORMULATION_ONLY__SECONDARY_PROVENANCE"
+    packet_surfaces: ["F"]
+    contribution: "Public-domain scholarly-history source confirming Reimarus's deception/theft formulation and its causal logic."
+    anti_overreach: "Secondary history of the theory, not evidence that founding deception occurred."
+
+  - id: "FORM-XHIST-001"
+    citation: "Richard Carrier, Jesus Studies by Dr. Carrier."
+    url: "https://www.richardcarrier.info/jesus.html"
+    use: "FORMULATION_ONLY__PROPONENT"
+    packet_surfaces: ["X-NONHISTORICITY-NODE-RIVAL"]
+    contribution: "Direct proponent source identifying Carrier's peer-reviewed mythicist model as an origin of Christianity without a historical Jesus."
+    anti_overreach: "Used only to steelman the P-HIST-JESUS node rival; it is not treated as a full Q1 candidate and Carrier's evidential conclusions are not adopted pre-G0."
+
+  - id: "FORM-XIDENT-001"
+    citation: "TFP frozen EMB-3 / P-V-IDENTITY-JESUS architecture plus general identity-attribution controls already in the preregistration."
+    url: null
+    use: "INTERNAL_SYNTHETIC_NODE_CONTROL"
+    packet_surfaces: ["X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"]
+    contribution: "Defines the logical possibility that a real extramental referent exists but is not personally identical with Jesus, preventing real-referent evidence from automatically satisfying EMB-3 or P-V-IDENTITY-JESUS."
+    anti_overreach: "No external school or proponent is claimed; this is an explicit identity alternative required by the frozen candidate architecture."
+
+packet_construction_boundary:
+  no_new_candidate_created: true
+  no_historical_disposition_assigned: true
+  no_candidate_ranking_assigned: true
+  g0_authorized: false
+  g1_authorized: false
