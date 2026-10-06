@@ -1,0 +1,163 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "PROJECT_LEAD_F2_DELTA_INDEPENDENT_CHECK"
+status: "REVIEWER_D_DELTA_RESULT_INDEPENDENTLY_REPRODUCED__F2_CLOSURE_SUPPORTED"
+date: "2026-10-06"
+
+reviewer_D_delta_report:
+  path: "TFP_STRESS_2_REVIEWER_D_G4_F2_DELTA_CHECK_REPORT_0_1_0.md"
+  reviewer: "Anthropic Claude Opus 5.5 / same fresh Reviewer-D lineage"
+  reported_result: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+
+independent_target_verification:
+  commit: "c3a98445f5744f9dc73739b8235ff01648e927ed"
+  tree: "9d59aeb035c43b26e60ce4553b56a7240364642a"
+  result: "MATCH"
+
+pin_replay:
+  ledger_0_1_79: "e2a85e90051f56598ade1243429d8ad996b94e97"
+  ledger_0_1_80: "7331c4cbfb72654993f8843d11907c055b55d7c6"
+  ledger_0_1_81: "1321fff4506b650bc31b22e1a5e43e4b44f23312"
+  ledger_0_1_82: "21849a7bd99d2b3099fffe38880b789605aa47b0"
+  disclosure: "53386141c6c1bdbbaa3b285981ea70ea2aee54ad"
+  ratification_request: "0b0f50001cb7b5f8ba7764d58e4da071277a4562"
+  ratification_acceptance: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+  revalidation: "59a832f494e8207cfb7fb33d6eb714a1c5942465"
+  prior_reviewer_D_report: "c030bcef140db40410a92ce9b8499b998b4c0cf6"
+  prior_project_lead_check: "e741f98508e21bfec618bd9162ce2e86302c76c4"
+  result: "ALL_MATCH"
+
+ledger_delta_replay:
+  transitions:
+    - transition: "0.1.76 -> 0.1.77"
+      changed_preexisting_sequences: []
+      appended_sequences: [157,158,159]
+    - transition: "0.1.77 -> 0.1.78"
+      changed_preexisting_sequences: []
+      appended_sequences: [160]
+    - transition: "0.1.78 -> 0.1.79"
+      changed_preexisting_sequences: []
+      appended_sequences: [161,162,163,164]
+    - transition: "0.1.79 -> 0.1.80"
+      changed_preexisting_sequences: []
+      appended_sequences: [165,166,167]
+    - transition: "0.1.80 -> 0.1.81"
+      changed_preexisting_sequences: []
+      appended_sequences: [168]
+    - transition: "0.1.81 -> 0.1.82"
+      changed_preexisting_sequences: []
+      appended_sequences: [169,170]
+  repair_delta_preserves_all_prior_entries: true
+
+header_replay:
+  ledger_0_1_79:
+    schema_version: "0.1.62"
+    supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_61.yaml"
+    status: "ACTIVE_PRE_G0"
+  ledger_0_1_80:
+    schema_version: "0.1.80"
+    supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_79.yaml"
+    status: "ACTIVE_G4_F2_REPAIR__G5_READINESS_SUSPENDED"
+    entries: 167
+    next_sequence: 168
+  ledger_0_1_81:
+    schema_version: "0.1.81"
+    supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_80.yaml"
+    status: "ACTIVE_G4_F2_REPAIR__HUMAN_G3_RATIFICATION_PENDING__G5_SUSPENDED"
+    entries: 168
+    next_sequence: 169
+  ledger_0_1_82:
+    schema_version: "0.1.82"
+    supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_81.yaml"
+    status: "ACTIVE_G4_F2_REPAIR__POST_C4_G3_RATIFIED__A12_N3_Q1_REVALIDATED__REVIEWER_D_DELTA_PENDING"
+    entries: 170
+    next_sequence: 171
+  result: "REPAIR_HEADERS_CORRECT"
+
+D1_replay:
+  Phase_L:
+    amendment_sequence: 129
+    disclosed_pre_C4_use_sequences: [130,131,132,133,134,138,139,140]
+    C4_sequence: 152
+    binding_sequence: 153
+    independent_check: "Actual substantive uses are 130-134, 138, and 140; 139 is conservative inclusion. C4 input 150 is review input, not substantive use."
+    result: "ACCURATELY_DISCLOSED_AND_PROSPECTIVELY_REAUTHORIZED"
+  L1:
+    amendment_sequence: 88
+    pre_C4_citation_sequence: 89
+    C4_sequence: 91
+    use_before_confirmation_rule: "Unchanged row-level dispositions permitted; corrected aggregate barred as outcome input."
+    result: "ACCURATELY_DISCLOSED"
+  L2:
+    amendment_sequence: 93
+    pre_C4_citation_sequences: [94,95]
+    C4_sequence: 97
+    use_before_confirmation_rule: "Unchanged row-level dispositions and P-DEATH record permitted; corrected pointer awaited confirmation."
+    result: "ACCURATELY_DISCLOSED"
+
+D2_replay:
+  stale_header_range: "0.1.63 through 0.1.79"
+  repair_starts: "0.1.80"
+  compare_43ee147_to_c3a98445:
+    changed_existing_files: 0
+    deleted_existing_files: 0
+    renamed_existing_files: 0
+    added_files: 20
+  result: "HISTORICAL_FILES_UNTOUCHED__HEADER_DEFECT_CLOSED"
+
+D3_replay:
+  transition: "0.1.0 -> 0.1.1"
+  sequence_entry_rewrite: false
+  pre_activation: true
+  disclosed: true
+  result: "NONENTRY_PREACTIVATION_REVISION_ACCURATELY_DISCLOSED"
+
+ratification_revalidation_replay:
+  linear_order:
+    C4_report: "019a11bd7a06879da1c1a96fb2c5a25957c4ab07"
+    A17_binding: "d2eaf3d9e38e0a550049cb6b9d7ddd6f9852f7a1"
+    reviewer_D_failure_report: "bf90d01331300ae1159755f7731b1f6da2365673"
+    project_lead_check: "ec2df3e7e8cefc188d04ed399e3e105ecdc08303"
+    disclosure: "e1948813cd528d7e5b5e02b9f86d0aa3997b85c6"
+    repaired_ledger_0_1_80: "b05e644db6de79b46596468abfa9215f69c5cd85"
+    ratification_request: "51f51b63a9f46cd0418faf15e7522040f45f475e"
+    ratification_request_ledger: "093ddb73165c7dfb0e36ad54fa9388ae0a522e71"
+    ratification_acceptance: "352c6b2b470a05a41c3a0103f90f72c8dbe7b952"
+    prospective_revalidation: "79c2a1251269134c9cd7c31f5fe66f0437feb949"
+    ledger_0_1_82: "c3a98445f5744f9dc73739b8235ff01648e927ed"
+  human_ratification_text_matches_request: true
+  human_ratification_directly_received_by_program_lead_in_current_conversation: true
+  revalidation_uses_same_phase_L_blob: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  phase_L_summary: "4_SUPPORTED__17_PARTIALLY_SUPPORTED__4_PLAUSIBLE_BUT_UNATTESTED__24_NOT_ESTABLISHED__1_EVIDENCE_AGAINST"
+  A12_revalidated: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  N3_revalidated: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  Q1_revalidated: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  result_changed: false
+  stronger_outcome_created: false
+
+nonblocking_observations:
+  O1:
+    confirmed: true
+    issue: "ledger 0.1.80-0.1.82 integrity_reviewer block still says REVIEWER_D_FUTURE / UNASSIGNED_FRESH_SESSION_REQUIRED"
+    treatment: "Correct descriptively in next ledger version; no prior entry rewrite."
+  O2:
+    confirmed: true
+    issue: "last_checked_by names Program Lead independent replay, not independent Reviewer D"
+    treatment: "Clarify in next ledger version by separating custodian_project_lead_check from independent_reviewer_D_delta_check."
+  O3:
+    confirmed: true
+    issue: "sequence 157 cites commit 72eee1f, which follows sequence-158 commit 7be4f81 and sequence-159 commit ce87ee8 in Git order"
+    materiality: "NONBLOCKING_BATCH_ORDER_INVERSION__NO_AMENDMENT_OR_OUTCOME_EFFECT"
+    treatment: "Disclose additively in next ledger integrity_state; do not rewrite sequence entries."
+  O4:
+    confirmed_as_git_limitation: true
+    additional_program_lead_evidence: "Human ratification was directly received in the current human-owner conversation and then preserved verbatim."
+    materiality: "NONBLOCKING"
+
+project_lead_determination:
+  reviewer_D_delta_result_accepted_after_independent_replay: "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+  D1_closed: true
+  D2_closed: true
+  D3_disclosed: true
+  F2_closure_supported: true
+  G5_readiness_may_be_reconsidered: true
