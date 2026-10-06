@@ -1,0 +1,186 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_FREEZE"
+status: "FROZEN_SUBPHASE__15_CAUSAL_PROPOSITION_FACET_DISPOSITIONS_ISSUED__L6_COMPARATIVE_INTEGRATION_REMAINS_OPEN"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  lane_launch: "TFP_STRESS_2_G2_LANE_SYNTHESIS_LAUNCH_0_1_0.yaml"
+  lane_launch_blob_sha: "ff6cd694eb14e50ef639ec047c2fbe736a8f3246"
+  q1_event_control_blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  causal_profile_partition: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+  causal_profile_partition_blob_sha: "1513d4476ef32222f819c51ef0623a0b16bf5bd4"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  l6_matrix: "TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_EVIDENCE_MATRIX_0_1_0.yaml"
+  l6_matrix_blob_sha: "6eb9b21cb3ecf159e293e96680319822aa90669b"
+  l6_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L6_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  l6_coverage_report_blob_sha: "eb3bf37e62cd64881b1f1442964b80c55ba0cc6f"
+  l6_coverage_state: "ALL_15_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+
+subphase:
+  lane_id: "L6"
+  lane_title: "Comparative integration"
+  subphase_title: "Causal attribution"
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  does_not_freeze_entire_L6_lane: true
+  remaining_L6_work:
+    - "Phase-L proposition consolidation across lanes"
+    - "candidate structural/evidential status preparation"
+    - "comparison-scope MAKEABLE certification"
+    - "post-evidence discriminator-direction review"
+    - "background reruns / N3 handoff preparation"
+  unmatched_serious_vector_found: false
+  revised_candidate_required_triggered: false
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 0
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 2
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 1
+  NOT_ESTABLISHED_WITHIN_SCOPE: 12
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-R-FOUNDING-ENCOUNTER"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l6_causal_facet: "FS-01 materially supports an early pre-Pauline appearance/encounter-claim tradition, but the frozen R occurrence burden additionally requires an embodied encounter involving the same referent that independently satisfies R body and identity requirements."
+    limiting_condition: "Transmission and claimed encounter are positive evidence; embodied historical occurrence remains unresolved and later bodily material cannot be spliced into the founding stream."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-R-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The record places resurrection/appearance claims early, but does not establish an embodied founding encounter stream as PRIMARY or NECESSARY_CONTRIBUTING to the proclamation."
+    limiting_condition: "Chronology and prominence are not causal indispensability; body/identity/occurrence remain below full support."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-V-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The record does not establish a real nonembodied Jesus-referent founding stream as PRIMARY or NECESSARY_CONTRIBUTING."
+    limiting_condition: "Extramentality and nonembodiment remain unestablished; appearance attribution cannot substitute for causal role."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l6_causal_facet: "Smith supplies an explicit target-case individual-bereavement initiating model and modern evidence establishes relevant mechanism capacity, so an individual-primary causal route is coherent and specifically modeled."
+    limiting_condition: "Target-case instantiation and PRIMARY status are not attested; Loke/Meader's adverse transfer challenge remains live, and social/interpretive roles are not shown nonnecessary."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The required M-SOC-EXP PRIMARY profile is not established because genuine nonveridical social/group subjective experiences are themselves not established."
+    limiting_condition: "Belief/report propagation cannot satisfy the frozen genuine-experience mechanism or its PRIMARY role."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The record does not establish both M-IND-EXP and M-SOC-EXP as PRIMARY/NECESSARY_CONTRIBUTING with at least one PRIMARY while interpretation is nonnecessary."
+    limiting_condition: "The individual limb has more support than the social genuine-experience limb, and the exact joint role vector is unattested."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-INTERPRETIVE-ORIGIN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l6_causal_facet: "Scriptural/interpretive framing is present in founding-relevant material and relevant interpretive resources were available, materially supporting an early interpretive contribution."
+    limiting_condition: "Presence and plausibility do not establish M-INTERP as PRIMARY or identify a specific genealogy generating the founding encounter claims."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-EXPERIENCE-NONPRIMARY"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The evidence does not establish that both individual and social experience mechanisms were only CONTRIBUTING_NONNECESSARY or NONE."
+    limiting_condition: "Experience-primary models remain live; failure to establish H profiles does not prove experience dispensability for L."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "No evidence establishes M-INTERP as PRIMARY under the common causal ladder."
+    limiting_condition: "Later narrative development is not founding causation, and early interpretive presence does not by itself establish causal priority."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-S1-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "No independent living-Jesus access stream is established as PRIMARY or NECESSARY_CONTRIBUTING to the founding proclamation."
+    limiting_condition: "L2 supports death and provides evidence against nondeath; appearance reports cannot be relabeled as living access. Those facts do not themselves assign the causal proposition a negative disposition."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "No positive actor-specific evidence establishes origin-material knowing fabrication as PRIMARY."
+    limiting_condition: "Generic deception/transmission capacity and later literary invention do not satisfy either frozen F implementation at founding-causal strength."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The exact M-IND-EXP plus M-INTERP necessary joint vector is not established."
+    limiting_condition: "Each component has some support at the capacity/content level, but necessity, timing, and role assignment are not jointly attested."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "No C-HET profile has every required founding module established at its exact PRIMARY/NECESSARY_CONTRIBUTING role."
+    limiting_condition: "Module plausibility cannot be converted into a profile-wide causal result, and no post-exposure reassignment is permitted."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The exact social-experience plus interpretation joint pattern is not established because the genuine M-SOC-EXP occurrence and necessary role remain unmet."
+    limiting_condition: "Report propagation cannot substitute for genuine group subjective experience."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l6_causal_facet: "The three-module M-IND-EXP + M-SOC-EXP + M-INTERP necessary role vector is not established."
+    limiting_condition: "The social genuine-experience limb and joint necessity remain unattested; component capacities do not establish the vector."
+    proposed_confidence: "HIGH_FOR_L6_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+causal_findings:
+  - "FS-01 supplies meaningful evidence for an early encounter-claim tradition, but tradition existence is not the same as embodied encounter occurrence."
+  - "No candidate's founding causal proposition reaches SUPPORTED_WITHIN_SCOPE in this causal subphase."
+  - "H-IND has a specifically articulated target-case causal model and real mechanism capacity, but its PRIMARY status remains unattested."
+  - "Interpretive processing is demonstrably early and receives partial causal-origin support, but M-INTERP is not established as PRIMARY."
+  - "H-SOC, H-SEED-SPREAD social limbs, and C-HET social profiles remain limited by the genuine subjective-experience requirement."
+  - "S1 and F lack the positive founding access/fabrication evidence required for their causal profiles."
+  - "No serious unmatched causal-role vector is evidenced; REVISED_CANDIDATE_REQUIRED is not triggered."
+
+causal_role_boundary:
+  rule: "No mechanism is assigned PRIMARY or NECESSARY_CONTRIBUTING merely from presence, plausibility, chronology, coherence, or capacity."
+  positive_role_assignments_made: false
+  role_vector_selected: false
+  discriminator_directions_produced: false
+
+freeze_effect:
+  causal_attribution_subphase_frozen: true
+  amendments_to_this_subphase_use_C4: true
+  entire_L6_lane_frozen: false
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required: true
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  g3_outcome_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  phase: "L"
+  action: "Build the cross-lane PROPOSITION_EVIDENCE_MATRIX and consolidate every truth-critical necessary proposition under weakest-facet, dependence, convergence, defeater, and chain-attenuation rules before any candidate status or discriminator direction result."
