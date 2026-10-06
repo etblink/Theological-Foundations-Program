@@ -1,0 +1,158 @@
+schema_version: "0.1.5"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET_INDEX"
+status: "WAVE_1_ARCHITECTURE_CLOSED__11_CANDIDATES__REMAINING_PACKET_CONSTRUCTION_ACTIVE__PRE_G0"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+template_ref: "TFP_STRESS_2_STEELMAN_PACKET_TEMPLATE_0_1_0.yaml"
+formulation_source_record: "TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_4.yaml"
+s2_revision_trigger: "TFP_STRESS_2_S2_REVISED_CANDIDATE_TRIGGER_0_1_0.yaml"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_10.yaml"
+
+construction_rules:
+  - "Use Protocol 0.1.7 §23A minimum STEELMAN_PACKET schema without omitting fields."
+  - "Packet construction is formulation work, not G1 evidence adjudication."
+  - "Every outcome-relevant formulation-source exposure is appended to the active pre-G0 exposure ledger."
+  - "Formulation sources outside the evidence window may define a candidate but do not thereby become event evidence."
+  - "No candidate receives a weaker or more caricatured packet than rivals."
+  - "Candidate-native/tradition-native formulation is preferred where a candidate has identifiable proponents."
+  - "Synthetic candidates without a single native proponent must be built from the strongest serious mechanism literature without pretending a school exists."
+  - "If packet work reveals a serious unrepresented formulation, route through REVISED_CANDIDATE_REQUIRED rather than silently broadening an admitted packet."
+
+packet_order:
+  - wave: 1
+    purpose: "affirmative / ontological / survival candidates and their most tradition-sensitive boundaries"
+    packets:
+      - "R-TRANS"
+      - "R-PHYS-REFINEMENT"
+      - "V"
+      - "S1"
+  - wave: 2
+    purpose: "single-process naturalistic / interpretive / deception candidates"
+    packets:
+      - "H-IND"
+      - "H-SOC"
+      - "H-SEED-SPREAD"
+      - "L"
+      - "F"
+  - wave: 3
+    purpose: "closed heterogeneous candidates"
+    packets:
+      - "C-HET-IND"
+      - "C-HET-SOC"
+      - "C-HET-SEED-SPREAD"
+  - wave: 4
+    purpose: "required node-level serious-rival formulation controls"
+    packets:
+      - "X-NONHISTORICITY-NODE-RIVAL"
+      - "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+      - "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+
+packets:
+  - id: "R-TRANS"
+    path: "TFP_STRESS_2_STEELMAN_R_TRANS_0_1_0.yaml"
+    status: "CONSTRUCTION_COMPLETE__PRE_FREEZE"
+    special_checks:
+      - "generic embodied event only; do not smuggle material-continuity burden from R-PHYS"
+      - "keep divine-agent attribution outside Q1"
+  - id: "R-PHYS-REFINEMENT"
+    path: "TFP_STRESS_2_STEELMAN_R_PHYS_REFINEMENT_0_1_0.yaml"
+    status: "CONSTRUCTION_COMPLETE__PRE_FREEZE"
+    special_checks:
+      - "non-status-bearing refinement only"
+      - "failure does not defeat R-TRANS"
+  - id: "V"
+    path: "TFP_STRESS_2_STEELMAN_V_0_1_0.yaml"
+    status: "CONSTRUCTION_COMPLETE__SYNTHETIC__PRE_FREEZE"
+    special_checks:
+      - "real extramental referent identical with Jesus but nonembodied"
+      - "keep theistic/non-theistic causal-agent issue outside Q1"
+  - id: "S1"
+    path: "TFP_STRESS_2_STEELMAN_S1_0_1_0.yaml"
+    status: "CONSTRUCTION_COMPLETE__PRE_FREEZE"
+    special_checks:
+      - "crucified but did not enter P-DEATH"
+      - "post-crucifixion access to living Jesus required"
+  - id: "S2"
+    path: "TFP_STRESS_2_STEELMAN_S2_0_1_0.yaml"
+    status: "SUPERSEDED_FULL_CANDIDATE_PACKET__NODE_RIVAL_ONLY"
+    superseded_by: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+    reviewer_A_disposition: "S2_RECLASSIFY_NODE_RIVAL_ONLY"
+    note: "Historical packet retained as evidence of the fidelity defect; it is not a status-bearing candidate packet."
+  - id: "S3"
+    path: "TFP_STRESS_2_STEELMAN_S3_0_1_0.yaml"
+    status: "SUPERSEDED_FULL_CANDIDATE_PACKET__NODE_RIVAL_ONLY"
+    superseded_by: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+    reviewer_A_disposition: "S3_RECLASSIFY_NODE_RIVAL_ONLY"
+    note: "Historical synthetic packet retained as evidence of the fidelity defect; it is not a status-bearing candidate packet."
+  - id: "H-IND"
+    path: "TFP_STRESS_2_STEELMAN_H_IND_0_1_0.yaml"
+    status: "PENDING"
+  - id: "H-SOC"
+    path: "TFP_STRESS_2_STEELMAN_H_SOC_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "requires genuine subjective experiences, not report-formation-only"
+  - id: "H-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_H_SEED_SPREAD_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "both individual seed and social amplification causally necessary"
+      - "interpretation nonnecessary"
+  - id: "L"
+    path: "TFP_STRESS_2_STEELMAN_L_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "interpretation PRIMARY"
+      - "subjective experience mechanisms nonnecessary"
+      - "founding fabrication absent"
+  - id: "F"
+    path: "TFP_STRESS_2_STEELMAN_F_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "founding-stratum knowing deception only"
+      - "later literary development is not automatically F"
+  - id: "C-HET-IND"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_IND_0_1_0.yaml"
+    status: "PENDING"
+  - id: "C-HET-SOC"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SOC_0_1_0.yaml"
+    status: "PENDING"
+  - id: "C-HET-SEED-SPREAD"
+    path: "TFP_STRESS_2_STEELMAN_C_HET_SEED_SPREAD_0_1_0.yaml"
+    status: "PENDING"
+  - id: "X-NONHISTORICITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "node-level rival on P-HIST-JESUS/P-CRUC only; not a full Q1 candidate"
+  - id: "X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL"
+    path: "TFP_STRESS_2_STEELMAN_X_REAL_REFERENT_NONIDENTITY_NODE_RIVAL_0_1_0.yaml"
+    status: "PENDING"
+    special_checks:
+      - "node-level rival on EMB-3/P-V-IDENTITY-JESUS only; not a full candidate"
+
+  - id: "X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"
+    path: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_2.yaml"
+    status: "CONSTRUCTION_REPAIRED__NODE_RIVAL_FAMILY__REVIEWER_B_EQUAL_STRENGTH_PENDING"
+    special_checks:
+      - "direct P-CRUC/crucifixion-identity route required"
+      - "no founding-proclamation causal credit"
+      - "TRUTH_WARRANTED condition 11 requires adequate node-level testing"
+      - "arranged-substitution founding mechanism routes to REVISED_CANDIDATE_REQUIRED if outcome-material"
+      - "reopen if a proponent/native full formulation independently satisfies B1/B3"
+
+completion_gate:
+  all_status_bearing_candidate_packets_frozen: false
+  wave_1_architecture_closed: true
+  wave_1_freeze_blocked: false
+  wave_1_blocker: null
+  s2_node_rival_amendment_complete: true
+  revised_candidate_probe_pending: false
+  S3_node_rival_amendment_complete: true
+  P_CRUC_shared_floor_review_complete: true
+  P_CRUC_classification: "NONCOMPARATIVE_SHARED_FLOOR"
+  R_PHYS_refinement_packet_frozen: false
+  required_node_rival_packets_frozen: false
+  reviewer_B_may_re_review_source_plan_and_coverage: false
+  reason: "S2/S3 fidelity and P-CRUC shared-floor architecture are closed. Continue construction of the remaining status-bearing and required node-rival packets. Reviewer B re-review/equal-strength work begins when the full packet set is ready."
