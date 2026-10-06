@@ -1,0 +1,106 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_D_G4_LEDGER_INTEGRITY_LIVE_REVERIFY_INPUT_FREEZE"
+status: "FROZEN__FRESH_CLAUDE_REVIEWER_D__LIVE_REPOSITORY_REVERIFY"
+date: "2026-10-06"
+
+assignment:
+  reviewer_role: "Reviewer D / ledger_integrity_reviewer only"
+  provider: "Anthropic"
+  model: "Claude Opus 5.5"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  handshake:
+    path: "TFP_STRESS_2_REVIEWER_D_CLAUDE_REVERIFICATION_HANDSHAKE_RESPONSE_0_1_0.md"
+    blob_sha: "b13417bb933118f03a15cbd32400b2cd272a5b8c"
+  assignment_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+  repository_mode: "READ_ONLY"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  role_architecture_blob_sha: "cade6816cdd357b53fee227ac76d47ab16e83451"
+
+independent_target:
+  repository: "etblink/Theological-Foundations-Program"
+  branch_family: "research/tfp-stress-2-resurrection-g3"
+  exact_commit: "43ee1477fc500a28372710f3a57127b4edcaef6a"
+  exact_tree: "378b7904abe6afb27395ef32c5cc636adcef102a"
+  rationale: "This is the pre-Gemini Reviewer-D checkpoint. It contains the complete A17 review target and Reviewer-D assignment controls but not any prior Reviewer-D result or later G5-readiness records."
+  later_commits_before_own_result: "PROHIBITED"
+
+review_scope:
+  current_ledger_at_target:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_76.yaml"
+    expected_blob_sha: "853668f6e07d42e07691095c110af18ad42f6e78"
+  ledger_version_chain:
+    first: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
+    last: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_76.yaml"
+    requirement: "Inspect every version transition, not only the known sequence-3 case."
+  known_sequence_3_case:
+    ledger_0_1_1_blob: "b5c75233d034d47c8c83a65a3686b5476e705a81"
+    ledger_0_1_2_blob: "6db3720c1f4a8ba81b2036e182c9174ef9ef2a30"
+    before: "2c3a852"
+    after: "2c3a852cb5a00416a6f214318a356fc0019f2edf"
+  classified_amendments:
+    L1:
+      amendment_path: "TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml"
+      amendment_blob: "8406e121696cb471516135f2bfeeb8f2e0ce11a9"
+      ledger_sequence: 88
+      C4_report_path: "TFP_STRESS_2_REVIEWER_C_G2_L2_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+      C4_report_blob: "de226788a0e94d043475ad8bd54c631c1e112eae"
+      C4_sequence: 91
+    L2:
+      amendment_path: "TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_1.yaml"
+      amendment_blob: "181ab979d41f2b5ae45fceb9750564a49e5748ec"
+      ledger_sequence: 93
+      C4_report_path: "TFP_STRESS_2_REVIEWER_C_G2_L3_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+      C4_report_blob: "46da2f8d540f9fe3214b1e69c2aaa1d0a76c35a8"
+      C4_sequence: 97
+    Phase_L:
+      amendment_path: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+      amendment_blob: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+      ledger_sequence: 129
+      C4_report_path: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
+      C4_report_blob: "cf59f05ede4c71345155c067a3098d0790b2b099"
+      C4_sequence: 152
+      A17_binding_path: "TFP_STRESS_2_G4_REVIEWER_C_C4_INTEGRATION_CLOSURE_0_1_0.yaml"
+      A17_binding_blob: "ebe2ae4292cc0b371aca78f41664ff36feec85fb"
+      A17_binding_sequence: 153
+    post_audit_B_to_H:
+      amendment_sequences: [143,144,145,146,147,148,149]
+      C4_report_path: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
+      C4_report_blob: "cf59f05ede4c71345155c067a3098d0790b2b099"
+      C4_sequence: 152
+
+A17_checks:
+  - "Verify sequence continuity and monotonicity in every ledger version."
+  - "For every transition 0.1.N -> 0.1.(N+1), compare all pre-existing sequence entries and identify every prior-entry mutation, deletion, reordering, or insertion."
+  - "Verify Git commit/path history for all ledger versions and the amendment artifacts relevant to L1, L2, Phase-L, and post-audit B-H."
+  - "Determine whether every historical prior-entry mutation is explicitly disclosed in the current ledger."
+  - "Verify relevant exposure/amendment/C4 chronology."
+  - "Verify every classified amendment has independent direction-classification review before current-study use."
+  - "Assess whether the additive Phase-L A17 binding is sufficient without rewriting the frozen Phase-L artifact."
+  - "Assess the F6 bad source pin only as a ledger-integrity/use-control matter."
+  - "Check whether any omission or rewrite could change A12, N3, Q1, or G5 eligibility."
+
+independence_controls:
+  do_not_read_before_freezing_own_conclusion:
+    - "any prior Reviewer-D report"
+    - "any later G5-readiness artifact"
+    - "any later STATE.yaml that records a Reviewer-D result"
+    - "any later Program-Lead commentary about whether Reviewer D passed"
+  allowed_after_own_result_fixed: "Only if needed to compare your result with later project history; such comparison must be clearly marked post-determination and cannot alter your original finding."
+
+prohibitions:
+  - "No amendment-direction classification."
+  - "No strict audit."
+  - "No candidate ranking."
+  - "No Q1 re-adjudication."
+  - "No repository modification."
+  - "Do not rely on prior Reviewer-D work."
+
+required_result:
+  overall_namespace:
+    - "LEDGER_INTEGRITY_CONFIRMED"
+    - "LEDGER_INTEGRITY_NOT_CONFIRMED"
+  if_not_confirmed: "State the smallest exact repair and the exact ledger/version/amendment surface affected."
