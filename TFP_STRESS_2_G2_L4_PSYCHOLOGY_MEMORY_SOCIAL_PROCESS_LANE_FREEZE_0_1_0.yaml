@@ -1,0 +1,285 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE"
+status: "K4_FROZEN__L4_SCOPE_COMPLETE__29_PROPOSITION_FACET_DISPOSITIONS_ISSUED__NO_SUPPORTED_RESULTS__CROSS_LANE_CONSOLIDATION_PENDING"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  l4_matrix: "TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_EVIDENCE_MATRIX_0_1_0.yaml"
+  l4_matrix_blob_sha: "1678db66e40d65554010ccc93c0014fbecb410a3"
+  l4_coverage_report: "TFP_STRESS_2_REVIEWER_C_G2_L4_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  l4_coverage_report_blob_sha: "758265350c7a285b64c866ae2d965970b93ee18a"
+  l4_coverage_state: "ALL_29_COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+  l3_lane_freeze: "TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml"
+  l3_lane_freeze_blob_sha: "b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"
+  targeted_return_acquisition: "TFP_STRESS_2_G2_L3_TARGETED_RETURN_ACQUISITION_0_1_1.yaml"
+  targeted_return_acquisition_blob_sha: "1f8c55661a6027b67bc5115c91090f2337d21eba"
+
+lane:
+  id: "L4"
+  title: "Psychology/memory/social process"
+  competence: ["individual experience mechanisms","social/group formation","memory","narrative development","deception hypotheses"]
+  author: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  scope_complete: true
+  coverage_recorded: true
+  proposition_facet_dispositions_issued: true
+  supported_sufficiency_records_required: false
+  reason_no_supported_sufficiency_records: "No L4-linked proposition satisfies every applicable psychological/sociological explanatory requirement strongly enough for SUPPORTED_WITHIN_SCOPE; target-case transfer, genuine-experience, or causal-role burdens remain unresolved."
+  unresolved_conflicts_listed: true
+  exact_version_fixed: true
+
+disposition_summary:
+  SUPPORTED_WITHIN_SCOPE: 0
+  PARTIALLY_SUPPORTED_WITHIN_SCOPE: 9
+  PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 4
+  NOT_ESTABLISHED_WITHIN_SCOPE: 16
+  EVIDENCE_AGAINST_WITHIN_SCOPE: 0
+  CONTRADICTED_WITHIN_SCOPE: 0
+  UNDERDETERMINED_WITHIN_SCOPE: 0
+  INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+
+proposition_dispositions:
+  - proposition_id: "P-HIND-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l4_facet: "Individual nonveridical bereavement/vision mechanisms are empirically real as a class and now represented in a target-case model, but target-case nonveridicality is not attested."
+    limiting_condition: "Smith supplies a coherent transfer; Loke/Meader supplies a serious adverse transfer critique; capacity is not occurrence."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-MECHANISM-SUFFICIENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Modern bereavement-experience data and the Smith target-case model materially support individual-mechanism capacity, but sufficiency for the specific founding pattern remains transfer-sensitive."
+    limiting_condition: "Relevant population and target-case fit remain unresolved; Loke/Meader contests the mapping."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HIND-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "L4 does not establish M-IND-EXP as PRIMARY while social and interpretive mechanisms remain only nonnecessary."
+    limiting_condition: "Mechanism capacity and a proposed causal story do not establish actual founding causal priority."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The frozen H-SOC burden requires genuine nonveridical subjective experiences across a social/group process; the main target-case model instead uses individual stimulus plus collective delusion/report propagation."
+    limiting_condition: "Report formation or group belief does not satisfy the genuine-experience requirement."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l4_facet: "Social propagation, conformity, contagion, and failed-expectation processes are real capacities and Smith supplies a target-case social process, but first-century operation is not attested."
+    limiting_condition: "Modern analogies and group reports are not direct target-case observations."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "No evidence establishes that a genuine social/group subjective-experience process occurred and was nonveridical in the target case."
+    limiting_condition: "Nonveridicality cannot be borrowed from collective-delusion/report formation."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-MECHANISM-SUFFICIENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The acquired social mechanisms show report/belief propagation capacity but do not independently establish a mechanism sufficient for the candidate's required genuine group subjective experiences at the relevant form and scale."
+    limiting_condition: "The Smith/Loke-Meader dispute leaves the crucial transfer and genuine-experience limb unresolved."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSOC-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "L4 does not establish M-SOC-EXP as PRIMARY with individual and interpretive mechanisms merely nonnecessary."
+    limiting_condition: "Causal profile cannot be inferred from generic social capacity."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-INDIVIDUAL-EXPERIENCE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Bereavement experience capacity plus early individual claimed-experience material and Smith's initiating-vision model materially support an individual seed as a possible mechanism."
+    limiting_condition: "Target-case nonveridical occurrence remains unverified."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-SOCIAL-AMPLIFICATION"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l4_facet: "A downstream social-amplification process is psychologically and sociologically plausible and explicitly modeled, but target-case occurrence is not attested and the frozen social limb requires genuine subjective experiences."
+    limiting_condition: "Communication/collective-delusion evidence is insufficient to establish the required experience process."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-NONVERIDICAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE"
+    l4_facet: "The combined individual-seed/social-spread nonveridical model is coherent and supported by real mechanism capacities, but its target-case instantiation is absent."
+    limiting_condition: "Both mechanism transfer and genuine social-experience requirements remain unresolved."
+    proposed_confidence: "MODERATE_TO_LOW__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-MECHANISM-SUFFICIENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "The individual mechanism has substantial capacity evidence and the social propagation limb has independent capacity evidence, so the combined mechanism receives material support; however the candidate's genuine-experience social requirement and target-case transfer remain unresolved."
+    limiting_condition: "Either limb can fail independently, preventing full sufficiency."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-HSEED-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The evidence does not establish both required experience mechanisms as PRIMARY or NECESSARY_CONTRIBUTING with at least one PRIMARY while interpretation is nonnecessary."
+    limiting_condition: "A plausible composite mechanism is not an observed causal profile."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-ENCOUNTER-CLAIM-ORIGIN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "Memory and narrative-development mechanisms can generate later elaboration, but the acquired evidence does not document the founding encounter claims themselves as secondary products of an interpretive/developmental process."
+    limiting_condition: "Early FS-01 encounter-claim material already exists in the founding-relevant tradition and no specific genealogy from interpretation to those claims is established."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-L-DEVELOPMENT-SEQUENCE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "The corpus and memory/development literature materially support later elaboration from earlier thinner proclamation material, but exact dependence and psychological genealogy remain unresolved."
+    limiting_condition: "Gospel of Peter and later physical/narrative detail support development without proving a single sequence."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-DELIBERATE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The record contains no positive actor-specific warrant for knowing origin-material falsehood; generic deception capacity and later literary invention do not meet the frozen burden."
+    limiting_condition: "Searched null is preserved without converting it into sincerity or rival truth."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-MOTIVE-OPPORTUNITY-ROUTE"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "Neither F-NONBODY-ASSERTION nor F-BODY-REMOVAL has actor-specific positive warrant for opportunity/access plus knowing false implementation."
+    limiting_condition: "Motive, inconsistency, stolen-body polemic, and later development do not establish either frozen implementation."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-TRANSMISSION-SUFFICIENT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Human groups can transmit, stabilize, and elaborate claims through ordinary social and memory processes, so propagation capacity is materially supported in general."
+    limiting_condition: "The evidence does not establish propagation specifically from knowingly false founding claims or the required actor-linked implementation."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-F-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "No L4 evidence establishes M-FOUNDING-FAB as PRIMARY in the founding proclamation."
+    limiting_condition: "Later invention/development cannot be back-projected into founding fabrication."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Individual subjective-experience mechanisms have genuine empirical capacity and a target-case model, and early individual report material exists."
+    limiting_condition: "Target-case nonveridical occurrence and causal necessity remain unresolved."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-INT"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Interpretive/scriptural processing is a psychologically and historically plausible founding mechanism, and the proclamation itself contains interpretive framing."
+    limiting_condition: "L4 does not establish that interpretation was necessary or primary."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-NARR"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "Memory and literary-development processes plus later textual elaboration materially support a later-narrative-development module."
+    limiting_condition: "Exact psychological genealogy and dependence remain unresolved."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-IND-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The frozen individual-experience plus interpretation joint pattern is not established merely because both component mechanisms are plausible."
+    limiting_condition: "Necessity, role vector, and target-case instantiation remain unresolved."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-FOUNDING-CAUSAL"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "L4 does not establish every required founding module in its frozen PRIMARY/NECESSARY_CONTRIBUTING role."
+    limiting_condition: "Residual fit and component capacity are explicitly insufficient."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SOC-EXP"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "M-SOC-EXP requires genuine nonveridical subjective experiences in a social/group process; the acquired social literature primarily supports propagation, conformity, and collective belief rather than that frozen experience requirement."
+    limiting_condition: "Smith's model does not silently satisfy M-SOC-EXP."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SOC-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The social-experience plus interpretation joint pattern remains unestablished because the social-experience occurrence burden itself is unmet."
+    limiting_condition: "Component search coverage is not joint-pattern evidence."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-IND"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    l4_facet: "An individual seed module has empirical capacity, early claimed-experience material, and an explicit target-case model."
+    limiting_condition: "Nonveridical occurrence and causal necessity remain unestablished."
+    proposed_confidence: "MODERATE__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SOC"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The social seed/spread module requires genuine nonveridical subjective experiences; social propagation and memory conformity alone do not establish that module."
+    limiting_condition: "Target-case social-process occurrence is at most plausible and unattested."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+  - proposition_id: "P-CHET-SEED-SPREAD-JOINT-PATTERN"
+    coverage: "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    disposition: "NOT_ESTABLISHED_WITHIN_SCOPE"
+    l4_facet: "The full individual-seed/social-spread/interpretive joint pattern and its role vector are not established by mechanism capacity alone."
+    limiting_condition: "No post-hoc substitution of report propagation for genuine social experience is permitted."
+    proposed_confidence: "HIGH_FOR_L4_NONESTABLISHMENT__PENDING_REVIEWER_D_WHERE_OUTCOME_MATERIAL"
+
+psychological_sociological_findings:
+  - "Individual bereavement-related sensory and presence experiences are empirically real phenomena, so individual subjective-experience candidates are not dismissed as psychologically impossible."
+  - "Memory conformity, social influence, failed-expectation adaptation, and narrative development are empirically real capacities, but none is direct observation of the founding Christian case."
+  - "Smith 2024 supplies an explicit target-case positive mechanism; Loke/Meader 2025 supplies a serious argument-level transfer critique. The disagreement is carried rather than resolved by authority."
+  - "The strongest social route in the acquired target-case literature concerns belief/report propagation; it does not independently establish genuine nonveridical subjective experiences across a group."
+  - "Later narrative elaboration is materially supported at some level, but its existence does not identify the founding cause of the earliest appearance claims."
+  - "The fabrication candidate remains burdened by a positive actor-specific evidence null; generic deception capacity does not fill it."
+
+unresolved_l4_conflicts:
+  - "Individual-experience mechanism capacity is stronger than target-case instantiation evidence."
+  - "Social propagation mechanisms are stronger than evidence for genuine group subjective experiences."
+  - "Smith/Loke-Meader disagree over the adequacy of the target-case transfer; neither is treated as decisive."
+  - "The observed later narrative-development pattern does not by itself establish an interpretive-only founding origin."
+  - "A searched null on founding deception is preserved as failure of F's positive burden, not evidence for sincerity or veridicality."
+  - "Causal profiles remain for L6 even where mechanism capacities receive partial support."
+
+arrow_boundary:
+  standalone_l4_arrow_ids_frozen_at_g0: false
+  treatment: "Do not invent post-exposure outcome-material arrows. A5 endpoint dependencies remain preserved for Phase-L consolidation."
+  c4_change: false
+
+lane_freeze_effect:
+  l4_frozen: true
+  l4_amendments_now_use_C4: true
+  final_cross_lane_proposition_dispositions: "PENDING_PHASE_L_CONSOLIDATION"
+  confidence_classes_final: false
+  reviewer_D_confidence_review_required_later: true
+  discriminator_directions_produced: false
+  comparison_makeable_certified: false
+  candidate_status_assigned: false
+  candidate_ranking_assigned: false
+  theological_outcome: "NONE"
+
+next_action:
+  lane: "L5"
+  title: "Philosophical/metaphysical"
+  purpose: "Evaluate extramentality, embodiment/nonembodiment, personal identity, anomalous-event possibility, and ontology-sensitive propositions under the frozen same-stream and Q1 controls without assuming naturalism or supernaturalism."
