@@ -1,0 +1,239 @@
+schema_version: "0.1.6"
+study_id: "TFP-STRESS-2"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_PRE_G0"
+qualified_protocol_version: "0.1.7"
+supersedes: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
+
+ledger_policy:
+  append_only: true
+  rewrite_prior_entries: false
+  outcome_material_exposure_definition: "Receipt, reading, viewing, or substantive summary of outcome-relevant evidence, reviewer reasoning, or a result/artifact capable of changing candidate, source-plan, route, discriminator, background, or study outcome."
+  pre_g0_activation_reason: "Reviewer B M-8: candidate steelman/source-plan/route construction can expose outcome-relevant material before G0; therefore the ledger must be active now rather than only after human authorization."
+  pre_g0_exposure_is_not_G1_authorization: true
+
+custodian:
+  actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+
+integrity_reviewer:
+  role_slot: "REVIEWER_D_FUTURE"
+  status: "UNASSIGNED_FRESH_SESSION_REQUIRED"
+  disjoint_from:
+    - "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    - "REVIEWER_C amendment-direction reviewer"
+    - "future strict auditor"
+
+baseline_exposure_disclosures:
+  - actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "General pretrained/prior familiarity with common resurrection-debate claims, source names, and standard rival explanations; author of the pre-G0 study design. This baseline predates the study ledger and is disclosed rather than reconstructed as timed G1 evidence."
+  - actor_lineage: "HUMAN_OWNER"
+    category: "GENERAL_PREEXISTING_FAMILIARITY"
+    detail: "Strategic interest in the resurrection claim and general prior familiarity; no outcome-material reviewer role."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    category: "PRIOR_PROTOCOL_QUALIFICATION_CONTEXT"
+    detail: "Reviewer A previously audited Protocol 0.1.7 and knew a resurrection-claim study was queued before blind elicitation. It did not see the program-lead TFP-STRESS-2 design before its blind report."
+  - actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    category: "GENERAL_PRETRAINED_FAMILIARITY"
+    detail: "Reviewer B disclosed general pretrained familiarity with the resurrection debate but no prior TFP-STRESS-2 reviewer/program-lead reasoning before its G0 control review."
+
+entries:
+  - sequence: 1
+    repository_commit: "45f87c78858c120a1d7349479a21b6ef0fe5c5f3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate universe"
+      - "background register"
+      - "claim typing"
+      - "Q1 scope"
+      - "necessary-proposition design"
+    note: "Program lead received and integrated Reviewer A's frozen blind report before any G1 acquisition."
+
+  - sequence: 2
+    repository_commit: "2c3a852"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_01TsM4WriYnAiRn71ireaVfK"
+    source_or_artifact: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_1.md + TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_1.yaml + qualified Protocol 0.1.7 + Governance 0.1.5"
+    exposure_class: "PRE_G0_CONTROL_REVIEW_INPUT"
+    amendment_surfaces:
+      - "coverage map"
+      - "source plan"
+      - "Q1 threshold"
+      - "C-HET control"
+      - "role architecture"
+    note: "Reviewer B read only prompt-permitted design/governing artifacts and no external resurrection evidence."
+
+  - sequence: 3
+    repository_commit: "2c3a852cb5a00416a6f214318a356fc0019f2edf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_B_G0_CONTROL_REVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate necessary propositions"
+      - "coverage routes"
+      - "Q1 operationalization"
+      - "source-plan strata"
+      - "insufficient-signal threshold"
+      - "background retirement"
+      - "role separation"
+    note: "Program lead received Reviewer B's frozen report and began PRE_EVIDENCE_AMENDMENT repairs."
+
+  - sequence: 4
+    repository_commit: "4993f859d8ea37250e17d423fc26d2530ee5655e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_FINAL_B4_A8_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate partition"
+      - "R submodel structure"
+      - "S family"
+      - "fabrication boundary"
+      - "candidate exclusions"
+      - "shared-floor classification"
+      - "background admission/refile"
+      - "Q1 embodiment wording"
+    note: "Program lead received Reviewer A's final B4/A8 report and implemented RR-1 through RR-8 as pre-G0 design repairs. No external resurrection evidence search occurred in this repair cycle."
+
+  - sequence: 5
+    repository_commit: "2802db858597793792a25c821cc3791f47d5410d"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_NARROW_RR_REREVIEW_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "pure seed-spread candidate completeness"
+      - "S2/S3 partition"
+      - "P-DEATH temporal anchoring"
+      - "module-ID reconciliation"
+      - "preregistration artifact identity"
+      - "background field restoration and BGD-11 scope"
+      - "Q1 row-2 symmetry"
+    note: "Program lead received Reviewer A's narrow RR re-review and implemented only the requested RR-prime repairs plus listed minor control repairs. No external resurrection evidence search occurred."
+
+  - sequence: 6
+    repository_commit: "85d5ad76bc38dbdd24d9623f08e25959f4b88fa1"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_SHORT_RR_PRIME_CONFIRMATION_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_REVIEWER_REASONING"
+    amendment_surfaces:
+      - "candidate/background admission freeze"
+      - "mechanical module-ID hygiene"
+      - "C-HET internal pointer hygiene"
+      - "BGD-11 affected-proposition completeness"
+      - "packet-stage S2 native-formulation check"
+    note: "Reviewer A returned B4_A8_PASS_WITH_LIMITATIONS; no outcome-material defect remained. Program lead applied only the required mechanical fixes and harmless carried notes before recording admission freeze identities."
+
+  - sequence: 7
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_two/article_5/paragraph_2_on_the_third_day_he_rose_from_the_dead.index.html"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["R-TRANS steelman","R-PHYS refinement steelman"]
+    note: "Tradition-native doctrinal formulation reviewed only to define candidate strength; no historical proposition disposition assigned."
+
+  - sequence: 8
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.reasonablefaith.org/writings/scholarly-writings/historical-jesus/the-bodily-resurrection-of-jesus/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["R-TRANS steelman","R-PHYS refinement steelman","V boundary"]
+    note: "Proponent scholarly formulation and description of competing nonphysical formulations; evidential argument content was not adjudicated."
+
+  - sequence: 9
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://marcusjborg.org/posts-by-marcus/the-resurrection-of-jesus/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["V steelman"]
+    note: "Used to formulate a serious nonphysical/spiritual-real resurrection view; no event evidence disposition assigned."
+
+  - sequence: 10
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.alislam.org/book/hidden-truth/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S1 steelman"]
+    note: "Ahmadiyya tradition-native survival formulation; used only for packet fidelity."
+
+  - sequence: 11
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.alislam.org/articles/jesus-in-kashmir/"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S1 steelman"]
+    note: "Ahmadiyya formulation including post-crucifixion recovery/meeting disciples; no truth disposition assigned."
+
+  - sequence: 12
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://quran.com/4/157?translations=20"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman","S3 steelman"]
+    note: "Tradition-native scriptural formulation used to bound noncrucifixion candidate content; not used as historical evidence."
+
+  - sequence: 13
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://islamqa.info/en/answers/10277"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman"]
+    note: "Traditional Sunni substitution/resemblance formulation used for native/proponent fidelity only."
+
+  - sequence: 14
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://islamqa.info/en/answers/224199"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S2 steelman","S3 steelman"]
+    note: "Traditional explanatory survey used to distinguish substitution and non-substitution/confusion formulations; no event evidence disposition assigned."
+
+  - sequence: 15
+    repository_commit: "bc0c377c6778728d4346440c779eca71a59f5b86"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "https://www.taylorfrancis.com/chapters/oa-mono/10.4324/9781003037255-5/extramental-entity-jesus-died-cross-andrew-loke"
+    exposure_class: "PRE_G0_FORMULATION_ONLY"
+    amendment_surfaces: ["S3 steelman","S2 boundary"]
+    note: "Scholarly critical description used only to recognize/bound escape and mistaken-identity rival classes; criticism was not used as an evidential disposition."
+
+  - sequence: 16
+    repository_commit: "a21f8c15f8f095bf208be45b276e7f1f2b91e7a4"
+    actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    source_or_artifact: "TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_INVALID_REPORT_0_1_0.md"
+    exposure_class: "PRE_G0_INVALID_REVIEW_ATTEMPT"
+    amendment_surfaces:
+      - "S2 packet fidelity"
+    note: "Reviewer A verified repository identities but could not access any of the three authorized external formulation sources; disposition INVALID_REVIEW. No candidate-status decision was made."
+
+  - sequence: 17
+    repository_commit: "6772f6935671184c3fb3e6a096d274fbf88897bf"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Exact three S2 formulation URLs authorized by the Reviewer A prompt, re-accessed solely for source-relay recovery"
+    exposure_class: "PRE_G0_FORMULATION_ONLY__ACCESS_RECOVERY"
+    amendment_surfaces:
+      - "S2 source-relay scoping"
+    note: "Program Lead re-opened the exact three already-ledgered formulation sources to identify the minimum verbatim passages needed for human relay. No proposition disposition or candidate-status change was made. A nuance in IslamQA 224199 concerning Gospel reports of later meetings was recorded and deliberately left unresolved for Reviewer A."
+
+pre_g0_controls:
+  substantive_outcome_evidence_acquisition_for_G1: "PROHIBITED"
+  steelman_packet_formulation_source_review:
+    status: "PERMITTED_AS_G0_DESIGN_ACTIVITY"
+    requirement: "Every outcome-relevant source/artifact exposure must be appended to this ledger."
+  source_plan_construction_search:
+    status: "PERMITTED_ONLY_TO_DEFINE_G0_SEARCH_ROUTES_AND_FORMULATION_STRATA"
+    requirement: "If source content is opened/read, record the exposure; no proposition disposition or candidate ranking may be assigned."
+  candidate_and_background_review: "PERMITTED_AND_LEDGERED"
+  methodological_design_review: "PERMITTED_AND_LEDGERED"
+  discriminator_rule_design: "PERMITTED_AND_LEDGERED"
+  direction_result_application: "PROHIBITED_BEFORE_G1_EVIDENCE_FREEZE"
+  proposition_dispositions: "PROHIBITED"
+  candidate_ranking: "PROHIBITED"
+
+g0_activation_record:
+  final_g0_bundle_commit: null
+  human_owner_authorization_artifact: null
+  g1_activated_at: null
+
+integrity_state:
+  next_sequence: 18
+  last_checked_by: null
+  rewrite_detected: false
