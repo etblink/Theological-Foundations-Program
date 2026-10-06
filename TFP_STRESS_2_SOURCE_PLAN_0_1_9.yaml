@@ -257,7 +257,7 @@ candidate_service_map:
   R-TRANS:
     native: ["SRC-01","SRC-06","SRC-14","SRC-17"]
     adverse: ["SRC-08","SRC-10","SRC-12","SRC-13","SRC-18"]
-    body_binding: "SRC-05 is intentionally neutral for generic R-TRANS and belongs to R-PHYS only."
+    body_binding: "SRC-05 is intentionally neutral for generic R-TRANS. Within the R family it routes only to R-PHYS; globally it may also serve S1, frozen F-BODY-REMOVAL, or revised-candidate triggers."
   V:
     native: ["SRC-01","SRC-02","SRC-06","SRC-13","SRC-14","SRC-17"]
     adverse: ["SRC-08","SRC-14","SRC-18"]
