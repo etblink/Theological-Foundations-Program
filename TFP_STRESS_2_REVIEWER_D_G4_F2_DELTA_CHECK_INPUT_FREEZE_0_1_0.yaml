@@ -1,0 +1,103 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_D_G4_F2_DELTA_CHECK_INPUT_FREEZE"
+status: "FROZEN__SAME_REVIEWER_D_SESSION_DELTA_CHECK_REQUIRED"
+date: "2026-10-06"
+
+reviewer:
+  provider: "Anthropic"
+  model: "Claude Opus 5.5"
+  lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_D_REVERIFY_LINEAGE"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  continuity: "Use the same conversation that produced TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md."
+  role: "Reviewer D / ledger_integrity_reviewer only"
+  repository_mode: "READ_ONLY"
+
+authority:
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  role_architecture_blob_sha: "cade6816cdd357b53fee227ac76d47ab16e83451"
+  prior_reviewer_D_report: ["TFP_STRESS_2_REVIEWER_D_CLAUDE_LIVE_REVERIFY_REPORT_0_1_0.md","c030bcef140db40410a92ce9b8499b998b4c0cf6"]
+  project_lead_independent_check: ["TFP_STRESS_2_PROJECT_LEAD_REVIEWER_D_INDEPENDENT_CHECK_0_1_0.yaml","e741f98508e21bfec618bd9162ce2e86302c76c4"]
+
+delta_target:
+  repository: "etblink/Theological-Foundations-Program"
+  branch: "research/tfp-stress-2-resurrection-g3"
+  exact_commit: "c3a98445f5744f9dc73739b8235ff01648e927ed"
+  exact_tree: "9d59aeb035c43b26e60ce4553b56a7240364642a"
+  current_repaired_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_82.yaml"
+    blob_sha: "21849a7bd99d2b3099fffe38880b789605aa47b0"
+    expected_entries: 170
+    expected_next_sequence: 171
+
+repair_chain:
+  baseline:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_79.yaml"
+    blob_sha: "e2a85e90051f56598ade1243429d8ad996b94e97"
+    entries: 164
+  repaired_header_and_disclosure:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_80.yaml"
+    blob_sha: "7331c4cbfb72654993f8843d11907c055b55d7c6"
+    new_sequences: [165,166,167]
+  ratification_request_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_81.yaml"
+    blob_sha: "1321fff4506b650bc31b22e1a5e43e4b44f23312"
+    new_sequence: 168
+  ratification_and_revalidation_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_82.yaml"
+    blob_sha: "21849a7bd99d2b3099fffe38880b789605aa47b0"
+    new_sequences: [169,170]
+
+repair_artifacts:
+  disclosure:
+    path: "TFP_STRESS_2_G4_F2_LEDGER_INTEGRITY_DISCLOSURE_0_1_0.yaml"
+    blob_sha: "53386141c6c1bdbbaa3b285981ea70ea2aee54ad"
+  human_ratification_request:
+    path: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_REQUEST_0_1_0.yaml"
+    blob_sha: "0b0f50001cb7b5f8ba7764d58e4da071277a4562"
+  human_ratification_acceptance:
+    path: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+  prospective_revalidation:
+    path: "TFP_STRESS_2_G3_POST_C4_A12_N3_Q1_REVALIDATION_0_1_0.yaml"
+    blob_sha: "59a832f494e8207cfb7fb33d6eb714a1c5942465"
+
+delta_checks:
+  - "Verify ledger 0.1.80 preserves sequences 1-164 byte-for-byte from 0.1.79 and appends only 165-167."
+  - "Verify ledger 0.1.81 preserves sequences 1-167 byte-for-byte from 0.1.80 and appends only 168."
+  - "Verify ledger 0.1.82 preserves sequences 1-168 byte-for-byte from 0.1.81 and appends only 169-170."
+  - "Verify 0.1.80, 0.1.81, and 0.1.82 have correct schema_version, supersedes, lifecycle status, and next_sequence."
+  - "Verify the D-1 disclosure accurately records Phase-L pre-C4 use and the narrower L1/L2 pre-C4 citations, with the later neutral/nonmaterial C4 results correctly cross-referenced."
+  - "Verify D-2 header staleness is accurately disclosed and historical ledgers remain untouched."
+  - "Verify D-3 is accurately disclosed as a pre-activation non-entry revision, not an append-only sequence violation."
+  - "Verify the human ratification is chronologically after disclosure/C4 and before prospective A12/N3/Q1 revalidation."
+  - "Verify the prospective revalidation uses the same Phase-L blob and frozen evidence, changes no A12/N3/Q1 merit result, and creates no stronger outcome."
+  - "Verify no further ledger rewrite or undisclosed chronology defect was introduced by the repair."
+  - "Decide whether the prior D-1/D-2 blockers are now closed for A17/F2 purposes."
+
+prohibitions:
+  - "Do not redo the entire original A17 audit except as needed to verify the delta."
+  - "Do not perform amendment-direction classification."
+  - "Do not act as strict auditor."
+  - "Do not re-rank candidates."
+  - "Do not re-adjudicate Q1 merits."
+  - "Do not modify the repository."
+
+required_output:
+  - "SESSION / ROLE CONTINUITY"
+  - "TARGET / PIN VERIFICATION"
+  - "DELTA PRESERVATION CHECK"
+  - "D-1 CLOSURE CHECK"
+  - "D-2 CLOSURE CHECK"
+  - "D-3 DISCLOSURE CHECK"
+  - "RATIFICATION / REVALIDATION CHRONOLOGY CHECK"
+  - "NO-FURTHER-REWRITE CHECK"
+  - "F2 CLOSURE DETERMINATION"
+  - "OVERALL RESULT"
+  - "REQUIRED NEXT ACTION"
+
+overall_result_namespace:
+  - "LEDGER_INTEGRITY_DELTA_CONFIRMED"
+  - "LEDGER_INTEGRITY_DELTA_NOT_CONFIRMED"
+
+success_effect: "If LEDGER_INTEGRITY_DELTA_CONFIRMED and the Program Lead independently checks the report, F2 may be closed and G5 readiness reconsidered."
