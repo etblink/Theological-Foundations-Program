@@ -1,0 +1,95 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "H-SOC"
+candidate_name: "Subjective social/group-experience origin"
+status: "CONSTRUCTION_COMPLETE__SYNTHETIC__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+native_formulation: "Jesus was crucified and died. Genuine nonveridical subjective experiences occurred within a social/group process in the founding stratum. Social influence, shared expectation, memory conformity, interpersonal reinforcement or related group processes materially shaped the experiences themselves or their durable experiential interpretation. M-SOC-EXP was PRIMARY in generating the founding proclamation; any individual seed and interpretive mechanism were CONTRIBUTING_NONNECESSARY or NONE. No founding fabrication is required."
+
+proponent_sources:
+  - id: "FORM-H-001"
+    title: "Kamp et al. 2020 — Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Provides a serious subjective-experience class whose phenomenology and interpretation can be socially/culturally conditioned."
+  - id: "FORM-HSOC-001"
+    title: "Roediger, Meade & Bergman 2001 — Social contagion of memory"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Provides an experimentally studied social-influence mechanism capable of producing convergent false recollection."
+  - id: "FORM-HSOC-002"
+    title: "Edelson et al. 2011 — Following the crowd"
+    use: "FORMULATION_ONLY__MECHANISM"
+    contribution: "Distinguishes durable private memory change from transient public conformity under group influence."
+
+necessary_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+  - "P-DEATH"
+  - "P-EARLY-PROCLAMATION-EXISTENCE"
+  - "P-HSOC-GENUINE-SUBJECTIVE-EXPERIENCES"
+  - "P-HSOC-SOCIAL-PROCESS-OCCURRED"
+  - "P-HSOC-NONVERIDICAL"
+  - "P-HSOC-MECHANISM-SUFFICIENT"
+  - "P-HSOC-FOUNDING-CAUSAL"
+
+authority_commitments:
+  - "Memory conformity and social influence are mechanism analogues only; they are not evidence that the founding Christian group underwent those processes."
+  - "Mere report convergence does not satisfy H-SOC; genuine subjective experiences are required."
+  - "H-SOC does not require simultaneous identical group hallucination."
+  - "No founding deception is required."
+
+internal_success_conditions:
+  - "A founding social/group process involving genuine subjective experiences is independently supported."
+  - "Those experiences are nonveridical under the frozen referent rules."
+  - "The social mechanism has adequate capacity and M-SOC-EXP is PRIMARY."
+  - "M-IND-EXP and M-INTERP are CONTRIBUTING_NONNECESSARY or NONE."
+  - "If an individual seed becomes necessary, H-SOC fails and H-SEED-SPREAD or C-HET-SEED-SPREAD must be considered."
+  - "M-FOUNDING-FAB is NONE."
+
+expected_evidence:
+  - "Founding reports showing socially linked experience formation, reinforcement, convergence or durable reinterpretation rather than merely independent parallel reports."
+  - "Dependence/communication patterns capable of supporting a group-process route."
+  - "Phenomenological evidence consistent with genuine subjective experiences rather than only repeated propositions."
+  - "No need for a necessary individual seed or necessary founding interpretive module."
+
+recognized_objections:
+  - "Experimental social-memory effects may be too weak or too disanalogous to generate the founding claims."
+  - "Report similarity can arise from common source dependence without genuine subjective experiences."
+  - "Independent experiences with no necessary social mechanism weaken H-SOC."
+  - "A veridical referent defeats the nonveridicality proposition."
+  - "A necessary individual seed routes away from H-SOC."
+
+caricatures_rejected:
+  - "H-SOC is not a claim of mass psychosis."
+  - "H-SOC is not satisfied by rumor alone."
+  - "H-SOC does not require all experiencers to perceive the same content at the same moment."
+  - "H-SOC does not infer falsity from social influence."
+
+native_or_proponent_review:
+  status: "SYNTHETIC_SERIOUS_MECHANISM"
+  reviewer_or_basis: "Program-lead review of FORM-H-001, FORM-HSOC-001 and FORM-HSOC-002"
+  findings:
+    - "The packet combines empirically serious subjective-experience and social-influence mechanisms."
+    - "No source is represented as endorsing the exact resurrection-origin model."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "genuine-experience requirement preserved"
+    - "social-process causal burden not replaced by mere source dependence"
+    - "no mass-hallucination caricature"
+    - "individual-seed boundary preserved"
+    - "expected and weakening evidence symmetric"
+  findings: []
+
+packet_stage_notes:
+  - "H-SOC is intentionally narrower than generic social contagion; social influence must be founding-causal and experience-involving."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [27,28,29]
+freeze_identity: null
