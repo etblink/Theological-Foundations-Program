@@ -1,0 +1,111 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__WAVE_1_41_RECORD_CHECKPOINT"
+date: "2026-10-06"
+
+purpose: "Bind the exact post-acquisition G1 object-level state for the fresh external Reviewer C SRC-18 adverse-source probe. This is an omitted-adverse-source/source-class search, not evidence synthesis or a coverage-completeness certification."
+
+reviewer_C_execution_identity:
+  role_slot: "REVIEWER_C"
+  intended_provider: "xAI"
+  model_requirement: "strongest available reasoning model"
+  session_requirement: "NEW_CLEAN_POST_G0_SESSION"
+  prior_reviewer_C_G0_reasoning_available_to_session: false
+  reviewer_A_reasoning_available_to_session: false
+  reviewer_B_reasoning_available_to_session: false
+  program_lead_outcome_reasoning_outside_permitted_artifacts_available_to_session: false
+  procedural_note: "A clean post-G0 session may instantiate the already-reserved Reviewer C adverse-source role. It must report provider/model/session provenance. It may not inherit substantive prior reviewer reasoning."
+
+governing:
+  protocol_version: "0.1.7"
+  protocol_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  protocol_blob: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob: "02338ce337de0a115d6942962ce360427080db8d"
+  governing_rule: "Repository authority and Protocol/Governance control over this assignment."
+
+evidence_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g1"
+  commit: "79118c65000a39d08aa5ef7bae37f26b06af71c9"
+  tree: "2d49b6e50c2b3590e9fb6f72f96e44965d3f0710"
+  note: "The checkpoint follows inventory 0.1.5 and exposure-ledger 0.1.23. Later control files for this assignment do not alter the evidence checkpoint."
+
+permitted_repository_artifacts:
+  g1_launch: ["TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml","69cae205ab97bbeb7e6504bb190bc64e35c73b92"]
+  role_architecture: ["TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml","f9278098515a9b09968d3d0110e2c77031cfe3fe"]
+  preregistration: ["TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_17.md","a0df07413e8f0efdd3e99513d4fd873b07582673"]
+  candidate_register: ["TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml","99eeab89decd8420e61b97b17c4706e30157d0fd"]
+  source_plan: ["TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml","cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"]
+  truth_critical_register: ["TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml","d5757739ac0b97f0f8c887d4c79dca599fafdc76"]
+  coverage_map: ["TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml","db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"]
+  background_register: ["TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml","5c16f875b33d3259d4be22176878c00469ea48da"]
+  empirical_register: ["TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml","ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"]
+  wave_1_inventory: ["TFP_STRESS_2_G1_WAVE_1_SOURCE_INVENTORY_0_1_5.yaml","4d6f3615e56c67a15861eaa7bd3b512f74db8c4e"]
+  exposure_ledger: ["TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_23.yaml","8b4fa4237732d4fe13b2c1e46b1d3425c4a9a9dd"]
+
+repository_artifacts_not_permitted_as_substantive_reasoning:
+  - "Reviewer A reports, prompts, and reasoning"
+  - "Reviewer B reports, prompts, and reasoning"
+  - "Reviewer C pre-G0 report, prompt, and repair reasoning"
+  - "Program-lead chats, issue/PR commentary, or unpinned later evidence artifacts"
+  - "Any G2/G3 synthesis or candidate-direction result"
+
+external_access:
+  web_and_external_literature: "REQUIRED"
+  purpose: "SRC-18 adverse critical probe only"
+  source_plan_requirement: "Before COMPLETE or MATERIALLY_COMPLETE coverage, use at least one credible external index/citation trail or critical stream not used to construct the original source plan, specifically searching for omitted adverse evidence/source classes."
+  route_independence_requirement:
+    - "Name every external index/citation trail/critical stream used."
+    - "At least one route must be credibly distinct from the routes/material actually used to construct the source plan, as evidenced by the permitted exposure ledger and source-plan artifacts."
+    - "Do not satisfy the probe merely by re-reading the 41 inventoried sources."
+    - "Do not treat a new URL for the same already-inventoried argument as a new adverse source class."
+
+assigned_scope:
+  source_stratum: "SRC-18"
+  current_wave_1_strata_to_challenge: ["SRC-01","SRC-02","SRC-04","SRC-06","SRC-19"]
+  search_targets:
+    - "omitted serious adverse evidence bearing on frozen necessary propositions served by Wave 1"
+    - "omitted source classes or citation trails that could materially change later truth-critical adjudication"
+    - "credible contrary evidence or methodological criticism relevant to candidate/background routes"
+    - "adverse material for node rivals and shared-floor propositions where the frozen source plan assigns SRC-18"
+  symmetry_rule: "Search adverse material against all serious candidate/background routes implicated by Wave 1; do not define 'adverse' as merely anti-resurrection or anti-Christian."
+  preservation_rule: "Record inaccessible, missing, contradictory, negative, and null results. Do not resolve historical disputes merely because one side appears stronger."
+
+prohibited_during_probe:
+  proposition_dispositions: true
+  discriminator_direction_results: true
+  candidate_ranking: true
+  candidate_verdicts: true
+  resurrection_established_or_defeated: true
+  theological_conclusion: true
+  frozen_G0_architecture_change: true
+  coverage_complete_or_materially_complete_certification: true
+  repository_changes: true
+
+required_probe_record:
+  - "session/provider/model provenance and freshness declaration"
+  - "verified repository blob identities"
+  - "external route/index/citation-trail identity and why at least one route is independent of original source-plan construction"
+  - "search terms, seeds, citation trails, and stopping rationale sufficient for reproducibility"
+  - "each credible surfaced source: bibliographic identity, access status, source class, target proposition/route, and observation-only reason it may matter"
+  - "each material access failure or inaccessible source"
+  - "each credible omitted source class, if any"
+  - "explicit null results where a bounded adverse search returns none"
+  - "whether any finding requires Program Lead acquisition before a later coverage-state review"
+
+required_disposition_one_of:
+  - "SRC_18_PROBE_NULL_WITHIN_BOUNDS"
+  - "SRC_18_PROBE_FINDINGS_REQUIRE_ACQUISITION"
+  - "SRC_18_PROBE_INCOMPLETE"
+  - "INVALID_REVIEW"
+
+next_gate_rule:
+  if_null_within_bounds: "Return the report. Program Lead may then freeze a separate Reviewer C coverage-state review. Do not certify coverage in this probe."
+  if_findings_require_acquisition: "Return exact source/source-class findings. Program Lead must acquire and ledger them observation-first before coverage-state review."
+  if_incomplete: "State the missing route/access needed. No completeness claim is permitted."
+
+authorization:
+  g0_authorized: true
+  g1_authorized: true
+  g2_synthesis_authorized: false
+  g3_comparative_adjudication_authorized: false
