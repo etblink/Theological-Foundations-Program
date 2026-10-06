@@ -1,0 +1,152 @@
+schema_version: "0.1.6"
+study_id: "TFP-STRESS-2"
+artifact: "B4_A8_ADMISSION_FREEZE"
+status: "FROZEN_11_CANDIDATES__REVIEWER_B_RESIDUAL_REPAIRS_APPLIED__FINAL_NARROW_CONFIRMATION_PENDING"
+date: "2026-10-06"
+supersedes:
+  path: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_5.yaml"
+  reason: "Reviewer B narrow confirmation closed NB-2, NB-4, and NB-6 but left four bounded residuals on NB-1/NB-3/NB-5 plus clerical/integrity synchronization. This freeze binds those repairs without changing the 11-candidate universe."
+
+governing_protocol:
+  version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  governance_blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+reviewer_B_narrow_confirmation:
+  report: "TFP_STRESS_2_REVIEWER_B_NARROW_NB1_NB6_CONFIRMATION_REPORT_0_1_0.md"
+  report_blob_sha: "c914aadfce6ea0d26dc2fa536ebb802bd6bcf3d6"
+  disposition: "G0_REVIEW_REPAIR_REQUIRED"
+  gate_status:
+    NB_1: "OPEN"
+    NB_2: "CLOSED"
+    NB_3: "OPEN"
+    NB_4: "CLOSED_WITH_CARRIED_SOURCE_FIDELITY_LIMITATIONS"
+    NB_5: "OPEN"
+    NB_6: "CLOSED"
+  residual_repair_record:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_PRE_EVIDENCE_REPAIR_RECORD_0_1_0.md"
+    blob_sha: "3355ead6964049e33c6e7eb9492ec7f8c731dc07"
+
+integrity_correction:
+  historical_corrupted_report_blob: "3fff99e93cf94bb6d4d82537522c5ed655173634"
+  authentic_rereview_report:
+    path: "TFP_STRESS_2_REVIEWER_B_PACKET_SOURCE_COVERAGE_REREVIEW_REPORT_0_1_0.md"
+    blob_sha: "1ac620cdc1ca8abbdda8dc375080643442f2c6c2"
+  ledger_correction: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_14.yaml"
+  rule: "Historical bad blob remains in git history; append-only ledger correction supersedes the false preservation statement in sequence 39."
+
+candidate_universe:
+  frozen_status_bearing_candidates:
+    - "R-TRANS"
+    - "V"
+    - "H-IND"
+    - "H-SOC"
+    - "H-SEED-SPREAD"
+    - "L"
+    - "S1"
+    - "F"
+    - "C-HET-IND"
+    - "C-HET-SOC"
+    - "C-HET-SEED-SPREAD"
+  status_bearing_candidate_count: 11
+  candidate_set_changed_by_this_freeze: false
+  unique_necessary_proposition_count: 50
+  added_proposition:
+    id: "P-V-FOUNDING-ENCOUNTER"
+    effect: "NONCOMPARATIVE_CANDIDATE_SPECIFIC occurrence burden for V; no candidate added."
+  R_PHYS_status: "NON_STATUS_REFINEMENT"
+  S2_S3_status: "NODE_RIVAL_ONLY__UNCHANGED"
+
+shared_floor:
+  P_HIST_JESUS: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_EARLY_PROCLAMATION_EXISTENCE: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_CRUC: "NONCOMPARATIVE_SHARED_FLOOR"
+  P_DEATH: "NOT_SHARED_FLOOR__S1_DENIES"
+
+residual_repairs:
+  NB1_R1:
+    status: "APPLIED__FINAL_CONFIRMATION_PENDING"
+    repair: "Added P-V-FOUNDING-ENCOUNTER as NONCOMPARATIVE_CANDIDATE_SPECIFIC on the same frozen stream inventory as R."
+    direction: "POTENTIALLY_ANTI_V__SYMMETRY_REPAIR"
+  NB5_R1:
+    status: "APPLIED__FINAL_CONFIRMATION_PENDING"
+    repair: "Analogous identity/occurrence propositions share COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY; absence alone globally capped at NOT_ESTABLISHED."
+    direction: "MIXED__SYMMETRY_AND_OUTCOME_CAP_REPAIR"
+  NB3_R1:
+    status: "APPLIED__FINAL_CONFIRMATION_PENDING"
+    repair: "Adopted Reviewer B recommended uniform body neutrality for R-TRANS, V, H, L, and C-HET; body evidence retained only for R-PHYS, S1, F-BODY-REMOVAL, and revised-candidate triggers."
+    direction: "MIXED__UNIFORM_NEUTRALITY"
+  NB3_R2:
+    status: "APPLIED__FINAL_CONFIRMATION_PENDING"
+    repair: "F now has closed preregistered F-NONBODY-ASSERTION and F-BODY-REMOVAL implementations; no third implementation after exposure except C4."
+    direction: "MIXED__ANTI_OPTIONALITY_REPAIR"
+  NB1_S1:
+    status: "APPLIED"
+    repair: "P-R-IDENTITY-JESUS synchronized into BGD-11 and identity-relevant BGD-1 surfaces."
+  NB6_M1:
+    status: "APPLIED"
+    repair: "Q1 row 6 requires one common live background supporting every affirmative R conjunct simultaneously."
+  NM_1:
+    status: "APPLIED"
+  NM_3:
+    status: "APPLIED"
+  RECORD_1:
+    status: "APPLIED__AUTHENTIC_REPORT_RESTORED_AND_LEDGER_CORRECTED"
+
+frozen_control_surfaces:
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_11.yaml"
+    blob_sha: "985735c633073d4887b596cd1a0fdd6a3432b372"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "32d3bd9fa1cdbc4fca66bcd1bb9d3a2e421915e9"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+    blob_sha: "1513d4476ef32222f819c51ef0623a0b16bf5bd4"
+  c_het_module_map:
+    path: "TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml"
+    blob_sha: "ac10a99acbbb47477e5995566f918611c23017b1"
+  coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_10.yaml"
+    blob_sha: "f2a68914134be7fa2341f7571ceebe50c9f1107a"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_9.yaml"
+    blob_sha: "824b71f7ba1ee923262933bce27b8abbe6182380"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_5.yaml"
+    blob_sha: "a84ae2cf5fa15f49eb1127f11311c00673ee2b5f"
+  empirical_model_register:
+    path: "TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml"
+    blob_sha: "ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"
+  exposure_ledger:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_14.yaml"
+    blob_sha: "8960c78f77d25db93ecf0f5b0f3f703d3b93235a"
+
+mechanical_checks_before_freeze:
+  candidate_register_unique_necessary_propositions: 50
+  coverage_map_unique_necessary_propositions: 50
+  truth_critical_register_unique_necessary_propositions: 50
+  missing_between_surfaces: 0
+  extra_between_surfaces: 0
+  duplicate_truth_critical_entries: 0
+  R_identity_absence_mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+  V_identity_absence_mode: "COMPLETE_SEARCH_CAN_BLOCK_ESTABLISHMENT_ONLY"
+  occurrence_absence_mode_uniform: true
+
+next_gate:
+  reviewer: "REVIEWER_B"
+  session: "session_01TsM4WriYnAiRn71ireaVfK"
+  scope: "FINAL_NARROW_CONFIRMATION_OF_ONLY_THE_REMAINING_RESIDUALS_AND_CLERICALS"
+  reviewer_C_blocked_until_pass: true
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  historical_resurrection_disposition: "NONE"
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
