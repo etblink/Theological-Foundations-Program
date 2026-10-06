@@ -80,8 +80,8 @@ authority:
 
 current_scope:
   id: "TFP-STRESS-2-PRE-G0-DESIGN"
-  status: "steelman_wave_1_partial__S2_revised_candidate_required"
-  purpose: "Construct equal-strength candidate steelman packets against the frozen B4/A8 admission set; packet-stage native-formulation review has triggered a bounded S2 candidate revision before Wave 1 can freeze."
+  status: "steelman_wave_1_partial__S2_source_relay_required_after_invalid_review"
+  purpose: "Resolve the S2 packet-stage native-formulation fidelity issue by relaying the exact three permitted source texts to Reviewer A in the same lineage; no substantive G1 evidence acquisition."
   bounded: true
   qualified_protocol_version: "0.1.7"
   design_branch: "research/tfp-stress-2-resurrection-g0"
@@ -89,37 +89,33 @@ current_scope:
   admission_freeze: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_0.yaml"
   candidate_register: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_CANDIDATE_REGISTER_0_1_4.yaml"
   steelman_packet_index: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_1.yaml"
-  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
-  wave_1_packets:
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_R_TRANS_0_1_0.yaml"
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_R_PHYS_REFINEMENT_0_1_0.yaml"
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_V_0_1_0.yaml"
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_S1_0_1_0.yaml"
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_S2_0_1_0.yaml"
-    - "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_S3_0_1_0.yaml"
+  s2_packet: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_STEELMAN_S2_0_1_0.yaml"
   s2_revision_trigger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_S2_REVISED_CANDIDATE_TRIGGER_0_1_0.yaml"
+  s2_invalid_reviewer_A_report: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_INVALID_REPORT_0_1_0.md"
+  s2_human_source_relay_instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S2_HUMAN_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
+  wave_1_formulation_source_record: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_WAVE_1_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_1.yaml"
   role_architecture: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_5.yaml"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
-  reviewer_A_short_disposition: "B4_A8_PASS_WITH_LIMITATIONS"
-  reviewer_B_disposition: "G0_REVIEW_REPAIR_REQUIRED"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_6.yaml"
   methodology_mode: "maintenance"
   g0_authorized: false
   g1_evidence_acquisition_authorized: false
   theological_stress_test_authorized: false
 
 next_action:
-  id: "TFP-STRESS-2-REVIEWER-A-S2-STEELMAN-FIDELITY"
-  action: "run_exact_session_reviewer_A_S2_candidate_fidelity_revision_review"
+  id: "TFP-STRESS-2-S2-HUMAN-SOURCE-RELAY"
+  action: "relay_exact_permitted_S2_formulation_source_texts_to_same_reviewer_A_session_and_rerun_fidelity_review"
   reviewer_A_session: "session_012EWsCBUVctdyhhk3v5ZxuF"
-  prompt: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S2_STEELMAN_FIDELITY_REVIEW_PROMPT_0_1_0.md"
+  instructions: "research/tfp-stress-2-resurrection-g0:TFP_STRESS_2_REVIEWER_A_S2_HUMAN_SOURCE_RELAY_INSTRUCTIONS_0_1_0.md"
   requirements:
-    - "use_exact_reviewer_A_session"
-    - "read_only_pinned_repository_artifacts_and_exact_three_formulation_sources_named_in_prompt"
+    - "human_operator_opens_only_the_three_exact_authorized_source_URLs"
+    - "relay_verbatim_relevant_passages_not_program_lead_paraphrase"
+    - "include_the_224199_passage_reporting_post_resurrection_meeting_claims_to_avoid_cherry_picking"
+    - "same_reviewer_A_session"
     - "do_not_read_reviewer_B_report_or_reasoning"
     - "do_not_search_wider_web"
     - "do_not_adjudicate_truth_of_crucifixion_or_resurrection"
-    - "preserve_returned_report_unchanged"
-    - "prefer_narrowest_correct_candidate_universe_change"
+    - "preserve_rerun_report_unchanged"
+    - "wave_1_freeze_remains_blocked_until_valid_S2_disposition"
     - "do_not_authorize_G0_G1_or_substantive_theological_study"
 
 qualification_candidate:
@@ -321,7 +317,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "pre_g0_design__steelman_wave_1_partial__S2_revision_review_pending__not_authorized"
+    status: "pre_g0_design__steelman_wave_1_partial__S2_source_relay_required__not_authorized"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
