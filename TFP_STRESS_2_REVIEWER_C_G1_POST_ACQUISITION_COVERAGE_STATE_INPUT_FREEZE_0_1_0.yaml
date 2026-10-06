@@ -1,0 +1,155 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_C_G1_POST_ACQUISITION_COVERAGE_STATE_INPUT_FREEZE"
+status: "FROZEN_FOR_FRESH_EXTERNAL_REVIEWER_C__STUDY_SCOPE_COVERAGE_REVIEW__69_RECORD_G1_CHECKPOINT"
+date: "2026-10-06"
+
+review_assignment:
+  role: "REVIEWER_C__COVERAGE_STATE_REVIEWER"
+  intended_provider: "xAI"
+  intended_model: "strongest available reasoning model; Grok 4.7 is acceptable"
+  required_session: "NEW_CLEAN_POST_ACQUISITION_SESSION"
+  same_provider_or_model_lineage_permitted: true
+  same_prior_conversation_session_permitted: false
+  required_information_independence:
+    - "No prior substantive Reviewer A reasoning available in this session."
+    - "No prior substantive Reviewer B reasoning available in this session."
+    - "No prior Reviewer C pre-G0 architecture reasoning available in this session."
+    - "No Program Lead outcome reasoning outside the permitted frozen artifacts available in this session."
+    - "The completed Reviewer C G1 SRC-18 adverse-probe report listed below IS permitted and required because E3 coverage certification depends on the adverse-probe record."
+  note: "Procedural independence is session/information-lineage separation, not a requirement to change provider or model family."
+
+coverage_scope:
+  protocol_scope_label: "STUDY"
+  scope_id: "TFP-STRESS-2_G1_EVIDENCE_ACQUISITION"
+  question: "Is the frozen G1 evidence-search and source-coverage record sufficient, under Protocol E3 and the frozen G0 source architecture, for a STUDY-scope coverage state of COMPLETE or MATERIALLY_COMPLETE, or does it remain COVERAGE_INCOMPLETE?"
+  not_a_truth_question: true
+  not_a_candidate_ranking_question: true
+  not_a_discriminator_direction_question: true
+
+evidence_checkpoint:
+  branch: "research/tfp-stress-2-resurrection-g1"
+  commit: "f5679cc67b8461845c51858c9b40c493cad48d13"
+  tree: "48a08bb3ca93503f035730962ef2ed1298230129"
+  rule: "Use this exact checkpoint for all substantive evidence/acquisition records. Do not substitute a later branch HEAD."
+
+governing_authority:
+  qualified_protocol:
+    version: "0.1.7"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  governance:
+    blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+    governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  g0_authorization_bundle:
+    path: "TFP_STRESS_2_G0_AUTHORIZATION_BUNDLE_0_1_0.yaml"
+    blob_sha: "4a211d03deaa4d7c7cb0c34ff814e434a1b61696"
+    authorization_commit: "f1be680dc79d6c258dc8ba056ea1dc04ab671fc8"
+  human_g0_acceptance:
+    path: "TFP_STRESS_2_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "20282009a74ee7f25a976d83ad2f3eca4dddfb23"
+
+permitted_repository_artifacts:
+  - path: "TFP_STRESS_2_G1_EVIDENCE_ACQUISITION_LAUNCH_0_1_0.yaml"
+    blob_sha: "69cae205ab97bbeb7e6504bb190bc64e35c73b92"
+    purpose: "G1 lifecycle and acquisition-order boundary"
+  - path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+    purpose: "frozen source strata, search rules, substitutes, inaccessible-source and adverse-probe controls"
+  - path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+    purpose: "per-proposition required strata, acceptable substitutes, expected access, and probative-absence controls"
+  - path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+    purpose: "necessary-proposition coverage linkage"
+  - path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
+    blob_sha: "99eeab89decd8420e61b97b17c4706e30157d0fd"
+    purpose: "frozen candidate/proposition identities only; do not rank or adjudicate"
+  - path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_15.yaml"
+    blob_sha: "f9278098515a9b09968d3d0110e2c77031cfe3fe"
+    purpose: "Reviewer C post-G0 coverage-state role and recusal boundaries"
+  - path: "TFP_STRESS_2_REVIEWER_C_G1_SRC_18_ADVERSE_PROBE_REPORT_0_1_0.md"
+    blob_sha: "b9721b4529e186b5e26a8e4dfe94f558ffee2451"
+    purpose: "required completed E3 adverse-source probe and its follow-up work order"
+  - path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_0.yaml"
+    blob_sha: "372d81738596bd3b6711a1122d9a176562f60f18"
+    purpose: "consolidated 69-record observation-first G1 inventory covering SRC-01 through SRC-19"
+  - path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_26.yaml"
+    blob_sha: "1e9702c695de9223a30690d716a4a70b44e3f0c1"
+    purpose: "complete current exposure/acquisition record through sequence 75"
+
+explicit_checkpoint_facts:
+  consolidated_source_record_count: 69
+  frozen_source_strata_count: 19
+  frozen_source_strata_touched: ["SRC-01","SRC-02","SRC-03","SRC-04","SRC-05","SRC-06","SRC-07","SRC-08","SRC-09","SRC-10","SRC-11","SRC-12","SRC-13","SRC-14","SRC-15","SRC-16","SRC-17","SRC-18","SRC-19"]
+  program_lead_coverage_certification: "NONE"
+  adverse_probe:
+    completed: true
+    disposition: "SRC_18_PROBE_FINDINGS_REQUIRE_ACQUISITION"
+    followup: "All eleven requested acquisition items are represented in the consolidated inventory by acquired material or an explicit bounded access limitation."
+  g2_synthesis_started: false
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
+
+protocol_E3_coverage_labels:
+  allowed_final_dispositions:
+    - "COVERAGE_COMPLETE_FOR_FROZEN_SCOPE"
+    - "COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS"
+    - "COVERAGE_INCOMPLETE"
+  complete_rule: "All preregistered strata searched; all identified outcome-material sources evaluated; genuine adverse-source probe completed and found no omitted outcome-material source class after required follow-up acquisition."
+  materially_complete_rule: "Truth-critical strata addressed; all gaps listed; adverse-source requirement satisfied; no listed/discovered gap is judged likely to change the scoped disposition/comparison."
+  incomplete_rule: "A truth-critical stratum/source remains unsearched, inaccessible without adequate substitute, or potentially outcome-changing."
+  uncertified_rule: "Until this independent review is completed, the Program Lead state remains COVERAGE_UNCERTIFIED / NOT_SELF_CERTIFIED."
+
+mandatory_review_checks:
+  - "Verify every pinned identity above before substantive review."
+  - "Confirm the acquisition record actually addresses every frozen source stratum rather than relying on the summary flag."
+  - "Audit the truth-critical register and necessary-proposition coverage map against the 69-record inventory."
+  - "For each truth-critical required stratum that is inaccessible or incomplete, determine whether the frozen plan names an adequate substitute and whether that substitute was actually acquired."
+  - "Treat unperformed search as COVERAGE_INCOMPLETE, never as INSUFFICIENT_SIGNAL or a harmless gap."
+  - "Distinguish bounded dating/authorship/dependence uncertainty from genuine provenance failure."
+  - "Verify that the completed SRC-18 adverse-source probe used an independent route and that every credible finding was subsequently acquired or explicitly recorded as an access limitation."
+  - "Check anti-double-counting/dependence notes, especially reused source streams across strata."
+  - "Check later-source E5 limits: later reception/comparanda may not silently stand in for earlier event evidence."
+  - "Preserve the Crossan page-pointer mismatch and every listed access failure as negative/provenance knowledge."
+  - "Use targeted external spot-checking if needed to determine whether an apparently material omitted source/class still exists. Do not turn the review into an unbounded new literature harvest."
+  - "If any credible omitted source or source class appears potentially outcome-changing, return COVERAGE_INCOMPLETE and identify the exact acquisition required."
+
+prohibited_actions:
+  - "Do not assign proposition dispositions."
+  - "Do not produce discriminator direction results."
+  - "Do not synthesize evidence into candidate verdicts."
+  - "Do not rank candidates."
+  - "Do not decide whether the resurrection occurred."
+  - "Do not draw any theological conclusion."
+  - "Do not alter the frozen candidate universe, source plan, discriminator rules, or G0 architecture."
+  - "Do not begin G2."
+  - "Do not modify the repository."
+  - "Do not certify comparison-level MAKEABLE status; this assignment is STUDY-scope coverage state only."
+
+review_output_requirement:
+  report_sections:
+    - "SESSION / LINEAGE IDENTITY"
+    - "REPOSITORY PIN VERIFICATION"
+    - "E3 COVERAGE STANDARD"
+    - "SOURCE-STRATUM AUDIT"
+    - "TRUTH-CRITICAL MAPPING / SUBSTITUTE AUDIT"
+    - "ADVERSE-PROBE FOLLOW-UP AUDIT"
+    - "INACCESSIBLE / FAILED ACCESS REVIEW"
+    - "DEPENDENCE / ANTI-DOUBLE-COUNTING REVIEW"
+    - "LATER-SOURCE / TRANSFER-LIMIT REVIEW"
+    - "TARGETED EXTERNAL SPOT CHECKS, IF ANY"
+    - "LISTED GAPS"
+    - "DISPOSITION"
+    - "NEXT-GATE ANSWER"
+  final_disposition_count: 1
+  next_gate_question: "Does the frozen G1 acquisition record now satisfy Protocol E3 for STUDY-scope COVERAGE_COMPLETE_FOR_FROZEN_SCOPE or COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS, or must it remain COVERAGE_INCOMPLETE?"
+  if_incomplete: "List each exact unsearched, unsubstituted, inaccessible-without-adequate-substitute, or potentially outcome-changing gap that must return to G1 acquisition."
+  if_materially_complete: "List every residual gap and explain only why each is unlikely to change the STUDY-scope coverage state; do not infer candidate direction."
+  if_complete: "Explicitly confirm the E3 complete rule element by element; do not infer candidate direction or truth."
+
+freeze_effect:
+  input_is_immutable_after_review_launch: true
+  substantive_evidence_checkpoint_is_f5679cc67b8461845c51858c9b40c493cad48d13: true
+  no_later_branch_head_substitution: true
+  reviewer_report_must_be_returned_verbatim_to_program_lead: true
