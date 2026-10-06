@@ -1,0 +1,120 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_INITIAL_CANDIDATE_SEED"
+status: "FROZEN_PRE_REVIEWER_A__NOT_ADMITTED_CANDIDATE_UNIVERSE"
+date: "2026-10-06"
+
+purpose: "Preserve the Program Lead's independent pre-reviewer candidate-family construction so later comparison with blind Reviewer-A elicitation is non-circular."
+
+working_question: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+
+candidate_seed:
+  - id: "C-BRUTE"
+    label: "Brute contingent reality"
+    strongest_family_formulation: "At least some actual concrete reality is metaphysically contingent, and the explanatory chain legitimately terminates in one or more brute contingent facts/totality without a deeper necessary ground."
+    necessary_family_commitments:
+      - "Some actual concrete reality is metaphysically contingent."
+      - "Not every contingent fact/totality requires a deeper explanation."
+      - "Brute explanatory termination is not itself incoherent or evidentially defeated."
+    not_claimed:
+      - "naturalism"
+      - "atheism"
+      - "physicalism"
+
+  - id: "C-NEC-REALITY"
+    label: "Necessary total reality / necessitarian cosmos"
+    strongest_family_formulation: "The actual total concrete reality is metaphysically necessary; apparent contingency concerns internal states, epistemic alternatives, or derivative structures rather than the existence of total reality itself."
+    necessary_family_commitments:
+      - "Total actual concrete reality is metaphysically necessary."
+      - "The relevant appearance/intuitions of contingency do not establish metaphysical contingency of total reality."
+      - "No external explanatory ground of total reality is required."
+
+  - id: "C-DEFLATIONARY"
+    label: "Global-explanation deflationism"
+    strongest_family_formulation: "The demand for a further explanation of contingent reality as a totality is not a legitimate truth-bearing explanatory requirement; sufficiently complete local explanations need not aggregate into a global why-answer."
+    necessary_family_commitments:
+      - "A global explanatory demand does not automatically follow from local contingency."
+      - "Failure to supply a totality-level ground is not thereby a brute-fact defect."
+      - "Local or domain-bounded explanation can be complete enough without an ultimate foundation."
+
+  - id: "C-NONTERMINAL"
+    label: "Nonterminal explanatory dependence"
+    strongest_family_formulation: "Contingent reality may be explained through an infinite, cyclic, non-well-founded, or otherwise nonterminal dependence structure without a single terminal necessary ground."
+    necessary_family_commitments:
+      - "At least some actual concrete reality is metaphysically contingent."
+      - "A nonterminal explanatory structure can be non-vicious."
+      - "Explanatory adequacy does not require a terminal necessary foundation."
+
+  - id: "C-SELF"
+    label: "Self-explanatory contingent totality"
+    strongest_family_formulation: "A contingent totality or structure can participate in a non-vicious reflexive/holistic explanation sufficient to avoid both brute termination and an external necessary foundation."
+    necessary_family_commitments:
+      - "Relevant reality remains metaphysically contingent."
+      - "Self/holistic explanation is coherent and non-vicious."
+      - "No external necessary ground is required."
+
+  - id: "C-ABSTRACT-STRUCTURE"
+    label: "Necessary abstract or structural ground"
+    strongest_family_formulation: "Necessary abstract, mathematical, modal, or structural reality supplies the ultimate truth-relevant explanation/ground of contingent concrete reality without being an intentional agent."
+    necessary_family_commitments:
+      - "A relevant necessary abstract/structural reality exists."
+      - "It can stand in the required explanatory/grounding relation to concrete contingent reality."
+      - "Intentional agency is not necessary for that explanatory role."
+
+  - id: "C-LAW-PRINCIPLE"
+    label: "Necessary law-like or metaphysical-principle ground"
+    strongest_family_formulation: "One or more necessary laws, principles, or metaphysical constraints explain why contingent reality exists/obtains as it does without requiring a personal foundation."
+    necessary_family_commitments:
+      - "At least one relevant law/principle is metaphysically necessary rather than merely descriptive."
+      - "The law/principle has genuine explanatory force regarding the obtaining/existence of contingent reality."
+      - "No personal agency is required for the ultimate explanatory role."
+
+  - id: "C-IMPERSONAL-CONCRETE"
+    label: "Necessary impersonal concrete foundation"
+    strongest_family_formulation: "A metaphysically necessary concrete but non-agentive reality/substance/process is the ultimate ground or source of contingent reality."
+    necessary_family_commitments:
+      - "A necessary concrete foundation exists."
+      - "It has the grounding/causal/explanatory capacity required to account for contingent reality."
+      - "Intentional agency/personhood is not necessary to its explanatory sufficiency."
+
+  - id: "C-PERSONAL"
+    label: "Necessary personal or agentive foundation"
+    strongest_family_formulation: "A metaphysically necessary intentional agent is the ultimate explanatory ground/source of contingent reality."
+    necessary_family_commitments:
+      - "A necessary reality exists."
+      - "That necessary reality possesses intentional agency."
+      - "Its agency can supply the relevant ultimate explanation of contingent reality."
+    downstream_properties_not_built_in:
+      - "perfect goodness"
+      - "omniscience"
+      - "omnipotence"
+      - "providence"
+      - "worship-worthiness"
+      - "identity with any religion's God"
+
+  - id: "C-PLURAL"
+    label: "Plural or layered necessary foundations"
+    strongest_family_formulation: "More than one irreducible necessary entity/fact/structure/principle jointly supplies the ultimate explanation of contingent reality, without collapsing into a single necessary ground."
+    necessary_family_commitments:
+      - "Multiple irreducible necessary foundations exist."
+      - "Their joint explanatory role is sufficient."
+      - "No further unifying foundation is required in a way that collapses the candidate into another family."
+
+potential_subsumption_questions:
+  - "Whether C-DEFLATIONARY is a genuine candidate family or a methodological variant of C-BRUTE."
+  - "Whether C-SELF is coherent/materially distinct from C-NONTERMINAL."
+  - "Whether C-ABSTRACT-STRUCTURE and C-LAW-PRINCIPLE are materially distinct under truth-critical explanatory relation."
+  - "Whether C-PLURAL is a standalone family or a structural variant of abstract/law/impersonal/personal foundation candidates."
+  - "Whether personal and impersonal foundation families require internal variants based on causal vs grounding explanation."
+
+deliberately_not_frozen:
+  - "candidate admission/exclusion"
+  - "candidate packet wording"
+  - "necessary-proposition map"
+  - "candidate ranking"
+  - "source evaluation"
+  - "discriminator direction"
+
+blindness_control:
+  REVIEWER_A_must_not_read_before_own_elicitation_freeze: true
+  reason: "Preserve independent candidate-generation comparison."
