@@ -121,6 +121,7 @@ next_action:
     - "any new truth-adjudication study requires its own Governance-authorized scope"
 
 qualification_candidate:
+  compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
   version: "0.1.7"
   protocol_path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
   governance_version: "0.1.5"
@@ -131,7 +132,7 @@ qualification_candidate:
   governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
   role_control: "repair/tfp-adjudication-protocol-0.1.7:TFP_PROTOCOL_0_1_7_QUALIFICATION_ROLE_CONTROL.yaml"
   status: "QUALIFIED__SEE_program.qualified_protocol"
-  qualified: false
+  qualified: true
   predecessor_protocol: "0.1.6"
   predecessor_audit_disposition: "REPAIR_REQUIRED"
   predecessor_disposition_artifact: "TFP_ADJUDICATION_PROTOCOL_0_1_6_REAUDIT_DISPOSITION_0_1_0.md"
@@ -400,20 +401,20 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.5"
     status: "completed_repair_required"
   - id: "TFP-METHOD-REPAIR-0.1.6"
-    status: "completed_pending_bundle_freeze"
+    status: "completed_superseded_by_qualified_0.1.7"
   - id: "TFP-METHOD-REAUDIT-0.1.6"
     status: "completed_repair_required"
   - id: "TFP-PROGRAM-REANCHOR-0.1.0"
     status: "accepted"
   - id: "TFP-METHOD-REPAIR-0.1.7"
-    status: "completed_pending_exit_gate_audit"
+    status: "completed"
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "G4_audit_E1_launch_ready__awaiting_external_report"
+    status: "canonical_closed_G6"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
-    status: "queued_after_second_stress_test"
+    status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
 
 stop_rules:
   underdetermined_is_valid: true
