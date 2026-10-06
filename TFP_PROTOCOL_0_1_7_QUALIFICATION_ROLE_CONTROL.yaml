@@ -22,6 +22,13 @@ human_owner:
   outcome_material_qualification_reviewer: false
   final_qualification_authority: true
 outcome_material_qualification_reviewers: []
-registered_strict_audits: []
+registered_strict_audits:
+  - audit_id: "TFP-0.1.7-STRICT-EXIT-GATE-AUDIT-1"
+    auditor_provider: "Anthropic"
+    auditor_model: "claude-sonnet-5-5"
+    auditor_session_id: "session_012EWsCBUVctdyhhk3v5ZxuF"
+    auditor_actor_lineage: "ANTHROPIC_CLAUDE_SESSION_session_012EWsCBUVctdyhhk3v5ZxuF"
+    assignment_declaration: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+    status: "ASSIGNED"
 required_strict_audit_count: 1
 status: "DRAFT"
