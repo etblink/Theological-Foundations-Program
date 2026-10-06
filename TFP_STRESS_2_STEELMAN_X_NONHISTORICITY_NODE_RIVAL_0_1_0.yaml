@@ -1,0 +1,101 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "STEELMAN_PACKET"
+candidate_id: "X-NONHISTORICITY-NODE-RIVAL"
+candidate_name: "Nonhistoricity node rival"
+status: "CONSTRUCTION_COMPLETE__NODE_RIVAL__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
+formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
+exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
+
+node_rival_only: true
+direct_target_propositions:
+  - "P-HIST-JESUS"
+  - "P-CRUC"
+
+native_formulation: "The founding Christian movement need not derive from a recent historical first-century Jewish subject Jesus of Nazareth. A serious mythicist formulation allows the earliest movement to begin with a nonhistorical/celestial or otherwise mythic Christ figure whose biography was historicized later. For TFP-STRESS-2 this formulation is retained only as a direct rival to the shared-floor historical-subject proposition P-HIST-JESUS and, derivatively, to P-CRUC. It is not admitted as a full founding-origin candidate in the frozen 11-candidate comparison."
+
+proponent_sources:
+  - id: "FORM-XHIST-001"
+    title: "Richard Carrier — Jesus Studies by Dr. Carrier"
+    use: "FORMULATION_ONLY__PROPONENT"
+    contribution: "Directly identifies and summarizes a modern scholarly mythicist model of Christian origins without a historical Jesus."
+  - id: "TFP-B4-NODE-BOUNDARY"
+    title: "Frozen Reviewer A B4 nonhistoricity disposition"
+    use: "INTERNAL_SCOPE_CONTROL"
+    contribution: "Preserves nonhistoricity as a node-level rival rather than inflating it into a full Q1 origin candidate."
+
+necessary_node_claims:
+  - "The study must directly test whether the historical-subject referent required by P-HIST-JESUS is warranted."
+  - "If P-HIST-JESUS fails materially, P-CRUC and every full candidate depending on that subject are affected under shared-floor rules."
+  - "No full-candidate explanatory credit is awarded to this node rival."
+
+authority_commitments:
+  - "Minority status or majority consensus is not an evidence type."
+  - "Carrier's conclusions and priors are formulation material only; TFP applies its own source/provenance/sufficiency rules."
+  - "Failure to prove one Gospel detail does not by itself establish nonhistoricity."
+  - "Nonhistoricity is not excluded from direct testing merely because it is not a full candidate."
+
+internal_success_conditions:
+  - "A direct P-HIST-JESUS sufficiency record is completed under the same source-quality and dependence controls used elsewhere."
+  - "The nonhistoricity formulation receives its strongest serious source/dependence arguments rather than a caricature."
+  - "Historical-subject attribution is not inferred from later narrative existence alone."
+  - "The node rival remains separate from candidate ranking."
+
+expected_evidence:
+  - "Earliest source patterns that are materially compatible with a nonhistorical/celestial or later-historicized origin."
+  - "Absence or weakness of independently anchored recent-human biography where such evidence is prospectively expected and adequately searchable."
+  - "Dependence patterns showing later historicizing narratives do not provide independent early subject evidence."
+  - "A coherent alternative reading of early Christ material that does not require a recent historical Jesus."
+
+weakening_evidence:
+  - "Early, sufficiently independent evidence anchoring Jesus as a recent first-century Jewish person."
+  - "Multiple materially independent source routes whose best-supported referent is a historical subject rather than later historicization."
+  - "Internal early-source features that are difficult to explain under the strongest mythicist model without ad hoc additions."
+
+recognized_objections:
+  - "Arguments from silence can be weak unless the missing evidence was prospectively expected."
+  - "Mythic/theological elaboration is compatible with a historical founder and does not by itself establish nonhistoricity."
+  - "Carrier's broader origin model is more detailed than the node-level question and must not be imported wholesale."
+  - "Source dependence and dating uncertainties may leave P-HIST-JESUS underdetermined rather than contradicted."
+
+caricatures_rejected:
+  - "The node rival is not 'Jesus is fictional because miracles are impossible'."
+  - "It does not require that every Christian text consciously invented Jesus."
+  - "It does not treat mythic content as automatically incompatible with a historical person."
+  - "It does not become a full candidate merely by weakening P-HIST-JESUS."
+
+direct_evidence_route:
+  proposition: "P-HIST-JESUS"
+  mode: "SHARED_FLOOR_NODE_RIVAL_DIRECT_ROUTE"
+  planned_strata: ["SRC-01","SRC-02","SRC-19"]
+  adverse_probe: ["SRC-18"]
+  sufficiency_record_required: true
+  ranking_use: "NONE"
+  q1_effect: "Handled only through the shared-floor/Q1 answer rules; no candidate-selecting comparative credit."
+
+native_or_proponent_review:
+  status: "PASS_FOR_NODE_RIVAL_FORMULATION"
+  reviewer_or_basis: "Program-lead pre-G0 review of FORM-XHIST-001"
+  findings:
+    - "A serious modern proponent formulation of nonhistoricity exists."
+    - "The packet narrows that formulation to the exact P-HIST-JESUS node to avoid importing a whole alternative origin theory into the frozen candidate comparison."
+
+equal_strength_review:
+  status: "PENDING"
+  reviewer_or_basis: "REVIEWER_B"
+  checks:
+    - "strongest serious mythicist formulation represented"
+    - "arguments from silence constrained by expectation/search rules"
+    - "direct P-HIST-JESUS route adequate"
+    - "no consensus shortcut"
+    - "node rival not structurally erased by shared-floor treatment"
+  findings: []
+
+packet_stage_notes:
+  - "If the historical-subject proposition is contradicted, the Q1 chain fails; TFP does not manufacture a winner among the 11 candidates."
+formulation_exposures:
+  ledger_required: true
+  ledger_entries: [35]
+freeze_identity: null
