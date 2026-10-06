@@ -1,0 +1,218 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "REVIEWER_E_G4_STRICT_AUDIT_INPUT_FREEZE"
+status: "FROZEN__READ_ONLY__AUDIT_E1"
+date: "2026-10-06"
+
+assignment:
+  audit_id: "TFP-STRESS-2-G4-AUDIT-E1"
+  reviewer_role_control:
+    path: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_1.yaml"
+    blob_sha: "87755432800ddaa2fe94aad59474d7055d02c4aa"
+  reviewer_provider: "Anthropic"
+  reviewer_model: "Claude Opus 5.5"
+  reviewer_session_id: "NOT_EXPOSED_BY_PROVIDER"
+  assignment_status: "PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT"
+  exact_session_rule: "The substantive audit must occur in the same Claude conversation that returned the frozen passing handshake."
+  repository_modification: "PROHIBITED"
+
+governing_authority:
+  repository: "etblink/Theological-Foundations-Program"
+  qualified_protocol:
+    path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  governance:
+    path: "GOVERNANCE.md"
+    blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+  substantive_target:
+    branch: "research/tfp-stress-2-resurrection-g3"
+    commit: "481f3788ededab5a424c1b65c546efe7b2ae38fd"
+    tree: "ee9430e1aebfafff3f3e78e6e546520d63b403c8"
+    rule: "This exact commit/tree is the frozen substantive G3 synthesis target. Later branch commits are administrative audit-assignment/ledger controls only unless specifically listed below."
+
+mandatory_entry_points:
+  G0_preregistration:
+    path: "TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md"
+    blob_sha: "de744932b17ee8f445231ce566f41b33d50f05e8"
+  candidate_register:
+    path: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml"
+    blob_sha: "99eeab89decd8420e61b97b17c4706e30157d0fd"
+  necessary_proposition_coverage_map:
+    path: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+    blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  source_plan:
+    path: "TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml"
+    blob_sha: "cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"
+  truth_critical_register:
+    path: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+    blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  background_register:
+    path: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
+    blob_sha: "5c16f875b33d3259d4be22176878c00469ea48da"
+  background_interaction_matrix:
+    path: "TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+    blob_sha: "8203ace3b438cd595f79a96511646bbbe5f6ad37"
+  discriminator_register:
+    path: "TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+    blob_sha: "09308e3cc0744198a6633966a5f0fc41b850cb57"
+  role_architecture:
+    path: "TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml"
+    blob_sha: "cade6816cdd357b53fee227ac76d47ab16e83451"
+  q1_event_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+  causal_profile_partition:
+    path: "TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml"
+    blob_sha: "1513d4476ef32222f819c51ef0623a0b16bf5bd4"
+  G1_source_inventory:
+    path: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+    blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+
+G2_lane_freezes:
+  L1: ["TFP_STRESS_2_G2_L1_TEXTUAL_SOURCE_CRITICAL_LANE_FREEZE_0_1_1.yaml","8406e121696cb471516135f2bfeeb8f2e0ce11a9"]
+  L2: ["TFP_STRESS_2_G2_L2_HISTORICAL_EVENT_LANE_FREEZE_0_1_0.yaml","b97031af9bbf3641fc54aeaf9aafe61799ca8143"]
+  L3: ["TFP_STRESS_2_G2_L3_TESTIMONY_CLAIMED_ENCOUNTER_LANE_FREEZE_0_1_0.yaml","b03db8414072fb3eec7f3cdcb4e1681cd8cfe15c"]
+  L4: ["TFP_STRESS_2_G2_L4_PSYCHOLOGY_MEMORY_SOCIAL_PROCESS_LANE_FREEZE_0_1_0.yaml","45550cc03cc4e26affa96a5df5539ee8671d2f7d"]
+  L5: ["TFP_STRESS_2_G2_L5_PHILOSOPHICAL_METAPHYSICAL_LANE_FREEZE_0_1_0.yaml","1a5ab10c51842e843ea15361533f342d929079e0"]
+  L6_causal_subphase: ["TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_FREEZE_0_1_0.yaml","0859f241ffb4de8f9d5884f44fd6a2f6d2233ac4"]
+
+G2_final_integration:
+  shared_floor_reviewer_C_report:
+    path: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+    blob_sha: "c1647cc86b05185ebd9c23cfba01caf900a6edbb"
+  shared_floor_disposition_freeze:
+    path: "TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_DISPOSITION_FREEZE_0_1_0.yaml"
+    blob_sha: "ba00ad992a08db3dde1b34302644b84abd23dd82"
+  phase_L_consolidation:
+    path: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+    blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+
+G3_target_results:
+  human_authorization:
+    path: "TFP_STRESS_2_G3_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "6e2c935d7a8759a4862606d7c811720a406b4308"
+  launch:
+    path: "TFP_STRESS_2_G3_COMPARATIVE_ADJUDICATION_LAUNCH_0_1_0.yaml"
+    blob_sha: "488374e1d7ee6d069da71b1c42eb1c508a54b66a"
+  phase_N_candidate_status:
+    path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
+    blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
+  phase_N_N3_provisional_outcome:
+    path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
+    blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
+
+administrative_audit_controls:
+  assignment_prompt:
+    path: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+    blob_sha: "b2ab712e3f63fb2cd7a474506e5ff99ff132643e"
+  assignment_response:
+    path: "TFP_STRESS_2_REVIEWER_E_ASSIGNMENT_HANDSHAKE_RESPONSE_0_1_0.md"
+    blob_sha: "2c4ad780f7c53503b7afc69f27b6ebb38bd0b230"
+  role_control:
+    path: "TFP_STRESS_2_REVIEWER_E_STRICT_AUDITOR_ROLE_CONTROL_0_1_1.yaml"
+    blob_sha: "87755432800ddaa2fe94aad59474d7055d02c4aa"
+  exposure_ledger_at_assignment:
+    path: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_71.yaml"
+    blob_sha: "704a15df612a6f71810501eccca3d3c896846f08"
+  canonical_STATE_at_assignment:
+    path: "STATE.yaml"
+    branch: "main"
+    blob_sha: "c461cf6805ebfa81b8f6b10778df4a290166ec62"
+    note: "Auditor must also record and audit the current main STATE blob at substantive-audit start if it differs only by the later E1 launch transition."
+
+audit_corpus_rule:
+  - "The mandatory entry points above are navigation anchors, not a closed evidence subset."
+  - "The auditor may and should inspect any referenced frozen dependency or artifact reachable in the substantive target tree when needed to test a mandatory audit topic."
+  - "Do not use repository changes later than the substantive target to repair or strengthen G2/G3 merits. Later listed administrative controls may be used only for audit assignment/provenance/STATE-transition checks."
+  - "Do not perform open-ended new historical evidence acquisition. G4 audits the frozen study and its execution, not a new evidence cycle."
+  - "If a required frozen artifact cannot be recovered from the target/source identities, use the Protocol-O audit insufficiency/defect rules rather than silently substituting external knowledge."
+
+mandatory_G4_topics:
+  - "governance/role compliance"
+  - "candidate completeness/exclusions"
+  - "steelman integrity"
+  - "claim-typing drift"
+  - "necessary-proposition/amendment timing"
+  - "discriminator timing/priority changes"
+  - "search/source-plan adherence"
+  - "source-selection bias"
+  - "lane leakage/dependency/circularity"
+  - "proposition consolidation"
+  - "background-register robustness"
+  - "premise warrant"
+  - "equal-standard application"
+  - "shallow-heuristic reproduction"
+  - "outcome scope/label correctness"
+  - "uncertainty completeness"
+  - "cold-start reproducibility"
+
+question_specific_A15_attacks:
+  - "hidden Christian priors"
+  - "candidate universe distortion or exclusion asymmetry"
+  - "steelman asymmetry"
+  - "H/L collapse"
+  - "C-HET module reassignment/overlap"
+  - "canon-as-evidence"
+  - "skepticism-as-neutrality"
+  - "source-dependence inflation"
+  - "later-source backward projection"
+  - "sincerity -> truth"
+  - "cost/martyrdom -> truth"
+  - "unexplained -> supernatural"
+  - "metaphysical possibility -> historical probability"
+  - "ordinary-explanation failure -> R_EVENT"
+  - "R_EVENT -> God"
+  - "R_EVENT -> Christianity"
+  - "empty-tomb overreach"
+  - "group-report overreach"
+  - "post-evidence source-plan narrowing"
+  - "post-evidence direction-rule repair"
+  - "hidden global weighting"
+  - "framework variants retained after empirical premises fail"
+  - "misuse of ISS to avoid weak/neutral results"
+  - "stream cherry-picking"
+  - "Paul's own experience projected backward"
+  - "minimal-facts/consensus/guild-prestige used as evidence"
+  - "shallow heuristic reproduction"
+
+cold_start_requirement:
+  performer: "Reviewer E"
+  reconstruct_using_only_governed_frozen_source_set:
+    - "authorization and role boundaries"
+    - "candidates/exclusions and steelman packets"
+    - "backgrounds"
+    - "typing/link map"
+    - "necessary-proposition coverage map"
+    - "acquisition plan/coverage"
+    - "amendment history/exposure ledger"
+    - "lane findings and proposition consolidation"
+    - "discriminator priority/dominance"
+    - "provisional outcome meaning"
+    - "audit requirements"
+    - "human acceptance/state transition"
+    - "stop/reopen conditions"
+  outcome_determinative_undocumented_lore: "FAIL_MAJOR"
+  non_outcome_procedural_detail_missing: "FAIL_MINOR"
+
+severity_and_outcome_namespace:
+  topic_results: ["PASS","FAIL_BLOCKING","FAIL_MAJOR","FAIL_MINOR","LIMITATION","NOT_APPLICABLE_WITH_REASON"]
+  overall_outcomes: ["PASS","PASS_WITH_LIMITATIONS","REPAIR_REQUIRED","INVALID_COMPARISON","AUDIT_INSUFFICIENT_SIGNAL"]
+  repair_required_if:
+    - "any BLOCKING or MAJOR"
+    - "three or more MINOR defects on the same decision surface"
+    - "two or more interacting MINORs could jointly change reproducibility/outcome integrity"
+
+auditor_output_requirements:
+  - "Verify immutable identities before merits review."
+  - "List all 17 mandatory G4 topic results."
+  - "List every A15 attack and whether it exposed a defect, limitation, or no defect."
+  - "Perform the formal cold-start reconstruction test."
+  - "Audit A12 candidate statuses and N3 first-satisfied-row application independently from the Program Lead."
+  - "Audit the Q1 answer-table application separately from the N3 base outcome."
+  - "Check that no untriggered Reviewer-C/Reviewer-D comparison/direction/confidence control was wrongly omitted."
+  - "Check that no required Reviewer-C/Reviewer-D control was wrongly skipped."
+  - "Classify all findings by decision surface and severity."
+  - "State whether any finding could change the 11/0 A12 count, N3 base outcome, Q1 answer, or G5 eligibility."
+  - "Return one overall audit outcome from the frozen namespace."
+  - "Do not edit the repository; return the complete report verbatim to the human relay operator."
