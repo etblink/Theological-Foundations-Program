@@ -1,0 +1,205 @@
+study_id: "TFP-STRESS-2"
+schema_version: "0.1.0"
+artifact: "BACKGROUND_REGISTER_REVIEW_DRAFT"
+status: "PROGRAM_LEAD_REPAIR_PROPOSAL__PENDING_REVIEWER_C"
+elicitation_method: "Program-lead register revised using Reviewer A blind elicitation; final admission/granularity/interaction review remains independent."
+blind_elicitation_feasible: true
+blind_elicitation_artifact: "TFP_STRESS_2_REVIEWER_A_BLIND_ELICITATION_REPORT_0_1_0.md"
+
+backgrounds:
+  - id: "BGD-1"
+    dimension: "ONTOLOGY_CAUSAL_CLOSURE"
+    propositions: ["P-R-BODY","P-V-REAL-REFERENT","P-S3-RESCUE-NONDEATH"]
+    admission_basis: "Different coherent ontology assumptions can change admissibility/likelihood of nonordinary postmortem or rescue states."
+    truth_critical_relevance: "Q1 candidate eligibility and warrant."
+    variants:
+      - "CAUSAL_CLOSURE"
+      - "METAPHYSICALLY_OPEN_NONCOMMITTAL"
+      - "INTERVENTIONIST_THEISM"
+      - "NONINTERVENTIONIST_THEISM"
+      - "NONTHETIC_DUALISM_OR_SURVIVAL_IF_SERIOUSLY_FORMULATED"
+    compatibility_constraints:
+      - "Mutually inconsistent ontology variants are not combined with one another."
+      - "No variant counts as public evidence merely by being held."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Outcome-material worldview dimension."
+    defeat_or_retire_if:
+      - "A variant is internally incoherent or directly contradicts an independently established constraint not dependent on candidate choice."
+      - "If two variants make no different truth-critical inference after Reviewer C review, merge them."
+
+  - id: "BGD-2"
+    dimension: "ANOMALOUS_TESTIMONY_PRIOR_LIKELIHOOD"
+    propositions: ["P-R-BODY","P-V-REAL-REFERENT"]
+    admission_basis: "Different justified prior/likelihood frameworks can alter warrant assigned to anomalous testimony."
+    truth_critical_relevance: "Q1 warrant and background sensitivity."
+    variants:
+      - "STRONGLY_RESTRICTIVE_PRIOR"
+      - "AGNOSTIC_OPEN_PRIOR"
+      - "THEISTIC_LIKELIHOOD_VARIANT_IF_INDEPENDENTLY_WARRANTED"
+    compatibility_constraints:
+      - "Priors must be stated, symmetric, and sensitivity-tested."
+      - "A prior may not be reverse-engineered from the desired candidate outcome."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Potentially material inferential dimension."
+    defeat_or_retire_if:
+      - "The variant lacks an independently defensible argument."
+      - "Sensitivity testing shows no truth-critical inference changes, in which case merge/retire as redundant."
+
+  - id: "BGD-3"
+    dimension: "HISTORIOGRAPHICAL_METHOD"
+    propositions: ["P-HIST-JESUS","P-CRUC","P-EARLY-PROCLAMATION-EXISTENCE","P-L-DEVELOPMENT-SEQUENCE"]
+    admission_basis: "Serious historiographical methods may weight source, memory, oral tradition, and eyewitness claims differently."
+    truth_critical_relevance: "Source weighting, dependence, dating, and historical inference."
+    variants:
+      - "CRITERIA_OF_AUTHENTICITY_ORIENTED"
+      - "MEMORY_ORIENTED"
+      - "ORAL_TRADITION_ORIENTED"
+      - "EYEWITNESS_TESTIMONY_ORIENTED"
+    compatibility_constraints:
+      - "Only variants that produce determinate differences on a frozen inference remain live."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Reviewer A identified this as material."
+    defeat_or_retire_if:
+      - "The method's empirical premises are EVIDENCE_AGAINST_WITHIN_SCOPE or CONTRADICTED_WITHIN_SCOPE on the relevant source type."
+      - "It cannot generate a determinate truth-critical inference under the frozen source set."
+      - "It is subsumed by another variant with the same outcome-material consequences."
+
+  - id: "BGD-4"
+    dimension: "SOURCE_DATING_DEPENDENCE_MODEL"
+    propositions: ["P-EARLY-PROCLAMATION-EXISTENCE","P-EARLY-PROCLAMATION-CONTENT","P-L-DEVELOPMENT-SEQUENCE","P-R-FOUNDING-ENCOUNTER"]
+    admission_basis: "Competing bounded dating/dependence models may change earliness and independence counts."
+    truth_critical_relevance: "Founding stratum, stream inventory, development claims."
+    variants:
+      - "ALTERNATIVE_SOURCE_DATING_RANGES"
+      - "ALTERNATIVE_DEPENDENCE_MODELS"
+      - "EMBEDDED_FORMULA_OR_SUBSTRATE_MODELS"
+    compatibility_constraints:
+      - "Variant inputs must be evidence-bounded; they are not protected from ordinary evidential adjudication."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Ancient-source uncertainty can be outcome-material."
+    defeat_or_retire_if:
+      - "The empirical premise defining a variant is CONTRADICTED_WITHIN_SCOPE."
+      - "The premise is EVIDENCE_AGAINST_WITHIN_SCOPE strongly enough that it no longer qualifies as a serious live background under A8."
+      - "A variant produces no material change on a frozen inference and is merged."
+
+  - id: "BGD-5"
+    dimension: "EXPERIENTIAL_EXPLANATION_CAPACITY"
+    propositions: ["P-HIND-MECHANISM-SUFFICIENT","P-HSOC-MECHANISM-SUFFICIENT","P-CHET-IND-EXP","P-CHET-SOC-EXP"]
+    admission_basis: "Competing evidence-bounded models of what individual/social cognition can produce may affect H/C-HET viability."
+    truth_critical_relevance: "Naturalistic/subjective mechanism sufficiency."
+    variants:
+      - "RESTRICTIVE_CAPACITY_MODEL"
+      - "PERMISSIVE_CAPACITY_MODEL"
+    compatibility_constraints:
+      - "Each variant must cite empirical mechanism premises; it is not a worldview default."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Reviewer A identified mechanism-capacity sensitivity."
+    defeat_or_retire_if:
+      - "The empirical mechanism premises are EVIDENCE_AGAINST or CONTRADICTED for the relevant scale/form."
+      - "The variant cannot be independently warranted outside the target resurrection evidence."
+      - "No truth-critical inference differs after evidence review."
+
+  - id: "BGD-6"
+    dimension: "CRUCIFIXION_BURIAL_PRACTICE_MODEL"
+    propositions: ["P-CRUC","P-DEATH","P-S1-NONDEATH","P-RPHYS-CONTINUITY","P-CHET-BODY"]
+    admission_basis: "Serious historically grounded models of execution, survivability, burial, and body disposition may alter inference."
+    truth_critical_relevance: "Death, survival, burial/body-disposition claims."
+    variants:
+      - "EXECUTION_LETHALITY_MODELS"
+      - "SURVIVABILITY_MODELS"
+      - "BURIAL_DISPOSITION_MODELS"
+    compatibility_constraints:
+      - "General practice cannot become case-specific fact without an explicit bridge."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Outcome-material historical model dimension."
+    defeat_or_retire_if:
+      - "Empirical/historical premise is CONTRADICTED or strongly EVIDENCE_AGAINST."
+      - "Variant depends on modern analogy with no defensible transfer."
+      - "Variant does not alter a frozen truth-critical inference."
+
+  - id: "BGD-7"
+    dimension: "SECOND_TEMPLE_RESURRECTION_EXALTATION_CONCEPT"
+    propositions: ["P-EARLY-PROCLAMATION-CONTENT","P-L-INTERPRETIVE-ORIGIN","P-CHET-INT"]
+    admission_basis: "Different serious concept models may change what an early proclamation or scriptural interpretation entails."
+    truth_critical_relevance: "Interpretive origin, proclamation content, R/V boundary where vocabulary is used."
+    variants:
+      - "INDIVIDUAL_RESURRECTION_CAPACITY_MODELS"
+      - "END_TIME_RESURRECTION_MODELS"
+      - "EXALTATION_VINDICATION_MODELS"
+      - "ASSUMPTION_TRANSLATION_MODELS"
+    compatibility_constraints:
+      - "Conceptual possibility does not establish occurrence."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Reviewer A identified this as material."
+    defeat_or_retire_if:
+      - "Variant lacks serious textual/historical representation."
+      - "Variant's key textual/linguistic premise is contradicted or not outcome-material."
+      - "Variants with identical consequences are merged."
+
+  - id: "BGD-8"
+    dimension: "PAULINE_BODY_INTERPRETATION"
+    propositions: ["P-RTRANS-TRANSFORMED-BODILY-IDENTITY","P-V-NONEMBODIED"]
+    admission_basis: "Serious interpretations of body language may differ on what texts claim."
+    truth_critical_relevance: "Textual claim about embodiment; not direct occurrence proof."
+    variants:
+      - "PHYSICAL_CONTINUITY_READING"
+      - "TRANSFORMED_EMBODIMENT_READING"
+      - "NONEMBODIED_OR_SPIRITUAL_PRESENCE_READING"
+    compatibility_constraints:
+      - "BGD-8 can affect interpretation of source claims only; it cannot by itself establish EMB-1/2/3 historically."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Critical to R-TRANS/V interpretive boundary."
+    defeat_or_retire_if:
+      - "Linguistic/textual evidence defeats the variant."
+      - "Variant does not affect any frozen proposition after source analysis."
+
+  - id: "BGD-9"
+    dimension: "EPISTEMOLOGY_OF_TESTIMONY"
+    propositions: ["P-R-FOUNDING-ENCOUNTER","P-V-REAL-REFERENT","H_MECHANISM"]
+    admission_basis: "Reductionist/anti-reductionist testimony frameworks can alter how testimonial evidence contributes to warrant."
+    truth_critical_relevance: "Witness/experience-report inference."
+    variants:
+      - "REDUCTIONIST"
+      - "ANTI_REDUCTIONIST"
+      - "OTHER_SERIOUS_TESTIMONY_MODEL"
+    compatibility_constraints:
+      - "Sincerity is distinct from truth under every variant."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Potentially material philosophy-of-testimony dimension."
+    defeat_or_retire_if:
+      - "Variant lacks a defensible argument."
+      - "No truth-critical result changes under the variant."
+
+  - id: "BGD-10"
+    dimension: "REFERENCE_CLASS_BASE_RATE"
+    propositions: ["P-HIND-MECHANISM-SUFFICIENT","P-HSOC-MECHANISM-SUFFICIENT","P-R-BODY","P-V-REAL-REFERENT"]
+    admission_basis: "Different defensible reference classes can materially change prior/likelihood inference."
+    truth_critical_relevance: "Experience, anomaly, and movement-origin comparisons."
+    variants:
+      - "BEREAVEMENT_VISION_REFERENCE_CLASS"
+      - "COLLECTIVE_REPORT_FORMATION_REFERENCE_CLASS"
+      - "FOUNDER_DEATH_MOVEMENT_REFERENCE_CLASS"
+      - "ANOMALOUS_POSTMORTEM_CLAIM_REFERENCE_CLASS"
+    compatibility_constraints:
+      - "Reference class must have a documented transfer rationale; cherry-picked favorable classes are prohibited."
+    status: "ADMITTED_PROVISIONAL"
+    reason: "Reviewer A identified base-rate sensitivity."
+    defeat_or_retire_if:
+      - "Transfer conditions fail."
+      - "Empirical base-rate premise is EVIDENCE_AGAINST or CONTRADICTED."
+      - "Reference class is so heterogeneous that it cannot support the frozen inference."
+
+empirical_background_retirement_rule:
+  text: "For BGD-3, BGD-4, BGD-5, BGD-6, BGD-7, BGD-8, and BGD-10, a variant whose defining empirical premise becomes CONTRADICTED_WITHIN_SCOPE, or sufficiently EVIDENCE_AGAINST_WITHIN_SCOPE that A8 serious-live criteria are no longer met, is retired before I4 ranking-flip analysis. A retired variant cannot manufacture FRAMEWORK_DEPENDENCE."
+  independent_review_required: true
+
+interaction_matrix_status: "PENDING_REVIEWER_C"
+required_initial_interaction_sets:
+  - ["BGD-1","BGD-2","BGD-9"]
+  - ["BGD-3","BGD-4","BGD-5"]
+  - ["BGD-4","BGD-7","BGD-8"]
+
+reviewer:
+  inclusion_exclusion_role: "REVIEWER_A__FINAL_BACKGROUND_CONFIRMATION_PENDING"
+  granularity_interaction_role: "REVIEWER_C"
+freeze_identity: null
