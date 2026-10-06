@@ -70,10 +70,10 @@ Use your narrow confirmation report as the authoritative definition of the resid
 Read and verify:
 
 4. `TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_6.yaml`
-   - blob `ae8a5974618035ac27069650f33120f820881821`
+   - blob `247d868ca33550297359280e2bd6c6fa7f6dd9fd`
 
 5. `TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml`
-   - blob `fa87d98cfea9cbb443040d282cf3f6452915b472`
+   - blob `3d293840525991ee9ea110212c1e2261922ff82c`
 
 6. `TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_8.yaml`
    - blob `c949c35b9db456e27dfd5065824b20c3b5387e0a`
@@ -82,7 +82,7 @@ Read and verify:
    - blob `985735c633073d4887b596cd1a0fdd6a3432b372`
 
 8. `TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml`
-   - blob `32d3bd9fa1cdbc4fca66bcd1bb9d3a2e421915e9`
+   - blob `c05b099b07ab9bfd3b73f84910ba9b33d08d0521`
 
 9. `TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml`
    - blob `1513d4476ef32222f819c51ef0623a0b16bf5bd4`
