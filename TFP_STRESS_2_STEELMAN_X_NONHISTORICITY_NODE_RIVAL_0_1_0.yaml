@@ -3,8 +3,8 @@ study_id: "TFP-STRESS-2"
 artifact: "STEELMAN_PACKET"
 candidate_id: "X-NONHISTORICITY-NODE-RIVAL"
 candidate_name: "Nonhistoricity node rival"
-status: "CONSTRUCTION_COMPLETE__NODE_RIVAL__REVIEWER_B_EQUAL_STRENGTH_PENDING__PRE_G0"
-candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_7.yaml"
+status: "FROZEN_FOR_REVIEWER_B__PRE_G0"
+candidate_register_ref: "TFP_STRESS_2_CANDIDATE_REGISTER_0_1_8.yaml"
 admission_freeze_ref: "TFP_STRESS_2_B4_A8_ADMISSION_FREEZE_0_1_3.yaml"
 formulation_source_record_ref: "TFP_STRESS_2_WAVES_2_4_STEELMAN_FORMULATION_SOURCE_RECORD_0_1_0.yaml"
 exposure_ledger_ref: "TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_11.yaml"
@@ -98,4 +98,4 @@ packet_stage_notes:
 formulation_exposures:
   ledger_required: true
   ledger_entries: [35]
-freeze_identity: null
+freeze_identity: "TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_0.yaml"
