@@ -1,0 +1,137 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "BACKGROUND_INTERACTION_MATRIX"
+status: "REVIEWER_C_INTERACTION_REPAIRS_BOUND__PRE_G0"
+date: "2026-10-06"
+source_review:
+  reviewer: "REVIEWER_C"
+  provider_model: "xAI / Grok 4.7"
+  report: "TFP_STRESS_2_REVIEWER_C_G0_ARCHITECTURE_REVIEW_REPORT_0_1_0.md"
+  report_blob_sha: "262af0c0090649e831711ca99c42344fe81bbb7b"
+  disposition: "BACKGROUND_INTERACTION_MATRIX_REPAIR_REQUIRED__VERSIONED_REPAIRS_BOUND"
+
+governing_background_register: "TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml"
+governing_discriminator_register: "TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+
+global_rules:
+  - "Background cells are frozen before outcome evidence; no post-evidence favorable-cell sampling."
+  - "One-at-a-time sensitivity is sufficient only where this matrix says NO_MATERIAL_INTERACTION or where a declared narrowing defines the required sensitivity set."
+  - "A background variant whose defining empirical premise is contradicted retires under the frozen background-register rule and cannot be kept alive to manufacture framework dependence."
+  - "If an explicitly required compatible set becomes operationally untestable, narrow scope transparently or use the protocol's within-scope insufficient-signal rule; do not silently sample."
+
+interactions:
+  - id: "BI-1-2-9"
+    dimensions: ["BGD-1","BGD-2","BGD-9"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["D2-R-FOUNDING-CAUSE-VS-RIVALS","D2-V-FOUNDING-CAUSE-VS-RIVALS","D4-V-VS-H-EXTRAMENTAL","R/V admissibility"]
+    one_at_a_time_sufficient: false
+    required_cells:
+      BGD_1A:
+        BGD_2: ["BGD-2A","BGD-2B"]
+        BGD_9: ["BGD-9A","BGD-9B"]
+      BGD_1B:
+        BGD_2: ["BGD-2A","BGD-2B","BGD-2C"]
+        BGD_9: ["BGD-9A","BGD-9B"]
+      BGD_1C:
+        BGD_2: ["BGD-2A","BGD-2B","BGD-2C"]
+        BGD_9: ["BGD-9A","BGD-9B"]
+      BGD_1D:
+        BGD_2: ["BGD-2A","BGD-2B"]
+        BGD_9: ["BGD-9A","BGD-9B"]
+      BGD_1E:
+        BGD_2: ["BGD-2A","BGD-2B","BGD-2C"]
+        BGD_9: ["BGD-9A","BGD-9B"]
+    compatible_cell_count: 26
+    explicitly_incompatible: [["BGD-1A","BGD-2C"],["BGD-1D","BGD-2C"]]
+    ontology_rule: "Only one BGD-1 variant is active in a cell."
+    retirement_conditions: ["ontology cell incoherent","prior imports Jesus-specific/case-specific evidence"]
+    operational_status: "TESTABLE__NO_SAMPLING"
+
+  - id: "BI-1-11"
+    dimensions: ["BGD-1","BGD-11"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["D3-R-VS-V-EMBODIMENT","P-R-IDENTITY-JESUS","P-V-IDENTITY-JESUS","EMB-1","EMB-3"]
+    one_at_a_time_sufficient: false
+    BGD_11_permitted_embodiment_identity_pairs:
+      - ["BGD-11E1","BGD-11I1"]
+      - ["BGD-11E1","BGD-11I2"]
+      - ["BGD-11E2","BGD-11I2"]
+      - ["BGD-11E2","BGD-11I4"]
+      - ["BGD-11E3","BGD-11I2"]
+      - ["BGD-11E3","BGD-11I3"]
+      - ["BGD-11E4","BGD-11I2"]
+      - ["BGD-11E4","BGD-11I4"]
+    explicitly_excluded_pairs:
+      - ["BGD-11E1","BGD-11I3"]
+      - ["BGD-11E1","BGD-11I4"]
+      - ["BGD-11E4","BGD-11I1"]
+    declared_narrowing:
+      - "Test the eight permitted BGD-11 embodiment×identity pairs under BGD-1A and BGD-1B as bounds."
+      - "Under BGD-1C and BGD-1E, test only permitted BGD-11 pairs where admissibility of R or V changes."
+      - "Include BGD-1D only if it changes the intervention reading of EMB-2."
+      - "Do not expand to a blind 5×8 factorial; this narrowing is prospectively declared and not post-evidence sampling."
+    BGD_1E_BGD_11I3_relation: "RELATED_NOT_DUPLICATE__BGD-1E_IS_SURVIVAL_POSSIBILITY__BGD-11I3_IS_IDENTITY_CRITERION"
+    operational_status: "TESTABLE_UNDER_DECLARED_NARROWING"
+
+  - id: "BI-2-9-10"
+    dimensions: ["BGD-2","BGD-9","BGD-10"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["D4-V-VS-H-EXTRAMENTAL","mechanism base-rate use"]
+    one_at_a_time_sufficient: false
+    compatible_cells:
+      BGD_2: ["BGD-2A","BGD-2B","BGD-2C"]
+      BGD_9: ["BGD-9A","BGD-9B"]
+      BGD_10: ["BGD-10A","BGD-10B","BGD-10C"]
+    compatible_cell_count: 18
+    controls:
+      - "Mark BGD-2A × BGD-10C so an anomaly penalty is not double-counted."
+      - "BGD-10C frequencies are empirical inputs and not ontology evidence."
+    operational_status: "TESTABLE__NO_SAMPLING"
+
+  - id: "BI-3-9"
+    dimensions: ["BGD-3","BGD-9"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["testimonial warrant for founding reports"]
+    one_at_a_time_sufficient: false
+    BGD_3_factor_status: "COMBINABLE"
+    declared_narrowing:
+      - "For each of BGD-3A, BGD-3B, BGD-3C, BGD-3D, test its incremental effect under BGD-9A and under BGD-9B."
+      - "Also test the joint all-four-factors policy under BGD-9A and under BGD-9B."
+      - "Do not execute a full 2^4 factorial."
+    required_test_count: 10
+    operational_status: "TESTABLE_UNDER_DECLARED_NARROWING"
+
+  - id: "BI-2-3"
+    dimensions: ["BGD-2","BGD-3"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["founding-report warrant"]
+    one_at_a_time_sufficient: false
+    declared_narrowing:
+      - "Apply BGD-2A and BGD-2B as bounds on the narrowed BGD-3 × BGD-9 sensitivity grid."
+      - "Apply BGD-2C only in cells already compatible with BGD-1C or BGD-1E."
+    operational_status: "TESTABLE_UNDER_DECLARED_NARROWING"
+
+  - id: "BI-1-10C"
+    dimensions: ["BGD-1","BGD-10C"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["reference-class interpretation under ontology-sensitive event-type comparisons"]
+    one_at_a_time_sufficient: false
+    controls:
+      - "BGD-10C may not be read as an ontological conclusion."
+      - "No other BGD-10 variant paired with BGD-1 is material under Reviewer C's freeze."
+    operational_status: "TESTABLE"
+
+  - id: "BI-11-INTERNAL"
+    dimensions: ["BGD-11_EMBODIMENT","BGD-11_PERSONAL_IDENTITY"]
+    status: "MATERIAL_INTERACTION"
+    affects: ["D3-R-VS-V-EMBODIMENT","EMB-1","EMB-3"]
+    one_at_a_time_sufficient: false
+    rule: "Use only the eight permitted embodiment×identity pairs frozen in background register 0.1.6; explicitly excluded pairs are not tested."
+    operational_status: "TESTABLE"
+
+unlisted_interactions:
+  rule: "No additional joint set is required by Reviewer C at this gate. A later need requires C4 rather than post-evidence favorable selection."
+
+authorization:
+  g0: false
+  g1: false
