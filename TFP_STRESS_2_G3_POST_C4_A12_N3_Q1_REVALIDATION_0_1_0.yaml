@@ -1,0 +1,114 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G3_POST_C4_A12_N3_Q1_REVALIDATION"
+status: "PROSPECTIVE_REVALIDATION_COMPLETE__UNCHANGED_RESULTS__AWAITING_REVIEWER_D_DELTA_CHECK"
+date: "2026-10-06"
+
+authority:
+  protocol: ["TFP_ADJUDICATION_PROTOCOL_0_1_7.md","0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"]
+  post_C4_human_ratification:
+    path: "TFP_STRESS_2_G3_POST_C4_HUMAN_RATIFICATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "21f2dbd11172123465a6e4b5b43a43cd19a30b0b"
+  phase_L:
+    path: "TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+    blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  phase_L_C4:
+    path: "TFP_STRESS_2_REVIEWER_C_G4_REPAIR_C4_REPORT_0_1_0.md"
+    blob_sha: "cf59f05ede4c71345155c067a3098d0790b2b099"
+    item_A_class: "POST_EVIDENCE_NONMATERIAL"
+    item_A_effects: "ALL_NEUTRAL"
+    directional_contamination: false
+    fresh_confirmatory_cycle_required: false
+  q1_control:
+    path: "TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml"
+    blob_sha: "c05b099b07ab9bfd3b73f84910ba9b33d08d0521"
+
+revalidation_mode:
+  kind: "MECHANICAL_PROSPECTIVE_REVALIDATION"
+  new_evidence_acquired: false
+  proposition_dispositions_reopened: false
+  candidate_architecture_changed: false
+  ranking_rule_changed: false
+  background_register_changed: false
+  discriminator_direction_generated: false
+  prior_frozen_artifacts_modified: false
+
+phase_L_recheck:
+  total_unique_necessary_propositions: 50
+  disposition_summary:
+    SUPPORTED_WITHIN_SCOPE: 4
+    PARTIALLY_SUPPORTED_WITHIN_SCOPE: 17
+    PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE: 4
+    NOT_ESTABLISHED_WITHIN_SCOPE: 24
+    EVIDENCE_AGAINST_WITHIN_SCOPE: 1
+    CONTRADICTED_WITHIN_SCOPE: 0
+    UNDERDETERMINED_WITHIN_SCOPE: 0
+    INSUFFICIENT_SIGNAL_WITHIN_SCOPE: 0
+  truth_warrant_condition_4_currently_unmet_for_all_candidates: true
+  result: "UNCHANGED"
+
+A12_revalidation:
+  historical_artifact:
+    path: "TFP_STRESS_2_G3_PHASE_N_A12_CANDIDATE_STATUS_ASSIGNMENT_0_1_0.yaml"
+    blob_sha: "7ff930c5e31b57b593a56250ef9462763036c6b3"
+  candidate_status_summary:
+    STRUCTURALLY_INADEQUATE: 0
+    INADEQUATE_BY_EVIDENCE: 0
+    ADEQUATE_BUT_RANKING_BLOCKED: 11
+    RANKING_ELIGIBLE: 0
+    ADEQUATE_total: 11
+  pairwise_dominance_input_set_size: 0
+  pairwise_dominance_required: false
+  candidate_ranking_assigned: false
+  revalidated_result: "11_ADEQUATE_BUT_RANKING_BLOCKED__0_RANKING_ELIGIBLE"
+  result_changed: false
+  rationale: "Reviewer-C C4 established that the Phase-L 0.1.0->0.1.1 control-tail amendment is neutral/nonmaterial and does not change the 50 proposition dispositions, any candidate comparative condition, or truth-warrant eligibility. Reapplying A12 to the same frozen Phase-L dispositions therefore reproduces the existing status vector."
+
+N3_revalidation:
+  historical_artifact:
+    path: "TFP_STRESS_2_G3_PHASE_N_N3_PROVISIONAL_STUDY_OUTCOME_0_1_0.yaml"
+    blob_sha: "dcd196dab83012e96540cced1464293d7fbdb2a2"
+  prerequisite_state:
+    ranking_eligible_candidates: 0
+    adequate_candidates: 11
+    background_robustness: "ZERO_RANKING_ELIGIBLE_IS_BACKGROUND_ROBUST"
+    outcome_relevant_discriminators: 0
+  base_outcome: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED"
+  candidate_ranking_assigned: false
+  best_supported_candidate: null
+  truth_warranted_candidate: null
+  result_changed: false
+
+Q1_revalidation:
+  affirmative_R_conjuncts:
+    P_CRUC: "SUPPORTED_WITHIN_SCOPE"
+    P_DEATH: "SUPPORTED_WITHIN_SCOPE"
+    P_R_BODY: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P_R_IDENTITY_JESUS: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P_R_FOUNDING_ENCOUNTER: "PARTIALLY_SUPPORTED_WITHIN_SCOPE"
+    P_R_CAUSAL: "NOT_ESTABLISHED_WITHIN_SCOPE"
+  q1_rows:
+    row_1_INSUFFICIENT_SIGNAL: false
+    row_2_R_EVENT_EVIDENCE_AGAINST: false
+    row_3_shared_floor_below_supported: false
+    row_4_R_EVENT_TRUTH_WARRANTED: false
+    row_5_R_EVENT_RELATIVELY_SUPPORTED_NOT_TRUTH_WARRANTED: false
+    row_6_UNDERDETERMINED: false
+    row_7_R_EVENT_NOT_WARRANTED_WITHIN_SCOPE: true
+  revalidated_q1_answer: "R_EVENT_NOT_WARRANTED_WITHIN_SCOPE"
+  interpretation:
+    - "The current evidence record does not warrant affirming R_EVENT as true under the frozen protocol."
+    - "This is not EVIDENCE_AGAINST R_EVENT and is not a finding that resurrection is false."
+    - "The broader 11-candidate comparison remains underdetermined because all admitted candidates are adequate but ranking-blocked."
+  result_changed: false
+
+prospective_effect:
+  historical_A12_N3_Q1_status: "REVALIDATED_FOR_CURRENT_STUDY_USE_AFTER_C4_AND_HUMAN_RATIFICATION"
+  stronger_outcome_created: false
+  directional_contamination_created: false
+  G5_ready: false
+  reason_G5_not_ready: "Protocol A17/F2 remains open until Reviewer D performs the authorized narrow delta check over the repaired ledger and prospective chronology."
+
+next_action:
+  id: "TFP-STRESS-2-G4-F2-REVIEWER-D-DELTA-CHECK"
+  action: "Run a narrow Reviewer-D delta check confirming the repaired ledger preserves prior sequence entries, accurately discloses D-1/D-2/D-3, records human ratification before prospective A12/N3/Q1 revalidation, and contains no further rewrite."
