@@ -1,0 +1,2449 @@
+# TFP Adjudication Protocol 0.1.7
+
+**Project:** Theological Foundations Program  
+**Status:** `CANDIDATE__REPAIR_PENDING_REAUDIT`  
+**Date:** 2026-10-05  
+**Supersedes operational use of:** no prior protocol unless and until this version is independently re-audited and explicitly qualified  
+**Governance:** `GOVERNANCE.md`  
+**Canonical state:** `STATE.yaml`  
+**Program charter:** `TFP_PROGRAM_CHARTER_0_1_1.md`  
+**Method seed:** `TFP_METHOD_SEED_0_1_0.md`
+
+---
+
+## 0. Authority, roles, and qualification boundary
+
+Precedence is:
+
+1. Program Charter — ultimate purpose;
+2. Governance — authority and operating rules;
+3. `STATE.yaml` — current authorization/state;
+4. accepted bounded adjudication records — their exact conclusions;
+5. independently qualified adjudication protocol named in STATE — study procedure;
+6. Method Seed — methodological rationale not superseded above;
+7. frozen research artifacts — historical evidence/reasoning;
+8. README — orientation only.
+
+Role definitions come from candidate Governance 0.1.5, which must be ratified by the human owner as part of qualification if this package passes audit:
+
+- **human owner:** authorizes every bounded truth-adjudication study at G0, accepts canonical theological adjudications at G5, and qualifies protocols after required audit;
+- **program lead:** orchestrates already-authorized work but cannot self-authorize a truth study, override failed audit, or substitute for human acceptance;
+- **independent reviewer:** did not author/co-author the item or make the outcome-determinative decision being reviewed;
+- **strict independent auditor:** did not author/co-author the G0 preregistration, candidate packets, outcome-determinative lanes, comparative synthesis, or repair under audit, and made no outcome-material reviewer determination in the same study/qualification cycle.
+
+The strict auditor MUST be disjoint from all reviewers who made outcome-material determinations, including candidate/background exclusions, amendment classification, coverage-completeness review, and lane-amendment materiality review.
+
+A protocol-qualification audit uses the same strict-independence standard.
+
+Procedural separation between AI sessions/models is not guaranteed independence of training priors. Model/session provenance must be recorded.
+
+### Protocol qualification act
+
+A protocol version becomes operative only when all occur:
+
+1. a strict qualification audit is run against an immutable qualification source manifest that pins:
+   - governed bundle commit SHA;
+   - protocol blob SHA;
+   - Governance blob SHA/version;
+   - Charter blob SHA;
+   - audited STATE snapshot blob SHA;
+   - Method Seed blob SHA;
+   - operative-Governance baseline blob SHA for regression reference;
+2. every required strict protocol audit returns `PASS` or `PASS_WITH_LIMITATIONS`;
+3. no unresolved BLOCKING or MAJOR defect remains, and no MINOR cluster forces `REPAIR_REQUIRED` under this protocol;
+4. the external qualification role-control record is complete and frozen before substantive audit;
+5. every launched audit of that exact frozen bundle is disclosed;
+6. the human owner creates a versioned qualification acceptance record that:
+   - cites the immutable source manifest and blob SHA;
+   - cites the frozen qualification role-control artifact and blob SHA;
+   - cites every required audit/disposition and any reconciliation artifact;
+   - ratifies the exact candidate Governance blob/version;
+   - states carried limitations;
+7. canonical mutable `STATE.yaml` performs the two-step mechanical qualification transition below.
+
+### Mechanical qualification transition
+
+The audited STATE blob remains immutable evidence.
+
+**QT1 — qualification transition commit**
+
+QT1 may change only:
+
+- `updated_at`;
+- `program.active_governance_version`;
+- `program.active_governance_ref`;
+- `program.active_governance_blob_sha`;
+- `program.candidate_governance_version`;
+- `program.candidate_governance_ref`;
+- `program.candidate_protocol`;
+- `program.candidate_protocol_status`;
+- `program.qualified_protocol`;
+- `current_scope`;
+- `next_action`;
+- `qualification_candidate.status`;
+- research-queue status fields needed only to mark the qualification cycle complete.
+
+After Governance ratification, QT1 MUST set:
+
+- `program.active_governance_version` to the ratified candidate Governance version;
+- `program.active_governance_ref` to `git:<governed_bundle_commit>:GOVERNANCE.md`;
+- `program.active_governance_blob_sha` to the exact ratified Governance blob SHA;
+- candidate-Governance fields either to null or to a status explicitly showing that the candidate became active;
+- `program.qualified_protocol` to the exact P6 record for the audited/accepted protocol.
+
+QT1 must cite:
+- audited STATE blob;
+- governed bundle commit;
+- source manifest/blob;
+- role-control/blob;
+- accepted human qualification artifact;
+- ratified Governance blob/version.
+
+**QT2 — transition-finalization commit**
+
+After QT1's commit SHA is known, QT2 may change only:
+- `updated_at`;
+- `qualified_protocol.qualification_transition_commit`, setting it to QT1's exact commit SHA.
+
+Neither QT1 nor QT2 may alter:
+- canonical adjudication content;
+- research evidence/results;
+- negative knowledge;
+- reopen conditions;
+- substantive Protocol/Governance/Method/Charter text.
+
+The mechanical transition does not alter or retroactively replace the audited STATE snapshot.
+
+Any substantive change to Charter, Governance, Method Seed, Protocol, or audited STATE content before human qualification acceptance invalidates the audit for qualification and requires a new immutable bundle/audit.
+
+Static candidate-status text inside frozen Protocol/Governance files is historical metadata. Operative status after qualification is read only from canonical STATE.
+
+Protocol qualification does not authorize a theological stress test.
+
+---
+
+## 1. Governing principles
+
+TFP seeks which theological claims/frameworks, if any, are true or closest to truth as warranted by evidence and argument.
+
+Core separations:
+
+```text
+EVIDENCE ≠ SYNTHESIS
+SYNTHESIS ≠ ADJUDICATION
+ADJUDICATION ≠ AUTHORIZATION
+CANDIDATE ≠ CANONICAL
+AUDIT PASS ≠ HUMAN ACCEPTANCE
+LOCAL RESULT ≠ GLOBAL THEOLOGICAL VERDICT
+```
+
+A study must distinguish:
+
+- origins;
+- development;
+- meaning;
+- truth.
+
+A natural origin does not imply falsity. Ancient origin does not imply truth. Later development is neither corruption nor maturation by default.
+
+---
+
+## 2. Gate map
+
+| Governance gate | Protocol phases |
+|---|---|
+| **G0 Question authorization** | A–D: charter, roles/backgrounds, candidates/steelman, typing/link map, source plan, discriminators, adequacy, lanes, stop/reopen, audit criteria |
+| **G1 Evidence acquisition** | E: frozen-plan search, provenance, coverage, negative/inaccessible evidence, plausibility/attestation record |
+| **G2 Lane synthesis** | F–M: proposition dispositions, type-specific sufficiency, philosophical machinery, miracle/revelation/prophecy, source quality, lane freeze, proposition consolidation, continuity |
+| **G3 Comparative adjudication** | N–N3: candidate adequacy, inferential bridge, provisional study outcome |
+| **G4 Adversarial audit** | O: independent audit with defined severity/outcomes and cold-start test |
+| **G5 Canonical acceptance** | P: human-owner acceptance and canonical STATE transition |
+| **G6 Hold/close/reopen** | Q: uncertainty, limitations, stop status, negative knowledge, `reopen_if` |
+
+Anti-heuristic and cold-start checks are mandatory G4 checks, not freestanding optional phases.
+
+---
+
+# G0 — QUESTION AUTHORIZATION
+
+## 3. Phase A — Truth-question charter
+
+Before viewing outcome-relevant evidence, freeze:
+
+### A1. Exact truth question
+Use an adjudicable proposition/comparison.
+
+### A2. Scope
+State:
+- time period;
+- source corpus;
+- domain/tradition boundaries in generic terms;
+- geography/languages where relevant;
+- explicit exclusions;
+- limits on downstream inference.
+
+For the independent candidate-elicitation pass, provide this generic scope without disclosing the initial candidate list unless candidate identity is logically necessary to the question.
+
+### A3. Role matrix
+
+Name:
+- human owner;
+- program lead;
+- candidate constructors;
+- lane authors;
+- initial claim-typing reviewer;
+- necessary-proposition/coverage-map reviewer;
+- discriminator-tier reviewer;
+- source-plan reviewer;
+- adverse-source reviewer;
+- coverage-state reviewer;
+- MAKEABLE certifier;
+- post-evidence direction-result reviewer;
+- background-register inclusion/exclusion reviewer(s);
+- background-granularity/interaction reviewer;
+- amendment-direction reviewer;
+- ledger-integrity reviewer;
+- confidence reviewer;
+- fragility reviewer;
+- all other independent reviewers and their exact decision scopes;
+- intended strict independent auditor(s), if known;
+- actor-lineage identifiers/provenance for AI roles;
+- any human-owner dual-role exception.
+
+Every outcome-material independent reviewer must be actor-lineage disjoint from:
+- the program lead;
+- the author(s) of the artifact/decision surface reviewed;
+- the strict auditor.
+
+Minimum reviewer separation:
+- source-plan reviewer ≠ adverse-source reviewer;
+- necessary-proposition reviewer ≠ discriminator-tier reviewer unless the human owner explicitly preregisters an exception and the strict auditor treats the coupling as a limitation;
+- amendment-direction reviewer ≠ ledger-integrity reviewer;
+- discriminator author/tier reviewer ≠ post-evidence direction-result reviewer.
+
+A single actor lineage may not hold every outcome-material reviewer role.
+
+The human owner must explicitly authorize the study at G0.
+
+### Baseline-exposure disclosure
+
+Every actor in an outcome-material author/reviewer role records whether they had substantive pre-G0 familiarity with the study question/evidence beyond the frozen packet.
+
+Prior knowledge is not automatically disqualifying; the disclosure exists so the strict auditor can evaluate contamination risk.
+
+If the human owner materially authors the preregistration, candidate packet, outcome-determinative lane, synthesis, or makes an outcome-material reviewer determination, apply the Governance dual-role rule.
+
+### A4. Claim types and trigger tags
+Type every material subclaim using one or more:
+
+- textual;
+- historical;
+- archaeological/material;
+- linguistic;
+- interpretive;
+- philosophical;
+- metaphysical;
+- doctrinal;
+- empirical;
+- experiential/testimonial;
+- existential/practical;
+- psychological/sociological explanatory;
+- normative/moral;
+- revelation;
+- authority/canon;
+- faith commitment;
+- miracle/anomalous-event;
+- prophecy.
+
+The final two are trigger tags that normally coexist with other claim types.
+
+Definitions:
+
+- **faith commitment:** a confessional or fiduciary commitment held as part of a religious/traditional stance rather than established by public evidence alone. It may orient inquiry or identify a candidate's own commitments but cannot by itself count as public support.
+- **worldview/foundational commitment:** any religious, secular-naturalistic, secular-nonnaturalistic, metaphysical, methodological-skeptical, or other foundational stance used as a premise. No worldview/foundational commitment of any subtype counts as public support merely by being held; its public use requires independent warrant under the relevant claim type.
+- **existential/practical:** a claim about lived, behavioral, existential, communal, or practical consequences of accepting, practicing, or inhabiting a belief/framework. Such consequences do not by themselves establish the framework's external truth.
+- **miracle/anomalous-event:** any truth-critical event claim for which at least one admitted candidate or serious live background attributes causal significance beyond ordinary causal expectations, or where the study asks whether such attribution is warranted.
+- **prophecy:** any truth-critical claim that a statement predicts a later event in a way argued by any admitted candidate to exceed ordinary information, inference, coincidence, or retrospective fitting.
+
+Any claim tagged miracle/anomalous-event, revelation, or prophecy MUST invoke Phase I.
+
+Before G0 closes, an independent claim-typing reviewer checks:
+- all truth-critical claims are typed;
+- trigger tags cannot be avoided by a candidate-favoring description;
+- comparable rival claims carry comparable type burdens;
+- confessional and secular/foundational commitments face the same public-warrant rule.
+
+Consequential initial typing is an outcome-material reviewer determination and bars that reviewer from serving as strict auditor.
+
+### A5. Dependency / link map
+Decompose nodes and arrows.
+Classify each as:
+- necessary;
+- supporting/non-necessary;
+- alternative path.
+
+Nodes **and arrows** receive dispositions where truth-critical.
+
+### A6. Necessary truth-bearing propositions and coverage map
+
+A proposition is **NECESSARY_FOR_CANDIDATE** only if, under the candidate's strongest frozen formulation, the candidate would cease to be that candidate, become internally inadequate, or lose a truth-claim required for the study if the proposition were false.
+
+A proposition is **CANDIDATE_SPECIFIC** when, at the G0 candidate freeze, it is necessary for at least one admitted candidate and is not the same necessary proposition with the same truth conditions for every other G0-admitted candidate in the comparison.
+
+A proposition is **SHARED_FLOOR** only when, at the G0 candidate freeze:
+- it is necessary for every admitted candidate in the comparison; and
+- it has materially the same truth conditions for all of them.
+
+These classifications are frozen against the G0 candidate set. A later candidate failure does not retroactively turn a candidate-specific proposition into a shared floor. Any reclassification uses C4 amendment control.
+
+Freeze each candidate's necessary truth-bearing propositions before evidence acquisition.
+
+For each candidate, distinguish:
+- necessary propositions;
+- supporting but non-necessary propositions;
+- merely contextual propositions.
+
+An independent reviewer confirms:
+- the classification follows the candidate's strongest frozen formulation;
+- the operational NECESSARY_FOR_CANDIDATE test is satisfied;
+- difficult/vulnerable claims are not demoted to reduce burden;
+- comparable rivals face comparable necessity criteria.
+
+Create a `NECESSARY_PROPOSITION_COVERAGE_MAP`.
+
+For every necessary proposition of every admitted candidate, record exactly one coverage mode:
+
+1. `COMPARATIVE_ROUTE`
+   - at least one preregistered **CRITICAL** comparison bears directly on the proposition; MATERIAL comparisons may supplement but cannot by themselves satisfy necessary-proposition coverage;
+2. `NONCOMPARATIVE_CANDIDATE_SPECIFIC`
+   - pairwise comparison would distort the proposition; the direct evidence/argument route is specified;
+3. `NONCOMPARATIVE_SHARED_FLOOR`
+   - the proposition satisfies the SHARED_FLOOR definition above.
+
+For every map entry record:
+- candidate(s);
+- proposition ID;
+- route type;
+- comparator/discriminator IDs where applicable;
+- direct evidence/argument route where applicable;
+- expected evidence;
+- weakening/defeating evidence;
+- lane(s);
+- required coverage certification.
+
+`NECESSARY_PROPOSITION_COVERAGE_COMPLETE` is certified only when:
+- every admitted candidate's necessary propositions are enumerated;
+- every proposition has exactly one valid coverage mode;
+- every COMPARATIVE_ROUTE includes at least one CRITICAL discriminator;
+- every NONCOMPARATIVE_CANDIDATE_SPECIFIC route has an explicit direct evidential/argument route;
+- every SHARED_FLOOR proposition is necessary for all relevant candidates under the same truth conditions;
+- no candidate's burden is reduced by asymmetric route assignment.
+
+Ranking consequences are governed by the total disposition map in A12 and N2.
+
+No candidate may enter comparative adjudication without this certification.
+
+These reviews are outcome-material; reviewer(s) cannot serve as strict auditor.
+
+### A7. Candidate universe
+Freeze admitted candidates and exclusions under Phase B.
+
+### A8. Live background registers
+
+A **SERIOUS_LIVE_BACKGROUND** is a background framework that:
+
+1. is coherent enough to generate determinate inferential consequences;
+2. is materially relevant to at least one truth-critical proposition, discriminator, admissibility judgment, or causal inference;
+3. has material representation in serious scholarship/tradition OR an independently formulated argument sufficient to make it a live rational alternative;
+4. has not been canonically rejected within an applicable scope;
+5. is not contradicted by an independently established logical/evidential constraint that does not depend on which candidate happens to be admitted.
+
+Background admission is symmetric across confessional, skeptical, naturalistic, supernaturalist, metaphysical, historiographic, linguistic, and methodological backgrounds.
+
+### A8.1 Construction and review
+
+Before evidence acquisition:
+
+- the program lead constructs an initial register;
+- an independent reviewer performs a background-elicitation pass from the truth question and generic scope without the initial register where feasible;
+- if blind elicitation is infeasible, the reason MUST be documented;
+- every proposed inclusion and exclusion is independently reviewed against A8(1)–(5);
+- a frozen `BACKGROUND_REGISTER_REVIEW` lists admitted and excluded backgrounds with reasons.
+
+The reviewer who made inclusion/exclusion decisions cannot be the strict auditor.
+
+A named background-granularity/interaction reviewer independently reviews:
+- A8.2 split/merge decisions;
+- A8.3 interaction judgments;
+- the required compatible joint-combination set.
+
+That reviewer cannot serve as strict auditor.
+
+### A8.2 Granularity
+
+Split a background into variants only when the variants differ on an assumption that can change a truth-critical inference or outcome.
+
+Merge variants when their differences are irrelevant to every frozen truth-critical inference.
+
+The register must state:
+- dimensions;
+- variants within each dimension;
+- compatibility/incompatibility constraints;
+- inferential point affected by each difference.
+
+### A8.3 Joint combinations
+
+Create a `BACKGROUND_INTERACTION_MATRIX`.
+
+For each pair or higher-order set of dimensions, mark whether assumptions jointly affect the same truth-critical inference.
+
+- If they do not interact materially, one-at-a-time sensitivity is sufficient with rationale.
+- If they interact materially, every compatible joint combination that can change a required outcome condition must be tested.
+- If the compatible combination set becomes too large to test responsibly, narrow scope transparently or return INSUFFICIENT_SIGNAL_WITHIN_SCOPE; never silently sample favorable combinations.
+
+For each admitted background/combination, state:
+- propositions;
+- warrant;
+- exact inference(s) affected;
+- evidence/argument that would defeat or retire it.
+
+Background sensitivity vocabulary:
+
+- **RANKING_FLIP:** candidate dominance or the identity/order of the relative ranking changes across admitted live backgrounds/combinations.
+- **TRUTH_WARRANT_FLIP:** relative ranking remains unchanged, but eligibility for TRUTH_WARRANTED changes.
+- **MATERIAL_BACKGROUND_SENSITIVITY:** a necessary proposition or truth-critical comparison changes enough to weaken a required condition without producing either flip above.
+- **RANKING_ROBUST:** no RANKING_FLIP across required live backgrounds/combinations.
+- **TRUTH_WARRANT_ROBUST:** no TRUTH_WARRANT_FLIP and no unresolved material sensitivity defeats a truth-warrant condition.
+
+I4 is the single governing rule for how these background states map to study-level outcomes.
+
+No naturalism, supernaturalism, confessional authority, or skepticism may be silently installed.
+
+### A9. Source/evidence acquisition plan
+
+Before evidence acquisition, draft a `SOURCE_PLAN` containing:
+
+- repositories/corpora/databases;
+- primary-source strata;
+- secondary-source strata;
+- candidate-native / tradition-native source strata where relevant;
+- serious skeptical/critical/adverse source strata where relevant;
+- neutral or cross-tradition scholarly strata where available;
+- source strata needed to test each SERIOUS_LIVE_BACKGROUND;
+- date/language limits;
+- inclusion/exclusion rules;
+- search terms or source-selection rules;
+- inaccessible-source handling.
+
+### A9.1 Independent source-plan control
+
+Before freeze, an independent `SOURCE_PLAN_REVIEWER` receives the truth question, generic scope, admitted candidates, and background register.
+
+The reviewer must:
+1. independently elicit any missing source strata before seeing the draft plan where feasible;
+2. test whether each candidate has access to its strongest native evidence;
+3. test whether serious adverse/critical evidence is represented symmetrically;
+4. test whether every live background has the evidence classes needed to challenge it;
+5. identify foreseeable source-selection bottlenecks.
+
+The plan freezes only after the reviewer issues `SOURCE_PLAN_PASS` or a versioned repair is completed.
+
+Source-plan review is outcome-material and the reviewer cannot serve as strict auditor.
+
+### A10. Required lanes
+Preregister every lane required for the question and its competence boundary.
+
+### A11. Preregistered discriminators, direction rules, and priority
+
+For every CRITICAL or MATERIAL discriminator freeze before evidence exposure:
+
+- candidate pair or candidate-vs-rival relation;
+- necessary proposition(s) served;
+- prediction/argument;
+- relevant background(s);
+- priority;
+- symmetric rationale;
+- feasibility status;
+- comparison-scoped coverage requirement;
+- a `DIRECTION_RULE`.
+
+The `DIRECTION_RULE` MUST specify, in terms of named evidence states, proposition dispositions, or preregistered qualitative criteria, exactly what result yields:
+
+- `FAVORS_A`;
+- `FAVORS_B`;
+- `NEUTRAL_OR_NONDISCRIMINATING`;
+- `UNMAKEABLE`.
+
+It may use claim-type-specific expert judgment only where the relevant sufficiency record identifies the inputs and the direction rule states how those inputs bear on the comparison.
+
+The direction rule may not be invented, relaxed, or tightened after outcome evidence is seen except through C4 amendment control.
+
+Priority is pair-relative and mutually exclusive:
+
+- **CRITICAL:** if the discriminator's result can determine candidate adequacy or determine whether a necessary truth-bearing proposition is established/defeated for at least one member of the pair.
+- **MATERIAL:** only if it changes relative warrant in a truth-relevant way without determining candidate adequacy and without determining the truth-status of a necessary proposition.
+- **CONTEXTUAL:** if it informs interpretation/plausibility but does neither.
+
+A MATERIAL discriminator may never be the sole coverage route for a necessary proposition.
+
+Before G0 closes, independent review confirms:
+- tier classification;
+- pair symmetry;
+- coverage-map linkage;
+- feasibility;
+- completeness and symmetry of the DIRECTION_RULE.
+
+### Post-evidence direction result
+
+After evidence is frozen, the lane/synthesis author proposes the directional result by applying the preregistered DIRECTION_RULE.
+
+An independent `DIRECTION_RESULT_REVIEWER` then records:
+- rule identity;
+- evidence/proposition inputs used;
+- proposed direction;
+- whether the rule was followed without post-hoc criterion change.
+
+A directional result is not valid for dominance until that review is complete.
+
+### Feasibility and MAKEABLE
+
+Before G0 closes, every CRITICAL discriminator receives:
+- `FEASIBLE_WITHIN_SCOPE`; or
+- `INFEASIBLE_WITHIN_SCOPE`.
+
+A known-infeasible discriminator may remain CRITICAL only when the preregistration explicitly states that `INSUFFICIENT_SIGNAL_WITHIN_SCOPE` is the intended confirmatory consequence.
+
+Definitions:
+
+- **UNMAKEABLE:** after a documented `COMPARISON_EFFORT_RECORD`, the comparison cannot receive a directional result because required evidence is genuinely inaccessible/unavailable, provenance fails, or the frozen search has been completed without sufficient signal.
+- **NEUTRAL_OR_NONDISCRIMINATING:** comparison-scoped coverage is adequate and independently certified, the DIRECTION_RULE is applicable, and the evidence meets neither candidate-favoring condition.
+- **MAKEABLE:** a designated independent `MAKEABLE_CERTIFIER` confirms comparison-scoped coverage is COMPLETE or MATERIALLY_COMPLETE and provenance is adequate to apply the DIRECTION_RULE.
+
+A `COMPARISON_EFFORT_RECORD` must state:
+- searches/archives/corpora attempted;
+- inaccessible sources and access attempts;
+- alternative retrieval routes;
+- adverse-source probe result;
+- why further search is unlikely to change makeability.
+
+Unperformed search is never UNMAKEABLE; it is COVERAGE_INCOMPLETE.
+
+A **TRUTH_CRITICAL_COMPARISON** is any CRITICAL discriminator, plus a MATERIAL discriminator preregistered as a tie-breaker only after all relevant CRITICAL comparisons are MAKEABLE and neutral/non-discriminating.
+
+Rules:
+- any UNMAKEABLE CRITICAL comparison blocks dominance between affected live candidates;
+- MATERIAL evidence cannot directly veto a resolved CRITICAL result;
+- evidence undermining a premise/evidence supporting a CRITICAL result is processed first as a proposition-level defeater; the affected direction is then reissued under the frozen DIRECTION_RULE or withdrawn;
+- if all relevant CRITICAL comparisons are MAKEABLE and neutral, MATERIAL may decide dominance only when directions are non-conflicting;
+- conflicting MATERIAL directions with neutral CRITICAL evidence yield `UNDERDETERMINED_WITHIN_SCOPE: MIXED_TRADEOFF` unless resolved by dependence/defeater analysis;
+- CONTEXTUAL evidence never establishes dominance.
+
+### A12. Candidate structural/evidential status and ranking eligibility
+
+The following statuses are mutually exclusive.
+
+### Structural stage
+
+A candidate is `STRUCTURALLY_INADEQUATE` if it fails any of:
+
+1. sufficiently specified to generate truth-relevant consequences;
+2. internally non-contradictory or has a defensible resolution;
+3. candidate-native steelman packet frozen;
+4. evaluable evidence access/coverage exists for its necessary propositions at the level required to proceed;
+5. `NECESSARY_PROPOSITION_COVERAGE_COMPLETE` is certified.
+
+If prerequisite 4 fails because required evidence/access is missing, the study-level result is governed by N3 `INSUFFICIENT_SIGNAL`; do not use another candidate's surviving structure to manufacture an ONLY_ADEQUATE result.
+
+A candidate passing all five structural prerequisites is `STRUCTURALLY_ADEQUATE`.
+
+### Evidential stage
+
+Among STRUCTURALLY_ADEQUATE candidates:
+
+- `INADEQUATE_BY_EVIDENCE`: at least one necessary proposition is `CONTRADICTED_WITHIN_SCOPE` or has an undefeated TRUTH_CRITICAL_DEFEATER.
+- `ADEQUATE_BUT_RANKING_BLOCKED`: not INADEQUATE_BY_EVIDENCE, but at least one candidate-specific necessary proposition has a ranking-blocking disposition/defeater below.
+- `RANKING_ELIGIBLE`: neither of the above.
+
+For base-outcome counting, **ADEQUATE** means STRUCTURALLY_ADEQUATE and not INADEQUATE_BY_EVIDENCE. Thus every candidate falls into exactly one of:
+- STRUCTURALLY_INADEQUATE;
+- INADEQUATE_BY_EVIDENCE;
+- ADEQUATE_BUT_RANKING_BLOCKED;
+- RANKING_ELIGIBLE.
+
+### Total disposition-to-eligibility map
+
+Apply to candidate-specific necessary propositions:
+
+| Proposition disposition | Candidate consequence |
+|---|---|
+| `SUPPORTED_WITHIN_SCOPE` | does not block ranking |
+| `PARTIALLY_SUPPORTED_WITHIN_SCOPE` | does not block ranking only for COMPARATIVE_ROUTE; limitation disclosed; blocks TRUTH_WARRANTED |
+| `PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE` | ranking-blocking |
+| `NOT_ESTABLISHED_WITHIN_SCOPE` | ranking-blocking |
+| `EVIDENCE_AGAINST_WITHIN_SCOPE` | ranking-blocking and creates MATERIAL_DEFEATER |
+| `CONTRADICTED_WITHIN_SCOPE` | INADEQUATE_BY_EVIDENCE |
+| `UNDERDETERMINED_WITHIN_SCOPE` | ranking-blocking |
+| `INSUFFICIENT_SIGNAL_WITHIN_SCOPE` | ranking-blocking |
+
+For `NONCOMPARATIVE_CANDIDATE_SPECIFIC`, only SUPPORTED permits ranking eligibility.
+
+### Shared-floor map
+
+A frozen G0 SHARED_FLOOR never selects among candidates.
+
+- SUPPORTED: no relative-ranking effect; may satisfy the shared truth-warrant condition.
+- PARTIALLY_SUPPORTED / PLAUSIBLE_BUT_UNATTESTED / NOT_ESTABLISHED / UNDERDETERMINED / INSUFFICIENT_SIGNAL: relative ranking unaffected; TRUTH_WARRANTED blocked for all dependent candidates.
+- EVIDENCE_AGAINST: relative ranking unaffected; creates a shared MATERIAL_DEFEATER and blocks TRUTH_WARRANTED for all dependent candidates.
+- CONTRADICTED: every dependent candidate becomes INADEQUATE_BY_EVIDENCE.
+
+Only RANKING_ELIGIBLE candidates participate in dominance, BEST_SUPPORTED, or CLOSEST_TO_TRUTH.
+
+### A13. Expected / weakening evidence
+For each candidate state:
+- expected evidence;
+- compatible but non-discriminating evidence;
+- weakening evidence;
+- contradiction conditions where possible.
+
+### A14. Stop / reopen conditions
+Preregister:
+- coverage target;
+- underdetermination condition;
+- insufficient-signal condition;
+- `reopen_if`.
+
+### A15. Audit criteria
+Freeze standard G4 criteria plus question-specific risks.
+
+### A16. Shared proposition map
+
+For any proposed CLOSEST_TO_TRUTH refinement, freeze before evidence acquisition:
+
+- at least two independent shared truth-bearing dimensions;
+- proposition mapping rules across candidates;
+- distortion risks;
+- dimension type: CRITICAL or MATERIAL;
+- the dimension-wise comparison rule used by N3;
+- what counts as A_BETTER_WARRANTED, B_BETTER_WARRANTED, TIED_OR_NONDISCRIMINATING, and UNMAKEABLE for each dimension.
+
+The shared map must be capable of applying the N3 dimension-dominance rule without a global score.
+
+If no defensible shared map exists, CLOSEST_TO_TRUTH is unavailable.
+
+### A17. Protocol version and evidence-exposure ledger
+
+At G0:
+
+- freeze the exact qualified protocol identity governing the study;
+- initialize an append-only `EVIDENCE_EXPOSURE_LEDGER`;
+- record the freeze identity/time of every G0 artifact;
+- name a ledger custodian and an independent ledger-integrity reviewer.
+
+An **evidence exposure** occurs when an outcome-material actor first receives, reads, is shown, or is given a substantive summary of outcome-relevant evidence or a result derived from it.
+
+Each exposure entry records:
+- monotonically increasing sequence number;
+- repository commit/blob identity where applicable;
+- time/order;
+- exposed actor/actor-lineage;
+- source/artifact/result class;
+- which amendment surfaces it could affect.
+
+Every outcome-material actor must attest at lane freeze that all known exposures affecting that lane are represented in the ledger.
+
+The custodian may append but may not rewrite prior entries.
+
+When any amendment is classified, the independent ledger-integrity reviewer verifies:
+- sequence continuity;
+- commit history contains no unrecorded ledger rewrite;
+- the relevant exposure precedes/follows the amendment as claimed.
+
+The ledger-integrity reviewer is outcome-material and cannot serve as strict auditor.
+
+A study remains under its frozen protocol version unless the human owner authorizes a migration plan. Outcome-material protocol migration after evidence exposure uses C4.
+
+---
+
+## 4. Phase B — Candidate universe and steelman procedure
+
+### B1. Symmetric admission rule
+Admit a candidate only if it is:
+1. relevant;
+2. materially distinct;
+3. specified enough to generate consequences;
+4. not subsumed by another candidate;
+5. traceably formulated.
+
+This applies equally to traditional, skeptical, minority, hybrid, revised, and newly generated candidates.
+
+### B2. Independent elicitation
+Conduct at least one candidate-elicitation pass by an independent reviewer given the truth question and scope **without the initial candidate list where feasible**.
+
+"Major candidate class" means any candidate family represented by:
+- a material scholarly/traditional literature; or
+- an independently generated model that differs on a necessary truth-bearing proposition.
+
+### B3. Steelman packet
+Every admitted candidate gets a frozen packet containing:
+- candidate-native/primary formulation;
+- strongest serious proponent source(s);
+- core truth propositions;
+- authority commitments;
+- internal success conditions;
+- expected evidence;
+- strongest recognized objections;
+- common caricatures explicitly rejected.
+
+Where candidate distortion by rival knowledge is plausible:
+- construct packets independently from one another where feasible;
+- use tradition-native or proponent-informed sources;
+- freeze each packet before comparative exposure;
+- record any unavoidable contamination.
+
+An independent reviewer performs an **equal-strength check**: packets must be comparable in specificity, source quality, objection coverage, and charitable formulation. If one packet is materially weaker, comparison pauses for repair.
+
+Where feasible, obtain a tradition-native or proponent-informed review of the packet. If unavailable, document that absence.
+
+One candidate may not be defined solely through an opponent's critique.
+
+### B4. Exclusion review
+Every exclusion states:
+- candidate;
+- reason/evidence;
+- substantive vs out-of-scope;
+- independent reviewer disposition if outcome-material.
+
+### B5. Late or post-evidence candidate
+A candidate discovered or constructed after outcome-relevant evidence exposure is labeled:
+- `LATE_CANDIDATE`, and
+- if constructed using exposed evidence, `POST_EVIDENCE_CONSTRUCTED_CANDIDATE`.
+
+A post-evidence constructed candidate may be explored, but cannot win the same confirmatory adjudication merely by fitting exposed evidence. Canonical comparison requires a fresh preregistered follow-up or a held-out discriminator set frozen before candidate construction.
+
+### B6. Meta-outcomes
+`NONE_ADEQUATE`, `UNDERDETERMINED`, and `INSUFFICIENT_SIGNAL` are outcomes, not candidate frameworks.
+
+### B7. Alternative-hypothesis sources
+Heterodox sources may generate candidates/predictions but do not fill evidential gaps by authority.
+
+Use:
+```text
+alternative model
+→ explicit prediction
+→ independent test
+→ preserve success/failure
+```
+
+---
+
+## 5. Phase C — Typing and amendment control
+
+### C1. Typing freeze
+Initial typing freezes at G0.
+
+### C2. Multi-type rule
+Each type-specific component receives its own disposition.
+Overall claim strength cannot exceed the weakest **necessary** component.
+
+### C3. Faith commitment
+A faith commitment may be recorded as `CONFESSIONAL_COMMITMENT`, but is not public evidence by itself.
+
+### C4. Amendment classes
+
+Every frozen G0 element in A1–A17 and every downstream frozen artifact is amendment-controlled.
+
+Every amendment:
+- cites the A17 evidence-exposure ledger;
+- identifies every affected candidate/outcome condition;
+- receives independent direction-classification review before use.
+
+For each affected candidate/outcome condition classify the effect:
+- `ADVERSE`;
+- `FAVORABLE`;
+- `NEUTRAL`;
+- `MIXED_OR_UNCLEAR`.
+
+Then assign:
+
+#### `PRE_EVIDENCE_AMENDMENT`
+Made before relevant outcome evidence exposure.
+Requires rationale; outcome-material changes require independent review.
+
+#### `POST_EVIDENCE_NONMATERIAL`
+After exposure but clerical/non-outcome-determinative.
+Requires independent confirmation.
+
+#### `POST_EVIDENCE_ADVERSE_ONLY`
+Every affected candidate/outcome effect is ADVERSE or NEUTRAL, with at least one ADVERSE.
+All adverse consequences enter the current confirmatory study after re-analysis/re-freeze.
+
+#### `POST_EVIDENCE_FAVORABLE_OR_MIXED`
+At least one affected candidate/outcome effect is FAVORABLE or MIXED_OR_UNCLEAR.
+
+Rules:
+1. preserve the descriptive correction;
+2. incorporate genuine adverse candidate-level consequences immediately;
+3. do not allow any candidate to receive a stronger confirmatory comparative outcome because of the amendment;
+4. if incorporating the correction changes relative dominance/ranking, the current confirmatory comparison terminates as:
+   `UNDERDETERMINED_WITHIN_SCOPE: POST_EVIDENCE_DIRECTIONAL_CONTAMINATION`;
+5. any positive comparative use of the amendment requires a new preregistered confirmatory cycle or genuinely held-out evidence.
+
+Example: after seeing the evidence, a newly recognized defeater makes B weaker and would thereby promote A. B's corrected proposition/candidate status is preserved, but A is not promoted confirmatorily. The current comparison receives POST_EVIDENCE_DIRECTIONAL_CONTAMINATION and must be re-run under a fresh preregistration for a positive comparative claim.
+
+Post-exposure source-plan narrowing is presumptively FAVORABLE_OR_MIXED unless an independent reviewer establishes that no candidate/outcome can benefit.
+
+The amendment-direction reviewer and ledger-integrity reviewer cannot serve as strict auditor.
+
+Retyping, role/scope/source-plan/background/discriminator/lane/protocol changes all use this rule.
+
+---
+
+## 6. Phase D — Link decomposition
+
+For every truth-critical chain record:
+
+- node;
+- arrow;
+- necessary/supporting status;
+- evidence;
+- alternatives;
+- disposition;
+- confidence;
+- dependence.
+
+A failed arrow breaks only claims that depend on it.
+
+Long chains do not inherit truth from attractive endpoints.
+
+---
+
+# G1 — EVIDENCE ACQUISITION
+
+## 7. Phase E — Evidence acquisition
+
+The A9 acquisition plan is frozen at G0.
+
+### E1. Provenance record
+As relevant:
+- source/manuscript identity;
+- edition/translation;
+- date and uncertainty;
+- authorship;
+- genre;
+- dependence;
+- archaeological context;
+- custody;
+- analytical method;
+- publication status;
+- quotation context;
+- philosophical argument source.
+
+### E2. Negative/inaccessible evidence
+Record:
+- failed searches;
+- expected-but-absent evidence where absence is probative;
+- inaccessible sources;
+- missing data.
+
+### E3. Coverage states and adverse-source probe
+
+Every coverage state has an explicit scope:
+- STUDY;
+- LANE:<id>;
+- PROPOSITION:<id>;
+- COMPARISON:<id>.
+
+Every state requires independent COVERAGE_STATE_REVIEW.
+
+Before certifying COMPLETE or MATERIALLY_COMPLETE, an independent ADVERSE_SOURCE_REVIEWER who is actor-lineage disjoint from the SOURCE_PLAN_REVIEWER performs an ADVERSE_SOURCE_PROBE outside the original source-plan search paths where feasible.
+
+The probe must:
+- search at least one credible external/alternative index, bibliography, tradition-critical source stream, or citation trail not used to construct the plan;
+- specifically look for evidence that would weaken the current source universe or expose omitted source classes;
+- record queries/routes and results;
+- add discovered outcome-material strata through C4.
+
+If a genuine external adverse-source probe is infeasible:
+- document why;
+- obtain independent confirmation that no meaningful alternative route exists;
+- coverage may be at most `COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS`, never COMPLETE.
+
+Coverage labels:
+
+#### `COVERAGE_COMPLETE_FOR_FROZEN_SCOPE`
+All preregistered strata searched; all identified outcome-material sources evaluated; a genuine adverse-source probe was completed and found no omitted outcome-material source class.
+
+#### `COVERAGE_MATERIALLY_COMPLETE_WITH_LISTED_GAPS`
+Truth-critical strata addressed; gaps listed; either the adverse-source probe was completed with listed residual gaps or probe infeasibility was independently confirmed; no listed/discovered gap is judged likely to change the scoped disposition/comparison.
+
+#### `COVERAGE_INCOMPLETE`
+A truth-critical stratum/source remains unsearched, inaccessible without adequate substitute, or potentially outcome-changing.
+
+Every UNMAKEABLE CRITICAL comparison must cite a COMPARISON_EFFORT_RECORD under A11.
+
+MAKEABLE comparison certification specifically requires a COMPARISON:<id> coverage review.
+A self-declared/uncertified state is COVERAGE_UNCERTIFIED and cannot support canonical comparison.
+
+### E4. Plausibility / attestation record
+For historical-development claims record separately, where applicable:
+
+- physically possible;
+- culturally plausible;
+- archaeologically evidenced;
+- textually attested;
+- historically inferred;
+- independently replicated;
+- contradicted.
+
+These are descriptors, not a score or mandatory sequence.
+
+"Could have happened" is not "did happen."
+
+### E5. Source proximity / later evidence
+For questions about earlier periods:
+- later sources may illuminate;
+- later sources may preserve earlier material;
+- later sources may reinterpret;
+- later sources may invent.
+
+Later material may not be projected backward without a transmission/preservation argument.
+
+### E6. Evidence convergence
+Record evidence classes and dependencies.
+Convergence is stronger when genuinely independent evidence classes bear on the same truth-critical proposition.
+Repeated dependent sources count as one evidential stream for convergence purposes.
+
+---
+
+# G2 — LANE SYNTHESIS
+
+## 8. Phase F — Proposition dispositions
+
+Every disposition is `WITHIN_SCOPE`.
+
+### Defeater classes
+These are epistemic, not audit-severity labels:
+
+- **TRUTH_CRITICAL_DEFEATER:** directly undermines a necessary truth-bearing proposition, CRITICAL discriminator, or a required condition for the proposed outcome. If undefeated, it blocks `SUPPORTED` for the affected necessary proposition and blocks `TRUTH_WARRANTED`.
+- **MATERIAL_DEFEATER:** materially lowers warrant or favors a serious rival but is not by itself candidate-fatal. It must be resolved or carried into a weaker/underdetermined disposition.
+
+### `SUPPORTED_WITHIN_SCOPE`
+Requires:
+- applicable type-specific mandatory elements all `MET` or justified `NOT_APPLICABLE`;
+- coverage complete/materially complete;
+- serious alternatives tested;
+- no undefeated TRUTH_CRITICAL_DEFEATER or MATERIAL_DEFEATER;
+- a `SUFFICIENCY_RECORD` listing evidence and rationale for each mandatory element.
+
+This remains disciplined expert judgment, not a mechanical numerical threshold.
+
+### `PARTIALLY_SUPPORTED_WITHIN_SCOPE`
+Positive evidence materially supports the proposition, but one or more necessary evidentiary requirements remain unresolved.
+
+This label is valid even for a simple proposition; "component" may mean evidentiary requirement rather than logical subclaim.
+
+### `PLAUSIBLE_BUT_UNATTESTED_WITHIN_SCOPE`
+Coherent/possible, but required occurrence/instantiation evidence is absent.
+
+### `NOT_ESTABLISHED_WITHIN_SCOPE`
+Minimum support burden not met and evidence does not materially favor the negation/rival.
+
+### `EVIDENCE_AGAINST_WITHIN_SCOPE`
+Material evidence is less expected if the proposition is true than under a serious rival/negation, or a major undefeated defeater exists.
+
+### `CONTRADICTED_WITHIN_SCOPE`
+A necessary component conflicts with high-quality evidence/valid argument and no repair consistent with frozen formulation remains.
+
+### `UNDERDETERMINED_WITHIN_SCOPE`
+Adequate coverage exists but competing conclusions remain live.
+
+Subtype:
+- `EVIDENTIAL_EQUIVALENCE`;
+- `FRAMEWORK_DEPENDENCE`;
+- `PHILOSOPHICAL_EQUIVALENCE`;
+- `MIXED_TRADEOFF`;
+- `DEPENDENCY_CYCLE`.
+
+Use `FRAMEWORK_DEPENDENCE` only when a **RANKING_FLIP** occurs across serious live backgrounds/combinations.
+
+If ranking remains robust but truth-warrant eligibility flips, do **not** use this subtype for the ranking; preserve the relative result and record `TRUTH_WARRANT_FRAMEWORK_DEPENDENT`.
+
+### `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`
+Evidence quality/coverage is inadequate.
+
+Subtype(s) may co-occur:
+- `MISSING_CRITICAL_EVIDENCE`;
+- `PROVENANCE_FAILURE`;
+- `SOURCE_ACCESS_FAILURE`.
+
+A non-operationalized question fails G0 and is not an insufficient-signal subtype.
+
+No disposition is a vote.
+
+---
+
+## 9. Phase G — Type-specific sufficiency templates
+
+For `SUPPORTED_WITHIN_SCOPE`, create a `SUFFICIENCY_RECORD` marking each applicable mandatory item `MET` / `NOT_MET` / justified `NOT_APPLICABLE`.
+
+### Textual
+Mandatory:
+- adequate textual base;
+- material variants assessed;
+- grammar/syntax/genre/context;
+- serious rival readings;
+- no silent projection of later doctrine.
+
+### Historical
+Mandatory:
+- provenance/dating/genre/interests;
+- dependence/independence;
+- contextual plausibility;
+- expected and materially absent evidence;
+- serious alternatives;
+- reliability assessed question-specifically.
+
+### Archaeological/material
+Mandatory:
+- context/provenance;
+- dating;
+- method;
+- controls/comparators;
+- alternative functions;
+- custody issues addressed.
+
+### Linguistic
+Mandatory:
+- relevant-period corpus;
+- semantic range;
+- syntax/context;
+- diachronic change;
+- comparanda where relevant.
+
+### Interpretive
+Mandatory:
+- secure source base;
+- local/broader context;
+- explanatory coverage;
+- serious rival readings;
+- non-circularity;
+- original meaning separated from reception.
+
+### Philosophical
+Mandatory:
+- explicit argument form;
+- validity/inductive-abductive strength;
+- premise warrant;
+- hidden assumptions;
+- major defeaters;
+- serious rival arguments;
+- sensitivity.
+
+### Metaphysical
+Mandatory:
+- ontology/modal commitments;
+- coherence;
+- warrant for central commitments;
+- rival ontologies;
+- defeaters/counterexamples;
+- distinction among conceivability, possibility, necessity, actuality.
+
+### Doctrinal
+Mandatory:
+- exact doctrine;
+- internal implications;
+- source/authority derivation;
+- historical development where relevant.
+
+Doctrinal sources establish what a system teaches, not truth. A doctrinal truth verdict inherits support from its truth-bearing premises.
+
+### Empirical
+Mandatory:
+- operationalization;
+- appropriate method/data;
+- robustness/replication proportionate to claim;
+- alternative mechanisms;
+- uncertainty.
+
+### Experiential/testimonial
+Mandatory:
+- authenticity;
+- access/opportunity;
+- reliability factors;
+- independence;
+- transmission distortion;
+- rival psychological/social explanations;
+- corroboration expectations compared symmetrically across live rival explanations.
+
+Sincerity alone is not external truth.
+
+### Existential/practical
+Mandatory:
+- exact claimed existential/practical consequence;
+- population/context/practice to which it applies;
+- evidence that the consequence occurs rather than being merely asserted;
+- serious rival causal explanations where causal language is used;
+- distinction between practical/existential benefit and external truth of the underlying worldview;
+- scope and transfer limits.
+
+Existential/practical success may support a claim about lived consequences. It does not by itself establish the external truth of the theological framework.
+
+### Psychological/sociological explanatory
+Mandatory:
+- construct validity;
+- relevant population/sample;
+- causal/mechanistic warrant proportionate to claim;
+- rival mechanisms;
+- no genetic-fallacy inference.
+
+### Normative/moral
+Mandatory:
+- exact normative claim;
+- metaethical background;
+- argument;
+- consistency/counterexamples;
+- rival normative accounts;
+- descriptive origin separated from normative warrant.
+
+### Revelation
+Use Phase I plus relevant historical/philosophical/authority requirements.
+
+### Miracle/anomalous-event trigger
+This tag does not replace claim typing. `SUPPORTED` requires every applicable historical/textual/testimonial/philosophical sufficiency element **and** completion of the Phase I miracle sequence.
+
+### Prophecy trigger
+This tag does not replace claim typing. `SUPPORTED` requires every applicable textual/historical/linguistic/philosophical sufficiency element **and** completion of the Phase I prophecy sequence.
+
+### Authority/canon
+Mandatory:
+- exact authority claim;
+- historical basis;
+- transmission/canonicalization evidence;
+- non-circular warrant;
+- rival authority claims;
+- scope.
+
+### Faith commitment
+Cannot by itself receive public `SUPPORTED_WITHIN_SCOPE`.
+
+### Premise-warrant categories
+For philosophical/metaphysical/normative work, classify premise warrant as:
+- logical/analytic;
+- empirical;
+- historical;
+- testimonial;
+- phenomenological;
+- introspective/intuitional;
+- normative;
+- theoretical/explanatory;
+- worldview/foundational, with neutral subtype recorded (for example tradition-confessional, secular-naturalistic, secular-nonnaturalistic, metaphysical-foundational, methodological-skeptical, or other).
+
+Intuition is defeasible philosophical evidence, not self-authenticating public warrant. If a truth-critical premise depends on disputed intuition, test rival-framework sensitivity.
+
+---
+
+## 10. Phase H — Philosophical / metaphysical / normative machinery
+
+Record:
+
+1. proposition;
+2. argument form;
+3. premise list;
+4. premise-warrant category/source;
+5. inferential validity/strength;
+6. hidden assumptions;
+7. defeaters;
+8. rival frameworks;
+9. defeasible theoretical virtues:
+   - coherence;
+   - scope;
+   - depth;
+   - parsimony;
+   - unification;
+   - fit with other warranted beliefs;
+10. sensitivity / flip conditions.
+
+Parsimony and fewest assumptions are never automatic winners.
+
+---
+
+## 11. Phase I — Miracle, revelation, and prophecy
+
+### I1. Symmetric starting rule
+Do not assume:
+- naturalism;
+- supernaturalism;
+- sincere testimony suffices;
+- miracles are impossible;
+- unspecified supernatural cause wins because natural alternatives are incomplete;
+- unspecified natural/ordinary/unknown cause wins because a supernatural identification is incomplete.
+
+### I2. Trigger
+
+Definitions:
+
+- **revelation:** a truth-critical claim that information, command, proposition, experience, or disclosure originates from a divine/non-human transcendent source or from an agent claimed to possess such revelatory authority.
+- **authority/canon dependent on revelation:** an authority/canon claim whose warrant materially depends on the truth, source, reliability, preservation, or authorized transmission of a revelation claim.
+
+Phase I is mandatory whenever a truth-critical subclaim is tagged:
+- miracle/anomalous-event;
+- revelation;
+- prophecy;
+- authority/canon dependent on revelation.
+
+The A4 definitions control miracle/prophecy tagging.
+
+The trigger is candidate-symmetric: if any admitted candidate assigns such significance to the claim, the comparative study includes the trigger.
+
+Relevant claims retain their historical/textual/philosophical/authority types; relabeling cannot bypass Phase I.
+
+Initial trigger assignment passes the independent A4 typing review.
+
+### I3. Miracle/anomalous-event sequence
+Evaluate separately:
+
+1. report made;
+2. transmission reliability;
+3. historical core;
+4. degree of anomaly relative to each explicit live causal framework;
+5. specified causal classes;
+6. metaphysical admissibility;
+7. particular cause/agent identification;
+8. theological consequence.
+
+Catch-all classes:
+- `UNKNOWN` and `UNSPECIFIED_SUPERNATURAL_CAUSE` are residual statuses, not explanatory winners;
+- `FRAUD_OR_ERROR`, `ORDINARY_NATURAL`, `RARE_NATURAL`, and any proposed supernatural causal class must be specified enough to generate truth-relevant expectations before they can defeat a specified rival.
+
+### I4. Background robustness
+
+Use the A8 independently reviewed SERIOUS_LIVE_BACKGROUND register and required joint combinations.
+
+For every required background/joint combination, re-run:
+1. applicable proposition dispositions/sufficiency judgments affected by that background;
+2. A12 adequacy/ranking eligibility;
+3. A11 directional results whose frozen DIRECTION_RULE depends on that background;
+4. N2 dominance;
+5. truth-warrant eligibility.
+
+Distinguish:
+
+- **RANKING_FLIP:** the identity/order of BEST_SUPPORTED, ranking eligibility, or candidate dominance changes across admitted live backgrounds/combinations.
+- **TRUTH_WARRANT_FLIP:** relative ranking remains unchanged, but eligibility for TRUTH_WARRANTED changes because a required metaphysical/epistemic/background condition changes.
+
+Rules:
+1. RANKING_FLIP → `UNDERDETERMINED_WITHIN_SCOPE: FRAMEWORK_DEPENDENCE`; BEST_SUPPORTED is not issued.
+2. TRUTH_WARRANT_FLIP does not erase a robust relative ranking. Preserve the applicable relative base outcome and mark `TRUTH_WARRANT_FRAMEWORK_DEPENDENT`; TRUTH_WARRANTED is prohibited.
+3. MATERIAL_BACKGROUND_SENSITIVITY that changes neither ranking nor truth-warrant eligibility is carried as a limitation and may lower confidence.
+4. If a required background/joint combination cannot be run, use INSUFFICIENT_SIGNAL for any outcome that depends on demonstrating robustness.
+
+This rule governs all background-sensitive study-level outcomes.
+
+### I5. Priors
+If a probabilistic prior is used:
+- state basis;
+- apply symmetrically;
+- sensitivity-test.
+
+If no defensible prior exists, do not hide one in "ordinary" or "extraordinary."
+
+### I6. Revelation sequence
+Evaluate separately:
+
+1. revelation claim made;
+2. claimant sincerity/experience;
+3. transmission;
+4. philosophical possibility;
+5. evidence that revelation rather than ordinary cognition/explanation occurred;
+6. source identification;
+7. warrant for source authority/truthfulness;
+8. preservation;
+9. doctrinal consequence.
+
+Competing revelation claims face the same sequence.
+
+No claim self-authenticates by circular appeal unless a separate self-authentication argument is explicitly formulated and audited.
+
+### I7. Prophecy
+Separate:
+- text/authorship/date;
+- prediction specificity before event;
+- transmission/editing;
+- event occurrence;
+- fit vs flexible reinterpretation;
+- chance/base-rate considerations where applicable;
+- ordinary information routes;
+- supernatural foreknowledge claim;
+- source identification;
+- theological consequence.
+
+---
+
+## 12. Phase J — Source quality
+
+No universal lexical hierarchy.
+
+Evaluate:
+- proximity;
+- reliability;
+- genre;
+- access;
+- independence;
+- transmission;
+- bias/interests;
+- preservation;
+- corroboration;
+- provenance.
+
+Rules:
+
+1. earlier ≠ automatically better;
+2. later ≠ automatically worse;
+3. later source may preserve earlier material;
+4. early source may be unreliable;
+5. independence requires no material common source/informant/institutional bottleneck relevant to convergence;
+6. degrees of dependence are recorded;
+7. mixed questions use claim-specific source evaluation.
+
+---
+
+## 13. Phase K — Lane freeze and amendment gate
+
+### K1. Lane construction
+Lanes are by claim competence, not favored candidate.
+
+### K2. Required lanes
+Use the A10 frozen list.
+A later required lane is an amendment under C4.
+
+### K3. Background register
+Every lane receives the frozen A8 register and cites any background dependency at the exact inferential point.
+
+### K4. Lane freeze
+A lane freezes only when:
+- scope complete;
+- coverage state recorded;
+- proposition/arrow dispositions issued;
+- sufficiency records attached where supported;
+- unresolved conflicts listed;
+- exact artifact/version fixed.
+
+### K5. Lane amendment
+
+Lane amendments use C4 exactly.
+
+- `POST_EVIDENCE_NONMATERIAL`: incorporate after independent confirmation.
+- `POST_EVIDENCE_ADVERSE_ONLY`: incorporate adverse consequences and rerun dependent synthesis.
+- `POST_EVIDENCE_FAVORABLE_OR_MIXED`: preserve corrections and adverse candidate-level consequences, but if relative ranking/dominance would change, terminate the current confirmatory comparison as `UNDERDETERMINED_WITHIN_SCOPE: POST_EVIDENCE_DIRECTIONAL_CONTAMINATION`.
+
+No separate "confirmatory ceiling" arithmetic or cross-candidate favorability metric is used.
+
+Every material amendment:
+- invalidates the prior dependent frozen finding for synthesis;
+- records candidate-by-candidate direction;
+- identifies dependent artifacts;
+- triggers required re-synthesis;
+- is explicitly inspected at G4.
+
+### K6. Circular dependency
+If Lane A requires Lane B's conclusion while Lane B requires Lane A's conclusion:
+- extract the shared premise into a separate background/precondition analysis; or
+- mark the dependency unresolved.
+
+An unresolved outcome-determinative cycle yields `UNDERDETERMINED_WITHIN_SCOPE: DEPENDENCY_CYCLE` at G2/G3. `INVALID_COMPARISON` is reserved for the G4 audit outcome.
+
+---
+
+## 14. Phase L — Proposition consolidation across lanes
+
+For every truth-critical proposition build a `PROPOSITION_EVIDENCE_MATRIX` listing:
+- lanes;
+- claim facet addressed;
+- direct vs indirect support;
+- independence/dependence;
+- disposition;
+- discriminator priority;
+- defeaters.
+
+Definitions:
+- **direct evidence:** bears on the truth/falsity of the proposition without requiring a separate disputed truth-bearing bridge;
+- **indirect evidence:** bears through one or more additional inferential bridges;
+- **sufficiently strong conflict:** independent direct evidence on both sides reaches at least PARTIALLY_SUPPORTED or one side presents an unresolved TRUTH_CRITICAL_DEFEATER.
+
+### L1. Distinct necessary facets
+If lanes address different necessary facets, the proposition cannot exceed the weakest necessary facet.
+
+### L2. Independent convergence on the same facet
+Independent partial supports may jointly yield `SUPPORTED` only if:
+- together they satisfy all preregistered mandatory sufficiency elements;
+- each stream adds non-duplicative truth-relevant information;
+- dependency analysis confirms they are not repetitions of one bottleneck;
+- no undefeated TRUTH_CRITICAL_DEFEATER or MATERIAL_DEFEATER remains.
+
+Mere repetition never promotes a disposition.
+
+### L3. Cross-lane conflict
+Resolve in order:
+
+1. check whether lanes address different propositions/facets;
+2. check source/evidence dependence;
+3. direct claim-specific evidence outranks merely contextual compatibility for that proposition;
+4. a valid defeater can override otherwise positive support;
+5. if two independent, direct, sufficiently strong lanes remain in material conflict with no principled priority, use `UNDERDETERMINED_WITHIN_SCOPE: MIXED_TRADEOFF`.
+
+No vote-counting.
+
+### L4. Chain attenuation
+
+Every necessary node and arrow receives disposition/confidence.
+
+The chain disposition cannot exceed its weakest necessary link.
+
+The lane author proposes HIGH/MODERATE/LOW confidence, but an independent `CONFIDENCE_REVIEWER` must confirm the confidence class for every necessary node/arrow whose class could change TRUTH_WARRANTED eligibility.
+
+A LOW-confidence necessary node or arrow blocks TRUTH_WARRANTED in the current study. There is no waiver.
+
+When two or more necessary nodes/arrows are MODERATE and their uncertainties are at least partly independent, create a CUMULATIVE_FRAGILITY_REVIEW.
+
+A designated independent fragility reviewer states whether joint uncertainty could plausibly:
+- create a background flip;
+- downgrade a truth-critical disposition;
+- invalidate a necessary arrow;
+- defeat candidate dominance.
+
+If yes or unresolved, TRUTH_WARRANTED is blocked.
+
+Confidence review and fragility review are outcome-material reviewer determinations; reviewer(s) cannot serve as strict auditor.
+
+No numerical multiplication is required.
+
+### L5. Evidence convergence record
+For each promoted disposition state:
+- what survived from prior/lower-level evidence;
+- what changed in meaning/function;
+- which independent evidence classes converge;
+- which apparent convergences share a dependency.
+
+---
+
+## 15. Phase M — Continuity Framework C0–C7
+
+C0–C7 are relation types, not a mandatory ladder:
+
+- **C0 recurrence:** similar motif/idea/form/practice occurs in more than one context.
+- **C1 material continuity:** related artifact/form/symbol/textual formula can be chronologically traced.
+- **C2 carrier continuity:** contact, population, institution, text, apprenticeship, trade, or another plausible carrier is evidenced.
+- **C3 practice continuity:** comparable ritual/institutional/practical use persists.
+- **C4 semantic continuity:** demonstrably comparable conceptual work persists.
+- **C5 named textual continuity:** texts explicitly name the concept/deity/doctrine/proposition/relation.
+- **C6 genealogical continuity:** evidence favors historical derivation over mere resemblance or independent reinvention.
+- **C7 doctrinal continuity:** a later doctrine preserves, intentionally develops, or explicitly recovers an earlier truth-relevant proposition with more than thematic resemblance.
+
+Possible patterns:
+- branching;
+- convergence;
+- loss;
+- recovery;
+- refunctionalization;
+- parallel construction;
+- discontinuity.
+
+### No-jump rule
+A C6/C7 claim cannot be inferred from C0/C1 resemblance alone.
+The study must separately establish the carrier, semantic, textual, or other relations actually required by that genealogy.
+
+### Independent-reinvention null
+Whenever common environmental, psychological, social, philosophical, or institutional conditions could plausibly generate the same form/concept more than once:
+- specify independent reinvention as a rival explanation;
+- state discriminators between reinvention and transmission;
+- do not infer transmission from resemblance alone;
+- preserve the null result whether favored or not.
+
+### Symmetry
+Continuity and discontinuity/corruption claims face **comparable** evidential burdens.
+
+### Truth relevance
+Development bears directly on truth when warrant depends on:
+- original authorship;
+- faithful transmission;
+- revelation continuity;
+- succession;
+- original meaning;
+- another historically contingent authority premise.
+
+Continuity itself never proves truth.
+
+---
+
+# G3 — COMPARATIVE ADJUDICATION
+
+## 16. Phase N — Candidate adequacy, discriminator completeness, and background robustness
+
+Before any study-level outcome:
+
+1. assign every candidate exactly one A12 status;
+2. verify NECESSARY_PROPOSITION_COVERAGE_COMPLETE for every admitted candidate;
+3. verify frozen necessary-proposition dispositions to the level required by their route;
+4. determine whether any prerequisite-4 evidence/coverage failure makes the study insufficient for comparative adjudication;
+5. apply background robustness under I4;
+6. verify every outcome-relevant CRITICAL/MATERIAL discriminator has:
+   - a frozen DIRECTION_RULE;
+   - adequate makeability/coverage;
+   - an independently reviewed directional result.
+
+An UNMAKEABLE CRITICAL comparison between otherwise RANKING_ELIGIBLE candidates blocks pairwise dominance.
+
+If required evidence/access/provenance is inadequate after the documented effort record, use INSUFFICIENT_SIGNAL.
+If coverage is adequate but evidence is non-discriminating, use UNDERDETERMINED.
+
+No study-level outcome may bypass the candidate-status, necessary-proposition, direction-rule, or background maps.
+
+---
+
+## 17. Phase N2 — Inferential bridge
+
+### Step 1 — proposition and candidate eligibility
+
+Apply A12 under the current required background.
+
+Only RANKING_ELIGIBLE candidates proceed to pairwise dominance.
+
+### Step 2 — validated directional results
+
+For each outcome-relevant discriminator:
+- apply the preregistered A11 DIRECTION_RULE;
+- require independent DIRECTION_RESULT_REVIEW;
+- do not use an unreviewed direction in dominance.
+
+### Step 3 — pairwise dominance
+
+For each pair of RANKING_ELIGIBLE candidates:
+
+**CRITICAL stage**
+- UNMAKEABLE CRITICAL → pairwise dominance blocked;
+- at least one reviewed FAVORS_A and none FAVORS_B → A wins CRITICAL stage;
+- at least one reviewed FAVORS_B and none FAVORS_A → B wins;
+- opposing CRITICAL directions → UNDERDETERMINED: MIXED_TRADEOFF unless proposition-level dependence/defeater analysis resolves conflict under frozen rules;
+- all CRITICAL neutral/non-discriminating → MATERIAL stage.
+
+**MATERIAL stage**
+- at least one reviewed MATERIAL result must favor a candidate;
+- none may favor the rival;
+- conflict → UNDERDETERMINED: MIXED_TRADEOFF;
+- an UNMAKEABLE outcome-relevant MATERIAL tie-breaker blocks dominance when CRITICAL is neutral.
+
+CONTEXTUAL evidence may explain but never create/reverse dominance.
+
+### Step 4 — background result
+
+Repeat A12 eligibility, validated directional results, and dominance under every required live background/joint combination.
+
+- stable relative ranking → `RANKING_ROBUST`;
+- ranking/eligibility changes → `RANKING_FRAMEWORK_DEPENDENT`;
+- truth-warrant eligibility changes without relative-ranking change → `TRUTH_WARRANT_FRAMEWORK_DEPENDENT`;
+- truth-warrant eligibility stable → `TRUTH_WARRANT_ROBUST`.
+
+I4 controls the study-level consequence.
+
+### Step 5 — shared-floor effect
+
+Shared-floor propositions never create relative dominance.
+They may block truth-warrant for all candidates or defeat all dependent candidates according to A12, but may not choose among them.
+
+---
+
+## 18. Phase N3 — Provisional study outcomes
+
+At G3 every base outcome is prefixed `PROPOSED_`.
+The prefix is removed only after G4 audit and G5 human acceptance.
+
+### Base-outcome decision table
+
+Evaluate rows in order; the first satisfied row is the single base outcome.
+
+| Condition | Base outcome |
+|---|---|
+| Any prerequisite-4/required comparative evidence gap prevents the status/direction/background analysis needed below | `PROPOSED_INSUFFICIENT_SIGNAL_WITHIN_SCOPE` |
+| Post-evidence favorable/mixed amendment changes relative ranking/dominance | `PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: POST_EVIDENCE_DIRECTIONAL_CONTAMINATION` |
+| 0 ADEQUATE candidates under adequate coverage | `PROPOSED_NONE_ADEQUATE_WITHIN_SCOPE` |
+| exactly 1 ADEQUATE candidate | `PROPOSED_CANDIDATE_A_ONLY_ADEQUATE_WITHIN_SCOPE` |
+| 2+ ADEQUATE and 0 RANKING_ELIGIBLE | `PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: ALL_ADEQUATE_RANKING_BLOCKED` |
+| 2+ ADEQUATE and exactly 1 RANKING_ELIGIBLE | `PROPOSED_CANDIDATE_A_ONLY_RANKING_ELIGIBLE_WITHIN_SCOPE` |
+| 2+ RANKING_ELIGIBLE and ranking flips across required backgrounds | `PROPOSED_UNDERDETERMINED_WITHIN_SCOPE: FRAMEWORK_DEPENDENCE` |
+| 2+ RANKING_ELIGIBLE and no candidate robustly dominates all serious rivals | `PROPOSED_UNDERDETERMINED_WITHIN_SCOPE` with applicable subtype |
+| 2+ RANKING_ELIGIBLE and A robustly dominates every serious rival | `PROPOSED_CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE` |
+
+This table is exhaustive for the protocol's candidate-count/ranking states. No analyst may skip to a stronger row.
+
+### Meaning of base outcomes
+
+- `INSUFFICIENT_SIGNAL`: required evidence/provenance/coverage is inadequate to determine the otherwise applicable base outcome.
+- `NONE_ADEQUATE`: all admitted candidates are evidentially inadequate under adequate coverage.
+- `ONLY_ADEQUATE`: A is the only adequate candidate; this is not pairwise ranking and not truth.
+- `ALL_ADEQUATE_RANKING_BLOCKED`: multiple candidates remain adequate, but none meets the ranking threshold.
+- `ONLY_RANKING_ELIGIBLE`: A alone meets ranking eligibility, but no pairwise dominance claim is made.
+- `UNDERDETERMINED`: multiple live candidates remain without a warranted robust ordering, or a contamination/background condition blocks a positive comparative result.
+- `BEST_SUPPORTED`: relative evidential ranking only; requires robust dominance under N2.
+
+If only truth-warrant eligibility varies across backgrounds while relative ranking is stable, preserve the applicable relative base outcome and add `TRUTH_WARRANT_FRAMEWORK_DEPENDENT`.
+
+### Optional stronger refinement: CLOSEST_TO_TRUTH
+
+CLOSEST_TO_TRUTH may attach **only** to `PROPOSED_CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE`.
+
+A16 must preregister at least two independent shared truth-bearing dimensions and a DIRECTION_RULE for each dimension.
+
+For each dimension, the frozen rule produces:
+- `A_BETTER_WARRANTED`;
+- `B_BETTER_WARRANTED`;
+- `TIED_OR_NONDISCRIMINATING`;
+- `UNMAKEABLE`.
+
+An independent direction-result reviewer validates those dimension results.
+
+A is CLOSEST_TO_TRUTH over rival B only if:
+- no shared CRITICAL dimension is UNMAKEABLE;
+- no shared CRITICAL dimension is B_BETTER_WARRANTED;
+- at least one shared CRITICAL dimension is A_BETTER_WARRANTED;
+- no MATERIAL dimension favors B unless a preregistered redundancy/dependence rule excludes that dimension.
+
+For more than two candidates, A must satisfy this relation against every other RANKING_ELIGIBLE rival.
+
+Run the dimension rule under every required live background. Any ranking flip makes CLOSEST_TO_TRUTH unavailable.
+
+No global score, weighting, or post-hoc balancing is permitted.
+
+### Optional stronger refinement: TRUTH_WARRANTED
+
+TRUTH_WARRANTED may attach only to a base outcome naming candidate A (`ONLY_ADEQUATE`, `ONLY_RANKING_ELIGIBLE`, or `BEST_SUPPORTED`) and only if all are satisfied:
+
+1. exact truth proposition explicit;
+2. candidate-universe gate passed;
+3. complete certified necessary-proposition map;
+4. every necessary proposition SUPPORTED;
+5. all sufficiency records complete;
+6. no undefeated TRUTH_CRITICAL_DEFEATER or MATERIAL_DEFEATER;
+7. adequate source/comparison coverage for all required truth conditions;
+8. TRUTH_WARRANT_ROBUST across all serious live backgrounds/joint combinations;
+9. no LOW-confidence necessary node/arrow;
+10. no unresolved cumulative-fragility review;
+11. every serious rival has been either adequately compared or independently shown inadequate under equal standards;
+12. external warrant, not mere coherence/priority/consensus;
+13. G4 PASS/PASS_WITH_LIMITATIONS;
+14. G5 human acceptance.
+
+A truth-warrant-only background flip prohibits this refinement even if the relative base outcome is preserved.
+
+### Revised-candidate routing result
+
+`PROPOSED_REVISED_CANDIDATE_REQUIRED_WITHIN_SCOPE` is a routing result, not a base ranking result. It may be recorded in addition to the mutually exclusive base outcome when supported components survive but no admitted candidate combines them.
+
+### Single-proposition questions
+
+For "Did X occur?" or "Is P true?", represent P and material rivals/negation where appropriate without manufacturing false dichotomies.
+
+---
+
+# G4 — ADVERSARIAL AUDIT
+
+## 19. Phase O — Audit severity and outcomes
+
+### Severity
+- **BLOCKING:** governance/authority failure or core inferential defect that makes qualification/adjudication unsafe or invalid.
+- **MAJOR:** methodological defect that could materially change outcome/reproducibility; qualification/adjudication is blocked until repaired.
+- **MINOR:** real defect not expected by itself to change the bounded outcome; repair or explicit limitation required.
+- **NOTE:** observation/non-defect.
+
+### Audit terminology
+
+Decision surfaces are fixed for audit clustering:
+
+1. authority/governance;
+2. role independence/reviewer control;
+3. candidate/background construction;
+4. source-plan/coverage/makeability;
+5. claim typing/sufficiency;
+6. necessary-proposition eligibility;
+7. amendment/change control;
+8. lane/consolidation/fragility;
+9. discriminator/dominance/outcome selection;
+10. miracle/revelation/authority;
+11. audit aggregation;
+12. STATE/qualification transition;
+13. lifecycle/reopen/supersession;
+14. cold-start/artifact completeness;
+15. immutable identity/regression.
+
+An **interacting MINOR pair** is two MINOR defects whose combined operation can alter the same gate transition, candidate status, disposition, outcome label, audit result, or canonical state transition.
+
+A **material audit disagreement** exists only when audits of the same frozen target differ in a way that changes the required canonical action, including:
+- whether any BLOCKING/MAJOR defect exists;
+- whether qualification/adjudication is permitted versus blocked;
+- whether repair is mandatory;
+- or another finding that forces a different canonical transition.
+
+`PASS` versus `PASS_WITH_LIMITATIONS` is not material disagreement when both permit the same qualification transition and the limitations can all be carried explicitly.
+
+A **LIMITATION** is irreducible only when it cannot be removed without changing authorized scope, obtaining unavailable evidence/access, or replacing a deliberate methodological commitment, and it leaves no repairable outcome-determinative ambiguity.
+
+### Audit outcomes
+
+#### `PASS`
+All mandatory checks pass; no unresolved BLOCKING/MAJOR/MINOR defect; NOTES may remain.
+
+#### `PASS_WITH_LIMITATIONS`
+No unresolved BLOCKING/MAJOR defect.
+May carry irreducible LIMITATION findings and individually bounded non-outcome-determinative MINORs.
+
+#### `REPAIR_REQUIRED`
+Required when:
+- any BLOCKING or MAJOR exists;
+- three or more MINOR defects occur on the same decision surface; or
+- two or more interacting MINORs could jointly change reproducibility/outcome integrity.
+
+#### `INVALID_COMPARISON`
+Study audit: comparison design invalid and must restart from an earlier gate.
+Protocol audit: qualification bundle is internally inconsistent/incompletely frozen/mismatched so merits cannot be evaluated.
+
+#### `INSUFFICIENT_SIGNAL`
+Auditor lacks required frozen artifacts/evidence/access; not a merit verdict.
+
+### Audit-set disclosure
+
+Every strict audit launch of a frozen study/bundle must be registered in the role-control record before it begins.
+
+Every G4/qualification record identifies all registered audits of the exact frozen target, including completed, failed, aborted, PASS, and FAIL results.
+
+No registered same-target audit may be silently discarded.
+
+If same-target audits materially disagree:
+- status = `DISPUTED_AUDIT`;
+- G5/qualification is blocked;
+- an independent `AUDIT_DISPUTE_ARBITER`, actor-lineage disjoint from the disputed auditors, authors, program lead, and outcome-material reviewers, determines whether the disagreement is material under the definition above;
+- if material, a versioned AUDIT_RECONCILIATION_RECORD states each disputed finding, evidence, and whether convergence is reached;
+- reconciliation cannot delete/replace dissenting audits;
+- unresolved disagreement requires another strict audit or repair/re-audit.
+
+The reconciliation author must be actor-lineage disjoint from:
+- disputed auditors;
+- target authors;
+- program lead;
+- outcome-material reviewers for the disputed surface.
+
+The reconciliation record preserves every dissenting audit and states the canonical action recommended; it does not require auditors to converge in opinion.
+
+### O1. Mandatory strict independence
+
+Any canonical theological adjudication or protocol qualification requires a strict independent auditor.
+
+For a study, use the G0 role matrix.
+
+For protocol qualification, use the frozen external qualification role-control record named by STATE and the qualification source manifest.
+
+### Auditor-assignment handshake
+
+Before the auditor reads substantive project material:
+
+1. the prospective auditor receives an assignment-only prompt containing no prior audit/repair reasoning;
+2. the auditor declares:
+   - provider/model;
+   - session/conversation identifier;
+   - fresh-context status;
+   - continuation/fork/subagent/shared-context status;
+   - prior TFP audit/repair exposure;
+   - visible persistent-memory exposure;
+   - prior outcome-material qualification-review role;
+   - relationship to author/program-lead lineages;
+3. the auditor returns exactly one:
+   - `PROCEDURALLY_DISJOINT_FOR_ASSIGNMENT`;
+   - `NOT_PROCEDURALLY_DISJOINT`;
+   - `CANNOT_ESTABLISH_DISJOINTNESS`;
+4. only a procedurally disjoint auditor may be assigned;
+5. after assignment, the external role-control record is frozen before substantive audit;
+6. the audit itself must occur in the exact assigned session/actor lineage.
+
+A repository checkout/branch name alone is not actor-lineage descent; inherited/shared conversational reasoning is.
+
+Every strict audit launch is registered in the role-control record before it begins.
+
+The strict protocol auditor must be actor-lineage disjoint from:
+- protocol author(s);
+- candidate Governance amendment author(s);
+- program lead for the repair cycle;
+- every outcome-material qualification reviewer;
+- any source-manifest preparer who made a substantive qualification decision.
+
+The role-control record identifies:
+- source-manifest preparer;
+- human relaying operator, if any;
+- every registered strict audit;
+- strict auditor model/provider/session/actor-lineage;
+- required strict-audit count.
+
+The human relay may transmit frozen prompts/source identities/reports without becoming a reviewer, provided no substantive prior audit reasoning is added.
+
+Before audit launch, the auditor attests:
+- provenance;
+- prohibited prior reasoning is unavailable;
+- required disjointness.
+
+If the human owner materially authored/reviewed the candidate package, apply the Governance dual-role rule and required audit count.
+
+### O2. Per-topic audit tests
+Each mandatory topic receives exactly one:
+- `PASS`;
+- `FAIL_BLOCKING`;
+- `FAIL_MAJOR`;
+- `FAIL_MINOR`;
+- `LIMITATION`;
+- `NOT_APPLICABLE_WITH_REASON`.
+
+`FAIL_MINOR` is a real defect that is non-outcome-determinative by itself. It must be repaired before `PASS`, or explicitly bounded/carried under `PASS_WITH_LIMITATIONS`.
+
+`LIMITATION` is an irreducible or scope-bound constraint rather than a correctable defect.
+
+Mandatory topics:
+1. governance/role compliance;
+2. candidate completeness/exclusions;
+3. steelman integrity;
+4. claim-typing drift;
+5. necessary-proposition/amendment timing;
+6. discriminator timing/priority changes;
+7. search/source-plan adherence;
+8. source-selection bias;
+9. lane leakage/dependency/circularity;
+10. proposition consolidation;
+11. background-register robustness;
+12. premise warrant;
+13. equal-standard application;
+14. shallow-heuristic reproduction;
+15. outcome scope/label correctness;
+16. uncertainty completeness;
+17. cold-start reproducibility.
+
+A `FAIL_BLOCKING` or `FAIL_MAJOR` forces `REPAIR_REQUIRED` or `INVALID_COMPARISON`.
+The explicit MINOR-cluster thresholds in the audit-outcome definitions determine when MINORs force `REPAIR_REQUIRED`.
+
+Audit-outcome namespace rule:
+- proposition-level: `INSUFFICIENT_SIGNAL_WITHIN_SCOPE`;
+- study-level: `PROPOSED_INSUFFICIENT_SIGNAL_WITHIN_SCOPE`;
+- audit-level: record `AUDIT_INSUFFICIENT_SIGNAL` (display label may remain `INSUFFICIENT_SIGNAL`).
+
+`INVALID_COMPARISON` is reserved for G4 audit disposition.
+
+### O3. Blinding
+Use blinding where it reduces a real bias without removing necessary context.
+At minimum, the auditor is not given any human preference as authority and receives frozen artifacts.
+
+### O4. Auditor disagreement
+
+Material disagreement among audits of the same frozen target produces `DISPUTED_AUDIT` and invokes the Audit-set disclosure/reconciliation rule above.
+
+### O5. Program-lead response
+
+The program lead may publish a response but cannot override a required audit failure.
+
+Options:
+- accept and repair;
+- obtain another strict audit against the same frozen criteria, while disclosing the full audit set;
+- request an explicit future Governance/Protocol amendment.
+
+No failed required audit may be bypassed by state update.
+
+### O6. Repair/re-audit
+After `REPAIR_REQUIRED`:
+- preserve original audit;
+- freeze repair matrix before editing;
+- version repair;
+- strict independent re-audit;
+- repair author cannot self-certify.
+
+### O7. PASS_WITH_LIMITATIONS
+Every limitation is copied into:
+- acceptance record;
+- canonical STATE entry;
+- downstream-use constraints.
+
+### O8. Cold-start performer and pass rule
+The strict independent auditor performs the formal cold-start reproducibility check at G4.
+Program lead may preflight earlier but cannot certify it.
+
+Cold-start test: using only the governed frozen source set, determine whether an unfamiliar competent researcher can recover:
+- authorization and role boundaries;
+- candidates/exclusions and steelman packets;
+- backgrounds;
+- typing/link map;
+- necessary-proposition coverage map;
+- acquisition plan/coverage;
+- amendment history/exposure ledger;
+- lane findings and proposition consolidation;
+- discriminator priority/dominance;
+- provisional outcome meaning;
+- audit requirements;
+- human acceptance/state transition;
+- stop/reopen conditions.
+
+If any **outcome-determinative** step requires undocumented project lore, topic 17 is `FAIL_MAJOR`.
+If only non-outcome procedural detail is missing, use `FAIL_MINOR`.
+
+### O9. Protocol-qualification audit topics
+
+A protocol-qualification audit uses the same topic-status vocabulary as O2 and the same severity/outcome semantics.
+
+Mandatory topics:
+
+1. authority/governance consistency;
+2. role/strict-independence rules and actor-lineage provenance;
+3. candidate/background symmetry;
+4. evidence-acquisition/provenance/coverage;
+5. claim typing and sufficiency;
+6. amendment/change control and exposure ledger;
+7. lane/proposition consolidation;
+8. discriminator priority and inferential bridge;
+9. miracle/revelation/prophecy handling;
+10. philosophy/source/continuity handling;
+11. audit semantics themselves;
+12. STATE/schema/legacy alignment;
+13. uncertainty/stop/reopen;
+14. cold-start reproducibility;
+15. immutable source identity and regression/internal consistency.
+
+A protocol audit may add frozen checks before launch but may not weaken this set.
+
+`INVALID_COMPARISON` in a protocol audit means the qualification bundle itself is not a valid stable target, not that a theological candidate comparison failed.
+
+---
+
+# G5 — HUMAN ACCEPTANCE
+
+## 20. Phase P — Canonical acceptance
+
+Only the human owner can accept a canonical theological adjudication.
+
+The human owner cannot substitute for the strict audit.
+
+If the human owner materially authored the preregistration, candidate packet, outcome-determinative lane, synthesis, or protocol being qualified, apply the Governance dual-role exception.
+
+### P1. Acceptance record
+Must cite:
+- study ID/version;
+- exact scope;
+- proposed outcome;
+- synthesis;
+- audit;
+- limitations;
+- uncertainty statement;
+- negative knowledge;
+- `reopen_if`;
+- explicit human-owner acceptance.
+
+### P2. Outcome promotion
+After valid G4/G5:
+- `PROPOSED_CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE` → `CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE`;
+- similarly for other accepted outcomes.
+
+No prefix removal occurs earlier.
+
+### P3. Canonical STATE adjudication schema
+
+Every canonical adjudication entry MUST contain:
+
+```yaml
+- id:
+  question:
+  outcome:
+  scope:
+  protocol_version:
+  lifecycle_status:  # ACTIVE | CLOSED | HELD | SUPERSEDED | REVIEW_REQUIRED | REOPENED
+  authorization_artifact:
+  role_matrix_artifact:
+  evidence_exposure_ledger:
+  accepted_at:
+  synthesis_artifact:
+  audit_artifacts: []
+  audit_reconciliation_artifact:
+  human_acceptance_artifact:
+  confidence:
+  evidence_coverage:
+  background_assumptions:
+  residual_alternatives:
+  known_weaknesses:
+  flip_or_weaken_conditions:
+  underdetermination_subtype:
+  limitations:
+  negative_knowledge:
+  reopen_if:
+  superseded_by:
+```
+
+The G0 authorization, role matrix, and exposure ledger are canonical provenance links, not optional prose.
+
+After the human owner creates the acceptance record, the program lead or another authorized agent performs the mechanical STATE update. The edit records acceptance; it does not create it.
+
+### P4. Legacy-state rule
+Pre-protocol research dispositions, including EMT Stage-1 dispositions, are tagged `legacy_research_disposition` and are **not** canonical theological adjudications under this protocol unless re-adjudicated through G0–G5.
+
+### P5. Program-level truth commitments
+Statements such as "Christianity is true" require:
+- explicit human authorization;
+- multiple appropriately scoped bounded adjudications;
+- program-level synthesis;
+- strict independent audit;
+- separate human acceptance.
+
+One study cannot silently generate them.
+
+### P6. Protocol-qualification STATE schema
+
+The authoritative STATE field is `qualified_protocol`.
+
+A qualified protocol record MUST contain:
+
+```yaml
+qualified_protocol:
+  version:
+  protocol_path:
+  protocol_blob_sha:
+  governed_bundle_commit:
+  source_manifest_path:
+  source_manifest_blob_sha:
+  qualification_role_control_path:
+  qualification_role_control_blob_sha:
+  operative_governance_baseline_blob_sha:
+  governance_version:
+  governance_blob_sha:
+  charter_blob_sha:
+  method_seed_blob_sha:
+  audited_state_blob_sha:
+  audit_artifacts: []
+  audit_dispositions: []
+  audit_reconciliation_artifact:
+  human_owner_acceptance_artifact:
+  governance_ratification_artifact:
+  qualification_transition_commit:
+  qualified_at:
+  limitations: []
+  status: "QUALIFIED"  # QUALIFIED | QUALIFICATION_CHALLENGE_PENDING | QUALIFICATION_CHALLENGED | DEQUALIFIED | SUPERSEDED
+  reopen_if: []
+  superseded_by:
+```
+
+If multiple strict audits are required, every audit/disposition appears in the arrays.
+
+`qualification_transition_commit` is populated by Q2 with the exact Q1 commit SHA; it is not self-referential.
+
+The role-control and source-manifest blob SHAs make the qualification identity chain re-verifiable from STATE.
+
+---
+
+# G6 — UNCERTAINTY / STOP / REOPEN
+
+## 21. Phase Q — Mandatory uncertainty statement
+
+Record:
+
+1. exact scope;
+2. confidence using non-overlapping definitions:
+   - `HIGH`: no known live uncertainty is reasonably expected to weaken a required condition under the tested backgrounds;
+   - `MODERATE`: at least one live uncertainty could materially weaken a required condition, but none is presently judged capable of reversing/downgrading the current disposition/outcome;
+   - `LOW`: at least one live uncertainty is presently capable, if resolved adversely, of reversing/downgrading the current disposition/outcome;
+3. coverage state;
+4. residual alternatives;
+5. background assumptions;
+6. known weaknesses;
+7. missing/inaccessible evidence;
+8. flip/weaken conditions;
+9. underdetermination subtype where applicable;
+10. audit limitations.
+
+For proposition/node/arrow confidence, apply the same definitions relative to that local disposition.
+
+The lane author proposes confidence; independent confidence review is required wherever MODERATE versus LOW changes TRUTH_WARRANTED eligibility.
+
+Confidence and scope are separate.
+
+### Carried protocol limitations
+
+Even after qualification:
+
+- `SUPPORTED_WITHIN_SCOPE` retains disciplined expert judgment only inside documented sufficiency/disposition steps; this does not excuse undefined dominance, source-selection, background-selection, or eligibility rules.
+- metaphysical/revelation questions may legitimately remain `UNDERDETERMINED_WITHIN_SCOPE: FRAMEWORK_DEPENDENCE` when live backgrounds change **relative ranking**;
+- when relative ranking is robust but truth-warrant eligibility changes across live backgrounds, preserve the relative outcome and carry `TRUTH_WARRANT_FRAMEWORK_DEPENDENT` as the limitation;
+- AI-session/model independence is procedural and cannot guarantee independent training priors. This does not excuse shared-context/actor-lineage collapse.
+
+---
+
+## 22. Phase Q-Lifecycle — Stop, reopen, supersede, and de-qualify
+
+A study may stop when:
+- certified coverage target is complete/materially complete;
+- truth-critical sources are addressed/listed;
+- remaining accessible material is predominantly dependent/repetitive or not expected to change a truth-critical proposition;
+- remaining gaps and possible effect are stated.
+
+Low expected information gain is valid only after this coverage record exists or further truth-critical evidence is unavailable.
+
+Adjudication lifecycle states:
+- ACTIVE;
+- CLOSED;
+- HELD;
+- SUPERSEDED;
+- REVIEW_REQUIRED;
+- REOPENED.
+
+Every CLOSED/HELD adjudication defines reopen_if.
+
+### Protocol lifecycle and challenge handling
+
+Protocol status:
+- QUALIFIED;
+- QUALIFICATION_CHALLENGE_PENDING;
+- QUALIFICATION_CHALLENGED;
+- DEQUALIFIED;
+- SUPERSEDED.
+
+A defect report automatically creates QUALIFICATION_CHALLENGE_PENDING when it:
+- identifies a specific protocol clause/decision rule; and
+- alleges a plausible BLOCKING/MAJOR failure mode or reproducible counterexample.
+
+The program lead must record the pending status without deciding credibility.
+
+An independent challenge-triage reviewer, actor-lineage disjoint from protocol author/program lead, classifies:
+- CREDIBLE_CHALLENGE;
+- NONCREDIBLE_CHALLENGE_WITH_REASON;
+- INSUFFICIENT_DETAIL.
+
+A CREDIBLE_CHALLENGE sets QUALIFICATION_CHALLENGED, pauses new studies under the protocol, and triggers an independent impact audit.
+
+Existing adjudications are not automatically erased.
+Mark an adjudication REVIEW_REQUIRED only if the defect could plausibly affect it.
+
+The human owner may restore QUALIFIED, qualify a repair, set DEQUALIFIED, or SUPERSEDE with a newer qualified protocol.
+
+---
+
+## 23. Anti-heuristic safeguard
+
+The G4 audit MUST produce a `HEURISTIC_MATRIX_AUDIT`.
+
+Test at least:
+
+- always earliest source;
+- always consensus;
+- always distrust later doctrine;
+- always trust established tradition;
+- always simplest/fewest assumptions;
+- always naturalistic;
+- always supernatural;
+- always reject miracle testimony;
+- always accept sincere testimony;
+- always development = corruption;
+- always development = maturation;
+- always independent invention;
+- always transmission;
+- always choose the weakest permitted disposition;
+- always default to underdetermination when frameworks disagree;
+- always prefer the candidate with more evidence items;
+- always let any missing evidence block adjudication.
+
+For each slogan and every candidate's CRITICAL/MATERIAL disposition pattern, record:
+1. what the slogan alone would predict;
+2. what the actual evidence-integrating procedure produced;
+3. at least one material place where evidence integration, dependencies, defeaters, or typed burdens matter beyond the slogan.
+
+A slogan matching the headline outcome is not itself a failure.
+
+If one heuristic reproduces the material disposition matrix without evidence integration, topic 14 is `FAIL_MAJOR`.
+
+An exemption claiming that a heuristic is actually justified for the exact question must be stated by the synthesis author and independently accepted or rejected by the strict auditor with reasons.
+
+---
+
+## 23A. Minimum artifact templates and cold-start definitions
+
+These are minimum schemas; studies may add fields but may not omit required ones.
+
+### SOURCE_PLAN
+
+```yaml
+study_id:
+scope:
+source_strata:
+  - id:
+    type:
+    candidate_or_background_served:
+    repositories_or_corpora:
+    search_rules:
+    inclusion_rules:
+    exclusion_rules:
+    languages_dates:
+adverse_source_probe_plan:
+inaccessible_source_rule:
+reviewer:
+freeze_identity:
+```
+
+### BACKGROUND_REGISTER_REVIEW
+
+```yaml
+study_id:
+backgrounds:
+  - id:
+    propositions:
+    admission_basis:
+    truth_critical_relevance:
+    variants:
+    compatibility_constraints:
+    status: ADMITTED | EXCLUDED
+    reason:
+elicitation_method:
+blind_elicitation_feasible:
+reviewer:
+freeze_identity:
+```
+
+### BACKGROUND_INTERACTION_MATRIX
+
+```yaml
+dimensions:
+pairs_or_higher_sets:
+  - ids: []
+    materially_interact: true|false
+    rationale:
+    compatible_combinations: []
+    required_tests: []
+reviewer:
+freeze_identity:
+```
+
+### SUFFICIENCY_RECORD
+
+```yaml
+proposition_id:
+claim_types: []
+mandatory_elements:
+  - element:
+    status: MET | NOT_MET | NOT_APPLICABLE
+    evidence:
+    rationale:
+defeaters: []
+disposition:
+confidence:
+review_identity:
+```
+
+### PROPOSITION_EVIDENCE_MATRIX
+
+```yaml
+proposition_id:
+necessary_for_candidates: []
+lanes:
+  - lane:
+    facet:
+    direct_or_indirect:
+    independence:
+    disposition:
+    discriminator_links: []
+    defeaters: []
+consolidated_disposition:
+rationale:
+```
+
+### EVIDENCE_EXPOSURE_LEDGER
+
+```yaml
+study_id:
+custodian:
+integrity_reviewer:
+entries:
+  - sequence:
+    repository_commit:
+    actor_lineage:
+    source_or_artifact:
+    exposure_class:
+    amendment_surfaces: []
+```
+
+### NECESSARY_PROPOSITION_COVERAGE_MAP
+
+```yaml
+study_id:
+candidates:
+  - candidate_id:
+    necessary_propositions:
+      - proposition_id:
+        necessary_test_rationale:
+        route: COMPARATIVE_ROUTE | NONCOMPARATIVE_CANDIDATE_SPECIFIC | NONCOMPARATIVE_SHARED_FLOOR
+        discriminator_ids: []
+        direct_route:
+        expected_evidence:
+        weakening_evidence:
+        lanes: []
+        coverage_certification:
+reviewer:
+certification: NECESSARY_PROPOSITION_COVERAGE_COMPLETE | INCOMPLETE
+freeze_identity:
+```
+
+### STEELMAN_PACKET
+
+```yaml
+candidate_id:
+native_formulation:
+proponent_sources: []
+necessary_propositions: []
+authority_commitments: []
+internal_success_conditions: []
+expected_evidence: []
+recognized_objections: []
+caricatures_rejected: []
+native_or_proponent_review:
+equal_strength_review:
+freeze_identity:
+```
+
+### ACCEPTANCE_RECORD
+
+```yaml
+study_id:
+proposed_outcome:
+scope:
+protocol_identity:
+synthesis_artifact:
+audit_artifacts: []
+limitations: []
+uncertainty:
+negative_knowledge: []
+reopen_if: []
+human_owner_acceptance:
+accepted_at:
+```
+
+### COMPARISON_EFFORT_RECORD
+
+```yaml
+comparison_id:
+searches_attempted: []
+archives_or_corpora: []
+inaccessible_sources: []
+access_attempts: []
+alternative_routes: []
+adverse_probe_result:
+remaining_gap:
+makeability_conclusion:
+reviewer:
+freeze_identity:
+```
+
+### DISCRIMINATOR_DIRECTION_RULE
+
+```yaml
+discriminator_id:
+candidate_a:
+candidate_b:
+priority: CRITICAL | MATERIAL
+served_propositions: []
+relevant_backgrounds: []
+inputs: []
+favors_a_if:
+favors_b_if:
+neutral_if:
+unmakeable_if:
+author:
+pre_evidence_reviewer:
+freeze_identity:
+post_evidence_direction_result:
+direction_result_reviewer:
+```
+
+### AMENDMENT_RECORD
+
+```yaml
+amendment_id:
+ledger_entries: []
+affected_candidates: []
+affected_outcomes: []
+effect_by_candidate:
+amendment_class:
+descriptive_correction:
+adverse_consequences_entered: []
+relative_ranking_changed: true|false
+confirmatory_consequence:
+direction_reviewer:
+ledger_integrity_reviewer:
+freeze_identity:
+```
+
+### Serious rival
+
+A **SERIOUS_RIVAL** is a candidate/explanation/reading that:
+- is coherent/specifiable;
+- is materially relevant to a necessary proposition or outcome;
+- has serious scholarly/traditional representation OR an independently defensible argument;
+- is not already defeated by an applicable canonical adjudication.
+
+The same rule applies regardless of confessional/skeptical orientation.
+
+### QUALIFICATION_ROLE_CONTROL
+
+The role-control artifact is frozen at audit launch and is **not mutated to record audit completion**. The audit report itself proves completion/disposition.
+
+Required fields:
+
+```yaml
+qualification_target:
+governed_bundle_commit:
+source_manifest_path:
+source_manifest_blob_sha:
+operative_governance_baseline_blob_sha:
+candidate_protocol_authors:
+  - actor_lineage:
+candidate_governance_authors:
+  - actor_lineage:
+program_lead:
+  actor_lineage:
+source_manifest_preparer:
+  actor_lineage:
+  substantive_qualification_reviewer: false
+human_relaying_operator:
+  actor_lineage:
+  substantive_qualification_reviewer: false
+human_owner:
+  material_protocol_author: false
+  material_governance_author: false
+  outcome_material_qualification_reviewer: false
+  final_qualification_authority: true
+outcome_material_qualification_reviewers: []
+registered_strict_audits:
+  - audit_id:
+    auditor_provider:
+    auditor_model:
+    auditor_session_id:
+    auditor_actor_lineage:
+    assignment_declaration:
+    status: ASSIGNED
+required_strict_audit_count:
+freeze_identity:
+```
+
+If another strict audit is later launched against the same bundle, create a new immutable role-control supplement that cites the original role-control blob and adds the newly assigned audit; do not rewrite the original launch blob.
+
+### MAKEABLE certifier
+
+The designated independent `MAKEABLE_CERTIFIER` is the reviewer who issues the `COMPARISON:<id>` coverage certification required by A11.
+That reviewer cannot serve as strict auditor.
+
+## 24. Current qualification state
+
+```text
+PROTOCOL_VERSION = 0.1.7
+STATUS = CANDIDATE__BOUNDED_EXIT_GATE_REPAIR
+SELF_QUALIFICATION = PROHIBITED
+TFP_STRESS_2 = NOT_AUTHORIZED
+MAJOR_DOCTRINAL_COMPARISON = HELD
+NEXT = FREEZE_EXIT_GATE_BUNDLE_AND_RUN_ONE_STRICT_QUALIFICATION_AUDIT
+```
+
+## 25. Governing principle
+
+> A theological conclusion may travel only as far as its typed evidence, explicit dependencies, background robustness, proposition consolidation, adversarial audit, and human acceptance can carry it.
