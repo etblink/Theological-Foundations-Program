@@ -1,0 +1,117 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G0_AUTHORIZATION_BUNDLE"
+status: "FROZEN_AWAITING_HUMAN_OWNER_G0_AUTHORIZATION"
+date: "2026-10-06"
+
+truth_question: "Does the best publicly adjudicable historical evidence warrant the proposition that Jesus of Nazareth genuinely died and subsequently existed again in an embodied living postmortem state, such that at least one pre-Pauline founding claimed-encounter stream involving that embodied living Jesus was a PRIMARY or NECESSARY_CONTRIBUTING cause of the founding proclamation?"
+
+governing_bundle:
+  commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+  protocol:
+    path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    status: "QUALIFIED"
+  governance:
+    path: "GOVERNANCE.md"
+    blob_sha: "02338ce337de0a115d6942962ce360427080db8d"
+    status: "RATIFIED_OPERATIVE"
+
+exact_study_artifacts:
+  preregistration: ["TFP_STRESS_2_RESURRECTION_G0_PREREGISTRATION_0_1_19.md","de744932b17ee8f445231ce566f41b33d50f05e8"]
+  role_architecture: ["TFP_STRESS_2_ROLE_ARCHITECTURE_0_1_14.yaml","cade6816cdd357b53fee227ac76d47ab16e83451"]
+  candidate_register: ["TFP_STRESS_2_CANDIDATE_REGISTER_0_1_12.yaml","99eeab89decd8420e61b97b17c4706e30157d0fd"]
+  q1_event_control: ["TFP_STRESS_2_Q1_EVENT_CONTROL_0_1_8.yaml","c05b099b07ab9bfd3b73f84910ba9b33d08d0521"]
+  causal_profile_partition: ["TFP_STRESS_2_CAUSAL_PROFILE_PARTITION_0_1_3.yaml","1513d4476ef32222f819c51ef0623a0b16bf5bd4"]
+  c_het_module_map: ["TFP_STRESS_2_C_HET_MODULE_MAP_0_1_6.yaml","ac10a99acbbb47477e5995566f918611c23017b1"]
+  coverage_map: ["TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml","db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"]
+  source_plan: ["TFP_STRESS_2_SOURCE_PLAN_0_1_10.yaml","cf543dd9efb89c6b6c40eefcf59a5705a7468ec6"]
+  truth_critical_register: ["TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml","d5757739ac0b97f0f8c887d4c79dca599fafdc76"]
+  background_register: ["TFP_STRESS_2_BACKGROUND_REGISTER_0_1_6.yaml","5c16f875b33d3259d4be22176878c00469ea48da"]
+  background_interaction_matrix: ["TFP_STRESS_2_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml","8203ace3b438cd595f79a96511646bbbe5f6ad37"]
+  empirical_model_register: ["TFP_STRESS_2_EMPIRICAL_MODEL_PROPOSITIONS_0_1_2.yaml","ebfb53a38e4ff32a515304ed8ac2f71cc5015e76"]
+  discriminator_register: ["TFP_STRESS_2_DISCRIMINATOR_REGISTER_0_1_0.yaml","09308e3cc0744198a6633966a5f0fc41b850cb57"]
+  packet_manifest: ["TFP_STRESS_2_STEELMAN_PACKET_FREEZE_MANIFEST_0_1_3.yaml","3d293840525991ee9ea110212c1e2261922ff82c"]
+  packet_index: ["TFP_STRESS_2_STEELMAN_PACKET_INDEX_0_1_9.yaml","0adbbfcca452397e7e13fabfc08406a0824efee0a"]
+  exposure_ledger: ["TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_17.yaml","269f74d090fedc4227f461467b169014c4c8c32a"]
+
+review_provenance:
+  reviewer_B_final_report:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_RESIDUAL_CONFIRMATION_REPORT_0_1_0.md"
+    blob_sha: "07b33e170203232d1210bebca8734881af84dceb"
+    disposition: "G0_REVIEW_PASS_WITH_MINOR_REPAIRS"
+    certifications:
+      - "STEELMAN_EQUAL_STRENGTH_PASS_WITH_LIMITATIONS"
+      - "P_CHET_BODY_CONTROL_PASS"
+      - "SOURCE_PLAN_PASS"
+      - "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+      - "Q1_CONTROL_PASS"
+  reviewer_B_gate_acceptance:
+    path: "TFP_STRESS_2_REVIEWER_B_FINAL_GATE_ACCEPTANCE_0_1_0.md"
+    blob_sha: "d3d81ea6874358618e1eb962aac505d9462bcf8f"
+  reviewer_C_report:
+    path: "TFP_STRESS_2_REVIEWER_C_G0_ARCHITECTURE_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "262af0c0090649e831711ca99c42344fe81bbb7b"
+    disposition: "REVIEWER_C_G0_REPAIR_REQUIRED"
+    next_gate_decision: "YES_AFTER_SEVEN_VERSIONED_REPAIRS_BOUND_WITHOUT_LOGIC_CHANGE"
+  reviewer_C_repair_binding:
+    path: "TFP_STRESS_2_REVIEWER_C_PRE_G0_REPAIR_BINDING_0_1_0.md"
+    blob_sha: "158c895fd09badd8d1a862c9656a0f8e8d932dea"
+    seven_repairs_bound_without_logic_change: true
+
+frozen_candidate_architecture:
+  status_bearing_candidate_count: 11
+  candidates: ["R-TRANS","V","H-IND","H-SOC","H-SEED-SPREAD","L","S1","F","C-HET-IND","C-HET-SOC","C-HET-SEED-SPREAD"]
+  R_PHYS: "NON_STATUS_REFINEMENT"
+  node_rivals: ["X-NONHISTORICITY-NODE-RIVAL","X-REAL-REFERENT-NONIDENTITY-NODE-RIVAL","X-NONCRUCIFIXION-SUBSTITUTION-FAMILY"]
+  unique_necessary_proposition_count: 50
+  comparative_routes: "EACH_LINKED_TO_EXACTLY_ONE_FINAL_CRITICAL_DISCRIMINATOR"
+  closest_to_truth: "DISABLED"
+
+final_discriminators:
+  count: 8
+  priority: "ALL_CRITICAL"
+  feasibility: "ALL_FEASIBLE_WITHIN_SCOPE"
+  ids:
+    - "D1-DEATH-STATE-VS-S1"
+    - "D2-R-FOUNDING-CAUSE-VS-RIVALS"
+    - "D2-V-FOUNDING-CAUSE-VS-RIVALS"
+    - "D3-R-VS-V-EMBODIMENT"
+    - "D4-V-VS-H-EXTRAMENTAL"
+    - "D5-PROFILE-MATCH"
+    - "D9-CHET-JOINT-VS-PURE"
+    - "D-S1-ORIGIN-VS-POSTDEATH"
+
+background_architecture:
+  live_dimensions: ["BGD-1","BGD-2","BGD-3","BGD-9","BGD-10","BGD-11"]
+  BGD_3: "COMBINABLE_WEIGHTING_FACTORS"
+  BGD_1_BGD_11: "DISTINCT_BUT_INTERACTING"
+  interaction_matrix: "FROZEN"
+  post_evidence_cell_sampling: "PROHIBITED"
+
+carried_limitations:
+  - "Reviewer B NB-4: Ludemann formulation fidelity came from metadata only."
+  - "Reviewer B NB-4: Smith access level was not independently established."
+  - "Reviewer B NB-4: Strauss fidelity to the strict L conjunction remains unverified."
+  - "No formulation source is claimed to endorse every exact TFP subtype conjunct."
+  - "Reviewer A and Reviewer B share provider-level training-prior exposure."
+  - "Thirty-three NO_PROBATIVE_ABSENCE_BY_DEFAULT entries rely on the register-global absence ceiling."
+  - "L's revised Q1 relation preserves the frozen L burden but was not restored word-for-word."
+
+human_owner_gate:
+  required: true
+  decision: "PENDING"
+  authorization_scope_if_approved: "Authorize TFP-STRESS-2 G0 on this exact bundle only, permitting transition into G1 evidence acquisition under Protocol 0.1.7 and the frozen exposure ledger."
+  does_not_authorize:
+    - "any change to the frozen candidate/discriminator/background architecture without C4"
+    - "specific divine-agent attribution"
+    - "Christianity-wide truth claims"
+    - "G5 canonical theological acceptance"
+
+authorization_boundary:
+  g0_authorized: false
+  g1_authorized: false
+  substantive_evidence_acquisition: false
+  proposition_dispositions: "NONE"
+  candidate_ranking: "NONE"
+  theological_outcome: "NONE"
