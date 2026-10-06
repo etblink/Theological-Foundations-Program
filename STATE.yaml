@@ -79,9 +79,9 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STRESS-2-G2-L6-COMPARATIVE-INTEGRATION"
-  status: "G2_active__L1_L2_L3_L4_L5_frozen__L6_causal_attribution_subphase_frozen__Phase_L_preconsolidation_shared_floor_coverage_batch_assignment_frozen"
-  purpose: "Complete L6 comparative integration under Protocol Phase L. The 15 causal-attribution proposition facets are frozen; before final cross-lane proposition consolidation, obtain the still-required independent PROPOSITION-scope coverage certifications for the three frozen shared-floor propositions."
+  id: "TFP-STRESS-2-G2-COMPLETE__G3-AUTHORIZATION-GATE"
+  status: "G2_complete__L1_L2_L3_L4_L5_frozen__L6_causal_subphase_and_Phase_L_consolidation_frozen__G3_human_authorization_pending"
+  purpose: "Hold the completed G2 evidence/lane/proposition record fixed and obtain explicit human-owner authorization before entering Protocol Phase N / G3 comparative adjudication."
   bounded: true
   qualified_protocol_version: "0.1.7"
   g1_freeze_commit: "3c416f503d6b9d615307d217c4321af312516004"
@@ -89,10 +89,12 @@ current_scope:
   g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
   g1_source_record_count: 73
   g2_branch: "research/tfp-stress-2-resurrection-g2"
-  g2_branch_head: "5c5c1c3db78fe9e331119be692abfb70e13c25f6"
-  g2_branch_tree: "e16b92c4846d5b59ea3125ff6b7e524bc263754c"
-  exposure_ledger: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_62.yaml"
-  exposure_ledger_blob_sha: "dbb0340329d1c94a84a1c01b728af4e111b81206"
+  g2_branch_head: "4746307505083f1e42d4da2a8f37ed3f64fab810"
+  g2_branch_tree: "10e667dc970773a86043c2b5f5e682686790ab9c"
+  g2_substantive_checkpoint_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
+  g2_substantive_checkpoint_tree: "fe8064227fe5ad0f9b544506ffab242d30ff992a"
+  exposure_ledger: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_EVIDENCE_EXPOSURE_LEDGER_0_1_67.yaml"
+  exposure_ledger_blob_sha: "51c3738e005a9addd3d3386b1a555cbff221b773"
   l1_disposition_breakdown: "13_PARTIALLY_SUPPORTED__14_NOT_ESTABLISHED"
   l2_disposition_breakdown: "1_SUPPORTED__4_PARTIALLY_SUPPORTED__9_NOT_ESTABLISHED__1_EVIDENCE_AGAINST"
   l2_supported_proposition: "P-DEATH"
@@ -106,50 +108,58 @@ current_scope:
   l6_causal_subphase_freeze: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_G2_L6_CAUSAL_ATTRIBUTION_SUBPHASE_FREEZE_0_1_0.yaml"
   l6_causal_subphase_freeze_blob_sha: "0859f241ffb4de8f9d5884f44fd6a2f6d2233ac4"
   l6_causal_disposition_breakdown: "2_PARTIALLY_SUPPORTED__1_PLAUSIBLE_BUT_UNATTESTED__12_NOT_ESTABLISHED"
-  l6_entire_lane_frozen: false
-  phase_L_status: "PRECONSOLIDATION__SHARED_FLOOR_PROPOSITION_COVERAGE_DEPENDENCY_PENDING"
+  l6_entire_lane_frozen: true
+  phase_L_status: "COMPLETE__50_NECESSARY_PROPOSITIONS_CONSOLIDATED__G3_AUTHORIZATION_PENDING"
   phase_L_shared_floor_matrix: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_EVIDENCE_MATRIX_0_1_0.yaml"
   phase_L_shared_floor_matrix_blob_sha: "18ef0c436e1a1b9d138b8e3503b93b142d09f006"
-  shared_floor_pending_proposition_scopes:
-    - "PROPOSITION:P-HIST-JESUS"
-    - "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
-    - "PROPOSITION:P-CRUC"
-  reviewer_C_shared_floor_coverage_status: "ASSIGNMENT_FROZEN__PENDING_FRESH_EXTERNAL_EXECUTION"
-  reviewer_C_shared_floor_input: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE_0_1_0.yaml"
-  reviewer_C_shared_floor_input_blob_sha: "ed63c53c59b4f8ce81d6fc38f59362747d81359b"
-  reviewer_C_shared_floor_prompt: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_PROMPT_0_1_0.md"
-  reviewer_C_shared_floor_prompt_blob_sha: "32232700c2e1156226b75fd0d7486d00d5cf36ff"
+  shared_floor_pending_proposition_scopes: []
+  reviewer_C_shared_floor_coverage_status: "COMPLETE__0_COMPLETE__3_MATERIALLY_COMPLETE_WITH_LISTED_GAPS__0_INCOMPLETE"
+  reviewer_C_shared_floor_coverage_report: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_REPORT_0_1_0.md"
+  reviewer_C_shared_floor_coverage_report_blob_sha: "c1647cc86b05185ebd9c23cfba01caf900a6edbb"
+  shared_floor_disposition_freeze: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_G2_SHARED_FLOOR_PROPOSITION_DISPOSITION_FREEZE_0_1_0.yaml"
+  shared_floor_disposition_freeze_blob_sha: "ba00ad992a08db3dde1b34302644b84abd23dd82"
+  shared_floor_dispositions:
+    P-HIST-JESUS: "SUPPORTED_WITHIN_SCOPE"
+    P-EARLY-PROCLAMATION-EXISTENCE: "SUPPORTED_WITHIN_SCOPE"
+    P-CRUC: "SUPPORTED_WITHIN_SCOPE"
+  phase_L_consolidation: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_G2_PHASE_L_CROSS_LANE_PROPOSITION_CONSOLIDATION_0_1_1.yaml"
+  phase_L_consolidation_blob_sha: "150e8e711ac97be6bd31c668b0638246b57e57ab"
+  phase_L_consolidated_disposition_breakdown: "4_SUPPORTED__17_PARTIALLY_SUPPORTED__4_PLAUSIBLE_BUT_UNATTESTED__24_NOT_ESTABLISHED__1_EVIDENCE_AGAINST"
+  phase_L_unique_necessary_propositions: 50
+  phase_L_cross_lane_material_conflicts_remaining: 0
+  phase_M_status: "NOT_APPLICABLE__NO_FROZEN_C0_TO_C7_NECESSARY_PROPOSITION"
+  g2_completion_and_g3_transition_request: "research/tfp-stress-2-resurrection-g2:TFP_STRESS_2_G2_COMPLETION_AND_G3_TRANSITION_REQUEST_0_1_0.yaml"
+  g2_completion_and_g3_transition_request_blob_sha: "216b61f6241faf650366e9d4c7e445800bac3ec4"
   reviewer_D_status: "UNASSIGNED__POST_EVIDENCE_CONTROLS_ELIGIBLE__NOT_YET_LAUNCHED"
-  methodology_mode: "truth_seeking_comparative_integration__shared_floor_noninheritance__Phase_L_before_candidate_status"
+  reviewer_D_current_trigger: "NONE_BEFORE_G3__NO_DIRECTION_RESULT_EXISTS__L4_CONFIDENCE_TRIGGER_DORMANT"
+  methodology_mode: "truth_seeking_comparative_integration__G2_complete__Phase_N_requires_G3_authorization"
   g0_authorized: true
   g1_closed: true
   g2_lane_synthesis_authorized: true
   g2_lane_synthesis_started: true
+  g2_substantive_complete: true
   g3_comparative_adjudication_authorized: false
+  candidate_status_assigned: false
+  comparison_makeable_certified: false
   comparison_direction_results_valid: false
   candidate_ranking_permitted: false
   theological_outcome: "NONE"
 next_action:
-  id: "TFP-STRESS-2-G2-SHARED-FLOOR-PROPOSITION-COVERAGE-BATCH"
-  action: "execute_frozen_fresh_external_reviewer_C_coverage_review_for_the_three_shared_floor_PROPOSITION_scopes_before_final_Phase_L_cross_lane_consolidation"
+  id: "TFP-STRESS-2-G3-HUMAN-AUTHORIZATION"
+  action: "obtain_explicit_human_owner_authorization_for_transition_from_completed_G2_into_G3_Phase_N_before_assigning_A12_candidate_status_or_any_comparative_outcome"
   branch: "research/tfp-stress-2-resurrection-g2"
-  reviewer_C_input_freeze: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_INPUT_FREEZE_0_1_0.yaml"
-  reviewer_C_input_freeze_blob_sha: "ed63c53c59b4f8ce81d6fc38f59362747d81359b"
-  reviewer_C_prompt: "TFP_STRESS_2_REVIEWER_C_G2_SHARED_FLOOR_PROPOSITION_COVERAGE_BATCH_PROMPT_0_1_0.md"
-  reviewer_C_prompt_blob_sha: "32232700c2e1156226b75fd0d7486d00d5cf36ff"
-  substantive_checkpoint_commit: "b4c8fdcc751346c09b73dc484e2a9fb044eb0d35"
-  substantive_checkpoint_tree: "8220c7f539df75db4093855a841b1e24ae09c5e7"
+  g2_completion_request: "TFP_STRESS_2_G2_COMPLETION_AND_G3_TRANSITION_REQUEST_0_1_0.yaml"
+  g2_completion_request_blob_sha: "216b61f6241faf650366e9d4c7e445800bac3ec4"
+  substantive_checkpoint_commit: "744fbc5a3e88aa720c8ef3a1f2c4dd403cca5b95"
+  substantive_checkpoint_tree: "fe8064227fe5ad0f9b544506ffab242d30ff992a"
   requirements:
-    - "use a new clean external Reviewer C session; same xAI/Grok model lineage is permitted but no prior Reviewer C conversation may be continued"
-    - "return exactly three shared-floor proposition-scope coverage rows"
-    - "preserve the nonhistoricity and noncrucifixion node rivals at node level without candidate credit"
-    - "apply the frozen dependence/provenance and probative-absence rules"
-    - "do not require exact proclamation content or event truth to certify P-EARLY-PROCLAMATION-EXISTENCE coverage"
-    - "assign coverage states only; do not assign truth dispositions"
-    - "for any COVERAGE_INCOMPLETE scope identify the smallest exact source/access/analysis return defect"
-    - "do not apply D0 as a candidate-selecting result"
-    - "do not certify comparison MAKEABLE status"
-    - "do not rank candidates or begin G3"
+    - "human owner must explicitly authorize G3 transition; the G0 acceptance authorized later transition to G2 but did not authorize G3"
+    - "do not assign A12 candidate status before G3 authorization"
+    - "do not generate or validate comparison direction results before Phase N determines which comparisons are outcome-relevant"
+    - "do not rank candidates"
+    - "do not assign a PROPOSED_ G3 study outcome"
+    - "do not decide whether the resurrection occurred"
+    - "do not draw divine-agent, Christianity-wide, or global theological conclusions"
 
 qualification_candidate:
   version: "0.1.7"
@@ -347,7 +357,7 @@ research_queue:
   - id: "TFP-METHOD-REAUDIT-0.1.7"
     status: "completed_pass_with_limitations__protocol_qualified"
   - id: "TFP-STRESS-2"
-    status: "G2_L1_to_L5_frozen__L6_causal_subphase_frozen__shared_floor_coverage_batch_pending_before_Phase_L_consolidation"
+    status: "G2_complete__Phase_L_50_proposition_consolidation_frozen__G3_human_authorization_pending"
     candidate: "resurrection_claim"
   - id: "TFP-METHOD-REVISION"
     status: "queued_after_second_stress_test"
