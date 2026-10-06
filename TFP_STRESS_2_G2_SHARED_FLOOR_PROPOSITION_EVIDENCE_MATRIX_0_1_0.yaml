@@ -1,0 +1,125 @@
+schema_version: "0.1.0"
+study_id: "TFP-STRESS-2"
+artifact: "G2_SHARED_FLOOR_PROPOSITION_EVIDENCE_MATRIX"
+status: "FROZEN_EVIDENCE_BINDING_MATRIX__NO_SHARED_FLOOR_TRUTH_DISPOSITIONS"
+date: "2026-10-06"
+
+authority:
+  protocol_version: "0.1.7"
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  coverage_map: "TFP_STRESS_2_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_13.yaml"
+  coverage_map_blob_sha: "db5b62bd48fd8d5d4eb345d9c985ce1187aa5039"
+  truth_critical_register: "TFP_STRESS_2_TRUTH_CRITICAL_STRATA_AND_PROBATIVE_ABSENCE_REGISTER_0_1_1.yaml"
+  truth_critical_register_blob_sha: "d5757739ac0b97f0f8c887d4c79dca599fafdc76"
+  founding_stream_freeze: "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml"
+  founding_stream_freeze_blob_sha: "0f79a3303340db613285490fb7644221c125766b"
+  p_cruc_pre_evidence_amendment: "TFP_STRESS_2_P_CRUC_SHARED_FLOOR_PRE_EVIDENCE_AMENDMENT_0_1_0.yaml"
+  nonhistoricity_node_rival: "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml"
+  noncrucifixion_node_rival: "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml"
+  g1_inventory: "TFP_STRESS_2_G1_SOURCE_INVENTORY_0_1_1.yaml"
+  g1_inventory_blob_sha: "10a13d0d750aab29ce499d3865293772f3fabaac"
+
+purpose:
+  - "Bind the already-acquired record to the three frozen NONCOMPARATIVE_SHARED_FLOOR propositions before Phase-L consolidation."
+  - "Correct an integration-stage omission: L1/L2 carried evidence relevant to these propositions but did not issue proposition-level G2 dispositions or independent PROPOSITION:<id> coverage certifications."
+  - "Do not let this omission reduce any candidate-specific proposition or select among candidates."
+
+shared_floor_noninheritance_rule:
+  - "These propositions are common prerequisites for all 11 admitted full candidates."
+  - "A shared-floor shortfall may block truth warrant or affect all dependent candidates according to Protocol A12, but never creates relative candidate credit."
+  - "Candidate-specific dispositions already frozen in L1-L6 are not downgraded merely because this shared-floor batch remained pending."
+
+proposition_surfaces:
+  - proposition_id: "P-HIST-JESUS"
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    lanes: ["L1","L2"]
+    required_strata: ["SRC-01","SRC-02","SRC-19"]
+    acceptable_substitutes: ["SRC-03"]
+    coverage_certification: "PROPOSITION:P-HIST-JESUS"
+    direct_route: "Direct historical-subject sufficiency route against X-NONHISTORICITY-NODE-RIVAL under equal provenance/dependence rules."
+    positive_source_bindings:
+      - "G1W1-002: Galatians 1:18-19 — Paul reports meeting Cephas and James, called the Lord's brother."
+      - "G1W1-003: Galatians 2:1-10 — Paul reports interaction with recognized Jerusalem leaders including James and Cephas."
+      - "G1W1-009: Tacitus Annals 15.44 — Christus is linked to punishment under Tiberius by Pontius Pilate and the later Christian movement."
+      - "G1W1-010: Josephus Antiquities 20.200 — extant text names James as brother of Jesus called Christ; authenticity/phrase transmission remains source-critically qualified."
+      - "G1W1-018: Romans 1:3-4 — early Christian source presents Jesus Christ as descended from David according to flesh; traditional status not assumed."
+    adverse_or_rival_bindings:
+      - "TFP_STRESS_2_STEELMAN_X_NONHISTORICITY_NODE_RIVAL_0_1_1.yaml preserves the strongest serious mythicist/nonhistoricity node rival without full-candidate credit."
+      - "G1W1-011 Testimonium Flavianum is transmission-sensitive and may not be used unqualified."
+      - "Later narrative existence is not by itself historical-subject proof."
+    dependence_limits:
+      - "Pauline passages are not multiplied into independent streams merely because they occur in separate passages."
+      - "Tacitus's information source and independence from Christian reporting remain uncertain."
+      - "Josephus 20.200 authenticity/wording is materially stronger than treating the entire Testimonium as pristine, but still requires source-critical caution."
+    absence_rule: "A complete search lacking qualifying early/cross-tradition subject evidence could yield at most NOT_ESTABLISHED; absence alone cannot establish nonhistoricity."
+    disposition: "PENDING__PROPOSITION_SCOPE_COVERAGE_REVIEW_REQUIRED"
+
+  - proposition_id: "P-EARLY-PROCLAMATION-EXISTENCE"
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    lanes: ["L1","L2"]
+    required_strata: ["SRC-01","SRC-02"]
+    acceptable_substitutes: ["SRC-03"]
+    coverage_certification: "PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE"
+    direct_route: "Direct source/provenance/dependence route testing whether a historically recoverable founding proclamation exists under the frozen identification rule."
+    positive_source_bindings:
+      - "G1W1-001: 1 Corinthians 15:3-8 explicitly marks received/delivered material containing death, burial, being raised, and appearance claims."
+      - "G1W1-008: modern source-critical scholarship specifically analyzes a pre-Pauline/traditional formula in 1 Corinthians 15:3-7; exact boundaries remain disputed."
+      - "G1W1-002 and G1W1-003: Paul's contact with Cephas, James, and recognized Jerusalem leaders provides provenance/network evidence relevant to transmission."
+      - "TFP_STRESS_2_G2_FOUNDING_PROCLAMATION_AND_ENCOUNTER_STREAM_IDENTIFICATION_FREEZE_0_1_0.yaml identifies FP-01 and states that an early received proclamation/tradition stratum is materially supported."
+      - "G1W1-004, G1W1-005, and G1W1-018 preserve additional early Pauline death/resurrection/exaltation proclamation material without being assumed independent founding strata."
+    adverse_or_limit_bindings:
+      - "Exact formula boundaries within 1 Corinthians 15 remain unresolved."
+      - "Location inside a Pauline letter does not by itself make every clause pre-Pauline."
+      - "Network contact does not prove the exact content of what Cephas/James believed or experienced."
+      - "Later Gospel/Acts/reception material cannot create a founding stratum by repetition."
+    dependence_limits:
+      - "FP-01 is treated as one received proclamation/tradition stratum unless separate lineages are independently established."
+      - "The proposition asks for existence of a recoverable proclamation, not precise theology, geography, ontology, or event truth."
+    absence_rule: "A documented complete search recovering no qualifying proclamation trace could yield at most NOT_ESTABLISHED; access/provenance failure remains a separate ISS route."
+    disposition: "PENDING__PROPOSITION_SCOPE_COVERAGE_REVIEW_REQUIRED"
+
+  - proposition_id: "P-CRUC"
+    route: "NONCOMPARATIVE_SHARED_FLOOR"
+    lanes: ["L1","L2"]
+    required_strata: ["SRC-01","SRC-04"]
+    acceptable_substitutes: ["SRC-19"]
+    coverage_certification: "PROPOSITION:P-CRUC"
+    direct_route: "D0-CRUCIFIXION-ATTRIBUTION node-rival route plus explicit sufficiency review against X-NONCRUCIFIXION-SUBSTITUTION-FAMILY."
+    positive_source_bindings:
+      - "G1W1-005: Philippians 2:6-11 includes death on a cross in an early Christian proclamation/textual context; pre-Pauline hymnic status is not assumed."
+      - "G1W1-015: Mark 15:33-16:8 narrates Jesus's crucifixion/death/burial sequence."
+      - "G1W1-019 and G1W1-020: Matthew and Luke independently preserve later literary crucifixion/death narratives subject to Synoptic dependence limits."
+      - "G1W1-009: Tacitus links Christus to punishment under Tiberius by Pontius Pilate; the passage does not by itself resolve the precise execution-method wording."
+      - "G1W1-011: extant Josephus Antiquities 18.63-64 contains Pilate/crucifixion language but is transmission-sensitive and cannot be used unqualified."
+      - "General Roman crucifixion sources in SRC-04 establish the punishment's historical reality and lethal context but are not case-specific Jesus identification evidence."
+    adverse_or_rival_bindings:
+      - "TFP_STRESS_2_STEELMAN_X_NONCRUCIFIXION_NODE_RIVAL_0_1_4.yaml preserves divine-resemblance/substitution, witness-confusion/misidentification, arranged-substitution, and bounded no-substitute formulations as node rivals only."
+      - "Tradition-native noncrucifixion sources are much later and are formulation evidence, not historical proof by authority."
+      - "No node rival receives founding-proclamation causal credit merely by challenging P-CRUC."
+    dependence_limits:
+      - "Synoptic narratives are not counted as independent votes where literary dependence is material."
+      - "Tacitus's information source remains uncertain."
+      - "Josephus 18.63-64 cannot bear unqualified weight because of interpolation/transmission dispute."
+    absence_rule: "A complete search lacking qualifying early crucifixion attribution could yield at most NOT_ESTABLISHED; absence alone cannot establish substitution/noncrucifixion."
+    disposition: "PENDING__PROPOSITION_SCOPE_COVERAGE_REVIEW_REQUIRED"
+
+coverage_gap_discovery:
+  stage: "PHASE_L_PRECONSOLIDATION"
+  finding: "All candidate-specific necessary propositions have received the required proposition-scope coverage review through L1-L6 workflows, but the three shared-floor PROPOSITION:<id> scopes had not yet received their own independent Reviewer-C coverage-state certification."
+  classification: "EXECUTION_DEPENDENCY_DISCOVERED__NOT_A_G0_ARCHITECTURE_CHANGE"
+  architecture_changed: false
+  candidate_burdens_changed: false
+  source_plan_changed: false
+  remedy: "Run one narrow fresh Reviewer-C coverage batch on exactly these three already-frozen proposition scopes before final Phase-L shared-floor dispositions."
+
+matrix_constraints:
+  - "No consensus shortcut."
+  - "No religious/traditional authority source is historical proof by authority."
+  - "No later source is discarded solely because it is later."
+  - "Dependence and source provenance are explicit."
+  - "Shared-floor success or failure never creates relative candidate credit."
+  - "No proposition truth disposition is assigned in this matrix."
+  - "If SUPPORTED is later considered, the applicable historical/textual sufficiency record must be completed."
+
+next_gate:
+  action: "Fresh Reviewer C coverage-state batch for PROPOSITION:P-HIST-JESUS, PROPOSITION:P-EARLY-PROCLAMATION-EXISTENCE, and PROPOSITION:P-CRUC."
