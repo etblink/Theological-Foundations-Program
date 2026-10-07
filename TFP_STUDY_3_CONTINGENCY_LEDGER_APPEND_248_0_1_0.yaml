@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_246_247_blob_sha: "7ec816ab030046db14b760aac48e78121919dab3"
+  prior_next_sequence: 248
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 248
+    repository_commit: "73345f64678ed0fb5602b7a5a94066334f98c92e"
+    timestamp_utc: "2026-10-07T13:44:56Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_SEARCH_STAGE_COMPLETION_0_1_0.yaml blob db9c915b60c6c197eb8ff9b0c71d3917b4e9101b"
+    exposure_class: "G1_S4_BACKGROUND_SEARCH_STAGE_COMPLETION"
+    amendment_surfaces: ["all A8 background dimensions","all gate-only dimensions","support/challenge symmetry"]
+    outcome_relevant_evidence: true
+    result_status: "S4_BACKGROUND_SEARCH_STAGE_COMPLETE__52_OF_52_VARIANT_STATES_SUPPORT_AND_CHALLENGE_MAPPED__NO_BACKGROUND_DISPOSITIONS"
+
+next_sequence: 249
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
