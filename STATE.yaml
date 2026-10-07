@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_F1_A8_OPERATIVE_UNDER_POST_EVIDENCE_CONTAMINATION_CONTROLS__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
+  status: "G1_F1_A8_OPERATIVE_UNDER_POST_EVIDENCE_CONTAMINATION_CONTROLS__SOURCE_FOLLOWUP_COMPLETE__REVIEWER_E_RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "39bcbcadf38fae05220dd8a16e9917293586eb7a"
+  research_branch_head: "775f478df46ee1b40c193556b7cda9b6edc7aa2c"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -696,7 +696,7 @@ current_scope:
       may_not_serve_as_MAKEABLE_certifier: true
       may_not_serve_as_strict_auditor: true
   Reviewer_E:
-    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__F1_RESOLVED__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
+    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__F1_RESOLVED__SOURCE_FOLLOWUP_COMPLETE__RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
@@ -712,7 +712,26 @@ current_scope:
     blind_external_adverse_report_blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
     blind_external_adverse_status: "ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
     Program_Lead_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
-    source_followup_required: true
+    source_followup_required: false
+    source_followup_complete_for_reconciliation: true
+    source_followup_artifact:
+      artifact: "TFP_STUDY_3_CONTINGENCY_G1_REVIEWER_E_BLIND_PROBE_SOURCE_CLASS_FOLLOWUP_0_1_0.yaml"
+      blob_sha: "3023fa99a05c99e600e9a373df635e708f935da3"
+      status: "FOLLOWUP_UNIVERSE_FROZEN__READY_FOR_REVIEWER_E_RECONCILIATION__COVERAGE_UNCERTIFIED"
+    source_followup_ledger_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_282_283_0_1_0.yaml"
+      blob_sha: "6303eb98d329760b394aac33e9bb2a2b0a9068ef"
+      sequences: [282,283]
+    source_class_reconciliation_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "5e35da196b34896c6f7d5ca8c42b707e97799493"
+    source_class_reconciliation_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_PROMPT_0_1_0.md"
+      blob_sha: "b2baf8bf56a6cbcb6357203bc64ae900e201407f"
+    source_class_reconciliation_launch_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_284_285_0_1_0.yaml"
+      blob_sha: "787ff22820c3f4d19a7d5d0b203a19f0761c2720"
+      sequences: [284,285]
     F1_A8_review_required: true
     F1_A8_review_complete: true
     F1_A8_review_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
@@ -1465,7 +1484,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 281
+    A17_ledger_current_through_sequence: 285
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1540,28 +1559,21 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_CANDIDATE_OR_THEOLOGICAL_OUTCOME__G1_SOURCE_FOLLOWUP_AND_COVERAGE_PENDING"
 next_action:
-  id: "TFP-STUDY-3-G1-REVIEWER-E-BLIND-PROBE-SOURCE-CLASS-FOLLOWUP"
-  action: "complete_Reviewer_E_blind_probe_source_class_followups_before_same_lineage_coverage_reconciliation"
+  id: "TFP-STUDY-3-REVIEWER-E-G1-SOURCE-CLASS-RECONCILIATION"
+  action: "continue_same_Reviewer_E_lineage_for_blind_probe_reconciliation_against_S1_S5_and_followup_universe"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 282
-  controlling_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
-  F1_operational_acceptance_blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
-  required_source_classes:
-    - "Indian non-theistic / anti-creator traditions"
-    - "deeper Madhyamaka / Abhidharma / Huayan material"
-    - "grounding-modality literature"
-    - "necessitism / contingentism"
-    - "Neo-Confucian li-qi"
-    - "existential-inertia / persistence literature"
-    - "brute necessity / modal primitivism"
-    - "fundamental-indeterminacy literature"
+  ledger_next_sequence: 286
+  input_blob_sha: "5e35da196b34896c6f7d5ca8c42b707e97799493"
+  prompt_blob_sha: "b2baf8bf56a6cbcb6357203bc64ae900e201407f"
+  followup_universe_blob_sha: "3023fa99a05c99e600e9a373df635e708f935da3"
   requirements:
-    - "acquire and evaluate source-class followups without candidate ranking or proposition truth disposition"
-    - "preserve access failures, negative searches, provenance, and source-class relevance"
-    - "apply A8 0.1.2 under POST_EVIDENCE_FAVORABLE_OR_MIXED contamination controls"
-    - "do not allow favorable/mixed F1 effects to strengthen the current confirmatory comparative result"
-    - "Reviewer E coverage/MAKEABLE review remains paused until source-class followups are reconciled"
-    - "after followups, return to the same Reviewer-E lineage for reconciliation against Program Lead S1-S5 plus followup universe"
+    - "use the exact same Reviewer-E Claude Opus 5.5 lineage that returned ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
+    - "reconcile all eight blind-probe source classes against the revealed Program Lead S1-S5 universe plus frozen followup universe"
+    - "classify each source class only as adequately represented, represented with carried gap, or material followup still required"
+    - "do not count source scarcity/access gaps as evidence against candidates"
+    - "preserve cross-tradition distinctions and SC6 relation specificity"
+    - "preserve F1 POST_EVIDENCE_FAVORABLE_OR_MIXED contamination controls"
+    - "do not certify coverage or MAKEABLE/UNMAKEABLE in this reconciliation; those become eligible only after a reconciliation pass"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -1859,7 +1871,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__G1_active__F1_A8_operative_under_contamination_controls__source_followup_required__coverage_paused"
+    status: "G0_architecture_authorized__G1_active__F1_A8_operative_under_contamination_controls__source_followup_complete__Reviewer_E_reconciliation_ready__coverage_paused"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
