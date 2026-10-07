@@ -1,0 +1,304 @@
+schema_version: "0.1.2"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "BACKGROUND_INTERACTION_MATRIX"
+status: "POST_EVIDENCE_F1_REPAIR_DRAFT__NONOPERATIVE_PENDING_C4_DIRECTION_AND_LEDGER_INTEGRITY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+background_register:
+  path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml"
+  blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+  ordinary_dimension_count: 14
+  gate_only_dimension_count: 2
+  total_dimension_or_gate_count: 16
+
+supersession:
+  prior_artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+  prior_blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  supersedes_for_operational_use: false
+  note: "0.1.2 is the descriptive post-evidence F1 matrix repair draft. Operative 0.1.1 remains controlling pending C4/ledger/Program Lead acceptance."
+
+dimensions:
+  ordinary:
+    - "BG-EXPLANATORY-REALISM"
+    - "BG-PSR-SCOPE"
+    - "BG-TOTALITY-EXPLANANDUM"
+    - "BG-DEPENDENCE-STRUCTURE"
+    - "BG-MODAL-STATUS"
+    - "BG-ACTUALITY-PRIVILEGE"
+    - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    - "BG-GROUND-CATEGORY"
+    - "BG-EXPLANATION-RELATION"
+    - "BG-ONTOLOGY-ADMISSIBILITY"
+    - "BG-AGENTIVE-MODAL-LINK"
+    - "BG-IMPERSONAL-GROUNDING-MODAL-LINK"
+    - "BG-AXIOLOGICAL-FORCE"
+    - "BG-METAPHYSICAL-INDETERMINACY"
+  gate_only:
+    - "BG-TEMPORAL-ORIGIN-LINK"
+    - "BG-MODAL-LOGIC"
+
+pair_coverage_rule:
+  all_120_unordered_pairs_classified: true
+  ordinary_pair_count: 91
+  gate_involving_pair_count: 29
+  listed_material_ordinary_pair_count: 20
+  explicit_conditional_ordinary_pair_count: 1
+  unlisted_ordinary_pair_status: "NO_MATERIAL_INTERACTION_IDENTIFIED_AFTER_A8_REVIEW"
+  unlisted_ordinary_pair_rationale: "No current frozen truth-critical inference is identified whose required outcome condition depends on the joint state rather than one-at-a-time sensitivity."
+  gate_involving_pair_status: "GATE_CONDITIONAL__NOT_FULL_CARTESIAN_PAIR"
+  gate_involving_pair_rationale: "Temporal-origin and modal-logic gates activate only when the exact frozen inference uses temporal beginning or a possibility-to-necessity step."
+  favorable_combination_sampling_forbidden: true
+
+material_pairs:
+  - id: "INT-ER-PSR"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE"]
+    rationale: "Whether a PSR-like demand is an objective metaphysical requirement or a weaker explanatory norm changes stopping burdens."
+    affected: ["BR-N4","RG-N5","GD-N2","GD-N3","necessary-ground stopping claims"]
+  - id: "INT-ER-TOTALITY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-TOTALITY-EXPLANANDUM"]
+    rationale: "A totality-level object creates a distinct burden only if the relevant explanation can apply objectively at that level."
+    affected: ["BR-N2","RG-N4","GD-N2","GD-N3"]
+  - id: "INT-PSR-TOTALITY"
+    dimensions: ["BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    rationale: "PSR strength and totality status jointly determine whether local/member explanations leave an additional stopping burden."
+    affected: ["BR-N4","RG-N4","RG-N5","GD-N2","GD-N3"]
+  - id: "INT-ER-DEPENDENCE"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-DEPENDENCE-STRUCTURE"]
+    rationale: "Structural completion constraints matter differently under robust, pluralist, and deflationary explanation."
+    affected: ["RG-N3","RG-N5","HO-N2","HO-N5","SE-N2"]
+  - id: "INT-PSR-DEPENDENCE"
+    dimensions: ["BG-PSR-SCOPE","BG-DEPENDENCE-STRUCTURE"]
+    rationale: "Whether regress, holistic completion, or reflexive completion is adequate depends jointly on demanded stopping strength."
+    affected: ["RG-N5","HO-N5","SE-N5"]
+  - id: "INT-ER-ABSTRACT"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-ABSTRACT-PRINCIPLE-FORCE"]
+    rationale: "Whether abstract/principle facts count as genuine explanation depends on both explanatory realism and abstract force."
+    affected: ["PR-N2","PR-N3"]
+  - id: "INT-ER-AGENT"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-AGENTIVE-MODAL-LINK"]
+    rationale: "Agentive explanation as ultimate explanation depends on explanatory realism and the necessary-source/contingent-output link."
+    affected: ["AG-N3","AG-N4"]
+  - id: "INT-ER-AXIOLOGY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-AXIOLOGICAL-FORCE"]
+    rationale: "A value-to-being explanation requires both a truth-bearing explanatory relation and value capable of occupying it."
+    affected: ["AX-N2","AX-N4"]
+  - id: "INT-ABSTRACT-AXIOLOGY"
+    dimensions: ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE"]
+    rationale: "Value/principle explanation depends on the explanatory status of abstract/principle facts and the role of evaluative requiredness."
+    affected: ["AX-N2","AX-N4","PR-N7"]
+  - id: "INT-MODALSTATUS-INDETERMINACY"
+    dimensions: ["BG-MODAL-STATUS","BG-METAPHYSICAL-INDETERMINACY"]
+    rationale: "Modal deflation/epistemic readings must be separated from genuine worldly indeterminacy."
+    affected: ["MD-N2","IU-N2","IU-N3"]
+  - id: "INT-MODALSTATUS-AGENT"
+    dimensions: ["BG-MODAL-STATUS","BG-AGENTIVE-MODAL-LINK"]
+    rationale: "The necessary-agent-to-contingent-output question depends on both modal status and the agentive modal link."
+    affected: ["AG-N1","AG-N4"]
+  - id: "INT-MODALSTATUS-ABSTRACT"
+    dimensions: ["BG-MODAL-STATUS","BG-ABSTRACT-PRINCIPLE-FORCE"]
+    rationale: "Necessary principle/constraint explanations depend on the status of metaphysical modality and abstract/principle force."
+    affected: ["PR-N1","PR-N3","PR-N5"]
+  - id: "INT-TOTALITY-DEPENDENCE"
+    dimensions: ["BG-TOTALITY-EXPLANANDUM","BG-DEPENDENCE-STRUCTURE"]
+    rationale: "Regress and holistic completion interact with whether a totality is distinct, locally exhausted, or indeterminate as a totality."
+    affected: ["RG-N4","RG-N5","HO-N5"]
+  - id: "INT-PSR-ABSTRACT"
+    dimensions: ["BG-PSR-SCOPE","BG-ABSTRACT-PRINCIPLE-FORCE"]
+    rationale: "Whether an abstract/principle explanation can satisfy the demanded explanation depends jointly on PSR scope and principle force."
+    affected: ["PR-N2","PR-N3","BR-N4"]
+  - id: "INT-TOTALITY-ACTUALITY"
+    dimensions: ["BG-TOTALITY-EXPLANANDUM","BG-ACTUALITY-PRIVILEGE"]
+    rationale: "Totality status and actuality privilege jointly matter for the indexical-plurality boundary."
+    affected: ["IP-N3","IP-N4","IP-N5"]
+  - id: "INT-MODALSTATUS-IMPERSONAL-LINK"
+    dimensions: ["BG-MODAL-STATUS","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "Whether a necessary impersonal ground preserves genuine metaphysical contingency depends jointly on the status of modality and the ground-to-output necessity-transmission rule."
+    affected: ["IC-N5","PR-N6","AX-N5"]
+  - id: "INT-RELATION-IMPERSONAL-LINK"
+    dimensions: ["BG-EXPLANATION-RELATION","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "Necessity transmission can depend on which truth-relevant impersonal explanatory relation is actually invoked; relation admissibility and modal transmission cannot be collapsed."
+    affected: ["IC-N5","PR-N6","AX-N5"]
+  - id: "INT-ABSTRACT-IMPERSONAL-LINK"
+    dimensions: ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "For principle routes, abstract explanatory force and the modal behavior of the successful impersonal link jointly control contingency preservation."
+    affected: ["PR-N6","AX-N5"]
+  - id: "INT-AXIOLOGY-IMPERSONAL-LINK"
+    dimensions: ["BG-AXIOLOGICAL-FORCE","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "Axiarchic adequacy depends both on value having ontic explanatory force and on that non-agentive explanatory link not automatically necessitating the explanandum."
+    affected: ["AX-N5"]
+  - id: "INT-CATEGORY-IMPERSONAL-LINK"
+    dimensions: ["BG-GROUND-CATEGORY","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "Concrete versus non-concrete ground eligibility and the modal behavior of the successful impersonal link jointly affect which family can preserve a genuinely contingent explanandum."
+    affected: ["IC-N5","PR-N6","AX-N5"]
+
+explicit_nonmaterial_pair:
+  dimensions: ["BG-AGENTIVE-MODAL-LINK","BG-AXIOLOGICAL-FORCE"]
+  status: "NO_MATERIAL_INTERACTION_IDENTIFIED_AFTER_A8_REVIEW"
+  rationale: "AX-N4 and AG-N3 already distinguish evaluative requiredness itself from an agent acting for a reason."
+
+explicit_conditional_pair:
+  dimensions: ["BG-AGENTIVE-MODAL-LINK","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+  status: "CROSS_FAMILY_MODAL_COLLAPSE_COMPARISON_CONDITIONAL__NO_SHARED_VARIANT_SPACE"
+  rationale: "Agentive and impersonal modal links remain distinct mechanisms. Invoke both only where a frozen cross-family comparison evaluates modal-collapse/contingency-preservation as a shared burden; do not merge their variants or add a full Cartesian product."
+  affected: ["AG-N4","IC-N5","PR-N6","AX-N5"]
+
+higher_order_interactions:
+  - id: "INT3-ER-PSR-TOTALITY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    rationale: "Ultimate totality-level explanatory burden depends jointly on objective explanation, demand scope, and totality status."
+    required: true
+  - id: "INT3-MODALSTATUS-ABSTRACT-AXIOLOGY"
+    dimensions: ["BG-MODAL-STATUS","BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE"]
+    rationale: "Necessity/status of a value/principle and its explanatory force jointly affect principle/axiarchic adequacy and modal-collapse risk."
+    required: true
+  - id: "INT3-PSR-TOTALITY-DEPENDENCE"
+    dimensions: ["BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM","BG-DEPENDENCE-STRUCTURE"]
+    rationale: "The terminus question is not exhausted by ER-PSR-totality because completion structure independently changes the result."
+    required: true
+  - id: "INT3-PSR-RELATION-CATEGORY"
+    dimensions: ["BG-PSR-SCOPE","BG-EXPLANATION-RELATION","BG-GROUND-CATEGORY"]
+    rationale: "Eligibility of concrete, abstract, causal, grounding, or principle explanations depends jointly on demand, relation, and category."
+    required: true
+  - id: "INT3-RELATION-ONTOLOGY-AXIOLOGY"
+    dimensions: ["BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY","BG-AXIOLOGICAL-FORCE"]
+    rationale: "Property admissibility, including value/reason explanation, depends jointly on relation policy, ontology restriction, and axiological force."
+    required: true
+
+  - id: "INT3-MODALSTATUS-RELATION-IMPERSONAL-LINK"
+    dimensions: ["BG-MODAL-STATUS","BG-EXPLANATION-RELATION","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "A contingency-preservation result for an impersonal necessary ground depends jointly on metaphysical modal status, the exact explanatory relation, and whether that relation transmits necessity."
+    required: true
+    affected: ["IC-N5","PR-N6","AX-N5"]
+  - id: "INT3-ABSTRACT-AXIOLOGY-IMPERSONAL-LINK"
+    dimensions: ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    rationale: "Principle/axiarchic adequacy can depend jointly on abstract/principle explanatory force, evaluative force, and whether the successful impersonal link necessitates its output."
+    required: true
+    affected: ["PR-N6","AX-N5"]
+
+gate_controls:
+  MOD-DEFLATIONARY:
+    source_dimension: "BG-MODAL-STATUS"
+    activation: "When MOD-DEFLATIONARY is selected."
+    rule: "Test dissolution/indeterminacy boundary first; lower-order existence joints are idle unless the modal premise survives as truth-apt."
+    affected: ["C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY","all lower-order existence-sensitive candidates"]
+  BG-TEMPORAL-ORIGIN-LINK:
+    activation: "Only when a truth-critical inference uses temporal origin/beginning."
+    rule: "Temporal origin cannot enter as a contingency premise unless independently licensed."
+    full_cartesian_factor: false
+  BG-MODAL-LOGIC:
+    activation: "Only when a truth-critical inference uses possibility-to-necessity."
+    rule: "Run S5 versus weaker/unfixed logic only on that inference."
+    full_cartesian_factor: false
+
+compatibility_constraints:
+  - id: "COMP-MODDEF-INDONTIC"
+    states: ["MOD-DEFLATIONARY","IND-ONTIC-POSSIBLE"]
+    status: "NOT_LOGICALLY_INCOMPATIBLE__GATED"
+    rule: "Ontic modal indeterminacy is idle where the relevant modal claim is not truth-apt; preserve joint review only for the dissolution/indeterminacy boundary."
+  - id: "COMP-ERDEF-ABSEXP"
+    states: ["ER-DEFLATIONARY","ABS-EXPLANATORY"]
+    status: "TENSION_NOT_EXCLUSION"
+  - id: "COMP-PSRGLOBAL-TOTLOCAL"
+    states: ["PSR-GLOBAL","TOT-LOCAL-SUFFICIENCY"]
+    status: "TENSION_REQUIRES_JOINT_REVIEW"
+    rule: "Compatibility turns on whether member explanations count as the demanded totality explanation."
+  - id: "COMP-RELINTENTIONAL-AG3"
+    states: ["REL-INTENTIONAL-INADMISSIBLE","AG-N3"]
+    status: "INCOMPATIBLE_WITH_TREATING_AG_N3_AS_SATISFIED"
+  - id: "COMP-ONT-CLOSURE"
+    states: ["ONT-CONCRETE-CAUSAL-CLOSURE"]
+    status: "PREEMPTIVE_RESTRICTION_IF_NOT_DEFEATED"
+    rule: "Non-concrete/non-causal ultimate explainers are inadmissible unless the restriction is independently defeated."
+  - id: "COMP-PSRNONDEFAULT"
+    states: ["PSR-NONDEFAULT"]
+    status: "INCOMPATIBLE_WITH_CONTINGENCY_ALONE_AS_NONBRUTE_WARRANT"
+  - id: "COMP-PSR-REGRESS"
+    states: ["PSR-GLOBAL","DEP-INFINITE-REGRESS-COMPLETE"]
+    status: "COMPATIBLE__NO_NECESSARY_TERMINUS_ENTAILED_BY_COMBINATION_ALONE"
+  - id: "COMP-PSR-HOLISTIC"
+    states: ["PSR-GLOBAL","DEP-HOLISTIC-NONREFLEXIVE-COMPLETE"]
+    status: "COMPATIBLE__NO_NECESSARY_TERMINUS_ENTAILED_BY_COMBINATION_ALONE"
+
+within_dimension_control:
+  mutually_exclusive_per_run: true
+  explanation_relation_exception:
+    internal_axes_are_separately_mutually_exclusive: true
+    cross_axis_state_is_a_profile_not_a_hidden_additional_background: true
+  worldview_label_incompatibility_forbidden: true
+
+required_compatible_joint_combination_set:
+  scope_rule:
+    full_cartesian_product_required: false
+    full_cartesian_product_excluded_reason: "Too large to test responsibly; Protocol A8.3 requires transparent narrowing rather than silent favorable sampling."
+    outside_required_set_status: "UNTESTED_RESIDUE"
+    consequence_if_outside_residue_can_change_required_outcome: "INSUFFICIENT_SIGNAL_WITHIN_SCOPE_FOR_DEPENDENT_OUTCOME_UNLESS_SCOPE_IS_TRANSPARENTLY_NARROWED_OR_RESIDUE_IS_TESTED"
+
+  gate_first:
+    - id: "GATE-MODAL-DEFLATION"
+      combination: ["MOD-DEFLATIONARY"]
+      required_test: "Dissolution/indeterminacy boundary only before lower-order existence clusters."
+    - id: "GATE-TEMPORAL"
+      combination: ["BG-TEMPORAL-ORIGIN-LINK"]
+      required_test: "Temporal-origin premise may enter only if independently licensed."
+    - id: "GATE-MODAL-LOGIC"
+      combination: ["BG-MODAL-LOGIC"]
+      required_test: "S5/weaker/unfixed only where possibility-to-necessity is actually used."
+
+  terminus_joints:
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-DISTINCT","DEP-WELL-FOUNDED"]
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-DISTINCT","DEP-INFINITE-REGRESS-COMPLETE"]
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-DISTINCT","DEP-HOLISTIC-NONREFLEXIVE-COMPLETE"]
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-DISTINCT","DEP-REFLEXIVE-PERMISSIBLE"]
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-LOCAL-SUFFICIENCY","DEP-WELL-FOUNDED"]
+    - ["ER-ROBUST","PSR-GLOBAL","TOT-NO-DETERMINATE-TOTALITY"]
+    - ["ER-ROBUST","PSR-RESTRICTED","TOT-DISTINCT","DEP-WELL-FOUNDED"]
+    - ["ER-ROBUST","PSR-LOCAL-ONLY","TOT-LOCAL-SUFFICIENCY"]
+    - ["ER-ROBUST","PSR-NONDEFAULT","TOT-DISTINCT"]
+    - ["ER-DEFLATIONARY","PSR-GLOBAL","TOT-DISTINCT"]
+    - ["ER-PLURALIST","PSR-RESTRICTED","TOT-DISTINCT","DEP-WELL-FOUNDED"]
+
+  modal_actuality_joints:
+    - ["MOD-METAPHYSICAL-DE-RE","ACT-PRIVILEGED"]
+    - ["MOD-METAPHYSICAL-DE-RE","ACT-INDEXICAL-NONPRIVILEGED"]
+    - ["MOD-NOMIC-PHYSICAL-ONLY"]
+    - ["MOD-EPISTEMIC-ONLY"]
+    - ["MOD-DEFLATIONARY"]
+
+  category_property_joints:
+    - ["ABS-EXPLANATORY","CAT-ABSTRACT-ELIGIBLE","AX-VALUE-ONTOLOGICAL"]
+    - ["ABS-CONSTRAINT-ONLY","CAT-CONCRETE-REQUIRED","AX-VALUE-NORMATIVE-ONLY"]
+    - ["ABS-DESCRIPTIVE","CAT-CONCRETE-REQUIRED","AX-ANTI-REALIST"]
+    - ["AGENT-CONTINGENT-OUTPUT","REL-INTENTIONAL-ADMISSIBLE","ONT-OPEN-NO-PREEMPTIVE-RESTRICTION"]
+    - ["AGENT-NECESSITATING","MOD-METAPHYSICAL-DE-RE"]
+    - ["AGENT-NONFUNDAMENTAL","REL-INTENTIONAL-INADMISSIBLE"]
+    - ["AX-ACTION-ONLY","REL-INTENTIONAL-ADMISSIBLE"]
+    - ["IMP-NECESSITATING","MOD-METAPHYSICAL-DE-RE","REL-GROUNDING-DEPENDENCE"]
+    - ["IMP-CONTINGENCY-PRESERVING","MOD-METAPHYSICAL-DE-RE","REL-GROUNDING-DEPENDENCE"]
+    - ["IMP-UNFIXED","MOD-METAPHYSICAL-DE-RE","REL-GROUNDING-DEPENDENCE"]
+    - ["ABS-EXPLANATORY","AX-VALUE-ONTOLOGICAL","IMP-CONTINGENCY-PRESERVING"]
+    - ["ABS-EXPLANATORY","AX-VALUE-ONTOLOGICAL","IMP-NECESSITATING"]
+
+
+  indeterminacy_joints:
+    - ["IND-ONTIC-POSSIBLE","MOD-METAPHYSICAL-DE-RE"]
+    - ["IND-SEMANTIC-ONLY","MOD-DEFLATIONARY"]
+    - ["IND-DETERMINATE","MOD-METAPHYSICAL-DE-RE"]
+
+  ontology_joints:
+    - ["ONT-CONCRETE-CAUSAL-CLOSURE","AGENT-NONFUNDAMENTAL"]
+    - ["ONT-OPEN-NO-PREEMPTIVE-RESTRICTION","AGENT-CONTINGENT-OUTPUT"]
+    - ["ONT-METHODOLOGICAL-PREFERENCE-ONLY"]
+
+coverage_statement:
+  no_favorable_combination_selected: true
+  joints_outside_required_set_treated_as_covered: false
+  future_sensitivity_must_record_untested_residue: true
+  Reviewer_C_F1_review_complete: true
+  Reviewer_C_F1_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+  Reviewer_F_C4_direction_review_pending: true
+  Reviewer_G_ledger_integrity_review_pending: true
+  operational: false
+  operative_pre_repair_matrix_remains_0_1_1: true
+  G1_authorized: true
+  coverage_review_paused: true
