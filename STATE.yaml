@@ -80,22 +80,28 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_OPERATIVE__FINAL_A6_OPERATIVE__A13_NEXT__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_PREREGISTRATION_COMPLETE__AWAITING_EXPLICIT_HUMAN_G1_AUTHORIZATION__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "f08d63800ca639b77dd94670f0c051c64a0e0fc0"
+  research_branch_head: "e28a18d2d0e6a9ae5939b8b4ca440cc7bb2e6475"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
     status: "AUTHORIZED"
   working_question:
     text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
-    status: "WORKING_G0_QUESTION__NOT_YET_FINAL_PREREGISTRATION"
+    status: "FROZEN_FINAL_G0_QUESTION"
   scope_packet:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
     blob_sha: "ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+    historical_status: "BLIND_ELICITATION_WORKING_SCOPE__SUPERSEDED_FOR_FINAL_A1_A2_BY_FINAL_FREEZE"
+  final_A1_A2_question_scope:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A1_A2_FINAL_QUESTION_SCOPE_FREEZE_0_1_0.yaml"
+    blob_sha: "b98782fe7fdc85d37e515823803e0cd2727c211c"
+    status: "FROZEN_FINAL_G0_PREREGISTRATION__NO_SUBSTANTIVE_DELTA_FROM_WORKING_SCOPE"
+    late_finalization_note_carried_to_G4: true
   role_architecture:
     artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
     blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
@@ -1020,11 +1026,53 @@ current_scope:
   remaining_G0_preregistration_plan:
     artifact: "TFP_STUDY_3_CONTINGENCY_REMAINING_G0_PREREGISTRATION_PLAN_0_1_0.yaml"
     blob_sha: "202cd800f39e9b3ad26470e6dfa1dbdadfa07bb4"
-    status: "FROZEN_PROGRAM_LEAD_SEQUENCE__NO_G1_AUTHORIZATION"
+    status: "COMPLETED__LATE_A1_A2_FINALIZATION_GAP_DISCOVERED_AND_CLOSED_PRE_EVIDENCE"
   remaining_G0_preregistration_plan_ledger_append:
     artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_227_0_1_0.yaml"
     blob_sha: "cae10d2a707b09a37caf3cca8bfdb8ed7a23c242"
-    next_sequence: 228
+  A13_expected_weakening_evidence_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A13_EXPECTED_WEAKENING_EVIDENCE_REGISTER_0_1_0.yaml"
+    blob_sha: "2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6"
+    status: "FROZEN_PRE_EVIDENCE__PROGRAM_LEAD_INITIAL_PREREGISTRATION"
+    candidate_state_count: 13
+  A13_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_228_0_1_0.yaml"
+    blob_sha: "a688a07daa094111786763aac0fa78ac62b8ea8f"
+  A14_stop_reopen_conditions:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A14_STOP_REOPEN_CONDITIONS_0_1_0.yaml"
+    blob_sha: "77ea309239f8fb3f6ca5af5cc8478bff1587e382"
+    status: "FROZEN_PRE_EVIDENCE"
+    insufficiency_threshold_frozen: true
+    underdetermination_threshold_frozen: true
+    reopen_conditions_frozen: true
+  A15_audit_criteria:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A15_AUDIT_CRITERIA_0_1_0.yaml"
+    blob_sha: "d0452f99db4c0007df84ed4f0f6b71b84b4d2216"
+    status: "FROZEN_PRE_EVIDENCE"
+    standard_G4_topic_count: 17
+    Study_3_specific_risk_count: 20
+    strict_auditor_slot: "REVIEWER_H"
+  A16_shared_proposition_map:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A16_SHARED_PROPOSITION_MAP_0_1_0.yaml"
+    blob_sha: "88350ca94dbb08b0e5b04c6d3acdb514d890c9cd"
+    status: "FROZEN_PRE_EVIDENCE__CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+    shared_dimension_count: 2
+    dimensions: ["D16-MODAL-PROFILE","D16-EXPLANATORY-COMPLETION"]
+    global_score_forbidden: true
+  A14_A15_A16_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_229_231_0_1_0.yaml"
+    blob_sha: "9792aa7349f3edba0af738b1f8d8c149a330427d"
+  final_A1_A2_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_232_0_1_0.yaml"
+    blob_sha: "7ee1b281355d0adfd49a384208234ddebc339cc6"
+  G0_preregistration_completion_check:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G0_PREREGISTRATION_COMPLETION_CHECK_0_1_0.yaml"
+    blob_sha: "b794648b713027d003643ae8797f79626d57f4f7"
+    status: "G0_PREREGISTRATION_COMPLETE__G1_HUMAN_AUTHORIZATION_REQUIRED"
+  G0_completion_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_233_0_1_0.yaml"
+    blob_sha: "268bd36c52e6ca2ee162d00bf45882ff9f53c1f5"
+    next_sequence: 234
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -1305,12 +1353,17 @@ current_scope:
     final_A6_ledger_integrity_review_result: "FINAL_A6_LEDGER_INTEGRITY_PASS"
     final_A6_coverage_map_operational: true
     necessary_proposition_coverage_complete: true
-    A13_expected_weakening_evidence_frozen: false
-    A14_stop_reopen_conditions_frozen: false
-    A15_audit_criteria_frozen: false
-    A16_shared_proposition_map_status: "NOT_YET_DETERMINED"
-    insufficiency_threshold_frozen: false
-    G0_complete: false
+    A13_expected_weakening_evidence_frozen: true
+    A14_stop_reopen_conditions_frozen: true
+    A15_audit_criteria_frozen: true
+    A16_shared_proposition_map_status: "FROZEN__CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+    A16_shared_dimension_count: 2
+    insufficiency_threshold_frozen: true
+    underdetermination_threshold_frozen: true
+    reopen_conditions_frozen: true
+    A1_A2_final_question_scope_frozen: true
+    A17_ledger_current_through_sequence: 233
+    G0_complete: true
   G1_authorized: false
   outcome_relevant_evidence_acquisition_started: false
   methodology:
@@ -1325,18 +1378,16 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-A13-EXPECTED-WEAKENING-EVIDENCE-REGISTER"
-  action: "construct_and_freeze_candidate_state_expected_compatible_weakening_and_contradiction_profiles"
+  id: "TFP-STUDY-3-HUMAN-G1-EVIDENCE-ACQUISITION-AUTHORIZATION"
+  action: "await_explicit_human_owner_authorization_to_begin_G1_under_the_frozen_A9_source_plan"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 228
-  governing_plan_blob_sha: "202cd800f39e9b3ad26470e6dfa1dbdadfa07bb4"
+  ledger_next_sequence: 234
+  G0_completion_check_blob_sha: "b794648b713027d003643ae8797f79626d57f4f7"
   requirements:
-    - "derive candidate-native expectations from the frozen steelman packets rather than from post hoc outcome evidence"
-    - "for each candidate state freeze expected evidence, compatible but nondiscriminating evidence, weakening evidence, and contradiction conditions where possible"
-    - "cross-check against operative A11 states/direction rules, A6 routes, and A8 backgrounds without changing them"
-    - "do not inspect outcome-relevant evidence or source-acquisition results"
-    - "do not issue proposition dispositions, MAKEABLE findings, candidate adequacy, ranking, or truth-warrant conclusions"
-    - "do not authorize G1"
+    - "human owner explicitly authorizes G1 evidence acquisition for TFP-STUDY-3-CONTINGENCY under Protocol 0.1.7 and the frozen G0 architecture"
+    - "until authorization, do not execute A9 searches or inspect outcome-relevant sources"
+    - "until authorization, do not run adverse-source probes, issue G1 coverage certifications, MAKEABLE findings, proposition dispositions, candidate adequacy/ranking, or any theological outcome"
+    - "after authorization, freeze and ledger the human G1 authorization acceptance before the first outcome-relevant evidence exposure"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
