@@ -1,0 +1,40 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+base_ledger_chain:
+  ledger_0_1_5_blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+  append_28_29_blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+prior_next_sequence: 30
+inherited_entries_rewritten: false
+
+append:
+  - sequence: 30
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_FRESH_SESSION"
+    exposure_class: "REVIEWER_F_AUTHORIZED_C4_PACKET_EXPOSURE"
+    source_artifacts:
+      - "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_INPUT_FREEZE_0_1_0.yaml blob 1c4f3ac6d223820e202e7804692883611ad1d70f"
+      - "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_PROMPT_0_1_0.md blob b12aaf77b8640695f7766d4cdce14685ad5aa7ce"
+    amendment_surface: "C4 candidate-universe amendment direction"
+    outcome_relevant_evidence: false
+    order_note: "After Reviewer F assignment acceptance and before Reviewer F report freeze."
+
+  - sequence: 31
+    repository_commit: "61f8dae49340a98c35466a73a4c482fd9e11619b"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+    artifact_blob_sha: "ab994925a1d8e99f7085d4e449c06f625f7c28e2"
+    exposure_class: "REVIEWER_F_C4_DIRECTION_REVIEW_RESULT_FREEZE"
+    result_status: "C4_DIRECTION_REVIEW_PASS"
+    outcome_relevant_evidence: false
+
+  - sequence: 32
+    repository_commit: "7581ebba084577490f6bd5730d2737f02e579401"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml"
+    artifact_blob_sha: "b208bede63e5b948edc8854ad59ec5b68bb0e446"
+    exposure_class: "PROGRAM_LEAD_INDEPENDENT_C4_REPLAY_AND_DISPOSITION"
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED"
+    outcome_relevant_evidence: false
+
+next_sequence: 33
+outcome_relevant_evidence_exposure_started: false
