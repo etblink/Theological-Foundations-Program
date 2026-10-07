@@ -1,0 +1,82 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__G1_G2_G3_DELTA_FROZEN"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_284_285_blob_sha: "787ff22820c3f4d19a7d5d0b203a19f0761c2720"
+  prior_next_sequence: 286
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 286
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_CONTINUING_LINEAGE -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Reviewer E G1 source-class reconciliation executed in the same authorized Reviewer-E conversation using input blob 5e35da196b34896c6f7d5ca8c42b707e97799493 and prompt blob b2baf8bf56a6cbcb6357203bc64ae900e201407f; complete report returned with SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED."
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_RESULT_EXPOSURE"
+    amendment_surfaces: ["A9 source universe","Reviewer E coverage-review readiness","MAKEABLE-review readiness","G1-G3 source followup","E3 blind-probe yield accounting","A8 contamination controls"]
+    outcome_relevant_evidence: true
+    order_note: "Occurred after sequence 285 prompt freeze and before the Program Lead's targeted G1-G3 public-source searches and before report freeze commit a44e4fb18f6abf042b260ef4c8d370b90f5da8aa."
+
+  - sequence: 287
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Targeted public scholarly searches and source openings for Reviewer-E gaps G1-G3: Thomasson modal normativism plus Kment and Donaldson/Wang replies; Koons-Pruss skeptical-defeat PSR route plus Pruss 2006 ch.18; Maitzen 2012/2013 and Grünbaum 2004 global-deflation/pseudo-question routes. Also independently verified Kenneth L. Pearce authorship."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_REVIEWER_E_G1_G2_G3_TARGETED_DELTA_EXPOSURE"
+    amendment_surfaces: ["MD-N1","MD-N2","MD-N3","MD-N4","D11-01","BR-N2","BR-N3","BR-N4","D11-05","GD-N2","GD-N3","D11-04","A9 source universe","coverage-review readiness"]
+    outcome_relevant_evidence: true
+    search_snippets_evidential_support: false
+    order_note: "Occurred after sequence 286 Reviewer-E reconciliation-result exposure and before the Reviewer-E report was frozen at sequence 288. Exact individual web-search/opening times are not reconstructed."
+
+  - sequence: 288
+    repository_commit: "a44e4fb18f6abf042b260ef4c8d370b90f5da8aa"
+    timestamp_utc: "2026-10-07T16:22:39Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_CONTINUING_LINEAGE -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md blob 729dd61ff0d0870b3540371e4588b1ca3ada2436"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_REPORT_FREEZE"
+    amendment_surfaces: ["A9 source universe","coverage-review readiness","MAKEABLE-review readiness","G1-G3 targeted followup","E3 blind-probe yield accounting"]
+    outcome_relevant_evidence: true
+    result_status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+
+  - sequence: 289
+    repository_commit: "57adbc5183c84cd44ce8f881cff6989f4e74d8de"
+    timestamp_utc: "2026-10-07T16:23:46Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION_0_1_0.yaml blob 12bc496bfb7ad32dce85bfd4862b5755c9500ba1"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_PROGRAM_LEAD_REPLAY"
+    amendment_surfaces: ["A9 source universe","coverage-review readiness","G1-G3 targeted followup","E3 blind-probe yield accounting","F1 contamination controls"]
+    outcome_relevant_evidence: true
+    result_status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__INDEPENDENTLY_CONFIRMED__G1_G2_G3_DELTA_AUTHORIZED"
+
+  - sequence: 290
+    repository_commit: "cd02b08ce3c1ccb6dedd15ddb0a620617f85ad61"
+    timestamp_utc: "2026-10-07T16:24:26Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_SOURCE_CLASS_RECONCILIATION_ERRATA_0_1_0.yaml blob d588c5baf552e18954b16c5c28846cc3a0cbdfe0"
+    exposure_class: "G1_SOURCE_CLASS_RECONCILIATION_ERRATA_FREEZE"
+    amendment_surfaces: ["source identity provenance","E3 blind-probe yield accounting","SC2 historical S1-S5 reconciliation"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN__APPEND_ONLY_HISTORICAL_CORRECTION__NO_SUBSTANTIVE_OUTCOME_CHANGE"
+
+  - sequence: 291
+    repository_commit: "8be5123ecf738c4ab7abe3cd12a4e0dc66b152dd"
+    timestamp_utc: "2026-10-07T16:25:34Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_TARGETED_DELTA_FOLLOWUP_0_1_0.yaml blob 0a8aef1968370f195256fda53d3c201900b25cc3"
+    exposure_class: "G1_REVIEWER_E_G1_G2_G3_TARGETED_DELTA_FOLLOWUP_FREEZE"
+    amendment_surfaces: ["MD-N1","MD-N2","MD-N3","MD-N4","D11-01","BR-N2","BR-N3","BR-N4","D11-05","GD-N2","GD-N3","D11-04","A9 source universe","coverage-review readiness"]
+    outcome_relevant_evidence: true
+    result_status: "G1_G2_G3_TARGETED_DELTA_FROZEN__READY_FOR_REVIEWER_E_DELTA_RECONCILIATION__COVERAGE_UNCERTIFIED"
+
+next_sequence: 292
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+source_class_reconciliation_status: "FOLLOWUP_REQUIRED"
+G1_G2_G3_delta_followup_complete_for_reconciliation: true
+coverage_certified: false
+MAKEABLE_certified: false
+A8_0_1_2_operational: true
