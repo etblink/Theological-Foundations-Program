@@ -1,0 +1,230 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY"
+status: "FROZEN_INITIAL__PENDING_REVIEWER_B"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+inputs:
+  candidate_universe_freeze_blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  B3_steelman_packet_set_freeze_blob_sha: "edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+  outcome_relevant_evidence_used: false
+
+typing_controls:
+  allowed_types:
+    - "textual"
+    - "historical"
+    - "archaeological/material"
+    - "linguistic"
+    - "interpretive"
+    - "philosophical"
+    - "metaphysical"
+    - "doctrinal"
+    - "empirical"
+    - "experiential/testimonial"
+    - "existential/practical"
+    - "psychological/sociological explanatory"
+    - "normative/moral"
+    - "revelation"
+    - "authority/canon"
+    - "faith commitment"
+    - "miracle/anomalous-event"
+    - "prophecy"
+  trigger_tags_present: false
+  note: "No frozen Study-3 candidate packet currently contains a truth-critical miracle/anomalous-event, revelation, or prophecy claim."
+  worldview_commitment_public_warrant_rule_applies_symmetrically: true
+
+classification_controls:
+  NECESSARY_FOR_CANDIDATE_rule: "If false, the strongest frozen candidate would cease to be that candidate, become internally inadequate, or lose a truth-claim required for this study."
+  candidate_specific_or_shared_floor_status: "INITIAL__PENDING_REVIEWER_B"
+  coverage_complete: false
+  reason_coverage_not_complete: "CRITICAL comparator/discriminator IDs do not yet exist; Reviewer C discriminator-tier work must occur before final A6 certification."
+  G1_authorized: false
+
+candidates:
+  C-BRUTE:
+    packet_blob_sha: "0888f048117afed26c95cb9b6b01c177d406bfb2"
+    necessary_claims:
+      - { id: "BR-N1", claim: "Relevant contingent reality obtains.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "BR-N2", claim: "At least one ultimate contingent fact, totality, or permitted law-governed stopping structure lacks a deeper truth-relevant explanation.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "BR-N3", claim: "The lack of deeper explanation is ontic rather than merely current ignorance.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "BR-S1", claim: "An unrestricted PSR-style demand is not automatically entitled to govern the ultimate stopping fact.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "BR-N1", to: "BR-N2", relation: "scope-precondition", status: "necessary" }
+      - { from: "BR-N2", to: "BR-N3", relation: "brutality-must-be-ontic", status: "necessary" }
+
+  C-REGRESS:
+    packet_blob_sha: "8790ba1007037a632a42fbacf723894424b448b6"
+    necessary_claims:
+      - { id: "RG-N1", claim: "Relevant contingent reality obtains.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "RG-N2", claim: "Every relevant contingent explanandum is explained by further contingent reality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "RG-N3", claim: "The explanatory dependence chain does not terminate.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "RG-N4", claim: "The regress is not itself reclassified as one brute totality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "RG-S1", claim: "Explanatory adequacy need not require a necessary terminus.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "RG-N1", to: "RG-N2", relation: "scope-precondition", status: "necessary" }
+      - { from: "RG-N2", to: "RG-N3", relation: "nontermination-structure", status: "necessary" }
+      - { from: "RG-N3", to: "RG-N4", relation: "anti-collapse-to-brute", status: "necessary" }
+
+  C-HOLISTIC:
+    packet_blob_sha: "5128dfb29fbbf88eb098e971aec64746ec6f0065"
+    necessary_claims:
+      - { id: "HO-N1", claim: "Relevant contingent reality obtains.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "HO-N2", claim: "Explanation or grounding need not be well-founded in a terminal base.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "HO-N3", claim: "A mutual, structural, cyclic, or otherwise non-reflexive non-well-founded dependence structure performs genuine explanatory work.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "HO-N4", claim: "No single contingent item or totality explains itself in the family-defining explanatory relation.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "HO-S1", claim: "The explanatory network is not merely an unexplained brute totality.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "HO-N2", to: "HO-N3", relation: "licenses-non-well-founded-structure", status: "necessary" }
+      - { from: "HO-N3", to: "HO-N4", relation: "boundary-vs-self-explanation", status: "necessary" }
+
+  C-SELF-EXPLANATORY:
+    packet_blob_sha: "7b6ffebd9a2a5b625137b928650dbc0ef824c143"
+    necessary_claims:
+      - { id: "SE-N1", claim: "The ultimate stopping item or totality is genuinely contingent.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "SE-N2", claim: "A genuine item-reflexive explanatory relation obtains.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "SE-N3", claim: "The reflexive relation is not equivalent to brute non-explanation.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "SE-N4", claim: "Self-explanation does not by itself make the stopping item metaphysically necessary.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "SE-S1", claim: "No distinct necessary ground is required if the reflexive explanation succeeds.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "SE-N1", to: "SE-N2", relation: "candidate-stopping-item", status: "necessary" }
+      - { from: "SE-N2", to: "SE-N3", relation: "anti-vacuity", status: "necessary" }
+      - { from: "SE-N2", to: "SE-N4", relation: "preserves-contingency", status: "necessary" }
+
+  C-GLOBAL-DEFLATION:
+    packet_blob_sha: "32807841c6805b9d6c8440895457118f10f842a1"
+    necessary_claims:
+      - { id: "GD-N1", claim: "Relevant local or domain contingency can be genuine.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "GD-N2", claim: "Local explanatory demands do not automatically aggregate into a distinct totality-level explanatory demand.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "GD-N3", claim: "Absence of a global ground is not by itself an explanatory defect.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "GD-S1", claim: "Appropriate local/domain explanations may exhaust the legitimate explanatory task.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "GD-N1", to: "GD-N2", relation: "retains-contingency-while-deflating-global-demand", status: "necessary" }
+      - { from: "GD-N2", to: "GD-N3", relation: "global-demand-consequence", status: "necessary" }
+
+  C-MODAL-DISSOLUTION:
+    packet_blob_sha: "54dbb7733a164899b0ec575ecd673dc17a3b26d6"
+    necessary_claims:
+      - { id: "MD-N1", claim: "The Study-3 working question relies on at least one central metaphysical-contingency presupposition.", types: ["philosophical","metaphysical","interpretive"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "MD-N2", claim: "That contingency presupposition is not truth-apt or is inapplicable under the correct modal framework.", types: ["philosophical","metaphysical","linguistic"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "MD-N3", claim: "This modal diagnosis is substantive rather than epistemic abstention.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "MD-N4", claim: "The family need not assert that total reality is metaphysically necessary.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "MD-S1", claim: "Pure global explanatory-demand deflation with ordinary contingency belongs outside this family.", types: ["philosophical","interpretive"] }
+    dependencies:
+      - { from: "MD-N1", to: "MD-N2", relation: "target-presupposition", status: "necessary" }
+      - { from: "MD-N2", to: "MD-N3", relation: "ontic-or-semantic-not-epistemic", status: "necessary" }
+
+  C-INDETERMINATE-ULTIMACY:
+    packet_blob_sha: "99b5f62cd33a190c3e2ec081f39de9033d1c3c37"
+    necessary_claims:
+      - { id: "IU-N1", claim: "The ultimacy question is truth-apt.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IU-N2", claim: "There is no unique determinate metaphysical answer to the relevant ultimacy structure.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IU-N3", claim: "The indeterminacy is worldly/ontic rather than merely linguistic or epistemic.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IU-N4", claim: "The candidate is not equivalent to Protocol B6 UNDERDETERMINED or investigator abstention.", types: ["philosophical","interpretive"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "IU-S1", claim: "A coherent logic/metaphysics can represent determinate claims about where indeterminacy obtains.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "IU-N1", to: "IU-N2", relation: "truth-apt-question-with-indeterminate-answer", status: "necessary" }
+      - { from: "IU-N2", to: "IU-N3", relation: "ontic-status", status: "necessary" }
+      - { from: "IU-N3", to: "IU-N4", relation: "boundary-vs-study-underdetermination", status: "necessary" }
+
+  C-NECESSITARIAN:
+    packet_blob_sha: "0b8a1ac7d79077256a98a188844c97689c52056c"
+    necessary_claims:
+      - { id: "NE-N1", claim: "The relevant total reality exists metaphysically necessarily.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "NE-N2", claim: "There is no metaphysically possible total alternative in which that totality fails to obtain.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "NE-N3", claim: "Apparent internal contingency is compatible with the metaphysical necessity of the total structure.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "NE-S1", claim: "No external selector or ground is required to explain why this totality rather than another obtains.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "NE-N1", to: "NE-N2", relation: "modal-equivalence", status: "necessary" }
+      - { from: "NE-N1", to: "NE-N3", relation: "reinterprets-apparent-contingency", status: "necessary" }
+
+  C-INDEXICAL-PLURALITY:
+    packet_blob_sha: "5cb7058b6903d38579fd5ae8dd26a35795c4f75b"
+    necessary_claims:
+      - { id: "IP-N1", claim: "This locus/world can be genuinely contingent at the indexical level.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IP-N2", claim: "A broader plurality of loci or possibilities forms the relevant stopping structure.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IP-N3", claim: "No external selector is needed to make this locus uniquely actual.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IP-N4", claim: "Actuality or its analogue is indexical rather than a metaphysically privileged selection relation.", types: ["philosophical","metaphysical","linguistic"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IP-N5", claim: "The plurality is not itself a further contingent remainder requiring an external ground.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary: []
+    dependencies:
+      - { from: "IP-N2", to: "IP-N3", relation: "plurality-removes-selector", status: "necessary" }
+      - { from: "IP-N4", to: "IP-N3", relation: "indexical-actuality", status: "necessary" }
+      - { from: "IP-N2", to: "IP-N5", relation: "stopping-structure", status: "necessary" }
+
+  C-NEC-IMPERSONAL-CONCRETE:
+    packet_blob_sha: "1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5"
+    necessary_claims:
+      - { id: "IC-N1", claim: "At least one metaphysically necessary concrete foundation exists.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IC-N2", claim: "The foundation stands in the required truth-relevant explanatory relation to contingent reality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IC-N3", claim: "The foundation is non-agentive in the explanatory role at issue.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "IC-N4", claim: "Its necessity is metaphysical rather than merely nomological necessity inside a contingent setup.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "IC-S1", claim: "The ultimate explanatory work need not be performed by an abstract/non-concrete principle.", types: ["philosophical","metaphysical"] }
+    dependencies:
+      - { from: "IC-N1", to: "IC-N2", relation: "foundation-must-explain", status: "necessary" }
+      - { from: "IC-N2", to: "IC-N3", relation: "family-nonagentive-boundary", status: "necessary" }
+
+  C-NEC-AGENTIVE:
+    packet_blob_sha: "46c4333f379ac9f394eddcd9ec52dc0fb56da113"
+    necessary_claims:
+      - { id: "AG-N1", claim: "A metaphysically necessary foundation exists.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AG-N2", claim: "Intentional agency or mind-like purposive capacity is real in that foundation.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AG-N3", claim: "Intentional agency is explanatorily operative with respect to contingent reality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AG-N4", claim: "The explanatory relation can yield genuinely contingent reality without making the selected outcome metaphysically necessary.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "AG-S1", claim: "Perfect goodness, omniscience, omnipotence, providence, worship-worthiness, uniqueness, and religious identity are not built into this candidate.", types: ["philosophical","doctrinal","interpretive"] }
+    dependencies:
+      - { from: "AG-N1", to: "AG-N2", relation: "necessary-agentive-foundation", status: "necessary" }
+      - { from: "AG-N2", to: "AG-N3", relation: "agency-must-do-explanatory-work", status: "necessary" }
+      - { from: "AG-N3", to: "AG-N4", relation: "contingent-effect-without-modal-collapse", status: "necessary" }
+
+  C-NEC-IMPERSONAL-PRINCIPLE:
+    packet_blob_sha: "12108b38091a9ecacdff8ab27222e733175ce68c"
+    necessary_claims:
+      - { id: "PR-N1", claim: "A relevant metaphysically necessary non-agentive principle, structure, law, modal constraint, or comparable non-concrete ground exists or obtains.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "PR-N2", claim: "The principle/structure is not merely a representation or description of contingent reality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "PR-N3", claim: "It has genuine explanatory, grounding, constitutive, or constraining force with respect to contingent reality.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "PR-N4", claim: "Intentional agency is not required for the ultimate explanatory role.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "PR-N5", claim: "Its necessity is metaphysical rather than merely the consequence of contingent physical laws.", types: ["metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary: []
+    dependencies:
+      - { from: "PR-N1", to: "PR-N3", relation: "principle-must-have-explanatory-force", status: "necessary" }
+      - { from: "PR-N2", to: "PR-N3", relation: "anti-redescription", status: "necessary" }
+      - { from: "PR-N3", to: "PR-N4", relation: "nonagentive-boundary", status: "necessary" }
+
+  C-AXIARCHIC:
+    packet_blob_sha: "ee3e8e1ee24671df264da1985ae433989c037200"
+    necessary_claims:
+      - { id: "AX-N1", claim: "A necessary objective evaluative or optimality truth/principle exists or obtains.", types: ["philosophical","metaphysical","normative/moral"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AX-N2", claim: "Value or evaluative requiredness has genuine explanatory force with respect to existence or actuality.", types: ["philosophical","metaphysical","normative/moral"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AX-N3", claim: "The explanatory work is non-agentive.", types: ["philosophical","metaphysical"], status: "NECESSARY_FOR_CANDIDATE" }
+      - { id: "AX-N4", claim: "Evaluative requiredness is not merely a reason that an independently existing agent happens to act on.", types: ["philosophical","metaphysical","normative/moral"], status: "NECESSARY_FOR_CANDIDATE" }
+    supporting_nonnecessary:
+      - { id: "AX-S1", claim: "Personhood, agency, perfect goodness of a person, and religious identity do not follow from axiarchic requiredness alone.", types: ["philosophical","doctrinal","interpretive"] }
+    dependencies:
+      - { from: "AX-N1", to: "AX-N2", relation: "value-must-do-explanatory-work", status: "necessary" }
+      - { from: "AX-N2", to: "AX-N3", relation: "nonagentive-explanatory-mode", status: "necessary" }
+      - { from: "AX-N3", to: "AX-N4", relation: "boundary-vs-agentive-foundation", status: "necessary" }
+
+shared_floor_initial_assessment:
+  status: "NONE_FROZEN"
+  rationale:
+    - "Relevant contingent reality is not shared because C-MODAL-DISSOLUTION challenges a contingency presupposition and C-NECESSITARIAN denies a contingent total remainder."
+    - "A generic claim that there is 'some reality' is too weak to be truth-critical for the Study-3 comparison and is not promoted into the A6 map merely to manufacture a shared floor."
+
+coverage_intent:
+  status: "SCAFFOLD_ONLY__NOT_A6_CERTIFICATION"
+  policy:
+    - "Candidate-boundary/metaphysical-coherence propositions may receive NONCOMPARATIVE_CANDIDATE_SPECIFIC routes where pairwise comparison would distort the proposition."
+    - "Cross-candidate differences in ultimate explanatory structure are expected to require COMPARATIVE_ROUTE with at least one later CRITICAL discriminator."
+    - "No COMPARATIVE_ROUTE is valid until Reviewer C's discriminator tiering supplies a CRITICAL discriminator."
+    - "No proposition is assigned NONCOMPARATIVE_SHARED_FLOOR at this stage."
