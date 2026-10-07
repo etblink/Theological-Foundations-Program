@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_NEXT__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_DISCRIMINATOR_CONSTRUCTION_NEXT__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "2b2e7d454c14b3e71c2d84bb6ac4b0403cafb2e6"
+  research_branch_head: "67b6ddf0c0a8252920d1a82425ab9574f59814e9"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -660,6 +660,17 @@ current_scope:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_172_0_1_0.yaml"
       blob_sha: "963781de5db519769804c4d21eb87ca76dc1ca4e"
       next_sequence: 173
+  A10_required_lane_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+    status: "FROZEN_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+    lane_count: 8
+    necessary_proposition_primary_assignment_count: 62
+    all_necessary_propositions_have_exactly_one_primary_lane: true
+    ledger_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_173_0_1_0.yaml"
+      blob_sha: "6bdd1963ed1e5862ffeba040df27e798430ed723"
+      next_sequence: 174
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -895,7 +906,9 @@ current_scope:
     A9_source_plan_operational_acceptance_complete: true
     source_plan_passed: true
     source_plan_operational: true
-    A10_required_lanes_frozen: false
+    A10_required_lanes_frozen: true
+    A10_required_lane_count: 8
+    A10_necessary_propositions_primary_lane_complete: true
     discriminators_frozen: false
     insufficiency_threshold_frozen: false
     G0_complete: false
@@ -913,17 +926,18 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-A10-REQUIRED-LANES-CONSTRUCTION"
-  action: "construct_and_freeze_required_lane_register_with_competence_boundaries_before_A11_discriminator_construction"
+  id: "TFP-STUDY-3-A11-DISCRIMINATOR-CONSTRUCTION"
+  action: "construct_preregistered_CRITICAL_and_MATERIAL_discriminators_with_complete_direction_rules_then_freeze_for_Reviewer_C_tier_review"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 173
+  ledger_next_sequence: 174
+  required_lane_register_blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
   requirements:
-    - "use the frozen 13-candidate universe, operative A4/A5/A6 inventory 0.1.2, operative A8 background register/matrix 0.1.1, and operative A9 SOURCE_PLAN 0.1.1"
-    - "preregister every lane required for the Study-3 question and state each lane's competence boundary"
-    - "preserve necessary foundation != God; no agency, personhood, goodness, knowledge, power, providence, worship-worthiness, or religious identity without separate warrant"
-    - "do not acquire outcome-relevant evidence"
-    - "do not begin G1"
-    - "do not freeze A11 discriminator tiers or final A6 coverage until the required-lane architecture is frozen"
+    - "use A10 lane competence boundaries and the operative A4/A5/A6 inventory; do not organize discriminators by favored candidate"
+    - "for each CRITICAL or MATERIAL discriminator name the candidate pair or candidate-vs-rival relation, necessary propositions served, prediction/argument, relevant backgrounds, proposed priority, symmetric rationale, feasibility status, comparison-scoped coverage requirement, and complete DIRECTION_RULE"
+    - "ensure every COMPARATIVE_ROUTE necessary proposition ultimately has at least one CRITICAL discriminator before final A6 coverage certification"
+    - "preserve necessary foundation != God and prohibit stronger theological attribute importation"
+    - "Reviewer C performs independent tier/pair-symmetry/direction-rule review after Program Lead construction"
+    - "do not acquire outcome-relevant evidence, do not begin G1, and do not certify final A6 coverage yet"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
