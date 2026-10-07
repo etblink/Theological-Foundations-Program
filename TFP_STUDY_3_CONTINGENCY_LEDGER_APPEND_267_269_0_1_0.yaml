@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_POST_EVIDENCE_F1_A8_C4_PASS__LEDGER_INTEGRITY_REVIEW_REQUIRED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_265_266_blob_sha: "016abd59c064109f1689a25abd926aac9f9c0337"
+  prior_next_sequence: 267
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 267
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_CONTINUING_LINEAGE"
+    source_or_artifact: "Reviewer F post-evidence F1 A8 repair C4 direction review executed in the same authorized Reviewer-F conversation."
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_C4_REVIEW_RESULT_EXPOSURE"
+    outcome_relevant_evidence: true
+    result_status: "POST_EVIDENCE_FAVORABLE_OR_MIXED__C4_DIRECTION_REVIEW_PASS"
+    order_note: "Occurred after sequence 266 and before report freeze at sequence 268."
+
+  - sequence: 268
+    repository_commit: "376f4344cea2a16ba616c5dd17a601540b434bd5"
+    timestamp_utc: "2026-10-07T15:21:32Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_CONTINUING_LINEAGE -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md blob 99632908a7a9f49bf2ccfc5ac04bba3d201599ff"
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_C4_REPORT_FREEZE"
+    outcome_relevant_evidence: true
+    result_status: "C4_DIRECTION_REVIEW_PASS__POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+  - sequence: 269
+    repository_commit: "b3f6341eff83d0efbfaa0d2dfe6edf9bbcd2e8fc"
+    timestamp_utc: "2026-10-07T15:22:10Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob ff82e39939475ed62854dd1f8b98dbdbfd5257a8"
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_C4_PROGRAM_LEAD_REPLAY"
+    outcome_relevant_evidence: true
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__POST_EVIDENCE_FAVORABLE_OR_MIXED__LEDGER_INTEGRITY_REQUIRED"
+
+next_sequence: 270
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+coverage_certified: false
+MAKEABLE_certified: false
