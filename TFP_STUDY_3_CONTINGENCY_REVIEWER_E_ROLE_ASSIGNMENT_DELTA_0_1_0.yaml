@@ -1,0 +1,29 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_E_ROLE_ASSIGNMENT_DELTA"
+status: "ASSIGNED__G1_INDEPENDENT_REVIEW_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_E"
+  lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_FRESH_SESSION"
+  acceptance_path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+
+allowed_roles:
+  - "adverse_source_reviewer"
+  - "coverage_state_reviewer"
+  - "MAKEABLE_certifier"
+
+prohibited_roles:
+  - "source_plan_reviewer"
+  - "strict_auditor"
+  - "candidate_ranker"
+  - "proposition_disposition_author"
+
+sequencing:
+  first_task: "independent adverse-source review"
+  coverage_review_after_first_task: true
+  MAKEABLE_only_after_comparison_coverage_review: true
+
+G1_authorized: true
