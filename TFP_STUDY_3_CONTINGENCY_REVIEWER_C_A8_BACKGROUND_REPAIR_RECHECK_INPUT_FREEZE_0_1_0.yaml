@@ -1,0 +1,91 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_REPAIR_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_C"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that returned BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED"
+  role: "focused A8 repair rechecker"
+  blind_stage_already_complete: true
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "9b707667c3eb383dc087c7856c4c1d32db1afa62"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_REGISTER_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "54fe8be7cf001e63ae6680c74d60dc8ab415eeb6"
+  - path: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "060a424314ea4cd439817dff47070c14f58c2a44"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_117_122_0_1_0.yaml"
+    blob_sha: "c1158b2af9453b06e689bdb334eff8898d48ee86"
+  - description: "Protocol 0.1.7 A8/A8.1/A8.2/A8.3 and C4 only as needed to verify the repair boundaries"
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "source plan"
+  - "discriminator proposals or tiering"
+  - "candidate ranking or truth/plausibility adjudication"
+  - "new blind elicitation"
+  - "past-chat or memory retrieval for Study-3 substantive material"
+
+required_rechecks:
+  - id: "R1_MODAL_SPLIT"
+    verify: "BG-MODALITY-ACTUALITY is replaced by distinct BG-MODAL-STATUS and BG-ACTUALITY-PRIVILEGE with no candidate double-counting."
+  - id: "R2_TOTALITY_VARIANT"
+    verify: "TOT-NO-DETERMINATE-TOTALITY is present and semantic defect is excluded from the totality dimension."
+  - id: "R3_PSR_LOCAL"
+    verify: "PSR-LOCAL-ONLY is distinct from PSR-RESTRICTED."
+  - id: "R4_DEPENDENCE_SPLIT"
+    verify: "Infinite-regress-complete and holistic-nonreflexive-complete are split, with relation-specific viciousness recorded."
+  - id: "R5_NEW_DIMENSIONS"
+    verify: "BG-EXPLANATION-RELATION, BG-GROUND-CATEGORY, and BG-ONTOLOGY-ADMISSIBILITY are admitted with A8-compliant truth-critical roles."
+  - id: "R6_GATE_ONLY"
+    verify: "BG-TEMPORAL-ORIGIN-LINK and BG-MODAL-LOGIC are gate-only and excluded from full Cartesian sensitivity."
+  - id: "R7_AXI_ACTION"
+    verify: "AX-ACTION-ONLY is added without collapsing C-AXIARCHIC or C-NEC-AGENTIVE boundaries."
+  - id: "R8_EXCLUSIONS"
+    verify: "BG-D09 is excluded as protocol method; BG-D12 dissolution content is candidate-subsumed, with only appropriate modal-deflationary residue retained."
+  - id: "R9_INTERACTIONS"
+    verify: "Modal pairs are re-homed; the three reopened pairs and five required higher-order interactions are correctly represented."
+  - id: "R10_JOINT_SET"
+    verify: "The required compatible joint-combination set is frozen, the full Cartesian product is expressly excluded, and outside-set residue cannot be silently treated as covered."
+  - id: "R11_BOUNDARIES"
+    verify: "The four global-label exclusions and all candidate/background boundaries from the review are preserved."
+
+additional_quality_checks:
+  - "Verify the BG-EXPLANATION-RELATION internal-axis representation does not violate A8.2 or hide incompatible/mutually exclusive states."
+  - "Verify all 105 unordered pairs across 15 registered dimensions/gates are classified by explicit listed or default rules."
+  - "Verify gate treatment is sufficient under A8.3 and does not silently omit an outcome-changing compatible combination."
+  - "Verify no new background silently installs theism, naturalism, supernaturalism, skepticism, or a candidate answer."
+  - "Verify the repaired artifacts remain non-operative pending C4 direction and ledger-integrity controls."
+  - "Treat the Program Lead's correction of the stale GD-N3 recheck sentence as procedural metadata only; do not reopen Reviewer-B work."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "R1-R11 REPAIR RECHECK"
+    - "A8.2 GRANULARITY QUALITY CHECK"
+    - "A8.3 INTERACTION / JOINT-SET QUALITY CHECK"
+    - "CANDIDATE / BACKGROUND BOUNDARY CHECK"
+    - "AMENDMENT-CONTROL CHECK"
+    - "REQUIRED FURTHER REPAIRS"
+    - "BACKGROUND REGISTER REPAIR STATUS"
+  status_namespace:
+    - "BACKGROUND_REGISTER_REPAIR_PASS"
+    - "BACKGROUND_REGISTER_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  outcome_relevant_evidence_acquisition_started: false
+  C4_direction_review_complete: false
+  ledger_integrity_review_complete: false
+  repaired_background_artifacts_operational: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
