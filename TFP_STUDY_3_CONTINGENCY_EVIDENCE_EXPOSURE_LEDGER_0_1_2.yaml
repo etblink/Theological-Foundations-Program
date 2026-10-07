@@ -1,0 +1,76 @@
+schema_version: "0.1.2"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+continuation:
+  supersedes: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_1.yaml"
+  base_ledger_blob_sha: "a05bfafcde2fa57101a7c051dac8dd505e1cd2eb"
+  inherited_sequence_range: "1-8"
+  inherited_entries_rewritten: false
+  continuation_entries_begin: 9
+  note: "Sequences 1-8 remain immutable in the superseded ledger and are incorporated by reference rather than duplicated."
+
+ledger_policy:
+  append_only_sequence_entries: true
+  prior_sequence_entries_may_not_be_rewritten: true
+  custodian: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+  independent_ledger_integrity_reviewer_slot: "REVIEWER_G__UNASSIGNED_FRESH_SESSION_REQUIRED"
+  outcome_relevant_evidence_exposure_started: false
+
+entries:
+  - sequence: 9
+    repository_commit: "13eae931b566f898325619dcb1f7eaa575d2b7be"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml blob 42d4009513085fbb6ab77ddecddf0a49f26cbc93"
+    exposure_class: "G0_REVIEWER_A_ASSIGNMENT_ACCEPTANCE"
+    amendment_surfaces: ["A3 reviewer lineage control","A7/B2 candidate elicitation"]
+    outcome_relevant_evidence: false
+
+  - sequence: 10
+    repository_commit: "6657665768aa9786103989f1140bf4a2c8b1bdd7"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_FRESH_SESSION"
+    source_or_artifact: "Authorized G0 blind input 4a5402d75eeb21cc9f9379165c539868f379970e; scope ef6c2c3d84dfb561bc4566d3629905736ed88ba9; Protocol 0.1.7 B1-B7 0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    exposure_class: "G0_REVIEWER_A_AUTHORIZED_BLIND_INPUT_EXPOSURE"
+    amendment_surfaces: ["A1-A2 scope","A7 candidate universe","B1-B7 candidate procedure"]
+    outcome_relevant_evidence: false
+    disclosed_metadata_only_exposure: "branch-root filenames and blob SHAs; no Program-Lead seed content"
+
+  - sequence: 11
+    repository_commit: "6657665768aa9786103989f1140bf4a2c8b1bdd7"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_REPORT_0_1_0.md blob cdcf5d516e1df38c87947819723c6f5686c486b1"
+    exposure_class: "G0_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_RESULT_FREEZE"
+    amendment_surfaces: ["A7 candidate universe","B2 independent elicitation","B4 future exclusion review"]
+    outcome_relevant_evidence: false
+    result_status: "BLIND_CANDIDATE_ELICITATION_COMPLETE"
+
+  - sequence: 12
+    repository_commit: "6834cff900958c8509eabaaa698a21f44064c8ca"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml blob 3bfdc20247eb7beeb6e5b274c4aefde2f2e9ec2c"
+    exposure_class: "G0_ROLE_ASSIGNMENT_DELTA_FREEZE"
+    amendment_surfaces: ["A3 reviewer-role control"]
+    outcome_relevant_evidence: false
+
+integrity_state:
+  next_sequence: 13
+  rewrite_detected: false
+  last_independent_integrity_check: null
+  outcome_evidence_exposure_started: false
+
+G0_state:
+  human_authorization_received: true
+  blind_candidate_elicitation_ready: true
+  blind_candidate_elicitation_complete: true
+  candidate_universe_frozen: false
+  claim_typing_frozen: false
+  necessary_proposition_coverage_complete: false
+  background_register_frozen: false
+  source_plan_passed: false
+  discriminators_frozen: false
+  G0_complete: false
+  G1_authorized: false
