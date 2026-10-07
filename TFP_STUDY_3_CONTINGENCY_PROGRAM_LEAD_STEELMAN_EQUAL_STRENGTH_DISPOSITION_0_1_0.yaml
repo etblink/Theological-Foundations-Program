@@ -1,0 +1,33 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_STEELMAN_EQUAL_STRENGTH_DISPOSITION"
+status: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "edc8cf4ed7bd187495e766431d5911e6748fa9b8"
+  reviewer_status: "STEELMAN_EQUAL_STRENGTH_PASS"
+
+independent_replay:
+  packet_count_verified: 13
+  all_packet_blob_pins_match: true
+  all_required_B3_sections_present: true
+  material_boundary_failures_found: false
+  asymmetric_packet_weakness_found: false
+  source_overattribution_requiring_pause_found: false
+  outcome_relevant_evidence_used: false
+  candidate_ranking_performed: false
+  truth_adjudication_performed: false
+
+nonblocking_notes_preserved:
+  - "C-GLOBAL-DEFLATION uses a Hume-Edwards label whose conventional naming is looser than the objection content; content remains correct."
+  - "C-NEC-AGENTIVE has a bibliographically loose second O'Connor citation; source identity/family fit remains sufficient and no packet is materially weakened."
+
+B3_disposition:
+  equal_strength_requirement_satisfied: true
+  packets_qualified_for_downstream_G0_use: true
+  packet_repair_required: false
+  G0_complete: false
+  G1_authorized: false
