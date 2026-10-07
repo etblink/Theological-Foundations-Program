@@ -1,0 +1,50 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S4_BACKGROUND_SEARCH_STAGE_COMPLETION"
+status: "S4_BACKGROUND_SEARCH_STAGE_COMPLETE__52_OF_52_VARIANT_STATES_SUPPORT_AND_CHALLENGE_MAPPED__NO_BACKGROUND_DISPOSITIONS"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S4_BACKGROUND"
+
+inputs:
+  background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  batch_01:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_01_0_1_0.yaml"
+    blob_sha: "1d055deb72aacd6eb543139c2e62d569bbebe0bf"
+  batch_02:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_02_0_1_0.yaml"
+    blob_sha: "a734ea4249499240688815de95080361286b9034"
+
+mechanical_check:
+  registered_dimensions_and_gates: 15
+  registered_variant_or_gate_states: 52
+  states_present_in_support_challenge_matrices: 52
+  states_missing: []
+  states_missing_support_stratum: []
+  states_missing_challenge_stratum: []
+  ordinary_background_dimensions: 13
+  gate_only_dimensions: 2
+
+interpretive_controls:
+  support_stratum_means: "Serious literature/source route capable of supporting or motivating the variant as a live background."
+  challenge_stratum_means: "Serious literature/source route capable of denying, limiting, or motivating an incompatible live variant."
+  neither_means_truth: true
+  no_background_variant_installed_as_true: true
+  no_joint_background_result_issued: true
+  no_candidate_or_proposition_disposition_issued: true
+  coverage_certified: false
+  MAKEABLE_certified: false
+  G0_amendment_trigger_identified: false
+
+S4_completion:
+  S4_BACKGROUND_SEARCH_STAGE_COMPLETE: true
+  source_plan_requirement_every_live_background_variant_support_and_challenge_strata: "SATISFIED_AT_SEARCH_STAGE"
+  later_background_state_adjudication_required: true
+  later_joint_interaction_testing_required: true
+  Reviewer_E_coverage_review_still_required: true
+
+next_action:
+  stage: "S5_RECENCY"
+  rule: "Run a deliberate recent-literature supplement across candidate, discriminator, and background surfaces; record whether recent work introduces material new routes, objections, terminology, or reopen triggers."
