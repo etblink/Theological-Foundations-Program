@@ -1,0 +1,51 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_133_134_blob_sha: "cefe23410e558032f540621213a1bcb346719f42"
+  prior_next_sequence: 135
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 135
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer G A8 ledger-integrity review exposure: input blob 3389972971def39d60735bfee3785c43214ee26e, prompt blob 3495ae980e90961fdb7e81b8c0531a76d5a098eb, authorized ledger extension 97-132, fixed endpoint metadata, nine A8 identity-check artifacts, and repository-history metadata within the frozen scope."
+    exposure_class: "G0_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_EXPOSURE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A8 operational-use gate"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 134 and before sequence 136."
+    certification_target_member: false
+
+  - sequence: 136
+    repository_commit: "6a57bf0346770ba352bec48a17e72be9dcf978d3"
+    timestamp_utc: "2026-10-07T03:41:15Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md blob 65f7e1d4925b3220f61ae9ea714c29def1cdb505"
+    exposure_class: "G0_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A8 operational-use gate"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "A8_LEDGER_INTEGRITY_PASS"
+    certification_target_member: false
+
+  - sequence: 137
+    repository_commit: "bb4ee5b763ebb3d33f5c918a2ba595d64ba6cdff"
+    timestamp_utc: "2026-10-07T03:41:41Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml blob 30fcc1630c57c7bae35347649768d1b0360503c8"
+    exposure_class: "G0_PROGRAM_LEAD_A8_LEDGER_INTEGRITY_DISPOSITION"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A8 operational-use authorization"]
+    outcome_relevant_evidence: false
+    result_status: "A8_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A8_OPERATIONALIZATION_AUTHORIZED"
+    certification_target_member: false
+
+next_sequence: 138
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
