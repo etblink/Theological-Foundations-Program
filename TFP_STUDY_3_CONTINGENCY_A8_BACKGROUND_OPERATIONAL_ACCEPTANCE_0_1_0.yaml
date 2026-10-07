@@ -1,0 +1,55 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_BACKGROUND_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+operative_background_register:
+  path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+  blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  ordinary_dimension_count: 13
+  gate_only_dimension_count: 2
+
+operative_interaction_matrix:
+  path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+  blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  material_ordinary_pair_count: 15
+  higher_order_interaction_count: 5
+
+qualification_chain:
+  Reviewer_C_repair_status: "BACKGROUND_REGISTER_REPAIR_PASS"
+  Reviewer_F_C4_status: "C4_DIRECTION_REVIEW_PASS"
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_G_ledger_integrity_status: "A8_LEDGER_INTEGRITY_PASS"
+  Program_Lead_ledger_integrity_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "30fcc1630c57c7bae35347649768d1b0360503c8"
+
+ledger_state:
+  through_append: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_135_137_0_1_0.yaml"
+  blob_sha: "e42579bdc147d55827dce687cdbc87844bf706ac"
+  next_sequence_before_acceptance: 138
+  outcome_relevant_evidence_exposure_started: false
+
+operational_controls:
+  residue_rule_required: true
+  gate_return_controls_required: true
+  untested_joint_residue_may_not_be_treated_as_covered: true
+  favorable_combination_sampling_forbidden: true
+  candidate_background_boundaries_preserved: true
+  global_worldview_labels_not_installed_as_backgrounds: true
+
+nonblocking_integrity_notes:
+  null_commit_event_count_97_132: 6
+  optional_seq109_provider_model_annotation_deferred: true
+  optional_seq99_metadata_exposure_annotation_deferred: true
+
+downstream_status:
+  A8_complete: true
+  background_register_frozen: true
+  source_plan_passed: false
+  discriminators_frozen: false
+  necessary_proposition_coverage_complete: false
+  G0_complete: false
+  G1_authorized: false
