@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_240_blob_sha: "096bfdbf77fcb8def2ebf6fb8cbd3adf24afda46"
+  prior_next_sequence: 241
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 241
+    repository_commit: "d57740c23f775975a810fc109b05566a3e394b2f"
+    timestamp_utc: "2026-10-07T13:33:26Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S2_ADVERSE_ACQUISITION_BATCH_01_0_1_0.yaml blob dbc8a0d069d0978f05af03be5998eebe8e5ad74c"
+    exposure_class: "G1_S2_ADVERSE_SEARCH_STAGE_COMPLETION_FREEZE"
+    amendment_surfaces: ["adverse-source symmetry","candidate-specific adverse access","future Reviewer E adverse-source review"]
+    outcome_relevant_evidence: true
+    result_status: "S2_ADVERSE_SEARCH_STAGE_COMPLETE__SERIOUS_ADVERSE_STRATUM_FOUND_FOR_ALL_13__COVERAGE_UNCERTIFIED"
+
+next_sequence: 242
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
