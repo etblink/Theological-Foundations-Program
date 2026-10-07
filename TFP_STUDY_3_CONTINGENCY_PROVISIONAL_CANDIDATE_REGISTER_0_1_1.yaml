@@ -1,0 +1,200 @@
+schema_version: "0.1.1"
+supersedes: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROVISIONAL_CANDIDATE_REGISTER"
+status: "REPAIRED__PENDING_REVIEWER_A_FOCUSED_RECHECK"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+construction_inputs:
+  prior_register:
+    path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+    blob_sha: "4d3a5273bbfb3206bb1d9d9a34a5575b8b9069b9"
+  reviewer_A_completeness_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+    disposition: "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION_0_1_0.yaml"
+  outcome_relevant_evidence_used: false
+
+global_controls:
+  - "Candidate admission is symmetric under Protocol B1."
+  - "B6 outcomes such as UNDERDETERMINED and INSUFFICIENT_SIGNAL are adjudicative outcomes, not candidate frameworks."
+  - "Ontic indeterminacy is a substantive candidate claim and must not be conflated with epistemic UNDERDETERMINED."
+  - "Necessary foundation is not equivalent to God."
+  - "Agency, mentality, personhood, goodness, knowledge, power, providence, worship-worthiness, and religious identity require separate warrant."
+  - "Failure to warrant a necessary foundation does not establish naturalism."
+  - "Candidate order is taxonomic only and carries no rank."
+
+candidates:
+  - id: "C-BRUTE"
+    label: "Brute contingent reality"
+    formulation: "Relevant contingent reality ultimately obtains without a deeper truth-relevant explanation required or available."
+    necessary_commitments:
+      - "Relevant contingent reality obtains."
+      - "At least one ultimate contingent fact/totality has no deeper truth-relevant explanation required or available."
+      - "Brutality is not mere current ignorance."
+    admitted_subvariants:
+      - "nomological-but-not-metaphysically-necessary ultimacy where a law-governed stopping structure is itself contingent and no deeper explanation is required or available"
+    admission_basis: "Distinct from regress, holistic/self explanation, deflation, modal dissolution, ontic indeterminacy, and necessary-ground families."
+
+  - id: "C-REGRESS"
+    label: "Non-terminating contingent regress"
+    formulation: "Every relevant contingent explanandum is explained by further contingent reality in a non-terminating one-way dependence chain with no terminal brute fact or necessary ground."
+    necessary_commitments:
+      - "Relevant contingent reality obtains."
+      - "Explanatory dependence does not terminate."
+      - "The regress is not itself reclassified as one brute totality."
+      - "Explanatory adequacy does not require a necessary terminus."
+
+  - id: "C-HOLISTIC"
+    label: "Mutual, structural, or non-reflexive non-well-founded explanation"
+    formulation: "Relevant contingent reality is explained by a mutual, structural, holistic, or non-reflexive non-well-founded dependence structure without an external necessary ground and without any single item explaining itself."
+    necessary_commitments:
+      - "Relevant contingent reality obtains."
+      - "Explanation need not be asymmetrically well-founded."
+      - "The explanatory whole/structure is not merely a brute totality."
+      - "Item-reflexive self-explanation is not a necessary commitment of this family."
+    exclusion_from_family: "A single contingent item or totality standing in an explanatory relation to itself belongs to C-SELF-EXPLANATORY."
+    note: "Distinct from C-REGRESS because one-way nontermination and mutual/structural non-well-founded dependence differ structurally."
+
+  - id: "C-SELF-EXPLANATORY"
+    label: "Self-explanatory contingent reality"
+    formulation: "An ultimate contingent item or totality stands in a genuine non-vicious explanatory relation to itself, avoiding both brute termination and a distinct necessary foundation."
+    necessary_commitments:
+      - "The stopping item remains contingent."
+      - "A genuine item-reflexive explanatory relation obtains."
+      - "The reflexive relation is not equivalent to brute non-explanation."
+    distinction: "Unlike C-HOLISTIC, item-reflexive self-explanation is essential to this family."
+    collapse_condition: "If self-explanation is not a genuine explanatory relation, collapse into C-BRUTE."
+
+  - id: "C-GLOBAL-DEFLATION"
+    label: "Global-explanation deflationism"
+    formulation: "Genuine contingency may obtain, but no truth-bearing requirement forces local or domain explanations to aggregate into a further global explanation of contingent reality as a totality."
+    necessary_commitments:
+      - "Relevant local/domain contingency may be genuine."
+      - "A totality-level explanatory demand does not automatically follow from local contingency."
+      - "Absence of a global ground is not thereby a brute-fact defect."
+    admitted_subvariants:
+      - "local-explanation sufficiency without a further totality-level why-answer"
+      - "global existence-explanation deflation where the demand for any further totality-level existence explanation is denied while genuine contingency remains admitted"
+    distinction: "Unlike C-MODAL-DISSOLUTION, this family does not require denial of the truth-aptness or applicability of metaphysical contingency itself."
+
+  - id: "C-MODAL-DISSOLUTION"
+    label: "Modal contingency-presupposition dissolution"
+    formulation: "A central metaphysical-contingency presupposition of the working question is not truth-apt or not applicable under the candidate's admissible modal framework, without thereby asserting that the relevant totality is metaphysically necessary."
+    necessary_commitments:
+      - "At least one central contingency presupposition required by the working question is rejected or dissolved as truth-apt/applicable."
+      - "The position is a substantive truth-claim, not epistemic abstention."
+      - "The position does not merely deny a global explanatory demand while retaining ordinary metaphysical contingency."
+    distinction:
+      from_global_deflation: "Pure explanatory-demand deflation with genuine contingency belongs to C-GLOBAL-DEFLATION."
+      from_necessitarianism: "The family need not assert that total reality is metaphysically necessary."
+      from_indeterminate_ultimacy: "The family challenges a contingency presupposition rather than asserting an ontically indeterminate answer to an otherwise truth-apt ultimacy question."
+
+  - id: "C-INDETERMINATE-ULTIMACY"
+    label: "Ontically indeterminate ultimacy"
+    formulation: "There is no determinate fact of the matter whether the relevant ultimacy structure is brute, nonterminal, or necessary-grounded, even though the ultimacy question itself is truth-apt."
+    necessary_commitments:
+      - "The ultimacy question is truth-apt."
+      - "The relevant ultimacy structure is ontically indeterminate rather than merely unknown to investigators."
+      - "The position is not epistemic abstention."
+      - "The position is not the Protocol B6 outcome UNDERDETERMINED."
+    admission_basis: "Independently generated model differing on the necessary truth-bearing proposition that ultimacy lacks a determinate metaphysical answer."
+    B6_boundary: "A study may return UNDERDETERMINED because evidence cannot decide among determinate candidates; C-INDETERMINATE-ULTIMACY instead claims indeterminacy is how reality itself is."
+
+  - id: "C-NECESSITARIAN"
+    label: "Necessary total reality / necessitarian totality"
+    formulation: "The relevant total reality could not have failed to obtain; apparent contingency is internal, perspectival, derivative, or epistemic."
+    necessary_commitments:
+      - "The relevant totality is metaphysically necessary under the admitted modal framework."
+      - "No distinct contingent remainder requires an external ground."
+
+  - id: "C-INDEXICAL-PLURALITY"
+    label: "Indexical contingency in a necessary plurality"
+    formulation: "This locus/world may be contingent while a plurality of admissible possibilities or loci forms the stopping structure, with no external selector required."
+    necessary_commitments:
+      - "Contingency is genuine at the locus/indexical level."
+      - "The plurality is not itself a further contingent remainder requiring an external ground."
+      - "No external selector is part of the family."
+    distinction: "Does not assert that this locus is necessary and does not reduce by definition to a selecting necessary principle."
+
+  - id: "C-NEC-IMPERSONAL-CONCRETE"
+    label: "Necessary impersonal concrete foundation"
+    formulation: "At least one metaphysically necessary concrete but non-agentive reality, fact, substance, or process explains relevant contingent reality."
+    necessary_commitments:
+      - "A necessary concrete foundation exists."
+      - "It bears the required truth-relevant explanatory relation to contingent reality."
+      - "Intentional agency is not a property of the foundation doing the explanatory work."
+    cross_cutting_variants:
+      cardinality: ["single","plural","layered"]
+      relation: ["causal","grounding","constitutive","other explicitly specified relation"]
+
+  - id: "C-NEC-AGENTIVE"
+    label: "Necessary agentive foundation"
+    formulation: "A metaphysically necessary foundation with intentional agency or mind-like purposive capacity supplies the relevant explanation of contingent reality."
+    necessary_commitments:
+      - "A necessary foundation exists."
+      - "Intentional agency is real and explanatorily operative."
+      - "The agency can stand in the required truth-relevant explanatory relation."
+    explicitly_not_built_in:
+      - "perfect goodness"
+      - "omniscience"
+      - "omnipotence"
+      - "providence"
+      - "worship-worthiness"
+      - "identity with any religion's God"
+    cross_cutting_variants:
+      cardinality: ["single","plural","layered"]
+
+  - id: "C-NEC-IMPERSONAL-PRINCIPLE"
+    label: "Necessary impersonal principle, structure, law, or modal constraint"
+    formulation: "A metaphysically necessary non-agentive principle, structure, law, modal space, mathematical structure, or comparable non-concrete ground explains relevant contingent reality."
+    necessary_commitments:
+      - "A relevant necessary non-agentive principle/structure exists."
+      - "It has genuine explanatory or grounding force rather than merely describing contingent reality."
+      - "No intentional agency is required."
+    provisional_subvariants:
+      - "abstract/mathematical/structural"
+      - "law-like/metaphysical-principle"
+      - "modal-space/constraint"
+    split_rule: "Split a subvariant into a separate family before final G0 freeze only if a later pre-evidence review identifies a necessary truth-bearing commitment with materially different consequences."
+
+  - id: "C-AXIARCHIC"
+    label: "Non-agentive axiological or optimality requiredness"
+    formulation: "A necessary value, goodness, optimality, or related evaluative principle non-agentively requires or explains why relevant contingent reality obtains."
+    necessary_commitments:
+      - "A necessary evaluative/optimality truth or principle exists."
+      - "Evaluative requiredness itself performs explanatory work."
+      - "No agentive selector is built in."
+    boundary_control:
+      - "Axiarchic evaluative requiredness is not the perfect goodness of a personal agent."
+      - "This family does not by itself imply personhood, agency, God, or any religious identity."
+      - "This is not an independent moral argument for God."
+      - "If value is not explanatorily essential, subsume under C-NEC-IMPERSONAL-PRINCIPLE."
+
+cross_cutting_variants_not_standalone_families:
+  necessary_ground_cardinality:
+    values: ["single","plural","layered"]
+    rationale: "Cardinality cuts across concrete, principle, and agentive families and does not alone define a non-subsumed explanatory kind."
+  explanatory_relation:
+    values: ["causal","grounding","constitutive","nomological","reason-based","other explicitly specified relation"]
+    rule: "Remain subvariants unless a later pre-evidence packet shows that the relation changes a necessary family commitment."
+
+exclusion_record:
+  path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+
+repair_summary:
+  - "Narrowed C-HOLISTIC to exclude item-reflexive self-explanation."
+  - "Restricted C-MODAL-DISSOLUTION to modal contingency-presupposition failure."
+  - "Moved genuine-contingency explanatory-demand deflation under C-GLOBAL-DEFLATION."
+  - "Added C-INDETERMINATE-ULTIMACY with explicit B6 boundary."
+  - "Anchored contingent nomological ultimacy as a C-BRUTE subvariant."
+  - "Made the C-AXIARCHIC personal-perfect-goodness boundary explicit."
+  - "Preserved impersonal-principle variants without splitting."
+  - "Preserved plurality/layering as cross-cutting rather than a standalone family."
+
+candidate_count: 13
+candidate_universe_frozen: false
+Reviewer_A_focused_recheck_required: true
