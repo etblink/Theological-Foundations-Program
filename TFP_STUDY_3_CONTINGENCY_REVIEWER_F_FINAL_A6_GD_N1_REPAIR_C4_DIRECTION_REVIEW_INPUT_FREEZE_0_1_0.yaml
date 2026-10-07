@@ -1,0 +1,115 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+status: "FROZEN__FIXED_PRELAUNCH_ENDPOINT_SEQUENCE_214"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  required_lineage: "exact same xAI / Grok 4.7 Reviewer-F conversation that previously returned Study-3 C4_DIRECTION_REVIEW_PASS"
+  role: "independent amendment-direction reviewer"
+  prohibited_roles:
+    - "ledger-integrity reviewer"
+    - "strict independent auditor"
+    - "necessary-proposition coverage certifier"
+
+fixed_prelaunch_endpoint:
+  endpoint_sequence: 214
+  endpoint_commit: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+  endpoint_ledger_artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_211_214_0_1_0.yaml"
+  endpoint_ledger_blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7"
+  launch_files_after_endpoint_are_not_part_of_timing_target: true
+
+authorized_amendment_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml", blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce", use: "pre-repair map" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml", blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca", use: "repaired map" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "b70eed10eb3979fb2d7b6d40b61906b95f8f24c5", use: "bounded GD-N1 amendment scope and proposed pre-evidence class" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md", blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb", use: "original sole-defect finding" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "013dfdb9fac5385471272d6ab127459faf73a485", use: "independent GD-N1-only repair confirmation" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_REPORT_0_1_0.md", blob_sha: "609b31277a65f31f0c06d60964f3fb081b787a97", use: "content certification after repair" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml", blob_sha: "e3e2da7f637949f0ae10564717dfdd69209cec41", use: "Program Lead content-pass disposition and C4 handoff" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml", blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74", use: "nonblocking five-to-six wording erratum; no route-content change" }
+
+authorized_scope_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54", use: "GD-N1 exact proposition and dependency semantics" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml", blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903", use: "GD-N1 lane responsibility" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml", blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d", use: "admitted modal variants and gate" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml", blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907", use: "confirm D11-04 remains operative for GD-N2/GD-N3 and unchanged" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml", blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02", use: "confirm A11 remains operative" }
+
+authorized_chronology_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_200_202_0_1_0.yaml", blob_sha: "aed12e2a8c7c58c6492362f32b9d012df32c6cc0", sequences: [200,201,202] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_203_208_0_1_0.yaml", blob_sha: "22817c6f7a4020699e984f184d26024cd0ad1d73", sequences: [203,204,205,206,207,208] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_209_210_0_1_0.yaml", blob_sha: "ad7b6d28ba140da21e97184277a3c5106a9edf5e", sequences: [209,210] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_211_214_0_1_0.yaml", blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7", sequences: [211,212,213,214] }
+
+protocol_access:
+  - "Protocol 0.1.7 C4 only as needed for amendment direction/timing."
+  - "Protocol A6 only as needed to understand the frozen coverage-mode change already certified by Reviewer B."
+
+amendment_surface:
+  proposition_id: "GD-N1"
+  candidate: "C-GLOBAL-DEFLATION"
+  proposition: "Relevant local or domain contingency can be genuine."
+  old_mode: "COMPARATIVE_ROUTE"
+  old_comparison: "D11-04-GLOBAL-EXPLANATORY-DEMAND"
+  new_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+  new_route_summary: "Direct metaphysical modal-compatibility test under BG-MODAL-STATUS; requires an admissible metaphysical alternative while C-GLOBAL-DEFLATION's defining commitments remain intact; rejects conceivability/logical/nomic/epistemic substitutes; applies MOD-DEFLATIONARY gate where relevant."
+  unchanged:
+    - "GD-N1 candidate, proposition text, claim type, and A10-L1 lane"
+    - "all other 61 coverage entries"
+    - "A11 discriminator identities, tiers, feasibility statuses, and direction rules"
+    - "D11-04 linkage to GD-N2/GD-N3"
+  count_delta:
+    COMPARATIVE_ROUTE: { before: 57, after: 56 }
+    NONCOMPARATIVE_CANDIDATE_SPECIFIC: { before: 5, after: 6 }
+    NONCOMPARATIVE_SHARED_FLOOR: { before: 0, after: 0 }
+
+task:
+  - "Do not redo Reviewer B's A6 content certification; map 0.1.1 has already been certified NECESSARY_PROPOSITION_COVERAGE_COMPLETE at the architecture-content level."
+  - "Independently classify the GD-N1 coverage-mode amendment using ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Distinguish burden direction from truth direction: a route may become stricter, looser, or differently scoped without favoring the candidate's truth."
+  - "Assess whether removing D11-04 as GD-N1's comparison scope changes C-GLOBAL-DEFLATION's future burden, structural-adequacy eligibility, relative-ranking eligibility, truth-warrant eligibility, or evidence requirements."
+  - "Assess whether the direct route creates a lighter burden, a heavier burden, or an appropriately equivalent proposition-specific burden relative to analogous modal premises BR-N1/RG-N1/HO-N1/SE-N1."
+  - "Give explicit direction classifications for all 13 candidates, including NEUTRAL for candidates unaffected if warranted."
+  - "Assess future A6 architecture eligibility, candidate adequacy, relative ranking, truth-warrant eligibility, future evidence-coverage burden, MAKEABLE certification, and stronger-theological-attribute inference."
+  - "Independently classify amendment timing from the authorized chronology through sequence 214."
+  - "Treat timing as conditional on later Reviewer G ledger-integrity confirmation; do not certify ledger integrity."
+  - "Treat the five-to-six erratum as editorial only unless you independently find that it changes direction."
+
+direction_namespace:
+  - "ADVERSE"
+  - "FAVORABLE"
+  - "NEUTRAL"
+  - "MIXED_OR_UNCLEAR"
+
+amendment_class_namespace:
+  - "PRE_EVIDENCE_AMENDMENT"
+  - "POST_EVIDENCE_NONMATERIAL"
+  - "POST_EVIDENCE_ADVERSE_ONLY"
+  - "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "AMENDMENT TIMING CLASSIFICATION"
+    - "GD-N1 BURDEN / DIRECTION ANALYSIS"
+    - "DIRECTION BY CANDIDATE"
+    - "DIRECTION BY OUTCOME CONDITION"
+    - "SYMMETRY CHECK"
+    - "EDITORIAL ERRATUM CHECK"
+    - "REQUIRED CONTROLS OR REPAIRS"
+    - "C4 DIRECTION REVIEW STATUS"
+  status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  coverage_map_0_1_1_content_certified: true
+  coverage_map_0_1_1_operational: false
+  NECESSARY_PROPOSITION_COVERAGE_COMPLETE_content_level: true
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
