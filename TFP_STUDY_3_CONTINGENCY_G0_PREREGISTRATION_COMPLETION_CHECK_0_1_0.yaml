@@ -1,0 +1,183 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G0_PREREGISTRATION_COMPLETION_CHECK"
+status: "G0_PREREGISTRATION_COMPLETE__EFFECTIVE_AFTER_LEDGER_SEQUENCE_233__G1_HUMAN_AUTHORIZATION_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+governed_bundle_commit: "b9854f8521193c44e3ed50f5a8b1672572674ec5"
+
+human_authority:
+  G0_authorization:
+    path: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
+    authorized: "G0 architecture only"
+    expressly_withheld:
+      - "G1 evidence acquisition"
+      - "substantive evidence adjudication"
+      - "proposition dispositions"
+      - "candidate ranking"
+  G1_authorization_present: false
+  Program_Lead_may_self_authorize_G1: false
+
+A1_A17_check:
+  A1:
+    requirement: "exact truth question"
+    status: "PASS"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A1_A2_FINAL_QUESTION_SCOPE_FREEZE_0_1_0.yaml"
+    blob_sha: "b98782fe7fdc85d37e515823803e0cd2727c211c"
+    note: "Late formal finalization; exact question unchanged from the pre-evidence working scope."
+  A2:
+    requirement: "scope and downstream inference limits"
+    status: "PASS"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A1_A2_FINAL_QUESTION_SCOPE_FREEZE_0_1_0.yaml"
+    blob_sha: "b98782fe7fdc85d37e515823803e0cd2727c211c"
+  A3:
+    requirement: "role matrix / lineage separation"
+    status: "PASS"
+    artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+    blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+  A4:
+    requirement: "truth-critical claim typing"
+    status: "PASS__OPERATIVE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  A5:
+    requirement: "dependency / link map"
+    status: "PASS__OPERATIVE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  A6:
+    requirement: "necessary propositions and valid coverage map"
+    status: "PASS__OPERATIVE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "713b6f873784e9af765f2b4802f2aa220ae6b50d"
+    controlling_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+    proposition_count: 62
+    COMPARATIVE_ROUTE_count: 56
+    NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+    NONCOMPARATIVE_SHARED_FLOOR_count: 0
+  A7:
+    requirement: "candidate universe"
+    status: "PASS__FROZEN"
+    artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+    candidate_count: 13
+    steelman_set:
+      artifact: "TFP_STUDY_3_CONTINGENCY_B3_STEELMAN_PACKET_SET_FREEZE_0_1_0.yaml"
+      blob_sha: "edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+      equal_strength: "PASS"
+  A8:
+    requirement: "live backgrounds, granularity, interactions"
+    status: "PASS__OPERATIVE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696"
+    background_register_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    interaction_matrix_blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  A9:
+    requirement: "source/evidence acquisition plan + independent source-plan control"
+    status: "PASS__OPERATIVE_FOR_G1_WHEN_AUTHORIZED"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+    source_plan_blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+  A10:
+    requirement: "required lanes"
+    status: "PASS__FROZEN"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+    lane_count: 8
+  A11:
+    requirement: "CRITICAL/MATERIAL discriminators, direction rules, priority, feasibility"
+    status: "PASS__OPERATIVE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02"
+    discriminator_register_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+    discriminator_count: 14
+    CRITICAL_count: 14
+    all_FEASIBLE_WITHIN_SCOPE: true
+  A12:
+    requirement: "candidate structural/evidential status and ranking eligibility rules"
+    status: "PASS__PROTOCOL_RULES_FROZEN__APPLICATION_DEFERRED"
+    governing_source: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    governing_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    note: "A12 is a frozen protocol decision rule, not a pre-evidence candidate verdict. Candidate structural/evidential statuses are not issued here; later application requires the attained G1/G2 coverage/dispositions."
+  A13:
+    requirement: "expected / compatible-nondiscriminating / weakening / contradiction evidence"
+    status: "PASS__FROZEN_PRE_EVIDENCE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A13_EXPECTED_WEAKENING_EVIDENCE_REGISTER_0_1_0.yaml"
+    blob_sha: "2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6"
+    candidate_state_count: 13
+  A14:
+    requirement: "coverage target / underdetermination / insufficient signal / reopen_if"
+    status: "PASS__FROZEN_PRE_EVIDENCE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A14_STOP_REOPEN_CONDITIONS_0_1_0.yaml"
+    blob_sha: "77ea309239f8fb3f6ca5af5cc8478bff1587e382"
+    insufficiency_threshold_frozen: true
+  A15:
+    requirement: "standard G4 criteria plus question-specific risks"
+    status: "PASS__FROZEN_PRE_EVIDENCE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A15_AUDIT_CRITERIA_0_1_0.yaml"
+    blob_sha: "d0452f99db4c0007df84ed4f0f6b71b84b4d2216"
+    standard_topic_count: 17
+    study_specific_risk_count: 20
+  A16:
+    requirement: "shared proposition map if CLOSEST_TO_TRUTH retained"
+    status: "PASS__FROZEN_PRE_EVIDENCE__CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+    artifact: "TFP_STUDY_3_CONTINGENCY_A16_SHARED_PROPOSITION_MAP_0_1_0.yaml"
+    blob_sha: "88350ca94dbb08b0e5b04c6d3acdb514d890c9cd"
+    shared_dimension_count: 2
+    dimensions: ["D16-MODAL-PROFILE","D16-EXPLANATORY-COMPLETION"]
+    all_candidates_mapped_on_each: true
+    global_score_forbidden: true
+  A17:
+    requirement: "qualified protocol identity + append-only evidence-exposure ledger + custodian/integrity reviewer"
+    status: "PASS__ACTIVE"
+    protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    base_ledger:
+      artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
+      blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+    latest_pre_completion_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_232_0_1_0.yaml"
+      blob_sha: "7ee1b281355d0adfd49a384208234ddebc339cc6"
+      next_sequence: 233
+    ledger_integrity_reviewer: "REVIEWER_G"
+    prior_integrity_status: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+    outcome_relevant_evidence_exposure_started: false
+
+pre_evidence_independent_reviews:
+  candidate_universe: "PASS"
+  steelman_equal_strength: "PASS"
+  claim_typing_and_necessity: "PASS_AFTER_REPAIR"
+  background_register_and_interactions: "PASS_AFTER_REPAIR"
+  source_plan: "PASS_AFTER_REPAIR_AND_C4"
+  discriminator_tiering_and_direction_rule: "PASS_AFTER_REPAIR_AND_C4"
+  final_A6_coverage: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE_AFTER_GD_N1_REPAIR"
+  amendment_direction_controls: "PASS"
+  ledger_integrity_controls: "PASS_THROUGH_FINAL_A6"
+
+cold_start_findings:
+  late_A1_A2_finalization:
+    found: true
+    repaired_before_evidence: true
+    substantive_delta: false
+    artifact_blob_sha: "b98782fe7fdc85d37e515823803e0cd2727c211c"
+    note: "The blind-elicitation packet was explicitly working/not-final. The final freeze preserves the same question and materially same scope; G4 must retain this order note."
+  duplicate_STATE_coverage_key:
+    found: true
+    prospectively_corrected: true
+    frozen_Study_3_artifacts_rewritten: false
+  unresolved_blocking_G0_defect: false
+
+G0_exit:
+  all_A1_A17_preregistration_obligations_satisfied: true
+  all_known_G0_artifacts_through_A1_A2_finalization_ledgered: true
+  outcome_relevant_evidence_acquisition_started: false
+  source_acquisition_started: false
+  G0_complete: true
+  G1_authorized: false
+  required_next_authority: "HUMAN_OWNER_EXPLICIT_G1_EVIDENCE_ACQUISITION_AUTHORIZATION"
+  instruction: "Do not execute A9 searches, open outcome-relevant sources, run adverse-source probes, certify G1 coverage states, or issue proposition dispositions until that authorization is received."
+
+self_provenance:
+  planned_ledger_sequence: 233
+  effectivity_rule: "This completion determination becomes canonical G0 state only after this artifact is append-only ledgered at sequence 233 and STATE is updated mechanically."
