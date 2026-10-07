@@ -1,0 +1,63 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+status: "A8_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A8_OPERATIONALIZATION_AUTHORIZED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "65f7e1d4925b3220f61ae9ea714c29def1cdb505"
+  reviewer_status: "A8_LEDGER_INTEGRITY_PASS"
+
+independent_replay:
+  certification_baseline_sequence: 96
+  certification_endpoint_sequence: 132
+  certification_endpoint_commit: "4e0e83e30db156912196dc09d0bdb06f144b781f"
+  sequence_97_132_contiguous: true
+  append_count: 10
+  append_base_blob_links_all_match: true
+  prior_next_sequence_links_all_match: true
+  commit_bearing_entry_count: 30
+  commit_blob_timestamp_added_status_single_parent_all_match: true
+  fixed_endpoint_commit_count_from_prior_endpoint: 40
+  expected_event_commit_count: 30
+  expected_append_container_commit_count: 10
+  unledgered_Study_3_artifact_commit_found: false
+  reachable_rewrite_found: false
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+  Reviewer_F_PRE_EVIDENCE_AMENDMENT_chronology_survives: true
+
+nonblocking_report_correction:
+  id: "NULL_COMMIT_EVENT_COUNT_TYPO"
+  reviewer_report_table_count: 6
+  reviewer_report_later_phrase_count: 10
+  independently_verified_count: 6
+  verified_sequences: [99, 109, 112, 117, 125, 130]
+  all_required_A17_fields_present: true
+  all_order_anchors_bounded: true
+  effect_on_integrity_disposition: "NONE"
+
+nonblocking_carry_forwards:
+  - id: "SEQ109_LINEAGE_ANNOTATION_OPTIONAL"
+    note: "A later append may annotate sequence 109 with xAI / Grok 4.7, already traceable from sequence 112 onward."
+    blocks_A8_operationalization: false
+  - id: "SEQ99_METADATA_EXPOSURE_ANNOTATION_OPTIONAL"
+    note: "A later append may note Reviewer G's disclosed metadata-only visibility of three post-endpoint launch commit subjects/filenames."
+    blocks_A8_operationalization: false
+  - id: "PREPUBLICATION_REWRITE_NOT_PROVABLE_FROM_GIT"
+    note: "Git history cannot exclude an unpublished rewrite; no reachable rewrite exists."
+    blocks_A8_operationalization: false
+
+operational_disposition:
+  A8_content_repair_pass: true
+  A8_C4_direction_pass: true
+  A8_ledger_integrity_pass: true
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  background_register_0_1_1_may_be_made_operational: true
+  background_interaction_matrix_0_1_1_may_be_made_operational: true
+  residue_and_gate_return_controls_must_remain_operational: true
+  A6_necessary_proposition_coverage_complete: false
+  discriminator_authoring_authorized_after_A9_source_plan_sequence: true
+  G1_authorized: false
