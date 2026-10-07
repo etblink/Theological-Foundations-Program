@@ -1,0 +1,44 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_HUMAN_AUTHORIZATION_ACCEPTANCE"
+status: "G1_EVIDENCE_ACQUISITION_AUTHORIZED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+human_owner_authorization:
+  exact_text: "I authorize G1 evidence acquisition for TFP-STUDY-3-CONTINGENCY under Protocol 0.1.7 and the frozen G0 architecture."
+  scope:
+    - "execute the frozen A9 source/evidence acquisition plan"
+    - "record provenance, negative/inaccessible evidence, search routes, and coverage evidence under Protocol E1-E3"
+    - "prepare comparison-effort records where needed"
+    - "run the preregistered independent adverse-source / coverage-state / MAKEABLE controls at the appropriate G1 points"
+  does_not_authorize:
+    - "post-hoc changes to frozen G0 architecture except through Protocol C4"
+    - "unreviewed proposition dispositions"
+    - "candidate ranking before the protocol permits it"
+    - "G3 comparative adjudication"
+    - "canonical theological conclusions"
+    - "program-level truth commitments"
+
+frozen_G0_basis:
+  G0_completion_check:
+    path: "TFP_STUDY_3_CONTINGENCY_G0_PREREGISTRATION_COMPLETION_CHECK_0_1_0.yaml"
+    blob_sha: "b794648b713027d003643ae8797f79626d57f4f7"
+  source_plan:
+    path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+    blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+  source_plan_operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+  final_A6_coverage_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  A11_discriminator_register_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  A13_expected_weakening_evidence_blob_sha: "2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6"
+  A14_stop_reopen_blob_sha: "77ea309239f8fb3f6ca5af5cc8478bff1587e382"
+
+transition_controls:
+  authorization_must_be_ledgered_before_first_outcome_relevant_evidence_exposure: true
+  first_permitted_outcome_relevant_evidence_exposure_sequence_minimum: 235
+  amendment_control_remains_active: true
+  source_acquisition_must_follow_A9: true
+  no_outcome_result_is_created_by_this_authorization: true
+  G1_authorized: true
