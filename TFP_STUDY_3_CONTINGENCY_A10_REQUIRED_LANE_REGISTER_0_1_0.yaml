@@ -1,0 +1,325 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A10_REQUIRED_LANE_REGISTER"
+status: "FROZEN_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+authority:
+  protocol_section: "A10 Required lanes"
+  rule: "Preregister every lane required for the question and its competence boundary."
+  lane_organization_rule: "Lanes are by claim competence, not favored candidate."
+
+inputs:
+  candidate_universe:
+    artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+    candidate_count: 13
+  operative_claim_inventory:
+    artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+    necessary_proposition_count: 62
+    final_A6_coverage_certified: false
+  operative_background_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    ordinary_dimension_count: 13
+    gate_only_dimension_count: 2
+  operative_background_interaction_matrix:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  operative_source_plan:
+    artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+    blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+  source_plan_operational_acceptance:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+
+construction_controls:
+  outcome_relevant_evidence_used: false
+  source_acquisition_started: false
+  G1_authorized: false
+  candidate_neutral_lane_definition: true
+  lanes_may_serve_multiple_candidates: true
+  primary_lane_assignment_is_not_A6_coverage_certification: true
+  A11_discriminators_not_authored_here: true
+  discriminator_tiers_not_frozen_here: true
+  direction_rules_not_frozen_here: true
+  insufficiency_threshold_not_frozen_here: true
+  necessary_foundation_not_equal_to_God: true
+  stronger_theological_attributes_not_imported: true
+
+lanes:
+  A10-L1-MODAL-STATUS-AND-LOGIC:
+    title: "Metaphysical modality, contingency/necessity, and modal inference"
+    competence:
+      - "Whether scoped reality, a ground, principle, plurality, or explanandum is genuinely metaphysically contingent or necessary."
+      - "Metaphysical versus nomological/logical/epistemic necessity where that distinction is truth-critical."
+      - "Modal-collapse and contingency-preservation questions."
+      - "Validity and background sensitivity of modal inferences under the frozen modal-logic controls."
+    competence_boundary:
+      excludes:
+        - "Whether modal discourse is itself truth-apt or dissolved; assigned to A10-L4."
+        - "Indexical actuality and plurality-selection semantics; assigned to A10-L5."
+        - "Whether agency supplies the explanation; assigned to A10-L7."
+        - "Whether value supplies the explanation; assigned to A10-L8."
+      may_not_infer:
+        - "agency or personhood from necessity alone"
+        - "goodness, knowledge, power, providence, worship-worthiness, or religious identity from necessity alone"
+    primary_necessary_propositions:
+      - "BR-N1"
+      - "RG-N1"
+      - "HO-N1"
+      - "SE-N1"
+      - "SE-N4"
+      - "GD-N1"
+      - "NE-N1"
+      - "NE-N2"
+      - "NE-N3"
+      - "IC-N1"
+      - "IC-N4"
+      - "IC-N5"
+      - "AG-N1"
+      - "AG-N4"
+      - "PR-N5"
+      - "PR-N6"
+    relevant_backgrounds:
+      - "BG-MODAL-STATUS"
+      - "BG-MODAL-LOGIC"
+      - "BG-TEMPORAL-ORIGIN-LINK"
+      - "BG-AGENTIVE-MODAL-LINK"
+
+  A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY:
+    title: "Explanatory demand, totality, brute stopping, and local/global scope"
+    competence:
+      - "Whether an explanatory demand applies to the exact explanandum and at what scope."
+      - "PSR-like principles, restricted explanatory principles, totality-level explananda, and local/global aggregation."
+      - "Whether alleged brute stopping is ontic rather than merely ignorance."
+      - "Whether a proposed stopping structure is explanatorily complete rather than a relabeled brute remainder."
+    competence_boundary:
+      excludes:
+        - "Topology of regress, cycle, or reflexive dependence; assigned to A10-L3."
+        - "Ontological category of a positive necessary ground; assigned to A10-L6 through A10-L8."
+        - "Protocol-level underdetermination, which is an adjudication status rather than an explanatory candidate."
+    primary_necessary_propositions:
+      - "BR-N2"
+      - "BR-N3"
+      - "BR-N4"
+      - "RG-N2"
+      - "RG-N4"
+      - "RG-N5"
+      - "HO-N5"
+      - "SE-N3"
+      - "SE-N5"
+      - "GD-N2"
+      - "GD-N3"
+      - "NE-N4"
+    relevant_backgrounds:
+      - "BG-EXPLANATORY-REALISM"
+      - "BG-PSR-SCOPE"
+      - "BG-TOTALITY-EXPLANANDUM"
+      - "BG-EXPLANATION-RELATION"
+      - "BG-D09-EPISTEMIC-STANDARD"
+
+  A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE:
+    title: "Dependence topology, well-foundedness, regress, holism, and reflexivity"
+    competence:
+      - "Whether relevant explanatory/dependence relations must be well-founded."
+      - "One-way infinite regress, non-reflexive holistic/cyclic structure, and item-reflexive self-explanation."
+      - "Relation-specific viciousness, explanatory completion, and structural distinctions among regress/holism/self-explanation."
+    competence_boundary:
+      excludes:
+        - "Whether an explanatory demand exists at all; assigned to A10-L2."
+        - "Whether an ultimate ground is concrete, abstract, agentive, or axiological; assigned to A10-L6 through A10-L8."
+      anti_collapse:
+        - "non-well-founded does not automatically mean reflexive"
+        - "infinite does not automatically mean brute"
+        - "cyclic does not automatically mean explanatorily vicious"
+    primary_necessary_propositions:
+      - "RG-N3"
+      - "HO-N2"
+      - "HO-N3"
+      - "HO-N4"
+      - "HO-N6"
+      - "SE-N2"
+    relevant_backgrounds:
+      - "BG-DEPENDENCE-STRUCTURE"
+      - "BG-EXPLANATION-RELATION"
+      - "BG-EXPLANATORY-REALISM"
+
+  A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES:
+    title: "Modal truth-aptness, dissolution, metaphysical indeterminacy, and epistemic/semantic boundaries"
+    competence:
+      - "Whether the study's central modal-contingency presupposition is truth-apt and applicable."
+      - "Whether ultimacy itself can be metaphysically indeterminate."
+      - "Ontic indeterminacy versus linguistic, representational, or epistemic indeterminacy."
+      - "Candidate-level dissolution/indeterminacy versus Protocol B6 UNDERDETERMINED or investigator abstention."
+    competence_boundary:
+      excludes:
+        - "Indexical actuality as a positive plurality structure; assigned to A10-L5."
+        - "Ordinary uncertainty from incomplete evidence; that is an epistemic state, not C-INDETERMINATE-ULTIMACY."
+        - "Simple necessitarianism; assigned primarily to A10-L1."
+    primary_necessary_propositions:
+      - "MD-N1"
+      - "MD-N2"
+      - "MD-N3"
+      - "MD-N4"
+      - "IU-N1"
+      - "IU-N2"
+      - "IU-N3"
+      - "IU-N4"
+    relevant_backgrounds:
+      - "BG-MODAL-STATUS"
+      - "BG-METAPHYSICAL-INDETERMINACY"
+      - "BG-D09-EPISTEMIC-STANDARD"
+      - "BG-D12-QUESTION-DISSOLUTION"
+
+  A10-L5-ACTUALITY-PLURALITY-AND-SELECTION:
+    title: "Indexical actuality, ontological plurality, and selector requirements"
+    competence:
+      - "Whether a broader plurality can supply a necessary/non-contingent stopping structure."
+      - "Whether actuality is metaphysically privileged or indexical/non-privileged."
+      - "Whether an external selector is required to explain this locus as actual."
+      - "Whether the plurality's own modal status is adequate for the proposed stopping role."
+    competence_boundary:
+      excludes:
+        - "Generic proofs of metaphysical necessity; cross-check with A10-L1."
+        - "Intentional agency as selector or explanans; assigned to A10-L7 when agency becomes essential."
+        - "Mere semantic dissolution of actuality language; assigned to A10-L4."
+    primary_necessary_propositions:
+      - "IP-N1"
+      - "IP-N2"
+      - "IP-N3"
+      - "IP-N4"
+      - "IP-N5"
+    relevant_backgrounds:
+      - "BG-ACTUALITY-PRIVILEGE"
+      - "BG-MODAL-STATUS"
+      - "BG-ONTOLOGY-ADMISSIBILITY"
+
+  A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE:
+    title: "Necessary impersonal grounds: concrete, abstract, structural, law-like, or modal-principle force"
+    competence:
+      - "Whether a necessary concrete foundation can perform the ultimate explanatory role."
+      - "Whether abstract, structural, law-like, modal, or comparable non-concrete principles can perform ontic explanatory work rather than merely describe or constrain."
+      - "Ground-category eligibility, explanatory-relation type, concrete/abstract instantiation gaps, and single/plural/layered impersonal variants."
+      - "Boundary between genuinely non-agentive explanation and hidden or merely omitted agency."
+    competence_boundary:
+      excludes:
+        - "Proof of metaphysical necessity as such; cross-check with A10-L1."
+        - "Intentional agency as essential explanatory machinery; assigned to A10-L7."
+        - "Evaluative requiredness as essential machinery; assigned to A10-L8."
+      anti_import:
+        - "non-agentive does not imply naturalism"
+        - "concrete does not imply physical"
+        - "principle does not imply abstract description only"
+    primary_necessary_propositions:
+      - "IC-N2"
+      - "IC-N3"
+      - "IC-N6"
+      - "PR-N1"
+      - "PR-N2"
+      - "PR-N3"
+      - "PR-N4"
+    relevant_backgrounds:
+      - "BG-ABSTRACT-PRINCIPLE-FORCE"
+      - "BG-GROUND-CATEGORY"
+      - "BG-EXPLANATION-RELATION"
+      - "BG-ONTOLOGY-ADMISSIBILITY"
+      - "BG-EXPLANATORY-REALISM"
+
+  A10-L7-AGENTIVE-EXPLANATION:
+    title: "Necessary agency and intentional explanation"
+    competence:
+      - "Whether intentional agency or mind-like purposive capacity is real in a necessary foundation."
+      - "Whether agency is essential to the family-defining explanation rather than merely present."
+      - "Whether intentional explanation can yield genuinely contingent reality without modal collapse."
+      - "Whether agentive explanation is independently warranted over impersonal alternatives."
+    competence_boundary:
+      excludes:
+        - "Goodness, omniscience or exhaustive knowledge, omnipotence or maximal power, providence, worship-worthiness, revelation, religious identity, or Christianity unless separately preregistered and independently warranted."
+        - "Treating a necessary agent as God merely by label."
+        - "Using classical-theist source volume as evidence for stronger attributes."
+      required_boundary_rule: "Necessary foundation != God; necessary agency != theism at any stronger attribute level."
+    primary_necessary_propositions:
+      - "AG-N2"
+      - "AG-N3"
+    secondary_cross_lane_propositions:
+      - "AG-N1"
+      - "AG-N4"
+      - "IC-N3"
+      - "PR-N4"
+      - "AX-N3"
+      - "AX-N4"
+    relevant_backgrounds:
+      - "BG-GROUND-CATEGORY"
+      - "BG-EXPLANATION-RELATION"
+      - "BG-ONTOLOGY-ADMISSIBILITY"
+      - "BG-AGENTIVE-MODAL-LINK"
+      - "BG-EXPLANATORY-REALISM"
+
+  A10-L8-AXIOLOGICAL-EXPLANATION:
+    title: "Objective value, optimality, and value-to-being explanatory force"
+    competence:
+      - "Whether necessary objective evaluative or optimality truths obtain."
+      - "Whether evaluative requiredness can perform ontic explanatory work with respect to contingent reality."
+      - "Whether the value-to-being bridge is genuinely non-agentive rather than a reason acted on by an independent agent."
+      - "Whether axiological explanation preserves contingency and remains distinct from generic impersonal-principle explanation."
+    competence_boundary:
+      excludes:
+        - "Inferring a perfectly good person or divine moral character from impersonal evaluative requiredness."
+        - "Treating moral realism alone as an explanation of why contingent reality obtains."
+        - "Treating a uniquely best world as mandatory unless a subvariant separately requires it."
+    primary_necessary_propositions:
+      - "PR-N7"
+      - "AX-N1"
+      - "AX-N2"
+      - "AX-N3"
+      - "AX-N4"
+      - "AX-N5"
+    relevant_backgrounds:
+      - "BG-AXIOLOGICAL-FORCE"
+      - "BG-ABSTRACT-PRINCIPLE-FORCE"
+      - "BG-GROUND-CATEGORY"
+      - "BG-EXPLANATION-RELATION"
+      - "BG-ONTOLOGY-ADMISSIBILITY"
+
+primary_assignment_control:
+  necessary_proposition_count_expected: 62
+  necessary_proposition_count_assigned: 62
+  each_necessary_proposition_has_exactly_one_primary_lane: true
+  primary_lane_counts:
+    A10-L1-MODAL-STATUS-AND-LOGIC: 16
+    A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY: 12
+    A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE: 6
+    A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES: 8
+    A10-L5-ACTUALITY-PLURALITY-AND-SELECTION: 5
+    A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE: 7
+    A10-L7-AGENTIVE-EXPLANATION: 2
+    A10-L8-AXIOLOGICAL-EXPLANATION: 6
+  note: "Primary lane assignment establishes responsibility only. It does not establish a valid A6 coverage mode, comparator ID, discriminator priority, evidence sufficiency, or candidate truth."
+
+cross_lane_controls:
+  - "A proposition may require inputs from more than one lane even though it has exactly one primary responsibility lane."
+  - "A11 discriminators must cite every lane whose competence is needed for the comparison."
+  - "No lane may resolve a neighboring lane's truth-critical issue by assumption."
+  - "Background dependencies must be cited at the exact inferential point, not globally installed."
+  - "If later work reveals an actually required lane absent here, adding it is a C4-controlled G0 amendment."
+  - "No worldview label is a lane. Theism, naturalism, supernaturalism, and skepticism remain candidate/background-neutral labels unless independently operationalized at a narrower truth-critical proposition."
+
+claim_type_coverage:
+  philosophical: "covered across A10-L2 through A10-L8 and modal-inference work in A10-L1"
+  metaphysical: "covered across all eight lanes as proposition content requires"
+  interpretive: "handled only where truth-critical within A10-L2, A10-L4, and related candidate-boundary checks"
+  linguistic: "handled where truth-critical in A10-L4 and A10-L5"
+  normative_moral: "handled in A10-L8 and the PR-N7 boundary"
+  doctrinal: "no necessary proposition in inventory 0.1.2 requires a doctrinal lane; contextual doctrinal language may not become outcome-material without C4-controlled preregistration"
+
+downstream_handoff:
+  next_phase: "A11"
+  discriminator_construction_authorized_within_existing_G0_scope: true
+  discriminator_tier_review_reviewer: "REVIEWER_C"
+  final_A6_coverage_reviewer: "REVIEWER_B"
+  A11_must_preserve_lane_boundaries: true
+  G1_authorized: false
+  outcome_relevant_evidence_acquisition_started: false
