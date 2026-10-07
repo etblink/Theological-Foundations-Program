@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_F1_A8_C4_PASS__POST_EVIDENCE_FAVORABLE_OR_MIXED__REVIEWER_G_LEDGER_REVIEW_READY__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
+  status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_FROZEN__REVIEWER_G_FOCUSED_RECHECK_READY__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "be7fb7f277189893a0ab1adcba00a530c39f12d1"
+  research_branch_head: "dd751dda06a593107d4fcfd35bdcf53c0aac1bdc"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -388,7 +388,34 @@ current_scope:
       - "ledger_integrity_reviewer"
       - "strict_independent_auditor"
   Reviewer_G:
-    status: "ASSIGNED__PRIOR_LEDGER_INTEGRITY_PASSES__G1_F1_A8_LEDGER_INTEGRITY_REVIEW_READY"
+    status: "ASSIGNED__PRIOR_LEDGER_INTEGRITY_PASSES__G1_F1_A8_REPAIR_REQUIRED__FOCUSED_RECHECK_READY"
+    G1_F1_A8_ledger_integrity_review:
+      report:
+        artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+        blob_sha: "0ea22a5f07ae450a3db3c5e2de944ff6cfafeacd"
+        disposition: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+      Program_Lead_disposition:
+        artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+        blob_sha: "b69ac2a742bd25e5bedc2bb0ce9495d9c62393f7"
+        disposition: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__APPEND_ONLY_REPAIR_AUTHORIZED"
+      repair_supplement:
+        artifact: "TFP_STUDY_3_CONTINGENCY_G1_F1_A8_LEDGER_INTEGRITY_REPAIR_SUPPLEMENT_0_1_0.yaml"
+        blob_sha: "743ae19389daf71123562439fa24490df94736c4"
+        status: "FROZEN__APPEND_ONLY_CLERICAL_REPAIR__PENDING_REVIEWER_G_FOCUSED_RECHECK"
+      repair_provenance_append:
+        artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_272_275_0_1_0.yaml"
+        blob_sha: "428b956979447e66087a0bb6edad834ab5537f44"
+        sequences: [272,273,274,275]
+      focused_recheck_input:
+        artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+        blob_sha: "bde8258d83551175485b79fb2e94aa1f443374e1"
+      focused_recheck_prompt:
+        artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_PROMPT_0_1_0.md"
+        blob_sha: "3b243d86998d571a8e3760a130a743efbaa8b3a7"
+      focused_recheck_launch_append:
+        artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_276_277_0_1_0.yaml"
+        blob_sha: "ae44d4e774461f6182ad73bd4e4c61b9d3c72818"
+        sequences: [276,277]
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
@@ -1396,7 +1423,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 271
+    A17_ledger_current_through_sequence: 277
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1471,20 +1498,22 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-G1-POST-EVIDENCE-F1-A8-LEDGER-INTEGRITY-REVIEW"
-  action: "continue_same_Reviewer_G_lineage_for_extension_221_269_ledger_integrity_review"
+  id: "TFP-STUDY-3-REVIEWER-G-G1-POST-EVIDENCE-F1-A8-LEDGER-INTEGRITY-REPAIR-RECHECK"
+  action: "continue_same_Reviewer_G_lineage_for_focused_append_only_repair_recheck"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 272
-  input_blob_sha: "fdfa0e67c526a021bfdae3b79dd408651cde8b0e"
-  prompt_blob_sha: "81daa4b1e57dd342e251839d5d545993655d5bd9"
-  fixed_endpoint_sequence: 269
-  fixed_endpoint_commit: "6a1be98c9100aebc90c9b969cd9053a64d1a868c"
+  ledger_next_sequence: 278
+  input_blob_sha: "bde8258d83551175485b79fb2e94aa1f443374e1"
+  prompt_blob_sha: "3b243d86998d571a8e3760a130a743efbaa8b3a7"
+  fixed_endpoint_sequence: 275
+  fixed_endpoint_commit: "407bf26a2a839eb09f932d5ec3143d5cd6a7a801"
+  launch_sequences_outside_certification_target: [276,277]
   requirements:
-    - "Reviewer G audits ledger/commit/blob chronology only and must not inspect substantive S1-S5 source contents"
-    - "verify sequence 234 human G1 authorization precedes sequence 235 first outcome-relevant evidence exposure"
-    - "verify append 260-264 actual blob dc1501f045782a69ed4a1f0b35315ca7fe048155 and complete F1 chronology"
-    - "verify post-evidence timing and contamination-control preservation without reclassifying Reviewer F direction"
-    - "repair 0.1.2 remains nonoperative and Reviewer E coverage/MAKEABLE review remains paused pending ledger pass and Program Lead acceptance"
+    - "Reviewer G performs the focused repair recheck only; previously confirmed sequence-221-269 findings remain accepted unless contradicted by the supplement"
+    - "verify the retrospective Reviewer-C exposure supplement is an acceptable append-only A17 cure without rewriting or inventing a historical sequence/timestamp"
+    - "verify amendment_surfaces annotations for exactly sequences 253-257 and 259-269"
+    - "verify optional order anchors for sequences 238,240,242,244,246,249 are repository-consistent"
+    - "verify sequences 272-275 preserve the failed audit, Program-Lead replay, and repair supplement without rewrite"
+    - "repair 0.1.2 remains nonoperative and Reviewer E coverage/MAKEABLE review remains paused pending focused Reviewer-G pass and Program-Lead acceptance"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -1782,7 +1811,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_inventory_operative__A8_operative__A9_content_repair_pass__A9_C4_pass__Reviewer_G_ledger_integrity_ready"
+    status: "G0_architecture_authorized__G1_active__F1_A8_post_evidence_repair_frozen__Reviewer_G_focused_ledger_recheck_ready__coverage_paused"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
