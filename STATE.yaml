@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_OPERATIVE__FINAL_A6_COVERAGE_REVIEW_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_OPERATIVE__FINAL_A6_GD_N1_REPAIR_FROZEN__REVIEWER_B_RECHECK_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "3a90385580ca52d9643f006d07d06a319bdcb2aa"
+  research_branch_head: "57346a30dece5d5dad3c11103f4e58413d6097f3"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -177,7 +177,7 @@ current_scope:
       blob_sha: "5c089cd7590275f2a97d7d14acdbabfb224e9599"
       disposition: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
   Reviewer_B:
-    status: "ASSIGNED__INITIAL_A4_A5_A6_REPAIR_PASS__FINAL_A6_COVERAGE_REVIEW_READY"
+    status: "ASSIGNED__INITIAL_A4_A5_A6_REPAIR_PASS__FINAL_A6_GD_N1_REPAIR_RECHECK_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "1df6978564e761c1ed0737a539445456fa4ea91c"
@@ -248,6 +248,18 @@ current_scope:
     final_A6_coverage_review_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_PROMPT_0_1_0.md"
       blob_sha: "5264cd6762bc2d57a25efbb0d5c790f78ff24334"
+      exposure_to_Reviewer_B: true
+    final_A6_coverage_review_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md"
+      blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb"
+      disposition: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+    final_A6_GD_N1_repair_recheck_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "55df12165134b2938bbeac45f1259e8f5a365f5e"
+      exposure_to_Reviewer_B: false
+    final_A6_GD_N1_repair_recheck_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_PROMPT_0_1_0.md"
+      blob_sha: "6ff92e11f2432caf7ab280699ba203825a21c23a"
       exposure_to_Reviewer_B: false
     role_boundary:
       final_A6_coverage_certification_deferred_until_after_Reviewer_C_discriminator_tiering: false
@@ -826,7 +838,7 @@ current_scope:
   final_A6_coverage_map:
     artifact: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
     blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
-    status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_B_FINAL_A6_CERTIFICATION"
+    status: "SUPERSEDED_BY_REPAIR_0_1_1__REVIEWER_B_REPAIR_REQUIRED"
     proposition_count: 62
     COMPARATIVE_ROUTE_count: 57
     NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 5
@@ -834,15 +846,55 @@ current_scope:
   final_A6_reviewer_B_input:
     artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_INPUT_FREEZE_0_1_0.yaml"
     blob_sha: "b66beedc107f88081a0a6511238a2c8aff21e5dd"
-    exposure_to_Reviewer_B: false
+    exposure_to_Reviewer_B: true
   final_A6_reviewer_B_prompt:
     artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_PROMPT_0_1_0.md"
     blob_sha: "5264cd6762bc2d57a25efbb0d5c790f78ff24334"
-    exposure_to_Reviewer_B: false
+    exposure_to_Reviewer_B: true
   final_A6_launch_ledger_append:
     artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_200_202_0_1_0.yaml"
     blob_sha: "aed12e2a8c7c58c6492362f32b9d012df32c6cc0"
-    next_sequence: 203
+  final_A6_reviewer_B_report:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb"
+    disposition: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+    sole_defect: "GD-N1"
+  final_A6_program_lead_disposition:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "013dfdb9fac5385471272d6ab127459faf73a485"
+    disposition: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__GD_N1_ONLY"
+  final_A6_repaired_coverage_map:
+    artifact: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+    blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+    status: "REPAIRED_PRE_EVIDENCE__PENDING_REVIEWER_B_FOCUSED_RECHECK_AND_C4"
+    proposition_count: 62
+    COMPARATIVE_ROUTE_count: 56
+    NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+    NONCOMPARATIVE_SHARED_FLOOR_count: 0
+    changed_coverage_entry: "GD-N1"
+  final_A6_repair_amendment_record:
+    artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "b70eed10eb3979fb2d7b6d40b61906b95f8f24c5"
+    status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_B_RECHECK_AND_C4"
+  final_A6_repair_completion:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REPAIR_COMPLETION_0_1_0.yaml"
+    blob_sha: "a23f32ae656f37c1fec4f92156ceb0c33c56f6ad"
+    status: "FROZEN_REPAIR__REVIEWER_B_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+  final_A6_review_and_repair_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_203_208_0_1_0.yaml"
+    blob_sha: "22817c6f7a4020699e984f184d26024cd0ad1d73"
+  final_A6_reviewer_B_repair_recheck_input:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+    blob_sha: "55df12165134b2938bbeac45f1259e8f5a365f5e"
+    exposure_to_Reviewer_B: false
+  final_A6_reviewer_B_repair_recheck_prompt:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_PROMPT_0_1_0.md"
+    blob_sha: "6ff92e11f2432caf7ab280699ba203825a21c23a"
+    exposure_to_Reviewer_B: false
+  final_A6_repair_recheck_launch_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_209_210_0_1_0.yaml"
+    blob_sha: "ad7b6d28ba140da21e97184277a3c5106a9edf5e"
+    next_sequence: 211
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -1105,7 +1157,13 @@ current_scope:
     discriminators_frozen: true
     final_A6_coverage_map_frozen: true
     final_A6_coverage_review_ready: true
-    final_A6_coverage_review_complete: false
+    final_A6_coverage_review_complete: true
+    final_A6_coverage_review_result: "REPAIR_REQUIRED__GD_N1_ONLY"
+    final_A6_GD_N1_repair_frozen: true
+    final_A6_repair_recheck_ready: true
+    final_A6_repair_recheck_complete: false
+    final_A6_C4_direction_review_required_after_content_pass: true
+    final_A6_ledger_integrity_review_required_before_operational_use: true
     necessary_proposition_coverage_complete: false
     insufficiency_threshold_frozen: false
     G0_complete: false
@@ -1123,20 +1181,20 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-B-FINAL-A6-NECESSARY-PROPOSITION-COVERAGE-REVIEW"
-  action: "continue_same_Reviewer_B_session_for_final_A6_coverage_architecture_certification"
+  id: "TFP-STUDY-3-REVIEWER-B-FINAL-A6-GD-N1-REPAIR-RECHECK"
+  action: "continue_same_Reviewer_B_session_for_focused_GD_N1_A6_repair_recheck"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 203
-  coverage_map_blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
-  reviewer_B_input_blob_sha: "b66beedc107f88081a0a6511238a2c8aff21e5dd"
-  reviewer_B_prompt_blob_sha: "5264cd6762bc2d57a25efbb0d5c790f78ff24334"
+  ledger_next_sequence: 211
+  repaired_coverage_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  reviewer_B_recheck_input_blob_sha: "55df12165134b2938bbeac45f1259e8f5a365f5e"
+  reviewer_B_recheck_prompt_blob_sha: "6ff92e11f2432caf7ab280699ba203825a21c23a"
   requirements:
-    - "use the exact same OpenAI Codex Reviewer-B conversation that returned INITIAL_CLAIM_NECESSITY_REPAIR_PASS for the GD-N3 delta recheck"
-    - "certify all 62 necessary propositions for exactly one valid A6 coverage mode"
-    - "verify all 57 COMPARATIVE_ROUTE entries have at least one directly bearing operative CRITICAL discriminator"
-    - "verify BR-N1, RG-N1, HO-N1, SE-N1, and SE-N4 are valid explicit NONCOMPARATIVE_CANDIDATE_SPECIFIC routes rather than comparative-burden evasions"
-    - "preserve no-shared-floor status and symmetric candidate burden"
-    - "do not inspect outcome evidence/source-acquisition results, issue proposition dispositions, certify G1 evidence coverage or MAKEABLE, redo discriminator tiering, rank candidates, or begin G1"
+    - "use the exact same OpenAI Codex Reviewer-B conversation that returned NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+    - "recheck GD-N1 only against R1-R10 and confirm preservation of the other 61 entries"
+    - "verify the repaired map has 62 entries: 56 COMPARATIVE_ROUTE, 6 NONCOMPARATIVE_CANDIDATE_SPECIFIC, 0 shared-floor"
+    - "if valid, certify NECESSARY_PROPOSITION_COVERAGE_COMPLETE at G0 architecture-content level only"
+    - "do not operationalize the repaired map; Reviewer F C4, Reviewer G ledger integrity, and Program Lead acceptance remain required"
+    - "do not inspect outcome evidence/source-acquisition results, issue proposition dispositions, certify G1 evidence coverage or MAKEABLE, alter A11, rank candidates, or begin G1"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
