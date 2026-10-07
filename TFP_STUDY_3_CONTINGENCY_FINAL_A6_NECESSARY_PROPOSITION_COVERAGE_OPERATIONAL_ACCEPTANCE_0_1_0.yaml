@@ -1,0 +1,60 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+operative_coverage_map:
+  path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+  blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  proposition_count: 62
+  COMPARATIVE_ROUTE_count: 56
+  NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+  NONCOMPARATIVE_SHARED_FLOOR_count: 0
+
+bound_editorial_erratum:
+  path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml"
+  blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+  frozen_wording: "five direct routes"
+  controlling_reading: "six direct routes"
+  changes_map_blob: false
+  changes_route_content: false
+
+qualification_chain:
+  Reviewer_B_initial_review:
+    report_blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb"
+    result: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+    sole_defect: "GD-N1"
+  repaired_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  Reviewer_B_repair_recheck:
+    report_blob_sha: "609b31277a65f31f0c06d60964f3fb081b787a97"
+    result: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  Reviewer_F_C4:
+    report_blob_sha: "685f8387b6eab5fe90140b4d6ac863b62193987e"
+    result: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+    net_direction: "NEUTRAL"
+  Reviewer_G_ledger_integrity:
+    report_blob_sha: "73be34e5a7be306a10f602c4037893f034a05f55"
+    result: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+  Program_Lead_integrity_disposition:
+    blob_sha: "6b287b84e57a5f21d54fdab0eb754650e3ab99dc"
+    result: "FINAL_A6_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__OPERATIONALIZATION_AUTHORIZED"
+
+operational_controls:
+  NECESSARY_PROPOSITION_COVERAGE_COMPLETE: true
+  coverage_map_operational_for_later_G0_design: true
+  A11_discriminator_register_operational: true
+  MAKEABLE_certified: false
+  proposition_dispositions_issued: false
+  candidate_structural_adequacy_determined: false
+  candidate_ranking_performed: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+
+next_G0_requirements:
+  - "A13 expected / compatible-nondiscriminating / weakening / contradiction evidence preregistration for candidate states"
+  - "A14 stop / reopen conditions, including coverage target, underdetermination and insufficient-signal thresholds"
+  - "A15 audit criteria"
+  - "A16 shared proposition map only if CLOSEST_TO_TRUTH is to remain available"
