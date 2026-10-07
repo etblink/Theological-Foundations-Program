@@ -1,0 +1,44 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_FINAL_A6_COVERAGE_REPAIR_COMPLETION"
+status: "FROZEN_REPAIR__REVIEWER_B_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+repaired_map:
+  path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+  blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+
+mechanical_verification:
+  total_entries: 62
+  unique_proposition_ids: 62
+  COMPARATIVE_ROUTE_count: 56
+  NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+  NONCOMPARATIVE_SHARED_FLOOR_count: 0
+  unassigned_primary_lane_count: 0
+  only_changed_coverage_entry: "GD-N1"
+  GD_N1:
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    admitted_background: "BG-MODAL-STATUS"
+    preserves_permissive_truth_conditions: true
+    explicit_pairwise_distortion_rationale: true
+    explicit_modal_argument_route: true
+    rejects_conceivability_as_sufficient: true
+    rejects_logical_nomic_epistemic_substitutes: true
+    MOD_DEFLATIONARY_gate_preserved_where_applicable: true
+    proposition_specific_expected_evidence: true
+    proposition_specific_weakening_or_defeating_evidence: true
+    future_proposition_scope: "PROPOSITION:GD-N1"
+    comparison_scopes: []
+  A11_modified: false
+  other_61_coverage_entries_modified: false
+
+review_status:
+  Reviewer_B_focused_recheck_required: true
+  Reviewer_F_C4_after_content_pass_required: true
+  Reviewer_G_ledger_integrity_before_operational_use_required: true
+  NECESSARY_PROPOSITION_COVERAGE_COMPLETE: false
+  repaired_map_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
