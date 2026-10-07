@@ -1,0 +1,34 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_238_239_blob_sha: "77ae353df927edb9a2b177fb73f1f5d003ce60bc"
+  prior_next_sequence: 240
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 240
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Independent S2_ADVERSE discovery searches/openings across all 13 candidate families, including focused follow-up on regress/foundationalism, holistic/circular grounding, self-explanation, modal dissolution, and global explanatory demand."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S2_ADVERSE_SEARCH_EXPOSURE"
+    amendment_surfaces: ["A9 adverse-source symmetry","future proposition evidence matrices","future comparison effort records","future coverage review"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S2_ADVERSE"
+    candidate_family_count: 13
+    independent_from_proponent_citation_lists: true
+    search_snippets_evidential_support: false
+    controls:
+      - "Search snippets are discovery metadata only."
+      - "No proposition disposition, candidate adequacy/ranking, coverage certification, or MAKEABLE determination was made."
+      - "Generic objections are not promoted to candidate-specific defeaters without later proposition-level bearing."
+      - "Frozen G0 architecture remains unchanged."
+
+next_sequence: 241
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
