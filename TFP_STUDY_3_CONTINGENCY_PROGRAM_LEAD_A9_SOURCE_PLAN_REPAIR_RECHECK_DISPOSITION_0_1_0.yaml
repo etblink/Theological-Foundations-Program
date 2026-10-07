@@ -1,0 +1,41 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_RECHECK_DISPOSITION"
+status: "SOURCE_PLAN_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_SOURCE_PLAN_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "0490f461599c5a34ce68de0416d4ba5cb32c1d99"
+  reviewer_status: "SOURCE_PLAN_REPAIR_PASS"
+
+independent_replay:
+  R1_cross_tradition_probe: true
+  R2_agentive_nonAbrahamic_nonclassical_native_access: true
+  R3_agentive_attribute_overreach_adverse: true
+  R4_confessional_polemical_volume_dominance_control: true
+  R5_synthetic_thin_precursor_search: true
+  R6_impersonal_concrete_cardinality_relation_subvariant_access: true
+  R7_brute_ontic_vs_ignorance_boundary_and_adverse_probe: true
+  R8_self_explanation_contingency_causa_sui_boundary: true
+  A9_required_field_structure_preserved: true
+  all_13_candidate_native_and_adverse_classes_preserved: true
+  all_13_ordinary_backgrounds_and_2_gates_preserved: true
+  optional_Philosophers_Index_not_promoted: true
+  optional_Brill_not_promoted: true
+  no_candidate_privileged_database_date_language_or_access_threshold: true
+  MAKEABLE_remains_deferred_to_Reviewer_E: true
+  outcome_relevant_evidence_used: false
+  G1_authorized: false
+
+operational_disposition:
+  A9_content_repair_pass: true
+  source_plan_0_1_1_operational: false
+  amendment_class_finalized: false
+  Reviewer_F_C4_direction_review_required: true
+  Reviewer_G_ledger_integrity_review_required_after_C4: true
+  Program_Lead_operational_acceptance_required_after_all_gates: true
+  source_plan_passed: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
