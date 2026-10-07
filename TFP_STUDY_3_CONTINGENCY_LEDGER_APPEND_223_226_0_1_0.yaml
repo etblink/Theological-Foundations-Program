@@ -1,0 +1,59 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_221_222_blob_sha: "5a570d82ab63d020ae11a41afd4f484313aee74f"
+  prior_next_sequence: 223
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 223
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer G final-A6 ledger-integrity exposure for sequences 194-220 through endpoint 57a118060fe3002f5a4de7edf4c4d8c85467c20c."
+    exposure_class: "G0_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_EXPOSURE"
+    amendment_surfaces: ["final A6 chronology","commit/blob identity","editorial erratum integrity","C4 timing consequence"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    input_blob_sha: "14d1beffb42bc2e7fe44338fe227515b5b6126eb"
+    order_note: "Occurred after sequence 222 and before sequence 224."
+
+  - sequence: 224
+    repository_commit: "0ec05488c3e696812c27cb05ee77fc6ec8180904"
+    timestamp_utc: "2026-10-07T06:25:47Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md blob 73be34e5a7be306a10f602c4037893f034a05f55"
+    exposure_class: "G0_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_RESULT_FREEZE"
+    amendment_surfaces: ["final A6 ledger integrity","C4 chronology","operationalization readiness"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+
+  - sequence: 225
+    repository_commit: "9150967e91134d70f6bc86dd0f037b49349fd46d"
+    timestamp_utc: "2026-10-07T06:26:15Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml blob 6b287b84e57a5f21d54fdab0eb754650e3ab99dc"
+    exposure_class: "G0_PROGRAM_LEAD_FINAL_A6_LEDGER_INTEGRITY_DISPOSITION"
+    amendment_surfaces: ["final A6 integrity closure","operationalization authorization"]
+    outcome_relevant_evidence: false
+    result_status: "FINAL_A6_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__OPERATIONALIZATION_AUTHORIZED"
+
+  - sequence: 226
+    repository_commit: "411eceef5e9fb23b455458be5e7519263a3a8a9e"
+    timestamp_utc: "2026-10-07T06:26:41Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_OPERATIONAL_ACCEPTANCE_0_1_0.yaml blob 713b6f873784e9af765f2b4802f2aa220ae6b50d"
+    exposure_class: "G0_FINAL_A6_OPERATIONAL_ACCEPTANCE"
+    amendment_surfaces: ["final A6 operationalization","later G0 preregistration"]
+    outcome_relevant_evidence: false
+    result_status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+
+next_sequence: 227
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
