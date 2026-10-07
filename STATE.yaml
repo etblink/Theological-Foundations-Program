@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__CANDIDATE_UNIVERSE_REPAIR_PASS__REVIEWER_F_C4_PASS__REVIEWER_G_LEDGER_REPAIR_REQUIRED__FOCUSED_RECHECK_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_STEELMAN_PACKET_CONSTRUCTION_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "828d1b3e6d558c4da1a5bb212ad883b13a3d6cfb"
+  research_branch_head: "7e34bd3ecc32cdc249aa187ee666153e91df8b2e"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -222,6 +222,23 @@ current_scope:
     repair_recheck_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_PROMPT_0_1_0.md"
       blob_sha: "c5012aa2de696b1395807a4b69c9102ff8a7528a"
+    repair_recheck_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+      blob_sha: "b99a3171b51452d3e4a8d0f373634589947ef42d"
+      disposition: "LEDGER_INTEGRITY_REPAIR_PASS"
+    Program_Lead_repair_recheck_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_LEDGER_INTEGRITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+      blob_sha: "9c03a2873ca026a8db81c97e46012d3013b8b8d2"
+      disposition: "LEDGER_INTEGRITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED"
+  candidate_universe_freeze:
+    artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+    candidate_count: 13
+    status: "FROZEN"
+  steelman_packet_construction_manifest:
+    artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_MANIFEST_0_1_0.yaml"
+    blob_sha: "2798b0f43268d637ae715ae86cb3edfd9d93a520"
+    status: "FROZEN_CONSTRUCTION_MANIFEST__PACKETS_NOT_YET_COMPLETE"
   exposure_ledger:
     artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
     blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
@@ -234,7 +251,13 @@ current_scope:
     A17_repair_supplement:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_A17_REPAIR_SUPPLEMENT_0_1_0.yaml"
       blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
-    next_sequence: 40
+    append_40_45:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_40_45_0_1_0.yaml"
+      blob_sha: "49ed192cd4043a5353b5462aa313d6c0018bf342"
+    append_46:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_46_0_1_0.yaml"
+      blob_sha: "32b842dd46dba4667cf49a70f19c8ea6cc9f8ffa"
+    next_sequence: 47
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -256,8 +279,12 @@ current_scope:
     candidate_universe_ledger_integrity_initial_result: "REPAIR_REQUIRED__C4_CHRONOLOGY_PRESERVED"
     candidate_universe_ledger_integrity_repair_frozen: true
     candidate_universe_ledger_integrity_recheck_ready: true
+    candidate_universe_ledger_integrity_recheck_complete: true
+    candidate_universe_ledger_integrity_recheck_result: "PASS"
     reviewer_G_assigned: true
-    candidate_universe_frozen: false
+    candidate_universe_frozen: true
+    candidate_universe_candidate_count: 13
+    steelman_packet_construction_manifest_frozen: true
     steelman_packets_frozen: false
     claim_typing_frozen: false
     necessary_proposition_coverage_complete: false
@@ -280,19 +307,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-LEDGER-INTEGRITY-REPAIR-RECHECK"
-  action: "continue_the_same_Reviewer_G_session_with_the_frozen_focused_A17_repair_recheck"
+  id: "TFP-STUDY-3-B3-CANDIDATE-STEELMAN-PACKET-CONSTRUCTION"
+  action: "construct_and_freeze_one_candidate_native_B3_steelman_packet_for_each_of_the_13_frozen_candidate_families"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_integrity_repair_supplement_blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
-  repair_recheck_input_blob_sha: "9b943770c087f7ea8acecfb92ed6d3b5cd3c80a6"
-  repair_recheck_prompt_blob_sha: "c5012aa2de696b1395807a4b69c9102ff8a7528a"
+  candidate_universe_freeze_blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  construction_manifest_blob_sha: "2798b0f43268d637ae715ae86cb3edfd9d93a520"
   requirements:
-    - "use the exact same Reviewer G conversation that issued LEDGER_INTEGRITY_REPAIR_REQUIRED"
-    - "perform focused repair recheck only; do not rerun the full ledger audit"
-    - "verify the supplement cures A17 sequence-28/29 metadata and adequately addresses the sequence-30 timestamp/order recommendation"
-    - "verify sequences 33-39 continue Reviewer-G provenance without gap or duplicate"
-    - "no outcome-relevant evidence search, truth adjudication, candidate ranking, or completeness review"
-    - "candidate universe remains unfrozen until Reviewer G returns LEDGER_INTEGRITY_REPAIR_PASS and the Program Lead independently confirms it"
+    - "construct packets separately where feasible and use candidate-native or proponent-informed sources"
+    - "include every Protocol B3 required field for each candidate"
+    - "do not rank candidates or adjudicate truth"
+    - "do not import downstream theistic properties into necessary-foundation candidates"
+    - "record unavoidable cross-packet contamination and any A17-relevant exposure"
+    - "after all 13 packets are frozen, return them to the same eligible Reviewer A lineage for the equal-strength check"
+    - "G1 evidence acquisition remains unauthorized"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -590,7 +617,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__candidate_universe_repair_pass__Reviewer_F_C4_pass__Reviewer_G_ledger_repair_required__focused_recheck_ready"
+    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_steelman_packet_construction_ready"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
