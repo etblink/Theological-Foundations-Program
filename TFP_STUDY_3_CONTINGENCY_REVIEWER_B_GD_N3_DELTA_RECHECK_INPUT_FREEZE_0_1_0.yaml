@@ -1,0 +1,63 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_GD_N3_DELTA_RECHECK_INPUT_FREEZE"
+status: "FROZEN__NARROW_DELTA_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_B"
+  required_lineage: "exact same OpenAI Codex conversation that returned INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED and INITIAL_CLAIM_NECESSITY_REPAIR_STILL_REQUIRED"
+  role: "narrow GD-N3 delta recheck"
+  prohibited_roles:
+    - "discriminator_tier_reviewer"
+    - "strict_independent_auditor"
+
+prior_recheck:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "7c04ed3d39a1474a01a5e599d12997491160afdf"
+  status: "INITIAL_CLAIM_NECESSITY_REPAIR_STILL_REQUIRED"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_1.yaml"
+    blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+    purpose: "delta comparison only"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "0a349eaec35fbf2796367e76ea0a502d8ae92fc7"
+  - path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md"
+    blob_sha: "32807841c6805b9d6c8440895457118f10f842a1"
+  - "Protocol 0.1.7 A4, A5, A6 and C4 only as needed."
+
+task:
+  - "Verify only the narrow residual correction identified in the prior focused recheck."
+  - "Confirm GD-N3 once again states the frozen candidate's substantive necessary non-defect truth claim, rather than merely a claim about support for treating it as true."
+  - "Confirm GD-S2 separately preserves the principled scoped justification requirement as supporting/non-necessary and explicitly does not substitute for GD-N3."
+  - "Confirm GD-N2 -> GD-N3 remains an independently necessary answer-level condition and does not present non-aggregation as proving GD-N3."
+  - "Confirm the necessary-proposition count remains 62 and that GD-N3 remains CANDIDATE_SPECIFIC."
+  - "Confirm no other necessary proposition changed between 0.1.1 and 0.1.2 and no new shared-floor or trigger-tag defect was introduced."
+  - "Do not rerun the already-passed R1-R5 or unrelated R6/R7 review except insofar as needed to detect a delta-introduced defect."
+  - "Do not certify NECESSARY_PROPOSITION_COVERAGE_COMPLETE."
+  - "Do not classify C4 amendment direction; Reviewer F remains reserved for that task."
+  - "Do not author/tier discriminators, rank candidates, assess truth/plausibility, inspect outcome evidence, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "GD-N3 SUBSTANTIVE TRUTH-CONDITION RECHECK"
+    - "GD-S2 JUSTIFICATION-SEPARATION RECHECK"
+    - "DELTA-INTEGRITY / DEFECT CHECK"
+    - "INITIAL CLAIM / NECESSITY DELTA RECHECK STATUS"
+  status_namespace:
+    - "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+    - "INITIAL_CLAIM_NECESSITY_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
+
+C4_note:
+  corrected_inventory_operational_use_allowed_by_this_recheck_alone: false
+  Reviewer_F_direction_review_required_after_pass: true
+  candidate_universe_frozen_and_unchanged: true
+  B3_packets_frozen_and_unchanged: true
+  G1_authorized: false
