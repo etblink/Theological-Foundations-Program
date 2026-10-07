@@ -1,0 +1,151 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_A17_REPAIR_SUPPLEMENT"
+status: "FROZEN__PENDING_REVIEWER_G_FOCUSED_RECHECK"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  ledger_0_1_5_blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+  append_28_29_blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+  append_30_32_blob_sha: "883cd32ff17570e1d608babb8b5139b28dbe1551"
+  prior_next_sequence: 33
+  prior_entries_rewritten: false
+
+repair_scope:
+  Reviewer_G_report_blob_sha: "0c7e51625d7ee04bb65b84629bef1e6b5542207f"
+  Program_Lead_disposition_blob_sha: "5f7c2d3817f489cafa6572f8c7ea36a42380c014"
+  blocking_defect: "A17 metadata incomplete for original append sequences 28-29."
+  repair_method: "Supplemental annotations only; original ledger artifacts remain unchanged."
+  C4_chronology_changed: false
+  candidate_universe_changed: false
+  outcome_relevant_evidence_exposure_started: false
+
+annotations:
+  - annotates_sequence: 28
+    original_append_blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+    repository_commit: "a11a678a67bbc54782cddad3f2a450ca105f4e8c"
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+    artifact_blob_sha: "2a4ea7a411bc3fb0a3c413e7ba50d499fb7dad24"
+    timestamp_utc: "2026-10-07T00:35:18Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    exposure_class: "G0_REVIEWER_F_ASSIGNMENT_ACCEPTANCE"
+    amendment_surfaces:
+      - "A3 reviewer lineage control"
+      - "C4 amendment-direction review"
+    outcome_relevant_evidence: false
+
+  - annotates_sequence: 29
+    original_append_blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+    repository_commit: "da6b8261af2c2b4c971be8d6081a08430cb85dec"
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+    artifact_blob_sha: "77148a456d7c5f31e69b26ed4926f9794a9012a1"
+    timestamp_utc: "2026-10-07T00:35:37Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    exposure_class: "G0_REVIEWER_F_ROLE_ASSIGNMENT_DELTA_FREEZE"
+    amendment_surfaces:
+      - "A3 reviewer-role control"
+      - "C4 amendment-direction review"
+    outcome_relevant_evidence: false
+
+  - annotates_sequence: 30
+    original_append_blob_sha: "883cd32ff17570e1d608babb8b5139b28dbe1551"
+    exact_session_timestamp_available: false
+    order_anchor:
+      after_sequence: 29
+      after_commit_time_utc: "2026-10-07T00:35:37Z"
+      before_sequence: 31
+      before_commit_time_utc: "2026-10-07T00:44:00Z"
+    note: "No more precise repository-independent timestamp was recorded for the off-repository Reviewer F packet exposure."
+
+timestamp_policy_note:
+  sequences_9_through_32:
+    repository_commit_present: "Use the cited commit's GitHub created_at/committer timestamp as the repository time anchor where an entry does not carry timestamp_utc."
+    off_repository_exception: "Sequence 30 has no repository commit and is bounded only by its explicit order anchor between sequences 29 and 31."
+    effect_on_sequence_order: "NONE"
+
+append:
+  - sequence: 33
+    repository_commit: "aec0141454d5eec48c0a60faeac02d6365d813bf"
+    timestamp_utc: "2026-10-07T00:45:28Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob 68546f3aa5144006d9c22c6699283409550fdf85"
+    exposure_class: "G0_REVIEWER_G_ASSIGNMENT_CONTROL"
+    amendment_surfaces:
+      - "A3 reviewer lineage control"
+      - "A17 ledger-integrity reviewer assignment"
+    outcome_relevant_evidence: false
+
+  - sequence: 34
+    repository_commit: "a14142b114a3ee1abe36c2b798a4779450abadf0"
+    timestamp_utc: "2026-10-07T00:46:04Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE_0_1_0.yaml blob b8bf23a9bf5bc45f8dee136cfcd8e97333cfab9b"
+    exposure_class: "G0_REVIEWER_G_LEDGER_INTEGRITY_INPUT_FREEZE"
+    amendment_surfaces:
+      - "A17 ledger integrity"
+      - "C4 amendment chronology"
+    outcome_relevant_evidence: false
+
+  - sequence: 35
+    repository_commit: "a5f894309a206409b5514e83cd6d0a97642e4e6c"
+    timestamp_utc: "2026-10-07T00:46:06Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md blob 8492adf44a55088182af28af234aa22466557d34"
+    exposure_class: "G0_REVIEWER_G_LEDGER_INTEGRITY_PROMPT_FREEZE"
+    amendment_surfaces:
+      - "A17 ledger integrity"
+      - "C4 amendment chronology"
+    outcome_relevant_evidence: false
+
+  - sequence: 36
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_FRESH_SESSION -> HUMAN_OWNER -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Owner-relayed Reviewer G assignment handshake response; declared status PROCEDURALLY_DISJOINT_FOR_REVIEWER_G; Program Lead accepted the assignment in chat."
+    exposure_class: "G0_REVIEWER_G_ASSIGNMENT_ACCEPTANCE__OFF_REPOSITORY_EVENT"
+    amendment_surfaces:
+      - "A3 reviewer lineage control"
+      - "A17 ledger-integrity reviewer assignment"
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 35 and before sequence 37. Standalone assignment-acceptance artifact writes were blocked by the repository connector; no such artifact is claimed to exist."
+
+  - sequence: 37
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_FRESH_SESSION"
+    source_or_artifact: "Authorized Reviewer G audit exposure: input blob b8bf23a9bf5bc45f8dee136cfcd8e97333cfab9b; prompt blob 8492adf44a55088182af28af234aa22466557d34; Protocol 0.1.7 A17/C4 blob 0d9406d9ea62ec35ce6424b60ef03ced5dbd332a; authorized ledger/amendment artifacts enumerated by the frozen input."
+    exposure_class: "G0_REVIEWER_G_AUTHORIZED_LEDGER_INTEGRITY_PACKET_EXPOSURE"
+    amendment_surfaces:
+      - "A17 ledger integrity"
+      - "C4 amendment chronology"
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 36 and before sequence 38."
+
+  - sequence: 38
+    repository_commit: "f3f40a1bf07541ce116ad2831fadeb90412ac8c8"
+    timestamp_utc: "2026-10-07T00:59:24Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md blob 0c7e51625d7ee04bb65b84629bef1e6b5542207f"
+    exposure_class: "G0_REVIEWER_G_LEDGER_INTEGRITY_RESULT_FREEZE"
+    amendment_surfaces:
+      - "A17 ledger integrity"
+      - "C4 amendment chronology"
+    outcome_relevant_evidence: false
+    result_status: "LEDGER_INTEGRITY_REPAIR_REQUIRED"
+
+  - sequence: 39
+    repository_commit: "d4a9dc32f89099ce81eb5054232caaeabfec784a"
+    timestamp_utc: "2026-10-07T00:59:52Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml blob 5f7c2d3817f489cafa6572f8c7ea36a42380c014"
+    exposure_class: "G0_PROGRAM_LEAD_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+    amendment_surfaces:
+      - "A17 ledger integrity"
+      - "C4 amendment chronology"
+    outcome_relevant_evidence: false
+    result_status: "LEDGER_INTEGRITY_REPAIR_REQUIRED__C4_CHRONOLOGY_PRESERVED"
+
+next_sequence: 40
+outcome_relevant_evidence_exposure_started: false
+candidate_universe_frozen: false
