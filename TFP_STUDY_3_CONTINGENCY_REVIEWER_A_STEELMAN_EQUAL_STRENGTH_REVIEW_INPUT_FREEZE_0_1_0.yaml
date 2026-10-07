@@ -1,0 +1,72 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_INPUT_FREEZE"
+status: "FROZEN__READY_FOR_SAME_REVIEWER_A_LINEAGE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_A"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that performed blind candidate elicitation, candidate-universe completeness review, and focused repair recheck"
+  role: "candidate_steelman_equal_strength_reviewer"
+  prohibited_role: "strict_independent_auditor"
+
+governing_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_MANIFEST_0_1_0.yaml"
+    blob_sha: "2798b0f43268d637ae715ae86cb3edfd9d93a520"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_COMPLETION_0_1_0.yaml"
+    blob_sha: "f5a25088f11f74d74a168ab405f001e7decdfc85"
+  - "Protocol 0.1.7 B3 only as needed"
+
+packet_inputs:
+  - { candidate_id: "C-BRUTE", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_BRUTE_0_1_0.md", blob_sha: "0888f048117afed26c95cb9b6b01c177d406bfb2" }
+  - { candidate_id: "C-REGRESS", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_REGRESS_0_1_0.md", blob_sha: "8790ba1007037a632a42fbacf723894424b448b6" }
+  - { candidate_id: "C-HOLISTIC", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_HOLISTIC_0_1_0.md", blob_sha: "5128dfb29fbbf88eb098e971aec64746ec6f0065" }
+  - { candidate_id: "C-SELF-EXPLANATORY", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_SELF_EXPLANATORY_0_1_0.md", blob_sha: "7b6ffebd9a2a5b625137b928650dbc0ef824c143" }
+  - { candidate_id: "C-GLOBAL-DEFLATION", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md", blob_sha: "32807841c6805b9d6c8440895457118f10f842a1" }
+  - { candidate_id: "C-MODAL-DISSOLUTION", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_MODAL_DISSOLUTION_0_1_0.md", blob_sha: "54dbb7733a164899b0ec575ecd673dc17a3b26d6" }
+  - { candidate_id: "C-INDETERMINATE-ULTIMACY", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDETERMINATE_ULTIMACY_0_1_0.md", blob_sha: "99b5f62cd33a190c3e2ec081f39de9033d1c3c37" }
+  - { candidate_id: "C-NECESSITARIAN", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NECESSITARIAN_0_1_0.md", blob_sha: "0b8a1ac7d79077256a98a188844c97689c52056c" }
+  - { candidate_id: "C-INDEXICAL-PLURALITY", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDEXICAL_PLURALITY_0_1_0.md", blob_sha: "5cb7058b6903d38579fd5ae8dd26a35795c4f75b" }
+  - { candidate_id: "C-NEC-IMPERSONAL-CONCRETE", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_CONCRETE_0_1_0.md", blob_sha: "1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5" }
+  - { candidate_id: "C-NEC-AGENTIVE", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_AGENTIVE_0_1_0.md", blob_sha: "46c4333f379ac9f394eddcd9ec52dc0fb56da113" }
+  - { candidate_id: "C-NEC-IMPERSONAL-PRINCIPLE", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_PRINCIPLE_0_1_0.md", blob_sha: "12108b38091a9ecacdff8ab27222e733175ce68c" }
+  - { candidate_id: "C-AXIARCHIC", path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_AXIARCHIC_0_1_0.md", blob_sha: "ee3e8e1ee24671df264da1985ae433989c037200" }
+
+review_dimensions:
+  - "specificity"
+  - "source quality"
+  - "objection coverage"
+  - "charitable formulation"
+
+review_rules:
+  - "Review each packet for B3 completeness and strength relative to the strongest frozen candidate formulation."
+  - "Assess whether serious proponent/native sources actually fit the candidate; flag over-attribution or source mismatch."
+  - "Synthetic-family status alone is not a weakness if the packet clearly distinguishes TFP synthesis from source-specific claims and uses the strongest appropriate adjacent literature."
+  - "Do not reward or penalize a candidate for being theistic, naturalistic, anti-realist, heterodox, historical, or synthetic."
+  - "Check that objections are serious and comparably strong rather than straw objections."
+  - "Check that common caricatures are rejected and that downstream properties are not silently imported."
+  - "Check especially the frozen boundaries: HOLISTIC vs SELF; GLOBAL-DEFLATION vs MODAL-DISSOLUTION; INDETERMINATE vs B6; necessary foundation vs God; AXIARCHIC vs personal perfect goodness."
+  - "If bibliographic identity/source fit needs verification, inspect only source landing pages, abstracts, tables of contents, or primary formulations needed for that purpose. Do not conduct outcome-evidence research."
+  - "Do not rank candidates, estimate truth probabilities, adjudicate which is best, or begin G1 evidence acquisition."
+
+packet_disposition_namespace:
+  - "PASS"
+  - "REPAIR_REQUIRED"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "PACKET-BY-PACKET REVIEW"
+    - "CROSS-PACKET EQUAL-STRENGTH REVIEW"
+    - "SOURCE / ATTRIBUTION SYMMETRY"
+    - "BOUNDARY-CONTROL REVIEW"
+    - "REQUIRED REPAIRS"
+    - "STEELMAN EQUAL-STRENGTH STATUS"
+  final_status_namespace:
+    - "STEELMAN_EQUAL_STRENGTH_PASS"
+    - "STEELMAN_EQUAL_STRENGTH_REPAIR_REQUIRED"
+  stop_after_report: true
