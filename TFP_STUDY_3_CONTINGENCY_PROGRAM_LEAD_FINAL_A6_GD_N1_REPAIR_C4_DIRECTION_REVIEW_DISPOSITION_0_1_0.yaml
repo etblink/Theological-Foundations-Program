@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__PRE_EVIDENCE_AMENDMENT__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "685f8387b6eab5fe90140b4d6ac863b62193987e"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  reviewer_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+
+independent_replay:
+  GD_N1_direction: "NEUTRAL"
+  C_GLOBAL_DEFLATION_net_direction: "NEUTRAL"
+  other_12_candidates_direction: "NEUTRAL"
+  future_A6_architecture_eligibility: "NEUTRAL"
+  future_candidate_adequacy: "NEUTRAL"
+  future_relative_ranking: "NEUTRAL"
+  future_truth_warrant_eligibility: "NEUTRAL"
+  future_evidence_coverage_burden: "NEUTRAL"
+  future_MAKEABLE_certification: "NEUTRAL"
+  stronger_theological_attribute_inference: "NEUTRAL"
+  burden_symmetry_preserved: true
+  A11_unchanged: true
+  editorial_erratum_direction_effect: "NONE"
+  direction_repair_required: false
+
+endpoint_identity_resolution:
+  artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_C4_ENDPOINT_IDENTITY_RESOLUTION_0_1_0.yaml"
+  sequence_214_event_commit_sha: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+  sequence_214_event_blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+  append_211_214_container_commit_sha: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+  append_211_214_blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7"
+  diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+  reviewer_G_confirmation_required: true
+
+downstream_controls:
+  A6_content_certified: true
+  final_A6_C4_passed: true
+  final_A6_ledger_integrity_review_required: true
+  final_A6_coverage_map_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
