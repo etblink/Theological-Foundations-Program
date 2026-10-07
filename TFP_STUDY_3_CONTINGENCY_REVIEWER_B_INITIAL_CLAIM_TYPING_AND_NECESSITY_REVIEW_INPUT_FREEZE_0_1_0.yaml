@@ -1,0 +1,59 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_INPUT_FREEZE"
+status: "FROZEN__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_EXPOSURE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_B"
+  role_stage: "INITIAL_A4_A5_A6_REVIEW"
+  required_lineage: "fresh session disjoint from Program Lead/candidate-packet authors, discriminator author/Reviewer C, and future strict auditor"
+  prohibited_roles:
+    - "discriminator_tier_reviewer"
+    - "strict_independent_auditor"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  - path: "TFP_STUDY_3_CONTINGENCY_B3_STEELMAN_PACKET_SET_FREEZE_0_1_0.yaml"
+    blob_sha: "edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_0.yaml"
+    blob_sha: "375755374e0fc51b14a8ba6b370367c9816cd10b"
+  - "All 13 B3 steelman packets referenced by the B3 freeze, at their frozen blob SHAs."
+  - "Protocol 0.1.7 A4, A5, A6 and C1 only as needed."
+
+task:
+  - "Check that every truth-critical candidate claim material to the Study-3 comparison is represented and typed under A4."
+  - "Check that trigger tags cannot be avoided by wording and that no miracle/anomalous-event, revelation, or prophecy trigger has been silently omitted."
+  - "Check that each NECESSARY_FOR_CANDIDATE proposition satisfies the operational A6 test against the strongest frozen packet."
+  - "Identify any necessary proposition that the Program Lead improperly demoted to supporting/non-necessary or omitted."
+  - "Identify any supporting claim improperly elevated to necessary."
+  - "Check the initial A5 dependency arrows for candidate-defining logical dependence and boundary dependence."
+  - "Classify each necessary proposition as CANDIDATE_SPECIFIC or SHARED_FLOOR under A6. Do not manufacture a shared floor merely for symmetry."
+  - "Check the Program Lead's initial conclusion that no truth-critical SHARED_FLOOR proposition is presently established across all 13 candidates."
+  - "Check symmetric burden across theistic, non-theistic, anti-realist, synthetic, and historical candidate families."
+  - "Do not perform final NECESSARY_PROPOSITION_COVERAGE_COMPLETE certification. CRITICAL discriminator IDs do not yet exist."
+  - "Record any preliminary route concern that should constrain later discriminator design, but do not author or tier discriminators."
+  - "Do not rank candidates, estimate truth/plausibility, inspect outcome evidence, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "A4 CLAIM-TYPING REVIEW"
+    - "A5 DEPENDENCY REVIEW"
+    - "A6 NECESSARY-PROPOSITION REVIEW"
+    - "CANDIDATE-SPECIFIC / SHARED-FLOOR CLASSIFICATION"
+    - "SYMMETRY / BURDEN REVIEW"
+    - "PRELIMINARY COVERAGE CONSTRAINTS"
+    - "REQUIRED REPAIRS"
+    - "INITIAL A4/A5/A6 REVIEW STATUS"
+  status_namespace:
+    - "INITIAL_CLAIM_NECESSITY_REVIEW_PASS"
+    - "INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED"
+  stop_after_report: true
+
+future_stage:
+  Reviewer_B_returns_after_Reviewer_C_discriminator_tiering: true
+  later_task: "Review and, if sound, certify the completed NECESSARY_PROPOSITION_COVERAGE_MAP."
