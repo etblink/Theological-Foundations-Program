@@ -1,0 +1,66 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_109_111_blob_sha: "d014612a309eca1f3214b46223f849adf698c6d0"
+  prior_next_sequence: 112
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 112
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_FRESH_SESSION"
+    source_or_artifact: "Authorized Reviewer C A8 blind-elicitation exposure: input blob 95ca4fd342c699185782fd65ca3f059cfabb89ec, prompt blob f15ec2535aa1f736fc79777cbf55689904f255c3, blind scope blob 5c31ed53482161174f364cd2293ae97e982f8b6e, and Protocol A8/A8.1/A8.2/A8.3 within authorized scope."
+    exposure_class: "G0_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_EXPOSURE"
+    amendment_surfaces: ["A8 live backgrounds","A8.2 granularity","A8.3 interactions"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    incidental_metadata_exposure: "Repository root filenames only; no Program Lead background register, interaction matrix, claim/necessity inventory, discriminator material, source plan, or outcome-evidence content opened."
+    order_note: "Occurred after sequence 111 and before sequence 113."
+
+  - sequence: 113
+    repository_commit: "f999281f6ab3f13b6a93b4b8d07b4bea24119be1"
+    timestamp_utc: "2026-10-07T02:59:32Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_REPORT_0_1_0.md blob b476446df7080f71b622e86a7b5d86ed0d76b8c2"
+    exposure_class: "G0_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_RESULT_FREEZE"
+    amendment_surfaces: ["A8 live backgrounds","A8.2 granularity","A8.3 interactions"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "BACKGROUND_BLIND_ELICITATION_COMPLETE"
+
+  - sequence: 114
+    repository_commit: "8032feccc3854a8d60723193a97b21a2a3de0155"
+    timestamp_utc: "2026-10-07T03:00:55Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A8_BLIND_ELICITATION_RECONCILIATION_DOCKET_0_1_0.yaml blob 7cda53c49b70453fd7f635013a3982a76f0513ae"
+    exposure_class: "G0_A8_BLIND_ELICITATION_RECONCILIATION_DOCKET_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interaction review"]
+    outcome_relevant_evidence: false
+
+  - sequence: 115
+    repository_commit: "faa5f0cd750671f5e16bc299e6b7a743cb527098"
+    timestamp_utc: "2026-10-07T03:02:13Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 6af423ca23809ee1d3bf291c69b293ab7479a48c"
+    exposure_class: "G0_REVIEWER_C_A8_POST_BLIND_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","required compatible joint-combination set"]
+    outcome_relevant_evidence: false
+
+  - sequence: 116
+    repository_commit: "46cfe8146fae6f2ecea7629287599ba637e34615"
+    timestamp_utc: "2026-10-07T03:02:15Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_PROMPT_0_1_0.md blob fc97d4604fcc1ffb6ee1e41c939c45730c9b259c"
+    exposure_class: "G0_REVIEWER_C_A8_POST_BLIND_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","required compatible joint-combination set"]
+    outcome_relevant_evidence: false
+
+next_sequence: 117
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
