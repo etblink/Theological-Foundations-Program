@@ -1175,7 +1175,7 @@ current_scope:
     A4_A5_A6_repaired_inventory_operational: true
     claim_typing_frozen: true
     necessary_proposition_inventory_frozen: true
-    necessary_proposition_coverage_complete: false
+    initial_A6_coverage_complete_at_inventory_stage: false
     A8_blind_background_scope_frozen: true
     A8_initial_background_register_frozen: true
     A8_initial_background_interaction_matrix_frozen: true
