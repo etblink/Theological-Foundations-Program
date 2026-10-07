@@ -1,0 +1,40 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_245_blob_sha: "056ddc6676efed87528b3252ec15823f62aa4029"
+  prior_next_sequence: 246
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 246
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Additional S4_BACKGROUND support/challenge searches/openings for abstract/principle force, ground category, explanation-relation axes, ontology admissibility, agentive modal link, axiological force, metaphysical indeterminacy, temporal-origin gate, and modal-logic gate."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S4_BACKGROUND_SEARCH_EXPOSURE_BATCH_02"
+    amendment_surfaces: ["A8 background support/challenge strata","future background-state matrices","future joint-background sensitivity runs"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S4_BACKGROUND"
+    search_snippets_evidential_support: false
+    controls:
+      - "No background state is installed as true."
+      - "No proposition disposition, ranking, coverage certification, or MAKEABLE result."
+
+  - sequence: 247
+    repository_commit: "d47584d5605ae8a2d9520caac603d365ee2f6e64"
+    timestamp_utc: "2026-10-07T13:43:39Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_02_0_1_0.yaml blob a734ea4249499240688815de95080361286b9034"
+    exposure_class: "G1_S4_BACKGROUND_SUPPORT_CHALLENGE_MATRIX_FREEZE_BATCH_02"
+    amendment_surfaces: ["remaining A8 dimensions","gate-only dimensions","support/challenge symmetry"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN_BACKGROUND_SUPPORT_CHALLENGE_MATRIX__REMAINING_DIMENSIONS_AND_GATES__NO_BACKGROUND_DISPOSITIONS"
+
+next_sequence: 248
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
