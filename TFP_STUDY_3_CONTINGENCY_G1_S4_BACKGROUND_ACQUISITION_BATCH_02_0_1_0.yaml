@@ -1,0 +1,274 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S4_BACKGROUND_ACQUISITION_BATCH_02"
+status: "FROZEN_BACKGROUND_SUPPORT_CHALLENGE_MATRIX__REMAINING_DIMENSIONS_AND_GATES__NO_BACKGROUND_DISPOSITIONS"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S4_BACKGROUND"
+
+scope:
+  dimensions_or_gates_covered:
+    - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    - "BG-GROUND-CATEGORY"
+    - "BG-EXPLANATION-RELATION"
+    - "BG-ONTOLOGY-ADMISSIBILITY"
+    - "BG-AGENTIVE-MODAL-LINK"
+    - "BG-AXIOLOGICAL-FORCE"
+    - "BG-METAPHYSICAL-INDETERMINACY"
+    - "BG-TEMPORAL-ORIGIN-LINK"
+    - "BG-MODAL-LOGIC"
+  every_registered_variant_or_gate_state_has_support_stratum: true
+  every_registered_variant_or_gate_state_has_serious_challenge_stratum: true
+  background_dispositions_issued: false
+  proposition_dispositions_issued: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+source_pool:
+  B4-ABS-LANGE:
+    identity: "Marc Lange, Because Without Cause: Non-Causal Explanations in Science and Mathematics, OUP, 2016; and 'Explanations by Constraint: Not Just in Physics,' 2023."
+    role: "Defends non-causal explanations by mathematically/modal-structural constraints."
+  B4-ABS-LENG:
+    identity: "Mary Leng, 'Models, structures, and the explanatory role of mathematics in empirical science,' Synthese 199, 2021, 10415-10440."
+    doi: "10.1007/s11229-021-03253-x"
+    role: "Allows structural explanatory work while denying that explanatory success requires abstract mathematical objects."
+  B4-ABS-PINCOCK:
+    identity: "Christopher Pincock, 'A Role for Mathematics in the Physical Sciences,' Noûs 41(2), 2007, 253-275."
+    doi: "10.1111/j.1468-0068.2007.00646.x"
+    role: "Treats mathematics as theoretically useful/explanatorily relevant while preserving metaphysical dispensability."
+  B4-ABSTRACT-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Abstract Objects,' 2025 revision."
+    url: "https://plato.stanford.edu/entries/abstract-objects/"
+    role: "Maps causal-inefficacy and abstract/concrete category disputes; notes lack of a single uncontested criterion."
+  B4-REL-ME-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Metaphysical Explanation.'"
+    url: "https://plato.stanford.edu/entries/metaphysical-explanation/"
+    role: "Maps grounding, quasi-causal, nomological, unificationist, and pragmatic models."
+  B4-REL-WILSON:
+    identity: "Alastair Wilson, 'Metaphysical Causation,' Noûs 52(4), 2018."
+    doi: "10.1111/nous.12190"
+    role: "Defends grounding as a type of metaphysical causation."
+  B4-REL-HEMPEL:
+    identity: "Carl Hempel's deductive-nomological/subsumption account as surveyed by SEP 'Carl Hempel.'"
+    url: "https://plato.stanford.edu/entries/hempel/"
+    role: "Canonical nomological/subsumption model of explanation."
+  B4-REL-LIPTON:
+    identity: "Peter Lipton, work on contrastive explanation, including 'Contrastive Explanation and Causal Triangulation.'"
+    role: "Defends explanatory relevance of why-P-rather-than-Q contrasts without claiming every explanation must be contrastive."
+  B4-REL-THOMPSON:
+    identity: "Naomi Thompson, 'Questions and Answers: Metaphysical Explanation and the Structure of Reality,' JAPA 5(1), 2019, 98-116."
+    doi: "10.1017/apa.2018.51"
+    role: "Develops non-reductively contrast-sensitive but not universally contrast-mandatory question/answer metaphysical explanation."
+  B4-REASONS-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Reasons for Action: Justification, Motivation, Explanation,' 2024 revision."
+    url: "https://plato.stanford.edu/entries/reasons-just-vs-expl/"
+    role: "Maps normative, motivating, and explanatory reasons and reason-based action explanation."
+  B4-NAT-PAPINEAU:
+    identity: "David Papineau, 'The Causal Closure of the Physical and Naturalism,' Oxford Handbook of Philosophy of Mind, 2009."
+    doi: "10.1093/oxfordhb/9780199262618.003.0003"
+    role: "Strong causal-closure route to ontological naturalism/physicalism."
+  B4-NAT-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Naturalism.'"
+    role: "Explains causal-closure motivation while noting it directly constrains causal contributors, not automatically abstract/modal/normative categories."
+  B4-NAT-MN:
+    identity: "Martin Roth, 'Methodological Naturalism, Analyzed,' Erkenntnis 90, 2025, 1981-2002."
+    doi: "10.1007/s10670-024-00790-y"
+    role: "Defends a restricted methodological-naturalist policy while explicitly distinguishing it from metaphysical/ontological naturalism."
+  B4-AG-PROCESS:
+    identity: "Stanford Encyclopedia of Philosophy, 'Process Theism,' 2026 revision, summarizing Whitehead/Hartshorne."
+    url: "https://plato.stanford.edu/entries/process-theism/"
+    role: "Necessary existence plus contingent divine actuality/outcome route; non-classical agentive modal link."
+  B4-AG-MULLINS-BYRD:
+    identity: "R. T. Mullins and Shannon Byrd, 'Divine Simplicity and Modal Collapse: A Persistent Problem,' European Journal for Philosophy of Religion, 2022."
+    doi: "10.24204/ejpr.2022.3414"
+    role: "Peer-reviewed modal-collapse challenge: necessary/simple source threatens contingent creation/free outcome."
+  B4-AG-TOMASZEWSKI:
+    identity: "Christopher Tomaszewski, 'Collapsing the modal collapse argument: On an invalid argument against divine simplicity,' Analysis 79(2), 2019, 275-284."
+    doi: "10.1093/analys/any052"
+    role: "Peer-reviewed rebuttal to a common modal-collapse argument."
+  B4-AX-MANDER:
+    identity: "W. J. Mander, 'The Axiarchic Argument,' in Idealist Ethics, OUP, 2016, 87-99."
+    doi: "10.1093/acprof:oso/9780198748892.003.0007"
+    role: "Direct defense/examination of value's alleged creative/ontological explanatory force."
+  B4-AX-PUCCETTI:
+    identity: "Roland Puccetti, 'Does the Universe Exist Because It Ought To? A Critique of Extreme Axiarchism,' Dialogue 32(4), 1993, 651-657."
+    doi: "10.1017/S0012217300011306"
+    role: "Direct critique of creatively efficacious value."
+  B4-AX-MORAL-REALISM:
+    identity: "Stanford Encyclopedia of Philosophy, 'Moral Realism,' 2026 revision."
+    url: "https://plato.stanford.edu/entries/moral-realism/"
+    role: "Maps objective moral/value-fact realism and anti-realist/error-theoretic challenges."
+  B4-AX-ANTI:
+    identity: "Stanford Encyclopedia of Philosophy, 'Moral Anti-Realism.'"
+    role: "Maps error theory/noncognitivism denying objective moral/value truth at the required strength."
+  B4-IND-BW:
+    identity: "Elizabeth Barnes and J. Robert G. Williams, 'A Theory of Metaphysical Indeterminacy,' Oxford Studies in Metaphysics 6, 2011, 103-148."
+    doi: "10.1093/acprof:oso/9780199603039.003.0003"
+    role: "Explicit ontic/metaphysical indeterminacy theory contrasted with semantic/epistemic accounts."
+  B4-IND-EKLUND:
+    identity: "Matti Eklund, 'Being Metaphysically Unsettled,' Oxford Studies in Metaphysics 6, 2011, 149-172."
+    doi: "10.1093/acprof:oso/9780199603039.003.0004"
+    role: "Direct critique of Barnes/Williams and pressure toward alternative semantic/logical diagnoses."
+  B4-IND-VAGUENESS-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Vagueness,' 2022 revision."
+    url: "https://plato.stanford.edu/entries/vagueness/"
+    role: "Maps semantic, epistemic/logical, and metaphysical approaches to apparent indeterminacy."
+  B4-TEMP-COSMO:
+    identity: "Stanford Encyclopedia of Philosophy, 'Cosmological Argument,' typology distinguishing contingency/Thomistic dependence arguments from kalam temporal-beginning arguments."
+    url: "https://plato.stanford.edu/entries/cosmological-argument/"
+    role: "Direct support for keeping temporal origin as a separately licensed gate rather than importing it from contingency."
+  B4-LOGIC-PRUSS-RASMUSSEN:
+    identity: "Alexander R. Pruss and Joshua L. Rasmussen, Necessary Existence, OUP, 2018, ch. 2."
+    doi: "10.1093/oso/9780198746898.003.0002"
+    role: "Technical defense of S5 as a metaphysical-modal framework."
+  B4-LOGIC-WILLIAMSON:
+    identity: "Timothy Williamson, 'Modal Science,' Canadian Journal of Philosophy 46(4-5), 2016, 453-492."
+    doi: "10.1080/00455091.2016.1205851"
+    role: "Defends S5 closure principles for metaphysical modality."
+  B4-LOGIC-KIMPTON-NYE:
+    identity: "Samuel Kimpton-Nye, 'Hardcore Actualism and Possible Non-Existence,' Thought, 2018."
+    doi: "10.1002/tht3.377"
+    role: "Develops an actualist potentiality framework that validates T while raising pressure against S5."
+  B4-LOGIC-FRITZ:
+    identity: "Peter Fritz, 'Symmetry lost: A modal ontological argument for atheism?' Noûs, 2026."
+    role: "Explicitly notes that possible-world assumptions used to motivate S5 can fail in coherent higher-order metaphysical frameworks."
+  B4-LOGIC-LYCZAK:
+    identity: "Marcin Łyczak, 'Modal Logic of Metaphysical and Absolute Necessity,' Erkenntnis 91, 2026, 1849-1862."
+    doi: "10.1007/s10670-025-00944-6"
+    role: "Recent formal distinction between metaphysical and absolute/logical necessity; useful challenge to collapsing logic strengths."
+
+variant_matrix:
+  BG-ABSTRACT-PRINCIPLE-FORCE:
+    ABS-EXPLANATORY:
+      support: ["B4-ABS-LANGE","B4-REL-ME-SEP"]
+      challenge: ["B4-ABS-LENG","B4-ABS-PINCOCK","B4-ABSTRACT-SEP"]
+      note: "Non-causal structural/constraint explanation is serious, but explanatory success need not require ontically efficacious abstract objects."
+    ABS-CONSTRAINT-ONLY:
+      support: ["B4-ABS-LANGE","B4-ABS-LENG"]
+      challenge: ["B4-AX-MANDER","B4-REL-ME-SEP"]
+      note: "Constraint-based explanation supports a weaker non-causal role; stronger ontic/explanatory accounts challenge the 'only' limit."
+    ABS-DESCRIPTIVE:
+      support: ["B4-ABS-LENG","B4-ABS-PINCOCK","B4-ABSTRACT-SEP"]
+      challenge: ["B4-ABS-LANGE","B4-REL-ME-SEP"]
+
+  BG-GROUND-CATEGORY:
+    CAT-CONCRETE-REQUIRED:
+      support: ["B4-ABSTRACT-SEP","B4-NAT-PAPINEAU"]
+      challenge: ["B4-ABS-LANGE","B4-AX-MANDER"]
+    CAT-ABSTRACT-ELIGIBLE:
+      support: ["B4-ABS-LANGE","B4-REL-ME-SEP"]
+      challenge: ["B4-ABSTRACT-SEP","B4-ABS-LENG","B4-ABS-PINCOCK"]
+    CAT-OPEN:
+      support: ["B4-ABSTRACT-SEP","B4-REL-ME-SEP","B4-NAT-SEP"]
+      challenge: ["B4-NAT-PAPINEAU","B4-ABSTRACT-SEP"]
+      note: "Open eligibility is methodological non-exclusion, not positive evidence that every category can ground concrete actuality."
+
+  BG-EXPLANATION-RELATION:
+    ontic_relation:
+      REL-CAUSAL-SUSTAINING:
+        support: ["B4-NAT-PAPINEAU","B4-REL-ME-SEP"]
+        challenge: ["B4-REL-WILSON","B4-ABS-LANGE","B4-REL-ME-SEP"]
+      REL-GROUNDING-DEPENDENCE:
+        support: ["B4-REL-ME-SEP","B4-REL-WILSON"]
+        challenge: ["B4-ABS-LANGE","B4-REL-THOMPSON"]
+      REL-NOMIC-SUBSUMPTION:
+        support: ["B4-REL-HEMPEL"]
+        challenge: ["B4-REL-ME-SEP","B4-ABS-LANGE"]
+    contrast_requirement:
+      REL-CONTRASTIVE-REQUIRED:
+        support: ["B4-REL-LIPTON"]
+        challenge: ["B4-REL-THOMPSON","B4-REL-ME-SEP"]
+        note: "Contrastive theories show that foils can be truth-relevant, but even Lipton does not establish that every legitimate explanation must be contrastive."
+      REL-NONCONTRASTIVE-SUFFICIENT:
+        support: ["B4-REL-THOMPSON","B4-REL-ME-SEP"]
+        challenge: ["B4-REL-LIPTON"]
+    intentionality:
+      REL-INTENTIONAL-ADMISSIBLE:
+        support: ["B4-REASONS-SEP","B4-AG-PROCESS"]
+        challenge: ["B4-NAT-PAPINEAU","B4-AG-MULLINS-BYRD"]
+        note: "Reasons indisputably explain actions; extending intentional explanation to non-intentional ultimate reality remains the separately frozen bridge."
+      REL-INTENTIONAL-INADMISSIBLE:
+        support: ["B4-NAT-PAPINEAU","B4-REASONS-SEP"]
+        challenge: ["B4-AG-PROCESS","B4-AG-TOMASZEWSKI"]
+
+  BG-ONTOLOGY-ADMISSIBILITY:
+    ONT-CONCRETE-CAUSAL-CLOSURE:
+      support: ["B4-NAT-PAPINEAU"]
+      challenge: ["B4-NAT-SEP","B4-NAT-MN","B4-ABS-LANGE"]
+    ONT-METHODOLOGICAL-PREFERENCE-ONLY:
+      support: ["B4-NAT-MN","B4-NAT-SEP"]
+      challenge: ["B4-NAT-PAPINEAU"]
+      note: "Methodological naturalism can be defended as a research policy without entailing metaphysical exclusion; critics argue the policy may carry stronger ontological commitments."
+    ONT-OPEN-NO-PREEMPTIVE-RESTRICTION:
+      support: ["B4-NAT-SEP","B4-ABSTRACT-SEP","B4-REL-ME-SEP"]
+      challenge: ["B4-NAT-PAPINEAU"]
+      note: "Open status means candidate-specific warrant decides admissibility; it is not a supernaturalism background."
+
+  BG-AGENTIVE-MODAL-LINK:
+    AGENT-CONTINGENT-OUTPUT:
+      support: ["B4-AG-PROCESS","B4-AG-TOMASZEWSKI"]
+      challenge: ["B4-AG-MULLINS-BYRD"]
+    AGENT-NECESSITATING:
+      support: ["B4-AG-MULLINS-BYRD"]
+      challenge: ["B4-AG-TOMASZEWSKI","B4-AG-PROCESS"]
+    AGENT-NONFUNDAMENTAL:
+      support: ["B4-NAT-PAPINEAU","B4-NAT-SEP"]
+      challenge: ["B4-AG-PROCESS","B4-REASONS-SEP"]
+      note: "Naturalistic reduction pressure supplies a serious nonfundamentality route; it is not installed as a worldview premise."
+
+  BG-AXIOLOGICAL-FORCE:
+    AX-VALUE-ONTOLOGICAL:
+      support: ["B4-AX-MANDER"]
+      challenge: ["B4-AX-PUCCETTI","B4-AX-ANTI"]
+    AX-ACTION-ONLY:
+      support: ["B4-REASONS-SEP"]
+      challenge: ["B4-AX-MANDER"]
+      note: "Reasons/value clearly explain action in major theories; this does not entail an ontic value-to-being bridge."
+    AX-VALUE-NORMATIVE-ONLY:
+      support: ["B4-REASONS-SEP","B4-AX-MORAL-REALISM"]
+      challenge: ["B4-AX-MANDER"]
+    AX-ANTI-REALIST:
+      support: ["B4-AX-ANTI"]
+      challenge: ["B4-AX-MORAL-REALISM","B4-AX-MANDER"]
+
+  BG-METAPHYSICAL-INDETERMINACY:
+    IND-ONTIC-POSSIBLE:
+      support: ["B4-IND-BW"]
+      challenge: ["B4-IND-EKLUND","B4-IND-VAGUENESS-SEP"]
+    IND-DETERMINATE:
+      support: ["B4-IND-EKLUND","B4-IND-VAGUENESS-SEP"]
+      challenge: ["B4-IND-BW"]
+      note: "Determinacy includes the serious possibility that apparent indeterminacy is resolved without worldly unsettledness; it is not inferred merely from bivalence."
+    IND-SEMANTIC-ONLY:
+      support: ["B4-IND-VAGUENESS-SEP","B4-IND-EKLUND"]
+      challenge: ["B4-IND-BW"]
+      note: "Semantic theories supply a non-worldly source of indeterminacy; Barnes/Williams explicitly contrast their metaphysical primitive with semantic/epistemic accounts."
+
+  BG-TEMPORAL-ORIGIN-LINK:
+    TEMPORAL-LINK-NOT-LICENSED:
+      support: ["B4-TEMP-COSMO"]
+      challenge: ["B4-TEMP-COSMO"]
+      note: "The literature explicitly separates dependence/contingency cosmological arguments from kalam temporal-beginning arguments."
+    TEMPORAL-LINK-INDEPENDENTLY-LICENSED:
+      support: ["B4-TEMP-COSMO"]
+      challenge: ["B4-TEMP-COSMO"]
+      note: "Kalam supplies a genuine separately premised temporal route; the same typology shows why it cannot be imported merely from contingency."
+
+  BG-MODAL-LOGIC:
+    LOGIC-S5:
+      support: ["B4-LOGIC-PRUSS-RASMUSSEN","B4-LOGIC-WILLIAMSON"]
+      challenge: ["B4-LOGIC-KIMPTON-NYE","B4-LOGIC-FRITZ"]
+    LOGIC-WEAKER:
+      support: ["B4-LOGIC-KIMPTON-NYE","B4-LOGIC-FRITZ"]
+      challenge: ["B4-LOGIC-PRUSS-RASMUSSEN","B4-LOGIC-WILLIAMSON"]
+    LOGIC-UNFIXED:
+      support: ["B4-LOGIC-FRITZ","B4-LOGIC-LYCZAK"]
+      challenge: ["B4-LOGIC-PRUSS-RASMUSSEN","B4-LOGIC-WILLIAMSON"]
+      note: "Unfixed means the exact logic has not independently been secured for a contested inference, not that modal logic is impossible."
+
+batch_judgment:
+  all_remaining_dimensions_and_gates_have_all_registered_states_mapped: true
+  support_and_challenge_search_requirement_satisfied_for_this_batch: true
+  any_background_variant_installed_as_true: false
+  G0_reopen_trigger_identified: false
+  S4_background_search_stage_complete_if_batch_01_also_valid: true
