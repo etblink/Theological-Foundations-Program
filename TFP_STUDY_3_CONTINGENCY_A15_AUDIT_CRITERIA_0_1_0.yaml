@@ -1,0 +1,162 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A15_AUDIT_CRITERIA"
+status: "FROZEN_PRE_EVIDENCE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+purpose: "Freeze Protocol A15 standard G4 audit criteria plus Study-3-specific adversarial risks before evidence acquisition."
+
+strict_audit:
+  designated_slot: "REVIEWER_H"
+  assignment_time: "AFTER_G3_SYNTHESIS_FREEZE"
+  role: "strict_independent_auditor"
+  must_be_actor_lineage_disjoint_from:
+    - "PROGRAM_LEAD"
+    - "all candidate/lane authors"
+    - "every outcome-material reviewer in Study 3"
+  may_not_receive_human_preference_as_authority: true
+  frozen_artifact_target_required: true
+
+standard_G4_topics:
+  - { id: 1, topic: "governance/role compliance" }
+  - { id: 2, topic: "candidate completeness/exclusions" }
+  - { id: 3, topic: "steelman integrity" }
+  - { id: 4, topic: "claim-typing drift" }
+  - { id: 5, topic: "necessary-proposition/amendment timing" }
+  - { id: 6, topic: "discriminator timing/priority changes" }
+  - { id: 7, topic: "search/source-plan adherence" }
+  - { id: 8, topic: "source-selection bias" }
+  - { id: 9, topic: "lane leakage/dependency/circularity" }
+  - { id: 10, topic: "proposition consolidation" }
+  - { id: 11, topic: "background-register robustness" }
+  - { id: 12, topic: "premise warrant" }
+  - { id: 13, topic: "equal-standard application" }
+  - { id: 14, topic: "shallow-heuristic reproduction" }
+  - { id: 15, topic: "outcome scope/label correctness" }
+  - { id: 16, topic: "uncertainty completeness" }
+  - { id: 17, topic: "cold-start reproducibility" }
+
+per_topic_namespace:
+  - "PASS"
+  - "FAIL_BLOCKING"
+  - "FAIL_MAJOR"
+  - "FAIL_MINOR"
+  - "LIMITATION"
+  - "NOT_APPLICABLE_WITH_REASON"
+
+audit_outcome_namespace:
+  - "PASS"
+  - "PASS_WITH_LIMITATIONS"
+  - "REPAIR_REQUIRED"
+  - "INVALID_COMPARISON"
+  - "AUDIT_INSUFFICIENT_SIGNAL"
+
+study_specific_risks:
+  - id: "S3-R01-NECESSARY-FOUNDATION-TO-GOD-OVERREACH"
+    surface: "outcome scope/label correctness"
+    audit_test: "Verify that warrant for a necessary foundation is never silently promoted to agency, personhood, goodness, omniscience, omnipotence, uniqueness, providence, worship-worthiness, revelation, religious identity, or Christianity."
+    failure_if: "Any downstream theological attribute enters the outcome without its own frozen proposition, evidence route, and warrant."
+  - id: "S3-R02-AGENCY-IMPORTATION"
+    surface: "candidate construction / discriminator / proposition consolidation"
+    audit_test: "Verify that failure to warrant agency does not count as evidence for an impersonal rival and that agentive language is not imported into concrete/principle/axiarchic candidates."
+    failure_if: "Absence of agentive support is converted into positive impersonal support or a non-agentive family covertly acquires agency."
+  - id: "S3-R03-AXIOLOGICAL-ATTRIBUTE-IMPORTATION"
+    surface: "candidate construction / outcome scope"
+    audit_test: "Verify that axiarchic value-to-being support remains a thin non-agentive evaluative route and does not imply a perfectly good person or divine moral character."
+    failure_if: "Axiarchic support is used to infer stronger theological attributes without independent warrant."
+  - id: "S3-R04-MODAL-STATUS-SUBSTITUTION"
+    surface: "claim typing / premise warrant"
+    audit_test: "Check every use of contingency/necessity for substitution of logical consistency, conceivability, nomological variability, epistemic openness, determinism, or model uniqueness for metaphysical modality."
+    failure_if: "A truth-critical modal proposition is established by a weaker modality without an independently warranted bridge."
+  - id: "S3-R05-GLOBAL-AGGREGATION-LEAKAGE"
+    surface: "dependency / discriminator"
+    audit_test: "Check whether local/domain explanation or contingency is silently assumed to generate a distinct global totality explanandum, or conversely whether global deflation is assumed merely from successful local explanation."
+    failure_if: "D11-04 or GD-N1/GD-N2/GD-N3 burdens are bypassed by an unstated aggregation/nonaggregation premise."
+  - id: "S3-R06-BRUTE-VS-IGNORANCE"
+    surface: "premise warrant / candidate adequacy"
+    audit_test: "Verify that ontic brute stopping is distinguished from temporary ignorance and that failure to find a deeper explanation is not treated as evidence of brutality."
+    failure_if: "Epistemic non-discovery is promoted to ontic brute fact."
+  - id: "S3-R07-REGRESS-TEMPORAL-CONFLATION"
+    surface: "claim typing / discriminator"
+    audit_test: "Verify that explanatory/dependence regress is not treated as a temporal infinite past unless the temporal-origin gate is independently triggered."
+    failure_if: "Temporal beginning/endlessness substitutes for explanatory well-foundedness."
+  - id: "S3-R08-HOLISTIC-REFLEXIVE-COLLAPSE"
+    surface: "candidate construction / discriminator"
+    audit_test: "Verify that holistic/non-well-founded mutual structure remains distinct from item-reflexive self-explanation and one-way regress."
+    failure_if: "A candidate gains or loses support because these frozen structures are conflated."
+  - id: "S3-R09-TOTALITY-ACTUALITY-INDEXICALITY"
+    surface: "background robustness / discriminator"
+    audit_test: "Check that total necessity, privileged actuality, and indexical plurality are tested through the required actuality/totality interactions rather than assumed."
+    failure_if: "A totality or actuality premise determines NE/IP ranking without its frozen background interaction."
+  - id: "S3-R10-DESCRIPTION-VS-EXPLANATORY-FORCE"
+    surface: "premise warrant"
+    audit_test: "For impersonal principles/structures, verify that mathematical success, regularity, representation, or law-description is not treated as metaphysical explanatory/grounding force."
+    failure_if: "Descriptive success alone establishes PR-N3 or equivalent explanatory force."
+  - id: "S3-R11-MODAL-COLLAPSE"
+    surface: "dependency / proposition consolidation"
+    audit_test: "Check self-explanatory, necessary-concrete, necessary-agentive, principle, and axiarchic routes for illicit transition from necessary ground/explanation to necessary actuality."
+    failure_if: "A candidate that requires contingent downstream reality succeeds only by making that reality necessary."
+  - id: "S3-R12-BACKGROUND-JOINT-INTERACTIONS"
+    surface: "background-register robustness"
+    audit_test: "Verify every materially interacting A8 combination required by the frozen matrix was tested or transparently bounded; no favorable one-at-a-time sample may replace required joint testing."
+    failure_if: "A required compatible joint combination is omitted in a way capable of changing a necessary proposition or ranking."
+  - id: "S3-R13-COVERAGE-ROUTE-BURDEN-SYMMETRY"
+    surface: "necessary-proposition eligibility / equal standards"
+    audit_test: "Verify the 56 comparative and 6 direct candidate-specific A6 routes are applied at equivalent evidential rigor, including GD-N1's direct modal route."
+    failure_if: "A direct route becomes an easier burden merely because it lacks a pairwise discriminator, or a comparative route is credited from topic overlap rather than direct bearing."
+  - id: "S3-R14-SOURCE-PLAN-SYMMETRY"
+    surface: "search/source-plan adherence / source-selection bias"
+    audit_test: "Verify candidate-native, adverse, neutral/cross-tradition, precursor/thin-candidate, impersonal-concrete, brute-boundary, self-explanation-boundary, and necessary-agency non-classical source controls were actually followed."
+    failure_if: "One family receives stronger native access, weaker adverse scrutiny, or source-volume/prestige substitution."
+  - id: "S3-R15-MAKEABILITY-MISUSE"
+    surface: "source-plan/coverage/makeability"
+    audit_test: "Verify incomplete search is not called UNMAKEABLE, neutral evidence is not called unavailable, and every CRITICAL UNMAKEABLE result has a complete COMPARISON_EFFORT_RECORD and independent MAKEABLE review."
+    failure_if: "Missing search or weak signal is used to block/rank candidates without the frozen makeability process."
+  - id: "S3-R16-AMENDMENT-CHRONOLOGY"
+    surface: "amendment/change control / immutable identity"
+    audit_test: "Verify every outcome-material amendment is correctly classified against the exposure ledger and that event commits are not confused with append-container commits."
+    failure_if: "A post-exposure favorable/mixed amendment is treated as pre-evidence, or identity ambiguity alters chronology."
+  - id: "S3-R17-GATE-LEAKAGE"
+    surface: "governance / lifecycle"
+    audit_test: "Verify G0 architecture statements were not treated as evidence, G1 coverage as proposition truth, G2 dispositions as ranking, or pre-G5 proposed outcomes as canonical truth."
+    failure_if: "A later-gate conclusion appears before its authorization/required review."
+  - id: "S3-R18-HEURISTIC-COLLAPSE"
+    surface: "shallow-heuristic reproduction"
+    audit_test: "Run the mandatory HEURISTIC_MATRIX_AUDIT and specifically test: always choose necessary ground, always reject necessary ground, necessary foundation = God, always prefer simplest ontology, always prefer explanatory termination, always prefer naturalism, always prefer supernaturalism, always default to underdetermination, and always prefer more-source candidate."
+    failure_if: "A shallow slogan reproduces the material disposition matrix without evidence integration, dependencies, defeaters, backgrounds, and typed burdens."
+  - id: "S3-R19-COLD-START-REPRODUCIBILITY"
+    surface: "cold-start/artifact completeness / immutable identity"
+    audit_test: "A fresh auditor must be able to recover candidate universe, 62 necessary propositions, A8 backgrounds/interactions, A9 source plan, A10 lanes, A11 discriminators/rules, A6 routes, amendment chronology, and outcome logic from pinned artifacts without conversational reconstruction."
+    failure_if: "A truth-critical step depends on unstated chat context or an unpinned mutable identity."
+  - id: "S3-R20-QUESTION-SCOPE"
+    surface: "outcome scope/label correctness"
+    audit_test: "Verify the study answers only whether contingent reality warrants a necessary explanatory ground and which properties are independently warranted, without silently resolving naturalism, supernaturalism, revelation, or a religion."
+    failure_if: "The final label outruns the exact authorized question."
+
+anti_heuristic_requirements:
+  mandatory_protocol_matrix: true
+  candidate_CRITICAL_MATERIAL_patterns_must_be_compared_against_slogans: true
+  one_material_counterexample_to_each_successful_slogan_required_where_available: true
+  heuristic_match_to_headline_is_not_itself_failure: true
+  FAIL_MAJOR_if_one_heuristic_reproduces_material_disposition_matrix_without_evidence_integration: true
+
+cold_start_requirements:
+  exact_blob_or_commit_identity_for_truth_critical_artifacts: true
+  no_required_conversational_memory: true
+  role_lineage_and_exposure_history_recoverable: true
+  source_plan_and_search_provenance_recoverable: true
+  outcome_rule_reproducible_without_human_preference: true
+
+audit_controls:
+  no_failed_required_audit_may_be_overridden_by_Program_Lead: true
+  same_target_audit_set_must_be_fully_disclosed: true
+  material_same_target_disagreement_triggers_DISPUTED_AUDIT: true
+  G5_human_acceptance_required_after_valid_G4: true
+  source_acquisition_started: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  amendment_control: "Any later change uses Protocol C4."
+
+downstream:
+  next_required_G0_step: "A16_SHARED_PROPOSITION_MAP_DECISION"
