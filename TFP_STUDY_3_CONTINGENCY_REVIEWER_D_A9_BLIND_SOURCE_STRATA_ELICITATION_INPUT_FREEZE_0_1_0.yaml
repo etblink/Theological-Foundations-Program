@@ -1,0 +1,84 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_INPUT_FREEZE"
+status: "FROZEN__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_EXPOSURE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_D"
+  stage: "A9_1_BLIND_MISSING_SOURCE_STRATA_ELICITATION"
+  required_lineage: "fresh session disjoint from Program Lead/source-plan author, Reviewer E adverse-source/coverage/MAKEABLE lineage, and future strict auditor"
+
+working_question:
+  text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+
+generic_scope:
+  purpose: "Independently elicit source strata required for a symmetric, falsifiable, candidate-complete and background-complete Study-3 source/evidence acquisition plan before seeing the Program Lead draft plan."
+  controls:
+    - "Every admitted candidate must have access to its strongest native evidence."
+    - "Every candidate must have serious adverse/critical source strata capable in principle of defeating or materially limiting it."
+    - "Every serious live background must have source classes capable of supporting and challenging its variants."
+    - "Neutral/cross-tradition scholarship should be represented where available."
+    - "Discovery systems are not evidential authorities."
+    - "No worldview label is presumed true."
+    - "Do not acquire or assess outcome-relevant evidence in this task."
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  - description: "Protocol 0.1.7 A9 and A9.1 only as needed"
+
+forbidden_until_blind_report_frozen:
+  - "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+  - "any Program Lead source-selection or database plan"
+  - "candidate steelman packets"
+  - "outcome-relevant evidence"
+  - "discriminator proposals or tiering"
+  - "source acquisition results"
+  - "past chats or memory retrieval for Study-3 substantive material"
+
+task:
+  - "Independently identify all source strata needed to give every admitted candidate its strongest native evidential access."
+  - "Independently identify serious skeptical/adverse source strata for every candidate."
+  - "Identify neutral/cross-tradition source strata that could expose framing or selection bias."
+  - "For every operative background dimension/gate, identify source classes needed to support and challenge its live states."
+  - "Identify repositories/corpora/databases or access channels that are important enough that omitting them could create source-selection bias."
+  - "Identify primary-vs-secondary requirements, historical-edition/translation issues, date/language rules, inaccessible-source controls, and synthetic-candidate search problems."
+  - "Identify foreseeable source-selection bottlenecks, including terminology fragmentation, paywalls, unavailable monographs, literature asymmetry, and source families that may be disproportionately confessional or polemical."
+  - "Identify any source strata that should be excluded from truth-critical use or restricted to discovery/orientation."
+  - "Do not judge which sources are true, rank candidates, assess plausibility, author discriminators, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "CANDIDATE-NATIVE SOURCE STRATA"
+    - "ADVERSE / CRITICAL SOURCE STRATA"
+    - "BACKGROUND SOURCE STRATA"
+    - "NEUTRAL / CROSS-TRADITION STRATA"
+    - "DATABASE / CORPUS / ACCESS CHANNELS"
+    - "PRIMARY / SECONDARY / HISTORICAL CONTROLS"
+    - "DATE / LANGUAGE / ACCESS CONTROLS"
+    - "FORESEEABLE BOTTLENECKS"
+    - "EXCLUSIONS / DISCOVERY-ONLY SOURCES"
+    - "BLIND SOURCE-STRATA STATUS"
+  status_namespace:
+    - "SOURCE_STRATA_BLIND_ELICITATION_COMPLETE"
+    - "SOURCE_STRATA_BLIND_ELICITATION_BLOCKED"
+  stop_after_report: true
+
+post_blind_control:
+  Program_Lead_source_plan_may_be_exposed_after_complete_status: true
+  same_Reviewer_D_may_perform_full_source_plan_review: true
+  Reviewer_D_may_not_serve_as_adverse_source_reviewer: true
+  Reviewer_D_may_not_serve_as_strict_auditor: true
+
+scope_controls:
+  source_plan_passed: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
