@@ -1,0 +1,103 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A14_STOP_REOPEN_CONDITIONS"
+status: "FROZEN_PRE_EVIDENCE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+purpose: "Preregister Protocol A14 coverage target, underdetermination condition, insufficient-signal condition, and reopen_if before outcome-relevant evidence acquisition."
+
+coverage_target:
+  normal_evidence_acquisition_stop_requires:
+    - "Every A9 source stratum materially required by at least one necessary proposition, CRITICAL comparison, or SERIOUS_LIVE_BACKGROUND has been searched under the frozen rules or documented as inaccessible."
+    - "Negative searches, expected-but-absent evidence where probative, inaccessible sources, and access attempts are recorded."
+    - "Independent ADVERSE_SOURCE_PROBE has been completed before any COMPLETE or MATERIALLY_COMPLETE certification relied upon for adjudication."
+    - "Every necessary proposition needed by a live candidate has an independently reviewed PROPOSITION:<id> coverage state adequate for its frozen A6 route."
+    - "Every CRITICAL comparison needed to rank live candidates is either MAKEABLE after independent certification or has a documented COMPARISON_EFFORT_RECORD supporting UNMAKEABLE."
+    - "Every A8 live background and materially interacting compatible combination required by the frozen matrix has been tested or transparently bounded."
+    - "Remaining accessible material is predominantly dependent/repetitive or is not reasonably expected to change a truth-critical proposition, defeater, background status, or CRITICAL direction."
+  normal_target_status: "COMPLETE_OR_MATERIALLY_COMPLETE_AT_REQUIRED_SCOPES"
+  does_not_require:
+    - "exhausting every publication mentioning the question"
+    - "equal raw source counts across candidates"
+    - "finding evidence favorable to every candidate"
+  low_information_gain_rule: "Low expected information gain may justify stopping only after the coverage record exists or further truth-critical evidence is unavailable."
+
+insufficient_signal_condition:
+  study_level_label: "PROPOSED_INSUFFICIENT_SIGNAL_WITHIN_SCOPE"
+  trigger_if_any_outcome_material:
+    - "A candidate that remains relevant to the authorized question cannot satisfy A12 structural prerequisite 4 because required evidence/access for one or more necessary propositions is genuinely unavailable or inaccessible after the frozen search and documented access attempts."
+    - "A CRITICAL comparison needed to establish dominance among live candidates is UNMAKEABLE after a complete COMPARISON_EFFORT_RECORD and no other frozen route resolves the affected truth-critical burden."
+    - "Required A8 compatible background combinations cannot be responsibly tested within authorized scope and narrowing would remove a truth-critical alternative."
+    - "Provenance failure or inaccessible source identity prevents reliable use of evidence required for a necessary proposition or CRITICAL comparison."
+  safeguards:
+    - "Unperformed or incomplete search is COVERAGE_INCOMPLETE, never INSUFFICIENT_SIGNAL."
+    - "A surviving candidate may not receive ONLY_ADEQUATE merely because a rival lacks required evidence/access."
+    - "Source scarcity may establish insufficient signal only after frozen retrieval routes, alternative access routes, and the adverse-source probe have been attempted/documented."
+    - "UNMAKEABLE is comparison-specific and requires the Protocol COMPARISON_EFFORT_RECORD; it is not synonymous with neutral evidence."
+  state_effect: "If an outcome-material trigger remains after exhausted permitted search, stop confirmatory ranking at the affected scope and carry INSUFFICIENT_SIGNAL rather than manufacturing a directional result."
+
+underdetermination_condition:
+  study_level_label: "PROPOSED_UNDERDETERMINED_WITHIN_SCOPE"
+  applies_only_after: "Required evidence acquisition/coverage for the relevant outcome is adequate; do not use underdetermination as a substitute for unfinished search."
+  trigger_classes:
+    MIXED_TRADEOFF: "All relevant CRITICAL comparisons are MAKEABLE and neutral/non-discriminating, but permitted MATERIAL directions conflict without dependence/defeater resolution."
+    FRAMEWORK_DEPENDENCE: "Relative ranking changes across required admitted live backgrounds or materially interacting compatible background combinations."
+    DEPENDENCY_CYCLE: "A truth-critical dependency cycle prevents a non-circular candidate comparison or proposition consolidation under the frozen dependency rules."
+    ALL_ADEQUATE_RANKING_BLOCKED: "Two or more ADEQUATE candidates remain, but all adequate candidates are ranking-blocked by candidate-specific necessary proposition dispositions/defeaters under A12."
+    POST_EVIDENCE_DIRECTIONAL_CONTAMINATION: "A post-evidence amendment or contamination defect has unresolved favorable/mixed directional consequences that prevents confirmatory ranking under C4."
+  neutral_comparison_rule: "Neutral/non-discriminating CRITICAL comparisons do not by themselves favor either side."
+  background_rule: "A truth-warrant-only background flip does not erase a robust relative ranking; carry the truth-warrant limitation separately under the protocol."
+
+study_stop_conditions:
+  evidence_acquisition_may_stop_when:
+    - "normal coverage target is met; or"
+    - "an insufficient-signal trigger is established after exhausted/documented permitted search; or"
+    - "authorized scope is narrowed transparently because required background/source space cannot be responsibly tested, with the resulting limitation/outcome recorded."
+  adjudication_may_close_only_after:
+    - "G2 proposition/lane synthesis is complete for the attained coverage."
+    - "G3 comparison applies only frozen eligibility/dominance rules."
+    - "G4 strict audit is PASS or PASS_WITH_LIMITATIONS."
+    - "G5 human-owner acceptance occurs for any canonical adjudication."
+    - "G6 uncertainty, negative knowledge, limitations, and reopen_if are recorded."
+  no_premature_stop:
+    - "Do not stop because one favored candidate appears strong."
+    - "Do not stop because a heuristic, consensus, elegance, simplicity, or source volume appears decisive."
+    - "Do not stop merely because currently found evidence is repetitive if a frozen truth-critical source stratum or adverse route remains unsearched."
+
+reopen_if:
+  - id: "NEW_TRUTH_CRITICAL_SOURCE_OR_ACCESS"
+    condition: "A previously unknown or inaccessible source, archive, corpus, argument, or provenance record becomes available and is reasonably capable of changing a necessary proposition, defeater, background status, coverage state, MAKEABLE status, or CRITICAL direction."
+  - id: "NEW_OR_MATERIALLY_DISTINCT_CANDIDATE"
+    condition: "A coherent materially distinct candidate or subvariant is identified that satisfies Protocol B1/B5 and changes a necessary truth-bearing proposition."
+  - id: "NEW_LIVE_BACKGROUND_OR_INTERACTION"
+    condition: "A defensible background assumption or interaction not already frozen can change a truth-critical inference, ranking, or truth-warrant condition."
+  - id: "MATERIAL_METHOD_OR_PROVENANCE_ERROR"
+    condition: "A reproducible error is found in typing, dependency, coverage routing, source/provenance handling, discriminator application, background handling, or candidate boundary that could change an outcome."
+  - id: "MAKEABILITY_CHANGE"
+    condition: "A previously UNMAKEABLE CRITICAL comparison becomes MAKEABLE, or a previously relied-upon MAKEABLE comparison loses adequate coverage/provenance."
+  - id: "PROTOCOL_QUALIFICATION_CHALLENGE"
+    condition: "A credible protocol challenge places this study in REVIEW_REQUIRED because the defect could plausibly affect it."
+  - id: "NEW_OUTCOME_MATERIAL_ARGUMENT"
+    condition: "A new argument—not merely a restatement or additional source count—directly bears on a necessary proposition or CRITICAL comparison strongly enough that the frozen disposition could materially change."
+  - id: "AUDIT_OR_ACCEPTANCE_REOPEN"
+    condition: "A G4/G5/G6 record explicitly requires reopening, repair, supersession, or renewed adjudication."
+
+do_not_reopen_for:
+  - "mere increase in source count without new truth-critical content"
+  - "public controversy or popularity alone"
+  - "a new formulation that is subsumed by an already frozen candidate and changes no necessary proposition"
+  - "a background variant that changes no frozen truth-critical inference"
+  - "a theological downstream property not authorized by this study's scope"
+
+controls:
+  insufficiency_threshold_frozen: true
+  underdetermination_threshold_frozen: true
+  reopen_conditions_frozen: true
+  source_acquisition_started: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  amendment_control: "Any later change uses Protocol C4."
+
+downstream:
+  next_required_G0_step: "A15_AUDIT_CRITERIA"
