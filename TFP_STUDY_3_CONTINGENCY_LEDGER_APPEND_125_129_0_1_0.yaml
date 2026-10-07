@@ -1,0 +1,66 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_123_124_blob_sha: "1aa7e77341bd5a3afbe2bcd9c43bc7d91bf257b8"
+  prior_next_sequence: 125
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 125
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer C focused A8 background-repair recheck exposure: input blob eb411e4a369c9e27bfb5489d37c2c72779831d67, prompt blob 43ffd28e234d562884a963af4f8c8766a329e263, repaired register/matrix, prior A8 review/disposition/amendment record, and ledger append 117-122."
+    exposure_class: "G0_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_EXPOSURE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","C4 readiness"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 124 and before sequence 126."
+
+  - sequence: 126
+    repository_commit: "52ffd3141576995ff3b8ad4fc1a65f65677cd014"
+    timestamp_utc: "2026-10-07T03:21:42Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_REPORT_0_1_0.md blob 5bf2bec3c8c6dcb3cd3af02a3ddf534cda093981"
+    exposure_class: "G0_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_RESULT_FREEZE"
+    amendment_surfaces: ["A8 content repair","A8.2 granularity","A8.3 interactions","C4 readiness"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "BACKGROUND_REGISTER_REPAIR_PASS"
+
+  - sequence: 127
+    repository_commit: "feb59998d6fee9700cc79725c470e1f95db4977c"
+    timestamp_utc: "2026-10-07T03:22:10Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml blob f9180c0d654bde83dd8f71858bc0e332dcc7b3df"
+    exposure_class: "G0_PROGRAM_LEAD_A8_BACKGROUND_REPAIR_RECHECK_DISPOSITION"
+    amendment_surfaces: ["A8 content repair","C4 direction review handoff"]
+    outcome_relevant_evidence: false
+    result_status: "BACKGROUND_REGISTER_REPAIR_PASS__INDEPENDENTLY_CONFIRMED__C4_REQUIRED_BEFORE_OPERATIONAL_USE"
+
+  - sequence: 128
+    repository_commit: "43ab2ee4100347e756a746ed2f9d461d5b8a8121"
+    timestamp_utc: "2026-10-07T03:23:17Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_INPUT_FREEZE_0_1_0.yaml blob a42181b1052ae52dcf40dc24abefb5edee97674b"
+    exposure_class: "G0_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["C4 direction classification","A8 repair direction","future candidate/outcome conditions"]
+    outcome_relevant_evidence: false
+
+  - sequence: 129
+    repository_commit: "d9c420c06d2ecea8d355568251d210a560f60149"
+    timestamp_utc: "2026-10-07T03:23:20Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_PROMPT_0_1_0.md blob 2a8faf70b9c0e1fc510758eef6768ce6d0c17618"
+    exposure_class: "G0_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["C4 direction classification","A8 repair direction","future candidate/outcome conditions"]
+    outcome_relevant_evidence: false
+
+next_sequence: 130
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
