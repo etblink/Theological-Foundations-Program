@@ -1,0 +1,90 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD"
+status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_C_RECHECK_AND_C4"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+trigger:
+  Reviewer_C_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7"
+    disposition: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_TIER_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "48a6c1cce356e63f9c9464ea7a295b3ae2a93698"
+    disposition: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+
+A17_ledger_citation:
+  through_append: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml"
+  outcome_relevant_evidence_exposure_started: false
+  G1_authorized: false
+
+amendment_class_proposed: "PRE_EVIDENCE_AMENDMENT"
+
+affected_candidates:
+  - "C-BRUTE"
+  - "C-REGRESS"
+  - "C-MODAL-DISSOLUTION"
+  - "C-INDETERMINATE-ULTIMACY"
+  - "C-NECESSITARIAN"
+  - "C-INDEXICAL-PLURALITY"
+  - "C-NEC-IMPERSONAL-CONCRETE"
+  - "C-NEC-AGENTIVE"
+  - "C-NEC-IMPERSONAL-PRINCIPLE"
+  - "C-AXIARCHIC"
+
+affected_discriminators:
+  - "D11-01-MODAL-TRUTH-APTNESS"
+  - "D11-02-ONTIC-ULTIMACY-INDETERMINACY"
+  - "D11-03-TOTAL-NECESSITY"
+  - "D11-05-BRUTE-VERSUS-NONBRUTE"
+  - "D11-06-REGRESS-VERSUS-TERMINUS"
+  - "D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"
+  - "D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE"
+  - "D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"
+  - "D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"
+
+affected_outcome_conditions:
+  - "future A11 direction-rule application"
+  - "future A6 coverage-map eligibility"
+  - "future candidate adequacy and dominance only through the repaired comparators"
+  - "future theological-property inference boundary"
+
+repair_surfaces:
+  R1:
+    action: "Remove excluded BG-D09-EPISTEMIC-STANDARD and BG-D12-QUESTION-DISSOLUTION citations; use admitted A8 residues only."
+  R2:
+    action: "Add INT-MODALSTATUS-INDETERMINACY and MOD-DEFLATIONARY gate control to D11-01."
+  R3:
+    action: "Add BG-ACTUALITY-PRIVILEGE and INT-TOTALITY-ACTUALITY to D11-03."
+  R4:
+    action: "Add INT-ER-PSR and INT3-ER-PSR-TOTALITY to D11-05."
+  R5:
+    action: "Add BG-TEMPORAL-ORIGIN-LINK to D11-06 as gate-only control."
+  R6:
+    action: "Add INT-ER-AGENT, INT-MODALSTATUS-AGENT, INT-ER-ABSTRACT, and INT-MODALSTATUS-ABSTRACT to D11-12."
+  R7:
+    action: "Add INT3-RELATION-ONTOLOGY-AXIOLOGY to D11-14."
+  R8:
+    action: "Clarify D11-11 prediction text cannot override A11-DR-1; mere failure to warrant agency is not FAVORS_B."
+  R9:
+    action: "Add thin-route hard boundary to D11-13 preventing axiarchic support from licensing a perfectly good person, divine moral character, or stronger religious identity."
+
+non_changes:
+  discriminator_count: 14
+  proposed_CRITICAL_count: 14
+  proposed_MATERIAL_count: 0
+  tier_downgrade: false
+  replacement_discriminator: false
+  candidate_universe_changed: false
+  A10_lane_architecture_changed: false
+  source_plan_changed: false
+  evidence_acquisition_started: false
+
+controls:
+  Reviewer_C_focused_recheck_required: true
+  Reviewer_F_C4_direction_review_required_after_content_pass: true
+  Reviewer_G_ledger_integrity_required_before_operational_use: true
+  final_A6_coverage_certification_deferred: true
+  G1_authorized: false
