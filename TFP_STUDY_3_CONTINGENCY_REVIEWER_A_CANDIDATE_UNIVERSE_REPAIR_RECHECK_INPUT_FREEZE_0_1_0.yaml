@@ -1,0 +1,56 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_REPAIR_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_A"
+  required_lineage: "exact same xAI Grok 4.7 conversation that performed the blind elicitation and completeness/exclusion review"
+
+prior_review:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+  status: "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "9cda0d871660c0da4917d022b35a117b3c53f073"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+    blob_sha: "f756a89b2848a9a6089465fc29aed38d9401e67e"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+    blob_sha: "4d3a5273bbfb3206bb1d9d9a34a5575b8b9069b9"
+    purpose: "delta comparison only"
+  - "Protocol 0.1.7 B1-B7 only as needed"
+
+task:
+  - "Check whether every REQUIRED REPAIR in your prior report was implemented faithfully."
+  - "Check that C-HOLISTIC no longer subsumes item-reflexive C-SELF-EXPLANATORY."
+  - "Check that C-MODAL-DISSOLUTION now contains only the modal-presupposition limb and that explanatory-demand deflation is preserved under C-GLOBAL-DEFLATION."
+  - "Check C-INDETERMINATE-ULTIMACY for a clean ontic-indeterminacy versus B6 epistemic-underdetermination boundary."
+  - "Check that partitioned ultimacy, dialetheic/impossible-existence, and nomological ultimacy exclusions are symmetrically recorded under B4 without plausibility smuggling."
+  - "Check the explicit nomological subvariant anchor under C-BRUTE."
+  - "Check the axiarchic impersonal/perfect-goodness boundary."
+  - "Check that impersonal-principle subvariants remain unsplit and plurality remains cross-cutting."
+  - "Identify any repair-introduced B1 defect."
+  - "Do not reopen already-passed families merely to redesign wording unless the repair introduced or failed to cure a B1 defect."
+  - "Do not investigate outcome-relevant evidence, rank candidates, assess truth/plausibility, or begin steelman source work."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "REQUIRED-REPAIR RECHECK"
+    - "REPAIR-INTRODUCED DEFECT CHECK"
+    - "CANDIDATE UNIVERSE RECHECK STATUS"
+  status_namespace:
+    - "CANDIDATE_UNIVERSE_REPAIR_PASS"
+    - "CANDIDATE_UNIVERSE_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
+
+post_recheck_control:
+  candidate_universe_may_not_freeze_on_this_review_alone: true
+  reason: "The pre-evidence register amendments also require the separately reserved Reviewer F amendment-direction review under Protocol C4."
