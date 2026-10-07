@@ -85,7 +85,7 @@ current_scope:
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "220736eeeae3d4b1d882d82ab5da14332d70b746"
+  research_branch_head: "46c8d776dfd9dc386105cf47e524dc79303ea6e2"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -1362,17 +1362,23 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 234
+    A17_ledger_current_through_sequence: 235
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
     blob_sha: "8c6b8f07b0fd5299a060cd1705c46792bcdbe320"
     ledger_append:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_234_0_1_0.yaml"
-      blob_sha: "PENDING_FETCH_AFTER_STATE_UPDATE"
+      blob_sha: "b61d718a0427e338a0f7ac20ebee606c9789efd8"
       sequence: 234
+  first_G1_evidence_exposure:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_235_0_1_0.yaml"
+    blob_sha: "edecfd0c316e53fa7991f41885fc19180d92ad39"
+    sequence: 235
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_DISCOVERY_SEARCH_EXPOSURE"
+    search_snippets_evidential_support: false
   G1_authorized: true
-  outcome_relevant_evidence_acquisition_started: false
+  outcome_relevant_evidence_acquisition_started: true
   methodology:
     status: "MAINTENANCE_MODE"
     revision_authorized: false
@@ -1388,7 +1394,7 @@ next_action:
   id: "TFP-STUDY-3-G1-EVIDENCE-ACQUISITION"
   action: "execute_frozen_A9_source_plan_and_record_G1_provenance_negative_evidence_and_coverage_inputs"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 235
+  ledger_next_sequence: 236
   G1_authorization_blob_sha: "8c6b8f07b0fd5299a060cd1705c46792bcdbe320"
   requirements:
     - "follow TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml exactly"
