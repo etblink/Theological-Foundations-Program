@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_F1_A8_OPERATIVE_UNDER_POST_EVIDENCE_CONTAMINATION_CONTROLS__SOURCE_FOLLOWUP_COMPLETE__REVIEWER_E_RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
+  status: "G1_F1_A8_OPERATIVE_UNDER_POST_EVIDENCE_CONTAMINATION_CONTROLS__SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__G1_G2_G3_DELTA_COMPLETE__REVIEWER_E_DELTA_RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "775f478df46ee1b40c193556b7cda9b6edc7aa2c"
+  research_branch_head: "7e65f00d1ea9a0324cb63321b8761559570a6ea8"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -696,7 +696,7 @@ current_scope:
       may_not_serve_as_MAKEABLE_certifier: true
       may_not_serve_as_strict_auditor: true
   Reviewer_E:
-    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__F1_RESOLVED__SOURCE_FOLLOWUP_COMPLETE__RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
+    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__F1_RESOLVED__SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__G1_G2_G3_DELTA_COMPLETE__DELTA_RECONCILIATION_READY__COVERAGE_REVIEW_PAUSED"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
@@ -732,6 +732,36 @@ current_scope:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_284_285_0_1_0.yaml"
       blob_sha: "787ff22820c3f4d19a7d5d0b203a19f0761c2720"
       sequences: [284,285]
+    source_class_reconciliation_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md"
+      blob_sha: "729dd61ff0d0870b3540371e4588b1ca3ada2436"
+      disposition: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+    Program_Lead_source_class_reconciliation_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION_0_1_0.yaml"
+      blob_sha: "12bc496bfb7ad32dce85bfd4862b5755c9500ba1"
+      disposition: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__INDEPENDENTLY_CONFIRMED__G1_G2_G3_DELTA_AUTHORIZED"
+    source_class_reconciliation_errata:
+      artifact: "TFP_STUDY_3_CONTINGENCY_G1_SOURCE_CLASS_RECONCILIATION_ERRATA_0_1_0.yaml"
+      blob_sha: "d588c5baf552e18954b16c5c28846cc3a0cbdfe0"
+      status: "FROZEN__APPEND_ONLY_HISTORICAL_CORRECTION__NO_SUBSTANTIVE_OUTCOME_CHANGE"
+    G1_G2_G3_targeted_delta_followup:
+      artifact: "TFP_STUDY_3_CONTINGENCY_G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_TARGETED_DELTA_FOLLOWUP_0_1_0.yaml"
+      blob_sha: "0a8aef1968370f195256fda53d3c201900b25cc3"
+      status: "G1_G2_G3_TARGETED_DELTA_FROZEN__READY_FOR_REVIEWER_E_DELTA_RECONCILIATION__COVERAGE_UNCERTIFIED"
+    reconciliation_and_delta_ledger_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_286_291_0_1_0.yaml"
+      blob_sha: "70e2b46b50a88ffeb3664d4c79852dae160ca9ee"
+      sequences: [286,287,288,289,290,291]
+    source_class_delta_recheck_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DELTA_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "fb142a3bacef7367e19b6043ac838af0541edcd9"
+    source_class_delta_recheck_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DELTA_RECHECK_PROMPT_0_1_0.md"
+      blob_sha: "87529c4ecb667a88da89a9dfb6bfaa83b1a10d45"
+    source_class_delta_recheck_launch_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_292_293_0_1_0.yaml"
+      blob_sha: "3047a24ea81e96d12933919b9d2cefe03594a300"
+      sequences: [292,293]
     F1_A8_review_required: true
     F1_A8_review_complete: true
     F1_A8_review_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
@@ -1484,7 +1514,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 285
+    A17_ledger_current_through_sequence: 293
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1559,21 +1589,22 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_CANDIDATE_OR_THEOLOGICAL_OUTCOME__G1_SOURCE_FOLLOWUP_AND_COVERAGE_PENDING"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-E-G1-SOURCE-CLASS-RECONCILIATION"
-  action: "continue_same_Reviewer_E_lineage_for_blind_probe_reconciliation_against_S1_S5_and_followup_universe"
+  id: "TFP-STUDY-3-REVIEWER-E-G1-SOURCE-CLASS-DELTA-RECONCILIATION"
+  action: "continue_same_Reviewer_E_lineage_for_short_G1_G2_G3_delta_reconciliation"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 286
-  input_blob_sha: "5e35da196b34896c6f7d5ca8c42b707e97799493"
-  prompt_blob_sha: "b2baf8bf56a6cbcb6357203bc64ae900e201407f"
-  followup_universe_blob_sha: "3023fa99a05c99e600e9a373df635e708f935da3"
+  ledger_next_sequence: 294
+  input_blob_sha: "fb142a3bacef7367e19b6043ac838af0541edcd9"
+  prompt_blob_sha: "87529c4ecb667a88da89a9dfb6bfaa83b1a10d45"
+  targeted_delta_blob_sha: "0a8aef1968370f195256fda53d3c201900b25cc3"
+  errata_blob_sha: "d588c5baf552e18954b16c5c28846cc3a0cbdfe0"
   requirements:
-    - "use the exact same Reviewer-E Claude Opus 5.5 lineage that returned ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
-    - "reconcile all eight blind-probe source classes against the revealed Program Lead S1-S5 universe plus frozen followup universe"
-    - "classify each source class only as adequately represented, represented with carried gap, or material followup still required"
-    - "do not count source scarcity/access gaps as evidence against candidates"
-    - "preserve cross-tradition distinctions and SC6 relation specificity"
-    - "preserve F1 POST_EVIDENCE_FAVORABLE_OR_MIXED contamination controls"
-    - "do not certify coverage or MAKEABLE/UNMAKEABLE in this reconciliation; those become eligible only after a reconciliation pass"
+    - "use the exact same Reviewer-E Claude Opus 5.5 lineage that returned ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS and SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+    - "perform the short delta reconciliation only for G1 modal-dissolution, G2 brute skeptical-defeat, G3 global-deflation, and the two errata"
+    - "Reviewer E may retrieve only the exact external sources authorized by the frozen input; no new discovery searches"
+    - "do not equate Thomasson non-descriptivism automatically with MD-N2 truth-inaptness or inapplicability"
+    - "preserve the Koons-Pruss bridge requirement and Grünbaum theism-specific scope boundary"
+    - "carry D11-02 epistemicist conditions, SC6 relation specificity, SC1 bridge/nitya cautions, F1 symmetric application, Goswick direction check, and Barnes-2014 depth requirement"
+    - "do not certify coverage or MAKEABLE/UNMAKEABLE in this delta reconciliation; a delta pass only makes the later scoped coverage review eligible"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -1871,7 +1902,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__G1_active__F1_A8_operative_under_contamination_controls__source_followup_complete__Reviewer_E_reconciliation_ready__coverage_paused"
+    status: "G0_architecture_authorized__G1_active__F1_A8_operative_under_contamination_controls__source_class_delta_complete__Reviewer_E_delta_reconciliation_ready__coverage_paused"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
