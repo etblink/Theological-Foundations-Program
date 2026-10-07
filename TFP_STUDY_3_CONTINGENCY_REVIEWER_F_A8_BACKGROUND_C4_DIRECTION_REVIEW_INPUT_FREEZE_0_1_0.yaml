@@ -1,0 +1,129 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+status: "FROZEN__C4_DIRECTION_REVIEW_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  required_lineage: "exact same xAI / Grok 4.7 conversation previously accepted as Reviewer F for Study-3 C4 amendment-direction review"
+  assignment_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "2a4ea7a411bc3fb0a3c413e7ba50d499fb7dad24"
+  role_assignment_delta:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+    blob_sha: "77148a456d7c5f31e69b26ed4926f9794a9012a1"
+  authorized_role: "amendment_direction_reviewer"
+  may_not_serve_as_ledger_integrity_reviewer: true
+  may_not_serve_as_strict_auditor: true
+
+amendment_target:
+  amendment_id: "A8-BACKGROUND-REGISTER-MATRIX-0.1.0-TO-0.1.1"
+  amendment_record:
+    path: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "060a424314ea4cd439817dff47070c14f58c2a44"
+  original_background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_REGISTER_0_1_0.yaml"
+    blob_sha: "cba09f9ca46ba6a336aeec38820e352623c89400"
+  original_interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+    blob_sha: "995a8f908f6f4e89f19d5f1a13561368206a1493"
+  repaired_background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  repaired_interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  repaired_artifacts_operational: false
+
+content_review_chain:
+  Reviewer_C_initial_review:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "9b707667c3eb383dc087c7856c4c1d32db1afa62"
+    result: "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED"
+  Program_Lead_initial_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_REGISTER_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "54fe8be7cf001e63ae6680c74d60dc8ab415eeb6"
+  Reviewer_C_repair_recheck:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "5bf2bec3c8c6dcb3cd3af02a3ddf534cda093981"
+    result: "BACKGROUND_REGISTER_REPAIR_PASS"
+  Program_Lead_repair_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "f9180c0d654bde83dd8f71858bc0e332dcc7b3df"
+
+candidate_and_claim_context:
+  candidate_register:
+    path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    purpose: "identify affected candidate families and candidate/background boundaries only"
+  operative_A4_A5_A6_inventory:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+    purpose: "identify truth-critical propositions affected by the A8 delta only"
+
+ledger_chronology_authorized:
+  certified_pre_A8_extension:
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_99_101_0_1_0.yaml", blob_sha: "38237cb2719f849e216e07141ed2af31d2fe639f" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_102_0_1_0.yaml", blob_sha: "16a1abe0a3a70b71c35188ceb7ce75289190558e" }
+  A8_chain:
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_103_108_0_1_0.yaml", blob_sha: "a74361c40bd95cfc8ca49402903b3dfc11d4e6b4" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_109_111_0_1_0.yaml", blob_sha: "d014612a309eca1f3214b46223f849adf698c6d0" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_112_116_0_1_0.yaml", blob_sha: "5e0eb7fb63860076a6be05c4b33b36272c18f837" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_117_122_0_1_0.yaml", blob_sha: "c1158b2af9453b06e689bdb334eff8898d48ee86" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_123_124_0_1_0.yaml", blob_sha: "1aa7e77341bd5a3afbe2bcd9c43bc7d91bf257b8" }
+  recorded_outcome_relevant_evidence_exposure_started: false
+  G1_authorized: false
+  note: "Ledger integrity itself is not Reviewer F's role and will be independently reviewed by Reviewer G after this direction review."
+
+authorized_protocol:
+  description: "Protocol 0.1.7 C4 plus A8/A8.1/A8.2/A8.3 only as needed to understand the amendment surface."
+
+task:
+  - "Compare the frozen 0.1.0 background register/matrix to repaired 0.1.1."
+  - "Confirm or reject the proposed PRE_EVIDENCE_AMENDMENT timing classification from the authorized ledger chronology."
+  - "For every affected candidate family, classify the net direction of the amendment as ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "For every affected outcome condition, including future candidate adequacy, relative ranking, truth-warrant eligibility, background-sensitivity status, discriminator applicability, and necessary-proposition coverage routes, classify the net direction as ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Where a single repair has different effects on different candidates, state the candidate-specific effects rather than collapsing to one global label."
+  - "Distinguish a descriptive increase in fairness/completeness from a directional benefit to a candidate."
+  - "Check whether excluding the full Cartesian product while preserving required joints could directionally advantage any candidate through omitted combinations; if uncertain, classify MIXED_OR_UNCLEAR and state the control required."
+  - "Check whether gate-only treatment for temporal origin, modal logic, and modal deflation is directionally symmetric."
+  - "Check whether candidate/background separation repairs could suppress or duplicate a candidate's own thesis."
+  - "Do not re-review A8 content correctness except where necessary to classify direction."
+  - "Do not inspect outcome-relevant evidence, rank candidates, adjudicate truth/plausibility, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "AMENDMENT TIMING CLASSIFICATION"
+    - "DIRECTION BY REPAIR SURFACE"
+    - "DIRECTION BY CANDIDATE"
+    - "DIRECTION BY OUTCOME CONDITION"
+    - "JOINT-SET / GATE DIRECTION CHECK"
+    - "CANDIDATE-BOUNDARY DIRECTION CHECK"
+    - "REQUIRED CONTROLS OR REPAIRS"
+    - "C4 DIRECTION REVIEW STATUS"
+  candidate_table_required: true
+  all_13_candidate_families_required: true
+  allowed_direction_labels:
+    - "ADVERSE"
+    - "FAVORABLE"
+    - "NEUTRAL"
+    - "MIXED_OR_UNCLEAR"
+  amendment_class_namespace:
+    - "PRE_EVIDENCE_AMENDMENT"
+    - "POST_EVIDENCE_NONMATERIAL"
+    - "POST_EVIDENCE_ADVERSE_ONLY"
+    - "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+  status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  repaired_background_artifacts_operational: false
+  ledger_integrity_review_pending: true
