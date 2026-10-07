@@ -1,0 +1,36 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_203_208_blob_sha: "22817c6f7a4020699e984f184d26024cd0ad1d73"
+  prior_next_sequence: 209
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 209
+    repository_commit: "e53ac50cec6317a17543299ddabc75ebfcb03f70"
+    timestamp_utc: "2026-10-07T06:01:20Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml blob 55df12165134b2938bbeac45f1259e8f5a365f5e"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_INPUT_FREEZE"
+    amendment_surfaces: ["GD-N1 direct route","final A6 content certification","61-entry preservation"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+  - sequence: 210
+    repository_commit: "7fda678a811d21bb4d37587e3e0da65eb7241465"
+    timestamp_utc: "2026-10-07T06:01:22Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_PROMPT_0_1_0.md blob 6ff92e11f2432caf7ab280699ba203825a21c23a"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_PROMPT_FREEZE"
+    amendment_surfaces: ["GD-N1 direct route","final A6 content certification","61-entry preservation"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+next_sequence: 211
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
