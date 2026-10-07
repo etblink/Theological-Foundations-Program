@@ -1,0 +1,197 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S5_RECENCY_SUPPLEMENT"
+status: "S5_RECENCY_SEARCH_STAGE_COMPLETE__NO_G0_REOPEN_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S5_RECENCY"
+
+purpose: "Run the frozen recent-literature supplement after S1-S4 to detect material post-canonical developments, new candidate/background/discriminator surfaces, or scope-sensitive recent literature without giving publication date evidential priority."
+
+recency_window:
+  primary_focus: "2024-2026"
+  older_canonical_sources_remain_valid: true
+  recency_is_not_evidential_weight: true
+
+controls:
+  search_snippets_evidential_support: false
+  proposition_dispositions_issued: false
+  candidate_ranking_performed: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+  candidate_universe_amended: false
+  A8_amended: false
+  A11_amended: false
+  S5_search_stage_complete: true
+
+recent_admitted_sources:
+  - source_id: "S5-001"
+    identity: "Daniel Nolan, 'Grounding, Explanation, and the Tasks of Metaphysics,' in Systematic Metaphysics: Historical and Contemporary Perspectives, Oxford University Press, 2026, 249-265."
+    doi: "10.1093/9780198982111.003.0013"
+    surfaces: ["BG-EXPLANATORY-REALISM","BG-EXPLANATION-RELATION","C-HOLISTIC","C-SELF-EXPLANATORY","C-NEC-IMPERSONAL-PRINCIPLE"]
+    recent_contribution: "Argues that grounding is useful but neither central nor exhaustive for metaphysical explanation, strengthening explanatory-pluralist sensitivity."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-002"
+    identity: "Michael Bevan, 'Metaphysical foundationalism,' Philosophical Studies, 2025."
+    doi: "10.1007/s11098-025-02444-3"
+    surfaces: ["C-REGRESS","C-HOLISTIC","BG-DEPENDENCE-STRUCTURE"]
+    recent_contribution: "Explicit abductive defense of strong no-infinite-descent foundationalism."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-003"
+    identity: "Markel Kortabarria, 'Is it Possible to do Without the Fundamental?' Philosophia 52, 2024/2025, 1541-1560."
+    doi: "10.1007/s11406-024-00806-5"
+    surfaces: ["C-REGRESS","BG-DEPENDENCE-STRUCTURE"]
+    recent_contribution: "Argues that major metaphysical-insufficiency/vicious-regress arguments do not successfully discredit infinitism, providing a recent counterweight to strong foundationalism."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-004"
+    identity: "Evan Welchance, 'Metaphysical Infinitism and Theoretical Virtue,' Erkenntnis, 2026."
+    doi: "10.1007/s10670-026-01084-1"
+    surfaces: ["C-REGRESS","BG-DEPENDENCE-STRUCTURE"]
+    recent_contribution: "Develops recent infinitist theory-choice/theoretical-virtue work."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-005"
+    identity: "Ezra Rubenstein, 'Two approaches to metaphysical explanation,' Noûs 58(4), 2024, 1107-1136."
+    doi: "10.1111/nous.12491"
+    surfaces: ["BG-EXPLANATORY-REALISM","BG-EXPLANATION-RELATION","C-GLOBAL-DEFLATION","C-NEC-IMPERSONAL-PRINCIPLE"]
+    recent_contribution: "Distinguishes generation and reduction approaches to explanatory metaphysics and argues both are needed."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-006"
+    identity: "Kenneth L. Pearce, 'Metaphysical Rationalism Requires Grounding Indeterminism,' Journal of the American Philosophical Association, published online 2025."
+    stable_url: "https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/metaphysical-rationalism-requires-grounding-indeterminism/8DF300A3BD3E5F891F457108BDEFA47E"
+    surfaces: ["BG-PSR-SCOPE","BG-DEPENDENCE-STRUCTURE","BG-AGENTIVE-MODAL-LINK","C-NEC-AGENTIVE","C-NECESSITARIAN","C-NEC-IMPERSONAL-CONCRETE","C-AXIARCHIC"]
+    recent_contribution: "Argues that metaphysical rationalism, across classical-theist, Spinozist, priority-monist, and axiarchic forms, requires grounding indeterminism if necessary grounds are to explain contingent facts."
+    architecture_effect: "NO_NEW_SURFACE__CAPTURED_BY_EXISTING_MODAL_LINK_AND_DEPENDENCE_INTERACTIONS"
+
+  - source_id: "S5-007"
+    identity: "Alessandro Torza, 'A Chancy Theory of Metaphysical Indeterminacy,' Noûs, 2026."
+    doi: "10.1111/nous.70030"
+    surfaces: ["C-INDETERMINATE-ULTIMACY","BG-METAPHYSICAL-INDETERMINACY"]
+    recent_contribution: "Develops an objective-chance reductive account of metaphysical indeterminacy and compares it with primitive/supervaluationist/determinable alternatives."
+    architecture_effect: "NO_NEW_CANDIDATE__NEW_MECHANISM_WITHIN_EXISTING_IND_ONTIC_POSSIBLE_SPACE"
+
+  - source_id: "S5-008"
+    identity: "David Harmon, 'Spinoza’s expansive necessitarianism,' British Journal for the History of Philosophy, 2026."
+    doi: "10.1080/09608788.2026.2677594"
+    surfaces: ["C-NECESSITARIAN","BG-MODAL-STATUS"]
+    recent_contribution: "Defends a radical expansive reading of Spinozistic necessitarianism using plenitude, law structure, and causal integration."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-009"
+    identity: "Sam Baron and Jessica Pohlmann, 'Priority monism and the emergence of spacetime,' Synthese, 2025."
+    doi: "10.1007/s11229-024-04859-7"
+    surfaces: ["C-NEC-IMPERSONAL-CONCRETE","BG-GROUND-CATEGORY","BG-DEPENDENCE-STRUCTURE"]
+    recent_contribution: "Finds tension between standard cosmos-as-basic priority monism and emergent spacetime, then develops a revised worldly-parthood account of concreteness."
+    architecture_effect: "NO_NEW_CANDIDATE__MATERIAL_VARIANT_WITHIN_EXISTING_IC_CARDINALITY_CATEGORY_CONTROLS"
+
+  - source_id: "S5-010"
+    identity: "Lok-Chi Chan, 'Nature's Complexity Alive: Farewell to Several Unificatory Cosmological Arguments for Monism,' Noûs, 2026."
+    doi: "10.1111/nous.70051"
+    surfaces: ["C-NEC-IMPERSONAL-CONCRETE","BG-DEPENDENCE-STRUCTURE","BG-GROUND-CATEGORY"]
+    recent_contribution: "Critiques parsimony- and relation-based cosmological arguments for monism, directly bearing on single-basic-cosmos variants."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-011"
+    identity: "Michael Wallner, 'The metaphysical explanation of modal and non-modal truths,' Synthese 208, 2026, article 120."
+    doi: "10.1007/s11229-026-05737-0"
+    surfaces: ["BG-MODAL-STATUS","BG-EXPLANATORY-REALISM","BG-EXPLANATION-RELATION","C-NECESSITARIAN"]
+    recent_contribution: "Examines whether explaining metaphysical necessity also explains the underlying truth, with implications for modality/fundamentality/explanation."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-012"
+    identity: "Recent 2026 grounding-theoretic work, 'The ground of beings cannot be a being: a grounding-theoretic argument,' International Journal for Philosophy of Religion."
+    doi: "10.1007/s11153-026-10013-9"
+    surfaces: ["BG-GROUND-CATEGORY","BG-EXPLANATION-RELATION","C-NEC-IMPERSONAL-CONCRETE","C-NEC-IMPERSONAL-PRINCIPLE","C-NEC-AGENTIVE"]
+    recent_contribution: "Applies contemporary grounding structure to ultimate-ground category questions, emphasizing grounding versus temporal efficient causation."
+    architecture_effect: "NO_NEW_SURFACE__CATEGORY_AND_RELATION_AXES_ALREADY_FROZEN"
+    limitation: "Any theological conclusion must be restricted to exact argument strength and cannot bypass candidate-specific property burdens."
+
+  - source_id: "S5-013"
+    identity: "Recent analytic work on Lewis: 'How Many Worlds Could There Be? David Lewis and Advanced Modalizing,' Analytic Philosophy, 2026."
+    stable_url: "https://onlinelibrary.wiley.com/doi/full/10.1111/phib.70012"
+    surfaces: ["C-INDEXICAL-PLURALITY","BG-ACTUALITY-PRIVILEGE","BG-MODAL-STATUS"]
+    recent_contribution: "Revisits Lewisian modal realism, ontological parity, indexical actuality, and advanced modalizing."
+    architecture_effect: "NO_NEW_SURFACE"
+
+  - source_id: "S5-014"
+    identity: "Current SEP 'Cosmological Argument,' substantive revision 1 July 2026."
+    stable_url: "https://plato.stanford.edu/entries/cosmological-argument/"
+    surfaces: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM","BG-TEMPORAL-ORIGIN-LINK"]
+    recent_contribution: "Current neutral synthesis continues to separate contingency, dependence/grounding, restricted-PSR, weak-PSR, and temporal/kalam routes and explicitly preserves the separate step from necessary being to identification/properties."
+    architecture_effect: "NO_NEW_SURFACE"
+
+recent_candidate_surface_check:
+  C-BRUTE:
+    recent_route: ["S5-014"]
+    finding: "No materially distinct recent brute candidate beyond frozen ontic-brute/nomological variants."
+  C-REGRESS:
+    recent_route: ["S5-002","S5-003","S5-004"]
+    finding: "Active 2024-2026 foundationalist/infinitist dispute; frozen regress/dependence structure remains adequate."
+  C-HOLISTIC:
+    recent_route: ["S5-001","S5-005"]
+    finding: "Recent explanatory-pluralism work reinforces relation-specific holism sensitivity; no distinct new family."
+  C-SELF-EXPLANATORY:
+    recent_route: ["S5-005"]
+    finding: "No newer direct self-explanation source located that supersedes the 2022 Kappes primary route; absence is not negative evidence."
+  C-GLOBAL-DEFLATION:
+    recent_route: ["S5-005","S5-014"]
+    finding: "Recent explanation pluralism/current cosmological survey preserves the local/global-demand dispute."
+  C-MODAL-DISSOLUTION:
+    recent_route: ["S5-011"]
+    finding: "Recent modal-explanation work remains within frozen modal-status/deflationary boundaries; the canonical 2024 modal-fictionalism revision remains the stronger direct map source."
+  C-INDETERMINATE-ULTIMACY:
+    recent_route: ["S5-007"]
+    finding: "New objective-chance account enriches existing metaphysical-indeterminacy mechanism space; no new candidate."
+  C-NECESSITARIAN:
+    recent_route: ["S5-006","S5-008","S5-011"]
+    finding: "Strong recent necessitarian/rationalist work sharpens modal/dependence issues already frozen."
+  C-INDEXICAL-PLURALITY:
+    recent_route: ["S5-013"]
+    finding: "Recent Lewisian work revisits indexical actuality/advanced modalizing within frozen plurality candidate."
+  C-NEC-IMPERSONAL-CONCRETE:
+    recent_route: ["S5-006","S5-009","S5-010","S5-012","S5-014"]
+    finding: "Recent monism/concreteness/category work materially informs existing cardinality/category variants but does not create a new family."
+  C-NEC-AGENTIVE:
+    recent_route: ["S5-006","S5-012","S5-014"]
+    finding: "Recent work sharpens grounding-indeterminism and necessary-being/property separation; no new necessary-agent family beyond frozen scope."
+  C-NEC-IMPERSONAL-PRINCIPLE:
+    recent_route: ["S5-001","S5-005","S5-012"]
+    finding: "Recent explanation/category work stays within principle/ground-category/explanatory-force machinery."
+  C-AXIARCHIC:
+    recent_route: ["S5-006"]
+    finding: "Recent grounding-indeterminism work explicitly includes axiarchism as rationalist case; no new axiarchic family."
+
+excluded_or_context_only_recent_material:
+  - source: "Matthew Adelstein and Amos Wollen, 'A Presumptuous Path to Theism, Modal Realism, or Axiarchism,' Erkenntnis, 2026."
+    reason: "Relies on Self-Indication Assumption/self-locating evidence not preregistered in Study 3; useful as contextual confirmation that the categories are distinct, not admitted as a truth-critical Study-3 route."
+  - source: "Paul Draper, Atheism and the Problem of Evil, 2025, including anaxiarchism."
+    reason: "Problem-of-evil route is explicitly excluded by final A1/A2 scope; no evidence from it is used here."
+  - source: "Recent fine-tuning/axiarchism publications."
+    reason: "Fine-tuning is explicitly excluded as an independent Study-3 route."
+  - source: "Physics-specific cosmology/physical-modality papers."
+    reason: "Not admitted merely because recent; used only if later directly serving a frozen background/proposition under A9. No physics-specific cosmology is added to candidate space."
+
+reopen_check:
+  materially_distinct_14th_candidate_found: false
+  missing_A8_background_dimension_found: false
+  missing_A11_CRITICAL_discriminator_surface_found: false
+  frozen_candidate_boundary_materially_broken: false
+  frozen_scope_materially_broken: false
+  C4_reopen_trigger_found: false
+  explanation: "Recent work introduces new arguments/mechanisms and updated defenses/criticisms within already frozen candidate/background/comparison surfaces, not a materially distinct truth-bearing candidate or missing architecture class."
+
+S5_completion_judgment:
+  recent_literature_supplement_performed_across_all_13_candidates_or_their_controlling_backgrounds: true
+  recent_background_and_discriminator_relevant_developments_checked: true
+  excluded_recent_routes_recorded: true
+  S5_RECENCY_SEARCH_STAGE_COMPLETE: true
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+next_action:
+  stage: "G1_ACQUISITION_STAGE_COMPLETION_CHECK"
+  rule: "Verify S1-S5 search-stage obligations were executed and preserved; do not equate search-stage completion with COMPLETE/MATERIALLY_COMPLETE proposition coverage or MAKEABLE."
