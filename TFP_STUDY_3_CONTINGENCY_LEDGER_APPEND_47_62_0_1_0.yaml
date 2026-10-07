@@ -1,0 +1,165 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_46_blob_sha: "32b842dd46dba4667cf49a70f19c8ea6cc9f8ffa"
+  prior_next_sequence: 47
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 47
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "B3 formulation/recognized-objection source survey A: PSR/brute-fact literature; cosmological-regress literature; non-well-founded grounding; self-explanation; Hume/Russell global-explanation objections; modal anti-realism; metaphysical indeterminacy."
+    exposure_class: "G0_B3_CANDIDATE_FORMULATION_SOURCE_RESEARCH"
+    amendment_surfaces: ["B3 steelman packets","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+    boundary: "Restricted to candidate formulation, serious proponent literature, and recognized objections. No comparative truth ranking or G1 evidence adjudication."
+    order_note: "After sequence 46 / construction manifest commit at 2026-10-07T01:12:50Z and before sequence 48 at 2026-10-07T01:22:00Z."
+
+  - sequence: 48
+    repository_commit: "7c36f14cfad1689bd95a221a37a96b6aa53f8e69"
+    timestamp_utc: "2026-10-07T01:22:00Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_BRUTE_0_1_0.md blob 0888f048117afed26c95cb9b6b01c177d406bfb2"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-BRUTE steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 49
+    repository_commit: "1ac0435c58fadda777f0966ee8c3d4ca074e69f5"
+    timestamp_utc: "2026-10-07T01:22:02Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_REGRESS_0_1_0.md blob 8790ba1007037a632a42fbacf723894424b448b6"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-REGRESS steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 50
+    repository_commit: "64c8eedf00a7af20605c6f08a3dcdc5757a9d499"
+    timestamp_utc: "2026-10-07T01:22:04Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_HOLISTIC_0_1_0.md blob 5128dfb29fbbf88eb098e971aec64746ec6f0065"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-HOLISTIC steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 51
+    repository_commit: "7f5ca969de23a3715f35ff3ee734af9bc65bb005"
+    timestamp_utc: "2026-10-07T01:22:06Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_SELF_EXPLANATORY_0_1_0.md blob 7b6ffebd9a2a5b625137b928650dbc0ef824c143"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-SELF-EXPLANATORY steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 52
+    repository_commit: "6b3ce89f6387bb0d801d4ab9340e4600c42ee0ea"
+    timestamp_utc: "2026-10-07T01:22:10Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md blob 32807841c6805b9d6c8440895457118f10f842a1"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-GLOBAL-DEFLATION steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 53
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "B3 formulation/recognized-objection source survey B: modal anti-realism; Barnes/Williams/Wilson metaphysical indeterminacy; Spinozan necessitarianism; Lewisian indexical plurality; Oppy immanent necessity."
+    exposure_class: "G0_B3_CANDIDATE_FORMULATION_SOURCE_RESEARCH"
+    amendment_surfaces: ["B3 steelman packets","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+    boundary: "Restricted to candidate formulation, serious proponent literature, and recognized objections."
+    order_note: "After sequence 52 at 2026-10-07T01:22:10Z and before sequence 54 at 2026-10-07T01:24:02Z."
+
+  - sequence: 54
+    repository_commit: "66d8c86cb2eb00ea4c8fd0bdc58c1631da063167"
+    timestamp_utc: "2026-10-07T01:24:02Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_MODAL_DISSOLUTION_0_1_0.md blob 54dbb7733a164899b0ec575ecd673dc17a3b26d6"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-MODAL-DISSOLUTION steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 55
+    repository_commit: "d12500b00393eba47d9f1f75937f364db26c3b62"
+    timestamp_utc: "2026-10-07T01:24:05Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDETERMINATE_ULTIMACY_0_1_0.md blob 99b5f62cd33a190c3e2ec081f39de9033d1c3c37"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-INDETERMINATE-ULTIMACY steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 56
+    repository_commit: "f8d3c43084f7c38ec2283afd42e32281da82c3e1"
+    timestamp_utc: "2026-10-07T01:24:07Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NECESSITARIAN_0_1_0.md blob 0b8a1ac7d79077256a98a188844c97689c52056c"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-NECESSITARIAN steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 57
+    repository_commit: "316c01fe451faba1a056bc0e58191448388ac057"
+    timestamp_utc: "2026-10-07T01:24:09Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDEXICAL_PLURALITY_0_1_0.md blob 5cb7058b6903d38579fd5ae8dd26a35795c4f75b"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-INDEXICAL-PLURALITY steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 58
+    repository_commit: "c223be49a000cf41a3ae7a3b6836170d8ec5e0ad"
+    timestamp_utc: "2026-10-07T01:24:11Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_CONCRETE_0_1_0.md blob 1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-NEC-IMPERSONAL-CONCRETE steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 59
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "B3 formulation/recognized-objection source survey C: O'Connor/Pruss/Rasmussen necessary-agentive explanation; structural realism/mathematical-structure/metaphysical-law literature; Leslie/Mulgan/Mander axiarchism."
+    exposure_class: "G0_B3_CANDIDATE_FORMULATION_SOURCE_RESEARCH"
+    amendment_surfaces: ["B3 steelman packets","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+    boundary: "Restricted to candidate formulation, serious proponent literature, and recognized objections."
+    order_note: "After sequence 58 at 2026-10-07T01:24:11Z and before sequence 60 at 2026-10-07T01:25:21Z."
+
+  - sequence: 60
+    repository_commit: "a5074b6a626a9f96803fd9433daf1f2b5a6f21c1"
+    timestamp_utc: "2026-10-07T01:25:21Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_AGENTIVE_0_1_0.md blob 46c4333f379ac9f394eddcd9ec52dc0fb56da113"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-NEC-AGENTIVE steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 61
+    repository_commit: "5f22d8bc74f872a84e24cacdf9796d0f446334a1"
+    timestamp_utc: "2026-10-07T01:25:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_PRINCIPLE_0_1_0.md blob 12108b38091a9ecacdff8ab27222e733175ce68c"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-NEC-IMPERSONAL-PRINCIPLE steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+  - sequence: 62
+    repository_commit: "42ca991d33df672cbcc736708cfef43be6b27be5"
+    timestamp_utc: "2026-10-07T01:25:38Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_AXIARCHIC_0_1_0.md blob ee3e8e1ee24671df264da1985ae433989c037200"
+    exposure_class: "G0_B3_STEELMAN_PACKET_FREEZE"
+    amendment_surfaces: ["B3 C-AXIARCHIC steelman","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+next_sequence: 63
+outcome_relevant_evidence_exposure_started: false
