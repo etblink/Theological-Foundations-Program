@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_146_150_blob_sha: "feff8d5741fef27f0b19a0e53873a7fa5b0c51f3"
+  prior_next_sequence: 151
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 151
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_D_FRESH_SESSION"
+    source_or_artifact: "Authorized Reviewer D post-blind A9 source-plan review exposure: input blob f39f7506667bdc2a264518d73ba4abc932d2cf8f, frozen blind report, SOURCE_PLAN 0.1.0 blob ec0aa9806528f57d58108f262d800c0b102a800e, reconciliation docket, candidate/background identity artifacts, A8 operational acceptance, and Protocol A9/A9.1 only."
+    exposure_class: "G0_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_EXPOSURE"
+    amendment_surfaces: ["A9 source-plan completeness","A9.1 strongest-native access","adverse symmetry","background challengeability","source-selection bottlenecks"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 150 and before sequence 152."
+
+  - sequence: 152
+    repository_commit: "f7984f360059ecf048502730fffb4b44c6ca167f"
+    timestamp_utc: "2026-10-07T04:11:05Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_D_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_REPORT_0_1_0.md blob e2187001c9f249eac9f041a1ed88decfc554ae8f"
+    exposure_class: "G0_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A9 source-plan completeness","A9.1 strongest-native access","adverse symmetry","source-selection bottlenecks"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "SOURCE_PLAN_REPAIR_REQUIRED"
+
+  - sequence: 153
+    repository_commit: "0f9d1c50508aa5adbcfc3bb224370a94509d627b"
+    timestamp_utc: "2026-10-07T04:11:38Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_POST_BLIND_SOURCE_PLAN_REVIEW_DISPOSITION_0_1_0.yaml blob b0e9a52e8e21c9cb7c6141a2957451b3574153bc"
+    exposure_class: "G0_PROGRAM_LEAD_A9_SOURCE_PLAN_REVIEW_DISPOSITION"
+    amendment_surfaces: ["A9 repair scope","C4 amendment control","future source acquisition"]
+    outcome_relevant_evidence: false
+    result_status: "SOURCE_PLAN_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+
+next_sequence: 154
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
