@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_167_168_blob_sha: "1119c12b82c37c48facd45e177ae5f9e0851f7e5"
+  prior_next_sequence: 169
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 169
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer G A9 source-plan ledger-integrity review exposure: input blob ea87bb7a596178c0bebc37056cc9e7ccb5177be3, prompt blob 63fa4beb741085d1c72b7177d02ce999af6057f2, certified baseline sequences 1-132, extension sequences 133-166 through fixed endpoint 64aaffd15e5db9fb2c403da037f2fb016fd399f1, authorized identity-check artifacts, and repository-history metadata within the frozen scope."
+    exposure_class: "G0_REVIEWER_G_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_EXPOSURE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A9 operational-use gate"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 168 and before sequence 170."
+
+  - sequence: 170
+    repository_commit: "58331c9f085ca644e926cb86d73556ed7083a819"
+    timestamp_utc: "2026-10-07T04:55:42Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md blob 3d1cd2dab822118a57f455ef4e76bfada7d12dc2"
+    exposure_class: "G0_REVIEWER_G_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A9 operational-use gate"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "A9_LEDGER_INTEGRITY_PASS"
+
+  - sequence: 171
+    repository_commit: "1510bc17a66db3e558325a3ccc2015701d440df6"
+    timestamp_utc: "2026-10-07T04:56:25Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml blob 43d5f1c363975c843bbce8552b8ff65c8aaaafca"
+    exposure_class: "G0_PROGRAM_LEAD_A9_LEDGER_INTEGRITY_DISPOSITION"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A9 operational-use authorization"]
+    outcome_relevant_evidence: false
+    result_status: "A9_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A9_OPERATIONALIZATION_AUTHORIZED"
+
+next_sequence: 172
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
