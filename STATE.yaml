@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_DISCRIMINATOR_CONSTRUCTION_NEXT__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_PROGRAM_LEAD_CONSTRUCTION_FROZEN__REVIEWER_C_TIER_REVIEW_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "67b6ddf0c0a8252920d1a82425ab9574f59814e9"
+  research_branch_head: "b1929b1a05e719b7fef9b8ca3e63484be6e1cf6c"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -671,6 +671,25 @@ current_scope:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_173_0_1_0.yaml"
       blob_sha: "6bdd1963ed1e5862ffeba040df27e798430ed723"
       next_sequence: 174
+  A11_program_lead_discriminator_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+    blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+    status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_C_TIER_DIRECTION_REVIEW__NO_OUTCOME_EVIDENCE"
+    discriminator_count: 14
+    proposed_CRITICAL_count: 14
+    proposed_MATERIAL_count: 0
+  A11_reviewer_C_tier_review_input:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_INPUT_FREEZE_0_1_0.yaml"
+    blob_sha: "2f0b57d2dc5eab46d3f4eb0790794a0c6ef2b3ef"
+    exposure_to_Reviewer_C: false
+  A11_reviewer_C_tier_review_prompt:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_PROMPT_0_1_0.md"
+    blob_sha: "67fc52144f971af31f77b6ceb05729d96e62c2e8"
+    exposure_to_Reviewer_C: false
+  A11_launch_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_174_176_0_1_0.yaml"
+    blob_sha: "e6bbc1f609fcaf722158e0fb602c0f4302f0bbc7"
+    next_sequence: 177
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -909,6 +928,10 @@ current_scope:
     A10_required_lanes_frozen: true
     A10_required_lane_count: 8
     A10_necessary_propositions_primary_lane_complete: true
+    A11_program_lead_discriminator_register_frozen: true
+    A11_discriminator_count: 14
+    A11_reviewer_C_tier_review_ready: true
+    A11_reviewer_C_tier_review_complete: false
     discriminators_frozen: false
     insufficiency_threshold_frozen: false
     G0_complete: false
@@ -926,18 +949,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-A11-DISCRIMINATOR-CONSTRUCTION"
-  action: "construct_preregistered_CRITICAL_and_MATERIAL_discriminators_with_complete_direction_rules_then_freeze_for_Reviewer_C_tier_review"
+  id: "TFP-STUDY-3-REVIEWER-C-A11-DISCRIMINATOR-TIER-REVIEW"
+  action: "continue_same_Reviewer_C_session_for_frozen_A11_tier_pair_symmetry_feasibility_and_direction_rule_review"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 174
-  required_lane_register_blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+  ledger_next_sequence: 177
+  reviewer_C_input_blob_sha: "2f0b57d2dc5eab46d3f4eb0790794a0c6ef2b3ef"
+  reviewer_C_prompt_blob_sha: "67fc52144f971af31f77b6ceb05729d96e62c2e8"
+  discriminator_register_blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
   requirements:
-    - "use A10 lane competence boundaries and the operative A4/A5/A6 inventory; do not organize discriminators by favored candidate"
-    - "for each CRITICAL or MATERIAL discriminator name the candidate pair or candidate-vs-rival relation, necessary propositions served, prediction/argument, relevant backgrounds, proposed priority, symmetric rationale, feasibility status, comparison-scoped coverage requirement, and complete DIRECTION_RULE"
-    - "ensure every COMPARATIVE_ROUTE necessary proposition ultimately has at least one CRITICAL discriminator before final A6 coverage certification"
-    - "preserve necessary foundation != God and prohibit stronger theological attribute importation"
-    - "Reviewer C performs independent tier/pair-symmetry/direction-rule review after Program Lead construction"
-    - "do not acquire outcome-relevant evidence, do not begin G1, and do not certify final A6 coverage yet"
+    - "use the exact same xAI / Grok 4.7 Reviewer-C conversation that returned BACKGROUND_REGISTER_REPAIR_PASS"
+    - "review all 14 proposed discriminators for tier, pair/rival symmetry, necessary-proposition linkage, feasibility, direction-rule completeness, and required A8 backgrounds/interactions"
+    - "preserve necessary foundation != God and block all stronger-theological-attribute importation"
+    - "do not inspect outcome-relevant evidence or source-acquisition results"
+    - "do not certify final A6 coverage, rank candidates, issue post-evidence direction results, or begin G1"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
