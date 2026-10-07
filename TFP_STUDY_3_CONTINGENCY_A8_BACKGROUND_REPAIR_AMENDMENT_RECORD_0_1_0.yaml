@@ -1,0 +1,65 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_BACKGROUND_REPAIR_AMENDMENT_RECORD"
+status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_C_RECHECK_AND_C4"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+amendment_id: "A8-BACKGROUND-REGISTER-MATRIX-0.1.0-TO-0.1.1"
+
+ledger:
+  through_append: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_112_116_0_1_0.yaml"
+  blob_sha: "5e0eb7fb63860076a6be05c4b33b36272c18f837"
+  next_sequence_at_repair_start: 117
+  outcome_relevant_evidence_exposure_started: false
+
+descriptive_correction:
+  summary:
+    - "Increase background granularity where independently reviewed distinctions change frozen truth-critical inferences."
+    - "Add narrow inference-admissibility backgrounds/gates omitted from the initial register."
+    - "Remove protocol-method and candidate-subsumed material from the background space."
+    - "Repair interaction and compatible-joint coverage without full Cartesian enumeration."
+
+affected_candidates:
+  - "C-BRUTE"
+  - "C-REGRESS"
+  - "C-HOLISTIC"
+  - "C-SELF-EXPLANATORY"
+  - "C-GLOBAL-DEFLATION"
+  - "C-MODAL-DISSOLUTION"
+  - "C-INDETERMINATE-ULTIMACY"
+  - "C-NECESSITARIAN"
+  - "C-INDEXICAL-PLURALITY"
+  - "C-NEC-IMPERSONAL-CONCRETE"
+  - "C-NEC-AGENTIVE"
+  - "C-NEC-IMPERSONAL-PRINCIPLE"
+  - "C-AXIARCHIC"
+
+affected_outcomes:
+  - "future candidate adequacy"
+  - "future relative ranking"
+  - "future truth-warrant eligibility"
+  - "future background-sensitivity status"
+  - "future discriminator applicability"
+  - "future necessary-proposition coverage routes"
+
+proposed_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+class_basis:
+  outcome_relevant_evidence_exposure_started: false
+  G1_authorized: false
+  confirmatory_comparison_started: false
+
+direction_effects_pending_independent_review: true
+effect_by_candidate: "TO_BE_CLASSIFIED_BY_REVIEWER_F_AFTER_REVIEWER_C_CONTENT_RECHECK"
+relative_ranking_changed: false
+confirmatory_consequence: "NONE_YET__REPAIRED_ARTIFACTS_NONOPERATIVE"
+
+required_controls_before_use:
+  - "Reviewer C focused repair recheck"
+  - "Reviewer F C4 amendment-direction review"
+  - "Reviewer G ledger-integrity review"
+  - "Program Lead independent acceptance after each required pass"
+
+direction_reviewer: "REVIEWER_F__NOT_YET_RUN"
+ledger_integrity_reviewer: "REVIEWER_G__NOT_YET_RUN"
+strict_auditor: "PROHIBITED_FOR_REVIEWER_F_AND_REVIEWER_G"
