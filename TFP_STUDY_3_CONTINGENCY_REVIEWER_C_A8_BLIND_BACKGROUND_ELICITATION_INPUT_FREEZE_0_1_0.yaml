@@ -1,0 +1,59 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_INPUT_FREEZE"
+status: "FROZEN__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_EXPOSURE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_C"
+  stage: "A8_BLIND_BACKGROUND_ELICITATION"
+  required_lineage: "fresh session disjoint from Program Lead/background/discriminator authors, Reviewer B, Reviewer G, and future strict auditor"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_A8_BLIND_BACKGROUND_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
+    blob_sha: "5c31ed53482161174f364cd2293ae97e982f8b6e"
+  - description: "Protocol 0.1.7 A8, A8.1, A8.2, and A8.3 only as needed"
+
+forbidden_until_blind_report_frozen:
+  - "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_REGISTER_0_1_0.yaml"
+  - "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+  - "Study-3 candidate lists or steelman packets except generic labels already unavoidable in the working question"
+  - "Study-3 claim/necessity inventory"
+  - "discriminator proposals or tiering"
+  - "source plan"
+  - "outcome-relevant evidence"
+  - "past chats or memory retrieval for Study-3 substantive material"
+
+task:
+  - "Independently elicit serious live background dimensions and materially distinct variants from the working question and generic A8 scope."
+  - "For each proposed dimension/variant, state the proposition, why it is serious/live, the generic truth-critical inference class it could affect, and what would defeat or retire it."
+  - "Identify likely split/merge boundaries."
+  - "Identify likely pairwise or higher-order interactions whose joint state could change a truth-critical inference."
+  - "Identify any global worldview labels that should instead be decomposed into narrower inference-changing assumptions."
+  - "Distinguish backgrounds from candidate answers, epistemic abstention, and outcome labels."
+  - "Do not rank candidates, assess truth/plausibility, inspect outcome-relevant evidence, author discriminators, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "BLIND BACKGROUND DIMENSIONS"
+    - "VARIANT / GRANULARITY NOTES"
+    - "LIKELY INTERACTIONS"
+    - "EXCLUSIONS / DECOMPOSITIONS"
+    - "BLIND ELICITATION STATUS"
+  status_namespace:
+    - "BACKGROUND_BLIND_ELICITATION_COMPLETE"
+    - "BACKGROUND_BLIND_ELICITATION_BLOCKED"
+  stop_after_report: true
+
+post_report_control:
+  Program_Lead_register_may_be_exposed_after_complete_status: true
+  same_Reviewer_C_may_review_inclusion_exclusion_and_interactions: true
+  same_Reviewer_C_may_later_review_discriminator_tiers: true
+  Reviewer_C_may_not_serve_as_strict_auditor: true
+
+scope_controls:
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
