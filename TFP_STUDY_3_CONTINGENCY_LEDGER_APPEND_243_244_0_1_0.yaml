@@ -1,0 +1,41 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_242_blob_sha: "6d3f3d9b885384540370312c198c99d6dbb38e33"
+  prior_next_sequence: 243
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 243
+    repository_commit: "7db1f06c5f28d530ea7f07efe25eecd9113e7a7b"
+    timestamp_utc: "2026-10-07T13:35:48Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S3_NEUTRAL_COMPARATIVE_BATCH_01_0_1_0.yaml blob 00ea1ddb0486f180de23157a3b26ab1d048ec856"
+    exposure_class: "G1_S3_NEUTRAL_SEARCH_STAGE_COMPLETION_FREEZE"
+    amendment_surfaces: ["neutral/comparative terminology map","false-dichotomy checks","candidate/background reopen checks"]
+    outcome_relevant_evidence: true
+    result_status: "S3_NEUTRAL_SEARCH_STAGE_COMPLETE__NO_G0_AMENDMENT_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+
+  - sequence: 244
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Initial S4_BACKGROUND support/challenge discovery searches and source openings for operative A8 variants, including explanatory realism/pluralism/deflationism, PSR scope, totality explanandum, dependence structure, and modal status."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S4_BACKGROUND_SEARCH_EXPOSURE"
+    amendment_surfaces: ["A8 background support/challenge strata","future background-state matrices","future joint-background sensitivity runs"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S4_BACKGROUND"
+    search_snippets_evidential_support: false
+    controls:
+      - "No background variant is installed as true."
+      - "No proposition disposition, candidate ranking, coverage certification, or MAKEABLE determination is made."
+      - "Search snippets are discovery metadata only."
+
+next_sequence: 245
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
