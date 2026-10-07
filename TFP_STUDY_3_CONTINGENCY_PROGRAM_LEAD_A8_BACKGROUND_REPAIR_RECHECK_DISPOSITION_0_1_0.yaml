@@ -1,0 +1,38 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A8_BACKGROUND_REPAIR_RECHECK_DISPOSITION"
+status: "BACKGROUND_REGISTER_REPAIR_PASS__INDEPENDENTLY_CONFIRMED__C4_REQUIRED_BEFORE_OPERATIONAL_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "5bf2bec3c8c6dcb3cd3af02a3ddf534cda093981"
+  reviewer_status: "BACKGROUND_REGISTER_REPAIR_PASS"
+
+independent_replay:
+  R1_R11_all_pass: true
+  explanation_relation_internal_axes_present: true
+  cross_axis_profile_rule_present: true
+  material_ordinary_pair_count: 15
+  higher_order_interaction_count: 5
+  ordinary_dimension_count: 13
+  gate_only_dimension_count: 2
+  all_105_pairs_classified_by_explicit_or_default_rule: true
+  full_cartesian_product_excluded: true
+  outside_set_residue_not_treated_as_covered: true
+  candidate_background_boundaries_preserved: true
+  repaired_artifacts_nonoperative: true
+  outcome_relevant_evidence_used: false
+  G1_authorized: false
+
+content_disposition:
+  A8_content_repair_complete: true
+  background_register_0_1_1_content_accepted_for_C4_review: true
+  background_interaction_matrix_0_1_1_content_accepted_for_C4_review: true
+  operational_use_authorized: false
+
+remaining_required_controls:
+  - "Reviewer F C4 amendment-direction classification"
+  - "Reviewer G ledger-integrity review after C4"
+  - "Program Lead acceptance after both required controls"
