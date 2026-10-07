@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_99_101_blob_sha: "38237cb2719f849e216e07141ed2af31d2fe639f"
+  prior_next_sequence: 102
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 102
+    repository_commit: "9fdf28ca9a685d71a4fd85ed4657e28c6c895fbe"
+    timestamp_utc: "2026-10-07T02:39:56Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A4_A5_A6_INVENTORY_OPERATIONAL_ACCEPTANCE_0_1_0.yaml blob 371efa1982b8c6e0d25e12cfc8644accfb02a5c4"
+    exposure_class: "G0_A4_A5_A6_INVENTORY_OPERATIONAL_ACCEPTANCE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions","A8 handoff"]
+    outcome_relevant_evidence: false
+    result_status: "OPERATIVE_FOR_LATER_G0__FINAL_A6_COVERAGE_NOT_CERTIFIED"
+
+next_sequence: 103
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
