@@ -1,0 +1,42 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_47_62_blob_sha: "8ba2f399d362a5189dc866aa51b88097f7a75d5a"
+  prior_next_sequence: 63
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 63
+    repository_commit: "52f597a5156974ec9a4794e2b64a16d425cd998f"
+    timestamp_utc: "2026-10-07T01:27:49Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_COMPLETION_0_1_0.yaml blob f5a25088f11f74d74a168ab405f001e7decdfc85"
+    exposure_class: "G0_B3_STEELMAN_PACKET_CONSTRUCTION_COMPLETION_FREEZE"
+    amendment_surfaces: ["B3 steelman packet completeness","B3 equal-strength review readiness"]
+    outcome_relevant_evidence: false
+
+  - sequence: 64
+    repository_commit: "42e58ec1b7570b20c5fb4a992d25e6989d480e9a"
+    timestamp_utc: "2026-10-07T01:28:34Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 25f5a5d64ccd714ba2894655490986c66a6e694e"
+    exposure_class: "G0_REVIEWER_A_B3_EQUAL_STRENGTH_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["B3 steelman packet equal-strength review","A3 Reviewer A role"]
+    outcome_relevant_evidence: false
+
+  - sequence: 65
+    repository_commit: "de745872e751c7dfa0d35c1bad454f6d1c8a6a64"
+    timestamp_utc: "2026-10-07T01:28:37Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_PROMPT_0_1_0.md blob 6ea99cafa50e7adab7f0bc293a1f5e555515d912"
+    exposure_class: "G0_REVIEWER_A_B3_EQUAL_STRENGTH_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["B3 steelman packet equal-strength review","A3 Reviewer A role"]
+    outcome_relevant_evidence: false
+
+next_sequence: 66
+outcome_relevant_evidence_exposure_started: false
