@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__CANDIDATE_UNIVERSE_REPAIRED__REVIEWER_A_RECHECK_READY__C4_DIRECTION_REVIEW_PENDING__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__CANDIDATE_UNIVERSE_REPAIR_PASS__REVIEWER_F_ASSIGNMENT_READY__C4_DIRECTION_AND_LEDGER_INTEGRITY_PENDING__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "2832cb8b10f04418cc662af1c85664dc10bb0a4f"
+  research_branch_head: "3ea8fceb471881a429ca88f3b0a17f1cd70b9078"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -107,7 +107,7 @@ current_scope:
     blob_sha: "efe84e2aacf2c9399befe9fc28bc6c3f9ce08e70"
     status: "FROZEN_PRIVATE_FROM_REVIEWER_A_UNTIL_BLIND_ELICITATION_FREEZE"
   Reviewer_A:
-    status: "ASSIGNED__BLIND_ELICITATION_COMPLETE__INITIAL_COMPLETENESS_REVIEW_REPAIR_REQUIRED__FOCUSED_RECHECK_READY"
+    status: "ASSIGNED__BLIND_ELICITATION_COMPLETE__INITIAL_COMPLETENESS_REVIEW_REPAIR_REQUIRED__FOCUSED_RECHECK_PASS"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "2afaa799a1e83fc187aa7923724e0b43ae3f653c"
@@ -154,10 +154,37 @@ current_scope:
     repair_recheck_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_PROMPT_0_1_0.md"
       blob_sha: "f043d38e3ebbc8285a3cbb74aa33b68e437d4a9b"
+    repair_recheck_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_REPORT_0_1_0.md"
+      blob_sha: "503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+      disposition: "CANDIDATE_UNIVERSE_REPAIR_PASS"
+    Program_Lead_recheck_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+      blob_sha: "39439dce137ce19c1b68ee665b231061a79ffed8"
+      disposition: "REVIEWER_A_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_REVIEW_STILL_REQUIRED"
+  Reviewer_F:
+    status: "UNASSIGNED__FRESH_SESSION_HANDSHAKE_REQUIRED"
+    assignment_handshake_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+      blob_sha: "073a00b53f3f2e20c0cf17b5fc931498396ff71d"
+    C4_direction_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "1c4f3ac6d223820e202e7804692883611ad1d70f"
+      exposure_to_Reviewer_F: false
+    C4_direction_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_PROMPT_0_1_0.md"
+      blob_sha: "b12aaf77b8640695f7766d4cdce14685ad5aa7ce"
+      exposure_to_Reviewer_F: false
+    lineage_requirement: "fresh session disjoint from Program Lead, Reviewer G ledger-integrity reviewer, and future strict auditor"
+    prohibited_roles:
+      - "ledger_integrity_reviewer"
+      - "strict_independent_auditor"
+  Reviewer_G:
+    status: "UNASSIGNED__REQUIRED_AFTER_REVIEWER_F_CLASSIFICATION_FOR_LEDGER_INTEGRITY"
   exposure_ledger:
-    artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_4.yaml"
-    blob_sha: "a2fcd8accf9a00a993b4a884d8cf95c57ba95418"
-    next_sequence: 23
+    artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
+    blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+    next_sequence: 28
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -166,8 +193,13 @@ current_scope:
     candidate_universe_initial_review_complete: true
     candidate_universe_initial_review_result: "REPAIR_REQUIRED"
     candidate_universe_repaired: true
-    candidate_universe_recheck_ready: true
+    candidate_universe_recheck_complete: true
+    candidate_universe_recheck_result: "PASS"
     candidate_universe_C4_direction_review_required: true
+    candidate_universe_C4_direction_review_ready: true
+    reviewer_F_assigned: false
+    candidate_universe_ledger_integrity_review_required_after_C4: true
+    reviewer_G_assigned: false
     candidate_universe_frozen: false
     steelman_packets_frozen: false
     claim_typing_frozen: false
@@ -191,16 +223,18 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-A-CANDIDATE-UNIVERSE-REPAIR-RECHECK"
-  action: "continue_the_same_Reviewer_A_session_with_the_frozen_focused_repair_recheck"
+  id: "TFP-STUDY-3-REVIEWER-F-ASSIGNMENT-HANDSHAKE"
+  action: "assign_a_fresh_procedurally_disjoint_Reviewer_F_session_before_exposing_the_frozen_C4_candidate_universe_amendment_direction_packet"
   branch: "research/tfp-study-3-contingency-g0"
-  repair_recheck_input_blob_sha: "3e217a90d0c87026c9eb62f5f8d8cacb0fc40079"
-  repair_recheck_prompt_blob_sha: "f043d38e3ebbc8285a3cbb74aa33b68e437d4a9b"
+  assignment_handshake_prompt_blob_sha: "073a00b53f3f2e20c0cf17b5fc931498396ff71d"
+  C4_direction_input_blob_sha: "1c4f3ac6d223820e202e7804692883611ad1d70f"
+  C4_direction_prompt_blob_sha: "b12aaf77b8640695f7766d4cdce14685ad5aa7ce"
   requirements:
-    - "use the exact same Reviewer A conversation that issued CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
-    - "perform focused repair verification only; do not restart candidate generation"
-    - "no outcome-relevant evidence search, truth adjudication, candidate ranking, or steelman source work"
-    - "candidate universe remains unfrozen even on Reviewer A PASS until the separately reserved Reviewer F C4 amendment-direction review is satisfied"
+    - "Reviewer F must be a fresh session disjoint from Program Lead, Reviewer G ledger-integrity reviewer, and future strict auditor"
+    - "perform assignment-only handshake before any Study-3 repository exposure"
+    - "do not expose the frozen C4 review packet until the handshake is independently accepted"
+    - "Reviewer F may classify amendment direction but may not certify ledger integrity"
+    - "candidate universe remains unfrozen until Reviewer F passes and Reviewer G separately verifies ledger integrity"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -498,7 +532,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__candidate_universe_repaired__Reviewer_A_recheck_ready__C4_direction_review_pending"
+    status: "G0_architecture_authorized__candidate_universe_repair_pass__Reviewer_F_assignment_ready__C4_direction_and_ledger_integrity_pending"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
