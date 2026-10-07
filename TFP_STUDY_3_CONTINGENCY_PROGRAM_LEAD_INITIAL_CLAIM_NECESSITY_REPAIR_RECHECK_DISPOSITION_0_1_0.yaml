@@ -1,0 +1,44 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_DISPOSITION"
+status: "NARROW_REPAIR_ACCEPTED__GD_N3_ONLY__RECHECK_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "7c04ed3d39a1474a01a5e599d12997491160afdf"
+  reviewer_status: "INITIAL_CLAIM_NECESSITY_REPAIR_STILL_REQUIRED"
+
+independent_disposition:
+  R1_R5: "ACCEPTED_AS_CURED"
+  R6_dependency_semantics: "ACCEPTED_EXCEPT_GD_N3_TARGET_CONTENT"
+  R7_scope_sensitive_truth_conditions: "ACCEPTED_EXCEPT_GD_N3_TRUTH_CONDITION_SUBSTITUTION"
+  A4_A6_classification_structure: "ACCEPTED_SUBJECT_TO_GD_N3_REPAIR"
+  repair_introduced_defects_other_than_GD_N3: "NONE_IDENTIFIED"
+
+remaining_repair:
+  candidate_id: "C-GLOBAL-DEFLATION"
+  proposition_id: "GD-N3"
+  defect: "Substantive candidate truth claim was replaced by a claim about support for treating that conclusion as true."
+  required_action:
+    - "Restore the substantive necessary claim that, within the candidate's relevant explanatory scope, absence of an additional global ground is not by itself an explanatory defect while legitimate local explanation is preserved."
+    - "Retain principled scoped justification separately as supporting/non-necessary rationale."
+    - "Keep GD-N2 -> GD-N3 as an independently necessary answer-level condition; do not treat non-aggregation alone as establishing GD-N3."
+
+scope_controls:
+  all_other_necessary_propositions_unchanged: true
+  candidate_universe_changed: false
+  B3_packets_changed: false
+  shared_floor_changed: false
+  trigger_tags_changed: false
+  final_A6_coverage_certified: false
+  discriminator_work_authorized: false
+  C4_direction_classified: false
+  outcome_relevant_evidence_exposure_started: false
+  G1_authorized: false
+
+next_control:
+  corrected_inventory_version: "0.1.2"
+  same_Reviewer_B_focused_delta_recheck_required: true
+  Reviewer_F_C4_direction_review_still_required_after_Reviewer_B_pass: true
