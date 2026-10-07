@@ -1,0 +1,47 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_103_108_blob_sha: "a74361c40bd95cfc8ca49402903b3dfc11d4e6b4"
+  prior_next_sequence: 109
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 109
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OWNER_RELAYED_REVIEWER_C_FRESH_SESSION_HANDSHAKE"
+    source_or_artifact: "Reviewer C assignment handshake response"
+    exposure_class: "G0_REVIEWER_C_ASSIGNMENT_HANDSHAKE_RESPONSE"
+    amendment_surfaces: ["A3 reviewer lineage control","A8 blind background elicitation"]
+    outcome_relevant_evidence: false
+    result_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_C"
+    order_note: "Occurred after sequence 108 and before sequence 110."
+
+  - sequence: 110
+    repository_commit: "58654bfab717c4440411140d7af898200ae827c5"
+    timestamp_utc: "2026-10-07T02:52:23Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml blob 95ddf900a2c6d31bae8bf68144105a3e2ae1e818"
+    exposure_class: "G0_REVIEWER_C_ASSIGNMENT_ACCEPTANCE"
+    amendment_surfaces: ["A3 reviewer lineage control","A8 blind background elicitation"]
+    outcome_relevant_evidence: false
+    result_status: "ACCEPTED"
+
+  - sequence: 111
+    repository_commit: "4ee1cb7abdffc0b1ea1f15fdc3c0e1e7ab94e7c1"
+    timestamp_utc: "2026-10-07T02:52:34Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml blob 681c277f7887a353323023cb535ca1c029e19606"
+    exposure_class: "G0_REVIEWER_C_ROLE_ASSIGNMENT_DELTA"
+    amendment_surfaces: ["A3 reviewer separation","A8 background review","A11 discriminator tier review"]
+    outcome_relevant_evidence: false
+    result_status: "ASSIGNED__A8_BLIND_BACKGROUND_ELICITATION_READY"
+
+next_sequence: 112
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
