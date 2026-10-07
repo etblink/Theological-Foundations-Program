@@ -1,0 +1,117 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_INPUT_FREEZE"
+status: "FROZEN"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_C"
+  lineage_requirement: "exact same xAI / Grok 4.7 Reviewer-C conversation that returned BACKGROUND_REGISTER_REPAIR_PASS"
+  authorized_role: "discriminator_tier_reviewer"
+  prohibited_roles:
+    - "post_evidence_direction_result_reviewer"
+    - "strict_independent_auditor"
+
+review_target:
+  artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+  blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+  discriminator_count: 14
+  proposed_CRITICAL_count: 14
+  proposed_MATERIAL_count: 0
+  status_before_review: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_C_TIER_DIRECTION_REVIEW__NO_OUTCOME_EVIDENCE"
+
+authorized_files:
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+    blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+    use: "primary review target"
+  - path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+    use: "lane competence boundaries"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+    use: "necessary propositions, dependencies, and coverage-intent scaffold"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+    use: "frozen candidate identities and safeguards"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    use: "operative background dimensions and candidate/background boundaries"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+    use: "required background joints/gates for discriminator completeness"
+  - path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+    blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+    use: "comparison-scoped source-access and symmetry requirements only"
+  - path: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+    blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+    use: "Reviewer-C role and separation controls"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+    blob_sha: "681c277f7887a353323023cb535ca1c029e19606"
+    use: "Reviewer-C discriminator-tier authorization"
+  - path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    use: "A6, A10, A11, A12, C4 and role-separation rules only as needed"
+
+review_questions:
+  - id: "Q1_TIER"
+    question: "Is the proposed CRITICAL priority correct for each of the 14 discriminators under Protocol A11, or does any comparator need repair/downgrade/splitting?"
+  - id: "Q2_SYMMETRY"
+    question: "Is every candidate pair or candidate-vs-rival relation defined symmetrically enough that swapping A/B swaps the favoring threshold without changing evidential burden?"
+  - id: "Q3_LINKAGE"
+    question: "Does each discriminator directly bear on the listed necessary propositions at the stated strength, without pretending final A6 coverage is already complete?"
+  - id: "Q4_FEASIBILITY"
+    question: "Is FEASIBLE_WITHIN_SCOPE defensible for each comparator as a preregistered philosophical/source comparison, without confusing feasibility with future MAKEABLE certification?"
+  - id: "Q5_DIRECTION"
+    question: "Does the frozen A11-DR-1 template plus each comparator's exact A_state and B_state fully specify FAVORS_A, FAVORS_B, NEUTRAL_OR_NONDISCRIMINATING, and UNMAKEABLE without post-hoc discretion or asymmetric thresholds?"
+  - id: "Q6_BACKGROUNDS"
+    question: "Are the cited background dimensions/interactions sufficient for the registered inferential point, and is any required joint/gate missing?"
+  - id: "Q7_BOUNDARY"
+    question: "Do the agentive discriminators preserve necessary foundation != God and block importation of stronger theological attributes?"
+
+pass_condition:
+  - "all 14 priority classifications are valid as frozen"
+  - "all pair/rival relations are symmetric at the registered strength"
+  - "necessary-proposition linkage is direct enough for A11 without claiming final A6 completeness"
+  - "all feasibility statuses are valid"
+  - "all direction rules are complete and symmetric"
+  - "background/joint requirements are adequate"
+  - "no stronger-theological-attribute importation path exists"
+
+repair_condition:
+  - "any incorrect tier"
+  - "any asymmetric or ill-defined rival relation"
+  - "any proposition linkage that overstates what the discriminator can establish"
+  - "any unsupported feasibility status"
+  - "any incomplete direction state or hidden post-hoc threshold"
+  - "any missing outcome-material background/joint dependency"
+  - "any route from necessary agency to stronger theology without separate warrant"
+
+required_output_headings:
+  - "SESSION / CONTINUITY"
+  - "INPUT VERIFICATION"
+  - "TIER CLASSIFICATION"
+  - "PAIR / RIVAL-RELATION SYMMETRY"
+  - "NECESSARY-PROPOSITION LINKAGE"
+  - "FEASIBILITY"
+  - "DIRECTION-RULE COMPLETENESS"
+  - "BACKGROUND / INTERACTION COVERAGE"
+  - "THEOLOGICAL ATTRIBUTE BOUNDARY"
+  - "REQUIRED REPAIRS"
+  - "A11 DISCRIMINATOR TIER REVIEW STATUS"
+
+status_namespace:
+  pass: "A11_DISCRIMINATOR_TIER_REVIEW_PASS"
+  repair_required: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+
+scope_prohibitions:
+  - "do not inspect outcome-relevant evidence or source-acquisition results"
+  - "do not rank candidates or assess candidate truth/plausibility"
+  - "do not issue any post-evidence direction result"
+  - "do not certify final A6 necessary-proposition coverage"
+  - "do not author replacement discriminators inside the review report"
+  - "do not change the candidate universe, backgrounds, source plan, or required lanes"
+  - "do not begin G1"
+
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
