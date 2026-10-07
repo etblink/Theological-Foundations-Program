@@ -1,0 +1,100 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_INPUT_FREEZE"
+status: "FROZEN__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_EXPOSURE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  role: "amendment_direction_reviewer"
+  lineage_requirement: "fresh session disjoint from Program Lead, Reviewer G ledger-integrity reviewer, and future strict auditor"
+  prohibited_roles:
+    - "ledger_integrity_reviewer"
+    - "strict_independent_auditor"
+
+C4_context:
+  amendment_class_expected_from_chronology: "PRE_EVIDENCE_AMENDMENT"
+  expected_class_is_not_prejudged: true
+  reason: "Reviewer F must independently verify chronology/classification rather than inherit the Program Lead's label."
+  outcome_relevant_evidence_exposure_started: false
+  classification_rule: "For every affected candidate/outcome condition, classify direction as ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR, then assign the C4 amendment class."
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_4.yaml"
+    blob_sha: "a2fcd8accf9a00a993b4a884d8cf95c57ba95418"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+    blob_sha: "4d3a5273bbfb3206bb1d9d9a34a5575b8b9069b9"
+    purpose: "pre-amendment baseline"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    purpose: "repaired amendment candidate"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+    blob_sha: "f756a89b2848a9a6089465fc29aed38d9401e67e"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "9cda0d871660c0da4917d022b35a117b3c53f073"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "39439dce137ce19c1b68ee665b231061a79ffed8"
+  - "Protocol 0.1.7 C4 and A17 only as needed"
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "candidate evidence adjudication"
+  - "future Reviewer G ledger-integrity conclusions"
+  - "future strict-auditor material"
+
+amendment_surfaces_to_classify:
+  - id: "AMEND-HOLISTIC-SELF"
+    description: "Narrow C-HOLISTIC to mutual/structural/non-reflexive non-well-founded explanation and sharpen C-SELF-EXPLANATORY as item-reflexive."
+    affected_candidates: ["C-HOLISTIC","C-SELF-EXPLANATORY"]
+  - id: "AMEND-DEFLATION-DISSOLUTION"
+    description: "Restrict C-MODAL-DISSOLUTION to modal contingency-presupposition failure and move genuine-contingency explanatory-demand deflation into C-GLOBAL-DEFLATION."
+    affected_candidates: ["C-MODAL-DISSOLUTION","C-GLOBAL-DEFLATION"]
+  - id: "AMEND-INDETERMINATE"
+    description: "Add C-INDETERMINATE-ULTIMACY as a distinct candidate with explicit B6 boundary."
+    affected_candidates: ["C-INDETERMINATE-ULTIMACY"]
+    affected_outcomes: ["candidate-universe completeness","future comparative universe size"]
+  - id: "AMEND-NOMOLOGICAL-ANCHOR"
+    description: "Anchor nomological-but-not-metaphysically-necessary ultimacy under C-BRUTE rather than as a standalone family."
+    affected_candidates: ["C-BRUTE"]
+  - id: "AMEND-AXIARCHIC-BOUNDARY"
+    description: "Make explicit that axiarchic requiredness is impersonal and not the perfect goodness of a personal agent or God-identity."
+    affected_candidates: ["C-AXIARCHIC"]
+  - id: "AMEND-EXCLUSIONS"
+    description: "Freeze explicit B4 exclusions for partitioned ultimacy, dialetheic/impossible-existence, standalone nomological ultimacy, plural/layered necessary foundations as standalone, classical-theism/deism/pantheism/panentheism labels, physics-specific cosmologies, epistemic abstention, and no-concrete-reality."
+    affected_outcomes: ["candidate-universe completeness","future B5 late-candidate handling"]
+  - id: "AMEND-UNSPLIT-PRINCIPLE-PLURALITY"
+    description: "Preserve impersonal-principle forms as subvariants and plurality/layering as cross-cutting rather than standalone families."
+    affected_candidates: ["C-NEC-IMPERSONAL-PRINCIPLE","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE"]
+
+task:
+  - "Verify from the ledger whether the amendment bundle occurred before any outcome-relevant evidence exposure."
+  - "For every amendment surface and every affected candidate/outcome condition, assign ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Explain direction relative to the candidate/outcome condition, not relative to a worldview."
+  - "Assign the C4 amendment class from the chronology and direction findings."
+  - "Determine whether Protocol C4 permits the repaired register/exclusion record to be used prospectively once ledger integrity is independently verified."
+  - "Identify any directional asymmetry or hidden favorable repair that would require a different treatment."
+  - "Do not reassess B1 completeness except where necessary to classify an amendment's direction."
+  - "Do not rank candidates, investigate evidence, or adjudicate truth."
+
+required_output:
+  sections:
+    - "SESSION / LINEAGE CONTINUITY"
+    - "INPUT / EXPOSURE VERIFICATION"
+    - "AMENDMENT CHRONOLOGY CLASSIFICATION"
+    - "DIRECTION CLASSIFICATION BY AMENDMENT SURFACE"
+    - "C4 USE DISPOSITION"
+    - "LEDGER-INTEGRITY HANDOFF"
+    - "REVIEW STATUS"
+  review_status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+ledger_integrity_boundary:
+  Reviewer_F_may_not_certify_ledger_integrity: true
+  required_next_reviewer_if_direction_review_passes: "REVIEWER_G"
