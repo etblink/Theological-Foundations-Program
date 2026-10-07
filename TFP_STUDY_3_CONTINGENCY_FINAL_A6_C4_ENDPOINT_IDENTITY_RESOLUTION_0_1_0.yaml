@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "FINAL_A6_C4_ENDPOINT_IDENTITY_RESOLUTION"
+status: "FROZEN_NONOUTCOME_METADATA_RESOLUTION__PENDING_REVIEWER_G_CONFIRMATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+trigger:
+  Reviewer_F_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "685f8387b6eab5fe90140b4d6ac863b62193987e"
+    result: "C4_DIRECTION_REVIEW_PASS"
+  warning:
+    freeze_endpoint_commit: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+    sequence_214_event_commit: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+    description: "Reviewer F correctly declined to certify whether these identities conflict."
+
+repository_resolution:
+  sequence_214_event:
+    sequence: 214
+    event_commit_sha: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+    event_parent_sha: "ef86636f42c34386e6f699fe12d58278f7e4736b"
+    event_path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml"
+    event_blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+    event_change_set: "single-file add"
+  append_container:
+    append_container_commit_sha: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+    append_container_parent_sha: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+    append_path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_211_214_0_1_0.yaml"
+    append_blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7"
+    append_change_set: "single-file add"
+  diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+  rule: "The sequence-214 event commit identifies the erratum event. The immediate child append-container commit identifies the fixed repository endpoint after sequences 211-214 were frozen. These identities are distinct by design."
+
+effect_on_C4:
+  Reviewer_F_direction_classification: "NEUTRAL"
+  Reviewer_F_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  direction_defect_found_by_Program_Lead: false
+  candidate_symmetry_defect_found_by_Program_Lead: false
+  C4_pass_invalidated: false
+  timing_classification: "PRE_EVIDENCE_AMENDMENT__CONDITIONAL_ON_REVIEWER_G_LEDGER_INTEGRITY"
+
+scope:
+  coverage_map_0_1_1_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
