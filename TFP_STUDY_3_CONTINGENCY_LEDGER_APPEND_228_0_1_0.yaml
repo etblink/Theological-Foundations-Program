@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_227_blob_sha: "cae10d2a707b09a37caf3cca8bfdb8ed7a23c242"
+  prior_next_sequence: 228
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 228
+    repository_commit: "54ef5fc86fa127f3b47beaf916b94df0e325fbf5"
+    timestamp_utc: "2026-10-07T06:32:17Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A13_EXPECTED_WEAKENING_EVIDENCE_REGISTER_0_1_0.yaml blob 2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6"
+    exposure_class: "G0_A13_EXPECTED_WEAKENING_EVIDENCE_FREEZE"
+    amendment_surfaces: ["candidate expected evidence","compatible nondiscriminating evidence","weakening evidence","contradiction conditions"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_PRE_EVIDENCE__PROGRAM_LEAD_INITIAL_PREREGISTRATION"
+
+next_sequence: 229
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
