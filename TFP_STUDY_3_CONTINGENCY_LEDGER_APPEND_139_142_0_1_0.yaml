@@ -1,0 +1,56 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_138_blob_sha: "b7fba812f1fd6bc5f122a19c23c488486b74349c"
+  prior_next_sequence: 139
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 139
+    repository_commit: "1ee8e3def84d5c85d6f91628cb89a368449ca78e"
+    timestamp_utc: "2026-10-07T03:44:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml blob ec0aa9806528f57d58108f262d800c0b102a800e"
+    exposure_class: "G0_A9_INITIAL_SOURCE_PLAN_FREEZE"
+    amendment_surfaces: ["A9 source plan","A9.1 source-plan review","future evidence acquisition"]
+    outcome_relevant_evidence: false
+    exposed_to_Reviewer_D: false
+    operational: false
+
+  - sequence: 140
+    repository_commit: "d8529af10823a29219d4e3172b745f710199cea3"
+    timestamp_utc: "2026-10-07T03:45:03Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob bb904e77064fe19881cb7fca70d63435899ad136"
+    exposure_class: "G0_REVIEWER_D_ASSIGNMENT_CONTROL"
+    amendment_surfaces: ["A3 reviewer lineage control","A9.1 source-plan review"]
+    outcome_relevant_evidence: false
+
+  - sequence: 141
+    repository_commit: "a954f590668c41fb16739d5a91128851b487cfbb"
+    timestamp_utc: "2026-10-07T03:45:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_INPUT_FREEZE_0_1_0.yaml blob b412516e5eefdbdf64aec8ed9c32b38424a1e4af"
+    exposure_class: "G0_REVIEWER_D_A9_BLIND_SOURCE_STRATA_INPUT_FREEZE"
+    amendment_surfaces: ["A9 source strata","A9.1 source-plan completeness","source-selection symmetry"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_D: false
+
+  - sequence: 142
+    repository_commit: "2454cfb8157a6ba9bd221a63f2839452f4741fb5"
+    timestamp_utc: "2026-10-07T03:45:38Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_PROMPT_0_1_0.md blob 9694eafc2cf7aafacfa0293fcaa081301cd40a3c"
+    exposure_class: "G0_REVIEWER_D_A9_BLIND_SOURCE_STRATA_PROMPT_FREEZE"
+    amendment_surfaces: ["A9 source strata","A9.1 source-plan completeness","source-selection symmetry"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_D: false
+
+next_sequence: 143
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
