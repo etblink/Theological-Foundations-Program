@@ -1,0 +1,99 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_REVIEWER_A_CANDIDATE_RECONCILIATION"
+status: "FROZEN_PRE_CANDIDATE_REGISTER_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+inputs:
+  Program_Lead_seed:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CANDIDATE_SEED_0_1_0.yaml"
+    blob_sha: "efe84e2aacf2c9399befe9fc28bc6c3f9ce08e70"
+  Reviewer_A_blind_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_REPORT_0_1_0.md"
+    blob_sha: "cdcf5d516e1df38c87947819723c6f5686c486b1"
+
+controls:
+  Reviewer_A_report_frozen_before_seed_comparison: true
+  outcome_relevant_evidence_used: false
+  candidate_ranking_performed: false
+  truth_adjudication_performed: false
+
+direct_or_near_direct_matches:
+  - Program_Lead: "C-BRUTE"
+    Reviewer_A: "F-BRUTE"
+  - Program_Lead: "C-NEC-REALITY"
+    Reviewer_A: "F-NECESSITARIAN"
+  - Program_Lead: "C-SELF"
+    Reviewer_A: "F-SELF-EXPL"
+  - Program_Lead: "C-IMPERSONAL-CONCRETE"
+    Reviewer_A: "F-NEC-CONCRETE"
+  - Program_Lead: "C-PERSONAL"
+    Reviewer_A: "F-NEC-AGENTIVE"
+
+Reviewer_A_refinements_of_Program_Lead_seed:
+  - Program_Lead: "C-NONTERMINAL"
+    Reviewer_A_split:
+      - "F-REGRESS"
+      - "F-HOLISTIC"
+    disposition: "PRESERVE_SPLIT_PROVISIONALLY"
+    rationale: "One-way nontermination and circular/holistic/non-well-founded explanation differ on necessary structural commitments."
+  - Program_Lead:
+      - "C-ABSTRACT-STRUCTURE"
+      - "C-LAW-PRINCIPLE"
+    Reviewer_A: "F-NEC-PRINCIPLE"
+    disposition: "MERGE_AT_FAMILY_LEVEL_WITH_SUBVARIANTS_PROVISIONALLY"
+    rationale: "Both posit a necessary non-agentive principle/structure; abstract/structural versus law-like form is retained as a subvariant unless later review establishes a truth-critical family distinction."
+
+Reviewer_A_additions_absent_from_Program_Lead_seed:
+  - id: "F-INDEXICAL"
+    disposition: "PROVISIONALLY_ADMIT"
+    reason: "Differs from necessitarian totality and necessary-principle grounding on a necessary truth-bearing proposition: local/indexical contingency within a stopping plurality without an external selector."
+  - id: "F-AXIARCHIC"
+    disposition: "PROVISIONALLY_ADMIT"
+    reason: "Value/optimality requiredness is a distinct necessary explanatory commitment when it does actual explanatory work; does not by definition imply God."
+    caution: "Must remain separate from the excluded moral-argument-for-God route."
+
+nonidentical_overlap_requiring_separation:
+  - Program_Lead: "C-DEFLATIONARY"
+    Reviewer_A: "F-DISSOLUTION"
+    disposition: "DO_NOT_COLLAPSE"
+    rationale:
+      - "Global-explanation deflationism can affirm genuine contingency while denying that local explanations aggregate into a mandatory global why-answer."
+      - "Modal/explanatory-demand dissolution can instead reject or dissolve the truth-aptness/applicability of the contingency premise itself."
+    provisional_result:
+      - "C-GLOBAL-DEFLATION"
+      - "C-MODAL-DISSOLUTION"
+
+granularity_decisions:
+  Program_Lead_C_PLURAL:
+    disposition: "TREAT_AS_CROSS_CUTTING_VARIANT_NOT_STANDALONE_FAMILY_PROVISIONALLY"
+    rationale: "Single/plural/layered cardinality can cut across concrete, principle, and agentive necessary-ground families; plurality alone does not yet supply a non-subsumed explanatory kind."
+  Reviewer_A_F_NEC_CONCRETE:
+    disposition: "DEFINE_AS_IMPERSONAL_CONCRETE_FOR_REGISTER"
+    rationale: "A fully property-neutral concrete family would subsume the separately admitted agentive family; sibling families require the non-agentive versus agentive distinction."
+  causal_vs_grounding_vs_constitutive_vs_nomological:
+    disposition: "RELATION_SUBVARIANTS_UNLESS_A_RELATION_CHANGES_A_NECESSARY_FAMILY_COMMITMENT"
+
+unresolved_missing_family_risks_for_Reviewer_A_completeness_review:
+  - "principled partitioned ultimacy"
+  - "truth-claim metaphysical indeterminacy of ultimacy distinct from B6 underdetermination"
+  - "dialetheic/impossible-existence account"
+  - "nomological ultimacy not reducible to brute, necessary principle, necessitarian, or indexical plurality"
+
+provisional_family_set_for_register_drafting:
+  - "C-BRUTE"
+  - "C-REGRESS"
+  - "C-HOLISTIC"
+  - "C-SELF-EXPLANATORY"
+  - "C-GLOBAL-DEFLATION"
+  - "C-MODAL-DISSOLUTION"
+  - "C-NECESSITARIAN"
+  - "C-INDEXICAL-PLURALITY"
+  - "C-NEC-IMPERSONAL-CONCRETE"
+  - "C-NEC-AGENTIVE"
+  - "C-NEC-IMPERSONAL-PRINCIPLE"
+  - "C-AXIARCHIC"
+
+candidate_universe_frozen: false
+next_required_check: "Reviewer A candidate-universe completeness/exclusion review of the provisional register before final freeze."
