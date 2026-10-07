@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_173_blob_sha: "6bdd1963ed1e5862ffeba040df27e798430ed723"
+  prior_next_sequence: 174
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 174
+    repository_commit: "269a649caf1b825f749a588611de3b98c35fabc0"
+    timestamp_utc: "2026-10-07T05:13:40Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml blob 7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+    exposure_class: "G0_A11_PROGRAM_LEAD_DISCRIMINATOR_CONSTRUCTION_FREEZE"
+    amendment_surfaces: ["A11 discriminator priorities","A11 direction rules","A6 final coverage","future G1 comparison acquisition"]
+    outcome_relevant_evidence: false
+    result_status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_C_TIER_DIRECTION_REVIEW"
+
+  - sequence: 175
+    repository_commit: "c8af60efe9a740480e6ba8aac47f4b0278c542aa"
+    timestamp_utc: "2026-10-07T05:14:29Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 2f0b57d2dc5eab46d3f4eb0790794a0c6ef2b3ef"
+    exposure_class: "G0_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["A11 tier review","pair symmetry","direction-rule completeness","feasibility"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_C: false
+
+  - sequence: 176
+    repository_commit: "33b3c6eb46a5c94d1c840c63e8788fc20ab05caa"
+    timestamp_utc: "2026-10-07T05:14:32Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_PROMPT_0_1_0.md blob 67fc52144f971af31f77b6ceb05729d96e62c2e8"
+    exposure_class: "G0_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["A11 tier review","pair symmetry","direction-rule completeness","feasibility"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_C: false
+
+next_sequence: 177
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
