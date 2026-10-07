@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_EVIDENCE_ACQUISITION_ACTIVE__S1_NATIVE_BATCH_01_FROZEN__FROZEN_G0_ARCHITECTURE__NO_PROPOSITION_DISPOSITIONS"
+  status: "G1_ACQUISITION_SEARCH_STAGES_COMPLETE__REVIEWER_E_HANDSHAKE_READY__FROZEN_G0_ARCHITECTURE__NO_PROPOSITION_DISPOSITIONS"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "c894a310ecce8690a48bd3a915180c1c3544e6b5"
+  research_branch_head: "d6bbf3185f7735e3aec0fe5612d442ab0d5ac49d"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -652,6 +652,18 @@ current_scope:
       may_not_serve_as_coverage_state_reviewer: true
       may_not_serve_as_MAKEABLE_certifier: true
       may_not_serve_as_strict_auditor: true
+  Reviewer_E:
+    status: "UNASSIGNED__FRESH_HANDSHAKE_READY"
+    assignment_handshake_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+      blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
+      exposure_to_Reviewer_E: false
+    intended_roles:
+      - "adverse_source_reviewer"
+      - "coverage_state_reviewer"
+      - "MAKEABLE_certifier"
+    lineage_requirement: "fresh session disjoint from Program Lead, Reviewer D source-plan lineage, and future Reviewer H strict auditor"
+    substantive_assignment_pending_handshake: true
   candidate_universe_freeze:
     artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
     blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
@@ -1362,7 +1374,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 237
+    A17_ledger_current_through_sequence: 252
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1381,14 +1393,48 @@ current_scope:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_S1_NATIVE_ACQUISITION_BATCH_01_0_1_0.yaml"
     blob_sha: "172b6e8544c90297b2287868aeab6abe93f8a9c9"
     status: "FROZEN_ACQUISITION_RECORD__NO_PROPOSITION_DISPOSITIONS"
-    all_13_candidate_families_queried: true
-    candidate_native_coverage_complete: false
+  G1_S1_native_completion_batch_02:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S1_NATIVE_COMPLETION_BATCH_02_0_1_0.yaml"
+    blob_sha: "39ea688b204fdcf6bf7c239fe58491dc856929bf"
+    status: "S1_NATIVE_SEARCH_STAGE_COMPLETE__ACCESS_AND_VARIANT_PROBES_RECORDED__COVERAGE_UNCERTIFIED"
+  G1_S2_adverse_acquisition:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S2_ADVERSE_ACQUISITION_BATCH_01_0_1_0.yaml"
+    blob_sha: "dbc8a0d069d0978f05af03be5998eebe8e5ad74c"
+    status: "S2_ADVERSE_SEARCH_STAGE_COMPLETE__SERIOUS_ADVERSE_STRATUM_FOUND_FOR_ALL_13__COVERAGE_UNCERTIFIED"
+  G1_S3_neutral_comparative:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S3_NEUTRAL_COMPARATIVE_BATCH_01_0_1_0.yaml"
+    blob_sha: "00ea1ddb0486f180de23157a3b26ab1d048ec856"
+    status: "S3_NEUTRAL_SEARCH_STAGE_COMPLETE__NO_G0_AMENDMENT_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+  G1_S4_background_batch_01:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_01_0_1_0.yaml"
+    blob_sha: "1d055deb72aacd6eb543139c2e62d569bbebe0bf"
+  G1_S4_background_batch_02:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_02_0_1_0.yaml"
+    blob_sha: "a734ea4249499240688815de95080361286b9034"
+  G1_S4_background_completion:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_SEARCH_STAGE_COMPLETION_0_1_0.yaml"
+    blob_sha: "db9c915b60c6c197eb8ff9b0c71d3917b4e9101b"
+    status: "S4_BACKGROUND_SEARCH_STAGE_COMPLETE__52_OF_52_VARIANT_STATES_SUPPORT_AND_CHALLENGE_MAPPED__NO_BACKGROUND_DISPOSITIONS"
+  G1_S5_recency_supplement:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S5_RECENCY_SUPPLEMENT_0_1_0.yaml"
+    blob_sha: "a679de8245d729d3d1ece4927071fee4d4c4d5ff"
+    status: "S5_RECENCY_SEARCH_STAGE_COMPLETE__NO_G0_REOPEN_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+  G1_acquisition_search_stage_completion:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_ACQUISITION_SEARCH_STAGE_COMPLETION_0_1_0.yaml"
+    blob_sha: "e6ff9e040a73836e247c0442127956cf3f604643"
+    status: "S1_THROUGH_S5_SEARCH_STAGES_COMPLETE__PROPOSITION_COVERAGE_AND_MAKEABILITY_UNCERTIFIED"
     coverage_certified: false
     MAKEABLE_certified: false
+  Reviewer_E_assignment_handshake:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+    blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
+    status: "HANDSHAKE_READY__NO_SUBSTANTIVE_REVIEWER_E_EXPOSURE"
+    requested_provider_model: "Anthropic Claude Opus 5.5"
+    exposure_to_Reviewer_E: false
     ledger_append:
-      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_236_237_0_1_0.yaml"
-      blob_sha: "f84bb9a2f971a6c0b26ad096d7e62401e9847a8b"
-      through_sequence: 237
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_252_0_1_0.yaml"
+      blob_sha: "33dc652bf721cdb26d4b546fdca1b1ce75fd61c7"
+      sequence: 252
   G1_authorized: true
   outcome_relevant_evidence_acquisition_started: true
   methodology:
@@ -1403,20 +1449,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-G1-S1-NATIVE-COMPLETION"
-  action: "complete_remaining_frozen_S1_native_variant_precursor_and_lawful_access_probes_before_S2_adverse"
+  id: "TFP-STUDY-3-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
+  action: "obtain_fresh_Reviewer_E_procedural_disjointness_handshake_before_substantive_G1_control_exposure"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 238
-  G1_authorization_blob_sha: "8c6b8f07b0fd5299a060cd1705c46792bcdbe320"
-  S1_batch_01_blob_sha: "172b6e8544c90297b2287868aeab6abe93f8a9c9"
+  ledger_next_sequence: 253
+  acquisition_completion_blob_sha: "e6ff9e040a73836e247c0442127956cf3f604643"
+  reviewer_E_handshake_prompt_blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
   requirements:
-    - "finish C-NEC-AGENTIVE non-Abrahamic and non-classical-theist native probes"
-    - "finish C-NEC-IMPERSONAL-CONCRETE single/plural/layered and causal/grounding/constitutive relation probes"
-    - "continue required precursor searches for thin/synthetic families rather than treating low source counts as a gap"
-    - "attempt lawful deeper access for truth-critical paywalled/metadata-only native sources and record barriers/alternatives"
-    - "preserve negative and inaccessible evidence without treating it as evidence against a candidate"
-    - "after S1 completion, begin S2_ADVERSE for all 13; do not stop on supportive source discovery"
-    - "do not issue proposition dispositions, ranking, coverage COMPLETE/MATERIALLY_COMPLETE, or MAKEABLE determinations without the frozen downstream reviews"
+    - "use a brand-new Anthropic Claude Opus 5.5 conversation"
+    - "do not allow repository, memory, past-chat, Study-3 evidence, or substantive source retrieval before handshake"
+    - "Reviewer E must be disjoint from Program Lead, Reviewer D/source-plan reviewer, and future Reviewer H strict auditor"
+    - "after a PROCEDURALLY_DISJOINT_FOR_REVIEWER_E handshake, freeze assignment acceptance and only then expose the substantive adverse-source/coverage control packet"
+    - "Reviewer E must run a genuine adverse-source probe outside the Program Lead search paths before any COMPLETE/MATERIALLY_COMPLETE coverage certification"
+    - "MAKEABLE may be certified only at COMPARISON:<id> scope with adequate independently reviewed coverage"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
