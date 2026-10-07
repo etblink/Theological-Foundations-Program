@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_249_blob_sha: "6c2903e4492c96bd6a58392eea98d0209ce5bd7e"
+  prior_next_sequence: 250
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 250
+    repository_commit: "bd5bf03938ac50b214699f9d8261c7684fd3d5cd"
+    timestamp_utc: "2026-10-07T13:49:58Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S5_RECENCY_SUPPLEMENT_0_1_0.yaml blob a679de8245d729d3d1ece4927071fee4d4c4d5ff"
+    exposure_class: "G1_S5_RECENCY_SEARCH_STAGE_COMPLETION_FREEZE"
+    amendment_surfaces: ["recent candidate developments","recent background developments","recent discriminator relevance","G0 reopen-trigger check"]
+    outcome_relevant_evidence: true
+    result_status: "S5_RECENCY_SEARCH_STAGE_COMPLETE__NO_G0_REOPEN_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+
+next_sequence: 251
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
