@@ -1,0 +1,49 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_REVIEWER_E_BLIND_ADVERSE_PASS__RECONCILIATION_FROZEN__F1_REVIEW_PENDING"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_253_254_blob_sha: "362eed52ad4f6cfb8a10bf2229f7b303bd311679"
+  prior_next_sequence: 255
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 255
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_FRESH_SESSION"
+    source_or_artifact: "Blind external adverse-source review executed from the same Reviewer-E conversation after assignment; authorized G0 architecture only plus external scholarly discovery routes. Program Lead S1-S5 source universe remained withheld."
+    exposure_class: "G1_REVIEWER_E_BLIND_EXTERNAL_ADVERSE_SOURCE_PROBE"
+    outcome_relevant_evidence: true
+    result_status: "ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
+    chronology_note: "The launch prompt was relayed in chat after sequence 254. A prelaunch repository input-freeze file was not created because GitHub writes were connector-blocked at launch time; no S1-S5 source identities/results were exposed to Reviewer E before the report."
+    disclosed_deviations:
+      - "Reviewer E saw withheld artifact filenames from a local branch listing but did not open/hash/grep them."
+      - "Reviewer E read the provisional candidate register promoted by exact-content reference from the authorized Candidate Universe Freeze."
+
+  - sequence: 256
+    repository_commit: "a57f13185486a3e04e36440d74702d059ada5122"
+    timestamp_utc: "2026-10-07T14:41:37Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_BLIND_EXTERNAL_ADVERSE_SOURCE_REVIEW_REPORT_0_1_0.md blob 44d551ec92ec5d817ffc95c197261de58868b313"
+    exposure_class: "G1_REVIEWER_E_BLIND_EXTERNAL_ADVERSE_SOURCE_REPORT_FREEZE"
+    outcome_relevant_evidence: true
+    result_status: "ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
+
+  - sequence: 257
+    repository_commit: "128b3b253caf7b04bbf319d0366a1ced26feeb87"
+    timestamp_utc: "2026-10-07T14:43:52Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION_0_1_0.yaml blob 38346ac587b10112b53318ffae114fb05f97a34c"
+    exposure_class: "G1_REVIEWER_E_BLIND_ADVERSE_SOURCE_PROGRAM_LEAD_RECONCILIATION"
+    outcome_relevant_evidence: true
+    result_status: "BLIND_ADVERSE_SOURCE_PASS_ACCEPTED__SOURCE_FOLLOWUP_REQUIRED__F1_A8_GRANULARITY_REVIEW_REQUIRED"
+
+next_sequence: 258
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+coverage_certified: false
+MAKEABLE_certified: false
