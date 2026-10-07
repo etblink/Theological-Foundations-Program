@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_PROGRAM_LEAD_CONSTRUCTION_FROZEN__REVIEWER_C_TIER_REVIEW_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_REPAIR_FROZEN__REVIEWER_C_RECHECK_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "b1929b1a05e719b7fef9b8ca3e63484be6e1cf6c"
+  research_branch_head: "a944635d6039987683d875058bc19d5a146b331a"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -674,22 +674,60 @@ current_scope:
   A11_program_lead_discriminator_register:
     artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
     blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
-    status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_C_TIER_DIRECTION_REVIEW__NO_OUTCOME_EVIDENCE"
+    status: "SUPERSEDED_BY_REPAIR_0_1_1__REVIEWER_C_REPAIR_REQUIRED"
     discriminator_count: 14
     proposed_CRITICAL_count: 14
     proposed_MATERIAL_count: 0
   A11_reviewer_C_tier_review_input:
     artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_INPUT_FREEZE_0_1_0.yaml"
     blob_sha: "2f0b57d2dc5eab46d3f4eb0790794a0c6ef2b3ef"
-    exposure_to_Reviewer_C: false
+    exposure_to_Reviewer_C: true
   A11_reviewer_C_tier_review_prompt:
     artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_PROMPT_0_1_0.md"
     blob_sha: "67fc52144f971af31f77b6ceb05729d96e62c2e8"
+    exposure_to_Reviewer_C: true
+  A11_reviewer_C_tier_review_report:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7"
+    disposition: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  A11_program_lead_tier_review_disposition:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_TIER_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "48a6c1cce356e63f9c9464ea7a295b3ae2a93698"
+    disposition: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+    nonblocking_source_plan_operability_correction: true
+  A11_review_result_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml"
+    blob_sha: "a33624d372de42bb4e5e65d285dae9366b294deb"
+  A11_repair_amendment_record:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec"
+    status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_C_RECHECK_AND_C4"
+  A11_repaired_discriminator_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+    status: "FROZEN_REPAIR__PENDING_REVIEWER_C_RECHECK__NONOPERATIVE__NO_OUTCOME_EVIDENCE"
+    discriminator_count: 14
+    proposed_CRITICAL_count: 14
+    all_9_requested_repairs_mechanically_present: true
+  A11_repair_completion:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_COMPLETION_0_1_0.yaml"
+    blob_sha: "8203d1a6ee235ec006c12f6378f74bd75fde7ff2"
+    status: "FROZEN_REPAIR__REVIEWER_C_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+  A11_repair_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_180_182_0_1_0.yaml"
+    blob_sha: "d96b56d9a5ce4cdc4778bb97b9a67458084815e5"
+  A11_reviewer_C_repair_recheck_input:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+    blob_sha: "93c51e8943eab13d8a5914de87b3a803e8e063c9"
     exposure_to_Reviewer_C: false
-  A11_launch_ledger_append:
-    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_174_176_0_1_0.yaml"
-    blob_sha: "e6bbc1f609fcaf722158e0fb602c0f4302f0bbc7"
-    next_sequence: 177
+  A11_reviewer_C_repair_recheck_prompt:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_REPAIR_RECHECK_PROMPT_0_1_0.md"
+    blob_sha: "408b803e78c04459a064d6d0c46cbd65d6a71694"
+    exposure_to_Reviewer_C: false
+  A11_repair_recheck_launch_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_183_184_0_1_0.yaml"
+    blob_sha: "cf7616de38b23af7bfa4cfb81d720fae0eb22800"
+    next_sequence: 185
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -931,7 +969,14 @@ current_scope:
     A11_program_lead_discriminator_register_frozen: true
     A11_discriminator_count: 14
     A11_reviewer_C_tier_review_ready: true
-    A11_reviewer_C_tier_review_complete: false
+    A11_reviewer_C_tier_review_complete: true
+    A11_reviewer_C_tier_review_result: "REPAIR_REQUIRED"
+    A11_discriminator_repair_amendment_record_frozen: true
+    A11_discriminator_repair_frozen: true
+    A11_discriminator_repair_recheck_ready: true
+    A11_discriminator_repair_recheck_complete: false
+    A11_C4_direction_review_required_after_content_pass: true
+    A11_ledger_integrity_review_required_before_operational_use: true
     discriminators_frozen: false
     insufficiency_threshold_frozen: false
     G0_complete: false
@@ -949,19 +994,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-C-A11-DISCRIMINATOR-TIER-REVIEW"
-  action: "continue_same_Reviewer_C_session_for_frozen_A11_tier_pair_symmetry_feasibility_and_direction_rule_review"
+  id: "TFP-STUDY-3-REVIEWER-C-A11-DISCRIMINATOR-REPAIR-RECHECK"
+  action: "continue_same_Reviewer_C_session_for_focused_R1_R9_delta_recheck_only"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 177
-  reviewer_C_input_blob_sha: "2f0b57d2dc5eab46d3f4eb0790794a0c6ef2b3ef"
-  reviewer_C_prompt_blob_sha: "67fc52144f971af31f77b6ceb05729d96e62c2e8"
-  discriminator_register_blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+  ledger_next_sequence: 185
+  repaired_discriminator_register_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  reviewer_C_recheck_input_blob_sha: "93c51e8943eab13d8a5914de87b3a803e8e063c9"
+  reviewer_C_recheck_prompt_blob_sha: "408b803e78c04459a064d6d0c46cbd65d6a71694"
   requirements:
-    - "use the exact same xAI / Grok 4.7 Reviewer-C conversation that returned BACKGROUND_REGISTER_REPAIR_PASS"
-    - "review all 14 proposed discriminators for tier, pair/rival symmetry, necessary-proposition linkage, feasibility, direction-rule completeness, and required A8 backgrounds/interactions"
-    - "preserve necessary foundation != God and block all stronger-theological-attribute importation"
-    - "do not inspect outcome-relevant evidence or source-acquisition results"
-    - "do not certify final A6 coverage, rank candidates, issue post-evidence direction results, or begin G1"
+    - "use the exact same xAI / Grok 4.7 Reviewer-C conversation that returned A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+    - "perform the focused R1-R9 repair delta recheck only"
+    - "confirm all 14 discriminator identities and proposed CRITICAL priorities are preserved and A11-DR-1 remains controlling"
+    - "confirm Source Plan 0.1.1 is operative through A9 operational acceptance"
+    - "do not redo the full A11 review, inspect outcome evidence/source-acquisition results, certify final A6 coverage, perform C4 direction classification, rank candidates, or begin G1"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
