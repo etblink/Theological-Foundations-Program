@@ -1,0 +1,103 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_REPAIR_RECHECK_ONLY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  required_lineage: "exact same Anthropic / Claude Opus 5.5 Reviewer-G conversation that returned FINAL_A6_LEDGER_INTEGRITY_PASS and G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  role: "independent ledger-integrity reviewer"
+  prohibited_roles:
+    - "Program Lead"
+    - "Reviewer C F1 granularity reviewer"
+    - "Reviewer F amendment-direction reviewer"
+    - "Reviewer E adverse-source/coverage reviewer"
+    - "strict independent auditor"
+
+prior_review:
+  report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "0ea22a5f07ae450a3db3c5e2de944ff6cfafeacd"
+    status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  previously_confirmed_endpoint_sequence: 269
+  previously_confirmed_endpoint_commit: "6a1be98c9100aebc90c9b969cd9053a64d1a868c"
+  previously_confirmed_endpoint_append_blob_sha: "1f2a8bfc2db3cd3d7c9a778c032763a4102118ca"
+
+Program_Lead_replay:
+  path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+  blob_sha: "b69ac2a742bd25e5bedc2bb0ce9495d9c62393f7"
+  status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__APPEND_ONLY_REPAIR_AUTHORIZED"
+
+repair_target:
+  supplement:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_F1_A8_LEDGER_INTEGRITY_REPAIR_SUPPLEMENT_0_1_0.yaml"
+    blob_sha: "743ae19389daf71123562439fa24490df94736c4"
+  repair_provenance_append:
+    path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_272_275_0_1_0.yaml"
+    blob_sha: "428b956979447e66087a0bb6edad834ab5537f44"
+    sequences: [272,273,274,275]
+  fixed_repair_endpoint_commit: "407bf26a2a839eb09f932d5ec3143d5cd6a7a801"
+  endpoint_rule: "Audit the repair supplement and its provenance only. Previously confirmed 221-269 findings remain accepted unless the supplement itself creates a contradiction."
+
+authorized_supporting_identity_checks:
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_INPUT_FREEZE_0_1_0.yaml", blob_sha: "87a79a2708329f89d2adf946144f4d9770c1374b" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_PROMPT_0_1_0.md", blob_sha: "6a037a6337199c3bbe9517e2604a73cfbd62adf4" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_253_254_0_1_0.yaml", blob_sha: "362eed52ad4f6cfb8a10bf2229f7b303bd311679" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_255_257_0_1_0.yaml", blob_sha: "e8d1959324ce7a020a8a51aa6ce7d7a59b30269c" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_258_259_0_1_0.yaml", blob_sha: "dc45c5f52ca9e4c5ef3e21ebb74aa30855619114" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_260_264_0_1_0.yaml", blob_sha: "dc1501f045782a69ed4a1f0b35315ca7fe048155" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_265_266_0_1_0.yaml", blob_sha: "016abd59c064109f1689a25abd926aac9f9c0337" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_267_269_0_1_0.yaml", blob_sha: "1f2a8bfc2db3cd3d7c9a778c032763a4102118ca" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_270_271_0_1_0.yaml", blob_sha: "2ab429af9ee38e917143ed51d561e8fb9717f21e" }
+  - "Protocol 0.1.7 A17 and C4 only as needed for ledger-integrity/control verification"
+  - "repository commit/tree/blob/path-history metadata through fixed repair endpoint"
+
+required_checks:
+  R1:
+    - "Verify the supplement accurately records Reviewer C's historical F1 review exposure as occurring after sequence 259 and before sequence 260."
+    - "Verify the lineage, input blob, prompt blob, authorized-material classes, amendment surfaces, and outcome_relevant_evidence=true are sufficient under A17."
+    - "Explicitly decide whether representing the historical exposure inside an immutable later supplement, while separately ledgering the supplement at sequence 275, is an acceptable append-only cure without fabricating a historical sequence number or timestamp."
+    - "If that form is not sufficient, identify the smallest exact append-only representation required; do not demand rewriting sequences 259 or 260."
+  R2:
+    - "Verify the supplement supplies amendment_surfaces for exactly the 16 previously deficient entries: 253-257 and 259-269."
+    - "Check that each annotation is materially faithful to the historical entry and does not add a new substantive outcome."
+  R3:
+    - "Verify the six optional order anchors for 238, 240, 242, 244, 246 and 249 against repository-bounded chronology."
+    - "R3 remains nonblocking unless an annotation is false."
+  provenance:
+    - "Verify sequences 272-275 correctly preserve the failed Reviewer-G audit, Program-Lead replay, and repair supplement without rewrite."
+    - "Verify the repair does not alter the previously confirmed 234->235 authorization/evidence boundary, post-evidence F1 timing, Reviewer-F POST_EVIDENCE_FAVORABLE_OR_MIXED classification, or contamination controls."
+    - "Verify A8 0.1.2 remains nonoperative and Reviewer-E coverage/MAKEABLE review remains paused."
+
+forbidden:
+  - "redo the full 221-269 audit absent a contradiction created by the supplement"
+  - "inspect substantive S1-S5 source contents"
+  - "redo Reviewer E, Reviewer C, or Reviewer F"
+  - "reclassify Reviewer F direction"
+  - "decide an F1 variant as true"
+  - "certify coverage or MAKEABLE/UNMAKEABLE"
+  - "rank candidates or assess theological truth"
+  - "perform the later strict audit"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "REPAIR INPUT VERIFICATION"
+    - "R1 REVIEWER-C EXPOSURE RECHECK"
+    - "R2 AMENDMENT-SURFACE RECHECK"
+    - "R3 ORDER-ANCHOR RECHECK"
+    - "REPAIR PROVENANCE / NO-REWRITE CHECK"
+    - "UNCHANGED C4 / OPERATIONAL CONTROLS"
+    - "REQUIRED FURTHER REPAIRS"
+    - "G1 F1 A8 LEDGER INTEGRITY STATUS"
+  status_namespace:
+    - "G1_F1_A8_LEDGER_INTEGRITY_PASS"
+    - "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  A8_0_1_2_operational: false
+  Reviewer_E_coverage_review_paused: true
+  MAKEABLE_review_paused: true
