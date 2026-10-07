@@ -1,0 +1,39 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_REVIEWER_E_SOURCE_CLASS_DELTA_RECONCILIATION_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_286_291_blob_sha: "70e2b46b50a88ffeb3664d4c79852dae160ca9ee"
+  prior_next_sequence: 292
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 292
+    repository_commit: "56791ea2824e398ad1c85210459776369b4a1f85"
+    timestamp_utc: "2026-10-07T16:27:05Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DELTA_RECHECK_INPUT_FREEZE_0_1_0.yaml blob fb142a3bacef7367e19b6043ac838af0541edcd9"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_DELTA_RECONCILIATION_INPUT_FREEZE"
+    amendment_surfaces: ["G1 modal-dissolution source class","G2 brute skeptical-defeat source class","G3 global-deflation source class","source identity errata","coverage-review readiness"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN__G1_G2_G3_DELTA_RECONCILIATION_ONLY__NO_COVERAGE_OR_MAKEABLE_CERTIFICATION"
+
+  - sequence: 293
+    repository_commit: "d7ffbaa7c527b05f7bafb732c4be451572c48423"
+    timestamp_utc: "2026-10-07T16:27:26Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DELTA_RECHECK_PROMPT_0_1_0.md blob 87529c4ecb667a88da89a9dfb6bfaa83b1a10d45"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_DELTA_RECONCILIATION_PROMPT_FREEZE"
+    amendment_surfaces: ["G1 modal-dissolution source class","G2 brute skeptical-defeat source class","G3 global-deflation source class","source identity errata","coverage-review readiness"]
+    outcome_relevant_evidence: true
+    result_status: "REVIEWER_E_G1_G2_G3_DELTA_RECONCILIATION_READY"
+
+next_sequence: 294
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+coverage_certified: false
+MAKEABLE_certified: false
+A8_0_1_2_operational: true
