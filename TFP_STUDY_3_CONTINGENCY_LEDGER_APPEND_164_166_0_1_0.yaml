@@ -1,0 +1,49 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_162_163_blob_sha: "b6b2bcfce2b2d72970f9946c1d9875c85936a941"
+  prior_next_sequence: 164
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 164
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer F A9 source-plan C4 direction-review exposure: input blob e2e7c66548a60d2d076db00753cd588ff263f364, prompt blob d19d4faa5cfae466e5defcbfb8010052b2047ada, amendment/source-plan/reviewer artifacts and chronology through fixed endpoint sequence 161 only."
+    exposure_class: "G0_REVIEWER_F_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_EXPOSURE"
+    amendment_surfaces: ["C4 amendment timing","candidate-specific direction","future outcome direction","source-plan symmetry"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 163 and before sequence 165."
+
+  - sequence: 165
+    repository_commit: "7fe41b276a664ffc40f9bd66992e314bf29aea13"
+    timestamp_utc: "2026-10-07T04:30:14Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_REPORT_0_1_0.md blob 65fc702bbe179084ef0c804b34b1d141c282b6cd"
+    exposure_class: "G0_REVIEWER_F_A9_SOURCE_PLAN_C4_DIRECTION_RESULT_FREEZE"
+    amendment_surfaces: ["C4 amendment timing","candidate-specific direction","future outcome direction","source-plan symmetry"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+    result_status: "C4_DIRECTION_REVIEW_PASS"
+
+  - sequence: 166
+    repository_commit: "d34173c9370cbab3b404757b323e6df767fbe243"
+    timestamp_utc: "2026-10-07T04:30:38Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob 7386bac6067fed739e83e0fc1574597f728de8b3"
+    exposure_class: "G0_PROGRAM_LEAD_A9_SOURCE_PLAN_C4_DISPOSITION"
+    amendment_surfaces: ["C4 direction acceptance","sequence-161 identity resolution","Reviewer G integrity handoff"]
+    outcome_relevant_evidence: false
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+
+next_sequence: 167
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
