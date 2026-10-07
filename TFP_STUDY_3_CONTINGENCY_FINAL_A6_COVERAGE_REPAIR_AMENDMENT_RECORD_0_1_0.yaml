@@ -1,0 +1,76 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD"
+status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_B_RECHECK_AND_C4"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+trigger:
+  Reviewer_B_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb"
+    result: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "013dfdb9fac5385471272d6ab127459faf73a485"
+    result: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__GD_N1_ONLY"
+
+amended_element:
+  prior:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
+    blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
+    status: "SUPERSEDED_BY_REPAIR_0_1_1__NOT_CERTIFIED"
+  repaired:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+    blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+    status: "REPAIRED_PRE_EVIDENCE__PENDING_REVIEWER_B_FOCUSED_RECHECK_AND_C4"
+
+repair_scope:
+  proposition_id: "GD-N1"
+  candidate: "C-GLOBAL-DEFLATION"
+  proposition: "Relevant local or domain contingency can be genuine."
+  old_mode: "COMPARATIVE_ROUTE"
+  old_route: "D11-04-GLOBAL-EXPLANATORY-DEMAND"
+  new_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+  new_lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+  new_background: "BG-MODAL-STATUS"
+  future_proposition_scope: "PROPOSITION:GD-N1"
+  comparison_scopes_removed_for_GD_N1: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+  A11_modified: false
+  all_other_61_entries_modified: false
+
+count_delta:
+  COMPARATIVE_ROUTE: { before: 57, after: 56 }
+  NONCOMPARATIVE_CANDIDATE_SPECIFIC: { before: 5, after: 6 }
+  NONCOMPARATIVE_SHARED_FLOOR: { before: 0, after: 0 }
+  total_entries: 62
+
+rationale:
+  - "Reviewer B independently found that D11-04 concerns global explanatory demand/nonaggregation and does not directly establish the permissive modal-compatibility proposition GD-N1."
+  - "GD-N1 is assigned to A10-L1 modal status and requires direct scrutiny of whether genuine local/domain metaphysical contingency can be possible under the candidate."
+  - "The direct route preserves the permissive 'can be genuine' truth conditions and does not strengthen GD-N1 into an actuality claim."
+  - "The route rejects mere conceivability, logical consistency, nomological variability, and epistemic openness as substitutes for metaphysical possibility."
+  - "D11-04 remains operative and unchanged for GD-N2/GD-N3 and other valid explanatory-demand links."
+
+C4:
+  evidence_exposure_state: "PRE_EVIDENCE"
+  outcome_relevant_evidence_exposure_started: false
+  proposed_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  direction_classification_status: "PENDING_REVIEWER_F"
+  affected_candidate: "C-GLOBAL-DEFLATION"
+  affected_outcome_conditions:
+    - "final A6 architecture coverage eligibility"
+    - "future structural adequacy eligibility"
+    - "future ranking eligibility"
+    - "future truth-warrant eligibility"
+  independent_direction_review_required: true
+
+required_controls_before_use:
+  - "same Reviewer-B lineage focused recheck of GD-N1 and preservation of the other 61 entries"
+  - "Reviewer-F C4 direction review"
+  - "Reviewer-G ledger-integrity review after C4"
+  - "Program Lead operational acceptance"
+  - "no outcome-relevant evidence acquisition"
+  - "no G1"
+
+G1_authorized: false
