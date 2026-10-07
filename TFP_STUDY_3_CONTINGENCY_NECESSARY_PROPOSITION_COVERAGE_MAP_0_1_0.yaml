@@ -1,0 +1,866 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "NECESSARY_PROPOSITION_COVERAGE_MAP"
+status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_B_FINAL_A6_CERTIFICATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+inputs:
+  operative_inventory:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  operative_required_lanes:
+    path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+  operative_discriminator_register:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  A11_operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02"
+
+controls:
+  candidate_count: 13
+  necessary_proposition_count: 62
+  shared_floor_entries: 0
+  comparative_route_entries: 57
+  noncomparative_candidate_specific_entries: 5
+  every_entry_has_exactly_one_coverage_mode: true
+  every_COMPARATIVE_ROUTE_has_at_least_one_CRITICAL_discriminator: true
+  every_NONCOMPARATIVE_CANDIDATE_SPECIFIC_has_explicit_direct_route: true
+  final_certifier: "REVIEWER_B"
+  certification_status: "PENDING"
+  no_outcome_relevant_evidence_used: true
+  source_acquisition_started: false
+  G1_authorized: false
+
+coverage_semantics:
+  architecture_certification: "Reviewer B certifies whether every necessary proposition has exactly one valid route under Protocol A6. This is not a G1 evidence-coverage certification and does not establish any proposition."
+  comparative_route_rule: "A linked CRITICAL discriminator supplies the preregistered comparison architecture only. Later application still requires proposition/comparison-scoped evidence coverage, MAKEABLE where applicable, and the frozen direction rule."
+  noncomparative_rule: "The direct route must address the exact proposition; generic coherence is insufficient."
+  shared_floor_rule: "No proposition is assigned NONCOMPARATIVE_SHARED_FLOOR because inventory 0.1.2 establishes none across all 13 candidates."
+
+entries:
+  - candidate: "C-BRUTE"
+    proposition_id: "BR-N1"
+    proposition: "Relevant contingent reality obtains."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    direct_route_rationale: "Pairwise comparison would distort the scope premise. The route directly asks whether at least one item within the Study-3 explanandum is metaphysically contingent."
+    direct_argument_or_evidence_route: "Under BG-MODAL-STATUS, establish genuine metaphysical contingency of at least one relevant item by a proposition-level modal argument that distinguishes metaphysical from logical, nomological and epistemic possibility and identifies a coherent alternative in which the item does not obtain or differs."
+    expected_evidence: "A valid proposition-level modal argument, with explicit modal semantics/background, supporting genuine metaphysical contingency of at least one relevant item."
+    weakening_or_defeating_evidence: "A sound argument that the alleged contingency is only epistemic/nomological, incoherent, or collapses into metaphysical necessity."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:BR-N1"
+      comparison_scopes: []
+  - candidate: "C-BRUTE"
+    proposition_id: "BR-N2"
+    proposition: "At least one ultimate contingent fact, totality, or permitted law-governed stopping structure lacks a deeper truth-relevant explanation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND","D11-05-BRUTE-VERSUS-NONBRUTE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists BR-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports BR-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines BR-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:BR-N2"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND","COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE"]
+  - candidate: "C-BRUTE"
+    proposition_id: "BR-N3"
+    proposition: "The lack of deeper explanation is ontic rather than merely current ignorance."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists BR-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports BR-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines BR-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:BR-N3"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE"]
+  - candidate: "C-BRUTE"
+    proposition_id: "BR-N4"
+    proposition: "No valid unrestricted explanatory principle that applies to the proposed stopping fact rules out genuine ultimate brute contingency."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND","D11-05-BRUTE-VERSUS-NONBRUTE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists BR-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports BR-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines BR-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:BR-N4"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND","COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE"]
+  - candidate: "C-REGRESS"
+    proposition_id: "RG-N1"
+    proposition: "Relevant contingent reality obtains."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    direct_route_rationale: "This is the regress candidate's scope prerequisite rather than a relation between regress and a rival explanatory structure."
+    direct_argument_or_evidence_route: "Under BG-MODAL-STATUS, establish genuine metaphysical contingency of the relevant explanandum independently of whether its explanations form a regress."
+    expected_evidence: "A valid modal argument supporting genuine metaphysical contingency of the relevant explanandum at the exact scope used by C-REGRESS."
+    weakening_or_defeating_evidence: "A sound argument that the scoped explanandum is not metaphysically contingent or that only epistemic/nomological contingency has been shown."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:RG-N1"
+      comparison_scopes: []
+  - candidate: "C-REGRESS"
+    proposition_id: "RG-N2"
+    proposition: "Every relevant contingent explanandum is explained by further contingent reality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-06-REGRESS-VERSUS-TERMINUS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists RG-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports RG-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines RG-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:RG-N2"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-06-REGRESS-VERSUS-TERMINUS"]
+  - candidate: "C-REGRESS"
+    proposition_id: "RG-N3"
+    proposition: "The family-defining dependence structure is one-way and nonterminal rather than cyclic, self-reflexive, or terminating."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-06-REGRESS-VERSUS-TERMINUS","D11-07-REGRESS-VERSUS-HOLISTIC"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists RG-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports RG-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines RG-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:RG-N3"
+      comparison_scopes: ["COMPARISON:D11-06-REGRESS-VERSUS-TERMINUS","COMPARISON:D11-07-REGRESS-VERSUS-HOLISTIC"]
+  - candidate: "C-REGRESS"
+    proposition_id: "RG-N4"
+    proposition: "The regress is not itself reclassified as one unexplained brute totality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND","D11-06-REGRESS-VERSUS-TERMINUS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists RG-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports RG-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines RG-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:RG-N4"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND","COMPARISON:D11-06-REGRESS-VERSUS-TERMINUS"]
+  - candidate: "C-REGRESS"
+    proposition_id: "RG-N5"
+    proposition: "Adequate explanation of the relevant chain does not require a metaphysically necessary terminus."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND","D11-06-REGRESS-VERSUS-TERMINUS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists RG-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports RG-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines RG-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:RG-N5"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND","COMPARISON:D11-06-REGRESS-VERSUS-TERMINUS"]
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N1"
+    proposition: "Relevant contingent reality obtains."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    direct_route_rationale: "This is the holistic candidate's scope prerequisite rather than evidence for holism itself."
+    direct_argument_or_evidence_route: "Under BG-MODAL-STATUS, establish genuine metaphysical contingency of the relevant explanandum independently of whether its explanatory structure is holistic/non-well-founded."
+    expected_evidence: "A valid modal argument supporting genuine metaphysical contingency of the relevant explanandum at the exact scope used by C-HOLISTIC."
+    weakening_or_defeating_evidence: "A sound argument that the scoped explanandum is not metaphysically contingent or that only epistemic/nomological contingency has been shown."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N1"
+      comparison_scopes: []
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N2"
+    proposition: "Explanation or grounding need not be well-founded in a terminal base."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-07-REGRESS-VERSUS-HOLISTIC"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists HO-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports HO-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines HO-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N2"
+      comparison_scopes: ["COMPARISON:D11-07-REGRESS-VERSUS-HOLISTIC"]
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N3"
+    proposition: "At least one admissible mutual, structural, cyclic, or otherwise non-reflexive non-well-founded implementation performs genuine explanatory work."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-07-REGRESS-VERSUS-HOLISTIC","D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists HO-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports HO-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines HO-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N3"
+      comparison_scopes: ["COMPARISON:D11-07-REGRESS-VERSUS-HOLISTIC","COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N4"
+    proposition: "No single contingent item or totality explains itself in the family-defining explanatory relation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists HO-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports HO-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines HO-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N4"
+      comparison_scopes: ["COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N5"
+    proposition: "The explanatory arrangement is not merely an unexplained brute totality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists HO-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports HO-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines HO-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N5"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-HOLISTIC"
+    proposition_id: "HO-N6"
+    proposition: "The family-defining explanatory structure is not merely a one-way nonterminating regress."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-07-REGRESS-VERSUS-HOLISTIC"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists HO-N6 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports HO-N6 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines HO-N6, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:HO-N6"
+      comparison_scopes: ["COMPARISON:D11-07-REGRESS-VERSUS-HOLISTIC"]
+  - candidate: "C-SELF-EXPLANATORY"
+    proposition_id: "SE-N1"
+    proposition: "The ultimate stopping item or totality is genuinely contingent."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    direct_route_rationale: "The proposition concerns the modal status of the proposed self-explaining stopping item/totality itself; comparing reflexive explanation with another family does not by itself establish that modal status."
+    direct_argument_or_evidence_route: "Identify the exact stopping item/totality posited by C-SELF-EXPLANATORY and, under BG-MODAL-STATUS, directly test whether it is metaphysically contingent rather than necessary, epistemically uncertain, or merely nomologically variable."
+    expected_evidence: "A valid modal argument tied to the identified stopping item/totality that supports a coherent metaphysical alternative in which it does not obtain or differs."
+    weakening_or_defeating_evidence: "A sound argument that the stopping item/totality is metaphysically necessary, that the alleged alternative is incoherent, or that only epistemic/nomological contingency has been established."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:SE-N1"
+      comparison_scopes: []
+  - candidate: "C-SELF-EXPLANATORY"
+    proposition_id: "SE-N2"
+    proposition: "A genuine item-reflexive explanatory relation obtains for that stopping item or totality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists SE-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports SE-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines SE-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:SE-N2"
+      comparison_scopes: ["COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-SELF-EXPLANATORY"
+    proposition_id: "SE-N3"
+    proposition: "The reflexive relation is not equivalent to brute non-explanation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists SE-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports SE-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines SE-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:SE-N3"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-SELF-EXPLANATORY"
+    proposition_id: "SE-N4"
+    proposition: "The successful self-explanation preserves the stopping item's genuine contingency rather than making it metaphysically necessary."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+    direct_route_rationale: "This is an internal compatibility condition: successful reflexive explanation must preserve the stopping item's contingency. Pairwise family comparison would not directly establish that entailment/compatibility relation."
+    direct_argument_or_evidence_route: "Jointly evaluate SE-N1 and the frozen item-reflexive explanatory relation. Test whether the explanatory success conditions entail, presuppose, or collapse into metaphysical necessity; the route succeeds only if reflexive explanation remains coherent while a genuine alternative to the stopping item's obtaining remains metaphysically possible."
+    expected_evidence: "A valid compatibility argument showing that the successful reflexive explanatory relation does not entail necessity or modal collapse and is jointly satisfiable with SE-N1."
+    weakening_or_defeating_evidence: "A valid entailment or incompatibility argument showing that successful self-explanation requires the stopping item/totality to be metaphysically necessary or otherwise destroys SE-N1 contingency."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:SE-N4"
+      comparison_scopes: []
+  - candidate: "C-SELF-EXPLANATORY"
+    proposition_id: "SE-N5"
+    proposition: "The reflexive explanation completes the relevant ultimate stopping role without requiring a distinct metaphysically necessary foundation to complete that same explanation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists SE-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports SE-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines SE-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:SE-N5"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+  - candidate: "C-GLOBAL-DEFLATION"
+    proposition_id: "GD-N1"
+    proposition: "Relevant local or domain contingency can be genuine."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists GD-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports GD-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines GD-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:GD-N1"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+  - candidate: "C-GLOBAL-DEFLATION"
+    proposition_id: "GD-N2"
+    proposition: "Local explanatory demands do not automatically aggregate into a distinct totality-level explanatory demand."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists GD-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports GD-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines GD-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:GD-N2"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+  - candidate: "C-GLOBAL-DEFLATION"
+    proposition_id: "GD-N3"
+    proposition: "Within the candidate’s relevant explanatory scope, the absence of an additional global ground is not by itself an explanatory defect, while legitimate local explanation is preserved."
+    claim_types: ["philosophical","metaphysical","interpretive"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists GD-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports GD-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines GD-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:GD-N3"
+      comparison_scopes: ["COMPARISON:D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+  - candidate: "C-MODAL-DISSOLUTION"
+    proposition_id: "MD-N1"
+    proposition: "The Study-3 working question relies on at least one central metaphysical-contingency presupposition."
+    claim_types: ["philosophical","metaphysical","interpretive"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-01-MODAL-TRUTH-APTNESS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists MD-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports MD-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines MD-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:MD-N1"
+      comparison_scopes: ["COMPARISON:D11-01-MODAL-TRUTH-APTNESS"]
+  - candidate: "C-MODAL-DISSOLUTION"
+    proposition_id: "MD-N2"
+    proposition: "That contingency presupposition is not truth-apt or is inapplicable under the correct modal framework."
+    claim_types: ["philosophical","metaphysical","linguistic"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-01-MODAL-TRUTH-APTNESS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists MD-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports MD-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines MD-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:MD-N2"
+      comparison_scopes: ["COMPARISON:D11-01-MODAL-TRUTH-APTNESS"]
+  - candidate: "C-MODAL-DISSOLUTION"
+    proposition_id: "MD-N3"
+    proposition: "This modal diagnosis is substantive rather than a report of investigator ignorance or abstention."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-01-MODAL-TRUTH-APTNESS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists MD-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports MD-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines MD-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:MD-N3"
+      comparison_scopes: ["COMPARISON:D11-01-MODAL-TRUTH-APTNESS"]
+  - candidate: "C-MODAL-DISSOLUTION"
+    proposition_id: "MD-N4"
+    proposition: "The family-defining dissolution diagnosis is not merely the assertion that total reality is metaphysically necessary."
+    claim_types: ["philosophical","metaphysical","interpretive"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-01-MODAL-TRUTH-APTNESS"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists MD-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports MD-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines MD-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:MD-N4"
+      comparison_scopes: ["COMPARISON:D11-01-MODAL-TRUTH-APTNESS"]
+  - candidate: "C-INDETERMINATE-ULTIMACY"
+    proposition_id: "IU-N1"
+    proposition: "The ultimacy question is truth-apt."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-01-MODAL-TRUTH-APTNESS","D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IU-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IU-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IU-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IU-N1"
+      comparison_scopes: ["COMPARISON:D11-01-MODAL-TRUTH-APTNESS","COMPARISON:D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+  - candidate: "C-INDETERMINATE-ULTIMACY"
+    proposition_id: "IU-N2"
+    proposition: "The relevant ultimacy structure itself is genuinely metaphysically indeterminate: there is no unique determinate fact of the matter among the relevant determinate ultimacy alternatives."
+    claim_types: ["metaphysical"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IU-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IU-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IU-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IU-N2"
+      comparison_scopes: ["COMPARISON:D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+  - candidate: "C-INDETERMINATE-ULTIMACY"
+    proposition_id: "IU-N3"
+    proposition: "The indeterminacy is worldly/ontic rather than merely linguistic, representational, or epistemic."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IU-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IU-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IU-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IU-N3"
+      comparison_scopes: ["COMPARISON:D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+  - candidate: "C-INDETERMINATE-ULTIMACY"
+    proposition_id: "IU-N4"
+    proposition: "The candidate is not equivalent to Protocol B6 UNDERDETERMINED or investigator abstention."
+    claim_types: ["philosophical","interpretive"]
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IU-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IU-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IU-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IU-N4"
+      comparison_scopes: ["COMPARISON:D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+  - candidate: "C-NECESSITARIAN"
+    proposition_id: "NE-N1"
+    proposition: "The relevant total reality exists metaphysically necessarily."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-03-TOTAL-NECESSITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists NE-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports NE-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines NE-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:NE-N1"
+      comparison_scopes: ["COMPARISON:D11-03-TOTAL-NECESSITY"]
+  - candidate: "C-NECESSITARIAN"
+    proposition_id: "NE-N2"
+    proposition: "There is no metaphysically possible total alternative in which that same scoped total reality fails to obtain."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-03-TOTAL-NECESSITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists NE-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports NE-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines NE-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:NE-N2"
+      comparison_scopes: ["COMPARISON:D11-03-TOTAL-NECESSITY"]
+  - candidate: "C-NECESSITARIAN"
+    proposition_id: "NE-N3"
+    proposition: "Apparently contingent local, internal, derivative, or indexical features are compatible with the metaphysical necessity of the scoped total structure under the candidate's account."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-03-TOTAL-NECESSITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists NE-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports NE-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines NE-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:NE-N3"
+      comparison_scopes: ["COMPARISON:D11-03-TOTAL-NECESSITY"]
+  - candidate: "C-NECESSITARIAN"
+    proposition_id: "NE-N4"
+    proposition: "There is no contingent total remainder whose obtaining requires an external selector or ground to explain why this total reality rather than a total alternative obtains."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-03-TOTAL-NECESSITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists NE-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports NE-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines NE-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:NE-N4"
+      comparison_scopes: ["COMPARISON:D11-03-TOTAL-NECESSITY"]
+  - candidate: "C-INDEXICAL-PLURALITY"
+    proposition_id: "IP-N1"
+    proposition: "This locus/world can be genuinely contingent at the indexical level."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-09-INDEXICAL-ACTUALITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IP-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IP-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IP-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IP-N1"
+      comparison_scopes: ["COMPARISON:D11-09-INDEXICAL-ACTUALITY"]
+  - candidate: "C-INDEXICAL-PLURALITY"
+    proposition_id: "IP-N2"
+    proposition: "A broader plurality of loci or possibilities exists as the family-defining necessary/non-contingent stopping structure."
+    claim_types: ["metaphysical"]
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-09-INDEXICAL-ACTUALITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IP-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IP-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IP-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IP-N2"
+      comparison_scopes: ["COMPARISON:D11-09-INDEXICAL-ACTUALITY"]
+  - candidate: "C-INDEXICAL-PLURALITY"
+    proposition_id: "IP-N3"
+    proposition: "No external selector is needed to make this locus uniquely actual."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-09-INDEXICAL-ACTUALITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IP-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IP-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IP-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IP-N3"
+      comparison_scopes: ["COMPARISON:D11-09-INDEXICAL-ACTUALITY"]
+  - candidate: "C-INDEXICAL-PLURALITY"
+    proposition_id: "IP-N4"
+    proposition: "Actuality or its analogue is indexical rather than a metaphysically privileged selection relation."
+    claim_types: ["philosophical","metaphysical","linguistic"]
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-09-INDEXICAL-ACTUALITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IP-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IP-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IP-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IP-N4"
+      comparison_scopes: ["COMPARISON:D11-09-INDEXICAL-ACTUALITY"]
+  - candidate: "C-INDEXICAL-PLURALITY"
+    proposition_id: "IP-N5"
+    proposition: "The plurality's stopping role depends on its own necessary/non-contingent modal status and is not satisfied merely by positing a brute contingent plurality while rejecting a demand for its ground."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-09-INDEXICAL-ACTUALITY"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IP-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IP-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IP-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IP-N5"
+      comparison_scopes: ["COMPARISON:D11-09-INDEXICAL-ACTUALITY"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N1"
+    proposition: "At least one metaphysically necessary concrete foundation exists."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N1"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N2"
+    proposition: "That concrete foundation performs the relevant truth-bearing explanatory role with respect to genuinely contingent reality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N2"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N3"
+    proposition: "The foundation is non-agentive in the family-defining explanatory role."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N3"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N4"
+    proposition: "Its necessity is metaphysical rather than merely nomological necessity inside a contingent setup."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N4"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N5"
+    proposition: "The relevant explanandum remains genuinely contingent; the necessary concrete foundation does not collapse it into metaphysical necessity."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N5"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+  - candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    proposition_id: "IC-N6"
+    proposition: "The concrete foundation itself completes the relevant ultimate explanatory role rather than functioning only as an intermediate dependent on an abstract/non-concrete ultimate explanans."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists IC-N6 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports IC-N6 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines IC-N6, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:IC-N6"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+  - candidate: "C-NEC-AGENTIVE"
+    proposition_id: "AG-N1"
+    proposition: "A metaphysically necessary foundation exists."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AG-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AG-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AG-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AG-N1"
+      comparison_scopes: ["COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+  - candidate: "C-NEC-AGENTIVE"
+    proposition_id: "AG-N2"
+    proposition: "Intentional agency or mind-like purposive capacity is real in that foundation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L7-AGENTIVE-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AG-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AG-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AG-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AG-N2"
+      comparison_scopes: ["COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-NEC-AGENTIVE"
+    proposition_id: "AG-N3"
+    proposition: "Intentional agency is essential to the relevant family-defining explanation of contingent reality, not merely present or incidentally operative."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L7-AGENTIVE-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AG-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AG-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AG-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AG-N3"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-NEC-AGENTIVE"
+    proposition_id: "AG-N4"
+    proposition: "The explanatory relation can yield genuinely contingent reality without making the selected outcome metaphysically necessary."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AG-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AG-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AG-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AG-N4"
+      comparison_scopes: ["COMPARISON:D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N1"
+    proposition: "A relevant metaphysically necessary non-agentive principle, structure, law, modal constraint, or comparable non-concrete ground exists or obtains."
+    claim_types: ["metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N1"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N2"
+    proposition: "The principle/structure is not merely a representation or description of contingent reality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N2"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N3"
+    proposition: "It has genuine explanatory, grounding, constitutive, or constraining force with respect to relevant genuinely contingent reality."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N3"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N4"
+    proposition: "The family-defining ultimate explanatory route is non-agentive and does not require intentional agency to complete the relevant explanation."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N4"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N5"
+    proposition: "Its necessity is metaphysical rather than merely the consequence of contingent physical laws."
+    claim_types: ["metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N5"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N6"
+    proposition: "The relevant explanandum remains genuinely contingent; the necessary impersonal principle does not collapse it into metaphysical necessity."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N6 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N6 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N6, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N6"
+      comparison_scopes: ["COMPARISON:D11-10-CONCRETE-VERSUS-PRINCIPLE","COMPARISON:D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE"]
+  - candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    proposition_id: "PR-N7"
+    proposition: "Essential evaluative requiredness is not the family-defining explanatory route; otherwise the position belongs to C-AXIARCHIC."
+    claim_types: ["philosophical","metaphysical","normative/moral"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists PR-N7 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports PR-N7 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines PR-N7, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:PR-N7"
+      comparison_scopes: ["COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+  - candidate: "C-AXIARCHIC"
+    proposition_id: "AX-N1"
+    proposition: "A necessary objective evaluative or optimality truth/principle exists or obtains."
+    claim_types: ["philosophical","metaphysical","normative/moral"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AX-N1 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AX-N1 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AX-N1, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AX-N1"
+      comparison_scopes: ["COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+  - candidate: "C-AXIARCHIC"
+    proposition_id: "AX-N2"
+    proposition: "Value or evaluative requiredness has genuine explanatory force with respect to the relevant genuinely contingent reality."
+    claim_types: ["philosophical","metaphysical","normative/moral"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-05-BRUTE-VERSUS-NONBRUTE","D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AX-N2 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AX-N2 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AX-N2, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AX-N2"
+      comparison_scopes: ["COMPARISON:D11-05-BRUTE-VERSUS-NONBRUTE","COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-AXIARCHIC"
+    proposition_id: "AX-N3"
+    proposition: "The family-defining explanatory work is non-agentive."
+    claim_types: ["philosophical","metaphysical"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AX-N3 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AX-N3 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AX-N3, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AX-N3"
+      comparison_scopes: ["COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-AXIARCHIC"
+    proposition_id: "AX-N4"
+    proposition: "Evaluative requiredness itself performs the relevant explanatory work rather than merely supplying a reason that an independently existing agent acts on."
+    claim_types: ["philosophical","metaphysical","normative/moral"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AX-N4 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AX-N4 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AX-N4, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AX-N4"
+      comparison_scopes: ["COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+  - candidate: "C-AXIARCHIC"
+    proposition_id: "AX-N5"
+    proposition: "The axiarchic explanation is compatible with the relevant explanandum remaining genuinely contingent rather than collapsing the explanandum into metaphysical necessity."
+    claim_types: ["philosophical","metaphysical","normative/moral"]
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    coverage_mode: "COMPARATIVE_ROUTE"
+    critical_discriminators: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+    route_rationale: "Each cited discriminator is frozen CRITICAL in operative A11 and directly lists AX-N5 among its served necessary propositions."
+    expected_evidence: "Evidence or argument that directly supports AX-N5 under its frozen backgrounds and satisfies the candidate-favoring condition of at least one cited CRITICAL discriminator without lowering that discriminator's evidential threshold."
+    weakening_or_defeating_evidence: "Evidence or argument that directly undermines AX-N5, triggers an applicable proposition-level defeater, or satisfies the rival-favoring condition of a cited CRITICAL discriminator."
+    required_future_coverage_certification:
+      proposition_scope: "PROPOSITION:AX-N5"
+      comparison_scopes: ["COMPARISON:D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","COMPARISON:D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+
+certification_request:
+  requested_certification: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  Reviewer_B_must_confirm:
+    - "all 62 inventory 0.1.2 necessary propositions are present exactly once"
+    - "all 62 remain CANDIDATE_SPECIFIC; no SHARED_FLOOR is silently created"
+    - "every COMPARATIVE_ROUTE bears directly on the exact proposition and includes at least one operative CRITICAL discriminator"
+    - "the five NONCOMPARATIVE_CANDIDATE_SPECIFIC routes are genuinely direct, do not evade a material comparative burden, and are specific enough to be evaluated later"
+    - "route assignments do not reduce any candidate's burden asymmetrically"
+    - "expected and weakening/defeating evidence fields are adequate as G0 route specifications"
+    - "no final proposition disposition, evidence coverage state, MAKEABLE certification, candidate adequacy finding, ranking, or G1 authorization is implied"
+
+downstream:
+  if_pass: "A6 architecture coverage complete; continue remaining A13-A15/other G0 preregistration obligations before any G1 authorization."
+  if_repair_required: "repair only the identified A6 route defects under pre-evidence C4 controls as applicable."
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
