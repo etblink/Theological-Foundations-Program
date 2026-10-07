@@ -1,0 +1,88 @@
+schema_version: "0.1.4"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+continuation:
+  supersedes: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_3.yaml"
+  base_ledger_blob_sha: "d9d18d0379806c0245014f52f6f2ea409c1ce0c3"
+  inherited_sequence_range: "1-16"
+  inherited_entries_rewritten: false
+  continuation_entries_begin: 17
+
+entries:
+  - sequence: 17
+    repository_commit: "deaa2a23a59eb1f8bcff5b952c27204f237c9edc"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md blob 11461d46e47d25f32361140f609084820ffd0b40"
+    exposure_class: "G0_REVIEWER_A_CANDIDATE_UNIVERSE_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion"]
+    outcome_relevant_evidence: false
+    result_status: "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+
+  - sequence: 18
+    repository_commit: "1afe11adf4b3d195017d13aa8686037ae24773f6"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION_0_1_0.yaml blob 9cda0d871660c0da4917d022b35a117b3c53f073"
+    exposure_class: "G0_PROGRAM_LEAD_INDEPENDENT_REPLAY_AND_REPAIR_DISPOSITION"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion","C4 pre-evidence amendment control"]
+    outcome_relevant_evidence: false
+
+  - sequence: 19
+    repository_commit: "4ead65e7bfabe55a75c88cef697f83ee4378eb1e"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml blob 5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    exposure_class: "G0_PRE_EVIDENCE_CANDIDATE_REGISTER_REPAIR"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/completeness"]
+    outcome_relevant_evidence: false
+    C4_classification_pending: "REVIEWER_F_AMENDMENT_DIRECTION_REVIEW_REQUIRED_BEFORE_USE"
+
+  - sequence: 20
+    repository_commit: "1d12cebf1d40823b46adcd2cc11b1c971afcf60c"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml blob f756a89b2848a9a6089465fc29aed38d9401e67e"
+    exposure_class: "G0_B4_CANDIDATE_EXCLUSION_RECORD_FREEZE"
+    amendment_surfaces: ["B4 candidate exclusion review","B5 late-candidate control"]
+    outcome_relevant_evidence: false
+
+  - sequence: 21
+    repository_commit: "6edd7173b4f1656ec296e957d929d1b239c57bc3"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml blob 3e217a90d0c87026c9eb62f5f8d8cacb0fc40079"
+    exposure_class: "G0_REVIEWER_A_FOCUSED_REPAIR_RECHECK_INPUT_FREEZE"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion"]
+    outcome_relevant_evidence: false
+
+  - sequence: 22
+    repository_commit: "df68a046860cd918f3e510ea13c38b13be76dd13"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_PROMPT_0_1_0.md blob f043d38e3ebbc8285a3cbb74aa33b68e437d4a9b"
+    exposure_class: "G0_REVIEWER_A_FOCUSED_REPAIR_RECHECK_PROMPT_FREEZE"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion"]
+    outcome_relevant_evidence: false
+
+integrity_state:
+  next_sequence: 23
+  rewrite_detected: false
+  last_independent_integrity_check: null
+  outcome_evidence_exposure_started: false
+
+G0_state:
+  human_authorization_received: true
+  blind_candidate_elicitation_complete: true
+  candidate_universe_initial_review_complete: true
+  candidate_universe_initial_review_result: "REPAIR_REQUIRED"
+  candidate_universe_repaired: true
+  candidate_universe_recheck_ready: true
+  candidate_universe_C4_direction_review_required: true
+  candidate_universe_frozen: false
+  claim_typing_frozen: false
+  necessary_proposition_coverage_complete: false
+  background_register_frozen: false
+  source_plan_passed: false
+  discriminators_frozen: false
+  G0_complete: false
+  G1_authorized: false
