@@ -1,0 +1,395 @@
+schema_version: "0.1.2"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "BACKGROUND_REGISTER"
+status: "POST_EVIDENCE_F1_REPAIR_DRAFT__NONOPERATIVE_PENDING_C4_DIRECTION_AND_LEDGER_INTEGRITY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+supersession:
+  prior_artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+  prior_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  supersedes_for_operational_use: false
+  note: "0.1.2 is a descriptive post-evidence F1 repair draft only. Operative 0.1.1 remains controlling unless/until Reviewer F C4 direction review, Reviewer G ledger-integrity review where required, and Program Lead operational acceptance permit 0.1.2 use."
+
+review_basis:
+  Reviewer_E_blind_probe:
+    report_path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_BLIND_EXTERNAL_ADVERSE_SOURCE_REVIEW_REPORT_0_1_0.md"
+    report_blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
+    F1_flag: "Missing impersonal grounding-necessitation dimension"
+  Program_Lead_reconciliation:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION_0_1_0.yaml"
+    blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+  Reviewer_C_F1_review:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "84859f469089896bc86f340857caaf2d09b25c55"
+    disposition: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+  Program_Lead_F1_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION_0_1_0.yaml"
+    disposition: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+
+construction_rules:
+  backgrounds_are_not_candidate_answers: true
+  include_only_if_truth_critical_inference_can_change: true
+  split_only_if_variant_difference_changes_frozen_truth_critical_inference: true
+  merge_if_difference_is_irrelevant_to_all_frozen_truth_critical_inferences: true
+  no_worldview_default: true
+  no_background_installed_as_true: true
+  gate_only_dimensions_are_not_full_cartesian_factors: true
+  outcome_relevant_evidence_used: true
+  post_evidence_repair_direction_not_yet_classified: true
+
+dimensions:
+
+  BG-EXPLANATORY-REALISM:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Are relevant explanatory relations objective metaphysical relations, plural irreducible relations, or primarily deflationary/pragmatic constructions?"
+    variants:
+      ER-ROBUST:
+        proposition: "At least one irreducible objective metaphysical explanatory/grounding relation governs the relevant truth-critical inference."
+        warrant: "Serious grounding and metaphysical-explanation traditions."
+        affects: ["BR-N4","RG-N5","HO-N5","SE-N5","GD-N2","GD-N3","IC-N6","AG-N3","PR-N3","AX-N2","AX-N4"]
+        retire_if: "A candidate-neutral result establishes that robust metaphysical explanation is incoherent or irrelevant to every frozen inference."
+      ER-PLURALIST:
+        proposition: "More than one irreducible truth-bearing explanatory relation may legitimately operate across the study."
+        warrant: "Pluralist explanation frameworks and independently defensible anti-monist arguments."
+        affects: ["comparison of causal, grounding, structural, agentive, principle, and axiological explanatory routes"]
+        retire_if: "A candidate-neutral result establishes one exhaustive explanatory relation for all frozen inferences."
+      ER-DEFLATIONARY:
+        proposition: "Some or many explanation claims are epistemic, pragmatic, linguistic, or model-relative rather than irreducibly metaphysical."
+        warrant: "Serious explanatory-deflationist and anti-grounding traditions."
+        affects: ["GD-N2","GD-N3","SE-N2","ultimate-stopping burdens"]
+        retire_if: "A candidate-neutral argument establishes irreducible metaphysical explanation for every relevant inference."
+
+  BG-PSR-SCOPE:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "How broadly does a PSR-like explanatory demand apply?"
+    variants:
+      PSR-GLOBAL:
+        proposition: "Every genuinely contingent fact within scope, including any legitimate totality-level fact, requires sufficient explanation."
+        affects: ["BR-N4","RG-N5","GD-N2","GD-N3","necessary-ground stopping claims"]
+      PSR-RESTRICTED:
+        proposition: "Strong explanatory demand applies to designated contingent classes but may have principled limits at ultimate or totality scope."
+        affects: ["BR-N4","RG-N5","GD-N2","GD-N3"]
+      PSR-LOCAL-ONLY:
+        proposition: "Local or derivative contingent facts require explanation, while no additional global explanatory demand follows merely from their contingency."
+        affects: ["GD-N2","GD-N3","BR-N4","RG-N5"]
+      PSR-NONDEFAULT:
+        proposition: "No general PSR is presumed; any explanatory demand must be independently established for the exact inferential domain."
+        affects: ["BR-N4","RG-N5","GD-N2","GD-N3"]
+    warrant: "Classical/contemporary PSR literature, restricted-PSR work, Humean objections, and local/global demand disputes."
+    retire_if: "A candidate-neutral result establishes one scope rule for all frozen truth-critical inferences."
+
+  BG-TOTALITY-EXPLANANDUM:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Is there a determinate totality-level explanandum distinct from memberwise contingent facts?"
+    variants:
+      TOT-DISTINCT:
+        proposition: "A relevant determinate totality-level fact exists as a genuine explanandum not exhausted by member-level explanation."
+        affects: ["BR-N2","RG-N4","RG-N5","GD-N2","GD-N3","necessary-ground stopping claims"]
+      TOT-LOCAL-SUFFICIENCY:
+        proposition: "Member-level explanations may exhaust the legitimate explanatory task without creating an additional totality-level burden."
+        affects: ["RG-N4","GD-N2","GD-N3"]
+      TOT-NO-DETERMINATE-TOTALITY:
+        proposition: "Contingency may be intelligible itemwise while no determinate totality object/fact is available as an additional explanandum."
+        affects: ["BR-N2","RG-N4","GD-N2","necessary-ground stopping claims"]
+    warrant: "Serious aggregation, totality, mereological, and Hume-Edwards-style disputes."
+    candidate_boundary: "Semantic defect or non-truth-aptness is not a variant here; candidate-level dissolution remains C-MODAL-DISSOLUTION."
+    retire_if: "A candidate-neutral result establishes that totality status never changes any frozen inference."
+
+  BG-DEPENDENCE-STRUCTURE:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "What completion structure is admissible for the relevant explanatory/dependence relation?"
+    variants:
+      DEP-WELL-FOUNDED:
+        proposition: "The relevant dependence/explanatory chain must terminate in a well-founded base."
+        affects: ["RG-N3","RG-N5","HO-N2","SE-N2"]
+      DEP-INFINITE-REGRESS-COMPLETE:
+        proposition: "A one-way nonterminal dependence regress can be explanatorily complete without a terminal base."
+        affects: ["RG-N3","RG-N5","HO-N6"]
+      DEP-HOLISTIC-NONREFLEXIVE-COMPLETE:
+        proposition: "A non-well-founded mutual, structural, cyclic, or holistic but non-item-reflexive arrangement can be explanatorily complete."
+        affects: ["HO-N2","HO-N3","HO-N4","HO-N5","HO-N6"]
+      DEP-REFLEXIVE-PERMISSIBLE:
+        proposition: "A genuinely item-reflexive explanatory relation is not ruled out in principle."
+        affects: ["SE-N2","SE-N3","SE-N5"]
+    constraint:
+      relation_specific_viciousness: "A regress/cycle may be vicious for one explanatory relation but not another; no global viciousness rule is assumed."
+    warrant: "Foundationalist, infinitist, coherentist/non-well-founded, and self-explanation literature."
+    retire_if: "A candidate-neutral structural theorem fixes the admissible completion form for all relevant relations."
+
+  BG-MODAL-STATUS:
+    role: "ORDINARY_SENSITIVITY_DIMENSION_WITH_DEFLATIONARY_GATE_VARIANT"
+    question: "What kind of modality governs the study's contingency/necessity claims?"
+    variants:
+      MOD-METAPHYSICAL-DE-RE:
+        proposition: "Contingency and necessity are objective metaphysical de re statuses with truth conditions."
+        affects: ["MD-N1","MD-N2","NE-N1","IC-N4","AG-N1","PR-N5","IP-N1"]
+      MOD-LOGICAL-CONCEPTUAL-ONLY:
+        proposition: "The relevant modality is only logical or conceptual, not independently metaphysical."
+        affects: ["NE-N1","IC-N4","AG-N1","PR-N5"]
+      MOD-NOMIC-PHYSICAL-ONLY:
+        proposition: "The relevant necessity/possibility is nomic or physical rather than metaphysical."
+        affects: ["NE-N1","IC-N4","PR-N5"]
+      MOD-EPISTEMIC-ONLY:
+        proposition: "Apparent possibility/contingency expresses ignorance or epistemic openness rather than de re metaphysical status."
+        affects: ["MD-N2","IU-N3","necessary-existence inferences"]
+      MOD-DEFLATIONARY:
+        proposition: "Central metaphysical modal discourse is non-literal, framework-dependent, or not robustly truth-apt."
+        affects: ["MD-N1","MD-N2","MD-N4","lower-order existence sensitivity"]
+        sensitivity_role: "GATE"
+        gate_effect: "Test only the dissolution/indeterminacy boundary first; do not automatically cross this state with every lower-order existence combination."
+    warrant: "Mainstream modal metaphysics, logical/nomic alternatives, epistemic readings, and modal fictionalist/anti-realist traditions."
+    candidate_boundary: "The background status of modal discourse is distinct from C-MODAL-DISSOLUTION, whose candidate claim is that the study's central contingency presupposition is inapplicable/not truth-apt."
+    retire_if: "A candidate-neutral modal semantics is fixed for all frozen truth-critical claims."
+
+  BG-ACTUALITY-PRIVILEGE:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Is actuality metaphysically privileged or indexical/non-privileged?"
+    variants:
+      ACT-PRIVILEGED:
+        proposition: "Actuality involves a metaphysically privileged selection relation or privileged actual locus."
+        affects: ["IP-N3","IP-N4","IP-N5"]
+      ACT-INDEXICAL-NONPRIVILEGED:
+        proposition: "Actuality or its analogue is indexical/non-privileged across a plurality of loci."
+        affects: ["IP-N3","IP-N4","IP-N5"]
+    warrant: "Actualist and indexical-actuality/modal-plurality traditions."
+    candidate_boundary: "Indexical plurality itself remains C-INDEXICAL-PLURALITY; this background concerns actuality privilege only."
+    retire_if: "A candidate-neutral result fixes actuality status without candidate dependence."
+
+  BG-ABSTRACT-PRINCIPLE-FORCE:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Can abstract, structural, law-like, or modal-principle facts do ontic explanatory work?"
+    variants:
+      ABS-EXPLANATORY:
+        proposition: "At least some abstract/structural/principle facts can genuinely ground, constitute, constrain, or explain concrete contingent reality."
+        affects: ["PR-N2","PR-N3","AX-N2"]
+      ABS-CONSTRAINT-ONLY:
+        proposition: "Abstract/principle facts can constrain possibilities without by themselves explaining why a concrete actuality obtains."
+        affects: ["PR-N3","abstract-instantiation gap"]
+      ABS-DESCRIPTIVE:
+        proposition: "Abstract/principle structures are descriptive/representational and cannot by themselves perform the required ontic explanatory role."
+        affects: ["PR-N2","PR-N3","AX-N2"]
+    warrant: "Structuralist, mathematical, law-metaphysical, nominalist/concretist, and instantiation-gap literature."
+    retire_if: "A candidate-neutral result fixes abstract explanatory force for all relevant claims."
+
+  BG-GROUND-CATEGORY:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "What ontological category is eligible to perform the ultimate explanatory role?"
+    variants:
+      CAT-CONCRETE-REQUIRED:
+        proposition: "The ultimate explanatory ground must be concrete."
+        affects: ["IC-N6","PR-N1","PR-N3"]
+      CAT-ABSTRACT-ELIGIBLE:
+        proposition: "An abstract/non-concrete principle or structure may be eligible to perform ultimate explanatory work if separately shown explanatorily efficacious."
+        affects: ["IC-N6","PR-N1","PR-N3"]
+      CAT-OPEN:
+        proposition: "No category restriction is imposed before independent warrant is established."
+        affects: ["IC-N6","PR-N1","AG-N2","AX-N2"]
+    warrant: "Concrete/abstract ontology and category-barrier disputes."
+    candidate_boundary: "Concrete, agentive, principle, and axiarchic families remain candidate answers; this dimension only governs category eligibility."
+    retire_if: "A candidate-neutral category theorem settles eligibility."
+
+  BG-EXPLANATION-RELATION:
+    role: "ORDINARY_SENSITIVITY_DIMENSION_WITH_INTERNAL_AXES"
+    question: "Which explanatory relation properties are admissible for the truth-critical inference?"
+    internal_axes:
+      ontic_relation:
+        mutually_exclusive_per_run: true
+        states:
+          REL-CAUSAL-SUSTAINING:
+            proposition: "Efficient/sustaining causation is the relevant admissible relation."
+            affects: ["AG-N3","IC-N6"]
+          REL-GROUNDING-DEPENDENCE:
+            proposition: "Metaphysical grounding/ontological dependence is the relevant admissible relation."
+            affects: ["RG-N3","HO-N2","SE-N2","PR-N3"]
+          REL-NOMIC-SUBSUMPTION:
+            proposition: "Nomic/law subsumption is sufficient for the relevant explanatory role."
+            affects: ["BR-N2","PR-N3"]
+      contrast_requirement:
+        mutually_exclusive_per_run: true
+        states:
+          REL-CONTRASTIVE-REQUIRED:
+            proposition: "Ultimate explanation must answer an appropriate contrastive why-this-rather-than-alternative question."
+            affects: ["GD-N2","PR-N3","AX-N4"]
+          REL-NONCONTRASTIVE-SUFFICIENT:
+            proposition: "A non-contrastive or how-possible explanatory relation may be sufficient."
+            affects: ["GD-N2","PR-N3"]
+      intentionality:
+        mutually_exclusive_per_run: true
+        states:
+          REL-INTENTIONAL-ADMISSIBLE:
+            proposition: "Intentional/reason-based explanation may explain non-intentional contingent reality if independently warranted."
+            affects: ["AG-N3","AG-N4","AX-N4"]
+          REL-INTENTIONAL-INADMISSIBLE:
+            proposition: "Intentional/reason-based explanation is not admissible for the relevant non-intentional explanandum absent an independent bridge."
+            affects: ["AG-N3","AX-N4"]
+    warrant: "Serious causal, grounding, nomic, contrastive, and reason-explanation literature."
+    note: "Internal axes avoid pretending that causal/grounding choice, contrast requirement, and intentional admissibility are one mutually exclusive list."
+    retire_if: "A candidate-neutral reduction makes these relation distinctions irrelevant to all frozen inferences."
+
+  BG-ONTOLOGY-ADMISSIBILITY:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Is any ontological class preemptively inadmissible before candidate-specific warrant is assessed?"
+    variants:
+      ONT-CONCRETE-CAUSAL-CLOSURE:
+        proposition: "Only concrete causal entities/relations are admissible as ultimate explainers unless the closure restriction is independently defeated."
+        affects: ["AG-N2","PR-N1","AX-N2","IC-N6"]
+      ONT-METHODOLOGICAL-PREFERENCE-ONLY:
+        proposition: "Inquiry may methodologically prefer familiar/natural causal explanations without metaphysically excluding other ontological classes."
+        affects: ["admissibility burden without preemptive exclusion"]
+      ONT-OPEN-NO-PREEMPTIVE-RESTRICTION:
+        proposition: "No candidate-neutral ontology class is excluded in advance; admissibility follows independent warrant."
+        affects: ["AG-N2","PR-N1","AX-N2","IC-N6"]
+    warrant: "Methodological-naturalism, causal-closure, metaphysical-naturalism, and ontology-admissibility disputes, decomposed without worldview labels."
+    candidate_boundary: "This dimension is not naturalism, supernaturalism, or theism."
+    retire_if: "A candidate-neutral ontological constraint is independently established."
+
+  BG-TEMPORAL-ORIGIN-LINK:
+    role: "GATE_ONLY"
+    question: "May temporal origin/beginning be inferred from or inserted into metaphysical contingency reasoning?"
+    gate_states:
+      TEMPORAL-LINK-NOT-LICENSED:
+        proposition: "Contingency alone does not license a temporal-beginning premise."
+      TEMPORAL-LINK-INDEPENDENTLY-LICENSED:
+        proposition: "A temporal-beginning premise may be used only if independently warranted by a separate frozen route."
+    affects: ["RG-C1","temporal first-cause inferences"]
+    gate_effect: "Not a full cross-product factor; it activates only when an inference uses temporal origin."
+    warrant: "Distinction between kalam/beginning arguments and modal contingency arguments."
+    candidate_boundary: "Physics-specific cosmologies remain outside the candidate universe."
+    retire_if: "No frozen inference uses temporal origin, in which case the gate is NOT_APPLICABLE."
+
+  BG-MODAL-LOGIC:
+    role: "GATE_ONLY"
+    question: "Which modal logic is licensed for any inference that moves from possibility to necessity?"
+    gate_states:
+      LOGIC-S5:
+        proposition: "S5-strength possibility-to-necessity inference is licensed for the exact proposition at issue."
+      LOGIC-WEAKER:
+        proposition: "Only a weaker system such as T/S4 is licensed; possibility of necessity does not automatically yield necessity."
+      LOGIC-UNFIXED:
+        proposition: "No quantified/modal system strong enough for the inference is independently fixed."
+    affects: ["NE-N1","IC-N1","AG-N1","PR-N1"]
+    gate_effect: "Applied only to inferences that actually invoke the contested possibility-to-necessity step."
+    warrant: "Standard disputes over S5 and weaker modal systems."
+    retire_if: "No frozen inference uses the contested axiom or a candidate-neutral logic is fixed."
+
+  BG-AGENTIVE-MODAL-LINK:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Can a necessary agentive source explain genuinely contingent reality without modal collapse?"
+    variants:
+      AGENT-CONTINGENT-OUTPUT:
+        proposition: "A metaphysically necessary agent can intentionally explain a genuinely contingent outcome without necessitating that outcome."
+        affects: ["AG-N2","AG-N3","AG-N4"]
+      AGENT-NECESSITATING:
+        proposition: "A necessary source plus sufficient ultimate reason fixes/necessitates the explained outcome unless an additional contingency-maker is supplied."
+        affects: ["AG-N4"]
+      AGENT-NONFUNDAMENTAL:
+        proposition: "Agency is not a fundamental explanatory category at the ultimate metaphysical level."
+        affects: ["AG-N2","AG-N3"]
+    warrant: "Agent-causal, libertarian, modal-collapse, and reductionist/structural objections."
+    candidate_boundary: "No divine perfection, worship-worthiness, providence, uniqueness, or religious identity is imported."
+    retire_if: "A candidate-neutral argument fixes the agentive modal link."
+
+  BG-IMPERSONAL-GROUNDING-MODAL-LINK:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Can a metaphysically necessary impersonal ground explain genuinely contingent reality without necessitating the explained outcome?"
+    variants:
+      IMP-NECESSITATING:
+        proposition: "A metaphysically necessary impersonal ground plus a sufficient impersonal explanatory relation fixes or necessitates the explained outcome unless a separate contingency-maker is supplied."
+        affects: ["IC-N5","PR-N6","AX-N5"]
+      IMP-CONTINGENCY-PRESERVING:
+        proposition: "A metaphysically necessary impersonal ground can perform the relevant explanatory work while the explained outcome remains genuinely metaphysically contingent."
+        affects: ["IC-N5","PR-N6","AX-N5"]
+      IMP-UNFIXED:
+        proposition: "No candidate-neutral rule is fixed for whether the relevant impersonal grounding/explanatory relation transmits necessity to its output."
+        affects: ["IC-N5","PR-N6","AX-N5"]
+    warrant: "Grounding necessitarianism, grounding contingentism/indeterminism, stochastic-grounding, priority-monist, impersonal-principle, and axiarchic modal-link literature."
+    candidate_boundary: "This dimension governs the modal behavior of an impersonal necessary-ground-to-output link only. It does not establish or defeat any impersonal-ground candidate and does not merge concrete, principle, or axiarchic candidate families."
+    relation_scope: "Apply only when the candidate's truth-critical route uses an impersonal necessary ground and a sufficient explanatory/grounding/constitutive relation to a genuinely contingent explanandum. Relation-type admissibility remains BG-EXPLANATION-RELATION."
+    retire_if: "A candidate-neutral result fixes necessity transmission for every relevant impersonal ground/explanatory relation."
+
+  BG-AXIOLOGICAL-FORCE:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "What explanatory role, if any, can objective value/evaluative requiredness perform?"
+    variants:
+      AX-VALUE-ONTOLOGICAL:
+        proposition: "Objective evaluative facts can have genuine ontic explanatory force with respect to existence/actuality."
+        affects: ["AX-N1","AX-N2","AX-N4","PR-N7"]
+      AX-ACTION-ONLY:
+        proposition: "Objective value/reasons may explain an agent's action but do not by themselves explain impersonal existence."
+        affects: ["AX-N2","AX-N4","AG-N3"]
+      AX-VALUE-NORMATIVE-ONLY:
+        proposition: "Objective value may supply evaluation/reasons but performs no ontic explanatory role for the relevant existence claim."
+        affects: ["AX-N2","AX-N4"]
+      AX-ANTI-REALIST:
+        proposition: "No stance-independent evaluative truth exists with the strength required by axiarchic explanation."
+        affects: ["AX-N1"]
+    warrant: "Axiarchic, value-realist, reasons-for-action, value-to-being gap, and metaethical anti-realist traditions."
+    candidate_boundary: "C-AXIARCHIC remains the candidate that value itself performs the ultimate explanatory work."
+    retire_if: "A candidate-neutral metaethical/explanatory result fixes the role of value."
+
+  BG-METAPHYSICAL-INDETERMINACY:
+    role: "ORDINARY_SENSITIVITY_DIMENSION"
+    question: "Can ultimacy itself be metaphysically indeterminate rather than merely unknown or semantically unsettled?"
+    variants:
+      IND-ONTIC-POSSIBLE:
+        proposition: "Genuine worldly/metaphysical indeterminacy can obtain with respect to relevant ultimacy facts."
+        affects: ["IU-N2","IU-N3","IU-N4"]
+      IND-DETERMINATE:
+        proposition: "Relevant ultimacy facts are metaphysically determinate even if epistemically inaccessible."
+        affects: ["IU-N2","IU-N3"]
+      IND-SEMANTIC-ONLY:
+        proposition: "Apparent indeterminacy is linguistic/semantic/conceptual rather than worldly."
+        affects: ["IU-N3"]
+    warrant: "Contemporary metaphysical-indeterminacy, determinacy-first, and semantic-vagueness literature."
+    candidate_boundary: "C-INDETERMINATE-ULTIMACY is the candidate assertion that ultimacy is in fact indeterminate; this dimension concerns background possibility/status."
+    retire_if: "A candidate-neutral determinacy theorem or semantic analysis settles the issue."
+
+excluded_backgrounds:
+  BG-D09-EPISTEMIC-STANDARD:
+    status: "EXCLUDED_AS_PROTOCOL_METHOD"
+    reason: "A priori/abductive/modal-skeptical warrant rules would duplicate or override Protocol 0.1.7 sufficiency and truth-warrant machinery."
+  BG-D12-QUESTION-DISSOLUTION:
+    status: "EXCLUDED_AS_CANDIDATE_OR_SCOPE_FAILURE"
+    reason: "Framework dissolution of the central contingency presupposition is candidate-subsumed by C-MODAL-DISSOLUTION; global inadjudicability is a scope failure rather than a sensitivity factor."
+    retained_residue: "MOD-DEFLATIONARY remains within BG-MODAL-STATUS."
+  BG-THEISM-AS-BACKGROUND:
+    status: "EXCLUDED_AS_CANDIDATE"
+    reason: "Coarse, outcome-proximate package; specific inference-changing assumptions are decomposed."
+  BG-NATURALISM-AS-BACKGROUND:
+    status: "EXCLUDED_AS_IRRELEVANT_GLOBAL_LABEL"
+    reason: "No single determinate inference; narrow ontology-admissibility assumptions are represented in BG-ONTOLOGY-ADMISSIBILITY."
+  BG-SUPERNATURALISM-AS-BACKGROUND:
+    status: "EXCLUDED_AS_IRRELEVANT_GLOBAL_LABEL"
+    reason: "Coarse label; no global supernaturalism assumption is installed."
+  BG-SKEPTICISM-AS-BACKGROUND:
+    status: "EXCLUDED_AS_PROTOCOL_METHOD_OR_DECOMPOSED"
+    reason: "Generic skepticism is a posture; modal residue is represented in BG-MODAL-STATUS and protocol outcomes remain B6-controlled."
+  EPISTEMIC_ABSTENTION:
+    status: "EXCLUDED_AS_OUTCOME_POSTURE"
+  PHYSICS_SPECIFIC_COSMOLOGIES:
+    status: "EXCLUDED_AS_BACKGROUND_BY_DEFAULT"
+    reason: "No specific cosmology is admitted at A8 merely to support a temporal-origin premise."
+
+candidate_boundary_controls:
+  - "C-GLOBAL-DEFLATION remains the candidate answer about absence of an additional global ground; BG-PSR-SCOPE/TOTALITY govern prior demand/explanandum assumptions."
+  - "C-MODAL-DISSOLUTION remains the candidate answer that the central contingency presupposition is inapplicable/not truth-apt; BG-MODAL-STATUS governs broader modal status."
+  - "C-INDEXICAL-PLURALITY remains the candidate; BG-ACTUALITY-PRIVILEGE governs actuality semantics/metaphysics."
+  - "C-NEC-AGENTIVE remains the candidate; BG-EXPLANATION-RELATION and BG-AGENTIVE-MODAL-LINK govern admissibility/modal-link assumptions."
+  - "C-NEC-IMPERSONAL-CONCRETE remains the candidate; BG-GROUND-CATEGORY, BG-EXPLANATION-RELATION, and BG-IMPERSONAL-GROUNDING-MODAL-LINK govern category/relation/modal-link assumptions."
+  - "C-NEC-IMPERSONAL-PRINCIPLE remains the candidate; BG-ABSTRACT-PRINCIPLE-FORCE, BG-GROUND-CATEGORY, and BG-IMPERSONAL-GROUNDING-MODAL-LINK govern enabling and modal-link assumptions."
+  - "C-AXIARCHIC remains the candidate; BG-AXIOLOGICAL-FORCE and BG-IMPERSONAL-GROUNDING-MODAL-LINK govern value-force and impersonal modal-link assumptions."
+  - "C-INDETERMINATE-ULTIMACY remains the candidate; BG-METAPHYSICAL-INDETERMINACY governs ontic-indeterminacy possibility/status."
+
+review_status:
+  ordinary_dimension_count: 14
+  gate_only_dimension_count: 2
+  total_registered_dimensions_or_gates: 16
+  Reviewer_C_F1_review_complete: true
+  Reviewer_C_F1_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+  C4_direction_review_pending: true
+  ledger_integrity_review_pending: true
+  background_register_0_1_2_operational: false
+  operative_pre_repair_register_remains_0_1_1: true
+  G1_authorized: true
+  coverage_review_paused: true
