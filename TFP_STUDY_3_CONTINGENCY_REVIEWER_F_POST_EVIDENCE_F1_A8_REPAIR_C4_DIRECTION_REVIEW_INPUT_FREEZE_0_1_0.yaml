@@ -1,0 +1,125 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+status: "FROZEN__C4_DIRECTION_REVIEW_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  continuity_requirement: "Continue in the exact same Reviewer-F conversation that previously returned Study-3 C4_DIRECTION_REVIEW_PASS results."
+  role: "amendment_direction_reviewer"
+  prohibited_roles_in_this_review:
+    - "ledger_integrity_reviewer"
+    - "strict_auditor"
+    - "background_granularity_reviewer"
+    - "coverage_state_reviewer"
+    - "MAKEABLE_certifier"
+
+fixed_chronology_endpoint:
+  sequence: 264
+  ledger_chain:
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_253_254_0_1_0.yaml", blob_sha: "362eed52ad4f6cfb8a10bf2229f7b303bd311679" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_255_257_0_1_0.yaml", blob_sha: "e8d1959324ce7a020a8a51aa6ce7d7a59b30269c" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_258_259_0_1_0.yaml", blob_sha: "dc45c5f52ca9e4c5ef3e21ebb74aa30855619114" }
+    - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_260_264_0_1_0.yaml" }
+  timing_fact_to_test_not_assume: "Outcome-relevant G1 evidence exposure began before the F1 repair draft; classify using Protocol C4 from the ledger, not from labels in the amendment record."
+
+authorized_amendment_files:
+  pre_repair_background_register: { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml", blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d" }
+  pre_repair_interaction_matrix: { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml", blob_sha: "46b9cbdd731eab01e689770455926d2620994d48" }
+  Reviewer_C_F1_report: { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md", blob_sha: "84859f469089896bc86f340857caaf2d09b25c55" }
+  Program_Lead_F1_disposition: { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "15174e9f82f4c4311071919f48e357d02450ba75" }
+  repair_background_register: { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml", blob_sha: "234add6d1f68081f2cd842b97669809297e8beec" }
+  repair_interaction_matrix: { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_2.yaml", blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6" }
+  amendment_record: { path: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "15a0b13742a7b737cfcc1627a79501f90b4f9165" }
+
+authorized_scope_context:
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml", blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml", blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A13_EXPECTED_WEAKENING_EVIDENCE_REGISTER_0_1_0.yaml", blob_sha: "2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A16_SHARED_PROPOSITION_MAP_0_1_0.yaml", blob_sha: "88350ca94dbb08b0e5b04c6d3acdb514d890c9cd" }
+  - "Protocol 0.1.7 C4 amendment-control text only"
+
+not_authorized:
+  - "Reperform Reviewer C A8 granularity/interaction adequacy review."
+  - "Decide which F1 background variant is true."
+  - "Issue proposition dispositions, candidate adequacy, coverage, MAKEABLE/UNMAKEABLE, ranking, or theological conclusions."
+  - "Certify ledger integrity."
+  - "Alter the repair content or A11 tiers/direction rules."
+
+repair_surface:
+  new_dimension: "BG-IMPERSONAL-GROUNDING-MODAL-LINK"
+  variants: ["IMP-NECESSITATING","IMP-CONTINGENCY-PRESERVING","IMP-UNFIXED"]
+  directly_affected_propositions: ["IC-N5","PR-N6","AX-N5"]
+  directly_affected_candidates:
+    - "C-NEC-IMPERSONAL-CONCRETE"
+    - "C-NEC-IMPERSONAL-PRINCIPLE"
+    - "C-AXIARCHIC"
+  plausible_indirect_rivals_to_classify:
+    - "C-NECESSITARIAN"
+    - "C-NEC-AGENTIVE"
+  all_other_candidates_must_be_marked_NEUTRAL_or_explained_if_not: true
+
+required_candidate_direction_table:
+  candidates:
+    - "C-BRUTE"
+    - "C-REGRESS"
+    - "C-HOLISTIC"
+    - "C-SELF-EXPLANATORY"
+    - "C-GLOBAL-DEFLATION"
+    - "C-MODAL-DISSOLUTION"
+    - "C-INDETERMINATE-ULTIMACY"
+    - "C-NECESSITARIAN"
+    - "C-INDEXICAL-PLURALITY"
+    - "C-NEC-IMPERSONAL-CONCRETE"
+    - "C-NEC-AGENTIVE"
+    - "C-NEC-IMPERSONAL-PRINCIPLE"
+    - "C-AXIARCHIC"
+  allowed_direction_values: ["ADVERSE","FAVORABLE","NEUTRAL","MIXED_OR_UNCLEAR"]
+
+required_outcome_condition_direction_table:
+  conditions:
+    - "future candidate structural adequacy"
+    - "future ranking eligibility"
+    - "future relative ranking/dominance"
+    - "future truth-warrant eligibility"
+    - "future background robustness"
+    - "future proposition disposition ceiling for IC-N5/PR-N6/AX-N5"
+    - "future comparison-scoped coverage burden"
+    - "future MAKEABLE certification"
+    - "stronger theological-attribute inference"
+  allowed_direction_values: ["ADVERSE","FAVORABLE","NEUTRAL","MIXED_OR_UNCLEAR"]
+
+C4_required_class_namespace:
+  - "POST_EVIDENCE_NONMATERIAL"
+  - "POST_EVIDENCE_ADVERSE_ONLY"
+  - "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+decision_rule:
+  - "Use POST_EVIDENCE_ADVERSE_ONLY only if every affected candidate/outcome effect is ADVERSE or NEUTRAL and at least one is ADVERSE."
+  - "Use POST_EVIDENCE_FAVORABLE_OR_MIXED if any affected candidate/outcome effect is FAVORABLE or MIXED_OR_UNCLEAR."
+  - "POST_EVIDENCE_NONMATERIAL is available only if independently established as clerical/non-outcome-determinative despite the frozen repair surface."
+  - "Do not classify PRE_EVIDENCE_AMENDMENT if the authorized ledger shows relevant outcome evidence exposure before the amendment."
+
+required_output_sections:
+  - "SESSION / CONTINUITY"
+  - "INPUT VERIFICATION"
+  - "AMENDMENT TIMING"
+  - "DIRECTION BY REPAIR SURFACE"
+  - "DIRECTION BY CANDIDATE"
+  - "DIRECTION BY OUTCOME CONDITION"
+  - "SYMMETRY / BENEFIT CHECK"
+  - "C4 CLASSIFICATION CONSEQUENCES"
+  - "REQUIRED CONTROLS"
+  - "C4 DIRECTION REVIEW STATUS"
+
+status_namespace:
+  - "C4_DIRECTION_REVIEW_PASS"
+  - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+
+controls:
+  repair_operational_before_C4: false
+  coverage_review_paused: true
+  MAKEABLE_review_paused: true
