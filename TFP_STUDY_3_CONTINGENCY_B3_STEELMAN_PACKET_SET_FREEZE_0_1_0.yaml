@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "B3_STEELMAN_PACKET_SET_FREEZE"
+status: "FROZEN__EQUAL_STRENGTH_PASS"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+candidate_universe_freeze:
+  artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+  blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  candidate_count: 13
+
+construction_completion:
+  artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_COMPLETION_0_1_0.yaml"
+  blob_sha: "f5a25088f11f74d74a168ab405f001e7decdfc85"
+
+equal_strength_review:
+  artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "edc8cf4ed7bd187495e766431d5911e6748fa9b8"
+  disposition: "STEELMAN_EQUAL_STRENGTH_PASS"
+
+program_lead_disposition:
+  artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_STEELMAN_EQUAL_STRENGTH_DISPOSITION_0_1_0.yaml"
+  blob_sha: "5c089cd7590275f2a97d7d14acdbabfb224e9599"
+  disposition: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
+
+packet_blobs:
+  C-BRUTE: "0888f048117afed26c95cb9b6b01c177d406bfb2"
+  C-REGRESS: "8790ba1007037a632a42fbacf723894424b448b6"
+  C-HOLISTIC: "5128dfb29fbbf88eb098e971aec64746ec6f0065"
+  C-SELF-EXPLANATORY: "7b6ffebd9a2a5b625137b928650dbc0ef824c143"
+  C-GLOBAL-DEFLATION: "32807841c6805b9d6c8440895457118f10f842a1"
+  C-MODAL-DISSOLUTION: "54dbb7733a164899b0ec575ecd673dc17a3b26d6"
+  C-INDETERMINATE-ULTIMACY: "99b5f62cd33a190c3e2ec081f39de9033d1c3c37"
+  C-NECESSITARIAN: "0b8a1ac7d79077256a98a188844c97689c52056c"
+  C-INDEXICAL-PLURALITY: "5cb7058b6903d38579fd5ae8dd26a35795c4f75b"
+  C-NEC-IMPERSONAL-CONCRETE: "1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5"
+  C-NEC-AGENTIVE: "46c4333f379ac9f394eddcd9ec52dc0fb56da113"
+  C-NEC-IMPERSONAL-PRINCIPLE: "12108b38091a9ecacdff8ab27222e733175ce68c"
+  C-AXIARCHIC: "ee3e8e1ee24671df264da1985ae433989c037200"
+
+controls:
+  packet_order_is_not_ranking: true
+  packet_repair_required: false
+  B3_complete: true
+  candidate_truth_adjudicated: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
