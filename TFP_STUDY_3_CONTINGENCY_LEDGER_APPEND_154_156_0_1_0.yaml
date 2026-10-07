@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_151_153_blob_sha: "4dd3a5725b48573e592ec8037e85b341ad2c3026"
+  prior_next_sequence: 154
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 154
+    repository_commit: "4ad52b8e5b07a11770dbf684b1162a3d8ac9bcd8"
+    timestamp_utc: "2026-10-07T04:12:50Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_REPAIR_AMENDMENT_RECORD_0_1_0.yaml blob 9143a35ad317187531fbc6e10d7bbf861ccc4b49"
+    exposure_class: "G0_A9_SOURCE_PLAN_C4_AMENDMENT_RECORD_FREEZE"
+    amendment_surfaces: ["A9 source-plan amendment","candidate-native access","source-selection symmetry","future coverage/ranking/truth-warrant eligibility"]
+    outcome_relevant_evidence: false
+    proposed_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+  - sequence: 155
+    repository_commit: "f69b887ebfe227e47521b477b36983bd36b9ba42"
+    timestamp_utc: "2026-10-07T04:13:40Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml blob 76e8362dfd8b998038157695c714da1ceef56a15"
+    exposure_class: "G0_A9_SOURCE_PLAN_REPAIR_FREEZE"
+    amendment_surfaces: ["A9 source plan","A9.1 strongest-native access","adverse symmetry","cross-tradition bias control","synthetic/thin literature search"]
+    outcome_relevant_evidence: false
+    operational: false
+
+  - sequence: 156
+    repository_commit: "cc05646f43a6f42fa70bd52a7447b10b294f0ce1"
+    timestamp_utc: "2026-10-07T04:14:12Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml blob 65adcaf171c2290b56bddd36950df295e2102c42"
+    exposure_class: "G0_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION"
+    amendment_surfaces: ["A9 repair verification","Reviewer D recheck handoff","C4 readiness"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_REPAIR__REVIEWER_D_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+
+next_sequence: 157
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
