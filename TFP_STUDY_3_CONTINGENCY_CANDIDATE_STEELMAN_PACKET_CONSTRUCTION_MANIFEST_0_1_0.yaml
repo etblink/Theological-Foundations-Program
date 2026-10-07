@@ -1,0 +1,80 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_MANIFEST"
+status: "FROZEN_CONSTRUCTION_MANIFEST__PACKETS_NOT_YET_COMPLETE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+candidate_universe:
+  freeze_artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+  freeze_blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  candidate_count: 13
+  frozen: true
+
+B3_required_fields:
+  - "candidate-native/primary formulation"
+  - "strongest serious proponent source(s)"
+  - "core truth propositions"
+  - "authority commitments"
+  - "internal success conditions"
+  - "expected evidence"
+  - "strongest recognized objections"
+  - "common caricatures explicitly rejected"
+
+construction_controls:
+  - "Construct each candidate packet separately where feasible rather than by comparative editing against rival packets."
+  - "Use tradition-native or proponent-informed sources where a genuine proponent literature exists."
+  - "For independently generated or cross-literature families without a single canonical proponent, state that limitation and use traceable strongest formulations rather than inventing a school."
+  - "Do not rank candidates, estimate truth probability, or adjudicate which candidate is best."
+  - "Do not import downstream theistic properties into necessary-foundation families without separate warrant."
+  - "Do not convert Protocol B6 meta-outcomes into candidate packets."
+  - "Candidate order is taxonomic only."
+  - "Record unavoidable cross-packet contamination."
+  - "If packet-construction research exposes outcome-relevant evidence beyond candidate formulation/recognized-objection work, stop and append the A17 ledger before further substantive use."
+  - "G1 evidence acquisition remains unauthorized."
+
+packet_plan:
+  - candidate_id: "C-BRUTE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_BRUTE_0_1_0.md"
+  - candidate_id: "C-REGRESS"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_REGRESS_0_1_0.md"
+  - candidate_id: "C-HOLISTIC"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_HOLISTIC_0_1_0.md"
+  - candidate_id: "C-SELF-EXPLANATORY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_SELF_EXPLANATORY_0_1_0.md"
+  - candidate_id: "C-GLOBAL-DEFLATION"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md"
+  - candidate_id: "C-MODAL-DISSOLUTION"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_MODAL_DISSOLUTION_0_1_0.md"
+  - candidate_id: "C-INDETERMINATE-ULTIMACY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDETERMINATE_ULTIMACY_0_1_0.md"
+  - candidate_id: "C-NECESSITARIAN"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NECESSITARIAN_0_1_0.md"
+  - candidate_id: "C-INDEXICAL-PLURALITY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDEXICAL_PLURALITY_0_1_0.md"
+  - candidate_id: "C-NEC-IMPERSONAL-CONCRETE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_CONCRETE_0_1_0.md"
+  - candidate_id: "C-NEC-AGENTIVE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_AGENTIVE_0_1_0.md"
+  - candidate_id: "C-NEC-IMPERSONAL-PRINCIPLE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_PRINCIPLE_0_1_0.md"
+  - candidate_id: "C-AXIARCHIC"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_AXIARCHIC_0_1_0.md"
+
+review_control:
+  equal_strength_reviewer: "REVIEWER_A"
+  required_lineage: "same accepted Reviewer-A lineage remains eligible under frozen role architecture"
+  review_dimensions:
+    - "specificity"
+    - "source quality"
+    - "objection coverage"
+    - "charitable formulation"
+  use_rule: "If one packet is materially weaker, comparison pauses for repair before G0 can close."
+
+completion_state:
+  packets_frozen: 0
+  packets_required: 13
+  equal_strength_review_complete: false
+  G0_complete: false
+  G1_authorized: false
