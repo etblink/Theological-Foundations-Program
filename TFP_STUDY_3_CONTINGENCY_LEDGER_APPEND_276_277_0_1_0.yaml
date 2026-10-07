@@ -1,0 +1,39 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_272_275_blob_sha: "428b956979447e66087a0bb6edad834ab5537f44"
+  prior_next_sequence: 276
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 276
+    repository_commit: "8977fc44cd4f8194ca9b11ae47e8abea66c2b775"
+    timestamp_utc: "2026-10-07T15:48:59Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml blob bde8258d83551175485b79fb2e94aa1f443374e1"
+    exposure_class: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE"
+    amendment_surfaces: ["A17 evidence-exposure ledger","Reviewer-C F1 exposure provenance","missing amendment-surface annotations","repair provenance","A8 operational acceptance gate"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN__FOCUSED_REPAIR_RECHECK_ONLY"
+
+  - sequence: 277
+    repository_commit: "378e1ce389ace853207383d5fecd9b9fcd604e03"
+    timestamp_utc: "2026-10-07T15:49:20Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_PROMPT_0_1_0.md blob 3b243d86998d571a8e3760a130a743efbaa8b3a7"
+    exposure_class: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_PROMPT_FREEZE"
+    amendment_surfaces: ["A17 evidence-exposure ledger","Reviewer-C F1 exposure provenance","missing amendment-surface annotations","repair provenance","A8 operational acceptance gate"]
+    outcome_relevant_evidence: true
+    result_status: "REVIEWER_G_FOCUSED_REPAIR_RECHECK_READY"
+
+next_sequence: 278
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+coverage_certified: false
+MAKEABLE_certified: false
+A8_0_1_2_operational: false
