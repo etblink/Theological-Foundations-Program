@@ -1,0 +1,36 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_POST_EVIDENCE_F1_A8_C4_REVIEW_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_260_264_blob_sha: "dc1501f045782a69ed4a1f0b35315ca7fe048155"
+  prior_next_sequence: 265
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 265
+    repository_commit: "c62969782b0a5aa8dda74f3ae6c614ca81ee0a8c"
+    timestamp_utc: "2026-10-07T15:01:43Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 3de317cf126ee78dee0b0810b14ca8ab2aaa08b3"
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_C4_INPUT_FREEZE"
+    outcome_relevant_evidence: true
+    result_status: "FROZEN__C4_DIRECTION_REVIEW_READY"
+
+  - sequence: 266
+    repository_commit: "5638dcf858b8a2f1859673ec11810229b90c3787"
+    timestamp_utc: "2026-10-07T15:02:01Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_PROMPT_0_1_0.md blob 435e0f208419a9dacd3fda698805a3c6a3a56621"
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_C4_PROMPT_FREEZE"
+    outcome_relevant_evidence: true
+    result_status: "REVIEWER_F_C4_READY"
+
+next_sequence: 267
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+coverage_certified: false
+MAKEABLE_certified: false
