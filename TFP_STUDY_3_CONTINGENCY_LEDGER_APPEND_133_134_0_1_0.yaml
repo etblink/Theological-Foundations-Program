@@ -1,0 +1,36 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_130_132_blob_sha: "8e48b5c2ef2e0e798497879d2499f0f460df15fb"
+  prior_next_sequence: 133
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 133
+    repository_commit: "51c21a2e54800af1414f13336866946debbd0449"
+    timestamp_utc: "2026-10-07T03:31:34Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 3389972971def39d60735bfee3785c43214ee26e"
+    exposure_class: "G0_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_INPUT_FREEZE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A8 operational-use gate"]
+    outcome_relevant_evidence: false
+    outside_fixed_certification_endpoint: true
+
+  - sequence: 134
+    repository_commit: "519cf4032f5f78291ea03f6bbb4313a083d09fb6"
+    timestamp_utc: "2026-10-07T03:31:37Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md blob 3495ae980e90961fdb7e81b8c0531a76d5a098eb"
+    exposure_class: "G0_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_PROMPT_FREEZE"
+    amendment_surfaces: ["A17 ledger integrity","C4 pre-evidence chronology","A8 operational-use gate"]
+    outcome_relevant_evidence: false
+    outside_fixed_certification_endpoint: true
+
+next_sequence: 135
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
