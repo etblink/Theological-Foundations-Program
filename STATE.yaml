@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__CANDIDATE_UNIVERSE_REPAIR_PASS__REVIEWER_F_C4_PASS__REVIEWER_G_ASSIGNMENT_READY__LEDGER_INTEGRITY_PENDING__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__CANDIDATE_UNIVERSE_REPAIR_PASS__REVIEWER_F_C4_PASS__REVIEWER_G_LEDGER_REPAIR_REQUIRED__FOCUSED_RECHECK_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "a5f894309a206409b5514e83cd6d0a97642e4e6c"
+  research_branch_head: "828d1b3e6d558c4da1a5bb212ad883b13a3d6cfb"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -192,18 +192,36 @@ current_scope:
       - "ledger_integrity_reviewer"
       - "strict_independent_auditor"
   Reviewer_G:
-    status: "UNASSIGNED__FRESH_SESSION_HANDSHAKE_REQUIRED"
+    status: "ASSIGNED__INITIAL_LEDGER_REVIEW_REPAIR_REQUIRED__FOCUSED_RECHECK_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
+    assignment_provenance: "OWNER_RELAYED_CHAT_HANDSHAKE_ACCEPTED__NO_STANDALONE_ACCEPTANCE_ARTIFACT"
     ledger_integrity_input:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE_0_1_0.yaml"
       blob_sha: "b8bf23a9bf5bc45f8dee136cfcd8e97333cfab9b"
-      exposure_to_Reviewer_G: false
+      exposure_to_Reviewer_G: true
     ledger_integrity_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md"
       blob_sha: "8492adf44a55088182af28af234aa22466557d34"
-      exposure_to_Reviewer_G: false
+      exposure_to_Reviewer_G: true
+    ledger_integrity_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+      blob_sha: "0c7e51625d7ee04bb65b84629bef1e6b5542207f"
+      disposition: "LEDGER_INTEGRITY_REPAIR_REQUIRED"
+    Program_Lead_ledger_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+      blob_sha: "5f7c2d3817f489cafa6572f8c7ea36a42380c014"
+      disposition: "LEDGER_INTEGRITY_REPAIR_REQUIRED__C4_CHRONOLOGY_PRESERVED"
+    A17_repair_supplement:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_A17_REPAIR_SUPPLEMENT_0_1_0.yaml"
+      blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
+    repair_recheck_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "9b943770c087f7ea8acecfb92ed6d3b5cd3c80a6"
+    repair_recheck_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_PROMPT_0_1_0.md"
+      blob_sha: "c5012aa2de696b1395807a4b69c9102ff8a7528a"
   exposure_ledger:
     artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
     blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
@@ -213,7 +231,10 @@ current_scope:
     append_30_32:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_30_32_0_1_0.yaml"
       blob_sha: "883cd32ff17570e1d608babb8b5139b28dbe1551"
-    next_sequence: 33
+    A17_repair_supplement:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_A17_REPAIR_SUPPLEMENT_0_1_0.yaml"
+      blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
+    next_sequence: 40
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -231,7 +252,11 @@ current_scope:
     reviewer_F_assigned: true
     candidate_universe_ledger_integrity_review_required_after_C4: true
     candidate_universe_ledger_integrity_review_ready: true
-    reviewer_G_assigned: false
+    candidate_universe_ledger_integrity_initial_review_complete: true
+    candidate_universe_ledger_integrity_initial_result: "REPAIR_REQUIRED__C4_CHRONOLOGY_PRESERVED"
+    candidate_universe_ledger_integrity_repair_frozen: true
+    candidate_universe_ledger_integrity_recheck_ready: true
+    reviewer_G_assigned: true
     candidate_universe_frozen: false
     steelman_packets_frozen: false
     claim_typing_frozen: false
@@ -255,18 +280,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-LEDGER-INTEGRITY-ASSIGNMENT-HANDSHAKE"
-  action: "assign_a_fresh_procedurally_disjoint_Reviewer_G_session_before_exposing_the_frozen_A17_C4_ledger_integrity_packet"
+  id: "TFP-STUDY-3-REVIEWER-G-LEDGER-INTEGRITY-REPAIR-RECHECK"
+  action: "continue_the_same_Reviewer_G_session_with_the_frozen_focused_A17_repair_recheck"
   branch: "research/tfp-study-3-contingency-g0"
-  assignment_handshake_prompt_blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
-  ledger_integrity_input_blob_sha: "b8bf23a9bf5bc45f8dee136cfcd8e97333cfab9b"
-  ledger_integrity_prompt_blob_sha: "8492adf44a55088182af28af234aa22466557d34"
+  ledger_integrity_repair_supplement_blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
+  repair_recheck_input_blob_sha: "9b943770c087f7ea8acecfb92ed6d3b5cd3c80a6"
+  repair_recheck_prompt_blob_sha: "c5012aa2de696b1395807a4b69c9102ff8a7528a"
   requirements:
-    - "Reviewer G must be a fresh session disjoint from Program Lead, Reviewer F, any Study-3 discriminator author/tier reviewer, and future strict auditor"
-    - "perform assignment-only handshake before Study-3 ledger/candidate-amendment exposure"
-    - "do not expose the frozen ledger-integrity packet until the handshake is independently accepted"
-    - "audit the complete ledger chain through sequence 32 and relevant commit history"
-    - "candidate universe remains unfrozen until ledger integrity is independently confirmed"
+    - "use the exact same Reviewer G conversation that issued LEDGER_INTEGRITY_REPAIR_REQUIRED"
+    - "perform focused repair recheck only; do not rerun the full ledger audit"
+    - "verify the supplement cures A17 sequence-28/29 metadata and adequately addresses the sequence-30 timestamp/order recommendation"
+    - "verify sequences 33-39 continue Reviewer-G provenance without gap or duplicate"
+    - "no outcome-relevant evidence search, truth adjudication, candidate ranking, or completeness review"
+    - "candidate universe remains unfrozen until Reviewer G returns LEDGER_INTEGRITY_REPAIR_PASS and the Program Lead independently confirms it"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -564,7 +590,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__candidate_universe_repair_pass__Reviewer_F_C4_pass__Reviewer_G_assignment_ready__ledger_integrity_pending"
+    status: "G0_architecture_authorized__candidate_universe_repair_pass__Reviewer_F_C4_pass__Reviewer_G_ledger_repair_required__focused_recheck_ready"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
