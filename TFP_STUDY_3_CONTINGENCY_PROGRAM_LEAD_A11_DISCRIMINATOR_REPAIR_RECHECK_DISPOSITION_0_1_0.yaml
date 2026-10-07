@@ -1,0 +1,57 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_RECHECK_DISPOSITION"
+status: "A11_DISCRIMINATOR_REPAIR_PASS__INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "47d72273bee0be396fd365422a7bfceaa0957128"
+  reviewer_status: "A11_DISCRIMINATOR_REPAIR_PASS"
+  reviewer_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION"
+
+independent_replay:
+  R1_R9_all_pass: true
+  all_14_discriminator_ids_preserved: true
+  all_14_proposed_CRITICAL_priorities_preserved: true
+  all_14_FEASIBLE_WITHIN_SCOPE_preserved: true
+  A11_DR_1_controlling_and_symmetric: true
+  pair_and_rival_state_symmetry_preserved: true
+  no_replacement_discriminator_introduced: true
+  final_A6_coverage_certified: false
+  source_plan_0_1_1_operational_through_A9_acceptance: true
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+  new_delta_defect_found: false
+
+repair_content_disposition:
+  repaired_register:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  content_repair_complete: true
+  operational: false
+  reason_not_operational:
+    - "Reviewer F C4 amendment-direction review still required."
+    - "Reviewer G ledger-integrity review still required after C4."
+    - "Program Lead operational acceptance still required after both independent controls."
+
+C4_handoff:
+  reviewer_slot: "REVIEWER_F"
+  required_lineage: "same xAI / Grok 4.7 Reviewer-F conversation already assigned to Study-3 C4 amendment-direction review"
+  amendment_record:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec"
+  proposed_timing_class: "PRE_EVIDENCE_AMENDMENT"
+  timing_not_yet_certified: true
+  direction_not_yet_classified: true
+
+downstream_status:
+  A11_content_repair_complete: true
+  A11_C4_direction_review_required: true
+  A11_ledger_integrity_review_required_after_C4: true
+  discriminators_frozen: false
+  necessary_proposition_coverage_complete: false
+  insufficiency_threshold_frozen: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
