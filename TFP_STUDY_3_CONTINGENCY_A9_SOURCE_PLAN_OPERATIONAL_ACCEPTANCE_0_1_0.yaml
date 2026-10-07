@@ -1,0 +1,56 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+operative_source_plan:
+  path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+  blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+
+qualification_chain:
+  Reviewer_D_repair_status: "SOURCE_PLAN_REPAIR_PASS"
+  Program_Lead_content_repair_disposition: "SOURCE_PLAN_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+  Reviewer_F_C4_status: "C4_DIRECTION_REVIEW_PASS"
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_G_ledger_integrity_status: "A9_LEDGER_INTEGRITY_PASS"
+  Program_Lead_ledger_integrity_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "43d5f1c363975c843bbce8552b8ff65c8aaaafca"
+
+ledger_state:
+  through_append: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_169_171_0_1_0.yaml"
+  blob_sha: "710752b499df544756cb85362a5e80116e138538"
+  next_sequence_before_acceptance: 172
+  outcome_relevant_evidence_exposure_started: false
+
+operational_controls:
+  concrete_cross_tradition_source_probes_required: true
+  agentive_nonAbrahamic_nonclassical_native_sourcing_required: true
+  stronger_theological_attribute_import_adverse_probes_required: true
+  confessional_polemical_citation_volume_dominance_controls_required: true
+  synthetic_or_thin_literature_precursor_search_required: true
+  impersonal_concrete_cardinality_and_explanatory_relation_probes_required: true
+  brute_ontic_vs_ignorance_boundary_required: true
+  contingent_self_explanation_vs_necessary_causa_sui_boundary_required: true
+  optional_Philosophers_Index_not_promoted_to_requirement: true
+  optional_Brill_not_promoted_to_requirement: true
+  optional_named_critical_edition_corpora_not_promoted_to_requirement: true
+  optional_social_media_undated_web_discovery_only_wording_not_promoted_to_requirement: true
+
+downstream_status:
+  A9_complete: true
+  source_plan_passed: true
+  source_plan_operational: true
+  necessary_proposition_coverage_complete: false
+  discriminators_frozen: false
+  insufficiency_threshold_frozen: false
+  G0_complete: false
+  G1_authorized: false
+  outcome_relevant_evidence_acquisition_started: false
+
+scope_boundary:
+  this_acceptance_authorizes_source_plan_use_for_later_G0_design_only: true
+  this_acceptance_does_not_authorize_source_acquisition: true
+  this_acceptance_does_not_authorize_G1: true
