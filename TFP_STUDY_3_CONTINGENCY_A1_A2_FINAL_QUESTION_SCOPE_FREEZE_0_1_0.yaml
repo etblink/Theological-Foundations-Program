@@ -1,0 +1,82 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A1_A2_FINAL_QUESTION_SCOPE_FREEZE"
+status: "FROZEN_FINAL_G0_PREREGISTRATION__NO_SUBSTANTIVE_DELTA_FROM_WORKING_SCOPE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+authority:
+  human_G0_authorization:
+    path: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
+    blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
+  promotion_basis:
+    path: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
+    blob_sha: "ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+  substantive_delta_from_working_question_or_scope: false
+  outcome_relevant_evidence_exposure_started: false
+
+A1_exact_truth_question:
+  text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  status: "FROZEN_FINAL_G0_QUESTION"
+  adjudication_form:
+    - "First determine whether the bounded contingency/explanation case warrants some necessary explanatory ground/foundation over the admitted non-necessary-ground alternatives."
+    - "If some necessary foundation is warranted, determine only those additional properties independently warranted within this study."
+    - "No candidate or family is presumed true."
+
+A2_scope:
+  domains:
+    - "metaphysics"
+    - "philosophy of explanation and grounding"
+    - "philosophy of religion only insofar as candidate families or downstream properties bear on the question"
+    - "fundamental physics/cosmology only where claims are used to bear on contingency, necessity, explanation, or fundamentality"
+  tradition_boundary: "No confessional, naturalistic, theistic, anti-theistic, or skeptical authority is installed. Candidate families may be traditional, skeptical, naturalistic, theistic, impersonal, hybrid, revised, or independently generated."
+  time_period: "No historical event window. Philosophical sources may span historical and contemporary literature; historical priority or antiquity has no evidential privilege."
+  language: "English-accessible scholarship and translations by default; original-language consultation only where a truth-critical interpretation cannot otherwise be resolved."
+  geography: "Not geographically bounded except insofar as source traditions/languages require identification."
+  source_corpus:
+    - "candidate-native philosophical arguments"
+    - "serious rival/critical arguments"
+    - "modal metaphysics and grounding/explanation literature"
+    - "relevant philosophy of physics/cosmology"
+    - "neutral/cross-framework scholarship where available"
+  explicit_exclusions:
+    - "the Kalam temporal-beginning argument as an independent route"
+    - "fine-tuning as an independent route"
+    - "moral arguments for God"
+    - "arguments from consciousness as independent routes"
+    - "religious experience as an independent route"
+    - "miracle or resurrection evidence"
+    - "divine hiddenness"
+    - "problem of evil/suffering"
+    - "scriptural or revelatory authority"
+    - "Jesus/Christology"
+    - "denominational doctrine"
+    - "any inference from necessary foundation directly to classical theism without separately warranted property steps"
+  downstream_inference_limits:
+    - "Support for some necessary foundation does not by itself warrant agency, mentality, personhood, goodness, omniscience, omnipotence, uniqueness, providence, worship-worthiness, revelation, or identity with the God of any religion."
+    - "Failure to warrant a necessary foundation does not by itself establish naturalism."
+    - "A successful critique of one explanatory principle does not establish a rival candidate by elimination alone."
+    - "Study results may inform later broad-theism synthesis only through separately authorized synthesis."
+  operative_definitional_boundaries:
+    CONTINGENT: "Could have failed to exist or been otherwise under at least one serious admissible account of metaphysical possibility; no controversial modal semantics is silently installed."
+    NECESSARY: "Not metaphysically possible to fail to exist or obtain under the relevant admitted modal framework; logical, metaphysical, nomological, conceptual, and explanatory necessity are not conflated."
+    EXPLANATION: "A truth-relevant relation answering why a fact/entity/state obtains, with the relation type explicitly specified rather than privileged in advance."
+    GROUND_OR_FOUNDATION: "An entity, fact, structure, principle, relation, or totality proposed to account for relevant dependent reality; this does not imply temporal priority, efficient causation, mind, or personhood."
+    BRUTE: "A fact/entity/state whose obtaining/existence has no deeper truth-relevant explanation required or available under the candidate's strongest formulation; not merely unexplained by us."
+    ULTIMATE: "No further truth-relevant explanatory dependence is required beyond the proposed stopping structure under the candidate's strongest formulation; terminality is not assumed."
+    PERSONAL_OR_AGENTIVE: "Intentional agency or mind-like purposive capacity sufficient to distinguish an agentive foundation from an impersonal one; this is a downstream property, not part of NECESSARY."
+
+late_finalization_record:
+  finding: "The original blind-elicitation scope packet intentionally labeled A1/A2 working/not-final, and no later final A1/A2 artifact existed."
+  correction: "Freeze the exact same question and materially same scope before any outcome-relevant evidence acquisition."
+  substantive_change: false
+  candidate_or_outcome_direction_effect: "NONE"
+  reason_no_C4_content_repair: "This is the initial final freeze of A1/A2, not a change to a previously final A1/A2 artifact; no truth-question or scope content has been altered."
+  audit_note: "G4 should verify that every downstream G0 artifact remained within these same boundaries despite the late formal finalization."
+
+controls:
+  A1_frozen: true
+  A2_frozen: true
+  no_outcome_relevant_evidence_used: true
+  G1_authorized: false
+  later_change_requires_C4: true
