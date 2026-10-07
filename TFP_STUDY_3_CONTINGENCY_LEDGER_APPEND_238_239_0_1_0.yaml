@@ -1,0 +1,40 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_236_237_blob_sha: "f84bb9a2f971a6c0b26ad096d7e62401e9847a8b"
+  prior_next_sequence: 238
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 238
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Additional S1_NATIVE mandatory-probe searches/openings: non-Abrahamic and neoclassical necessary-agent routes; impersonal-concrete cardinality/relation variants; thin-family precursor and lawful-access alternatives."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S1_MANDATORY_PROBE_EXPOSURE"
+    amendment_surfaces: ["A9 mandatory S1 probes","candidate-native access symmetry","future proposition evidence matrices"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S1_NATIVE"
+    controls:
+      - "No proposition dispositions, ranking, coverage certification, or MAKEABLE result."
+      - "Absence of a direct source was recorded only as an access/search state, never as evidence against a candidate."
+      - "Frozen G0 architecture was unchanged."
+
+  - sequence: 239
+    repository_commit: "536de10a545c93d9b4d70385f57f75def0083ed0"
+    timestamp_utc: "2026-10-07T13:24:47Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S1_NATIVE_COMPLETION_BATCH_02_0_1_0.yaml blob 39ea688b204fdcf6bf7c239fe58491dc856929bf"
+    exposure_class: "G1_S1_NATIVE_SEARCH_STAGE_COMPLETION_FREEZE"
+    amendment_surfaces: ["S1 native search completion","mandatory variant/precursor probes","lawful-access barriers"]
+    outcome_relevant_evidence: true
+    result_status: "S1_NATIVE_SEARCH_STAGE_COMPLETE__ACCESS_AND_VARIANT_PROBES_RECORDED__COVERAGE_UNCERTIFIED"
+
+next_sequence: 240
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
