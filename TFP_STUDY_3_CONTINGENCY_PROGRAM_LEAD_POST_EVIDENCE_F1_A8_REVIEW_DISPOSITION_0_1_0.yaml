@@ -1,0 +1,61 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION"
+status: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "84859f469089896bc86f340857caaf2d09b25c55"
+  reviewer_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+
+independent_replay:
+  existing_A8_register_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  existing_interaction_matrix_blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  findings:
+    F1_is_serious_live_background_under_A8_1_to_5: true
+    IC_N5_PR_N6_AX_N5_encode_candidate_success_conditions_not_background_link: true
+    BG_MODAL_STATUS_does_not_encode_necessity_transmission: true
+    BG_DEPENDENCE_STRUCTURE_does_not_encode_necessity_transmission: true
+    BG_EXPLANATION_RELATION_does_not_encode_necessity_transmission: true
+    BG_ABSTRACT_PRINCIPLE_FORCE_does_not_encode_necessity_transmission: true
+    BG_AXIOLOGICAL_FORCE_does_not_encode_necessity_transmission: true
+    existing_higher_order_joint_mentions_modal_collapse_but_does_not_supply_link_states: true
+    agentive_parallel_exists_without_impersonal_parallel: true
+    truth_critical_state_omitted: true
+  disposition: "REPAIR_REQUIRED"
+
+repair_boundary:
+  add_one_dimension: "BG-IMPERSONAL-GROUNDING-MODAL-LINK"
+  variants:
+    - "IMP-NECESSITATING"
+    - "IMP-CONTINGENCY-PRESERVING"
+    - "IMP-UNFIXED"
+  affected_propositions: ["IC-N5","PR-N6","AX-N5"]
+  required_material_pair_interactions:
+    - "BG-MODAL-STATUS"
+    - "BG-EXPLANATION-RELATION"
+    - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    - "BG-AXIOLOGICAL-FORCE"
+    - "BG-GROUND-CATEGORY"
+  required_higher_order_interactions:
+    - ["BG-MODAL-STATUS","BG-EXPLANATION-RELATION","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    - ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+  agentive_pair_control: "Keep separate/non-merging; invoke jointly only for cross-family modal-collapse comparison where needed."
+  BG_MODAL_LOGIC_remains_gate_only: true
+  no_A11_tier_change_authorized: true
+  no_candidate_universe_change_authorized: true
+  no_proposition_disposition_authorized: true
+
+C4:
+  evidence_exposure_has_started: true
+  amendment_class_not_yet_assigned: true
+  direction_reviewer: "REVIEWER_F"
+  operational_use_before_C4_pass: false
+  ledger_integrity_review_after_direction_review_if_repair_is_adopted: "REVIEWER_G"
+
+coverage_control:
+  Reviewer_E_coverage_review_paused: true
+  MAKEABLE_review_paused: true
+  reason: "A8 repair must be direction-classified and any required source followup completed before coverage certification."
