@@ -1,0 +1,69 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A11_DISCRIMINATOR_TIER_REVIEW_DISPOSITION"
+status: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7"
+  reviewer_status: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  reviewer_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION"
+
+independent_replay:
+  all_14_CRITICAL_tiers_survive: true
+  pair_and_rival_state_symmetry_survives: true
+  proposition_linkage_adequate_for_A11_only: true
+  all_14_FEASIBLE_WITHIN_SCOPE_survive: true
+  direction_rule_template_complete_and_symmetric: true
+  final_A6_coverage_certified: false
+  repair_1_excluded_background_citations_confirmed: true
+  repair_2_D11_01_modalstatus_indeterminacy_and_deflation_gate_missing: true
+  repair_3_D11_03_actuality_background_and_interaction_missing: true
+  repair_4_D11_05_ER_PSR_and_triple_interaction_missing: true
+  repair_5_D11_06_temporal_origin_gate_missing: true
+  repair_6_D11_12_four_agentive_principle_interactions_missing: true
+  repair_7_D11_14_relation_ontology_axiology_interaction_missing: true
+  repair_8_D11_11_prediction_wording_can_be_misread_as_alternate_rule: true
+  repair_9_D11_13_thin_route_theological_boundary_missing: true
+  tier_downgrade_required: false
+  replacement_discriminator_required: false
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+
+nonblocking_report_correction:
+  id: "SOURCE_PLAN_OPERABILITY_STALE_STATEMENT"
+  reviewer_report_statement: "Source Plan 0.1.1 is pre-evidence and nonoperative pending Reviewer D recheck."
+  repository_authority: "Source Plan 0.1.1 blob 76e8362dfd8b998038157695c714da1ceef56a15 is operative after completed Reviewer D repair recheck, Reviewer F C4 pass, Reviewer G ledger-integrity pass, and A9 operational acceptance."
+  operational_acceptance_artifact: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+  operational_acceptance_blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+  effect_on_A11_review_disposition: "NONE"
+  reason: "Reviewer C used the correct source-plan blob only for pre-evidence comparison-scoped access/symmetry; stale operability wording does not alter any of the nine A11 repair findings."
+
+repair_scope:
+  frozen_tier_count: 14
+  all_priorities_remain_proposed_CRITICAL: true
+  repair_may_change:
+    - "background and interaction citations"
+    - "gate/variant-control citations"
+    - "D11-11 prediction wording and precedence clarification"
+    - "D11-13 thin-route theological boundary"
+  repair_may_not_change:
+    - "candidate universe"
+    - "A10 required lanes"
+    - "source plan"
+    - "candidate ranking"
+    - "truth or plausibility findings"
+    - "post-evidence direction results"
+  Reviewer_C_focused_recheck_required: true
+  C4_direction_review_required_after_content_repair_pass: true
+  ledger_integrity_review_required_before_operational_use: true
+
+downstream_status:
+  A11_operational: false
+  discriminators_frozen: false
+  necessary_proposition_coverage_complete: false
+  insufficiency_threshold_frozen: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
