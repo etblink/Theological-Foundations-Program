@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__INITIAL_A4_A5_A6_FROZEN__REVIEWER_B_ASSIGNED__INITIAL_REVIEW_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_REPAIR_REQUIRED__REPAIRED__REVIEWER_B_RECHECK_READY__C4_DIRECTION_REVIEW_PENDING__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "d65074948010aacf7737c0a305b46aa00e794e0f"
+  research_branch_head: "e4a1f55a32b27ff927f269c05a3515c3cb15dace"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -177,7 +177,7 @@ current_scope:
       blob_sha: "5c089cd7590275f2a97d7d14acdbabfb224e9599"
       disposition: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
   Reviewer_B:
-    status: "ASSIGNED__INITIAL_A4_A5_A6_REVIEW_READY"
+    status: "ASSIGNED__INITIAL_A4_A5_A6_REPAIR_REQUIRED__REPAIRED__FOCUSED_RECHECK_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "1df6978564e761c1ed0737a539445456fa4ea91c"
@@ -194,7 +194,25 @@ current_scope:
     initial_A4_A5_A6_review_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_PROMPT_0_1_0.md"
       blob_sha: "2111685bd36fe162d60e36daba1f21962eba3f36"
-      exposure_to_Reviewer_B: false
+      exposure_to_Reviewer_B: true
+    initial_review_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_REPORT_0_1_0.md"
+      blob_sha: "d45d01925bb09dea3c2531881d71dcc17339a026"
+      disposition: "INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED"
+    Program_Lead_initial_review_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REVIEW_DISPOSITION_0_1_0.yaml"
+      blob_sha: "bb08bd997df219f8f6cdca61a3e2accd34e74a9d"
+      disposition: "REPAIR_ACCEPTED__PRE_EVIDENCE_C4_DIRECTION_REVIEW_REQUIRED_BEFORE_USE"
+    repaired_A4_A5_A6_inventory:
+      artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_1.yaml"
+      blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+      status: "REPAIRED_PRE_EVIDENCE__PENDING_REVIEWER_B_RECHECK_AND_REVIEWER_F_C4_DIRECTION_REVIEW"
+    repair_recheck_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "6f3e9ef7433177d0f06907085590ddcec39d2bfd"
+    repair_recheck_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_PROMPT_0_1_0.md"
+      blob_sha: "d6b9f077543d89fe0ba1cc528ea5767a3d647ae2"
     role_boundary:
       final_A6_coverage_certification_deferred_until_after_Reviewer_C_discriminator_tiering: true
       may_not_serve_as_discriminator_tier_reviewer: true
@@ -321,7 +339,10 @@ current_scope:
     append_74_76:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_74_76_0_1_0.yaml"
       blob_sha: "65b5ad371daa958353f0665c8af184ece354ba1a"
-    next_sequence: 77
+    append_77_82:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_77_82_0_1_0.yaml"
+      blob_sha: "8be098a93efd1d05e91015eca287951dae64a734"
+    next_sequence: 83
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -361,6 +382,12 @@ current_scope:
     initial_necessary_proposition_inventory_frozen: true
     reviewer_B_initial_review_ready: true
     reviewer_B_assigned: true
+    reviewer_B_initial_review_complete: true
+    reviewer_B_initial_review_result: "REPAIR_REQUIRED"
+    A4_A5_A6_repair_frozen: true
+    A4_A5_A6_repair_recheck_ready: true
+    A4_A5_A6_C4_direction_review_required: true
+    A4_A5_A6_C4_direction_review_complete: false
     claim_typing_frozen: false
     necessary_proposition_inventory_frozen: false
     necessary_proposition_coverage_complete: false
@@ -383,17 +410,18 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-B-INITIAL-A4-A5-A6-REVIEW"
-  action: "Reviewer_B_initial_A4_A5_A6_review_ready"
+  id: "TFP-STUDY-3-REVIEWER-B-A4-A5-A6-REPAIR-RECHECK"
+  action: "continue_same_Reviewer_B_session_with_frozen_focused_repair_recheck"
   branch: "research/tfp-study-3-contingency-g0"
-  initial_review_input_blob_sha: "6e665609851ff49e26d0607d2e4083cb6aad80b7"
-  initial_review_prompt_blob_sha: "2111685bd36fe162d60e36daba1f21962eba3f36"
+  repaired_inventory_blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+  repair_recheck_input_blob_sha: "6f3e9ef7433177d0f06907085590ddcec39d2bfd"
+  repair_recheck_prompt_blob_sha: "d6b9f077543d89fe0ba1cc528ea5767a3d647ae2"
   requirements:
-    - "use the exact accepted Reviewer B session"
-    - "review A4 claim typing, A5 dependencies, A6 necessary-proposition classification, shared-floor status, and burden symmetry"
-    - "do not certify final A6 coverage until CRITICAL discriminator IDs exist"
-    - "Reviewer B may not author or tier discriminators"
-    - "no outcome-relevant evidence search, candidate ranking, truth adjudication, or G1 evidence acquisition"
+    - "use the exact same Reviewer B session"
+    - "focused R1-R8 recheck only"
+    - "do not certify final A6 coverage or author/tier discriminators"
+    - "corrected inventory remains non-operative until later Reviewer F C4 direction review passes"
+    - "no outcome-evidence search, ranking, truth adjudication, or G1 evidence acquisition"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -691,7 +719,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__initial_A4_A5_A6_frozen__Reviewer_B_assigned__initial_review_ready"
+    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_repair_required__repaired__Reviewer_B_recheck_ready__C4_direction_pending"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
