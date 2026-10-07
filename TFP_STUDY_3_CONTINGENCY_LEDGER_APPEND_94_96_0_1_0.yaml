@@ -1,0 +1,49 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_92_93_blob_sha: "e0d3cb180cb78d7f9f07556893cc10155a652edf"
+  prior_next_sequence: 94
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 94
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer F A4/A5/A6 C4 direction-review exposure: input blob 767cb8c9d5a1135cc885bc1605a96bdbd0f617f5, prompt blob 06d31a3d7da0ba936561a66506b50183a017466d, authorized ledger appends 66-91, inventories 0.1.0/0.1.1/0.1.2, Reviewer-B reports/dispositions, B3 packet-set freeze and packet blobs as needed, and Protocol C4/A4/A5/A6/A17 within authorized scope."
+    exposure_class: "G0_REVIEWER_F_A4_A5_A6_C4_DIRECTION_REVIEW_EXPOSURE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions","C4 amendment direction"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 93 and before sequence 95."
+
+  - sequence: 95
+    repository_commit: "95b0111f3b72ed22e4f634b15a46e8720d8f131d"
+    timestamp_utc: "2026-10-07T02:24:25Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_REPORT_0_1_0.md blob 798f5ee38c73ae0aadc00b09f051931f5efd3b7a"
+    exposure_class: "G0_REVIEWER_F_A4_A5_A6_C4_DIRECTION_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions","C4 amendment direction"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+  - sequence: 96
+    repository_commit: "a8879883f6629d6e9a8af92fd23e244c288cda36"
+    timestamp_utc: "2026-10-07T02:24:44Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A4_A5_A6_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob 3e2c9070dd1ad802b62fbc010f510775243e8034"
+    exposure_class: "G0_PROGRAM_LEAD_A4_A5_A6_C4_DIRECTION_DISPOSITION"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions","C4 amendment direction","A17 ledger-integrity handoff"]
+    outcome_relevant_evidence: false
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_USE"
+
+next_sequence: 97
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
