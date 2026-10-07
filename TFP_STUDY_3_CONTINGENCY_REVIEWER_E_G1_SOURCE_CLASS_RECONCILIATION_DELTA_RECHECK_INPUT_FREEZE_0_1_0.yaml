@@ -1,0 +1,124 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DELTA_RECHECK_INPUT_FREEZE"
+status: "FROZEN__G1_G2_G3_DELTA_RECONCILIATION_ONLY__NO_COVERAGE_OR_MAKEABLE_CERTIFICATION"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_E"
+  required_lineage: "exact same Anthropic / Claude Opus 5.5 Reviewer-E conversation that returned ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS and SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+  task_role: "source-class delta reconciler"
+  prohibited_roles:
+    - "Program Lead"
+    - "Reviewer C"
+    - "Reviewer F"
+    - "Reviewer G"
+    - "strict auditor"
+    - "coverage-state certifier in this task"
+    - "MAKEABLE certifier in this task"
+
+prior_reconciliation:
+  report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md"
+    blob_sha: "729dd61ff0d0870b3540371e4588b1ca3ada2436"
+    status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION_0_1_0.yaml"
+    blob_sha: "12bc496bfb7ad32dce85bfd4862b5755c9500ba1"
+    status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__INDEPENDENTLY_CONFIRMED__G1_G2_G3_DELTA_AUTHORIZED"
+
+delta_material:
+  errata:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_SOURCE_CLASS_RECONCILIATION_ERRATA_0_1_0.yaml"
+    blob_sha: "d588c5baf552e18954b16c5c28846cc3a0cbdfe0"
+  targeted_followup:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_TARGETED_DELTA_FOLLOWUP_0_1_0.yaml"
+    blob_sha: "0a8aef1968370f195256fda53d3c201900b25cc3"
+  ledger_append:
+    path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_286_291_0_1_0.yaml"
+    blob_sha: "70e2b46b50a88ffeb3664d4c79852dae160ca9ee"
+    sequences: [286,287,288,289,290,291]
+
+authorized_architecture_checks:
+  A6_inventory:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  A6_coverage_map:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+    blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  A11:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  A8_operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+
+external_source_access:
+  rule: "Reviewer E may retrieve only the exact sources/URLs listed below for verification. Do not run new discovery searches in this delta recheck."
+  G1:
+    - "Amie L. Thomasson, Norms and Necessity (OUP 2020), DOI 10.1093/oso/9780190098193.001.0001, https://academic.oup.com/book/33564"
+    - "Boris Kment, Necessity and linguistic rules, DOI 10.1080/0020174X.2023.2231030, https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2231030"
+    - "Tom Donaldson & Jennifer Wang, Modal Normativism and De Re Modality, DOI 10.14275/2465-2334/202214.don, https://www.argumenta.org/article/modal-normativism-and-de-re-modality-special-issue/"
+  G2:
+    - "Robert C. Koons & Alexander R. Pruss, Skepticism and the principle of sufficient reason, DOI 10.1007/s11098-020-01482-3, https://link.springer.com/article/10.1007/s11098-020-01482-3"
+    - "Alexander R. Pruss, Inductive Skepticism, ch.18, DOI 10.1017/CBO9780511498992.018, https://www.cambridge.org/core/books/abs/principle-of-sufficient-reason/inductive-skepticism/797FEA5346F965CEA1C560F9AB30AD32"
+  G3:
+    - "Stephen Maitzen, Stop Asking Why There's Anything, DOI 10.1007/s10670-011-9312-0, https://philosophy.acadiau.ca/files/sites/philosophy/resources/documents/Maitzen_SAWTA.pdf"
+    - "Stephen Maitzen, Questioning the Question, The Puzzle of Existence, pp.252-271, https://philarchive.org/rec/MAIQTQ"
+    - "Adolf Grünbaum, The Poverty of Theistic Cosmology, DOI 10.1093/bjps/55.4.561, https://www.journals.uchicago.edu/doi/10.1093/bjps/55.4.561"
+  identity_erratum:
+    - "Kenneth L. Pearce, Metaphysical Rationalism Requires Grounding Indeterminism, DOI 10.1017/apa.2024.17, https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/metaphysical-rationalism-requires-grounding-indeterminism/8DF300A3BD3E5F891F457108BDEFA47E"
+
+required_checks:
+  G1:
+    - "Verify that Thomasson supplies a materially serious contemporary non-descriptivist/modal-normativist native route relevant to D11-01."
+    - "Verify that at least one serious contemporary critical reply is now represented; Kment and Donaldson/Wang are both supplied."
+    - "Do not treat non-descriptivism as automatically proving MD-N2 truth-inaptness/inapplicability; determine only whether the source class is adequate for later proposition review."
+  G2:
+    - "Verify that Koons-Pruss plus Pruss ch.18 supply the distinct empirical/inductive-skepticism defense of a restricted PSR identified in the prior report."
+    - "Preserve the bridge requirement: this route is not automatically a defeater of every brute-ultimacy formulation."
+  G3:
+    - "Verify that Maitzen 2012/2013 and Grünbaum 2004 materially supply contemporary global-deflation/pseudo-question routes distinct from Hume-Edwards."
+    - "Preserve Grünbaum's theism-specific scope boundary; admit only the global-demand/null-default arguments relevant to Study 3."
+  errata:
+    - "Verify Kenneth L. Pearce is the correct author for DOI 10.1017/apa.2024.17."
+    - "Verify the SC2 historical correction is consistent with the prior Reviewer-E reconciliation finding that Aitken/Madhyamaka/Huayan/Fazang were absent from S1-S5 and entered through the blind/followup path."
+  carry:
+    - "Confirm no delta source or erratum alters the prior SC1-SC8 carried-gap classifications unless the delta itself directly requires it."
+    - "Confirm D11-02 epistemicist conditions, SC6 relation restriction, SC1 bridge/nitya cautions, F1 symmetric-application rule, Goswick direction check, and Barnes-2014 depth requirement remain carried forward."
+
+decision_rule:
+  pass_if:
+    - "G1, G2 and G3 are each materially represented for later coverage review at the source-class level."
+    - "The two errata are correct."
+    - "No new material source gap is exposed by the exact delta sources themselves."
+  followup_required_if:
+    - "At least one of G1-G3 remains materially inadequate for later coverage review even after the delta."
+  insufficient_signal_if:
+    - "The exact authorized record does not permit a responsible delta determination."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "DELTA INPUT VERIFICATION"
+    - "G1 MODAL-DISSOLUTION DELTA"
+    - "G2 BRUTE-SKEPTICISM DELTA"
+    - "G3 GLOBAL-DEFLATION DELTA"
+    - "ERRATA CHECK"
+    - "CARRIED-CONTROL CHECK"
+    - "REMAINING MATERIAL SOURCE GAPS"
+    - "COVERAGE-REVIEW READINESS"
+    - "SOURCE-CLASS DELTA RECONCILIATION STATUS"
+  status_namespace:
+    - "SOURCE_CLASS_RECONCILIATION_DELTA_PASS__READY_FOR_COVERAGE_REVIEW"
+    - "SOURCE_CLASS_RECONCILIATION_DELTA_FOLLOWUP_REQUIRED"
+    - "SOURCE_CLASS_RECONCILIATION_DELTA_INSUFFICIENT_SIGNAL"
+  stop_after_report: true
+
+scope_controls:
+  coverage_certification_authorized_in_this_task: false
+  MAKEABLE_certification_authorized_in_this_task: false
+  candidate_ranking_authorized: false
+  proposition_truth_disposition_authorized: false
+  theological_conclusion_authorized: false
