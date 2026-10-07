@@ -1,0 +1,27 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_ACQUISITION_SEARCH_STAGES_COMPLETE__REVIEWER_E_ASSIGNMENT_HANDSHAKE_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_251_blob_sha: "c45ea00552849365aee9b52caca44ddb3a9dc8f0"
+  prior_next_sequence: 252
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 252
+    repository_commit: "72bf35daca8de409b8b2f9fc1f55f92a9300d622"
+    timestamp_utc: "2026-10-07T13:52:58Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob d29a9bf16135f22ce670177af3b07982bce2265d"
+    exposure_class: "G1_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_FREEZE"
+    amendment_surfaces: ["Reviewer E lineage assignment","adverse-source review","coverage-state review","MAKEABLE certification"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_E: false
+    result_status: "HANDSHAKE_READY__NO_SUBSTANTIVE_REVIEWER_E_EXPOSURE"
+
+next_sequence: 253
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
