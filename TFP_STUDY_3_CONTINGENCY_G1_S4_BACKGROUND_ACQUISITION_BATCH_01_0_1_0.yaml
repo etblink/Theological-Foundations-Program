@@ -1,0 +1,205 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S4_BACKGROUND_ACQUISITION_BATCH_01"
+status: "FROZEN_BACKGROUND_SUPPORT_CHALLENGE_MATRIX__CORE_DIMENSIONS__NO_BACKGROUND_DISPOSITIONS"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S4_BACKGROUND"
+
+scope:
+  dimensions_covered:
+    - "BG-EXPLANATORY-REALISM"
+    - "BG-PSR-SCOPE"
+    - "BG-TOTALITY-EXPLANANDUM"
+    - "BG-DEPENDENCE-STRUCTURE"
+    - "BG-MODAL-STATUS"
+    - "BG-ACTUALITY-PRIVILEGE"
+  every_listed_live_variant_has_support_stratum: true
+  every_listed_live_variant_has_serious_challenge_stratum: true
+  background_dispositions_issued: false
+  proposition_dispositions_issued: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+source_pool:
+  B4-ER-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Metaphysical Explanation.'"
+    url: "https://plato.stanford.edu/entries/metaphysical-explanation/"
+    role: "Neutral map of realism/antirealism, unionism/separatism, plural models of metaphysical explanation."
+  B4-ER-THOMPSON-2016:
+    identity: "Naomi Thompson, 'Grounding and Metaphysical Explanation,' Proceedings of the Aristotelian Society 116(3), 2016, 395-402."
+    doi: "10.1093/arisoc/aow012"
+    role: "Challenge to mind-independent grounding/explanation unionism; pragmatic/antirealist pressure."
+  B4-ER-THOMPSON-2023:
+    identity: "Naomi Thompson, 'How to be an antirealist about metaphysical explanation,' Ratio 36(4), 2023, 260-273."
+    doi: "10.1111/rati.12367"
+    role: "Explicit antirealist taxonomy for metaphysical explanation."
+  B4-ER-NOLAN-2026:
+    identity: "Daniel Nolan, 'Grounding, Explanation, and the Tasks of Metaphysics,' in Systematic Metaphysics, OUP, 2026."
+    doi: "10.1093/9780198982111.003.0013"
+    role: "Recent pluralist challenge to treating grounding as the central/exhaustive metaphysical explanatory relation."
+  B4-PSR-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Principle of Sufficient Reason.'"
+    url: "https://plato.stanford.edu/entries/sufficient-reason/"
+    role: "Neutral survey of multiple PSR strengths and historical opposition."
+  B4-PSR-PRUSS-RESTRICTED:
+    identity: "Alexander R. Pruss, 'A restricted Principle of Sufficient Reason and the cosmological argument,' Religious Studies 40(2), 2004."
+    role: "Native defense of a principled restricted PSR."
+  B4-PSR-DASGUPTA:
+    identity: "Shamik Dasgupta, 'Metaphysical Rationalism,' Noûs 50(2), 2016, 379-418."
+    doi: "10.1111/nous.12082"
+    role: "Strong/global rationalist pressure against brute contingent stopping."
+  B4-TOT-HUME-ROWE:
+    identity: "Hume-Edwards local-sufficiency argument and Rowe/Pruss objections as documented in the SEP Cosmological Argument."
+    url: "https://plato.stanford.edu/entries/cosmological-argument/"
+    role: "Direct support/challenge pair over whether member-level explanations exhaust totality explanation."
+  B4-DEP-CAMERON:
+    identity: "Ross P. Cameron, Chains of Being: Infinite Regress, Circularity, and Metaphysical Explanation, OUP, 2022."
+    doi: "10.1093/oso/9780198854272.001.0001"
+    role: "Explicit defense of metaphysical infinitism and holism; includes self-grounding/circular cases."
+  B4-DEP-BLISS:
+    identity: "Ricki Bliss, 'Viciousness and Circles of Ground,' Metaphilosophy 45(2), 2014, 245-256."
+    doi: "10.1111/meta.12072"
+    role: "Defense of possible non-vicious circles and non-well-founded grounding."
+  B4-DEP-BEVAN:
+    identity: "Michael Bevan, 'Metaphysical foundationalism,' Philosophical Studies, 2025."
+    doi: "10.1007/s11098-025-02444-3"
+    role: "Defense of strong foundationalism/no infinite descent."
+  B4-DEP-RAVEN:
+    identity: "Michael J. Raven, 'Ground,' Philosophy Compass 10(5), 2015, 322-333."
+    doi: "10.1111/phc3.12220"
+    role: "Orthodox irreflexive/asymmetric grounding constraints; challenge to cycles/self-grounding."
+  B4-DEP-KAPPES:
+    identity: "Yannic Kappes, 'Self-Explanation and Empty-Base Explanation,' JAPA 8(3), 2022, 436-453."
+    doi: "10.1017/apa.2021.8"
+    role: "Direct modern defense/development of self-explanation."
+  B4-MOD-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'The Epistemology of Modality,' 2023 revision."
+    url: "https://plato.stanford.edu/entries/modality-epistemology/"
+    role: "Neutral distinction among metaphysical, logical/conceptual, physical/nomic, and epistemic modalities; maps monist, deflationist, and skeptical alternatives."
+  B4-MOD-KMENT:
+    identity: "Boris Kment, Modality and Explanatory Reasoning, OUP, 2014, ch. 7."
+    doi: "10.1093/acprof:oso/9780199604685.003.0007"
+    role: "Substantive distinction between metaphysical and nomic necessity."
+  B4-MOD-FICTIONALISM:
+    identity: "Stanford Encyclopedia of Philosophy, 'Modal Fictionalism,' 2024 revision; Gideon Rosen 1990 as primary route."
+    url: "https://plato.stanford.edu/entries/fictionalism-modal/"
+    role: "Serious nonliteral/fictionalist treatment of possible-world discourse; route to modal deflation/antirealism."
+  B4-MOD-CHIHARA:
+    identity: "Charles S. Chihara, The Worlds of Possibility, OUP, 1998/2001, ch. 4 'Anti-Modal Realism.'"
+    role: "Instrumentalist/anti-realist modal approaches."
+  B4-ACT-SEP:
+    identity: "Stanford Encyclopedia of Philosophy, 'Possible Worlds' and possibilism/actualism supplement."
+    url: "https://plato.stanford.edu/entries/possible-worlds/"
+    role: "Maps Lewisian indexical actuality and rival actuality-privilege views."
+  B4-ACT-GALE:
+    identity: "Richard M. Gale, 'Lewis’ Indexical Argument for World-Relative Actuality,' Dialogue 28(2), 1989, 289-304."
+    doi: "10.1017/S001221730001578X"
+    role: "Direct critical scrutiny of Lewisian indexical actuality."
+
+variant_matrix:
+  BG-EXPLANATORY-REALISM:
+    ER-ROBUST:
+      support: ["B4-ER-SEP"]
+      challenge: ["B4-ER-THOMPSON-2016","B4-ER-THOMPSON-2023"]
+      note: "The literature contains robust grounding/metaphysical-explanation realism as well as explicit antirealism; no side is installed."
+    ER-PLURALIST:
+      support: ["B4-ER-SEP","B4-ER-NOLAN-2026"]
+      challenge: ["B4-ER-SEP"]
+      note: "Plural explanatory models are live; unionist/grounding-first programs provide the monist pressure."
+    ER-DEFLATIONARY:
+      support: ["B4-ER-THOMPSON-2016","B4-ER-THOMPSON-2023"]
+      challenge: ["B4-ER-SEP"]
+      note: "Pragmatic/antirealist explanation is a serious view but faces realist/separatist alternatives retaining objective worldly dependence."
+
+  BG-PSR-SCOPE:
+    PSR-GLOBAL:
+      support: ["B4-PSR-DASGUPTA","B4-PSR-SEP"]
+      challenge: ["B4-TOT-HUME-ROWE","B4-PSR-PRUSS-RESTRICTED"]
+    PSR-RESTRICTED:
+      support: ["B4-PSR-PRUSS-RESTRICTED","B4-PSR-SEP"]
+      challenge: ["B4-PSR-DASGUPTA","B4-TOT-HUME-ROWE"]
+    PSR-LOCAL-ONLY:
+      support: ["B4-TOT-HUME-ROWE","B4-PSR-SEP"]
+      challenge: ["B4-PSR-DASGUPTA","B4-TOT-HUME-ROWE"]
+      note: "Humean memberwise sufficiency supplies the local/no-extra-global route; Rowe/Pruss supply the direct challenge."
+    PSR-NONDEFAULT:
+      support: ["B4-PSR-SEP","B4-TOT-HUME-ROWE"]
+      challenge: ["B4-PSR-DASGUPTA","B4-PSR-PRUSS-RESTRICTED"]
+      note: "Nondefault means no general PSR is presumed, not that no particular explanatory principle can ever be warranted."
+
+  BG-TOTALITY-EXPLANANDUM:
+    TOT-DISTINCT:
+      support: ["B4-TOT-HUME-ROWE","B4-PSR-DASGUPTA"]
+      challenge: ["B4-TOT-HUME-ROWE"]
+      note: "Rowe/Pruss defend a residual whole/why-dependent-beings-at-all explanandum against Humean memberwise sufficiency."
+    TOT-LOCAL-SUFFICIENCY:
+      support: ["B4-TOT-HUME-ROWE"]
+      challenge: ["B4-TOT-HUME-ROWE","B4-PSR-DASGUPTA"]
+    TOT-NO-DETERMINATE-TOTALITY:
+      support: ["B4-TOT-HUME-ROWE"]
+      challenge: ["B4-TOT-HUME-ROWE"]
+      note: "Hume's claim that uniting constituents into a whole is an arbitrary act of mind supplies the no-distinct-totality pressure; totality/BCCF arguments supply the opposite pressure."
+
+  BG-DEPENDENCE-STRUCTURE:
+    DEP-WELL-FOUNDED:
+      support: ["B4-DEP-BEVAN","B4-DEP-RAVEN"]
+      challenge: ["B4-DEP-CAMERON","B4-DEP-BLISS"]
+    DEP-INFINITE-REGRESS-COMPLETE:
+      support: ["B4-DEP-CAMERON"]
+      challenge: ["B4-DEP-BEVAN"]
+      note: "Cameron distinguishes dependence from explanatory completeness and defends infinitism; Bevan defends the stronger no-infinite-descent constraint."
+    DEP-HOLISTIC-NONREFLEXIVE-COMPLETE:
+      support: ["B4-DEP-CAMERON","B4-DEP-BLISS"]
+      challenge: ["B4-DEP-RAVEN","B4-DEP-BEVAN"]
+    DEP-REFLEXIVE-PERMISSIBLE:
+      support: ["B4-DEP-KAPPES","B4-DEP-CAMERON"]
+      challenge: ["B4-DEP-RAVEN"]
+      note: "Self-explanation and self-grounding must remain relation-specific; support for one does not license every reflexive relation."
+
+  BG-MODAL-STATUS:
+    MOD-METAPHYSICAL-DE-RE:
+      support: ["B4-MOD-SEP","B4-MOD-KMENT"]
+      challenge: ["B4-MOD-FICTIONALISM","B4-MOD-CHIHARA"]
+    MOD-LOGICAL-CONCEPTUAL-ONLY:
+      support: ["B4-MOD-SEP"]
+      challenge: ["B4-MOD-KMENT","B4-MOD-SEP"]
+      note: "The SEP maps modal-monist/logical-conceptual reduction as a serious alternative while also documenting Kripkean/post-Kripkean reasons for a distinct metaphysical modality."
+    MOD-NOMIC-PHYSICAL-ONLY:
+      support: ["B4-MOD-SEP"]
+      challenge: ["B4-MOD-KMENT"]
+      note: "Shoemaker-style/physical-modal deflation is represented in the survey; Kment and hybrid-law literature distinguish nomic from metaphysical necessity."
+    MOD-EPISTEMIC-ONLY:
+      support: ["B4-MOD-SEP"]
+      challenge: ["B4-MOD-KMENT","B4-MOD-SEP"]
+      note: "Epistemic possibility is a live subject-relative modality; robust metaphysical-modal accounts deny that apparent metaphysical possibility is exhausted by ignorance."
+    MOD-DEFLATIONARY:
+      support: ["B4-MOD-FICTIONALISM","B4-MOD-CHIHARA"]
+      challenge: ["B4-MOD-KMENT","B4-MOD-SEP"]
+      note: "Ordinary modal fictionalism is often fictionalism about worlds rather than modal truth itself, so it is only a route into the gate, not automatic support for C-MODAL-DISSOLUTION."
+
+  BG-ACTUALITY-PRIVILEGE:
+    ACT-PRIVILEGED:
+      support: ["B4-ACT-SEP","B4-ACT-GALE"]
+      challenge: ["B4-ACT-SEP"]
+      note: "Actualist/primitive-actuality and Bricker-style privileged-actuality positions oppose Lewisian parity."
+    ACT-INDEXICAL-NONPRIVILEGED:
+      support: ["B4-ACT-SEP"]
+      challenge: ["B4-ACT-GALE","B4-ACT-SEP"]
+      note: "Lewis's world-relative/indexical actuality is explicit; critics challenge whether absolute actuality can be reduced to indexicality."
+
+batch_judgment:
+  all_six_dimensions_have_all_registered_variants_mapped: true
+  support_and_challenge_search_requirement_satisfied_for_this_batch: true
+  any_background_variant_installed_as_true: false
+  G0_reopen_trigger_identified: false
+  next_background_batch:
+    - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    - "BG-GROUND-CATEGORY"
+    - "BG-EXPLANATION-RELATION"
+    - "BG-ONTOLOGY-ADMISSIBILITY"
+    - "BG-AGENTIVE-MODAL-LINK"
+    - "BG-AXIOLOGICAL-FORCE"
+    - "BG-METAPHYSICAL-INDETERMINACY"
+    - "BG-TEMPORAL-ORIGIN-LINK"
+    - "BG-MODAL-LOGIC"
