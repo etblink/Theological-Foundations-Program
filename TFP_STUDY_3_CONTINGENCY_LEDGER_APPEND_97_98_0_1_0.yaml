@@ -1,0 +1,38 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_94_96_blob_sha: "61c07e617325a3c0473686e3d68978f7aa97c2c3"
+  prior_next_sequence: 97
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 97
+    repository_commit: "c7478b814d77d8254d7166ded179f892573c84d1"
+    timestamp_utc: "2026-10-07T02:27:03Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_INPUT_FREEZE_0_1_0.yaml blob a7147bdbe6aa5e1f0479a1b444779990c30b1546"
+    exposure_class: "G0_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_INPUT_FREEZE"
+    amendment_surfaces: ["A17 ledger extension integrity","C4 chronology consequence","A4/A5/A6 inventory operability"]
+    outcome_relevant_evidence: false
+    certification_target_member: false
+    note: "Launch artifact is outside the fixed Reviewer-G certification endpoint at sequence 96."
+
+  - sequence: 98
+    repository_commit: "0772b333b6b54460d59bc68e3cb8caedb8b0099e"
+    timestamp_utc: "2026-10-07T02:27:05Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_PROMPT_0_1_0.md blob 40588585c2692deaf312384b6f25950f5d01f485"
+    exposure_class: "G0_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_PROMPT_FREEZE"
+    amendment_surfaces: ["A17 ledger extension integrity","C4 chronology consequence","A4/A5/A6 inventory operability"]
+    outcome_relevant_evidence: false
+    certification_target_member: false
+    note: "Launch artifact is outside the fixed Reviewer-G certification endpoint at sequence 96."
+
+next_sequence: 99
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
