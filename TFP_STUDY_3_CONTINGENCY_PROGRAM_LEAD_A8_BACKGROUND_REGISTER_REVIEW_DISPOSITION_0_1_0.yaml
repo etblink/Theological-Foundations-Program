@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A8_BACKGROUND_REGISTER_REVIEW_DISPOSITION"
+status: "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "9b707667c3eb383dc087c7856c4c1d32db1afa62"
+  reviewer_status: "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED"
+
+independent_replay:
+  A8_1_inclusion_exclusion_repairs_supported: true
+  A8_2_granularity_repairs_supported: true
+  A8_3_interaction_repairs_supported: true
+  full_cartesian_product_rejected_as_unmanageable: true
+  narrowed_joint_set_is_candidate_symmetric: true
+  candidate_background_double_counting_found_in_repaired_plan: false
+  outcome_relevant_evidence_used: false
+
+confirmed_required_repairs:
+  - "Split BG-MODALITY-ACTUALITY into BG-MODAL-STATUS and BG-ACTUALITY-PRIVILEGE."
+  - "Add TOT-NO-DETERMINATE-TOTALITY."
+  - "Add PSR-LOCAL-ONLY."
+  - "Split non-well-founded completion into infinite-regress-complete and holistic-nonreflexive-complete; record relation-specific viciousness."
+  - "Admit BG-EXPLANATION-RELATION, BG-GROUND-CATEGORY, and BG-ONTOLOGY-ADMISSIBILITY."
+  - "Admit BG-TEMPORAL-ORIGIN-LINK and BG-MODAL-LOGIC as gates only."
+  - "Add AX-ACTION-ONLY."
+  - "Exclude BG-D09 as protocol method and BG-D12 dissolution content as candidate-subsumed except modal-deflationary residue."
+  - "Re-home modal pairs and add the reopened/higher-order interactions."
+  - "Freeze the required compatible joint set while expressly excluding the full Cartesian product."
+  - "Preserve global-label exclusions and candidate/background boundaries."
+
+nonblocking_report_limitation:
+  id: "STALE_GD_N3_RECHECK_SENTENCE"
+  finding: "Reviewer C states that the Reviewer-B GD-N3 delta recheck was pending."
+  canonical_correction: "That delta recheck had already passed, Program Lead had independently confirmed it, and inventory 0.1.2 was operative before this A8 review."
+  effect_on_A8_review: "NONE_MATERIAL"
+  reason: "The report used the correct operative inventory blob and the stale statement only made the review more conservative; no A8 disposition depends on the recheck being pending."
+
+repair_control:
+  initial_register_blob_sha: "cba09f9ca46ba6a336aeec38820e352623c89400"
+  initial_matrix_blob_sha: "995a8f908f6f4e89f19d5f1a13561368206a1493"
+  repaired_register_version: "0.1.1"
+  repaired_matrix_version: "0.1.1"
+  Reviewer_C_focused_recheck_required: true
+  C4_direction_review_required_before_use: true
+  Reviewer_F_required_after_Reviewer_C_content_pass: true
+  Reviewer_G_ledger_integrity_required_after_C4: true
+  repaired_artifacts_operational_before_all_controls: false
+  G1_authorized: false
