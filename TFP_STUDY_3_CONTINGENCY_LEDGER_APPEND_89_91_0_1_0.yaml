@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_83_88_blob_sha: "5682b00c57c4cb5e049f05fe35b8fc32263334f0"
+  prior_next_sequence: 89
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 89
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_FRESH_SESSION"
+    source_or_artifact: "Authorized Reviewer B GD-N3 delta recheck exposure: input blob 43b6a23ff2b2a80eb22ada08b1c1a28630024f38, prompt blob 50ea1fd1c28101d623ec52633b79627c2f11b628, inventory 0.1.1/0.1.2, Program Lead recheck disposition, C-GLOBAL-DEFLATION B3 packet, and Protocol A4/A5/A6/C4 within authorized scope."
+    exposure_class: "G0_REVIEWER_B_GD_N3_DELTA_RECHECK_EXPOSURE"
+    amendment_surfaces: ["C-GLOBAL-DEFLATION:GD-N3","A4/A5/A6 delta integrity","C4 amendment control"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 88 and before sequence 90."
+
+  - sequence: 90
+    repository_commit: "d0133d2b25fe7c77723097d18f2530477206da6c"
+    timestamp_utc: "2026-10-07T02:15:38Z"
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_REPORT_0_1_0.md blob 5fcf9a8b3928827180b0e95e9fc8e9fcd401652d"
+    exposure_class: "G0_REVIEWER_B_GD_N3_DELTA_RECHECK_RESULT_FREEZE"
+    amendment_surfaces: ["C-GLOBAL-DEFLATION:GD-N3","A4/A5/A6 delta integrity"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+
+  - sequence: 91
+    repository_commit: "a2780b093ce361578f0e14d4a9ccb4f86d702b81"
+    timestamp_utc: "2026-10-07T02:16:15Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_GD_N3_DELTA_RECHECK_DISPOSITION_0_1_0.yaml blob 574d274e82e984c5ab4dc2e3f4929f9a2aecaf03"
+    exposure_class: "G0_PROGRAM_LEAD_GD_N3_DELTA_RECHECK_DISPOSITION"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions","C4 amendment control"]
+    outcome_relevant_evidence: false
+    result_status: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+
+next_sequence: 92
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
