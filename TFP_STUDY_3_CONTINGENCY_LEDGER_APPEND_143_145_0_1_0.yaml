@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_139_142_blob_sha: "cf15ec740072d0c78e12ec746b0ce7d64876196b"
+  prior_next_sequence: 143
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 143
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_D_FRESH_SESSION -> HUMAN_OWNER -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Owner-relayed Reviewer D assignment handshake response: brand-new xAI / Grok 4.7 conversation, no visible prior Study-3 substantive exposure or Study-3 role, no visible substantive Study-3 persistent memory, retrieval restraint accepted, returned status PROCEDURALLY_DISJOINT_FOR_REVIEWER_D."
+    exposure_class: "G0_REVIEWER_D_ASSIGNMENT_HANDSHAKE_RESPONSE"
+    amendment_surfaces: ["A3 reviewer lineage control","A9.1 source-plan review"]
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 142 and before sequence 144."
+
+  - sequence: 144
+    repository_commit: "61e30466484b63dd34c63960300b6ebe2ad69eb8"
+    timestamp_utc: "2026-10-07T03:53:39Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml blob 74a49c77cb592bb486e01b4a34b2b393afaf4e31"
+    exposure_class: "G0_REVIEWER_D_ASSIGNMENT_ACCEPTANCE"
+    amendment_surfaces: ["A3 reviewer lineage control","A9.1 source-plan review"]
+    outcome_relevant_evidence: false
+    result_status: "ACCEPTED__PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+
+  - sequence: 145
+    repository_commit: "a00e6c9afbd7f0fc87a0eb5cfc152e750b0628e0"
+    timestamp_utc: "2026-10-07T03:53:42Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml blob 6b6275eaf78df5dfa14b50275b79cd2ba634bc0b"
+    exposure_class: "G0_REVIEWER_D_ROLE_ASSIGNMENT"
+    amendment_surfaces: ["A3 reviewer role","A9.1 blind source-strata review","future A9 source-plan review"]
+    outcome_relevant_evidence: false
+    result_status: "ASSIGNED__A9_BLIND_SOURCE_STRATA_ELICITATION_READY"
+
+next_sequence: 146
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
