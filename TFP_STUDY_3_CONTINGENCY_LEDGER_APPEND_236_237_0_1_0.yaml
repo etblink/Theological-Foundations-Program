@@ -1,0 +1,54 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_235_blob_sha: "edecfd0c316e53fa7991f41885fc19180d92ad39"
+  prior_next_sequence: 236
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 236
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Additional S1_NATIVE discovery searches and in-depth source openings for candidate-native/precursor literature after the first discovery exposure."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_SOURCE_OPENING_EXPOSURE"
+    amendment_surfaces: ["A9 source universe","candidate-native source access","future proposition evidence matrices","future comparison effort records"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S1_NATIVE"
+    affected_candidates:
+      - "C-BRUTE"
+      - "C-REGRESS"
+      - "C-HOLISTIC"
+      - "C-SELF-EXPLANATORY"
+      - "C-GLOBAL-DEFLATION"
+      - "C-MODAL-DISSOLUTION"
+      - "C-INDETERMINATE-ULTIMACY"
+      - "C-NECESSITARIAN"
+      - "C-INDEXICAL-PLURALITY"
+      - "C-NEC-IMPERSONAL-CONCRETE"
+      - "C-NEC-AGENTIVE"
+      - "C-NEC-IMPERSONAL-PRINCIPLE"
+      - "C-AXIARCHIC"
+    order_note: "Occurred after sequence 235 and before the batch-01 acquisition record was frozen at sequence 237."
+    controls:
+      - "Discovery snippets remained non-evidential."
+      - "Opened source text/abstract/excerpts were preserved only as acquisition inputs; no proposition disposition, ranking, coverage certification, or MAKEABLE determination was made."
+
+  - sequence: 237
+    repository_commit: "4b21d616a14faa967816fe3743f8d0f9a7a128ef"
+    timestamp_utc: "2026-10-07T13:17:40Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S1_NATIVE_ACQUISITION_BATCH_01_0_1_0.yaml blob 172b6e8544c90297b2287868aeab6abe93f8a9c9"
+    exposure_class: "G1_S1_NATIVE_ACQUISITION_RECORD_FREEZE"
+    amendment_surfaces: ["candidate-native access snapshot","negative/inaccessible evidence record","future S1 continuation"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN_ACQUISITION_RECORD__NO_PROPOSITION_DISPOSITIONS"
+
+next_sequence: 238
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
