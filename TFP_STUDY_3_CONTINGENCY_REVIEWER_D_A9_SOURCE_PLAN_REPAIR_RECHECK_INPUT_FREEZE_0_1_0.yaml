@@ -1,0 +1,87 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_D_A9_SOURCE_PLAN_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_REPAIR_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_D"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that returned SOURCE_PLAN_REPAIR_REQUIRED"
+  role: "focused A9 source-plan repair rechecker"
+  blind_stage_complete: true
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "e2187001c9f249eac9f041a1ed88decfc554ae8f"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_POST_BLIND_SOURCE_PLAN_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "b0e9a52e8e21c9cb7c6141a2957451b3574153bc"
+  - path: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "9143a35ad317187531fbc6e10d7bbf861ccc4b49"
+  - path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+    blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  - path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+    blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
+    blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_154_156_0_1_0.yaml"
+    blob_sha: "8bfa72a3a9c0347b3ba87214b8ba66c2d7430a6f"
+  - description: "Protocol 0.1.7 A9/A9.1 and C4 only as needed to verify repair boundaries"
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "source-acquisition results"
+  - "candidate steelman packets"
+  - "discriminator proposals or tiering"
+  - "candidate ranking or truth/plausibility adjudication"
+  - "past-chat or memory retrieval for Study-3 substantive material"
+
+required_rechecks:
+  - id: "R1_CROSS_TRADITION_PROBE"
+    verify: "Explicit non-Anglophone/cross-tradition probes are mandatory and not satisfiable by generic Anglophone comparative literature alone."
+  - id: "R2_AGENTIVE_NONABRAHAMIC_NATIVE"
+    verify: "C-NEC-AGENTIVE now requires non-Abrahamic and non-classical-theist necessary-agent native access."
+  - id: "R3_AGENTIVE_ATTRIBUTE_OVERREACH_ADVERSE"
+    verify: "Agentive adverse strata now include objections to imported goodness, knowledge, power, providence, worship-worthiness, and religious identity."
+  - id: "R4_VOLUME_DOMINANCE_CONTROL"
+    verify: "Citation/confessional/polemical volume cannot complete agentive native access without narrow-formulation and non-confessional probes."
+  - id: "R5_SYNTHETIC_THIN_PRECURSOR_SEARCH"
+    verify: "A recorded precursor search is mandatory before treating direct-literature absence as a genuine gap for the listed synthetic/thin families."
+  - id: "R6_IMPERSONAL_CONCRETE_SUBVARIANT_ACCESS"
+    verify: "C-NEC-IMPERSONAL-CONCRETE native access now probes single/plural/layered cardinality and causal/grounding/constitutive/other specified relations."
+  - id: "R7_BRUTE_IGNORANCE_BOUNDARY"
+    verify: "C-BRUTE now distinguishes ontic brutality from present ignorance and includes the ignorance objection in its adverse class."
+  - id: "R8_SELF_EXPLANATION_CONTINGENCY_BOUNDARY"
+    verify: "Necessary causa-sui material is not native C-SELF-EXPLANATORY evidence unless the stopping item remains contingent."
+
+additional_quality_checks:
+  - "Verify all Protocol A9 required fields remain present."
+  - "Verify all 13 candidates retain candidate-native and adverse source strata."
+  - "Verify all 13 ordinary backgrounds and both gates retain support/challenge or gate-source classes."
+  - "Verify optional enrichments (Philosopher's Index, Brill, named critical-edition corpora, explicit social-media label) were not silently converted into mandatory requirements."
+  - "Verify no candidate receives a privileged database/date/language/access threshold."
+  - "Verify SOURCE_PLAN 0.1.1 remains non-operative pending C4 direction and ledger-integrity review."
+  - "Verify no outcome-relevant evidence acquisition or G1 authorization occurred."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "R1-R8 REPAIR RECHECK"
+    - "A9 FIELD / SYMMETRY PRESERVATION CHECK"
+    - "OPTIONAL-ENRICHMENT BOUNDARY CHECK"
+    - "AMENDMENT-CONTROL CHECK"
+    - "REQUIRED FURTHER REPAIRS"
+    - "SOURCE PLAN REPAIR STATUS"
+  status_namespace:
+    - "SOURCE_PLAN_REPAIR_PASS"
+    - "SOURCE_PLAN_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  source_plan_operational: false
+  source_plan_passed: false
+  C4_direction_review_complete: false
+  ledger_integrity_review_complete: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
