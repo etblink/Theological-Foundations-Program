@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_215_216_blob_sha: "ce02659d14c41ec83f3b14ba4b67f661261ec3e4"
+  prior_next_sequence: 217
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 217
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer F final-A6 GD-N1 C4 exposure through fixed prelaunch endpoint sequence 214."
+    exposure_class: "G0_REVIEWER_F_FINAL_A6_GD_N1_C4_EXPOSURE"
+    amendment_surfaces: ["GD-N1 coverage-mode direction","candidate burden symmetry","C4 amendment timing"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 216 and before sequence 218."
+
+  - sequence: 218
+    repository_commit: "a6511702fe20b941594fe8d7c2315cab1d795afa"
+    timestamp_utc: "2026-10-07T06:15:30Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md blob 685f8387b6eab5fe90140b4d6ac863b62193987e"
+    exposure_class: "G0_REVIEWER_F_FINAL_A6_GD_N1_C4_RESULT_FREEZE"
+    amendment_surfaces: ["GD-N1 amendment direction","candidate burden symmetry","pre-evidence timing"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "C4_DIRECTION_REVIEW_PASS__PRE_EVIDENCE_AMENDMENT__NEUTRAL"
+
+  - sequence: 219
+    repository_commit: "7442a0553357647916e4b97dd6e77b352435bc36"
+    timestamp_utc: "2026-10-07T06:15:53Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_C4_ENDPOINT_IDENTITY_RESOLUTION_0_1_0.yaml blob 11541cd7aef45ae3f87b28d99e33ebd418bc223a"
+    exposure_class: "G0_NONOUTCOME_LEDGER_IDENTITY_RESOLUTION"
+    amendment_surfaces: ["sequence-214 event/container identity","Reviewer G handoff"]
+    outcome_relevant_evidence: false
+    result_status: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION__REVIEWER_G_CONFIRMATION_REQUIRED"
+
+  - sequence: 220
+    repository_commit: "a7b74357ea7ce7323b1da3df9652c91c3ffab64d"
+    timestamp_utc: "2026-10-07T06:15:56Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob 782d13628a4e668c3321ba7bd64167ed8c37e421"
+    exposure_class: "G0_PROGRAM_LEAD_FINAL_A6_C4_DISPOSITION"
+    amendment_surfaces: ["final A6 C4 closure","ledger-integrity handoff"]
+    outcome_relevant_evidence: false
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__PRE_EVIDENCE_AMENDMENT__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+
+next_sequence: 221
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
