@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_209_210_blob_sha: "ad7b6d28ba140da21e97184277a3c5106a9edf5e"
+  prior_next_sequence: 211
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 211
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer B focused final-A6 GD-N1 repair-recheck exposure to map 0.1.1 and frozen repair controls."
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_EXPOSURE"
+    amendment_surfaces: ["GD-N1 direct route","61-entry preservation","final A6 content certification"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 210 and before sequence 212."
+
+  - sequence: 212
+    repository_commit: "366378be9ae97866e94a1c0b43bfaa9cdb40315c"
+    timestamp_utc: "2026-10-07T06:08:47Z"
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_REPORT_0_1_0.md blob 609b31277a65f31f0c06d60964f3fb081b787a97"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_RESULT_FREEZE"
+    amendment_surfaces: ["GD-N1 direct route","final A6 content certification"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+
+  - sequence: 213
+    repository_commit: "ef86636f42c34386e6f699fe12d58278f7e4736b"
+    timestamp_utc: "2026-10-07T06:09:12Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml blob e3e2da7f637949f0ae10564717dfdd69209cec41"
+    exposure_class: "G0_PROGRAM_LEAD_FINAL_A6_CONTENT_CERTIFICATION_DISPOSITION"
+    amendment_surfaces: ["final A6 content closure","C4 handoff"]
+    outcome_relevant_evidence: false
+    result_status: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE__INDEPENDENTLY_CONFIRMED__NONOPERATIVE_PENDING_C4_AND_LEDGER"
+
+  - sequence: 214
+    repository_commit: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+    timestamp_utc: "2026-10-07T06:09:15Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml blob ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+    exposure_class: "G0_FINAL_A6_NONBLOCKING_EDITORIAL_ERRATUM"
+    amendment_surfaces: ["certification-request direct-route count wording only"]
+    outcome_relevant_evidence: false
+    result_status: "BOUND_NONBLOCKING_EDITORIAL_ERRATUM__NO_CONTENT_CHANGE"
+
+next_sequence: 215
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
