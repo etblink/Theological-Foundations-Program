@@ -1,0 +1,151 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "INITIAL_BACKGROUND_INTERACTION_MATRIX"
+status: "FROZEN_INITIAL__PENDING_REVIEWER_C"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+background_register:
+  path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_REGISTER_0_1_0.yaml"
+  blob_sha: "cba09f9ca46ba6a336aeec38820e352623c89400"
+  dimension_count: 9
+
+dimensions:
+  - "BG-EXPLANATORY-REALISM"
+  - "BG-PSR-SCOPE"
+  - "BG-TOTALITY-EXPLANANDUM"
+  - "BG-DEPENDENCE-STRUCTURE"
+  - "BG-MODALITY-ACTUALITY"
+  - "BG-ABSTRACT-PRINCIPLE-FORCE"
+  - "BG-AGENTIVE-MODAL-LINK"
+  - "BG-AXIOLOGICAL-FORCE"
+  - "BG-METAPHYSICAL-INDETERMINACY"
+
+pair_coverage_rule:
+  all_36_unordered_dimension_pairs_are_classified: true
+  unlisted_pair_status: "NO_MATERIAL_INTERACTION_IDENTIFIED_INITIAL"
+  unlisted_pair_rationale: "The dimensions may jointly be true, but no current frozen truth-critical inference is identified whose outcome depends on their joint state rather than one-at-a-time sensitivity."
+  Reviewer_C_must_reopen_any_unlisted_pair_if_blind_elicitation_or_review_identifies_joint_effect: true
+
+material_interactions:
+  - id: "INT-ER-PSR"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Whether a PSR-like demand names an objective metaphysical requirement or only an explanatory norm changes the force of BR-N4, RG-N5, GD-N2/GD-N3 and necessary-ground stopping burdens."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-SELF-EXPLANATORY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    joint_testing_required: true
+
+  - id: "INT-ER-TOTALITY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-TOTALITY-EXPLANANDUM"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "A totality-level object creates a distinct burden only if the relevant notion of explanation can apply objectively at that level."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-SELF-EXPLANATORY"]
+    joint_testing_required: true
+
+  - id: "INT-PSR-TOTALITY"
+    dimensions: ["BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Global PSR strength and whether a totality is a distinct explanandum jointly determine whether local/member explanations leave an additional stopping burden."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-SELF-EXPLANATORY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    joint_testing_required: true
+
+  - id: "INT-ER-DEPENDENCE"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-DEPENDENCE-STRUCTURE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Well-foundedness/reflexivity constraints matter differently under robust grounding, explanatory pluralism, and deflationary accounts."
+    affected_candidates: ["C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY"]
+    joint_testing_required: true
+
+  - id: "INT-PSR-DEPENDENCE"
+    dimensions: ["BG-PSR-SCOPE","BG-DEPENDENCE-STRUCTURE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Whether an infinite, non-well-founded, or reflexive structure is explanatorily adequate depends jointly on structural permissibility and the demanded stopping strength."
+    affected_candidates: ["C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY"]
+    joint_testing_required: true
+
+  - id: "INT-MODAL-INDETERMINACY"
+    dimensions: ["BG-MODALITY-ACTUALITY","BG-METAPHYSICAL-INDETERMINACY"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "A semantic/modal-dissolution diagnosis must be separated from genuine worldly indeterminacy; joint settings can alter the classification of IU-N2/IU-N3 versus MD-N2/MD-N3."
+    affected_candidates: ["C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY"]
+    joint_testing_required: true
+
+  - id: "INT-MODAL-AGENT"
+    dimensions: ["BG-MODALITY-ACTUALITY","BG-AGENTIVE-MODAL-LINK"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "The possibility of a necessary agent producing a genuinely contingent outcome depends on both the modal framework and the agentive explanation-to-output link."
+    affected_candidates: ["C-NEC-AGENTIVE","C-NECESSITARIAN"]
+    joint_testing_required: true
+
+  - id: "INT-MODAL-ABSTRACT"
+    dimensions: ["BG-MODALITY-ACTUALITY","BG-ABSTRACT-PRINCIPLE-FORCE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Modal-space or constraint principles can serve as ultimate explanation only relative to both the status of modality and the explanatory force assigned to abstract/principle facts."
+    affected_candidates: ["C-NEC-IMPERSONAL-PRINCIPLE","C-INDEXICAL-PLURALITY","C-NECESSITARIAN"]
+    joint_testing_required: true
+
+  - id: "INT-ER-ABSTRACT"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-ABSTRACT-PRINCIPLE-FORCE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Whether structural/law-like facts count as genuine explanation or redescription depends jointly on explanatory ontology and abstract/principle force."
+    affected_candidates: ["C-NEC-IMPERSONAL-PRINCIPLE","C-NEC-IMPERSONAL-CONCRETE"]
+    joint_testing_required: true
+
+  - id: "INT-ER-AGENT"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-AGENTIVE-MODAL-LINK"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Whether intentional agency supplies an ultimate truth-bearing explanation rather than a psychological/causal story depends on both explanatory realism and the modal link."
+    affected_candidates: ["C-NEC-AGENTIVE"]
+    joint_testing_required: true
+
+  - id: "INT-ER-AXIOLOGY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-AXIOLOGICAL-FORCE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "A value-to-being explanation requires both an objective explanatory relation and value facts capable of occupying that relation."
+    affected_candidates: ["C-AXIARCHIC","C-NEC-IMPERSONAL-PRINCIPLE"]
+    joint_testing_required: true
+
+  - id: "INT-ABSTRACT-AXIOLOGY"
+    dimensions: ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE"]
+    status: "MATERIAL_INTERACTION"
+    joint_inference: "Whether axiarchic requiredness is a special case of impersonal-principle explanation or a distinct family depends on the explanatory status of abstract/principle facts and the essential role of value."
+    affected_candidates: ["C-AXIARCHIC","C-NEC-IMPERSONAL-PRINCIPLE"]
+    joint_testing_required: true
+
+higher_order_interactions:
+  - id: "INT3-ER-PSR-TOTALITY"
+    dimensions: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    status: "MATERIAL_HIGHER_ORDER_INTERACTION"
+    joint_inference: "The existence and force of an ultimate totality-level explanatory burden depends jointly on whether objective metaphysical explanation exists, how far the explanatory demand extends, and whether the totality is a distinct explanandum."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-SELF-EXPLANATORY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    joint_testing_required: true
+
+  - id: "INT3-MODAL-ABSTRACT-AXIOLOGY"
+    dimensions: ["BG-MODALITY-ACTUALITY","BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE"]
+    status: "MATERIAL_HIGHER_ORDER_INTERACTION"
+    joint_inference: "Necessity of a value/principle, its explanatory force, and its relation to concrete actuality jointly affect axiarchic/principle-family adequacy and modal-collapse risk."
+    affected_candidates: ["C-AXIARCHIC","C-NEC-IMPERSONAL-PRINCIPLE"]
+    joint_testing_required: true
+
+compatibility_controls:
+  within_dimension_variants_mutually_exclusive_for_one_sensitivity_run: true
+  cross_dimension_default_compatible: true
+  explicit_cross_dimension_incompatibilities:
+    - pair: ["MOD-DEFLATIONARY","IND-ONTIC-POSSIBLE"]
+      status: "NOT_AUTOMATICALLY_INCOMPATIBLE"
+      note: "One concerns modality discourse and the other ontic indeterminacy; compatibility must not be denied by label alone."
+    - pair: ["ER-DEFLATIONARY","ABS-EXPLANATORY"]
+      status: "TENSION_REQUIRES_JOINT_REVIEW"
+      note: "Not logically impossible: a deflationary stance toward some explanation claims may coexist with a restricted objective abstract explanatory relation."
+    - pair: ["PSR-GLOBAL","TOT-LOCAL-SUFFICIENCY"]
+      status: "TENSION_REQUIRES_JOINT_REVIEW"
+      note: "Compatibility depends on whether member-level explanations count as explaining the totality under the PSR."
+  silent_incompatibility_by_worldview_label_forbidden: true
+
+review_status:
+  complete_pair_coverage_initial: true
+  material_pair_count: 12
+  material_higher_order_count: 2
+  Reviewer_C_granularity_interaction_review_pending: true
+  final_required_joint_combination_set_frozen: false
+  G1_authorized: false
