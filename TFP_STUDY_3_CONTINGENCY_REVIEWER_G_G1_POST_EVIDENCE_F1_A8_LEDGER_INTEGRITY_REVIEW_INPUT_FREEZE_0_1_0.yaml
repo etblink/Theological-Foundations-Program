@@ -1,0 +1,130 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE"
+status: "FROZEN__FIXED_ENDPOINT_SEQUENCE_269"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  required_lineage: "exact same Anthropic / Claude Opus 5.5 Reviewer-G conversation that returned FINAL_A6_LEDGER_INTEGRITY_PASS"
+  role: "independent ledger-integrity reviewer"
+  prohibited_roles:
+    - "Program Lead"
+    - "Reviewer C F1 granularity reviewer"
+    - "Reviewer F amendment-direction reviewer"
+    - "Reviewer E adverse-source/coverage reviewer"
+    - "strict independent auditor"
+
+certification_scope:
+  previously_certified_baseline_sequence: 220
+  previously_certified_baseline_commit: "57a118060fe3002f5a4de7edf4c4d8c85467c20c"
+  previously_certified_baseline_append_blob_sha: "ce48031199024c5c1a7ef9bff0b3dabb8bbd409a"
+  extension_start_sequence: 221
+  extension_end_sequence: 269
+  fixed_endpoint_commit: "6a1be98c9100aebc90c9b969cd9053a64d1a868c"
+  fixed_endpoint_append_blob_sha: "1f2a8bfc2db3cd3d7c9a778c032763a4102118ca"
+  endpoint_rule: "The endpoint commit is the append-container commit adding the immutable append containing sequence 269; later Reviewer-G launch files are outside the certification target."
+  files_created_after_endpoint_are_outside_certification_target: true
+
+authorized_ledger_appends:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_221_222_0_1_0.yaml", blob_sha: "5a570d82ab63d020ae11a41afd4f484313aee74f", sequences: [221,222] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_223_226_0_1_0.yaml", blob_sha: "909a605d9f1a8966f2c5733e7dc36b605abce206", sequences: [223,224,225,226] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_227_0_1_0.yaml", blob_sha: "cae10d2a707b09a37caf3cca8bfdb8ed7a23c242", sequences: [227] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_228_0_1_0.yaml", blob_sha: "a688a07daa094111786763aac0fa78ac62b8ea8f", sequences: [228] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_229_231_0_1_0.yaml", blob_sha: "9792aa7349f3edba0af738b1f8d8c149a330427d", sequences: [229,230,231] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_232_0_1_0.yaml", blob_sha: "7ee1b281355d0adfd49a384208234ddebc339cc6", sequences: [232] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_233_0_1_0.yaml", blob_sha: "268bd36c52e6ca2ee162d00bf45882ff9f53c1f5", sequences: [233] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_234_0_1_0.yaml", blob_sha: "b61d718a0427e338a0f7ac20ebee606c9789efd8", sequences: [234] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_235_0_1_0.yaml", blob_sha: "edecfd0c316e53fa7991f41885fc19180d92ad39", sequences: [235] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_236_237_0_1_0.yaml", blob_sha: "f84bb9a2f971a6c0b26ad096d7e62401e9847a8b", sequences: [236,237] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_238_239_0_1_0.yaml", blob_sha: "77ae353df927edb9a2b177fb73f1f5d003ce60bc", sequences: [238,239] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_240_0_1_0.yaml", blob_sha: "096bfdbf77fcb8def2ebf6fb8cbd3adf24afda46", sequences: [240] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_241_0_1_0.yaml", blob_sha: "7680c57bb5e82d8483bff9d84ba8e3a7012d3542", sequences: [241] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_242_0_1_0.yaml", blob_sha: "6d3f3d9b885384540370312c198c99d6dbb38e33", sequences: [242] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_243_244_0_1_0.yaml", blob_sha: "520c544587546ddefd9b832fd8d5707aa54c35ae", sequences: [243,244] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_245_0_1_0.yaml", blob_sha: "056ddc6676efed87528b3252ec15823f62aa4029", sequences: [245] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_246_247_0_1_0.yaml", blob_sha: "7ec816ab030046db14b760aac48e78121919dab3", sequences: [246,247] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_248_0_1_0.yaml", blob_sha: "c5cb7c4f727f6145b0ba56ac8cebab4924feb8a8", sequences: [248] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_249_0_1_0.yaml", blob_sha: "6c2903e4492c96bd6a58392eea98d0209ce5bd7e", sequences: [249] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_250_0_1_0.yaml", blob_sha: "8f2c571425a7dd0bb27dc2df0a66f30f6a8aeeb3", sequences: [250] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_251_0_1_0.yaml", blob_sha: "c45ea00552849365aee9b52caca44ddb3a9dc8f0", sequences: [251] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_252_0_1_0.yaml", blob_sha: "33dc652bf721cdb26d4b546fdca1b1ce75fd61c7", sequences: [252] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_253_254_0_1_0.yaml", blob_sha: "362eed52ad4f6cfb8a10bf2229f7b303bd311679", sequences: [253,254] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_255_257_0_1_0.yaml", blob_sha: "e8d1959324ce7a020a8a51aa6ce7d7a59b30269c", sequences: [255,256,257] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_258_259_0_1_0.yaml", blob_sha: "dc45c5f52ca9e4c5ef3e21ebb74aa30855619114", sequences: [258,259] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_260_264_0_1_0.yaml", blob_sha: "dc1501f045782a69ed4a1f0b35315ca7fe048155", sequences: [260,261,262,263,264] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_265_266_0_1_0.yaml", blob_sha: "016abd59c064109f1689a25abd926aac9f9c0337", sequences: [265,266] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_267_269_0_1_0.yaml", blob_sha: "1f2a8bfc2db3cd3d7c9a778c032763a4102118ca", sequences: [267,268,269] }
+
+authorized_control_artifacts:
+  - { path: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml", blob_sha: "8c6b8f07b0fd5299a060cd1705c46792bcdbe320", use: "sequence-234 authorization boundary" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml", blob_sha: "f10e82db644ae4da0c54ff40eb64bbd54fdb11d9", use: "Reviewer-E lineage boundary" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml", blob_sha: "4dfaf215629f27a66cb8b7225cc66bd634bf6260", use: "Reviewer-E role boundary" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_BLIND_EXTERNAL_ADVERSE_SOURCE_REVIEW_REPORT_0_1_0.md", blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313", use: "identity/status only; do not reopen substantive sources" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION_0_1_0.yaml", blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c", use: "F1 trigger and source-followup gate" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md", blob_sha: "84859f469089896bc86f340857caaf2d09b25c55", use: "F1 repair-required status only" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "15174e9f82f4c4311071919f48e357d02450ba75", use: "Program Lead repair confirmation" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml", blob_sha: "234add6d1f68081f2cd842b97669809297e8beec", use: "sequence-262 descriptive repair identity only" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_2.yaml", blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6", use: "sequence-263 descriptive repair identity only" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "15a0b13742a7b737cfcc1627a79501f90b4f9165", use: "sequence-264 amendment identity/timing" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE_0_1_0.yaml", blob_sha: "3de317cf126ee78dee0b0810b14ca8ab2aaa08b3", use: "Reviewer-F fixed chronology scope" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md", blob_sha: "99632908a7a9f49bf2ccfc5ac04bba3d201599ff", use: "sequence-268 C4 classification identity only" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "ff82e39939475ed62854dd1f8b98dbdbfd5257a8", use: "sequence-269 Program Lead confirmation and contamination control" }
+
+repository_metadata_authorized:
+  - "commit/tree/blob identity and ancestry metadata from certified endpoint 57a118060fe3002f5a4de7edf4c4d8c85467c20c through fixed endpoint 6a1be98c9100aebc90c9b969cd9053a64d1a868c"
+  - "path history needed to verify add-once / no reachable rewrite"
+  - "commit subjects and filenames needed to detect unledgered Study-3 artifact commits"
+  - "parent-tree presence/absence checks for ledgered event artifacts and append-container commits"
+  - "for outcome-evidence acquisition artifacts referenced by sequences 235-251, identity metadata only; do not inspect substantive source contents"
+
+specific_integrity_questions:
+  - "Does sequence 221 correctly bridge from the previously certified sequence-220 append blob with no gap or rollback?"
+  - "Are sequences 221-269 complete, strictly monotonic, and predecessor-blob chained without rewrite?"
+  - "Does sequence 234 record human G1 authorization before sequence 235 first outcome-relevant evidence exposure?"
+  - "Do commit-bearing entries bind to ancestor commits where cited paths/blobs were newly added, and do timestamps match cited commits?"
+  - "Are null-commit reviewer/search-exposure events adequately bounded by order notes and later immutable report/artifact freezes?"
+  - "Are there unledgered Study-3 artifact commits between the certified baseline and fixed endpoint, excluding append-container commits?"
+  - "Does append 260-264 have actual blob dc1501f045782a69ed4a1f0b35315ca7fe048155, resolving Reviewer F's unpinned-blob observation without changing chronology?"
+  - "Does the F1 chain preserve Reviewer-E blind adverse pass -> Program Lead reconciliation -> Reviewer-C F1 repair-required review -> Program Lead replay -> nonoperative 0.1.2 repair drafts -> amendment record -> Reviewer-F C4 review -> Program Lead C4 disposition?"
+  - "Is the repair unambiguously post-evidence because sequence 235 precedes sequences 262-264?"
+  - "Does Reviewer F's POST_EVIDENCE_FAVORABLE_OR_MIXED timing premise survive independently?"
+  - "Do any ledger or control artifacts incorrectly claim the 0.1.2 repair was operative before C4/ledger/Program Lead acceptance?"
+  - "Do the ledger and control artifacts preserve the required Protocol C4 consequence: descriptive correction preserved, adverse candidate consequences eligible for current-study incorporation, favorable/mixed effects barred from strengthening confirmatory comparative outcomes, and ranking change requiring POST_EVIDENCE_DIRECTIONAL_CONTAMINATION?"
+
+forbidden:
+  - "inspect substantive S1-S5 source-acquisition contents"
+  - "redo Reviewer E adverse-source review"
+  - "redo Reviewer C F1 granularity review"
+  - "reclassify Reviewer F C4 amendment direction"
+  - "decide any F1 variant as true"
+  - "certify coverage, MAKEABLE/UNMAKEABLE, or proposition dispositions"
+  - "rank candidates or assess theological truth"
+  - "serve as strict auditor"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "BASELINE / ENDPOINT VERIFICATION"
+    - "SEQUENCE 221-269 CONTINUITY"
+    - "COMMIT / BLOB / REWRITE AUDIT"
+    - "OFF-REPOSITORY / NULL-COMMIT EVENT AUDIT"
+    - "G1 AUTHORIZATION / FIRST-EVIDENCE BOUNDARY"
+    - "F1 REPAIR CHRONOLOGY"
+    - "APPEND 260-264 BLOB CHECK"
+    - "C4 TIMING CONSEQUENCE"
+    - "POST-EVIDENCE CONTAMINATION CONTROL CHECK"
+    - "REQUIRED REPAIRS"
+    - "G1 F1 A8 LEDGER INTEGRITY STATUS"
+  status_namespace:
+    - "G1_F1_A8_LEDGER_INTEGRITY_PASS"
+    - "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  G1_authorized: true
+  outcome_relevant_evidence_acquisition_started: true
+  F1_repair_operational: false
+  coverage_review_paused: true
+  MAKEABLE_review_paused: true
