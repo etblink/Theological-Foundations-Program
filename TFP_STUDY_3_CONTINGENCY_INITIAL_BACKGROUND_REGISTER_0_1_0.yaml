@@ -1,0 +1,244 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "INITIAL_BACKGROUND_REGISTER"
+status: "FROZEN_INITIAL__WITHHELD_FROM_REVIEWER_C_UNTIL_BLIND_ELICITATION_FREEZES"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+inputs:
+  working_question: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  operative_A4_A5_A6_inventory:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A4_A5_A6_INVENTORY_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "371efa1982b8c6e0d25e12cfc8644accfb02a5c4"
+  candidate_universe_frozen: true
+  B3_packets_frozen: true
+  outcome_relevant_evidence_used: false
+
+construction_rules:
+  backgrounds_are_not_candidate_answers: true
+  include_only_if_can_change_truth_critical_inference: true
+  split_only_on_inference_changing_difference: true
+  merge_when_difference_is_irrelevant_to_all_frozen_truth_critical_inferences: true
+  no_worldview_default: true
+  no_background_installed_as_true: true
+
+dimensions:
+  BG-EXPLANATORY-REALISM:
+    question: "What kind of fact, relation, or norm counts as objective explanation at the metaphysical level?"
+    variants:
+      ER-ROBUST:
+        proposition: "There are objective metaphysical explanatory/grounding relations whose obtaining is not reducible to our explanatory practices."
+        warrant: "Serious grounding/metaphysical-explanation literature and independently intelligible truth conditions."
+        affects:
+          - "BR-N2/BR-N4; RG-N2/RG-N5; HO-N2/HO-N3/HO-N5; SE-N2/SE-N3/SE-N5"
+          - "GD-N2/GD-N3"
+          - "IC-N2/IC-N6; AG-N3; PR-N3; AX-N2/AX-N4"
+        retire_if: "A candidate-neutral argument establishes that metaphysical explanation is wholly reducible to epistemic/pragmatic practice or is incoherent."
+      ER-PLURALIST:
+        proposition: "More than one irreducible truth-bearing explanatory relation may be legitimate, including grounding, constitutive, causal, nomological, or constraint explanation."
+        warrant: "Pluralist explanation frameworks and independently formulated need to avoid silently treating one relation as exhaustive."
+        affects:
+          - "Whether concrete, principle, agentive, axiarchic, holistic, and regress explanations may be compared without forcing one explanatory ontology."
+        retire_if: "A candidate-neutral argument establishes one exhaustive explanatory relation for every truth-critical inference in scope."
+      ER-DEFLATIONARY:
+        proposition: "Many explanation claims are primarily epistemic, pragmatic, linguistic, or model-relative; robust metaphysical explanatory relations require separate warrant."
+        warrant: "Serious explanatory-deflationist traditions and anti-grounding/metametaphysical arguments."
+        affects:
+          - "GD-N2/GD-N3 and the evidential burden on every candidate relying on robust metaphysical explanation."
+        retire_if: "A candidate-neutral argument establishes irreducible metaphysical explanation for all relevant inference types."
+
+  BG-PSR-SCOPE:
+    question: "How broadly, if at all, does a Principle-of-Sufficient-Reason-like demand apply?"
+    variants:
+      PSR-GLOBAL:
+        proposition: "Every genuinely contingent fact, including any relevant totality-level fact, requires a sufficient explanation."
+        warrant: "Classical and contemporary rationalist/cosmological traditions."
+        affects:
+          - "BR-N4; RG-N5; HO-N5; SE-N5; GD-N2/GD-N3; necessary-ground candidate burdens."
+        retire_if: "A candidate-neutral counterexample or argument defeats unrestricted application to ultimate/totality facts."
+      PSR-RESTRICTED:
+        proposition: "A strong explanatory demand applies to many derivative/local contingent facts but may have principled scope limits at an ultimate or totality level."
+        warrant: "Restricted-PSR positions and independently formulated anti-overreach arguments."
+        affects:
+          - "BR-N4, GD-N2/GD-N3, RG-N5 and whether stopping is automatically defective."
+        retire_if: "Either a global PSR is independently established or no truth-relevant restricted explanation demand survives."
+      PSR-NONDEFAULT:
+        proposition: "No general PSR is presumed; the legitimacy of an explanatory demand must be established for the particular inferential domain."
+        warrant: "Humean/skeptical and anti-PSR traditions."
+        affects:
+          - "Burden placement across brute, global-deflation, regress, and necessary-ground families."
+        retire_if: "A candidate-neutral global or scoped explanatory principle is independently established for the relevant domain."
+
+  BG-TOTALITY-EXPLANANDUM:
+    question: "Does the collection/totality of contingent reality constitute a further truth-bearing explanandum beyond its members?"
+    variants:
+      TOT-DISTINCT:
+        proposition: "A relevant totality-level fact can be a genuine explanandum not exhausted by member-level explanations."
+        warrant: "Totality-based cosmological reasoning and aggregation-sensitive metaphysical arguments."
+        affects:
+          - "GD-N2/GD-N3; RG-N4/RG-N5; BR-N2; SE-N5; all necessary-ground stopping claims."
+        retire_if: "A candidate-neutral argument establishes that every totality-level demand is exhausted by member-level explanation in this scope."
+      TOT-LOCAL-SUFFICIENCY:
+        proposition: "Explaining all relevant members need not generate a distinct additional totality-level explanatory burden."
+        warrant: "Hume-Edwards-style and local-sufficiency traditions."
+        affects:
+          - "GD-N2/GD-N3 and whether regress/member explanations face a further whole-level demand."
+        retire_if: "A candidate-neutral aggregation principle establishes a distinct totality explanandum for this scope."
+
+  BG-DEPENDENCE-STRUCTURE:
+    question: "What structural constraints govern legitimate metaphysical dependence/explanation?"
+    variants:
+      DEP-WELL-FOUNDED:
+        proposition: "The relevant explanatory/dependence relation must ultimately terminate in a well-founded base."
+        warrant: "Well-founded grounding/fundamentality traditions."
+        affects:
+          - "RG-N3/RG-N5; HO-N2/HO-N3/HO-N6; SE-N2."
+        retire_if: "A candidate-neutral model establishes coherent explanatory adequacy without well-founded termination."
+      DEP-NONWELLFOUNDED-NONREFLEXIVE:
+        proposition: "Non-well-founded but non-item-reflexive explanatory structures can be legitimate."
+        warrant: "Serious non-well-founded grounding work."
+        affects:
+          - "HO-N2/HO-N3/HO-N4/HO-N6 and boundaries versus regress/self-explanation."
+        retire_if: "Such structures are shown incoherent or incapable of truth-bearing explanatory work."
+      DEP-REFLEXIVE-PERMISSIBLE:
+        proposition: "Item-reflexive explanation is not ruled out in principle."
+        warrant: "Self-explanation literature and independently formulated reflexive models."
+        affects:
+          - "SE-N2/SE-N3/SE-N4/SE-N5."
+        retire_if: "A candidate-neutral irreflexivity result applies to every admissible explanatory relation in scope."
+
+  BG-MODALITY-ACTUALITY:
+    question: "What is the status of metaphysical modality and actuality?"
+    variants:
+      MOD-OBJECTIVE-PRIVILEGED:
+        proposition: "Objective metaphysical possibilities exist or are truth-apt, and actuality is metaphysically privileged rather than merely indexical."
+        warrant: "Mainstream modal-realist/actualist approaches with privileged actuality."
+        affects:
+          - "MD-N1/MD-N2/MD-N4; NE-N1/NE-N2/NE-N3; IP-N1/IP-N3/IP-N4/IP-N5."
+        retire_if: "A candidate-neutral modal argument defeats privileged actuality or objective modal truth in the relevant scope."
+      MOD-OBJECTIVE-INDEXICAL:
+        proposition: "Objective modal alternatives are legitimate while actuality is indexical or otherwise non-privileged across a plurality."
+        warrant: "Lewisian/indexical actuality traditions and independently formulated parity views."
+        affects:
+          - "IP-N2/IP-N3/IP-N4/IP-N5 and the selection burden; also MOD-vs-necessitarian boundaries."
+        retire_if: "A candidate-neutral argument establishes privileged actuality or defeats ontological/modal parity."
+      MOD-DEFLATIONARY:
+        proposition: "At least some central metaphysical possibility/contingency discourse is non-literal, framework-dependent, or not robustly truth-apt."
+        warrant: "Modal fictionalist/anti-realist and related semantic traditions."
+        affects:
+          - "MD-N1/MD-N2/MD-N3/MD-N4 and whether contingency questions survive unchanged."
+        retire_if: "A candidate-neutral argument establishes robust truth-apt modality for the exact central claims at issue."
+
+  BG-ABSTRACT-PRINCIPLE-FORCE:
+    question: "Can an abstract, structural, law-like, or modal principle itself do truth-bearing explanatory work with respect to concrete reality?"
+    variants:
+      ABS-EXPLANATORY:
+        proposition: "At least some abstract/structural/principle facts can genuinely ground, constitute, constrain, or explain concrete contingent reality."
+        warrant: "Structuralist, mathematical, law-metaphysical and grounding traditions."
+        affects:
+          - "PR-N1/PR-N2/PR-N3/PR-N5/PR-N6; IC-N6; AX-N2."
+        retire_if: "A candidate-neutral argument establishes that every such principle is merely descriptive or derivative."
+      ABS-CONSTRAINT-ONLY:
+        proposition: "Abstract/principle facts may constrain possibilities without by themselves explaining why a concrete actuality obtains."
+        warrant: "Constraint-based metaphysics and independently formulated instantiation objections."
+        affects:
+          - "PR-N3 and the abstract-instantiation gap; distinction between principle and concrete foundation."
+        retire_if: "Either explanatory sufficiency or complete explanatory inertness is independently established."
+      ABS-DESCRIPTIVE:
+        proposition: "Abstract/principle structures are representational or descriptive and cannot by themselves perform the required ontic explanatory role."
+        warrant: "Nominalist/concretist and anti-Platonist explanatory objections."
+        affects:
+          - "PR-N2/PR-N3; AX-N2 if value is treated abstractly."
+        retire_if: "A candidate-neutral case establishes irreducible abstract explanatory force in the relevant domain."
+
+  BG-AGENTIVE-MODAL-LINK:
+    question: "Can a necessary agentive source explain a genuinely contingent outcome without modal collapse?"
+    variants:
+      AGENT-CONTINGENT-OUTPUT:
+        proposition: "A metaphysically necessary agent can intentionally explain a genuinely contingent outcome without the agent's existence/nature necessitating that outcome."
+        warrant: "Agent-causal, libertarian, and necessary-agent cosmological traditions."
+        affects:
+          - "AG-N2/AG-N3/AG-N4."
+        retire_if: "A candidate-neutral argument establishes that sufficient agentive explanation from a necessary source entails outcome necessity."
+      AGENT-NECESSITATING:
+        proposition: "Given a necessary source plus a sufficient ultimate reason/explanation, the explained outcome is fixed or necessary unless an additional contingency-maker is supplied."
+        warrant: "Modal-collapse and sufficient-reason objections to necessary-agent explanation."
+        affects:
+          - "AG-N4 and comparison with impersonal necessary grounds."
+        retire_if: "A coherent candidate-neutral model demonstrates sufficient agentive explanation with genuine contingency and no unexplained selector."
+      AGENT-NONFUNDAMENTAL:
+        proposition: "Agency is not a fundamental explanatory category at the ultimate metaphysical level."
+        warrant: "Reductionist/naturalistic and structural objections to fundamental agency."
+        affects:
+          - "AG-N2/AG-N3 and burden for treating agency as ultimate rather than derivative."
+        retire_if: "A candidate-neutral argument establishes irreducible fundamental agency."
+
+  BG-AXIOLOGICAL-FORCE:
+    question: "What, if any, ontic explanatory role can objective value or evaluative requiredness play?"
+    variants:
+      AX-VALUE-ONTOLOGICAL:
+        proposition: "Objective evaluative facts can have genuine explanatory force with respect to existence or actuality."
+        warrant: "Axiarchic traditions and independent value-to-being arguments."
+        affects:
+          - "AX-N1/AX-N2/AX-N3/AX-N4/AX-N5; PR-N7."
+        retire_if: "A candidate-neutral argument shows value cannot bear ontic explanatory force."
+      AX-VALUE-NORMATIVE-ONLY:
+        proposition: "Objective value may exist while supplying reasons/evaluation only, not an ontic explanation of why reality exists."
+        warrant: "Non-axiarchic value realism and the value-to-being gap."
+        affects:
+          - "AX-N2/AX-N4 and boundary versus agentive explanation."
+        retire_if: "An independent value-to-being bridge is established or objective value is defeated."
+      AX-ANTI-REALIST:
+        proposition: "No stance-independent evaluative truth exists with the strength required by axiarchic explanation."
+        warrant: "Serious metaethical anti-realist traditions."
+        affects:
+          - "AX-N1 and downstream axiarchic claims."
+        retire_if: "Objective evaluative truth is independently established at the required strength."
+
+  BG-METAPHYSICAL-INDETERMINACY:
+    question: "Can reality itself be metaphysically indeterminate with respect to an ultimacy fact?"
+    variants:
+      IND-ONTIC-POSSIBLE:
+        proposition: "There can be genuine worldly/metaphysical indeterminacy rather than only ignorance, vagueness, or representational incompleteness."
+        warrant: "Contemporary metaphysical-indeterminacy literature."
+        affects:
+          - "IU-N2/IU-N3/IU-N4 and boundary versus B6 underdetermination."
+        retire_if: "A candidate-neutral determinacy principle excludes ontic indeterminacy for the relevant ultimacy facts."
+      IND-DETERMINATE:
+        proposition: "Every relevant ultimacy fact is metaphysically determinate even if agents cannot know which determinate fact obtains."
+        warrant: "Determinacy-first metaphysics and anti-indeterminacy arguments."
+        affects:
+          - "IU-N2/IU-N3 and whether epistemic underdetermination can masquerade as ontic indeterminacy."
+        retire_if: "A coherent and independently warranted ontically indeterminate ultimacy model is established."
+      IND-SEMANTIC-ONLY:
+        proposition: "Apparent indeterminacy in this domain is linguistic/semantic/conceptual rather than worldly."
+        warrant: "Semantic-vagueness and representational diagnoses."
+        affects:
+          - "IU-N3 and interaction with MOD-DEFLATIONARY."
+        retire_if: "The relevant indeterminacy is shown to persist under semantically precise formulations."
+
+initial_exclusions:
+  - id: "BG-THEISM-AS-BACKGROUND"
+    reason: "Classical theism or another named religious worldview is too outcome-proximate and bundles candidate-level commitments; specific inference-changing assumptions must be represented at the dimension level instead."
+    reopen_condition: "A specific theological background assumption is independently shown to change a frozen truth-critical inference without simply presupposing a candidate answer."
+  - id: "BG-NATURALISM-AS-BACKGROUND"
+    reason: "Naturalism as a global label is too coarse and outcome-proximate; its inference-changing assumptions must be decomposed into specific dimensions."
+    reopen_condition: "A precise naturalistic assumption survives A8 criteria and cannot be represented by an admitted dimension."
+  - id: "BG-SKEPTICISM-AS-BACKGROUND"
+    reason: "Generic skepticism is epistemic posture rather than a determinate background framework unless specified into an inference-changing proposition."
+    reopen_condition: "A specific skeptical principle generates determinate truth-critical consequences."
+  - id: "BG-SUPERNATURALISM-AS-BACKGROUND"
+    reason: "Supernaturalism as a global label is too coarse and can silently privilege candidate classes."
+    reopen_condition: "A specific independently formulable assumption changes a frozen inference and is not candidate-subsumed."
+
+review_status:
+  admitted_dimension_count: 9
+  blind_Reviewer_C_elicitation_pending: true
+  inclusion_exclusion_review_pending: true
+  granularity_review_pending: true
+  interaction_review_pending: true
+  background_register_frozen_for_use: false
+  G1_authorized: false
