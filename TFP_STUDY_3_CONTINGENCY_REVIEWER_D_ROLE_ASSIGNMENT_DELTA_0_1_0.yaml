@@ -1,0 +1,41 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_D_ROLE_ASSIGNMENT_DELTA"
+status: "ASSIGNED__A9_BLIND_SOURCE_STRATA_ELICITATION_READY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_D"
+  lineage: "XAI_GROK_4_7_REVIEWER_D_FRESH_SESSION"
+  assignment_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+    expected_status: "ACCEPTED__PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+
+role_boundary:
+  allowed:
+    - "blind missing-source-strata elicitation under A9.1"
+    - "later review of Program Lead source plan after blind report freezes"
+    - "source-plan completeness, native-source access, adverse-strata symmetry, background-source coverage, and foreseeable bottleneck review"
+  prohibited:
+    - "adverse-source reviewer"
+    - "coverage-state reviewer"
+    - "MAKEABLE certifier"
+    - "strict auditor"
+    - "outcome-relevant evidence acquisition"
+    - "discriminator authoring or tiering"
+    - "candidate ranking or truth adjudication"
+
+exposure_sequence:
+  step_1: "assignment handshake completed"
+  step_2: "assignment accepted"
+  step_3: "blind A9.1 input/prompt may be exposed"
+  step_4: "blind report must freeze"
+  step_5: "only then may Program Lead source plan 0.1.0 be exposed for full A9.1 review"
+
+source_plan_withholding:
+  path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+  blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  exposed_to_Reviewer_D: false
+
+G1_authorized: false
