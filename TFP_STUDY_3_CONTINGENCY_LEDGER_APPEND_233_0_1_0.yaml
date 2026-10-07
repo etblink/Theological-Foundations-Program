@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G0_PREREGISTRATION_COMPLETE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_232_blob_sha: "7ee1b281355d0adfd49a384208234ddebc339cc6"
+  prior_next_sequence: 233
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 233
+    repository_commit: "e51ba784d0869bc3b21e2967c6c3b272bf3b9dab"
+    timestamp_utc: "2026-10-07T06:42:58Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G0_PREREGISTRATION_COMPLETION_CHECK_0_1_0.yaml blob b794648b713027d003643ae8797f79626d57f4f7"
+    exposure_class: "G0_PREREGISTRATION_COMPLETION_CHECK"
+    amendment_surfaces: ["A1-A17 completeness","G0 exit","G1 authorization boundary"]
+    outcome_relevant_evidence: false
+    result_status: "G0_PREREGISTRATION_COMPLETE__G1_HUMAN_AUTHORIZATION_REQUIRED"
+
+next_sequence: 234
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
