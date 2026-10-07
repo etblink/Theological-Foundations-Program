@@ -1,0 +1,33 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_234_blob_sha: "b61d718a0427e338a0f7ac20ebee606c9789efd8"
+  prior_next_sequence: 235
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 235
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "First G1 S1_NATIVE discovery-search exposure: 13 frozen-plan scholarly queries spanning all 13 candidate families; discovery results only, before in-depth source opening."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_DISCOVERY_SEARCH_EXPOSURE"
+    amendment_surfaces: ["A9 source universe","candidate-native source access","future proposition evidence matrices","future comparison effort records"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S1_NATIVE"
+    query_family_count: 13
+    evidential_use_of_search_snippets: false
+    order_note: "Occurred after sequence 234 human authorization was ledgered and before any in-depth opening of located outcome-relevant sources."
+    controls:
+      - "Search snippets are discovery metadata only and cannot support proposition dispositions."
+      - "No candidate ranking, proposition disposition, coverage certification, or MAKEABLE determination was made."
+      - "Frozen G0 architecture remains unchanged."
+
+next_sequence: 236
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
