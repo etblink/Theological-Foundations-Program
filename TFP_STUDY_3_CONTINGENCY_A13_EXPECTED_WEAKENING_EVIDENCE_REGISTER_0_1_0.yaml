@@ -1,0 +1,255 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A13_EXPECTED_WEAKENING_EVIDENCE_REGISTER"
+status: "FROZEN_PRE_EVIDENCE__PROGRAM_LEAD_INITIAL_PREREGISTRATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+purpose: "Satisfy Protocol A13 by freezing, for each admitted candidate state, expected evidence/argument, compatible but non-discriminating evidence, weakening evidence, and contradiction conditions where possible."
+
+interpretation:
+  candidate_state_semantics: "For A13, each of the 13 admitted candidate families is treated as a candidate state. A11 comparison-state semantics remain governed by the operative discriminator register and are not rewritten here."
+  evidence_semantics: "These are preregistered evidential/argumentative profiles, not findings. Nothing in this artifact records that any listed evidence exists, has been found, or has a disposition."
+  contradiction_semantics: "A contradiction condition identifies a condition that would defeat a frozen core commitment if established later under Protocol evidence/disposition rules. It is not a current contradiction finding."
+  source_basis:
+    - "frozen B3 candidate steelman packets"
+    - "operative A8 background register"
+    - "operative A11 discriminator register"
+    - "operative final A6 necessary-proposition coverage map"
+  source_acquisition_started: false
+  outcome_relevant_evidence_used: false
+  G1_authorized: false
+
+packet_pins:
+  C-BRUTE: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_BRUTE_0_1_0.md", blob_sha: "0888f048117afed26c95cb9b6b01c177d406bfb2" }
+  C-REGRESS: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_REGRESS_0_1_0.md", blob_sha: "8790ba1007037a632a42fbacf723894424b448b6" }
+  C-HOLISTIC: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_HOLISTIC_0_1_0.md", blob_sha: "5128dfb29fbbf88eb098e971aec64746ec6f0065" }
+  C-SELF-EXPLANATORY: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_SELF_EXPLANATORY_0_1_0.md", blob_sha: "7b6ffebd9a2a5b625137b928650dbc0ef824c143" }
+  C-GLOBAL-DEFLATION: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md", blob_sha: "32807841c6805b9d6c8440895457118f10f842a1" }
+  C-MODAL-DISSOLUTION: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_MODAL_DISSOLUTION_0_1_0.md", blob_sha: "54dbb7733a164899b0ec575ecd673dc17a3b26d6" }
+  C-INDETERMINATE-ULTIMACY: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDETERMINATE_ULTIMACY_0_1_0.md", blob_sha: "99b5f62cd33a190c3e2ec081f39de9033d1c3c37" }
+  C-NECESSITARIAN: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NECESSITARIAN_0_1_0.md", blob_sha: "0b8a1ac7d79077256a98a188844c97689c52056c" }
+  C-INDEXICAL-PLURALITY: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDEXICAL_PLURALITY_0_1_0.md", blob_sha: "5cb7058b6903d38579fd5ae8dd26a35795c4f75b" }
+  C-NEC-IMPERSONAL-CONCRETE: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_CONCRETE_0_1_0.md", blob_sha: "1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5" }
+  C-NEC-AGENTIVE: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_AGENTIVE_0_1_0.md", blob_sha: "46c4333f379ac9f394eddcd9ec52dc0fb56da113" }
+  C-NEC-IMPERSONAL-PRINCIPLE: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_PRINCIPLE_0_1_0.md", blob_sha: "12108b38091a9ecacdff8ab27222e733175ce68c" }
+  C-AXIARCHIC: { path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_AXIARCHIC_0_1_0.md", blob_sha: "ee3e8e1ee24671df264da1985ae433989c037200" }
+
+operative_cross_checks:
+  background_register_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  discriminator_register_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  final_A6_coverage_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+
+candidate_states:
+  C-BRUTE:
+    expected:
+      - "A principled limit on PSR-style or global explanatory demands under which a genuinely contingent ultimate stopping fact can remain ontically brute without contradiction."
+      - "A defensible ontic-versus-epistemic distinction showing that ultimate brutality is not merely temporary ignorance while ordinary local explanation remains legitimate."
+    compatible_but_non_discriminating:
+      - "Rich successful local explanation throughout the domain; this is compatible with both brute ultimate stopping and deeper-ground candidates."
+      - "Failure so far to discover a deeper terminus; absence of discovery is not by itself evidence of ontic brutality."
+    weakening:
+      - "An independently warranted explanatory principle that applies to the proposed ultimate stopping fact rather than only to derivative facts."
+      - "A coherent deeper explanation that exposes the stopping point as selectively arbitrary, epistemically masked, or merely a relocation of unexplained contingency."
+    contradiction_conditions:
+      - "The purported ultimate brute stopping fact is shown to be explained by or dependent on a deeper ground."
+      - "The alleged stopping item is shown metaphysically necessary where the frozen candidate requires contingent brute stopping."
+    relevant_A11: ["D11-05-BRUTE-VERSUS-NONBRUTE"]
+
+  C-REGRESS:
+    expected:
+      - "A coherent non-terminating one-way dependence structure in which each link performs genuine explanatory work without a necessary terminus."
+      - "A defensible argument that well-foundedness is an additional premise rather than a requirement built into the relevant explanatory relation."
+    compatible_but_non_discriminating:
+      - "Very long or apparently open-ended empirical/causal chains; finite inquiry cannot by itself establish an actually non-terminating metaphysical regress."
+      - "Mathematical consistency of infinite series or structures absent a bridge to metaphysical explanatory dependence."
+    weakening:
+      - "A justified well-foundedness requirement, transmission objection, or totality objection showing that indefinitely derivative links never complete the relevant explanation."
+      - "Evidence/argument that the total regress is itself being left as one unexplained contingent whole."
+    contradiction_conditions:
+      - "The relevant explanatory/dependence relation is established as necessarily well-founded."
+      - "The candidate's purported regress is shown to contain a terminal member or to collapse into a brute totality."
+    relevant_A11: ["D11-06-REGRESS-VERSUS-TERMINUS","D11-07-REGRESS-VERSUS-HOLISTIC"]
+
+  C-HOLISTIC:
+    expected:
+      - "A defensible metaphysics of non-well-founded explanation in which mutual, cyclic, networked, or holistic dependence is genuinely explanatory rather than merely descriptive."
+      - "Worked structure showing a non-vicious explanatory whole that avoids both item-reflexive self-explanation and one-way regress."
+    compatible_but_non_discriminating:
+      - "Empirical feedback loops, systemic interdependence, or holistic descriptions without an argument that the relevant metaphysical dependence relation behaves the same way."
+      - "Failure to identify a single fundamental item; that absence alone does not establish holistic explanatory completion."
+    weakening:
+      - "Arguments that the relevant explanation/grounding relation is essentially asymmetric, irreflexive, or well-founded."
+      - "A showing that the proposed whole remains brute, or that its loop reduces to a one-way regress or item-reflexive explanation."
+    contradiction_conditions:
+      - "The relevant explanatory relation is established as excluding the candidate's required non-well-founded structure."
+      - "The proposed structure necessarily collapses into a frozen rival category rather than preserving holistic/non-well-founded explanation."
+    relevant_A11: ["D11-07-REGRESS-VERSUS-HOLISTIC","D11-08-HOLISTIC-VERSUS-REFLEXIVE","D11-05-BRUTE-VERSUS-NONBRUTE"]
+
+  C-SELF-EXPLANATORY:
+    expected:
+      - "A coherent and non-vacuous item-reflexive explanatory relation capable of terminating the relevant why-question."
+      - "A modal compatibility argument showing that successful reflexive explanation does not entail the stopping item's metaphysical necessity or destroy its frozen contingency."
+    compatible_but_non_discriminating:
+      - "Self-organizing, self-maintaining, recursively specified, or self-referential systems absent a bridge to ultimate metaphysical self-explanation."
+      - "Explanatory models containing fixed points or recursion when those formal properties do not establish the required ontic explanatory relation."
+    weakening:
+      - "A principled irreflexivity/asymmetry condition on the relevant explanatory relation."
+      - "A showing that the purported explanation merely restates the explanandum, is viciously circular, or forces modal collapse."
+    contradiction_conditions:
+      - "Item-reflexive explanation is established as incoherent for the relevant relation."
+      - "Successful self-explanation is shown to entail metaphysical necessity, contradicting the candidate's required contingent stopping item."
+    relevant_A11: ["D11-08-HOLISTIC-VERSUS-REFLEXIVE"]
+
+  C-GLOBAL-DEFLATION:
+    expected:
+      - "A principled account on which genuine local/domain contingency and local explanation do not generate a distinct further totality-level explanatory burden."
+      - "A defensible limit on aggregation or totality-explanandum assumptions rather than a mere refusal to ask the global question."
+    compatible_but_non_discriminating:
+      - "Extensive successful local explanation; such success is compatible with both global deflation and a further global explanatory demand."
+      - "Failure to discover a global explainer; nondiscovery does not by itself show that no global burden exists."
+    weakening:
+      - "An independently warranted totality explanandum or explanatory principle under which local demands aggregate into a distinct global demand."
+      - "A showing that the deflationary move is merely verbal, question-begging, or leaves a recognized explanatory burden untouched."
+    contradiction_conditions:
+      - "The relevant local explanatory commitments are shown, under the operative background conditions, to entail a distinct global explanatory burden that the candidate denies."
+    relevant_A11: ["D11-04-GLOBAL-EXPLANATORY-DEMAND"]
+
+  C-MODAL-DISSOLUTION:
+    expected:
+      - "A substantive semantic/metaphysical argument that the study's targeted necessity/contingency contrast is non-truth-apt, ill-formed, or legitimately deflationary at the relevant level."
+      - "A showing that lower-order candidate comparisons presuppose modal structure that the dissolution diagnosis successfully removes."
+    compatible_but_non_discriminating:
+      - "Disagreement among modal logics, multiple semantic frameworks, or ordinary epistemic uncertainty about possibility."
+      - "Difficulty deciding a modal claim; uncertainty is not itself dissolution."
+    weakening:
+      - "A stable and applicable truth-apt metaphysical modal semantics under which the study's target propositions remain substantive."
+      - "A showing that the proposed dissolution is only epistemic skepticism, terminological revision, or framework choice rather than a diagnosis of the targeted modal question."
+    contradiction_conditions:
+      - "The relevant modal propositions are established as truth-apt and substantively metaphysical under an admitted applicable semantics, with the proposed dissolution unavailable."
+    relevant_A11: ["D11-01-MODAL-TRUTH-APTNESS"]
+
+  C-INDETERMINATE-ULTIMACY:
+    expected:
+      - "A coherent account of ultimate ontic indeterminacy or metaphysical indefiniteness that is distinct from investigator ignorance, semantic vagueness, and mere underdetermination of evidence."
+      - "A defensible reason why ultimacy need not possess the determinate modal/explanatory status assumed by rival candidates."
+    compatible_but_non_discriminating:
+      - "Current disagreement, incomplete theory, evidential underdetermination, or inability to know the ultimate state."
+      - "Semantic vagueness that can be removed without ontic indeterminacy."
+    weakening:
+      - "A principled determinacy requirement for the relevant ultimate propositions."
+      - "A showing that the alleged indeterminacy is epistemic/semantic only, or that a determinate ultimate state is independently warranted."
+    contradiction_conditions:
+      - "The targeted ultimate proposition is established as determinately true or false under the applicable semantics and the candidate cannot preserve an ontic indeterminacy residue."
+    relevant_A11: ["D11-01-MODAL-TRUTH-APTNESS","D11-02-ONTIC-ULTIMACY-INDETERMINACY"]
+
+  C-NECESSITARIAN:
+    expected:
+      - "A coherent modal theory on which the relevant total reality could not have been otherwise, with apparent contingency explained without merely relabeling ignorance or nomological determination."
+      - "An account of why no genuine contingent total remainder survives."
+    compatible_but_non_discriminating:
+      - "Deterministic dynamics, strong laws, unique solutions given initial conditions, or physical inevitability within a contingent framework."
+      - "High stability or invariance that does not establish metaphysical necessity."
+    weakening:
+      - "A coherent metaphysical alternative under the same applicable modal framework in which a scoped proposition or the relevant total reality differs."
+      - "An irreducible contingency that cannot be reduced to epistemic, semantic, or merely nomological variation."
+    contradiction_conditions:
+      - "At least one proposition within the candidate's required total-necessity scope is later established as genuinely metaphysically contingent."
+    relevant_A11: ["D11-03-TOTAL-NECESSITY"]
+
+  C-INDEXICAL-PLURALITY:
+    expected:
+      - "A defensible ontology with a plurality of equally real possibilities/worlds/realities and an indexical rather than metaphysically privileged actuality relation."
+      - "An account on which the plurality does not require an external selector to explain why one member alone is absolutely actual."
+    compatible_but_non_discriminating:
+      - "Modal semantics quantifying over many possibilities without ontological commitment to an equally real plurality."
+      - "Many-world mathematical models or epistemic alternatives absent the candidate's actuality thesis."
+    weakening:
+      - "An independently warranted privileged actuality relation, selector requirement, or argument that the plurality itself remains contingently unexplained."
+      - "A showing that indexicality does not discharge the relevant actuality/explanation burden."
+    contradiction_conditions:
+      - "The candidate's required equally real plurality or indexical actuality thesis is shown false under the applicable metaphysics."
+    relevant_A11: ["D11-03-TOTAL-NECESSITY","D11-09-INDEXICAL-ACTUALITY"]
+
+  C-NEC-IMPERSONAL-CONCRETE:
+    expected:
+      - "A metaphysically necessary concrete and non-agentive foundation with genuine explanatory/grounding force for the relevant contingent reality."
+      - "A coherent account of how that necessary concrete base preserves downstream contingency without importing agency."
+    compatible_but_non_discriminating:
+      - "A fundamental physical entity, field, state, or substrate that is stable or ubiquitous but not independently shown metaphysically necessary."
+      - "Explanatory usefulness of concrete physics absent proof that the concrete base fills the ultimate modal role."
+    weakening:
+      - "A showing that the proposed base is contingent, merely nomologically necessary, non-concrete/structural, or explanatorily incomplete."
+      - "An argument that the relevant explanatory role requires agency, or that the concrete foundation collapses downstream contingency."
+    contradiction_conditions:
+      - "The proposed ultimate foundation is established as agentive, non-concrete, or not metaphysically necessary."
+      - "Its explanatory role is shown incompatible with the candidate's required downstream contingency."
+    relevant_A11: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"]
+
+  C-NEC-AGENTIVE:
+    expected:
+      - "A defensible contingency argument whose ultimate explanatory role specifically requires purposive/intentional agency rather than an impersonal concrete or principled base."
+      - "A coherent account of necessary agency and intentional explanation that preserves genuinely contingent actuality rather than producing modal collapse."
+    compatible_but_non_discriminating:
+      - "Existence of contingent agents, purposive behavior, apparent order, or data sometimes used in separate design/theological arguments."
+      - "Any evidence for a necessary foundation that does not independently discriminate agency from impersonal alternatives."
+    weakening:
+      - "A sufficient impersonal explanation of the same ultimate role, or failure to show why agency adds required explanatory work."
+      - "Modal-collapse/free-choice tension, regress in reasons/intentions, or incoherence of necessary agency."
+    contradiction_conditions:
+      - "The required agentive ultimate explanation is shown unable to preserve the contingency it is supposed to explain."
+      - "Agency is independently excluded from the relevant ultimate explanatory role."
+    boundary:
+      - "Support for this candidate does not by itself support omniscience, omnipotence, perfect goodness, uniqueness, providence, revelation, worship-worthiness, or any religious identity."
+    relevant_A11: ["D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+
+  C-NEC-IMPERSONAL-PRINCIPLE:
+    expected:
+      - "An independently motivated ontology in which a metaphysically necessary non-agentive principle, structure, law, or constraint has genuine explanatory/grounding force with respect to contingent reality."
+      - "A defensible bridge from non-concrete/structural necessity to concrete actuality that is more than description or representation."
+    compatible_but_non_discriminating:
+      - "Empirical success of mathematical formalisms, stable regularities, elegant laws, or the abstract existence of structures without the required metaphysical bridge."
+      - "Nomic necessity inside a contingent physical framework."
+    weakening:
+      - "The instantiation/abstract-to-concrete gap, descriptive rather than explanatory laws, framework-relative or contingent modal status, or underdetermination of actuality."
+      - "A showing that agency or a concrete base is required for the relevant explanatory role."
+    contradiction_conditions:
+      - "The proposed principle is established as contingent or as lacking the required explanatory/grounding force."
+      - "No coherent non-agentive bridge from the principle to the relevant concrete contingent reality is available."
+    relevant_A11: ["D11-10-CONCRETE-VERSUS-PRINCIPLE","D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE","D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"]
+
+  C-AXIARCHIC:
+    expected:
+      - "A defensible objective evaluative/optimality structure plus a non-agentive bridge by which value or requiredness has genuine explanatory force with respect to actuality."
+      - "A relation between actuality and objective value that matches the frozen axiarchic mechanism without importing a hidden chooser."
+    compatible_but_non_discriminating:
+      - "Objective moral/evaluative truths that have no demonstrated metaphysical explanatory force."
+      - "Observed goods, disvalues, fine-tuning-like patterns, or moral facts that are equally compatible with agentive, impersonal-principle, or brute accounts absent the value-to-being bridge."
+    weakening:
+      - "Failure of objective evaluative realism at the required strength, absence of a best/uniquely required state where the subvariant requires one, or serious value-to-being bridge failure."
+      - "A showing that the account covertly requires agency or that evaluative language is dispensable and the view collapses into a generic impersonal principle."
+    contradiction_conditions:
+      - "Objective value/requiredness is shown incapable of the candidate's required non-agentive explanatory role."
+      - "The candidate's explanatory mechanism necessarily becomes agentive or ceases to be essentially evaluative."
+    boundary:
+      - "No perfectly good person, divine moral character, providence, worship-worthiness, revelation, or religious identity follows from axiarchic support alone."
+    relevant_A11: ["D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL","D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"]
+
+controls:
+  candidate_count: 13
+  every_candidate_has_expected: true
+  every_candidate_has_compatible_but_non_discriminating: true
+  every_candidate_has_weakening: true
+  every_candidate_has_contradiction_conditions_where_possible: true
+  no_candidate_is_ranked: true
+  no_current_evidence_is_asserted: true
+  no_source_result_is_used: true
+  necessary_foundation_does_not_equal_God: true
+  downstream_theological_properties_require_separate_warrant: true
+  amendment_control: "Any later content change uses Protocol C4."
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+
+downstream:
+  next_required_G0_step: "A14_STOP_REOPEN_CONDITIONS"
+  Reviewer_E_future_role: "Independent adverse-source, coverage-state, and MAKEABLE review occurs in G1 and does not convert this A13 preregistration into evidence."
