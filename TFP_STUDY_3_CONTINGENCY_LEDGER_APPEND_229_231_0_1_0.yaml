@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_228_blob_sha: "a688a07daa094111786763aac0fa78ac62b8ea8f"
+  prior_next_sequence: 229
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 229
+    repository_commit: "23d82f9a21fa80ef85600bda50a3f12bec166c2c"
+    timestamp_utc: "2026-10-07T06:34:10Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A14_STOP_REOPEN_CONDITIONS_0_1_0.yaml blob 77ea309239f8fb3f6ca5af5cc8478bff1587e382"
+    exposure_class: "G0_A14_STOP_REOPEN_CONDITIONS_FREEZE"
+    amendment_surfaces: ["coverage target","underdetermination threshold","insufficient-signal threshold","reopen_if"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_PRE_EVIDENCE"
+
+  - sequence: 230
+    repository_commit: "54a75b88f9b7b603666226d649eab2a6610d5813"
+    timestamp_utc: "2026-10-07T06:35:01Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A15_AUDIT_CRITERIA_0_1_0.yaml blob d0452f99db4c0007df84ed4f0f6b71b84b4d2216"
+    exposure_class: "G0_A15_AUDIT_CRITERIA_FREEZE"
+    amendment_surfaces: ["G4 standard criteria","Study-3-specific audit risks","cold-start and heuristic audit"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_PRE_EVIDENCE"
+
+  - sequence: 231
+    repository_commit: "cbe78d2397ed9ef409f96af1295b4dacf5ee81a7"
+    timestamp_utc: "2026-10-07T06:38:57Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A16_SHARED_PROPOSITION_MAP_0_1_0.yaml blob 88350ca94dbb08b0e5b04c6d3acdb514d890c9cd"
+    exposure_class: "G0_A16_SHARED_PROPOSITION_MAP_FREEZE"
+    amendment_surfaces: ["optional CLOSEST_TO_TRUTH refinement","shared modal profile dimension","shared explanatory-completion dimension"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_PRE_EVIDENCE__CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+
+next_sequence: 232
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
