@@ -1,0 +1,90 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+status: "A9_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A9_OPERATIONALIZATION_AUTHORIZED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A9_SOURCE_PLAN_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "3d1cd2dab822118a57f455ef4e76bfada7d12dc2"
+  reviewer_status: "A9_LEDGER_INTEGRITY_PASS"
+  reviewer_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+
+independent_replay:
+  certification_baseline_sequence: 132
+  certification_baseline_commit: "4e0e83e30db156912196dc09d0bdb06f144b781f"
+  certification_endpoint_sequence: 166
+  certification_endpoint_commit: "64aaffd15e5db9fb2c403da037f2fb016fd399f1"
+  sequence_133_166_contiguous: true
+  append_count: 12
+  append_base_blob_links_all_match: true
+  prior_next_sequence_links_all_match: true
+  commit_bearing_entry_count: 28
+  null_commit_event_count: 6
+  commit_timestamps_all_match: true
+  commit_path_blob_bindings_all_match: true
+  fixed_interval_commit_count: 40
+  expected_event_commit_count: 28
+  expected_append_container_commit_count: 12
+  fixed_interval_all_single_parent: true
+  fixed_interval_changed_path_count: 40
+  fixed_interval_all_paths_added_only: true
+  unledgered_Study_3_artifact_commit_found: false
+  reachable_rewrite_found: false
+  sequence_161_event_commit: "d1d2da407cefe76cbf4fc648d66c4fcfe55dbb9f"
+  sequence_161_append_container_commit: "0ffe02045e078f799c596de54062fac5341f593a"
+  sequence_161_event_and_container_distinct_by_design: true
+  Reviewer_D_blind_then_post_blind_then_repair_recheck_order_survives: true
+  Reviewer_F_exposure_result_disposition_order_survives: true
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+  Reviewer_F_PRE_EVIDENCE_AMENDMENT_chronology_survives: true
+
+scope_boundary:
+  source_plan_adequacy_re_reviewed_here: false
+  amendment_direction_reclassified_here: false
+  outcome_evidence_inspected_here: false
+  source_acquisition_started_here: false
+  discriminators_authored_or_tiered_here: false
+  candidates_ranked_here: false
+  truth_or_plausibility_assessed_here: false
+
+nonblocking_report_normalization:
+  relay_transport_prefix_removed_before_freeze: "Now read the appends."
+  report_body_begins_with_required_title: true
+  substantive_report_text_changed: false
+  effect_on_integrity_disposition: "NONE"
+
+nonblocking_report_note:
+  id: "POST_ENDPOINT_SEQUENCE_WORDING"
+  reviewer_wording: "This review's own provenance must be ledgered from sequence 167 onward."
+  repository_fact: "Sequences 167-168 were already frozen launch-control entries before Reviewer G exposure/result."
+  Program_Lead_interpretation: "Ledger Reviewer G exposure/result/Program Lead disposition at the next unused sequence, 169 onward."
+  effect_on_integrity_disposition: "NONE"
+
+nonblocking_carry_forwards:
+  - id: "SEQ99_ANNOTATION_OPTIONAL"
+    blocks_A9_operationalization: false
+  - id: "SEQ109_ANNOTATION_OPTIONAL"
+    blocks_A9_operationalization: false
+  - id: "EVENT_AND_CONTAINER_IDENTITY_CLARITY"
+    note: "Future review controls should name event and append-container commits separately when both matter."
+    blocks_A9_operationalization: false
+  - id: "PREPUBLICATION_REWRITE_NOT_PROVABLE_FROM_GIT"
+    note: "Git history cannot exclude an unpublished rewrite; no reachable rewrite exists."
+    blocks_A9_operationalization: false
+
+operational_disposition:
+  A9_content_repair_pass: true
+  A9_C4_direction_pass: true
+  A9_ledger_integrity_pass: true
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  source_plan_0_1_1_may_be_made_operational: true
+  source_plan_passed_may_be_set_true_after_explicit_operational_acceptance: true
+  A6_necessary_proposition_coverage_complete: false
+  discriminators_frozen: false
+  insufficiency_threshold_frozen: false
+  G0_complete: false
+  G1_authorized: false
+  outcome_relevant_evidence_acquisition_started: false
