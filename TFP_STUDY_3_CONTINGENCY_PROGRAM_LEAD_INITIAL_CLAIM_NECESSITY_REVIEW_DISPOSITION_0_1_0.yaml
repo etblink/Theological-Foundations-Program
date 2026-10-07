@@ -1,0 +1,50 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REVIEW_DISPOSITION"
+status: "REPAIR_ACCEPTED__PRE_EVIDENCE_C4_DIRECTION_REVIEW_REQUIRED_BEFORE_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "d45d01925bb09dea3c2531881d71dcc17339a026"
+  reviewer_status: "INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED"
+
+independent_disposition:
+  R1_restore_adequacy_and_stopping_content: "ACCEPT"
+  R2_complete_family_structure_and_boundaries: "ACCEPT"
+  R3_indexical_plurality_modal_status: "ACCEPT"
+  R4_symmetric_contingency_preservation: "ACCEPT"
+  R5_substantive_vs_contextual_reclassification: "ACCEPT"
+  R6_arrow_semantics_and_dispositions: "ACCEPT"
+  R7_scope_sensitive_truth_conditions: "ACCEPT"
+  R8_reissue_corrected_inventory_for_same_Reviewer_B_recheck: "ACCEPT"
+
+independent_findings:
+  trigger_tag_omission_found: false
+  shared_floor_presently_established: false
+  Reviewer_B_shared_floor_conclusion_accepted: true
+  final_A6_coverage_certified: false
+  critical_discriminators_exist: false
+  candidate_universe_change_required: false
+  B3_packet_mutation_required: false
+  outcome_relevant_evidence_exposure_started: false
+
+repair_scope:
+  artifact_only: "INITIAL_A4_A5_A6_INVENTORY"
+  amendment_class_candidate: "PRE_EVIDENCE_AMENDMENT"
+  C4_direction_review_required_before_operational_use: true
+  Reviewer_F_reserved_for_direction_review: true
+  Reviewer_B_same_session_focused_recheck_required: true
+
+role_controls:
+  Reviewer_B_is_outcome_material_reviewer: true
+  Reviewer_B_may_not_serve_as_discriminator_tier_reviewer: true
+  Reviewer_B_may_not_serve_as_strict_auditor: true
+
+prohibited_effects:
+  - "No candidate ranking or truth adjudication."
+  - "No candidate-universe amendment."
+  - "No B3 packet rewrite."
+  - "No discriminator authoring or tiering."
+  - "No G1 evidence acquisition."
