@@ -1,0 +1,43 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_BLIND_BACKGROUND_ELICITATION_SCOPE_PACKET"
+status: "FROZEN__BLIND_REVIEWER_C_INPUT"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+working_question:
+  text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  status: "WORKING_G0_QUESTION__NOT_FINAL_PREREGISTRATION"
+
+generic_scope:
+  purpose: "Identify serious live background frameworks whose truth could materially change a truth-critical inference, discriminator, admissibility judgment, or causal/explanatory inference in this study."
+  background_definition:
+    coherent_enough_for_determinate_inferences: true
+    materially_relevant_to_truth_critical_work: true
+    serious_scholarship_tradition_or_independent_argument_required: true
+    not_canonically_rejected_within_applicable_scope: true
+    not_independently_contradicted_by_candidate_neutral_constraint: true
+  symmetry:
+    - "Do not privilege or exclude a background because it is confessional, skeptical, naturalistic, supernaturalist, metaphysical, linguistic, historiographic, or methodological."
+    - "Do not assume theism, naturalism, supernaturalism, skepticism, or any admitted candidate is true."
+  excluded_from_blind_packet:
+    - "Program Lead initial background register"
+    - "Program Lead interaction matrix"
+    - "Reviewer-B claim/necessity inventory details beyond the working question"
+    - "discriminator proposals"
+    - "source plan"
+    - "outcome-relevant evidence"
+
+blind_elicitation_task:
+  - "Independently elicit background dimensions and materially distinct variants from the truth question and generic scope."
+  - "For each proposed background/variant state the proposition(s), why it is serious/live, the generic inference class it could affect, and what would defeat or retire it."
+  - "Identify likely split/merge boundaries and likely interactions between dimensions."
+  - "Distinguish a background framework from a candidate answer to the working question."
+  - "Do not rank candidates or assess which worldview is true."
+  - "Do not seek outcome-relevant evidence or begin G1."
+
+post_blind_control:
+  Program_Lead_register_may_be_exposed_only_after_blind_report_frozen: true
+  same_Reviewer_C_may_later_review_inclusion_exclusion_granularity_interactions: true
+  same_Reviewer_C_may_later_review_discriminator_tiers: true
+  Reviewer_C_may_not_serve_as_strict_auditor: true
