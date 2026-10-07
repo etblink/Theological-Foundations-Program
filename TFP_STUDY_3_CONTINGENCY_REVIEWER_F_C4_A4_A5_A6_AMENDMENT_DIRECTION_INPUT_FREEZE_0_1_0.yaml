@@ -1,0 +1,164 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_INPUT_FREEZE"
+status: "FROZEN__SAME_REVIEWER_F_LINEAGE_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that previously served as Reviewer F for the candidate-universe C4 amendment-direction review"
+  role: "amendment_direction_reviewer"
+  prohibited_roles:
+    - "ledger_integrity_reviewer"
+    - "strict_independent_auditor"
+
+continuity_basis:
+  prior_Reviewer_F_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+    blob_sha: "ab994925a1d8e99f7085d4e449c06f625f7c28e2"
+    prior_status: "C4_DIRECTION_REVIEW_PASS"
+  note: "The prior candidate-universe C4 result does not decide this new amendment. It establishes only that this is the already-assigned Reviewer-F lineage."
+
+C4_context:
+  amendment_chain:
+    - version: "0.1.0"
+      blob_sha: "375755374e0fc51b14a8ba6b370367c9816cd10b"
+      role: "pre-amendment initial A4/A5/A6 inventory"
+    - version: "0.1.1"
+      blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+      role: "broad Reviewer-B-driven repair"
+    - version: "0.1.2"
+      blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+      role: "narrow GD-N3 truth-condition correction"
+  Program_Lead_proposed_class: "PRE_EVIDENCE_AMENDMENT"
+  proposed_class_is_not_binding: true
+  outcome_relevant_evidence_exposure_started_as_recorded: false
+  independent_direction_classification_required: true
+  corrected_inventory_operational_before_review: false
+
+authorized_ledger_chain:
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_66_73_0_1_0.yaml"
+    blob_sha: "88bba3259c98d0dd16fe008204cf76b380771b3b"
+    purpose: "contains original inventory freeze and Reviewer-B launch controls"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_74_76_0_1_0.yaml"
+    blob_sha: "65b5ad371daa958353f0665c8af184ece354ba1a"
+    purpose: "Reviewer-B assignment provenance"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_77_82_0_1_0.yaml"
+    blob_sha: "8be098a93efd1d05e91015eca287951dae64a734"
+    purpose: "initial Reviewer-B exposure/result, 0.1.1 repair, and focused-recheck launch"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_83_88_0_1_0.yaml"
+    blob_sha: "5682b00c57c4cb5e049f05fe35b8fc32263334f0"
+    purpose: "focused recheck, 0.1.2 repair, and delta-recheck launch"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_89_91_0_1_0.yaml"
+    blob_sha: "9aa8eb112949486ec3690909369199da727dfc17"
+    purpose: "delta exposure/pass and Program-Lead acceptance"
+
+authorized_substantive_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_B3_STEELMAN_PACKET_SET_FREEZE_0_1_0.yaml"
+    blob_sha: "edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_0.yaml"
+    blob_sha: "375755374e0fc51b14a8ba6b370367c9816cd10b"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_1.yaml"
+    blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "d45d01925bb09dea3c2531881d71dcc17339a026"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "bb08bd997df219f8f6cdca61a3e2accd34e74a9d"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "7c04ed3d39a1474a01a5e599d12997491160afdf"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "0a349eaec35fbf2796367e76ea0a502d8ae92fc7"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "5fcf9a8b3928827180b0e95e9fc8e9fcd401652d"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_GD_N3_DELTA_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "574d274e82e984c5ab4dc2e3f4929f9a2aecaf03"
+  - "All 13 B3 steelman packet blobs referenced by the B3 packet-set freeze, only where needed to determine amendment direction."
+  - "Protocol 0.1.7 C4, A4, A5, A6 and A17 only as needed."
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "candidate evidence adjudication"
+  - "discriminator results"
+  - "future Reviewer-G ledger-integrity determination for this amendment"
+  - "future strict-auditor material"
+
+amendment_surfaces_to_classify:
+  - id: "AMEND-STOPPING-ADEQUACY"
+    description: "Restore or make explicit candidate-defining stopping/adequacy burdens omitted or demoted in 0.1.0."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY","C-NECESSITARIAN","C-NEC-IMPERSONAL-CONCRETE"]
+    affected_outcomes: ["A6 necessary proposition burden"]
+  - id: "AMEND-FAMILY-STRUCTURE-BOUNDARIES"
+    description: "Make family-defining structural and boundary commitments explicit for regress, holistic, agentive, and impersonal-principle families."
+    affected_candidates: ["C-REGRESS","C-HOLISTIC","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE"]
+    affected_outcomes: ["candidate-boundary fidelity","A6 necessary proposition burden"]
+  - id: "AMEND-INDEXICAL-PLURALITY-MODAL-STATUS"
+    description: "Require the plurality itself to carry the necessary/non-contingent stopping burden rather than letting indexical actuality alone discharge the family."
+    affected_candidates: ["C-INDEXICAL-PLURALITY"]
+    affected_outcomes: ["A6 necessary proposition burden"]
+  - id: "AMEND-CONTINGENCY-PRESERVATION"
+    description: "Make genuine-contingency / anti-modal-collapse burdens explicit and symmetric across necessary-ground families."
+    affected_candidates: ["C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    affected_outcomes: ["A6 necessary proposition burden","burden symmetry"]
+  - id: "AMEND-SUBSTANTIVE-VS-CONTEXTUAL"
+    description: "Reclassify candidate-scope permissions/non-entailments so they do not become unnecessary worldly falsity requirements, while retaining substantive candidate boundaries."
+    affected_candidates: ["C-SELF-EXPLANATORY","C-MODAL-DISSOLUTION","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    affected_outcomes: ["A4 claim typing","A6 necessary proposition burden"]
+  - id: "AMEND-DEPENDENCY-SEMANTICS"
+    description: "Replace ambiguous dependency arrows with explicit prerequisite, definitional-unpacking, compatibility, boundary, answer-level, and alternative-path semantics."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY","C-GLOBAL-DEFLATION","C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY","C-NECESSITARIAN","C-INDEXICAL-PLURALITY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    affected_outcomes: ["A5 dependency interpretation","future evidence-link burden"]
+  - id: "AMEND-SCOPE-TRUTH-CONDITIONS"
+    description: "Sharpen local/domain, total, indexical, ontic-indeterminacy, and necessary-ground scopes so propositions do not silently change strength across families."
+    affected_candidates: ["C-GLOBAL-DEFLATION","C-INDETERMINATE-ULTIMACY","C-NECESSITARIAN","C-INDEXICAL-PLURALITY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    affected_outcomes: ["A4/A6 proposition scope","burden symmetry"]
+  - id: "AMEND-A6-CLASSIFICATION"
+    description: "Explicitly classify all 62 enumerated necessary propositions as CANDIDATE_SPECIFIC and retain no presently established SHARED_FLOOR proposition."
+    affected_candidates: ["C-BRUTE","C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY","C-GLOBAL-DEFLATION","C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY","C-NECESSITARIAN","C-INDEXICAL-PLURALITY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    affected_outcomes: ["A6 candidate-specific/shared-floor classification","future coverage design"]
+  - id: "AMEND-COVERAGE-CONSTRAINTS"
+    description: "Clarify that candidate-specific noncomparative routes must address exact propositions, material comparisons need CRITICAL discriminators, alternative subvariants are disjunctive, and semantic dissolution remains distinct from ontic indeterminacy."
+    affected_outcomes: ["future A6 coverage map","future discriminator design","burden symmetry"]
+  - id: "AMEND-GD-N3-NARROW-CORRECTION"
+    description: "Restore C-GLOBAL-DEFLATION GD-N3 as the substantive non-defect truth claim and move the scoped justification into supporting GD-S2."
+    affected_candidates: ["C-GLOBAL-DEFLATION"]
+    affected_outcomes: ["A6 necessary proposition burden","future coverage of GD-N3"]
+
+task:
+  - "Verify from the authorized A17 chain whether the 0.1.0 -> 0.1.1 -> 0.1.2 amendment occurred before any outcome-relevant evidence exposure. Do not certify ledger integrity; classify chronology only from the authorized record and hand integrity to Reviewer G."
+  - "For every amendment surface, classify each affected candidate and outcome condition as ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Classify direction relative to the candidate or outcome condition itself, not relative to theism, naturalism, or any worldview."
+  - "Pay special attention to amendments that add burdens versus amendments that remove improperly imposed burdens; do not assume every repair has one direction."
+  - "Determine whether the explicit 62-proposition candidate-specific classification or future coverage constraints create hidden favorable treatment for any family."
+  - "Evaluate the 0.1.2 GD-N3 correction separately from the 0.1.1 broad repair."
+  - "Assign the Protocol C4 amendment class."
+  - "Determine whether inventory 0.1.2 may be used prospectively for later G0 work once ledger integrity is independently confirmed."
+  - "Do not certify A6 coverage, author/tier discriminators, inspect outcome evidence, rank candidates, or adjudicate truth."
+
+required_output:
+  sections:
+    - "SESSION / LINEAGE CONTINUITY"
+    - "INPUT / EXPOSURE VERIFICATION"
+    - "AMENDMENT CHRONOLOGY CLASSIFICATION"
+    - "DIRECTION CLASSIFICATION BY AMENDMENT SURFACE"
+    - "C4 USE DISPOSITION"
+    - "LEDGER-INTEGRITY HANDOFF"
+    - "REVIEW STATUS"
+  review_status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+ledger_integrity_boundary:
+  Reviewer_F_may_not_certify_ledger_integrity: true
+  required_next_reviewer_if_direction_review_passes: "REVIEWER_G"
+  corrected_inventory_may_not_become_operative_on_Reviewer_F_pass_alone: true
+
+scope_controls:
+  candidate_universe_changed: false
+  B3_packets_changed: false
+  final_A6_coverage_certified: false
+  discriminator_work_authorized: false
+  G1_authorized: false
