@@ -1,0 +1,264 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_BLIND_ELICITATION_RECONCILIATION_DOCKET"
+status: "FROZEN__PENDING_REVIEWER_C_INCLUSION_EXCLUSION_GRANULARITY_INTERACTION_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+blind_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_REPORT_0_1_0.md"
+  blob_sha: "b476446df7080f71b622e86a7b5d86ed0d76b8c2"
+  status: "BACKGROUND_BLIND_ELICITATION_COMPLETE"
+
+program_lead_initial_register:
+  path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_REGISTER_0_1_0.yaml"
+  blob_sha: "cba09f9ca46ba6a336aeec38820e352623c89400"
+  dimension_count: 9
+
+program_lead_initial_interaction_matrix:
+  path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+  blob_sha: "995a8f908f6f4e89f19d5f1a13561368206a1493"
+  material_pair_count: 12
+  material_higher_order_count: 2
+
+reconciliation_principles:
+  - "Blind elicitation is independent input, not automatic authority."
+  - "Do not admit a blind dimension merely because Reviewer C named it."
+  - "Do not retain a Program Lead dimension merely because it appeared in the initial register."
+  - "Every inclusion/exclusion must satisfy Protocol A8(1)-(5)."
+  - "Every split/merge must satisfy A8.2 by changing or not changing a frozen truth-critical inference."
+  - "Candidate answers, outcome labels, and epistemic abstention are not backgrounds."
+  - "No theism, naturalism, supernaturalism, skepticism, or confessional authority may be installed silently."
+  - "The operative A4/A5/A6 inventory may now be used to judge truth-critical relevance."
+
+blind_dimension_mapping:
+  BG-D01:
+    blind_label: "Status of the explanandum"
+    overlap_with_initial:
+      - "BG-TOTALITY-EXPLANANDUM"
+    program_lead_provisional_disposition: "PARTIAL_MATCH__EXPANSION_OR_SPLIT_REQUIRED"
+    reason:
+      - "The determinate-totality versus itemwise-only distinction is not fully represented by the existing two-variant totality dimension."
+      - "The semantic-defect/not-truth-apt limb may instead belong to BG-D12 or be candidate-subsumed."
+    Reviewer_C_decision_required:
+      - "Should the totality dimension gain an explicit no-determinate-totality/itemwise-only variant?"
+      - "Should semantic defect be separated from totality and handled under question-legitimacy or candidate boundaries?"
+
+  BG-D02:
+    blind_label: "Modality governing contingent and necessary"
+    overlap_with_initial:
+      - "BG-MODALITY-ACTUALITY"
+    program_lead_provisional_disposition: "PARTIAL_MATCH__LIKELY_SPLIT"
+    reason:
+      - "The initial dimension combines modal truth status with actuality privilege."
+      - "The blind pass independently distinguishes metaphysical, logical/conceptual, nomic, epistemic, and deflationary modality."
+    Reviewer_C_decision_required:
+      - "Whether modal semantics/status and actuality privilege must be separate A8 dimensions."
+      - "Which modal variants actually change frozen truth-critical inferences."
+
+  BG-D03:
+    blind_label: "Explanatory demand"
+    overlap_with_initial:
+      - "BG-PSR-SCOPE"
+    program_lead_provisional_disposition: "MATCH__POSSIBLE_VARIANT_EXPANSION"
+    reason:
+      - "Strong, restricted, and no-general-demand variants align with PSR-GLOBAL, PSR-RESTRICTED, and PSR-NONDEFAULT."
+      - "The blind local-demand-only variant may be materially distinct from the current restricted variant."
+    Reviewer_C_decision_required:
+      - "Whether local-demand-only requires its own variant."
+
+  BG-D04:
+    blind_label: "Admissible explanation relation"
+    overlap_with_initial:
+      - "BG-EXPLANATORY-REALISM"
+      - "BG-AGENTIVE-MODAL-LINK"
+      - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    program_lead_provisional_disposition: "PARTIAL_MATCH__LIKELY_NEW_RELATION_TYPE_DIMENSION"
+    reason:
+      - "The initial explanatory-realism dimension concerns whether explanation is objective/robust/pluralist/deflationary."
+      - "Cause, grounding, contrastive explanation, nomic subsumption, and intentional explanation may vary independently of explanatory realism."
+    Reviewer_C_decision_required:
+      - "Whether a distinct explanation-relation dimension is required."
+      - "Whether intentional explanation belongs there or remains partly in the agentive-modal link."
+
+  BG-D05:
+    blind_label: "Regress and completion"
+    overlap_with_initial:
+      - "BG-DEPENDENCE-STRUCTURE"
+    program_lead_provisional_disposition: "MATCH__POSSIBLE_VARIANT_EXPANSION"
+    reason:
+      - "Well-founded, non-well-founded, and reflexive structures are already represented."
+      - "The blind pass makes infinite-regress completeness and relation-specific viciousness more explicit."
+    Reviewer_C_decision_required:
+      - "Whether the existing variants are sufficient or require explicit regress-complete/relation-specific variants."
+
+  BG-D06:
+    blind_label: "Beginning versus atemporal contingency"
+    overlap_with_initial: []
+    program_lead_provisional_disposition: "NEW_DIMENSION_CANDIDATE"
+    reason:
+      - "The initial register does not separately control the inference from contingency to temporal beginning."
+      - "The operative study is about metaphysical contingency, so a temporal-origin dimension may function as a guard against importing kalam-style premises."
+    Reviewer_C_decision_required:
+      - "Admit as a live background, retire by candidate-neutral scope definition, or treat as a non-background scope guard."
+
+  BG-D07:
+    blind_label: "Category constraints on a ground"
+    overlap_with_initial:
+      - "BG-ABSTRACT-PRINCIPLE-FORCE"
+    program_lead_provisional_disposition: "PARTIAL_MATCH__LIKELY_SPLIT"
+    reason:
+      - "Abstract explanatory force is not identical to the broader question whether the ultimate ground must be concrete, may be abstract, or remains category-open."
+    Reviewer_C_decision_required:
+      - "Whether to split category eligibility from abstract/principle explanatory force."
+
+  BG-D08:
+    blind_label: "Admissibility of non-natural posits"
+    overlap_with_initial:
+      - "initial exclusion BG-NATURALISM-AS-BACKGROUND"
+      - "initial exclusion BG-SUPERNATURALISM-AS-BACKGROUND"
+    program_lead_provisional_disposition: "NEW_DIMENSION_CANDIDATE__REFORMULATION_REQUIRED"
+    reason:
+      - "The blind pass decomposes naturalism/supernaturalism into methodological restriction, metaphysical restriction, open admissibility, and causal-closure treatment."
+      - "A global worldview label remains prohibited; a precise ontological-admissibility assumption may satisfy A8."
+    Reviewer_C_decision_required:
+      - "Whether a narrower ontology-admissibility dimension should be admitted and how to define natural/non-natural without circular candidate loading."
+
+  BG-D09:
+    blind_label: "Epistemic standard for metaphysical posits"
+    overlap_with_initial: []
+    program_lead_provisional_disposition: "BOUNDARY_DISPUTE__A8_BACKGROUND_VS_PROTOCOL_METHOD"
+    reason:
+      - "The dimension can change truth-warrant without changing metaphysical truth."
+      - "Protocol evidence/warrant rules may already constrain some of this space, so an A8 background must not duplicate or override protocol method."
+    Reviewer_C_decision_required:
+      - "Admit only those epistemic standards not already fixed candidate-neutrally by Protocol 0.1.7, or exclude as methodology."
+
+  BG-D10:
+    blind_label: "Normative explanation"
+    overlap_with_initial:
+      - "BG-AXIOLOGICAL-FORCE"
+    program_lead_provisional_disposition: "MATCH__POSSIBLE_VARIANT_EXPANSION"
+    reason:
+      - "The existing axiological-force dimension already distinguishes ontic explanatory force, normative-only force, and anti-realism."
+      - "The blind action-only variant may sharpen the normative-only boundary."
+    Reviewer_C_decision_required:
+      - "Whether the action-only variant adds a truth-critical distinction beyond AX-VALUE-NORMATIVE-ONLY."
+
+  BG-D11:
+    blind_label: "Modal-logic strength"
+    overlap_with_initial:
+      - "BG-MODALITY-ACTUALITY"
+    program_lead_provisional_disposition: "NEW_DIMENSION_CANDIDATE__LIKELY_DISTINCT"
+    reason:
+      - "S5 versus weaker logics can change inferential validity even when parties agree on metaphysical modality."
+      - "The initial modality dimension does not separately encode logic strength."
+    Reviewer_C_decision_required:
+      - "Whether modal-logic strength must be an independent dimension and which systems are materially distinct for frozen inferences."
+
+  BG-D12:
+    blind_label: "Question legitimacy"
+    overlap_with_initial:
+      - "BG-MODALITY-ACTUALITY:MOD-DEFLATIONARY"
+      - "initial exclusion BG-SKEPTICISM-AS-BACKGROUND"
+    program_lead_provisional_disposition: "CANDIDATE_BACKGROUND_BOUNDARY_DISPUTE"
+    reason:
+      - "Framework-relative/quietist/verificationist dissolution may change the admissibility of the whole study."
+      - "Study candidates already include global-deflation and modal-dissolution families, so installing the same thesis as a background could double-count a candidate answer."
+    Reviewer_C_decision_required:
+      - "Identify any non-candidate metasemantic residue that qualifies as a background."
+      - "Exclude or merge any variant already subsumed by frozen candidate families."
+
+program_lead_only_dimensions_for_independent_review:
+  BG-AGENTIVE-MODAL-LINK:
+    blind_nearest_analogue:
+      - "BG-D04 intentional explanation"
+      - "BG-D02 modality"
+    provisional_disposition: "RETAIN_PENDING_A8_REVIEW"
+    review_question: "Does the necessary-agent-to-contingent-output/modal-collapse issue change a frozen inference independently enough to remain its own dimension?"
+  BG-METAPHYSICAL-INDETERMINACY:
+    blind_nearest_analogue:
+      - "BG-D02 modal status"
+      - "BG-D12 semantic legitimacy"
+    provisional_disposition: "RETAIN_PENDING_A8_REVIEW"
+    review_question: "Is ontic indeterminacy distinct from modal/semantic deflation and sufficiently truth-critical to remain a separate background dimension?"
+  BG-EXPLANATORY-REALISM:
+    blind_nearest_analogue:
+      - "BG-D04 explanation relation"
+    provisional_disposition: "RETAIN_BUT_REVIEW_SPLIT"
+    review_question: "Should realism/deflation about explanation remain distinct from relation-type admissibility?"
+  BG-ABSTRACT-PRINCIPLE-FORCE:
+    blind_nearest_analogue:
+      - "BG-D07 category constraints"
+    provisional_disposition: "RETAIN_BUT_REVIEW_SPLIT"
+    review_question: "Should abstract/principle explanatory force remain distinct from ontological category eligibility?"
+
+interaction_reconciliation:
+  blind_interactions:
+    - id: "BLIND-INT-D01-D03-D05"
+      maps_to:
+        - "BG-TOTALITY-EXPLANANDUM"
+        - "BG-PSR-SCOPE"
+        - "BG-DEPENDENCE-STRUCTURE"
+      initial_matrix_status: "PARTIALLY_REPRESENTED"
+      proposed_action: "REVIEW_NEW_HIGHER_ORDER_INTERACTION"
+    - id: "BLIND-INT-D02-D06-D11"
+      maps_to:
+        - "BG-MODALITY-ACTUALITY"
+        - "BG-D06 if admitted"
+        - "BG-D11 if admitted"
+      initial_matrix_status: "NOT_REPRESENTED"
+      proposed_action: "ADD_IF_D06_AND_D11_ADMITTED"
+    - id: "BLIND-INT-D03-D04-D07"
+      maps_to:
+        - "BG-PSR-SCOPE"
+        - "BG-EXPLANATORY-REALISM / possible explanation-relation split"
+        - "BG-ABSTRACT-PRINCIPLE-FORCE / possible category split"
+      initial_matrix_status: "PARTIALLY_REPRESENTED"
+      proposed_action: "REVIEW_NEW_HIGHER_ORDER_INTERACTION"
+    - id: "BLIND-INT-D04-D08-D10"
+      maps_to:
+        - "possible explanation-relation dimension"
+        - "BG-D08 if admitted"
+        - "BG-AXIOLOGICAL-FORCE"
+      initial_matrix_status: "NOT_REPRESENTED"
+      proposed_action: "ADD_IF_COMPONENTS_ADMITTED"
+    - id: "BLIND-INT-D05-D09"
+      maps_to:
+        - "BG-DEPENDENCE-STRUCTURE"
+        - "BG-D09 if admitted"
+      initial_matrix_status: "NOT_REPRESENTED"
+      proposed_action: "ADD_IF_D09_ADMITTED"
+    - id: "BLIND-INT-D12-ALL"
+      maps_to:
+        - "question-legitimacy gate if any non-candidate residue is admitted"
+      initial_matrix_status: "NOT_REPRESENTED"
+      proposed_action: "REVIEW_AS_GATE_RATHER_THAN_UNBOUNDED_CROSS_PRODUCT"
+
+compatibility_reconciliation:
+  blind_constraints_to_review:
+    - "BG-D12 V2/V3 versus truth-apt determinate explanandum"
+    - "BG-D02 epistemic/deflationary variants versus de re necessary-foundation inference"
+    - "BG-D03 no-general-demand versus contingency-only non-brute warrant"
+    - "BG-D08 metaphysical restriction versus non-natural property admissibility"
+    - "BG-D04 intentional-inadmissibility versus agency inference"
+    - "BG-D05 regress/cycle completeness with strong explanatory demand"
+  program_lead_matrix_constraints_to_review:
+    - "MOD-DEFLATIONARY with IND-ONTIC-POSSIBLE"
+    - "ER-DEFLATIONARY with ABS-EXPLANATORY"
+    - "PSR-GLOBAL with TOT-LOCAL-SUFFICIENCY"
+
+required_reviewer_C_output:
+  inclusion_exclusion_decision_for_every_blind_dimension: true
+  decision_for_every_program_lead_only_dimension: true
+  A8_1_reasons_required: true
+  A8_2_split_merge_decisions_required: true
+  A8_3_interaction_judgments_required: true
+  required_compatible_joint_combination_set_review_required: true
+  identify_repairs_before_background_register_can_freeze: true
+
+scope_controls:
+  blind_report_frozen_before_register_exposure: true
+  outcome_relevant_evidence_acquisition_started: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
