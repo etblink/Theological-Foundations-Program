@@ -1,0 +1,95 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_63_65_blob_sha: "1602f947f66890cdcbda75b20108556489f15af4"
+  prior_next_sequence: 66
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 66
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer A B3 equal-strength packet exposure: input blob 25f5a5d64ccd714ba2894655490986c66a6e694e, prompt blob 6ea99cafa50e7adab7f0bc293a1f5e555515d912, 13 frozen B3 packet blobs, candidate-universe/B3 controls, and narrowly bounded source-fit metadata permitted by the input."
+    exposure_class: "G0_REVIEWER_A_B3_EQUAL_STRENGTH_REVIEW_EXPOSURE"
+    amendment_surfaces: ["B3 steelman packets","B3 equal-strength control"]
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 65 and before sequence 67."
+
+  - sequence: 67
+    repository_commit: "05b7f03e3205a184e64779a7672d2948b33e6eb5"
+    timestamp_utc: "2026-10-07T01:36:52Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_STEELMAN_EQUAL_STRENGTH_REVIEW_REPORT_0_1_0.md blob edc8cf4ed7bd187495e766431d5911e6748fa9b8"
+    exposure_class: "G0_REVIEWER_A_B3_EQUAL_STRENGTH_RESULT_FREEZE"
+    amendment_surfaces: ["B3 steelman packets","B3 equal-strength control"]
+    outcome_relevant_evidence: false
+    result_status: "STEELMAN_EQUAL_STRENGTH_PASS"
+
+  - sequence: 68
+    repository_commit: "d945a60645f836799e01fc4aba33e302645a723b"
+    timestamp_utc: "2026-10-07T01:37:35Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_STEELMAN_EQUAL_STRENGTH_DISPOSITION_0_1_0.yaml blob 5c089cd7590275f2a97d7d14acdbabfb224e9599"
+    exposure_class: "G0_PROGRAM_LEAD_B3_EQUAL_STRENGTH_DISPOSITION"
+    amendment_surfaces: ["B3 steelman packets"]
+    outcome_relevant_evidence: false
+    result_status: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
+
+  - sequence: 69
+    repository_commit: "959ec972ddb74ed324ceac72a27212b8a9cf0e8c"
+    timestamp_utc: "2026-10-07T01:37:51Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_B3_STEELMAN_PACKET_SET_FREEZE_0_1_0.yaml blob edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+    exposure_class: "G0_B3_STEELMAN_PACKET_SET_FREEZE"
+    amendment_surfaces: ["B3 steelman packets","A4 claim typing","A6 necessary propositions"]
+    outcome_relevant_evidence: false
+    B3_complete: true
+
+  - sequence: 70
+    repository_commit: "302b9fa410af1a9ac7d6d770730ef45152182ebc"
+    timestamp_utc: "2026-10-07T01:39:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_0.yaml blob 375755374e0fc51b14a8ba6b370367c9816cd10b"
+    exposure_class: "G0_INITIAL_A4_A5_A6_INVENTORY_FREEZE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions"]
+    outcome_relevant_evidence: false
+    full_A6_coverage_certified: false
+
+  - sequence: 71
+    repository_commit: "5356b17c68b0fa6ca7d7ec72afdf5155437d34d1"
+    timestamp_utc: "2026-10-07T01:39:59Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob 1df6978564e761c1ed0737a539445456fa4ea91c"
+    exposure_class: "G0_REVIEWER_B_ASSIGNMENT_CONTROL"
+    amendment_surfaces: ["A3 reviewer lineage control","A4/A5/A6 review"]
+    outcome_relevant_evidence: false
+
+  - sequence: 72
+    repository_commit: "669b0bf77ff9f9108ad998d1165e283b2ed7c12e"
+    timestamp_utc: "2026-10-07T01:40:33Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_INPUT_FREEZE_0_1_0.yaml blob 6e665609851ff49e26d0607d2e4083cb6aad80b7"
+    exposure_class: "G0_REVIEWER_B_INITIAL_A4_A5_A6_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+  - sequence: 73
+    repository_commit: "e7b264ecb1cb3394f4c3bd885e86ed3e0a15cade"
+    timestamp_utc: "2026-10-07T01:40:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_PROMPT_0_1_0.md blob 2111685bd36fe162d60e36daba1f21962eba3f36"
+    exposure_class: "G0_REVIEWER_B_INITIAL_A4_A5_A6_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["A4 claim typing","A5 dependency map","A6 necessary propositions"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+next_sequence: 74
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
