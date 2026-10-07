@@ -1,0 +1,64 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REMAINING_G0_PREREGISTRATION_PLAN"
+status: "FROZEN_PROGRAM_LEAD_SEQUENCE__NO_G1_AUTHORIZATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+completed_prerequisites:
+  candidate_universe_frozen: true
+  steelman_packets_frozen: true
+  A4_A5_inventory_operational: true
+  A6_final_necessary_proposition_coverage_operational: true
+  A8_backgrounds_operational: true
+  A9_source_plan_operational: true
+  A10_required_lanes_frozen: true
+  A11_discriminators_operational: true
+  outcome_relevant_evidence_acquisition_started: false
+
+remaining_G0_order:
+  - step: "A13"
+    artifact_to_construct: "candidate-state expected / compatible-nondiscriminating / weakening / contradiction evidence register"
+    basis:
+      - "frozen steelman packets"
+      - "operative A11 discriminator states and direction rules"
+      - "operative final A6 coverage routes"
+      - "operative A8 backgrounds"
+    rule: "Do not turn candidate-native expectations into observed results or source findings."
+    initial_author: "PROGRAM_LEAD"
+    independent_reviewer_required_by_role_architecture_for_initial_freeze: false
+    later_controls:
+      - "Reviewer E remains adverse-source reviewer, coverage-state reviewer, and MAKEABLE certifier during G1."
+      - "Any post-freeze amendment is governed by C4."
+  - step: "A14"
+    artifact_to_construct: "stop / reopen condition register"
+    required_fields:
+      - "coverage target"
+      - "underdetermination condition"
+      - "insufficient-signal condition"
+      - "reopen_if"
+    state_effect: "insufficiency_threshold_frozen may become true only after this step is frozen and accepted."
+  - step: "A15"
+    artifact_to_construct: "question-specific G4 audit criteria"
+    required_scope:
+      - "standard G4 criteria"
+      - "Study-3-specific risks including necessary-foundation-to-God overreach, modal-status substitution, explanatory-scope leakage, hidden agency/value importation, and amendment/ledger chronology"
+  - step: "A16"
+    artifact_to_construct: "shared proposition map only if CLOSEST_TO_TRUTH is to remain available"
+    decision_rule: "Attempt a defensible shared map with at least two independent shared truth-bearing dimensions. If none exists without distortion, freeze CLOSEST_TO_TRUTH as unavailable rather than force a score."
+  - step: "G0_CLOSE"
+    action: "verify all A1-A17 preregistration obligations are frozen; then request explicit HUMAN_OWNER authorization before G1"
+    reason: "Program Lead may not self-authorize G1."
+
+sequencing_controls:
+  A13_before_A14: true
+  A14_before_G1: true
+  A15_before_G1: true
+  A16_before_G1_if_CLOSEST_TO_TRUTH_retained: true
+  no_source_acquisition_before_G0_close: true
+  no_proposition_dispositions_before_G1_G2: true
+  no_candidate_ranking_before_G3: true
+
+next_action:
+  id: "TFP-STUDY-3-A13-EXPECTED-WEAKENING-EVIDENCE-REGISTER"
+  action: "construct Study-3 A13 register from frozen candidate-native packets and operative G0 architecture"
