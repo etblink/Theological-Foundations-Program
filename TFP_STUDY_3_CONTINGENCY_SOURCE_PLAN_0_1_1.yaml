@@ -1,0 +1,385 @@
+schema_version: "0.1.1"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "SOURCE_PLAN"
+status: "FROZEN_REPAIR__PENDING_REVIEWER_D_RECHECK__NONOPERATIVE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+study_question:
+  text: "Does the existence of contingent reality warrant positing a necessary explanatory ground or foundation rather than accepting contingent reality as brute, and if so, what properties of that foundation are independently warranted without presupposing theism?"
+  status: "WORKING_G0_QUESTION__NOT_FINAL_PREREGISTRATION"
+
+frozen_inputs:
+  candidate_register:
+    path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    candidate_count: 13
+  background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    ordinary_dimension_count: 13
+    gate_only_dimension_count: 2
+  background_interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  operative_claim_inventory:
+    path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  A8_operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696"
+  prior_source_plan:
+    path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+    blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  repair_amendment_record:
+    path: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "9143a35ad317187531fbc6e10d7bbf861ccc4b49"
+
+planning_principles:
+  - "Source planning is pre-evidence architecture, not evidence acquisition."
+  - "No candidate receives a privileged database, source type, date window, language rule, or accessibility threshold."
+  - "Candidate-native sources are paired with serious adverse/critical sources and neutral/cross-tradition scholarship."
+  - "Historical source prestige is not treated as truth."
+  - "Secondary summaries cannot substitute for accessible primary/native sources when a primary/native claim is outcome-material."
+  - "Search/discovery systems may locate sources but are not themselves evidential authorities."
+  - "No theology, naturalism, supernaturalism, skepticism, or other worldview is installed as a source-selection default."
+  - "Backgrounds must have evidence classes capable of both supporting and challenging each live variant."
+  - "No outcome-relevant source is opened under this plan until G1 is separately authorized."
+
+repositories_corpora_databases:
+  bibliographic_discovery:
+    - "PhilPapers"
+    - "PhilArchive"
+    - "Crossref"
+    - "OpenAlex"
+    - "Google Scholar"
+    - "WorldCat"
+  scholarly_fulltext_or_publisher:
+    - "JSTOR"
+    - "Project MUSE"
+    - "Oxford Academic / Oxford Scholarship Online"
+    - "Cambridge Core"
+    - "SpringerLink"
+    - "Wiley Online Library"
+    - "Taylor & Francis Online"
+    - "SAGE Journals where relevant"
+    - "university institutional repositories"
+  historical_primary_text_access:
+    - "Internet Archive"
+    - "HathiTrust"
+    - "Project Gutenberg only for text identity/access, not scholarly apparatus"
+    - "publisher or critical-edition digital archives where accessible"
+  reference_orientation_not_final_evidence:
+    - "Stanford Encyclopedia of Philosophy"
+    - "Internet Encyclopedia of Philosophy"
+  provenance_rule:
+    - "Discovery-layer metadata must be resolved to the actual paper/book/chapter/edition before evidential use."
+    - "Preprints and accepted manuscripts are acceptable when bibliographic identity is stable; version differences must be recorded."
+    - "Reference encyclopedias may orient terminology and bibliography but may not be the sole support for a truth-critical proposition."
+
+primary_source_strata:
+  historical_philosophical:
+    - "Original texts of Hume, Russell, Spinoza, Lewis, Nozick, and other historically central authors where directly relevant to a candidate/background claim."
+    - "Critical editions or stable scholarly translations when the source is not originally English."
+  contemporary_candidate_native:
+    - "Books, peer-reviewed articles, or author manuscripts by proponents or principal developers of the exact candidate-family thesis or its indispensable machinery."
+  formal_metaphysics_modal_logic:
+    - "Original papers/books defining grounding, dependence, non-well-foundedness, metaphysical modality, actuality, modal logic, metaphysical indeterminacy, laws/principles, and related formal machinery."
+  theological_philosophical:
+    - "Primary philosophical theology sources only when they bear on a frozen candidate-specific proposition such as necessary agency; stronger religious attributes remain outside scope unless independently preregistered."
+  metaethical_axiological:
+    - "Primary axiarchic/value-to-being and metaethical sources bearing on objective value and ontic explanatory force."
+
+secondary_source_strata:
+  - "Peer-reviewed specialist discussion of the exact argument, candidate, background, or formal relation."
+  - "Scholarly monographs from academic presses."
+  - "High-quality survey/reference articles used for map checking and terminology."
+  - "Historical scholarship distinguishing an author's actual position from later reconstruction."
+  - "Critical literature that reconstructs the strongest version before objecting."
+
+candidate_native_strata:
+  C-BRUTE:
+    strongest_native:
+      - "Defenses of brute contingency/brute fact permissibility."
+      - "Native sources must distinguish ontic brutality from present ignorance, temporary explanatory failure, or merely unknown explanation."
+      - "Oppy-style naturalistic or non-theistic option-mapping where brute stopping is treated as a serious ultimate option."
+      - "Native treatment of nomological brute subvariants."
+    adverse_required:
+      - "PSR, arbitrariness, selective-stopping, and explanatory-demand critiques."
+      - "Arguments that an alleged brute stopping point is only present ignorance or an undiscovered explanation rather than ontic brutality."
+  C-REGRESS:
+    strongest_native:
+      - "Defenses of infinite explanatory/dependence regress or nonterminal explanation."
+      - "Humean/Oppy-style anti-terminus treatments where applicable."
+    adverse_required:
+      - "Well-foundedness, totality, deferral, transmission, and regress-viciousness arguments."
+  C-HOLISTIC:
+    strongest_native:
+      - "Non-well-founded grounding/dependence and holistic/cyclic explanation literature."
+      - "Work distinguishing non-well-foundedness from item-reflexive self-explanation."
+    adverse_required:
+      - "Asymmetry/irreflexivity/well-foundedness objections and collapse-to-regress/self-explanation arguments."
+  C-SELF-EXPLANATORY:
+    strongest_native:
+      - "Self-explanation/reflexive explanation proposals and synthetic models identified in the B3 packet."
+      - "Necessary causa-sui formulations do not count as native access unless the stopping item remains contingent; necessity may not silently replace the candidate's contingent self-explanation thesis."
+    adverse_required:
+      - "Irreflexivity, presupposition, vacuity, and contingency/necessity objections."
+  C-GLOBAL-DEFLATION:
+    strongest_native:
+      - "Humean/Russell-style objections to a further global explanatory demand."
+      - "Non-aggregation/local-sufficiency arguments."
+    adverse_required:
+      - "Arguments for a genuine totality-level explanandum and global explanatory burden."
+  C-MODAL-DISSOLUTION:
+    strongest_native:
+      - "Modal fictionalist, anti-realist, framework-relative, or related literature capable of undermining the central contingency presupposition."
+    adverse_required:
+      - "Defenses of robust de re metaphysical modality and objections to semantic dissolution."
+  C-INDETERMINATE-ULTIMACY:
+    strongest_native:
+      - "Metaphysical indeterminacy literature supporting genuine worldly indeterminacy."
+      - "Independent arguments extending indeterminacy to ultimacy."
+    adverse_required:
+      - "Determinacy-first and semantic-only diagnoses; B6/epistemic-collapse objections."
+  C-NECESSITARIAN:
+    strongest_native:
+      - "Spinozistic or contemporary necessitarian accounts."
+      - "Arguments that apparent contingency reflects epistemic limitation or incomplete modal understanding."
+    adverse_required:
+      - "Modal-collapse/explanatory-cost objections and defenses of genuine contingency."
+  C-INDEXICAL-PLURALITY:
+    strongest_native:
+      - "Lewisian/indexical actuality and ontological-parity literature."
+      - "Plurality models that can bear an ultimate stopping role."
+    adverse_required:
+      - "Actuality privilege, selector, advanced-modalizing, and explanatory-relevance objections."
+  C-NEC-IMPERSONAL-CONCRETE:
+    strongest_native:
+      - "Immanent/concrete necessary foundation literature and serious non-agentive concrete analogues."
+      - "Native-access probes must separately seek single, plural, and layered cardinality variants."
+      - "Native-access probes must separately seek causal, grounding, constitutive, and other explicitly specified relation variants."
+    adverse_required:
+      - "Category, contingency, explanatory-sufficiency, and hidden-agency objections."
+  C-NEC-AGENTIVE:
+    strongest_native:
+      - "Necessary-agent cosmological/foundation arguments, including O'Connor and Pruss/Rasmussen-class sources at the exact strength they support."
+      - "Explicit native-access probes for non-Abrahamic and non-classical-theist necessary-agent formulations are required so this family is not sourced as Christianity, classical theism, or generic theism by default."
+      - "Classical-theist sources count only at the strength of necessary agency actually supported; goodness, omniscience/knowledge, omnipotence/power, providence, worship-worthiness, or religious identity are not imported into the candidate."
+    adverse_required:
+      - "Modal-collapse, intentional-explanation, agency-fundamentality, sufficient-reason, and unexplained-selector objections."
+      - "Attribute-overreach objections to importing goodness, knowledge, power, providence, worship-worthiness, religious identity, or other stronger theological properties from a necessary-agent conclusion."
+  C-NEC-IMPERSONAL-PRINCIPLE:
+    strongest_native:
+      - "Mathematical/structural/law-metaphysical/modal-principle approaches identified in the B3 packet, including adjacent Tegmark/Ladyman/Grajner-class machinery only at the strength actually supported."
+    adverse_required:
+      - "Abstract-instantiation gap, descriptive-vs-explanatory, category, and underdetermination objections."
+  C-AXIARCHIC:
+    strongest_native:
+      - "Leslie/Mulgan/Mander-class axiarchic/value-to-being literature and serious impersonal axiological explanation."
+    adverse_required:
+      - "Value-to-being gap, disvalue, normativity-vs-ontology, action-only, and metaethical anti-realist critiques."
+
+background_source_strata:
+  BG-EXPLANATORY-REALISM:
+    support_and_challenge:
+      - "Grounding/metaphysical explanation realism."
+      - "Explanation pluralism."
+      - "Deflationary/pragmatic/anti-grounding approaches."
+  BG-PSR-SCOPE:
+    support_and_challenge:
+      - "Strong/global PSR defenses."
+      - "Restricted PSR proposals."
+      - "Local-only explanatory demand."
+      - "Anti-PSR/brute-fact permissibility."
+  BG-TOTALITY-EXPLANANDUM:
+    support_and_challenge:
+      - "Aggregation/totality-based cosmological reasoning."
+      - "Hume-Edwards/local-sufficiency arguments."
+      - "Mereological/set-theoretic objections to a determinate totality explanandum."
+  BG-DEPENDENCE-STRUCTURE:
+    support_and_challenge:
+      - "Well-founded grounding."
+      - "Infinite-regress/infinitist completion."
+      - "Non-well-founded/holistic grounding."
+      - "Reflexive/self-explanation permissibility."
+      - "Relation-specific viciousness."
+  BG-MODAL-STATUS:
+    support_and_challenge:
+      - "De re metaphysical modality."
+      - "Logical/conceptual-only readings."
+      - "Nomic/physical-only readings."
+      - "Epistemic modality."
+      - "Modal fictionalism/anti-realism."
+  BG-ACTUALITY-PRIVILEGE:
+    support_and_challenge:
+      - "Privileged actuality."
+      - "Indexical/non-privileged actuality."
+  BG-ABSTRACT-PRINCIPLE-FORCE:
+    support_and_challenge:
+      - "Abstract/structural explanatory realism."
+      - "Constraint-only accounts."
+      - "Nominalist/concretist/descriptive-only objections."
+  BG-GROUND-CATEGORY:
+    support_and_challenge:
+      - "Concrete-ground requirements."
+      - "Abstract eligibility."
+      - "Category-open approaches."
+  BG-EXPLANATION-RELATION:
+    support_and_challenge:
+      - "Causal/sustaining explanation."
+      - "Grounding/dependence."
+      - "Nomic subsumption."
+      - "Contrastive vs noncontrastive explanation."
+      - "Intentional/reason explanation and its admissibility limits."
+  BG-ONTOLOGY-ADMISSIBILITY:
+    support_and_challenge:
+      - "Causal closure and metaphysical naturalism-style restrictions."
+      - "Methodological-naturalism-only approaches."
+      - "Ontology-open approaches."
+  BG-AGENTIVE-MODAL-LINK:
+    support_and_challenge:
+      - "Libertarian/agent-causal contingent-output models."
+      - "Modal-collapse and sufficient-reason objections."
+      - "Reductionist/structural accounts of agency."
+  BG-AXIOLOGICAL-FORCE:
+    support_and_challenge:
+      - "Axiological ontic explanation."
+      - "Reasons-for-action only."
+      - "Normative-only value realism."
+      - "Metaethical anti-realism."
+  BG-METAPHYSICAL-INDETERMINACY:
+    support_and_challenge:
+      - "Ontic/metaphysical indeterminacy."
+      - "Determinacy-first metaphysics."
+      - "Semantic-vagueness diagnoses."
+  BG-TEMPORAL-ORIGIN-LINK:
+    gate_sources:
+      - "Work explicitly distinguishing temporal beginning arguments from modal contingency arguments."
+      - "Any source used to license a temporal-origin premise must be independently identified and cannot enter by background assumption."
+  BG-MODAL-LOGIC:
+    gate_sources:
+      - "S5 defenses for the exact modal inference."
+      - "T/S4/weaker-system objections and quantified-modal-logic limitations."
+
+neutral_cross_tradition_strata:
+  - "Analytic metaphysics scholarship not written to defend a specific Study-3 candidate."
+  - "Formal grounding/dependence/modal-logic work whose results can cut across several candidates."
+  - "Comparative philosophy of religion/cosmological-argument scholarship that explicitly maps multiple live options."
+  - "Meta-metaphysical and explanation-theory work applicable symmetrically to theists and non-theists."
+  - "Historical scholarship used to prevent anachronistic attribution rather than to establish truth."
+  - "A dedicated cross-tradition bias probe is required and cannot be satisfied by generic Anglophone comparative literature alone."
+  - "Where published philosophical sources and competent editions/translations exist, probe Greek and Latin classical metaphysics, scholastic and continental formulations, Arabic falsafa and kalam, Sanskrit Nyaya, Buddhist and Jain dependence literature, and classical Chinese spontaneous-order or correlative metaphysics."
+  - "Cross-tradition material is used to expose framing and source-selection bias; no tradition is installed as true or granted evidential priority by inclusion."
+
+adverse_source_symmetry:
+  rule: "Every candidate and every live background variant must have at least one serious adverse/critical stratum capable in principle of defeating or materially limiting it."
+  minimum_probe:
+    - "Search candidate name/thesis plus objection, critique, problem, response, rejoinder, grounding, explanation, modality, or relevant technical term."
+    - "Search strongest proponent citation chains for published critics."
+    - "Search strongest critic citation chains for proponent replies."
+  no_token_opposition: true
+  equal_strength_requirement: "A criticism counts only if it engages the strongest scoped formulation rather than a caricature."
+
+date_and_language_limits:
+  language:
+    primary_working_language: "English"
+    non_English_primary_sources: "admissible through a stable scholarly translation; original-language spot-check required where a disputed term is outcome-material and competent access exists"
+  dates:
+    historical_sources: "no lower date bound"
+    contemporary_search_default: "1970-present for modern analytic literature, expanded earlier or later when a candidate/background has a canonical source outside that window"
+    recency_supplement: "search the most recent 10 years for state-of-literature changes and recent objections; this supplement never excludes older controlling work"
+  date_rule: "No source is excluded solely for age if it remains the canonical statement of the proposition or objection."
+
+inclusion_rules:
+  - "Directly bears on a frozen candidate proposition, live background, critical dependency, or later preregistered discriminator."
+  - "Identity and authorship are verifiable."
+  - "Argument or result is accessible at sufficient detail to assess the exact claim."
+  - "For outcome-material attribution, source wording supports the attributed strength."
+  - "Peer-reviewed, academic-press, or otherwise independently serious scholarship is preferred; exceptional non-peer-reviewed primary material requires explicit justification."
+  - "Preprints may be included when stable and technically substantive, with publication status disclosed."
+  - "Historical primary sources require competent edition/translation control."
+
+exclusion_rules:
+  - "Popular apologetics or polemics when stronger scholarly sources are available."
+  - "Anonymous/unsourced summaries."
+  - "Search snippets, AI-generated summaries, or reference-page paraphrases as evidential support."
+  - "Sources whose only relevance comes from presupposing theism, naturalism, supernaturalism, or skepticism as true."
+  - "Physics-specific cosmology unless a later discriminator independently preregisters the empirical premise it serves."
+  - "Fine-tuning, revelation, miracle, religious-experience, or prophecy literature absent a later authorized discriminator."
+  - "Duplicate publication versions unless version differences are outcome-material."
+
+search_and_selection_rules:
+  staged_search:
+    - stage: "S1_NATIVE"
+      rule: "Start from the B3 packet's strongest native sources and their backward/forward citation networks."
+    - stage: "S2_ADVERSE"
+      rule: "Independently search serious objections, critiques, and rival technical frameworks; do not rely only on opponents cited by proponents."
+    - stage: "S3_NEUTRAL"
+      rule: "Search neutral surveys, comparative treatments, and formal work that can expose missing alternatives or terminology."
+    - stage: "S4_BACKGROUND"
+      rule: "For each operative background dimension/gate, search every live variant and at least one serious challenge to each variant."
+    - stage: "S5_RECENCY"
+      rule: "Run a recent-literature supplement to capture major post-canonical developments."
+  search_term_construction:
+    - "Use frozen candidate IDs as internal labels only; searches use ordinary scholarly terminology and synonyms."
+    - "Include proposition-level terms from the operative A4/A5/A6 inventory."
+    - "For synthetic candidates, search component theses separately rather than assuming the synthetic label exists in literature."
+    - "For synthetic or thin-literature families, record a precursor search before treating absence of a direct literature as a genuine gap. At minimum this applies to C-INDETERMINATE-ULTIMACY, contingent C-SELF-EXPLANATORY, relevant C-HOLISTIC reconstructions, contingent nomological C-BRUTE, C-AXIARCHIC, and C-NEC-IMPERSONAL-CONCRETE."
+    - "The precursor search must record alternate terminology, component theses, adjacent historical formulations, backward/forward citation routes, and whether a plausible precursor was found."
+    - "For ambiguous terms such as necessity, grounding, explanation, actuality, and indeterminacy, combine with disambiguating technical terms."
+  selection:
+    - "Record why each source was admitted and which candidate/background/proposition it serves."
+    - "Record serious excluded sources and the reason when exclusion could affect symmetry."
+    - "Do not stop after finding supportive sources if adverse search strata remain unprobed."
+    - "Citation count, author prestige, or tradition size cannot decide inclusion by itself."
+    - "For C-NEC-AGENTIVE, citation count, confessional volume, or polemical volume cannot complete native access; narrow-formulation and non-confessional probes, including non-Abrahamic/non-classical-theist probes, must be attempted before native access is treated as probed."
+    - "For any synthetic/thin family, low source count cannot by itself establish a literature gap until the required precursor search is recorded."
+
+inaccessible_source_handling:
+  required_steps:
+    - "Record citation, access barrier, and date of attempt."
+    - "Attempt legal alternative access: author manuscript, institutional repository, preprint, library holding, interlibrary loan path, or another stable edition."
+    - "For an inaccessible primary/native source, seek a citable passage in a lawful accessible version; secondary quotation alone does not automatically substitute."
+    - "If a truth-critical source remains inaccessible, record the affected proposition/comparison and defer MAKEABLE status to Reviewer E."
+  consequences:
+    - "Unperformed retrieval is COVERAGE_INCOMPLETE, never UNMAKEABLE."
+    - "Inaccessibility cannot be silently treated as evidence against a candidate."
+    - "A candidate does not become structurally inadequate merely because a paywalled source is inconvenient; the N3/MAKEABLE rules govern genuine access failure."
+
+planned_provenance_fields_per_source:
+  - "source_id"
+  - "full_bibliographic_identity"
+  - "stable_url_or_identifier_if_available"
+  - "version_or_edition"
+  - "access_date"
+  - "source_stratum"
+  - "candidate_or_background_targets"
+  - "proposition_ids_served"
+  - "native_adverse_neutral_class"
+  - "primary_secondary_status"
+  - "access_status"
+  - "selection_reason"
+  - "known_limitations"
+
+coverage_controls:
+  candidate_native_source_access_required_for_all_13: true
+  serious_adverse_source_probe_required_for_all_13: true
+  every_live_background_variant_requires_support_and_challenge_strata: true
+  source_plan_does_not_certify_coverage: true
+  Reviewer_E_later_controls_adverse_source_and_coverage_state: true
+  MAKEABLE_not_determined_at_A9: true
+
+review_status:
+  Program_Lead_initial_plan_frozen: true
+  Reviewer_D_blind_missing_strata_elicitation_complete: true
+  Reviewer_D_initial_source_plan_review_complete: true
+  Reviewer_D_initial_source_plan_review_result: "SOURCE_PLAN_REPAIR_REQUIRED"
+  Program_Lead_repair_applied: true
+  Reviewer_D_focused_recheck_pending: true
+  C4_direction_review_pending: true
+  ledger_integrity_review_pending: true
+  source_plan_passed: false
+  source_plan_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
