@@ -1,0 +1,83 @@
+schema_version: "0.1.5"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "EVIDENCE_EXPOSURE_LEDGER"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+continuation:
+  supersedes: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_4.yaml"
+  base_ledger_blob_sha: "a2fcd8accf9a00a993b4a884d8cf95c57ba95418"
+  inherited_sequence_range: "1-22"
+  inherited_entries_rewritten: false
+  continuation_entries_begin: 23
+
+entries:
+  - sequence: 23
+    repository_commit: "fc8ff0eac9b6169762e2897184d8eb13eec93d7d"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_A_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_REPORT_0_1_0.md blob 503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+    exposure_class: "G0_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_RESULT_FREEZE"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion"]
+    outcome_relevant_evidence: false
+    result_status: "CANDIDATE_UNIVERSE_REPAIR_PASS"
+
+  - sequence: 24
+    repository_commit: "11a86d88635eaf4c3d28a842ff7ac8310b7f9f11"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml blob 39439dce137ce19c1b68ee665b231061a79ffed8"
+    exposure_class: "G0_PROGRAM_LEAD_INDEPENDENT_RECHECK_CONFIRMATION"
+    amendment_surfaces: ["A7 candidate universe","B1-B4 candidate admission/exclusion","C4 pre-evidence amendment control"]
+    outcome_relevant_evidence: false
+
+  - sequence: 25
+    repository_commit: "f299a64f31ea5c03fa7890c44100ae69ca1d18fc"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md blob 073a00b53f3f2e20c0cf17b5fc931498396ff71d"
+    exposure_class: "G0_REVIEWER_F_ASSIGNMENT_CONTROL"
+    amendment_surfaces: ["A3 reviewer lineage control","C4 amendment-direction review"]
+    outcome_relevant_evidence: false
+
+  - sequence: 26
+    repository_commit: "1583767aba50a290a5ee0e68cd8fd697d259179d"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_INPUT_FREEZE_0_1_0.yaml blob 1c4f3ac6d223820e202e7804692883611ad1d70f"
+    exposure_class: "G0_REVIEWER_F_C4_INPUT_FREEZE"
+    amendment_surfaces: ["C4 candidate-universe amendment direction"]
+    outcome_relevant_evidence: false
+    exposure_to_reviewer_F: false
+
+  - sequence: 27
+    repository_commit: "a0f245f920b686afc8af882812b26c3bee7685e2"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_PROMPT_0_1_0.md blob b12aaf77b8640695f7766d4cdce14685ad5aa7ce"
+    exposure_class: "G0_REVIEWER_F_C4_PROMPT_FREEZE"
+    amendment_surfaces: ["C4 candidate-universe amendment direction"]
+    outcome_relevant_evidence: false
+    exposure_to_reviewer_F: false
+
+integrity_state:
+  next_sequence: 28
+  rewrite_detected: false
+  last_independent_integrity_check: null
+  outcome_evidence_exposure_started: false
+
+G0_state:
+  human_authorization_received: true
+  blind_candidate_elicitation_complete: true
+  candidate_universe_initial_review_complete: true
+  candidate_universe_repaired: true
+  candidate_universe_repair_recheck_complete: true
+  candidate_universe_repair_recheck_result: "PASS"
+  candidate_universe_C4_direction_review_ready: true
+  reviewer_F_assigned: false
+  reviewer_G_ledger_integrity_review_required_after_C4_classification: true
+  candidate_universe_frozen: false
+  claim_typing_frozen: false
+  necessary_proposition_coverage_complete: false
+  background_register_frozen: false
+  source_plan_passed: false
+  discriminators_frozen: false
+  G0_complete: false
+  G1_authorized: false
