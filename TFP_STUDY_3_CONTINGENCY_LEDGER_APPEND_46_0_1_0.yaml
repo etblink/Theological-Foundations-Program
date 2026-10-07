@@ -1,0 +1,24 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_40_45_blob_sha: "49ed192cd4043a5353b5462aa313d6c0018bf342"
+  prior_next_sequence: 46
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 46
+    repository_commit: "ed7228ec44d21374c043f95ebe226165f7cf42e6"
+    timestamp_utc: "2026-10-07T01:12:50Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_MANIFEST_0_1_0.yaml blob 2798b0f43268d637ae715ae86cb3edfd9d93a520"
+    exposure_class: "G0_B3_STEELMAN_PACKET_CONSTRUCTION_MANIFEST_FREEZE"
+    amendment_surfaces: ["B3 steelman packets","A4 claim typing","A6 necessary-proposition coverage"]
+    outcome_relevant_evidence: false
+
+next_sequence: 47
+outcome_relevant_evidence_exposure_started: false
