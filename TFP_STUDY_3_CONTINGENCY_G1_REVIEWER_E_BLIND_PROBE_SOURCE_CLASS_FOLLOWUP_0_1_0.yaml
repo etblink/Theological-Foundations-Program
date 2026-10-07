@@ -1,0 +1,351 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_REVIEWER_E_BLIND_PROBE_SOURCE_CLASS_FOLLOWUP"
+status: "FOLLOWUP_UNIVERSE_FROZEN__READY_FOR_REVIEWER_E_RECONCILIATION__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+authority:
+  controlling_reconciliation:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION_0_1_0.yaml"
+    blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+  F1_operational_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+    status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+
+purpose: >
+  Execute the eight source-class followups identified by Reviewer E's blind external
+  adverse-source probe. This artifact expands and evaluates the source universe only.
+  It does not certify proposition coverage, MAKEABLE/UNMAKEABLE status, candidate
+  adequacy, candidate ranking, proposition truth, or any theological conclusion.
+
+research_controls:
+  search_snippets_evidential_support: false
+  thin_literature_counts_against_candidate: false
+  access_failure_counts_against_candidate: false
+  candidate_ranking_performed: false
+  proposition_truth_dispositions_performed: false
+  coverage_certification_performed: false
+  MAKEABLE_certification_performed: false
+  F1_favorable_or_mixed_strengthening_used: false
+  source_class_relevance_may_be_recorded: true
+  negative_searches_and_access_gaps_preserved: true
+
+source_classes:
+
+  SC1_INDIAN_NON_THEISTIC_ANTI_CREATOR:
+    prior_state: "PARTIAL"
+    followup_state: "MATERIALLY_REPRESENTED_WITH_LISTED_ACCESS_LIMITATIONS"
+    relevance_boundary:
+      - "Tests necessary-agent and necessary/permanent-cause routes with non-Abrahamic objections structurally distinct from standard Western modal-collapse objections."
+      - "Do not import arguments that depend on specifically Nyaya cosmology into unrelated candidate routes without an explicit bridge."
+    sources:
+      - id: "SC1-S1"
+        citation: "Parimal G. Patil, Against a Hindu God: Buddhist Philosophy of Religion in India (Columbia University Press, 2009)."
+        identifier: "ISBN 9780231142229"
+        access: "PUBLISHER_DESCRIPTION_AND_CONTENTS"
+        route: "Columbia University Press"
+        source_role: "Ratnakirti-centered Buddhist critique of Isvara and Hindu cosmological/design reasoning."
+      - id: "SC1-S2"
+        citation: "Roger R. Jackson, 'Dharmakirti's Refutation of Theism,' Philosophy East and West 36(4):315-348 (1986)."
+        identifier: "DOI 10.2307/1398992"
+        access: "BIBLIOGRAPHIC_RECORD__FULL_TEXT_NOT_RETRIEVED_IN_THIS_PASS"
+        source_role: "Primary scholarly route for Dharmakirti's anti-theistic/permanent-cause critique."
+      - id: "SC1-S3"
+        citation: "Alfred X. Ye, 'On Salikanatha's Critique of Isvara and the Notions of God,' Journal of Indian Philosophy 49:451-465 (2021)."
+        identifier: "DOI 10.1007/s10781-021-09469-y"
+        access: "OPEN_FULL_TEXT"
+        source_role: "Prabhakara Mimamsa critique of Isvara; traces overlap with Kumarila and distinguishes Nyaya/Vaisesika conceptions."
+      - id: "SC1-S4"
+        citation: "Frank Van Den Bossche, 'Jain Arguments Against Nyaya Theism: A Translation of the Isvarotthapaka Section of Gunaratna's Tarka-Rahasya-Dipika,' Journal of Indian Philosophy 26(1):1-26 (1998)."
+        identifier: "HANDLE 1854/LU-388528"
+        access: "INSTITUTIONAL_BIBLIOGRAPHIC_RECORD__TRANSLATION_IDENTIFIED"
+        source_role: "Jaina anti-Nyaya-theism translation route."
+    evaluation:
+      - "The Reviewer-E omission class is genuine: Buddhist, Mimamsa, and Jaina anti-creator traditions supply materially different objection families and should not be replaced by generic Western atheistic objections."
+      - "Ye provides directly accessible Mimamsa metaphysical criticism; Patil establishes the Ratnakirti route; Jackson identifies the Dharmakirti route; Van Den Bossche establishes a translated Jaina route."
+      - "The exact Dharmakirti permanent-cause argument should not be treated as textually verified from Jackson until the article or a primary translation is directly inspected."
+    carried_gaps:
+      - "Jackson 1986 full text not directly retrieved in this pass."
+      - "Patil 2009 book not read in full; publisher description/contents used for route verification."
+      - "No Sanskrit primary-text adjudication; not required unless interpretation becomes truth-critical."
+    coverage_effect: "ADDS_REQUIRED_NON_ABRAHAMIC_ADVERSE_STRATUM__NO_COVERAGE_CERTIFICATION"
+
+  SC2_MADHYAMAKA_ABHIDHARMA_HUAYAN:
+    prior_state: "PARTIAL"
+    followup_state: "MATERIALLY_REPRESENTED"
+    sources:
+      - id: "SC2-S1"
+        citation: "Allison Aitken, 'No Unity, No Problem: Madhyamaka Metaphysical Indefinitism,' Philosophers' Imprint 21(31):1-24 (2021)."
+        access: "OPEN_OR_ARCHIVED_TEXT_IDENTIFIED"
+        source_role: "Madhyamaka anti-foundational/indefinitist model that is not reducible to a simple one-direction infinite regress."
+      - id: "SC2-S2"
+        citation: "Allison Aitken, 'Nagarjuna and Vasubandhu on the principle of sufficient reason,' Asian Journal of Philosophy 3 (2024)."
+        identifier: "DOI 10.1007/s44204-024-00142-1"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Direct comparison of Madhyamaka and Sautrantika/Abhidharma-style approaches to dependent origination and PSR."
+      - id: "SC2-S3"
+        citation: "Stanford Encyclopedia of Philosophy, 'Abhidharma,' section on causation and conditional relations."
+        access: "OPEN_REFERENCE_ARTICLE"
+        source_role: "Maps Sarvastivada four conditions/six causes and Theravada conditional-relation systems; individuates dharmas through causal-condition networks."
+      - id: "SC2-S4"
+        citation: "Nicholaos Jones, Metaphors for Interdependence: Fazang's Buddhist Metaphysics (Oxford University Press, 2025)."
+        identifier: "DOI 10.1093/9780197807224.001.0001"
+        access: "PUBLISHER_BOOK_AND_CHAPTER_ABSTRACTS"
+        source_role: "Contemporary reconstruction of Huayan interdependence, causality, mutuality, and relation to fundamentality."
+    evaluation:
+      - "Abhidharma adds a condition-network model that should not be conflated with either brute stopping or a single foundational terminus."
+      - "Aitken makes the PSR-without-foundations route explicit and therefore materially sharpens the regress/holistic comparison."
+      - "Jones 2025 is especially useful because it rejects the simplistic reading of Fazang as universal simultaneous symmetric mutual dependence; the reconstructed dependence relations are more structured."
+    carried_gaps:
+      - "Jones 2025 full monograph not read in full; publisher chapter abstracts used."
+      - "No claim is made that Madhyamaka, Abhidharma, and Huayan form one unified metaphysical position."
+    coverage_effect: "DEEPENS_REGRESS_AND_HOLISTIC_NATIVE_FORMULATIONS__NO_COVERAGE_CERTIFICATION"
+
+  SC3_GROUNDING_MODALITY:
+    prior_state: "PARTIAL_AND_ARCHITECTURE_RELEVANT"
+    followup_state: "MATERIALLY_REPRESENTED__F1_ARCHITECTURE_ALREADY_RESOLVED"
+    sources:
+      - id: "SC3-S1"
+        citation: "Mark Pearce, 'Metaphysical Rationalism Requires Grounding Indeterminism,' Journal of the American Philosophical Association 11(2):303-322 (2025)."
+        identifier: "DOI 10.1017/apa.2024.17"
+        access: "OPEN_FULL_TEXT"
+        source_role: "Argues that plausible metaphysical rationalism requires grounding indeterminism; directly motivates the impersonal necessary-ground/contingent-output modal-link issue."
+      - id: "SC3-S2"
+        citation: "Stephan Leuenberger, 'Grounding and Necessity,' Inquiry 57(2):151-174 (2014)."
+        identifier: "DOI 10.1080/0020174X.2013.855654"
+        access: "OPEN_FULL_TEXT"
+        source_role: "Challenges grounding necessitarianism with prima facie counterexamples."
+      - id: "SC3-S3"
+        citation: "Alexander Skiles, 'Against Grounding Necessitarianism,' Erkenntnis 80(4):717-751 (2015)."
+        identifier: "DOI 10.1007/s10670-014-9669-y"
+        access: "ARCHIVED_FULL_TEXT"
+        source_role: "Defends grounding contingentism and argues it can retain grounding's explanatory roles."
+      - id: "SC3-S4"
+        citation: "Kevin Richardson, 'Grounding is Necessary and Contingent,' Inquiry 64(4):453-480 (2021)."
+        identifier: "DOI 10.1080/0020174X.2019.1612777"
+        access: "ABSTRACT_AND_BIBLIOGRAPHIC_RECORD"
+        source_role: "Pluralist route distinguishing necessary and contingent dimensions of grounding."
+      - id: "SC3-S5"
+        citation: "Ralf M. Bader, 'The Fundamental and the Brute,' Philosophical Studies 178:1121-1142 (2021)."
+        identifier: "DOI 10.1007/s11098-020-01486-z"
+        access: "ABSTRACT_AND_BIBLIOGRAPHIC_RECORD"
+        source_role: "Stochastic grounding and nonfundamental bruteness; important for brute/fundamental separation."
+    evaluation:
+      - "The literature contains live necessitarian, contingentist, indeterministic, and pluralist approaches; the modal link cannot be assumed in either direction."
+      - "This source class independently supports treating F1 as a genuine background variable rather than folding it into the truth of IC-N5/PR-N6/AX-N5."
+      - "Architecture handling is now controlled by operative A8 0.1.2 and its post-evidence contamination rules."
+    contamination_control:
+      - "No contingency-preserving source is allowed to strengthen an affected candidate's current confirmatory result merely because it fits IMP-CONTINGENCY-PRESERVING."
+      - "Genuine adverse consequences of IMP-NECESSITATING may enter only where independently warranted."
+    carried_gaps:
+      - "Not every cited grounding-modality paper identified by Reviewer E was retrieved in full; the class itself is nevertheless represented by multiple independent positions."
+    coverage_effect: "SOURCE_CLASS_FILLED_AND_F1_CONTEXTUALIZED__NO_COVERAGE_CERTIFICATION"
+
+  SC4_NECESSITISM_CONTINGENTISM:
+    prior_state: "UNDERREPRESENTED"
+    followup_state: "MATERIALLY_REPRESENTED"
+    sources:
+      - id: "SC4-S1"
+        citation: "Timothy Williamson, Modal Logic as Metaphysics (Oxford University Press, 2013), especially 'Contingentism and Necessitism' and 'Consequences of Necessitism.'"
+        identifier: "DOI 10.1093/acprof:oso/9780199552078.001.0001"
+        access: "PUBLISHER_CHAPTER_ABSTRACTS"
+        source_role: "Canonical necessitist formulation: ontology non-contingent while contingency/change can occur in how entities are."
+      - id: "SC4-S2"
+        citation: "Notre Dame Philosophical Reviews review of Williamson, Modal Logic as Metaphysics (2013)."
+        access: "OPEN_REVIEW"
+        source_role: "Makes the existence/concreteness distinction explicit through the example of contingently concrete necessary existents."
+      - id: "SC4-S3"
+        citation: "Cristina Nencha, 'Necessitism, Contingentism, and Lewisian Modal Realism,' Acta Analytica 37:227-247 (2022)."
+        identifier: "DOI 10.1007/s12136-021-00479-9"
+        access: "OPEN_ACCESS_RECORD"
+        source_role: "Tests whether Lewisian modal realism can preserve contingentist intuitions."
+    evaluation:
+      - "Existence-contingency and concreteness-contingency must be kept distinct when applying the frozen definition of contingent reality."
+      - "This is an assumption/source class, not presently a materially distinct 14th ultimacy candidate."
+      - "If later proposition review finds a truth-critical distinction not representable by BG-MODAL-STATUS/A16 plus the operative F1 dimension, B5 reopening remains available."
+    carried_gaps: []
+    coverage_effect: "FILLS_HIGHER_ORDER_MODAL_SOURCE_CLASS__NO_COVERAGE_CERTIFICATION"
+
+  SC5_NEO_CONFUCIAN_LI_QI:
+    prior_state: "MISSING"
+    followup_state: "MATERIALLY_REPRESENTED_WITH_INTERPRETIVE_DISAGREEMENT_PRESERVED"
+    sources:
+      - id: "SC5-S1"
+        citation: "JeeLoo Liu, Neo-Confucianism: Metaphysics, Mind, and Morality (Wiley-Blackwell, 2017)."
+        identifier: "DOI 10.1002/9781394261130"
+        access: "PUBLISHER_BOOK_AND_CHAPTER_SUMMARIES"
+        source_role: "Analytic reconstruction of li-qi metaphysics across major Neo-Confucian figures."
+      - id: "SC5-S2"
+        citation: "JeeLoo Liu, 'Wang Fuzhi's Theory of Principle Inherent in Qi,' chapter 4 of Neo-Confucianism (2017)."
+        identifier: "DOI 10.1002/9781394261130.ch4"
+        access: "PUBLISHER_SUMMARY"
+        source_role: "Wang Fuzhi qi-monism and principle-in-qi model."
+      - id: "SC5-S3"
+        citation: "Bin Song, review of Liu, Neo-Confucianism: Metaphysics, Mind, and Morality, Notre Dame Philosophical Reviews (2019)."
+        access: "OPEN_FULL_REVIEW"
+        source_role: "Presents and critically qualifies Liu's charge that Zhu Xi's li-qi dichotomy renders li causally inert/ontologically irrelevant."
+      - id: "SC5-S4"
+        citation: "Stanford Encyclopedia of Philosophy, 'Qing Philosophy,' discussion of Wang Fuzhi and qi-based metaphysics."
+        access: "OPEN_REFERENCE_ARTICLE"
+        source_role: "Independent scholarly route for li as immanent in qi and qi as the generative/form-giving basis in Wang Fuzhi."
+    evaluation:
+      - "The li-qi tradition supplies a genuine cross-tradition test of whether a necessary/nonconcrete principle is explanatory, causally inert, immanent in concrete process, or merely an abstraction from it."
+      - "The source class should not be flattened into a single 'li is inert' objection: Song explicitly contests the inevitability of that reading, and Wang Fuzhi represents a different li-qi architecture."
+      - "No new candidate is triggered; the material maps to existing principle/category/instantiation-force surfaces."
+    carried_gaps:
+      - "Chinese primary-text adjudication deferred unless a specific interpretation becomes truth-critical."
+    coverage_effect: "FILLS_CROSS_TRADITION_PRINCIPLE_SOURCE_CLASS__NO_COVERAGE_CERTIFICATION"
+
+  SC6_EXISTENTIAL_INERTIA_PERSISTENCE:
+    prior_state: "MISSING"
+    followup_state: "MATERIALLY_REPRESENTED__RELATION_SPECIFIC"
+    sources:
+      - id: "SC6-S1"
+        citation: "Joseph C. Schmid and Daniel J. Linford, Existential Inertia and Classical Theistic Proofs (Springer, 2023)."
+        identifier: "DOI 10.1007/978-3-031-19313-2"
+        access: "PUBLISHER_BOOK_OVERVIEW_AND_CHAPTER_METADATA"
+        source_role: "Systematic treatment of existential inertia and persistence explanations used against sustaining-cause arguments."
+      - id: "SC6-S2"
+        citation: "Schmid and Linford, 'The Metaphysics of Existential Inertia,' pp. 131-187 in Existential Inertia and Classical Theistic Proofs."
+        access: "PUBLISHER_CHAPTER_METADATA_AND_ABSTRACT_ROUTE"
+        source_role: "Develops multiple persistence accounts compatible with objects persisting without continuous external sustenance unless destroyed."
+    evaluation:
+      - "This is a serious adverse route to candidate variants that require continuous sustaining causation."
+      - "It does not by itself address noncausal grounding, constitutive explanation, or every necessary-foundation route."
+    scope_rule: "Apply only to sustaining/causal premises that actually require continued external sustenance; never generalize it to grounding/constitutive routes without a separate bridge."
+    carried_gaps:
+      - "Full book text not retrieved in this pass."
+    coverage_effect: "FILLS_RELATION_SPECIFIC_ADVERSE_CLASS__NO_COVERAGE_CERTIFICATION"
+
+  SC7_BRUTE_NECESSITY_MODAL_PRIMITIVISM:
+    prior_state: "MISSING"
+    followup_state: "MATERIALLY_REPRESENTED_WITH_OPPOSING_POSITIONS"
+    sources:
+      - id: "SC7-S1"
+        citation: "James Van Cleve, 'Brute Necessity,' Philosophy Compass 13:e12516 (2018)."
+        identifier: "DOI 10.1111/phc3.12516"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Directly asks whether necessary truths can lack an explanation of their necessity."
+      - id: "SC7-S2"
+        citation: "James Van Cleve, 'Brute Necessity and the Mind-Body Problem,' in Brute Facts (Oxford University Press, 2018), pp. 63-96."
+        access: "PUBLISHER_BOOK_METADATA"
+        source_role: "Extended brute-necessity application."
+      - id: "SC7-S3"
+        citation: "Dana Goswick, 'Are Modal Facts Brute Facts?' in Brute Facts (Oxford University Press, 2018), pp. 97-112."
+        identifier: "DOI 10.1093/oso/9780198758600.003.0006"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Argues against modal primitivism and for a reductive alternative."
+    evaluation:
+      - "Necessity does not automatically entail explanatory non-bruteness; that inference itself requires argument."
+      - "The literature is not one-directional: Van Cleve makes brute necessity a live possibility, while Goswick argues modal primitivism is untenable."
+      - "This class tests explanatory assumptions and candidate bridges; it does not presently create a separate ultimate contingent-reality candidate."
+    carried_gaps: []
+    coverage_effect: "FILLS_BRUTE_NECESSITY_MODAL_PRIMITIVISM_CLASS__NO_COVERAGE_CERTIFICATION"
+
+  SC8_FUNDAMENTAL_INDETERMINACY:
+    prior_state: "PARTIAL"
+    followup_state: "MATERIALLY_REPRESENTED_WITH_EXPLICIT_EPISTEMICIST_CARRY"
+    sources:
+      - id: "SC8-S1"
+        citation: "Elizabeth Barnes, 'Fundamental Indeterminacy,' Analytic Philosophy 55(4):339-362 (2014)."
+        identifier: "DOI 10.1111/phib.12049"
+        access: "BIBLIOGRAPHIC_RECORD"
+        source_role: "Core formulation of fundamental indeterminacy."
+      - id: "SC8-S2"
+        citation: "Elizabeth Barnes and J. Robert G. Williams, 'A Theory of Metaphysical Indeterminacy,' Oxford Studies in Metaphysics 6:103-148 (2011)."
+        identifier: "DOI 10.1093/acprof:oso/9780199603039.003.0003"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Treats metaphysical indeterminacy as a primitive worldly phenomenon, contrasted with semantic and epistemic accounts."
+      - id: "SC8-S3"
+        citation: "Chanwoo Lee, 'From indeterminacy in a fundamental theory to fundamental indeterminacy?' Analytic Philosophy 66(1):84-96 (2025)."
+        identifier: "DOI 10.1111/phib.12297"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Direct adverse route: an indeterminate fundamental theory may instead be nonfundamental or support antirealism, so Barnes's inference to FI is contestable."
+      - id: "SC8-S4"
+        citation: "Elizabeth Barnes, 'Arguments Against Metaphysical Indeterminacy and Vagueness,' Philosophy Compass 5(11):953-964 (2010)."
+        identifier: "DOI 10.1111/j.1747-9991.2010.00348.x"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Survey of major arguments against metaphysical indeterminacy and possible responses."
+      - id: "SC8-S5"
+        citation: "Timothy Williamson, Vagueness (Routledge, 1994)."
+        access: "PUBLISHER_DESCRIPTION"
+        source_role: "Canonical epistemicist alternative: vagueness as ignorance of sharp boundaries rather than worldly indeterminacy."
+      - id: "SC8-S6"
+        citation: "Stewart Shapiro, 'Vagueness, Metaphysics, and Objectivity,' in Cuts and Clouds (Oxford University Press, 2010), pp. 149-162."
+        identifier: "DOI 10.1093/acprof:oso/9780199570386.003.0009"
+        access: "PUBLISHER_ABSTRACT"
+        source_role: "Challenges a clean separation of worldly and representational sources of vagueness."
+    evaluation:
+      - "The class now contains both a native metaphysical-indeterminacy formulation and multiple adverse alternatives."
+      - "Lee 2025 is the most direct follow-up against the inference from theory-level indeterminacy to fundamental worldly indeterminacy."
+      - "Williamson-style epistemicism is a genuine alternative source-account for vagueness/indeterminacy, but it is not automatically a direct refutation of Barnes's specific fundamental-indeterminacy thesis."
+      - "Accordingly the epistemicist route is preserved as a live challenge class rather than silently treated as decisive evidence against C-INDETERMINATE-ULTIMACY."
+    carried_gaps:
+      - "No source retrieved in this pass applies Williamson-style epistemicism directly and specifically to Barnes 2014's fundamental-indeterminacy argument."
+      - "This remaining gap is explicit and must not be converted into negative candidate evidence."
+    coverage_effect: "DEEPENS_FUNDAMENTAL_INDETERMINACY_ADVERSE_CLASS__EPISTEMICIST_ROUTE_CARRIED_AS_NONDECISIVE_GAP__NO_COVERAGE_CERTIFICATION"
+
+cross_class_findings:
+  - id: "CF1"
+    finding: "The source universe now materially represents all eight blind-probe classes at the source-class level."
+    limitation: "Material representation is not proposition-level coverage certification."
+  - id: "CF2"
+    finding: "No follow-up source class independently forces a 14th candidate on the present record."
+    limitation: "B5 reopening remains available if Reviewer E later identifies a materially distinct ultimacy model."
+  - id: "CF3"
+    finding: "SC3 confirms that impersonal necessary-ground output modality is a live literature-level variable."
+    control: "Positive use remains restricted by the post-evidence F1 contamination rule."
+  - id: "CF4"
+    finding: "SC5 and SC2 materially improve cross-tradition symmetry by adding Chinese and Buddhist metaphysical structures not reducible to Western theism-versus-naturalism categories."
+  - id: "CF5"
+    finding: "SC6 is explicitly relation-specific; existential inertia cannot be generalized to noncausal grounding."
+  - id: "CF6"
+    finding: "SC7 blocks any unargued inference from necessity alone to explanatory non-bruteness."
+
+access_and_negative_knowledge:
+  full_or_open_text_routes_used:
+    - "Ye 2021"
+    - "Leuenberger 2014"
+    - "Skiles 2015 archived text"
+    - "Pearce 2025"
+    - "Stanford Encyclopedia of Philosophy reference entries"
+    - "Notre Dame Philosophical Reviews open reviews"
+  abstract_or_metadata_only_material:
+    - "Jackson 1986"
+    - "Aitken 2024"
+    - "Jones 2025 selected chapters"
+    - "Williamson 2013 selected chapters"
+    - "Liu 2017 selected chapters"
+    - "Schmid and Linford 2023 selected chapters"
+    - "Van Cleve 2018"
+    - "Goswick 2018"
+    - "Barnes 2014"
+    - "Lee 2025"
+  unresolved_access_or_depth_gaps:
+    - "Dharmakirti/Jackson full-text verification"
+    - "Patil book full-text verification"
+    - "Chinese primary-text adjudication if later truth-critical"
+    - "Direct epistemicist treatment of Barnes 2014 fundamental indeterminacy"
+  rule: "These gaps are preserved for Reviewer E; none counts as evidence against an affected candidate."
+
+completion:
+  SC1_complete_for_reconciliation: true
+  SC2_complete_for_reconciliation: true
+  SC3_complete_for_reconciliation: true
+  SC4_complete_for_reconciliation: true
+  SC5_complete_for_reconciliation: true
+  SC6_complete_for_reconciliation: true
+  SC7_complete_for_reconciliation: true
+  SC8_complete_for_reconciliation_with_explicit_gap: true
+  all_eight_source_classes_followed_up: true
+  source_followup_complete_for_reviewer_E_reconciliation: true
+  proposition_coverage_certified: false
+  MAKEABLE_certified: false
+  reviewer_E_reconciliation_required_next: true
+
+next_action:
+  reviewer: "same Anthropic / Claude Opus 5.5 Reviewer-E lineage used for the blind external adverse-source review"
+  action: "reconcile Program Lead S1-S5 acquisition universe plus this follow-up universe against Reviewer E's blind probe, then perform only the scoped coverage/MAKEABLE work authorized by a frozen input"
+  coverage_may_be_certified_by_this_artifact: false
