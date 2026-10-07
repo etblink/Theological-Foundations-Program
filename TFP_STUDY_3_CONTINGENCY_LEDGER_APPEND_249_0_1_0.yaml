@@ -1,0 +1,32 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_248_blob_sha: "c5cb7c4f727f6145b0ba56ac8cebab4924feb8a8"
+  prior_next_sequence: 249
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 249
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Deliberate S5_RECENCY supplement searches/openings for 2024-2026 work across candidate, discriminator, modal, grounding, indeterminacy, ontology, axiarchic, and cosmological-explanation surfaces."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S5_RECENCY_SEARCH_EXPOSURE"
+    amendment_surfaces: ["A9 recency supplement","candidate/source map recency","background recency","G0 reopen-trigger check"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S5_RECENCY"
+    search_snippets_evidential_support: false
+    controls:
+      - "Recent publication date is not evidential priority."
+      - "Fine-tuning, problem-of-evil, and other excluded routes remain excluded even when recent."
+      - "No proposition disposition, candidate ranking, coverage certification, or MAKEABLE determination is made."
+      - "A recent source triggers C4 only if it exposes a materially distinct candidate/background/discriminator or other frozen-architecture defect."
+
+next_sequence: 250
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
