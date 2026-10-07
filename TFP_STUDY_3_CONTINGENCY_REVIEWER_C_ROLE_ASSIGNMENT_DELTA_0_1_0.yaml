@@ -1,0 +1,32 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_ROLE_ASSIGNMENT_DELTA"
+status: "FROZEN"
+date: "2026-10-06"
+
+base_role_architecture:
+  artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+  blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+
+reviewer_slot: "REVIEWER_C"
+assignment_status: "ASSIGNED__A8_BLIND_BACKGROUND_ELICITATION_READY"
+
+authorized_roles:
+  - "background_register_inclusion_exclusion_reviewer"
+  - "background_granularity_interaction_reviewer"
+  - "discriminator_tier_reviewer"
+
+current_stage_scope:
+  - "A8 blind background elicitation"
+  - "later A8 inclusion/exclusion review"
+  - "later A8 granularity and interaction review"
+
+blindness_controls:
+  initial_background_register_exposed_before_blind_report: false
+  initial_interaction_matrix_exposed_before_blind_report: false
+
+prohibited_roles:
+  - "post_evidence_direction_result_reviewer"
+  - "strict_independent_auditor"
+
+G1_authorized: false
