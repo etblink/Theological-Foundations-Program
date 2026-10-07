@@ -1,0 +1,84 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_INPUT_FREEZE"
+status: "FROZEN__POST_BLIND_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_C"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that completed the A8 blind background elicitation"
+  role:
+    - "background_register_inclusion_exclusion_reviewer"
+    - "background_granularity_interaction_reviewer"
+  blind_stage_complete: true
+  blind_report_blob_sha: "b476446df7080f71b622e86a7b5d86ed0d76b8c2"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_REPORT_0_1_0.md"
+    blob_sha: "b476446df7080f71b622e86a7b5d86ed0d76b8c2"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_REGISTER_0_1_0.yaml"
+    blob_sha: "cba09f9ca46ba6a336aeec38820e352623c89400"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_BACKGROUND_INTERACTION_MATRIX_0_1_0.yaml"
+    blob_sha: "995a8f908f6f4e89f19d5f1a13561368206a1493"
+  - path: "TFP_STUDY_3_CONTINGENCY_A8_BLIND_ELICITATION_RECONCILIATION_DOCKET_0_1_0.yaml"
+    blob_sha: "7cda53c49b70453fd7f635013a3982a76f0513ae"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    purpose: "candidate/background boundary only"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+    blob_sha: "f756a89b2848a9a6089465fc29aed38d9401e67e"
+    purpose: "candidate/background boundary only"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+    purpose: "truth-critical inference relevance only"
+  - description: "Protocol 0.1.7 A8, A8.1, A8.2 and A8.3 only as needed"
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "source plan"
+  - "discriminator proposals or tiering"
+  - "candidate ranking or truth/plausibility adjudication"
+  - "past chats or memory retrieval for Study-3 substantive material"
+
+task:
+  - "Independently review every inclusion and exclusion in the Program Lead initial background register against A8(1)-(5)."
+  - "Reconcile all 12 blind dimensions against the Program Lead register and give an explicit disposition for each: ADMIT_NEW, MERGE_WITH_EXISTING, SPLIT_EXISTING, RETAIN_EXISTING, EXCLUDE_AS_CANDIDATE, EXCLUDE_AS_PROTOCOL_METHOD, EXCLUDE_AS_IRRELEVANT, or REPAIR_REQUIRED_OTHER."
+  - "Independently review the four Program-Lead-only dimensions named in the reconciliation docket, plus every other initial dimension not cleanly matched by the blind pass."
+  - "Resolve candidate-vs-background boundaries using the frozen candidate register/exclusion register without ranking or adjudicating candidates."
+  - "Review all A8.2 split/merge decisions: split only where a variant difference changes a frozen truth-critical inference; merge where it does not."
+  - "Review the initial A8.3 interaction matrix, including all 36 initial unordered pairs, 12 provisionally material pairs, two initial higher-order interactions, and the blind interactions in the reconciliation docket."
+  - "Determine what pairwise/higher-order interactions must be added, removed, split, merged, or converted into gating conditions."
+  - "Review compatibility/incompatibility constraints from both the blind report and initial matrix."
+  - "Specify the required compatible joint-combination set at the level needed for later sensitivity design; do not silently sample favorable combinations."
+  - "Flag any combination space that is too large to test responsibly and state whether transparent scope narrowing or INSUFFICIENT_SIGNAL_WITHIN_SCOPE would be required."
+  - "Decide whether the background register/matrix can freeze as-is or requires repair before A8 completion."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "A8.1 INCLUSION / EXCLUSION REVIEW"
+    - "A8.2 GRANULARITY REVIEW"
+    - "A8.3 INTERACTION REVIEW"
+    - "REQUIRED COMPATIBLE JOINT-COMBINATION SET"
+    - "REQUIRED REPAIRS"
+    - "BACKGROUND REGISTER REVIEW STATUS"
+  required_dimension_table_fields:
+    - "source_dimension_or_existing_dimension"
+    - "final_disposition"
+    - "A8_1_reason"
+    - "target_dimension_if_merged_or_split"
+    - "candidate_boundary_note_if_any"
+  status_namespace:
+    - "BACKGROUND_REGISTER_REVIEW_PASS"
+    - "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  blind_report_frozen_before_post_blind_exposure: true
+  outcome_relevant_evidence_acquisition_started: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
