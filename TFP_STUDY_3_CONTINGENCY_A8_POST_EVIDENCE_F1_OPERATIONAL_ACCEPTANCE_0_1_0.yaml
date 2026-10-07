@@ -1,0 +1,95 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+authority_chain:
+  Reviewer_C_F1_granularity_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "84859f469089896bc86f340857caaf2d09b25c55"
+    disposition: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+  Program_Lead_F1_granularity_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "15174e9f82f4c4311071919f48e357d02450ba75"
+  Reviewer_F_C4_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "99632908a7a9f49bf2ccfc5ac04bba3d201599ff"
+    disposition: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+  Program_Lead_C4_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "ff82e39939475ed62854dd1f8b98dbdbfd5257a8"
+  Reviewer_G_ledger_repair_recheck_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "b9e1e25609908d429ce0d2657f9c6ffd209fa58e"
+    disposition: "G1_F1_A8_LEDGER_INTEGRITY_PASS"
+  Program_Lead_ledger_recheck_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "6bc0563776444518c0764885272ee51d4cd37853"
+    disposition: "G1_F1_A8_LEDGER_INTEGRITY_PASS__INDEPENDENTLY_CONFIRMED__OPERATIONAL_ACCEPTANCE_AUTHORIZED"
+
+accepted_architecture:
+  background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml"
+    blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+    operational_now: true
+  background_interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_2.yaml"
+    blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6"
+    operational_now: true
+  amendment_record:
+    path: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "15a0b13742a7b737cfcc1627a79501f90b4f9165"
+  newly_explicit_background_dimension: "BG-IMPERSONAL-GROUNDING-MODAL-LINK"
+  affected_candidate_propositions: ["IC-N5","PR-N6","AX-N5"]
+  historical_pre_repair_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    status: "SUPERSEDED_FOR_CURRENT_STUDY_OPERATIONAL_A8_USE_BY_THIS_ACCEPTANCE__PRESERVED_AS_HISTORY"
+  historical_pre_repair_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    status: "SUPERSEDED_FOR_CURRENT_STUDY_OPERATIONAL_A8_USE_BY_THIS_ACCEPTANCE__PRESERVED_AS_HISTORY"
+
+Protocol_C4_consequence:
+  descriptive_correction_must_be_preserved: true
+  genuine_adverse_candidate_level_consequences_may_enter_current_confirmatory_study: true
+  favorable_or_mixed_effect_may_not_strengthen_any_candidate_confirmatorily: true
+  positive_comparative_use_requires_new_preregistered_cycle_or_genuinely_held_out_evidence: true
+  ranking_change_rule:
+    if_amendment_changes_relative_dominance_or_ranking: "UNDERDETERMINED_WITHIN_SCOPE: POST_EVIDENCE_DIRECTIONAL_CONTAMINATION"
+  favorable_combination_sampling_forbidden: true
+  no_separate_confirmatory_ceiling_arithmetic: true
+
+operational_interpretation:
+  IMP_NECESSITATING:
+    current_confirmatory_use: "ADVERSE_CONSEQUENCES_MAY_BE_APPLIED_WHERE_GENUINELY_WARRANTED"
+  IMP_CONTINGENCY_PRESERVING:
+    current_confirmatory_use: "DESCRIPTIVELY_PRESERVED__MAY_NOT_STRENGTHEN_CURRENT_CONFIRMATORY_CANDIDATE_OR_COMPARATIVE_RESULT"
+  IMP_UNFIXED:
+    current_confirmatory_use: "DESCRIPTIVELY_PRESERVED__NO_FAVORABLE_STRENGTHENING__ADVERSE_OR_NEUTRAL_CONSEQUENCES_ONLY_AS_WARRANTED"
+  truth_of_variant_decided_here: false
+  favorable_variant_selected_here: false
+  candidate_result_issued_here: false
+  proposition_result_issued_here: false
+  ranking_issued_here: false
+  theological_result_issued_here: false
+
+coverage_and_source_gate:
+  Reviewer_E_coverage_review_unpaused_by_this_acceptance: false
+  MAKEABLE_review_unpaused_by_this_acceptance: false
+  source_class_followup_remains_required: true
+  required_followup_source_classes:
+    - "Indian non-theistic / anti-creator traditions"
+    - "deeper Madhyamaka / Abhidharma / Huayan material"
+    - "grounding-modality literature"
+    - "necessitism / contingentism"
+    - "Neo-Confucian li-qi"
+    - "existential-inertia / persistence literature"
+    - "brute necessity / modal primitivism"
+    - "fundamental-indeterminacy literature"
+  next_gate: "Complete blind-probe source-class followups, then reconcile them with the same Reviewer-E lineage before scoped coverage-state and COMPARISON:<id> MAKEABLE certification."
+
+strict_audit_carry:
+  sequence_255_reviewer_E_input_freeze_deviation: "CARRY_FORWARD"
+  this_acceptance_is_not_strict_audit: true
