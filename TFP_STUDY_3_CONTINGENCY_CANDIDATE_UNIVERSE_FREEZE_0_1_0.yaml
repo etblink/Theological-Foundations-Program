@@ -1,0 +1,69 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "CANDIDATE_UNIVERSE_FREEZE"
+status: "FROZEN"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+freeze_basis:
+  admitted_candidate_register:
+    path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    promotion: "EXACT_CONTENT_PROMOTED_BY_REFERENCE__SOURCE_FILE_NOT_REWRITTEN"
+  exclusion_register:
+    path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+    blob_sha: "f756a89b2848a9a6089465fc29aed38d9401e67e"
+    promotion: "EXACT_CONTENT_PROMOTED_BY_REFERENCE__SOURCE_FILE_NOT_REWRITTEN"
+
+independent_controls:
+  Reviewer_A_candidate_universe_repair_recheck:
+    blob_sha: "503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+    disposition: "CANDIDATE_UNIVERSE_REPAIR_PASS"
+  Reviewer_F_C4_amendment_direction_review:
+    blob_sha: "ab994925a1d8e99f7085d4e449c06f625f7c28e2"
+    disposition: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_G_ledger_integrity_repair_recheck:
+    blob_sha: "b99a3171b51452d3e4a8d0f373634589947ef42d"
+    disposition: "LEDGER_INTEGRITY_REPAIR_PASS"
+  Program_Lead_ledger_recheck_disposition:
+    blob_sha: "9c03a2873ca026a8db81c97e46012d3013b8b8d2"
+    disposition: "LEDGER_INTEGRITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED"
+
+admitted_candidate_ids:
+  - "C-BRUTE"
+  - "C-REGRESS"
+  - "C-HOLISTIC"
+  - "C-SELF-EXPLANATORY"
+  - "C-GLOBAL-DEFLATION"
+  - "C-MODAL-DISSOLUTION"
+  - "C-INDETERMINATE-ULTIMACY"
+  - "C-NECESSITARIAN"
+  - "C-INDEXICAL-PLURALITY"
+  - "C-NEC-IMPERSONAL-CONCRETE"
+  - "C-NEC-AGENTIVE"
+  - "C-NEC-IMPERSONAL-PRINCIPLE"
+  - "C-AXIARCHIC"
+
+candidate_count: 13
+
+freeze_controls:
+  candidate_order_is_not_ranking: true
+  B6_meta_outcomes_are_not_candidates: true
+  necessary_foundation_does_not_equal_God: true
+  downstream_properties_require_separate_warrant: true
+  failure_of_necessary_foundation_does_not_establish_naturalism: true
+  outcome_relevant_evidence_exposure_started: false
+  late_candidate_rule: "Any later candidate discovery or construction must use Protocol B5 and, if the frozen universe itself changes, Protocol C4 amendment control."
+
+scope_effect:
+  A7_candidate_universe_frozen: true
+  candidate_steelman_packets_frozen: false
+  claim_typing_frozen: false
+  necessary_proposition_coverage_complete: false
+  background_register_frozen: false
+  source_plan_passed: false
+  discriminators_frozen: false
+  G0_complete: false
+  G1_authorized: false
