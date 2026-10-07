@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_OPERATIVE__FINAL_A6_CONTENT_COMPLETE__C4_PASS__REVIEWER_G_LEDGER_INTEGRITY_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_OPERATIVE__A10_REQUIRED_LANES_FROZEN__A11_OPERATIVE__FINAL_A6_OPERATIVE__A13_NEXT__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "fd0a7fa1a52c06e3020522262a5add49291edf1f"
+  research_branch_head: "f08d63800ca639b77dd94670f0c051c64a0e0fc0"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -382,7 +382,7 @@ current_scope:
       - "ledger_integrity_reviewer"
       - "strict_independent_auditor"
   Reviewer_G:
-    status: "ASSIGNED__BASELINE_LEDGER_INTEGRITY_PASS__A4_A5_A6_EXTENSION_INTEGRITY_PASS__A8_BACKGROUND_LEDGER_INTEGRITY_PASS__A9_SOURCE_PLAN_LEDGER_INTEGRITY_PASS__A11_LEDGER_INTEGRITY_PASS__FINAL_A6_LEDGER_INTEGRITY_READY"
+    status: "ASSIGNED__BASELINE_LEDGER_INTEGRITY_PASS__A4_A5_A6_EXTENSION_INTEGRITY_PASS__A8_BACKGROUND_LEDGER_INTEGRITY_PASS__A9_SOURCE_PLAN_LEDGER_INTEGRITY_PASS__A11_LEDGER_INTEGRITY_PASS__FINAL_A6_LEDGER_INTEGRITY_PASS"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
@@ -446,7 +446,15 @@ current_scope:
     final_A6_ledger_integrity_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md"
       blob_sha: "20430a44e740be9558f045685ffc1812e85575cb"
-      exposure_to_Reviewer_G: false
+      exposure_to_Reviewer_G: true
+    final_A6_ledger_integrity_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+      blob_sha: "73be34e5a7be306a10f602c4037893f034a05f55"
+      disposition: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+    Program_Lead_final_A6_ledger_integrity_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+      blob_sha: "6b287b84e57a5f21d54fdab0eb754650e3ab99dc"
+      disposition: "FINAL_A6_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__OPERATIONALIZATION_AUTHORIZED"
     extension_launch_entries_outside_certification_target:
       sequences: [97, 98]
       reason: "avoid self-referential integrity certification"
@@ -986,15 +994,37 @@ current_scope:
     previously_certified_baseline_sequence: 193
     fixed_endpoint_sequence: 220
     fixed_endpoint_commit: "57a118060fe3002f5a4de7edf4c4d8c85467c20c"
-    exposure_to_Reviewer_G: false
+    exposure_to_Reviewer_G: true
   final_A6_reviewer_G_ledger_integrity_prompt:
     artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md"
     blob_sha: "20430a44e740be9558f045685ffc1812e85575cb"
-    exposure_to_Reviewer_G: false
+    exposure_to_Reviewer_G: true
   final_A6_ledger_integrity_launch_append:
     artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_221_222_0_1_0.yaml"
     blob_sha: "5a570d82ab63d020ae11a41afd4f484313aee74f"
-    next_sequence: 223
+  final_A6_reviewer_G_ledger_integrity_report:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "73be34e5a7be306a10f602c4037893f034a05f55"
+    disposition: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+  final_A6_program_lead_ledger_integrity_disposition:
+    artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "6b287b84e57a5f21d54fdab0eb754650e3ab99dc"
+    disposition: "FINAL_A6_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__OPERATIONALIZATION_AUTHORIZED"
+  final_A6_operational_acceptance:
+    artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "713b6f873784e9af765f2b4802f2aa220ae6b50d"
+    status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+  final_A6_integrity_result_and_acceptance_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_223_226_0_1_0.yaml"
+    blob_sha: "909a605d9f1a8966f2c5733e7dc36b605abce206"
+  remaining_G0_preregistration_plan:
+    artifact: "TFP_STUDY_3_CONTINGENCY_REMAINING_G0_PREREGISTRATION_PLAN_0_1_0.yaml"
+    blob_sha: "202cd800f39e9b3ad26470e6dfa1dbdadfa07bb4"
+    status: "FROZEN_PROGRAM_LEAD_SEQUENCE__NO_G1_AUTHORIZATION"
+  remaining_G0_preregistration_plan_ledger_append:
+    artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_227_0_1_0.yaml"
+    blob_sha: "cae10d2a707b09a37caf3cca8bfdb8ed7a23c242"
+    next_sequence: 228
   A9_source_plan_repair_completion:
     artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_COMPLETION_0_1_0.yaml"
     blob_sha: "65adcaf171c2290b56bddd36950df295e2102c42"
@@ -1271,9 +1301,14 @@ current_scope:
     final_A6_C4_direction_review_result: "PASS__PRE_EVIDENCE_AMENDMENT__NEUTRAL__CONDITIONAL_ON_LEDGER_INTEGRITY"
     final_A6_ledger_integrity_review_required_before_operational_use: true
     final_A6_ledger_integrity_review_ready: true
-    final_A6_ledger_integrity_review_complete: false
-    final_A6_coverage_map_operational: false
+    final_A6_ledger_integrity_review_complete: true
+    final_A6_ledger_integrity_review_result: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+    final_A6_coverage_map_operational: true
     necessary_proposition_coverage_complete: true
+    A13_expected_weakening_evidence_frozen: false
+    A14_stop_reopen_conditions_frozen: false
+    A15_audit_criteria_frozen: false
+    A16_shared_proposition_map_status: "NOT_YET_DETERMINED"
     insufficiency_threshold_frozen: false
     G0_complete: false
   G1_authorized: false
@@ -1290,23 +1325,18 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-FINAL-A6-LEDGER-INTEGRITY-REVIEW"
-  action: "continue_same_Reviewer_G_session_for_sequence_194_220_final_A6_ledger_integrity_audit"
+  id: "TFP-STUDY-3-A13-EXPECTED-WEAKENING-EVIDENCE-REGISTER"
+  action: "construct_and_freeze_candidate_state_expected_compatible_weakening_and_contradiction_profiles"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 223
-  previously_certified_baseline_sequence: 193
-  fixed_endpoint_sequence: 220
-  fixed_endpoint_commit: "57a118060fe3002f5a4de7edf4c4d8c85467c20c"
-  reviewer_G_input_blob_sha: "14d1beffb42bc2e7fe44338fe227515b5b6126eb"
-  reviewer_G_prompt_blob_sha: "20430a44e740be9558f045685ffc1812e85575cb"
+  ledger_next_sequence: 228
+  governing_plan_blob_sha: "202cd800f39e9b3ad26470e6dfa1dbdadfa07bb4"
   requirements:
-    - "use the exact same Anthropic / Claude Opus 5.5 Reviewer-G conversation that returned A11_LEDGER_INTEGRITY_PASS"
-    - "audit exact continuity and predecessor blob pins for sequences 194-220 from the certified sequence-193 baseline"
-    - "verify commit/blob/timestamp identity, add-once/no-rewrite history, off-repository event anchors, and absence of unledgered Study-3 commits"
-    - "resolve sequence 214 event commit versus append-container commit and confirm or reject the Program Lead identity resolution"
-    - "confirm the five-to-six erratum is non-content-changing and bound after the exact Reviewer-B-certified map blob"
-    - "independently confirm or reject Reviewer F's PRE_EVIDENCE_AMENDMENT chronology premise"
-    - "do not redo A6 content certification or C4 direction review, inspect outcome evidence/source-acquisition results, alter A6/A11, rank candidates, or begin G1"
+    - "derive candidate-native expectations from the frozen steelman packets rather than from post hoc outcome evidence"
+    - "for each candidate state freeze expected evidence, compatible but nondiscriminating evidence, weakening evidence, and contradiction conditions where possible"
+    - "cross-check against operative A11 states/direction rules, A6 routes, and A8 backgrounds without changing them"
+    - "do not inspect outcome-relevant evidence or source-acquisition results"
+    - "do not issue proposition dispositions, MAKEABLE findings, candidate adequacy, ranking, or truth-warrant conclusions"
+    - "do not authorize G1"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
