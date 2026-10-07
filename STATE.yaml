@@ -1,5 +1,5 @@
 schema_version: "0.3.0"
-updated_at: "2026-10-06"
+updated_at: "2026-10-07"
 
 program:
   name: "Theological Foundations Program"
@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_FROZEN__REVIEWER_G_FOCUSED_RECHECK_READY__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
+  status: "G1_F1_A8_OPERATIVE_UNDER_POST_EVIDENCE_CONTAMINATION_CONTROLS__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "dd751dda06a593107d4fcfd35bdcf53c0aac1bdc"
+  research_branch_head: "39bcbcadf38fae05220dd8a16e9917293586eb7a"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -388,7 +388,7 @@ current_scope:
       - "ledger_integrity_reviewer"
       - "strict_independent_auditor"
   Reviewer_G:
-    status: "ASSIGNED__PRIOR_LEDGER_INTEGRITY_PASSES__G1_F1_A8_REPAIR_REQUIRED__FOCUSED_RECHECK_READY"
+    status: "ASSIGNED__PRIOR_LEDGER_INTEGRITY_PASSES__G1_F1_A8_LEDGER_INTEGRITY_PASS"
     G1_F1_A8_ledger_integrity_review:
       report:
         artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
@@ -416,6 +416,22 @@ current_scope:
         artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_276_277_0_1_0.yaml"
         blob_sha: "ae44d4e774461f6182ad73bd4e4c61b9d3c72818"
         sequences: [276,277]
+      focused_recheck_report:
+        artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+        blob_sha: "b9e1e25609908d429ce0d2657f9c6ffd209fa58e"
+        disposition: "G1_F1_A8_LEDGER_INTEGRITY_PASS"
+      Program_Lead_focused_recheck_disposition:
+        artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+        blob_sha: "6bc0563776444518c0764885272ee51d4cd37853"
+        disposition: "G1_F1_A8_LEDGER_INTEGRITY_PASS__INDEPENDENTLY_CONFIRMED__OPERATIONAL_ACCEPTANCE_AUTHORIZED"
+      F1_operational_acceptance:
+        artifact: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+        blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+        status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+      pass_and_acceptance_append:
+        artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_278_281_0_1_0.yaml"
+        blob_sha: "3dc53cc4f19b59568400fcf5ff4a6bcaffb97bd5"
+        sequences: [278,279,280,281]
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
@@ -680,7 +696,7 @@ current_scope:
       may_not_serve_as_MAKEABLE_certifier: true
       may_not_serve_as_strict_auditor: true
   Reviewer_E:
-    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__COVERAGE_REVIEW_PAUSED_PENDING_F1_AND_SOURCE_FOLLOWUP"
+    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__F1_RESOLVED__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
@@ -710,7 +726,15 @@ current_scope:
     F1_C4_report_blob_sha: "99632908a7a9f49bf2ccfc5ac04bba3d201599ff"
     F1_C4_Program_Lead_disposition_blob_sha: "ff82e39939475ed62854dd1f8b98dbdbfd5257a8"
     F1_ledger_integrity_review_ready: true
-    F1_ledger_integrity_review_complete: false
+    F1_ledger_integrity_review_complete: true
+    F1_ledger_integrity_review_status: "G1_F1_A8_LEDGER_INTEGRITY_PASS"
+    F1_ledger_recheck_report_blob_sha: "b9e1e25609908d429ce0d2657f9c6ffd209fa58e"
+    F1_ledger_recheck_Program_Lead_disposition_blob_sha: "6bc0563776444518c0764885272ee51d4cd37853"
+    F1_operational_acceptance:
+      artifact: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+      blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+      status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+    F1_repair_operational: true
     coverage_review_authorized_now: false
     MAKEABLE_review_authorized_now: false
   candidate_universe_freeze:
@@ -766,19 +790,37 @@ current_scope:
   A8_repaired_background_register:
     artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
     blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
-    status: "OPERATIVE_FOR_LATER_G0"
+    status: "HISTORICAL_PRE_F1_OPERATIVE__SUPERSEDED_FOR_CURRENT_STUDY_A8_USE"
     ordinary_dimension_count: 13
     gate_only_dimension_count: 2
   A8_repaired_background_interaction_matrix:
     artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
     blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
-    status: "OPERATIVE_FOR_LATER_G0"
+    status: "HISTORICAL_PRE_F1_OPERATIVE__SUPERSEDED_FOR_CURRENT_STUDY_A8_USE"
     listed_material_pair_count: 15
     material_higher_order_count: 5
   A8_background_operational_acceptance:
     artifact: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
     blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696"
-    status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+    status: "HISTORICAL_PRE_F1_OPERATIONAL_ACCEPTANCE"
+  A8_post_evidence_F1_background_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml"
+    blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+    status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+    ordinary_dimension_count: 14
+  A8_post_evidence_F1_background_interaction_matrix:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_2.yaml"
+    blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6"
+    status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+    ordinary_unordered_pair_count: 91
+    gate_involving_pair_count: 29
+    listed_material_ordinary_pair_count: 20
+  A8_post_evidence_F1_operational_acceptance:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A8_POST_EVIDENCE_F1_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+    status: "OPERATIVE_UNDER_POST_EVIDENCE_FAVORABLE_OR_MIXED_CONTAMINATION_CONTROLS"
+    favorable_or_mixed_effect_may_not_strengthen_current_confirmatory_result: true
+    ranking_change_forces_directional_contamination_underdetermination: true
   A9_initial_source_plan:
     artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
     blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
@@ -1423,7 +1465,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 277
+    A17_ledger_current_through_sequence: 281
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1496,24 +1538,30 @@ current_scope:
     id: "TFP-STUDY-4-HIDDENNESS"
     status: "STRATEGICALLY_FAVORED__NOT_G0_AUTHORIZED"
   global_theological_synthesis_authorized: false
-  theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
+  theological_outcome: "NO_CANDIDATE_OR_THEOLOGICAL_OUTCOME__G1_SOURCE_FOLLOWUP_AND_COVERAGE_PENDING"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-G1-POST-EVIDENCE-F1-A8-LEDGER-INTEGRITY-REPAIR-RECHECK"
-  action: "continue_same_Reviewer_G_lineage_for_focused_append_only_repair_recheck"
+  id: "TFP-STUDY-3-G1-REVIEWER-E-BLIND-PROBE-SOURCE-CLASS-FOLLOWUP"
+  action: "complete_Reviewer_E_blind_probe_source_class_followups_before_same_lineage_coverage_reconciliation"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 278
-  input_blob_sha: "bde8258d83551175485b79fb2e94aa1f443374e1"
-  prompt_blob_sha: "3b243d86998d571a8e3760a130a743efbaa8b3a7"
-  fixed_endpoint_sequence: 275
-  fixed_endpoint_commit: "407bf26a2a839eb09f932d5ec3143d5cd6a7a801"
-  launch_sequences_outside_certification_target: [276,277]
+  ledger_next_sequence: 282
+  controlling_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+  F1_operational_acceptance_blob_sha: "69c021ddf1ad6c9ea0ebaee677d2055255adf7f3"
+  required_source_classes:
+    - "Indian non-theistic / anti-creator traditions"
+    - "deeper Madhyamaka / Abhidharma / Huayan material"
+    - "grounding-modality literature"
+    - "necessitism / contingentism"
+    - "Neo-Confucian li-qi"
+    - "existential-inertia / persistence literature"
+    - "brute necessity / modal primitivism"
+    - "fundamental-indeterminacy literature"
   requirements:
-    - "Reviewer G performs the focused repair recheck only; previously confirmed sequence-221-269 findings remain accepted unless contradicted by the supplement"
-    - "verify the retrospective Reviewer-C exposure supplement is an acceptable append-only A17 cure without rewriting or inventing a historical sequence/timestamp"
-    - "verify amendment_surfaces annotations for exactly sequences 253-257 and 259-269"
-    - "verify optional order anchors for sequences 238,240,242,244,246,249 are repository-consistent"
-    - "verify sequences 272-275 preserve the failed audit, Program-Lead replay, and repair supplement without rewrite"
-    - "repair 0.1.2 remains nonoperative and Reviewer E coverage/MAKEABLE review remains paused pending focused Reviewer-G pass and Program-Lead acceptance"
+    - "acquire and evaluate source-class followups without candidate ranking or proposition truth disposition"
+    - "preserve access failures, negative searches, provenance, and source-class relevance"
+    - "apply A8 0.1.2 under POST_EVIDENCE_FAVORABLE_OR_MIXED contamination controls"
+    - "do not allow favorable/mixed F1 effects to strengthen the current confirmatory comparative result"
+    - "Reviewer E coverage/MAKEABLE review remains paused until source-class followups are reconciled"
+    - "after followups, return to the same Reviewer-E lineage for reconciliation against Program Lead S1-S5 plus followup universe"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -1811,7 +1859,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__G1_active__F1_A8_post_evidence_repair_frozen__Reviewer_G_focused_ledger_recheck_ready__coverage_paused"
+    status: "G0_architecture_authorized__G1_active__F1_A8_operative_under_contamination_controls__source_followup_required__coverage_paused"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
