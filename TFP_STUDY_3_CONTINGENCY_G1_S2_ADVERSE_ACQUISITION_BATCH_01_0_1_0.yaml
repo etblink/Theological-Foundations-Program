@@ -1,0 +1,244 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S2_ADVERSE_ACQUISITION_BATCH_01"
+status: "S2_ADVERSE_SEARCH_STAGE_COMPLETE__SERIOUS_ADVERSE_STRATUM_FOUND_FOR_ALL_13__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S2_ADVERSE"
+
+purpose: "Preserve the independent adverse-source search stage required by A9 for all 13 candidate families without converting objection discovery into proposition dispositions, candidate inadequacy, coverage certification, or ranking."
+
+controls:
+  candidate_count: 13
+  independent_adverse_search_performed_for_all_13: true
+  serious_adverse_stratum_found_for_all_13: true
+  search_snippets_evidential_support: false
+  proposition_dispositions_issued: false
+  candidate_structural_or_evidential_adequacy_determined: false
+  candidate_ranking_performed: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+  S2_search_stage_complete: true
+  next_stage: "S3_NEUTRAL"
+
+access_state_namespace:
+  FULL_TEXT_OR_SUBSTANTIAL_HTML_READ: "Open or publisher-hosted text read beyond discovery metadata."
+  ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ: "Publisher/author abstract or substantial excerpt read; sufficient for source admission/search-stage classification, not necessarily truth-critical proposition disposition."
+  BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING: "Serious source identity established; deeper lawful access remains pending for proposition-level use."
+  SECONDARY_ORIENTATION_ONLY: "Reference/survey used to route primary adverse literature; never sole truth-critical support."
+
+candidate_adverse_records:
+  C-BRUTE:
+    serious_adverse_sources:
+      - source_id: "S2A-BR-001"
+        identity: "Shamik Dasgupta, 'Metaphysical Rationalism,' Noûs 50(2), 2016, 379-418."
+        stable_identifier: "DOI:10.1111/nous.12082"
+        stable_url: "https://onlinelibrary.wiley.com/doi/full/10.1111/nous.12082"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Defends a grounding-based Principle of Sufficient Reason against metaphysical bruteness and explores its necessitarian consequence."
+        proposition_targets: ["BR-N2","BR-N3","BR-N4"]
+        limitation: "A defense of PSR is not by itself a disposition against every possible brute stopping rule; exact BG-PSR-SCOPE and BR propositions must later be applied."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-REGRESS:
+    serious_adverse_sources:
+      - source_id: "S2A-RG-001"
+        identity: "Michael Bevan, 'Metaphysical foundationalism,' Philosophical Studies, 2025."
+        stable_url: "https://link.springer.com/article/10.1007/s11098-025-02444-3"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Provides an explicit abductive defense of strong metaphysical foundationalism understood as ground admitting no infinite descent, directly opposing unrestricted metaphysical infinitism."
+        proposition_targets: ["RG-N2","RG-N3","RG-N4","RG-N5"]
+      - source_id: "S2A-RG-002"
+        identity: "T. Scott Dixon, 'What Is the Well-Foundedness of Grounding?' Mind 125(498), 2016, 439-468."
+        stable_identifier: "DOI:10.1093/mind/fzv112"
+        stable_url: "https://academic.oup.com/mind/article-abstract/125/498/439/2583540"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Argues that 'full foundations' best captures a well-foundedness requirement for grounding; materially constrains a regress with no fundamental ground."
+        proposition_targets: ["RG-N2","RG-N3","RG-N4"]
+        limitation: "Full-foundations is weaker than a blanket prohibition on every infinite chain; later analysis must preserve that distinction."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-HOLISTIC:
+    serious_adverse_sources:
+      - source_id: "S2A-HO-001"
+        identity: "Michael J. Raven, 'Ground,' Philosophy Compass 10(5), 2015, 322-333."
+        stable_identifier: "DOI:10.1111/phc3.12220"
+        stable_url: "https://compass.onlinelibrary.wiley.com/doi/10.1111/phc3.12220"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Articulates the orthodox explanatory logic of ground: irreflexivity and asymmetry prohibit self-grounding and cycles, while well-foundedness requires termination if explanations must begin."
+        proposition_targets: ["HO-N2","HO-N3","HO-N4","HO-N5","HO-N6"]
+        limitation: "The paper is an opinionated grounding synopsis, not a conclusive refutation of every holistic/non-well-founded explanatory relation; Bliss-style counterarguments remain live."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-SELF-EXPLANATORY:
+    serious_adverse_sources:
+      - source_id: "S2A-SE-001"
+        identity: "M. Rinard, 'Explanatory Distance,' The British Journal for the Philosophy of Science 74(1), 2023."
+        stable_identifier: "DOI:10.1086/714788"
+        stable_url: "https://www.journals.uchicago.edu/doi/10.1086/714788"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Develops explanatory-distance requirements and states that full self-explanation is prohibited by the common irreflexivity constraint on explanation."
+        proposition_targets: ["SE-N2","SE-N3","SE-N5"]
+        limitation: "The account distinguishes full from possible partial self-explanation; the frozen candidate's exact reflexive relation must later be matched rather than rejected by label."
+      - source_id: "S2A-SE-002"
+        identity: "Anna-Sofia Maurin, 'Grounding and metaphysical explanation: it’s complicated,' Philosophical Studies 176, 2019, 1573-1594."
+        stable_identifier: "DOI:10.1007/s11098-018-1080-0"
+        stable_url: "https://link.springer.com/article/10.1007/s11098-018-1080-0"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Documents the widely used irreflexivity/asymmetry constraints on explanation and grounding and analyzes why ordinary explanatory features do not straightforwardly license reflexive/circular grounding."
+        proposition_targets: ["SE-N2","SE-N3"]
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-GLOBAL-DEFLATION:
+    serious_adverse_sources:
+      - source_id: "S2A-GD-001"
+        identity: "Ghislain Guigon, 'A Universe of Explanations,' Oxford Studies in Metaphysics 9, 2015, 345-375."
+        stable_identifier: "DOI:10.1093/acprof:oso/9780198729242.003.0012"
+        stable_url: "https://academic.oup.com/book/8192/chapter-abstract/153735358"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Defends explanatory universalism/PSR against an omni-explainer objection and examines how global explanatory structure can follow without simple distributivity assumptions."
+        proposition_targets: ["GD-N2","GD-N3"]
+        limitation: "This does not itself establish the Study-3 totality explanandum; D11-04 and BG-TOTALITY-EXPLANANDUM remain controlling."
+      - source_id: "S2A-GD-002"
+        identity: "Fatema Amijee, 'Explaining Contingent Facts,' Philosophical Studies 178, 2021, 1163-1181."
+        stable_identifier: "DOI:10.1007/s11098-020-01487-y"
+        stable_url: "https://www.fatemaamijee.com/research.html"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Argues that necessary facts can explain contingent facts, undercutting one standard modal-fatalism objection to explanatory universalism/PSR."
+        proposition_targets: ["GD-N2","GD-N3"]
+        limitation: "Does not by itself prove local explanatory demands aggregate globally."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-MODAL-DISSOLUTION:
+    serious_adverse_sources:
+      - source_id: "S2A-MD-001"
+        identity: "Timothy Williamson, 'Armchair Philosophy, Metaphysical Modality and Counterfactual Thinking,' Proceedings of the Aristotelian Society 105, 2005, 1-23; later developed in The Philosophy of Philosophy."
+        stable_identifier: "DOI:10.1111/j.0066-7373.2004.00100.x"
+        stable_url: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0066-7373.2004.00100.x"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Defends metaphysical modal knowledge as continuous with ordinary counterfactual cognitive capacities, directly adverse to a broad dissolution of truth-apt metaphysical modality."
+        proposition_targets: ["MD-N1","MD-N2","MD-N3","MD-N4"]
+        limitation: "A modal epistemology does not automatically refute every semantic/framework-relative dissolution thesis; exact MD state must later be matched."
+      - source_id: "S2A-MD-002"
+        identity: "Boris Kment, Modality and Explanatory Reasoning, Oxford University Press, 2014."
+        stable_identifier: "DOI:10.1093/acprof:oso/9780199604685.001.0001"
+        stable_url: "https://academic.oup.com/book/26321"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Develops a substantive metaphysics of metaphysical and nomic necessity tied to explanatory structure, keeping modal claims truth-apt and distinguishable from epistemic/nomic modalities."
+        proposition_targets: ["MD-N1","MD-N2","MD-N3"]
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-INDETERMINATE-ULTIMACY:
+    serious_adverse_sources:
+      - source_id: "S2A-IU-001"
+        identity: "Matti Eklund, 'Being Metaphysically Unsettled: Barnes and Williams on Metaphysical Indeterminacy and Vagueness,' Oxford Studies in Metaphysics 6, 2011, 149-172."
+        stable_identifier: "DOI:10.1093/acprof:oso/9780199603039.003.0004"
+        stable_url: "https://academic.oup.com/book/12009/chapter-abstract/161286089"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Directly develops problems for Barnes/Williams-style metaphysical indeterminacy despite granting its intelligibility."
+        proposition_targets: ["IU-N1","IU-N2","IU-N3","IU-N4"]
+        limitation: "General objections to metaphysical indeterminacy do not automatically resolve the separate ultimacy-extension question."
+      - source_id: "S2A-IU-002"
+        identity: "Elizabeth Barnes, 'Arguments Against Metaphysical Indeterminacy and Vagueness,' Philosophy Compass 5(11), 2010, 953-964."
+        stable_identifier: "DOI:10.1111/j.1747-9991.2010.00348.x"
+        stable_url: "https://elizabethbarnesphilosophy.weebly.com/uploads/3/8/1/0/38105685/compass_article_final.pdf"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Systematically surveys major arguments against metaphysical indeterminacy and possible replies, supplying independent adverse routes even though the author is sympathetic to the view."
+        proposition_targets: ["IU-N1","IU-N2","IU-N3"]
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-NECESSITARIAN:
+    serious_adverse_sources:
+      - source_id: "S2A-NE-001"
+        identity: "Edwin Curley and Gregory Walski, 'Spinoza’s Necessitarianism Reconsidered,' in New Essays on the Rationalists, Oxford University Press, 2003, 241-262."
+        stable_identifier: "DOI:10.1093/0195165411.003.0011"
+        stable_url: "https://academic.oup.com/book/7573/chapter-abstract/152578295"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Argues that Spinoza permits a plurality of possible worlds and is at most a moderate, not strict, necessitarian, directly challenging a central historical route to total necessitarianism."
+        proposition_targets: ["NE-N1","NE-N2","NE-N3","NE-N4"]
+        limitation: "This is partly an interpretive dispute about Spinoza; it cannot alone refute contemporary independent necessitarian arguments."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-INDEXICAL-PLURALITY:
+    serious_adverse_sources:
+      - source_id: "S2A-IP-001"
+        identity: "Richard M. Gale, 'Lewis’ Indexical Argument for World-Relative Actuality,' Dialogue 28(2), 1989, 289-304."
+        stable_identifier: "DOI:10.1017/S001221730001578X"
+        stable_url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/8DF684B9DF438F198B1471C1A8AF7658/S001221730001578Xa.pdf/"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Directly scrutinizes and challenges Lewis's indexical argument for world-relative actuality."
+        proposition_targets: ["IP-N2","IP-N3","IP-N4","IP-N5"]
+        limitation: "Failure of one Lewisian argument would not by itself eliminate every plurality/indexicality formulation."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-NEC-IMPERSONAL-CONCRETE:
+    serious_adverse_sources:
+      - source_id: "S2A-IC-001"
+        identity: "Martin Glazier, 'A substantial problem for priority monism,' Ratio 36(4), 2023, 347-353."
+        stable_identifier: "DOI:10.1111/rati.12371"
+        stable_url: "https://onlinelibrary.wiley.com/doi/10.1111/rati.12371"
+        access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+        adverse_scope: "Argues that the whole concrete cosmos is not necessarily a substance and therefore cannot satisfy priority monism's substance claim; directly adverse to important single-cosmos concrete-foundation variants."
+        proposition_targets: ["IC-N1","IC-N3","IC-N4","IC-N6"]
+        limitation: "Targets priority-monist/single-cosmos variants and does not defeat plural, layered, or differently related necessary-concrete candidates by itself."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-NEC-AGENTIVE:
+    serious_adverse_sources:
+      - source_id: "S2A-AG-001"
+        identity: "Graham Oppy, 'On “A New Cosmological Argument”,' Religious Studies 36(3), 2000, 345-353."
+        stable_identifier: "DOI:10.1017/S0034412500005308"
+        stable_url: "https://www.cambridge.org/core/journals/religious-studies/article/on-a-new-cosmological-argument/1CA91562763D74CA39097EEA0F22AB7E"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Argues that Gale-Pruss's allegedly weaker PSR entails the stronger principle and that nontheists may reasonably reject the conclusion; directly adverse to one important necessary-agent contingency route."
+        proposition_targets: ["AG-N1","AG-N2","AG-N3","AG-N4"]
+        limitation: "A cosmological-argument critique is not automatically a critique of agency specifically; later analysis must isolate which AG proposition is actually affected."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-NEC-IMPERSONAL-PRINCIPLE:
+    serious_adverse_sources:
+      - source_id: "S2A-PR-001"
+        identity: "Sebastián Briceño and Stephen Mumford, 'Relations All the Way Down? Against Ontic Structural Realism,' in The Metaphysics of Relations, Oxford University Press, 2016, 198-217."
+        stable_identifier: "DOI:10.1093/acprof:oso/9780198735878.003.0012"
+        stable_url: "https://academic.oup.com/book/26289/chapter-abstract/194542541"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Argues that pure structure risks being merely a Platonic entity lacking resources for concretization and questions its empirical motivation; directly adverse to structural/principle routes that need a bridge to concrete actuality."
+        proposition_targets: ["PR-N2","PR-N3","PR-N4","PR-N7"]
+        limitation: "Targets ontic structural realism/pure-structure variants, not every impersonal principle candidate."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+  C-AXIARCHIC:
+    serious_adverse_sources:
+      - source_id: "S2A-AX-001"
+        identity: "Roland Puccetti, 'Does the Universe Exist Because It Ought To? A Critique of Extreme Axiarchism,' Dialogue 32(4), 1993, 651-657."
+        stable_identifier: "DOI:10.1017/S0012217300011306"
+        stable_url: "https://doi.org/10.1017/S0012217300011306"
+        access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+        adverse_scope: "Direct critique of extreme axiarchism/value-to-being creative requiredness, including pressure from the world's apparent improvability and the framing of the something-rather-than-nothing question."
+        proposition_targets: ["AX-N1","AX-N2","AX-N3","AX-N4","AX-N5"]
+        limitation: "The critique targets extreme/creative-requiredness axiarchism; thinner axiarchic subvariants must be matched separately."
+    adverse_stratum_status: "SATISFIED_FOR_S2_SEARCH"
+
+cross_candidate_adverse_controls:
+  - "No candidate is treated as defeated merely because one adverse source exists."
+  - "Each source is admitted only at the strength of the objection actually articulated."
+  - "Where an adverse source attacks a particular subvariant (Spinoza, Lewis, priority monism, Gale-Pruss, OSR, extreme axiarchism), the objection is not generalized to the full candidate family without proposition-level bridge."
+  - "S2 completion means serious adverse access/search symmetry has been achieved, not that adverse coverage is COMPLETE or MATERIALLY_COMPLETE."
+  - "Reviewer E remains responsible for independent adverse-source sufficiency and later coverage/MAKEABLE certification."
+
+S2_completion_judgment:
+  every_candidate_has_at_least_one_serious_adverse_stratum_capable_in_principle_of_defeat_or_material_limitation: true
+  independent_search_not_limited_to_proponent_citations: true
+  focused_followup_completed_for_initial_weak_spots:
+    - "C-REGRESS"
+    - "C-HOLISTIC"
+    - "C-SELF-EXPLANATORY"
+    - "C-GLOBAL-DEFLATION"
+    - "C-MODAL-DISSOLUTION"
+  S2_ADVERSE_SEARCH_STAGE_COMPLETE: true
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+next_action:
+  stage: "S3_NEUTRAL"
+  rule: "Search neutral surveys, comparative treatments, and formal work capable of exposing missing alternatives, terminology errors, or false dichotomies across candidates/backgrounds."
