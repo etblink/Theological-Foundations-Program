@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_229_231_blob_sha: "9792aa7349f3edba0af738b1f8d8c149a330427d"
+  prior_next_sequence: 232
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 232
+    repository_commit: "57121847e078ca2cc83eb7f49fbecd5a5558e149"
+    timestamp_utc: "2026-10-07T06:41:31Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A1_A2_FINAL_QUESTION_SCOPE_FREEZE_0_1_0.yaml blob b98782fe7fdc85d37e515823803e0cd2727c211c"
+    exposure_class: "G0_A1_A2_FINAL_QUESTION_SCOPE_FREEZE"
+    amendment_surfaces: ["exact truth question","scope","downstream inference limits","definition boundaries"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_FINAL_G0_PREREGISTRATION__NO_SUBSTANTIVE_DELTA_FROM_WORKING_SCOPE"
+
+next_sequence: 233
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
