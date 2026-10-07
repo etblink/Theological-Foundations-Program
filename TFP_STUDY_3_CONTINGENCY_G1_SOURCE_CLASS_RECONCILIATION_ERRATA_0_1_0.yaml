@@ -1,0 +1,65 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_SOURCE_CLASS_RECONCILIATION_ERRATA"
+status: "FROZEN__APPEND_ONLY_HISTORICAL_CORRECTION__NO_SUBSTANTIVE_OUTCOME_CHANGE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+authority:
+  Reviewer_E_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md"
+    blob_sha: "729dd61ff0d0870b3540371e4588b1ca3ada2436"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION_0_1_0.yaml"
+    blob_sha: "12bc496bfb7ad32dce85bfd4862b5755c9500ba1"
+
+errata:
+
+  E1_PEARCE_AUTHOR_ATTRIBUTION:
+    affected_artifact:
+      path: "TFP_STUDY_3_CONTINGENCY_G1_REVIEWER_E_BLIND_PROBE_SOURCE_CLASS_FOLLOWUP_0_1_0.yaml"
+      blob_sha: "3023fa99a05c99e600e9a373df635e708f935da3"
+      location: "SC3-S1 citation"
+    incorrect_text: "Mark Pearce"
+    corrected_text: "Kenneth L. Pearce"
+    article_title: "Metaphysical Rationalism Requires Grounding Indeterminism"
+    DOI: "10.1017/apa.2024.17"
+    external_identity_verification:
+      publisher: "Cambridge University Press / Journal of the American Philosophical Association"
+      stable_url: "https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/metaphysical-rationalism-requires-grounding-indeterminism/8DF300A3BD3E5F891F457108BDEFA47E"
+    internal_crosscheck:
+      S5_source_id: "S5-006"
+      S5_correctly_names_author: "Kenneth L. Pearce"
+    substantive_effect: "NONE__IDENTITY_CORRECTION_ONLY"
+
+  E2_SC2_PRIOR_S1_S5_PRESENCE:
+    affected_artifact:
+      path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION_0_1_0.yaml"
+      blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+      location: "source_class_reconciliation.SC2_MADHYAMAKA_ABHIDHARMA_HUAYAN.already_present"
+    incorrect_prior_claims:
+      - "Aitken Madhyamaka/indefinitism route was already present in S1-S5."
+      - "Huayan/Fazang adjacent holistic stream was noted in S1 completion."
+    corrected_historical_state:
+      Aitken_in_S1_S5: false
+      Madhyamaka_in_S1_S5: false
+      Huayan_in_S1_S5: false
+      Fazang_in_S1_S5: false
+      origin_of_these_routes: "Reviewer-E blind external probe; later added/evaluated in the Program-Lead follow-up universe."
+    independent_repository_check:
+      search_scope: "all nine frozen S1-S5 acquisition/completion artifacts"
+      Aitken_hits: 0
+      Madhyamaka_hits: 0
+      Huayan_hits: 0
+      Fazang_hits: 0
+    current_practical_effect: "NONE_ON_PRESENT_SOURCE_UNIVERSE__FOLLOWUP_NOW_CONTAINS_THE_ROUTES"
+    methodological_effect: "CORRECTS_E3_BLIND_PROBE_YIELD_ACCOUNTING"
+
+preservation:
+  prior_artifacts_rewritten: false
+  prior_blind_probe_result_reopened: false
+  F1_architecture_reopened: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+  candidate_result_changed: false
+  theological_result_changed: false
