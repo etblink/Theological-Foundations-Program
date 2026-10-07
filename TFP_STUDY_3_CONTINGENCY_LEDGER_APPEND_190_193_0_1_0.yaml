@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_188_189_blob_sha: "46376a37935897c16d9d89221ee1fe164709457c"
+  prior_next_sequence: 190
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 190
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer F A11 discriminator-repair C4 exposure through fixed prelaunch endpoint sequence 187, using the frozen C4 input/prompt and authorized amendment, candidate, background, and chronology inputs."
+    exposure_class: "G0_REVIEWER_F_A11_DISCRIMINATOR_REPAIR_C4_EXPOSURE"
+    amendment_surfaces: ["A11 R1-R9 direction classification","candidate symmetry","C4 amendment timing"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 189 and before sequence 191."
+
+  - sequence: 191
+    repository_commit: "4f9b0ddcab79c050ff3363015636db6ce66773b7"
+    timestamp_utc: "2026-10-07T05:35:00Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A11_DISCRIMINATOR_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md blob 62a8d07b1389b05d15e7216fef68fd4c73b15697"
+    exposure_class: "G0_REVIEWER_F_A11_C4_RESULT_FREEZE"
+    amendment_surfaces: ["A11 direction classification","candidate symmetry","amendment timing"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "C4_DIRECTION_REVIEW_PASS__PRE_EVIDENCE_AMENDMENT__CONDITIONAL_ON_LEDGER_INTEGRITY"
+
+  - sequence: 192
+    repository_commit: "d72b990a100523d7afca20f8cd9863f6fbb39428"
+    timestamp_utc: "2026-10-07T05:35:20Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A11_C4_LAUNCH_CONTROL_IDENTITY_RESOLUTION_0_1_0.yaml blob 2f371e3bbcc5e1c28bcda8a32bf9c41426c07a4f"
+    exposure_class: "G0_NONOUTCOME_LEDGER_IDENTITY_RESOLUTION"
+    amendment_surfaces: ["append 177-179 commit/blob identity","sequence 187 event/container identity","Reviewer G handoff"]
+    outcome_relevant_evidence: false
+    result_status: "COMMIT_SHA_MISLABELED_AS_BLOB_SHA__EVENT_CONTAINER_DISTINCTION_RECORDED__REVIEWER_G_CONFIRMATION_REQUIRED"
+
+  - sequence: 193
+    repository_commit: "82c47f0d1602705acd64145c4de8d86bbec940fe"
+    timestamp_utc: "2026-10-07T05:35:36Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob d2cc141ed4b257395dbd71d1ec4425a933556e72"
+    exposure_class: "G0_PROGRAM_LEAD_A11_C4_DISPOSITION"
+    amendment_surfaces: ["A11 C4 closure","ledger-integrity handoff"]
+    outcome_relevant_evidence: false
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__PRE_EVIDENCE_AMENDMENT__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+
+next_sequence: 194
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
