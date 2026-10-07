@@ -1,0 +1,113 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_INPUT_FREEZE"
+status: "FROZEN"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_B"
+  lineage_requirement: "exact same OpenAI Codex Reviewer-B conversation that returned INITIAL_CLAIM_NECESSITY_REPAIR_PASS for the GD-N3 delta recheck"
+  authorized_role: "necessary_proposition_and_coverage_map_reviewer"
+  prohibited_roles:
+    - "discriminator_tier_reviewer"
+    - "strict_independent_auditor"
+    - "post_evidence_direction_result_reviewer"
+
+review_target:
+  artifact: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
+  blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
+  status_before_review: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_B_FINAL_A6_CERTIFICATION"
+  entry_count: 62
+  proposed_COMPARATIVE_ROUTE_count: 57
+  proposed_NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 5
+  proposed_NONCOMPARATIVE_SHARED_FLOOR_count: 0
+
+authorized_files:
+  - path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
+    blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
+    use: "primary A6 coverage-certification target"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+    use: "operative 62-proposition inventory, candidate-specific classifications, dependencies, and prior coverage scaffold"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+    blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+    use: "frozen 13-candidate set for shared-floor and burden-symmetry checks"
+  - path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+    use: "lane responsibility for every necessary proposition"
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+    use: "operative CRITICAL discriminator identities and direct proposition linkage"
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02"
+    use: "confirmation that A11 register 0.1.1 is operative for later G0 design"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    use: "verify that direct modal routes invoke admitted backgrounds/variants rather than excluded methodology dimensions"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+    blob_sha: "f0924de1575366ce312bcfd41c938b689fd38d8d"
+    use: "Reviewer-B final-A6 authorization and role boundary"
+  - path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    use: "A6 and A11 coverage requirements only as needed"
+
+review_questions:
+  - id: "Q1_ENUMERATION"
+    question: "Are all 62 necessary propositions from inventory 0.1.2 present exactly once, with the correct candidate and no omitted or duplicated proposition?"
+  - id: "Q2_CLASS"
+    question: "Do all entries correctly remain CANDIDATE_SPECIFIC, with no proposition improperly promoted to NONCOMPARATIVE_SHARED_FLOOR?"
+  - id: "Q3_COMPARATIVE"
+    question: "For each of the 57 proposed COMPARATIVE_ROUTE entries, does at least one cited operative CRITICAL discriminator bear directly enough on the exact proposition to satisfy Protocol A6, without merely sharing a topic or neighboring premise?"
+  - id: "Q4_NONCOMPARATIVE"
+    question: "Are BR-N1, RG-N1, HO-N1, SE-N1, and SE-N4 valid NONCOMPARATIVE_CANDIDATE_SPECIFIC routes with explicit direct argument/evidence routes, rather than devices for evading a material comparative burden?"
+  - id: "Q5_EVIDENCE_FIELDS"
+    question: "Are the expected-evidence and weakening/defeating-evidence specifications adequate for G0 coverage architecture, given that actual evidence coverage and proposition dispositions occur only later?"
+  - id: "Q6_SYMMETRY"
+    question: "Do the route assignments preserve equal burdens across candidates and avoid a lighter route for any favored metaphysical/theological family?"
+  - id: "Q7_CERTIFICATION"
+    question: "Does the map satisfy every Protocol A6 condition for NECESSARY_PROPOSITION_COVERAGE_COMPLETE at the architecture level?"
+
+pass_condition:
+  - "all 62 propositions are present exactly once"
+  - "every proposition has exactly one valid coverage mode"
+  - "every COMPARATIVE_ROUTE has at least one directly bearing operative CRITICAL discriminator"
+  - "every NONCOMPARATIVE_CANDIDATE_SPECIFIC route is explicit, direct, and non-evasive"
+  - "no invalid SHARED_FLOOR is created"
+  - "no candidate's burden is reduced asymmetrically"
+  - "the map is sufficient to certify NECESSARY_PROPOSITION_COVERAGE_COMPLETE as G0 architecture"
+
+repair_condition:
+  - "any missing/duplicated proposition"
+  - "any invalid coverage mode"
+  - "any COMPARATIVE_ROUTE without a directly bearing CRITICAL discriminator"
+  - "any noncomparative route that is generic, circular, or evades a material comparison"
+  - "any invalid shared-floor assignment"
+  - "any asymmetric burden"
+
+required_output_headings:
+  - "SESSION / CONTINUITY"
+  - "INPUT VERIFICATION"
+  - "ENUMERATION / CLASSIFICATION"
+  - "COMPARATIVE ROUTE REVIEW"
+  - "NONCOMPARATIVE ROUTE REVIEW"
+  - "EXPECTED / WEAKENING EVIDENCE REVIEW"
+  - "BURDEN SYMMETRY"
+  - "REQUIRED REPAIRS"
+  - "FINAL A6 COVERAGE STATUS"
+
+status_namespace:
+  pass: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  repair_required: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+
+scope_prohibitions:
+  - "do not inspect outcome-relevant evidence or source-acquisition results"
+  - "do not issue proposition truth dispositions"
+  - "do not certify G1 evidence coverage or MAKEABLE"
+  - "do not redo Reviewer C discriminator-tier review"
+  - "do not alter A11 discriminator identities or priorities"
+  - "do not rank candidates or assess truth/plausibility"
+  - "do not begin G1"
+
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
