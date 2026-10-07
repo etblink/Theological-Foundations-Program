@@ -1,0 +1,66 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A8_BACKGROUND_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "8548f5cfc7a759f424a40d68e200b047bea18d05"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+independent_replay:
+  chronology_sequences_checked: "99-129"
+  chronology_contiguous: true
+  recorded_outcome_relevant_evidence_exposure: false
+  G1_authorized: false
+  repaired_background_artifacts_nonoperative_during_review: true
+  all_13_candidate_direction_rows_present: true
+  candidate_direction_pattern_supported:
+    mixed_or_unclear:
+      - "C-BRUTE"
+      - "C-REGRESS"
+      - "C-HOLISTIC"
+      - "C-SELF-EXPLANATORY"
+      - "C-GLOBAL-DEFLATION"
+      - "C-NECESSITARIAN"
+      - "C-INDEXICAL-PLURALITY"
+      - "C-NEC-IMPERSONAL-CONCRETE"
+      - "C-NEC-AGENTIVE"
+      - "C-NEC-IMPERSONAL-PRINCIPLE"
+      - "C-AXIARCHIC"
+    neutral:
+      - "C-MODAL-DISSOLUTION"
+      - "C-INDETERMINATE-ULTIMACY"
+  outcome_condition_direction_supported:
+    future_candidate_adequacy: "MIXED_OR_UNCLEAR"
+    future_relative_ranking: "MIXED_OR_UNCLEAR"
+    future_truth_warrant_eligibility: "MIXED_OR_UNCLEAR"
+    future_background_sensitivity_status: "NEUTRAL"
+    future_discriminator_applicability: "NEUTRAL"
+    future_necessary_proposition_coverage_routes: "NEUTRAL"
+  residue_control_present: true
+  favorable_combination_sampling_forbidden: true
+  temporal_modal_and_deflationary_gate_treatment_directionally_symmetric: true
+  candidate_background_boundaries_preserved: true
+  direction_repair_required: false
+
+timing_disposition:
+  proposed_class: "PRE_EVIDENCE_AMENDMENT"
+  Program_Lead_acceptance: "CONDITIONAL_ON_REVIEWER_G_LEDGER_INTEGRITY_PASS"
+  note: "Reviewer F correctly did not certify ledger integrity. Final timing acceptance requires Reviewer G confirmation of continuity into sequence 99, null-commit ordering, and absence of unrecorded exposure or rewrite."
+
+required_controls_before_operational_use:
+  - "Reviewer G A8 ledger-integrity review at a fixed post-C4 endpoint"
+  - "Program Lead independent acceptance of Reviewer G result"
+  - "Residue and gate-return controls must remain operative"
+
+operational_effect:
+  A8_content_repair_pass: true
+  C4_direction_review_pass: true
+  repaired_background_register_operational: false
+  repaired_background_interaction_matrix_operational: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
