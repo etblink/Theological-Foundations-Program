@@ -1,0 +1,355 @@
+schema_version: "0.1.1"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A11_PREREGISTERED_DISCRIMINATOR_REGISTER"
+status: "FROZEN_REPAIR__PENDING_REVIEWER_C_RECHECK__NONOPERATIVE__NO_OUTCOME_EVIDENCE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+supersession:
+  prior_artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+  prior_blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+  repair_amendment_record:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec"
+  supersedes_for_operational_use: false
+  note: "0.1.1 becomes operative only after Reviewer C focused repair pass, Reviewer F C4 direction pass, Reviewer G ledger-integrity pass, and Program Lead operational acceptance."
+
+inputs:
+  A10_required_lanes:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml"
+    blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903"
+  operative_claim_inventory:
+    artifact: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+    blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  operative_background_register:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  operative_background_interaction_matrix:
+    artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  operative_source_plan:
+    artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+    blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15"
+    operational_acceptance:
+      artifact: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+      blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+
+construction_controls:
+  outcome_relevant_evidence_used: false
+  source_acquisition_started: false
+  G1_authorized: false
+  candidate_order_is_not_ranking: true
+  discriminator_count: 14
+  proposed_CRITICAL_count: 14
+  proposed_MATERIAL_count: 0
+  priorities_final: false
+  Reviewer_C_review_required_before_operational_freeze: true
+  Reviewer_C_initial_review_result: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  Reviewer_C_focused_recheck_required: true
+  final_A6_coverage_certified: false
+  direct_noncomparative_routes_may_still_be_assigned_by_final_A6_map: true
+  no_discriminator_result_is_issued_at_G0: true
+  necessary_foundation_does_not_equal_God: true
+
+direction_rule_template:
+  id: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+  prerequisite: "Comparison-scoped coverage is COMPLETE or MATERIALLY_COMPLETE for both sides under the operative A9 plan, relevant A8 backgrounds/joints have been run or bounded, and provenance is adequate."
+  FAVORS_A:
+    rule: "A-side state is SUPPORTED_WITHIN_SCOPE while the mutually discriminating B-side state is EVIDENCE_AGAINST or CONTRADICTED_WITHIN_SCOPE; alternatively a candidate-neutral valid argument/constraint establishes A-side and excludes B-side at the exact registered strength."
+  FAVORS_B:
+    rule: "B-side state is SUPPORTED_WITHIN_SCOPE while the mutually discriminating A-side state is EVIDENCE_AGAINST or CONTRADICTED_WITHIN_SCOPE; alternatively a candidate-neutral valid argument/constraint establishes B-side and excludes A-side at the exact registered strength."
+  NEUTRAL_OR_NONDISCRIMINATING:
+    rule: "Coverage prerequisite is satisfied, but the comparison either leaves both exact states compatible, supports neither favoring condition, or establishes that the registered axis does not discriminate the named relation."
+  UNMAKEABLE:
+    rule: "Only after a documented COMPARISON_EFFORT_RECORD shows required evidence/argument access is unavailable, provenance fails, or the frozen search is complete without enough signal to apply the rule. Unperformed or incomplete search is COVERAGE_INCOMPLETE, not UNMAKEABLE."
+  symmetry_rule: "Swap A and B and the favoring condition swaps without changing evidential thresholds."
+
+default_comparison_coverage:
+  required:
+    - "candidate-native or proposition-native access for every named candidate side"
+    - "serious adverse/critical access for every named candidate side"
+    - "neutral/cross-tradition scholarship where available"
+    - "all proposition IDs served are explicitly tagged in the evidence record"
+    - "relevant A8 background variants and required compatible joint combinations are applied at the exact inferential point"
+    - "source volume, confessional affiliation, author prestige, or tradition size cannot decide the direction"
+  MAKEABLE_not_determined_at_G0: true
+
+discriminators:
+
+  D11-01-MODAL-TRUTH-APTNESS:
+    title: "Robust modal truth-aptness versus modal dissolution"
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    relation:
+      A_candidate: "C-MODAL-DISSOLUTION"
+      B_rival_relation: "ROBUST_TRUTH_APT_MODAL_ULTIMACY"
+      B_candidate_members:
+        - "C-BRUTE"
+        - "C-REGRESS"
+        - "C-HOLISTIC"
+        - "C-SELF-EXPLANATORY"
+        - "C-GLOBAL-DEFLATION"
+        - "C-INDETERMINATE-ULTIMACY"
+        - "C-NECESSITARIAN"
+        - "C-INDEXICAL-PLURALITY"
+        - "C-NEC-IMPERSONAL-CONCRETE"
+        - "C-NEC-AGENTIVE"
+        - "C-NEC-IMPERSONAL-PRINCIPLE"
+        - "C-AXIARCHIC"
+    served_necessary_propositions: ["MD-N1","MD-N2","MD-N3","MD-N4","IU-N1"]
+    A_state: "The central metaphysical-contingency presupposition is non-truth-apt or inapplicable under the correct modal framework, substantively rather than by ignorance."
+    B_state: "The relevant ultimacy/modal claims are robustly truth-apt enough for candidate-level metaphysical adjudication."
+    prediction_argument: "If the central modal predicate is not truth-apt/applicable, lower-order candidate comparisons cannot simply assume it; if it is truth-apt, C-MODAL-DISSOLUTION loses its defining route."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-MODAL-STATUS","BG-METAPHYSICAL-INDETERMINACY"]
+    required_interactions: ["INT-MODALSTATUS-INDETERMINACY"]
+    gate_controls: ["MOD-DEFLATIONARY"]
+    coverage_additions: ["modal anti-realist/fictionalist native sources","robust de re modal realist adverse sources","semantic versus epistemic dissolution controls"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-02-ONTIC-ULTIMACY-INDETERMINACY:
+    title: "Ontic ultimacy indeterminacy versus determinate ultimacy"
+    lane: "A10-L4-TRUTH-APTNESS-INDETERMINACY-AND-SEMANTIC-BOUNDARIES"
+    relation:
+      A_candidate: "C-INDETERMINATE-ULTIMACY"
+      B_rival_relation: "DETERMINATE_TRUTH_APT_ULTIMACY"
+      B_excludes: ["C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY"]
+    served_necessary_propositions: ["IU-N1","IU-N2","IU-N3","IU-N4"]
+    A_state: "There is no unique determinate fact of the matter among the relevant ultimacy alternatives, and this indeterminacy is worldly/ontic."
+    B_state: "The ultimacy question is truth-apt and has a determinate metaphysical answer even if investigators do not yet know it."
+    prediction_argument: "Evidence or argument for ontic metaphysical indeterminacy favors A; evidence that apparent indeterminacy is semantic, epistemic, or eliminated by a determinate metaphysics favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-METAPHYSICAL-INDETERMINACY","BG-MODAL-STATUS"]
+    required_variant_controls: ["MOD-EPISTEMIC-ONLY"]
+    coverage_additions: ["ontic-indeterminacy native literature","determinacy-first adverse literature","required INT-MODALSTATUS-INDETERMINACY joint"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-03-TOTAL-NECESSITY:
+    title: "Necessary total reality versus a genuinely contingent total remainder"
+    lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    relation:
+      A_candidate: "C-NECESSITARIAN"
+      B_rival_relation: "GENUINELY_CONTINGENT_TOTAL_REMAINDER"
+    served_necessary_propositions: ["NE-N1","NE-N2","NE-N3","NE-N4"]
+    A_state: "The scoped total reality obtains metaphysically necessarily and leaves no contingent total remainder requiring an external selector or ground."
+    B_state: "At the relevant totality scope there remains a genuine metaphysically contingent alternative/remainder not reducible to merely internal or indexical variation."
+    prediction_argument: "A successful necessitarian modal account must preserve apparent local contingency while excluding a genuinely contingent total alternative; a live total alternative or contingent remainder defeats the defining necessitarian claim."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-MODAL-STATUS","BG-TOTALITY-EXPLANANDUM","BG-ACTUALITY-PRIVILEGE","BG-MODAL-LOGIC"]
+    required_interactions: ["INT-TOTALITY-ACTUALITY"]
+    coverage_additions: ["necessitarian native arguments","modal-collapse and genuine-contingency adverse arguments","S5/weaker gate only where actually invoked"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-04-GLOBAL-EXPLANATORY-DEMAND:
+    title: "Distinct global explanatory burden versus principled global deflation"
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    relation:
+      A_candidate: "C-GLOBAL-DEFLATION"
+      B_rival_relation: "DISTINCT_TOTALITY_LEVEL_EXPLANATORY_BURDEN"
+      B_candidate_examples: ["C-BRUTE","C-REGRESS","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    served_necessary_propositions: ["GD-N1","GD-N2","GD-N3","BR-N2","BR-N4","RG-N4","RG-N5"]
+    A_state: "Legitimate local explanation is preserved but no additional global ground is demanded merely from aggregation to a totality."
+    B_state: "A determinate totality-level explanandum exists and carries an independently warranted truth-relevant explanatory burden not exhausted by local explanation."
+    prediction_argument: "Non-aggregation/local-sufficiency arguments favor A; a candidate-neutral warrant for a distinct totality explanandum plus applicable explanatory demand favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    required_interactions: ["INT-ER-PSR","INT-ER-TOTALITY","INT-PSR-TOTALITY","INT3-ER-PSR-TOTALITY"]
+    coverage_additions: ["global-deflation native sources","totality/PSR adverse sources","local-versus-global aggregation literature"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-05-BRUTE-VERSUS-NONBRUTE:
+    title: "Ontic brute stopping versus genuine further explanation"
+    lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    relation:
+      A_candidate: "C-BRUTE"
+      B_rival_relation: "NONBRUTE_ULTIMATE_EXPLANATION"
+      B_candidate_examples: ["C-REGRESS","C-HOLISTIC","C-SELF-EXPLANATORY","C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    served_necessary_propositions: ["BR-N2","BR-N3","BR-N4","RG-N2","HO-N5","SE-N3","SE-N5","IC-N2","AG-N3","PR-N3","AX-N2"]
+    A_state: "At least one ultimate contingent stopping fact/structure is genuinely without deeper truth-relevant explanation, ontically rather than by ignorance, and no applicable valid principle rules that out."
+    B_state: "The alleged stopping point receives genuine further explanation or an applicable independently warranted principle excludes treating it as ontically brute."
+    prediction_argument: "A principled defense of ontic stopping with no applicable defeater favors A; successful further explanation or a valid applicable anti-brutality principle favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-MODAL-STATUS"]
+    required_interactions: ["INT-ER-PSR","INT3-ER-PSR-TOTALITY"]
+    required_variant_controls: ["MOD-EPISTEMIC-ONLY"]
+    coverage_additions: ["brute-stop native defenses","PSR/arbitrariness/adverse literature","ignorance-versus-ontic-brutality probes required by A9"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-06-REGRESS-VERSUS-TERMINUS:
+    title: "Explanatorily complete nonterminal regress versus required terminal ground"
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    relation:
+      A_candidate: "C-REGRESS"
+      B_rival_relation: "TERMINAL_ULTIMATE_GROUND_REQUIRED"
+      B_candidate_examples: ["C-NEC-IMPERSONAL-CONCRETE","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-PRINCIPLE","C-AXIARCHIC"]
+    served_necessary_propositions: ["RG-N2","RG-N3","RG-N4","RG-N5"]
+    A_state: "A one-way nonterminal chain of contingent explanation can be complete without reclassification as a brute totality and without a metaphysically necessary terminus."
+    B_state: "The relevant explanatory chain is incomplete unless it terminates in an ultimate ground of the required status."
+    prediction_argument: "A relation-specific account of transmitted/nonterminal explanatory completeness favors A; an independently warranted well-foundedness/completion requirement that the regress cannot satisfy favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-DEPENDENCE-STRUCTURE","BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM"]
+    gate_controls: ["BG-TEMPORAL-ORIGIN-LINK"]
+    gate_control_rule: "Gate-only: activate only if a truth-critical inference actually uses temporal origin/beginning; never treat one-way explanatory order as temporal order by default."
+    required_interactions: ["INT-ER-DEPENDENCE","INT-PSR-DEPENDENCE","INT-TOTALITY-DEPENDENCE","INT3-PSR-TOTALITY-DEPENDENCE"]
+    coverage_additions: ["infinitist/regress native literature","well-foundedness/vicious-regress adverse literature","totality-deferral controls"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-07-REGRESS-VERSUS-HOLISTIC:
+    title: "One-way nonterminal dependence versus non-reflexive holistic completion"
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    relation:
+      A_candidate: "C-REGRESS"
+      B_candidate: "C-HOLISTIC"
+    served_necessary_propositions: ["RG-N3","HO-N2","HO-N3","HO-N6"]
+    A_state: "The family-defining dependence structure is one-way and nonterminal rather than cyclic, mutual, or holistic."
+    B_state: "At least one genuinely explanatory non-reflexive mutual/structural/cyclic implementation exists and is not merely a one-way regress."
+    prediction_argument: "A relation that remains essentially asymmetric and one-way favors A; a coherent explanatory structure whose essential work is mutual/holistic and non-reflexive favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-DEPENDENCE-STRUCTURE","BG-EXPLANATION-RELATION","BG-EXPLANATORY-REALISM"]
+    coverage_additions: ["regress and non-well-founded grounding sources at equal strength","anti-collapse checks against relabeling one structure as the other"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-08-HOLISTIC-VERSUS-REFLEXIVE:
+    title: "Non-reflexive holistic completion versus item-reflexive self-explanation"
+    lane: "A10-L3-DEPENDENCE-AND-COMPLETION-STRUCTURE"
+    relation:
+      A_candidate: "C-HOLISTIC"
+      B_candidate: "C-SELF-EXPLANATORY"
+    served_necessary_propositions: ["HO-N3","HO-N4","HO-N5","SE-N2","SE-N3","SE-N5"]
+    A_state: "The successful completion is mutual/structural/cyclic or otherwise non-well-founded but no single item/totality explains itself."
+    B_state: "A genuine item-reflexive explanatory relation obtains and is non-vacuous enough to complete the stopping role."
+    prediction_argument: "Explanatory completion that essentially requires non-reflexive network structure favors A; a defensible irreducibly reflexive relation with anti-vacuity conditions favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-DEPENDENCE-STRUCTURE","BG-EXPLANATION-RELATION","BG-EXPLANATORY-REALISM"]
+    coverage_additions: ["non-well-founded holistic native sources","contingent self-explanation native/precursor search","irreflexivity/vacuity adverse sources"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-09-INDEXICAL-ACTUALITY:
+    title: "Indexical/non-privileged actuality versus privileged actuality or external selection"
+    lane: "A10-L5-ACTUALITY-PLURALITY-AND-SELECTION"
+    relation:
+      A_candidate: "C-INDEXICAL-PLURALITY"
+      B_rival_relation: "PRIVILEGED_ACTUALITY_OR_EXTERNAL_SELECTOR_REQUIRED"
+    served_necessary_propositions: ["IP-N1","IP-N2","IP-N3","IP-N4","IP-N5"]
+    A_state: "A broader necessary/non-contingent plurality exists and actuality is indexical/non-privileged, so no external selector is required to make this locus uniquely actual."
+    B_state: "Actuality is metaphysically privileged or this locus requires an external selection/explanation not supplied by indexical plurality alone."
+    prediction_argument: "A successful ontologically symmetric plurality plus indexical actuality account favors A; an independently warranted privileged-actuality/selector requirement or failure of the plurality's stopping role favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-ACTUALITY-PRIVILEGE","BG-MODAL-STATUS","BG-TOTALITY-EXPLANANDUM"]
+    required_interactions: ["INT-TOTALITY-ACTUALITY"]
+    coverage_additions: ["indexical actuality native literature","actuality-privilege/selector adverse literature","modal-status checks on plurality necessity"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-10-CONCRETE-VERSUS-PRINCIPLE:
+    title: "Necessary concrete impersonal ground versus necessary non-concrete principle/structure"
+    lane: "A10-L6-IMPERSONAL-GROUND-CATEGORY-AND-EXPLANATORY-FORCE"
+    relation:
+      A_candidate: "C-NEC-IMPERSONAL-CONCRETE"
+      B_candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    served_necessary_propositions: ["IC-N1","IC-N2","IC-N3","IC-N4","IC-N5","IC-N6","PR-N1","PR-N2","PR-N3","PR-N4","PR-N5","PR-N6"]
+    A_state: "A metaphysically necessary concrete non-agentive foundation itself completes the relevant explanatory role."
+    B_state: "A metaphysically necessary non-agentive principle/structure/law/modal constraint performs the ultimate explanatory work without requiring a concrete ultimate explanans."
+    prediction_argument: "Evidence/argument that explanatory eligibility requires or is successfully instantiated by a concrete foundation favors A; successful non-concrete ontic explanatory force without an instantiation gap favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-ABSTRACT-PRINCIPLE-FORCE","BG-GROUND-CATEGORY","BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY","BG-MODAL-STATUS"]
+    required_interactions: ["INT-ER-ABSTRACT","INT-MODALSTATUS-ABSTRACT","INT3-PSR-RELATION-CATEGORY"]
+    coverage_additions: ["IC single/plural/layered and relation-type precursor probes","principle/structure native sources","instantiation-gap and hidden-category adverse sources"]
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL:
+    title: "Necessary agentive explanation versus necessary concrete non-agentive explanation"
+    lane: "A10-L7-AGENTIVE-EXPLANATION"
+    relation:
+      A_candidate: "C-NEC-AGENTIVE"
+      B_candidate: "C-NEC-IMPERSONAL-CONCRETE"
+    served_necessary_propositions: ["AG-N1","AG-N2","AG-N3","AG-N4","IC-N1","IC-N2","IC-N3","IC-N5"]
+    A_state: "Intentional agency or mind-like purposive capacity is real in the necessary foundation and essential to the explanation of contingent reality."
+    B_state: "A necessary concrete foundation can complete the relevant explanation non-agentively; intentional agency is not essential to the family-defining route."
+    prediction_argument: "An independently warranted explanatory need for intentional selection/purpose that cannot be discharged non-agentively favors A; a successful concrete non-agentive explanation can favor B only when A11-DR-1's B-favoring condition is satisfied."
+    direction_rule_precedence: "Prediction text is explanatory only and cannot override A11-DR-1. Mere failure to support or warrant agency is not FAVORS_B; B must be supported and A must be EVIDENCE_AGAINST or CONTRADICTED_WITHIN_SCOPE, or the candidate-neutral exclusion clause must be satisfied."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-AGENTIVE-MODAL-LINK","BG-GROUND-CATEGORY","BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY","BG-MODAL-STATUS"]
+    required_interactions: ["INT-ER-AGENT","INT-MODALSTATUS-AGENT"]
+    coverage_additions: ["necessary-agent native sources including required non-Abrahamic/non-classical probes","non-agentive concrete native sources","agency-fundamentality and modal-collapse adverse sources"]
+    hard_boundary: "No result under this discriminator licenses goodness, omniscience/knowledge, omnipotence/power, providence, worship-worthiness, revelation, or religious identity."
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE:
+    title: "Necessary agentive explanation versus necessary impersonal-principle explanation"
+    lane: "A10-L7-AGENTIVE-EXPLANATION"
+    relation:
+      A_candidate: "C-NEC-AGENTIVE"
+      B_candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+    served_necessary_propositions: ["AG-N2","AG-N3","AG-N4","PR-N2","PR-N3","PR-N4","PR-N6"]
+    A_state: "Intentional agency is essential to the relevant explanation of contingent reality."
+    B_state: "A necessary non-agentive principle/structure provides the relevant explanatory force without intentional agency."
+    prediction_argument: "A gap that only intentional explanation can close favors A; a successful principle-to-contingent-reality bridge with genuine non-agentive ontic force favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-AGENTIVE-MODAL-LINK","BG-ABSTRACT-PRINCIPLE-FORCE","BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY","BG-MODAL-STATUS"]
+    required_interactions: ["INT-ER-AGENT","INT-MODALSTATUS-AGENT","INT-ER-ABSTRACT","INT-MODALSTATUS-ABSTRACT"]
+    coverage_additions: ["equal-strength agentive and principle-native sources","abstract-instantiation and unexplained-selector adverse probes","no confessional volume shortcut"]
+    hard_boundary: "Necessary agency remains a thin family-defining property and is not identified with God."
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL:
+    title: "Non-evaluative necessary principle versus axiological requiredness as explanans"
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    relation:
+      A_candidate: "C-NEC-IMPERSONAL-PRINCIPLE"
+      B_candidate: "C-AXIARCHIC"
+    served_necessary_propositions: ["PR-N2","PR-N3","PR-N4","PR-N7","AX-N1","AX-N2","AX-N3","AX-N4","AX-N5"]
+    A_state: "A necessary impersonal principle/structure performs the explanatory work without essential evaluative requiredness."
+    B_state: "Necessary objective value/optimality and evaluative requiredness itself performs the relevant non-agentive explanatory work."
+    prediction_argument: "A successful non-evaluative principle explanation or failure of the value-to-being bridge favors A; independently warranted evaluative ontic force that is essential to the explanation favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-AXIOLOGICAL-FORCE","BG-ABSTRACT-PRINCIPLE-FORCE","BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY","BG-MODAL-STATUS"]
+    required_interactions: ["INT-ER-AXIOLOGY","INT-ABSTRACT-AXIOLOGY","INT3-MODALSTATUS-ABSTRACT-AXIOLOGY","INT3-RELATION-ONTOLOGY-AXIOLOGY"]
+    coverage_additions: ["axiarchic/value-to-being native and precursor sources","non-evaluative principle native sources","metaethical anti-realist and normativity-versus-ontology adverse sources"]
+    hard_boundary: "FAVORS_B licenses only the thin impersonal axiological route: necessary objective evaluative/optimality truth plus non-agentive value-to-being explanatory force at the registered strength. It does not license a perfectly good person, divine moral character, goodness of an agent, providence, worship-worthiness, revelation, or any religious identity."
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+  D11-14-AXIOLOGICAL-VERSUS-AGENTIVE:
+    title: "Evaluative requiredness itself versus an agent acting for reasons"
+    lane: "A10-L8-AXIOLOGICAL-EXPLANATION"
+    relation:
+      A_candidate: "C-AXIARCHIC"
+      B_candidate: "C-NEC-AGENTIVE"
+    served_necessary_propositions: ["AX-N2","AX-N3","AX-N4","AX-N5","AG-N2","AG-N3","AG-N4"]
+    A_state: "Evaluative requiredness itself non-agentively performs the relevant explanatory work."
+    B_state: "The relevant value/reason content explains only through an intentional agent for whom it is a reason, making agency essential to the family-defining route."
+    prediction_argument: "A defensible value-to-being bridge independent of agency favors A; evidence/argument that normative reasons require an agentive bearer or act to explain contingent actuality favors B."
+    proposed_priority: "CRITICAL"
+    feasibility_status: "FEASIBLE_WITHIN_SCOPE"
+    relevant_backgrounds: ["BG-AXIOLOGICAL-FORCE","BG-AGENTIVE-MODAL-LINK","BG-EXPLANATION-RELATION","BG-ONTOLOGY-ADMISSIBILITY"]
+    required_interactions: ["INT3-RELATION-ONTOLOGY-AXIOLOGY"]
+    coverage_additions: ["axiarchic native sources","agentive reason/explanation sources","action-only versus ontic-value controls"]
+    hard_boundary: "FAVORS_B licenses at most the thin necessary-agentive route; it does not license stronger divine attributes."
+    direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+review_handoff:
+  reviewer: "REVIEWER_C"
+  required_checks:
+    - "priority/tier classification for every discriminator"
+    - "pair or rival-relation symmetry"
+    - "linkage to served necessary propositions without pretending final A6 coverage is complete"
+    - "feasibility status"
+    - "complete and symmetric DIRECTION_RULE"
+    - "background/joint-combination completeness at the registered inferential point"
+    - "no hidden candidate-favoring evidential threshold"
+    - "no stronger-theological-attribute importation from necessary agency"
+  reviewer_may_require_repair: true
+  reviewer_may_not_certify_final_A6_coverage: true
+  final_A6_certifier_after_Reviewer_C: "REVIEWER_B"
+  G1_authorized: false
