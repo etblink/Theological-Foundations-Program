@@ -1,0 +1,85 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_B"
+  lineage_requirement: "exact same OpenAI Codex Reviewer-B conversation that returned NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+  authorized_role: "necessary_proposition_and_coverage_map_reviewer"
+  prohibited_roles:
+    - "discriminator_tier_reviewer"
+    - "strict_independent_auditor"
+    - "post_evidence_direction_result_reviewer"
+
+repair_target:
+  prior_map:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml"
+    blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce"
+  repaired_map:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+    blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  changed_proposition_id: "GD-N1"
+  expected_total_entries: 62
+  expected_COMPARATIVE_ROUTE_count: 56
+  expected_NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+  expected_NONCOMPARATIVE_SHARED_FLOOR_count: 0
+
+authorized_files:
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md", blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb", use: "original sole GD-N1 repair finding and preserved pass findings" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "013dfdb9fac5385471272d6ab127459faf73a485", use: "independent confirmation of GD-N1-only repair scope" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml", blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce", use: "pre-repair comparison only" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml", blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca", use: "repair target" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "b70eed10eb3979fb2d7b6d40b61906b95f8f24c5", use: "bounded amendment scope and pending controls" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REPAIR_COMPLETION_0_1_0.yaml", blob_sha: "a23f32ae656f37c1fec4f92156ceb0c33c56f6ad", use: "mechanical repair verification" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54", use: "GD-N1 exact proposition, classification, and dependency semantics" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml", blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903", use: "GD-N1 modal-lane responsibility" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml", blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d", use: "BG-MODAL-STATUS admitted variants and MOD-DEFLATIONARY gate" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml", blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02", use: "confirm A11 remains operative and unchanged" }
+  - { path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md", blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a", use: "A6 and C4 only as needed" }
+
+focused_recheck:
+  R1: "GD-N1 alone changed coverage mode from COMPARATIVE_ROUTE to NONCOMPARATIVE_CANDIDATE_SPECIFIC."
+  R2: "The direct route preserves GD-N1's permissive 'can be genuine' truth conditions and does not strengthen it into 'genuine local contingency actually obtains'."
+  R3: "The route gives a proposition-specific metaphysical modal-compatibility argument under admitted BG-MODAL-STATUS rather than generic coherence."
+  R4: "The route explicitly explains why substituting D11-04/global-demand comparison would distort the modal-status proposition."
+  R5: "The route rejects mere conceivability, logical consistency, nomological variability, and epistemic openness as sufficient substitutes for metaphysical possibility."
+  R6: "The route preserves the MOD-DEFLATIONARY gate where applicable and does not silently install a favorable modal variant."
+  R7: "Expected and weakening/defeating conditions are proposition-specific and adequate for G0 architecture."
+  R8: "The A10-L1 lane and future PROPOSITION:GD-N1 certification scope are preserved; no comparison scope is claimed for GD-N1."
+  R9: "The other 61 entries are substantively unchanged; the repaired counts are 56 comparative, 6 direct, 0 shared-floor, total 62."
+  R10: "A11 is not altered; D11-04 remains valid for GD-N2/GD-N3 and no new discriminator is implied."
+
+certification_question:
+  - "If R1-R10 pass and no new defect is introduced, does map 0.1.1 satisfy Protocol A6 sufficiently to certify NECESSARY_PROPOSITION_COVERAGE_COMPLETE at the G0 architecture-content level?"
+  - "If yes, state explicitly that this content certification does not operationalize the repaired map until Reviewer F C4 direction review, Reviewer G ledger-integrity review, and Program Lead acceptance are complete."
+
+required_output_headings:
+  - "SESSION / CONTINUITY"
+  - "INPUT VERIFICATION"
+  - "R1-R10 GD-N1 DELTA RECHECK"
+  - "PRESERVATION OF OTHER 61 ENTRIES"
+  - "BURDEN SYMMETRY"
+  - "AMENDMENT-CONTROL BOUNDARY"
+  - "REQUIRED REPAIRS"
+  - "FINAL A6 REPAIR RECHECK STATUS"
+
+status_namespace:
+  pass: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  repair_required: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_STILL_REQUIRED"
+
+scope_prohibitions:
+  - "do not inspect outcome-relevant evidence or source-acquisition results"
+  - "do not issue proposition truth dispositions"
+  - "do not certify G1 evidence coverage or MAKEABLE"
+  - "do not redo the other 61 entries except preservation checking"
+  - "do not redo Reviewer C discriminator-tier review"
+  - "do not alter A11"
+  - "do not perform C4 direction classification"
+  - "do not rank candidates or assess truth/plausibility"
+  - "do not begin G1"
+
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
