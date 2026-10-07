@@ -1,0 +1,160 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S1_NATIVE_COMPLETION_BATCH_02"
+status: "S1_NATIVE_SEARCH_STAGE_COMPLETE__ACCESS_AND_VARIANT_PROBES_RECORDED__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S1_NATIVE"
+
+purpose: "Close the frozen S1 native-search stage by recording the mandatory non-Abrahamic/non-classical agent probes, impersonal-concrete cardinality/relation probes, thin-family precursor probes, and lawful-access alternatives without issuing coverage or truth dispositions."
+
+controls:
+  search_snippets_evidential_support: false
+  source_access_record_is_not_proposition_disposition: true
+  S1_search_stage_complete: true
+  candidate_native_coverage_complete: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+  candidate_ranking_performed: false
+  source_plan_stage_next: "S2_ADVERSE"
+  G1_authorized: true
+  outcome_relevant_evidence_acquisition_started: true
+
+mandatory_probe_results:
+  C-NEC-AGENTIVE:
+    non_Abrahamic_probe:
+      status: "PROBE_SATISFIED__SERIOUS_NON_ABRAHAMIC_AGENTIVE_CAUSE_LOCATED"
+      source_records:
+        - source_id: "S1N-AG-NA-001"
+          identity: "Udayana, Nyayakusumanjali / The Kusumanjali; or, Hindu Proof of the Existence of a Supreme Being, 10th c.; Edward Byles Cowell English translation, 1864."
+          accessible_routes:
+            - "Rare Book Society of India digital rare-book record/archive for Cowell translation"
+            - "Stanford Encyclopedia of Philosophy cosmological-argument discussion of Udayana/Nyaya"
+          ordinary_scholarly_claim_scope: "Nyaya argues from the world's composite/effect character and atomic conjunction to a non-dependent/intelligent causal agent; the route is Indian/Nyaya rather than Abrahamic."
+          evidential_boundary: "This probe establishes native access and formulation diversity only; it does not establish AG-N1 through AG-N4."
+    non_classical_theist_probe:
+      status: "PROBE_SATISFIED__NEOCLASSICAL_PROCESS_NECESSARY_AGENT_ROUTE_LOCATED"
+      source_records:
+        - source_id: "S1N-AG-NC-001"
+          identity: "Charles Hartshorne, The Logic of Perfection and Other Essays in Neoclassical Metaphysics, 1962; plus scholarly process-theism summaries."
+          accessible_routes:
+            - "Open Library / Internet Archive preview and bibliographic record"
+            - "Stanford Encyclopedia of Philosophy entries on Charles Hartshorne and Process Theism"
+          ordinary_scholarly_claim_scope: "Hartshorne defends necessary divine existence while explicitly rejecting classical immutability/omnipotence in favor of neoclassical/process theism."
+          evidential_boundary: "Necessary existence plus process agency is a formulation-diversity/native-access result, not a warrant for the frozen necessary-agent candidate or stronger attributes."
+    remaining_access_note: "Primary O'Connor-class and other narrow necessary-agent passages remain available for proposition-level use, but S1 no longer sources the family solely through Christianity or classical theism."
+
+  C-NEC-IMPERSONAL-CONCRETE:
+    cardinality_probes:
+      single:
+        status: "DIRECT_AND_ADJACENT_NATIVE_ACCESS_FOUND"
+        records:
+          - "Bede Rundle's necessary physical-reality route supplies a single/physical necessity precursor."
+          - "Jonathan Schaffer's priority monism supplies one-basic-concrete-object / cosmos-first machinery."
+      plural:
+        status: "ADJACENT_CARDINALITY_MACHINERY_FOUND__NECESSITY_BRIDGE_NOT_ASSUMED"
+        records:
+          - "Priority pluralism explicitly models two-or-more basic concrete objects / fundamental proper parts."
+          - "No direct source in this probe was allowed to turn plural fundamentality into necessary concrete plurality without an independent modal bridge."
+      layered:
+        status: "ADJACENT_LAYERED_FOUNDATIONALISM_FOUND__NECESSITY_BRIDGE_NOT_ASSUMED"
+        records:
+          - "Grounding/fundamentality literature explicitly models layered concrete/fact structures from fundamental to derivative levels."
+          - "Recent metaphysics-of-physics literature treats inter-theory/fact levels as grounding/dependence structures."
+    relation_probes:
+      grounding:
+        status: "DIRECT_ADJACENT_MACHINERY_FOUND"
+        records:
+          - "Schaffer-style priority monism/pluralism is explicitly framed in dependence/grounding terms."
+      constitutive:
+        status: "DIRECT_ADJACENT_MACHINERY_FOUND"
+        records:
+          - "Grounding literature explicitly treats grounding as constitutive metaphysical explanation, while also debating whether all grounding is constitutive."
+      causal:
+        status: "PROBE_EXECUTED__NO_DIRECT_NECESSARY_CONCRETE_CAUSAL_FORMULATION_ASSUMED"
+        records:
+          - "Priority-monist literature supplies physical/nomic unity and fundamental concrete-whole machinery, but this batch found no basis for silently converting it into the candidate's required necessary causal-ground relation."
+    modal_bridge_probe:
+      status: "LIVE_GAP_NOT_NEGATIVE_EVIDENCE"
+      records:
+        - "Schaffer treats monism/pluralism as metaphysically general in some formulations, and later literature explicitly examines necessity of priority monism."
+        - "A paper on the necessity of priority monism argues that modalized monism can entail necessary existence of the actual cosmos under additional assumptions."
+      boundary: "These are highly relevant native/precursor materials for IC cardinality and relation variants, but whether they establish IC-N1/IC-N3/IC-N4/IC-N6 remains a later proposition-level question."
+
+  thin_and_synthetic_precursor_probes:
+    C-SELF-EXPLANATORY:
+      status: "DIRECT_MODERN_PRIMARY_PRECURSOR_FOUND"
+      record: "Yannic Kappes (2022), Self-Explanation and Empty-Base Explanation, open-access full text; develops a novel notion intended to answer standard incoherence/circularity objections and applies it to ultimate-explanation contexts."
+      boundary: "The frozen candidate requires genuinely contingent ultimate self-explanation; Kappes does not automatically establish the contingency component."
+    C-HOLISTIC:
+      status: "DIRECT_PRIMARY_PRECURSOR_FOUND"
+      records:
+        - "Ricki Bliss (2014), Viciousness and Circles of Ground, explicitly argues circles of ground and associated regresses need not be vicious."
+        - "Mark Jago (2018), From Nature to Grounding, allows grounding need not be well-founded while defending other formal features."
+    C-INDETERMINATE-ULTIMACY:
+      status: "GENERAL_METAPHYSICAL_INDETERMINACY_PRECURSOR_FOUND__ULTIMACY_BRIDGE_PENDING"
+      records:
+        - "Barnes & Williams (2011), A Theory of Metaphysical Indeterminacy."
+        - "Williams (2008), Ontic Vagueness and Metaphysical Indeterminacy."
+      boundary: "General worldly/metaphysical indeterminacy is not itself evidence that ultimacy is indeterminate."
+    C-AXIARCHIC:
+      status: "DIRECT_NATIVE_AND_CRITICAL_PRIMARY_LITERATURE_FOUND"
+      records:
+        - "John Leslie, Value and Existence (1979), canonical axiarchic/value-to-being source."
+        - "W. J. Mander (2016), The Axiarchic Argument, explicitly examines the claim that goodness has creative/explanatory power."
+        - "Tim Mulgan (2015), Purpose in the Universe, treats Leslie-style axiarchism as cosmic-purpose explanation without simply identifying it with theism."
+    C-BRUTE_NOMOLOGICAL_SUBVARIANT:
+      status: "PRECURSOR_AND_DIRECT_LAW_PRIMITIVISM_FOUND"
+      records:
+        - "Brute Facts (Vintiadis & Mekios, eds., 2018) explicitly includes laws/modal facts within the bruteness research program."
+        - "Walter Ott (2022), The Metaphysics of Laws of Nature, treats primitivist laws as brute facts about worlds they govern."
+        - "Humean-laws literature provides the contrasting reductionist route on which laws are not additional irreducible governing facts."
+      boundary: "No inference is made here from law-primitivism to a contingent nomological ultimate; exact modal status remains proposition-specific."
+
+lawful_access_attempts_and_barriers:
+  - id: "Rosen-Modal-Fictionalism"
+    status: "PRIMARY_IDENTITY_VERIFIED__FULL_TEXT_NOT_OBTAINED_IN_THIS_BATCH"
+    alternatives_checked:
+      - "Princeton University publication record"
+      - "SEP modal-fictionalism orientation and primary citation routes"
+    consequence: "No negative evidential inference; use only accessible primary passages or independently serious sources later."
+  - id: "Bliss-Circles-of-Ground"
+    status: "PRIMARY_IDENTITY_AND_ABSTRACT_VERIFIED__AUTHOR_REQUEST_ROUTE_AVAILABLE"
+    alternatives_checked:
+      - "ResearchGate full-text-request route"
+      - "publisher/metadata routes"
+    consequence: "Abstract/native thesis may guide discovery; truth-critical quotations require lawful accessible text."
+  - id: "Hartshorne-Logic-of-Perfection"
+    status: "PRIMARY_BOOK_PREVIEW_AND_ARCHIVE_IDENTITY_LOCATED"
+    alternatives_checked:
+      - "Open Library preview"
+      - "Internet Archive item identity"
+      - "SEP process-theism/Hartshorne scholarly synthesis"
+  - id: "Schaffer-Monism"
+    status: "PRIMARY_OR_AUTHOR/REPOSITORY_TEXT_AVAILABLE"
+    alternatives_checked:
+      - "ANU repository record"
+      - "author-hosted Internal Relatedness paper"
+      - "public PDF mirrors with publication metadata"
+  - id: "Udayana-Nyayakusumanjali"
+    status: "PUBLIC_DOMAIN_TRANSLATION_ROUTE_LOCATED"
+    alternatives_checked:
+      - "Rare Book Society of India Cowell translation/archive"
+      - "SEP scholarly discussion"
+
+S1_completion_judgment:
+  all_13_candidate_families_have_native_or_required_precursor_access_route: true
+  required_non_Abrahamic_agent_probe_attempted: true
+  required_non_classical_agent_probe_attempted: true
+  required_IC_single_plural_layered_probes_attempted: true
+  required_IC_causal_grounding_constitutive_probes_attempted: true
+  required_thin_family_precursor_searches_attempted: true
+  inaccessible_primary_material_recorded_without_negative_inference: true
+  S1_NATIVE_SEARCH_STAGE_COMPLETE: true
+  candidate_native_coverage_complete: false
+  rationale: "A9's mandatory S1 search/probe obligations have been executed sufficiently to proceed to S2, while proposition-level coverage and truth-critical access remain open and cannot be certified by the Program Lead."
+
+next_action:
+  stage: "S2_ADVERSE"
+  rule: "Independently search serious objections, critiques, and rival technical frameworks for all 13 candidates; do not rely only on opponents cited by proponents."
+  Reviewer_E_role_reserved: true
