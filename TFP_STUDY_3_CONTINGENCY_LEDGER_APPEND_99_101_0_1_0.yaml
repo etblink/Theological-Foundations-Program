@@ -1,0 +1,49 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_97_98_blob_sha: "2a1323a9d1979e33b730c8a660f46874efadf3d7"
+  prior_next_sequence: 99
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 99
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer G extension-integrity exposure: input blob a7147bdbe6aa5e1f0479a1b444779990c30b1546, prompt blob 40588585c2692deaf312384b6f25950f5d01f485, certified baseline artifacts, ledger extension 40-96, authorized amendment-chain artifacts, and repository-history metadata through fixed endpoint 42eb83ac663344cdde8052485049349d6d4a631b."
+    exposure_class: "G0_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_EXPOSURE"
+    amendment_surfaces: ["A17 ledger extension integrity","C4 chronology consequence","A4/A5/A6 inventory operability"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 98 and before sequence 100; certification target itself remained fixed at sequence 96."
+
+  - sequence: 100
+    repository_commit: "575ab12ddcffe082079f8bc91a92a6d62ea11df9"
+    timestamp_utc: "2026-10-07T02:38:40Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_REPORT_0_1_0.md blob 08a225fa27fe0d3d4cf6ba235b93dbc61be372c3"
+    exposure_class: "G0_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_RESULT_FREEZE"
+    amendment_surfaces: ["A17 ledger extension integrity","C4 chronology consequence","A4/A5/A6 inventory operability"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "LEDGER_EXTENSION_INTEGRITY_PASS"
+    certification_endpoint_sequence: 96
+
+  - sequence: 101
+    repository_commit: "0169e574a255028c39637e3dc407e42673071345"
+    timestamp_utc: "2026-10-07T02:39:04Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_DISPOSITION_0_1_0.yaml blob dc8e638d7fc8a738c65f088305f8f162fcb02af0"
+    exposure_class: "G0_PROGRAM_LEAD_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_DISPOSITION"
+    amendment_surfaces: ["A17 ledger extension integrity","C4 chronology consequence","A4/A5/A6 inventory operability","A8 handoff"]
+    outcome_relevant_evidence: false
+    result_status: "LEDGER_EXTENSION_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__INVENTORY_0_1_2_OPERATIVE_FOR_LATER_G0"
+
+next_sequence: 102
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
