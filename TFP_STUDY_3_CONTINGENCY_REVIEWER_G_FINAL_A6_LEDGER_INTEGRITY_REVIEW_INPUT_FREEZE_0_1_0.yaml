@@ -1,0 +1,117 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE"
+status: "FROZEN__FIXED_ENDPOINT_SEQUENCE_220"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  required_lineage: "exact same Anthropic / Claude Opus 5.5 Reviewer-G conversation that returned A11_LEDGER_INTEGRITY_PASS"
+  role: "independent ledger-integrity reviewer"
+  prohibited_roles:
+    - "Program Lead"
+    - "Reviewer B A6 coverage certifier"
+    - "Reviewer F amendment-direction reviewer"
+    - "strict independent auditor"
+
+certification_scope:
+  previously_certified_baseline_sequence: 193
+  previously_certified_baseline_commit: "32e6744d9e5ed86350db00d0aee0c58d07eea827"
+  extension_start_sequence: 194
+  extension_end_sequence: 220
+  fixed_endpoint_commit: "57a118060fe3002f5a4de7edf4c4d8c85467c20c"
+  endpoint_rule: "The endpoint commit is the append-container commit that adds the immutable ledger append containing sequence 220; individual ledger entries cite earlier event commits by design."
+  files_created_after_endpoint_are_outside_certification_target: true
+
+authorized_ledger_appends:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_194_195_0_1_0.yaml", blob_sha: "87aacd5f2ac585e9abad950407c8bd524c418fce", sequences: [194,195] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_196_198_0_1_0.yaml", blob_sha: "edf3be8a4f6869969d4b228b34945f4be16ba0fa", sequences: [196,197,198] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_199_0_1_0.yaml", blob_sha: "d69aede1df4fa7dbbca11af0388331c382ab3459", sequences: [199] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_200_202_0_1_0.yaml", blob_sha: "aed12e2a8c7c58c6492362f32b9d012df32c6cc0", sequences: [200,201,202] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_203_208_0_1_0.yaml", blob_sha: "22817c6f7a4020699e984f184d26024cd0ad1d73", sequences: [203,204,205,206,207,208] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_209_210_0_1_0.yaml", blob_sha: "ad7b6d28ba140da21e97184277a3c5106a9edf5e", sequences: [209,210] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_211_214_0_1_0.yaml", blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7", sequences: [211,212,213,214] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_215_216_0_1_0.yaml", blob_sha: "ce02659d14c41ec83f3b14ba4b67f661261ec3e4", sequences: [215,216] }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_217_220_0_1_0.yaml", blob_sha: "ce48031199024c5c1a7ef9bff0b3dabb8bbd409a", sequences: [217,218,219,220] }
+
+authorized_identity_and_control_artifacts:
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A11_DISCRIMINATOR_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md", blob_sha: "aa454af740e265cef05becdf5c759dcb9c488642", use: "previously certified sequence-193 baseline" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "5b514fa16345ec4badbc7008685f19d7a147ecf2", use: "Program Lead acceptance of the baseline audit" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE_0_1_0.yaml", blob_sha: "a820caaea0dc81c446085f558f711b6699c4af02", use: "sequence-199 operational acceptance" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml", blob_sha: "24c48964b430a47f7243297958a74c4621d3ebce", use: "sequence-200 original final-A6 map" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md", blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb", use: "sequence-204 repair-required result" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "013dfdb9fac5385471272d6ab127459faf73a485", use: "sequence-205 GD-N1-only repair authorization" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml", blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca", use: "sequence-206 repaired map" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "b70eed10eb3979fb2d7b6d40b61906b95f8f24c5", use: "sequence-207 amendment record" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REPAIR_COMPLETION_0_1_0.yaml", blob_sha: "a23f32ae656f37c1fec4f92156ceb0c33c56f6ad", use: "sequence-208 repair completion" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_REPORT_0_1_0.md", blob_sha: "609b31277a65f31f0c06d60964f3fb081b787a97", use: "sequence-212 A6 content certification" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml", blob_sha: "e3e2da7f637949f0ae10564717dfdd69209cec41", use: "sequence-213 content-pass disposition" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml", blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74", use: "sequence-214 nonblocking editorial erratum" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE_0_1_0.yaml", blob_sha: "5d0ea6ea23ac70953848daf37207d0b095adf663", use: "Reviewer F fixed endpoint sequence 214" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md", blob_sha: "685f8387b6eab5fe90140b4d6ac863b62193987e", use: "sequence-218 C4 pass" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_C4_ENDPOINT_IDENTITY_RESOLUTION_0_1_0.yaml", blob_sha: "11541cd7aef45ae3f87b28d99e33ebd418bc223a", use: "sequence-219 event/container identity resolution" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "782d13628a4e668c3321ba7bd64167ed8c37e421", use: "sequence-220 C4 disposition" }
+
+repository_metadata_authorized:
+  - "commit/tree/blob identity and ancestry metadata from certified endpoint 32e6744d9e5ed86350db00d0aee0c58d07eea827 through fixed endpoint 57a118060fe3002f5a4de7edf4c4d8c85467c20c"
+  - "path history needed to verify add-once / no reachable rewrite"
+  - "commit subjects and filenames needed to detect unledgered Study-3 artifact commits"
+  - "parent-tree presence/absence checks for ledgered event artifacts and append-container commits"
+
+known_identity_question:
+  sequence_214:
+    event_commit_sha: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+    event_path: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM_0_1_0.yaml"
+    event_blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+    append_container_commit_sha: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+    append_container_blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7"
+    proposed_resolution: "The event commit and immediate child append-container commit are distinct by design; the latter is the fixed repository endpoint after sequence 214 was frozen."
+
+specific_integrity_questions:
+  - "Does append 194-195 correctly bridge from the previously certified sequence-193 endpoint with no gap or rollback?"
+  - "Are sequences 194-220 complete and monotonic, with exact predecessor blob pins?"
+  - "Does every commit-bearing ledger entry bind to an ancestor commit where the cited artifact path has the cited blob and was newly added?"
+  - "Do ledger timestamps equal corresponding commit times where a commit is cited?"
+  - "Are null-commit/off-repository reviewer-exposure entries 196, 203, 211, and 217 bounded by valid order notes and actor lineage?"
+  - "Are there any Study-3 artifact commits in the extension range that are neither append containers nor represented by a ledger entry?"
+  - "Does sequence 214 correctly cite event commit 0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb while 1487742ad0e291d7e54de498cd365c6a795d81d7 is the later append-container commit adding sequences 211-214?"
+  - "Does the final-A6 chain preserve Reviewer B review -> GD-N1 repair -> focused recheck -> content pass -> C4 launch -> Reviewer F pass -> Program Lead disposition ordering?"
+  - "Did any authorized artifact or ledger entry record outcome-relevant evidence exposure or G1 authorization?"
+  - "Does Reviewer F's PRE_EVIDENCE_AMENDMENT chronology premise survive independently?"
+  - "Is the editorial erratum truly non-content-changing and correctly bound after the exact Reviewer-B-certified map blob?"
+
+forbidden:
+  - "redo Reviewer B A6 content certification"
+  - "reclassify Reviewer F amendment direction"
+  - "inspect outcome-relevant evidence"
+  - "inspect source-acquisition results"
+  - "alter coverage routes or A11"
+  - "certify MAKEABLE or proposition dispositions"
+  - "rank candidates or assess truth/plausibility"
+  - "begin G1"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "BASELINE / ENDPOINT VERIFICATION"
+    - "SEQUENCE 194-220 CONTINUITY"
+    - "COMMIT / BLOB / REWRITE AUDIT"
+    - "OFF-REPOSITORY EVENT AUDIT"
+    - "SEQUENCE-214 EVENT / CONTAINER IDENTITY CHECK"
+    - "REVIEWER B / REVIEWER F PROVENANCE CHECK"
+    - "EDITORIAL ERRATUM INTEGRITY CHECK"
+    - "OUTCOME-EVIDENCE EXPOSURE AUDIT"
+    - "C4 CHRONOLOGY CONSEQUENCE"
+    - "REQUIRED REPAIRS"
+    - "FINAL A6 LEDGER INTEGRITY STATUS"
+  status_namespace:
+    - "FINAL_A6_LEDGER_INTEGRITY_PASS"
+    - "FINAL_A6_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  final_A6_content_certified: true
+  final_A6_coverage_map_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
