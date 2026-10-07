@@ -1,0 +1,99 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_COMPLETION"
+status: "PACKETS_CONSTRUCTED__PENDING_REVIEWER_A_EQUAL_STRENGTH_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+candidate_universe_freeze:
+  path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
+  blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
+  candidate_count: 13
+
+construction_manifest:
+  path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_STEELMAN_PACKET_CONSTRUCTION_MANIFEST_0_1_0.yaml"
+  blob_sha: "2798b0f43268d637ae715ae86cb3edfd9d93a520"
+
+mechanical_B3_check:
+  required_sections:
+    - "candidate-native / primary formulation"
+    - "strongest serious proponent / native sources"
+    - "core truth propositions"
+    - "authority commitments"
+    - "internal success conditions"
+    - "expected evidence / argumentative profile"
+    - "strongest recognized objections"
+    - "common caricatures explicitly rejected"
+    - "packet contamination note"
+  all_13_packets_have_all_required_sections: true
+  equal_strength_or_source_quality_adjudicated_by_Program_Lead: false
+
+packets:
+  - candidate_id: "C-BRUTE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_BRUTE_0_1_0.md"
+    blob_sha: "0888f048117afed26c95cb9b6b01c177d406bfb2"
+    literature_status: "direct recognizable position"
+  - candidate_id: "C-REGRESS"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_REGRESS_0_1_0.md"
+    blob_sha: "8790ba1007037a632a42fbacf723894424b448b6"
+    literature_status: "direct recognizable position"
+  - candidate_id: "C-HOLISTIC"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_HOLISTIC_0_1_0.md"
+    blob_sha: "5128dfb29fbbf88eb098e971aec64746ec6f0065"
+    literature_status: "directly anchored in non-well-founded grounding/coherentism literature"
+  - candidate_id: "C-SELF-EXPLANATORY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_SELF_EXPLANATORY_0_1_0.md"
+    blob_sha: "7b6ffebd9a2a5b625137b928650dbc0ef824c143"
+    literature_status: "synthetic TFP family anchored in serious self-explanation literature"
+  - candidate_id: "C-GLOBAL-DEFLATION"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_GLOBAL_DEFLATION_0_1_0.md"
+    blob_sha: "32807841c6805b9d6c8440895457118f10f842a1"
+    literature_status: "direct recognizable family of Humean/Russellian objections"
+  - candidate_id: "C-MODAL-DISSOLUTION"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_MODAL_DISSOLUTION_0_1_0.md"
+    blob_sha: "54dbb7733a164899b0ec575ecd673dc17a3b26d6"
+    literature_status: "synthetic TFP family anchored in modal anti-realism"
+  - candidate_id: "C-INDETERMINATE-ULTIMACY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDETERMINATE_ULTIMACY_0_1_0.md"
+    blob_sha: "99b5f62cd33a190c3e2ec081f39de9033d1c3c37"
+    literature_status: "synthetic ultimacy application anchored in metaphysical-indeterminacy literature"
+  - candidate_id: "C-NECESSITARIAN"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NECESSITARIAN_0_1_0.md"
+    blob_sha: "0b8a1ac7d79077256a98a188844c97689c52056c"
+    literature_status: "direct historical/contemporary position"
+  - candidate_id: "C-INDEXICAL-PLURALITY"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_INDEXICAL_PLURALITY_0_1_0.md"
+    blob_sha: "5cb7058b6903d38579fd5ae8dd26a35795c4f75b"
+    literature_status: "synthetic TFP family anchored in Lewisian modal realism/indexical actuality"
+  - candidate_id: "C-NEC-IMPERSONAL-CONCRETE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_CONCRETE_0_1_0.md"
+    blob_sha: "1765cd42e8b7ffaf775c4ab5a4756044fdacf3d5"
+    literature_status: "literature-backed umbrella; immanent necessity plus historical analogues"
+  - candidate_id: "C-NEC-AGENTIVE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_AGENTIVE_0_1_0.md"
+    blob_sha: "46c4333f379ac9f394eddcd9ec52dc0fb56da113"
+    literature_status: "direct contemporary contingency-argument family"
+  - candidate_id: "C-NEC-IMPERSONAL-PRINCIPLE"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_NEC_IMPERSONAL_PRINCIPLE_0_1_0.md"
+    blob_sha: "12108b38091a9ecacdff8ab27222e733175ce68c"
+    literature_status: "synthetic umbrella across structural/mathematical/metaphysical-law literatures"
+  - candidate_id: "C-AXIARCHIC"
+    path: "TFP_STUDY_3_CONTINGENCY_STEELMAN_PACKET_C_AXIARCHIC_0_1_0.md"
+    blob_sha: "ee3e8e1ee24671df264da1985ae433989c037200"
+    literature_status: "direct recognizable axiarchist position"
+
+construction_boundaries:
+  comparative_ranking_performed: false
+  truth_adjudication_performed: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+
+next_control:
+  reviewer_slot: "REVIEWER_A"
+  role: "candidate_steelman_equal_strength_reviewer"
+  compare_dimensions:
+    - "specificity"
+    - "source quality"
+    - "objection coverage"
+    - "charitable formulation"
+  note: "Synthetic-family status alone is not a weakness if the packet clearly distinguishes TFP synthesis from source-specific claims and uses the strongest appropriate adjacent literature."
