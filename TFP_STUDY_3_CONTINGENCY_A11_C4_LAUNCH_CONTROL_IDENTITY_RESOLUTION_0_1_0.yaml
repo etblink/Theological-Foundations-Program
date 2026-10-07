@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A11_C4_LAUNCH_CONTROL_IDENTITY_RESOLUTION"
+status: "FROZEN_NONOUTCOME_METADATA_RESOLUTION__PENDING_REVIEWER_G_LEDGER_INTEGRITY_CONFIRMATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+trigger:
+  reviewer_F_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A11_DISCRIMINATOR_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "62a8d07b1389b05d15e7216fef68fd4c73b15697"
+    disposition: "C4_DIRECTION_REVIEW_PASS"
+  warnings:
+    - "Ledger append 177-179 returned blob 498372b1e72ab7c2b0a2b0cf045314d44242f46c while the C4 input freeze labeled a33624d372de42bb4e5e65d285dae9366b294deb as that file's blob."
+    - "The C4 input freeze named c96f085d9051d9456a5b9adbfd92d8cd6f07c586 as the fixed endpoint commit for sequence 187 while the sequence-187 event records fd2b387c7f93288eb31e7ff430073d8f040e8d5c."
+
+resolution_177_179:
+  path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml"
+  actual_blob_sha: "498372b1e72ab7c2b0a2b0cf045314d44242f46c"
+  creation_commit_sha: "a33624d372de42bb4e5e65d285dae9366b294deb"
+  creation_commit_parent: "7ac65a6325aea30f33e5f1201b9514bcce99eba5"
+  creation_commit_change_set:
+    file_count: 1
+    path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml"
+    status: "added"
+    blob_sha: "498372b1e72ab7c2b0a2b0cf045314d44242f46c"
+  diagnosis: "COMMIT_SHA_MISLABELED_AS_BLOB_SHA"
+  affected_frozen_metadata:
+    - "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_180_182_0_1_0.yaml base_chain.append_177_179_blob_sha"
+    - "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A11_DISCRIMINATOR_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE_0_1_0.yaml authorized_chronology_inputs pin for append 177-179"
+    - "canonical STATE.yaml historical A11 review-result ledger-append blob field if still carrying the creation commit as blob identity"
+  content_ambiguity: false
+  rewrite_evidence_found_by_program_lead: false
+  correction_method: "Do not rewrite frozen historical artifacts. Carry both identities prospectively and require Reviewer G to confirm chain continuity and absence of rewrite."
+
+resolution_sequence_187:
+  sequence_187_event_commit_sha: "fd2b387c7f93288eb31e7ff430073d8f040e8d5c"
+  sequence_187_event_path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+  sequence_187_event_blob_sha: "d2a187842fafb77e73933f1e6d08ab3e1a20243a"
+  append_185_187_container_commit_sha: "c96f085d9051d9456a5b9adbfd92d8cd6f07c586"
+  append_185_187_container_parent: "fd2b387c7f93288eb31e7ff430073d8f040e8d5c"
+  append_185_187_blob_sha: "08702219e80feda35e79e898aad928901b8f6e5d"
+  diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+  rule: "The event commit identifies the sequence-187 event. The append-container commit identifies the repository endpoint after sequences 185-187 were frozen. They are distinct by design and must not be conflated."
+
+effect_on_C4:
+  Reviewer_F_direction_classification_replayed_by_program_lead: true
+  direction_defect_found: false
+  candidate_symmetry_defect_found: false
+  timing_classification: "PRE_EVIDENCE_AMENDMENT__CONDITIONAL_ON_REVIEWER_G_LEDGER_INTEGRITY"
+  C4_pass_invalidated: false
+  operationalization_blocked_until_Reviewer_G: true
+
+scope:
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  discriminator_register_operational: false
+  final_A6_coverage_certified: false
