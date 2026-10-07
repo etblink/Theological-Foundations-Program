@@ -1,0 +1,75 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_FINAL_A6_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+status: "FINAL_A6_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__OPERATIONALIZATION_AUTHORIZED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_FINAL_A6_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "73be34e5a7be306a10f602c4037893f034a05f55"
+  reviewer_status: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+  reviewer_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+
+independent_replay:
+  previously_certified_baseline_sequence: 193
+  extension_start_sequence: 194
+  extension_end_sequence: 220
+  fixed_endpoint_commit: "57a118060fe3002f5a4de7edf4c4d8c85467c20c"
+  extension_commit_count: 32
+  event_commit_count: 23
+  append_container_count: 9
+  sequence_count: 27
+  contiguous_sequences_194_220: true
+  null_commit_entries: [196,203,211,217]
+  predecessor_blob_pins_exact: true
+  all_extension_commits_single_parent: true
+  all_changed_paths_added_only: true
+  unledgered_Study_3_artifact_commit_found: false
+  reachable_rewrite_found: false
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+
+sequence_214_identity:
+  event_commit_sha: "0ce2feec9947c0f308d4ea90ea470ca1bc87c3cb"
+  event_blob_sha: "ffe5a6b38cd6fa9707e4dd18f459848084656c74"
+  append_container_commit_sha: "1487742ad0e291d7e54de498cd365c6a795d81d7"
+  append_container_blob_sha: "f0e7aa3db94364a33b8aad5b9ae8801c8015b0a7"
+  diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+  Program_Lead_resolution_confirmed: true
+
+editorial_erratum:
+  target_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  certified_map_blob_preserved: true
+  route_content_changed: false
+  proposition_changed: false
+  coverage_mode_changed: false
+  controlling_counts:
+    COMPARATIVE_ROUTE: 56
+    NONCOMPARATIVE_CANDIDATE_SPECIFIC: 6
+    NONCOMPARATIVE_SHARED_FLOOR: 0
+  nonblocking: true
+
+chronology:
+  Reviewer_B_provenance_and_ordering_confirmed: true
+  Reviewer_F_provenance_and_ordering_confirmed: true
+  Reviewer_F_PRE_EVIDENCE_AMENDMENT_premise_survives: true
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  amendment_direction: "NEUTRAL"
+
+nonblocking_followups:
+  - "Future null-commit exposure entries should repeat their governing input blob pins inline when practical."
+  - "Ledger this review's exposure/result/disposition from sequence 223 onward."
+
+operationalization:
+  repaired_coverage_map:
+    path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+    blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  Reviewer_B_content_certification: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  Reviewer_F_C4: "C4_DIRECTION_REVIEW_PASS__PRE_EVIDENCE_AMENDMENT__NEUTRAL"
+  Reviewer_G_integrity: "FINAL_A6_LEDGER_INTEGRITY_PASS"
+  final_A6_operationalization_authorized: true
+  MAKEABLE_certified: false
+  proposition_dispositions_issued: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
