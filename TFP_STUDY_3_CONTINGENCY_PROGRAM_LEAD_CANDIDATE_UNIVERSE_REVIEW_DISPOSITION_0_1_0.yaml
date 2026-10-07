@@ -1,0 +1,66 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION"
+status: "REPAIR_ACCEPTED__IMPLEMENTATION_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+  reviewer_status: "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+
+independent_replay:
+  C_HOLISTIC_vs_C_SELF_EXPLANATORY:
+    reviewer_finding: "C-HOLISTIC is broad enough to subsume item-reflexive self-explanation."
+    Program_Lead_disposition: "AGREE"
+    B1_basis: "A candidate may not be subsumed by another admitted candidate."
+    repair: "Narrow C-HOLISTIC to mutual/structural/non-reflexive non-well-founded dependence and retain C-SELF-EXPLANATORY as item-reflexive."
+  C_MODAL_DISSOLUTION_vs_C_GLOBAL_DEFLATION:
+    reviewer_finding: "C-MODAL-DISSOLUTION disjoins modal-presupposition failure with explanatory-demand deflation."
+    Program_Lead_disposition: "AGREE"
+    B1_basis: "A family must be specified enough to generate consequences and materially distinct rather than containing two separable necessary commitments."
+    repair: "Restrict C-MODAL-DISSOLUTION to modal-presupposition failure. Place genuine-contingency global-demand deflation, including total existence-explanation deflation as a subvariant, under C-GLOBAL-DEFLATION."
+  C_INDETERMINATE_ULTIMACY:
+    reviewer_finding: "Admit ontic indeterminacy of ultimacy as distinct from epistemic B6 UNDERDETERMINED."
+    Program_Lead_disposition: "AGREE"
+    B1_B2_basis: "This is a substantive truth-bearing claim that differs on a necessary proposition: there is no determinate fact of the matter about ultimacy. Protocol B2 permits independently generated major classes that differ on a necessary truth-bearing proposition."
+    B6_boundary: "The candidate claims ontic indeterminacy; B6 UNDERDETERMINED is an adjudicative epistemic outcome."
+    repair: "Add C-INDETERMINATE-ULTIMACY."
+  principled_partitioned_ultimacy:
+    reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    Program_Lead_disposition: "AGREE"
+    reason: "No non-conjunctive partition principle is presently specified; a conjunction is subsumed by admitted families."
+    classification: "SUBSTANTIVE_EXCLUSION__B1_NON_DISTINCT_OR_UNDERSPECIFIED"
+    reopen_if: "A later non-conjunctive partition rule is traceably formulated with distinct truth-bearing consequences; then apply B5."
+  dialetheic_or_impossible_existence:
+    reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    Program_Lead_disposition: "AGREE"
+    reason: "No traceably specified consequence-generating family in the frozen inputs avoids subsumption into modal dissolution, ontic indeterminacy, or a remote logical variant."
+    classification: "SUBSTANTIVE_EXCLUSION__B1_SPECIFICATION_TRACEABILITY_FAILURE"
+    note: "This is not a plausibility judgment and heterodox status is not a reason for exclusion."
+    reopen_if: "A traceably formulated model satisfying B1 is later identified; then apply B5."
+  nomological_ultimacy:
+    reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    Program_Lead_disposition: "AGREE"
+    reason: "Its modal status determines subsumption into existing families."
+    classification: "SUBSTANTIVE_EXCLUSION__B1_SUBSUMED"
+    repair: "Add nomological-but-not-metaphysically-necessary ultimacy as an explicit C-BRUTE subvariant."
+  impersonal_principle_subvariants:
+    reviewer_disposition: "DO_NOT_SPLIT"
+    Program_Lead_disposition: "AGREE"
+    reason: "No frozen formulation establishes a different necessary family commitment for abstract/structural, law-like, or modal-space variants."
+  plurality:
+    reviewer_disposition: "DO_NOT_RESTORE_AS_STANDALONE"
+    Program_Lead_disposition: "AGREE"
+    reason: "Cardinality remains cross-cutting rather than an explanatory kind by itself."
+  axiarchic_boundary:
+    reviewer_disposition: "KEEP_WITH_EXPLICIT_IMPERSONAL_PERFECT_GOODNESS_BOUNDARY"
+    Program_Lead_disposition: "AGREE"
+    repair: "State explicitly that evaluative requiredness is not the perfect goodness of a personal agent and does not imply God."
+
+outcome_relevant_evidence_used: false
+candidate_ranking_performed: false
+truth_adjudication_performed: false
+candidate_universe_frozen: false
+next_action: "Implement repaired provisional register and B4 exclusion record, then return the repair to Reviewer A for focused recheck before candidate-universe freeze."
