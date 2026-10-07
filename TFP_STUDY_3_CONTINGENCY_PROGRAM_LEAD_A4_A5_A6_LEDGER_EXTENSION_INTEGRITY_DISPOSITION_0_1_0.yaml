@@ -1,0 +1,56 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_DISPOSITION"
+status: "LEDGER_EXTENSION_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__INVENTORY_0_1_2_OPERATIVE_FOR_LATER_G0"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "08a225fa27fe0d3d4cf6ba235b93dbc61be372c3"
+  reviewer_status: "LEDGER_EXTENSION_INTEGRITY_PASS"
+
+certification_target:
+  endpoint_commit: "42eb83ac663344cdde8052485049349d6d4a631b"
+  endpoint_sequence: 96
+  previously_certified_baseline_sequences: "1-39"
+  audited_extension_sequences: "40-96"
+
+independent_replay:
+  sequence_40_96_contiguous: true
+  append_count: 11
+  append_base_blob_links_all_match: true
+  prior_next_sequence_links_all_match: true
+  commit_bearing_entries_verified: 47
+  commit_bearing_blob_bindings_all_match: true
+  commit_bearing_ancestry_all_match: true
+  commit_bearing_timestamps_all_match: true
+  audited_range_commit_count_after_baseline: 56
+  ledgered_event_commits_in_range: 45
+  append_container_commits_in_range: 11
+  unaccounted_commits: 0
+  missing_expected_commits: 0
+  off_repository_events_checked: 10
+  off_repository_A17_fields_complete: true
+  recorded_outcome_relevant_evidence_exposure: false
+  contradicting_outcome_relevant_exposure_found: false
+  reachable_rewrite_found: false
+
+C4_consequence:
+  Reviewer_F_PRE_EVIDENCE_AMENDMENT_chronology_survives: true
+  inventory_0_1_2_blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  inventory_0_1_2_operational_for_later_G0: true
+  final_A6_coverage_certified: false
+  G1_authorized: false
+
+nonblocking_carry_forwards:
+  - id: "VALID_YAML_NEXT_INPUTS"
+    requirement: "All newly frozen reviewer input artifacts must parse as valid YAML; do not repeat the indentation defect noted in the Reviewer-G extension input."
+  - id: "B3_G1_LITERATURE_OVERLAP"
+    requirement: "Carry the disclosed possibility of overlap between B3 formulation literature and later G1 evidence strata into A9.1 source-plan review and future strict audit."
+  - id: "REVIEWER_G_PROVENANCE_AFTER_ENDPOINT"
+    requirement: "Append Reviewer-G exposure/result and this Program-Lead disposition after sequence 98; these entries are continuing provenance and do not alter the fixed certification target."
+
+next_G0_direction:
+  - "Proceed from the now-operative A4/A5/A6 inventory into Protocol A8 live-background construction and independent Reviewer-C controls."
+  - "Final A6 coverage remains deferred until Reviewer-C discriminator tiering creates CRITICAL discriminator IDs and Reviewer B later returns for coverage certification."
