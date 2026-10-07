@@ -1,0 +1,45 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_D_ASSIGNMENT_ACCEPTANCE"
+status: "ACCEPTED__PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_D"
+  provider: "xAI"
+  model: "Grok 4.7"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  brand_new_conversation: true
+  continuation_or_fork_or_shared_context_descendant_or_subagent: false
+  prior_Study_3_substantive_exposure: false
+  visible_persistent_memory_contains_substantive_Study_3_material: false
+  prior_Study_3_role_in_lineage: false
+  retrieval_restraint_accepted: true
+  returned_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_D"
+
+assignment_basis:
+  source_plan_author_lineage_disjoint: true
+  future_Reviewer_E_lineage_must_be_separately_disjoint: true
+  future_Reviewer_H_lineage_must_be_separately_disjoint: true
+  provider_reuse_is_not_lineage_identity: true
+  no_outcome_material_exposure_before_assignment: true
+
+authorized_role:
+  - "source_plan_reviewer"
+  - "A9.1 blind missing-source-strata elicitation reviewer"
+  - "post-blind source-plan completeness/symmetry reviewer"
+
+restrictions:
+  - "may_not_serve_as_adverse_source_reviewer"
+  - "may_not_serve_as_coverage_state_reviewer"
+  - "may_not_serve_as_MAKEABLE_certifier"
+  - "may_not_serve_as_strict_auditor"
+  - "must_not_open_Program_Lead_source_plan_until_blind_source_strata_report_is_frozen"
+  - "must_not_acquire_or_assess_outcome_relevant_evidence_in_A9_review"
+
+Program_Lead_disposition:
+  assignment_accepted: true
+  blind_A9_1_exposure_authorized_next: true
+  source_plan_exposure_authorized_now: false
+  G1_authorized: false
