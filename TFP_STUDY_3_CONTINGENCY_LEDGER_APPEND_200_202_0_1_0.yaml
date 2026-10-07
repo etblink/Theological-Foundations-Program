@@ -1,0 +1,46 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_199_blob_sha: "d69aede1df4fa7dbbca11af0388331c382ab3459"
+  prior_next_sequence: 200
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 200
+    repository_commit: "6bb31b9620c8abcdc96915e487fd289c87ee9171"
+    timestamp_utc: "2026-10-07T05:46:31Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_0.yaml blob 24c48964b430a47f7243297958a74c4621d3ebce"
+    exposure_class: "G0_FINAL_A6_COVERAGE_MAP_CONSTRUCTION_FREEZE"
+    amendment_surfaces: ["A6 final coverage architecture","Reviewer B certification","later G0 candidate structural eligibility"]
+    outcome_relevant_evidence: false
+    result_status: "PROGRAM_LEAD_CONSTRUCTION_FROZEN__PENDING_REVIEWER_B_FINAL_A6_CERTIFICATION"
+
+  - sequence: 201
+    repository_commit: "529ee1a870428fd38e6c9ae7c87403607fb803dd"
+    timestamp_utc: "2026-10-07T05:47:22Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_INPUT_FREEZE_0_1_0.yaml blob b66beedc107f88081a0a6511238a2c8aff21e5dd"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_COVERAGE_REVIEW_INPUT_FREEZE"
+    amendment_surfaces: ["A6 final coverage certification","coverage-mode validity","burden symmetry"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+  - sequence: 202
+    repository_commit: "b35ce0c097df813f12ef0526918a3202b3a15a35"
+    timestamp_utc: "2026-10-07T05:47:25Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_PROMPT_0_1_0.md blob 5264cd6762bc2d57a25efbb0d5c790f78ff24334"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_COVERAGE_REVIEW_PROMPT_FREEZE"
+    amendment_surfaces: ["A6 final coverage certification","coverage-mode validity","burden symmetry"]
+    outcome_relevant_evidence: false
+    exposure_to_Reviewer_B: false
+
+next_sequence: 203
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
