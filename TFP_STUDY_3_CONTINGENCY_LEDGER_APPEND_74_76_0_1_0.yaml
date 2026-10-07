@@ -1,0 +1,44 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_66_73_blob_sha: "88bba3259c98d0dd16fe008204cf76b380771b3b"
+  prior_next_sequence: 74
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 74
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_FRESH_SESSION -> HUMAN_OWNER -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "Owner-relayed Reviewer B assignment handshake response declaring PROCEDURALLY_DISJOINT_FOR_REVIEWER_B."
+    exposure_class: "G0_REVIEWER_B_ASSIGNMENT_HANDSHAKE_RESPONSE__OFF_REPOSITORY_EVENT"
+    amendment_surfaces: ["A3 reviewer lineage control","A4/A5/A6 review assignment"]
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 73 and before sequence 75."
+
+  - sequence: 75
+    repository_commit: "838405a92da4d8fb54160cac874612103f8d5a9d"
+    timestamp_utc: "2026-10-07T01:45:50Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml blob 10c21e99ac1fe7b14db2ad3828fe03b842d404b0"
+    exposure_class: "G0_REVIEWER_B_ASSIGNMENT_ACCEPTANCE_FREEZE"
+    amendment_surfaces: ["A3 reviewer lineage control","A4/A5/A6 review assignment"]
+    outcome_relevant_evidence: false
+
+  - sequence: 76
+    repository_commit: "d0caefb36c558e3b0e089397009b29e00be7c1fb"
+    timestamp_utc: "2026-10-07T01:45:54Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml blob f0924de1575366ce312bcfd41c938b689fd38d8d"
+    exposure_class: "G0_REVIEWER_B_ROLE_ASSIGNMENT_DELTA_FREEZE"
+    amendment_surfaces: ["A3 reviewer-role control","A4/A5/A6 review"]
+    outcome_relevant_evidence: false
+
+next_sequence: 77
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
