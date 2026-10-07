@@ -1,0 +1,86 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+status: "FROZEN__FIXED_PRE_LAUNCH_ENDPOINT_SEQUENCE_161"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  required_lineage: "exact same xAI / Grok 4.7 Reviewer-F conversation that previously returned C4_DIRECTION_REVIEW_PASS for Study-3 amendments"
+  role: "independent amendment-direction reviewer"
+  prohibited_roles:
+    - "ledger-integrity reviewer"
+    - "strict independent auditor"
+
+fixed_prelaunch_endpoint:
+  endpoint_sequence: 161
+  endpoint_commit: "0ffe02045e078f799c596de54062fac5341f593a"
+  launch_files_after_endpoint_are_not_part_of_timing_target: true
+
+authorized_amendment_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "9143a35ad317187531fbc6e10d7bbf861ccc4b49" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml", blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml", blob_sha: "76e8362dfd8b998038157695c714da1ceef56a15" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_REPORT_0_1_0.md", blob_sha: "e2187001c9f249eac9f041a1ed88decfc554ae8f" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_POST_BLIND_SOURCE_PLAN_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "b0e9a52e8e21c9cb7c6141a2957451b3574153bc" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_SOURCE_PLAN_REPAIR_RECHECK_REPORT_0_1_0.md", blob_sha: "0490f461599c5a34ce68de0416d4ba5cb32c1d99" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_SOURCE_PLAN_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml", blob_sha: "62b6e23f1457dc028ad0fb3fa9ff122901685858" }
+
+authorized_candidate_boundary_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml", blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml", blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml", blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696" }
+
+authorized_chronology_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_138_0_1_0.yaml", blob_sha: "b7fba812f1fd6bc5f122a19c23c488486b74349c" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_139_142_0_1_0.yaml", blob_sha: "cf15ec740072d0c78e12ec746b0ce7d64876196b" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_143_145_0_1_0.yaml", blob_sha: "935c1db17449588a0eadf615b20509b2c3b0d63d" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_146_150_0_1_0.yaml", blob_sha: "feff8d5741fef27f0b19a0e53873a7fa5b0c51f3" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_151_153_0_1_0.yaml", blob_sha: "4dd3a5725b48573e592ec8037e85b341ad2c3026" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_154_156_0_1_0.yaml", blob_sha: "8bfa72a3a9c0347b3ba87214b8ba66c2d7430a6f" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_157_158_0_1_0.yaml", blob_sha: "3b9ab1bf350a297f3d0e1f25df33bef0967a7fa7" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_159_161_0_1_0.yaml", blob_sha: "2065a029e11321c1ddf335dade3b3aad3ca25667" }
+
+protocol_access:
+  - "Protocol 0.1.7 C4 only as needed for amendment direction/timing."
+  - "A9/A9.1 only as needed to understand the source-plan surfaces already frozen."
+
+task:
+  - "Do not redo Reviewer D's A9/A9.1 adequacy review; SOURCE_PLAN 0.1.1 content repair has passed."
+  - "Independently classify each repair surface by directional effect on affected candidates and outcome conditions using ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Give an explicit direction classification for all 13 admitted candidates, even where the result is NEUTRAL or MIXED_OR_UNCLEAR."
+  - "Assess future candidate-native access, adverse-source symmetry, coverage eligibility, MAKEABLE certification, candidate adequacy, relative ranking, truth-warrant eligibility, and discriminator evidential support."
+  - "Check whether source-plan broadening is genuinely symmetric or whether any repair selectively improves one candidate's future evidence access without a corresponding adverse/neutral control."
+  - "Test the proposed PRE_EVIDENCE_AMENDMENT timing against authorized ledger chronology through sequence 161."
+  - "Treat timing as conditional on Reviewer G's later independent ledger-integrity confirmation; do not certify ledger integrity yourself."
+  - "Do not inspect outcome-relevant evidence, source-acquisition results, author/tier discriminators, rank candidates, assess truth/plausibility, or begin G1."
+
+amendment_class_namespace:
+  - "PRE_EVIDENCE_AMENDMENT"
+  - "POST_EVIDENCE_NONMATERIAL"
+  - "POST_EVIDENCE_ADVERSE_ONLY"
+  - "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "AMENDMENT TIMING CLASSIFICATION"
+    - "DIRECTION BY REPAIR SURFACE"
+    - "DIRECTION BY CANDIDATE"
+    - "DIRECTION BY OUTCOME CONDITION"
+    - "SOURCE-PLAN WIDTH / SYMMETRY CHECK"
+    - "REQUIRED CONTROLS OR REPAIRS"
+    - "C4 DIRECTION REVIEW STATUS"
+  status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  source_plan_0_1_1_operational: false
+  source_plan_passed: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
