@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_135_137_blob_sha: "e42579bdc147d55827dce687cdbc87844bf706ac"
+  prior_next_sequence: 138
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 138
+    repository_commit: "0738cb38a119893c1fed7356b4606e9d03a4d2c0"
+    timestamp_utc: "2026-10-07T03:42:33Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml blob ee38d300263942a3c5b0b1a25e42472d74910696"
+    exposure_class: "G0_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE"
+    amendment_surfaces: ["A8 live backgrounds","A8.2 granularity","A8.3 interactions","A9 handoff"]
+    outcome_relevant_evidence: false
+    result_status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+
+next_sequence: 139
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
