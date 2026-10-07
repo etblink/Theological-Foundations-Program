@@ -1,0 +1,32 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_ROLE_ASSIGNMENT_DELTA"
+status: "FROZEN"
+date: "2026-10-06"
+
+base_role_architecture:
+  artifact: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+  blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+
+reviewer_slot: "REVIEWER_B"
+assignment_status: "ASSIGNED__INITIAL_A4_A5_A6_REVIEW_READY"
+authorized_roles:
+  - "initial_claim_typing_reviewer"
+  - "necessary_proposition_and_coverage_map_reviewer"
+
+current_stage_scope:
+  - "A4 claim typing"
+  - "A5 dependency review"
+  - "A6 necessary-proposition classification"
+  - "candidate-specific/shared-floor classification"
+  - "preliminary coverage constraints"
+
+deferred_stage:
+  final_A6_coverage_certification: "AFTER_REVIEWER_C_DISCRIMINATOR_TIERING"
+
+prohibited_roles:
+  - "discriminator_tier_reviewer"
+  - "strict_independent_auditor"
+
+outcome_relevant_evidence_exposure_authorized: false
+G1_authorized: false
