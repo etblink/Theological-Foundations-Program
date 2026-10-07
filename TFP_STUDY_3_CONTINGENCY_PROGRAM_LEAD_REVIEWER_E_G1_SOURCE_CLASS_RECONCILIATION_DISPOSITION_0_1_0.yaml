@@ -1,0 +1,93 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION"
+status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED__INDEPENDENTLY_CONFIRMED__G1_G2_G3_DELTA_AUTHORIZED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md"
+  blob_sha: "729dd61ff0d0870b3540371e4588b1ca3ada2436"
+  reviewer_status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+
+independent_replay:
+  reviewer_lineage_continuity_accepted: true
+  blind_phase_closed_before_S1_S5_exposure: true
+  SC1_SC8_reconciliation:
+    accepted_as_source_class_reconciliation: true
+    coverage_certification_inferred: false
+    MAKEABLE_certification_inferred: false
+    source_scarcity_as_negative_evidence: false
+  historical_SC2_accounting_erratum:
+    confirmed: true
+    unsupported_prior_claims:
+      - "Aitken Madhyamaka/indefinitism route already present in S1-S5"
+      - "Huayan/Fazang adjacent holistic stream noted in S1 completion"
+    independent_repository_check:
+      S1_S5_Aitken_hits: 0
+      S1_S5_Madhyamaka_hits: 0
+      S1_S5_Huayan_hits: 0
+      S1_S5_Fazang_hits: 0
+    practical_effect: "HISTORICAL_PROBE_YIELD_ACCOUNTING_ONLY__FOLLOWUP_UNIVERSE_NOW_CONTAINS_THE_ROUTES"
+  Pearce_attribution_erratum:
+    confirmed: true
+    erroneous_followup_text: "Mark Pearce"
+    correct_author: "Kenneth L. Pearce"
+    article: "Metaphysical Rationalism Requires Grounding Indeterminism"
+    DOI: "10.1017/apa.2024.17"
+    S5_006_already_correct: true
+
+material_gap_replay:
+  G1_MODAL_DISSOLUTION_NATIVE:
+    confirmed_absent_from_S1_S5_and_followup: true
+    repository_search_hits:
+      Thomasson: 0
+      Norms_and_Necessity: 0
+      Donaldson: 0
+    significance: "Bears on MD-N1-MD-N4 and CRITICAL D11-01."
+    acquisition_authorized:
+      - "Amie L. Thomasson, Norms and Necessity (2020)"
+      - "at least one contemporary critical reply, with Kment and Donaldson/Wang prioritized"
+    interpretation_control: "Non-descriptivism/modal normativism is not automatically equivalent to MD-N2 truth-inaptness; exact candidate support requires later proposition-level bridge."
+  G2_BRUTE_SKEPTICAL_DEFEAT:
+    confirmed_absent_from_S1_S5_and_followup: true
+    repository_search_hits:
+      Koons: 0
+      exact_skepticism_PSR_title: 0
+    note: "Other Pruss materials are present but not the Koons-Pruss empirical-skepticism route or Pruss 2006 chapter 18 as that route."
+    significance: "Potentially bears on BR-N2-BR-N4 and CRITICAL D11-05."
+    acquisition_authorized:
+      - "Koons & Pruss, Skepticism and the principle of sufficient reason"
+      - "Pruss 2006, chapter 18, Inductive Skepticism"
+    interpretation_control: "The route targets rejection of a restricted PSR; it is not automatically a defeater of every brute-ultimacy formulation without proposition-level bridge."
+  G3_GLOBAL_DEFLATION_CONTEMPORARY_NATIVE:
+    confirmed_absent_from_S1_S5_and_followup: true
+    repository_search_hits:
+      Maitzen: 0
+      Gruenbaum_variants: 0
+    significance: "Bears on GD-N2-GD-N3 and CRITICAL D11-04."
+    acquisition_authorized:
+      - "Stephen Maitzen, Stop Asking Why There's Anything (2012)"
+      - "Stephen Maitzen, Questioning the Question (2013)"
+      - "Adolf Grünbaum, The Poverty of Theistic Cosmology (2004)"
+    interpretation_control: "Maitzen's sortal/pseudo-question route is distinct from Hume-Edwards; Grünbaum's anti-PEQ argument includes theism-specific targets and must not be generalized beyond the global-demand premises it actually addresses."
+
+carried_controls_from_reviewer_E:
+  D11_02_epistemicist_condition: "CARRY_FORWARD"
+  SC6_existential_inertia_relation_specificity: "CARRY_FORWARD"
+  SC1_bridge_and_nitya_cautions: "CARRY_FORWARD"
+  F1_symmetric_application_D11_11_D11_12_D11_14: "CARRY_FORWARD"
+  F1_post_evidence_contamination_controls: "UNCHANGED"
+  Goswick_direction_confirm_before_proposition_use: true
+  Barnes_2014_minimum_depth_before_D11_02: "AT_LEAST_ABSTRACT_LEVEL"
+
+disposition:
+  Reviewer_E_reconciliation_result_accepted: true
+  coverage_review_ready_now: false
+  targeted_delta_followup_authorized: true
+  targeted_delta_scope: ["G1","G2","G3"]
+  errata_required: true
+  same_Reviewer_E_lineage_delta_reconciliation_required_after_delta: true
+  no_candidate_ranking: true
+  no_proposition_truth_disposition: true
+  no_theological_conclusion: true
