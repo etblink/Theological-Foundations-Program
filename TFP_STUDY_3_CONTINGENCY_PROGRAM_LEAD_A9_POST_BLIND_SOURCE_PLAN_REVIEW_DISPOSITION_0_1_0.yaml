@@ -1,0 +1,55 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A9_POST_BLIND_SOURCE_PLAN_REVIEW_DISPOSITION"
+status: "SOURCE_PLAN_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "e2187001c9f249eac9f041a1ed88decfc554ae8f"
+  reviewer_status: "SOURCE_PLAN_REPAIR_REQUIRED"
+
+independent_replay:
+  A9_field_set_structurally_complete: true
+  background_challengeability_repair_required: false
+  required_repairs_confirmed:
+    - id: "R1_CROSS_TRADITION_PROBE"
+      basis: "Generic comparative/cross-tradition language does not force concrete non-Anglophone philosophical probes and could leave Anglophone framing bias untested."
+    - id: "R2_AGENTIVE_NONABRAHAMIC_NATIVE"
+      basis: "O'Connor/Pruss/Rasmussen-class native access does not by itself secure non-Abrahamic or non-classical-theist necessary-agent formulations."
+    - id: "R3_AGENTIVE_ATTRIBUTE_OVERREACH_ADVERSE"
+      basis: "Existing adverse class lacks explicit objections to imported goodness, knowledge, power, providence, worship-worthiness, or religious identity."
+    - id: "R4_VOLUME_DOMINANCE_CONTROL"
+      basis: "Generic citation-count/tradition-size controls do not by themselves prevent confessional or polemical volume from prematurely completing native access."
+    - id: "R5_SYNTHETIC_THIN_PRECURSOR_SEARCH"
+      basis: "Component-thesis searching is present, but a recorded precursor search before declaring a literature gap is not."
+    - id: "R6_IMPERSONAL_CONCRETE_SUBVARIANT_ACCESS"
+      basis: "Current native stratum does not explicitly require cardinality and relation-variant probes."
+    - id: "R7_BRUTE_IGNORANCE_BOUNDARY"
+      basis: "Current native/adverse strata do not explicitly distinguish ontic brutality from present ignorance or test the ignorance objection."
+    - id: "R8_SELF_EXPLANATION_CONTINGENCY_BOUNDARY"
+      basis: "Current wording does not explicitly exclude necessary causa-sui formulations from native access unless the stopping item remains contingent."
+  optional_enrichments_not_required_for_repair:
+    - "Philosopher's Index"
+    - "Brill"
+    - "named critical-edition corpora"
+    - "explicit social-media/undated-web discovery-only label"
+  outcome_relevant_evidence_used: false
+  G1_authorized: false
+
+repair_governance:
+  original_source_plan:
+    path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+    blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  frozen_element_amendment_control_required: true
+  C4_direction_review_required_before_operational_use: true
+  ledger_integrity_review_required_after_C4: true
+  Reviewer_D_focused_recheck_required: true
+  source_plan_0_1_0_remains_nonoperative: true
+
+downstream_status:
+  source_plan_passed: false
+  repaired_source_plan_operational: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
