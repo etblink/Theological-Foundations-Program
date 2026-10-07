@@ -1,0 +1,122 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_C_A11_DISCRIMINATOR_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_C"
+  lineage_requirement: "exact same xAI / Grok 4.7 Reviewer-C conversation that returned A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  authorized_role: "discriminator_tier_reviewer"
+  prohibited_roles:
+    - "post_evidence_direction_result_reviewer"
+    - "strict_independent_auditor"
+
+review_target:
+  repaired_artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+  repaired_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  prior_artifact: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+  prior_blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+  discriminator_count: 14
+  expected_priority_change_count: 0
+  expected_replacement_discriminator_count: 0
+
+authorized_files:
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7"
+    use: "original nine required repairs and pass findings"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_TIER_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "48a6c1cce356e63f9c9464ea7a295b3ae2a93698"
+    use: "independent repair confirmation and nonblocking source-plan correction"
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+    blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec"
+    use: "bounded repair scope"
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml"
+    blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745"
+    use: "pre-repair comparison only"
+  - path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+    use: "repair target"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_COMPLETION_0_1_0.yaml"
+    blob_sha: "8203d1a6ee235ec006c12f6378f74bd75fde7ff2"
+    use: "mechanical R1-R9 verification"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    use: "only to verify admitted/excluded backgrounds and named variants"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+    use: "only to verify the requested interactions/gates exist and are correctly cited"
+  - path: "TFP_STUDY_3_CONTINGENCY_A9_SOURCE_PLAN_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+    use: "verify the nonblocking source-plan operability correction only"
+  - path: "TFP_ADJUDICATION_PROTOCOL_0_1_7.md"
+    blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+    use: "A11 and C4 only as needed"
+
+delta_recheck:
+  R1:
+    verify: "Excluded BG-D09-EPISTEMIC-STANDARD and BG-D12-QUESTION-DISSOLUTION are absent from the repaired register; only admitted A8 residues are used."
+  R2:
+    verify: "D11-01 cites INT-MODALSTATUS-INDETERMINACY and MOD-DEFLATIONARY gate control."
+  R3:
+    verify: "D11-03 cites BG-ACTUALITY-PRIVILEGE and INT-TOTALITY-ACTUALITY."
+  R4:
+    verify: "D11-05 cites INT-ER-PSR and INT3-ER-PSR-TOTALITY."
+  R5:
+    verify: "D11-06 cites BG-TEMPORAL-ORIGIN-LINK explicitly as gate-only, never as a Cartesian factor or automatic temporal reading."
+  R6:
+    verify: "D11-12 cites INT-ER-AGENT, INT-MODALSTATUS-AGENT, INT-ER-ABSTRACT, and INT-MODALSTATUS-ABSTRACT."
+  R7:
+    verify: "D11-14 cites INT3-RELATION-ONTOLOGY-AXIOLOGY."
+  R8:
+    verify: "D11-11 states prediction text cannot override A11-DR-1 and mere failure to support/warrant agency is not FAVORS_B."
+  R9:
+    verify: "D11-13 has a thin-route hard boundary preventing axiarchic support from licensing a perfectly good person, divine moral character, providence, worship-worthiness, revelation, or religious identity."
+
+preservation_checks:
+  - "all 14 discriminator identities remain unchanged"
+  - "all 14 proposed priorities remain CRITICAL"
+  - "no replacement discriminator is introduced"
+  - "A11-DR-1 remains the controlling direction rule"
+  - "pair/rival state symmetry remains intact"
+  - "FEASIBLE_WITHIN_SCOPE remains defensible for all 14"
+  - "final A6 coverage remains uncertified"
+  - "Source Plan 0.1.1 is correctly recognized as operative through A9 operational acceptance"
+  - "no outcome-relevant evidence exposure has occurred"
+  - "G1 remains unauthorized"
+
+pass_condition:
+  - "R1-R9 all satisfied exactly at the requested strength"
+  - "no new delta defect introduced"
+  - "preservation checks all pass"
+
+repair_condition:
+  - "any R1-R9 item missing or overrepaired"
+  - "any new asymmetry, tier defect, direction-rule defect, background/joint defect, or theological-boundary defect introduced by 0.1.1"
+
+required_output_headings:
+  - "SESSION / CONTINUITY"
+  - "INPUT VERIFICATION"
+  - "R1-R9 DELTA RECHECK"
+  - "PRESERVATION CHECK"
+  - "NEW DELTA DEFECTS"
+  - "REQUIRED REPAIRS"
+  - "A11 DISCRIMINATOR REPAIR RECHECK STATUS"
+
+status_namespace:
+  pass: "A11_DISCRIMINATOR_REPAIR_PASS"
+  repair_required: "A11_DISCRIMINATOR_REPAIR_STILL_REQUIRED"
+
+scope_prohibitions:
+  - "do not redo the full A11 tier review"
+  - "do not inspect outcome-relevant evidence or source-acquisition results"
+  - "do not rank candidates or assess truth/plausibility"
+  - "do not issue post-evidence direction results"
+  - "do not certify final A6 coverage"
+  - "do not author replacement discriminators"
+  - "do not perform C4 direction classification"
+  - "do not begin G1"
+
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
