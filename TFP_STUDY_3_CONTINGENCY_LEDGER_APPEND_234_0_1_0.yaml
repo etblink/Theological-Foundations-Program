@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_AUTHORIZED__NO_OUTCOME_RELEVANT_EVIDENCE_EXPOSURE_YET"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_233_blob_sha: "268bd36c52e6ca2ee162d00bf45882ff9f53c1f5"
+  prior_next_sequence: 234
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 234
+    repository_commit: "a92e38c2ec19f0fb1eeb822049916d3155a81a1b"
+    timestamp_utc: "2026-10-07T13:11:23Z"
+    actor_lineage: "HUMAN_OWNER -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml blob 8c6b8f07b0fd5299a060cd1705c46792bcdbe320"
+    exposure_class: "G1_HUMAN_AUTHORIZATION_ACCEPTANCE"
+    amendment_surfaces: ["G1 transition","source acquisition authority","evidence exposure boundary"]
+    outcome_relevant_evidence: false
+    result_status: "G1_EVIDENCE_ACQUISITION_AUTHORIZED"
+
+next_sequence: 235
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: true
