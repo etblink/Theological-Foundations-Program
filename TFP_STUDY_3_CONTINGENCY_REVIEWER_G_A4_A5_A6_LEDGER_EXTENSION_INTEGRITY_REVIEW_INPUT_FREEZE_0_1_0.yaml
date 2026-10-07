@@ -1,0 +1,123 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_INPUT_FREEZE"
+status: "FROZEN__SAME_REVIEWER_G_LINEAGE_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  required_lineage: "exact same Anthropic Claude Opus 5.5 conversation that previously returned LEDGER_INTEGRITY_REPAIR_PASS for Study 3"
+  role: "ledger_integrity_reviewer"
+  prohibited_roles:
+    - "amendment_direction_reviewer"
+    - "discriminator_author_or_tier_reviewer"
+    - "strict_independent_auditor"
+
+certified_baseline:
+  prior_Reviewer_G_repair_recheck_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "b99a3171b51452d3e4a8d0f373634589947ef42d"
+    disposition: "LEDGER_INTEGRITY_REPAIR_PASS"
+  prior_Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_LEDGER_INTEGRITY_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "9c03a2873ca026a8db81c97e46012d3013b8b8d2"
+    disposition: "LEDGER_INTEGRITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED"
+  A17_repair_supplement:
+    path: "TFP_STUDY_3_CONTINGENCY_LEDGER_A17_REPAIR_SUPPLEMENT_0_1_0.yaml"
+    blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
+    certified_next_sequence: 40
+  rule: "Treat sequences 1-39 as the previously certified baseline. Do not rerun that audit except where necessary to verify the extension link at sequence 40."
+
+audit_endpoint:
+  branch: "research/tfp-study-3-contingency-g0"
+  exact_commit: "42eb83ac663344cdde8052485049349d6d4a631b"
+  final_ledger_append:
+    path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_94_96_0_1_0.yaml"
+    blob_sha: "61c07e617325a3c0473686e3d68978f7aa97c2c3"
+    expected_next_sequence: 97
+  note: "Reviewer-G launch artifacts created after this endpoint are outside this certification target and will be ledgered as continuing provenance."
+
+authorized_extension_chain:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_40_45_0_1_0.yaml", blob_sha: "49ed192cd4043a5353b5462aa313d6c0018bf342" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_46_0_1_0.yaml", blob_sha: "32b842dd46dba4667cf49a70f19c8ea6cc9f8ffa" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_47_62_0_1_0.yaml", blob_sha: "8ba2f399d362a5189dc866aa51b88097f7a75d5a" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_63_65_0_1_0.yaml", blob_sha: "1602f947f66890cdcbda75b20108556489f15af4" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_66_73_0_1_0.yaml", blob_sha: "88bba3259c98d0dd16fe008204cf76b380771b3b" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_74_76_0_1_0.yaml", blob_sha: "65b5ad371daa958353f0665c8af184ece354ba1a" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_77_82_0_1_0.yaml", blob_sha: "8be098a93efd1d05e91015eca287951dae64a734" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_83_88_0_1_0.yaml", blob_sha: "5682b00c57c4cb5e049f05fe35b8fc32263334f0" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_89_91_0_1_0.yaml", blob_sha: "9aa8eb112949486ec3690909369199da727dfc17" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_92_93_0_1_0.yaml", blob_sha: "e0d3cb180cb78d7f9f07556893cc10155a652edf" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_94_96_0_1_0.yaml", blob_sha: "61c07e617325a3c0473686e3d68978f7aa97c2c3" }
+
+amendment_artifacts_requiring_integrity_confirmation:
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_0.yaml", blob_sha: "375755374e0fc51b14a8ba6b370367c9816cd10b", expected_sequence: 70 }
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_1.yaml", blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919", expected_sequence: 80 }
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54", expected_sequence: 86 }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_REPORT_0_1_0.md", blob_sha: "798f5ee38c73ae0aadc00b09f051931f5efd3b7a", expected_sequence: 95 }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A4_A5_A6_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "3e2c9070dd1ad802b62fbc010f510775243e8034", expected_sequence: 96 }
+
+history_authorization:
+  - "Inspect repository commit/tree/blob metadata and Study-3 filenames across the research-branch history from the certified baseline through audit endpoint 42eb83ac663344cdde8052485049349d6d4a631b."
+  - "For every commit-bearing ledger entry in sequences 40-96, verify the cited commit exists, is on the linear ancestry to the endpoint, and binds the cited artifact path to the cited blob."
+  - "Where useful, verify the cited artifact path was absent in the cited commit's parent, or otherwise verify no replacement/rewrite occurred."
+  - "Verify each ledger append artifact was added once and remains unmodified, unrenamed, and undeleted through the endpoint."
+  - "You may inspect content of the authorized ledger/artifact files needed to classify whether an entry is outcome-relevant; do not open outcome-evidence artifacts."
+
+off_repository_events_to_check:
+  - { sequence: 47, class: "B3 formulation/objection source survey A" }
+  - { sequence: 53, class: "B3 formulation/objection source survey B" }
+  - { sequence: 59, class: "B3 formulation/objection source survey C" }
+  - { sequence: 66, class: "Reviewer A B3 equal-strength exposure" }
+  - { sequence: 74, class: "Reviewer B assignment handshake response" }
+  - { sequence: 77, class: "Reviewer B initial A4/A5/A6 exposure" }
+  - { sequence: 83, class: "Reviewer B focused repair-recheck exposure" }
+  - { sequence: 89, class: "Reviewer B GD-N3 delta-recheck exposure" }
+  - { sequence: 94, class: "Reviewer F A4/A5/A6 C4 direction-review exposure" }
+  note: "Verify each has actor lineage, amendment surfaces, outcome-relevant-evidence flag, and a sufficient time/order anchor under A17. Exact wall-clock time is not required if an explicit bounded order anchor is the only available record."
+
+C4_chronology_target:
+  Reviewer_F_report_blob_sha: "798f5ee38c73ae0aadc00b09f051931f5efd3b7a"
+  Reviewer_F_status: "C4_DIRECTION_REVIEW_PASS"
+  Reviewer_F_classification: "PRE_EVIDENCE_AMENDMENT"
+  integrity_question: "Does the certified baseline plus extension through sequence 96 support the chronology premise used by Reviewer F: no outcome-relevant evidence exposure or unrecorded rewrite before/during inventory 0.1.0 -> 0.1.1 -> 0.1.2?"
+  direction_reclassification_authorized: false
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "candidate evidence adjudication"
+  - "discriminator results or tiering"
+  - "future strict-auditor material"
+
+task:
+  - "Verify the sequence extension begins exactly at certified next_sequence 40 and continues through 96 with no gap, duplicate, rollback, or contradictory next-sequence/base-blob link."
+  - "Verify every authorized append blob pin and base-chain link."
+  - "Verify every commit-bearing entry in sequences 40-96 against repository history and cited blob/path identity."
+  - "Verify inventory 0.1.0, 0.1.1, and 0.1.2 were each frozen at the ledgered commit/blob, remain immutable, and occur in the claimed order."
+  - "Verify Reviewer-B repair/recheck/delta events and Reviewer-F C4 events occur in the ledgered order."
+  - "Verify all identified null-commit off-repository events satisfy A17 with sufficient actor lineage, affected surfaces, evidence flag, and time/order anchor."
+  - "Search visible research-branch history from the certified baseline through the endpoint for unledgered Study-3 artifact commits. Ledger-append commits themselves need not have separate event entries merely for being append containers."
+  - "Verify no outcome-relevant evidence exposure is recorded in sequences 40-96 and no authorized artifact/history evidence contradicts that state."
+  - "Determine whether the chronology premise underlying Reviewer F's PRE_EVIDENCE_AMENDMENT classification survives integrity review."
+  - "Do not reclassify amendment direction, certify A6 coverage, author/tier discriminators, rank candidates, adjudicate truth, or begin G1."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "BASELINE / ENDPOINT VERIFICATION"
+    - "SEQUENCE 40-96 CONTINUITY"
+    - "COMMIT / BLOB / REWRITE AUDIT"
+    - "OFF-REPOSITORY EVENT AUDIT"
+    - "OUTCOME-EVIDENCE EXPOSURE AUDIT"
+    - "C4 CHRONOLOGY CONSEQUENCE"
+    - "REQUIRED REPAIRS"
+    - "LEDGER EXTENSION INTEGRITY STATUS"
+  status_namespace:
+    - "LEDGER_EXTENSION_INTEGRITY_PASS"
+    - "LEDGER_EXTENSION_INTEGRITY_REPAIR_REQUIRED"
+  stop_after_report: true
+
+use_disposition_boundary:
+  on_LEDGER_EXTENSION_INTEGRITY_PASS: "Inventory 0.1.2 may become operative prospectively for later G0 work, subject to Program Lead independent acceptance; this does not certify A6 coverage or authorize G1."
+  on_repair_required: "Inventory 0.1.2 remains non-operative pending append-only repair and focused recheck."
