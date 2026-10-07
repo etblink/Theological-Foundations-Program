@@ -1,0 +1,75 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "CANDIDATE_EXCLUSION_REGISTER"
+status: "FROZEN_PRE_CANDIDATE_UNIVERSE_FREEZE__PENDING_FOCUSED_RECHECK"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+independent_review:
+  reviewer_slot: "REVIEWER_A"
+  report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+  status: "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+
+exclusions:
+  - candidate_or_class: "principled partitioned ultimacy as a standalone family"
+    classification: "SUBSTANTIVE_EXCLUSION"
+    protocol_basis: ["B1.2 materially distinct","B1.3 specified enough","B1.4 not subsumed"]
+    reason: "No non-conjunctive partition principle is presently specified. A mere conjunction of brute, regressive, and necessary sectors is represented by already admitted families and does not define a new explanatory kind."
+    evidence_for_exclusion: "Frozen Program-Lead seed, Reviewer-A blind report, reconciliation, provisional register, and Reviewer-A completeness review contain no specified non-conjunctive rule."
+    independent_reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    reopen_or_B5_trigger: "A later traceably formulated non-conjunctive partition principle with distinct truth-bearing consequences."
+
+  - candidate_or_class: "dialetheic or impossible-existence account as a standalone family"
+    classification: "SUBSTANTIVE_EXCLUSION"
+    protocol_basis: ["B1.3 specified enough","B1.4 not subsumed","B1.5 traceably formulated","B7 alternative-hypothesis symmetry"]
+    reason: "No authorized formulation yet answers the working question with distinct consequences while avoiding subsumption into modal dissolution, ontic indeterminacy, or a remote logical variant."
+    evidence_for_exclusion: "The frozen candidate-generation and reconciliation artifacts identify the possibility only as a missing-family risk and supply no traceably specified candidate formulation."
+    independent_reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    not_a_plausibility_finding: true
+    reopen_or_B5_trigger: "A later traceably formulated model satisfying B1."
+
+  - candidate_or_class: "nomological ultimacy as a standalone family"
+    classification: "SUBSTANTIVE_EXCLUSION"
+    protocol_basis: ["B1.2 materially distinct","B1.4 not subsumed"]
+    reason: "Modal status determines its existing family: contingent law-governed stopping structure -> C-BRUTE/C-GLOBAL-DEFLATION; metaphysically necessary law/constraint -> C-NEC-IMPERSONAL-PRINCIPLE; necessary law-governed totality -> C-NECESSITARIAN; plurality of nomological loci -> C-INDEXICAL-PLURALITY."
+    independent_reviewer_disposition: "EXCLUDE_AS_STANDALONE"
+    preservation_anchor: "Nomological-but-not-metaphysically-necessary ultimacy is explicitly named as a C-BRUTE subvariant."
+
+  - candidate_or_class: "plural or layered necessary foundations as a standalone family"
+    classification: "SUBSTANTIVE_EXCLUSION"
+    protocol_basis: ["B1.2 materially distinct","B1.4 not subsumed"]
+    reason: "Cardinality is cross-cutting across concrete, principle, and agentive necessary-ground families and does not alone define a distinct explanatory kind."
+    independent_reviewer_disposition: "DO_NOT_RESTORE_AS_STANDALONE"
+    preservation_anchor: "single/plural/layered cardinality remains explicit as a cross-cutting variant."
+
+  - candidate_or_class: "classical theism as a direct candidate family"
+    classification: "SUBSTANTIVE_EXCLUSION_AT_THIS_STUDY_LEVEL"
+    protocol_basis: ["A2 scope/downstream inference limits","B1 material distinction"]
+    reason: "Classical theism is a downstream attribute/identity package not licensed merely by positing a necessary foundation. Its attributes require separate warrant."
+    independent_reviewer_disposition: "REMAINS_LABEL_LEVEL_EXCLUSION_UNLESS_DISTINCT_NECESSARY_COMMITMENT_EMERGES"
+    scope_note: "This does not claim classical theism false."
+
+  - candidate_or_class: "deism, pantheism, panentheism as labels"
+    classification: "SUBSTANTIVE_EXCLUSION_AT_FAMILY_LABEL_LEVEL"
+    reason: "These labels are downstream identity/attribute packages unless a separately necessary explanatory commitment establishes a distinct B1 family."
+    independent_reviewer_disposition: "REMAIN_LABEL_LEVEL_EXCLUSIONS"
+
+  - candidate_or_class: "physics-specific cosmologies as standalone metaphysical families"
+    classification: "SUBSTANTIVE_EXCLUSION_AT_FAMILY_LEVEL"
+    reason: "Such cosmologies are instances, models, or later evidence-bearing structures whose metaphysical role maps into admitted families unless a distinct necessary truth-bearing commitment is established."
+    independent_reviewer_disposition: "NOT_A_MISSING_MAJOR_CLASS"
+
+  - candidate_or_class: "epistemic abstention"
+    classification: "META_OUTCOME_EXCLUSION"
+    protocol_basis: ["B6"]
+    reason: "Lack of adjudicative knowledge is an epistemic outcome, not a candidate framework."
+    independent_reviewer_disposition: "B6_OUTCOME_NOT_FAMILY"
+
+  - candidate_or_class: "no-concrete-reality answer"
+    classification: "OUT_OF_SCOPE"
+    reason: "The working question is scoped to the existence of contingent reality; denying the entire scoped subject would require a consequential scope change rather than silent candidate admission."
+    independent_reviewer_disposition: "NOT_A_MISSING_MAJOR_CLASS"
+
+candidate_universe_frozen: false
