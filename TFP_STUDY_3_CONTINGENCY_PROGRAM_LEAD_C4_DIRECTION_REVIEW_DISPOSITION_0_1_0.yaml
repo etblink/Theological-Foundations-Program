@@ -1,0 +1,58 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+  blob_sha: "ab994925a1d8e99f7085d4e449c06f625f7c28e2"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+
+independent_replay:
+  chronology_class:
+    Reviewer_F: "PRE_EVIDENCE_AMENDMENT"
+    Program_Lead: "AGREE"
+    basis: "The candidate-register repair and exclusion amendments precede any recorded outcome-relevant evidence exposure. Under C4, pre-evidence timing controls the amendment class even when individual direction effects include FAVORABLE changes."
+  AMEND_HOLISTIC_SELF:
+    C_HOLISTIC: "ADVERSE"
+    C_SELF_EXPLANATORY: "NEUTRAL"
+    Program_Lead: "AGREE"
+  AMEND_DEFLATION_DISSOLUTION:
+    C_MODAL_DISSOLUTION: "ADVERSE"
+    C_GLOBAL_DEFLATION: "FAVORABLE"
+    Program_Lead: "AGREE"
+  AMEND_INDETERMINATE:
+    C_INDETERMINATE_ULTIMACY: "FAVORABLE"
+    candidate_universe_completeness: "FAVORABLE"
+    future_comparative_universe_size: "NEUTRAL"
+    Program_Lead: "AGREE"
+  AMEND_NOMOLOGICAL_ANCHOR:
+    C_BRUTE: "FAVORABLE"
+    Program_Lead: "AGREE"
+  AMEND_AXIARCHIC_BOUNDARY:
+    C_AXIARCHIC: "NEUTRAL"
+    Program_Lead: "AGREE"
+  AMEND_EXCLUSIONS:
+    Program_Lead: "AGREE_WITH_REVIEWER_F_DIRECTION_TABLE"
+    note: "Standalone exclusions are adverse to the excluded family claims; formal B4 completeness and controlled B5 handling are favorable to the candidate-universe control surfaces."
+  AMEND_UNSPLIT_PRINCIPLE_PLURALITY:
+    C_NEC_IMPERSONAL_PRINCIPLE: "NEUTRAL"
+    C_NEC_IMPERSONAL_CONCRETE: "NEUTRAL"
+    C_NEC_AGENTIVE: "NEUTRAL"
+    Program_Lead: "AGREE"
+
+hidden_favorable_repair_found: false
+post_evidence_directional_contamination_found: false
+outcome_relevant_evidence_used: false
+candidate_ranking_performed: false
+truth_adjudication_performed: false
+
+use_disposition:
+  repaired_register_and_exclusion_record_may_be_used_after_Reviewer_G_ledger_integrity_pass: true
+  candidate_universe_frozen_now: false
+
+Reviewer_F_boundary:
+  ledger_integrity_certified_by_Reviewer_F: false
+  Reviewer_G_required: true
