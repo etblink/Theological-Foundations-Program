@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_243_244_blob_sha: "520c544587546ddefd9b832fd8d5707aa54c35ae"
+  prior_next_sequence: 245
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 245
+    repository_commit: "478058a2cdadfb3bee297dca97b412fd615087d5"
+    timestamp_utc: "2026-10-07T13:41:00Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_S4_BACKGROUND_ACQUISITION_BATCH_01_0_1_0.yaml blob 1d055deb72aacd6eb543139c2e62d569bbebe0bf"
+    exposure_class: "G1_S4_BACKGROUND_SUPPORT_CHALLENGE_MATRIX_FREEZE_BATCH_01"
+    amendment_surfaces: ["BG-EXPLANATORY-REALISM","BG-PSR-SCOPE","BG-TOTALITY-EXPLANANDUM","BG-DEPENDENCE-STRUCTURE","BG-MODAL-STATUS","BG-ACTUALITY-PRIVILEGE"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN_BACKGROUND_SUPPORT_CHALLENGE_MATRIX__CORE_DIMENSIONS__NO_BACKGROUND_DISPOSITIONS"
+
+next_sequence: 246
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
