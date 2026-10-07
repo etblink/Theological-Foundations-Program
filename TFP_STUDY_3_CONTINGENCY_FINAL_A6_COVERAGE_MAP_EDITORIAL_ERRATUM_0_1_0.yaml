@@ -1,0 +1,36 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "FINAL_A6_COVERAGE_MAP_EDITORIAL_ERRATUM"
+status: "BOUND_NONBLOCKING_EDITORIAL_ERRATUM__NO_CONTENT_CHANGE"
+date: "2026-10-06"
+
+target:
+  path: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml"
+  blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+
+erratum:
+  location: "certification_request.Reviewer_B_must_confirm"
+  frozen_text: "the five NONCOMPARATIVE_CANDIDATE_SPECIFIC routes are genuinely direct, do not evade a material comparative burden, and are specific enough to be evaluated later"
+  read_as: "the six NONCOMPARATIVE_CANDIDATE_SPECIFIC routes are genuinely direct, do not evade a material comparative burden, and are specific enough to be evaluated later"
+  cause: "GD-N1 changed from COMPARATIVE_ROUTE to NONCOMPARATIVE_CANDIDATE_SPECIFIC after Reviewer B's initial repair-required finding; controlling counts were updated from 57+5 to 56+6, while this descriptive bullet retained the old word 'five'."
+
+authority:
+  Reviewer_B_recheck_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_GD_N1_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "609b31277a65f31f0c06d60964f3fb081b787a97"
+    finding: "NONBLOCKING_EDITORIAL_RESIDUE"
+    certified_status: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_GD_N1_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    status: "NECESSARY_PROPOSITION_COVERAGE_COMPLETE__INDEPENDENTLY_CONFIRMED__NONOPERATIVE_PENDING_C4_AND_LEDGER"
+
+controls:
+  map_blob_changed: false
+  route_architecture_changed: false
+  proposition_count_changed: false
+  coverage_mode_assignments_changed: false
+  Reviewer_B_certified_blob_preserved: true
+  future_consumers_must_use_controlling_counts: true
+  controlling_COMPARATIVE_ROUTE_count: 56
+  controlling_NONCOMPARATIVE_CANDIDATE_SPECIFIC_count: 6
+  controlling_NONCOMPARATIVE_SHARED_FLOOR_count: 0
