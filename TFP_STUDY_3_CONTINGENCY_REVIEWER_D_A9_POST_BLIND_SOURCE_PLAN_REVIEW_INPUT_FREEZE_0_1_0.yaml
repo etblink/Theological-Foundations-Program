@@ -1,0 +1,111 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_INPUT_FREEZE"
+status: "FROZEN__POST_BLIND_SOURCE_PLAN_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_D"
+  required_lineage: "exact same xAI / Grok 4.7 conversation that returned SOURCE_STRATA_BLIND_ELICITATION_COMPLETE"
+  role: "independent source-plan reviewer"
+  blind_stage_complete: true
+  blind_report_blob_sha: "41e6d903aa4d33d023c6e47537de16c66b8662ed"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_REPORT_0_1_0.md"
+    blob_sha: "41e6d903aa4d33d023c6e47537de16c66b8662ed"
+  - path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+    blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  - path: "TFP_STUDY_3_CONTINGENCY_A9_BLIND_SOURCE_STRATA_RECONCILIATION_DOCKET_0_1_0.yaml"
+    blob_sha: "5bd9f0f9f2118558e02fc0a7dd2f8afc6f8abef4"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+    purpose: "candidate identity/boundary check only"
+  - path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+    purpose: "live background/source-strata completeness check only"
+  - path: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696"
+    purpose: "confirm that the same background blob used blind is now operative without live-state change"
+  - description: "Protocol 0.1.7 A9 and A9.1 only as needed"
+
+forbidden_inputs:
+  - "outcome-relevant evidence"
+  - "source-acquisition results"
+  - "candidate steelman packets"
+  - "discriminator proposals or tiering"
+  - "candidate ranking or truth/plausibility adjudication"
+  - "past-chat or memory retrieval for Study-3 substantive material"
+
+review_tasks:
+  A9_required_fields:
+    - "repositories/corpora/databases"
+    - "primary-source strata"
+    - "secondary-source strata"
+    - "candidate-native/tradition-native strata"
+    - "serious skeptical/critical/adverse strata"
+    - "neutral/cross-tradition strata"
+    - "source strata for each serious live background"
+    - "date/language limits"
+    - "inclusion/exclusion rules"
+    - "search terms/source-selection rules"
+    - "inaccessible-source handling"
+  A9_1_required_tests:
+    - "each candidate has access to strongest native evidence"
+    - "serious adverse/critical evidence is represented symmetrically"
+    - "every live background has evidence classes needed to challenge it"
+    - "foreseeable source-selection bottlenecks are identified"
+    - "blind missing-strata findings are reconciled against the draft plan"
+
+reconciliation_requirement:
+  for_each_docket_gap_use_exact_disposition:
+    - "REQUIRED_REPAIR"
+    - "ADEQUATELY_COVERED"
+    - "OPTIONAL_ENRICHMENT"
+    - "OUT_OF_SCOPE"
+  rule: "A blind-only stratum is REQUIRED_REPAIR only if omission could materially bias source access, symmetry, background challengeability, or candidate-native access."
+
+specific_checks:
+  - "Determine whether Philosopher's Index is required in addition to PhilPapers/OpenAlex/Google Scholar."
+  - "Determine whether Brill is materially required."
+  - "Determine whether explicit cross-tradition strata are required rather than generic comparative language."
+  - "Determine whether C-NEC-AGENTIVE requires explicit non-Abrahamic/non-classical-theist native sourcing."
+  - "Determine whether explicit language/corpus coverage is required beyond relevance-triggered translation control."
+  - "Determine whether generic critical-edition archive language is sufficient."
+  - "Determine whether synthetic candidates require explicit recorded precursor search."
+  - "Determine whether C-NEC-IMPERSONAL-CONCRETE requires explicit cardinality/relation-subvariant native access."
+  - "Determine whether brutality-vs-ignorance and contingent-self-explanation boundaries must be explicit in source selection."
+  - "Determine whether thin-literature escalation rules are required."
+  - "Determine whether confessional/polemical volume dominance needs an explicit control."
+  - "Determine whether social media/undated web material should be explicitly discovery-only."
+  - "Verify the plan's existing staged search, provenance, recency, access, and Reviewer-E/MAKEABLE controls."
+
+background_identity_resolution:
+  blind_report_observation: "The immutable background register file still contains historical nonoperative status text."
+  controlling_fact: "A8 operational acceptance later made this exact same blob operative; no live state changed."
+  re_scope_required_for_this_reason: false
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "A9 REQUIRED-FIELD REVIEW"
+    - "A9.1 CANDIDATE-NATIVE ACCESS REVIEW"
+    - "A9.1 ADVERSE-SYMMETRY REVIEW"
+    - "A9.1 BACKGROUND-CHALLENGEABILITY REVIEW"
+    - "BLIND-FINDING RECONCILIATION"
+    - "BOTTLENECK / ACCESS REVIEW"
+    - "REQUIRED REPAIRS"
+    - "SOURCE PLAN REVIEW STATUS"
+  status_namespace:
+    - "SOURCE_PLAN_PASS"
+    - "SOURCE_PLAN_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  source_plan_operational: false
+  source_plan_passed: false
+  outcome_relevant_evidence_acquisition_started: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
