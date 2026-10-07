@@ -1,0 +1,148 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_SUPPLEMENT"
+status: "FROZEN__APPEND_ONLY_CLERICAL_REPAIR__PENDING_REVIEWER_G_FOCUSED_RECHECK"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+authority:
+  reviewer_G_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "0ea22a5f07ae450a3db3c5e2de944ff6cfafeacd"
+    status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "b69ac2a742bd25e5bedc2bb0ce9495d9c62393f7"
+    status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__APPEND_ONLY_REPAIR_AUTHORIZED"
+  protocol_A17_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+
+repair_policy:
+  prior_ledger_entries_rewritten: false
+  prior_sequence_numbers_changed: false
+  chronology_changed: false
+  substantive_reviewer_results_reopened: false
+  candidate_or_proposition_results_changed: false
+  architecture_operational_status_changed: false
+  purpose: "Supply missing A17 exposure provenance, missing amendment-surface annotations, and bounded order anchors without rewriting historical entries."
+
+R1_reviewer_C_F1_exposure_supplement:
+  historical_event:
+    event_type: "OUTCOME_RELEVANT_REVIEWER_EXPOSURE"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_CONTINUING_LINEAGE"
+    historical_sequence_position: "AFTER_SEQUENCE_259__BEFORE_SEQUENCE_260"
+    repository_commit: null
+    timestamp_utc: null
+    order_anchor:
+      lower:
+        sequence: 259
+        repository_commit: "1c9cd5c36ce93d6be9f06878e81fa6486d56da6f"
+        timestamp_utc: "2026-10-07T14:46:23Z"
+      upper:
+        sequence: 260
+        repository_commit: "8fc24835b94e497f231ffd8172c8fec7b9b48b88"
+        timestamp_utc: "2026-10-07T14:57:26Z"
+      exact_clock_time_known: false
+      note: "No exact exposure timestamp is invented; repository chronology bounds the event."
+    input:
+      path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "87a79a2708329f89d2adf946144f4d9770c1374b"
+    prompt:
+      path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_PROMPT_0_1_0.md"
+      blob_sha: "6a037a6337199c3bbe9517e2604a73cfbd62adf4"
+    authorized_material_classes:
+      - "frozen A8 background register 0.1.1"
+      - "frozen A8 interaction matrix 0.1.1"
+      - "A8 operational acceptance"
+      - "A4/A5/A6 inventory 0.1.2"
+      - "necessary-proposition coverage map 0.1.1"
+      - "A11 discriminator register 0.1.1"
+      - "A13 expected-weakening register"
+      - "A16 shared-proposition map"
+      - "Program-Lead Reviewer-E blind-adverse-source reconciliation"
+      - "Protocol 0.1.7 A8.1-A8.3 and C4 only as needed for control-boundary interpretation"
+    exposure_class: "G1_POST_EVIDENCE_F1_A8_FOCUSED_REVIEW_EXPOSURE"
+    amendment_surfaces:
+      - "A8 background granularity"
+      - "A8 interaction matrix"
+      - "IC-N5"
+      - "PR-N6"
+      - "AX-N5"
+    outcome_relevant_evidence: true
+    source_of_outcome_relevance: "Reviewer-E blind adverse-source review plus Program-Lead reconciliation identified F1 after G1 evidence exposure had begun."
+    role_boundary:
+      C4_direction_classification_by_Reviewer_C: false
+      proposition_disposition_by_Reviewer_C: false
+      candidate_ranking_by_Reviewer_C: false
+
+R2_amendment_surface_annotations:
+  annotation_semantics: "Supplemental metadata only. These annotations do not replace, mutate, or restate the historical entries as new events."
+  annotations:
+    - sequence: 253
+      amendment_surfaces: ["Reviewer E lineage assignment","adverse-source review","coverage-state review","MAKEABLE certification"]
+    - sequence: 254
+      amendment_surfaces: ["Reviewer E lineage assignment","adverse-source review","coverage-state review","MAKEABLE certification"]
+    - sequence: 255
+      amendment_surfaces: ["A9 adverse-source coverage","source-class completeness","A8 background granularity","coverage-state review","MAKEABLE certification"]
+    - sequence: 256
+      amendment_surfaces: ["A9 adverse-source coverage","source-class completeness","A8 background granularity","coverage-state review","MAKEABLE certification"]
+    - sequence: 257
+      amendment_surfaces: ["A9 source-class followup","A8 background granularity","coverage-state review","MAKEABLE certification","F1 C4 routing"]
+    - sequence: 259
+      amendment_surfaces: ["A8 background granularity","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 260
+      amendment_surfaces: ["A8 background granularity","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 261
+      amendment_surfaces: ["A8 background granularity","A8 interaction matrix","IC-N5","PR-N6","AX-N5","C4 direction-review routing"]
+    - sequence: 262
+      amendment_surfaces: ["A8 background register","BG-IMPERSONAL-GROUNDING-MODAL-LINK","IC-N5","PR-N6","AX-N5"]
+    - sequence: 263
+      amendment_surfaces: ["A8 interaction matrix","BG-IMPERSONAL-GROUNDING-MODAL-LINK","IC-N5","PR-N6","AX-N5"]
+    - sequence: 264
+      amendment_surfaces: ["A8 background register","A8 interaction matrix","IC-N5","PR-N6","AX-N5","C4 amendment classification"]
+    - sequence: 265
+      amendment_surfaces: ["C4 amendment direction classification","A8 background register","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 266
+      amendment_surfaces: ["C4 amendment direction classification","A8 background register","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 267
+      amendment_surfaces: ["C4 amendment direction classification","A8 background register","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 268
+      amendment_surfaces: ["C4 amendment direction classification","post-evidence contamination controls","A8 background register","A8 interaction matrix","IC-N5","PR-N6","AX-N5"]
+    - sequence: 269
+      amendment_surfaces: ["C4 amendment direction classification","post-evidence contamination controls","A8 operational acceptance gate","Reviewer E coverage gate","IC-N5","PR-N6","AX-N5"]
+
+R3_order_anchor_annotations:
+  annotation_semantics: "Recommended nonblocking chronology clarifications; no exact off-repository clock time is inferred."
+  annotations:
+    - sequence: 238
+      lower_bound: { sequence: 237, repository_commit: "4b21d616a14faa967816fe3743f8d0f9a7a128ef", timestamp_utc: "2026-10-07T13:17:40Z" }
+      upper_bound: { sequence: 239, repository_commit: "536de10a545c93d9b4d70385f57f75def0083ed0", timestamp_utc: "2026-10-07T13:24:47Z" }
+    - sequence: 240
+      lower_bound: { sequence: 239, repository_commit: "536de10a545c93d9b4d70385f57f75def0083ed0", timestamp_utc: "2026-10-07T13:24:47Z" }
+      upper_bound_append_container: { repository_commit: "23775fa99ab5ac34e1bd6f4f2727ca7b865f4a80", timestamp_utc: "2026-10-07T13:31:42Z" }
+    - sequence: 242
+      lower_bound: { sequence: 241, repository_commit: "d57740c23f775975a810fc109b05566a3e394b2f", timestamp_utc: "2026-10-07T13:33:26Z" }
+      upper_bound_append_container: { repository_commit: "6d7bcdf8b71626249c2ae01553600d5681bcb2b5", timestamp_utc: "2026-10-07T13:34:53Z" }
+    - sequence: 244
+      lower_bound: { sequence: 243, repository_commit: "7db1f06c5f28d530ea7f07efe25eecd9113e7a7b", timestamp_utc: "2026-10-07T13:35:48Z" }
+      upper_bound_append_container: { repository_commit: "8aa704918b30c6bcf9120b8eae5ef6e8d6482438", timestamp_utc: "2026-10-07T13:38:19Z" }
+    - sequence: 246
+      lower_bound: { sequence: 245, repository_commit: "478058a2cdadfb3bee297dca97b412fd615087d5", timestamp_utc: "2026-10-07T13:41:00Z" }
+      upper_bound: { sequence: 247, repository_commit: "d47584d5605ae8a2d9520caac603d365ee2f6e64", timestamp_utc: "2026-10-07T13:43:39Z" }
+    - sequence: 249
+      lower_bound: { sequence: 248, repository_commit: "73345f64678ed0fb5602b7a5a94066334f98c92e", timestamp_utc: "2026-10-07T13:44:56Z" }
+      upper_bound_append_container: { repository_commit: "49a48a612f3545413f61336003f147e85b841877", timestamp_utc: "2026-10-07T13:48:16Z" }
+
+unchanged_findings:
+  sequence_234_authorization_precedes_235_first_evidence: true
+  F1_is_post_evidence: true
+  append_260_264_blob_sha: "dc1501f045782a69ed4a1f0b35315ca7fe048155"
+  reviewer_F_direction: "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+  contamination_controls_unchanged: true
+  A8_0_1_2_operational: false
+  Reviewer_E_coverage_review_paused: true
+  MAKEABLE_review_paused: true
+
+focused_recheck_required:
+  reviewer: "same Reviewer-G Anthropic / Claude Opus 5.5 lineage"
+  scope: "this supplement and its exact relationship to the previously audited sequence-221-269 chain"
+  may_reopen_substantive_reviews: false
