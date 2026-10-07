@@ -1,0 +1,49 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_125_129_blob_sha: "941cde467ba147a01c41763a5171329960d83c44"
+  prior_next_sequence: 130
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 130
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer F A8 C4 direction-review exposure: input blob a42181b1052ae52dcf40dc24abefb5edee97674b, prompt blob 2a8faf70b9c0e1fc510758eef6768ce6d0c17618, amendment record, background register/matrix 0.1.0 and 0.1.1, Reviewer C repair chain, candidate boundary context, operative A4/A5/A6 inventory, authorized ledger chronology through sequence 124, and Protocol C4/A8 controls."
+    exposure_class: "G0_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_EXPOSURE"
+    amendment_surfaces: ["C4 amendment timing","candidate-specific direction","outcome-condition direction","joint-set/gate direction","candidate/background boundaries"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 129 and before sequence 131."
+
+  - sequence: 131
+    repository_commit: "5b0b7e794cfb705819976fa861169b771dc345ef"
+    timestamp_utc: "2026-10-07T03:29:47Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_F_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_REPORT_0_1_0.md blob 8548f5cfc7a759f424a40d68e200b047bea18d05"
+    exposure_class: "G0_REVIEWER_F_A8_BACKGROUND_C4_DIRECTION_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["C4 amendment timing","candidate-specific direction","outcome-condition direction","joint-set/gate direction","candidate/background boundaries"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+    result_status: "C4_DIRECTION_REVIEW_PASS"
+
+  - sequence: 132
+    repository_commit: "c357b54d94c186151f5c00ee619ed2b2fb3b991c"
+    timestamp_utc: "2026-10-07T03:30:07Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml blob d725679018521cad375952e507fa43fe33ee6ceb"
+    exposure_class: "G0_PROGRAM_LEAD_A8_BACKGROUND_C4_DIRECTION_DISPOSITION"
+    amendment_surfaces: ["C4 amendment timing","A8 operational-use gate","Reviewer G handoff"]
+    outcome_relevant_evidence: false
+    result_status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+
+next_sequence: 133
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
