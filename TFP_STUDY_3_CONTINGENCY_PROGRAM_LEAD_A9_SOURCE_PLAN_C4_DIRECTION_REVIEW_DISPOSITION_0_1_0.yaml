@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_OPERATIONAL_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_A9_SOURCE_PLAN_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "65fc702bbe179084ef0c804b34b1d141c282b6cd"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+independent_replay:
+  C4_required_candidate_outcome_classifications_complete: true
+  all_13_candidates_classified: true
+  listed_future_outcome_conditions_classified: true
+  source_plan_width_symmetry_defect_found: false
+  privileged_database_date_language_or_access_threshold_found: false
+  outcome_relevant_evidence_exposure_found_through_sequence_161: false
+  G1_authorized_through_sequence_161: false
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  timing_classification_conditional_on_Reviewer_G: true
+
+sequence_161_identity_resolution:
+  reviewer_flagged_apparent_mismatch: true
+  sequence_161_event_commit: "d1d2da407cefe76cbf4fc648d66c4fcfe55dbb9f"
+  sequence_161_event_commit_time_utc: "2026-10-07T04:20:24Z"
+  ledger_append_container_commit: "0ffe02045e078f799c596de54062fac5341f593a"
+  ledger_append_container_commit_time_utc: "2026-10-07T04:21:15Z"
+  ledger_append_path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_159_161_0_1_0.yaml"
+  ledger_append_blob_sha: "2065a029e11321c1ddf335dade3b3aad3ca25667"
+  resolution: "NONDEFECT__EVENT_COMMIT_AND_APPEND_CONTAINER_COMMIT_ARE_DISTINCT_BY_DESIGN"
+  rationale: "Sequence 161 records the commit that created the Program Lead disposition event. The fixed endpoint commit is the later commit that added the immutable ledger append containing sequences 159-161. Reviewer G must independently verify this relation."
+
+surface_label_note:
+  prompt_requested_single_label_per_repair_surface: true
+  reviewer_used_split_direction_descriptions_for_some_surfaces: true
+  protocol_C4_mandatory_unit_is_affected_candidate_or_outcome_condition: true
+  blocking_classification_gap: false
+  note: "Reviewer F explicitly classified every affected candidate and listed outcome condition using the C4 namespace, so the protocol requirement is satisfied."
+
+operational_disposition:
+  A9_content_repair_pass: true
+  A9_C4_direction_pass: true
+  amendment_class: "PRE_EVIDENCE_AMENDMENT__CONDITIONAL_ON_LEDGER_INTEGRITY"
+  source_plan_0_1_1_operational: false
+  Reviewer_G_ledger_integrity_review_required: true
+  Program_Lead_operational_acceptance_required_after_integrity_pass: true
+  source_plan_passed: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
