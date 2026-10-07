@@ -1,0 +1,81 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A11_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+status: "A11_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A11_OPERATIONALIZATION_AUTHORIZED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A11_DISCRIMINATOR_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "aa454af740e265cef05becdf5c759dcb9c488642"
+  reviewer_status: "A11_LEDGER_INTEGRITY_PASS"
+  reviewer_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_G_EXISTING_SESSION"
+
+independent_replay:
+  previously_certified_baseline_sequence: 166
+  extension_start_sequence: 167
+  extension_end_sequence: 193
+  fixed_endpoint_commit: "32e6744d9e5ed86350db00d0aee0c58d07eea827"
+  sequence_count: 27
+  contiguous_sequences_167_193: true
+  commit_bearing_entries: 23
+  null_commit_entries: [169,177,185,190]
+  extension_commit_count: 34
+  extension_event_commit_count: 23
+  extension_append_container_count: 11
+  all_extension_commits_single_parent: true
+  compare_range_status: "AHEAD_LINEAR"
+  changed_paths_added_only: true
+  unledgered_Study_3_artifact_commit_found: false
+  reachable_rewrite_found: false
+  outcome_relevant_evidence_exposure_found: false
+  G1_authorized: false
+
+append_177_179_identity:
+  actual_blob_sha: "498372b1e72ab7c2b0a2b0cf045314d44242f46c"
+  creation_commit_sha: "a33624d372de42bb4e5e65d285dae9366b294deb"
+  creation_commit_parent: "7ac65a6325aea30f33e5f1201b9514bcce99eba5"
+  creation_change_set: "single-file add of TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml at actual blob"
+  historical_defect: "COMMIT_SHA_MISLABELED_AS_BLOB_SHA"
+  content_ambiguity: false
+  rewrite_evidence: false
+  in_chain_resolution_artifact:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_C4_LAUNCH_CONTROL_IDENTITY_RESOLUTION_0_1_0.yaml"
+    blob_sha: "2f371e3bbcc5e1c28bcda8a32bf9c41426c07a4f"
+    ledger_sequence: 192
+  resolution_sufficient: true
+  further_ledger_repair_required: false
+
+sequence_187_identity:
+  event_commit_sha: "fd2b387c7f93288eb31e7ff430073d8f040e8d5c"
+  event_blob_sha: "d2a187842fafb77e73933f1e6d08ab3e1a20243a"
+  append_container_commit_sha: "c96f085d9051d9456a5b9adbfd92d8cd6f07c586"
+  append_container_blob_sha: "08702219e80feda35e79e898aad928901b8f6e5d"
+  diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+  resolution_confirmed: true
+
+chronology:
+  Reviewer_C_ordering_confirmed: true
+  Reviewer_F_ordering_confirmed: true
+  Reviewer_F_PRE_EVIDENCE_AMENDMENT_premise_survives: true
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+nonblocking_followups:
+  - id: "OBJECT_TYPE_CHECK"
+    action: "For future freezes, verify that every identity labeled blob resolves to a blob object before freezing."
+  - id: "STATE_PROSPECTIVE_CORRECTION"
+    action: "Prospectively correct any STATE.yaml field that still labels a33624d372de42bb4e5e65d285dae9366b294deb as a blob identity; preserve frozen historical artifacts unchanged."
+  - id: "REVIEWER_G_PROVENANCE"
+    action: "Ledger this review's exposure/result/disposition from sequence 196 onward."
+
+operationalization:
+  repaired_register:
+    path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  Reviewer_C_content_pass: true
+  Reviewer_F_C4_pass: true
+  Reviewer_G_ledger_integrity_pass: true
+  A11_operationalization_authorized: true
+  final_A6_coverage_certified: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
