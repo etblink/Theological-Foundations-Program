@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_GD_N3_DELTA_RECHECK_DISPOSITION"
+status: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "5fcf9a8b3928827180b0e95e9fc8e9fcd401652d"
+  reviewer_status: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+
+independent_replay:
+  inventory_0_1_1_blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+  inventory_0_1_2_blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  necessary_proposition_count_before: 62
+  necessary_proposition_count_after: 62
+  changed_necessary_proposition_ids:
+    - "GD-N3"
+  GD_N3_restores_substantive_nondefect_truth_condition: true
+  GD_S2_separates_support_from_truth_condition: true
+  GD_N2_to_GD_N3_relation_class: "answer_level_condition"
+  GD_N2_to_GD_N3_disposition: "necessary"
+  all_other_necessary_propositions_unchanged: true
+  shared_floor_changed: false
+  trigger_controls_changed: false
+  final_A6_coverage_certified: false
+  outcome_relevant_evidence_exposure_started: false
+
+repair_loop:
+  Reviewer_B_initial_review: "REPAIR_REQUIRED"
+  Reviewer_B_focused_recheck: "STILL_REQUIRED__GD_N3_ONLY"
+  Reviewer_B_delta_recheck: "PASS"
+  initial_A4_A5_A6_repair_loop_complete: true
+
+C4_control:
+  corrected_inventory_operational_use_authorized: false
+  proposed_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_F_direction_review_required: true
+  Reviewer_G_ledger_integrity_review_reserved_after_F: true
+
+prohibited_effects:
+  - "No final A6 coverage certification."
+  - "No discriminator authoring or tiering."
+  - "No candidate ranking or truth adjudication."
+  - "No G1 evidence acquisition."
+
+next_action: "Launch same Reviewer-F lineage for C4 direction review of inventory amendment chain 0.1.0 -> 0.1.1 -> 0.1.2."
