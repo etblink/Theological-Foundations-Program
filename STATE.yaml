@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_CONTENT_REPAIR_PASS__A8_C4_PASS__REVIEWER_G_LEDGER_INTEGRITY_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_OPERATIVE__A9_SOURCE_PLAN_DRAFT_FROZEN__REVIEWER_D_ASSIGNMENT_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "0f0ee52654ad50d256143ff22cc65a86f600e677"
+  research_branch_head: "ab74fe6082370c1098d6d8bfdea7ab73334d1bb2"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -307,7 +307,7 @@ current_scope:
       - "ledger_integrity_reviewer"
       - "strict_independent_auditor"
   Reviewer_G:
-    status: "ASSIGNED__BASELINE_LEDGER_INTEGRITY_PASS__A4_A5_A6_EXTENSION_INTEGRITY_PASS__A8_BACKGROUND_LEDGER_INTEGRITY_READY"
+    status: "ASSIGNED__BASELINE_LEDGER_INTEGRITY_PASS__A4_A5_A6_EXTENSION_INTEGRITY_PASS__A8_BACKGROUND_LEDGER_INTEGRITY_PASS"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "68546f3aa5144006d9c22c6699283409550fdf85"
@@ -370,11 +370,20 @@ current_scope:
       certification_baseline_sequence: 96
       certification_endpoint_sequence: 132
       certification_endpoint_commit: "4e0e83e30db156912196dc09d0bdb06f144b781f"
-      exposure_to_Reviewer_G: false
+      exposure_to_Reviewer_G: true
     A8_background_ledger_integrity_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_PROMPT_0_1_0.md"
       blob_sha: "3495ae980e90961fdb7e81b8c0531a76d5a098eb"
-      exposure_to_Reviewer_G: false
+      exposure_to_Reviewer_G: true
+    A8_background_ledger_integrity_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+      blob_sha: "65f7e1d4925b3220f61ae9ea714c29def1cdb505"
+      disposition: "A8_LEDGER_INTEGRITY_PASS"
+    Program_Lead_A8_ledger_integrity_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+      blob_sha: "30fcc1630c57c7bae35347649768d1b0360503c8"
+      disposition: "A8_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A8_OPERATIONALIZATION_AUTHORIZED"
+      independently_verified_null_commit_event_count_97_132: 6
     A8_integrity_launch_entries_outside_certification_target:
       sequences: [133, 134]
       reason: "avoid self-referential integrity certification"
@@ -427,7 +436,7 @@ current_scope:
     repair_recheck_input:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml"
       blob_sha: "eb411e4a369c9e27bfb5489d37c2c72779831d67"
-      exposure_to_Reviewer_C: false
+      exposure_to_Reviewer_C: true
     repair_recheck_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_PROMPT_0_1_0.md"
       blob_sha: "43ffd28e234d562884a963af4f8c8766a329e263"
@@ -445,6 +454,23 @@ current_scope:
       may_review_background_granularity_interactions: true
       may_later_review_discriminator_tiers: true
       may_not_serve_as_post_evidence_direction_result_reviewer: true
+      may_not_serve_as_strict_auditor: true
+  Reviewer_D:
+    status: "UNASSIGNED__FRESH_SESSION_HANDSHAKE_REQUIRED"
+    assignment_handshake_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
+      blob_sha: "bb904e77064fe19881cb7fca70d63435899ad136"
+    blind_source_strata_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "b412516e5eefdbdf64aec8ed9c32b38424a1e4af"
+      exposure_to_Reviewer_D: false
+    blind_source_strata_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_PROMPT_0_1_0.md"
+      blob_sha: "9694eafc2cf7aafacfa0293fcaa081301cd40a3c"
+      exposure_to_Reviewer_D: false
+    role_boundary:
+      may_review_source_plan: true
+      may_not_serve_as_adverse_source_reviewer: true
       may_not_serve_as_strict_auditor: true
   candidate_universe_freeze:
     artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
@@ -499,15 +525,24 @@ current_scope:
   A8_repaired_background_register:
     artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
     blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
-    status: "CONTENT_PASS__C4_PASS__LEDGER_INTEGRITY_PENDING__NONOPERATIVE"
+    status: "OPERATIVE_FOR_LATER_G0"
     ordinary_dimension_count: 13
     gate_only_dimension_count: 2
   A8_repaired_background_interaction_matrix:
     artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
     blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
-    status: "CONTENT_PASS__C4_PASS__LEDGER_INTEGRITY_PENDING__NONOPERATIVE"
+    status: "OPERATIVE_FOR_LATER_G0"
     listed_material_pair_count: 15
     material_higher_order_count: 5
+  A8_background_operational_acceptance:
+    artifact: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_OPERATIONAL_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "ee38d300263942a3c5b0b1a25e42472d74910696"
+    status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+  A9_initial_source_plan:
+    artifact: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+    blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+    status: "FROZEN_INITIAL__WITHHELD_FROM_REVIEWER_D_UNTIL_BLIND_SOURCE_STRATA_ELICITATION_FREEZES"
+    source_plan_passed: false
   exposure_ledger:
     artifact: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
     blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
@@ -586,7 +621,16 @@ current_scope:
     append_133_134:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_133_134_0_1_0.yaml"
       blob_sha: "cefe23410e558032f540621213a1bcb346719f42"
-    next_sequence: 135
+    append_135_137:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_135_137_0_1_0.yaml"
+      blob_sha: "e42579bdc147d55827dce687cdbc87844bf706ac"
+    append_138:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_138_0_1_0.yaml"
+      blob_sha: "b7fba812f1fd6bc5f122a19c23c488486b74349c"
+    append_139_142:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_139_142_0_1_0.yaml"
+      blob_sha: "cf15ec740072d0c78e12ec746b0ce7d64876196b"
+    next_sequence: 143
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -674,8 +718,15 @@ current_scope:
     A8_background_C4_direction_review_result: "PASS__PRE_EVIDENCE_AMENDMENT__CONDITIONAL_ON_LEDGER_INTEGRITY"
     A8_background_ledger_integrity_review_required_after_C4: true
     A8_background_ledger_integrity_review_ready: true
-    A8_background_ledger_integrity_review_complete: false
-    background_register_frozen: false
+    A8_background_ledger_integrity_review_complete: true
+    A8_background_ledger_integrity_review_result: "PASS"
+    A8_operational_acceptance_complete: true
+    background_register_frozen: true
+    A9_initial_source_plan_frozen: true
+    reviewer_D_assignment_ready: true
+    reviewer_D_assigned: false
+    A9_blind_source_strata_elicitation_ready: true
+    A9_blind_source_strata_elicitation_complete: false
     source_plan_passed: false
     discriminators_frozen: false
     insufficiency_threshold_frozen: false
@@ -694,21 +745,18 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-G-A8-BACKGROUND-LEDGER-INTEGRITY-REVIEW"
-  action: "continue_same_Reviewer_G_session_with_fixed_endpoint_A8_ledger_integrity_review"
+  id: "TFP-STUDY-3-REVIEWER-D-ASSIGNMENT-HANDSHAKE"
+  action: "assign_a_fresh_procedurally_disjoint_Reviewer_D_session_before_exposing_the_A9_blind_source_strata_packet"
   branch: "research/tfp-study-3-contingency-g0"
-  certification_baseline_sequence: 96
-  certification_endpoint_sequence: 132
-  certification_endpoint_commit: "4e0e83e30db156912196dc09d0bdb06f144b781f"
-  integrity_input_blob_sha: "3389972971def39d60735bfee3785c43214ee26e"
-  integrity_prompt_blob_sha: "3495ae980e90961fdb7e81b8c0531a76d5a098eb"
+  assignment_handshake_prompt_blob_sha: "bb904e77064fe19881cb7fca70d63435899ad136"
+  blind_source_strata_input_blob_sha: "b412516e5eefdbdf64aec8ed9c32b38424a1e4af"
+  blind_source_strata_prompt_blob_sha: "9694eafc2cf7aafacfa0293fcaa081301cd40a3c"
   requirements:
-    - "use the exact same Anthropic Claude Opus 5.5 Reviewer-G conversation that previously returned LEDGER_EXTENSION_INTEGRITY_PASS"
-    - "audit sequences 97-132 only as an extension of the already certified 1-96 baseline"
-    - "verify the 97-98 to 99 bridge, all base-blob and prior-next links, commit/blob/timestamp bindings, null-commit order anchors, and no unledgered Study-3 artifact commits"
-    - "verify Reviewer C recheck provenance at 125-127 and Reviewer F C4 provenance at 130-132"
-    - "determine whether PRE_EVIDENCE_AMENDMENT chronology survives"
-    - "do not reclassify direction, redo A8 content review, inspect outcome evidence, rank candidates, adjudicate truth, or begin G1"
+    - "Reviewer D must be a fresh session disjoint from Program Lead/source-plan author, Reviewer E adverse-source/coverage/MAKEABLE reviewer, and future strict auditor"
+    - "perform assignment-only handshake before any Study-3 substantive exposure"
+    - "first substantive task is blind A9.1 missing-source-strata elicitation from truth question, admitted candidates, and operative background register"
+    - "do not expose the Program Lead draft source plan until the blind source-strata report is frozen"
+    - "no outcome-evidence acquisition, discriminator work, ranking, truth adjudication, or G1"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -1006,7 +1054,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_inventory_operative__A8_content_repair_pass__A8_C4_pass__Reviewer_G_ledger_integrity_ready"
+    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_inventory_operative__A8_operative__A9_source_plan_draft_frozen__Reviewer_D_assignment_ready"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
