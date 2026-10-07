@@ -1,0 +1,42 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_ROLE_ASSIGNMENT_DELTA"
+status: "FROZEN"
+date: "2026-10-06"
+
+base_role_architecture:
+  path: "TFP_STUDY_3_CONTINGENCY_ROLE_ARCHITECTURE_0_1_0.yaml"
+  blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+
+assignment:
+  reviewer_slot: "REVIEWER_A"
+  provider: "xAI"
+  model: "Grok 4.7"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  declared_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_A"
+  accepted: true
+  acceptance_artifact:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+    blob_sha: "42d4009513085fbb6ab77ddecddf0a49f26cbc93"
+  blind_elicitation_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_REPORT_0_1_0.md"
+    blob_sha: "cdcf5d516e1df38c87947819723c6f5686c486b1"
+    status: "BLIND_CANDIDATE_ELICITATION_COMPLETE"
+
+role_effect:
+  replaces_current_assignment_value_only:
+    from: "UNASSIGNED__FRESH_SESSION_REQUIRED"
+    to: "ASSIGNED__BLIND_ELICITATION_COMPLETE"
+  preserves_all_base_role_restrictions: true
+  eligible_later_roles:
+    - "candidate_universe_completeness_and_exclusion_reviewer"
+    - "candidate_steelman_equal_strength_reviewer"
+  prohibited_role:
+    - "strict_independent_auditor"
+
+exposure_disclosure:
+  substantive_Study_3_exposure_before_handshake: false
+  authorized_G0_inputs_only_before_report_freeze: true
+  branch_root_metadata_only_seen: true
+  Program_Lead_seed_content_seen_before_report_freeze: false
+  outcome_relevant_evidence_seen: false
