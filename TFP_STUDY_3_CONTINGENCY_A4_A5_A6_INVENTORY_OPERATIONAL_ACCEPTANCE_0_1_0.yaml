@@ -1,0 +1,48 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A4_A5_A6_INVENTORY_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_FOR_LATER_G0__FINAL_A6_COVERAGE_NOT_CERTIFIED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+operative_inventory:
+  path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml"
+  blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  necessary_proposition_count: 62
+  all_enumerated_necessary_propositions_A6_classified: true
+  shared_floor_presently_established: false
+
+qualification_chain:
+  Reviewer_B_delta_pass:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "5fcf9a8b3928827180b0e95e9fc8e9fcd401652d"
+    disposition: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+  Reviewer_F_C4_direction_pass:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+    blob_sha: "798f5ee38c73ae0aadc00b09f051931f5efd3b7a"
+    disposition: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_G_extension_integrity_pass:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "08a225fa27fe0d3d4cf6ba235b93dbc61be372c3"
+    disposition: "LEDGER_EXTENSION_INTEGRITY_PASS"
+    certified_endpoint_sequence: 96
+  Program_Lead_integrity_acceptance:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A4_A5_A6_LEDGER_EXTENSION_INTEGRITY_DISPOSITION_0_1_0.yaml"
+    blob_sha: "dc8e638d7fc8a738c65f088305f8f162fcb02af0"
+
+operational_effect:
+  A4_claim_typing_basis_operational: true
+  A5_dependency_basis_operational: true
+  A6_necessary_proposition_inventory_operational: true
+  NECESSARY_PROPOSITION_COVERAGE_COMPLETE: false
+  final_A6_coverage_reviewer: "REVIEWER_B_AFTER_REVIEWER_C_DISCRIMINATOR_TIERING"
+  candidate_universe_changed: false
+  B3_packets_changed: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+
+carry_forwards:
+  - "The B3/G1 literature-overlap caveat must be explicitly reviewed in A9.1 source-plan control and later strict audit."
+  - "New frozen reviewer input YAML must be syntactically valid."
+  - "Reviewer C must remain fresh/disjoint from Program Lead, background/discriminator authors, and strict auditor."
