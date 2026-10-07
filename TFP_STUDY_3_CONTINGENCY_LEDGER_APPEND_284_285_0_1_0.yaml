@@ -1,0 +1,40 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_READY"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_282_283_blob_sha: "6303eb98d329760b394aac33e9bb2a2b0a9068ef"
+  prior_next_sequence: 284
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 284
+    repository_commit: "e7f428b62d02ce6fbe4368c729952062962a72f5"
+    timestamp_utc: "2026-10-07T16:06:57Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_INPUT_FREEZE_0_1_0.yaml blob 5e35da196b34896c6f7d5ca8c42b707e97799493"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_INPUT_FREEZE"
+    amendment_surfaces: ["A9 source universe","Reviewer E blind-probe reconciliation","coverage-review readiness","MAKEABLE-review readiness","A8 0.1.2 contamination controls"]
+    outcome_relevant_evidence: true
+    result_status: "FROZEN__RECONCILIATION_ONLY__NO_COVERAGE_OR_MAKEABLE_CERTIFICATION"
+
+  - sequence: 285
+    repository_commit: "3b161554dc9bc501067649c69db1c8694692d01f"
+    timestamp_utc: "2026-10-07T16:07:19Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_PROMPT_0_1_0.md blob b2baf8bf56a6cbcb6357203bc64ae900e201407f"
+    exposure_class: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_PROMPT_FREEZE"
+    amendment_surfaces: ["A9 source universe","Reviewer E blind-probe reconciliation","coverage-review readiness","MAKEABLE-review readiness","A8 0.1.2 contamination controls"]
+    outcome_relevant_evidence: true
+    result_status: "REVIEWER_E_SOURCE_CLASS_RECONCILIATION_READY"
+
+next_sequence: 286
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
+source_followup_complete_for_reviewer_E_reconciliation: true
+coverage_certified: false
+MAKEABLE_certified: false
+A8_0_1_2_operational: true
