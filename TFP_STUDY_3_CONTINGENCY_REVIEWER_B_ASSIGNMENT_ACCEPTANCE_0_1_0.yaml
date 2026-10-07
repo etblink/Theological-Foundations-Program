@@ -1,0 +1,30 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_ASSIGNMENT_ACCEPTANCE"
+status: "ACCEPTED_FOR_INITIAL_A4_A5_A6_REVIEW"
+date: "2026-10-06"
+
+reviewer:
+  slot: "REVIEWER_B"
+  provider: "OpenAI"
+  model_declaration: "GPT-6-based Codex; exact deployment identifier not exposed"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  declared_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_B"
+
+declared_controls:
+  brand_new_conversation: true
+  continuation_or_fork_visible: false
+  prior_Study_3_substantive_exposure_visible: false
+  visible_persistent_memory_contains_substantive_Study_3_material: false
+  prior_Study_3_role_visible: false
+  retrieval_before_instruction: false
+
+program_lead_disposition: "ACCEPTED"
+assignment_scope: "INITIAL_A4_A5_A6_REVIEW"
+restrictions:
+  - "may_not_serve_as_discriminator_tier_reviewer"
+  - "may_not_serve_as_strict_independent_auditor"
+  - "may_not_rank_candidates_or_adjudicate_truth"
+  - "may_not_begin_G1_evidence_acquisition"
+
+note: "Acceptance relies on the reviewer's fresh-session declaration and visible-context controls; hidden provider internals are not independently inspectable."
