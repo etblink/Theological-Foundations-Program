@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_ACQUISITION_SEARCH_STAGES_COMPLETE__REVIEWER_E_HANDSHAKE_READY__FROZEN_G0_ARCHITECTURE__NO_PROPOSITION_DISPOSITIONS"
+  status: "G1_REVIEWER_E_BLIND_ADVERSE_PASS__SOURCE_FOLLOWUP_REQUIRED__F1_A8_REVIEW_READY__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "d6bbf3185f7735e3aec0fe5612d442ab0d5ac49d"
+  research_branch_head: "7a72bd6b3160cc1e7824c708018398cca75a31c0"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -653,7 +653,7 @@ current_scope:
       may_not_serve_as_MAKEABLE_certifier: true
       may_not_serve_as_strict_auditor: true
   Reviewer_E:
-    status: "UNASSIGNED__FRESH_HANDSHAKE_READY"
+    status: "ASSIGNED__BLIND_EXTERNAL_ADVERSE_SOURCE_PASS__COVERAGE_REVIEW_PAUSED_PENDING_F1_AND_SOURCE_FOLLOWUP"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
@@ -663,7 +663,16 @@ current_scope:
       - "coverage_state_reviewer"
       - "MAKEABLE_certifier"
     lineage_requirement: "fresh session disjoint from Program Lead, Reviewer D source-plan lineage, and future Reviewer H strict auditor"
-    substantive_assignment_pending_handshake: true
+    substantive_assignment_pending_handshake: false
+    assignment_acceptance_blob_sha: "f10e82db644ae4da0c54ff40eb64bbd54fdb11d9"
+    role_assignment_blob_sha: "4dfaf215629f27a66cb8b7225cc66bd634bf6260"
+    blind_external_adverse_report_blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
+    blind_external_adverse_status: "ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
+    Program_Lead_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+    source_followup_required: true
+    F1_A8_review_required: true
+    coverage_review_authorized_now: false
+    MAKEABLE_review_authorized_now: false
   candidate_universe_freeze:
     artifact: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml"
     blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd"
@@ -1374,7 +1383,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 252
+    A17_ledger_current_through_sequence: 259
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1449,19 +1458,20 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-E-ASSIGNMENT-HANDSHAKE"
-  action: "obtain_fresh_Reviewer_E_procedural_disjointness_handshake_before_substantive_G1_control_exposure"
+  id: "TFP-STUDY-3-REVIEWER-C-POST-EVIDENCE-F1-A8-GRANULARITY-REVIEW"
+  action: "continue_same_Reviewer_C_lineage_for_focused_F1_A8_granularity_and_interaction_review"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 253
-  acquisition_completion_blob_sha: "e6ff9e040a73836e247c0442127956cf3f604643"
-  reviewer_E_handshake_prompt_blob_sha: "d29a9bf16135f22ce670177af3b07982bce2265d"
+  ledger_next_sequence: 260
+  input_blob_sha: "87a79a2708329f89d2adf946144f4d9770c1374b"
+  prompt_blob_sha: "6a037a6337199c3bbe9517e2604a73cfbd62adf4"
+  ledger_through_sequence: 259
+  reviewer_E_report_blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
+  reviewer_E_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
   requirements:
-    - "use a brand-new Anthropic Claude Opus 5.5 conversation"
-    - "do not allow repository, memory, past-chat, Study-3 evidence, or substantive source retrieval before handshake"
-    - "Reviewer E must be disjoint from Program Lead, Reviewer D/source-plan reviewer, and future Reviewer H strict auditor"
-    - "after a PROCEDURALLY_DISJOINT_FOR_REVIEWER_E handshake, freeze assignment acceptance and only then expose the substantive adverse-source/coverage control packet"
-    - "Reviewer E must run a genuine adverse-source probe outside the Program Lead search paths before any COMPLETE/MATERIALLY_COMPLETE coverage certification"
-    - "MAKEABLE may be certified only at COMPARISON:<id> scope with adequate independently reviewed coverage"
+    - "Reviewer C answers only whether F1 is already captured or requires a minimal A8 background/interactions repair"
+    - "Reviewer C must not classify C4 amendment direction, issue proposition results, coverage states, MAKEABLE results, or ranking"
+    - "if A8 repair is required, Program Lead drafts the descriptive repair and routes it to Reviewer F for C4 direction classification before operational use"
+    - "Reviewer E coverage review remains paused until F1 and blind-probe source followups are resolved"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
