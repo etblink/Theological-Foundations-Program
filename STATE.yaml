@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G1"
-  status: "G1_REVIEWER_E_BLIND_ADVERSE_PASS__SOURCE_FOLLOWUP_REQUIRED__F1_A8_REVIEW_READY__COVERAGE_REVIEW_PAUSED"
+  status: "G1_F1_A8_POST_EVIDENCE_REPAIR_DRAFTED__REVIEWER_F_C4_READY__SOURCE_FOLLOWUP_REQUIRED__COVERAGE_REVIEW_PAUSED"
   purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "7a72bd6b3160cc1e7824c708018398cca75a31c0"
+  research_branch_head: "aebe21903627e5452eba4e446432e3e10ecc7109"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -277,7 +277,7 @@ current_scope:
       may_not_serve_as_discriminator_tier_reviewer: true
       may_not_serve_as_strict_auditor: true
   Reviewer_F:
-    status: "ASSIGNED__CANDIDATE_UNIVERSE_C4_PASS__A4_A5_A6_C4_PASS__A8_BACKGROUND_C4_PASS__A9_SOURCE_PLAN_C4_PASS__A11_DISCRIMINATOR_C4_PASS__FINAL_A6_GD_N1_C4_PASS"
+    status: "ASSIGNED__PRIOR_C4_PASSES__POST_EVIDENCE_F1_A8_C4_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "073a00b53f3f2e20c0cf17b5fc931498396ff71d"
@@ -513,7 +513,7 @@ current_scope:
       sequences: [169, 170, 171]
       ledger_append_blob_sha: "710752b499df544756cb85362a5e80116e138538"
   Reviewer_C:
-    status: "ASSIGNED__A8_BACKGROUND_REPAIR_PASS__DISCRIMINATOR_TIER_REVIEW_DEFERRED"
+    status: "ASSIGNED__A8_BACKGROUND_REPAIR_PASS__A11_REPAIR_PASS__POST_EVIDENCE_F1_A8_REPAIR_REQUIRED"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "a5826cdbadc39f4e8275efb3e548bd80e17c649e"
@@ -671,6 +671,13 @@ current_scope:
     Program_Lead_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
     source_followup_required: true
     F1_A8_review_required: true
+    F1_A8_review_complete: true
+    F1_A8_review_result: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+    F1_repair_register_blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+    F1_repair_matrix_blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6"
+    F1_amendment_record_blob_sha: "15a0b13742a7b737cfcc1627a79501f90b4f9165"
+    F1_C4_direction_review_ready: true
+    F1_C4_direction_review_complete: false
     coverage_review_authorized_now: false
     MAKEABLE_review_authorized_now: false
   candidate_universe_freeze:
@@ -1383,7 +1390,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 259
+    A17_ledger_current_through_sequence: 266
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1458,20 +1465,21 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-C-POST-EVIDENCE-F1-A8-GRANULARITY-REVIEW"
-  action: "continue_same_Reviewer_C_lineage_for_focused_F1_A8_granularity_and_interaction_review"
+  id: "TFP-STUDY-3-REVIEWER-F-POST-EVIDENCE-F1-A8-C4-DIRECTION-REVIEW"
+  action: "continue_same_Reviewer_F_lineage_for_post_evidence_F1_A8_C4_direction_classification"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 260
-  input_blob_sha: "87a79a2708329f89d2adf946144f4d9770c1374b"
-  prompt_blob_sha: "6a037a6337199c3bbe9517e2604a73cfbd62adf4"
-  ledger_through_sequence: 259
-  reviewer_E_report_blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
-  reviewer_E_reconciliation_blob_sha: "38346ac587b10112b53318ffae114fb05f97a34c"
+  ledger_next_sequence: 267
+  input_blob_sha: "3de317cf126ee78dee0b0810b14ca8ab2aaa08b3"
+  prompt_blob_sha: "435e0f208419a9dacd3fda698805a3c6a3a56621"
+  repair_register_blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+  repair_matrix_blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6"
+  amendment_record_blob_sha: "15a0b13742a7b737cfcc1627a79501f90b4f9165"
   requirements:
-    - "Reviewer C answers only whether F1 is already captured or requires a minimal A8 background/interactions repair"
-    - "Reviewer C must not classify C4 amendment direction, issue proposition results, coverage states, MAKEABLE results, or ranking"
-    - "if A8 repair is required, Program Lead drafts the descriptive repair and routes it to Reviewer F for C4 direction classification before operational use"
-    - "Reviewer E coverage review remains paused until F1 and blind-probe source followups are resolved"
+    - "Reviewer F classifies candidate/outcome direction under Protocol C4; do not redo Reviewer C A8 adequacy review"
+    - "use post-evidence C4 namespace; PRE_EVIDENCE_AMENDMENT is not available if ledger timing is confirmed"
+    - "if any candidate/outcome can benefit or effect is mixed/unclear, apply POST_EVIDENCE_FAVORABLE_OR_MIXED"
+    - "Reviewer F must not certify ledger integrity, coverage, MAKEABLE, proposition dispositions, ranking, or theological conclusions"
+    - "repair register/matrix remain nonoperative and Reviewer E coverage review remains paused"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
