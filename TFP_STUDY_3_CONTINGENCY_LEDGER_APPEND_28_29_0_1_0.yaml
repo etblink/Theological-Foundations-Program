@@ -1,0 +1,12 @@
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+base_ledger_blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+prior_next_sequence: 28
+append:
+  - sequence: 28
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+    outcome_relevant_evidence: false
+  - sequence: 29
+    artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+    outcome_relevant_evidence: false
+next_sequence: 30
