@@ -1,0 +1,96 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A8_POST_EVIDENCE_F1_BACKGROUND_REPAIR_AMENDMENT_RECORD"
+status: "POST_EVIDENCE_REPAIR_DRAFT__DIRECTION_UNCLASSIFIED__NONOPERATIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+trigger:
+  Reviewer_E_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_BLIND_EXTERNAL_ADVERSE_SOURCE_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
+    flag: "F1 — Missing impersonal grounding–necessitation dimension"
+  Reviewer_C_focused_review:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_POST_EVIDENCE_F1_A8_GRANULARITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "84859f469089896bc86f340857caaf2d09b25c55"
+    disposition: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED"
+  Program_Lead_confirmation:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_POST_EVIDENCE_F1_A8_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "15174e9f82f4c4311071919f48e357d02450ba75"
+    disposition: "A8_POST_EVIDENCE_BACKGROUND_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
+
+timing:
+  outcome_relevant_evidence_exposure_started_before_amendment: true
+  C4_required: true
+  C4_classification: null
+  direction_reviewer: "REVIEWER_F"
+  ledger_integrity_reviewer_after_direction_review: "REVIEWER_G"
+  operational_before_reviews: false
+
+pre_repair_operative_architecture:
+  background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml"
+    blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml"
+    blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+
+proposed_repair:
+  background_register:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_2.yaml"
+    blob_sha: "234add6d1f68081f2cd842b97669809297e8beec"
+  interaction_matrix:
+    path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_2.yaml"
+    blob_sha: "adec67fa0e95967680fcb4f8aaa8253f253b2ac6"
+  new_dimension:
+    id: "BG-IMPERSONAL-GROUNDING-MODAL-LINK"
+    variants:
+      - "IMP-NECESSITATING"
+      - "IMP-CONTINGENCY-PRESERVING"
+      - "IMP-UNFIXED"
+    affected_propositions: ["IC-N5","PR-N6","AX-N5"]
+    candidate_families:
+      - "C-NEC-IMPERSONAL-CONCRETE"
+      - "C-NEC-IMPERSONAL-PRINCIPLE"
+      - "C-AXIARCHIC"
+  new_material_pairs:
+    - "INT-MODALSTATUS-IMPERSONAL-LINK"
+    - "INT-RELATION-IMPERSONAL-LINK"
+    - "INT-ABSTRACT-IMPERSONAL-LINK"
+    - "INT-AXIOLOGY-IMPERSONAL-LINK"
+    - "INT-CATEGORY-IMPERSONAL-LINK"
+  new_higher_order_interactions:
+    - "INT3-MODALSTATUS-RELATION-IMPERSONAL-LINK"
+    - "INT3-ABSTRACT-AXIOLOGY-IMPERSONAL-LINK"
+  cross_family_control:
+    pair: ["BG-AGENTIVE-MODAL-LINK","BG-IMPERSONAL-GROUNDING-MODAL-LINK"]
+    status: "CROSS_FAMILY_MODAL_COLLAPSE_COMPARISON_CONDITIONAL__NO_SHARED_VARIANT_SPACE"
+  unchanged:
+    BG_MODAL_LOGIC_gate_only: true
+    candidate_universe: true
+    necessary_proposition_inventory: true
+    A11_tiers: true
+    A11_direction_rule: true
+
+descriptive_rationale:
+  - "The pre-repair architecture encodes contingency preservation as candidate success conditions but omits the independent background state that determines whether an impersonal necessary-ground relation transmits necessity."
+  - "The repair separates relation type, modal status, and necessity-transmission rather than collapsing them."
+  - "The repair mirrors the control strength of BG-AGENTIVE-MODAL-LINK without assuming that agentive and impersonal mechanisms share one variant space."
+
+direction_questions_for_Reviewer_F:
+  - "Classify the repair's effect on C-NEC-IMPERSONAL-CONCRETE."
+  - "Classify the repair's effect on C-NEC-IMPERSONAL-PRINCIPLE."
+  - "Classify the repair's effect on C-AXIARCHIC."
+  - "Classify the repair's effect on C-NECESSITARIAN and any relevant rival family whose comparative standing could change."
+  - "Classify effects on future adequacy, ranking, truth-warrant eligibility, background robustness, coverage burden, and MAKEABLE comparison use."
+  - "Determine the exact Protocol C4 amendment class; do not infer PRE_EVIDENCE because evidence exposure already began."
+  - "If any candidate/outcome can benefit, apply POST_EVIDENCE_FAVORABLE_OR_MIXED controls exactly."
+
+controls:
+  proposed_repair_is_descriptive_not_operational: true
+  no_background_variant_installed_as_true: true
+  no_candidate_result_issued: true
+  no_ranking_issued: true
+  no_coverage_state_issued: true
+  no_MAKEABLE_result_issued: true
+  Reviewer_E_coverage_review_paused: true
