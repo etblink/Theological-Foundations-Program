@@ -1,0 +1,50 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A4_A5_A6_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED_BEFORE_USE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+  blob_sha: "798f5ee38c73ae0aadc00b09f051931f5efd3b7a"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+
+independent_replay:
+  amendment_chain: "0.1.0 -> 0.1.1 -> 0.1.2"
+  proposed_class: "PRE_EVIDENCE_AMENDMENT"
+  chronology_conditionally_supported_by_current_A17_chain: true
+  chronology_integrity_certified_here: false
+  favorable_effects_present: true
+  adverse_effects_present: true
+  mixed_or_unclear_effects_present: true
+  hidden_favorable_candidate_treatment_identified: false
+  confirmatory_comparative_result_started: false
+  outcome_relevant_evidence_exposure_started_as_recorded: false
+  candidate_universe_changed: false
+  B3_packets_changed: false
+
+direction_summary:
+  added_or_restored_candidate_burdens: "PREDOMINANTLY_ADVERSE"
+  removal_of_improper_falsity_burdens: "FAVORABLE"
+  dependency_semantic_clarification: "MOSTLY_NEUTRAL_WITH_DISJUNCTIVE_PATH_FAVORABILITY"
+  scope_clarification: "MOSTLY_NEUTRAL_WITH_SELECTED_ADVERSE_BURDEN_SHARPENING"
+  A6_candidate_specific_classification: "NEUTRAL"
+  future_coverage_constraints: "NEUTRAL_TO_CANDIDATES__FAVORABLE_TO_BURDEN_SYMMETRY"
+  GD_N3_0_1_2_correction: "ADVERSE_TO_C_GLOBAL_DEFLATION"
+
+C4_disposition:
+  amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  direction_review_complete: true
+  inventory_0_1_2_operational_use_authorized_by_direction_review_alone: false
+  prospective_use_condition: "REVIEWER_G_LEDGER_INTEGRITY_PASS"
+  final_A6_coverage_certified: false
+  discriminator_work_authorized_by_this_disposition: false
+  G1_authorized: false
+
+next_control:
+  reviewer_slot: "REVIEWER_G"
+  required_lineage: "same Anthropic Claude Opus 5.5 Reviewer-G conversation that previously passed the Study-3 ledger-integrity repair recheck"
+  task: "verify extension integrity from the previously qualified ledger baseline through the A4/A5/A6 amendment chain and Reviewer-F direction review"
+  may_not_reclassify_direction_except_to_report_integrity-relevant contradiction: true
+  may_not_serve_as_strict_auditor: true
