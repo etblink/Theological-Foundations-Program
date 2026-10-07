@@ -1,0 +1,43 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_E_ASSIGNMENT_ACCEPTANCE"
+status: "ACCEPTED__PROCEDURALLY_DISJOINT_FOR_REVIEWER_E"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_E"
+  provider: "Anthropic"
+  model: "Claude Opus 5.5"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  brand_new_conversation: true
+  prior_Study_3_substantive_exposure: false
+  prior_Study_3_role_in_lineage: false
+  repository_past_chat_memory_retrieval_before_handshake: false
+  retrieval_restraint_accepted: true
+  returned_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_E"
+
+assignment_basis:
+  disjoint_from_program_lead: true
+  disjoint_from_reviewer_D_source_plan_lineage: true
+  future_reviewer_H_must_be_separately_disjoint: true
+  no_outcome_material_exposure_before_assignment: true
+
+authorized_roles:
+  - "adverse_source_reviewer"
+  - "coverage_state_reviewer"
+  - "MAKEABLE_certifier"
+
+restrictions:
+  - "may_not_serve_as_source_plan_reviewer"
+  - "may_not_serve_as_strict_auditor"
+  - "may_not_rank_candidates"
+  - "may_not_issue proposition truth dispositions"
+  - "may_not alter frozen G0 architecture"
+  - "must perform independent adverse-source probe before COMPLETE or MATERIALLY_COMPLETE coverage certification"
+  - "MAKEABLE requires adequate COMPARISON:<id> coverage review"
+
+Program_Lead_disposition:
+  assignment_accepted: true
+  adverse_source_probe_authorized_next: true
+  G1_authorized: true
