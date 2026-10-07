@@ -1,0 +1,131 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A9_BLIND_SOURCE_STRATA_RECONCILIATION_DOCKET"
+status: "FROZEN__PENDING_REVIEWER_D_POST_BLIND_SOURCE_PLAN_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+blind_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_BLIND_SOURCE_STRATA_ELICITATION_REPORT_0_1_0.md"
+  blob_sha: "41e6d903aa4d33d023c6e47537de16c66b8662ed"
+  status: "SOURCE_STRATA_BLIND_ELICITATION_COMPLETE"
+
+program_lead_source_plan:
+  path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+  blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  exposed_to_Reviewer_D_before_blind_report_freeze: false
+  source_plan_passed: false
+
+background_identity_note:
+  blind_input_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  later_operational_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  live_state_changed_between_blind_elicitation_and_operational_acceptance: false
+  consequence: "No A9.1 re-scope is required merely because the immutable 0.1.1 file retains its historical nonoperative status text."
+
+reconciliation_principles:
+  - "Blind elicitation is independent input, not automatic authority."
+  - "Do not repair the draft plan before Reviewer D sees it; preserve a genuine post-blind review."
+  - "A blind-only stratum is a repair requirement only if its omission could materially bias source access, source symmetry, background challengeability, or candidate-native access."
+  - "A plan-only control is not defective merely because Reviewer D did not independently name it."
+  - "No source is outcome evidence at A9; this docket concerns acquisition architecture only."
+
+blind_findings_apparently_covered:
+  - id: "DB-GENERAL-SCHOLARLY"
+    finding: "A general scholarly index beyond PhilPapers."
+    plan_mapping: ["OpenAlex","Google Scholar","Crossref"]
+    provisional_disposition: "COVERED"
+  - id: "MONOGRAPH-ACCESS"
+    finding: "WorldCat or interlibrary-loan access."
+    plan_mapping: ["WorldCat","interlibrary loan path"]
+    provisional_disposition: "COVERED"
+  - id: "DISCOVERY-NOT-EVIDENCE"
+    finding: "Reference works/search systems are discovery or orientation only."
+    provisional_disposition: "COVERED"
+  - id: "HISTORICAL-PRIMARY-CONTROL"
+    finding: "Named editions/translations and stable historical access."
+    provisional_disposition: "SUBSTANTIALLY_COVERED__DETAIL_REVIEW_REQUIRED"
+  - id: "DATE-NO-HARD-EXCLUSION"
+    finding: "Classical/current work should not be excluded solely by date."
+    provisional_disposition: "COVERED"
+  - id: "INACCESSIBLE-SOURCE-CONTROL"
+    finding: "Paywall/inaccessibility must not count against a candidate."
+    provisional_disposition: "COVERED"
+  - id: "SYNTHETIC-COMPONENT-SEARCH"
+    finding: "Synthetic candidates require component-thesis searches."
+    provisional_disposition: "PARTIALLY_COVERED"
+
+blind_findings_not_explicitly_covered_or_materially_thinner:
+  - id: "GAP-PHILOSOPHERS-INDEX"
+    blind_finding: "Philosopher's Index as a bibliographic index whose omission could bias discovery."
+    plan_status: "ABSENT"
+    Reviewer_D_question: "Is PhilPapers/OpenAlex/Google Scholar sufficient, or is Philosopher's Index required for A9.1 symmetry?"
+  - id: "GAP-BRILL"
+    blind_finding: "Brill as publisher/archive access, especially relevant to historical, continental, religious-philosophy, and non-Anglophone scholarship."
+    plan_status: "ABSENT"
+    Reviewer_D_question: "Is Brill materially required or optional enrichment given the other publisher/archive channels?"
+  - id: "GAP-CROSS-TRADITION-SPECIFICITY"
+    blind_finding: "Explicit Greek/Latin, Arabic falsafa/kalam, Sanskrit Nyaya/Buddhist/Jain, classical Chinese, scholastic, continental, and comparative strata."
+    plan_status: "GENERIC_CROSS_TRADITION_ONLY"
+    Reviewer_D_question: "Must the plan name concrete cross-tradition strata to avoid Anglophone framing bias?"
+  - id: "GAP-AGENTIVE-NONABRAHAMIC"
+    blind_finding: "Non-Abrahamic and non-classical-theist necessary-agentive formulations."
+    plan_status: "NOT_EXPLICIT"
+    Reviewer_D_question: "Is an explicit non-Abrahamic/non-classical-theist agentive stratum required so C-NEC-AGENTIVE is not sourced as Christianity/theism by default?"
+  - id: "GAP-LANGUAGE-FLOOR"
+    blind_finding: "Relevant primary-language coverage including Greek, Latin, Arabic, Sanskrit, classical Chinese, German, and French."
+    plan_status: "GENERIC_NON_ENGLISH_TRANSLATION_RULE_ONLY"
+    Reviewer_D_question: "Should the plan add explicit language/corpus coverage, or is relevance-triggered translation control sufficient?"
+  - id: "GAP-CRITICAL_EDITION_CORPORA"
+    blind_finding: "Critical-edition/historical corpora with edition/manuscript metadata."
+    plan_status: "GENERIC_CRITICAL_EDITION_DIGITAL_ARCHIVES_PRESENT"
+    Reviewer_D_question: "Is the generic archival rule sufficient, or must corpus classes be specified?"
+  - id: "GAP-SYNTHETIC-PRECURSOR-SEARCH"
+    blind_finding: "For synthetic families, a precursor search must be recorded before absence is treated as a literature gap."
+    plan_status: "COMPONENT_SEARCH_PRESENT__PRECURSOR_SEARCH_NOT_EXPLICIT"
+    Reviewer_D_question: "Is explicit precursor-search logging required?"
+  - id: "GAP-IMPERSONAL-CONCRETE-SUBVARIANTS"
+    blind_finding: "Cardinality and relation variants of C-NEC-IMPERSONAL-CONCRETE each need native access."
+    plan_status: "NATIVE_STRATUM_PRESENT__SUBVARIANT_ACCESS_NOT_EXPLICIT"
+    Reviewer_D_question: "Does A9.1 require explicit subvariant-native access?"
+  - id: "GAP-BRUTE-IGNORANCE-BOUNDARY"
+    blind_finding: "Native sources should distinguish ontic brutality from present ignorance."
+    plan_status: "NOT_EXPLICIT"
+    Reviewer_D_question: "Is this boundary already adequately controlled elsewhere, or must source selection encode it?"
+  - id: "GAP-SELF-EXPLANATION-CONTINGENCY"
+    blind_finding: "Necessary causa-sui formulations are not native unless contingency is explicit."
+    plan_status: "NOT_EXPLICIT"
+    Reviewer_D_question: "Must the source plan explicitly exclude necessary causa-sui material from candidate-native C-SELF-EXPLANATORY evidence?"
+  - id: "GAP-THIN-LITERATURE-CONTROL"
+    blind_finding: "C-AXIARCHIC, C-INDETERMINATE-ULTIMACY, contingent self-explanation, and impersonal concrete necessity may have thin literatures."
+    plan_status: "NO_EXPLICIT_THIN_LITERATURE_ESCALATION_RULE"
+    Reviewer_D_question: "Should thin-literature cases trigger broader terminology/citation/precursor searches before coverage conclusions?"
+  - id: "GAP-CONFESSIONAL-DOMINANCE"
+    blind_finding: "C-NEC-AGENTIVE literature may be disproportionately confessional; polemical theist/anti-theist material can crowd out narrow formulations."
+    plan_status: "GENERAL_NO_WORLDVIEW_DEFAULT_AND_ADVERSE_SYMMETRY_PRESENT__NO_EXPLICIT_VOLUME_CONTROL"
+    Reviewer_D_question: "Is an explicit anti-volume/confessional-dominance control required?"
+  - id: "GAP-SOCIAL-UNDATED-WEB"
+    blind_finding: "Social media and undated web essays should be discovery/orientation only."
+    plan_status: "AI_SUMMARIES_SEARCH_SNIPPETS_ANONYMOUS_SUMMARIES_CONTROLLED__SOCIAL_MEDIA_NOT_EXPLICIT"
+    Reviewer_D_question: "Is an explicit discovery-only classification needed?"
+
+plan_controls_for_reviewer_D_to_test_even_if_not_blind_named:
+  - "Crossref/OpenAlex/Google Scholar discovery layer."
+  - "Recency supplement for the last 10 years."
+  - "Per-source provenance fields."
+  - "Staged S1 native, S2 adverse, S3 neutral, S4 background, S5 recency search."
+  - "Stable preprint/accepted-manuscript handling."
+  - "MAKEABLE deferral to Reviewer E."
+  - "Candidate-native and adverse minimum probes for all 13 candidates."
+  - "Every live background variant requires support/challenge strata."
+
+required_post_blind_decision:
+  - "For each docket gap, classify REQUIRED_REPAIR, ADEQUATELY_COVERED, OPTIONAL_ENRICHMENT, or OUT_OF_SCOPE."
+  - "Test the complete source plan against all five A9.1 duties."
+  - "If repair is required, provide exact repair requirements rather than rewriting the plan."
+  - "If no repair is required, issue SOURCE_PLAN_PASS."
+
+scope_controls:
+  outcome_relevant_evidence_acquisition_started: false
+  source_plan_passed: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
