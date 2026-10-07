@@ -1,0 +1,34 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_INDEPENDENT_REVIEWER_E_ASSIGNED__NO_SUBSTANTIVE_REVIEW_EXPOSURE_YET"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_252_blob_sha: "33dc652bf721cdb26d4b546fdca1b1ce75fd61c7"
+  prior_next_sequence: 253
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 253
+    repository_commit: "7d8eb2390cf24b2265382980d284138e69a2fa57"
+    timestamp_utc: "2026-10-07T13:57:39Z"
+    actor_lineage: "ANTHROPIC_CLAUDE_OPUS_5_5_REVIEWER_E_FRESH_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml blob f10e82db644ae4da0c54ff40eb64bbd54fdb11d9"
+    exposure_class: "G1_REVIEWER_E_ASSIGNMENT_ACCEPTANCE"
+    outcome_relevant_evidence: false
+    result_status: "ACCEPTED__PROCEDURALLY_DISJOINT_FOR_REVIEWER_E"
+
+  - sequence: 254
+    repository_commit: "cd8c3d973f3b039c41524cb4d91a722a3c9e9018"
+    timestamp_utc: "2026-10-07T13:58:05Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml blob 4dfaf215629f27a66cb8b7225cc66bd634bf6260"
+    exposure_class: "G1_REVIEWER_E_ROLE_ASSIGNMENT"
+    outcome_relevant_evidence: false
+    result_status: "ASSIGNED__G1_INDEPENDENT_REVIEW_READY"
+
+next_sequence: 255
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
