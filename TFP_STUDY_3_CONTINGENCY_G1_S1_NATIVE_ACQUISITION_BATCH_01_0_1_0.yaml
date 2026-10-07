@@ -1,0 +1,260 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S1_NATIVE_ACQUISITION_BATCH_01"
+status: "FROZEN_ACQUISITION_RECORD__NO_PROPOSITION_DISPOSITIONS"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S1_NATIVE"
+
+scope:
+  purpose: "Preserve the first candidate-native discovery/access batch under frozen A9 without converting discovery metadata or partial access into coverage or truth dispositions."
+  candidate_count: 13
+  all_13_candidate_families_queried: true
+  search_snippets_evidential_support: false
+  candidate_ranking_performed: false
+  proposition_dispositions_issued: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+exposure:
+  first_discovery_exposure_ledger_sequence: 235
+  additional_S1_search_and_source_opening_exposure_requires_sequence: 236
+  outcome_relevant_evidence_exposure_started: true
+
+access_state_namespace:
+  FULL_TEXT_OR_SUBSTANTIAL_HTML_READ: "Primary/native source or lawful substantial source text opened and read beyond discovery metadata."
+  ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ: "Publisher/author/primary landing content or abstract/excerpt opened and read; deeper truth-critical assessment may still be required."
+  BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING: "Identity located; search result/metadata is not evidential support."
+  SECONDARY_ORIENTATION_ONLY: "Useful for terminology/citation routing; cannot be sole truth-critical support."
+
+source_records:
+  - source_id: "S1N-BR-001"
+    candidate_targets: ["C-BRUTE","C-GLOBAL-DEFLATION"]
+    proposition_targets: ["BR-N2","BR-N3","BR-N4","GD-N2","GD-N3"]
+    full_bibliographic_identity: "Sean M. Carroll, 'Why Is There Something, Rather Than Nothing?' invited contribution to The Routledge Companion to the Philosophy of Physics, 2018."
+    stable_identifier: "arXiv:1802.02231"
+    stable_url: "https://arxiv.org/abs/1802.02231"
+    native_adverse_neutral_class: "NATIVE_OR_NATIVE_ADJACENT"
+    primary_secondary_status: "PRIMARY_AUTHOR_ARGUMENT"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    selection_reason: "Directly argues that ultimate explanation may bottom out in brute facts and distinguishes universe-level from embedded explanation."
+    limitations: ["Physics-inflected framing must not substitute for the metaphysical BR/GD propositions without later typed analysis."]
+
+  - source_id: "S1N-RG-001"
+    candidate_targets: ["C-REGRESS"]
+    proposition_targets: ["RG-N2","RG-N3","RG-N4","RG-N5"]
+    full_bibliographic_identity: "Ross P. Cameron, Chains of Being: Infinite Regress, Circularity, and Metaphysical Explanation, Oxford University Press, 2022."
+    stable_identifier: "DOI:10.1093/oso/9780198854272.001.0001"
+    stable_url: "https://academic.oup.com/book/41410"
+    native_adverse_neutral_class: "NATIVE"
+    primary_secondary_status: "PRIMARY_MONOGRAPH"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Explicitly defends Metaphysical Infinitism and rejects an unmotivated foundationalist termination requirement."
+    limitations: ["Full chapter-level argument still requires deeper access where outcome-material."]
+
+  - source_id: "S1N-HO-001"
+    candidate_targets: ["C-HOLISTIC"]
+    proposition_targets: ["HO-N2","HO-N3","HO-N4","HO-N5","HO-N6"]
+    full_bibliographic_identity: "Ricki Bliss, 'Viciousness and Circles of Ground,' Metaphilosophy 45(2), 2014, 245-256."
+    stable_identifier: "DOI:10.1111/meta.12072"
+    stable_url: "https://onlinelibrary.wiley.com/doi/10.1111/meta.12072"
+    native_adverse_neutral_class: "NATIVE"
+    primary_secondary_status: "PRIMARY_ARTICLE"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Direct defense of the possibility/non-viciousness of circles of ground and metaphysical coherentism."
+    limitations: ["Publisher access exposed abstract/metadata; full argument access remains to be pursued."]
+
+  - source_id: "S1N-SE-001"
+    candidate_targets: ["C-SELF-EXPLANATORY"]
+    proposition_targets: ["SE-N2","SE-N3","SE-N5"]
+    full_bibliographic_identity: "Yannic Kappes, 'Self-Explanation and Empty-Base Explanation,' Journal of the American Philosophical Association 8(3), 2022, 436-453."
+    stable_identifier: "DOI:10.1017/apa.2021.8"
+    stable_url: "https://www.cambridge.org/core/journals/journal-of-the-american-philosophical-association/article/selfexplanation-and-emptybase-explanation/EC8302682254524B67F7AE57FB9D5EEB"
+    native_adverse_neutral_class: "NATIVE_PRECURSOR"
+    primary_secondary_status: "PRIMARY_ARTICLE"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    selection_reason: "Directly develops a novel notion of self-explanation and discusses candidates/applications, satisfying the required precursor search for the thin contingent-self-explanation family."
+    limitations: ["The article does not by itself establish the frozen candidate's requirement that the ultimate stopping item remain genuinely contingent; SE-N1/SE-N4 require separate access."]
+
+  - source_id: "S1N-GD-001"
+    candidate_targets: ["C-GLOBAL-DEFLATION"]
+    proposition_targets: ["GD-N2","GD-N3"]
+    full_bibliographic_identity: "David Hume, Dialogues Concerning Natural Religion, 1779, Part IX."
+    stable_identifier: "Project Gutenberg eBook 4583"
+    stable_url: "https://www.gutenberg.org/files/4583/4583-h/4583-h.htm"
+    native_adverse_neutral_class: "NATIVE_HISTORICAL"
+    primary_secondary_status: "PRIMARY_HISTORICAL_TEXT"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    selection_reason: "Canonical primary source for the parts-to-whole/non-aggregation challenge to a further global explanatory demand."
+    limitations: ["Dialogue form requires careful attribution; Philo's argument may not be equated without qualification with Hume's settled authorial view."]
+
+  - source_id: "S1N-MD-001"
+    candidate_targets: ["C-MODAL-DISSOLUTION"]
+    proposition_targets: ["MD-N1","MD-N2","MD-N3","MD-N4"]
+    full_bibliographic_identity: "Gideon Rosen, 'Modal Fictionalism,' Mind 99(395), 1990, 327-354."
+    stable_identifier: "DOI:10.1093/mind/XCIX.395.327"
+    stable_url: "https://collaborate.princeton.edu/en/publications/modal-fictionalism/"
+    native_adverse_neutral_class: "NATIVE_PRECURSOR"
+    primary_secondary_status: "PRIMARY_ARTICLE"
+    access_status: "BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING"
+    selection_reason: "Canonical modal-fictionalist primary source required by the A9 modal-dissolution native stratum."
+    limitations: ["Ordinary modal fictionalism need not be fictionalism about modal truth itself; broad/radical modal dissolution must be separately established."]
+
+  - source_id: "S1N-MD-002"
+    candidate_targets: ["C-MODAL-DISSOLUTION"]
+    proposition_targets: ["MD-N2","MD-N3"]
+    full_bibliographic_identity: "Stanford Encyclopedia of Philosophy, 'Modal Fictionalism,' substantive revision 2024."
+    stable_url: "https://plato.stanford.edu/entries/fictionalism-modal/"
+    native_adverse_neutral_class: "NEUTRAL_ORIENTATION"
+    primary_secondary_status: "SECONDARY_REFERENCE"
+    access_status: "SECONDARY_ORIENTATION_ONLY"
+    selection_reason: "Separates ordinary fictionalism about possible worlds from more radical fictionalism about modal claims and supplies primary citation routes."
+    limitations: ["Reference encyclopedia cannot be sole support for truth-critical modal-dissolution propositions."]
+
+  - source_id: "S1N-IU-001"
+    candidate_targets: ["C-INDETERMINATE-ULTIMACY"]
+    proposition_targets: ["IU-N1","IU-N2","IU-N3"]
+    full_bibliographic_identity: "Elizabeth Barnes and J. Robert G. Williams, 'A Theory of Metaphysical Indeterminacy,' Oxford Studies in Metaphysics 6, 2011, 103-148."
+    stable_identifier: "DOI:10.1093/acprof:oso/9780199603039.003.0003"
+    stable_url: "https://academic.oup.com/book/12009/chapter-abstract/161283790"
+    native_adverse_neutral_class: "NATIVE_PRECURSOR"
+    primary_secondary_status: "PRIMARY_ARTICLE_CHAPTER"
+    access_status: "BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING"
+    selection_reason: "Direct theory of metaphysical rather than semantic/epistemic indeterminacy, satisfying the required precursor route."
+    limitations: ["Application to ultimacy is not supplied merely by a general theory of metaphysical indeterminacy."]
+
+  - source_id: "S1N-IU-002"
+    candidate_targets: ["C-INDETERMINATE-ULTIMACY"]
+    proposition_targets: ["IU-N2","IU-N3"]
+    full_bibliographic_identity: "J. Robert G. Williams, 'Ontic Vagueness and Metaphysical Indeterminacy,' Philosophy Compass 3(4), 2008, 763-788."
+    stable_identifier: "DOI:10.1111/j.1747-9991.2008.00151.x"
+    stable_url: "https://compass.onlinelibrary.wiley.com/doi/10.1111/j.1747-9991.2008.00151.x"
+    native_adverse_neutral_class: "NATIVE_PRECURSOR"
+    primary_secondary_status: "PRIMARY_SURVEY_ARGUMENT"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Directly distinguishes worldly/metaphysical indeterminacy from representational or epistemic indefiniteness."
+    limitations: ["Still a precursor; IU-N2 requires an independent bridge from general metaphysical indeterminacy to ultimacy."]
+
+  - source_id: "S1N-NE-001"
+    candidate_targets: ["C-NECESSITARIAN"]
+    proposition_targets: ["NE-N1","NE-N2","NE-N3"]
+    full_bibliographic_identity: "David Harmon, 'Spinoza’s expansive necessitarianism,' British Journal for the History of Philosophy, 2026."
+    stable_identifier: "DOI:10.1080/09608788.2026.2677594"
+    stable_url: "https://www.tandfonline.com/doi/full/10.1080/09608788.2026.2677594"
+    native_adverse_neutral_class: "NATIVE_INTERPRETIVE_PRECURSOR"
+    primary_secondary_status: "SECONDARY_HISTORICAL_ARGUMENT"
+    access_status: "BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING"
+    selection_reason: "Recent explicit defense of a radical reading of Spinozistic necessitarianism; useful S1/S5 bridge."
+    limitations: ["Not a substitute for primary Spinoza passages or a contemporary independent necessitarian argument."]
+
+  - source_id: "S1N-IP-001"
+    candidate_targets: ["C-INDEXICAL-PLURALITY"]
+    proposition_targets: ["IP-N2","IP-N3","IP-N4","IP-N5"]
+    full_bibliographic_identity: "David Lewis, On the Plurality of Worlds, Blackwell, 1986 / Wiley-Blackwell edition."
+    stable_identifier: "ISBN:978-0-631-22426-6"
+    stable_url: "https://www.wiley-vch.de/en/areas-interest/humanities-social-sciences/on-the-plurality-of-worlds-978-0-631-22426-6"
+    native_adverse_neutral_class: "NATIVE"
+    primary_secondary_status: "PRIMARY_MONOGRAPH"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Canonical defense of modal realism/plurality; required precursor/native source for indexical actuality."
+    limitations: ["Publisher description establishes source identity; chapter-level support for IP-N3/IP-N4 must be read directly before disposition."]
+
+  - source_id: "S1N-IC-001"
+    candidate_targets: ["C-NEC-IMPERSONAL-CONCRETE"]
+    proposition_targets: ["IC-N1","IC-N3","IC-N4","IC-N6"]
+    full_bibliographic_identity: "Bede Rundle, Why there is Something rather than Nothing, Oxford University Press, 2004."
+    stable_identifier: "DOI:10.1093/0199270503.001.0001"
+    stable_url: "https://academic.oup.com/book/268"
+    native_adverse_neutral_class: "NATIVE_PRECURSOR"
+    primary_secondary_status: "PRIMARY_MONOGRAPH"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Argues for necessary independent physical existence without requiring a particular necessary divine being; strong non-agentive concrete precursor."
+    limitations: ["A9 separately requires single/plural/layered cardinality probes and causal/grounding/constitutive relation variants; this one source cannot complete native access."]
+
+  - source_id: "S1N-AG-001"
+    candidate_targets: ["C-NEC-AGENTIVE"]
+    proposition_targets: ["AG-N1","AG-N2","AG-N3","AG-N4"]
+    full_bibliographic_identity: "Timothy O'Connor, Theism and Ultimate Explanation: The Necessary Shape of Contingency, Blackwell, 2008."
+    stable_identifier: "ISBN:9781405169691"
+    stable_url: "https://toconnor.org/books/"
+    native_adverse_neutral_class: "NATIVE"
+    primary_secondary_status: "PRIMARY_MONOGRAPH_AUTHOR_PAGE"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Author identifies chapters 3-4 as defending a contingency cosmological argument and frames the book around necessary/possible truth and ultimate explanation."
+    limitations: ["Necessary agency must be isolated from stronger classical-theist attributes; non-Abrahamic/non-classical necessary-agent probes remain mandatory."]
+
+  - source_id: "S1N-PR-001"
+    candidate_targets: ["C-NEC-IMPERSONAL-PRINCIPLE"]
+    proposition_targets: ["PR-N1","PR-N2","PR-N3","PR-N5"]
+    full_bibliographic_identity: "Max Tegmark, 'The Mathematical Universe,' Foundations of Physics 38 (2008); arXiv preprint 0704.0646."
+    stable_identifier: "arXiv:0704.0646; DOI:10.1007/s10701-007-9186-9"
+    stable_url: "https://arxiv.org/abs/0704.0646"
+    native_adverse_neutral_class: "NATIVE_ADJACENT"
+    primary_secondary_status: "PRIMARY_ARTICLE"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    selection_reason: "Explicitly argues that physical reality is an abstract mathematical structure; candidate-native adjacent machinery for the necessary impersonal-principle family."
+    limitations: ["Mathematical-structure ontology is not automatically metaphysically necessary or explanatorily sufficient; PR-N3 and PR-N5 require independent analysis."]
+
+  - source_id: "S1N-PR-002"
+    candidate_targets: ["C-NEC-IMPERSONAL-PRINCIPLE"]
+    proposition_targets: ["PR-N1","PR-N2","PR-N3"]
+    full_bibliographic_identity: "James Ladyman, Don Ross, David Spurrett, and John Collier, Every Thing Must Go: Metaphysics Naturalized, Oxford University Press, 2007."
+    stable_identifier: "DOI:10.1093/acprof:oso/9780199276196.001.0001"
+    stable_url: "https://academic.oup.com/book/8595"
+    native_adverse_neutral_class: "NATIVE_ADJACENT"
+    primary_secondary_status: "PRIMARY_MONOGRAPH"
+    access_status: "BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING"
+    selection_reason: "Ontic structural realism and objective modal structure provide adjacent non-agentive structural machinery."
+    limitations: ["Scientific structural realism cannot be promoted to an ultimate necessary principle without a separate metaphysical bridge."]
+
+  - source_id: "S1N-AX-001"
+    candidate_targets: ["C-AXIARCHIC"]
+    proposition_targets: ["AX-N1","AX-N2","AX-N3","AX-N4"]
+    full_bibliographic_identity: "John Leslie, Value and Existence, Rowman and Littlefield, 1979."
+    stable_identifier: "Google Books bibliographic record"
+    stable_url: "https://books.google.com/books/about/Value_and_existence.html?id=rjUmAQAAMAAJ"
+    native_adverse_neutral_class: "NATIVE"
+    primary_secondary_status: "PRIMARY_MONOGRAPH"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    selection_reason: "Canonical primary axiarchic/value-to-being source identified by the frozen B3/A9 architecture."
+    limitations: ["Preview access is partial; truth-critical passages on evaluative creative/explanatory force require deeper lawful access."]
+
+  - source_id: "S1N-AX-002"
+    candidate_targets: ["C-AXIARCHIC"]
+    proposition_targets: ["AX-N1","AX-N2","AX-N3","AX-N4","AX-N5"]
+    full_bibliographic_identity: "Tim Mulgan, Purpose in the Universe, Oxford University Press, 2015, chapter 3 'Cosmological Arguments.'"
+    stable_identifier: "DOI:10.1093/acprof:oso/9780199646142.003.0003"
+    stable_url: "https://academic.oup.com/book/12633/chapter-abstract/162556703"
+    native_adverse_neutral_class: "NATIVE_OR_NATIVE_ADJACENT"
+    primary_secondary_status: "PRIMARY_MONOGRAPH_CHAPTER"
+    access_status: "BIBLIOGRAPHICALLY_LOCATED__DEEPER_ACCESS_PENDING"
+    selection_reason: "Explicitly treats Leslie-style axiarchism as cosmic purpose without God and links value to cosmological explanation."
+    limitations: ["Paywalled chapter; lawful alternative-access route must be attempted before any truth-critical use."]
+
+candidate_native_access_snapshot:
+  C-BRUTE: "SUBSTANTIAL_PRIMARY_ACCESS_FOUND"
+  C-REGRESS: "PRIMARY_MONOGRAPH_LOCATED__ABSTRACT_LEVEL_READ"
+  C-HOLISTIC: "PRIMARY_ARTICLE_LOCATED__ABSTRACT_LEVEL_READ"
+  C-SELF-EXPLANATORY: "OPEN_ACCESS_PRIMARY_PRECURSOR_FOUND"
+  C-GLOBAL-DEFLATION: "FULL_HISTORICAL_PRIMARY_TEXT_FOUND"
+  C-MODAL-DISSOLUTION: "PRIMARY_CANONICAL_SOURCE_LOCATED__DEEPER_ACCESS_PENDING"
+  C-INDETERMINATE-ULTIMACY: "PRIMARY_PRECURSOR_LITERATURE_LOCATED__ULTIMACY_BRIDGE_PENDING"
+  C-NECESSITARIAN: "RECENT_INTERPRETIVE_SOURCE_LOCATED__PRIMARY_AND_CONTEMPORARY_NATIVE_SEARCH_PENDING"
+  C-INDEXICAL-PLURALITY: "PRIMARY_MONOGRAPH_LOCATED__CHAPTER_LEVEL_ACCESS_PENDING"
+  C-NEC-IMPERSONAL-CONCRETE: "PRIMARY_NONAGENTIVE_CONCRETE_PRECURSOR_FOUND__REQUIRED_VARIANT_PROBES_PENDING"
+  C-NEC-AGENTIVE: "PRIMARY_MONOGRAPH_AUTHOR_ACCESS_FOUND__NONABRAHAMIC_NONCLASSICAL_PROBES_PENDING"
+  C-NEC-IMPERSONAL-PRINCIPLE: "PRIMARY_STRUCTURAL_MATHEMATICAL_SOURCES_FOUND__EXPLANATORY_NECESSITY_BRIDGE_PENDING"
+  C-AXIARCHIC: "CANONICAL_NATIVE_MONOGRAPHS_LOCATED__DEEPER_PASSAGE_ACCESS_PENDING"
+
+negative_and_inaccessible_record:
+  - "Several publisher pages returned metadata/abstracts only or internal access errors; these are not treated as evidence against any candidate."
+  - "No direct literature gap is certified in this batch."
+  - "No candidate-native access is certified COMPLETE by this Program Lead record."
+  - "C-SELF-EXPLANATORY, C-INDETERMINATE-ULTIMACY, C-NEC-IMPERSONAL-CONCRETE, C-AXIARCHIC, and relevant C-HOLISTIC routes remain subject to the frozen precursor-search controls."
+  - "Paywall or access inconvenience is not UNMAKEABLE."
+
+next_steps:
+  - "Continue S1_NATIVE until the mandatory variant/precursor probes are actually recorded."
+  - "Then run S2_ADVERSE independently for all 13 rather than stopping on supportive sources."
+  - "Preserve search/query routes and lawful alternative-access attempts."
+  - "Do not certify COMPLETE/MATERIALLY_COMPLETE coverage or MAKEABLE; route those to Reviewer E."
