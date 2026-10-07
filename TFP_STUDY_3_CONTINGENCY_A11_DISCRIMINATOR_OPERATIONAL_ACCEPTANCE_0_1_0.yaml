@@ -1,0 +1,63 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A11_DISCRIMINATOR_OPERATIONAL_ACCEPTANCE"
+status: "OPERATIVE_FOR_LATER_G0__NO_G1_AUTHORIZATION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+operative_discriminator_register:
+  path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+  blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  discriminator_count: 14
+  CRITICAL_count: 14
+  MATERIAL_count: 0
+  controlling_direction_rule: "A11-DR-1-SYMMETRIC-PROPOSITION-DISPOSITION"
+
+qualification_chain:
+  Reviewer_C_initial_review:
+    report_blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7"
+    result: "A11_DISCRIMINATOR_TIER_REPAIR_REQUIRED"
+  repaired_register:
+    blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+    all_requested_repairs_present: true
+  Reviewer_C_repair_recheck:
+    report_blob_sha: "47d72273bee0be396fd365422a7bfceaa0957128"
+    result: "A11_DISCRIMINATOR_REPAIR_PASS"
+  Reviewer_F_C4_direction_review:
+    report_blob_sha: "62a8d07b1389b05d15e7216fef68fd4c73b15697"
+    result: "C4_DIRECTION_REVIEW_PASS"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_G_ledger_integrity_review:
+    report_blob_sha: "aa454af740e265cef05becdf5c759dcb9c488642"
+    result: "A11_LEDGER_INTEGRITY_PASS"
+  Program_Lead_ledger_disposition:
+    blob_sha: "5b514fa16345ec4badbc7008685f19d7a147ecf2"
+    result: "A11_LEDGER_INTEGRITY_PASS_INDEPENDENTLY_CONFIRMED__A11_OPERATIONALIZATION_AUTHORIZED"
+
+identity_resolution:
+  append_177_179:
+    creation_commit_sha: "a33624d372de42bb4e5e65d285dae9366b294deb"
+    actual_blob_sha: "498372b1e72ab7c2b0a2b0cf045314d44242f46c"
+    historical_defect: "COMMIT_SHA_MISLABELED_AS_BLOB_SHA"
+    content_ambiguity: false
+    resolution_sufficient: true
+  sequence_187:
+    event_commit_sha: "fd2b387c7f93288eb31e7ff430073d8f040e8d5c"
+    append_container_commit_sha: "c96f085d9051d9456a5b9adbfd92d8cd6f07c586"
+    diagnosis: "NONDEFECT_EVENT_COMMIT_VERSUS_APPEND_CONTAINER_COMMIT_DISTINCTION"
+
+operational_controls:
+  discriminator_tiers_frozen: true
+  pair_and_rival_state_symmetry_frozen: true
+  feasibility_statuses_frozen: true
+  direction_rules_frozen: true
+  stronger_theological_attribute_importation_blocked: true
+  necessary_foundation_not_equal_to_God: true
+  final_A6_coverage_certified: false
+  source_acquisition_started: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+
+next_G0_dependency:
+  requirement: "construct and certify the final A6 NECESSARY_PROPOSITION_COVERAGE_MAP against the operative A11 register before comparative adjudication"
+  final_coverage_reviewer: "REVIEWER_B"
