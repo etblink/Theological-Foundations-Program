@@ -1,0 +1,67 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_POST_EVIDENCE_F1_A8_C4_DIRECTION_REVIEW_DISPOSITION"
+status: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__POST_EVIDENCE_FAVORABLE_OR_MIXED__LEDGER_INTEGRITY_REQUIRED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_POST_EVIDENCE_F1_A8_REPAIR_C4_DIRECTION_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "99632908a7a9f49bf2ccfc5ac04bba3d201599ff"
+  reviewer_status: "C4_DIRECTION_REVIEW_PASS"
+  reviewer_amendment_class: "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+independent_replay:
+  timing:
+    canonical_first_G1_outcome_relevant_exposure_sequence: 235
+    repair_sequences: [262,263,264]
+    PRE_EVIDENCE_AMENDMENT_available: false
+    post_evidence_timing_independently_confirmed: true
+    ledger_integrity_certified_here: false
+  direction:
+    IMP_NECESSITATING:
+      direction_to_impersonal_success_conditions: "ADVERSE"
+    IMP_CONTINGENCY_PRESERVING:
+      direction_to_impersonal_success_conditions: "FAVORABLE"
+    IMP_UNFIXED:
+      direction: "ADVERSE_OR_NEUTRAL_AS_TRUTH_BENEFIT"
+    repair_as_whole:
+      affected_candidate_direction: "MIXED_OR_UNCLEAR"
+      can_benefit_candidate_or_relative_comparison: true
+      adverse_only_class_excluded: true
+      nonmaterial_class_excluded: true
+  candidate_effects_confirmed:
+    C_NEC_IMPERSONAL_CONCRETE: "MIXED_OR_UNCLEAR"
+    C_NEC_IMPERSONAL_PRINCIPLE: "MIXED_OR_UNCLEAR"
+    C_AXIARCHIC: "MIXED_OR_UNCLEAR"
+    C_NECESSITARIAN: "MIXED_OR_UNCLEAR"
+    C_NEC_AGENTIVE: "MIXED_OR_UNCLEAR"
+    all_other_candidates: "NEUTRAL"
+  classification: "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+Protocol_C4_consequence:
+  descriptive_correction_must_be_preserved: true
+  genuine_adverse_candidate_level_consequences_may_enter_current_confirmatory_study: true
+  favorable_or_mixed_effect_may_not_strengthen_any_candidate_confirmatorily: true
+  positive_comparative_use_requires_new_preregistered_cycle_or_genuinely_held_out_evidence: true
+  ranking_change_rule:
+    if_amendment_changes_relative_dominance_or_ranking: "UNDERDETERMINED_WITHIN_SCOPE: POST_EVIDENCE_DIRECTIONAL_CONTAMINATION"
+  favorable_combination_sampling_forbidden: true
+  no_separate_confirmatory_ceiling_arithmetic: true
+
+operational_boundary:
+  register_0_1_2_operational_now: false
+  matrix_0_1_2_operational_now: false
+  pre_repair_0_1_1_remains_controlling_until_ledger_and_operational_acceptance: true
+  Reviewer_G_ledger_integrity_required: true
+  Reviewer_E_coverage_review_remains_paused: true
+  source_class_followup_remains_required: true
+  no_A11_change: true
+  no_proposition_disposition: true
+  no_candidate_ranking: true
+  no_theological_outcome: true
+
+Reviewer_G_scope_note:
+  - "Reviewer G must verify chronology and ledger identity only, including the actual blob identity of append 260-264."
+  - "Reviewer G must not reclassify direction or adjudicate the truth of F1 variants."
+  - "Operational acceptance, if ledger integrity passes, must carry the POST_EVIDENCE_FAVORABLE_OR_MIXED contamination controls verbatim."
