@@ -1,0 +1,90 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_ACQUISITION_SEARCH_STAGE_COMPLETION"
+status: "S1_THROUGH_S5_SEARCH_STAGES_COMPLETE__PROPOSITION_COVERAGE_AND_MAKEABILITY_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+purpose: "Close the Program Lead's frozen A9 search/acquisition stages while preserving the distinction between search-stage completion and independent proposition/comparison coverage certification."
+
+frozen_stage_records:
+  S1_NATIVE:
+    batch_01_blob_sha: "172b6e8544c90297b2287868aeab6abe93f8a9c9"
+    completion_batch_02_blob_sha: "39ea688b204fdcf6bf7c239fe58491dc856929bf"
+    result: "S1_NATIVE_SEARCH_STAGE_COMPLETE__ACCESS_AND_VARIANT_PROBES_RECORDED__COVERAGE_UNCERTIFIED"
+    candidate_families_queried: 13
+  S2_ADVERSE:
+    blob_sha: "dbc8a0d069d0978f05af03be5998eebe8e5ad74c"
+    result: "S2_ADVERSE_SEARCH_STAGE_COMPLETE__SERIOUS_ADVERSE_STRATUM_FOUND_FOR_ALL_13__COVERAGE_UNCERTIFIED"
+    candidate_families_with_serious_adverse_stratum: 13
+  S3_NEUTRAL:
+    blob_sha: "00ea1ddb0486f180de23157a3b26ab1d048ec856"
+    result: "S3_NEUTRAL_SEARCH_STAGE_COMPLETE__NO_G0_AMENDMENT_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+    candidate_families_map_checked: 13
+  S4_BACKGROUND:
+    batch_01_blob_sha: "1d055deb72aacd6eb543139c2e62d569bbebe0bf"
+    batch_02_blob_sha: "a734ea4249499240688815de95080361286b9034"
+    completion_blob_sha: "db9c915b60c6c197eb8ff9b0c71d3917b4e9101b"
+    result: "S4_BACKGROUND_SEARCH_STAGE_COMPLETE__52_OF_52_VARIANT_STATES_SUPPORT_AND_CHALLENGE_MAPPED__NO_BACKGROUND_DISPOSITIONS"
+    registered_dimensions_and_gates: 15
+    registered_variant_or_gate_states: 52
+  S5_RECENCY:
+    blob_sha: "a679de8245d729d3d1ece4927071fee4d4c4d5ff"
+    result: "S5_RECENCY_SEARCH_STAGE_COMPLETE__NO_G0_REOPEN_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+
+search_plan_completion:
+  S1_NATIVE_complete_as_search_stage: true
+  S2_ADVERSE_complete_as_search_stage: true
+  S3_NEUTRAL_complete_as_search_stage: true
+  S4_BACKGROUND_complete_as_search_stage: true
+  S5_RECENCY_complete_as_search_stage: true
+  mandatory_non_Abrahamic_agent_probe_executed: true
+  mandatory_non_classical_agent_probe_executed: true
+  mandatory_impersonal_concrete_cardinality_probes_executed: true
+  mandatory_impersonal_concrete_relation_probes_executed: true
+  mandatory_thin_family_precursor_searches_executed: true
+  inaccessible_and_negative_access_records_preserved: true
+  every_candidate_has_native_search_route: true
+  every_candidate_has_serious_adverse_search_route: true
+  every_background_state_has_support_and_challenge_search_route: true
+  recent_literature_supplement_complete: true
+
+architecture_reopen_check:
+  materially_distinct_new_candidate_found: false
+  missing_background_dimension_found: false
+  missing_CRITICAL_discriminator_surface_found: false
+  source_plan_reopen_trigger_found: false
+  C4_reopen_trigger_found: false
+
+explicit_nonconclusions:
+  candidate_native_coverage_COMPLETE: false
+  proposition_coverage_COMPLETE_or_MATERIALLY_COMPLETE: false
+  comparison_MAKEABLE_certified: false
+  comparison_UNMAKEABLE_certified: false
+  background_state_dispositions_issued: false
+  proposition_dispositions_issued: false
+  candidate_adequacy_issued: false
+  candidate_ranking_performed: false
+  theological_outcome_issued: false
+
+reviewer_E_handoff:
+  role_architecture_required: true
+  functions:
+    - "independent adverse-source review"
+    - "independent proposition/coverage-state review"
+    - "independent MAKEABLE certification for CRITICAL comparisons"
+  Program_Lead_may_not_self_certify_these_states: true
+  reviewer_E_must_be_fresh_and_disjoint_from:
+    - "PROGRAM_LEAD"
+    - "REVIEWER_D_SOURCE_PLAN_REVIEWER"
+    - "REVIEWER_H_STRICT_AUDITOR"
+  acquisition_material_is_now_eligible_for_frozen_Reviewer_E_input_construction: true
+
+ledger:
+  latest_search_stage_ledger_sequence: 250
+  outcome_relevant_evidence_acquisition_started: true
+  G1_authorized: true
+
+next_action:
+  id: "TFP-STUDY-3-REVIEWER-E-G1-ADVERSE-COVERAGE-MAKEABILITY"
+  action: "freeze Reviewer E input/control packet against the completed S1-S5 acquisition record before independent review"
