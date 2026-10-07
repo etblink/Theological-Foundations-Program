@@ -1,0 +1,81 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_DISPOSITION"
+status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__APPEND_ONLY_REPAIR_AUTHORIZED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+reviewed_material:
+  reviewer_G_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_G1_POST_EVIDENCE_F1_A8_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "0ea22a5f07ae450a3db3c5e2de944ff6cfafeacd"
+    reported_status: "G1_F1_A8_LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  protocol_A17:
+    protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  study_ledger_initialization:
+    path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
+    blob_sha: "3261b5b0018b3b38093b5deb0aa3af9ecfbe6069"
+
+independent_replay:
+  R1_reviewer_C_exposure:
+    confirmed: true
+    reasoning:
+      - "Protocol A17 defines an evidence exposure as an outcome-material actor first receiving, reading, being shown, or receiving a substantive summary of outcome-relevant evidence or a result derived from it."
+      - "Reviewer C's focused F1 input explicitly identifies the issue source as the Reviewer-E blind adverse-source review plus Program-Lead replay/reconciliation."
+      - "The Reviewer-C input and prompt were frozen at sequences 258-259, and the Reviewer-C result is frozen at sequence 260."
+      - "No sequence entry records the actual Reviewer-C receipt/execution exposure between 259 and 260."
+      - "The missing event is chronologically bounded by sequence-259 commit time 2026-10-07T14:46:23Z and sequence-260 result commit time 2026-10-07T14:57:26Z."
+    reviewer_C_input_blob_sha: "87a79a2708329f89d2adf946144f4d9770c1374b"
+    reviewer_C_prompt_blob_sha: "6a037a6337199c3bbe9517e2604a73cfbd62adf4"
+    outcome_relevant_evidence: true
+  R2_missing_amendment_surfaces:
+    confirmed: true
+    affected_sequences: [253,254,255,256,257,259,260,261,262,263,264,265,266,267,268,269]
+    count: 16
+    reasoning:
+      - "Study-3 ledger initialization records amendment_surfaces on both outcome-exposure and provenance/freeze events."
+      - "Sequence 258 preserves the field, while sequences 253-257 and 259-269 omit it."
+      - "The omission weakens A17 traceability at the exact post-evidence F1 amendment and C4 control surface."
+    repair_form: "supplemental annotations only; no historical entry rewrite"
+  R3_order_anchors:
+    accepted_as_nonblocking_hygiene: true
+    affected_sequences: [238,240,242,244,246,249]
+    repair_form: "supplemental order anchors using repository-bounded chronology"
+
+confirmed_nondefects:
+  sequence_220_to_221_bridge: true
+  sequence_221_to_269_continuity: true
+  commit_blob_timestamp_binding: true
+  add_once_no_reachable_rewrite: true
+  no_unledgered_study3_artifact_commits_through_endpoint: true
+  sequence_234_authorization_precedes_sequence_235_first_evidence: true
+  append_260_264_blob_sha: "dc1501f045782a69ed4a1f0b35315ca7fe048155"
+  F1_unambiguously_post_evidence: true
+  reviewer_F_direction_class_preserved: "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+  contamination_controls_preserved: true
+
+repair_authorization:
+  bounded: true
+  clerical_append_only: true
+  reopen_reviewer_C_result: false
+  reopen_reviewer_E_result: false
+  reopen_reviewer_F_result: false
+  rewrite_prior_ledger_entries: false
+  create_single_integrity_repair_supplement: true
+  include_R1: true
+  include_R2: true
+  include_R3: true
+  same_Reviewer_G_lineage_focused_recheck_after_supplement: true
+  recheck_scope: "supplement and its relationship to the previously audited chain only"
+
+operational_controls:
+  A8_0_1_2_remains_nonoperative: true
+  Reviewer_E_coverage_review_remains_paused: true
+  MAKEABLE_review_remains_paused: true
+  no_candidate_ranking: true
+  no_proposition_truth_disposition: true
+  no_theological_conclusion: true
+
+carried_forward:
+  sequence_255_no_input_freeze_deviation_to_strict_auditor: true
+  reviewer_G_current_review_provenance_must_be_ledgered_after_sequence_271: true
