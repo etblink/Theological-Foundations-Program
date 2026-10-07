@@ -1,0 +1,26 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_SEARCH_STAGES_COMPLETE__INDEPENDENT_COVERAGE_REVIEW_PENDING"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_250_blob_sha: "8f2c571425a7dd0bb27dc2df0a66f30f6a8aeeb3"
+  prior_next_sequence: 251
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 251
+    repository_commit: "b1dfbb3883a8bfa26a7af718700b9986860e747e"
+    timestamp_utc: "2026-10-07T13:51:15Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_G1_ACQUISITION_SEARCH_STAGE_COMPLETION_0_1_0.yaml blob e6ff9e040a73836e247c0442127956cf3f604643"
+    exposure_class: "G1_S1_S5_ACQUISITION_SEARCH_STAGE_COMPLETION"
+    amendment_surfaces: ["A9 search-stage completion","Reviewer E handoff","coverage-certification boundary"]
+    outcome_relevant_evidence: true
+    result_status: "S1_THROUGH_S5_SEARCH_STAGES_COMPLETE__PROPOSITION_COVERAGE_AND_MAKEABILITY_UNCERTIFIED"
+
+next_sequence: 252
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
