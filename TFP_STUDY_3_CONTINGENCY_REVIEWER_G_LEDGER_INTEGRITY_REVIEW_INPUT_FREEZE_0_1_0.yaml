@@ -1,0 +1,95 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_LEDGER_INTEGRITY_REVIEW_INPUT_FREEZE"
+status: "FROZEN__ASSIGNMENT_HANDSHAKE_REQUIRED_BEFORE_EXPOSURE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  role: "ledger_integrity_reviewer"
+  lineage_requirement: "fresh session disjoint from Program Lead, Reviewer F, Study-3 discriminator author/tier reviewer, and future strict auditor"
+  prohibited_roles:
+    - "amendment_direction_reviewer"
+    - "discriminator_author_or_tier_reviewer"
+    - "strict_independent_auditor"
+
+governing_protocol:
+  protocol_blob_sha: "0d9406d9ea62ec35ce6424b60ef03ced5dbd332a"
+  inspect_sections:
+    - "A17 evidence-exposure ledger"
+    - "C4 amendment classes"
+
+ledger_chain_authorized:
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_0.yaml"
+    blob_sha: "3261b5b0018b3b38093b5deb0aa3af9ecfbe6069"
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_1.yaml"
+    blob_sha: "a05bfafcde2fa57101a7c051dac8dd505e1cd2eb"
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_2.yaml"
+    blob_sha: "d85d2b7731feffd18fb5aee22785a5217b2590d6"
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_3.yaml"
+    blob_sha: "d9d18d0379806c0245014f52f6f2ea409c1ce0c3"
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_4.yaml"
+    blob_sha: "a2fcd8accf9a00a993b4a884d8cf95c57ba95418"
+  - path: "TFP_STUDY_3_CONTINGENCY_EVIDENCE_EXPOSURE_LEDGER_0_1_5.yaml"
+    blob_sha: "bca9dd24e0a35a605a279576e8bb4ececcfa44b4"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_28_29_0_1_0.yaml"
+    blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_30_32_0_1_0.yaml"
+    blob_sha: "883cd32ff17570e1d608babb8b5139b28dbe1551"
+
+amendment_and_review_artifacts_authorized:
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+    blob_sha: "4d3a5273bbfb3206bb1d9d9a34a5575b8b9069b9"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_1.yaml"
+    blob_sha: "5807c94caac15cefc87a55ddfa64bb99283b7d13"
+  - path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_EXCLUSION_REGISTER_0_1_0.yaml"
+    blob_sha: "f756a89b2848a9a6089465fc29aed38d9401e67e"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "11461d46e47d25f32361140f609084820ffd0b40"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_CANDIDATE_UNIVERSE_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "9cda0d871660c0da4917d022b35a117b3c53f073"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_REPORT_0_1_0.md"
+    blob_sha: "503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml"
+    blob_sha: "39439dce137ce19c1b68ee665b231061a79ffed8"
+  - path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_CANDIDATE_UNIVERSE_AMENDMENT_DIRECTION_REPORT_0_1_0.md"
+    blob_sha: "ab994925a1d8e99f7085d4e449c06f625f7c28e2"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "b208bede63e5b948edc8854ad59ec5b68bb0e446"
+
+repository_history_scope:
+  allowed: true
+  instruction: "Inspect commit history for the named ledger and amendment artifacts as needed to verify order, continuity, and absence of unrecorded rewrites. Do not inspect unrelated Study-3 evidence material."
+  branch: "research/tfp-study-3-contingency-g0"
+
+audit_questions:
+  - "Do sequences 1 through 32 form a continuous claimed sequence with no duplicate, gap, rollback, or silent replacement?"
+  - "Do the ledger version/append transitions preserve prior entries rather than rewrite or contradict them?"
+  - "Does repository history support the claimed ordering of the candidate-register repair, exclusion record, Reviewer A recheck, Reviewer F assignment/exposure, Reviewer F C4 report, and Program Lead C4 disposition?"
+  - "Is there any unrecorded outcome-relevant evidence exposure before the candidate-register/exclusion amendments?"
+  - "Do the artifacts claiming outcome_relevant_evidence=false remain consistent with the content and chronology visible in the authorized corpus?"
+  - "Does Reviewer F's PRE_EVIDENCE_AMENDMENT chronology survive the integrity audit?"
+  - "Does the missing representation noted by Reviewer F relative to ledger 0.1.4 get resolved by ledger 0.1.5 and the later append artifacts without rewriting earlier entries?"
+  - "Identify any ledger defect that must be repaired before the repaired register/exclusion record can be treated as prospectively usable."
+
+task_boundaries:
+  - "Certify ledger integrity only; do not redo Reviewer F's amendment-direction classification unless an integrity defect invalidates its chronology premise."
+  - "Do not rank candidates, adjudicate truth, investigate outcome-relevant evidence, or conduct candidate completeness review."
+  - "Do not serve as strict auditor."
+
+required_output:
+  sections:
+    - "SESSION / LINEAGE CONTINUITY"
+    - "INPUT / PIN VERIFICATION"
+    - "SEQUENCE CONTINUITY"
+    - "REWRITE / VERSION-CHAIN AUDIT"
+    - "CHRONOLOGY AUDIT"
+    - "OUTCOME-EVIDENCE EXPOSURE AUDIT"
+    - "C4 CHRONOLOGY CONSEQUENCE"
+    - "REQUIRED REPAIRS"
+    - "LEDGER INTEGRITY STATUS"
+  status_namespace:
+    - "LEDGER_INTEGRITY_CONFIRMED"
+    - "LEDGER_INTEGRITY_REPAIR_REQUIRED"
+  stop_after_report: true
