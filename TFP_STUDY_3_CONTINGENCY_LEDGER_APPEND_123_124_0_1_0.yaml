@@ -1,0 +1,34 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_117_122_blob_sha: "c1158b2af9453b06e689bdb334eff8898d48ee86"
+  prior_next_sequence: 123
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 123
+    repository_commit: "d2472dc772a43d35585e613d7f45d8b806418537"
+    timestamp_utc: "2026-10-07T03:16:45Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_INPUT_FREEZE_0_1_0.yaml blob eb411e4a369c9e27bfb5489d37c2c72779831d67"
+    exposure_class: "G0_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_INPUT_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","C4 readiness"]
+    outcome_relevant_evidence: false
+
+  - sequence: 124
+    repository_commit: "acc092e569ec96092daee080555309e8dc3f7bab"
+    timestamp_utc: "2026-10-07T03:16:47Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_PROMPT_0_1_0.md blob 43ffd28e234d562884a963af4f8c8766a329e263"
+    exposure_class: "G0_REVIEWER_C_A8_BACKGROUND_REPAIR_RECHECK_PROMPT_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","C4 readiness"]
+    outcome_relevant_evidence: false
+
+next_sequence: 125
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
