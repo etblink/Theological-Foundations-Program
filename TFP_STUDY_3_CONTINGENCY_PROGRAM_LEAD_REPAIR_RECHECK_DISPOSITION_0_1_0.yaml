@@ -1,0 +1,40 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_REPAIR_RECHECK_DISPOSITION"
+status: "REVIEWER_A_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_REVIEW_STILL_REQUIRED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_CANDIDATE_UNIVERSE_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "503d36c5b1ea9d5f47aea5525a1180c60bc2dbe4"
+  reviewer_status: "CANDIDATE_UNIVERSE_REPAIR_PASS"
+
+independent_replay:
+  C_HOLISTIC_vs_C_SELF_EXPLANATORY:
+    disposition: "PASS"
+    finding: "The repaired C-HOLISTIC excludes single-item reflexive explanation and explicitly assigns it to C-SELF-EXPLANATORY."
+  C_MODAL_DISSOLUTION_vs_C_GLOBAL_DEFLATION:
+    disposition: "PASS"
+    finding: "Modal-presupposition failure and genuine-contingency explanatory-demand deflation are no longer bundled into one family."
+  C_INDETERMINATE_ULTIMACY:
+    disposition: "PASS"
+    finding: "The candidate is stated as ontic indeterminacy of an otherwise truth-apt ultimacy question and explicitly distinguished from Protocol B6 epistemic UNDERDETERMINED."
+  B4_exclusions:
+    disposition: "PASS"
+    finding: "Partitioned, dialetheic/impossible-existence, and standalone nomological classes are recorded with symmetric B1/B4 reasons and reopen conditions rather than plausibility judgments."
+  C_AXlARCHIC_boundary:
+    disposition: "PASS"
+    finding: "The repaired family explicitly separates non-agentive evaluative requiredness from perfect goodness of a personal agent and from God-identity."
+  repair_introduced_B1_defect:
+    found: false
+
+controls:
+  outcome_relevant_evidence_used: false
+  candidate_ranking_performed: false
+  truth_adjudication_performed: false
+  candidate_universe_frozen: false
+
+remaining_gates:
+  - "Reviewer F independent C4 amendment-direction classification."
+  - "Reviewer G independent ledger-integrity verification after amendment classification."
