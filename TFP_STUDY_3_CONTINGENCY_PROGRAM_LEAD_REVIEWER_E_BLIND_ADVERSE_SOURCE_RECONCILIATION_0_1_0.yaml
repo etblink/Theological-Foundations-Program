@@ -1,0 +1,179 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_REVIEWER_E_BLIND_ADVERSE_SOURCE_RECONCILIATION"
+status: "BLIND_ADVERSE_SOURCE_PASS_ACCEPTED__SOURCE_FOLLOWUP_REQUIRED__F1_A8_GRANULARITY_REVIEW_REQUIRED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+inputs:
+  reviewer_E_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_BLIND_EXTERNAL_ADVERSE_SOURCE_REVIEW_REPORT_0_1_0.md"
+    blob_sha: "44d551ec92ec5d817ffc95c197261de58868b313"
+    reported_status: "ADVERSE_SOURCE_REVIEW_COMPLETE__BLIND_EXTERNAL_PASS"
+  A1_A2_blob_sha: "b98782fe7fdc85d37e515823803e0cd2727c211c"
+  A6_coverage_map_blob_sha: "080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+  A8_background_register_blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d"
+  A8_interaction_matrix_blob_sha: "46b9cbdd731eab01e689770455926d2620994d48"
+  A11_discriminator_register_blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  A13_blob_sha: "2b1d0bb4f4a3fdd44497a2b7fdde5a7597b866e6"
+  A16_blob_sha: "88350ca94dbb08b0e5b04c6d3acdb514d890c9cd"
+  G1_search_stage_completion_blob_sha: "e6ff9e040a73836e247c0442127956cf3f604643"
+
+reviewer_E_procedural_deviations:
+  filename_metadata_exposure:
+    classification: "NONBLOCKING"
+    rationale: "Withheld artifact names exposed stage structure only; Reviewer E reports no opening/grep/hash of withheld source/acquisition files before report freeze."
+  provisional_candidate_register_read:
+    classification: "NONBLOCKING"
+    rationale: "Candidate Universe Freeze promotes the register by exact-content reference; it contains G0 candidate architecture rather than Program Lead source/acquisition or outcome material."
+  protocol_location_note:
+    classification: "NONBLOCKING_COLD_START_NOTE"
+    rationale: "Protocol 0.1.7 is canonically pinned by exact blob and governed bundle; physical absence from study branch/main does not change the governing identity."
+  background_register_internal_pending_label:
+    classification: "NONBLOCKING_SUPERSEDED_STATUS_LABEL"
+    rationale: "A8 operational acceptance explicitly binds the exact background-register blob for operative use."
+
+blind_probe_acceptance:
+  genuine_external_alternative_routes_used: true
+  all_13_candidates_reviewed: true
+  serious_adverse_or_materially_critical_routes_found: true
+  source_scarcity_not_used_as_negative_evidence: true
+  coverage_certification_issued_by_reviewer_E: false
+  MAKEABLE_certification_issued_by_reviewer_E: false
+  Program_Lead_accepts_blind_probe_as_satisfying_E3_probe_prerequisite_subject_to_followup: true
+  coverage_review_may_not_begin_until_reconciliation_followup_completed: true
+
+source_class_reconciliation:
+  SC1_INDIAN_NON_THEISTIC_ANTI_CREATOR:
+    reviewer_E_significance: "Buddhist pramana, Jain, Mimamsa, and Samkhya adverse streams for necessary-agent and necessary-concrete routes."
+    Program_Lead_S1_S5_state: "PARTIAL"
+    already_present:
+      - "Nyaya/Udayana non-Abrahamic native probe"
+      - "general non-classical necessary-agent probe"
+    missing_or_underrepresented:
+      - "Ratnakirti/Patil Buddhist anti-Isvara stream"
+      - "Dharmakirti permanent-cause critique"
+      - "Kumarila/Mimamsa critique"
+      - "Jain creator/parity critiques"
+    action: "ADD_AND_EVALUATE_BEFORE_COVERAGE_REVIEW"
+
+  SC2_MADHYAMAKA_ABHIDHARMA_HUAYAN:
+    Program_Lead_S1_S5_state: "PARTIAL"
+    already_present:
+      - "Aitken Madhyamaka/indefinitism route"
+      - "Huayan/Fazang adjacent holistic stream noted in S1 completion"
+    missing_or_underrepresented:
+      - "Abhidharma-specific material"
+      - "deeper tradition-critical comparison between PSR-without-foundations and frozen regress/holistic propositions"
+    action: "TARGETED_FOLLOWUP_BEFORE_COVERAGE_REVIEW"
+
+  SC3_GROUNDING_MODALITY:
+    Program_Lead_S1_S5_state: "PARTIAL_AND_ARCHITECTURE_RELEVANT"
+    already_present:
+      - "Pearce 2025 grounding-indeterminism identified in S5"
+      - "candidate propositions IC-N5, PR-N6, AX-N5 require preservation of contingent explananda"
+      - "A16 modal-profile dimension explicitly maps those non-collapse conditions"
+      - "A13 includes modal-collapse or contingency-preservation weakening conditions"
+    missing_or_underrepresented:
+      - "broader grounding necessitarianism/contingentism/indeterminism literature including Bader, Emery, Amijee, Leuenberger, Skiles where relevant"
+      - "explicit impersonal-ground modal-link background granularity parallel to BG-AGENTIVE-MODAL-LINK"
+    action: "SOURCE_FOLLOWUP_REQUIRED_AND_F1_A8_REVIEW_REQUIRED"
+
+  SC4_NECESSITISM_CONTINGENTISM:
+    Program_Lead_S1_S5_state: "UNDERREPRESENTED"
+    architecture_disposition: "NO_NEW_CANDIDATE_AT_PRESENT"
+    rationale: "A2 CONTINGENT already includes 'could have failed to exist or been otherwise'; BG-MODAL-STATUS and A16 modal-profile machinery can host existence/concreteness distinctions unless later review shows otherwise."
+    action: "ADD_SOURCE_CLASS_BEFORE_COVERAGE_REVIEW"
+
+  SC5_NEO_CONFUCIAN_LI_QI:
+    Program_Lead_S1_S5_state: "MISSING"
+    architecture_disposition: "EXISTING_PRINCIPLE_CATEGORY_AND_INSTANTIATION_FORCE_SURFACES_APPEAR_SUFFICIENT"
+    action: "ADD_AS_CROSS_TRADITION_PRINCIPLE_SOURCE_CLASS_BEFORE_COVERAGE_REVIEW"
+
+  SC6_EXISTENTIAL_INERTIA_PERSISTENCE:
+    Program_Lead_S1_S5_state: "MISSING"
+    architecture_disposition: "RELATION_SPECIFIC_ADVERSE_ROUTE_WITHIN_EXISTING_EXPLANATION_RELATION_VARIANTS"
+    scope_rule: "Use only against sustaining/causal variants that actually require such a premise; do not generalize to grounding/constitutive routes."
+    action: "ADD_AND_EVALUATE_BEFORE_COVERAGE_REVIEW"
+
+  SC7_BRUTE_NECESSITY_MODAL_PRIMITIVISM:
+    Program_Lead_S1_S5_state: "MISSING"
+    architecture_disposition: "NO_14TH_CANDIDATE_TRIGGER_AT_PRESENT"
+    rationale:
+      - "C-BRUTE is specifically the ultimate contingent-brute answer to the frozen question."
+      - "Brute necessary truths can test the inference from necessity to explanation without themselves answering the candidate question as a separate ultimate contingent-reality architecture."
+      - "If later source evaluation yields a materially distinct ultimacy model not subsumed by existing modal/principle/necessitarian families, B5 reopen remains available."
+    action: "ADD_AS_MODAL_AND_EXPLANATORY_ASSUMPTION_SOURCE_CLASS_BEFORE_COVERAGE_REVIEW"
+
+  SC8_FUNDAMENTAL_INDETERMINACY:
+    Program_Lead_S1_S5_state: "PARTIAL"
+    already_present:
+      - "Barnes/Williams metaphysical indeterminacy"
+      - "Eklund criticism"
+      - "Torza 2026 chancy-indeterminacy recency source"
+    missing_or_underrepresented:
+      - "fundamental-indeterminacy-specific burden literature including Barnes 2014"
+      - "Lee 2025 fundamental-theory adverse route"
+      - "epistemicist challenge stream"
+    action: "TARGETED_FOLLOWUP_BEFORE_COVERAGE_REVIEW"
+
+architecture_flags:
+  F1_IMPERSONAL_GROUNDING_NECESSITATION:
+    reviewer_E_flag: "POTENTIAL_MISSING_BACKGROUND_DIMENSION_OR_CRITICAL_SURFACE"
+    Program_Lead_replay:
+      candidate_burdens_already_frozen: ["IC-N5","PR-N6","AX-N5"]
+      A6_routes_exist: true
+      A13_noncollapse_tests_exist: true
+      A16_modal_profile_mapping_exists: true
+      relevant_existing_backgrounds: ["BG-MODAL-STATUS","BG-DEPENDENCE-STRUCTURE","BG-EXPLANATION-RELATION","BG-ABSTRACT-PRINCIPLE-FORCE","BG-AXIOLOGICAL-FORCE"]
+      asymmetry_found: "BG-AGENTIVE-MODAL-LINK explicitly models necessary-source/contingent-output behavior for agentive grounds, but no parallel background dimension explicitly models necessitating versus indeterministic grounding for impersonal concrete/principle/axiarchic grounds."
+    provisional_disposition: "MATERIAL_A8_GRANULARITY_QUESTION__NO_AMENDMENT_YET"
+    rationale: "Under A8.2, a live assumption that can change IC-N5/PR-N6/AX-N5 or ranking/truth-warrant eligibility may require an explicit background split even though candidate propositions already encode the success condition."
+    required_next_review: "REVIEWER_C_FOCUSED_POST_EVIDENCE_A8_GRANULARITY_INTERACTION_REVIEW"
+    C4_direction_review_if_repair_required: "REVIEWER_F"
+    ledger_integrity_if_amendment_adopted: "REVIEWER_G"
+    architecture_changed_now: false
+
+  F2_AXIARCHIC_SUBOPTIMALITY_SCOPE:
+    provisional_disposition: "ABSORBED_BY_PRE_EVIDENCE_A13_AND_A11__NO_SCOPE_AMENDMENT_REQUIRED"
+    rationale:
+      - "A13 preregistered 'absence of a best/uniquely required state where the subvariant requires one' as weakening evidence for C-AXIARCHIC before outcome evidence exposure."
+      - "A11 D11-13/D11-14 already require axiarchic adverse and value-to-being controls."
+      - "A2 exclusion of problem of evil/suffering bars using suffering as an independent theological/atheological route; it does not erase candidate-specific evidence directly testing the axiarchic optimality/requiredness premise."
+    use_boundary: "World-value/suboptimality evidence may bear only on exact axiarchic propositions/subvariants for which optimality or evaluative requiredness is truth-critical. It may not be repurposed into an independent problem-of-evil route or a general anti-theism conclusion."
+    architecture_changed_now: false
+
+  F3_NECESSITISM:
+    provisional_disposition: "ABSORBED_AS_MODAL_STATUS_SOURCE_CLASS__NO_BACKGROUND_AMENDMENT_REQUIRED_AT_PRESENT"
+    rationale:
+      - "A2 defines contingent disjunctively as could have failed to exist OR been otherwise."
+      - "BG-MODAL-STATUS already requires precise metaphysical-modal semantics and separation from nomic/epistemic substitutes."
+      - "A16 shared modal-profile comparison explicitly distinguishes total necessity, indexical plurality, and necessary-ground-with-contingent-explanandum states."
+    action: "Add necessitism/contingentism literature to source universe and test whether existence-versus-concreteness distinctions alter any proposition; reopen only if a truth-critical distinction escapes existing modal-profile propositions."
+    architecture_changed_now: false
+
+boundary_checks:
+  self_subsuming_principles:
+    result: "NO_NEW_CANDIDATE"
+    rule: "If explanatory work is done by a necessary/nonconcrete principle, route to C-NEC-IMPERSONAL-PRINCIPLE; if evaluative requiredness is essential, route to C-AXIARCHIC; C-SELF-EXPLANATORY remains the contingent item-reflexive family."
+  Heylen_deflation_vs_dissolution:
+    result: "EXISTING_BOUNDARY_SUFFICIENT"
+    rule: "Truth-aptness/applicability challenge routes to C-MODAL-DISSOLUTION; genuine contingency plus denial of further global demand routes to C-GLOBAL-DEFLATION."
+  nonfundamental_bruteness:
+    result: "NO_NEW_ULTIMACY_CANDIDATE"
+    rule: "Local/nonfundamental brute facts may occur inside another ultimate architecture; they satisfy C-BRUTE only if the ultimate contingent stopping commitment BR-N2/BR-N3 is met."
+
+coverage_gate:
+  Reviewer_E_blind_probe_complete: true
+  reconciliation_against_S1_S5_complete_at_classification_level: true
+  source_followup_complete: false
+  architecture_F1_resolved: false
+  coverage_review_authorized_now: false
+  reason: "Reviewer E identified outcome-material classes requiring evaluation and one unresolved A8 granularity issue; E3 coverage certification must wait until these are resolved or transparently carried as gaps."
+
+next_actions_in_order:
+  - "Freeze and ledger Reviewer E report and this reconciliation."
+  - "Run Reviewer C focused F1 A8 granularity/interaction review without asking for direction classification or proposition results."
+  - "If Reviewer C requires A8 repair, construct the minimal descriptive repair and send it to Reviewer F for C4 direction classification before use."
+  - "Acquire/evaluate the source-class followups SC1-SC8, prioritizing primary/full-text substitutes where Reviewer E identified access limitations."
+  - "Only after architecture and source-class followup, expose Program Lead S1-S5 records to the same Reviewer E for reconciliation and scoped coverage-state review."
