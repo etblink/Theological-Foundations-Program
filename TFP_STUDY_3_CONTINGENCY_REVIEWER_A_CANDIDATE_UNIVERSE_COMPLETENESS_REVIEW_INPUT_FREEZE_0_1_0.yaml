@@ -1,0 +1,50 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_A_CANDIDATE_UNIVERSE_COMPLETENESS_REVIEW_INPUT_FREEZE"
+status: "FROZEN__POST_BLIND_ELICITATION__PRE_CANDIDATE_UNIVERSE_FREEZE"
+date: "2026-10-06"
+
+reviewer:
+  slot: "REVIEWER_A"
+  required_lineage: "same xAI Grok 4.7 conversation whose blind elicitation is frozen"
+  blind_elicitation_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_A_BLIND_CANDIDATE_ELICITATION_REPORT_0_1_0.md"
+    blob_sha: "cdcf5d516e1df38c87947819723c6f5686c486b1"
+  seed_exposure_now_permitted: true
+  reason: "Reviewer A's independent blind elicitation was frozen before reconciliation."
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CANDIDATE_SEED_0_1_0.yaml"
+    blob_sha: "efe84e2aacf2c9399befe9fc28bc6c3f9ce08e70"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_A_CANDIDATE_RECONCILIATION_0_1_0.yaml"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROVISIONAL_CANDIDATE_REGISTER_0_1_0.yaml"
+  - path: "TFP_STUDY_3_CONTINGENCY_G0_BLIND_CANDIDATE_ELICITATION_SCOPE_PACKET_0_1_0.yaml"
+    blob_sha: "ef6c2c3d84dfb561bc4566d3629905736ed88ba9"
+  - "Protocol 0.1.7 B1-B7 only as needed"
+
+task:
+  - "Independently review the provisional candidate register for B1 completeness, non-subsumption, granularity, and symmetric exclusion."
+  - "For every provisional family, return KEEP, MERGE, SPLIT, RENAME, or EXCLUDE with a concise B1 reason."
+  - "Resolve the four pending completeness/exclusion questions as far as G0 architecture permits."
+  - "Identify any major candidate class still missing."
+  - "Check that necessary-foundation families do not smuggle downstream theistic properties."
+  - "Check that B6 outcomes are not represented as candidate families."
+  - "Do not investigate outcome-relevant evidence."
+  - "Do not rank candidates or assess truth/plausibility."
+  - "Do not construct steelman source packets yet."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "FAMILY-BY-FAMILY B1 REVIEW"
+    - "PENDING FAMILY RISK DISPOSITIONS"
+    - "MISSING MAJOR CLASS CHECK"
+    - "SUBSUMPTION / GRANULARITY CHECK"
+    - "DOWNSTREAM PROPERTY BOUNDARY CHECK"
+    - "REQUIRED REPAIRS"
+    - "CANDIDATE UNIVERSE REVIEW STATUS"
+  status_namespace:
+    - "CANDIDATE_UNIVERSE_REVIEW_PASS"
+    - "CANDIDATE_UNIVERSE_REPAIR_REQUIRED"
+  stop_after_report: true
