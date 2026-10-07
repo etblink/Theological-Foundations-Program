@@ -1,0 +1,120 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A9_SOURCE_PLAN_REPAIR_AMENDMENT_RECORD"
+status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_D_RECHECK_AND_C4_DIRECTION_REVIEW"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+amendment_id: "A9-SOURCE-PLAN-0.1.0-TO-0.1.1"
+
+ledger_entries:
+  - artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_151_153_0_1_0.yaml"
+    blob_sha: "4dd3a5725b48573e592ec8037e85b341ad2c3026"
+    sequences: [151, 152, 153]
+  - note: "All ledger state through sequence 153 records outcome_relevant_evidence=false and G1_authorized=false."
+
+descriptive_correction:
+  source: "Reviewer D post-blind A9.1 review"
+  report_path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_D_A9_POST_BLIND_SOURCE_PLAN_REVIEW_REPORT_0_1_0.md"
+  report_blob_sha: "e2187001c9f249eac9f041a1ed88decfc554ae8f"
+  Program_Lead_disposition_path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A9_POST_BLIND_SOURCE_PLAN_REVIEW_DISPOSITION_0_1_0.yaml"
+  Program_Lead_disposition_blob_sha: "b0e9a52e8e21c9cb7c6141a2957451b3574153bc"
+
+original_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_0.yaml"
+  blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  status: "FROZEN_INITIAL__NONOPERATIVE__REPAIR_REQUIRED"
+
+proposed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml"
+  status: "FROZEN_REPAIR__PENDING_REVIEWER_D_RECHECK__NONOPERATIVE"
+
+repair_surfaces:
+  - id: "R1_CROSS_TRADITION_PROBE"
+    change: "Make non-Anglophone/cross-tradition probes explicit rather than generic."
+  - id: "R2_AGENTIVE_NONABRAHAMIC_NATIVE"
+    change: "Require non-Abrahamic and non-classical-theist necessary-agent native access."
+  - id: "R3_AGENTIVE_ATTRIBUTE_OVERREACH_ADVERSE"
+    change: "Add adverse probes against imported goodness, knowledge, power, providence, worship-worthiness, and religious identity."
+  - id: "R4_VOLUME_DOMINANCE_CONTROL"
+    change: "Prevent citation/confessional/polemical volume from completing native access without narrow-formulation and non-confessional probes."
+  - id: "R5_SYNTHETIC_THIN_PRECURSOR_SEARCH"
+    change: "Require recorded precursor search before treating synthetic/thin-family literature absence as a real gap."
+  - id: "R6_IMPERSONAL_CONCRETE_SUBVARIANT_ACCESS"
+    change: "Require cardinality and relation-subvariant native-access probes."
+  - id: "R7_BRUTE_IGNORANCE_BOUNDARY"
+    change: "Encode ontic brutality vs present ignorance boundary and corresponding adverse probe."
+  - id: "R8_SELF_EXPLANATION_CONTINGENCY_BOUNDARY"
+    change: "Exclude necessary causa-sui material from native access unless contingency of the stopping item is explicit."
+
+affected_candidates:
+  all_candidates_potentially_affected_by_source_universe_symmetry:
+    - "C-BRUTE"
+    - "C-REGRESS"
+    - "C-HOLISTIC"
+    - "C-SELF-EXPLANATORY"
+    - "C-GLOBAL-DEFLATION"
+    - "C-MODAL-DISSOLUTION"
+    - "C-INDETERMINATE-ULTIMACY"
+    - "C-NECESSITARIAN"
+    - "C-INDEXICAL-PLURALITY"
+    - "C-NEC-IMPERSONAL-CONCRETE"
+    - "C-NEC-AGENTIVE"
+    - "C-NEC-IMPERSONAL-PRINCIPLE"
+    - "C-AXIARCHIC"
+  direct_candidate_native_repairs:
+    - "C-BRUTE"
+    - "C-SELF-EXPLANATORY"
+    - "C-NEC-IMPERSONAL-CONCRETE"
+    - "C-NEC-AGENTIVE"
+  synthetic_or_thin_precursor_search_targets:
+    - "C-BRUTE"
+    - "C-HOLISTIC"
+    - "C-SELF-EXPLANATORY"
+    - "C-INDETERMINATE-ULTIMACY"
+    - "C-NEC-IMPERSONAL-CONCRETE"
+    - "C-AXIARCHIC"
+
+affected_outcomes:
+  - "future candidate-native source access"
+  - "future adverse-source symmetry"
+  - "future source-selection bias controls"
+  - "future coverage-state eligibility"
+  - "future MAKEABLE comparison certification"
+  - "future candidate adequacy"
+  - "future relative ranking"
+  - "future truth-warrant eligibility"
+  - "future discriminator evidential support"
+
+effect_by_candidate:
+  status: "PENDING_INDEPENDENT_REVIEWER_F_DIRECTION_CLASSIFICATION"
+  allowed_labels: ["ADVERSE","FAVORABLE","NEUTRAL","MIXED_OR_UNCLEAR"]
+
+amendment_class:
+  proposed: "PRE_EVIDENCE_AMENDMENT"
+  basis: "No outcome-relevant evidence acquisition has begun and G1 remains unauthorized."
+  final_classification_pending: "Reviewer F C4 direction review plus Reviewer G ledger-integrity confirmation"
+
+adverse_consequences_entered: []
+relative_ranking_changed: false
+confirmatory_consequence: "NONE_YET__SOURCE_PLAN_REPAIR_IS_NONOPERATIVE"
+
+direction_reviewer:
+  slot: "REVIEWER_F"
+  status: "PENDING_AFTER_REVIEWER_D_FOCUSED_RECHECK"
+
+ledger_integrity_reviewer:
+  slot: "REVIEWER_G"
+  status: "PENDING_AFTER_C4_DIRECTION_REVIEW"
+
+freeze_identity:
+  original_source_plan_blob_sha: "ec0aa9806528f57d58108f262d800c0b102a800e"
+  reviewer_D_report_blob_sha: "e2187001c9f249eac9f041a1ed88decfc554ae8f"
+  Program_Lead_disposition_blob_sha: "b0e9a52e8e21c9cb7c6141a2957451b3574153bc"
+
+scope_controls:
+  outcome_relevant_evidence_acquisition_started: false
+  source_plan_passed: false
+  repaired_source_plan_operational: false
+  discriminator_authoring_authorized: false
+  G1_authorized: false
