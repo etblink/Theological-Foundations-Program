@@ -1,0 +1,78 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_112_116_blob_sha: "5e0eb7fb63860076a6be05c4b33b36272c18f837"
+  prior_next_sequence: 117
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 117
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer C post-blind A8 review exposure: input blob 6af423ca23809ee1d3bf291c69b293ab7479a48c, prompt blob fc97d4604fcc1ffb6ee1e41c939c45730c9b259c, blind report, initial background register/matrix, reconciliation docket, frozen candidate boundary artifacts, operative inventory, and Protocol A8/A8.1/A8.2/A8.3."
+    exposure_class: "G0_REVIEWER_C_A8_POST_BLIND_BACKGROUND_REVIEW_EXPOSURE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","required compatible joint-combination set"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 116 and before sequence 118."
+
+  - sequence: 118
+    repository_commit: "1faa687c766ad779a68e0344c03e6608ff0e55d1"
+    timestamp_utc: "2026-10-07T03:11:14Z"
+    actor_lineage: "XAI_GROK_4_7_REVIEWER_C_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_REPORT_0_1_0.md blob 9b707667c3eb383dc087c7856c4c1d32db1afa62"
+    exposure_class: "G0_REVIEWER_C_A8_BACKGROUND_REGISTER_REVIEW_RESULT_FREEZE"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","required compatible joint-combination set"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED"
+
+  - sequence: 119
+    repository_commit: "4c12130fa966ea5ffeb5a37e9c5305d72f8ccb0b"
+    timestamp_utc: "2026-10-07T03:12:59Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A8_BACKGROUND_REGISTER_REVIEW_DISPOSITION_0_1_0.yaml blob 54fe8be7cf001e63ae6680c74d60dc8ab415eeb6"
+    exposure_class: "G0_PROGRAM_LEAD_A8_BACKGROUND_REVIEW_DISPOSITION"
+    amendment_surfaces: ["A8.1 inclusion/exclusion","A8.2 granularity","A8.3 interactions","C4 repair control"]
+    outcome_relevant_evidence: false
+    result_status: "BACKGROUND_REGISTER_REVIEW_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED"
+
+  - sequence: 120
+    repository_commit: "b1b039a648b9c5ef0b164f69b85ee7d8f46da521"
+    timestamp_utc: "2026-10-07T03:13:01Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_A8_BACKGROUND_REPAIR_AMENDMENT_RECORD_0_1_0.yaml blob 060a424314ea4cd439817dff47070c14f58c2a44"
+    exposure_class: "G0_A8_BACKGROUND_REPAIR_AMENDMENT_CONTROL_FREEZE"
+    amendment_surfaces: ["A8 background register","A8 interaction matrix","C4 amendment direction","A17 ledger integrity"]
+    outcome_relevant_evidence: false
+    proposed_amendment_class: "PRE_EVIDENCE_AMENDMENT"
+
+  - sequence: 121
+    repository_commit: "2c7254c4f6a4a81e0da1a34b1dfbf118fe105257"
+    timestamp_utc: "2026-10-07T03:14:23Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml blob c0752ea1863c1733110f9da90d75a31dd88e199d"
+    exposure_class: "G0_A8_BACKGROUND_REGISTER_REPAIR_FREEZE"
+    amendment_surfaces: ["A8.1 backgrounds","A8.2 granularity","future background sensitivity","C4"]
+    outcome_relevant_evidence: false
+    operational: false
+
+  - sequence: 122
+    repository_commit: "bb0a4a3d05666f350ee17c85c17eb87ec5e2a69f"
+    timestamp_utc: "2026-10-07T03:15:24Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml blob 46b9cbdd731eab01e689770455926d2620994d48"
+    exposure_class: "G0_A8_BACKGROUND_INTERACTION_MATRIX_REPAIR_FREEZE"
+    amendment_surfaces: ["A8.3 interactions","required compatible joint-combination set","future background sensitivity","C4"]
+    outcome_relevant_evidence: false
+    operational: false
+
+next_sequence: 123
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
