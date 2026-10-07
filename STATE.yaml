@@ -79,13 +79,13 @@ authority:
     - "reopen_held_work_without_condition_or_authorization"
 
 current_scope:
-  id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G1_EVIDENCE_ACQUISITION_AUTHORIZED__FROZEN_G0_ARCHITECTURE__NO_OUTCOME_RESULT_YET"
-  purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
+  id: "TFP-STUDY-3-CONTINGENCY-G1"
+  status: "G1_EVIDENCE_ACQUISITION_ACTIVE__S1_NATIVE_BATCH_01_FROZEN__FROZEN_G0_ARCHITECTURE__NO_PROPOSITION_DISPOSITIONS"
+  purpose: "Execute the frozen A9 evidence-acquisition plan under Protocol 0.1.7, preserving provenance, negative/inaccessible evidence, coverage inputs, and reviewer boundaries without post-hoc G0 drift or premature ranking."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "46c8d776dfd9dc386105cf47e524dc79303ea6e2"
+  research_branch_head: "c894a310ecce8690a48bd3a915180c1c3544e6b5"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -1362,7 +1362,7 @@ current_scope:
     underdetermination_threshold_frozen: true
     reopen_conditions_frozen: true
     A1_A2_final_question_scope_frozen: true
-    A17_ledger_current_through_sequence: 235
+    A17_ledger_current_through_sequence: 237
     G0_complete: true
   G1_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G1_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.yaml"
@@ -1377,6 +1377,18 @@ current_scope:
     sequence: 235
     exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_DISCOVERY_SEARCH_EXPOSURE"
     search_snippets_evidential_support: false
+  G1_S1_native_acquisition_batch_01:
+    artifact: "TFP_STUDY_3_CONTINGENCY_G1_S1_NATIVE_ACQUISITION_BATCH_01_0_1_0.yaml"
+    blob_sha: "172b6e8544c90297b2287868aeab6abe93f8a9c9"
+    status: "FROZEN_ACQUISITION_RECORD__NO_PROPOSITION_DISPOSITIONS"
+    all_13_candidate_families_queried: true
+    candidate_native_coverage_complete: false
+    coverage_certified: false
+    MAKEABLE_certified: false
+    ledger_append:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_236_237_0_1_0.yaml"
+      blob_sha: "f84bb9a2f971a6c0b26ad096d7e62401e9847a8b"
+      through_sequence: 237
   G1_authorized: true
   outcome_relevant_evidence_acquisition_started: true
   methodology:
@@ -1391,18 +1403,20 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-G1-EVIDENCE-ACQUISITION"
-  action: "execute_frozen_A9_source_plan_and_record_G1_provenance_negative_evidence_and_coverage_inputs"
+  id: "TFP-STUDY-3-G1-S1-NATIVE-COMPLETION"
+  action: "complete_remaining_frozen_S1_native_variant_precursor_and_lawful_access_probes_before_S2_adverse"
   branch: "research/tfp-study-3-contingency-g0"
-  ledger_next_sequence: 236
+  ledger_next_sequence: 238
   G1_authorization_blob_sha: "8c6b8f07b0fd5299a060cd1705c46792bcdbe320"
+  S1_batch_01_blob_sha: "172b6e8544c90297b2287868aeab6abe93f8a9c9"
   requirements:
-    - "follow TFP_STUDY_3_CONTINGENCY_SOURCE_PLAN_0_1_1.yaml exactly"
-    - "record first outcome-relevant exposure at sequence 235 before or atomically with preserving the first acquired source result"
-    - "record provenance, failed searches, inaccessible material, and expected-but-absent evidence where probative"
-    - "do not alter frozen G0 architecture except through C4"
-    - "do not rank candidates or issue canonical theological outcomes"
-    - "route COMPLETE/MATERIALLY_COMPLETE coverage and MAKEABLE determinations through Reviewer E as preregistered"
+    - "finish C-NEC-AGENTIVE non-Abrahamic and non-classical-theist native probes"
+    - "finish C-NEC-IMPERSONAL-CONCRETE single/plural/layered and causal/grounding/constitutive relation probes"
+    - "continue required precursor searches for thin/synthetic families rather than treating low source counts as a gap"
+    - "attempt lawful deeper access for truth-critical paywalled/metadata-only native sources and record barriers/alternatives"
+    - "preserve negative and inaccessible evidence without treating it as evidence against a candidate"
+    - "after S1 completion, begin S2_ADVERSE for all 13; do not stop on supportive source discovery"
+    - "do not issue proposition dispositions, ranking, coverage COMPLETE/MATERIALLY_COMPLETE, or MAKEABLE determinations without the frozen downstream reviews"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
