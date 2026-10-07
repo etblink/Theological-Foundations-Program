@@ -1,0 +1,152 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "A16_SHARED_PROPOSITION_MAP"
+status: "FROZEN_PRE_EVIDENCE__CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+purpose: "Preregister two independent shared truth-bearing dimensions and dimension-wise direction rules so the optional N3 CLOSEST_TO_TRUTH refinement can be used only if its stringent pairwise conditions are later satisfied."
+
+scope:
+  candidate_count: 13
+  applies_only_to: "RANKING_ELIGIBLE candidates after a PROPOSED_CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE base outcome"
+  does_not_create_shared_floor: true
+  does_not_reclassify_A6_propositions: true
+  does_not_create_global_score: true
+  outcome_relevant_evidence_used: false
+  source_acquisition_started: false
+  G1_authorized: false
+
+independence_rationale:
+  statement: "The two dimensions are cross-cutting rather than duplicates: candidates can share a modal profile while differing on explanatory completion (for example brute, regress, holistic, self-explanatory, and global-deflation families), and necessary-ground families can share a necessary-ground/contingent-explanandum modal profile while differing on concrete, agentive, structural, or evaluative explanatory completion."
+  no_weighting_or_compensation: true
+  no_dimension_can_cancel_a_loss_on_the_other: true
+
+dimensions:
+  D16-MODAL-PROFILE:
+    type: "CRITICAL"
+    question: "What modal profile of the relevant reality/ultimacy is warranted: truth-apt genuine contingency, dissolution/non-applicability, ontic indeterminacy, total necessity, indexical plurality, or a necessary ground compatible with a genuinely contingent explanandum?"
+    candidate_mapping:
+      C-BRUTE: { state: "GENUINE_CONTINGENT_REALITY", propositions: ["BR-N1"] }
+      C-REGRESS: { state: "GENUINE_CONTINGENT_REALITY", propositions: ["RG-N1"] }
+      C-HOLISTIC: { state: "GENUINE_CONTINGENT_REALITY", propositions: ["HO-N1"] }
+      C-SELF-EXPLANATORY: { state: "CONTINGENT_STOPPING_ITEM_PRESERVED_UNDER_SELF_EXPLANATION", propositions: ["SE-N1","SE-N4"] }
+      C-GLOBAL-DEFLATION: { state: "GENUINE_LOCAL_OR_DOMAIN_CONTINGENCY_IS_METAPHYSICALLY_PERMITTED", propositions: ["GD-N1"] }
+      C-MODAL-DISSOLUTION: { state: "CENTRAL_CONTINGENCY_PRESUPPOSITION_DISSOLVED_OR_INAPPLICABLE", propositions: ["MD-N1","MD-N2","MD-N3","MD-N4"] }
+      C-INDETERMINATE-ULTIMACY: { state: "TRUTH_APT_BUT_ONTICALLY_INDETERMINATE_ULTIMACY", propositions: ["IU-N1","IU-N2","IU-N3","IU-N4"] }
+      C-NECESSITARIAN: { state: "TOTAL_METAPHYSICAL_NECESSITY_WITH_NO_CONTINGENT_TOTAL_REMAINDER", propositions: ["NE-N1","NE-N2","NE-N3","NE-N4"] }
+      C-INDEXICAL-PLURALITY: { state: "INDEXICAL_CONTINGENCY_WITH_NECESSARY_OR_NONCONTINGENT_PLURALITY", propositions: ["IP-N1","IP-N2","IP-N4","IP-N5"] }
+      C-NEC-IMPERSONAL-CONCRETE: { state: "NECESSARY_CONCRETE_GROUND_WITH_GENUINELY_CONTINGENT_EXPLANANDUM", propositions: ["IC-N1","IC-N4","IC-N5"] }
+      C-NEC-AGENTIVE: { state: "NECESSARY_AGENTIVE_GROUND_WITH_GENUINELY_CONTINGENT_OUTCOME", propositions: ["AG-N1","AG-N4"] }
+      C-NEC-IMPERSONAL-PRINCIPLE: { state: "NECESSARY_NONAGENTIVE_PRINCIPLE_WITH_GENUINELY_CONTINGENT_EXPLANANDUM", propositions: ["PR-N1","PR-N5","PR-N6"] }
+      C-AXIARCHIC: { state: "NECESSARY_EVALUATIVE_PRINCIPLE_WITH_GENUINELY_CONTINGENT_EXPLANANDUM", propositions: ["AX-N1","AX-N5"] }
+    directly_relevant_A11_families:
+      - "D11-01-MODAL-TRUTH-APTNESS"
+      - "D11-02-ONTIC-ULTIMACY-INDETERMINACY"
+      - "D11-03-TOTAL-NECESSITY"
+      - "D11-09-INDEXICAL-ACTUALITY"
+    direct_route_inputs:
+      - "The six operative A6 NONCOMPARATIVE_CANDIDATE_SPECIFIC routes may supply proposition-level modal warrant but do not by themselves create pairwise superiority."
+    distortion_risks:
+      - "Do not equate logical consistency, conceivability, nomic possibility, determinism, model uniqueness, or epistemic openness with metaphysical modality."
+      - "Do not treat a necessary ground as making the explanandum necessary."
+      - "Do not treat modal dissolution or ontic indeterminacy as investigator uncertainty."
+      - "Do not count the number of supported modal propositions; the dimension compares the warranted modal profile, not source/proposition volume."
+
+  D16-EXPLANATORY-COMPLETION:
+    type: "CRITICAL"
+    question: "What, if anything, completes or legitimately terminates/deflates the relevant ultimate explanatory demand, and what family-defining explanatory relation is warranted?"
+    candidate_mapping:
+      C-BRUTE: { state: "ONTIC_BRUTE_STOPPING", propositions: ["BR-N2","BR-N3","BR-N4"] }
+      C-REGRESS: { state: "ONE_WAY_NONTERMINATING_CONTINGENT_EXPLANATORY_REGRESS", propositions: ["RG-N2","RG-N3","RG-N4","RG-N5"] }
+      C-HOLISTIC: { state: "NONREFLEXIVE_NONWELLFOUNDED_HOLISTIC_OR_MUTUAL_COMPLETION", propositions: ["HO-N2","HO-N3","HO-N4","HO-N5","HO-N6"] }
+      C-SELF-EXPLANATORY: { state: "ITEM_REFLEXIVE_SELF_EXPLANATORY_COMPLETION", propositions: ["SE-N2","SE-N3","SE-N5"] }
+      C-GLOBAL-DEFLATION: { state: "NO_DISTINCT_GLOBAL_EXPLANATORY_DEMAND_BEYOND_LEGITIMATE_LOCAL_EXPLANATION", propositions: ["GD-N2","GD-N3"] }
+      C-MODAL-DISSOLUTION: { state: "DISSOLUTION_OF_THE_MODAL_PRESUPPOSITION_BLOCKS_THE_TARGET_ULTIMATE_DEMAND", propositions: ["MD-N2","MD-N3","MD-N4"] }
+      C-INDETERMINATE-ULTIMACY: { state: "ULTIMATE_EXPLANATORY_STRUCTURE_IS_ONTICALLY_INDETERMINATE", propositions: ["IU-N2","IU-N3","IU-N4"] }
+      C-NECESSITARIAN: { state: "TOTAL_NECESSITY_LEAVES_NO_CONTINGENT_TOTAL_REMAINDER_REQUIRING_EXTERNAL_SELECTION", propositions: ["NE-N3","NE-N4"] }
+      C-INDEXICAL-PLURALITY: { state: "NECESSARY_OR_NONCONTINGENT_PLURALITY_WITH_INDEXICAL_ACTUALITY_AND_NO_EXTERNAL_SELECTOR", propositions: ["IP-N2","IP-N3","IP-N4","IP-N5"] }
+      C-NEC-IMPERSONAL-CONCRETE: { state: "NECESSARY_CONCRETE_NONAGENTIVE_GROUND", propositions: ["IC-N2","IC-N3","IC-N6"] }
+      C-NEC-AGENTIVE: { state: "NECESSARY_PURPOSIVE_AGENTIVE_GROUND", propositions: ["AG-N2","AG-N3"] }
+      C-NEC-IMPERSONAL-PRINCIPLE: { state: "NECESSARY_NONCONCRETE_NONAGENTIVE_PRINCIPLE_OR_STRUCTURE", propositions: ["PR-N2","PR-N3","PR-N4","PR-N7"] }
+      C-AXIARCHIC: { state: "NECESSARY_NONAGENTIVE_EVALUATIVE_REQUIREDNESS_OR_VALUE_TO_BEING_GROUND", propositions: ["AX-N2","AX-N3","AX-N4"] }
+    directly_relevant_A11_families:
+      - "D11-04-GLOBAL-EXPLANATORY-DEMAND"
+      - "D11-05-BRUTE-VERSUS-NONBRUTE"
+      - "D11-06-REGRESS-VERSUS-TERMINUS"
+      - "D11-07-REGRESS-VERSUS-HOLISTIC"
+      - "D11-08-HOLISTIC-VERSUS-REFLEXIVE"
+      - "D11-10-CONCRETE-VERSUS-PRINCIPLE"
+      - "D11-11-AGENTIVE-VERSUS-CONCRETE-IMPERSONAL"
+      - "D11-12-AGENTIVE-VERSUS-IMPERSONAL-PRINCIPLE"
+      - "D11-13-PRINCIPLE-VERSUS-AXIOLOGICAL"
+      - "D11-14-AXIOLOGICAL-VERSUS-AGENTIVE"
+      - "D11-01-MODAL-TRUTH-APTNESS where modal dissolution gates lower-order explanatory comparison"
+      - "D11-03-TOTAL-NECESSITY where total necessity removes a contingent total remainder"
+      - "D11-09-INDEXICAL-ACTUALITY where indexical plurality removes an external selector"
+    distortion_risks:
+      - "Do not treat explanatory completion as mere existence of a candidate ontology; the mapped relation itself must be warranted."
+      - "Do not count explanatory virtues or sources into a global score."
+      - "Do not infer agency from explanatory termination, nor infer impersonal truth from failure to warrant agency."
+      - "Do not import stronger theological attributes into the agentive or axiarchic state."
+      - "Do not conflate one-way regress, holistic non-well-foundedness, item-reflexive explanation, brute stopping, or global deflation."
+
+dimension_direction_rule:
+  applies_pairwise_to: "Any two RANKING_ELIGIBLE candidates A and B under each required live background/compatible interaction state."
+  inputs:
+    - "the frozen candidate mappings for the dimension"
+    - "post-G2 consolidated dispositions of every mapped proposition"
+    - "post-evidence results of directly relevant operative A11 CRITICAL discriminators, each independently reviewed under the frozen DIRECTION_RULE"
+    - "applicable proposition-level defeaters and dependency resolutions"
+    - "required A8 background/interaction results"
+  required_comparison_set_rule:
+    - "If A and B map to materially the same state on the dimension, no invented comparison is required; the dimension is TIED_OR_NONDISCRIMINATING unless a frozen proposition-level defeater differentiates their warrant for that same state."
+    - "If A and B map to materially different states, use every MAKEABLE directly relevant CRITICAL discriminator that bears on that state difference. Do not use topic overlap, transitive chaining through a third candidate, or a MATERIAL/CONTEXTUAL result as a substitute for a missing CRITICAL comparison."
+    - "A frozen direct proposition route may establish or defeat a mapped state but does not by itself yield pairwise superiority unless the rival state is correspondingly excluded by a valid frozen rule."
+  A_BETTER_WARRANTED_if:
+    - "A and B are both RANKING_ELIGIBLE."
+    - "The dimension is makeable for the pair under the current required background."
+    - "At least one directly relevant CRITICAL result or valid candidate-neutral argument favors A's mapped state over B's mapped state."
+    - "No directly relevant CRITICAL result favors B's mapped state over A's."
+    - "No undefeated proposition-level defeater removes the A-favoring basis."
+  B_BETTER_WARRANTED_if: "Exact A/B swap of A_BETTER_WARRANTED_if."
+  TIED_OR_NONDISCRIMINATING_if:
+    - "The mapped states are materially the same and neither has stronger frozen dimension-specific warrant; or"
+    - "all required directly relevant CRITICAL comparisons are MAKEABLE and neutral/non-discriminating; or"
+    - "MAKEABLE CRITICAL directions conflict and frozen dependence/defeater analysis leaves no one-way dimension dominance. No weighting or source-count balancing is allowed."
+  UNMAKEABLE_if:
+    - "A required directly relevant CRITICAL comparison is UNMAKEABLE; or"
+    - "the mapped states materially differ but no frozen CRITICAL or valid candidate-neutral route directly compares their truth-bearing difference; or"
+    - "required proposition/background coverage or provenance is insufficient to apply the dimension rule."
+  symmetry: "Swap A and B without changing burdens, admissible inputs, or thresholds."
+
+closest_to_truth_rule:
+  prerequisite_base_outcome: "PROPOSED_CANDIDATE_A_BEST_SUPPORTED_WITHIN_SCOPE"
+  pairwise_requirement_against_each_RANKING_ELIGIBLE_rival:
+    - "no shared CRITICAL dimension is UNMAKEABLE"
+    - "no shared CRITICAL dimension is B_BETTER_WARRANTED"
+    - "at least one shared CRITICAL dimension is A_BETTER_WARRANTED"
+  background_requirement: "Run both dimensions under every required live background and compatible interaction state. Any ranking flip makes CLOSEST_TO_TRUTH unavailable."
+  no_global_score: true
+  no_weighting: true
+  no_post_hoc_balancing: true
+  independent_direction_result_review_required: true
+  consequence_if_conditions_fail: "Do not attach CLOSEST_TO_TRUTH. Preserve the valid base outcome without the refinement."
+
+controls:
+  dimension_count: 2
+  independent_dimensions: true
+  both_dimensions_CRITICAL: true
+  all_13_candidates_mapped_on_each_dimension: true
+  mapping_is_not_A6_shared_floor: true
+  mapping_does_not_change_candidate_definitions: true
+  mapping_does_not_change_A11: true
+  necessary_foundation_does_not_equal_God: true
+  no_source_or_evidence_result_used: true
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  amendment_control: "Any later change uses Protocol C4."
+
+downstream:
+  A16_status: "CLOSEST_TO_TRUTH_CONDITIONALLY_AVAILABLE"
+  next_required_G0_step: "G0_PREREGISTRATION_COMPLETION_CHECK"
