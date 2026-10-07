@@ -1,0 +1,33 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_ASSIGNMENT_ACCEPTANCE"
+status: "ACCEPTED_FOR_C4_AMENDMENT_DIRECTION_REVIEW"
+date: "2026-10-06"
+
+reviewer:
+  slot: "REVIEWER_F"
+  provider: "xAI"
+  model: "Grok 4.7"
+  session_id: "NOT_EXPOSED_BY_PROVIDER"
+  declared_status: "PROCEDURALLY_DISJOINT_FOR_REVIEWER_F"
+
+declarations:
+  brand_new_conversation: true
+  continuation_fork_shared_context_or_subagent_of_prior_Study_3: false
+  prior_substantive_Study_3_exposure_in_conversation: false
+  visible_persistent_memory_has_substantive_Study_3_material: false
+  prior_Study_3_role_in_lineage: false
+  can_refrain_from_repository_past_chat_memory_retrieval_until_instructed: true
+
+program_lead_disposition: "ACCEPTED"
+
+lineage_controls:
+  disjoint_from_Program_Lead_declared: true
+  disjoint_from_Reviewer_G_ledger_integrity_reviewer_declared: true
+  disjoint_from_future_Reviewer_H_strict_auditor_declared: true
+  may_not_serve_as_ledger_integrity_reviewer: true
+  may_not_serve_as_strict_independent_auditor: true
+
+limitations:
+  - "Procedural disjointness is established from reviewer declarations and observable exposure controls; hidden provider internals are not independently inspectable."
+  - "Acceptance authorizes only the frozen Reviewer-F amendment-direction role within the existing Study-3 G0 scope."
