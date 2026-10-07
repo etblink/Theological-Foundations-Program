@@ -1,0 +1,60 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION"
+status: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__GD_N1_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_report:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "c94e3d9729d3328b4420e6182f998871da9e3fbb"
+  reviewer_status: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+  reviewer_lineage: "OPENAI_CODEX_REVIEWER_B_EXISTING_SESSION"
+
+independent_replay:
+  proposition_count: 62
+  enumeration_exact: true
+  candidate_specific_classification_preserved: true
+  invalid_shared_floor_found: false
+  proposed_comparative_count: 57
+  substantively_valid_comparative_count: 56
+  proposed_noncomparative_candidate_specific_count: 5
+  accepted_noncomparative_routes: ["BR-N1","RG-N1","HO-N1","SE-N1","SE-N4"]
+  sole_defect:
+    proposition_id: "GD-N1"
+    proposition: "Relevant local or domain contingency can be genuine."
+    inventory_lane: "A10-L1-MODAL-STATUS-AND-LOGIC"
+    current_coverage_mode: "COMPARATIVE_ROUTE"
+    cited_discriminator: "D11-04-GLOBAL-EXPLANATORY-DEMAND"
+    discriminator_lane: "A10-L2-EXPLANATORY-DEMAND-AND-TOTALITY"
+    finding: "D11-04 tests global explanatory burden/nonaggregation, not the exact permissive metaphysical compatibility claim in GD-N1."
+    A11_change_required: false
+  other_61_entries_reopened: false
+  outcome_relevant_evidence_used: false
+  G1_authorized: false
+
+repair_authorization:
+  scope: "GD-N1_ONLY"
+  preferred_route: "NONCOMPARATIVE_CANDIDATE_SPECIFIC"
+  requirements:
+    - "preserve the permissive 'can be genuine' truth conditions; do not strengthen GD-N1 into an actuality claim"
+    - "use admitted modal backgrounds and the frozen A10-L1 modal lane"
+    - "state why pairwise global-demand substitution would distort the proposition"
+    - "give an explicit proposition-specific modal-compatibility argument route"
+    - "give proposition-specific expected and weakening/defeating conditions"
+    - "preserve future PROPOSITION:GD-N1 coverage certification"
+    - "do not alter A11 discriminator identities, tiers, or DIRECTION_RULES"
+    - "do not inspect outcome evidence or begin G1"
+
+amendment_control:
+  classification_required: true
+  proposed_timing_class: "PRE_EVIDENCE_AMENDMENT"
+  Reviewer_B_focused_recheck_required: true
+  Reviewer_F_C4_direction_review_required_after_content_pass: true
+  Reviewer_G_ledger_integrity_review_required_before_operational_use: true
+
+downstream:
+  NECESSARY_PROPOSITION_COVERAGE_COMPLETE: false
+  final_A6_operational: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
