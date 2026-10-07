@@ -1,0 +1,53 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_COMPLETION"
+status: "FROZEN_REPAIR__REVIEWER_C_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+repair_amendment_record:
+  path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml"
+  blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec"
+
+repaired_register:
+  path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml"
+  blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907"
+  discriminator_count: 14
+  proposed_CRITICAL_count: 14
+  proposed_MATERIAL_count: 0
+
+mechanical_delta_verification:
+  R1_excluded_D09_D12_removed: true
+  R2_D11_01_modalstatus_indeterminacy_and_deflation_gate_added: true
+  R3_D11_03_actuality_background_and_interaction_added: true
+  R4_D11_05_ER_PSR_and_triple_interaction_added: true
+  R5_D11_06_temporal_origin_gate_only_control_added: true
+  R6_D11_12_four_agentive_principle_interactions_added: true
+  R7_D11_14_relation_ontology_axiology_interaction_added: true
+  R8_D11_11_direction_rule_precedence_clarified: true
+  R9_D11_13_thin_axiological_route_boundary_added: true
+  all_14_discriminator_ids_preserved: true
+  all_14_proposed_CRITICAL_priorities_preserved: true
+  direction_rule_template_preserved: true
+  candidate_universe_unchanged: true
+  A10_lane_register_unchanged: true
+  operative_source_plan_unchanged: true
+
+nonblocking_normalization:
+  source_plan_operability:
+    status: "OPERATIVE"
+    operational_acceptance_blob_sha: "711fee5f01f0333ee3bd837384522c072536c869"
+    note: "Repaired register explicitly cites A9 operational acceptance so the stale source-plan status inside older frozen review text cannot propagate."
+
+next_controls:
+  Reviewer_C_focused_recheck_required: true
+  Reviewer_F_C4_direction_review_after_content_pass: true
+  Reviewer_G_ledger_integrity_review_before_operational_use: true
+  final_A6_coverage_certification_after_A11_operationalization: true
+
+scope:
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
+  A11_operational: false
+  discriminators_frozen: false
+  necessary_proposition_coverage_complete: false
