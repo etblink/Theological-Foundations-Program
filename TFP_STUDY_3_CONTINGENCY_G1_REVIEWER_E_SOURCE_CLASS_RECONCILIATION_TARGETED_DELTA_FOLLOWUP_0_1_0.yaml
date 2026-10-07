@@ -1,0 +1,158 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_REVIEWER_E_SOURCE_CLASS_RECONCILIATION_TARGETED_DELTA_FOLLOWUP"
+status: "G1_G2_G3_TARGETED_DELTA_FROZEN__READY_FOR_REVIEWER_E_DELTA_RECONCILIATION__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+authority:
+  Reviewer_E_reconciliation_report:
+    path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_REPORT_0_1_0.md"
+    blob_sha: "729dd61ff0d0870b3540371e4588b1ca3ada2436"
+    status: "SOURCE_CLASS_RECONCILIATION_FOLLOWUP_REQUIRED"
+  Program_Lead_disposition:
+    path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_REVIEWER_E_G1_SOURCE_CLASS_RECONCILIATION_DISPOSITION_0_1_0.yaml"
+    blob_sha: "12bc496bfb7ad32dce85bfd4862b5755c9500ba1"
+  errata:
+    path: "TFP_STUDY_3_CONTINGENCY_G1_SOURCE_CLASS_RECONCILIATION_ERRATA_0_1_0.yaml"
+    status: "FROZEN__APPEND_ONLY_HISTORICAL_CORRECTION__NO_SUBSTANTIVE_OUTCOME_CHANGE"
+
+research_controls:
+  scope: ["G1_MODAL_DISSOLUTION_NATIVE","G2_BRUTE_SKEPTICAL_DEFEAT","G3_GLOBAL_DEFLATION_CONTEMPORARY_NATIVE"]
+  search_snippets_evidential_support: false
+  abstract_plus_argument_level_access_sufficient_for_this_delta: true
+  source_scarcity_counts_against_candidate: false
+  candidate_ranking_performed: false
+  proposition_truth_dispositions_performed: false
+  coverage_certification_performed: false
+  MAKEABLE_certification_performed: false
+  new_candidate_triggered: false
+  F1_contamination_controls_unchanged: true
+
+G1_MODAL_DISSOLUTION_NATIVE:
+  prior_gap: "No accessed contemporary primary native source for the non-descriptivist/modal-normativist stratum and no contemporary reply pair."
+  current_state: "MATERIALLY_REPRESENTED_FOR_REVIEWER_E_DELTA_RECONCILIATION"
+  proposition_surfaces: ["MD-N1","MD-N2","MD-N3","MD-N4"]
+  comparison_surface: "D11-01-MODAL-TRUTH-APTNESS"
+  sources:
+    - id: "G1-S1"
+      citation: "Amie L. Thomasson, Norms and Necessity (Oxford University Press, 2020)."
+      DOI: "10.1093/oso/9780190098193.001.0001"
+      stable_url: "https://academic.oup.com/book/33564"
+      access: "PUBLISHER_BOOK_ABSTRACT_AND_CHAPTER_ABSTRACTS"
+      argument_level:
+        - "Rejects the descriptivist assumption that metaphysical modal claims primarily describe special modal features or possible worlds."
+        - "Develops modal normativism: modal discourse functions to convey, reason with, and renegotiate semantic rules and their consequences."
+        - "Chapter 2 explicitly presents metaphysical modal terminology as non-descriptive in function and normative in its role."
+      boundary: "Do not equate Thomasson's non-descriptivism automatically with MD-N2's stronger claim that the Study-3 contingency presupposition is non-truth-apt or inapplicable. Exact support requires later proposition-level bridge."
+    - id: "G1-S2"
+      citation: "Boris Kment, 'Necessity and linguistic rules,' Inquiry 67(8):2400-2416 (2024; published online 2023)."
+      DOI: "10.1080/0020174X.2023.2231030"
+      stable_url: "https://www.tandfonline.com/doi/full/10.1080/0020174X.2023.2231030"
+      access: "PUBLISHER_ABSTRACT"
+      source_role: "Contemporary adverse reply to Thomasson."
+      argument_level:
+        - "Questions whether the semantic rules required by modal normativism exist in the needed form."
+        - "Defends descriptivist essentialism as explanatorily and epistemically viable."
+    - id: "G1-S3"
+      citation: "Tom Donaldson and Jennifer Wang, 'Modal Normativism and De Re Modality,' Argumenta 7(2):293-307 (2022)."
+      DOI: "10.14275/2465-2334/202214.don"
+      stable_url: "https://www.argumenta.org/article/modal-normativism-and-de-re-modality-special-issue/"
+      access: "JOURNAL_ABSTRACT_AND_AUTHOR_ARCHIVED_ROUTE"
+      source_role: "Contemporary critical reply focused on de re modality."
+      argument_level:
+        - "Recasts Quinean pressure on linguistic theories of necessity in the context of Thomasson's modal normativism."
+        - "Criticizes Thomasson's treatment of de re modality while offering an alternative account compatible with normativism."
+  evaluation:
+    - "G1 is now represented by a contemporary native formulation plus multiple distinct critical replies."
+    - "The evidence is genuinely two-sided; no proposition disposition follows from source admission."
+    - "Thomasson's view is non-descriptivist but is not recorded here as wholesale modal noncognitivism or automatic truth-inaptness."
+  remaining_gap: "Whether modal normativism actually satisfies MD-N2's disjunctive non-truth-apt-or-inapplicable condition is a proposition-level question, not a source-class acquisition gap."
+
+G2_BRUTE_SKEPTICAL_DEFEAT:
+  prior_gap: "The Koons-Pruss empirical-skepticism defense of a restricted PSR and Pruss's earlier inductive-skepticism route were absent."
+  current_state: "MATERIALLY_REPRESENTED_FOR_REVIEWER_E_DELTA_RECONCILIATION"
+  proposition_surfaces: ["BR-N2","BR-N3","BR-N4"]
+  comparison_surface: "D11-05"
+  sources:
+    - id: "G2-S1"
+      citation: "Robert C. Koons and Alexander R. Pruss, 'Skepticism and the principle of sufficient reason,' Philosophical Studies 178:1079-1099 (2021; online 2020)."
+      DOI: "10.1007/s11098-020-01482-3"
+      stable_url: "https://link.springer.com/article/10.1007/s11098-020-01482-3"
+      access: "OPEN_FULL_TEXT"
+      argument_level:
+        - "Formulates a PSR restricted to basic natural facts."
+        - "Argues dialectically that denying a priori knowledge of that restricted PSR leads to radical empirical skepticism across six contemporary theories of empirical knowledge."
+        - "The argument is distinct from generic metaphysical rationalism because its leverage is epistemic defeat rather than simply explanatory preference."
+    - id: "G2-S2"
+      citation: "Alexander R. Pruss, 'Inductive Skepticism,' chapter 18 of The Principle of Sufficient Reason: A Reassessment (Cambridge University Press, 2006), pp. 295-298."
+      DOI: "10.1017/CBO9780511498992.018"
+      stable_url: "https://www.cambridge.org/core/books/abs/principle-of-sufficient-reason/inductive-skepticism/797FEA5346F965CEA1C560F9AB30AD32"
+      access: "PUBLISHER_CHAPTER_SUMMARY"
+      argument_level:
+        - "Under an Aristotelian conception of laws, argues that an externalist answer to inductive skepticism fails unless the PSR is metaphysically necessary."
+  evaluation:
+    - "G2 now contains the distinct skeptical-defeat route Reviewer E identified."
+    - "The route targets rejection of a restricted PSR and therefore cannot simply be generalized to every formulation of brute ultimacy."
+    - "Later proposition adjudication must state the bridge from the restricted-PSR epistemic argument to BR-N2-BR-N4 and D11-05."
+  remaining_gap: null
+
+G3_GLOBAL_DEFLATION_CONTEMPORARY_NATIVE:
+  prior_gap: "Modern global-deflation/pseudo-question formulations distinct from Hume-Edwards were absent."
+  current_state: "MATERIALLY_REPRESENTED_FOR_REVIEWER_E_DELTA_RECONCILIATION"
+  proposition_surfaces: ["GD-N2","GD-N3"]
+  comparison_surface: "D11-04-GLOBAL-EXPLANATORY-DEMAND"
+  sources:
+    - id: "G3-S1"
+      citation: "Stephen Maitzen, 'Stop Asking Why There's Anything,' Erkenntnis 77(1):51-63 (2012)."
+      DOI: "10.1007/s10670-011-9312-0"
+      stable_url: "https://philosophy.acadiau.ca/files/sites/philosophy/resources/documents/Maitzen_SAWTA.pdf"
+      access: "AUTHOR_HOSTED_FULL_TEXT"
+      argument_level:
+        - "Argues that the fully general question 'Why is there anything?' is ill-posed rather than merely unanswered by science."
+        - "Uses the dummy-sortal problem to argue that unrestricted 'thing' questions lack determinate counting/application criteria."
+        - "Maintains that well-posed sortal-specific versions can in principle receive naturalistic answers."
+      distinction_from_Hume_Edwards: "This is a question-formation/sortal diagnosis, not merely the claim that explaining each member explains the whole."
+    - id: "G3-S2"
+      citation: "Stephen Maitzen, 'Questioning the Question,' in Tyron Goldschmidt (ed.), The Puzzle of Existence: Why Is There Something Rather Than Nothing? (Routledge, 2013), pp. 252-271."
+      stable_url: "https://philarchive.org/rec/MAIQTQ"
+      access: "ARCHIVE_ABSTRACT_AND_AUTHOR/PUBLISHER_METADATA"
+      argument_level:
+        - "Continues the deflationary diagnosis: the question, when posed as beyond natural science in principle, rests on confusions or false presuppositions."
+        - "Defends an intentionally simple naturalistic answer to the unrestricted formulation and diagnoses why stronger readings are ill-posed."
+    - id: "G3-S3"
+      citation: "Adolf Grünbaum, 'The Poverty of Theistic Cosmology,' British Journal for the Philosophy of Science 55(4):561-614 (2004)."
+      DOI: "10.1093/bjps/55.4.561"
+      stable_url: "https://www.journals.uchicago.edu/doi/10.1093/bjps/55.4.561"
+      access: "PUBLISHER_ABSTRACT_AND_DETAILED_CONTENTS"
+      argument_level:
+        - "Challenges the Primordial Existential Question by separating the logical possibility of a null world from the further claim that nothingness is the natural/default state requiring an external explanation."
+        - "Argues that the 'spontaneity of nothingness' presupposition lacks adequate a priori or empirical support."
+      scope_boundary: "The paper also attacks specifically theistic cosmological explanations. Only the global-demand/null-default portions are admitted here for C-GLOBAL-DEFLATION; theism-specific conclusions are not imported into Study 3."
+  evaluation:
+    - "G3 now includes two Maitzen formulations and Grünbaum's distinct null-default critique."
+    - "The class is materially stronger than Hume-Edwards alone and directly addresses whether the unrestricted global explanatory question is well-posed or demands an answer."
+    - "No claim is made here that these arguments succeed; they are admitted as native serious routes for later D11-04 adjudication."
+  remaining_gap: null
+
+delta_completion:
+  G1_followup_complete_for_reconciliation: true
+  G2_followup_complete_for_reconciliation: true
+  G3_followup_complete_for_reconciliation: true
+  all_material_gaps_named_by_reviewer_E_addressed: true
+  coverage_review_ready_by_Program_Lead_self_certification: false
+  Reviewer_E_delta_reconciliation_required: true
+
+carried_forward_for_future_coverage:
+  - "D11-02 MOD-EPISTEMIC-ONLY must be supported beyond publisher-description/orientation level or be capped at MATERIALLY_COMPLETE_WITH_LISTED_GAPS."
+  - "Barnes 2014 must be read at least at abstract level before D11-02 review."
+  - "SC6 existential inertia remains relation-specific to causal/sustaining routes absent a separate bridge."
+  - "SC1 Nyaya/Buddhist/Jaina translation and nitya-versus-metaphysical-necessity cautions remain mandatory."
+  - "F1 symmetric-application rule remains mandatory for D11-11, D11-12, and D11-14."
+  - "Goswick 2018 direction must be confirmed before proposition-level use."
+
+next_action:
+  reviewer: "same Anthropic / Claude Opus 5.5 Reviewer-E lineage"
+  task: "short delta reconciliation limited to G1-G3 plus the two errata"
+  coverage_certification_authorized_in_delta_reconciliation: false
+  MAKEABLE_certification_authorized_in_delta_reconciliation: false
