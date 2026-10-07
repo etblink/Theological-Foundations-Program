@@ -1,0 +1,78 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "ACTIVE_G0_ARCHITECTURE__NO_OUTCOME_RELEVANT_EVIDENCE_ACQUISITION"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_200_202_blob_sha: "aed12e2a8c7c58c6492362f32b9d012df32c6cc0"
+  prior_next_sequence: 203
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 203
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_EXISTING_SESSION"
+    source_or_artifact: "Authorized Reviewer B final A6 coverage review exposure to the frozen 62-entry coverage map and its authorized A6/A10/A11/background controls."
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_COVERAGE_REVIEW_EXPOSURE"
+    amendment_surfaces: ["final A6 coverage-mode validity","direct bearing","candidate burden symmetry"]
+    outcome_material_reviewer_participation: true
+    outcome_relevant_evidence: false
+    order_note: "Occurred after sequence 202 and before sequence 204."
+
+  - sequence: 204
+    repository_commit: "1ad7b131881d15457ae8dd40847aff218904ab45"
+    timestamp_utc: "2026-10-07T05:58:22Z"
+    actor_lineage: "OPENAI_CODEX_REVIEWER_B_EXISTING_SESSION -> OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_FINAL_A6_NECESSARY_PROPOSITION_COVERAGE_REVIEW_REPORT_0_1_0.md blob c94e3d9729d3328b4420e6182f998871da9e3fbb"
+    exposure_class: "G0_REVIEWER_B_FINAL_A6_COVERAGE_RESULT_FREEZE"
+    amendment_surfaces: ["final A6 coverage architecture","GD-N1 route"]
+    outcome_material_reviewer_determination: true
+    outcome_relevant_evidence: false
+    result_status: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED"
+
+  - sequence: 205
+    repository_commit: "1248dc2399328d95db767278e5427c15d4f2fa14"
+    timestamp_utc: "2026-10-07T05:58:50Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION_0_1_0.yaml blob 013dfdb9fac5385471272d6ab127459faf73a485"
+    exposure_class: "G0_PROGRAM_LEAD_FINAL_A6_COVERAGE_REVIEW_DISPOSITION"
+    amendment_surfaces: ["GD-N1-only repair authorization"]
+    outcome_relevant_evidence: false
+    result_status: "NECESSARY_PROPOSITION_COVERAGE_REPAIR_REQUIRED__INDEPENDENTLY_CONFIRMED__GD_N1_ONLY"
+
+  - sequence: 206
+    repository_commit: "84552b51c5dfd10d3ad9f2de5534bf4b42165716"
+    timestamp_utc: "2026-10-07T05:59:12Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_NECESSARY_PROPOSITION_COVERAGE_MAP_0_1_1.yaml blob 080415189dbcdec26f11e5da67dbc52f1b2a69ca"
+    exposure_class: "G0_FINAL_A6_GD_N1_REPAIR_FREEZE"
+    amendment_surfaces: ["GD-N1 coverage mode","final A6 architecture"]
+    outcome_relevant_evidence: false
+    result_status: "REPAIRED_PRE_EVIDENCE__PENDING_REVIEWER_B_FOCUSED_RECHECK_AND_C4"
+
+  - sequence: 207
+    repository_commit: "b5791f7e973119f1cd0b15a7056c0b26375c33e7"
+    timestamp_utc: "2026-10-07T06:00:04Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_FINAL_A6_COVERAGE_REPAIR_AMENDMENT_RECORD_0_1_0.yaml blob b70eed10eb3979fb2d7b6d40b61906b95f8f24c5"
+    exposure_class: "G0_FINAL_A6_REPAIR_AMENDMENT_RECORD"
+    amendment_surfaces: ["GD-N1 coverage-mode change","C4 direction classification"]
+    outcome_relevant_evidence: false
+    result_status: "PROPOSED_PRE_EVIDENCE_AMENDMENT__PENDING_REVIEWER_B_RECHECK_AND_C4"
+
+  - sequence: 208
+    repository_commit: "cfaaa2998ff83238af7e07437ccefa485e5c2c73"
+    timestamp_utc: "2026-10-07T06:00:07Z"
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_FINAL_A6_COVERAGE_REPAIR_COMPLETION_0_1_0.yaml blob a23f32ae656f37c1fec4f92156ceb0c33c56f6ad"
+    exposure_class: "G0_FINAL_A6_REPAIR_COMPLETION"
+    amendment_surfaces: ["GD-N1 repair verification","Reviewer B recheck readiness"]
+    outcome_relevant_evidence: false
+    result_status: "FROZEN_REPAIR__REVIEWER_B_FOCUSED_RECHECK_REQUIRED__NONOPERATIVE"
+
+next_sequence: 209
+outcome_relevant_evidence_exposure_started: false
+G1_authorized: false
