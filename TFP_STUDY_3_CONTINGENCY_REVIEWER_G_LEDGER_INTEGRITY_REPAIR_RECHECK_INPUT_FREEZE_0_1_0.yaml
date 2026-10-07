@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_G"
+  required_lineage: "exact same Anthropic Claude Opus 5.5 conversation that issued LEDGER_INTEGRITY_REPAIR_REQUIRED"
+
+prior_review:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "0c7e51625d7ee04bb65b84629bef1e6b5542207f"
+  status: "LEDGER_INTEGRITY_REPAIR_REQUIRED"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_A17_REPAIR_SUPPLEMENT_0_1_0.yaml"
+    blob_sha: "57d62f80dac764a36c3c542ab4e1fabe9b203456"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_28_29_0_1_0.yaml"
+    blob_sha: "dcee5acdf677e1abedb8d575a215c10f941e10b9"
+    purpose: "confirm supplement annotates rather than rewrites"
+  - path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_30_32_0_1_0.yaml"
+    blob_sha: "883cd32ff17570e1d608babb8b5139b28dbe1551"
+    purpose: "confirm sequence-30 anchor and prior next-sequence"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_LEDGER_INTEGRITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "5f7c2d3817f489cafa6572f8c7ea36a42380c014"
+  - "Protocol 0.1.7 A17 only as needed"
+
+task:
+  - "Perform a focused recheck of the repair supplement only; do not rerun the full ledger audit."
+  - "Verify R1 is cured: sequences 28 and 29 now have supplemental commit/blob identity, time/order, actor lineage, and amendment surfaces."
+  - "Verify the original append 28-29 remains unchanged and the supplement states prior entries are not rewritten."
+  - "Verify R2 is adequately addressed: sequence 30 explicitly records that no exact session timestamp exists and supplies an order anchor between sequences 29 and 31."
+  - "Verify the timestamp policy for sequences 9-32 is explicit and does not alter prior ordering."
+  - "Verify the ongoing Reviewer-G provenance is continued as sequences 33-39 with no gap or duplicate and next_sequence 40."
+  - "Verify the supplement introduces no candidate-universe, C4-direction, or outcome-evidence change."
+  - "Do not inspect new outcome-relevant evidence, rank candidates, adjudicate truth, or redo candidate completeness."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "R1 RECHECK"
+    - "R2 RECHECK"
+    - "SEQUENCE 33-39 CONTINUITY"
+    - "SCOPE / NON-SUBSTANTIVE CHECK"
+    - "LEDGER INTEGRITY REPAIR STATUS"
+  status_namespace:
+    - "LEDGER_INTEGRITY_REPAIR_PASS"
+    - "LEDGER_INTEGRITY_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
