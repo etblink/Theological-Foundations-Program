@@ -1,0 +1,145 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "G1_S3_NEUTRAL_COMPARATIVE_BATCH_01"
+status: "S3_NEUTRAL_SEARCH_STAGE_COMPLETE__NO_G0_AMENDMENT_TRIGGER_IDENTIFIED__COVERAGE_UNCERTIFIED"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+source_plan_stage: "S3_NEUTRAL"
+
+purpose: "Preserve neutral surveys, comparative treatments, and formal map-checking sources used to test terminology, candidate boundaries, false dichotomies, and missing-alternative risk after S1/S2."
+
+controls:
+  neutral_sources_are_not_sole_truth_critical_support: true
+  search_snippets_evidential_support: false
+  candidate_universe_amended: false
+  A8_or_A11_amended: false
+  proposition_dispositions_issued: false
+  coverage_certified: false
+  MAKEABLE_certified: false
+  ranking_performed: false
+  S3_search_stage_complete: true
+  next_stage: "S4_BACKGROUND"
+
+neutral_sources:
+  - source_id: "S3N-001"
+    identity: "Stanford Encyclopedia of Philosophy, 'Principle of Sufficient Reason,' substantive revision 2023."
+    stable_url: "https://plato.stanford.edu/entries/sufficient-reason/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-BRUTE","C-GLOBAL-DEFLATION","C-NECESSITARIAN","BG-PSR-SCOPE","BG-EXPLANATORY-REALISM"]
+    map_check: "Confirms that PSR has multiple strengths and that rejection of brute facts depends on which explanatory relation/scope is intended; prevents treating one PSR formulation as the sole rationalist option."
+
+  - source_id: "S3N-002"
+    identity: "Stanford Encyclopedia of Philosophy, 'Cosmological Argument,' substantive revision 2026."
+    stable_url: "https://plato.stanford.edu/entries/cosmological-argument/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-BRUTE","C-REGRESS","C-GLOBAL-DEFLATION","C-NEC-AGENTIVE","C-NEC-IMPERSONAL-CONCRETE","C-NEC-IMPERSONAL-PRINCIPLE"]
+    map_check: "Surveys contingency arguments, brute-universe replies, regress/complete-explanation issues, necessary-being conclusions, and the separate step from necessary cause to personal explanation. Reinforces the frozen rule that necessary foundation does not entail agency."
+
+  - source_id: "S3N-003"
+    identity: "Stanford Encyclopedia of Philosophy, 'Fundamentality,' 2022-2024 editions."
+    stable_url: "https://plato.stanford.edu/entries/fundamentality/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-REGRESS","C-HOLISTIC","C-NEC-IMPERSONAL-CONCRETE","BG-DEPENDENCE-STRUCTURE","BG-GROUND-CATEGORY"]
+    map_check: "Distinguishes metaphysical foundationalism, infinitism, coherentism, and multiple strengths of well-foundedness; prevents collapsing any infinite descent into the denial of all foundations or equating set-theoretic well-foundedness with every metaphysical foundation claim."
+
+  - source_id: "S3N-004"
+    identity: "Stanford Encyclopedia of Philosophy, 'Metaphysical Explanation,' substantive revision 2026."
+    stable_url: "https://plato.stanford.edu/entries/metaphysical-explanation/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-HOLISTIC","C-SELF-EXPLANATORY","C-GLOBAL-DEFLATION","C-NEC-IMPERSONAL-CONCRETE","C-NEC-IMPERSONAL-PRINCIPLE","BG-EXPLANATION-RELATION","BG-GROUND-CATEGORY"]
+    map_check: "Surveys pluralism about metaphysical explanation and alternative models (grounding, quasi-causal, nomological, unificationist, pragmatic), guarding against silent grounding-monism."
+
+  - source_id: "S3N-005"
+    identity: "Stanford Encyclopedia of Philosophy, 'The Epistemology of Modality,' substantive revision 2023."
+    stable_url: "https://plato.stanford.edu/entries/modality-epistemology/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-MODAL-DISSOLUTION","C-INDETERMINATE-ULTIMACY","C-NECESSITARIAN","C-INDEXICAL-PLURALITY","BG-MODAL-STATUS","BG-MODAL-LOGIC"]
+    map_check: "Separates logical, physical/nomic, epistemic, and metaphysical modality and surveys competing epistemologies of modal knowledge; directly supports the frozen no-substitution rule without selecting a modal theory as true."
+
+  - source_id: "S3N-006"
+    identity: "Stanford Encyclopedia of Philosophy, 'Possible Worlds.'"
+    stable_url: "https://plato.stanford.edu/entries/possible-worlds/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-MODAL-DISSOLUTION","C-NECESSITARIAN","C-INDEXICAL-PLURALITY","BG-ACTUALITY-PRIVILEGE","BG-MODAL-STATUS"]
+    map_check: "Distinguishes Lewisian concretism/indexical actuality from abstractionist, combinatorial, actualist, and other possible-world frameworks; prevents equating possible-world semantics with Lewisian ontology."
+
+  - source_id: "S3N-007"
+    identity: "Stanford Encyclopedia of Philosophy, 'Possible Objects' and Possibilism-Actualism supplement."
+    stable_url: "https://plato.stanford.edu/entries/possible-objects/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-INDEXICAL-PLURALITY","BG-ACTUALITY-PRIVILEGE"]
+    map_check: "Clarifies Lewis's indexical theory of actuality and how it differs from generic possibilism/actualism, preventing IP from being treated as any use of possible worlds."
+
+  - source_id: "S3N-008"
+    identity: "Stanford Encyclopedia of Philosophy, 'Structural Realism.'"
+    stable_url: "https://plato.stanford.edu/entries/structural-realism/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-NEC-IMPERSONAL-PRINCIPLE","C-NEC-IMPERSONAL-CONCRETE","BG-ABSTRACT-PRINCIPLE-FORCE","BG-ONTOLOGY-ADMISSIBILITY"]
+    map_check: "Maps multiple forms of ontic structural realism rather than a single 'structure-only' thesis; prevents a critique of eliminative OSR from being generalized to every structural/principle candidate."
+
+  - source_id: "S3N-009"
+    identity: "Stanford Encyclopedia of Philosophy, 'Process Theism.'"
+    stable_url: "https://plato.stanford.edu/entries/process-theism/"
+    access_status: "FULL_TEXT_OR_SUBSTANTIAL_HTML_READ"
+    map_targets: ["C-NEC-AGENTIVE","BG-AGENTIVE-MODAL-LINK"]
+    map_check: "Shows a necessary-agent tradition in which necessary existence coexists with contingent divine actuality and explicitly non-classical attributes, confirming that necessary agency must not be sourced as classical/Abrahamic theism by default."
+
+  - source_id: "S3N-010"
+    identity: "Elly Vintiadis and Constantinos Mekios (eds.), Brute Facts, Oxford University Press, 2018."
+    stable_identifier: "DOI:10.1093/oso/9780198758600.001.0001"
+    stable_url: "https://academic.oup.com/book/7173"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    map_targets: ["C-BRUTE","C-GLOBAL-DEFLATION","BG-PSR-SCOPE","BG-EXPLANATORY-REALISM"]
+    map_check: "Treats brute facts as a broad research category across metaphysics and philosophy of science, including distinctions among kinds of brute fact; guards against reducing BR to mere present ignorance or one physics-specific subvariant."
+
+  - source_id: "S3N-011"
+    identity: "W. J. Mander, 'The Axiarchic Argument,' in Idealist Ethics, Oxford University Press, 2016."
+    stable_identifier: "DOI:10.1093/acprof:oso/9780198748892.003.0007"
+    stable_url: "https://academic.oup.com/book/6341/chapter-abstract/150056784"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    map_targets: ["C-AXIARCHIC","C-NEC-IMPERSONAL-PRINCIPLE","BG-AXIOLOGICAL-FORCE"]
+    map_check: "Comparatively presents Leslie/Rescher-style value-to-existence explanation and objections, confirming axiarchism is a distinct evaluative explanatory mechanism rather than merely generic impersonal law or disguised agency."
+
+  - source_id: "S3N-012"
+    identity: "Oxford Studies in Metaphysics 6, 'Metaphysical Vagueness' symposium (Barnes & Williams; Eklund; response), 2011."
+    stable_url: "https://academic.oup.com/book/12009"
+    access_status: "ABSTRACT_OR_SUBSTANTIAL_EXCERPT_READ"
+    map_targets: ["C-INDETERMINATE-ULTIMACY","C-MODAL-DISSOLUTION","BG-METAPHYSICAL-INDETERMINACY"]
+    map_check: "Presents theory, critique, and response in one scholarly forum, helping separate intelligibility of metaphysical indeterminacy from its truth and from semantic/epistemic vagueness."
+
+candidate_boundary_crosswalk:
+  C-BRUTE: ["S3N-001","S3N-002","S3N-010"]
+  C-REGRESS: ["S3N-002","S3N-003"]
+  C-HOLISTIC: ["S3N-003","S3N-004"]
+  C-SELF-EXPLANATORY: ["S3N-004","S3N-002"]
+  C-GLOBAL-DEFLATION: ["S3N-001","S3N-002","S3N-010"]
+  C-MODAL-DISSOLUTION: ["S3N-005","S3N-006","S3N-012"]
+  C-INDETERMINATE-ULTIMACY: ["S3N-005","S3N-012"]
+  C-NECESSITARIAN: ["S3N-005","S3N-006","S3N-002"]
+  C-INDEXICAL-PLURALITY: ["S3N-006","S3N-007"]
+  C-NEC-IMPERSONAL-CONCRETE: ["S3N-003","S3N-004","S3N-002"]
+  C-NEC-AGENTIVE: ["S3N-002","S3N-009"]
+  C-NEC-IMPERSONAL-PRINCIPLE: ["S3N-004","S3N-008","S3N-011"]
+  C-AXIARCHIC: ["S3N-011"]
+
+missing_alternative_and_false_dichotomy_findings:
+  - "No new candidate family was identified that is clearly outside the frozen 13 while changing a necessary truth-bearing proposition."
+  - "Several literatures confirm that candidate families contain materially distinct subvariants already anticipated by the frozen scope: strong/weak foundationalism, multiple PSRs, multiple metaphysical-explanation relations, multiple modal ontologies, multiple structural realisms, classical vs process/neoclassical agency, and thin vs extreme axiarchism."
+  - "These subvariants reinforce A8/A9 variant controls; they do not themselves trigger a C4 amendment."
+  - "Neutral map checking confirms that necessary foundation, necessary being, and personal/agentive explanation are distinct inferential steps."
+  - "Neutral map checking confirms that possible-world semantics, Lewisian modal realism, and indexical actuality are distinct commitments."
+  - "Neutral map checking confirms that metaphysical indeterminacy, semantic vagueness, and epistemic uncertainty must remain distinct."
+
+S3_completion_judgment:
+  all_13_candidates_touched_by_neutral_or_comparative_map_check: true
+  formal_or_reference_work_used_to_check_terminology_and_alternatives: true
+  candidate_universe_reopen_trigger_found: false
+  background_reopen_trigger_found: false
+  discriminator_reopen_trigger_found: false
+  S3_NEUTRAL_SEARCH_STAGE_COMPLETE: true
+  coverage_certified: false
+  MAKEABLE_certified: false
+
+next_action:
+  stage: "S4_BACKGROUND"
+  rule: "For every operative A8 background dimension/gate, search each live variant and at least one serious challenge to each variant; preserve materially interacting joint-background implications without deciding them."
