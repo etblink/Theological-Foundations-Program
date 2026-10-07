@@ -1,0 +1,52 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "PROGRAM_LEAD_LEDGER_INTEGRITY_REPAIR_RECHECK_DISPOSITION"
+status: "LEDGER_INTEGRITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewed_artifact:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_G_LEDGER_INTEGRITY_REPAIR_RECHECK_REPORT_0_1_0.md"
+  blob_sha: "b99a3171b51452d3e4a8d0f373634589947ef42d"
+  reviewer_status: "LEDGER_INTEGRITY_REPAIR_PASS"
+
+independent_replay:
+  sequence_28_annotation:
+    disposition: "PASS"
+    commit_blob_binding_verified: true
+    timestamp_binding_verified: true
+    actor_lineage_present: true
+    amendment_surfaces_present: true
+  sequence_29_annotation:
+    disposition: "PASS"
+    commit_blob_binding_verified: true
+    timestamp_binding_verified: true
+    actor_lineage_present: true
+    amendment_surfaces_present: true
+  original_append_28_29_unchanged:
+    disposition: "PASS"
+    observed_history_commit_count: 1
+  original_append_30_32_unchanged:
+    disposition: "PASS"
+    observed_history_commit_count: 1
+  sequence_30_order_anchor:
+    disposition: "PASS"
+    exact_session_timestamp_available: false
+    bounded_after_sequence_29: true
+    bounded_before_sequence_31: true
+  sequence_33_39_continuity:
+    disposition: "PASS"
+    no_gap_or_duplicate: true
+    commit_bearing_bindings_verified: true
+  C4_chronology:
+    disposition: "PRESERVED"
+    amendment_class: "PRE_EVIDENCE_AMENDMENT"
+  outcome_relevant_evidence_exposure_found: false
+
+residual_nonblocking:
+  - "Original append 28-29 lacks schema_version and remains immutable; the repair supplement carries schema_version and governing annotations."
+  - "Reviewer G disclosed metadata-only filenames/commit-subject exposure during the initial audit; this is non-outcome-relevant and will be preserved as a supplemental disclosure."
+
+candidate_universe_freeze_permitted: true
+candidate_universe_frozen_by_this_artifact: false
+next_action: "Freeze A7 candidate universe by exact reference to repaired candidate register and exclusion register, then append ledger provenance."
