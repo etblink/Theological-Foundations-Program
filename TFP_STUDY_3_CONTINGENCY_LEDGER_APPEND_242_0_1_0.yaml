@@ -1,0 +1,31 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "LEDGER_APPEND"
+status: "G1_EVIDENCE_ACQUISITION_ACTIVE"
+date: "2026-10-07"
+protocol_version: "0.1.7"
+
+base_chain:
+  append_241_blob_sha: "7680c57bb5e82d8483bff9d84ba8e3a7012d3542"
+  prior_next_sequence: 242
+  prior_entries_rewritten: false
+
+append:
+  - sequence: 242
+    repository_commit: null
+    timestamp_utc: null
+    actor_lineage: "OPENAI_CHATGPT_TFP_PROGRAM_LEAD_LINEAGE"
+    source_or_artifact: "S3_NEUTRAL survey/comparative/formal search and source-opening pass spanning PSR/bruteness, fundamentality, metaphysical explanation, modality, possible worlds/actuality, structural realism, process theism, cosmological-argument taxonomy, and axiarchic comparison."
+    exposure_class: "G1_OUTCOME_RELEVANT_EVIDENCE_S3_NEUTRAL_SEARCH_EXPOSURE"
+    amendment_surfaces: ["candidate terminology map","false-dichotomy checks","background terminology","future proposition evidence matrices"]
+    outcome_relevant_evidence: true
+    source_plan_stage: "S3_NEUTRAL"
+    search_snippets_evidential_support: false
+    controls:
+      - "Neutral/reference sources orient terminology and candidate boundaries; they are not sole truth-critical support."
+      - "No proposition disposition, ranking, coverage certification, or MAKEABLE determination was made."
+      - "Neutral sources may expose missing alternatives but do not amend the frozen candidate universe except through C4."
+
+next_sequence: 243
+outcome_relevant_evidence_exposure_started: true
+G1_authorized: true
