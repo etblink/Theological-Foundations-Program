@@ -1,0 +1,15 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_ROLE_ASSIGNMENT_DELTA"
+status: "FROZEN"
+base_role_architecture_blob_sha: "2977c8697fcdc31da69c229dc55f51df6b8ecace"
+reviewer_slot: "REVIEWER_F"
+provider: "xAI"
+model: "Grok 4.7"
+session_id: "NOT_EXPOSED_BY_PROVIDER"
+assignment_acceptance_blob_sha: "2a4ea7a411bc3fb0a3c413e7ba50d499fb7dad24"
+assignment_status: "ASSIGNED__C4_DIRECTION_REVIEW_READY"
+authorized_role: "amendment_direction_reviewer"
+may_not_serve_as_ledger_integrity_reviewer: true
+may_not_serve_as_strict_auditor: true
+outcome_relevant_evidence_exposure_authorized: false
