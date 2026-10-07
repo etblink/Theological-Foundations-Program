@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_INITIAL_REGISTER_FROZEN__REVIEWER_C_ASSIGNMENT_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_INVENTORY_OPERATIVE__A8_INITIAL_REGISTER_FROZEN__REVIEWER_C_ASSIGNED__A8_BLIND_ELICITATION_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "b3da9817c281c5a99d13bb22ed0ddb99d7bd5eab"
+  research_branch_head: "de68d861e0d9d018d41d7e587edf5899fae1da9e"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -348,10 +348,19 @@ current_scope:
       sequences: [97, 98]
       reason: "avoid self-referential integrity certification"
   Reviewer_C:
-    status: "UNASSIGNED__FRESH_SESSION_HANDSHAKE_REQUIRED"
+    status: "ASSIGNED__A8_BLIND_BACKGROUND_ELICITATION_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "a5826cdbadc39f4e8275efb3e548bd80e17c649e"
+    assignment_acceptance:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ASSIGNMENT_ACCEPTANCE_0_1_0.yaml"
+      blob_sha: "95ddf900a2c6d31bae8bf68144105a3e2ae1e818"
+      disposition: "ACCEPTED"
+    role_assignment_delta:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_ROLE_ASSIGNMENT_DELTA_0_1_0.yaml"
+      blob_sha: "681c277f7887a353323023cb535ca1c029e19606"
+      disposition: "ASSIGNED__A8_BLIND_BACKGROUND_ELICITATION_READY"
+    assignment_provenance: "OWNER_RELAYED_FRESH_SESSION_HANDSHAKE_ACCEPTED"
     blind_background_input:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A8_BLIND_BACKGROUND_ELICITATION_INPUT_FREEZE_0_1_0.yaml"
       blob_sha: "95ca4fd342c699185782fd65ca3f059cfabb89ec"
@@ -470,7 +479,10 @@ current_scope:
     append_103_108:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_103_108_0_1_0.yaml"
       blob_sha: "a74361c40bd95cfc8ca49402903b3dfc11d4e6b4"
-    next_sequence: 109
+    append_109_111:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_109_111_0_1_0.yaml"
+      blob_sha: "d014612a309eca1f3214b46223f849adf698c6d0"
+    next_sequence: 112
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -537,7 +549,7 @@ current_scope:
     A8_initial_background_register_frozen: true
     A8_initial_background_interaction_matrix_frozen: true
     reviewer_C_assignment_ready: true
-    reviewer_C_assigned: false
+    reviewer_C_assigned: true
     A8_blind_background_elicitation_ready: true
     A8_blind_background_elicitation_complete: false
     background_register_frozen: false
@@ -559,18 +571,17 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-C-ASSIGNMENT-HANDSHAKE"
-  action: "assign_a_fresh_procedurally_disjoint_Reviewer_C_session_before_exposing_the_A8_blind_background_packet"
+  id: "TFP-STUDY-3-REVIEWER-C-A8-BLIND-BACKGROUND-ELICITATION"
+  action: "continue_same_Reviewer_C_session_with_frozen_blind_background_elicitation"
   branch: "research/tfp-study-3-contingency-g0"
-  assignment_handshake_prompt_blob_sha: "a5826cdbadc39f4e8275efb3e548bd80e17c649e"
   blind_background_input_blob_sha: "95ca4fd342c699185782fd65ca3f059cfabb89ec"
   blind_background_prompt_blob_sha: "f15ec2535aa1f736fc79777cbf55689904f255c3"
   requirements:
-    - "Reviewer C must be a fresh session disjoint from Program Lead/background/discriminator authors, Reviewer B, Reviewer G, and future strict auditor"
-    - "perform assignment-only handshake before any Study-3 substantive exposure"
-    - "first substantive task is blind A8 background elicitation from the generic scope only"
-    - "do not expose the Program Lead initial background register or interaction matrix until the blind report is frozen"
-    - "no outcome-evidence search, discriminator authoring, ranking, truth adjudication, or G1 evidence acquisition"
+    - "use the exact same fresh Reviewer C session that passed the assignment handshake"
+    - "read only the frozen blind input and files it authorizes"
+    - "do not expose or read the Program Lead initial background register or interaction matrix before the blind report is frozen"
+    - "do not inspect candidate packets, the claim/necessity inventory, discriminator proposals, source plans, outcome evidence, past chats, or memory for Study-3 substantive material"
+    - "no candidate ranking, truth adjudication, discriminator authoring, or G1 evidence acquisition"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -868,7 +879,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_inventory_operative__A8_initial_register_frozen__Reviewer_C_assignment_ready"
+    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_inventory_operative__A8_initial_register_frozen__Reviewer_C_assigned__A8_blind_elicitation_ready"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
