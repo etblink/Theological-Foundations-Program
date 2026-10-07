@@ -1,0 +1,105 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_F_A11_DISCRIMINATOR_REPAIR_C4_DIRECTION_REVIEW_INPUT_FREEZE"
+status: "FROZEN__FIXED_PRE_LAUNCH_ENDPOINT_SEQUENCE_187"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_F"
+  required_lineage: "exact same xAI / Grok 4.7 Reviewer-F conversation that previously returned Study-3 C4_DIRECTION_REVIEW_PASS"
+  role: "independent amendment-direction reviewer"
+  prohibited_roles:
+    - "ledger-integrity reviewer"
+    - "strict independent auditor"
+    - "discriminator-tier reviewer"
+
+fixed_prelaunch_endpoint:
+  endpoint_sequence: 187
+  endpoint_commit: "c96f085d9051d9456a5b9adbfd92d8cd6f07c586"
+  endpoint_ledger_artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_185_187_0_1_0.yaml"
+  endpoint_ledger_blob_sha: "08702219e80feda35e79e898aad928901b8f6e5d"
+  launch_files_after_endpoint_are_not_part_of_timing_target: true
+
+authorized_amendment_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_DISCRIMINATOR_REPAIR_AMENDMENT_RECORD_0_1_0.yaml", blob_sha: "581abfafdab8fd404af3734dcafab7f5a51249ec" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_0.yaml", blob_sha: "7577a03674c1e46eadeb198a2330e5dbc2f0b745" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A11_PREREGISTERED_DISCRIMINATOR_REGISTER_0_1_1.yaml", blob_sha: "b8beaea6982ac40b3c53f57b81388d6c9cf98907" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_TIER_REVIEW_REPORT_0_1_0.md", blob_sha: "c2e1253198d47acffa126578a418b0ea6b8523b7" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_TIER_REVIEW_DISPOSITION_0_1_0.yaml", blob_sha: "48a6c1cce356e63f9c9464ea7a295b3ae2a93698" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_C_A11_DISCRIMINATOR_REPAIR_RECHECK_REPORT_0_1_0.md", blob_sha: "47d72273bee0be396fd365422a7bfceaa0957128" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_A11_DISCRIMINATOR_REPAIR_RECHECK_DISPOSITION_0_1_0.yaml", blob_sha: "d2a187842fafb77e73933f1e6d08ab3e1a20243a" }
+
+authorized_scope_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_CANDIDATE_UNIVERSE_FREEZE_0_1_0.yaml", blob_sha: "da484500961cb68b81f0e5c8764ced1b736813fd" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_2.yaml", blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_A10_REQUIRED_LANE_REGISTER_0_1_0.yaml", blob_sha: "ed7a8ca164892f349a50a163c59e4980eca37903" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_REGISTER_0_1_1.yaml", blob_sha: "c0752ea1863c1733110f9da90d75a31dd88e199d" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_BACKGROUND_INTERACTION_MATRIX_0_1_1.yaml", blob_sha: "46b9cbdd731eab01e689770455926d2620994d48" }
+
+authorized_chronology_inputs:
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_174_176_0_1_0.yaml", blob_sha: "e6bbc1f609fcaf722158e0fb602c0f4302f0bbc7" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_177_179_0_1_0.yaml", blob_sha: "a33624d372de42bb4e5e65d285dae9366b294deb" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_180_182_0_1_0.yaml", blob_sha: "d96b56d9a5ce4cdc4778bb97b9a67458084815e5" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_183_184_0_1_0.yaml", blob_sha: "cf7616de38b23af7bfa4cfb81d720fae0eb22800" }
+  - { path: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_185_187_0_1_0.yaml", blob_sha: "08702219e80feda35e79e898aad928901b8f6e5d" }
+
+protocol_access:
+  - "Protocol 0.1.7 C4 only as needed for amendment direction/timing."
+  - "A11 only as needed to understand the frozen discriminator repair surfaces already passed by Reviewer C."
+
+repair_surfaces_to_classify:
+  - "R1: removal of excluded BG-D09-EPISTEMIC-STANDARD and BG-D12-QUESTION-DISSOLUTION citations, retaining admitted modal residues"
+  - "R2: D11-01 addition of INT-MODALSTATUS-INDETERMINACY and MOD-DEFLATIONARY gate"
+  - "R3: D11-03 addition of BG-ACTUALITY-PRIVILEGE and INT-TOTALITY-ACTUALITY"
+  - "R4: D11-05 addition of INT-ER-PSR and INT3-ER-PSR-TOTALITY"
+  - "R5: D11-06 temporal-origin gate-only control"
+  - "R6: D11-12 addition of four agentive/principle interactions"
+  - "R7: D11-14 addition of INT3-RELATION-ONTOLOGY-AXIOLOGY"
+  - "R8: D11-11 clarification that mere failure to warrant agency is not FAVORS_B and A11-DR-1 controls"
+  - "R9: D11-13 thin-route axiological boundary against stronger theological importation"
+
+task:
+  - "Do not redo Reviewer C's A11 tier/direction adequacy review; A11 register 0.1.1 content repair has passed."
+  - "Independently classify each R1-R9 repair surface by directional effect using ADVERSE, FAVORABLE, NEUTRAL, or MIXED_OR_UNCLEAR."
+  - "Give an explicit direction classification for all 13 admitted candidates, including candidates not directly named by a repair surface."
+  - "Assess direction on future A6 coverage eligibility, future candidate adequacy, future relative ranking, future truth-warrant eligibility, future discriminator application, future MAKEABLE certification, and stronger-theological-attribute inference."
+  - "Check whether any repair selectively improves or worsens one candidate's future treatment without a corresponding symmetric control."
+  - "Test the proposed PRE_EVIDENCE_AMENDMENT timing against authorized ledger chronology through sequence 187."
+  - "Treat timing as conditional on Reviewer G's later independent ledger-integrity confirmation; do not certify ledger integrity yourself."
+  - "Do not inspect outcome-relevant evidence or source-acquisition results, rank candidates, assess truth/plausibility, alter discriminator tiers, certify final A6 coverage, or begin G1."
+
+direction_namespace:
+  - "ADVERSE"
+  - "FAVORABLE"
+  - "NEUTRAL"
+  - "MIXED_OR_UNCLEAR"
+
+amendment_class_namespace:
+  - "PRE_EVIDENCE_AMENDMENT"
+  - "POST_EVIDENCE_NONMATERIAL"
+  - "POST_EVIDENCE_ADVERSE_ONLY"
+  - "POST_EVIDENCE_FAVORABLE_OR_MIXED"
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "AMENDMENT TIMING CLASSIFICATION"
+    - "DIRECTION BY REPAIR SURFACE"
+    - "DIRECTION BY CANDIDATE"
+    - "DIRECTION BY OUTCOME CONDITION"
+    - "SYMMETRY CHECK"
+    - "REQUIRED CONTROLS OR REPAIRS"
+    - "C4 DIRECTION REVIEW STATUS"
+  status_namespace:
+    - "C4_DIRECTION_REVIEW_PASS"
+    - "C4_DIRECTION_REVIEW_REPAIR_REQUIRED"
+  stop_after_report: true
+
+scope_controls:
+  A11_register_0_1_1_operational: false
+  discriminators_frozen: false
+  final_A6_coverage_certified: false
+  outcome_relevant_evidence_acquisition_started: false
+  G1_authorized: false
