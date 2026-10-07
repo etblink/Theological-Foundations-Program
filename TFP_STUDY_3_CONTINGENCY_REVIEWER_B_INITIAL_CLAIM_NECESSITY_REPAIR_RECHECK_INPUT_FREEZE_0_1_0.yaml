@@ -1,0 +1,69 @@
+schema_version: "0.1.0"
+study_id: "TFP-STUDY-3-CONTINGENCY"
+artifact: "REVIEWER_B_INITIAL_CLAIM_NECESSITY_REPAIR_RECHECK_INPUT_FREEZE"
+status: "FROZEN__FOCUSED_RECHECK_ONLY"
+date: "2026-10-06"
+protocol_version: "0.1.7"
+
+reviewer:
+  slot: "REVIEWER_B"
+  required_lineage: "exact same OpenAI Codex conversation that returned INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED"
+  role: "focused initial A4/A5/A6 repair recheck"
+  prohibited_roles:
+    - "discriminator_tier_reviewer"
+    - "strict_independent_auditor"
+
+prior_review:
+  path: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_INITIAL_CLAIM_TYPING_AND_NECESSITY_REVIEW_REPORT_0_1_0.md"
+  blob_sha: "d45d01925bb09dea3c2531881d71dcc17339a026"
+  status: "INITIAL_CLAIM_NECESSITY_REPAIR_REQUIRED"
+
+authorized_inputs:
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_0.yaml"
+    blob_sha: "375755374e0fc51b14a8ba6b370367c9816cd10b"
+    purpose: "delta comparison only"
+  - path: "TFP_STUDY_3_CONTINGENCY_INITIAL_CLAIM_TYPING_DEPENDENCY_AND_NECESSITY_INVENTORY_0_1_1.yaml"
+    blob_sha: "81b7f0852e893c5680035120f282ffcd0830d919"
+  - path: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_INITIAL_CLAIM_NECESSITY_REVIEW_DISPOSITION_0_1_0.yaml"
+    blob_sha: "bb08bd997df219f8f6cdca61a3e2accd34e74a9d"
+  - path: "TFP_STUDY_3_CONTINGENCY_B3_STEELMAN_PACKET_SET_FREEZE_0_1_0.yaml"
+    blob_sha: "edc983b56a5cd4e69abc07b65e8518cfa3db758f"
+  - "All 13 packet blobs referenced by the B3 packet-set freeze, only as needed to verify the repair."
+  - "Protocol 0.1.7 A4, A5, A6 and C4 only as needed."
+
+task:
+  - "Perform a focused recheck of R1-R8 only; do not rerun unrelated B3 or candidate-universe review."
+  - "Verify necessary adequacy/stopping content was restored for brute, regress, holistic, self-explanatory, necessitarian and impersonal-concrete families."
+  - "Verify family-defining structure/boundaries were made explicit for regress, holistic, agentive and impersonal-principle families."
+  - "Verify indexical plurality now carries a positive necessary/non-contingent plurality stopping burden distinct from indexical actuality."
+  - "Verify genuine-contingency/modal-collapse burdens are explicit and symmetric for agentive, impersonal-concrete, impersonal-principle and axiarchic necessary-ground families."
+  - "Verify MD-N4, AG/AX scope controls and other contextual permissions are no longer misclassified as substantive worldly necessities."
+  - "Verify A5 arrows use explicit semantic relation classes and do not treat co-necessity as implication; verify alternative paths are not conjunctive."
+  - "Verify IU, NE, local/total/indexical contingency scopes are sharpened without unauthorized candidate strengthening."
+  - "Verify every necessary proposition carries CANDIDATE_SPECIFIC and that no SHARED_FLOOR proposition is manufactured."
+  - "Verify no trigger-tag omission was introduced."
+  - "Do not certify NECESSARY_PROPOSITION_COVERAGE_COMPLETE."
+  - "Do not author or tier discriminators, rank candidates, assess truth/plausibility, inspect outcome evidence, or begin G1."
+  - "Do not classify C4 amendment direction; that remains reserved to Reviewer F after this recheck."
+
+required_output:
+  sections:
+    - "SESSION / CONTINUITY"
+    - "INPUT VERIFICATION"
+    - "R1-R5 NECESSITY / BOUNDARY RECHECK"
+    - "R6 DEPENDENCY-SEMANTICS RECHECK"
+    - "R7 SCOPE-SENSITIVE TRUTH-CONDITION RECHECK"
+    - "A4 / A6 CLASSIFICATION RECHECK"
+    - "REPAIR-INTRODUCED DEFECT CHECK"
+    - "INITIAL CLAIM / NECESSITY REPAIR STATUS"
+  status_namespace:
+    - "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+    - "INITIAL_CLAIM_NECESSITY_REPAIR_STILL_REQUIRED"
+  stop_after_report: true
+
+C4_note:
+  corrected_inventory_operational_use_allowed_by_this_recheck_alone: false
+  Reviewer_F_direction_review_required_after_pass: true
+  candidate_universe_frozen_and_unchanged: true
+  B3_packets_frozen_and_unchanged: true
+  G1_authorized: false
