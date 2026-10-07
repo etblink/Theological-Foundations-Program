@@ -80,12 +80,12 @@ authority:
 
 current_scope:
   id: "TFP-STUDY-3-CONTINGENCY-G0"
-  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_REPAIR_STILL_REQUIRED__GD_N3_NARROW_REPAIR_FROZEN__REVIEWER_B_DELTA_RECHECK_READY__C4_DIRECTION_REVIEW_PENDING__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
+  status: "G0_ARCHITECTURE_AUTHORIZED__A7_CANDIDATE_UNIVERSE_FROZEN__B3_EQUAL_STRENGTH_PASS__A4_A5_A6_REPAIR_PASS__INVENTORY_0_1_2_NONOPERATIVE__REVIEWER_F_C4_REVIEW_READY__SUBSTANTIVE_EVIDENCE_NOT_STARTED"
   purpose: "Construct and independently qualify the pre-evidence G0 architecture for the contingency/necessary-foundation study under Protocol 0.1.7 without presupposing theism or importing TFP-STRESS-2 conclusions."
   bounded: true
   qualified_protocol_version: "0.1.7"
   research_branch: "research/tfp-study-3-contingency-g0"
-  research_branch_head: "d769b600651cc91ac555e63597043e7848c36381"
+  research_branch_head: "e81691ff60a54a8bee20efcb4ca3d7a88497bd13"
   human_G0_architecture_authorization:
     artifact: "TFP_STUDY_3_CONTINGENCY_G0_HUMAN_AUTHORIZATION_ACCEPTANCE_0_1_0.md"
     blob_sha: "e358ee8451790fd4c7669ea3ebda31531411039f"
@@ -177,7 +177,7 @@ current_scope:
       blob_sha: "5c089cd7590275f2a97d7d14acdbabfb224e9599"
       disposition: "STEELMAN_EQUAL_STRENGTH_PASS_INDEPENDENTLY_CONFIRMED"
   Reviewer_B:
-    status: "ASSIGNED__INITIAL_A4_A5_A6_REPAIR_STILL_REQUIRED__GD_N3_NARROW_REPAIR_FROZEN__DELTA_RECHECK_READY"
+    status: "ASSIGNED__INITIAL_A4_A5_A6_REPAIR_PASS__C4_DIRECTION_REVIEW_PENDING"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "1df6978564e761c1ed0737a539445456fa4ea91c"
@@ -233,12 +233,20 @@ current_scope:
     GD_N3_delta_recheck_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_PROMPT_0_1_0.md"
       blob_sha: "50ea1fd1c28101d623ec52633b79627c2f11b628"
+    GD_N3_delta_recheck_report:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_B_GD_N3_DELTA_RECHECK_REPORT_0_1_0.md"
+      blob_sha: "5fcf9a8b3928827180b0e95e9fc8e9fcd401652d"
+      disposition: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS"
+    Program_Lead_GD_N3_delta_disposition:
+      artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_GD_N3_DELTA_RECHECK_DISPOSITION_0_1_0.yaml"
+      blob_sha: "574d274e82e984c5ab4dc2e3f4929f9a2aecaf03"
+      disposition: "INITIAL_CLAIM_NECESSITY_REPAIR_PASS_INDEPENDENTLY_CONFIRMED__C4_DIRECTION_REVIEW_REQUIRED"
     role_boundary:
       final_A6_coverage_certification_deferred_until_after_Reviewer_C_discriminator_tiering: true
       may_not_serve_as_discriminator_tier_reviewer: true
       may_not_serve_as_strict_auditor: true
   Reviewer_F:
-    status: "ASSIGNED__C4_DIRECTION_REVIEW_PASS"
+    status: "ASSIGNED__CANDIDATE_UNIVERSE_C4_PASS__A4_A5_A6_C4_REVIEW_READY"
     assignment_handshake_prompt:
       artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_ASSIGNMENT_HANDSHAKE_PROMPT_0_1_0.md"
       blob_sha: "073a00b53f3f2e20c0cf17b5fc931498396ff71d"
@@ -262,6 +270,12 @@ current_scope:
       artifact: "TFP_STUDY_3_CONTINGENCY_PROGRAM_LEAD_C4_DIRECTION_REVIEW_DISPOSITION_0_1_0.yaml"
       blob_sha: "b208bede63e5b948edc8854ad59ec5b68bb0e446"
       disposition: "REVIEWER_F_C4_PASS_INDEPENDENTLY_CONFIRMED__LEDGER_INTEGRITY_REQUIRED"
+    A4_A5_A6_C4_direction_input:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_INPUT_FREEZE_0_1_0.yaml"
+      blob_sha: "767cb8c9d5a1135cc885bc1605a96bdbd0f617f5"
+    A4_A5_A6_C4_direction_prompt:
+      artifact: "TFP_STUDY_3_CONTINGENCY_REVIEWER_F_C4_A4_A5_A6_AMENDMENT_DIRECTION_PROMPT_0_1_0.md"
+      blob_sha: "06d31a3d7da0ba936561a66506b50183a017466d"
     lineage_requirement: "fresh session disjoint from Program Lead, Reviewer G ledger-integrity reviewer, and future strict auditor"
     prohibited_roles:
       - "ledger_integrity_reviewer"
@@ -365,7 +379,13 @@ current_scope:
     append_83_88:
       artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_83_88_0_1_0.yaml"
       blob_sha: "5682b00c57c4cb5e049f05fe35b8fc32263334f0"
-    next_sequence: 89
+    append_89_91:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_89_91_0_1_0.yaml"
+      blob_sha: "9aa8eb112949486ec3690909369199da727dfc17"
+    append_92_93:
+      artifact: "TFP_STUDY_3_CONTINGENCY_LEDGER_APPEND_92_93_0_1_0.yaml"
+      blob_sha: "e0d3cb180cb78d7f9f07556893cc10155a652edf"
+    next_sequence: 94
     outcome_evidence_exposure_started: false
   G0_progress:
     human_authorization_received: true
@@ -413,7 +433,12 @@ current_scope:
     A4_A5_A6_repair_recheck_result: "STILL_REQUIRED__GD_N3_ONLY"
     A4_A5_A6_GD_N3_narrow_repair_frozen: true
     A4_A5_A6_GD_N3_delta_recheck_ready: true
+    A4_A5_A6_GD_N3_delta_recheck_complete: true
+    A4_A5_A6_GD_N3_delta_recheck_result: "PASS"
+    A4_A5_A6_repair_loop_complete: true
+    A4_A5_A6_repaired_inventory_operational: false
     A4_A5_A6_C4_direction_review_required: true
+    A4_A5_A6_C4_direction_review_ready: true
     A4_A5_A6_C4_direction_review_complete: false
     claim_typing_frozen: false
     necessary_proposition_inventory_frozen: false
@@ -437,18 +462,19 @@ current_scope:
   global_theological_synthesis_authorized: false
   theological_outcome: "NO_NEW_OUTCOME__G0_ARCHITECTURE_ONLY"
 next_action:
-  id: "TFP-STUDY-3-REVIEWER-B-GD-N3-DELTA-RECHECK"
-  action: "continue_same_Reviewer_B_session_with_frozen_GD_N3_delta_recheck"
+  id: "TFP-STUDY-3-REVIEWER-F-A4-A5-A6-C4-DIRECTION-REVIEW"
+  action: "continue_same_Reviewer_F_session_with_frozen_A4_A5_A6_C4_direction_review"
   branch: "research/tfp-study-3-contingency-g0"
-  repaired_inventory_blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
-  delta_recheck_input_blob_sha: "43b6a23ff2b2a80eb22ada08b1c1a28630024f38"
-  delta_recheck_prompt_blob_sha: "50ea1fd1c28101d623ec52633b79627c2f11b628"
+  amended_inventory_blob_sha: "a3146e2b1a359856544301bb6f0fa4af55e48b54"
+  direction_review_input_blob_sha: "767cb8c9d5a1135cc885bc1605a96bdbd0f617f5"
+  direction_review_prompt_blob_sha: "06d31a3d7da0ba936561a66506b50183a017466d"
   requirements:
-    - "use the exact same Reviewer B session"
-    - "review only GD-N3/GD-S2 and delta integrity"
-    - "do not certify final A6 coverage or classify C4 direction"
-    - "inventory 0.1.2 remains non-operative until Reviewer F C4 direction review passes"
-    - "no discriminator work, outcome-evidence search, ranking, truth adjudication, or G1 evidence acquisition"
+    - "use the exact same Reviewer F Grok 4.7 session used for prior candidate-universe C4 review"
+    - "classify direction for full inventory amendment chain 0.1.0 -> 0.1.1 -> 0.1.2"
+    - "do not certify ledger integrity; hand chronology integrity to Reviewer G"
+    - "do not certify final A6 coverage or author/tier discriminators"
+    - "inventory 0.1.2 remains non-operative on Reviewer F pass alone"
+    - "no outcome-evidence search, ranking, truth adjudication, or G1 evidence acquisition"
 
 qualification_candidate:
   compatibility_status: "HISTORICAL_COMPATIBILITY_BLOCK__NONAUTHORITATIVE__SEE_program.qualified_protocol"
@@ -746,7 +772,7 @@ research_queue:
   - id: "TFP-METHOD-REVISION"
     status: "not_authorized__maintenance_only_if_triggered_by_later_study_defect_or_human_owner"
   - id: "TFP-STUDY-3-CONTINGENCY"
-    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_repair_still_required__GD_N3_narrow_repair_frozen__Reviewer_B_delta_recheck_ready__C4_direction_pending"
+    status: "G0_architecture_authorized__A7_candidate_universe_frozen__B3_equal_strength_pass__A4_A5_A6_repair_pass__inventory_0_1_2_nonoperative__Reviewer_F_C4_review_ready"
     candidate: "contingency_necessary_foundation"
 
 stop_rules:
